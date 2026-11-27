@@ -41,8 +41,8 @@
    "thumb_w": 640,
    "thumb_h": 432,
    "ax_votes": 1,
-   "ax_visits": 5,
-   "heat": 1
+   "ax_visits": 13,
+   "heat": 2.3
   },
   {
    "id": "2611.31694",
@@ -78,8 +78,8 @@
    "thumb_w": 600,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 0,
-   "heat": 0
+   "ax_visits": 1,
+   "heat": 0.1
   },
   {
    "id": "2611.31676",
@@ -112,8 +112,8 @@
    "thumb_w": 618,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 2,
-   "heat": 0
+   "ax_visits": 3,
+   "heat": 0.3
   },
   {
    "id": "2611.31667",
@@ -145,8 +145,8 @@
    "thumb_w": 640,
    "thumb_h": 382,
    "ax_votes": 0,
-   "ax_visits": 0,
-   "heat": 0
+   "ax_visits": 3,
+   "heat": 0.3
   },
   {
    "id": "2611.31658",
@@ -181,8 +181,8 @@
    "thumb_w": 640,
    "thumb_h": 262,
    "ax_votes": 0,
-   "ax_visits": 13,
-   "heat": 0
+   "ax_visits": 16,
+   "heat": 1.6
   },
   {
    "id": "2611.31644",
@@ -219,8 +219,8 @@
    "thumb_w": 412,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 1,
-   "heat": 0
+   "ax_visits": 2,
+   "heat": 0.2
   },
   {
    "id": "2611.31637",
@@ -253,8 +253,8 @@
    "thumb_w": 566,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 1,
-   "heat": 0
+   "ax_visits": 2,
+   "heat": 0.2
   },
   {
    "id": "2611.31588",
@@ -295,8 +295,8 @@
    "thumb_w": 640,
    "thumb_h": 241,
    "ax_votes": 1,
-   "ax_visits": 30,
-   "heat": 1
+   "ax_visits": 32,
+   "heat": 4.2
   },
   {
    "id": "2611.31577",
@@ -351,8 +351,8 @@
    "thumb_w": 513,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 10,
-   "heat": 0
+   "ax_visits": 11,
+   "heat": 1.1
   },
   {
    "id": "2611.31561",
@@ -394,8 +394,8 @@
    "thumb_w": 410,
    "thumb_h": 437,
    "ax_votes": 0,
-   "ax_visits": 4,
-   "heat": 0
+   "ax_visits": 5,
+   "heat": 0.5
   },
   {
    "id": "2611.31535",
@@ -433,8 +433,8 @@
    "thumb_w": 640,
    "thumb_h": 230,
    "ax_votes": 1,
-   "ax_visits": 29,
-   "heat": 1
+   "ax_visits": 32,
+   "heat": 4.2
   },
   {
    "id": "2611.31511",
@@ -480,9 +480,9 @@
    "thumb": "data/thumbs/2611.31511.jpg",
    "thumb_w": 640,
    "thumb_h": 321,
-   "ax_votes": 0,
-   "ax_visits": 4,
-   "heat": 0
+   "ax_votes": 1,
+   "ax_visits": 6,
+   "heat": 1.6
   },
   {
    "id": "2611.31488",
@@ -523,8 +523,8 @@
    "thumb_w": 640,
    "thumb_h": 399,
    "ax_votes": 0,
-   "ax_visits": 4,
-   "heat": 0
+   "ax_visits": 5,
+   "heat": 0.5
   },
   {
    "id": "2611.31470",
@@ -554,8 +554,8 @@
    "thumb_w": 618,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 0,
-   "heat": 0
+   "ax_visits": 1,
+   "heat": 0.1
   },
   {
    "id": "2611.31463",
@@ -582,8 +582,8 @@
    "thumb_w": 640,
    "thumb_h": 251,
    "ax_votes": 0,
-   "ax_visits": 5,
-   "heat": 0
+   "ax_visits": 6,
+   "heat": 0.6
   },
   {
    "id": "2611.31446",
@@ -616,8 +616,8 @@
    "thumb_w": 640,
    "thumb_h": 423,
    "ax_votes": 0,
-   "ax_visits": 18,
-   "heat": 0
+   "ax_visits": 19,
+   "heat": 1.9
   },
   {
    "id": "2611.31240",
@@ -665,8 +665,8 @@
    "thumb_w": 640,
    "thumb_h": 235,
    "ax_votes": 22,
-   "ax_visits": 246,
-   "heat": 22
+   "ax_visits": 254,
+   "heat": 47.4
   },
   {
    "id": "2611.31205",
@@ -693,7 +693,7 @@
     "manipulation"
    ],
    "score_source": "keyword-demo",
-   "hf_upvotes": 65,
+   "hf_upvotes": 66,
    "faq": false,
    "orgs": [
     {
@@ -705,8 +705,8 @@
    "thumb_w": 640,
    "thumb_h": 300,
    "ax_votes": 5,
-   "ax_visits": 55,
-   "heat": 70
+   "ax_visits": 60,
+   "heat": 77.0
   },
   {
    "id": "2611.31201",
@@ -758,8 +758,8 @@
    "thumb_w": 547,
    "thumb_h": 440,
    "ax_votes": 14,
-   "ax_visits": 149,
-   "heat": 120
+   "ax_visits": 160,
+   "heat": 136.0
   },
   {
    "id": "2611.31195",
@@ -790,8 +790,8 @@
    "thumb_w": 640,
    "thumb_h": 401,
    "ax_votes": 2,
-   "ax_visits": 24,
-   "heat": 2
+   "ax_visits": 28,
+   "heat": 4.8
   },
   {
    "id": "2611.31173",
@@ -852,8 +852,8 @@
    "thumb_w": 640,
    "thumb_h": 306,
    "ax_votes": 1,
-   "ax_visits": 37,
-   "heat": 1
+   "ax_visits": 40,
+   "heat": 5.0
   },
   {
    "id": "2611.31126",
@@ -907,8 +907,8 @@
    "thumb_w": 640,
    "thumb_h": 334,
    "ax_votes": 0,
-   "ax_visits": 14,
-   "heat": 7
+   "ax_visits": 16,
+   "heat": 8.6
   },
   {
    "id": "2611.31115",
@@ -956,8 +956,8 @@
    "thumb_w": 640,
    "thumb_h": 351,
    "ax_votes": 2,
-   "ax_visits": 26,
-   "heat": 24
+   "ax_visits": 31,
+   "heat": 27.1
   },
   {
    "id": "2611.31099",
@@ -991,8 +991,8 @@
    "thumb_w": 618,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 9,
-   "heat": 0
+   "ax_visits": 10,
+   "heat": 1.0
   },
   {
    "id": "2611.31098",
@@ -1044,9 +1044,9 @@
    "thumb_w": 355,
    "thumb_h": 440,
    "hf_upvotes": 4,
-   "ax_votes": 8,
-   "ax_visits": 144,
-   "heat": 12
+   "ax_votes": 10,
+   "ax_visits": 187,
+   "heat": 32.7
   },
   {
    "id": "2611.31341",
@@ -1083,8 +1083,8 @@
    "thumb_w": 640,
    "thumb_h": 278,
    "ax_votes": 0,
-   "ax_visits": 0,
-   "heat": 0
+   "ax_visits": 1,
+   "heat": 0.1
   },
   {
    "id": "2611.31079",
@@ -1134,8 +1134,8 @@
    "thumb_w": 526,
    "thumb_h": 303,
    "ax_votes": 0,
-   "ax_visits": 27,
-   "heat": 0
+   "ax_visits": 28,
+   "heat": 2.8
   },
   {
    "id": "2611.31054",
@@ -1170,8 +1170,8 @@
    "thumb_w": 499,
    "thumb_h": 270,
    "ax_votes": 0,
-   "ax_visits": 0,
-   "heat": 0
+   "ax_visits": 1,
+   "heat": 0.1
   },
   {
    "id": "2611.31053",
@@ -1213,8 +1213,8 @@
    "thumb_w": 640,
    "thumb_h": 290,
    "ax_votes": 1,
-   "ax_visits": 22,
-   "heat": 4
+   "ax_visits": 23,
+   "heat": 6.3
   },
   {
    "id": "2611.31037",
@@ -1245,8 +1245,8 @@
    "thumb_w": 605,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 4,
-   "heat": 0
+   "ax_visits": 5,
+   "heat": 0.5
   },
   {
    "id": "2611.31002",
@@ -1301,8 +1301,8 @@
    "thumb_h": 372,
    "hf_upvotes": 1,
    "ax_votes": 53,
-   "ax_visits": 636,
-   "heat": 54
+   "ax_visits": 666,
+   "heat": 120.6
   },
   {
    "id": "2611.30997",
@@ -1349,8 +1349,8 @@
    "thumb_w": 438,
    "thumb_h": 440,
    "ax_votes": 1,
-   "ax_visits": 25,
-   "heat": 1
+   "ax_visits": 26,
+   "heat": 3.6
   },
   {
    "id": "2611.30989",
@@ -1388,8 +1388,8 @@
    "thumb_w": 640,
    "thumb_h": 246,
    "ax_votes": 2,
-   "ax_visits": 35,
-   "heat": 140
+   "ax_visits": 42,
+   "heat": 144.2
   },
   {
    "id": "2611.30963",
@@ -1460,8 +1460,8 @@
    "thumb_w": 640,
    "thumb_h": 285,
    "ax_votes": 11,
-   "ax_visits": 145,
-   "heat": 13
+   "ax_visits": 150,
+   "heat": 28.0
   },
   {
    "id": "2611.30957",
@@ -1496,8 +1496,8 @@
    "thumb_w": 600,
    "thumb_h": 328,
    "ax_votes": 0,
-   "ax_visits": 7,
-   "heat": 0
+   "ax_visits": 8,
+   "heat": 0.8
   },
   {
    "id": "2611.30928",
@@ -1533,8 +1533,8 @@
    "thumb_w": 640,
    "thumb_h": 313,
    "ax_votes": 0,
-   "ax_visits": 5,
-   "heat": 0
+   "ax_visits": 6,
+   "heat": 0.6
   },
   {
    "id": "2611.30918",
@@ -1573,8 +1573,8 @@
    "thumb_w": 630,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 5,
-   "heat": 0
+   "ax_visits": 7,
+   "heat": 0.7
   },
   {
    "id": "2611.30907",
@@ -1617,8 +1617,8 @@
    "thumb_w": 640,
    "thumb_h": 205,
    "ax_votes": 1,
-   "ax_visits": 14,
-   "heat": 1
+   "ax_visits": 18,
+   "heat": 2.8
   },
   {
    "id": "2611.30900",
@@ -1664,8 +1664,8 @@
    "thumb_w": 640,
    "thumb_h": 206,
    "ax_votes": 0,
-   "ax_visits": 13,
-   "heat": 5
+   "ax_visits": 20,
+   "heat": 7.0
   },
   {
    "id": "2611.30898",
@@ -1712,8 +1712,8 @@
    "thumb_w": 640,
    "thumb_h": 422,
    "ax_votes": 12,
-   "ax_visits": 130,
-   "heat": 40
+   "ax_visits": 140,
+   "heat": 54.0
   },
   {
    "id": "2611.30889",
@@ -1751,8 +1751,8 @@
    "thumb_w": 640,
    "thumb_h": 286,
    "ax_votes": 2,
-   "ax_visits": 37,
-   "heat": 2
+   "ax_visits": 40,
+   "heat": 6.0
   },
   {
    "id": "2611.30874",
@@ -1793,8 +1793,8 @@
    "thumb_w": 440,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 22,
-   "heat": 0
+   "ax_visits": 23,
+   "heat": 2.3
   },
   {
    "id": "2611.30836",
@@ -1857,8 +1857,8 @@
    "thumb_w": 640,
    "thumb_h": 225,
    "ax_votes": 1,
-   "ax_visits": 19,
-   "heat": 1
+   "ax_visits": 22,
+   "heat": 3.2
   },
   {
    "id": "2611.30813",
@@ -1917,8 +1917,8 @@
    "thumb_w": 640,
    "thumb_h": 208,
    "ax_votes": 13,
-   "ax_visits": 159,
-   "heat": 23
+   "ax_visits": 163,
+   "heat": 39.3
   },
   {
    "id": "2611.30784",
@@ -1961,8 +1961,8 @@
    "thumb_w": 640,
    "thumb_h": 349,
    "ax_votes": 0,
-   "ax_visits": 7,
-   "heat": 0
+   "ax_visits": 8,
+   "heat": 0.8
   },
   {
    "id": "2611.30765",
@@ -2007,8 +2007,8 @@
    "thumb_w": 640,
    "thumb_h": 328,
    "ax_votes": 0,
-   "ax_visits": 4,
-   "heat": 0
+   "ax_visits": 6,
+   "heat": 0.6
   },
   {
    "id": "2611.30741",
@@ -2050,8 +2050,8 @@
    "thumb_w": 640,
    "thumb_h": 293,
    "ax_votes": 0,
-   "ax_visits": 6,
-   "heat": 0
+   "ax_visits": 8,
+   "heat": 0.8
   },
   {
    "id": "2611.30739",
@@ -2095,8 +2095,8 @@
    "thumb_w": 312,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 8,
-   "heat": 0
+   "ax_visits": 10,
+   "heat": 1.0
   },
   {
    "id": "2611.30734",
@@ -2131,8 +2131,8 @@
    "thumb_w": 414,
    "thumb_h": 248,
    "ax_votes": 0,
-   "ax_visits": 2,
-   "heat": 0
+   "ax_visits": 4,
+   "heat": 0.4
   },
   {
    "id": "2611.30667",
@@ -2163,8 +2163,8 @@
    "thumb_w": 640,
    "thumb_h": 348,
    "ax_votes": 0,
-   "ax_visits": 7,
-   "heat": 0
+   "ax_visits": 9,
+   "heat": 0.9
   },
   {
    "id": "2611.30658",
@@ -2203,8 +2203,8 @@
    "thumb_w": 465,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 6,
-   "heat": 0
+   "ax_visits": 7,
+   "heat": 0.7
   },
   {
    "id": "2611.30637",
@@ -2245,8 +2245,8 @@
    "thumb_w": 640,
    "thumb_h": 238,
    "ax_votes": 1,
-   "ax_visits": 80,
-   "heat": 3
+   "ax_visits": 81,
+   "heat": 11.1
   },
   {
    "id": "2611.30636",
@@ -2298,8 +2298,8 @@
    "thumb_w": 640,
    "thumb_h": 276,
    "ax_votes": 5,
-   "ax_visits": 72,
-   "heat": 5
+   "ax_visits": 77,
+   "heat": 12.7
   },
   {
    "id": "2611.30632",
@@ -2348,8 +2348,8 @@
    "thumb_w": 640,
    "thumb_h": 423,
    "ax_votes": 0,
-   "ax_visits": 19,
-   "heat": 0
+   "ax_visits": 21,
+   "heat": 2.1
   },
   {
    "id": "2611.30572",
@@ -2416,8 +2416,8 @@
    "thumb_w": 640,
    "thumb_h": 347,
    "ax_votes": 0,
-   "ax_visits": 20,
-   "heat": 0
+   "ax_visits": 22,
+   "heat": 2.2
   },
   {
    "id": "2611.30555",
@@ -2462,8 +2462,8 @@
    "thumb_w": 640,
    "thumb_h": 337,
    "ax_votes": 1,
-   "ax_visits": 20,
-   "heat": 1
+   "ax_visits": 23,
+   "heat": 3.3
   },
   {
    "id": "2611.30550",
@@ -2515,8 +2515,8 @@
    "thumb_w": 640,
    "thumb_h": 228,
    "ax_votes": 0,
-   "ax_visits": 20,
-   "heat": 0
+   "ax_visits": 21,
+   "heat": 2.1
   },
   {
    "id": "2611.30534",
@@ -2565,8 +2565,8 @@
    "thumb_w": 377,
    "thumb_h": 440,
    "ax_votes": 1,
-   "ax_visits": 17,
-   "heat": 1
+   "ax_visits": 18,
+   "heat": 2.8
   },
   {
    "id": "2611.30516",
@@ -2627,8 +2627,8 @@
    "thumb_w": 390,
    "thumb_h": 263,
    "ax_votes": 0,
-   "ax_visits": 11,
-   "heat": 0
+   "ax_visits": 16,
+   "heat": 1.6
   },
   {
    "id": "2611.30511",
@@ -2680,8 +2680,8 @@
    "thumb_w": 640,
    "thumb_h": 234,
    "ax_votes": 0,
-   "ax_visits": 28,
-   "heat": 0
+   "ax_visits": 33,
+   "heat": 3.3
   },
   {
    "id": "2611.30495",
@@ -2723,8 +2723,8 @@
    "thumb_w": 640,
    "thumb_h": 307,
    "ax_votes": 4,
-   "ax_visits": 47,
-   "heat": 18
+   "ax_visits": 53,
+   "heat": 23.3
   },
   {
    "id": "2611.30490",
@@ -2768,8 +2768,8 @@
    "thumb_w": 402,
    "thumb_h": 236,
    "ax_votes": 1,
-   "ax_visits": 65,
-   "heat": 1
+   "ax_visits": 70,
+   "heat": 8.0
   },
   {
    "id": "2611.30477",
@@ -2823,8 +2823,8 @@
    "thumb_w": 640,
    "thumb_h": 265,
    "ax_votes": 1,
-   "ax_visits": 17,
-   "heat": 1
+   "ax_visits": 19,
+   "heat": 2.9
   },
   {
    "id": "2611.30463",
@@ -2855,8 +2855,8 @@
    "thumb_w": 640,
    "thumb_h": 339,
    "ax_votes": 0,
-   "ax_visits": 2,
-   "heat": 0
+   "ax_visits": 4,
+   "heat": 0.4
   },
   {
    "id": "2611.30449",
@@ -2903,8 +2903,8 @@
    "thumb_w": 640,
    "thumb_h": 225,
    "ax_votes": 0,
-   "ax_visits": 15,
-   "heat": 0
+   "ax_visits": 16,
+   "heat": 1.6
   },
   {
    "id": "2611.30438",
@@ -2946,8 +2946,8 @@
    "thumb_w": 640,
    "thumb_h": 406,
    "ax_votes": 0,
-   "ax_visits": 8,
-   "heat": 0
+   "ax_visits": 10,
+   "heat": 1.0
   },
   {
    "id": "2611.30402",
@@ -2980,8 +2980,8 @@
    "thumb_w": 587,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 3,
-   "heat": 0
+   "ax_visits": 5,
+   "heat": 0.5
   },
   {
    "id": "2611.30389",
@@ -3025,8 +3025,8 @@
    "thumb_w": 640,
    "thumb_h": 436,
    "ax_votes": 0,
-   "ax_visits": 6,
-   "heat": 0
+   "ax_visits": 8,
+   "heat": 0.8
   },
   {
    "id": "2611.30363",
@@ -3066,8 +3066,8 @@
    "thumb_w": 640,
    "thumb_h": 410,
    "ax_votes": 0,
-   "ax_visits": 10,
-   "heat": 0
+   "ax_visits": 12,
+   "heat": 1.2
   },
   {
    "id": "2611.30354",
@@ -3101,8 +3101,8 @@
    "thumb_w": 330,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 4,
-   "heat": 0
+   "ax_visits": 5,
+   "heat": 0.5
   },
   {
    "id": "2611.30312",
@@ -3141,8 +3141,8 @@
    "thumb_w": 640,
    "thumb_h": 211,
    "ax_votes": 1,
-   "ax_visits": 36,
-   "heat": 1
+   "ax_visits": 37,
+   "heat": 4.7
   },
   {
    "id": "2611.30310",
@@ -3191,8 +3191,8 @@
    "thumb_w": 640,
    "thumb_h": 276,
    "ax_votes": 0,
-   "ax_visits": 27,
-   "heat": 0
+   "ax_visits": 32,
+   "heat": 3.2
   },
   {
    "id": "2611.30308",
@@ -3238,8 +3238,8 @@
    "thumb_w": 640,
    "thumb_h": 278,
    "ax_votes": 0,
-   "ax_visits": 17,
-   "heat": 0
+   "ax_visits": 18,
+   "heat": 1.8
   },
   {
    "id": "2611.30307",
@@ -3275,8 +3275,8 @@
    "thumb_w": 640,
    "thumb_h": 324,
    "ax_votes": 0,
-   "ax_visits": 21,
-   "heat": 0
+   "ax_visits": 22,
+   "heat": 2.2
   },
   {
    "id": "2611.30291",
@@ -3317,8 +3317,8 @@
    "thumb_w": 639,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 9,
-   "heat": 0
+   "ax_visits": 10,
+   "heat": 1.0
   },
   {
    "id": "2611.30265",
@@ -3355,8 +3355,8 @@
    "thumb_w": 640,
    "thumb_h": 328,
    "ax_votes": 0,
-   "ax_visits": 1,
-   "heat": 0
+   "ax_visits": 2,
+   "heat": 0.2
   },
   {
    "id": "2611.30264",
@@ -3394,8 +3394,8 @@
    "thumb_w": 640,
    "thumb_h": 225,
    "ax_votes": 0,
-   "ax_visits": 8,
-   "heat": 0
+   "ax_visits": 9,
+   "heat": 0.9
   },
   {
    "id": "2611.30254",
@@ -3466,8 +3466,8 @@
    "thumb_w": 640,
    "thumb_h": 386,
    "ax_votes": 1,
-   "ax_visits": 32,
-   "heat": 46
+   "ax_visits": 35,
+   "heat": 49.5
   },
   {
    "id": "2611.30209",
@@ -3507,8 +3507,8 @@
    "thumb_w": 640,
    "thumb_h": 158,
    "ax_votes": 1,
-   "ax_visits": 29,
-   "heat": 1
+   "ax_visits": 30,
+   "heat": 4.0
   },
   {
    "id": "2611.30204",
@@ -3540,8 +3540,8 @@
    "thumb_w": 640,
    "thumb_h": 283,
    "ax_votes": 0,
-   "ax_visits": 5,
-   "heat": 0
+   "ax_visits": 6,
+   "heat": 0.6
   },
   {
    "id": "2611.30188",
@@ -3585,8 +3585,8 @@
    "thumb_w": 640,
    "thumb_h": 351,
    "ax_votes": 0,
-   "ax_visits": 8,
-   "heat": 0
+   "ax_visits": 10,
+   "heat": 1.0
   },
   {
    "id": "2611.30184",
@@ -3626,8 +3626,8 @@
    "thumb_w": 566,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 2,
-   "heat": 0
+   "ax_visits": 4,
+   "heat": 0.4
   },
   {
    "id": "2611.30179",
@@ -3663,8 +3663,8 @@
    "thumb_w": 546,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 0,
-   "heat": 0
+   "ax_visits": 1,
+   "heat": 0.1
   },
   {
    "id": "2611.30178",
@@ -3705,8 +3705,8 @@
    "thumb_h": 382,
    "hf_upvotes": 1,
    "ax_votes": 0,
-   "ax_visits": 8,
-   "heat": 1
+   "ax_visits": 9,
+   "heat": 1.9
   },
   {
    "id": "2611.30173",
@@ -3741,8 +3741,8 @@
    "thumb_w": 640,
    "thumb_h": 229,
    "ax_votes": 0,
-   "ax_visits": 1,
-   "heat": 0
+   "ax_visits": 3,
+   "heat": 0.3
   },
   {
    "id": "2611.30166",
@@ -3774,8 +3774,8 @@
    "thumb_w": 640,
    "thumb_h": 256,
    "ax_votes": 0,
-   "ax_visits": 3,
-   "heat": 0
+   "ax_visits": 5,
+   "heat": 0.5
   },
   {
    "id": "2611.30149",
@@ -3824,8 +3824,8 @@
    "thumb_w": 640,
    "thumb_h": 417,
    "ax_votes": 0,
-   "ax_visits": 10,
-   "heat": 12
+   "ax_visits": 12,
+   "heat": 13.2
   },
   {
    "id": "2611.30145",
@@ -3870,8 +3870,8 @@
    "thumb_w": 640,
    "thumb_h": 302,
    "ax_votes": 1,
-   "ax_visits": 11,
-   "heat": 1
+   "ax_visits": 13,
+   "heat": 2.3
   },
   {
    "id": "2611.30133",
@@ -3909,8 +3909,8 @@
    "thumb_w": 490,
    "thumb_h": 405,
    "ax_votes": 0,
-   "ax_visits": 7,
-   "heat": 0
+   "ax_visits": 10,
+   "heat": 1.0
   },
   {
    "id": "2611.30111",
@@ -3952,8 +3952,8 @@
    "thumb_w": 640,
    "thumb_h": 320,
    "ax_votes": 77,
-   "ax_visits": 803,
-   "heat": 77
+   "ax_visits": 818,
+   "heat": 158.8
   },
   {
    "id": "2611.30101",
@@ -3995,8 +3995,8 @@
    "thumb_w": 640,
    "thumb_h": 339,
    "ax_votes": 1,
-   "ax_visits": 19,
-   "heat": 1
+   "ax_visits": 23,
+   "heat": 3.3
   },
   {
    "id": "2611.30099",
@@ -4035,8 +4035,8 @@
    "thumb_w": 631,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 5,
-   "heat": 0
+   "ax_visits": 6,
+   "heat": 0.6
   },
   {
    "id": "2611.30083",
@@ -4067,8 +4067,8 @@
    "thumb_w": 460,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 7,
-   "heat": 0
+   "ax_visits": 12,
+   "heat": 1.2
   },
   {
    "id": "2611.30078",
@@ -4100,8 +4100,8 @@
    "thumb_w": 640,
    "thumb_h": 270,
    "ax_votes": 0,
-   "ax_visits": 17,
-   "heat": 0
+   "ax_visits": 19,
+   "heat": 1.9
   },
   {
    "id": "2611.30077",
@@ -4137,8 +4137,8 @@
    "thumb_w": 408,
    "thumb_h": 274,
    "ax_votes": 0,
-   "ax_visits": 11,
-   "heat": 0
+   "ax_visits": 13,
+   "heat": 1.3
   },
   {
    "id": "2611.30072",
@@ -4173,8 +4173,8 @@
    "thumb_w": 640,
    "thumb_h": 369,
    "ax_votes": 0,
-   "ax_visits": 8,
-   "heat": 0
+   "ax_visits": 10,
+   "heat": 1.0
   },
   {
    "id": "2611.30064",
@@ -4216,8 +4216,8 @@
    "thumb_w": 640,
    "thumb_h": 411,
    "ax_votes": 0,
-   "ax_visits": 10,
-   "heat": 0
+   "ax_visits": 11,
+   "heat": 1.1
   },
   {
    "id": "2611.30047",
@@ -4258,8 +4258,8 @@
    "thumb_w": 396,
    "thumb_h": 432,
    "ax_votes": 0,
-   "ax_visits": 7,
-   "heat": 0
+   "ax_visits": 8,
+   "heat": 0.8
   },
   {
    "id": "2611.30041",
@@ -4304,8 +4304,8 @@
    "thumb_w": 397,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 24,
-   "heat": 0
+   "ax_visits": 25,
+   "heat": 2.5
   },
   {
    "id": "2611.30026",
@@ -4344,8 +4344,8 @@
    "thumb_w": 429,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 3,
-   "heat": 0
+   "ax_visits": 4,
+   "heat": 0.4
   },
   {
    "id": "2611.30024",
@@ -4388,8 +4388,8 @@
    "thumb_w": 640,
    "thumb_h": 274,
    "ax_votes": 1,
-   "ax_visits": 35,
-   "heat": 1
+   "ax_visits": 41,
+   "heat": 5.1
   },
   {
    "id": "2611.30022",
@@ -4428,8 +4428,8 @@
    "thumb_w": 640,
    "thumb_h": 259,
    "ax_votes": 0,
-   "ax_visits": 18,
-   "heat": 0
+   "ax_visits": 21,
+   "heat": 2.1
   },
   {
    "id": "2611.30007",
@@ -4461,8 +4461,8 @@
    "thumb_w": 429,
    "thumb_h": 440,
    "ax_votes": 0,
-   "ax_visits": 8,
-   "heat": 0
+   "ax_visits": 10,
+   "heat": 1.0
   },
   {
    "id": "2611.30004",
@@ -4508,8 +4508,8 @@
    "thumb_w": 640,
    "thumb_h": 294,
    "ax_votes": 0,
-   "ax_visits": 11,
-   "heat": 0
+   "ax_visits": 12,
+   "heat": 1.2
   },
   {
    "id": "2611.29980",
@@ -4544,8 +4544,8 @@
    "thumb_w": 420,
    "thumb_h": 198,
    "ax_votes": 1,
-   "ax_visits": 24,
-   "heat": 1
+   "ax_visits": 27,
+   "heat": 3.7
   },
   {
    "id": "2611.29947",
@@ -4578,8 +4578,8 @@
    "thumb_w": 640,
    "thumb_h": 359,
    "ax_votes": 0,
-   "ax_visits": 22,
-   "heat": 0
+   "ax_visits": 26,
+   "heat": 2.6
   },
   {
    "id": "2611.29918",
@@ -4612,8 +4612,8 @@
    "thumb_w": 640,
    "thumb_h": 360,
    "ax_votes": 0,
-   "ax_visits": 0,
-   "heat": 0
+   "ax_visits": 1,
+   "heat": 0.1
   },
   {
    "id": "2611.29913",
@@ -4652,8 +4652,8 @@
    "thumb_w": 640,
    "thumb_h": 317,
    "ax_votes": 1,
-   "ax_visits": 6,
-   "heat": 1
+   "ax_visits": 9,
+   "heat": 1.9
   },
   {
    "id": "2611.29912",
@@ -4701,8 +4701,8 @@
    "thumb_w": 640,
    "thumb_h": 316,
    "ax_votes": 3,
-   "ax_visits": 49,
-   "heat": 3
+   "ax_visits": 61,
+   "heat": 9.1
   },
   {
    "id": "2611.29907",
@@ -4743,8 +4743,8 @@
    "thumb_w": 640,
    "thumb_h": 403,
    "ax_votes": 0,
-   "ax_visits": 5,
-   "heat": 0
+   "ax_visits": 6,
+   "heat": 0.6
   },
   {
    "id": "2611.29897",
@@ -4792,8 +4792,8 @@
    "thumb_w": 640,
    "thumb_h": 272,
    "ax_votes": 0,
-   "ax_visits": 57,
-   "heat": 224
+   "ax_visits": 63,
+   "heat": 230.3
   },
   {
    "id": "2611.29886",
@@ -4832,8 +4832,8 @@
    "thumb_w": 640,
    "thumb_h": 245,
    "ax_votes": 0,
-   "ax_visits": 6,
-   "heat": 0
+   "ax_visits": 7,
+   "heat": 0.7
   },
   {
    "id": "2611.29884",
@@ -4871,8 +4871,8 @@
    "thumb_w": 618,
    "thumb_h": 440,
    "ax_votes": 1,
-   "ax_visits": 6,
-   "heat": 1
+   "ax_visits": 8,
+   "heat": 1.8
   },
   {
    "id": "2611.29873",
@@ -4909,8 +4909,8 @@
    "thumb_w": 640,
    "thumb_h": 318,
    "ax_votes": 0,
-   "ax_visits": 7,
-   "heat": 0
+   "ax_visits": 9,
+   "heat": 0.9
   },
   {
    "id": "2611.29868",
@@ -4951,8 +4951,8 @@
    "thumb_w": 640,
    "thumb_h": 396,
    "ax_votes": 0,
-   "ax_visits": 29,
-   "heat": 0
+   "ax_visits": 32,
+   "heat": 3.2
   }
  ]
 }

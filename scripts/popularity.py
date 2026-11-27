@@ -10,7 +10,7 @@ value is kept and the run still succeeds.
 Writes:
   data/popularity.json  cache {id: {hf, ax_votes, ax_visits, checked_at}}; fetch_demo.py
                         merges it back when it rebuilds the day files
-  data/days/*.json      hf_upvotes, ax_votes, ax_visits, heat (= hf + ax_votes) per paper
+  data/days/*.json      hf_upvotes, ax_votes, ax_visits, heat per paper (see heat())
   data/popular.json     the top papers of the last 7 and 30 days by heat
 
     python3 -I scripts/popularity.py --window 30 --workers 4
@@ -84,8 +84,13 @@ def check(pid, old, delay):
     return pid, row, ok
 
 
+# Popularity: an upvote on either site counts 1, ten alphaXiv visits count as one upvote.
+# Visits matter most on a paper's first day, when almost nothing has upvotes yet.
+VISIT_WEIGHT = 0.1
+
+
 def heat(row):
-    return (row.get("hf") or 0) + (row.get("ax_votes") or 0)
+    return round((row.get("hf") or 0) + (row.get("ax_votes") or 0) + VISIT_WEIGHT * (row.get("ax_visits") or 0), 1)
 
 
 def apply(paper, row):

@@ -203,7 +203,8 @@ def main():
             if row:
                 paper["ax_votes"] = row.get("ax_votes") or 0
                 paper["ax_visits"] = row.get("ax_visits") or 0
-            paper["heat"] = hf_up + (row.get("ax_votes") or 0)
+            # same formula as heat() in popularity.py
+            paper["heat"] = round(hf_up + (row.get("ax_votes") or 0) + 0.1 * (row.get("ax_visits") or 0), 1)
             extra = enrich.get(paper["id"])
             if extra:
                 paper["orgs"] = extra.get("orgs", [])

@@ -208,6 +208,7 @@ def main():
     ap.add_argument("--fallback", default=FALLBACK)
     ap.add_argument("--limit", type=int, default=0, help="process at most N papers (0 = all)")
     ap.add_argument("--workers", type=int, default=1)
+    ap.add_argument("--top", type=int, default=50, help="per day, only the N most popular papers (0 = all)")
     ap.add_argument("--delay", type=float, default=4.0, help="seconds between requests (free-tier rate limits)")
     ap.add_argument("--compare", default="", help="comma-separated models: write compare.json/.md, change no data")
     ap.add_argument("--out", default="compare.json")
@@ -233,6 +234,12 @@ def main():
             compare(models, sample(papers, args.limit or 10), key, Path(args.out), args.delay)
             return
 
+        if args.top:  # only each day's most popular papers (heat from popularity.py)
+            wanted = set()
+            for day in days.values():
+                ranked = sorted(enumerate(day["papers"]), key=lambda x: (-(x[1].get("heat") or 0), x[0]))
+                wanted.update(p["id"] for _, p in ranked[: args.top])
+            papers = [p for p in papers if p["id"] in wanted]
         todo = [p for p in papers if cache.get(p["id"], {}).get("v") not in
                 {prompt_version(args.model), prompt_version(args.fallback)}]
         if args.limit:
