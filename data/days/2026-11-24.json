@@ -29,7 +29,10 @@
    "updated": "2026-11-24T13:37:54Z",
    "comment": "",
    "tags": [
-    "VLM/LLM"
+    "agents",
+    "LLM",
+    "reasoning",
+    "efficiency"
    ],
    "ax_votes": 106,
    "ax_visits": 1645,
@@ -42,7 +45,7 @@
     },
     {
      "logo": "data/logos/berkeley.edu.png",
-     "name": "UC Berkeley",
+     "name": "University of California, Berkeley",
      "ror": "01an7q238"
     },
     {
@@ -50,14 +53,19 @@
      "name": "NVIDIA"
     },
     {
-     "logo": "data/logos/northwestern.edu.png",
      "name": "Northwestern University",
-     "ror": "000e0be47"
+     "ror": "000e0be47",
+     "logo": "data/logos/northwestern.edu.png"
     }
    ],
    "thumb": "data/thumbs/2611.32606.jpg",
    "thumb_w": 640,
-   "thumb_h": 281
+   "thumb_h": 281,
+   "summary": {
+    "zh": "等算力阶梯（equal-budget ladder），在单智能体、算力对齐多数投票与算力对齐 pass@n 三级上衡量多智能体团队，并定义 Recursive Collective Intelligence（RCI）：无教师、无外部标签，团队用自身输出让下一代同等成本更聪明；转发拆分事实可在 27B 上超 pass@n 约三分之一，同质 27B 智能体自发形成枢纽使准确率提升 18 个百分点，两代无标签训练在 PlanBench、HiddenBench、Hanabi 上连续 4–6 代优于前代。",
+    "en": "The equal-budget ladder grades multi-agent LLM teams against a single agent, compute-matched majority vote, and pass@n; recursively self-trained groups, which forward split facts, beat pass@n by ~1/3 at 27B, gain 18 points from emergent hubs, and improve for 4-6 generations."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.33102",
@@ -81,7 +89,9 @@
    "updated": "2026-11-25T18:46:02Z",
    "comment": "Preprint. 23 pages, 20 figures, 7 tables",
    "tags": [
-    "RL"
+    "RL",
+    "LLM",
+    "efficiency"
    ],
    "ax_votes": 40,
    "ax_visits": 751,
@@ -91,9 +101,9 @@
      "name": "Tufa Labs"
     },
     {
-     "logo": "data/logos/harvard.edu.png",
      "name": "Harvard University",
-     "ror": "03vek6s52"
+     "ror": "03vek6s52",
+     "logo": "data/logos/harvard.edu.png"
     },
     {
      "logo": "data/logos/illinois.edu.png",
@@ -103,7 +113,12 @@
    ],
    "thumb": "data/thumbs/2611.33102.jpg",
    "thumb_w": 566,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "研究RL后训练产生的rollout中保留多少知识，发现直接用最大似然拟合归档rollout（maximum likelihood replay），不区分对错、按生成顺序回放，即可复现在线RL的性能，单次更新即可追踪完整学习曲线。",
+    "en": "Investigating how much RL-acquired knowledge persists in rollouts, maximum likelihood replay that fits archived rollouts in generation order without distinguishing correct responses matches online RL performance."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.32884",
@@ -123,9 +138,10 @@
    "updated": "2026-11-24T16:17:51Z",
    "comment": "",
    "tags": [
+    "agents",
     "RL",
-    "VLM/LLM",
-    "benchmark"
+    "reasoning",
+    "VLM"
    ],
    "hf_upvotes": 64,
    "ax_votes": 3,
@@ -139,7 +155,12 @@
    ],
    "thumb": "data/thumbs/2611.32884.jpg",
    "thumb_w": 330,
-   "thumb_h": 188
+   "thumb_h": 188,
+   "summary": {
+    "zh": "RLVB 利用训练时模拟器可算出的答案后验，奖励智能体在后验仍含多个候选时继续探索、证据充分时提交答案，无需评判器或奖励模型；在三个视觉谜题基准的九个设置上平均超过基模型 17.1%，比使用 LLM 评判过程奖励的 PPO 高 9.3% 且省 1.6 倍 GPU 时。",
+    "en": "RLVB rewards agents for continuing while the simulator's exact answer posterior still admits multiple options and committing once evidence suffices, requiring no judge or reward model; it beats base models by 17.1% on average across nine settings and LLM-judge PPO by 9.3% with 1.6x fewer GPU-hours."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.33144",
@@ -175,16 +196,16 @@
    "updated": "2026-11-24T18:56:44Z",
    "comment": "23 pages, 9 figures, 7 tables. Project page: https://vme0522.github.io/PyRUA-Dex/",
    "tags": [
-    "dexterous",
-    "bimanual",
+    "robotics",
     "manipulation",
-    "simulation"
+    "agents",
+    "code"
    ],
    "summary": {
-    "en": "PyRUA-Dex enables coding agents to learn dexterous bimanual manipulation without demonstrations, achieving 72.9 on Bench2Dex and 81.0% success on DexJoCo while efficiently learning piano and calligraphy in the real world.",
-    "zh": "PyRUA-Dex 框架利用编码智能体通过程序化策略实现具身双臂灵巧操作，无需高质量示范。该方法在 Bench2Dex 上取得了 72.9 的 SOTA 分数，并在 DexJoCo 全随机化下达到 81.0% 的成功率。真实世界双臂 22 自由度手部实验表明，它能高效完成弹钢琴和写书法等任务，学习新曲谱仅需 30 分钟。"
+    "zh": "PyRUA-Dex 让编码智能体无需高质量示教即可为双手灵巧操作编写程序化策略：先并行探索技能与组合方式，再由蒸馏智能体压缩成任务库和一段程序，最后用随机布局提升鲁棒性与效率；在 Bench2Dex 上取得 72.9 的 SOTA 分数，DexJoCo 完全随机化下成功率 81.0%，真机 22 自由度双手平台学一首钢琴曲最快约 30 分钟。",
+    "en": "PyRUA-Dex lets coding agents build programmatic dexterous bimanual policies without demonstrations, distilling parallel exploration into a task library and program, then refining with randomized layouts; it scores 72.9 SOTA on Bench2Dex and 81.0% on DexJoCo."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 42,
    "ax_votes": 3,
    "ax_visits": 116,
@@ -196,8 +217,21 @@
      "ror": "02v51f717"
     },
     {
+     "name": "NUS",
+     "ror": "01tgyzw49"
+    },
+    {
+     "logo": "data/logos/nvidia.com.png",
+     "name": "NVIDIA"
+    },
+    {
      "name": "Tongji University",
      "ror": "03rc6as71"
+    },
+    {
+     "name": "University of Chicago",
+     "ror": "024mw5h28",
+     "logo": "data/logos/uchicago.edu.png"
     }
    ],
    "thumb": "data/thumbs/2611.33144.jpg",
@@ -231,33 +265,35 @@
    "updated": "2026-11-25T10:18:21Z",
    "comment": "",
    "tags": [
+    "robotics",
+    "multimodal",
     "manipulation",
-    "imitation",
-    "simulation",
-    "diffusion policy"
+    "pretraining"
    ],
    "summary": {
-    "en": "OmniAct is a cross-embodiment manipulation policy conditioning on robot kinematics and scene geometry to predict relative joint motions using flow-matching, achieving 63.0% success on held-out evaluations and outperforming baselines.",
-    "zh": "OmniAct是一种直接根据机器人在特定场景中的运动学进行条件化的跨具身操作策略，通过流匹配策略预测相对关节运动。在2000个具身-场景测试集上取得63.0%的成功率，优于pi0.5的17.8%和最强基线的57.9%，并在真实世界机器人上实现了接近次优方法两倍的成功率。"
+    "zh": "OmniAct 用运动学图将机器人关节位置、运动轴与视觉观测关联，以 flow-matching 策略预测各节点相对关节运动；在 100 万个程序化生成的可行机体上训练后，100 万机体规模下的留出评估成功率达 63.0%，远超 pi 0.5 的 17.8% 和最强基线 57.9%，在未见真实机器人上成功率约为次优方法 MolmoAct2 的两倍。",
+    "en": "OmniAct conditions a flow-matching policy on per-robot kinematic graphs linking joints, motion axes and vision, trained on one million procedural embodiments; it reaches 63.0% success versus 17.8% for pi 0.5 and roughly doubles MolmoAct2 on an unseen real robot."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 1,
    "ax_votes": 23,
    "ax_visits": 295,
    "heat": 53.5,
    "orgs": [
     {
-     "logo": "data/logos/washington.edu.png",
      "name": "University of Washington",
-     "ror": "00cvxb145"
+     "ror": "00cvxb145",
+     "logo": "data/logos/washington.edu.png"
     },
     {
-     "logo": "data/logos/allenai.org.png",
      "name": "Allen Institute for Artificial Intelligence",
-     "ror": "05w520734"
+     "ror": "05w520734",
+     "logo": "data/logos/allenai.org.png"
     },
     {
-     "name": "University of North Carolina"
+     "logo": "data/logos/unc.edu.png",
+     "name": "University of North Carolina at Chapel Hill",
+     "ror": "0130frc33"
     },
     {
      "name": "NUS",
@@ -306,8 +342,10 @@
    "updated": "2026-11-24T08:35:12Z",
    "comment": "NeurIPS 2026. Project page: https://thinkmorph.github.io/ssl/",
    "tags": [
-    "imitation",
-    "benchmark"
+    "multimodal",
+    "reasoning",
+    "pretraining",
+    "VLM"
    ],
    "hf_upvotes": 21,
    "ax_votes": 10,
@@ -315,9 +353,9 @@
    "heat": 45.7,
    "orgs": [
     {
-     "logo": "data/logos/washington.edu.png",
      "name": "University of Washington",
-     "ror": "00cvxb145"
+     "ror": "00cvxb145",
+     "logo": "data/logos/washington.edu.png"
     },
     {
      "name": "NUS",
@@ -329,14 +367,19 @@
      "ror": "02zhqgq86"
     },
     {
-     "logo": "data/logos/rochester.edu.png",
      "name": "University of Rochester",
-     "ror": "022kthw22"
+     "ror": "022kthw22",
+     "logo": "data/logos/rochester.edu.png"
     }
    ],
    "thumb": "data/thumbs/2611.32183.jpg",
    "thumb_w": 640,
-   "thumb_h": 395
+   "thumb_h": 395,
+   "summary": {
+    "zh": "ThinkMorph-SSL 用图像自监督构建无指令的交错推理轨迹，把上色、去噪等视觉 pretext 任务转成“描述-生成-解读”流程，再做自动演示指令微调，在十二个基准上平均比基座模型高 11.33 个点。",
+    "en": "ThinkMorph-SSL turns visual pretext tasks like colorization and denoising into instruction-free interleaved reasoning traces, followed by auto-built demonstration tuning, gaining 11.33 points over the base model across twelve benchmarks."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.33010",
@@ -363,24 +406,25 @@
    "comment": "Code: https://github.com/iPPLab/robodojo-mirror",
    "code_url": "https://github.com/iPPLab/robodojo-mirror",
    "tags": [
-    "manipulation",
+    "robotics",
+    "VLA",
     "benchmark",
-    "perception"
+    "manipulation"
    ],
    "summary": {
-    "en": "We introduce RoboDojo-Mirror to evaluate robot policies in mirrored environments, revealing that five mainstream policies suffer a 10.8 to 56.7 percentage point drop in success rates due to spatial mislocalization rather than collisions.",
-    "zh": "引入RoboDojo-Mirror基准测试来评估具身机器人策略在镜面环境下的表现，结果表明五种主流策略在镜面条件下的成功率显著下降，下降幅度达10.8至56.7个百分点，主要归因于空间定位错误而非物理碰撞。"
+    "zh": "RoboDojo-Mirror 基准在无镜、单镜、双镜和镜面桌面条件下对比五种 VLA、世界动作模型和 agent 策略，平均成功率下降 10.8–56.7 个百分点，镜面桌面下最多降 62.5 个百分点；几何匹配的非反射面板对照显示 50–88% 的镜面相关失败并无接触，归因于反射物幻影定位与真实物体空间错位。",
+    "en": "RoboDojo-Mirror benchmarks five VLA, world-action and agentic policies under mirror conditions, cutting success by 10.8-56.7 points (up to 62.5 on mirrored tabletops), with failures linked to reflected-object phantom targeting."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 34,
    "ax_votes": 5,
    "ax_visits": 56,
    "heat": 44.6,
    "orgs": [
     {
-     "logo": "data/logos/gouni.edu.ng.png",
-     "name": "Godfrey Okoye University",
-     "ror": "04japw488"
+     "logo": "data/logos/pku.edu.cn.png",
+     "name": "Peking University",
+     "ror": "02v51f717"
     }
    ],
    "thumb": "data/thumbs/2611.33010.jpg",
@@ -407,7 +451,12 @@
    "published": "2026-11-24T13:07:46Z",
    "updated": "2026-11-24T13:07:46Z",
    "comment": "Project page: https://yangcaoai.github.io/PartAgent_ProjectPage/",
-   "tags": [],
+   "tags": [
+    "3D",
+    "segmentation",
+    "agents",
+    "multimodal"
+   ],
    "hf_upvotes": 36,
    "ax_votes": 2,
    "ax_visits": 32,
@@ -428,12 +477,18 @@
      "ror": "0030zas98"
     },
     {
-     "name": "Sun Yat-sen University yangcaoai.github.io/PartAgent_ProjectPage/"
+     "name": "Sun Yat-sen University",
+     "ror": "0064kty71"
     }
    ],
    "thumb": "data/thumbs/2611.32554.jpg",
    "thumb_w": 640,
-   "thumb_h": 362
+   "thumb_h": 362,
+   "summary": {
+    "zh": "PartAgent 是免训练的智能体式 3D 部件分割框架，通过结构-语义专家集成融合 3D 区域提议与多视角 2D 语义线索，并用观测驱动的闭环细化选择检查、修复或重组动作；在 PartObjaverse-Tiny-WT 上达 68.41 mIoU，领先最强对比方法 8.53 点，在四个数据集上平均 69.36。",
+    "en": "PartAgent is a training-free agentic framework for 3D part segmentation that integrates 3D region proposals with multiview 2D semantic cues and applies observation-driven closed-loop refinement; it reaches 68.41 mIoU on PartObjaverse-Tiny-WT, 8.53 points above the strongest competitor."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.33148",
@@ -452,6 +507,9 @@
    "updated": "2026-11-24T18:58:53Z",
    "comment": "",
    "tags": [
+    "LLM",
+    "agents",
+    "reasoning",
     "RL"
    ],
    "hf_upvotes": 17,
@@ -460,9 +518,9 @@
    "heat": 37.2,
    "orgs": [
     {
-     "logo": "data/logos/utn.de.png",
      "name": "University of Technology Nuremberg",
-     "ror": "02sv65x64"
+     "ror": "02sv65x64",
+     "logo": "data/logos/utn.de.png"
     },
     {
      "logo": "data/logos/nvidia.com.png",
@@ -471,7 +529,12 @@
    ],
    "thumb": "data/thumbs/2611.33148.jpg",
    "thumb_w": 618,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "仅用教师模型动作轨迹蒸馏长程策略，学生推理块留空并加KL回放约束，跨格式迁移使Qwen3-4B在AppWorld上从7%升至18%，加CoT-proxies可达35%；蒸馏GPT-5.6 Luna的可见输出使Qwen3-4B升至48%，SWE-bench Verified升至28%。",
+    "en": "Distilling long-horizon policies from teacher actions alone with empty reasoning blocks enables cross-format transfer, boosting Qwen3-4B on AppWorld from 7% to 18%, and to 48% with CoT-proxies and GPT-5.6 Luna outputs."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.32973",
@@ -500,6 +563,8 @@
    "updated": "2026-11-24T17:07:54Z",
    "comment": "31 pages, 3figures",
    "tags": [
+    "code",
+    "agents",
     "benchmark"
    ],
    "hf_upvotes": 15,
@@ -508,12 +573,26 @@
    "heat": 30.8,
    "orgs": [
     {
+     "name": "TokenWave AI"
+    },
+    {
+     "name": "Independent Researcher"
+    },
+    {
      "name": "University of Tokyo"
+    },
+    {
+     "name": "Monolith Management"
     }
    ],
    "thumb": "data/thumbs/2611.32973.jpg",
    "thumb_w": 618,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "SpecEngineeringBench 用 78 个开源 Python 仓库的 100 个实例评测编码 agent 的自主规格工程能力：生成测试套件与执行分析定位缺陷；七个前沿 agent 的 Head Pass Rate 达 91.47%，但 Fail-to-Pass Rate 仅 26.36%，函数级定位召回从文件级 78.11% 降至 51.29%。",
+    "en": "SpecEngineeringBench evaluates coding agents on autonomous spec engineering with 100 instances from 78 Python repos; seven agents reach 91.47% Head Pass Rate but only 26.36% Fail-to-Pass and 51.29% function-level localization recall."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.32736",
@@ -556,15 +635,29 @@
    "published": "2026-11-24T14:52:10Z",
    "updated": "2026-11-24T14:52:10Z",
    "comment": "",
-   "tags": [],
+   "tags": [
+    "image generation",
+    "diffusion",
+    "efficiency"
+   ],
    "hf_upvotes": 22,
    "ax_votes": 0,
    "ax_visits": 55,
    "heat": 27.5,
-   "orgs": [],
+   "orgs": [
+    {
+     "logo": "data/logos/alibaba.com.png",
+     "name": "Alibaba"
+    }
+   ],
    "thumb": "data/thumbs/2611.32736.jpg",
    "thumb_w": 640,
-   "thumb_h": 343
+   "thumb_h": 343,
+   "summary": {
+    "zh": "Qwen-Image-HD 通过局部训练与分块自回归生成，将 Qwen-Image 2.0 适配到高分辨率合成，每个 1K 目标块以高分辨率上邻、左邻和压缩历史缩略图为条件，在 Qwen-Image-Bench 4K 上整体优于 FLUX-3-Image-Klein 直接生成，且训练算力更低、推理更快、重复条纹更少。",
+    "en": "Qwen-Image-HD adapts Qwen-Image 2.0 to high-resolution synthesis via local training and blockwise autoregressive generation, each 1K tile conditioned on high-res upper/left neighbors and a compressed thumbnail; it outperforms FLUX-3-Image-Klein direct 4K generation on Qwen-Image-Bench with lower training compute and faster inference."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.31974",
@@ -593,7 +686,10 @@
    "updated": "2026-11-24T05:24:32Z",
    "comment": "Project Page: https://coding4game.github.io/",
    "tags": [
-    "benchmark"
+    "agents",
+    "code",
+    "benchmark",
+    "reasoning"
    ],
    "hf_upvotes": 15,
    "ax_votes": 4,
@@ -601,17 +697,30 @@
    "heat": 24.7,
    "orgs": [
     {
-     "logo": "data/logos/tencent.com.png",
-     "name": "Tencent"
+     "name": "Tencent",
+     "logo": "data/logos/tencent.com.png"
+    },
+    {
+     "name": "Great Bay University",
+     "ror": "01hdgge16"
     },
     {
      "name": "Beijing Jiaotong University",
      "ror": "01yj56c84"
+    },
+    {
+     "name": "Nanjing University",
+     "ror": "01rxvg760"
     }
    ],
    "thumb": "data/thumbs/2611.31974.jpg",
    "thumb_w": 640,
-   "thumb_h": 346
+   "thumb_h": 346,
+   "summary": {
+    "zh": "Coding4Games 基准测试考察 coding agents 能否通过在沙盒中使用标准玩家接口反复迭代，开发出仅凭视觉观察和标准输入就能自主玩现代游戏的程序；在 15 款游戏中，每款游戏的最佳程序有 13 款得分高于最强的 GUI baseline、1 款持平，人类玩家在 10 款中仍领先。",
+    "en": "Coding4Games benchmarks whether coding agents can iteratively build standalone programs that play 15 modern games from visual input and standard controls; best per-game programs beat the strongest GUI baseline on 13 and tie on one."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.32649",
@@ -640,16 +749,16 @@
    "comment": "Project page: https://iclworld.github.io Code: https://github.com/ICLWorld/ICLWorld Dataset: https://huggingface.co/datasets/Aoraku/ICLWorld",
    "code_url": "https://github.com/ICLWorld/ICLWorld",
    "tags": [
+    "agents",
     "benchmark",
-    "dataset",
-    "perception",
-    "planning"
+    "multimodal",
+    "robotics"
    ],
    "summary": {
-    "en": "ICLWorld evaluates agent in-context learning across digital and physical worlds with 30 environments and 160 tasks, showing frontier models achieve up to 82% success in computer use but only 27% in robot use.",
-    "zh": "ICLWorld是一个涵盖数字和物理世界的在线基准测试，包含30个环境和160个任务，用于评估智能体的上下文学习能力。实验表明，最强智能体Claude Opus 5.5和GPT-6 Astra在计算机使用任务上的成功率分别为82%和76%，但在机器人任务上仅为27%和26%。"
+    "zh": "ICLWorld 是覆盖电脑操作与机器人操作的在线基准，用 UIverse 把 30 个环境统一为界面，含 630 段演示视频和 160 个任务；Claude Opus 5.5、GPT-6 Astra 在电脑任务成功率 82%/76%，机器人任务仅 27%/26%。",
+    "en": "ICLWorld is an online benchmark spanning computer and robot use, with UIverse unifying 30 environments, 630 demos and 160 tasks; top agents score 82%/76% on computer tasks but only 27%/26% on robot tasks."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 21,
    "ax_votes": 0,
    "ax_visits": 35,
@@ -684,7 +793,12 @@
    "updated": "2026-11-24T21:30:09Z",
    "comment": "29 pages",
    "code_url": "https://github.com/showlab/Play2Evolve",
-   "tags": [],
+   "tags": [
+    "agents",
+    "code",
+    "video generation",
+    "benchmark"
+   ],
    "hf_upvotes": 21,
    "ax_votes": 0,
    "ax_visits": 13,
@@ -701,7 +815,12 @@
    ],
    "thumb": "data/thumbs/2611.33457.jpg",
    "thumb_w": 640,
-   "thumb_h": 328
+   "thumb_h": 328,
+   "summary": {
+    "zh": "Play2Evolve 以可玩性为反馈，用三段式递归框架（初始化、精炼、进化）让智能体试玩诊断功能、视觉与玩法问题，并结合视频生成模型产出素材，在 GameCraft-Bench 上得 60.05，高于 Game Initialization 的 50.81 和 Play2Code 的 52.46，人工整体质量评分 3.67。",
+    "en": "Play2Evolve uses playfulness as feedback in a recursive initialize-refine-evolve framework where agents playtest games, diagnose functionality, visuals and gameplay, and pair video generation with code; it scores 60.05 on GameCraft-Bench versus 50.81 and 52.46, with human ratings of 3.67."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.32198",
@@ -727,8 +846,10 @@
    "updated": "2026-11-24T08:45:41Z",
    "comment": "Project Page: https://microsoft.github.io/MoGe-4D",
    "tags": [
-    "VLM/LLM",
-    "benchmark"
+    "3D",
+    "world model",
+    "efficiency",
+    "dataset"
    ],
    "ax_votes": 10,
    "ax_visits": 121,
@@ -739,14 +860,27 @@
      "ror": "04c4dkn09"
     },
     {
+     "name": "Microsoft",
+     "logo": "data/logos/microsoft.com.png"
+    },
+    {
      "logo": "data/logos/cas.cn.png",
      "name": "Chinese Academy of Sciences",
      "ror": "034t30j35"
+    },
+    {
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
     }
    ],
    "thumb": "data/thumbs/2611.32198.jpg",
    "thumb_w": 640,
-   "thumb_h": 405
+   "thumb_h": 405,
+   "summary": {
+    "zh": "MoGe-4D 用成对 allocentric/egocentric 动态点图的有序查询统一几何与运动预测，以闭式解求相机位姿并支持深度、动态配准与稠密 3D 跟踪；配合 RigIDTrack 合成数据管线（轨迹存储仅约 15% 开销），在多个基准上取得最优稠密 3D 跟踪，重建性能媲美专用 3D 基础模型且速度显著快于以往 4D 方法。",
+    "en": "MoGe-4D unifies geometry and motion prediction via ordered queries of paired allocentric and egocentric dynamic point maps, using a cached context encoder and lightweight query decoder; with the RigIDTrack dataset, it achieves state-of-the-art dense 3D tracking and fast 4D reconstruction."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.32067",
@@ -767,7 +901,12 @@
    "updated": "2026-11-24T06:55:42Z",
    "comment": "Project page: https://siruuui.github.io/LoopDVR/ ; Github Repo: https://github.com/Intellindust-AI-Lab/LoopDVR",
    "code_url": "https://github.com/Intellindust-AI-Lab/LoopDVR",
-   "tags": [],
+   "tags": [
+    "efficiency",
+    "detection",
+    "segmentation",
+    "pretraining"
+   ],
    "hf_upvotes": 10,
    "ax_votes": 3,
    "ax_visits": 44,
@@ -776,11 +915,19 @@
     {
      "name": "Great Bay University",
      "ror": "01hdgge16"
+    },
+    {
+     "name": "Intellindust AI Lab"
     }
    ],
    "thumb": "data/thumbs/2611.32067.jpg",
    "thumb_w": 640,
-   "thumb_h": 292
+   "thumb_h": 292,
+   "summary": {
+    "zh": "LoopDVR 按层间表示差异划分共享组，将 ViT 骨干与 Transformer 解码器中的块跨层复用，并以组末层预训练权重初始化、配合逐层 Loop Adapter 保留深度特有变换，再经表示蒸馏训练；参数减少约 28% 且精度相当，LoopDet-S 以 7.0M 参数取得 50.9 box AP。",
+    "en": "LoopDVR reuses Transformer blocks across ViT backbone and decoder layers via representation-dissimilarity-based sharing groups, terminal-layer initialization, and per-layer Loop Adapters; it cuts parameters ~28% at comparable accuracy, with LoopDet-S reaching 50.9 box AP using 7.0M parameters."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.33143",
@@ -808,15 +955,15 @@
    "comment": "Project page: https://rxjfighting.github.io/ROAM-Bench/",
    "tags": [
     "benchmark",
-    "perception",
-    "navigation",
-    "VLM/LLM"
+    "agents",
+    "multimodal",
+    "reasoning"
    ],
    "summary": {
-    "en": "ROAM-Bench evaluates embodied active spatial intelligence across 250 tasks in 27 environments, revealing two complementary failure modes in seven frontier vision-language models.",
-    "zh": "ROAM-Bench通过独立检查机制评估具身主动空间智能，包含27个室内环境中的250个任务，涵盖搜索、计数与几何判断等五大类，揭示了当前七个前沿视觉语言模型在任务需求与结果判定上的两类互补失效模式。"
+    "zh": "ROAM-Bench 在机器人运动与碰撞约束下评测具身主动空间智能，含 5 组 11 类共 250 个任务、27 个室内环境，用仿真状态和 episode 记录独立核验结果与任务要求；人类严格成功率达 84%，七个前沿 VLM 暴露出两类互补失败模式。",
+    "en": "ROAM-Bench evaluates embodied active spatial intelligence under robot motion and collision constraints with 250 tasks across 27 indoor environments, using simulation states and episode records to independently verify outcomes and task requirements; humans reach 84% strict success while seven frontier VLMs show two complementary failure modes."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 15,
    "ax_votes": 0,
    "ax_visits": 8,
@@ -828,7 +975,18 @@
      "ror": "02zhqgq86"
     },
     {
-     "name": "Innovation Institute"
+     "name": "University of Electronic Science and Technology of China",
+     "ror": "04qr3zq92"
+    },
+    {
+     "logo": "data/logos/sii.edu.cn.png",
+     "name": "Shanghai Innovation Institute",
+     "ror": "01fatbw66"
+    },
+    {
+     "name": "JD.com",
+     "ror": "01dkjkq64",
+     "logo": "data/logos/jd.com.png"
     }
    ],
    "thumb": "data/thumbs/2611.33143.jpg",
@@ -854,7 +1012,11 @@
    "published": "2026-11-24T15:35:58Z",
    "updated": "2026-11-24T15:35:58Z",
    "comment": "Project page: https://residual-guidance.github.io",
-   "tags": [],
+   "tags": [
+    "video generation",
+    "efficiency",
+    "image generation"
+   ],
    "hf_upvotes": 10,
    "ax_votes": 2,
    "ax_visits": 24,
@@ -864,11 +1026,19 @@
      "logo": "data/logos/kaist.ac.kr.png",
      "name": "KAIST",
      "ror": "05apxxy63"
+    },
+    {
+     "name": "POSTECH"
     }
    ],
    "thumb": "data/thumbs/2611.32820.jpg",
    "thumb_w": 537,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "Residual Guidance (RG) 是一种免训练方法，通过在缓存外对新 prompt 下的上一 chunk 去噪得到残差并注入下一 chunk 的早期去噪步，缓解流式视频生成中的 context inertia，在单次和多次切换设置下显著提升现有模型的 prompt 切换能力并基本保持画质。",
+    "en": "Residual Guidance (RG) is a training-free method that denoises the re-noised previous chunk without cache under the new prompt and adds the residual to early denoising steps of the next chunk, mitigating context inertia and substantially improving prompt switching in streaming video generation."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.33054",
@@ -892,18 +1062,38 @@
    "comment": "Website: http://embodisafety.github.io/",
    "tags": [
     "benchmark",
-    "perception",
-    "planning"
+    "safety",
+    "robotics",
+    "agents"
    ],
    "summary": {
-    "en": "EmbodiSafety benchmarks embodied model risk understanding across 1,632 tasks, where Claude-Opus-5.5 achieves the highest complete decision accuracy of 56.1% on snapshots and 61.5% on trajectories.",
-    "zh": "EmbodiSafety基准测试包含1092个快照任务和540个轨迹任务，评估具身模型对环境风险的理解和安全响应；Claude-Opus-5.5在快照和轨迹任务上分别达到56.1%和61.5%的完整决策准确率，监督训练则提升了Qwen模型的安全性。"
+    "zh": "EmbodiSafety 构建 844 个视觉场景下的 1092 个快照任务和 540 个轨迹任务，覆盖直接执行、拒绝、澄清、受限执行、自主恢复、人工上报六种响应模式，评估具身模型的风险理解与安全决策；Claude-Opus-5.5 完整决策准确率最高，在快照任务和轨迹任务上分别达到 56.1% 和 61.5%，用 4 万条对齐数据监督训练可提升 Qwen3.5-2B/4B 的表现。",
+    "en": "EmbodiSafety benchmarks embodied safety with 1,092 snapshot and 540 trajectory tasks across 844 scenes and six response modes; Claude-Opus-5.5 leads at 56.1% and 61.5% complete decision accuracy, and 40k alignment examples improve Qwen3.5-2B/4B."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "ax_votes": 3,
    "ax_visits": 112,
    "heat": 14.2,
-   "orgs": [],
+   "orgs": [
+    {
+     "logo": "data/logos/hku.hk.png",
+     "name": "HKU",
+     "ror": "02zhqgq86"
+    },
+    {
+     "name": "Shanghai Jiao Tong University",
+     "ror": "0220qvk04"
+    },
+    {
+     "logo": "data/logos/hkust.edu.hk.png",
+     "name": "HKUST",
+     "ror": "00q4vv597"
+    },
+    {
+     "name": "Shenzhen University",
+     "ror": "01vy4gh70"
+    }
+   ],
    "thumb": "data/thumbs/2611.33054.jpg",
    "thumb_w": 640,
    "thumb_h": 262
@@ -940,7 +1130,12 @@
    "published": "2026-11-24T11:58:12Z",
    "updated": "2026-11-24T11:58:12Z",
    "comment": "20 pages, 11 figures",
-   "tags": [],
+   "tags": [
+    "image generation",
+    "multimodal",
+    "agents",
+    "3D"
+   ],
    "hf_upvotes": 14,
    "ax_votes": 0,
    "ax_visits": 21,
@@ -971,11 +1166,24 @@
      "logo": "data/logos/hku.hk.png",
      "name": "HKU",
      "ror": "02zhqgq86"
+    },
+    {
+     "name": "Nanjing University",
+     "ror": "01rxvg760"
+    },
+    {
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
     }
    ],
    "thumb": "data/thumbs/2611.32462.jpg",
    "thumb_w": 310,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "MAGPIE 将多参考图像生成的目标构图表示为可执行的 Blender 程序，由编码智能体把每个实例与对应参考图绑定，并检查几何和渲染视角、迭代修正程序，再用代理渲染作为视觉计划训练生成器；在 DreamOmni2 和 SconeEval 上同时提升 Qwen 与 FLUX，FLUX 版本在 DreamOmni2 上总体成功率较原骨干提升 28.21 个百分点。",
+    "en": "MAGPIE encodes multi-reference image compositions as executable Blender programs, with a coding agent binding instances to references and revising geometry, then trains generators on the proxy rendering; FLUX gains 28.21 points on DreamOmni2."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.32654",
@@ -1000,28 +1208,46 @@
    "updated": "2026-11-24T14:09:49Z",
    "comment": "",
    "tags": [
-    "manipulation",
-    "dexterous",
+    "robotics",
+    "VLA",
     "world model",
-    "imitation"
+    "RL"
    ],
    "summary": {
-    "en": "DexWAC unifies a world model, actor, and critic in a single stage for dexterous manipulation, achieving a 75% average success rate on real tasks and outperforming baseline models.",
-    "zh": "DexWAC通过将动作条件世界模型、行动者和自举评论家统一在一个预训练阶段，实现了高效的灵巧操作。它基于图像编辑骨干网络预测未来视觉表征与奖励，在两个真实世界任务上达到了75%的平均成功率，超越了45%的π₀.₅。"
+    "zh": "DexWAC 将 actor、动作条件世界模型与 bootstrapped critic 统一在一次机器人预训练中联合学习；世界模型基于图像编辑骨干，直接预测每个动作块终点的视觉隐变量、本体感受、奖励与延续信号，无需生成中间视频帧；在真实任务上平均成功率达 75%，高于 π0.5 的 45%。",
+    "en": "DexWAC jointly learns an actor, action-conditioned world model, and bootstrapped critic in one robot pretraining stage; its image-editing world model predicts chunk-endpoint latents and rewards without intermediate frames, reaching 75% real-world success versus π0.5's 45%."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "ax_votes": 6,
    "ax_visits": 79,
    "heat": 13.9,
    "orgs": [
     {
-     "logo": "data/logos/epfl.ch.png",
-     "name": "EPFL",
-     "ror": "02s376052"
+     "name": "University of California San Diego",
+     "ror": "0168r3w48",
+     "logo": "data/logos/ucsd.edu.png"
     },
     {
-     "logo": "data/logos/galbot.com.png",
-     "name": "Galbot"
+     "name": "EPFL",
+     "ror": "02s376052",
+     "logo": "data/logos/epfl.ch.png"
+    },
+    {
+     "name": "Galbot",
+     "logo": "data/logos/galbot.com.png"
+    },
+    {
+     "logo": "data/logos/pku.edu.cn.png",
+     "name": "Peking University",
+     "ror": "02v51f717"
+    },
+    {
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
+    },
+    {
+     "name": "Shanghai Qi Zhi Institute",
+     "ror": "01n14yn69"
     }
    ],
    "thumb": "data/thumbs/2611.32654.jpg",
@@ -1077,16 +1303,16 @@
    "updated": "2026-11-24T09:15:56Z",
    "comment": "",
    "tags": [
-    "manipulation",
-    "VLM/LLM",
-    "imitation",
-    "planning"
+    "robotics",
+    "VLA",
+    "agents",
+    "manipulation"
    ],
    "summary": {
-    "en": "Boundary-Aware Policy Learning explicitly shapes and expands visuomotor policy handoff boundaries to improve agent-policy orchestration, achieving 98.4% success on RoboTwin 2.0 while reducing API cost and execution time by 41.3% and 37.5%.",
-    "zh": "边界感知策略学习通过显式塑造和扩展视觉运动策略的交接边界，解决了多模态智能体与机器人策略协同中的交接失效问题。该方法在RoboTwin 2.0和RoboDojo基准测试中达到98.4%的成功率，较最强基线提升超过26个百分点，同时将API成本和执行时间分别降低了41.3%和37.5%。"
+    "zh": "Boundary-Aware Policy Learning 通过 Boundary-Explicit Training 在多样起始位姿的接触段上微调视觉运动策略，再用 Boundary-Expanding Self-Improvement 将 handoff boundary 向任务早期扩展；在 RoboTwin 2.0 随机场景达到 98.4% 成功率，比最强基线高 26 个百分点以上，API 成本和执行时间分别降低 41.3% 和 37.5%。",
+    "en": "Boundary-Aware Policy Learning shapes and expands visuomotor policies' handoff boundaries via boundary-explicit training and self-improvement, hitting 98.4% success on RoboTwin 2.0, over 26 points above the strongest baseline, with 41.3% lower API cost and 37.5% less execution time."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 7,
    "ax_votes": 2,
    "ax_visits": 36,
@@ -1098,6 +1324,15 @@
     },
     {
      "name": "Shanghai AI Lab"
+    },
+    {
+     "name": "Tongji University",
+     "ror": "03rc6as71"
+    },
+    {
+     "logo": "data/logos/sii.edu.cn.png",
+     "name": "Shanghai Innovation Institute",
+     "ror": "01fatbw66"
     }
    ],
    "thumb": "data/thumbs/2611.32238.jpg",
@@ -1147,19 +1382,23 @@
    "comment": "",
    "tags": [
     "world model",
+    "robotics",
     "manipulation",
-    "imitation",
-    "simulation"
+    "pretraining"
    ],
    "summary": {
-    "en": "G0.7 scales a world action model with a five-minute context window and large-scale pretraining, enabling 7.6x faster direct action inference and strong zero-shot performance across simulation and real-world manipulation tasks.",
-    "zh": "G0.7通过扩展至长达五分钟的长上下文窗口并利用大规模机器人及人类第一人称视频进行预训练，实现了高效的通用世界动作模型；在推理时直接解码动作，在RTX 5090上以60毫秒运行16步动作块，比想象-行动推理快7.6倍，并在多个仿真与真实世界任务中展现出卓越的零样本泛化能力。"
+    "zh": "G0.7 将 Fast-WAM 的上下文窗口从单帧观测扩展到最多五分钟历史，并在大规模机器人遥操作与人类自我中心视频上扩大预训练；Fast 模式每 16 步动作块仅需 60ms（较 IDM 快 7.6 倍），五项仿真基准平均 70.8 分，Galaxea R1 Pro 与 R1 Lite 零样本抓放成功率 48% 与 54%。",
+    "en": "G0.7 scales Fast-WAM to five-minute context and large robot teleoperation plus human ego video pretraining; Fast mode decodes a 16-step action chunk in 60 ms (7.6x faster than IDM), scoring 70.8 across five simulation suites and 48%/54% zero-shot pick-and-place success."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "ax_votes": 6,
    "ax_visits": 58,
    "heat": 11.8,
-   "orgs": [],
+   "orgs": [
+    {
+     "name": "Galaxea AI"
+    }
+   ],
    "thumb": "data/thumbs/2611.31822.jpg",
    "thumb_w": 588,
    "thumb_h": 440
@@ -1183,26 +1422,39 @@
    "published": "2026-11-24T08:46:28Z",
    "updated": "2026-11-24T08:46:28Z",
    "comment": "",
-   "tags": [],
+   "tags": [
+    "LLM",
+    "alignment",
+    "pretraining",
+    "interpretability"
+   ],
    "hf_upvotes": 9,
    "ax_votes": 1,
    "ax_visits": 20,
    "heat": 12.0,
    "orgs": [
     {
+     "name": "Cambridge-Boston Alignment Initiative"
+    },
+    {
      "logo": "data/logos/mit.edu.png",
      "name": "MIT",
      "ror": "042nb2s44"
     },
     {
-     "logo": "data/logos/harvard.edu.png",
      "name": "Harvard University",
-     "ror": "03vek6s52"
+     "ror": "03vek6s52",
+     "logo": "data/logos/harvard.edu.png"
     }
    ],
    "thumb": "data/thumbs/2611.32199.jpg",
    "thumb_w": 320,
-   "thumb_h": 320
+   "thumb_h": 320,
+   "summary": {
+    "zh": "通过将控制通道与词流分离的条件预训练架构训练出 Mancelle-3B，使高层语义特征成为可调控制接口；其在同等开源模型上比 prompt 与激活引导方法控制更强且保持流畅，并能抵御击败这些基线的黑盒与 soft-prompt 反引导攻击，Mancelle-400M 上也复现。",
+    "en": "Mancelle-3B uses conditional pretraining with a separate control channel to steer LLMs more strongly and robustly than prompt- and activation-based baselines, resisting counter-steering attacks; Mancelle-400M reproduces this."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.32057",
@@ -1233,7 +1485,9 @@
    "comment": "40 pages, 22 figures",
    "code_url": "https://github.com/NVIDIA/Megatron-LM",
    "tags": [
-    "VLM/LLM"
+    "pretraining",
+    "efficiency",
+    "LLM"
    ],
    "ax_votes": 4,
    "ax_visits": 69,
@@ -1246,7 +1500,12 @@
    ],
    "thumb": "data/thumbs/2611.32057.jpg",
    "thumb_w": 566,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "GTP 把数据、张量、序列、上下文并行与 FSDP 统一为同一框架，按 GEMM 粒度调度参数 all-gather 以隐藏通信并控制显存；在 12,288 块 GB300 GPU 上训练 2T 参数 MoE 模型达 13.0 model EFLOP/s、98% 弱扩展效率，256–1,024 GPU 上吞吐为 Megatron-FSDP 的 1.05–1.55 倍。",
+    "en": "Generalized tensor parallelism (GTP) unifies data, tensor, sequence, context parallelism and FSDP, scheduling per-GEMM all-gathers to hide communication and bound memory. It trains a 2T-parameter MoE at 13.0 model EFLOP/s on 12,288 GB300 GPUs with 98% weak-scaling efficiency, and reaches 1.05-1.55x Megatron-FSDP throughput."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.32016",
@@ -1274,24 +1533,23 @@
    "updated": "2026-11-24T05:59:50Z",
    "comment": "",
    "tags": [
-    "manipulation",
     "RL",
-    "VLM/LLM",
-    "planning"
+    "VLM",
+    "robotics",
+    "agents"
    ],
    "summary": {
-    "en": "RoboHarness-RL uses agentic reinforcement learning to improve VLM-based robot manipulation via tool calls, raising success rates from 31.2% to 44.0% on RoboTwin 2.0 and 57.8% to 73.3% on LIBERO-Pro.",
-    "zh": "RoboHarness-RL是一个基于具身强化学习的VLM机器人操作框架，利用任务结果奖励和层次化内存组件进行多轮训练。在RoboTwin 2.0上成功率从31.2%提升至44.0%，在LIBERO-Pro上从57.8%提升至73.3%，并显著降低了重复调用率。"
+    "zh": "RoboHarness-RL 通过工具调用对 VLM 机器人操作进行多轮强化学习，配合分层记忆的 LiteHarness 压缩上下文，Qwen3.5-9B 在 RoboTwin 2.0 上成功率从 31.2% 升至 44.0%，在 LIBERO-Pro 上从 57.8% 升至 73.3%。",
+    "en": "RoboHarness-RL trains VLM-based robot manipulation via multi-turn RL over tool calls, with LiteHarness compressing context; Qwen3.5-9B rises from 31.2% to 44.0% on RoboTwin 2.0 and 57.8% to 73.3% on LIBERO-Pro."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "ax_votes": 6,
    "ax_visits": 47,
    "heat": 10.7,
    "orgs": [
     {
-     "logo": "data/logos/gouni.edu.ng.png",
-     "name": "Godfrey Okoye University",
-     "ror": "04japw488"
+     "name": "Zhejiang University",
+     "ror": "00a2xv884"
     }
    ],
    "thumb": "data/thumbs/2611.32016.jpg",
@@ -1320,15 +1578,14 @@
    "comment": "",
    "tags": [
     "world model",
-    "manipulation",
-    "sim2real",
-    "control"
+    "robotics",
+    "efficiency"
    ],
    "summary": {
-    "en": "IWAM extracts intermediate features from a single video-model forward pass via a bidirectional flow map to condition action policies without explicit future frame generation, significantly reducing inference costs while retaining generalization benefits across simulations and real robots.",
-    "zh": "iWAM通过学习双向流映射（bidirectional flow map），在无需显式预测高分辨率未来帧的情况下，仅通过视频模型骨干网的一次前向传播来提取中间特征以指导动作策略，从而在模拟基准和真实机器人上大幅降低了世界动作模型的推理成本，同时保留了其泛化优势。"
+    "zh": "iWAM 不生成完整未来帧，而是将训练未来反演为潜噪声，学习双向流映射摊销生成计算，仅用一次视频骨干前向传播为动作策略提供条件；在仿真与真实机器人上保持 WAM 泛化优势并大幅降低推理成本。",
+    "en": "IWAM conditions action policies on features from a single video-backbone forward pass, learning a bidirectional flow map to amortize future generation and substantially reduce inference cost while retaining WAM generalization."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "ax_votes": 2,
    "ax_visits": 83,
    "heat": 10.3,
@@ -1400,9 +1657,9 @@
    "updated": "2026-11-24T15:34:16Z",
    "comment": "Technique Report, MVP Lab; 61 pages",
    "tags": [
-    "VLM/LLM",
+    "3D",
     "benchmark",
-    "aerial"
+    "VLM"
    ],
    "hf_upvotes": 4,
    "ax_votes": 3,
@@ -1413,11 +1670,19 @@
      "logo": "data/logos/imperial.ac.uk.png",
      "name": "Imperial College London",
      "ror": "041kmwe10"
+    },
+    {
+     "name": "MVP Lab"
     }
    ],
    "thumb": "data/thumbs/2611.32816.jpg",
    "thumb_w": 640,
-   "thumb_h": 354
+   "thumb_h": 354,
+   "summary": {
+    "zh": "SpatialArena 用统一指标和确定性对齐在 5 项任务、23 个数据集共 418,929 张图像上评测 52 个几何基础模型，发现单目深度在公开基准接近饱和，跨帧跨视角一致性才是新进展来源，前馈 3D/4D 模型已媲美单目专家并超越视频深度模型。",
+    "en": "SpatialArena benchmarks 52 geometric foundation models across five tasks and 23 datasets (418,929 images) with unified metrics and robust alignment, showing monocular depth saturates on public benchmarks while cross-frame and cross-view consistency drives progress."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.32445",
@@ -1489,7 +1754,9 @@
    "updated": "2026-11-24T13:46:00Z",
    "comment": "",
    "tags": [
-    "VLM/LLM"
+    "multimodal",
+    "efficiency",
+    "VLM"
    ],
    "hf_upvotes": 9,
    "ax_votes": 1,
@@ -1503,7 +1770,12 @@
    ],
    "thumb": "data/thumbs/2611.32617.jpg",
    "thumb_w": 640,
-   "thumb_h": 298
+   "thumb_h": 298,
+   "summary": {
+    "zh": "VenusOCR2.0 以 1B 参数的 SigLIP2 编码器加 Qwen3-0.6B 解码器构建文档解析器，配合有界递归自改进数据引擎与 OTSL 原子 token，在 OmniDocBenchv1.6 上总分 96.45、公式 CDM 98.57，超过 Gemini-3-Pro 的 92.91；并行草稿模块 PTPv2 在 H20 上带来 2.96 倍单请求加速且无损。",
+    "en": "VenusOCR2.0 pairs a SigLIP2 encoder with a Qwen3-0.6B decoder, bounded recursive self-improvement data engine, and atomic OTSL tokens, scoring 96.45 overall and 98.57 formula CDM on OmniDocBenchv1.6; its PTPv2 parallel draft module gives 2.96x lossless single-request speedup on H20."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.33137",

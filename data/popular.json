@@ -26,8 +26,10 @@
      "comment": "15 pages, 4 figures",
      "code_url": "https://github.com/juntongshi48/VOPD",
      "tags": [
+      "LLM",
+      "reasoning",
       "RL",
-      "benchmark"
+      "alignment"
      ],
      "ax_votes": 203,
      "ax_visits": 2199,
@@ -39,13 +41,18 @@
        "ror": "00f54p054"
       },
       {
-       "logo": "data/logos/deepmind.google.png",
-       "name": "Google DeepMind"
+       "name": "Google DeepMind",
+       "logo": "data/logos/deepmind.google.png"
       }
      ],
      "thumb": "data/thumbs/2611.30325.jpg",
      "thumb_w": 618,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "summary": {
+      "zh": "VOPD 将稀疏的验证器奖励投影到教师的隐式奖励方向上，并在整个词表上做 Rao-Blackwell 化，得到稠密的、基于验证器的监督信号，在八项数学推理基准上相比 vanilla OPD 与其他 on-policy distillation 基线同时提升最终性能与学习效率。",
+      "en": "VOPD projects sparse verifier preferences onto the teacher's implicit-reward direction and Rao-Blackwellizes them over the vocabulary for dense verifier-grounded supervision, improving final performance and learning efficiency over vanilla OPD and other on-policy distillation baselines on eight math reasoning benchmarks."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.28298",
@@ -65,8 +72,10 @@
      "updated": "2026-11-20T20:31:19Z",
      "comment": "12 pages, 63 pages with appendix",
      "tags": [
+      "LLM",
+      "agents",
       "RL",
-      "VLM/LLM"
+      "reasoning"
      ],
      "ax_votes": 92,
      "ax_visits": 1890,
@@ -79,7 +88,12 @@
      ],
      "thumb": "data/thumbs/2611.28298.jpg",
      "thumb_w": 640,
-     "thumb_h": 346
+     "thumb_h": 346,
+     "summary": {
+      "zh": "研究以神经符号式 harness 管理上下文的组合泛化能力：仅用短任务强化学习训练 RLM，即可泛化到长 2-64 倍的任务；用合成数据训练 RLM-27B，在 CTC-Bench 和 ExpertLongBench 上平均提升 Qwen3.8-27B 26.9%，推理 token 约减半。",
+      "en": "Training neurosymbolic LM harnesses like RLM with RL on short tasks generalizes to 2-64x longer ones; RLM-27B, trained on synthetic data, beats Qwen3.8-27B by 26.9% on CTC-Bench and ExpertLongBench with ~2x fewer inference tokens."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.32606",
@@ -107,7 +121,10 @@
      "updated": "2026-11-24T13:37:54Z",
      "comment": "",
      "tags": [
-      "VLM/LLM"
+      "agents",
+      "LLM",
+      "reasoning",
+      "efficiency"
      ],
      "ax_votes": 106,
      "ax_visits": 1645,
@@ -120,7 +137,7 @@
       },
       {
        "logo": "data/logos/berkeley.edu.png",
-       "name": "UC Berkeley",
+       "name": "University of California, Berkeley",
        "ror": "01an7q238"
       },
       {
@@ -128,14 +145,19 @@
        "name": "NVIDIA"
       },
       {
-       "logo": "data/logos/northwestern.edu.png",
        "name": "Northwestern University",
-       "ror": "000e0be47"
+       "ror": "000e0be47",
+       "logo": "data/logos/northwestern.edu.png"
       }
      ],
      "thumb": "data/thumbs/2611.32606.jpg",
      "thumb_w": 640,
-     "thumb_h": 281
+     "thumb_h": 281,
+     "summary": {
+      "zh": "等算力阶梯（equal-budget ladder），在单智能体、算力对齐多数投票与算力对齐 pass@n 三级上衡量多智能体团队，并定义 Recursive Collective Intelligence（RCI）：无教师、无外部标签，团队用自身输出让下一代同等成本更聪明；转发拆分事实可在 27B 上超 pass@n 约三分之一，同质 27B 智能体自发形成枢纽使准确率提升 18 个百分点，两代无标签训练在 PlanBench、HiddenBench、Hanabi 上连续 4–6 代优于前代。",
+      "en": "The equal-budget ladder grades multi-agent LLM teams against a single agent, compute-matched majority vote, and pass@n; recursively self-trained groups, which forward split facts, beat pass@n by ~1/3 at 27B, gain 18 points from emergent hubs, and improve for 4-6 generations."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.26450",
@@ -152,7 +174,10 @@
      "updated": "2026-11-19T17:18:38Z",
      "comment": "27 pages, 3 figures, 24 tables",
      "tags": [
-      "VLM/LLM"
+      "LLM",
+      "reasoning",
+      "math",
+      "efficiency"
      ],
      "hf_upvotes": 7,
      "ax_votes": 74,
@@ -165,7 +190,12 @@
      ],
      "thumb": "data/thumbs/2611.26450.jpg",
      "thumb_w": 618,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "summary": {
+      "zh": "闭式零梯度电路嫁接原语将精确多位数算术与布尔/多数/奇偶电路直接编译进预训练权重，无需训练样本或运行时钩子；IBM Granite 4.2 3B 与 Qwen 3.5 4B 在 6 位数算术上达 99.17%/100.00% ALU 前缀准确率，远超 12.8K 样本 LoRA 的 42.2%/61.7%。",
+      "en": "Closed-form zero-gradient circuit-grafting compiles exact multi-digit arithmetic and Boolean/majority circuits into pretrained LM weights without training data or runtime hooks; Granite 4.2 3B and Qwen 3.5 4B reach 99.17%/100.00% ALU-prefix accuracy versus 42.2%/61.7% for 12.8K-sample LoRA."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.29897",
@@ -192,15 +222,15 @@
      "code_url": "https://github.com/AIGeeksGroup/MotionMamba2.0",
      "tags": [
       "humanoid",
-      "locomotion",
-      "diffusion policy",
-      "control"
+      "diffusion",
+      "world model",
+      "efficiency"
      ],
      "summary": {
-      "en": "Motion Mamba 2.0 integrates local attention, recurrent states, and persistent content memory for long-horizon humanoid motion generation, achieving accurate 39.52 s control and a 6.138x speedup on an RTX 4090 while deployed on Unitree G1.",
-      "zh": "Motion Mamba 2.0 是一种基于 Mamba 的根体扩散架构，通过融合局部注意力、可恢复循环状态和持久内容记忆来实现长视野可控动作生成，在 HiPHI 数据集上实现了长达 39.52 秒的精确终端控制，并在 RTX 4090 上将中位完整窗口延迟从 1685.35 毫秒降至 276.14 毫秒，实现了 6.138 倍的加速。同时，该方法在 Unitree G1 机器人上完成了真实的键盘鼠标交互与文本引导动作测试。"
+      "zh": "Motion Mamba 2.0 用 Mamba 循环状态加持久内容记忆 PCM 做根-身体扩散式自回归动作生成，支持最长 39.52 s 的长程末端控制；配合 CUDA Graph 等优化，RTX 4090 上完整窗口延迟从 1685.35 ms 降到 276.14 ms，中位加速 6.138 倍，并在 Unitree G1 上验证了文本引导动作组合与交互式行走。",
+      "en": "Motion Mamba 2.0 combines Mamba recurrent states with persistent content memory for autoregressive root-body diffusion, enabling terminal control over 39.52 s rollouts; CUDA Graph optimizations cut latency from 1685.35 to 276.14 ms (6.138x median speedup), validated on Unitree G1."
      },
-     "summary_source": "gemini-3.5-flash-lite",
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 226,
      "ax_votes": 0,
      "ax_visits": 63,
@@ -212,8 +242,16 @@
        "ror": "02v51f717"
       },
       {
-       "name": "Korea University",
-       "ror": "05m1gnk07"
+       "name": "Korea University"
+      },
+      {
+       "name": "Monash University",
+       "ror": "02bfwt286",
+       "logo": "data/logos/monash.edu.png"
+      },
+      {
+       "name": "NTU",
+       "ror": "02e7b5302"
       }
      ],
      "thumb": "data/thumbs/2611.29897.jpg",
@@ -244,7 +282,7 @@
      "comment": "Code and weights available at https://apple-aiml-research.github.io/ml-depth-pro-2/",
      "tags": [
       "3D",
-      "image generation"
+      "efficiency"
      ],
      "hf_upvotes": 41,
      "ax_votes": 61,
@@ -252,18 +290,18 @@
      "heat": 166.3,
      "orgs": [
       {
-       "name": "Apple",
-       "logo": "data/logos/apple.com.png"
+       "logo": "data/logos/apple.com.png",
+       "name": "Apple"
       }
      ],
      "thumb": "data/thumbs/2611.26603.jpg",
      "thumb_w": 247,
      "thumb_h": 440,
      "summary": {
-      "zh": "Depth Pro 2是一种用于图像和视频的全分辨率密集度量深度估计方法，通过训练单一可扩展网络，同时实现了度量准确性、边界清晰度和时间一致性，在各维度上均优于以往工作。",
-      "en": "Depth Pro 2 estimates dense metric depth for images and video at full resolution, achieving high metric accuracy, sharp boundaries, and temporal consistency simultaneously."
+      "zh": "Depth Pro 2 用单一可扩展网络统一处理图像与视频，以原生分辨率预测稠密深度，同时兼顾度量精度、边界锐利度与时序一致性，在四项指标上超越先前方法并重划 Pareto 前沿。",
+      "en": "Depth Pro 2 trains one scalable network on images and video to predict native-resolution depth that is metrically accurate, sharp, and temporally consistent, outperforming prior work and redefining the Pareto frontier."
      },
-     "summary_source": "gemini-3.5-flash-lite"
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.26444",
@@ -324,10 +362,10 @@
      "updated": "2026-11-19T17:15:38Z",
      "comment": "",
      "tags": [
-      "robotics",
       "benchmark",
-      "multimodal",
-      "agents"
+      "robotics",
+      "VLA",
+      "reasoning"
      ],
      "hf_upvotes": 56,
      "ax_votes": 55,
@@ -363,24 +401,24 @@
        "ror": "02zhqgq86"
       },
       {
+       "logo": "data/logos/hkust.edu.hk.png",
        "name": "HKUST",
-       "ror": "00q4vv597",
-       "logo": "data/logos/hkust.edu.hk.png"
+       "ror": "00q4vv597"
       },
       {
+       "logo": "data/logos/cuhk.edu.hk.png",
        "name": "CUHK",
-       "ror": "00t33hh48",
-       "logo": "data/logos/cuhk.edu.hk.png"
+       "ror": "00t33hh48"
       }
      ],
      "thumb": "data/thumbs/2611.26444.jpg",
      "thumb_w": 635,
      "thumb_h": 440,
      "summary": {
-      "zh": "Mind2Act World是一个用于机器人操作中具身思维、物理动作及两者组合的诊断基准，包含180种配置。评估表明，单项能力优秀的系统在组合任务中表现显著下降，其中最强智能体在Mind和Act任务中分别成功52.7%和39.0%，但在Mind2Act任务中仅成功12.0%。",
-      "en": "Mind2Act World is a diagnostic benchmark evaluating embodied mind, physical action, and their composition in robotic manipulation across 180 configurations. Evaluations show single-view competence does not translate to composition, with the strongest agent dropping from 52.7% in Mind and 39.0% in Act to 12.0% in Mind2Act."
+      "zh": "Mind2Act World 构建 30 个仿真操作任务、180 种配置的诊断基准，分 Mind、Act、Mind2Act 三视角评测多模态智能体、VLA 与 WAM；最强智能体在 Mind 与 Act 上分别成功 52.7% 和 39.0%，Mind2Act 仅 12.0%。",
+      "en": "Mind2Act World is a 30-task, 180-configuration diagnostic manipulation benchmark with Mind, Act, and Mind2Act views; the best agent scores 52.7% and 39.0% but only 12.0% on Mind2Act."
      },
-     "summary_source": "gemini-3.5-flash-lite"
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.34923",
@@ -403,7 +441,12 @@
      "updated": "2026-11-25T18:58:53Z",
      "comment": "Code is available at https://github.com/hustvl/MoLT",
      "code_url": "https://github.com/hustvl/MoLT",
-     "tags": [],
+     "tags": [
+      "LLM",
+      "efficiency",
+      "pretraining",
+      "interpretability"
+     ],
      "hf_upvotes": 72,
      "ax_votes": 31,
      "ax_visits": 622,
@@ -412,11 +455,25 @@
       {
        "name": "Huazhong University of Science & Technology",
        "ror": "00p991c53"
+      },
+      {
+       "name": "ByteDance",
+       "logo": "data/logos/bytedance.com.png"
+      },
+      {
+       "name": "University of Toronto",
+       "ror": "03dbr7087",
+       "logo": "data/logos/utoronto.ca.png"
       }
      ],
      "thumb": "data/thumbs/2611.34923.jpg",
      "thumb_w": 618,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "summary": {
+      "zh": "Mixture-of-Loops Transformer 用 Mixture-of-Loops Attention 把 KV 当作跨深度和循环复用记忆，其 U-MoLT 变体在 400B token 预训练中于 700M 模型上比 OLMo3 达到 1.7 倍的验证交叉熵 token 效率，3B MoE 困惑度降低 0.75、10 项任务准确率提升 2.1 个百分点。",
+      "en": "Mixture-of-Loops Transformer reuses keys and values as memory across depths and loops; U-MoLT beats OLMo3 with 1.7x CE token efficiency at 700M and +2.1 points on 10-task accuracy at 3B MoE."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.30111",
@@ -440,24 +497,46 @@
      "updated": "2026-11-24T17:50:11Z",
      "comment": "This version was posted before the coauthors completed their review of the paper",
      "tags": [
-      "manipulation",
-      "VLM/LLM",
-      "bimanual",
-      "mobile manipulation"
+      "robotics",
+      "agents",
+      "VLA",
+      "manipulation"
      ],
      "summary": {
-      "en": "RoboThink separates a reasoning agent from a fast policy using instruction and feedback channels for real-time robotic correction, raising success rates significantly on LIBERO and RoboTwin 2.0 under various drifts.",
-      "zh": "RoboThink将推理agent与策略分离，通过指令通道和反馈通道实现实时纠错与引导。在LIBERO上，未知恒定漂移下的成功率从0.09提升至0.87，在RoboTwin 2.0的双臂任务中也将成功率从0.12提升至0.74。"
+      "zh": "RoboThink 让智能体负责思考、策略网络负责执行：智能体通过指令通道改写任务指令、通过反馈通道给动作反馈，借助 agent-labelled DAgger 训练；在 LIBERO 上把恒定漂移下的成功率从 0.09 提到 0.87，在 RoboTwin 2.0 双臂任务上从 0.12 提到 0.74，单个成功仅需 55 秒和 8k tokens。",
+      "en": "RoboThink lets an agent think while a policy acts: the agent rewrites instructions and supplies motion feedback trained via agent-labelled DAgger, raising LIBERO success from 0.09 to 0.87 under drift with 55 s and 8k tokens per success."
      },
-     "summary_source": "gemini-3.5-flash-lite",
+     "summary_source": "deepseek-flash",
      "ax_votes": 77,
      "ax_visits": 818,
      "heat": 158.8,
      "orgs": [
       {
+       "name": "Tulane University",
+       "ror": "04vmvtb21",
+       "logo": "data/logos/tulane.edu.png"
+      },
+      {
+       "name": "New York University",
+       "ror": "0190ak572"
+      },
+      {
+       "name": "Northeastern University"
+      },
+      {
        "logo": "data/logos/stanford.edu.png",
        "name": "Stanford University",
        "ror": "00f54p054"
+      },
+      {
+       "logo": "data/logos/mit.edu.png",
+       "name": "MIT",
+       "ror": "042nb2s44"
+      },
+      {
+       "name": "Harvard University",
+       "ror": "03vek6s52",
+       "logo": "data/logos/harvard.edu.png"
       }
      ],
      "thumb": "data/thumbs/2611.30111.jpg",
@@ -493,16 +572,16 @@
      "updated": "2026-11-23T18:48:54Z",
      "comment": "Project Page: https://dravenalg.github.io/projects/Embo-Harness/",
      "tags": [
-      "VLM/LLM",
-      "manipulation",
-      "planning",
-      "perception"
+      "robotics",
+      "VLM",
+      "agents",
+      "manipulation"
      ],
      "summary": {
-      "en": "Embo-Harness systematically studies frontier-model-as-policy harnesses, achieving an 83.3% success rate on RoboLab-120 and outperforming the strongest baseline by 26.2 percentage points.",
-      "zh": "Embo-Harness系统性研究了前沿多模态大模型作为具身智能策略的设计原则，通过探索提示词、规划、动作执行和工具使用四个组件提炼出六项经验法则。该方法在RoboLab-120基准测试中取得了83.3%的成功率，比最强基线提升了26.2个百分点，并在4个真实世界的操纵任务的20次零样本试验中成功了15次。"
+      "zh": "Embo-Harness 系统研究前沿多模态模型直接作为机器人策略的闭环框架，梳理提示、规划、动作执行与工具使用四个环节并总结六条经验，在 RoboLab-120 上取得 83.3% 成功率，超最强基线 26.2 个百分点，真实世界四项操作任务零样本 20 次试验成功 15 次。",
+      "en": "Embo-Harness systematically studies frontier multimodal models as closed-loop robot policies, distilling six findings; it reaches 83.3% success on RoboLab-120, beating the best baseline by 26.2 points, and solves 15 of 20 zero-shot real-world trials."
      },
-     "summary_source": "gemini-3.5-flash-lite",
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 106,
      "ax_votes": 14,
      "ax_visits": 160,
@@ -513,6 +592,9 @@
        "ror": "02e7b5302"
       },
       {
+       "name": "ACE Robotics"
+      },
+      {
        "name": "SenseTime Research"
       },
       {
@@ -520,7 +602,7 @@
        "ror": "00mcjh785"
       },
       {
-       "name": "Lenovo"
+       "name": "Lenovo Robotics Lab"
       },
       {
        "logo": "data/logos/uconn.edu.png",
@@ -571,16 +653,16 @@
      "updated": "2026-11-23T16:53:57Z",
      "comment": "Project Page: https://lab.einsia.ai/robo-universe/",
      "tags": [
-      "simulation",
-      "dataset",
+      "robotics",
+      "agents",
       "benchmark",
-      "VLM/LLM"
+      "VLA"
      ],
      "summary": {
-      "en": "RoboUniverse-10K introduces 10,807 interactive environments and a zero-shot benchmark, RoboUniverse-Verified. Evaluations reveal frontier models reach 85.8% success, and fine-tuning RoboUniverse-35B-A3B lifts success from 0.8% to 21.2%.",
-      "zh": "RoboUniverse-10K 包含了 10,807 个由真实视频自动生成的交互式物理环境，并建立了 RoboUniverse-Verified 零样本评测基准。对 11 个模型的评估表明前沿模型可达 85.8% 的成功率，而微调后的 RoboUniverse-35B-A3B 将成功率从 0.8% 提升至 21.2%。"
+      "zh": "RoboUniverse-10K 通过自动化 Real2Sim 与质检流程从真实视频构建 10,807 个可交互、可重置、可验证的物理环境，并留出 500 个任务组成 RoboUniverse-Verified 零样本基准；11 个模型评测中前沿模型成功率 85.8%，开源基线仅 2.6%–10.0%；再用约 17K 多轮轨迹微调 Qwen3.6-35B-A3B 得到 RoboUniverse-35B-A3B，零样本成功率从 0.8% 提升到 21.2%。",
+      "en": "RoboUniverse-10K builds 10,807 resettable, verifiable physics environments from real videos via automated Real2Sim, plus a 500-task zero-shot benchmark where frontier models hit 85.8% versus 2.6-10.0% for open baselines; fine-tuning Qwen3.6-35B-A3B lifts success from 0.8% to 21.2%."
      },
-     "summary_source": "gemini-3.5-flash-lite",
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 1,
      "ax_votes": 54,
      "ax_visits": 666,
@@ -651,9 +733,9 @@
      "heat": 116.1,
      "orgs": [
       {
+       "logo": "data/logos/vt.edu.png",
        "name": "Virginia Tech",
-       "ror": "02smfhw86",
-       "logo": "data/logos/vt.edu.png"
+       "ror": "02smfhw86"
       },
       {
        "logo": "data/logos/nvidia.com.png",
@@ -664,10 +746,10 @@
      "thumb_w": 640,
      "thumb_h": 203,
      "summary": {
-      "zh": "Posterior Matching Distillation (PMD) 是一种新型扩散模型蒸馏方法，通过结合模式覆盖的后验采样与任意步数生成，在零总体损失时恢复教师模型的完整后验分布。在 SDXL 和 FLUX.2 4B 上的实验表明，PMD 在 4 步生成方法中取得了最佳的 FID。",
-      "en": "Posterior Matching Distillation (PMD) combines mode-covering posterior sampling with any-step generation to recover the teacher's full posterior distribution, achieving the best FID among 4-step methods on SDXL and FLUX.2."
+      "zh": "PMD 将模式覆盖的后验采样与任意步数生成结合，通过匹配指数重加权学生样本均值来学习教师后验，在 SDXL 和 FLUX.2 [klein] 4B 上取得 4 步方法中最佳 FID。",
+      "en": "Posterior Matching Distillation combines mode-covering posterior sampling with any-step generation by matching exponentially tilted student sample means, achieving the best 4-step FID on SDXL and FLUX.2 [klein] 4B."
      },
-     "summary_source": "gemini-3.5-flash-lite"
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.33102",
@@ -691,7 +773,9 @@
      "updated": "2026-11-25T18:46:02Z",
      "comment": "Preprint. 23 pages, 20 figures, 7 tables",
      "tags": [
-      "RL"
+      "RL",
+      "LLM",
+      "efficiency"
      ],
      "ax_votes": 40,
      "ax_visits": 751,
@@ -701,9 +785,9 @@
        "name": "Tufa Labs"
       },
       {
-       "logo": "data/logos/harvard.edu.png",
        "name": "Harvard University",
-       "ror": "03vek6s52"
+       "ror": "03vek6s52",
+       "logo": "data/logos/harvard.edu.png"
       },
       {
        "logo": "data/logos/illinois.edu.png",
@@ -713,7 +797,12 @@
      ],
      "thumb": "data/thumbs/2611.33102.jpg",
      "thumb_w": 566,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "summary": {
+      "zh": "研究RL后训练产生的rollout中保留多少知识，发现直接用最大似然拟合归档rollout（maximum likelihood replay），不区分对错、按生成顺序回放，即可复现在线RL的性能，单次更新即可追踪完整学习曲线。",
+      "en": "Investigating how much RL-acquired knowledge persists in rollouts, maximum likelihood replay that fits archived rollouts in generation order without distinguishing correct responses matches online RL performance."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.34051",
@@ -743,21 +832,45 @@
      "published": "2026-11-25T09:30:49Z",
      "updated": "2026-11-25T09:30:49Z",
      "comment": "",
-     "tags": [],
+     "tags": [
+      "LLM",
+      "efficiency",
+      "pretraining"
+     ],
      "hf_upvotes": 105,
      "ax_votes": 1,
      "ax_visits": 80,
      "heat": 114.0,
      "orgs": [
       {
+       "name": "MemTensor"
+      },
+      {
+       "name": "University of Science and Technology of China",
+       "ror": "04c4dkn09"
+      },
+      {
        "logo": "data/logos/hkust.edu.hk.png",
        "name": "HKUST",
        "ror": "00q4vv597"
+      },
+      {
+       "name": "Southern University of Science and Technology",
+       "ror": "049tv2d57"
+      },
+      {
+       "name": "Shanghai Jiao Tong University",
+       "ror": "0220qvk04"
       }
      ],
      "thumb": "data/thumbs/2611.34051.jpg",
      "thumb_w": 640,
-     "thumb_h": 348
+     "thumb_h": 348,
+     "summary": {
+      "zh": "针对 Gated DeltaNet-2 长上下文训练中擦除方向不对称导致循环状态指数增长的问题，提出 Stable Gated DeltaNet-2，用对称擦除保证非扩张状态传播，并配合衰减调节的残差写入，理论上给出 O(√T) 状态增长上界且保留分块并行。1.6B 参数模型上训练稳定，128K 平均 RULER 分数提升 6.80 分，九个下游任务平均准确率提升 0.62 分。",
+      "en": "Stable Gated DeltaNet-2 fixes GDN-2's exponential recurrent state growth via symmetric erasure and decay-regulated residual writing, with an O(√T) bound. On 1.6B models it raises 128K RULER by 6.80 and nine-task accuracy by 0.62."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.27193",
@@ -785,14 +898,19 @@
      "published": "2026-11-20T06:26:11Z",
      "updated": "2026-11-20T06:26:11Z",
      "comment": "",
-     "tags": [],
+     "tags": [
+      "LLM",
+      "pretraining",
+      "efficiency",
+      "theory"
+     ],
      "hf_upvotes": 94,
      "ax_votes": 6,
      "ax_visits": 80,
      "heat": 108.0,
      "orgs": [
       {
-       "name": "Xingchen AGI Lab"
+       "name": "China Telecom"
       },
       {
        "logo": "data/logos/hkust.edu.hk.png",
@@ -804,13 +922,18 @@
        "ror": "01yqg2h08"
       },
       {
-       "logo": "data/logos/huawei.com.png",
-       "name": "Huawei"
+       "name": "Huawei",
+       "logo": "data/logos/huawei.com.png"
       }
      ],
      "thumb": "data/thumbs/2611.27193.jpg",
      "thumb_w": 640,
-     "thumb_h": 310
+     "thumb_h": 310,
+     "summary": {
+      "zh": "cmHC 通过将 Birkhoff 多面体几何收缩到内部来混合残差流，缓解 under-mixing 与 over-mixing 的权衡，在稠密和 MoE 模型预训练中稳定梯度传播，并在 Ascend NPU 上将超连接执行延迟降低最多 44.8%。",
+      "en": "CmHC geometrically contracts the Birkhoff polytope inward to mix residual streams, mitigating under- and over-mixing; it stabilizes pretraining of dense and MoE models and cuts hyper-connection latency by up to 44.8% on Ascend NPUs."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.30634",
@@ -830,7 +953,12 @@
      "updated": "2026-11-24T08:46:11Z",
      "comment": "",
      "code_url": "https://github.com/Caiyun-AI/LoomFormer",
-     "tags": [],
+     "tags": [
+      "LLM",
+      "pretraining",
+      "efficiency",
+      "interpretability"
+     ],
      "hf_upvotes": 95,
      "ax_votes": 2,
      "ax_visits": 67,
@@ -846,7 +974,12 @@
      ],
      "thumb": "data/thumbs/2611.30634.jpg",
      "thumb_w": 640,
-     "thumb_h": 392
+     "thumb_h": 392,
+     "summary": {
+      "zh": "Loom attention 通过垂直注意力对前序 head 输出做归一化门控线性注意力，并与水平 token 注意力交织，实现逐 token 动态重连电路，构成 LoomFormer 双流架构；在 300B token、仅增约 2% FLOPs 下，LoomPythia-2.8B 下游增益约为 mHC-Pythia-2.8B 的 1.6 倍，0-shot 追平 Pythia-12B。",
+      "en": "Loom attention interweaves vertical attention over prior head outputs via normalized gated linear attention with horizontal token attention, yielding LoomFormer; with only ~2% extra FLOPs, LoomPythia-2.8B reaches ~1.6x mHC-Pythia-2.8B's downstream gain and matches Pythia-12B zero-shot."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.34232",
@@ -938,7 +1071,9 @@
      "updated": "2026-11-25T11:55:12Z",
      "comment": "NeurIPS 2026",
      "tags": [
-      "benchmark"
+      "agents",
+      "benchmark",
+      "multimodal"
      ],
      "hf_upvotes": 96,
      "ax_votes": 0,
@@ -947,7 +1082,12 @@
      "orgs": [],
      "thumb": "data/thumbs/2611.34232.jpg",
      "thumb_w": 640,
-     "thumb_h": 368
+     "thumb_h": 368,
+     "summary": {
+      "zh": "OS-Omni 是覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的跨平台计算机代理实时基准，v1 每平台 48 个任务、另含 12 个跨平台工作流，任务平均需 67.54 步；最强代理 Claude Opus 5.5 平均成功率 68.5%，低于人类 77.3%，在 iOS 和 macOS 上差距超过 25 点。",
+      "en": "OS-Omni is a live cross-platform benchmark for computer-using agents spanning Windows, Ubuntu, macOS, iOS, Android, and Web; its v1 has 48 tasks per platform plus 12 cross-platform workflows averaging 67.54 steps. Claude Opus 5.5 scores 68.5% versus 77.3% human, trailing by over 25 points on iOS and macOS."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.34575",
@@ -1073,8 +1213,10 @@
      "updated": "2026-11-25T15:39:45Z",
      "comment": "101 pages",
      "tags": [
-      "RL",
-      "benchmark"
+      "multimodal",
+      "LLM",
+      "pretraining",
+      "RL"
      ],
      "hf_upvotes": 80,
      "ax_votes": 4,
@@ -1082,17 +1224,17 @@
      "heat": 94.2,
      "orgs": [
       {
-       "logo": "data/logos/csmedcenter.com.png",
-       "name": "Sage-Med Team",
-       "ror": "04663jx74"
-      },
-      {
        "name": "Shanghai AI Lab"
       }
      ],
      "thumb": "data/thumbs/2611.34575.jpg",
      "thumb_w": 640,
-     "thumb_h": 302
+     "thumb_h": 302,
+     "summary": {
+      "zh": "Sage-Med-Preview 是 35B 参数（激活 3B）的医学多模态模型，用 3.227 亿条候选数据分阶段筛选结合医学预训练、分阶段监督微调与自适应强化学习的渐进课程训练，在 31 个公开多模态基准上均分 58.26%，超过 Hulu-Med-235B-A22B 的 50.99% 和 Intern-S2-Preview 的 52.24%。",
+      "en": "Sage-Med-Preview, a 35B-parameter (3B activated) medical MLLM trained via curated 322.7M-record data and a progressive pretraining-to-SFT-to-RL curriculum, scores 58.26% on 31 public multimodal benchmarks, beating Hulu-Med-235B-A22B (50.99%) and Intern-S2-Preview (52.24%)."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.30989",
@@ -1112,15 +1254,15 @@
      "comment": "",
      "tags": [
       "benchmark",
-      "VLM/LLM",
-      "VLA",
-      "world model"
+      "robotics",
+      "agents",
+      "VLM"
      ],
      "summary": {
-      "en": "WorldLeague benchmarks 13 AI systems across 60 simulated robot tasks, where Claude Fable 5.2 achieves the highest mean Interactive Score of 28.58/100 and completes 13 goals.",
-      "zh": "推出了 WorldLeague 基准测试，包含 60 个模拟机器人任务，用于评估 AI 系统在感知、记忆、规划和行动方面的物理代理能力。测试显示在 13 个代表性系统中，Claude Fable 5.2 取得了最高的平均交互分 28.58/100 并完成了 13 个目标。"
+      "zh": "WorldLeague 基准用 60 个模拟机器人任务，通过机器人轨迹衡量系统向物理目标推进的程度与成功率，比较 13 个系统；Claude Fable 5.2 完成 13 个目标，平均 Interactive Score 最高，为 28.58/100。",
+      "en": "WorldLeague benchmarks AI systems on 60 simulated robot tasks via trajectory-based progress and success; Claude Fable 5.2 completes 13 goals and leads with a mean Interactive Score of 28.58/100."
      },
-     "summary_source": "gemini-3.5-flash-lite",
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 87,
      "ax_votes": 2,
      "ax_visits": 42,
@@ -1157,7 +1299,9 @@
      "code_url": "https://github.com/yuhangdai427/NoPeWorld",
      "tags": [
       "world model",
-      "benchmark"
+      "video generation",
+      "diffusion",
+      "safety"
      ],
      "hf_upvotes": 62,
      "ax_votes": 10,
@@ -1165,14 +1309,19 @@
      "heat": 92.1,
      "orgs": [
       {
-       "logo": "data/logos/polyu.edu.hk.png",
        "name": "Hong Kong Polytechnic University",
-       "ror": "0030zas98"
+       "ror": "0030zas98",
+       "logo": "data/logos/polyu.edu.hk.png"
       }
      ],
      "thumb": "data/thumbs/2611.27963.jpg",
      "thumb_w": 640,
-     "thumb_h": 355
+     "thumb_h": 355,
+     "summary": {
+      "zh": "针对交互式视频世界模型中的物体穿透问题，构建 NoPeBench 基准并发现冻结 DiT 的隐状态已能预测碰撞，据此训练轻量预测头筛除不安全动作并替换为安全动作，在六个世界模型上将物理违规率从 74% 降至 16%。",
+      "en": "NoPeBench benchmark reveals object penetration in interactive video world models; NoPeWorld trains a small head on frozen DiT hidden states to filter unsafe actions, cutting violation rates from 74% to 16% across six models."
+     },
+     "summary_source": "deepseek-flash"
     }
    ]
   },
@@ -1200,8 +1349,10 @@
      "comment": "15 pages, 4 figures",
      "code_url": "https://github.com/juntongshi48/VOPD",
      "tags": [
+      "LLM",
+      "reasoning",
       "RL",
-      "benchmark"
+      "alignment"
      ],
      "ax_votes": 203,
      "ax_visits": 2199,
@@ -1213,13 +1364,18 @@
        "ror": "00f54p054"
       },
       {
-       "logo": "data/logos/deepmind.google.png",
-       "name": "Google DeepMind"
+       "name": "Google DeepMind",
+       "logo": "data/logos/deepmind.google.png"
       }
      ],
      "thumb": "data/thumbs/2611.30325.jpg",
      "thumb_w": 618,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "summary": {
+      "zh": "VOPD 将稀疏的验证器奖励投影到教师的隐式奖励方向上，并在整个词表上做 Rao-Blackwell 化，得到稠密的、基于验证器的监督信号，在八项数学推理基准上相比 vanilla OPD 与其他 on-policy distillation 基线同时提升最终性能与学习效率。",
+      "en": "VOPD projects sparse verifier preferences onto the teacher's implicit-reward direction and Rao-Blackwellizes them over the vocabulary for dense verifier-grounded supervision, improving final performance and learning efficiency over vanilla OPD and other on-policy distillation baselines on eight math reasoning benchmarks."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.28298",
@@ -1239,8 +1395,10 @@
      "updated": "2026-11-20T20:31:19Z",
      "comment": "12 pages, 63 pages with appendix",
      "tags": [
+      "LLM",
+      "agents",
       "RL",
-      "VLM/LLM"
+      "reasoning"
      ],
      "ax_votes": 92,
      "ax_visits": 1890,
@@ -1253,7 +1411,12 @@
      ],
      "thumb": "data/thumbs/2611.28298.jpg",
      "thumb_w": 640,
-     "thumb_h": 346
+     "thumb_h": 346,
+     "summary": {
+      "zh": "研究以神经符号式 harness 管理上下文的组合泛化能力：仅用短任务强化学习训练 RLM，即可泛化到长 2-64 倍的任务；用合成数据训练 RLM-27B，在 CTC-Bench 和 ExpertLongBench 上平均提升 Qwen3.8-27B 26.9%，推理 token 约减半。",
+      "en": "Training neurosymbolic LM harnesses like RLM with RL on short tasks generalizes to 2-64x longer ones; RLM-27B, trained on synthetic data, beats Qwen3.8-27B by 26.9% on CTC-Bench and ExpertLongBench with ~2x fewer inference tokens."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.32606",
@@ -1281,7 +1444,10 @@
      "updated": "2026-11-24T13:37:54Z",
      "comment": "",
      "tags": [
-      "VLM/LLM"
+      "agents",
+      "LLM",
+      "reasoning",
+      "efficiency"
      ],
      "ax_votes": 106,
      "ax_visits": 1645,
@@ -1294,7 +1460,7 @@
       },
       {
        "logo": "data/logos/berkeley.edu.png",
-       "name": "UC Berkeley",
+       "name": "University of California, Berkeley",
        "ror": "01an7q238"
       },
       {
@@ -1302,14 +1468,19 @@
        "name": "NVIDIA"
       },
       {
-       "logo": "data/logos/northwestern.edu.png",
        "name": "Northwestern University",
-       "ror": "000e0be47"
+       "ror": "000e0be47",
+       "logo": "data/logos/northwestern.edu.png"
       }
      ],
      "thumb": "data/thumbs/2611.32606.jpg",
      "thumb_w": 640,
-     "thumb_h": 281
+     "thumb_h": 281,
+     "summary": {
+      "zh": "等算力阶梯（equal-budget ladder），在单智能体、算力对齐多数投票与算力对齐 pass@n 三级上衡量多智能体团队，并定义 Recursive Collective Intelligence（RCI）：无教师、无外部标签，团队用自身输出让下一代同等成本更聪明；转发拆分事实可在 27B 上超 pass@n 约三分之一，同质 27B 智能体自发形成枢纽使准确率提升 18 个百分点，两代无标签训练在 PlanBench、HiddenBench、Hanabi 上连续 4–6 代优于前代。",
+      "en": "The equal-budget ladder grades multi-agent LLM teams against a single agent, compute-matched majority vote, and pass@n; recursively self-trained groups, which forward split facts, beat pass@n by ~1/3 at 27B, gain 18 points from emergent hubs, and improve for 4-6 generations."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.26450",
@@ -1326,7 +1497,10 @@
      "updated": "2026-11-19T17:18:38Z",
      "comment": "27 pages, 3 figures, 24 tables",
      "tags": [
-      "VLM/LLM"
+      "LLM",
+      "reasoning",
+      "math",
+      "efficiency"
      ],
      "hf_upvotes": 7,
      "ax_votes": 74,
@@ -1339,7 +1513,12 @@
      ],
      "thumb": "data/thumbs/2611.26450.jpg",
      "thumb_w": 618,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "summary": {
+      "zh": "闭式零梯度电路嫁接原语将精确多位数算术与布尔/多数/奇偶电路直接编译进预训练权重，无需训练样本或运行时钩子；IBM Granite 4.2 3B 与 Qwen 3.5 4B 在 6 位数算术上达 99.17%/100.00% ALU 前缀准确率，远超 12.8K 样本 LoRA 的 42.2%/61.7%。",
+      "en": "Closed-form zero-gradient circuit-grafting compiles exact multi-digit arithmetic and Boolean/majority circuits into pretrained LM weights without training data or runtime hooks; Granite 4.2 3B and Qwen 3.5 4B reach 99.17%/100.00% ALU-prefix accuracy versus 42.2%/61.7% for 12.8K-sample LoRA."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.29897",
@@ -1366,15 +1545,15 @@
      "code_url": "https://github.com/AIGeeksGroup/MotionMamba2.0",
      "tags": [
       "humanoid",
-      "locomotion",
-      "diffusion policy",
-      "control"
+      "diffusion",
+      "world model",
+      "efficiency"
      ],
      "summary": {
-      "en": "Motion Mamba 2.0 integrates local attention, recurrent states, and persistent content memory for long-horizon humanoid motion generation, achieving accurate 39.52 s control and a 6.138x speedup on an RTX 4090 while deployed on Unitree G1.",
-      "zh": "Motion Mamba 2.0 是一种基于 Mamba 的根体扩散架构，通过融合局部注意力、可恢复循环状态和持久内容记忆来实现长视野可控动作生成，在 HiPHI 数据集上实现了长达 39.52 秒的精确终端控制，并在 RTX 4090 上将中位完整窗口延迟从 1685.35 毫秒降至 276.14 毫秒，实现了 6.138 倍的加速。同时，该方法在 Unitree G1 机器人上完成了真实的键盘鼠标交互与文本引导动作测试。"
+      "zh": "Motion Mamba 2.0 用 Mamba 循环状态加持久内容记忆 PCM 做根-身体扩散式自回归动作生成，支持最长 39.52 s 的长程末端控制；配合 CUDA Graph 等优化，RTX 4090 上完整窗口延迟从 1685.35 ms 降到 276.14 ms，中位加速 6.138 倍，并在 Unitree G1 上验证了文本引导动作组合与交互式行走。",
+      "en": "Motion Mamba 2.0 combines Mamba recurrent states with persistent content memory for autoregressive root-body diffusion, enabling terminal control over 39.52 s rollouts; CUDA Graph optimizations cut latency from 1685.35 to 276.14 ms (6.138x median speedup), validated on Unitree G1."
      },
-     "summary_source": "gemini-3.5-flash-lite",
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 226,
      "ax_votes": 0,
      "ax_visits": 63,
@@ -1386,8 +1565,16 @@
        "ror": "02v51f717"
       },
       {
-       "name": "Korea University",
-       "ror": "05m1gnk07"
+       "name": "Korea University"
+      },
+      {
+       "name": "Monash University",
+       "ror": "02bfwt286",
+       "logo": "data/logos/monash.edu.png"
+      },
+      {
+       "name": "NTU",
+       "ror": "02e7b5302"
       }
      ],
      "thumb": "data/thumbs/2611.29897.jpg",
@@ -1418,7 +1605,7 @@
      "comment": "Code and weights available at https://apple-aiml-research.github.io/ml-depth-pro-2/",
      "tags": [
       "3D",
-      "image generation"
+      "efficiency"
      ],
      "hf_upvotes": 41,
      "ax_votes": 61,
@@ -1426,18 +1613,18 @@
      "heat": 166.3,
      "orgs": [
       {
-       "name": "Apple",
-       "logo": "data/logos/apple.com.png"
+       "logo": "data/logos/apple.com.png",
+       "name": "Apple"
       }
      ],
      "thumb": "data/thumbs/2611.26603.jpg",
      "thumb_w": 247,
      "thumb_h": 440,
      "summary": {
-      "zh": "Depth Pro 2是一种用于图像和视频的全分辨率密集度量深度估计方法，通过训练单一可扩展网络，同时实现了度量准确性、边界清晰度和时间一致性，在各维度上均优于以往工作。",
-      "en": "Depth Pro 2 estimates dense metric depth for images and video at full resolution, achieving high metric accuracy, sharp boundaries, and temporal consistency simultaneously."
+      "zh": "Depth Pro 2 用单一可扩展网络统一处理图像与视频，以原生分辨率预测稠密深度，同时兼顾度量精度、边界锐利度与时序一致性，在四项指标上超越先前方法并重划 Pareto 前沿。",
+      "en": "Depth Pro 2 trains one scalable network on images and video to predict native-resolution depth that is metrically accurate, sharp, and temporally consistent, outperforming prior work and redefining the Pareto frontier."
      },
-     "summary_source": "gemini-3.5-flash-lite"
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.26444",
@@ -1498,10 +1685,10 @@
      "updated": "2026-11-19T17:15:38Z",
      "comment": "",
      "tags": [
-      "robotics",
       "benchmark",
-      "multimodal",
-      "agents"
+      "robotics",
+      "VLA",
+      "reasoning"
      ],
      "hf_upvotes": 56,
      "ax_votes": 55,
@@ -1537,24 +1724,24 @@
        "ror": "02zhqgq86"
       },
       {
+       "logo": "data/logos/hkust.edu.hk.png",
        "name": "HKUST",
-       "ror": "00q4vv597",
-       "logo": "data/logos/hkust.edu.hk.png"
+       "ror": "00q4vv597"
       },
       {
+       "logo": "data/logos/cuhk.edu.hk.png",
        "name": "CUHK",
-       "ror": "00t33hh48",
-       "logo": "data/logos/cuhk.edu.hk.png"
+       "ror": "00t33hh48"
       }
      ],
      "thumb": "data/thumbs/2611.26444.jpg",
      "thumb_w": 635,
      "thumb_h": 440,
      "summary": {
-      "zh": "Mind2Act World是一个用于机器人操作中具身思维、物理动作及两者组合的诊断基准，包含180种配置。评估表明，单项能力优秀的系统在组合任务中表现显著下降，其中最强智能体在Mind和Act任务中分别成功52.7%和39.0%，但在Mind2Act任务中仅成功12.0%。",
-      "en": "Mind2Act World is a diagnostic benchmark evaluating embodied mind, physical action, and their composition in robotic manipulation across 180 configurations. Evaluations show single-view competence does not translate to composition, with the strongest agent dropping from 52.7% in Mind and 39.0% in Act to 12.0% in Mind2Act."
+      "zh": "Mind2Act World 构建 30 个仿真操作任务、180 种配置的诊断基准，分 Mind、Act、Mind2Act 三视角评测多模态智能体、VLA 与 WAM；最强智能体在 Mind 与 Act 上分别成功 52.7% 和 39.0%，Mind2Act 仅 12.0%。",
+      "en": "Mind2Act World is a 30-task, 180-configuration diagnostic manipulation benchmark with Mind, Act, and Mind2Act views; the best agent scores 52.7% and 39.0% but only 12.0% on Mind2Act."
      },
-     "summary_source": "gemini-3.5-flash-lite"
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.34923",
@@ -1577,7 +1764,12 @@
      "updated": "2026-11-25T18:58:53Z",
      "comment": "Code is available at https://github.com/hustvl/MoLT",
      "code_url": "https://github.com/hustvl/MoLT",
-     "tags": [],
+     "tags": [
+      "LLM",
+      "efficiency",
+      "pretraining",
+      "interpretability"
+     ],
      "hf_upvotes": 72,
      "ax_votes": 31,
      "ax_visits": 622,
@@ -1586,11 +1778,25 @@
       {
        "name": "Huazhong University of Science & Technology",
        "ror": "00p991c53"
+      },
+      {
+       "name": "ByteDance",
+       "logo": "data/logos/bytedance.com.png"
+      },
+      {
+       "name": "University of Toronto",
+       "ror": "03dbr7087",
+       "logo": "data/logos/utoronto.ca.png"
       }
      ],
      "thumb": "data/thumbs/2611.34923.jpg",
      "thumb_w": 618,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "summary": {
+      "zh": "Mixture-of-Loops Transformer 用 Mixture-of-Loops Attention 把 KV 当作跨深度和循环复用记忆，其 U-MoLT 变体在 400B token 预训练中于 700M 模型上比 OLMo3 达到 1.7 倍的验证交叉熵 token 效率，3B MoE 困惑度降低 0.75、10 项任务准确率提升 2.1 个百分点。",
+      "en": "Mixture-of-Loops Transformer reuses keys and values as memory across depths and loops; U-MoLT beats OLMo3 with 1.7x CE token efficiency at 700M and +2.1 points on 10-task accuracy at 3B MoE."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.30111",
@@ -1614,24 +1820,46 @@
      "updated": "2026-11-24T17:50:11Z",
      "comment": "This version was posted before the coauthors completed their review of the paper",
      "tags": [
-      "manipulation",
-      "VLM/LLM",
-      "bimanual",
-      "mobile manipulation"
+      "robotics",
+      "agents",
+      "VLA",
+      "manipulation"
      ],
      "summary": {
-      "en": "RoboThink separates a reasoning agent from a fast policy using instruction and feedback channels for real-time robotic correction, raising success rates significantly on LIBERO and RoboTwin 2.0 under various drifts.",
-      "zh": "RoboThink将推理agent与策略分离，通过指令通道和反馈通道实现实时纠错与引导。在LIBERO上，未知恒定漂移下的成功率从0.09提升至0.87，在RoboTwin 2.0的双臂任务中也将成功率从0.12提升至0.74。"
+      "zh": "RoboThink 让智能体负责思考、策略网络负责执行：智能体通过指令通道改写任务指令、通过反馈通道给动作反馈，借助 agent-labelled DAgger 训练；在 LIBERO 上把恒定漂移下的成功率从 0.09 提到 0.87，在 RoboTwin 2.0 双臂任务上从 0.12 提到 0.74，单个成功仅需 55 秒和 8k tokens。",
+      "en": "RoboThink lets an agent think while a policy acts: the agent rewrites instructions and supplies motion feedback trained via agent-labelled DAgger, raising LIBERO success from 0.09 to 0.87 under drift with 55 s and 8k tokens per success."
      },
-     "summary_source": "gemini-3.5-flash-lite",
+     "summary_source": "deepseek-flash",
      "ax_votes": 77,
      "ax_visits": 818,
      "heat": 158.8,
      "orgs": [
       {
+       "name": "Tulane University",
+       "ror": "04vmvtb21",
+       "logo": "data/logos/tulane.edu.png"
+      },
+      {
+       "name": "New York University",
+       "ror": "0190ak572"
+      },
+      {
+       "name": "Northeastern University"
+      },
+      {
        "logo": "data/logos/stanford.edu.png",
        "name": "Stanford University",
        "ror": "00f54p054"
+      },
+      {
+       "logo": "data/logos/mit.edu.png",
+       "name": "MIT",
+       "ror": "042nb2s44"
+      },
+      {
+       "name": "Harvard University",
+       "ror": "03vek6s52",
+       "logo": "data/logos/harvard.edu.png"
       }
      ],
      "thumb": "data/thumbs/2611.30111.jpg",
@@ -1667,16 +1895,16 @@
      "updated": "2026-11-23T18:48:54Z",
      "comment": "Project Page: https://dravenalg.github.io/projects/Embo-Harness/",
      "tags": [
-      "VLM/LLM",
-      "manipulation",
-      "planning",
-      "perception"
+      "robotics",
+      "VLM",
+      "agents",
+      "manipulation"
      ],
      "summary": {
-      "en": "Embo-Harness systematically studies frontier-model-as-policy harnesses, achieving an 83.3% success rate on RoboLab-120 and outperforming the strongest baseline by 26.2 percentage points.",
-      "zh": "Embo-Harness系统性研究了前沿多模态大模型作为具身智能策略的设计原则，通过探索提示词、规划、动作执行和工具使用四个组件提炼出六项经验法则。该方法在RoboLab-120基准测试中取得了83.3%的成功率，比最强基线提升了26.2个百分点，并在4个真实世界的操纵任务的20次零样本试验中成功了15次。"
+      "zh": "Embo-Harness 系统研究前沿多模态模型直接作为机器人策略的闭环框架，梳理提示、规划、动作执行与工具使用四个环节并总结六条经验，在 RoboLab-120 上取得 83.3% 成功率，超最强基线 26.2 个百分点，真实世界四项操作任务零样本 20 次试验成功 15 次。",
+      "en": "Embo-Harness systematically studies frontier multimodal models as closed-loop robot policies, distilling six findings; it reaches 83.3% success on RoboLab-120, beating the best baseline by 26.2 points, and solves 15 of 20 zero-shot real-world trials."
      },
-     "summary_source": "gemini-3.5-flash-lite",
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 106,
      "ax_votes": 14,
      "ax_visits": 160,
@@ -1687,6 +1915,9 @@
        "ror": "02e7b5302"
       },
       {
+       "name": "ACE Robotics"
+      },
+      {
        "name": "SenseTime Research"
       },
       {
@@ -1694,7 +1925,7 @@
        "ror": "00mcjh785"
       },
       {
-       "name": "Lenovo"
+       "name": "Lenovo Robotics Lab"
       },
       {
        "logo": "data/logos/uconn.edu.png",
@@ -1745,16 +1976,16 @@
      "updated": "2026-11-23T16:53:57Z",
      "comment": "Project Page: https://lab.einsia.ai/robo-universe/",
      "tags": [
-      "simulation",
-      "dataset",
+      "robotics",
+      "agents",
       "benchmark",
-      "VLM/LLM"
+      "VLA"
      ],
      "summary": {
-      "en": "RoboUniverse-10K introduces 10,807 interactive environments and a zero-shot benchmark, RoboUniverse-Verified. Evaluations reveal frontier models reach 85.8% success, and fine-tuning RoboUniverse-35B-A3B lifts success from 0.8% to 21.2%.",
-      "zh": "RoboUniverse-10K 包含了 10,807 个由真实视频自动生成的交互式物理环境，并建立了 RoboUniverse-Verified 零样本评测基准。对 11 个模型的评估表明前沿模型可达 85.8% 的成功率，而微调后的 RoboUniverse-35B-A3B 将成功率从 0.8% 提升至 21.2%。"
+      "zh": "RoboUniverse-10K 通过自动化 Real2Sim 与质检流程从真实视频构建 10,807 个可交互、可重置、可验证的物理环境，并留出 500 个任务组成 RoboUniverse-Verified 零样本基准；11 个模型评测中前沿模型成功率 85.8%，开源基线仅 2.6%–10.0%；再用约 17K 多轮轨迹微调 Qwen3.6-35B-A3B 得到 RoboUniverse-35B-A3B，零样本成功率从 0.8% 提升到 21.2%。",
+      "en": "RoboUniverse-10K builds 10,807 resettable, verifiable physics environments from real videos via automated Real2Sim, plus a 500-task zero-shot benchmark where frontier models hit 85.8% versus 2.6-10.0% for open baselines; fine-tuning Qwen3.6-35B-A3B lifts success from 0.8% to 21.2%."
      },
-     "summary_source": "gemini-3.5-flash-lite",
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 1,
      "ax_votes": 54,
      "ax_visits": 666,
@@ -1825,9 +2056,9 @@
      "heat": 116.1,
      "orgs": [
       {
+       "logo": "data/logos/vt.edu.png",
        "name": "Virginia Tech",
-       "ror": "02smfhw86",
-       "logo": "data/logos/vt.edu.png"
+       "ror": "02smfhw86"
       },
       {
        "logo": "data/logos/nvidia.com.png",
@@ -1838,10 +2069,10 @@
      "thumb_w": 640,
      "thumb_h": 203,
      "summary": {
-      "zh": "Posterior Matching Distillation (PMD) 是一种新型扩散模型蒸馏方法，通过结合模式覆盖的后验采样与任意步数生成，在零总体损失时恢复教师模型的完整后验分布。在 SDXL 和 FLUX.2 4B 上的实验表明，PMD 在 4 步生成方法中取得了最佳的 FID。",
-      "en": "Posterior Matching Distillation (PMD) combines mode-covering posterior sampling with any-step generation to recover the teacher's full posterior distribution, achieving the best FID among 4-step methods on SDXL and FLUX.2."
+      "zh": "PMD 将模式覆盖的后验采样与任意步数生成结合，通过匹配指数重加权学生样本均值来学习教师后验，在 SDXL 和 FLUX.2 [klein] 4B 上取得 4 步方法中最佳 FID。",
+      "en": "Posterior Matching Distillation combines mode-covering posterior sampling with any-step generation by matching exponentially tilted student sample means, achieving the best 4-step FID on SDXL and FLUX.2 [klein] 4B."
      },
-     "summary_source": "gemini-3.5-flash-lite"
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.33102",
@@ -1865,7 +2096,9 @@
      "updated": "2026-11-25T18:46:02Z",
      "comment": "Preprint. 23 pages, 20 figures, 7 tables",
      "tags": [
-      "RL"
+      "RL",
+      "LLM",
+      "efficiency"
      ],
      "ax_votes": 40,
      "ax_visits": 751,
@@ -1875,9 +2108,9 @@
        "name": "Tufa Labs"
       },
       {
-       "logo": "data/logos/harvard.edu.png",
        "name": "Harvard University",
-       "ror": "03vek6s52"
+       "ror": "03vek6s52",
+       "logo": "data/logos/harvard.edu.png"
       },
       {
        "logo": "data/logos/illinois.edu.png",
@@ -1887,7 +2120,12 @@
      ],
      "thumb": "data/thumbs/2611.33102.jpg",
      "thumb_w": 566,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "summary": {
+      "zh": "研究RL后训练产生的rollout中保留多少知识，发现直接用最大似然拟合归档rollout（maximum likelihood replay），不区分对错、按生成顺序回放，即可复现在线RL的性能，单次更新即可追踪完整学习曲线。",
+      "en": "Investigating how much RL-acquired knowledge persists in rollouts, maximum likelihood replay that fits archived rollouts in generation order without distinguishing correct responses matches online RL performance."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.34051",
@@ -1917,21 +2155,45 @@
      "published": "2026-11-25T09:30:49Z",
      "updated": "2026-11-25T09:30:49Z",
      "comment": "",
-     "tags": [],
+     "tags": [
+      "LLM",
+      "efficiency",
+      "pretraining"
+     ],
      "hf_upvotes": 105,
      "ax_votes": 1,
      "ax_visits": 80,
      "heat": 114.0,
      "orgs": [
       {
+       "name": "MemTensor"
+      },
+      {
+       "name": "University of Science and Technology of China",
+       "ror": "04c4dkn09"
+      },
+      {
        "logo": "data/logos/hkust.edu.hk.png",
        "name": "HKUST",
        "ror": "00q4vv597"
+      },
+      {
+       "name": "Southern University of Science and Technology",
+       "ror": "049tv2d57"
+      },
+      {
+       "name": "Shanghai Jiao Tong University",
+       "ror": "0220qvk04"
       }
      ],
      "thumb": "data/thumbs/2611.34051.jpg",
      "thumb_w": 640,
-     "thumb_h": 348
+     "thumb_h": 348,
+     "summary": {
+      "zh": "针对 Gated DeltaNet-2 长上下文训练中擦除方向不对称导致循环状态指数增长的问题，提出 Stable Gated DeltaNet-2，用对称擦除保证非扩张状态传播，并配合衰减调节的残差写入，理论上给出 O(√T) 状态增长上界且保留分块并行。1.6B 参数模型上训练稳定，128K 平均 RULER 分数提升 6.80 分，九个下游任务平均准确率提升 0.62 分。",
+      "en": "Stable Gated DeltaNet-2 fixes GDN-2's exponential recurrent state growth via symmetric erasure and decay-regulated residual writing, with an O(√T) bound. On 1.6B models it raises 128K RULER by 6.80 and nine-task accuracy by 0.62."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.27193",
@@ -1959,14 +2221,19 @@
      "published": "2026-11-20T06:26:11Z",
      "updated": "2026-11-20T06:26:11Z",
      "comment": "",
-     "tags": [],
+     "tags": [
+      "LLM",
+      "pretraining",
+      "efficiency",
+      "theory"
+     ],
      "hf_upvotes": 94,
      "ax_votes": 6,
      "ax_visits": 80,
      "heat": 108.0,
      "orgs": [
       {
-       "name": "Xingchen AGI Lab"
+       "name": "China Telecom"
       },
       {
        "logo": "data/logos/hkust.edu.hk.png",
@@ -1978,13 +2245,18 @@
        "ror": "01yqg2h08"
       },
       {
-       "logo": "data/logos/huawei.com.png",
-       "name": "Huawei"
+       "name": "Huawei",
+       "logo": "data/logos/huawei.com.png"
       }
      ],
      "thumb": "data/thumbs/2611.27193.jpg",
      "thumb_w": 640,
-     "thumb_h": 310
+     "thumb_h": 310,
+     "summary": {
+      "zh": "cmHC 通过将 Birkhoff 多面体几何收缩到内部来混合残差流，缓解 under-mixing 与 over-mixing 的权衡，在稠密和 MoE 模型预训练中稳定梯度传播，并在 Ascend NPU 上将超连接执行延迟降低最多 44.8%。",
+      "en": "CmHC geometrically contracts the Birkhoff polytope inward to mix residual streams, mitigating under- and over-mixing; it stabilizes pretraining of dense and MoE models and cuts hyper-connection latency by up to 44.8% on Ascend NPUs."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.30634",
@@ -2004,7 +2276,12 @@
      "updated": "2026-11-24T08:46:11Z",
      "comment": "",
      "code_url": "https://github.com/Caiyun-AI/LoomFormer",
-     "tags": [],
+     "tags": [
+      "LLM",
+      "pretraining",
+      "efficiency",
+      "interpretability"
+     ],
      "hf_upvotes": 95,
      "ax_votes": 2,
      "ax_visits": 67,
@@ -2020,7 +2297,12 @@
      ],
      "thumb": "data/thumbs/2611.30634.jpg",
      "thumb_w": 640,
-     "thumb_h": 392
+     "thumb_h": 392,
+     "summary": {
+      "zh": "Loom attention 通过垂直注意力对前序 head 输出做归一化门控线性注意力，并与水平 token 注意力交织，实现逐 token 动态重连电路，构成 LoomFormer 双流架构；在 300B token、仅增约 2% FLOPs 下，LoomPythia-2.8B 下游增益约为 mHC-Pythia-2.8B 的 1.6 倍，0-shot 追平 Pythia-12B。",
+      "en": "Loom attention interweaves vertical attention over prior head outputs via normalized gated linear attention with horizontal token attention, yielding LoomFormer; with only ~2% extra FLOPs, LoomPythia-2.8B reaches ~1.6x mHC-Pythia-2.8B's downstream gain and matches Pythia-12B zero-shot."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.34232",
@@ -2112,7 +2394,9 @@
      "updated": "2026-11-25T11:55:12Z",
      "comment": "NeurIPS 2026",
      "tags": [
-      "benchmark"
+      "agents",
+      "benchmark",
+      "multimodal"
      ],
      "hf_upvotes": 96,
      "ax_votes": 0,
@@ -2121,7 +2405,12 @@
      "orgs": [],
      "thumb": "data/thumbs/2611.34232.jpg",
      "thumb_w": 640,
-     "thumb_h": 368
+     "thumb_h": 368,
+     "summary": {
+      "zh": "OS-Omni 是覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的跨平台计算机代理实时基准，v1 每平台 48 个任务、另含 12 个跨平台工作流，任务平均需 67.54 步；最强代理 Claude Opus 5.5 平均成功率 68.5%，低于人类 77.3%，在 iOS 和 macOS 上差距超过 25 点。",
+      "en": "OS-Omni is a live cross-platform benchmark for computer-using agents spanning Windows, Ubuntu, macOS, iOS, Android, and Web; its v1 has 48 tasks per platform plus 12 cross-platform workflows averaging 67.54 steps. Claude Opus 5.5 scores 68.5% versus 77.3% human, trailing by over 25 points on iOS and macOS."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.34575",
@@ -2247,8 +2536,10 @@
      "updated": "2026-11-25T15:39:45Z",
      "comment": "101 pages",
      "tags": [
-      "RL",
-      "benchmark"
+      "multimodal",
+      "LLM",
+      "pretraining",
+      "RL"
      ],
      "hf_upvotes": 80,
      "ax_votes": 4,
@@ -2256,17 +2547,17 @@
      "heat": 94.2,
      "orgs": [
       {
-       "logo": "data/logos/csmedcenter.com.png",
-       "name": "Sage-Med Team",
-       "ror": "04663jx74"
-      },
-      {
        "name": "Shanghai AI Lab"
       }
      ],
      "thumb": "data/thumbs/2611.34575.jpg",
      "thumb_w": 640,
-     "thumb_h": 302
+     "thumb_h": 302,
+     "summary": {
+      "zh": "Sage-Med-Preview 是 35B 参数（激活 3B）的医学多模态模型，用 3.227 亿条候选数据分阶段筛选结合医学预训练、分阶段监督微调与自适应强化学习的渐进课程训练，在 31 个公开多模态基准上均分 58.26%，超过 Hulu-Med-235B-A22B 的 50.99% 和 Intern-S2-Preview 的 52.24%。",
+      "en": "Sage-Med-Preview, a 35B-parameter (3B activated) medical MLLM trained via curated 322.7M-record data and a progressive pretraining-to-SFT-to-RL curriculum, scores 58.26% on 31 public multimodal benchmarks, beating Hulu-Med-235B-A22B (50.99%) and Intern-S2-Preview (52.24%)."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.30989",
@@ -2286,15 +2577,15 @@
      "comment": "",
      "tags": [
       "benchmark",
-      "VLM/LLM",
-      "VLA",
-      "world model"
+      "robotics",
+      "agents",
+      "VLM"
      ],
      "summary": {
-      "en": "WorldLeague benchmarks 13 AI systems across 60 simulated robot tasks, where Claude Fable 5.2 achieves the highest mean Interactive Score of 28.58/100 and completes 13 goals.",
-      "zh": "推出了 WorldLeague 基准测试，包含 60 个模拟机器人任务，用于评估 AI 系统在感知、记忆、规划和行动方面的物理代理能力。测试显示在 13 个代表性系统中，Claude Fable 5.2 取得了最高的平均交互分 28.58/100 并完成了 13 个目标。"
+      "zh": "WorldLeague 基准用 60 个模拟机器人任务，通过机器人轨迹衡量系统向物理目标推进的程度与成功率，比较 13 个系统；Claude Fable 5.2 完成 13 个目标，平均 Interactive Score 最高，为 28.58/100。",
+      "en": "WorldLeague benchmarks AI systems on 60 simulated robot tasks via trajectory-based progress and success; Claude Fable 5.2 completes 13 goals and leads with a mean Interactive Score of 28.58/100."
      },
-     "summary_source": "gemini-3.5-flash-lite",
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 87,
      "ax_votes": 2,
      "ax_visits": 42,
@@ -2331,7 +2622,9 @@
      "code_url": "https://github.com/yuhangdai427/NoPeWorld",
      "tags": [
       "world model",
-      "benchmark"
+      "video generation",
+      "diffusion",
+      "safety"
      ],
      "hf_upvotes": 62,
      "ax_votes": 10,
@@ -2339,14 +2632,19 @@
      "heat": 92.1,
      "orgs": [
       {
-       "logo": "data/logos/polyu.edu.hk.png",
        "name": "Hong Kong Polytechnic University",
-       "ror": "0030zas98"
+       "ror": "0030zas98",
+       "logo": "data/logos/polyu.edu.hk.png"
       }
      ],
      "thumb": "data/thumbs/2611.27963.jpg",
      "thumb_w": 640,
-     "thumb_h": 355
+     "thumb_h": 355,
+     "summary": {
+      "zh": "针对交互式视频世界模型中的物体穿透问题，构建 NoPeBench 基准并发现冻结 DiT 的隐状态已能预测碰撞，据此训练轻量预测头筛除不安全动作并替换为安全动作，在六个世界模型上将物理违规率从 74% 降至 16%。",
+      "en": "NoPeBench benchmark reveals object penetration in interactive video world models; NoPeWorld trains a small head on frozen DiT hidden states to filter unsafe actions, cutting violation rates from 74% to 16% across six models."
+     },
+     "summary_source": "deepseek-flash"
     }
    ]
   }

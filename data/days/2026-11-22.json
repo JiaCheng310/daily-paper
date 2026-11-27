@@ -31,10 +31,10 @@
    "updated": "2026-11-22T09:15:32Z",
    "comment": "",
    "tags": [
-    "VLA",
+    "VLM",
+    "robotics",
     "manipulation",
-    "VLM/LLM",
-    "benchmark"
+    "VLA"
    ],
    "hf_upvotes": 46,
    "ax_votes": 9,
@@ -46,13 +46,18 @@
      "ror": "03cve4549"
     },
     {
-     "logo": "data/logos/tencent.com.png",
-     "name": "Tencent"
+     "name": "Tencent",
+     "logo": "data/logos/tencent.com.png"
     }
    ],
    "thumb": "data/thumbs/2611.29338.jpg",
    "thumb_w": 441,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "nanoAstra 以语义动作建模和 CP-SFT 训练 VLM 用于通用机器人操作，在 RoboTwin 2.0 随机化基准上 zero-shot 成功率达 17.8%，优于先进 VLA 与 WAM 基线，并在单张 H20 GPU 上实现流式执行，将机器人空闲时间从 35.0% 降至 6.9%。",
+    "en": "NanoAstra trains VLMs for generalizable manipulation via semantic action modeling and capability-preserving SFT, reaching 17.8% zero-shot success on RoboTwin 2.0 and cutting robot idle time from 35.0% to 6.9%."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29238",
@@ -78,6 +83,9 @@
    "updated": "2026-11-22T05:17:35Z",
    "comment": "",
    "tags": [
+    "agents",
+    "code",
+    "multimodal",
     "benchmark"
    ],
    "hf_upvotes": 15,
@@ -86,14 +94,22 @@
    "heat": 19.1,
    "orgs": [
     {
-     "logo": "data/logos/ucsd.edu.png",
-     "name": "UC San Diego",
-     "ror": "0168r3w48"
+     "name": "University of California San Diego",
+     "ror": "0168r3w48",
+     "logo": "data/logos/ucsd.edu.png"
+    },
+    {
+     "name": "Aether AI"
     }
    ],
    "thumb": "data/thumbs/2611.29238.jpg",
    "thumb_w": 344,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "GameAnything 是一个开源的智能体平台，将多模态灵感通过迭代开发转化为现有游戏的可玩扩展，结合编码智能体、独立的试玩评审、持久开发状态与可复用经验记忆；配套 GameAnything-Bench 评测 9 种编码智能体配置，发现它们能适配参考内容，但在可玩交互与精确修改上仍显不足。",
+    "en": "GameAnything is an open-source agentic platform that turns multimodal inspirations into playable extensions of existing games via iterative development with coding agents, a playtesting critic, and experience memory; GameAnything-Bench evaluates nine coding agent configurations, which adapt references but still struggle with playable interactions and precise edits."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29355",
@@ -119,8 +135,10 @@
    "updated": "2026-11-22T09:43:53Z",
    "comment": "",
    "tags": [
-    "VLM/LLM",
-    "benchmark"
+    "VLM",
+    "benchmark",
+    "multimodal",
+    "interpretability"
    ],
    "hf_upvotes": 16,
    "ax_votes": 0,
@@ -132,19 +150,27 @@
      "ror": "027m9bs27"
     },
     {
-     "logo": "data/logos/whu.edu.cn.png",
      "name": "Wuhan University",
-     "ror": "033vjfk17"
+     "ror": "033vjfk17",
+     "logo": "data/logos/whu.edu.cn.png"
     },
     {
-     "logo": "data/logos/getty.edu.png",
      "name": "Getty Conservation Institute",
-     "ror": "019496w77"
+     "ror": "019496w77",
+     "logo": "data/logos/getty.edu.png"
+    },
+    {
+     "name": "ELLIS Manchester"
     }
    ],
    "thumb": "data/thumbs/2611.29355.jpg",
    "thumb_w": 514,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "Polytropos 基准将 VLM 对文物的描述重建为图像并与原照片比对，覆盖 374 件文物、5 个模型共 1,870 条描述及 230 条策展人描述；重建图被认作所记录文化的比例为 54.55%–59.09%，高于照片的 52.14%，但仅 0.49% 能对应到具体物件。",
+    "en": "Polytropos reconstructs VLM descriptions of 374 cultural objects into images and compares them with originals: reconstructions are read as the recorded culture 54.55%-59.09% of the time versus 52.14% for photos, yet only 0.49% match the specific object."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29184",
@@ -171,7 +197,10 @@
    "updated": "2026-11-22T03:22:04Z",
    "comment": "",
    "tags": [
-    "benchmark"
+    "video generation",
+    "benchmark",
+    "world model",
+    "reasoning"
    ],
    "hf_upvotes": 15,
    "ax_votes": 0,
@@ -185,7 +214,12 @@
    ],
    "thumb": "data/thumbs/2611.29184.jpg",
    "thumb_w": 640,
-   "thumb_h": 226
+   "thumb_h": 226,
+   "summary": {
+    "zh": "PhyCoVE 构建了 533 个物理反事实视频编辑用例的基准，覆盖刚体、弹性体和流体及其五种交互模式，并提出反事实保真度指标；在该基准上评测七个视频编辑模型，发现其排名与人类偏好接近，但最佳模型仅复现约七分之一的物理变化。",
+    "en": "PhyCoVE benchmarks physical counterfactual video editing with 533 cases across rigid, elastic, and fluid dynamics and proposes counterfactual fidelity; seven video editing models, even the best reproducing only about one seventh of physical change, remain far from solved."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29389",
@@ -207,26 +241,48 @@
    "published": "2026-11-22T11:03:20Z",
    "updated": "2026-11-22T11:03:20Z",
    "comment": "28 pages. Project page: https://aigeeksgroup.github.io/PINE",
-   "tags": [],
+   "tags": [
+    "3D",
+    "diffusion",
+    "multimodal",
+    "efficiency"
+   ],
    "hf_upvotes": 7,
    "ax_votes": 3,
    "ax_visits": 39,
    "heat": 13.9,
    "orgs": [
     {
-     "logo": "data/logos/unimelb.edu.au.png",
-     "name": "The University of Melbourne",
-     "ror": "01ej9dk98"
+     "name": "University of Melbourne",
+     "ror": "01ej9dk98",
+     "logo": "data/logos/unimelb.edu.au.png"
+    },
+    {
+     "name": "Southeast University",
+     "ror": "04ct4d772"
+    },
+    {
+     "name": "Fudan University",
+     "ror": "013q1eq08"
     },
     {
      "logo": "data/logos/pku.edu.cn.png",
      "name": "Peking University",
      "ror": "02v51f717"
+    },
+    {
+     "name": "Hanyang University",
+     "ror": "046865y68"
     }
    ],
    "thumb": "data/thumbs/2611.29389.jpg",
    "thumb_w": 640,
-   "thumb_h": 248
+   "thumb_h": 248,
+   "summary": {
+    "zh": "PINE 用一步 Omni Diffusion Transformer 单次前向同时预测点图、表面法线和实例图，以流掩码控制各 token 流交互，并用相机感知射线编码和 DINOv3 特征注意力；仅用 139K 合成图像训练，即在点图上取得最优，在大型物体分割上超过 SAM，且比 MoGe-3 加 SAM 快 5.7 倍。",
+    "en": "PINE, a one-step Omni Diffusion Transformer, jointly predicts point maps, surface normals, and instance maps in a single forward pass using stream masks, camera-ray encoding, and DINOv3-grounded attention; trained on 139K synthetic images, it achieves state-of-the-art point maps and runs 5.7x faster than MoGe-3 with SAM."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29259",
@@ -253,8 +309,10 @@
    "comment": "Code available at: https://github.com/ToghrulAbbasov19/look-back",
    "code_url": "https://github.com/ToghrulAbbasov19/look-back",
    "tags": [
+    "RL",
     "world model",
-    "RL"
+    "agents",
+    "reasoning"
    ],
    "ax_votes": 4,
    "ax_visits": 60,
@@ -266,6 +324,10 @@
      "ror": "05apxxy63"
     },
     {
+     "name": "New York University",
+     "ror": "0190ak572"
+    },
+    {
      "logo": "data/logos/mit.edu.png",
      "name": "MIT",
      "ror": "042nb2s44"
@@ -273,7 +335,12 @@
    ],
    "thumb": "data/thumbs/2611.29259.jpg",
    "thumb_w": 489,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": " REINFORCE Look Back (RLB) 策略梯度估计器，用反事实世界模型预测同一环境随机性下替换动作后的结果，并以反事实回报作为基线分离动作效应与环境运气，证明其无偏性与方差缩减条件。在环境演化比动作影响更难预测时，反事实世界模型比普通世界模型更易学习并带来更好的策略学习。",
+    "en": "REINFORCE Look Back (RLB) uses counterfactual world models to predict outcomes under alternative actions and counterfactual returns as baselines, provably reducing variance and separating action effects from environmental luck."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29282",
@@ -297,16 +364,18 @@
    "comment": "",
    "tags": [
     "world model",
-    "benchmark"
+    "3D",
+    "dataset",
+    "efficiency"
    ],
    "ax_votes": 4,
    "ax_visits": 55,
    "heat": 9.5,
    "orgs": [
     {
-     "logo": "data/logos/polyu.edu.hk.png",
      "name": "Hong Kong Polytechnic University",
-     "ror": "0030zas98"
+     "ror": "0030zas98",
+     "logo": "data/logos/polyu.edu.hk.png"
     },
     {
      "logo": "data/logos/hkust.edu.hk.png",
@@ -320,7 +389,12 @@
    ],
    "thumb": "data/thumbs/2611.29282.jpg",
    "thumb_w": 640,
-   "thumb_h": 258
+   "thumb_h": 258,
+   "summary": {
+    "zh": "RadioWorld 用双流 Mixture-of-Transformers 架构把世界模型迁移到射频辐射场合成，Scene-Understanding Transformer 编码 3D 场景几何与收发机位置，Field-Generation Transformer 据此生成射频场，无需参考测量；并构建覆盖 657 个城市场景、32,850 个射频场的 UrbanRF-Bench，在未见城市上显著优于专用基线。",
+    "en": "RadioWorld transfers a world model to synthesize RF radiance fields via a dual-stream Mixture-of-Transformers, encoding 3D geometry and transceiver locations without reference measurements; it also introduces UrbanRF-Bench (657 scenes, 32,850 fields) and clearly outperforms specialized baselines in unseen cities."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29293",
@@ -341,7 +415,9 @@
    "updated": "2026-11-22T07:30:02Z",
    "comment": "",
    "tags": [
-    "driving"
+    "3D",
+    "reasoning",
+    "efficiency"
    ],
    "ax_votes": 5,
    "ax_visits": 40,
@@ -355,7 +431,12 @@
    ],
    "thumb": "data/thumbs/2611.29293.jpg",
    "thumb_w": 640,
-   "thumb_h": 209
+   "thumb_h": 209,
+   "summary": {
+    "zh": "GALILEO 用伽利略平移把每个 key 的 3D 位置按估计速度和时间偏移搬到查询时刻，再做位置编码，因此可直接接入 RayRoPE 与 URoPE；在 LVSM 上提升 Syn4D、动态 Objaverse 和 Stereo4D 的动态视图合成，并降低 3D 点跟踪误差。",
+    "en": "GALILEO transports each key's 3D position to query time via estimated velocity before positional encoding, plugging into RayRoPE and URoPE; in LVSM it improves dynamic view synthesis on Syn4D, dynamic Objaverse, and Stereo4D."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29377",
@@ -381,10 +462,10 @@
    "updated": "2026-11-22T10:38:23Z",
    "comment": "45 pages, 21 figures",
    "tags": [
-    "VLA",
-    "manipulation",
-    "imitation",
-    "VLM/LLM"
+    "VLM",
+    "agents",
+    "robotics",
+    "manipulation"
    ],
    "ax_votes": 3,
    "ax_visits": 48,
@@ -397,7 +478,12 @@
    ],
    "thumb": "data/thumbs/2611.29377.jpg",
    "thumb_w": 640,
-   "thumb_h": 381
+   "thumb_h": 381,
+   "summary": {
+    "zh": "Contact Harness 用可复用的优化技能引导 VLM agent 结合力觉与视觉判断接触状态并选择动作，配合实时力反馈的柔顺执行，无需微调或示范；在 GPT-6 Astra 驱动 Rokae 与 Franka 的零样本真机实验中，15 类连接器全插入率 90.7%，四个接触任务平均成功率 100%，六项仿真任务 96.7%，超过微调 VLA 基线的最高 68.3%。",
+    "en": "Contact Harness guides VLM agents with reusable optimized skills and compliant force-feedback execution to assess contact states and act, requiring no fine-tuning or demonstrations; it achieves 90.7% full insertion across 15 connectors and 96.7% in simulation, beating fine-tuned VLA baselines' 68.3%."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29547",
@@ -419,7 +505,10 @@
    "published": "2026-11-22T15:18:17Z",
    "updated": "2026-11-25T03:57:52Z",
    "comment": "21 pages",
-   "tags": [],
+   "tags": [
+    "image generation",
+    "efficiency"
+   ],
    "hf_upvotes": 3,
    "ax_votes": 3,
    "ax_visits": 15,
@@ -445,7 +534,12 @@
    ],
    "thumb": "data/thumbs/2611.29547.jpg",
    "thumb_w": 640,
-   "thumb_h": 239
+   "thumb_h": 239,
+   "summary": {
+    "zh": "在 Priming 框架上研究一步生成器的表示对齐路径选择，发现对齐生成路径会使 recall 从 0.45 降至 0.15–0.25，而对齐配对重建路径配合冻结 DINOv2 编码器在全部设置下均有效，RePrime 在 ImageNet 256×256 上将 FID 降至 1.30（B）与 1.155（L）。",
+    "en": "Studying which path to align in Priming's one-step generators, aligning the paired reconstruction path with a frozen DINOv2 encoder outperforms aligning the generative path, yielding RePrime with FID 1.30 (B) and 1.155 (L) on ImageNet 256×256."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29155",
@@ -466,20 +560,35 @@
    "published": "2026-11-22T02:25:07Z",
    "updated": "2026-11-22T02:25:07Z",
    "comment": "",
-   "tags": [],
+   "tags": [
+    "LLM",
+    "retrieval",
+    "agents"
+   ],
    "ax_votes": 4,
    "ax_visits": 31,
    "heat": 7.1,
    "orgs": [
     {
-     "logo": "data/logos/adelaide.edu.au.png",
      "name": "Adelaide University",
-     "ror": "028g18b61"
+     "ror": "028g18b61",
+     "logo": "data/logos/adelaide.edu.au.png"
+    },
+    {
+     "name": "Oracle"
+    },
+    {
+     "name": "CSIRO"
     }
    ],
    "thumb": "data/thumbs/2611.29155.jpg",
    "thumb_w": 502,
-   "thumb_h": 284
+   "thumb_h": 284,
+   "summary": {
+    "zh": "ContextFact 将保留上下文的事实记忆与有源实体表示结合：会话内为每条事实收集解读所需上下文，跨会话对齐指代并回溯源对话重建实体表示；查询时分别重排事实与实体视图并做实体链接扩展。以 Qwen3.5-27B 为骨干，在 LoCoMo 和 LongMemEval-S 上分别取得 86.49% 和 91.00% 的 judge 准确率，仅用最强基线 21% 的证据 token。",
+    "en": "ContextFact links context-preserving fact memories with source-grounded entity representations, reconstructing entities across sessions and reranking fact and entity views at query time; with Qwen3.5-27B it reaches 86.49% on LoCoMo and 91.00% on LongMemEval-S using only 21% of the strongest baseline's evidence tokens."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29579",
@@ -500,26 +609,43 @@
    "updated": "2026-11-22T16:06:52Z",
    "comment": "",
    "tags": [
-    "VLM/LLM"
+    "theory",
+    "pretraining",
+    "efficiency"
    ],
    "ax_votes": 3,
    "ax_visits": 26,
    "heat": 5.6,
    "orgs": [
     {
-     "logo": "data/logos/uzh.ch.png",
      "name": "University of Zurich",
-     "ror": "02crff812"
+     "ror": "02crff812",
+     "logo": "data/logos/uzh.ch.png"
     },
     {
-     "logo": "data/logos/tuebingen.ai.png",
+     "name": "ELLIS Institute Tübingen",
+     "ror": "036z3g533",
+     "logo": "data/logos/tue.ellis.eu.png"
+    },
+    {
+     "name": "Max Planck Institute for Intelligent Systems",
+     "ror": "04fq9j139",
+     "logo": "data/logos/is.mpg.de.png"
+    },
+    {
      "name": "Tübingen AI Center",
-     "ror": "0107nyd78"
+     "ror": "0107nyd78",
+     "logo": "data/logos/tuebingen.ai.png"
     }
    ],
    "thumb": "data/thumbs/2611.29579.jpg",
    "thumb_w": 627,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "在测地凸的球面设定下，为任意旋转型学习率调度推导末次迭代收敛界，得到使该界最小、且随训练步数增长趋近线性衰减的唯一调度；据此预测并验证 AdamH/MuonH 下线性衰减强于 WSD，而 Adam/Muon 因参数范数动态变化仍适合 WSD，并导出一个优于 cosine 和 WSD 的新调度。",
+    "en": "A finite-horizon last-iterate bound for rotational learning-rate schedules on a geodesically convex sphere yields a unique optimal schedule approaching linear decay, predicting schedule ordering for Adam/Muon and Hyperball optimizers and motivating a new schedule outperforming cosine and WSD."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29618",
@@ -541,7 +667,11 @@
    "published": "2026-11-22T17:14:59Z",
    "updated": "2026-11-22T17:14:59Z",
    "comment": "",
-   "tags": [],
+   "tags": [
+    "video generation",
+    "diffusion",
+    "efficiency"
+   ],
    "ax_votes": 2,
    "ax_visits": 35,
    "heat": 5.5,
@@ -552,17 +682,18 @@
      "ror": "03q8dnn23"
     },
     {
-     "logo": "data/logos/alibaba.com.png",
-     "name": "Alibaba"
-    },
-    {
-     "name": "City University of Hong Kong (Dongguan)",
-     "ror": "03hj2gd47"
+     "name": "Alibaba Group",
+     "ror": "00k642b80"
     }
    ],
    "thumb": "data/thumbs/2611.29618.jpg",
    "thumb_w": 640,
-   "thumb_h": 276
+   "thumb_h": 276,
+   "summary": {
+    "zh": "Mass Forcing 将 on-policy DMD 监督从整段视频细化到单个状态，用潜空间 score 积分估计师生密度比重加权分支 rollout，并在 MovieGen 与 VBench 上将 Dynamic Degree 提升至 83%，基线仅 12–32%。",
+    "en": "Mass Forcing shifts on-policy DMD supervision from whole videos to individual states, reweighting branched rollouts by latent-space score-integrated density ratios and reaching 83% Dynamic Degree on MovieGen and VBench versus 12-32% for baselines."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29240",
@@ -599,10 +730,10 @@
    "updated": "2026-11-22T05:17:54Z",
    "comment": "",
    "tags": [
+    "robotics",
+    "multimodal",
     "manipulation",
-    "sim2real",
-    "VLM/LLM",
-    "teleop"
+    "dataset"
    ],
    "ax_votes": 1,
    "ax_visits": 40,
@@ -612,11 +743,25 @@
     {
      "logo": "data/logos/nvidia.com.png",
      "name": "NVIDIA"
+    },
+    {
+     "logo": "data/logos/hkust.edu.hk.png",
+     "name": "HKUST",
+     "ror": "00q4vv597"
+    },
+    {
+     "name": "University of Cambridge",
+     "ror": "013meh722"
     }
    ],
    "thumb": "data/thumbs/2611.29240.jpg",
    "thumb_w": 640,
-   "thumb_h": 281
+   "thumb_h": 281,
+   "summary": {
+    "zh": "Tacinf 是一套面向力感知操作的低成本模块化基础设施，统一了仿真数据合成与触觉基准 Tabero、VTLA 策略学习、手持采集设备 Tacumi 和 sim-to-real 评测 Taco；仅用仿真触觉数据微调的基础模型可零样本迁移到真实任务，8 个策略的仿真与真机成功率相关系数 r=0.998，混合遥操作、仿真与 Tacumi 数据后真机成功率从 20% 升至 60%。",
+    "en": "Tacinf unifies tactile simulation, the Tabero benchmark, VTLA policy learning, handheld Tacumi collection, and Taco sim-to-real evaluation; simulation-only tactile tuning transfers zero-shot, with sim-real success correlating at r=0.998 and mixed data lifting real success from 20% to 60%."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29630",
@@ -634,20 +779,29 @@
    "published": "2026-11-22T17:28:05Z",
    "updated": "2026-11-22T17:28:05Z",
    "comment": "",
-   "tags": [],
+   "tags": [
+    "3D",
+    "image generation",
+    "efficiency"
+   ],
    "ax_votes": 2,
    "ax_visits": 28,
    "heat": 4.8,
    "orgs": [
     {
-     "logo": "data/logos/dartmouth.edu.png",
      "name": "Dartmouth College",
-     "ror": "049s0rh22"
+     "ror": "049s0rh22",
+     "logo": "data/logos/dartmouth.edu.png"
     }
    ],
    "thumb": "data/thumbs/2611.29630.jpg",
    "thumb_w": 640,
-   "thumb_h": 314
+   "thumb_h": 314,
+   "summary": {
+    "zh": "SuperFine3D 通过全局-局部递归细化学习共享细化算子，在仅用 $512^3$–$1024^3$ 表示训练的情况下生成 $4096^3$ 解码器网格分辨率的高精细 3D 几何，结合空间单元注意力与跨尺度引导，端到端推理相比全注意力基线加速 9.4 倍、峰值显存降低 23.0%。",
+    "en": "SuperFine3D learns a shared global-local recursive refinement operator trained only on 512^3–1024^3 representations to generate extremely detailed 3D geometry at 4096^3 decoder-grid resolution, achieving 9.4x inference speedup and 23.0% lower peak GPU memory than a full-attention recursive baseline."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29205",
@@ -672,8 +826,9 @@
    "comment": "20 pages, including supplementary material. Project page: https://rtwotwo.github.io/DriveTTO/ Code: https://github.com/Rtwotwo/DriveTTO",
    "code_url": "https://github.com/Rtwotwo/DriveTTO",
    "tags": [
-    "benchmark",
-    "driving"
+    "driving",
+    "agents",
+    "reasoning"
    ],
    "ax_votes": 2,
    "ax_visits": 27,
@@ -687,11 +842,19 @@
      "logo": "data/logos/pku.edu.cn.png",
      "name": "Peking University",
      "ror": "02v51f717"
+    },
+    {
+     "name": "EABOT.AI"
     }
    ],
    "thumb": "data/thumbs/2611.29205.jpg",
    "thumb_w": 640,
-   "thumb_h": 261
+   "thumb_h": 261,
+   "summary": {
+    "zh": "DriveTTO 是一种免训练方法，围绕原生轨迹提案在逐渐缩小的邻域内重采样，并用冻结的评分器在到达的终点评估完整路径；通过融合规划器提案分支与车辆控制扰动分支，在双评分器都预测提升时才接受更新。Navtest 上原生零分场景平均 51.35% 恢复非零 PDMS，零分率从 1.63% 降至 1.13%，并取得 95.54 PDMS。",
+    "en": "DriveTTO is a training-free test-time search that refines native driving proposals in shrinking neighborhoods, fusing planner and control branches only when both frozen scorers predict gains, recovering nonzero PDMS in 51.35% of zero-score Navtest cases."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29610",
@@ -710,10 +873,10 @@
    "updated": "2026-11-22T17:04:16Z",
    "comment": "",
    "tags": [
-    "dexterous",
+    "robotics",
     "manipulation",
-    "grasping",
-    "RL"
+    "RL",
+    "agents"
    ],
    "ax_votes": 1,
    "ax_visits": 36,
@@ -726,7 +889,12 @@
    ],
    "thumb": "data/thumbs/2611.29610.jpg",
    "thumb_w": 640,
-   "thumb_h": 302
+   "thumb_h": 302,
+   "summary": {
+    "zh": "Dr. Grasp-RL 用时间反转课程与协调重置机制训练 PPO 下的简单 MLP 策略，在约 400 个物体上学习多样且闭环的灵巧抓取，并在 20,000 多个未见物体上展现强泛化。",
+    "en": "Dr. Grasp-RL trains a simple PPO MLP policy with a time-reversed curriculum and coordinated reset to learn diverse, closed-loop dexterous grasps from ~400 objects, generalizing to 20,000+ unseen objects."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29123",
@@ -750,9 +918,10 @@
    "updated": "2026-11-22T01:08:48Z",
    "comment": "Autonomous driving, Trajectory Planning, Diffusion-based Planners, Reinforcement Learning, RL Post-training, Off-policy RL",
    "tags": [
+    "driving",
     "RL",
-    "benchmark",
-    "driving"
+    "diffusion",
+    "efficiency"
    ],
    "ax_votes": 1,
    "ax_visits": 34,
@@ -763,9 +932,10 @@
      "ror": "02e7b5302"
     },
     {
-     "logo": "data/logos/tudelft.nl.png",
-     "name": "Delft University of Technology",
-     "ror": "02e2c7k09"
+     "name": "Delft University of Technology"
+    },
+    {
+     "name": "Motional"
     },
     {
      "logo": "data/logos/ox.ac.uk.png",
@@ -775,7 +945,12 @@
    ],
    "thumb": "data/thumbs/2611.29123.jpg",
    "thumb_w": 640,
-   "thumb_h": 252
+   "thumb_h": 252,
+   "summary": {
+    "zh": "PlanNudge 冻结预训练的扩散规划器，只用轻量 MLP nudge 策略在闭环中单次前向输出速度与曲率调整，在 nuPlan 六个设置上追平或超过此前最优 RL 微调方法，环境步数约 1/6、计算量不到 1/5。",
+    "en": "PlanNudge freezes a pretrained diffusion driving planner and trains a lightweight MLP nudge policy to adjust speed and curvature, matching or beating prior RL finetuning on all six nuPlan settings with ~1/6 environment steps."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29150",
@@ -799,8 +974,10 @@
    "updated": "2026-11-22T02:10:25Z",
    "comment": "",
    "tags": [
-    "VLM/LLM",
-    "benchmark"
+    "agents",
+    "VLM",
+    "benchmark",
+    "interpretability"
    ],
    "hf_upvotes": 4,
    "ax_votes": 0,
@@ -808,23 +985,28 @@
    "heat": 4.7,
    "orgs": [
     {
-     "logo": "data/logos/yale.edu.png",
      "name": "Yale University",
-     "ror": "03v76x132"
+     "ror": "03v76x132",
+     "logo": "data/logos/yale.edu.png"
     },
     {
      "name": "University of Minnesota",
      "ror": "017zqws13"
     },
     {
-     "logo": "data/logos/monash.edu.png",
      "name": "Monash University",
-     "ror": "02bfwt286"
+     "ror": "02bfwt286",
+     "logo": "data/logos/monash.edu.png"
     }
    ],
    "thumb": "data/thumbs/2611.29150.jpg",
    "thumb_w": 640,
-   "thumb_h": 268
+   "thumb_h": 268,
+   "summary": {
+    "zh": "构建 PyraFault 基准（五支 TCGA 队列共 2200 例、306 万坐标监督样本）来评测跨放大倍率溯源验证 CMPV，并提出先估计来源再比对声称位置的 ZoomTrace；在 503,320 个测试样本上 AUPRC 0.969、AUROC 0.987，Efficient LoFTR 为 0.789 和 0.903。",
+    "en": "PyraFault benchmarks cross-magnification provenance verification with 3.06M examples from 2,200 TCGA cases; ZoomTrace recovers observation sources before checking claimed locations, reaching 0.969 AUPRC and 0.987 AUROC versus 0.789 and 0.903 for Efficient LoFTR."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29590",
@@ -850,8 +1032,10 @@
    "updated": "2026-11-22T16:25:24Z",
    "comment": "26 pages, 9 figures, 22 tables. Project page: https://cmu-l3.github.io/kernel-shift/",
    "tags": [
-    "VLM/LLM",
-    "benchmark"
+    "code",
+    "benchmark",
+    "agents",
+    "efficiency"
    ],
    "hf_upvotes": 4,
    "ax_votes": 0,
@@ -862,11 +1046,19 @@
      "logo": "data/logos/cmu.edu.png",
      "name": "Carnegie Mellon University",
      "ror": "05x2bcf33"
+    },
+    {
+     "name": "Arm"
     }
    ],
    "thumb": "data/thumbs/2611.29590.jpg",
    "thumb_w": 640,
-   "thumb_h": 150
+   "thumb_h": 150,
+   "summary": {
+    "zh": "KernelShift 构建了跨 CPU 架构演进的 kernel 优化基准，从 ncnn、llama.cpp 等真实仓库提取 99 个 kernel，让编码 agent 在 Arm Neon/SVE/SVE2/SME2 上优化代码；agent 在成熟扩展上比自动向量化编译器快 2.4–19.8x、比 ncnn Neon kernel 快至 2.74x，但仍落后 KleidiAI 手工内核（0.70x），且难以适配 SME2 矩阵瓦片等陌生编程模型。",
+    "en": "KernelShift benchmarks coding agents on 99 real-world CPU kernels across Arm Neon, SVE, SVE2, and SME2. Agents beat auto-vectorized compilers by 2.4-19.8x and ncnn by up to 2.74x, but trail KleidiAI at 0.70x and struggle with SME2."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29619",
@@ -887,17 +1079,31 @@
    "comment": "5 pages. 2 figues. Extended version of a paper accepted to the AAAI-27 Demonstrations Program. Code: https://github.com/waldiez/wactorz",
    "code_url": "https://github.com/waldiez/wactorz",
    "tags": [
-    "imitation",
-    "VLM/LLM"
+    "LLM",
+    "agents",
+    "code",
+    "efficiency"
    ],
    "hf_upvotes": 4,
    "ax_votes": 0,
    "ax_visits": 2,
    "heat": 4.2,
-   "orgs": [],
+   "orgs": [
+    {
+     "name": "Waldiez PC"
+    },
+    {
+     "name": "ThinGenious PC"
+    }
+   ],
    "thumb": "data/thumbs/2611.29619.jpg",
    "thumb_w": 640,
-   "thumb_h": 273
+   "thumb_h": 273,
+   "summary": {
+    "zh": "Wactorz 是一个开源运行时，把 LLM 生成的 agent 变成长期存活的受监督 actor：planner 将聊天请求转成 Python 并在运行时编译为新 actor，supervisor 在崩溃时单独重启并保留状态；协调全部基于 MQTT，支持在 Raspberry Pi 等边缘节点上生成与实时迁移 agent，演示中四分钟内完成从单条请求搭建摄像头到灯的自动化、自动布线并自主修复除零 bug、以及迁移到新节点，模型花费 0.13 美元。",
+    "en": "Wactorz is an open-source runtime making LLM-generated agents long-lived supervised actors: a planner compiles chat requests into Python actors, a supervisor restarts crashed ones state intact, and MQTT coordination enables spawning and live migration across edge nodes like Raspberry Pi, demonstrated in under four minutes for $0.13."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29716",
@@ -944,7 +1150,9 @@
    "updated": "2026-11-22T19:28:28Z",
    "comment": "9 pages, 5 figures, 3 tables",
    "tags": [
-    "VLM/LLM",
+    "agents",
+    "LLM",
+    "code",
     "benchmark"
    ],
    "ax_votes": 1,
@@ -952,7 +1160,9 @@
    "heat": 3.8,
    "orgs": [
     {
-     "name": "University of Maryland"
+     "name": "University of Maryland, College Park",
+     "ror": "047s2c258",
+     "logo": "data/logos/umd.edu.png"
     },
     {
      "logo": "data/logos/cmu.edu.png",
@@ -960,24 +1170,22 @@
      "ror": "05x2bcf33"
     },
     {
-     "logo": "data/logos/tamu.edu.png",
      "name": "Texas A&M University",
-     "ror": "01f5ytq51"
+     "ror": "01f5ytq51",
+     "logo": "data/logos/tamu.edu.png"
     },
     {
-     "logo": "data/logos/washington.edu.png",
      "name": "University of Washington",
-     "ror": "00cvxb145"
+     "ror": "00cvxb145",
+     "logo": "data/logos/washington.edu.png"
     },
     {
-     "logo": "data/logos/neu.edu.png",
-     "name": "Northeastern University",
-     "ror": "03awzbc87"
+     "name": "Northeastern University"
     },
     {
-     "logo": "data/logos/ua.edu.png",
      "name": "University of Alabama",
-     "ror": "03xrrjk67"
+     "ror": "03xrrjk67",
+     "logo": "data/logos/ua.edu.png"
     },
     {
      "logo": "data/logos/stanford.edu.png",
@@ -987,7 +1195,12 @@
    ],
    "thumb": "data/thumbs/2611.29716.jpg",
    "thumb_w": 618,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "Fin-RSI 构建面向 LLM 智能体的统一 Python 金融工具库，整合市场分析、预测、组合构建与交易研究，并支持工具发现、校验与自我改进；在 20 个开放权重模型、六项持仓任务上，工具发现使产出有效程序的比例从 9.7% 升至 29.2%，14B 以上模型从 23.6% 升至 64.6%。",
+    "en": "Fin-RSI is a unified Python library of financial skills, checks, and self-improvement for LLM agents; tool discovery raises valid-program episodes from 9.7% to 29.2%, and from 23.6% to 64.6% for models above 14B."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29811",
@@ -1005,7 +1218,12 @@
    "published": "2026-11-22T22:35:19Z",
    "updated": "2026-11-22T22:35:19Z",
    "comment": "",
-   "tags": [],
+   "tags": [
+    "math",
+    "agents",
+    "LLM",
+    "reasoning"
+   ],
    "ax_votes": 0,
    "ax_visits": 32,
    "heat": 3.2,
@@ -1018,7 +1236,12 @@
    ],
    "thumb": "data/thumbs/2611.29811.jpg",
    "thumb_w": 618,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "围绕数学证明智能体 Rethlas、Danus、Pharos 与验证智能体 OSVerify，说明其设计原则、与基座模型的对比及使用方式，并回顾 AI for mathematics 的历史与社区反应。",
+    "en": "Notes on proving agents Rethlas, Danus, Pharos and verification agent OSVerify: design principles, comparisons with base models, case studies, usage, plus a brief history of AI for mathematics."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29588",
@@ -1038,25 +1261,44 @@
    "published": "2026-11-22T16:20:31Z",
    "updated": "2026-11-22T16:20:31Z",
    "comment": "",
-   "tags": [],
+   "tags": [
+    "LLM",
+    "pretraining",
+    "theory"
+   ],
    "ax_votes": 2,
    "ax_visits": 10,
    "heat": 3.0,
    "orgs": [
     {
-     "logo": "data/logos/uzh.ch.png",
      "name": "University of Zurich",
-     "ror": "02crff812"
+     "ror": "02crff812",
+     "logo": "data/logos/uzh.ch.png"
     },
     {
-     "logo": "data/logos/tuebingen.ai.png",
+     "name": "ELLIS Institute Tübingen",
+     "ror": "036z3g533",
+     "logo": "data/logos/tue.ellis.eu.png"
+    },
+    {
+     "name": "Max Planck Institute for Intelligent Systems",
+     "ror": "04fq9j139",
+     "logo": "data/logos/is.mpg.de.png"
+    },
+    {
      "name": "Tübingen AI Center",
-     "ror": "0107nyd78"
+     "ror": "0107nyd78",
+     "logo": "data/logos/tuebingen.ai.png"
     }
    ],
    "thumb": "data/thumbs/2611.29588.jpg",
    "thumb_w": 248,
-   "thumb_h": 211
+   "thumb_h": 211,
+   "summary": {
+    "zh": "从解耦权重衰减下的精确范数动力学出发，揭示多时间尺度动量记忆通过改变参数范数控制参数旋转速度，独立加权的慢动量显著提升参数范数却几乎不影响瞬时更新，从而充当内生的退火调度；在 AdEMAMix 语言模型预训练中的干预实验证实该机制是其优于 AdamW 的重要因素。",
+    "en": "Exact norm dynamics under decoupled weight decay reveal that multi-timescale momentum raises parameter norms and controls rotation speed, acting as an endogenous annealing schedule; interventions confirm this drives AdEMAMix's gains over AdamW in language-model pretraining."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29383",
@@ -1076,15 +1318,29 @@
    "updated": "2026-11-22T10:56:01Z",
    "comment": "Accepted to the CoRL 2026 Learn@Deploy Workshop",
    "tags": [
-    "VLA"
+    "VLA",
+    "robotics",
+    "reasoning",
+    "efficiency"
    ],
    "ax_votes": 0,
    "ax_visits": 28,
    "heat": 2.8,
-   "orgs": [],
+   "orgs": [
+    {
+     "name": "Caltech",
+     "ror": "05dxps055",
+     "logo": "data/logos/caltech.edu.png"
+    }
+   ],
    "thumb": "data/thumbs/2611.29383.jpg",
    "thumb_w": 640,
-   "thumb_h": 213
+   "thumb_h": 213,
+   "summary": {
+    "zh": "将原本用于视频生成的 Predict-and-Perturb 自精炼流程适配到 VLA 模型，针对机器人数据结构修改精炼过程；在 LIBERO 的 400 个 episode 上用 SmolVLA 评测，成功率比原始基线高 5.3 个百分点，episode 级不确定性预测失败 AUC 达 0.851。",
+    "en": "Adapting Predict-and-Perturb self-refinement from video generation to VLA models boosts SmolVLA on 400 LIBERO episodes by 5.3 points, with episode-level uncertainty predicting failure at AUC 0.851."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29775",
@@ -1107,30 +1363,31 @@
    "updated": "2026-11-22T21:16:00Z",
    "comment": "",
    "tags": [
-    "VLM/LLM",
-    "benchmark"
+    "LLM",
+    "benchmark",
+    "alignment"
    ],
    "ax_votes": 0,
    "ax_visits": 28,
    "heat": 2.8,
    "orgs": [
     {
-     "logo": "data/logos/utah.edu.png",
      "name": "University of Utah",
-     "ror": "03r0ha626"
+     "ror": "03r0ha626",
+     "logo": "data/logos/utah.edu.png"
     },
     {
      "name": "New York University",
      "ror": "0190ak572"
     },
     {
-     "logo": "data/logos/gwu.edu.png",
      "name": "George Washington University",
-     "ror": "00y4zzh67"
+     "ror": "00y4zzh67",
+     "logo": "data/logos/gwu.edu.png"
     },
     {
-     "logo": "data/logos/deepmind.google.png",
-     "name": "Google DeepMind"
+     "name": "Google DeepMind",
+     "logo": "data/logos/deepmind.google.png"
     },
     {
      "logo": "data/logos/upenn.edu.png",
@@ -1140,7 +1397,12 @@
    ],
    "thumb": "data/thumbs/2611.29775.jpg",
    "thumb_w": 72,
-   "thumb_h": 72
+   "thumb_h": 72,
+   "summary": {
+    "zh": "ComplexIF 是一个多轮多约束指令遵循基准，通过自动流水线把种子请求扩展为多轮对话并织入约束，只保留强模型可解的任务；14 个模型中最强者在可验证子集上完全满足约束的任务不足一半，且无模型在两个子集上同时领先。",
+    "en": "ComplexIF is a multi-turn, multi-constraint instruction-following benchmark built by an automatic pipeline that expands seed requests into conversations with woven constraints; even the strongest of 14 models fully satisfies fewer than half of verifiable tasks, with no model leading on both splits."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29375",
@@ -1160,25 +1422,32 @@
    "updated": "2026-11-22T10:31:49Z",
    "comment": "",
    "tags": [
-    "VLM/LLM",
-    "benchmark"
+    "LLM",
+    "benchmark",
+    "speech",
+    "reasoning"
    ],
    "ax_votes": 2,
    "ax_visits": 3,
    "heat": 2.3,
    "orgs": [
     {
-     "logo": "data/logos/sutd.edu.sg.png",
      "name": "Singapore University of Technology and Design",
-     "ror": "05j6fvn87"
+     "ror": "05j6fvn87",
+     "logo": "data/logos/sutd.edu.sg.png"
     },
     {
-     "name": "University of"
+     "name": "University of Venice"
     }
    ],
    "thumb": "data/thumbs/2611.29375.jpg",
    "thumb_w": 640,
-   "thumb_h": 360
+   "thumb_h": 360,
+   "summary": {
+    "zh": "MusicListenBench 用旋律、和声、音色、节奏的成对听力测试评测音频 LLM，FLIP/STAY 变体对照使忽略音频者只得 50%；渲染测试上 8 个开源模型 7 个贴近该下限，最佳 Gemini 2.5 Pro 达 74.2%，低于人类 87.0%；GRPO 微调 Qwen2.5-Omni 从 61.2% 升到 99.0%，但 FLIP/STAY 仅 86.0%，静音噪声导致 25.7% 误翻转。",
+    "en": "MusicListenBench evaluates audio LLMs on paired melody, harmony, timbre, and tempo tests with FLIP/STAY variants; open models stay near the 50% floor, Gemini 2.5 Pro reaches 74.2% versus humans' 87.0%, and GRPO lifts Qwen2.5-Omni from 61.2% to 99.0% but only 86.0% on FLIP/STAY."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29361",
@@ -1200,7 +1469,10 @@
    "updated": "2026-11-22T09:55:46Z",
    "comment": "",
    "tags": [
-    "benchmark"
+    "multimodal",
+    "LLM",
+    "alignment",
+    "interpretability"
    ],
    "hf_upvotes": 2,
    "ax_votes": 1,
@@ -1208,19 +1480,20 @@
    "heat": 3.6,
    "orgs": [
     {
-     "name": "Suzhou Institute for Advance Research",
-     "ror": "049xpsw37"
+     "name": "USTC"
     },
     {
-     "name": "Jiangsu Key Laboratory of Multimodal Digital Twin Technology"
-    },
-    {
-     "name": "University of Texas at"
+     "name": "University of Texas at Austin"
     }
    ],
    "thumb": "data/thumbs/2611.29361.jpg",
    "thumb_w": 328,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "利用配对平扫与增强医学图像的对比表明，MLLM 的注意力图相同答案却不同，通过视觉 value 检索的内容关键；VIVID 用增强视觉 value 筛选教师修正做 on-policy 蒸馏，六个测试集上优于现有方法且推理只需平扫图像。",
+    "en": "Paired non-contrast and contrast-enhanced medical images show MLLM attention maps can match while answers differ, making value-retrieved visual content key; VIVID distills teacher corrections via enhanced visual values, beating prior on-policy distillation across six test sets with non-contrast-only inference."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29723",
@@ -1244,26 +1517,48 @@
    "published": "2026-11-22T19:42:33Z",
    "updated": "2026-11-22T19:42:33Z",
    "comment": "",
-   "tags": [],
+   "tags": [
+    "detection",
+    "benchmark",
+    "dataset",
+    "image generation"
+   ],
    "hf_upvotes": 2,
    "ax_votes": 0,
    "ax_visits": 3,
    "heat": 2.3,
    "orgs": [
     {
-     "logo": "data/logos/alexu.edu.eg.png",
-     "name": "Alexandria University",
-     "ror": "00mzz1w90"
+     "name": "Made In Alexandria AI Team (M.I.A Robotics)"
     },
     {
-     "logo": "data/logos/ufmt.br.png",
+     "name": "Alamein International University",
+     "ror": "0019h0z47"
+    },
+    {
+     "name": "Alexandria University",
+     "ror": "00mzz1w90",
+     "logo": "data/logos/alexu.edu.eg.png"
+    },
+    {
      "name": "Universidade Federal de Mato Grosso",
-     "ror": "01mqvjv41"
+     "ror": "01mqvjv41",
+     "logo": "data/logos/ufmt.br.png"
+    },
+    {
+     "name": "Hasso Plattner Institute",
+     "ror": "058rn5r42",
+     "logo": "data/logos/hpi.de.png"
     }
    ],
    "thumb": "data/thumbs/2611.29723.jpg",
    "thumb_w": 640,
-   "thumb_h": 427
+   "thumb_h": 427,
+   "summary": {
+    "zh": "ApexID 采用基于 SphereFace2 的分层损失，将全局身份判别与均衡的动物类别监督结合，在 132,533 张图像、19 个公开数据集上训练，并在四个外部数据集上评测；ConvNeXt-Small 搭配该损失取得数据集平均 Rank-1 64.89%，MIEW-ID 取得 mAP 32.54%，均高于各自的预训练参考模型，在大象这一未参与动物 Re-ID 训练的类别上，该变体在十四种配置中检索表现最佳。",
+    "en": "ApexID, a hierarchical SphereFace2-based loss combining global identity discrimination with balanced animal-category supervision, uses 132,533 images from 19 public datasets and four external test sets, reaching 64.89% dataset-averaged Rank-1 with ConvNeXt-Small and 32.54% mAP with MIEW-ID, both above pretrained references, and best elephant retrieval among fourteen configurations."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29473",
@@ -1315,20 +1610,21 @@
    "updated": "2026-11-22T23:16:50Z",
    "comment": "10 pages, 1 figure. Accepted to the 3rd Workshop on Big Data Analysis AND Illicit Trends (BANDIT) at IEEE BigData 2026",
    "tags": [
-    "VLM/LLM"
+    "LLM",
+    "agents",
+    "interpretability",
+    "safety"
    ],
    "ax_votes": 0,
    "ax_visits": 20,
    "heat": 2.0,
    "orgs": [
     {
-     "logo": "data/logos/neu.edu.png",
-     "name": "Northeastern University",
-     "ror": "03awzbc87"
+     "name": "Northeastern University"
     },
     {
-     "logo": "data/logos/meta.com.png",
-     "name": "Meta"
+     "name": "Meta",
+     "logo": "data/logos/meta.com.png"
     },
     {
      "logo": "data/logos/apple.com.png",
@@ -1337,7 +1633,12 @@
    ],
    "thumb": "data/thumbs/2611.29829.jpg",
    "thumb_w": 386,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "在 Elliptic++ Bitcoin 数据集上审计由规则、检索和 LLM 判官组成的反洗钱 agentic pipeline，用决策来源归因发现确定性钱包分数覆盖贡献约 94% 的标记信用，且 LLM 判官的引证检查会放过不适用的监管条款。",
+    "en": "Auditing an agentic anti-money-laundering LLM pipeline on Elliptic++ Bitcoin data, decision-source attribution shows a deterministic wallet-score override carries ~94% of flagging credit and the LLM judge's citations pass checks despite being inapplicable."
+   },
+   "summary_source": "deepseek-flash"
   }
  ]
 }

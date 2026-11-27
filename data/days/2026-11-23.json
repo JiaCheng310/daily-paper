@@ -23,8 +23,10 @@
    "comment": "15 pages, 4 figures",
    "code_url": "https://github.com/juntongshi48/VOPD",
    "tags": [
+    "LLM",
+    "reasoning",
     "RL",
-    "benchmark"
+    "alignment"
    ],
    "ax_votes": 203,
    "ax_visits": 2199,
@@ -36,13 +38,18 @@
      "ror": "00f54p054"
     },
     {
-     "logo": "data/logos/deepmind.google.png",
-     "name": "Google DeepMind"
+     "name": "Google DeepMind",
+     "logo": "data/logos/deepmind.google.png"
     }
    ],
    "thumb": "data/thumbs/2611.30325.jpg",
    "thumb_w": 618,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "VOPD 将稀疏的验证器奖励投影到教师的隐式奖励方向上，并在整个词表上做 Rao-Blackwell 化，得到稠密的、基于验证器的监督信号，在八项数学推理基准上相比 vanilla OPD 与其他 on-policy distillation 基线同时提升最终性能与学习效率。",
+    "en": "VOPD projects sparse verifier preferences onto the teacher's implicit-reward direction and Rao-Blackwellizes them over the vocabulary for dense verifier-grounded supervision, improving final performance and learning efficiency over vanilla OPD and other on-policy distillation baselines on eight math reasoning benchmarks."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29897",
@@ -69,15 +76,15 @@
    "code_url": "https://github.com/AIGeeksGroup/MotionMamba2.0",
    "tags": [
     "humanoid",
-    "locomotion",
-    "diffusion policy",
-    "control"
+    "diffusion",
+    "world model",
+    "efficiency"
    ],
    "summary": {
-    "en": "Motion Mamba 2.0 integrates local attention, recurrent states, and persistent content memory for long-horizon humanoid motion generation, achieving accurate 39.52 s control and a 6.138x speedup on an RTX 4090 while deployed on Unitree G1.",
-    "zh": "Motion Mamba 2.0 是一种基于 Mamba 的根体扩散架构，通过融合局部注意力、可恢复循环状态和持久内容记忆来实现长视野可控动作生成，在 HiPHI 数据集上实现了长达 39.52 秒的精确终端控制，并在 RTX 4090 上将中位完整窗口延迟从 1685.35 毫秒降至 276.14 毫秒，实现了 6.138 倍的加速。同时，该方法在 Unitree G1 机器人上完成了真实的键盘鼠标交互与文本引导动作测试。"
+    "zh": "Motion Mamba 2.0 用 Mamba 循环状态加持久内容记忆 PCM 做根-身体扩散式自回归动作生成，支持最长 39.52 s 的长程末端控制；配合 CUDA Graph 等优化，RTX 4090 上完整窗口延迟从 1685.35 ms 降到 276.14 ms，中位加速 6.138 倍，并在 Unitree G1 上验证了文本引导动作组合与交互式行走。",
+    "en": "Motion Mamba 2.0 combines Mamba recurrent states with persistent content memory for autoregressive root-body diffusion, enabling terminal control over 39.52 s rollouts; CUDA Graph optimizations cut latency from 1685.35 to 276.14 ms (6.138x median speedup), validated on Unitree G1."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 226,
    "ax_votes": 0,
    "ax_visits": 63,
@@ -89,8 +96,16 @@
      "ror": "02v51f717"
     },
     {
-     "name": "Korea University",
-     "ror": "05m1gnk07"
+     "name": "Korea University"
+    },
+    {
+     "name": "Monash University",
+     "ror": "02bfwt286",
+     "logo": "data/logos/monash.edu.png"
+    },
+    {
+     "name": "NTU",
+     "ror": "02e7b5302"
     }
    ],
    "thumb": "data/thumbs/2611.29897.jpg",
@@ -119,24 +134,46 @@
    "updated": "2026-11-24T17:50:11Z",
    "comment": "This version was posted before the coauthors completed their review of the paper",
    "tags": [
-    "manipulation",
-    "VLM/LLM",
-    "bimanual",
-    "mobile manipulation"
+    "robotics",
+    "agents",
+    "VLA",
+    "manipulation"
    ],
    "summary": {
-    "en": "RoboThink separates a reasoning agent from a fast policy using instruction and feedback channels for real-time robotic correction, raising success rates significantly on LIBERO and RoboTwin 2.0 under various drifts.",
-    "zh": "RoboThink将推理agent与策略分离，通过指令通道和反馈通道实现实时纠错与引导。在LIBERO上，未知恒定漂移下的成功率从0.09提升至0.87，在RoboTwin 2.0的双臂任务中也将成功率从0.12提升至0.74。"
+    "zh": "RoboThink 让智能体负责思考、策略网络负责执行：智能体通过指令通道改写任务指令、通过反馈通道给动作反馈，借助 agent-labelled DAgger 训练；在 LIBERO 上把恒定漂移下的成功率从 0.09 提到 0.87，在 RoboTwin 2.0 双臂任务上从 0.12 提到 0.74，单个成功仅需 55 秒和 8k tokens。",
+    "en": "RoboThink lets an agent think while a policy acts: the agent rewrites instructions and supplies motion feedback trained via agent-labelled DAgger, raising LIBERO success from 0.09 to 0.87 under drift with 55 s and 8k tokens per success."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "ax_votes": 77,
    "ax_visits": 818,
    "heat": 158.8,
    "orgs": [
     {
+     "name": "Tulane University",
+     "ror": "04vmvtb21",
+     "logo": "data/logos/tulane.edu.png"
+    },
+    {
+     "name": "New York University",
+     "ror": "0190ak572"
+    },
+    {
+     "name": "Northeastern University"
+    },
+    {
      "logo": "data/logos/stanford.edu.png",
      "name": "Stanford University",
      "ror": "00f54p054"
+    },
+    {
+     "logo": "data/logos/mit.edu.png",
+     "name": "MIT",
+     "ror": "042nb2s44"
+    },
+    {
+     "name": "Harvard University",
+     "ror": "03vek6s52",
+     "logo": "data/logos/harvard.edu.png"
     }
    ],
    "thumb": "data/thumbs/2611.30111.jpg",
@@ -161,15 +198,15 @@
    "comment": "",
    "tags": [
     "benchmark",
-    "VLM/LLM",
-    "VLA",
-    "world model"
+    "robotics",
+    "agents",
+    "VLM"
    ],
    "summary": {
-    "en": "WorldLeague benchmarks 13 AI systems across 60 simulated robot tasks, where Claude Fable 5.2 achieves the highest mean Interactive Score of 28.58/100 and completes 13 goals.",
-    "zh": "推出了 WorldLeague 基准测试，包含 60 个模拟机器人任务，用于评估 AI 系统在感知、记忆、规划和行动方面的物理代理能力。测试显示在 13 个代表性系统中，Claude Fable 5.2 取得了最高的平均交互分 28.58/100 并完成了 13 个目标。"
+    "zh": "WorldLeague 基准用 60 个模拟机器人任务，通过机器人轨迹衡量系统向物理目标推进的程度与成功率，比较 13 个系统；Claude Fable 5.2 完成 13 个目标，平均 Interactive Score 最高，为 28.58/100。",
+    "en": "WorldLeague benchmarks AI systems on 60 simulated robot tasks via trajectory-based progress and success; Claude Fable 5.2 completes 13 goals and leads with a mean Interactive Score of 28.58/100."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 87,
    "ax_votes": 2,
    "ax_visits": 42,
@@ -213,16 +250,16 @@
    "updated": "2026-11-23T18:48:54Z",
    "comment": "Project Page: https://dravenalg.github.io/projects/Embo-Harness/",
    "tags": [
-    "VLM/LLM",
-    "manipulation",
-    "planning",
-    "perception"
+    "robotics",
+    "VLM",
+    "agents",
+    "manipulation"
    ],
    "summary": {
-    "en": "Embo-Harness systematically studies frontier-model-as-policy harnesses, achieving an 83.3% success rate on RoboLab-120 and outperforming the strongest baseline by 26.2 percentage points.",
-    "zh": "Embo-Harness系统性研究了前沿多模态大模型作为具身智能策略的设计原则，通过探索提示词、规划、动作执行和工具使用四个组件提炼出六项经验法则。该方法在RoboLab-120基准测试中取得了83.3%的成功率，比最强基线提升了26.2个百分点，并在4个真实世界的操纵任务的20次零样本试验中成功了15次。"
+    "zh": "Embo-Harness 系统研究前沿多模态模型直接作为机器人策略的闭环框架，梳理提示、规划、动作执行与工具使用四个环节并总结六条经验，在 RoboLab-120 上取得 83.3% 成功率，超最强基线 26.2 个百分点，真实世界四项操作任务零样本 20 次试验成功 15 次。",
+    "en": "Embo-Harness systematically studies frontier multimodal models as closed-loop robot policies, distilling six findings; it reaches 83.3% success on RoboLab-120, beating the best baseline by 26.2 points, and solves 15 of 20 zero-shot real-world trials."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 106,
    "ax_votes": 14,
    "ax_visits": 160,
@@ -233,6 +270,9 @@
      "ror": "02e7b5302"
     },
     {
+     "name": "ACE Robotics"
+    },
+    {
      "name": "SenseTime Research"
     },
     {
@@ -240,7 +280,7 @@
      "ror": "00mcjh785"
     },
     {
-     "name": "Lenovo"
+     "name": "Lenovo Robotics Lab"
     },
     {
      "logo": "data/logos/uconn.edu.png",
@@ -291,16 +331,16 @@
    "updated": "2026-11-23T16:53:57Z",
    "comment": "Project Page: https://lab.einsia.ai/robo-universe/",
    "tags": [
-    "simulation",
-    "dataset",
+    "robotics",
+    "agents",
     "benchmark",
-    "VLM/LLM"
+    "VLA"
    ],
    "summary": {
-    "en": "RoboUniverse-10K introduces 10,807 interactive environments and a zero-shot benchmark, RoboUniverse-Verified. Evaluations reveal frontier models reach 85.8% success, and fine-tuning RoboUniverse-35B-A3B lifts success from 0.8% to 21.2%.",
-    "zh": "RoboUniverse-10K 包含了 10,807 个由真实视频自动生成的交互式物理环境，并建立了 RoboUniverse-Verified 零样本评测基准。对 11 个模型的评估表明前沿模型可达 85.8% 的成功率，而微调后的 RoboUniverse-35B-A3B 将成功率从 0.8% 提升至 21.2%。"
+    "zh": "RoboUniverse-10K 通过自动化 Real2Sim 与质检流程从真实视频构建 10,807 个可交互、可重置、可验证的物理环境，并留出 500 个任务组成 RoboUniverse-Verified 零样本基准；11 个模型评测中前沿模型成功率 85.8%，开源基线仅 2.6%–10.0%；再用约 17K 多轮轨迹微调 Qwen3.6-35B-A3B 得到 RoboUniverse-35B-A3B，零样本成功率从 0.8% 提升到 21.2%。",
+    "en": "RoboUniverse-10K builds 10,807 resettable, verifiable physics environments from real videos via automated Real2Sim, plus a 500-task zero-shot benchmark where frontier models hit 85.8% versus 2.6-10.0% for open baselines; fine-tuning Qwen3.6-35B-A3B lifts success from 0.8% to 21.2%."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 1,
    "ax_votes": 54,
    "ax_visits": 666,
@@ -361,7 +401,12 @@
    "updated": "2026-11-24T08:46:11Z",
    "comment": "",
    "code_url": "https://github.com/Caiyun-AI/LoomFormer",
-   "tags": [],
+   "tags": [
+    "LLM",
+    "pretraining",
+    "efficiency",
+    "interpretability"
+   ],
    "hf_upvotes": 95,
    "ax_votes": 2,
    "ax_visits": 67,
@@ -377,7 +422,12 @@
    ],
    "thumb": "data/thumbs/2611.30634.jpg",
    "thumb_w": 640,
-   "thumb_h": 392
+   "thumb_h": 392,
+   "summary": {
+    "zh": "Loom attention 通过垂直注意力对前序 head 输出做归一化门控线性注意力，并与水平 token 注意力交织，实现逐 token 动态重连电路，构成 LoomFormer 双流架构；在 300B token、仅增约 2% FLOPs 下，LoomPythia-2.8B 下游增益约为 mHC-Pythia-2.8B 的 1.6 倍，0-shot 追平 Pythia-12B。",
+    "en": "Loom attention interweaves vertical attention over prior head outputs via normalized gated linear attention with horizontal token attention, yielding LoomFormer; with only ~2% extra FLOPs, LoomPythia-2.8B reaches ~1.6x mHC-Pythia-2.8B's downstream gain and matches Pythia-12B zero-shot."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.31094",
@@ -405,8 +455,9 @@
    "updated": "2026-11-24T17:16:14Z",
    "comment": "",
    "tags": [
-    "VLM/LLM",
-    "benchmark"
+    "LLM",
+    "efficiency",
+    "pretraining"
    ],
    "hf_upvotes": 25,
    "ax_votes": 29,
@@ -423,7 +474,12 @@
    ],
    "thumb": "data/thumbs/2611.31094.jpg",
    "thumb_w": 618,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "LoopRes 通过让循环层关注此前各循环输出并引入可训练循环感知 key、限制残差窗口 W，将循环式微调用于预训练 LLM；在 6 个模型、9 个基准上，2 倍计算下 Qwen3-1.7B-Base 较 SFT 提升 29.1%，超过最强基线增益两倍，且在 30B 以内及三个模型家族上稳定，测试时扩展更优。",
+    "en": "LoopRes lets looped layers attend to earlier loops with trainable loop-aware keys and a residual window W; on 6 pretrained LLMs and 9 benchmarks it beats SFT by 29.1% on Qwen3-1.7B-Base at 2x compute and scales better."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.31154",
@@ -446,7 +502,9 @@
    "updated": "2026-11-23T18:21:05Z",
    "comment": "",
    "tags": [
-    "benchmark"
+    "LLM",
+    "efficiency",
+    "pretraining"
    ],
    "ax_votes": 31,
    "ax_visits": 487,
@@ -459,14 +517,19 @@
      "ror": "02zhqgq86"
     },
     {
-     "logo": "data/logos/yale.edu.png",
      "name": "Yale University",
-     "ror": "03v76x132"
+     "ror": "03v76x132",
+     "logo": "data/logos/yale.edu.png"
     }
    ],
    "thumb": "data/thumbs/2611.31154.jpg",
    "thumb_w": 640,
-   "thumb_h": 246
+   "thumb_h": 246,
+   "summary": {
+    "zh": "Attention Latent Feedback (ALF) 让每个子层关注前一个位置更深层的输出，训练时展开为两遍并行计算、解码仍为单遍；在最多 4.0B 参数的 MoE 模型上使 held-out loss 比标准残差降低 0.022–0.024 nats，解码 FLOP 开销约 1.1%，MoE-4.0B 在十七个下游基准上平均准确率从 45.1% 提升到 47.0%。",
+    "en": "Attention Latent Feedback lets each sublayer attend to deeper layers' outputs at the previous position, lowering held-out loss by 0.022-0.024 nats at ~1.1% decoding FLOP overhead and lifting MoE-4.0B average accuracy from 45.1% to 47.0%."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.31205",
@@ -489,15 +552,16 @@
    "updated": "2026-11-23T18:52:19Z",
    "comment": "Project page: https://projects.zxhezexin.com/acap",
    "tags": [
-    "control",
-    "mobile manipulation",
-    "planning"
+    "robotics",
+    "agents",
+    "code",
+    "manipulation"
    ],
    "summary": {
-    "en": "We introduce Asynchronous Coding Agents as Policy (ACAP), an asynchronous framework that organizes a robot as a team of persistent agents, reducing task-balanced time cost by 28.2% compared to Direct Policy.",
-    "zh": "引入了一种异步编码智能体策略（ACAP）框架，将机器人组织为多个持久智能体团队，通过超智能体协调物理依赖并动态分配控制权；在72次真实世界测试中，相较于单智能体Direct Policy，任务平衡时间成本降低了28.2%。"
+    "zh": "ACAP 将单台机器人组织为多个持久编码智能体组成的小队，用 hyper-agent 分配任务并协调依赖，实现异步推理与执行；在 25 种任务/平台设置的 72 次真实 rollout 中，任务均衡时间成本比单智能体 Direct Policy 降低 28.2%。",
+    "en": "ACAP organizes one robot as a team of persistent coding agents with a hyper-agent coordinating tasks and dependencies, cutting task-balanced time cost by 28.2% versus a single-agent Direct Policy across 72 real-world rollouts."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 67,
    "ax_votes": 5,
    "ax_visits": 60,
@@ -556,6 +620,8 @@
    "updated": "2026-11-23T04:16:51Z",
    "comment": "19pages, 10 figures",
    "tags": [
+    "3D",
+    "agents",
     "benchmark"
    ],
    "hf_upvotes": 61,
@@ -564,8 +630,22 @@
    "heat": 76.4,
    "orgs": [
     {
+     "logo": "data/logos/pku.edu.cn.png",
+     "name": "Peking University",
+     "ror": "02v51f717"
+    },
+    {
      "name": "NTU",
      "ror": "02e7b5302"
+    },
+    {
+     "name": "Northeastern University",
+     "ror": "03awzbc87",
+     "logo": "data/logos/neu.edu.png"
+    },
+    {
+     "name": "Shanghai Jiao Tong University",
+     "ror": "0220qvk04"
     },
     {
      "logo": "data/logos/hkust.edu.hk.png",
@@ -573,14 +653,23 @@
      "ror": "00q4vv597"
     },
     {
-     "logo": "data/logos/cas.cn.png",
      "name": "Chinese Academy of Sciences",
-     "ror": "034t30j35"
+     "ror": "034t30j35",
+     "logo": "data/logos/cas.cn.png"
+    },
+    {
+     "name": "Tencent",
+     "logo": "data/logos/tencent.com.png"
     }
    ],
    "thumb": "data/thumbs/2611.30013.jpg",
    "thumb_w": 640,
-   "thumb_h": 221
+   "thumb_h": 221,
+   "summary": {
+    "zh": " DivDynBench，覆盖六类形态的绑定与运动生成基准，对比专用生成、视频生成后运动恢复与 agent 驱动三种范式；据此设计 Agentic Motion Framework，由 agent 编写骨架与运动程序，确定性执行器完成绑定与运动学求解，降低生成开销并提升绑定可靠性与运动控制精度。",
+    "en": "DivDynBench benchmarks rigging and motion generation across six morphology categories; an Agentic Motion Framework has an agent write skeleton and motion programs while a deterministic executor handles rigging and kinematics, improving reliability and control accuracy."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.30662",
@@ -606,7 +695,9 @@
    "comment": "",
    "code_url": "https://github.com/Tencent/WeMM-Ecom",
    "tags": [
-    "RL",
+    "VLM",
+    "multimodal",
+    "efficiency",
     "benchmark"
    ],
    "hf_upvotes": 56,
@@ -621,7 +712,12 @@
    ],
    "thumb": "data/thumbs/2611.30662.jpg",
    "thumb_w": 640,
-   "thumb_h": 301
+   "thumb_h": 301,
+   "summary": {
+    "zh": "WeMM-Ecom 构建 0.8B 到 35B-A3B 的多模态大模型系列，先以两阶段持续预训练逐步提升电商数据占比，再用 on-policy 蒸馏与强化学习混合后训练，在 28 项电商与 64 项通用基准上优于 Qwen3.5 同规模模型及更大开源旗舰。",
+    "en": "WeMM-Ecom spans 0.8B to 35B-A3B multimodal LLMs, using two-stage continued pre-training with rising e-commerce data and hybrid-thinking post-training of on-policy distillation plus RL, beating same-size Qwen3.5 and larger flagships on 28 e-commerce and 64 general benchmarks."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.30962",
@@ -646,6 +742,7 @@
    "updated": "2026-11-23T16:32:01Z",
    "comment": "",
    "tags": [
+    "agents",
     "benchmark"
    ],
    "hf_upvotes": 52,
@@ -668,7 +765,12 @@
    ],
    "thumb": "data/thumbs/2611.30962.jpg",
    "thumb_w": 624,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "CUA-SEE 构建闭环评估环境，从 rollout 证据共同演化任务与可执行验证器，分开推进基准扩展、诊断探针与验证器精度，在多智能体多轮中生成可测难题。",
+    "en": "CUA-SEE is a closed-loop evaluation environment that co-evolves tasks and executable verifiers from rollout evidence, expanding benchmark scope and diagnostic resolution for computer-use agents."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.30898",
@@ -698,14 +800,14 @@
    "tags": [
     "world model",
     "VLA",
-    "imitation",
-    "simulation"
+    "robotics",
+    "pretraining"
    ],
    "summary": {
-    "en": "Native LAM extracts compact native latent actions from pretrained video world models using learnable dynamics registers. The proposed PAWlicy pretraining paradigm achieves a 93.6% average success rate on RoboTwin 2.0 and outperforms the pi_0.5 baseline on real robots.",
-    "zh": "Native LAM将预训练视频扩散Transformer作为逆向和正向动力学模型，通过学习型动力学寄存器提取紧凑的原生潜在动作。基于此提出的PAWlicy预训练范式在RoboTwin 2.0上达到了93.6%的平均成功率，在真实机器人上也超越了pi_0.5基线。"
+    "zh": "Native LAM 将预训练视频扩散 Transformer 同时用作 IDM 和 FDM，仅靠可学习 dynamics registers 做因果桥接，在反事实时序对上训练以提取紧凑隐动作；其在 LARY 上超越现有 LAM，基于 3.8B 模型的 PAWlicy 在 RoboTwin 2.0 取得 93.6% 平均成功率。",
+    "en": "Native LAM reuses one pretrained video diffusion transformer as both IDM and FDM, bridging them with learnable dynamics registers trained on motion-only counterfactual pairs to distill compact latent actions; PAWlicy with a 3.8B model hits 93.6% success on RoboTwin 2.0."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 28,
    "ax_votes": 12,
    "ax_visits": 140,
@@ -783,20 +885,24 @@
    "comment": "87 pages, 25 figures, Project Page: https://baai-eai.github.io/innata-0/",
    "tags": [
     "world model",
-    "manipulation",
-    "VLA",
-    "planning"
+    "agents",
+    "robotics",
+    "VLA"
    ],
    "summary": {
-    "en": "Innata-0 is a native embodied world system featuring co-designed world-action models and agents for robust long-horizon reasoning, prediction, and robotic manipulation.",
-    "zh": "Innate-0是一个具身世界系统，通过联合设计具身世界动作模型Innata-0-WAM和智能体Innata-0-Agent，将理解、预测与动作生成结合，并通过协同设计协议协调长视距执行，在理解、世界预测和机器人操作任务中展现出强大的具身能力。"
+    "zh": "Innata-0 原生具身世界系统由 Innata-0-WAM 与 Innata-0-Agent 协同设计：前者用三塔 Mixture-of-Transformers 统一理解、预测与动作生成，后者靠记忆、验证与恢复支持长程执行，评测显示在具身理解、世界预测与机器人操作上表现强劲。",
+    "en": "Innata-0 is a native embodied world system co-designing Innata-0-WAM, a tri-tower Mixture-of-Transformers for understanding, prediction and action, with Innata-0-Agent for long-horizon memory, verification and recovery; evaluations show strong embodied understanding, world prediction and manipulation."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 45,
    "ax_votes": 1,
    "ax_visits": 35,
    "heat": 49.5,
-   "orgs": [],
+   "orgs": [
+    {
+     "name": "Innata Team"
+    }
+   ],
    "thumb": "data/thumbs/2611.30254.jpg",
    "thumb_w": 640,
    "thumb_h": 386
@@ -830,15 +936,15 @@
    "comment": "45 pages. Project page: https://cvlab-kaist.github.io/MoOP",
    "tags": [
     "VLA",
+    "efficiency",
     "driving",
-    "perception",
-    "control"
+    "reasoning"
    ],
    "summary": {
-    "en": "MoOP is proposed for structured pruning of autonomous driving VLAs, combining reasoning and trajectory objectives to prune VLM structures and select expert MLP channels, achieving a 1.37x speedup and 36.6% lower peak memory at a 24.0% parameter reduction without fine-tuning.",
-    "zh": "针对自动驾驶VLA模型提出了一种名为MoOP的结构化剪枝方法，通过结合场景理解和轨迹预测的目标进行VLM剪枝并选择专家MLP通道。在减少24.0%的参数量时，该方法保留了密集模型94.0%的LingoQA得分，并在无后微调的情况下实现了1.37倍的端到端推理加速和36.6%的峰值内存降低。"
+    "zh": "MoOP 面向自动驾驶推理 VLA 的结构化剪枝，融合推理与轨迹两个目标的重要性排序来剪 VLM，并按去噪步聚合重要性以固定选择 action expert 的 MLP 通道；在 Alpamayo-1.5-10B 上以 24.0% 参数量削减取得与最强基线相当或略优的驾驶表现，保留 94.0% 的 LingoQA 分数，39.4% 削减时端到端推理加速 1.37x、峰值内存降低 36.6%。",
+    "en": "MoOP prunes reasoning driving VLAs by fusing reasoning and trajectory importance ranks for VLM pruning and aggregating stepwise importance to select expert MLP channels; at 24.0% parameter reduction it matches or slightly beats strongest baselines, retains 94.0% LingoQA, and at 39.4% reduction delivers 1.37x speedup and 36.6% lower peak memory."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "ax_votes": 22,
    "ax_visits": 254,
    "heat": 47.4,
@@ -882,13 +988,19 @@
    "updated": "2026-11-23T16:33:00Z",
    "comment": "",
    "tags": [
-    "VLM/LLM"
+    "LLM",
+    "reasoning",
+    "RL"
    ],
    "hf_upvotes": 14,
    "ax_votes": 12,
    "ax_visits": 203,
    "heat": 46.3,
    "orgs": [
+    {
+     "name": "Shanghai Jiao Tong University",
+     "ror": "0220qvk04"
+    },
     {
      "name": "Shanghai AI Lab"
     },
@@ -898,14 +1010,27 @@
      "ror": "00t33hh48"
     },
     {
-     "logo": "data/logos/sydney.edu.au.png",
-     "name": "The University of Sydney",
-     "ror": "0384j8v12"
+     "name": "University of Science and Technology of China",
+     "ror": "04c4dkn09"
+    },
+    {
+     "name": "Fudan University",
+     "ror": "013q1eq08"
+    },
+    {
+     "name": "University of Sydney",
+     "ror": "0384j8v12",
+     "logo": "data/logos/sydney.edu.au.png"
     }
    ],
    "thumb": "data/thumbs/2611.30965.jpg",
    "thumb_w": 640,
-   "thumb_h": 387
+   "thumb_h": 387,
+   "summary": {
+    "zh": "TT-RSI 是一个无需标签的测试时框架，通过 In-Context RSI 反复参考先前完整解答重解问题、In-Weight RSI 将逐步改进蒸馏进模型权重，实现推理计算累积与纠错；平均准确率较基座模型提升 +13.89%，在同等测试时算力预算下比最强自一致性方法高 +4.79%。",
+    "en": "TT-RSI is a label-free test-time framework that re-solves questions with full prior solutions (In-Context RSI) and distills refinements into weights (In-Weight RSI). It beats the base model by +13.89% and the strongest self-consistency method by +4.79%."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.30844",
@@ -925,7 +1050,12 @@
    "published": "2026-11-23T15:27:20Z",
    "updated": "2026-11-23T15:27:20Z",
    "comment": "46 pages, 29 figures, 33 tables. Code, weights and project page: https://oneboxcream.github.io/DyLoMo-DiT/",
-   "tags": [],
+   "tags": [
+    "diffusion",
+    "efficiency",
+    "image generation",
+    "pretraining"
+   ],
    "hf_upvotes": 40,
    "ax_votes": 1,
    "ax_visits": 23,
@@ -933,7 +1063,12 @@
    "orgs": [],
    "thumb": "data/thumbs/2611.30844.jpg",
    "thumb_w": 273,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "DyLoMo-DiT 复用参数而非新增参数：权重共享循环重复施加中间层，稀疏专家按 token 分配容量，并按噪声水平动态调整循环次数。在 ImageNet 256×256 上，同参数与计算预算下 FID 相比 DiT 降 11–24%、相比 DiT-MoE 降 36–56%；文生图 GenEval 得分 0.714 超过 FLUX.1 的 0.673，活跃参数仅 1.05B（对比 12B）。",
+    "en": "DyLoMo-DiT reuses parameters via weight-shared loops over middle layers plus sparse experts and noise-level-dependent pass counts; it cuts FID 11-24% vs DiT and 36-56% vs DiT-MoE, and beats FLUX.1 on GenEval (0.714 vs 0.673) with 1.05B active parameters."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.30813",
@@ -966,15 +1101,16 @@
    "updated": "2026-11-23T15:06:14Z",
    "comment": "39 pages, 12 figures",
    "tags": [
-    "bimanual",
-    "manipulation",
-    "perception"
+    "robotics",
+    "VLM",
+    "benchmark",
+    "manipulation"
    ],
    "summary": {
-    "en": "HIVE-Bench to evaluate patch-level visual representations across 24 egocentric bimanual tasks, showing that preserving patches is critical for bimanual policies and inverse-dynamics readouts strongly predict performance.",
-    "zh": "引入了HIVE-Bench基准，通过一个共享的flow-matching策略在24个以第一人称视角开展的双臂任务上评估了20个视觉编码器，发现保留patch级别的视觉表示对具身操作至关重要，且逆动力学读数是策略训练前最强的性能衡量指标之一。"
+    "zh": "HIVE-Bench 用同一套 flow-matching 策略在 24 个第一人称双臂任务上评估 7 个家族共 20 个编码器，发现保留稠密 patch token 至关重要，把单视角取平均会损失大部分成功率；用指令运动做逆动力学读出是训练前最强的预测指标，识别、深度、对应关系等指标迁移并不可靠。",
+    "en": "HIVE-Bench evaluates 20 encoders from 7 families with one shared flow-matching policy on 24 egocentric bimanual tasks, finding dense patch tokens essential and an inverse-dynamics readout of commanded motion the strongest pre-training predictor."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 10,
    "ax_votes": 13,
    "ax_visits": 163,
@@ -989,9 +1125,9 @@
      "name": "Xense Robotics"
     },
     {
-     "logo": "data/logos/cas.cn.png",
      "name": "Chinese Academy of Sciences",
-     "ror": "034t30j35"
+     "ror": "034t30j35",
+     "logo": "data/logos/cas.cn.png"
     },
     {
      "name": "Zhongguancun Academy"
@@ -1044,7 +1180,10 @@
    "updated": "2026-11-24T13:24:16Z",
    "comment": "Main text 8 pages with supplementary material, 54 pages in total",
    "tags": [
-    "manipulation"
+    "3D",
+    "video generation",
+    "diffusion",
+    "robotics"
    ],
    "hf_upvotes": 19,
    "ax_votes": 9,
@@ -1054,11 +1193,30 @@
     {
      "name": "NTU",
      "ror": "02e7b5302"
+    },
+    {
+     "name": "Shanghai Jiao Tong University",
+     "ror": "0220qvk04"
+    },
+    {
+     "name": "Wuhan University",
+     "ror": "033vjfk17",
+     "logo": "data/logos/whu.edu.cn.png"
+    },
+    {
+     "logo": "data/logos/cuhk.edu.hk.png",
+     "name": "CUHK",
+     "ror": "00t33hh48"
     }
    ],
    "thumb": "data/thumbs/2611.30597.jpg",
    "thumb_w": 395,
-   "thumb_h": 152
+   "thumb_h": 152,
+   "summary": {
+    "zh": "ViDiHand2 把基于视频扩散模型的单手深度估计从直接回归改为几何约束求解，用 Fine-Grained Geometric Lifting、Clip-Level Ray Fitting 和 Confidence-Gated Fusion 恢复遮挡下的米制 3D 手部运动，在 7 个公开数据集上优于 18 个基线，野外绝对关节误差降低 42%、检测失败减少 8.82 倍，运行速度 57 FPS。",
+    "en": "ViDiHand2 reformulates VDM-based hand depth estimation as geometric constraint solving via Fine-Grained Geometric Lifting, Clip-Level Ray Fitting and Confidence-Gated Fusion, cutting in-the-wild joint error by 42% and detection failures by 8.82x at 57 FPS."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.30017",
@@ -1082,16 +1240,28 @@
    "comment": "35 pages, 14 figures, 9 tables. Code: https://github.com/Mercor-Intelligence/OpenWorldEngineer ; data: https://huggingface.co/datasets/mercor/OpenWorldEngineer ; leaderboard: https://openworldengineer.mercor.com",
    "code_url": "https://github.com/Mercor-Intelligence/OpenWorldEngineer",
    "tags": [
-    "benchmark"
+    "benchmark",
+    "agents",
+    "code",
+    "reasoning"
    ],
    "hf_upvotes": 3,
    "ax_votes": 14,
    "ax_visits": 226,
    "heat": 39.6,
-   "orgs": [],
+   "orgs": [
+    {
+     "name": "Mercor"
+    }
+   ],
    "thumb": "data/thumbs/2611.30017.jpg",
    "thumb_w": 640,
-   "thumb_h": 403
+   "thumb_h": 403,
+   "summary": {
+    "zh": "OWE-Bench 汇集软件、物理、机器学习与科学计算领域的 26 个长周期工程任务，按速度、成本与准确率在公开及隐藏用例上评分；最强模型 Claude Fable 5.2 得 54.6%，每题平均耗 211M tokens，隐藏用例分数平均低 18 分（部署差距），模型自身高估该差距 21 分。",
+    "en": "OWE-Bench offers 26 expert-written long-horizon engineering tasks scored on speed, cost and accuracy over visible and hidden cases; Claude Fable 5.2 leads at 54.6% using 211M tokens per task, with an 18-point deployment gap on hidden cases that models overestimate by 21 points."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.31619",
@@ -1111,8 +1281,8 @@
    "comment": "Oral presentation at the NeurIPS 2026 Workshop on Foundation Models for Temporal Systems (FMTS). 15 pages, 3 figures, 10 tables. Code: https://github.com/therealram18/vernier",
    "code_url": "https://github.com/therealram18/vernier",
    "tags": [
-    "VLM/LLM",
-    "benchmark"
+    "benchmark",
+    "LLM"
    ],
    "hf_upvotes": 37,
    "ax_votes": 0,
@@ -1121,7 +1291,12 @@
    "orgs": [],
    "thumb": "data/thumbs/2611.31619.jpg",
    "thumb_w": 618,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "Vernier 从排行榜已公开的逐数据集分数计算其分辨率：GIFT-Eval 仅能分辨 6.8 个名次、相邻条目仅差 0.91，前十里可分辨步数不足两步；BOOM 因 2,554 条序列而能分辨前十；缩短历史长度使四个开源模型中三个误差上升，两个升 15%。",
+    "en": "Vernier computes a leaderboard's resolution from its published per-dataset scores: GIFT-Eval resolves 6.8 rank places with neighbors 0.91 apart, and shortening history raised error for three of four open models, two by 15%."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.30771",
@@ -1151,7 +1326,10 @@
    "comment": "28 pages. Project page: https://gamedojo-benchmark.github.io/ , and code: https://github.com/THUSI-Lab/GameDojo",
    "code_url": "https://github.com/THUSI-Lab/GameDojo",
    "tags": [
-    "benchmark"
+    "agents",
+    "benchmark",
+    "RL",
+    "LLM"
    ],
    "hf_upvotes": 10,
    "ax_votes": 10,
@@ -1163,13 +1341,33 @@
      "ror": "03cve4549"
     },
     {
+     "name": "Chinese Academy of Sciences",
+     "ror": "034t30j35",
+     "logo": "data/logos/cas.cn.png"
+    },
+    {
+     "name": "University of Macau",
+     "ror": "01r4q9n85",
+     "logo": "data/logos/um.edu.mo.png"
+    },
+    {
      "name": "NUS",
      "ror": "01tgyzw49"
+    },
+    {
+     "logo": "data/logos/hku.hk.png",
+     "name": "HKU",
+     "ror": "02zhqgq86"
     }
    ],
    "thumb": "data/thumbs/2611.30771.jpg",
    "thumb_w": 640,
-   "thumb_h": 213
+   "thumb_h": 213,
+   "summary": {
+    "zh": "GameDojo 是覆盖 20 款游戏、120 场 boss 战的实时交互游戏基准，由 coding agents 重建环境并生成 600 小时轨迹；前沿模型实时表现明显不足，用该数据训练的 GameDojo-4B 达到前沿水平且实时表现最强。",
+    "en": "GameDojo benchmarks real-time interactive agents on 120 boss encounters across 20 games, with coding agents reconstructing environments and yielding 600 hours of trajectories; GameDojo-4B trained on this data reaches frontier-level, strongest real-time performance."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.31098",
@@ -1200,16 +1398,16 @@
    "updated": "2026-11-23T17:39:59Z",
    "comment": "",
    "tags": [
+    "robotics",
+    "agents",
     "manipulation",
-    "simulation",
-    "sim2real",
     "RL"
    ],
    "summary": {
-    "en": "Real2Worlds2Real is a self-improving agentic framework that integrates scalable simulation-world construction with policy development to enable successful real-world policy transfer and improve long-horizon task success.",
-    "zh": "Real2Worlds2Real是一个自改进的智能体框架，通过集成可扩展的模拟世界构建与策略开发，利用有限的视觉观测生成数字孪生并扩展为数字亲属，实现了高效的真实世界策略迁移，并在世界保真度与长周期任务成功率上取得显著提升。"
+    "zh": "Real2Worlds2Real 用智能体框架把有限的视觉观测扩成可执行的数字孪生与多样化数字表亲，并据此自动生成数据、训练和精修策略；世界多样性和交互数据量增加带来更高保真度与真实迁移成功率，技能复用还提升建世界效率。",
+    "en": "Real2Worlds2Real is an agentic framework that builds faithful digital twins and diverse executable digital cousins from limited observations, then orchestrates data generation, policy learning, and refinement; more world diversity and interaction data improve fidelity and real-world transfer, while skill reuse boosts world-building efficiency."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 7,
    "ax_votes": 11,
    "ax_visits": 187,
@@ -1311,15 +1509,29 @@
    "updated": "2026-11-23T17:54:22Z",
    "comment": "16 pages, 14 figures",
    "tags": [
-    "VLM/LLM"
+    "agents",
+    "efficiency",
+    "LLM",
+    "benchmark"
    ],
    "ax_votes": 14,
    "ax_visits": 157,
    "heat": 29.7,
-   "orgs": [],
+   "orgs": [
+    {
+     "logo": "data/logos/berkeley.edu.png",
+     "name": "University of California, Berkeley",
+     "ror": "01an7q238"
+    }
+   ],
    "thumb": "data/thumbs/2611.31118.jpg",
    "thumb_w": 618,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "TideSand 通过 agent-aware scheduling、speculative swapping 和 selective rollback 三项技术，在工具调用层面调度并复用沙箱资源；在 AlgoTune、Terminal-Bench 4.0 和 Terminal-Bench Science 的六个模型-负载组合上，其吞吐比 strict reservation 高 3.8-10x，保真度比 overcommit 基线高 7-44%，并使 AlgoTune 的评测误差降低 19x。",
+    "en": "TideSand multiplexes sandbox resources for LLM agents via agent-aware scheduling, speculative swapping, and selective rollback, achieving 3.8-10x higher throughput than strict reservation and cutting AlgoTune evaluation error by 19x."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.30714",
@@ -1344,7 +1556,10 @@
    "updated": "2026-11-23T13:55:45Z",
    "comment": "23 pages, 12 tables, 14 figures",
    "tags": [
-    "world model"
+    "multimodal",
+    "efficiency",
+    "video generation",
+    "diffusion"
    ],
    "ax_votes": 14,
    "ax_visits": 156,
@@ -1356,9 +1571,9 @@
      "ror": "03cve4549"
     },
     {
-     "logo": "data/logos/monash.edu.png",
      "name": "Monash University",
-     "ror": "02bfwt286"
+     "ror": "02bfwt286",
+     "logo": "data/logos/monash.edu.png"
     },
     {
      "name": "Renmin University of China",
@@ -1367,7 +1582,12 @@
    ],
    "thumb": "data/thumbs/2611.30714.jpg",
    "thumb_w": 390,
-   "thumb_h": 290
+   "thumb_h": 290,
+   "summary": {
+    "zh": "LiveAudio 将双向视频到音频扩散模型经渐进式因果微调与蒸馏转为流式生成器，逐块生成仅依赖已播放视频的音频；在 VGGSound 上音频质量与时同步优于现有流式模型，同步性超过原双向模型，单张 A100 实时因子 0.79、首帧延迟 143 ms。",
+    "en": "LiveAudio converts a bidirectional video-to-audio diffusion model into a streaming generator via progressive causal fine-tuning and distillation, generating audio block by block; on VGGSound it beats streaming baselines and surpasses its source model in synchronization, running at 0.79 RTF and 143 ms first-frame latency on one A100."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.30963",
@@ -1397,16 +1617,16 @@
    "updated": "2026-11-23T16:32:22Z",
    "comment": "Project website: https://anson2333.github.io/foresight-forcing",
    "tags": [
-    "world model",
+    "robotics",
     "manipulation",
-    "imitation",
-    "perception"
+    "VLA",
+    "world model"
    ],
    "summary": {
-    "en": "Foresight Forcing is a World Action Model that learns spatial transitions from pretrained 3D features, achieving 95.01% success on RoboTwin2.0 Full and 85.8% on real-world tasks.",
-    "zh": "Foresight Forcing ($\text{F}^2$) 是一种利用预训练3D特征空间学习空间转换表示的世界动作模型，通过蒸馏3D基础模型的特征差异来监督几何感知的特征转换。在 RoboTwin2.0 Full 上取得了 95.01% 的平均成功率，在六项真实世界操作任务中达到了 85.8% 的平均任务得分。"
+    "zh": "Foresight Forcing (F²) 利用冻结的 3D 基础模型提取当前与未来观测的 patch 级特征差，作为稠密监督蒸馏出空间转移查询，结合语言指令与本体状态生成动作；在 RoboTwin2.0 Full 上平均成功率 95.01%，六个真实任务平均得分 85.8%。",
+    "en": "Foresight Forcing (F²) distills patch-wise 3D feature differences between current and future observations into spatial transition queries for action generation, reaching 95.01% success on RoboTwin2.0 Full and 85.8% mean score on six real-world tasks."
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 2,
    "ax_votes": 11,
    "ax_visits": 150,
@@ -1657,7 +1877,9 @@
    "updated": "2026-11-23T18:59:32Z",
    "comment": "Preprint. Project page: https://thejb.ai/integral",
    "tags": [
-    "VLM/LLM"
+    "VLM",
+    "image generation",
+    "multimodal"
    ],
    "hf_upvotes": 27,
    "ax_votes": 2,
@@ -1665,14 +1887,24 @@
    "heat": 33.6,
    "orgs": [
     {
-     "logo": "data/logos/kaist.ac.kr.png",
+     "name": "NAVER Cloud",
+     "ror": "041051y78",
+     "logo": "data/logos/navercloudcorp.com.png"
+    },
+    {
      "name": "KAIST",
-     "ror": "05apxxy63"
+     "ror": "05apxxy63",
+     "logo": "data/logos/kaist.ac.kr.png"
     }
    ],
    "thumb": "data/thumbs/2611.31237.jpg",
    "thumb_w": 541,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "Integral 将预训练视觉语言模型转为统一多模态模型：Abstraction Fusion 聚合冻结视觉编码器的层级表征构建共享视觉 token，Block-wise MoT 在块边界接入轻量生成流；在保持理解能力的同时实现强图像生成，共享视觉表征比独立表征显著提升生成学习。",
+    "en": "Integral turns a pretrained VLM into a unified multimodal model: Abstraction Fusion builds shared visual tokens from a frozen encoder's hierarchy, and Block-wise MoT adds a lightweight generative stream at block boundaries, preserving understanding while enabling strong generation; shared representations beat separate ones."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.30207",
@@ -1887,7 +2119,10 @@
    "updated": "2026-11-23T18:57:41Z",
    "comment": "Guo Chen, Fuxiao Liu, Haoqin Tu, and Yiyang Zhou contributed equally and are listed alphabetically by surname. Project lead: Guilin Liu",
    "tags": [
-    "benchmark"
+    "image generation",
+    "agents",
+    "multimodal",
+    "code"
    ],
    "hf_upvotes": 55,
    "ax_votes": 2,
@@ -1901,7 +2136,12 @@
    ],
    "thumb": "data/thumbs/2611.31358.jpg",
    "thumb_w": 592,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "Nemotron-Labs-VisualCreation 以 Pixel as Code 为框架，用离散视觉 token 表示栅格图像、用显式程序表示结构化产物，并统一生成与渲染接口；配套 tokenizer 在约178K图像上把重建 PSNR 从 Emu3.5 IBQ 的 26.08 提升至 29.57 dB，编码快 7.13 倍、解码快 10.93 倍，GenEval2 Soft-TIFA GM 从 31.71 升至 52.56。",
+    "en": "Nemotron-Labs-VisualCreation frames visual creation as Pixel as Code, pairing discrete visual tokens with explicit programs via a shared generation-rendering interface; its tokenizer lifts reconstruction PSNR from 26.08 to 29.57 dB and GenEval2 Soft-TIFA GM from 31.71 to 52.56."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.31198",

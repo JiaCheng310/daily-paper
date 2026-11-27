@@ -10,8 +10,17 @@
  "a team is expected to solve problems beyond the": {
   "name": "a team is expected to solve problems beyond the"
  },
+ "a*star centre for frontier ai research|singapore": {
+  "name": "A*STAR Centre for Frontier AI Research"
+ },
  "a*star|singapore": {
   "name": "A*STAR"
+ },
+ "aalto university|finland": {
+  "domain": "aalto.fi",
+  "logo": "data/logos/aalto.fi.png",
+  "name": "Aalto University",
+  "ror": "020hwjq30"
  },
  "academic advisors. industrial collaborators": {
   "name": "Academic Advisors. Industrial collaborators"
@@ -19,7 +28,16 @@
  "ace robotics": {
   "name": "ACE Robotics"
  },
+ "ace robotics|singapore": {
+  "name": "ACE Robotics"
+ },
  "adelaide university": {
+  "domain": "adelaide.edu.au",
+  "logo": "data/logos/adelaide.edu.au.png",
+  "name": "Adelaide University",
+  "ror": "028g18b61"
+ },
+ "adelaide university|australia": {
   "domain": "adelaide.edu.au",
   "logo": "data/logos/adelaide.edu.au.png",
   "name": "Adelaide University",
@@ -34,6 +52,14 @@
   "domain": "adobe.com",
   "logo": "data/logos/adobe.com.png",
   "name": "Adobe"
+ },
+ "adobe research|united states": {
+  "domain": "adobe.com",
+  "logo": "data/logos/adobe.com.png",
+  "name": "Adobe"
+ },
+ "aether ai": {
+  "name": "Aether AI"
  },
  "agentic robotics": {
   "name": "Agentic Robotics"
@@ -51,8 +77,25 @@
   "name": "AI Lab",
   "ror": "05sdzff81"
  },
+ "ai singapore|singapore": {
+  "domain": "aisingapore.org",
+  "logo": "data/logos/aisingapore.org.png",
+  "name": "AI Singapore",
+  "ror": "00ntacr26"
+ },
  "ai sun yat-sen university": {
   "name": "ai Sun Yat-sen University"
+ },
+ "alamein international university|egypt": {
+  "domain": "aiu.edu.eg",
+  "name": "Alamein International University",
+  "ror": "0019h0z47"
+ },
+ "alexandria university|egypt": {
+  "domain": "alexu.edu.eg",
+  "logo": "data/logos/alexu.edu.eg.png",
+  "name": "Alexandria University",
+  "ror": "00mzz1w90"
  },
  "alibaba group": {
   "domain": "alibaba.com",
@@ -69,6 +112,11 @@
   "logo": "data/logos/alibaba.com.png",
   "name": "Alibaba"
  },
+ "alibaba|china": {
+  "domain": "alibaba.com",
+  "logo": "data/logos/alibaba.com.png",
+  "name": "Alibaba"
+ },
  "aligned meta data": {
   "name": "aligned meta data"
  },
@@ -77,6 +125,17 @@
   "logo": "data/logos/allenai.org.png",
   "name": "Allen Institute for Artificial Intelligence",
   "ror": "05w520734"
+ },
+ "allen institute for artificial intelligence|united states": {
+  "domain": "allenai.org",
+  "logo": "data/logos/allenai.org.png",
+  "name": "Allen Institute for Artificial Intelligence",
+  "ror": "05w520734"
+ },
+ "amap, alibaba group|china": {
+  "domain": "alibabagroup.com",
+  "name": "Alibaba Group",
+  "ror": "00k642b80"
  },
  "amazon": {
   "domain": "amazon.com",
@@ -93,13 +152,24 @@
   "logo": "data/logos/amazon.com.png",
   "name": "Amazon"
  },
+ "amazon|united states": {
+  "domain": "amazon.com",
+  "logo": "data/logos/amazon.com.png",
+  "name": "Amazon"
+ },
  "american university of the middle east": {
   "domain": "aum.edu.kw",
   "logo": "data/logos/aum.edu.kw.png",
   "name": "American University of the Middle East",
   "ror": "02gqgne03"
  },
+ "amiad|france": {
+  "name": "AMIAD"
+ },
  "ant international": {
+  "name": "Ant International"
+ },
+ "ant international|china": {
   "name": "Ant International"
  },
  "apple": {
@@ -117,6 +187,9 @@
   "logo": "data/logos/ariel.ac.il.png",
   "name": "Ariel University",
   "ror": "03nz8qe97"
+ },
+ "arm ltd|united kingdom": {
+  "name": "Arm"
  },
  "australian national university 2csiro 3ge research": {
   "domain": "anu.edu.au",
@@ -183,6 +256,11 @@
   "name": "Beijing Jiaotong University",
   "ror": "01yj56c84"
  },
+ "beijing jiaotong university|china": {
+  "domain": "bjtu.edu.cn",
+  "name": "Beijing Jiaotong University",
+  "ror": "01yj56c84"
+ },
  "beijing roborock technology": {
   "name": "Beijing Roborock Technology"
  },
@@ -191,7 +269,17 @@
   "name": "Beijing University of Chemical Technology",
   "ror": "00df5yc52"
  },
+ "beijing university of chemical technology|china": {
+  "domain": "buct.edu.cn",
+  "name": "Beijing University of Chemical Technology",
+  "ror": "00df5yc52"
+ },
  "beijing university of posts and telecommunications": {
+  "domain": "bupt.edu.cn",
+  "name": "Beijing University of Posts and Telecommunications",
+  "ror": "04w9fbh59"
+ },
+ "beijing university of posts and telecommunications|china": {
   "domain": "bupt.edu.cn",
   "name": "Beijing University of Posts and Telecommunications",
   "ror": "04w9fbh59"
@@ -223,6 +311,9 @@
   "name": "Berlin Institute for the Foundations of Learning and Data",
   "ror": "05dsfb086"
  },
+ "bigai|china": {
+  "name": "BIGAI"
+ },
  "bogazici university": {
   "domain": "boun.edu.tr",
   "name": "Boğaziçi University",
@@ -234,6 +325,11 @@
   "name": "Bosch"
  },
  "bosch research north america & bosch center for artificial intelligence (bcai)": {
+  "domain": "bosch.com",
+  "logo": "data/logos/bosch.com.png",
+  "name": "Bosch"
+ },
+ "bosch research north america & bosch center for artificial intelligence (bcai)|united states": {
   "domain": "bosch.com",
   "logo": "data/logos/bosch.com.png",
   "name": "Bosch"
@@ -259,6 +355,28 @@
   "domain": "bytedance.com",
   "logo": "data/logos/bytedance.com.png",
   "name": "ByteDance"
+ },
+ "bytedance seed|china": {
+  "domain": "bytedance.com",
+  "logo": "data/logos/bytedance.com.png",
+  "name": "ByteDance"
+ },
+ "bytedance|china": {
+  "domain": "bytedance.com",
+  "logo": "data/logos/bytedance.com.png",
+  "name": "ByteDance"
+ },
+ "caltech|united states": {
+  "domain": "caltech.edu",
+  "logo": "data/logos/caltech.edu.png",
+  "name": "Caltech",
+  "ror": "05dxps055"
+ },
+ "cambridge-boston alignment initiative|united states": {
+  "name": "Cambridge-Boston Alignment Initiative"
+ },
+ "capital fund management|france": {
+  "name": "Capital Fund Management"
  },
  "carnegie mellon university": {
   "domain": "cmu.edu",
@@ -294,6 +412,9 @@
  "china railway construction bridge engineering bureau group": {
   "name": "China Railway Construction Bridge Engineering Bureau Group"
  },
+ "china telecom|china": {
+  "name": "China Telecom"
+ },
  "china university of mining and technology": {
   "domain": "cumt.edu.cn",
   "logo": "data/logos/cumt.edu.cn.png",
@@ -301,6 +422,12 @@
   "ror": "01xt2dr21"
  },
  "china university of mining and technology-beijing 8karlsruhe institute of technology 9politecnico di torino": {
+  "domain": "cumt.edu.cn",
+  "logo": "data/logos/cumt.edu.cn.png",
+  "name": "China University of Mining and Technology",
+  "ror": "01xt2dr21"
+ },
+ "china university of mining and technology|china": {
   "domain": "cumt.edu.cn",
   "logo": "data/logos/cumt.edu.cn.png",
   "name": "China University of Mining and Technology",
@@ -334,6 +461,9 @@
   "domain": "asrtechnologiesinc.com",
   "name": "ASR Technologies",
   "ror": "03fbmsm75"
+ },
+ "cirquar technologies|china": {
+  "name": "Cirquar Technologies"
  },
  "cispa helmholtz center for information securityindependent researcherhpe": {
   "domain": "cispa.de",
@@ -391,6 +521,9 @@
  "colorfulclouds technology": {
   "name": "ColorfulClouds Technology"
  },
+ "colorfulclouds technology co., ltd|china": {
+  "name": "ColorfulClouds Technology"
+ },
  "columbia university": {
   "domain": "columbia.edu",
   "logo": "data/logos/columbia.edu.png",
@@ -408,6 +541,9 @@
  "concordia university mila -- quebec ai institute": {
   "name": "Concordia University Mila -- Quebec AI Institute"
  },
+ "concordia university|canada": {
+  "name": "Concordia University"
+ },
  "connected and autonomous research laboratory": {
   "name": "Connected and Autonomous Research Laboratory"
  },
@@ -420,11 +556,23 @@
  "csiro technology": {
   "name": "CSIRO Technology"
  },
+ "csiro|australia": {
+  "name": "CSIRO"
+ },
  "cuhk": {
   "domain": "cuhk.edu.hk",
   "logo": "data/logos/cuhk.edu.hk.png",
   "name": "CUHK",
   "ror": "00t33hh48"
+ },
+ "cuhk|hong kong": {
+  "domain": "cuhk.edu.hk",
+  "logo": "data/logos/cuhk.edu.hk.png",
+  "name": "CUHK",
+  "ror": "00t33hh48"
+ },
+ "cyberagent|japan": {
+  "name": "CyberAgent"
  },
  "czech technical university in prague": {
   "domain": "cvut.cz",
@@ -457,6 +605,12 @@
   "name": "Dartmouth College",
   "ror": "049s0rh22"
  },
+ "dartmouth college|united states": {
+  "domain": "dartmouth.edu",
+  "logo": "data/logos/dartmouth.edu.png",
+  "name": "Dartmouth College",
+  "ror": "049s0rh22"
+ },
  "deep research agents address complex": {
   "name": "Deep research agents address complex"
  },
@@ -466,11 +620,17 @@
  "deep research agents reveals different strengths in breadth and depth": {
   "name": "deep research agents reveals different strengths in breadth and depth"
  },
+ "deepcybo|china": {
+  "name": "DeepCybo"
+ },
  "delft university of technology": {
   "domain": "tudelft.nl",
   "logo": "data/logos/tudelft.nl.png",
   "name": "Delft University of Technology",
   "ror": "02e2c7k09"
+ },
+ "delft university of technology|netherlands": {
+  "name": "Delft University of Technology"
  },
  "disney research": {
   "domain": "disneyresearch.com",
@@ -491,7 +651,16 @@
   "name": "EA Technology",
   "ror": "00qwj7906"
  },
+ "dreamtech|china": {
+  "name": "DreamTech"
+ },
  "duke university university of maryland": {
+  "domain": "duke.edu",
+  "logo": "data/logos/duke.edu.png",
+  "name": "Duke University",
+  "ror": "00py81415"
+ },
+ "duke university|united states": {
   "domain": "duke.edu",
   "logo": "data/logos/duke.edu.png",
   "name": "Duke University",
@@ -499,6 +668,9 @@
  },
  "e80 group s.p.a|italy": {
   "name": "E80 Group S.p.A"
+ },
+ "eabot.ai|china": {
+  "name": "EABOT.AI"
  },
  "east china normal university": {
   "domain": "ecnu.edu.cn",
@@ -530,8 +702,23 @@
   "name": "Eindhoven University of Technology",
   "ror": "02c2kyt77"
  },
+ "eindhoven university of technology|netherlands": {
+  "name": "Eindhoven University of Technology"
+ },
  "einsia.ai": {
   "name": "Einsia.AI"
+ },
+ "einsia.ai|china": {
+  "name": "Einsia.AI"
+ },
+ "ellis institute tübingen|germany": {
+  "domain": "tue.ellis.eu",
+  "logo": "data/logos/tue.ellis.eu.png",
+  "name": "ELLIS Institute Tübingen",
+  "ror": "036z3g533"
+ },
+ "ellis manchester|united kingdom": {
+  "name": "ELLIS Manchester"
  },
  "embodied dexterity lab (dexlab)": {
   "name": "Embodied Dexterity Lab (DexLab)"
@@ -542,6 +729,12 @@
   "ror": "010jskt71"
  },
  "emory university": {
+  "domain": "emory.edu",
+  "logo": "data/logos/emory.edu.png",
+  "name": "Emory University",
+  "ror": "03czfpz43"
+ },
+ "emory university|united states": {
   "domain": "emory.edu",
   "logo": "data/logos/emory.edu.png",
   "name": "Emory University",
@@ -583,6 +776,9 @@
  "fal": {
   "name": "fal"
  },
+ "fal|united states": {
+  "name": "fal"
+ },
  "federal institute of minas gerais (ifmg)": {
   "domain": "ifmg.edu.br",
   "name": "Federal Institute of Minas Gerais (IFMG)",
@@ -590,6 +786,11 @@
  },
  "flower labs": {
   "name": "Flower Labs"
+ },
+ "fondazione bruno kessler|italy": {
+  "domain": "fbk.eu",
+  "name": "Fondazione Bruno Kessler",
+  "ror": "01j33xk10"
  },
  "forall labs": {
   "name": "Forall Labs"
@@ -626,6 +827,9 @@
   "name": "Fuzhou University",
   "ror": "011xvna82"
  },
+ "galaxea ai|china": {
+  "name": "Galaxea AI"
+ },
  "galaxea team": {
   "name": "Galaxea Team"
  },
@@ -639,11 +843,19 @@
   "logo": "data/logos/galbot.com.png",
   "name": "Galbot"
  },
+ "galbot|china": {
+  "domain": "galbot.com",
+  "logo": "data/logos/galbot.com.png",
+  "name": "Galbot"
+ },
  "gamma robotics / teleai": {
   "name": "Gamma Robotics / TeleAI"
  },
  "general reasoning": {
   "name": "General Reasoning"
+ },
+ "genspi technology|china": {
+  "name": "GensPI Technology"
  },
  "george washington university": {
   "domain": "gwu.edu",
@@ -651,7 +863,19 @@
   "name": "George Washington University",
   "ror": "00y4zzh67"
  },
+ "george washington university|united states": {
+  "domain": "gwu.edu",
+  "logo": "data/logos/gwu.edu.png",
+  "name": "George Washington University",
+  "ror": "00y4zzh67"
+ },
  "georgia institute of technology": {
+  "domain": "gatech.edu",
+  "logo": "data/logos/gatech.edu.png",
+  "name": "Georgia Institute of Technology",
+  "ror": "01zkghx44"
+ },
+ "georgia institute of technology|united states": {
   "domain": "gatech.edu",
   "logo": "data/logos/gatech.edu.png",
   "name": "Georgia Institute of Technology",
@@ -671,6 +895,12 @@
   "name": "Getty Conservation Institute",
   "ror": "019496w77"
  },
+ "getty conservation institute|united states": {
+  "domain": "getty.edu",
+  "logo": "data/logos/getty.edu.png",
+  "name": "Getty Conservation Institute",
+  "ror": "019496w77"
+ },
  "google": {
   "domain": "google.com",
   "logo": "data/logos/google.com.png",
@@ -681,7 +911,17 @@
   "logo": "data/logos/deepmind.google.png",
   "name": "Google DeepMind"
  },
+ "google deepmind|united states": {
+  "domain": "deepmind.google",
+  "logo": "data/logos/deepmind.google.png",
+  "name": "Google DeepMind"
+ },
  "google research": {
+  "domain": "google.com",
+  "logo": "data/logos/google.com.png",
+  "name": "Google"
+ },
+ "google research|united states": {
   "domain": "google.com",
   "logo": "data/logos/google.com.png",
   "name": "Google"
@@ -701,6 +941,11 @@
   "ror": "01hdgge16"
  },
  "great bay university 2 intellindust ai lab": {
+  "domain": "gbu.edu.cn",
+  "name": "Great Bay University",
+  "ror": "01hdgge16"
+ },
+ "great bay university|china": {
   "domain": "gbu.edu.cn",
   "name": "Great Bay University",
   "ror": "01hdgge16"
@@ -726,6 +971,11 @@
  "hangzhou institute for advanced study": {
   "name": "Hangzhou Institute for Advanced Study"
  },
+ "hanyang university|south korea": {
+  "domain": "hanyang.ac.kr",
+  "name": "Hanyang University",
+  "ror": "046865y68"
+ },
  "harbin institute of technology": {
   "domain": "hit.edu.cn",
   "name": "Harbin Institute of Technology",
@@ -741,7 +991,17 @@
   "name": "Harbin Institute of Technology",
   "ror": "01yqg2h08"
  },
+ "harbin institute of technology (shenzhen)|china": {
+  "domain": "hit.edu.cn",
+  "name": "Harbin Institute of Technology",
+  "ror": "01yqg2h08"
+ },
  "harbin institute of technology (weihai) 2tongji university": {
+  "domain": "hit.edu.cn",
+  "name": "Harbin Institute of Technology",
+  "ror": "01yqg2h08"
+ },
+ "harbin institute of technology (weihai)|china": {
   "domain": "hit.edu.cn",
   "name": "Harbin Institute of Technology",
   "ror": "01yqg2h08"
@@ -751,11 +1011,28 @@
   "name": "Huazhong University of Science and Technology",
   "ror": "00p991c53"
  },
+ "harbin institute of technology|china": {
+  "domain": "hit.edu.cn",
+  "name": "Harbin Institute of Technology",
+  "ror": "01yqg2h08"
+ },
  "harvard university": {
   "domain": "harvard.edu",
   "logo": "data/logos/harvard.edu.png",
   "name": "Harvard University",
   "ror": "03vek6s52"
+ },
+ "harvard university|united states": {
+  "domain": "harvard.edu",
+  "logo": "data/logos/harvard.edu.png",
+  "name": "Harvard University",
+  "ror": "03vek6s52"
+ },
+ "hasso plattner institute|germany": {
+  "domain": "hpi.de",
+  "logo": "data/logos/hpi.de.png",
+  "name": "Hasso Plattner Institute",
+  "ror": "058rn5r42"
  },
  "hitz basque center for": {
   "name": "HiTZ Basque Center for"
@@ -786,6 +1063,12 @@
   "logo": "data/logos/hku.hk.png",
   "name": "HKU",
   "ror": "02zhqgq86"
+ },
+ "hong kong baptist university|hong kong": {
+  "domain": "hkbu.edu.hk",
+  "logo": "data/logos/hkbu.edu.hk.png",
+  "name": "Hong Kong Baptist University",
+  "ror": "0145fw131"
  },
  "hong kong polytechnic university": {
   "domain": "polyu.edu.hk",
@@ -827,12 +1110,27 @@
   "logo": "data/logos/huawei.com.png",
   "name": "Huawei"
  },
+ "huawei technologies co., ltd|china": {
+  "domain": "huawei.com",
+  "logo": "data/logos/huawei.com.png",
+  "name": "Huawei"
+ },
  "huazhong university of science & technology": {
   "domain": "hust.edu.cn",
   "name": "Huazhong University of Science & Technology",
   "ror": "00p991c53"
  },
+ "huazhong university of science & technology|china": {
+  "domain": "hust.edu.cn",
+  "name": "Huazhong University of Science & Technology",
+  "ror": "00p991c53"
+ },
  "huazhong university of science and technology": {
+  "domain": "hust.edu.cn",
+  "name": "Huazhong University of Science and Technology",
+  "ror": "00p991c53"
+ },
+ "huazhong university of science and technology|china": {
   "domain": "hust.edu.cn",
   "name": "Huazhong University of Science and Technology",
   "ror": "00p991c53"
@@ -853,8 +1151,19 @@
   "name": "Hunan University",
   "ror": "05htk5m33"
  },
+ "hunan university|china": {
+  "domain": "hnu.edu.cn",
+  "name": "Hunan University",
+  "ror": "05htk5m33"
+ },
  "hyperbots": {
   "name": "Hyperbots"
+ },
+ "hyperbots inc|united states": {
+  "name": "Hyperbots"
+ },
+ "hyperlabs": {
+  "name": "hyperlabs"
  },
  "hyperlabs universidade federal de mato grosso hasso plattner institute": {
   "domain": "ufmt.br",
@@ -902,6 +1211,9 @@
  "in agentic twins of real labs": {
   "name": "in Agentic Twins of Real Labs"
  },
+ "inco ai|china": {
+  "name": "Inco AI"
+ },
  "independent researcher": {
   "name": "Independent Researcher"
  },
@@ -912,6 +1224,11 @@
   "name": "Indian Institute of Technology"
  },
  "indian institute of technology bombay": {
+  "domain": "iitb.ac.in",
+  "name": "Indian Institute of Technology Bombay",
+  "ror": "02qyf5152"
+ },
+ "indian institute of technology bombay|india": {
   "domain": "iitb.ac.in",
   "name": "Indian Institute of Technology Bombay",
   "ror": "02qyf5152"
@@ -943,8 +1260,31 @@
  "institute of ai for industries (iaii.ac.cn)": {
   "name": "Institute of AI for Industries (iaii.ac.cn)"
  },
+ "institute of automation, chinese academy of sciences|china": {
+  "domain": "cas.cn",
+  "logo": "data/logos/cas.cn.png",
+  "name": "Chinese Academy of Sciences",
+  "ror": "034t30j35"
+ },
+ "institute of foundation models": {
+  "name": "Institute of Foundation Models"
+ },
+ "institute of foundation models|united arab emirates": {
+  "name": "Institute of Foundation Models"
+ },
  "institute of mechanical intelligence": {
   "name": "Institute of Mechanical Intelligence"
+ },
+ "institute of neuroscience, chinese academy of sciences|china": {
+  "domain": "cas.cn",
+  "logo": "data/logos/cas.cn.png",
+  "name": "Chinese Academy of Sciences",
+  "ror": "034t30j35"
+ },
+ "institute of science tokyo|japan": {
+  "domain": "isct.ac.jp",
+  "name": "Institute of Science Tokyo",
+  "ror": "05dqf9946"
  },
  "instituto de investigacion en ingenieria de aragon": {
   "domain": "i3a.es",
@@ -953,6 +1293,9 @@
  },
  "intelligent software research center": {
   "name": "Intelligent Software Research Center"
+ },
+ "intellindust ai lab|china": {
+  "name": "Intellindust AI Lab"
  },
  "interest in model-driven context management has grown since. research such as sidequest (kariyappa and suh": {
   "name": "Interest in model-driven context management has grown since. Research such as SideQuest (Kariyappa and Suh"
@@ -964,6 +1307,15 @@
   "domain": "nii.ac.jp",
   "name": "National Institute of Informatics",
   "ror": "04ksd4g47"
+ },
+ "jd.com|china": {
+  "domain": "jd.com",
+  "logo": "data/logos/jd.com.png",
+  "name": "JD.com",
+  "ror": "01dkjkq64"
+ },
+ "jd|china": {
+  "name": "JD"
  },
  "jiangsu key laboratory of multimodal digital twin technology": {
   "name": "Jiangsu Key Laboratory of Multimodal Digital Twin Technology"
@@ -979,6 +1331,12 @@
   "logo": "data/logos/virginia.edu.png",
   "name": "University of Virginia",
   "ror": "0153tk833"
+ },
+ "johns hopkins university|united states": {
+  "domain": "jhu.edu",
+  "logo": "data/logos/jhu.edu.png",
+  "name": "Johns Hopkins University",
+  "ror": "00za53h95"
  },
  "joy future academy": {
   "domain": "futureacademyegypt.com",
@@ -1019,11 +1377,25 @@
   "name": "Kennesaw State University",
   "ror": "00jeqjx33"
  },
+ "kennesaw state university|united states": {
+  "domain": "kennesaw.edu",
+  "logo": "data/logos/kennesaw.edu.png",
+  "name": "Kennesaw State University",
+  "ror": "00jeqjx33"
+ },
  "klingai research": {
+  "name": "KlingAI Research"
+ },
+ "klingai research|china": {
   "name": "KlingAI Research"
  },
  "kmed team at naver": {
   "name": "KMed Team at NAVER"
+ },
+ "kookmin university|south korea": {
+  "domain": "kookmin.ac.kr",
+  "name": "Kookmin University",
+  "ror": "0049erg63"
  },
  "korea advanced institute of science & technology": {
   "domain": "kaist.ac.kr",
@@ -1037,13 +1409,28 @@
   "name": "KAIST",
   "ror": "05apxxy63"
  },
+ "korea advanced institute of science and technology|south korea": {
+  "domain": "kaist.ac.kr",
+  "logo": "data/logos/kaist.ac.kr.png",
+  "name": "KAIST",
+  "ror": "05apxxy63"
+ },
  "korea university": {
   "domain": "korea-u.ac.jp",
   "name": "Korea University",
   "ror": "05m1gnk07"
  },
+ "korea university|south korea": {
+  "name": "Korea University"
+ },
  "krafton": {
   "name": "KRAFTON"
+ },
+ "kth royal institute of technology|sweden": {
+  "domain": "kth.se",
+  "logo": "data/logos/kth.se.png",
+  "name": "KTH Royal Institute of Technology",
+  "ror": "026vcq606"
  },
  "ku leuven 13king abdullah university of science and technology 14university of trento 15insight labs": {
   "domain": "kaust.edu.sa",
@@ -1080,6 +1467,9 @@
  },
  "lambda-humanoid team": {
   "name": "Lambda-humanoid Team"
+ },
+ "lenovo robotics lab|china": {
+  "name": "Lenovo Robotics Lab"
  },
  "lenovo|china": {
   "name": "Lenovo"
@@ -1131,6 +1521,9 @@
   "name": "Alexandria University",
   "ror": "00mzz1w90"
  },
+ "made in alexandria ai team (m.i.a robotics)|egypt": {
+  "name": "Made In Alexandria AI Team (M.I.A Robotics)"
+ },
  "magiclab robotics technology (wuxi)": {
   "name": "Magiclab Robotics Technology (Wuxi)"
  },
@@ -1151,8 +1544,26 @@
   "name": "Instituto Politécnico Nacional",
   "ror": "059sp8j34"
  },
+ "max planck institute for intelligent systems|germany": {
+  "domain": "is.mpg.de",
+  "logo": "data/logos/is.mpg.de.png",
+  "name": "Max Planck Institute for Intelligent Systems",
+  "ror": "04fq9j139"
+ },
  "mbzuai|united arab emirates": {
   "name": "MBZUAI"
+ },
+ "meituan|china": {
+  "domain": "meituan.com",
+  "logo": "data/logos/meituan.com.png",
+  "name": "Meituan",
+  "ror": "0272kpg92"
+ },
+ "memtensor|china": {
+  "name": "MemTensor"
+ },
+ "mercor|united states": {
+  "name": "Mercor"
  },
  "meta": {
   "domain": "meta.com",
@@ -1161,6 +1572,11 @@
  },
  "meta-distillation": {
   "name": "Meta-Distillation"
+ },
+ "meta|united states": {
+  "domain": "meta.com",
+  "logo": "data/logos/meta.com.png",
+  "name": "Meta"
  },
  "microsoft": {
   "domain": "microsoft.com",
@@ -1172,11 +1588,27 @@
   "logo": "data/logos/microsoft.com.png",
   "name": "Microsoft"
  },
+ "microsoft research|united states": {
+  "domain": "microsoft.com",
+  "logo": "data/logos/microsoft.com.png",
+  "name": "Microsoft"
+ },
+ "microsoft|united states": {
+  "domain": "microsoft.com",
+  "logo": "data/logos/microsoft.com.png",
+  "name": "Microsoft"
+ },
  "middle east technical university": {
   "domain": "metu.edu.tr",
   "logo": "data/logos/metu.edu.tr.png",
   "name": "Middle East Technical University",
   "ror": "014weej12"
+ },
+ "mila - quebec ai institute|canada": {
+  "name": "Mila - Quebec AI Institute"
+ },
+ "milkthink": {
+  "name": "MilkThink"
  },
  "mind lab": {
   "name": "Mind Lab"
@@ -1192,12 +1624,29 @@
   "name": "MIT CSAIL",
   "ror": "01e85r662"
  },
+ "mit csail|united states": {
+  "domain": "csail.mit.edu",
+  "name": "MIT CSAIL",
+  "ror": "01e85r662"
+ },
  "mitsubishi electric research laboratories": {
   "domain": "merl.com",
   "logo": "data/logos/merl.com.png",
   "name": "MERL"
  },
+ "mit|united states": {
+  "domain": "mit.edu",
+  "logo": "data/logos/mit.edu.png",
+  "name": "MIT",
+  "ror": "042nb2s44"
+ },
  "mohamed bin zayed university of artificial intelligence": {
+  "domain": "mbzuai.ac.ae",
+  "logo": "data/logos/mbzuai.ac.ae.png",
+  "name": "Mohamed bin Zayed University of Artificial Intelligence",
+  "ror": "0258gkt32"
+ },
+ "mohamed bin zayed university of artificial intelligence|united arab emirates": {
   "domain": "mbzuai.ac.ae",
   "logo": "data/logos/mbzuai.ac.ae.png",
   "name": "Mohamed bin Zayed University of Artificial Intelligence",
@@ -1209,14 +1658,32 @@
   "name": "Monash University",
   "ror": "02bfwt286"
  },
+ "monash university|australia": {
+  "domain": "monash.edu",
+  "logo": "data/logos/monash.edu.png",
+  "name": "Monash University",
+  "ror": "02bfwt286"
+ },
+ "monolith management|united states": {
+  "name": "Monolith Management"
+ },
  "moonshine animation studio|taiwan": {
   "name": "MoonShine Animation Studio"
+ },
+ "motional|united states": {
+  "name": "Motional"
+ },
+ "motubrain|china": {
+  "name": "Motubrain"
  },
  "munich center for machine learning": {
   "domain": "mcml.ai",
   "logo": "data/logos/mcml.ai.png",
   "name": "Munich Center for Machine Learning",
   "ror": "02nfy3535"
+ },
+ "mvp lab": {
+  "name": "MVP Lab"
  },
  "mvp lab & imperial college london": {
   "domain": "imperial.ac.uk",
@@ -1266,6 +1733,12 @@
   "name": "Nankai University",
   "ror": "01y1kjr75"
  },
+ "nankai university|china": {
+  "domain": "nankai.edu.cn",
+  "logo": "data/logos/nankai.edu.cn.png",
+  "name": "Nankai University",
+  "ror": "01y1kjr75"
+ },
  "nanyang technological university|singapore": {
   "domain": "ntu.edu.sg",
   "name": "NTU",
@@ -1288,6 +1761,11 @@
   "name": "National Fisheries University",
   "ror": "04kkb3773"
  },
+ "national institute of informatics|japan": {
+  "domain": "nii.ac.jp",
+  "name": "National Institute of Informatics",
+  "ror": "04ksd4g47"
+ },
  "national key laboratory of general artificial intelligence": {
   "name": "National Key Laboratory of General Artificial Intelligence"
  },
@@ -1299,6 +1777,11 @@
   "logo": "data/logos/universityofcalifornia.edu.png",
   "name": "University of California System",
   "ror": "00pjdza24"
+ },
+ "national taichung university of education|taiwan": {
+  "domain": "ntcu.edu.tw",
+  "name": "National Taichung University of Education",
+  "ror": "006tnfe02"
  },
  "national taiwan university": {
   "domain": "ntu.edu.tw",
@@ -1330,6 +1813,15 @@
   "name": "National Yang Ming Chiao Tung University",
   "ror": "00se2k293"
  },
+ "naver cloud|south korea": {
+  "domain": "navercloudcorp.com",
+  "logo": "data/logos/navercloudcorp.com.png",
+  "name": "NAVER Cloud",
+  "ror": "041051y78"
+ },
+ "naver|south korea": {
+  "name": "NAVER"
+ },
  "nec laboratories america": {
   "domain": "nec-labs.com",
   "name": "NEC Labs"
@@ -1354,6 +1846,11 @@
   "name": "New York University Abu Dhabi",
   "ror": "00e5k0821"
  },
+ "new york university|united states": {
+  "domain": "nyu.edu",
+  "name": "New York University",
+  "ror": "0190ak572"
+ },
  "ngoro robotics": {
   "name": "Ngoro Robotics"
  },
@@ -1372,11 +1869,26 @@
   "name": "North Carolina State University",
   "ror": "04tj63d06"
  },
+ "north carolina state university|united states": {
+  "domain": "ncsu.edu",
+  "logo": "data/logos/ncsu.edu.png",
+  "name": "North Carolina State University",
+  "ror": "04tj63d06"
+ },
  "northeastern university": {
   "domain": "neu.edu",
   "logo": "data/logos/neu.edu.png",
   "name": "Northeastern University",
   "ror": "03awzbc87"
+ },
+ "northeastern university|china": {
+  "domain": "neu.edu",
+  "logo": "data/logos/neu.edu.png",
+  "name": "Northeastern University",
+  "ror": "03awzbc87"
+ },
+ "northeastern university|united states": {
+  "name": "Northeastern University"
  },
  "northwestern polytechnical university": {
   "domain": "nwpu.edu.cn",
@@ -1384,6 +1896,12 @@
   "ror": "01y0j0j86"
  },
  "northwestern university": {
+  "domain": "northwestern.edu",
+  "logo": "data/logos/northwestern.edu.png",
+  "name": "Northwestern University",
+  "ror": "000e0be47"
+ },
+ "northwestern university|united states": {
   "domain": "northwestern.edu",
   "logo": "data/logos/northwestern.edu.png",
   "name": "Northwestern University",
@@ -1416,6 +1934,11 @@
   "logo": "data/logos/nvidia.com.png",
   "name": "NVIDIA"
  },
+ "nvidia ai technology center|united states": {
+  "domain": "nvidia.com",
+  "logo": "data/logos/nvidia.com.png",
+  "name": "NVIDIA"
+ },
  "nvidia|united states": {
   "domain": "nvidia.com",
   "logo": "data/logos/nvidia.com.png",
@@ -1423,6 +1946,12 @@
  },
  "ohio state university": {
   "name": "Ohio State University"
+ },
+ "ohio state university|united states": {
+  "name": "Ohio State University"
+ },
+ "oracle|united states": {
+  "name": "Oracle"
  },
  "os-omni team": {
   "name": "OS-Omni Team"
@@ -1460,6 +1989,9 @@
  "polyadic research group": {
   "name": "Polyadic Research Group"
  },
+ "postech|south korea": {
+  "name": "POSTECH"
+ },
  "princeton university": {
   "domain": "princeton.edu",
   "logo": "data/logos/princeton.edu.png",
@@ -1467,6 +1999,12 @@
   "ror": "00hx57361"
  },
  "princeton university joint first authors. correspondence emails: {kshitiz2": {
+  "domain": "princeton.edu",
+  "logo": "data/logos/princeton.edu.png",
+  "name": "Princeton University",
+  "ror": "00hx57361"
+ },
+ "princeton university|united states": {
   "domain": "princeton.edu",
   "logo": "data/logos/princeton.edu.png",
   "name": "Princeton University",
@@ -1489,13 +2027,27 @@
   "name": "Purdue University",
   "ror": "04bm3wy68"
  },
+ "purdue university|united states": {
+  "name": "Purdue University"
+ },
  "r&d center": {
   "name": "R&D Center"
+ },
+ "reflection": {
+  "name": "Reflection"
  },
  "reflection team": {
   "name": "Reflection Team"
  },
+ "regressor, inc": {
+  "name": "Regressor"
+ },
  "renmin university of china": {
+  "domain": "ruc.edu.cn",
+  "name": "Renmin University of China",
+  "ror": "041pakw92"
+ },
+ "renmin university of china|china": {
   "domain": "ruc.edu.cn",
   "name": "Renmin University of China",
   "ror": "041pakw92"
@@ -1522,7 +2074,15 @@
   "name": "RIKEN Center for Computational Science",
   "ror": "03r519674"
  },
+ "riken|japan": {
+  "domain": "riken.jp",
+  "name": "RIKEN",
+  "ror": "01sjwvz98"
+ },
  "rlwrld": {
+  "name": "RLWRLD"
+ },
+ "rlwrld|south korea": {
   "name": "RLWRLD"
  },
  "robotics foundation model team": {
@@ -1588,6 +2148,11 @@
  "sensetime research|singapore": {
   "name": "SenseTime Research"
  },
+ "sensetime|china": {
+  "domain": "sensetime.com",
+  "name": "Sensetime",
+  "ror": "049wsmj07"
+ },
  "seoul national university": {
   "domain": "snu.ac.kr",
   "logo": "data/logos/snu.ac.kr.png",
@@ -1639,12 +2204,27 @@
  "shanghai kepler robotics": {
   "name": "Shanghai Kepler Robotics"
  },
+ "shanghai qi zhi institute|china": {
+  "domain": "sqz.ac.cn",
+  "name": "Shanghai Qi Zhi Institute",
+  "ror": "01n14yn69"
+ },
  "shanghai university": {
   "domain": "shu.edu.cn",
   "name": "Shanghai University",
   "ror": "006teas31"
  },
+ "shanghai university|china": {
+  "domain": "shu.edu.cn",
+  "name": "Shanghai University",
+  "ror": "006teas31"
+ },
  "shanghaitech university": {
+  "domain": "shanghaitech.edu.cn",
+  "name": "ShanghaiTech University",
+  "ror": "030bhh786"
+ },
+ "shanghaitech university|china": {
   "domain": "shanghaitech.edu.cn",
   "name": "ShanghaiTech University",
   "ror": "030bhh786"
@@ -1656,6 +2236,11 @@
   "name": "Shenzhen Loop Area Institute"
  },
  "shenzhen university": {
+  "domain": "szu.edu.cn",
+  "name": "Shenzhen University",
+  "ror": "01vy4gh70"
+ },
+ "shenzhen university|china": {
   "domain": "szu.edu.cn",
   "name": "Shenzhen University",
   "ror": "01vy4gh70"
@@ -1698,7 +2283,19 @@
   "name": "Singapore Management University",
   "ror": "050qmg959"
  },
+ "singapore management university|singapore": {
+  "domain": "smu.edu.sg",
+  "logo": "data/logos/smu.edu.sg.png",
+  "name": "Singapore Management University",
+  "ror": "050qmg959"
+ },
  "singapore university of technology and design": {
+  "domain": "sutd.edu.sg",
+  "logo": "data/logos/sutd.edu.sg.png",
+  "name": "Singapore University of Technology and Design",
+  "ror": "05j6fvn87"
+ },
+ "singapore university of technology and design|singapore": {
   "domain": "sutd.edu.sg",
   "logo": "data/logos/sutd.edu.sg.png",
   "name": "Singapore University of Technology and Design",
@@ -1740,6 +2337,11 @@
   "name": "South China Normal University",
   "ror": "01kq0pv72"
  },
+ "south china normal university|china": {
+  "domain": "scnu.edu.cn",
+  "name": "South China Normal University",
+  "ror": "01kq0pv72"
+ },
  "south china university of technology": {
   "domain": "scut.edu.cn",
   "logo": "data/logos/scut.edu.cn.png",
@@ -1760,6 +2362,12 @@
  },
  "south dakota state university kth royal institute of technology aalto university": {
   "name": "South Dakota State University KTH Royal Institute of Technology Aalto University"
+ },
+ "south dakota state university|united states": {
+  "domain": "sdstate.edu",
+  "logo": "data/logos/sdstate.edu.png",
+  "name": "South Dakota State University",
+  "ror": "015jmes13"
  },
  "southeast university": {
   "domain": "seu.edu.cn",
@@ -1795,6 +2403,11 @@
   "name": "Southern University of Science and Technology",
   "ror": "049tv2d57"
  },
+ "southern university of science and technology|china": {
+  "domain": "sustech.edu.cn",
+  "name": "Southern University of Science and Technology",
+  "ror": "049tv2d57"
+ },
  "stanford university": {
   "domain": "stanford.edu",
   "logo": "data/logos/stanford.edu.png",
@@ -1820,6 +2433,12 @@
   "domain": "suny.edu",
   "name": "State University of New York",
   "ror": "01q1z8k08"
+ },
+ "stony brook university|united states": {
+  "domain": "stonybrook.edu",
+  "logo": "data/logos/stonybrook.edu.png",
+  "name": "Stony Brook University",
+  "ror": "05qghxh33"
  },
  "strategies on document research and machine learning engineering across context budgets from 8k to 512k": {
   "name": "strategies on document research and machine learning engineering across context budgets from 8K to 512K"
@@ -1861,6 +2480,9 @@
   "name": "Suzhou Institute for Advance Research",
   "ror": "049xpsw37"
  },
+ "synvo ai|singapore": {
+  "name": "Synvo AI"
+ },
  "taobao & tmall group of alibaba": {
   "name": "Taobao & Tmall Group of Alibaba"
  },
@@ -1900,12 +2522,27 @@
   "logo": "data/logos/tencent.com.png",
   "name": "Tencent"
  },
+ "tencent arc lab|china": {
+  "domain": "tencent.com",
+  "logo": "data/logos/tencent.com.png",
+  "name": "Tencent"
+ },
  "tencent hunyuan": {
   "domain": "tencent.com",
   "logo": "data/logos/tencent.com.png",
   "name": "Tencent"
  },
  "tencent hunyuan team": {
+  "domain": "tencent.com",
+  "logo": "data/logos/tencent.com.png",
+  "name": "Tencent"
+ },
+ "tencent hunyuan|china": {
+  "domain": "tencent.com",
+  "logo": "data/logos/tencent.com.png",
+  "name": "Tencent"
+ },
+ "tencent inc|china": {
   "domain": "tencent.com",
   "logo": "data/logos/tencent.com.png",
   "name": "Tencent"
@@ -1920,7 +2557,17 @@
   "logo": "data/logos/tencent.com.png",
   "name": "Tencent"
  },
+ "tencent robotics x lab|china": {
+  "domain": "tencent.com",
+  "logo": "data/logos/tencent.com.png",
+  "name": "Tencent"
+ },
  "tencent youtu lab": {
+  "domain": "tencent.com",
+  "logo": "data/logos/tencent.com.png",
+  "name": "Tencent"
+ },
+ "tencent youtu lab|china": {
   "domain": "tencent.com",
   "logo": "data/logos/tencent.com.png",
   "name": "Tencent"
@@ -1939,6 +2586,12 @@
   "name": "Texas A&M University",
   "ror": "01f5ytq51"
  },
+ "texas a&m university, college station|united states": {
+  "domain": "tamu.edu",
+  "logo": "data/logos/tamu.edu.png",
+  "name": "Texas A&M University",
+  "ror": "01f5ytq51"
+ },
  "thanks: $ˆ1$tsinghua university. $ˆ2$discover robotics. $ˆ $": {
   "domain": "tsinghua.edu.cn",
   "name": "Tsinghua University",
@@ -1947,11 +2600,29 @@
  "thanks: independent researcher": {
   "name": "thanks: Independent Researcher"
  },
+ "the chinese university of hong kong (shenzhen)|china": {
+  "domain": "cuhk.edu.hk",
+  "logo": "data/logos/cuhk.edu.hk.png",
+  "name": "CUHK",
+  "ror": "00t33hh48"
+ },
+ "the chinese university of hong kong, shenzhen|china": {
+  "domain": "cuhk.edu.hk",
+  "logo": "data/logos/cuhk.edu.hk.png",
+  "name": "CUHK",
+  "ror": "00t33hh48"
+ },
  "the chinese university of hong kong|hong kong": {
   "domain": "cuhk.edu.hk",
   "logo": "data/logos/cuhk.edu.hk.png",
   "name": "CUHK",
   "ror": "00t33hh48"
+ },
+ "the hong kong polytechnic university|hong kong": {
+  "domain": "polyu.edu.hk",
+  "logo": "data/logos/polyu.edu.hk.png",
+  "name": "Hong Kong Polytechnic University",
+  "ror": "0030zas98"
  },
  "the hong kong university of science and technology (guangzhou)|china": {
   "domain": "hkust.edu.hk",
@@ -1974,20 +2645,49 @@
  "the office of naval research global grant n62909-24-1-2081": {
   "name": "the Office of Naval Research Global grant N62909-24-1-2081"
  },
+ "the university of alabama|united states": {
+  "domain": "ua.edu",
+  "logo": "data/logos/ua.edu.png",
+  "name": "University of Alabama",
+  "ror": "03xrrjk67"
+ },
  "the university of hong kong|hong kong": {
   "domain": "hku.hk",
   "logo": "data/logos/hku.hk.png",
   "name": "HKU",
   "ror": "02zhqgq86"
  },
+ "the university of melbourne|australia": {
+  "domain": "unimelb.edu.au",
+  "logo": "data/logos/unimelb.edu.au.png",
+  "name": "University of Melbourne",
+  "ror": "01ej9dk98"
+ },
  "the university of osaka|japan": {
   "name": "University of Osaka"
+ },
+ "the university of science and technology of china|china": {
+  "domain": "ustc.edu.cn",
+  "name": "University of Science and Technology of China",
+  "ror": "04c4dkn09"
+ },
+ "the university of sydney|australia": {
+  "domain": "sydney.edu.au",
+  "logo": "data/logos/sydney.edu.au.png",
+  "name": "University of Sydney",
+  "ror": "0384j8v12"
+ },
+ "the university of texas at austin|united states": {
+  "name": "University of Texas at Austin"
  },
  "the university of tokyo|japan": {
   "name": "University of Tokyo"
  },
  "therefore depends on collective physical capability: the ability of team members to change the shared world in": {
   "name": "therefore depends on collective physical capability: the ability of team members to change the shared world in"
+ },
+ "thingenious pc|greece": {
+  "name": "ThinGenious PC"
  },
  "this task requires an agent to decide which research directions deserve": {
   "name": "this task requires an agent to decide which research directions deserve"
@@ -2006,6 +2706,9 @@
   "logo": "data/logos/tju.edu.cn.png",
   "name": "Tianjin University",
   "ror": "012tb2g32"
+ },
+ "tokenwave ai|china": {
+  "name": "TokenWave AI"
  },
  "tongji university": {
   "domain": "tongji.edu.cn",
@@ -2089,7 +2792,22 @@
   "name": "Stanford University",
   "ror": "00f54p054"
  },
+ "tulane university|united states": {
+  "domain": "tulane.edu",
+  "logo": "data/logos/tulane.edu.png",
+  "name": "Tulane University",
+  "ror": "04vmvtb21"
+ },
+ "typhoon, scb datax|thailand": {
+  "name": "Typhoon, SCB DataX"
+ },
  "tübingen ai center": {
+  "domain": "tuebingen.ai",
+  "logo": "data/logos/tuebingen.ai.png",
+  "name": "Tübingen AI Center",
+  "ror": "0107nyd78"
+ },
+ "tübingen ai center|germany": {
   "domain": "tuebingen.ai",
   "logo": "data/logos/tuebingen.ai.png",
   "name": "Tübingen AI Center",
@@ -2131,6 +2849,12 @@
   "name": "UC San Diego",
   "ror": "0168r3w48"
  },
+ "uc san diego|united states": {
+  "domain": "ucsd.edu",
+  "logo": "data/logos/ucsd.edu.png",
+  "name": "UC San Diego",
+  "ror": "0168r3w48"
+ },
  "uc santa barbara": {
   "domain": "ucsb.edu",
   "name": "UC Santa Barbara",
@@ -2163,6 +2887,18 @@
  "unigroup guoxin microelectronics": {
   "name": "Unigroup Guoxin Microelectronics"
  },
+ "universidad de costa rica|costa rica": {
+  "domain": "ucr.ac.cr",
+  "logo": "data/logos/ucr.ac.cr.png",
+  "name": "Universidad de Costa Rica",
+  "ror": "02yzgww51"
+ },
+ "universidade federal de mato grosso|brazil": {
+  "domain": "ufmt.br",
+  "logo": "data/logos/ufmt.br.png",
+  "name": "Universidade Federal de Mato Grosso",
+  "ror": "01mqvjv41"
+ },
  "universitat autònoma de barcelona": {
   "domain": "uab.cat",
   "logo": "data/logos/uab.cat.png",
@@ -2171,6 +2907,11 @@
  },
  "university": {
   "name": "University"
+ },
+ "university at buffalo|united states": {
+  "domain": "buffalo.edu",
+  "name": "University at Buffalo",
+  "ror": "01y64my43"
  },
  "university college london": {
   "domain": "ucl.ac.uk",
@@ -2193,6 +2934,12 @@
   "name": "University of Alabama",
   "ror": "03xrrjk67"
  },
+ "university of alabama at birmingham|united states": {
+  "domain": "uab.edu",
+  "logo": "data/logos/uab.edu.png",
+  "name": "University of Alabama at Birmingham",
+  "ror": "008s83205"
+ },
  "university of alberta": {
   "domain": "ualberta.ca",
   "logo": "data/logos/ualberta.ca.png",
@@ -2204,6 +2951,9 @@
   "name": "University of Amsterdam",
   "ror": "04dkp9463"
  },
+ "university of amsterdam|netherlands": {
+  "name": "University of Amsterdam"
+ },
  "university of bonn": {
   "domain": "uni-bonn.de",
   "logo": "data/logos/uni-bonn.de.png",
@@ -2211,6 +2961,12 @@
   "ror": "041nas322"
  },
  "university of bristol{chenchiyu": {
+  "domain": "bristol.ac.uk",
+  "logo": "data/logos/bristol.ac.uk.png",
+  "name": "University of Bristol",
+  "ror": "0524sp257"
+ },
+ "university of bristol|united kingdom": {
   "domain": "bristol.ac.uk",
   "logo": "data/logos/bristol.ac.uk.png",
   "name": "University of Bristol",
@@ -2228,6 +2984,12 @@
   "name": "University of British Columbia",
   "ror": "03rmrcq20"
  },
+ "university of british columbia|canada": {
+  "domain": "ubc.ca",
+  "logo": "data/logos/ubc.ca.png",
+  "name": "University of British Columbia",
+  "ror": "03rmrcq20"
+ },
  "university of california, berkeley|united states": {
   "domain": "berkeley.edu",
   "logo": "data/logos/berkeley.edu.png",
@@ -2239,6 +3001,40 @@
   "logo": "data/logos/uci.edu.png",
   "name": "University of California, Irvine",
   "ror": "04gyf1771"
+ },
+ "university of california, los angeles|united states": {
+  "domain": "ucla.edu",
+  "logo": "data/logos/ucla.edu.png",
+  "name": "University of California, Los Angeles",
+  "ror": "046rm7j60"
+ },
+ "university of california, merced|united states": {
+  "domain": "ucmerced.edu",
+  "logo": "data/logos/ucmerced.edu.png",
+  "name": "University of California, Merced",
+  "ror": "00d9ah105"
+ },
+ "university of california, riverside|united states": {
+  "domain": "ucr.edu",
+  "name": "University of California, Riverside",
+  "ror": "03nawhv43"
+ },
+ "university of california, san diego|united states": {
+  "domain": "ucsd.edu",
+  "logo": "data/logos/ucsd.edu.png",
+  "name": "University of California San Diego",
+  "ror": "0168r3w48"
+ },
+ "university of california, santa barbara|united states": {
+  "domain": "ucsb.edu",
+  "name": "University of California, Santa Barbara",
+  "ror": "02t274463"
+ },
+ "university of california, santa cruz|united states": {
+  "domain": "ucsc.edu",
+  "logo": "data/logos/ucsc.edu.png",
+  "name": "University of California, Santa Cruz",
+  "ror": "03s65by71"
  },
  "university of cambridge": {
   "domain": "cam.ac.uk",
@@ -2263,6 +3059,12 @@
   "ror": "036nfer12"
  },
  "university of chicago": {
+  "domain": "uchicago.edu",
+  "logo": "data/logos/uchicago.edu.png",
+  "name": "University of Chicago",
+  "ror": "024mw5h28"
+ },
+ "university of chicago|united states": {
   "domain": "uchicago.edu",
   "logo": "data/logos/uchicago.edu.png",
   "name": "University of Chicago",
@@ -2297,6 +3099,11 @@
   "name": "University of Colorado Denver",
   "ror": "02hh7en24"
  },
+ "university of colorado denver|united states": {
+  "domain": "ucdenver.edu",
+  "name": "University of Colorado Denver",
+  "ror": "02hh7en24"
+ },
  "university of connecticut|united states": {
   "domain": "uconn.edu",
   "logo": "data/logos/uconn.edu.png",
@@ -2304,6 +3111,12 @@
   "ror": "02der9h97"
  },
  "university of delaware": {
+  "domain": "udel.edu",
+  "logo": "data/logos/udel.edu.png",
+  "name": "University of Delaware",
+  "ror": "01sbq1a82"
+ },
+ "university of delaware|united states": {
   "domain": "udel.edu",
   "logo": "data/logos/udel.edu.png",
   "name": "University of Delaware",
@@ -2319,7 +3132,18 @@
   "name": "University of Electronic Science and Technology of China",
   "ror": "04qr3zq92"
  },
+ "university of electronic science and technology of china|china": {
+  "domain": "uestc.edu.cn",
+  "name": "University of Electronic Science and Technology of China",
+  "ror": "04qr3zq92"
+ },
  "university of florida": {
+  "domain": "ufl.edu",
+  "logo": "data/logos/ufl.edu.png",
+  "name": "University of Florida",
+  "ror": "02y3ad647"
+ },
+ "university of florida|united states": {
   "domain": "ufl.edu",
   "logo": "data/logos/ufl.edu.png",
   "name": "University of Florida",
@@ -2366,7 +3190,19 @@
   "name": "HKU",
   "ror": "02zhqgq86"
  },
+ "university of illinois at urbana-champaign|united states": {
+  "domain": "illinois.edu",
+  "logo": "data/logos/illinois.edu.png",
+  "name": "University of Illinois Urbana-Champaign",
+  "ror": "047426m28"
+ },
  "university of illinois chicago": {
+  "domain": "uic.edu",
+  "logo": "data/logos/uic.edu.png",
+  "name": "University of Illinois Chicago",
+  "ror": "02mpq6x41"
+ },
+ "university of illinois chicago|united states": {
   "domain": "uic.edu",
   "logo": "data/logos/uic.edu.png",
   "name": "University of Illinois Chicago",
@@ -2405,7 +3241,19 @@
   "name": "University of Luxembourg",
   "ror": "036x5ad56"
  },
+ "university of luxembourg|luxembourg": {
+  "domain": "uni.lu",
+  "logo": "data/logos/uni.lu.png",
+  "name": "University of Luxembourg",
+  "ror": "036x5ad56"
+ },
  "university of macau": {
+  "domain": "um.edu.mo",
+  "logo": "data/logos/um.edu.mo.png",
+  "name": "University of Macau",
+  "ror": "01r4q9n85"
+ },
+ "university of macau|macau": {
   "domain": "um.edu.mo",
   "logo": "data/logos/um.edu.mo.png",
   "name": "University of Macau",
@@ -2416,10 +3264,27 @@
   "name": "University of Manchester",
   "ror": "027m9bs27"
  },
+ "university of manchester|united kingdom": {
+  "domain": "manchester.ac.uk",
+  "name": "University of Manchester",
+  "ror": "027m9bs27"
+ },
  "university of maryland": {
   "name": "University of Maryland"
  },
+ "university of maryland, college park|united states": {
+  "domain": "umd.edu",
+  "logo": "data/logos/umd.edu.png",
+  "name": "University of Maryland, College Park",
+  "ror": "047s2c258"
+ },
  "university of massachusetts amherst": {
+  "domain": "umass.edu",
+  "logo": "data/logos/umass.edu.png",
+  "name": "University of Massachusetts Amherst",
+  "ror": "0072zz521"
+ },
+ "university of massachusetts amherst|united states": {
   "domain": "umass.edu",
   "logo": "data/logos/umass.edu.png",
   "name": "University of Massachusetts Amherst",
@@ -2443,6 +3308,12 @@
   "name": "University of Michigan",
   "ror": "00jmfr291"
  },
+ "university of michigan|united states": {
+  "domain": "umich.edu",
+  "logo": "data/logos/umich.edu.png",
+  "name": "University of Michigan",
+  "ror": "00jmfr291"
+ },
  "university of minnesota": {
   "domain": "umn.edu",
   "name": "University of Minnesota",
@@ -2453,12 +3324,22 @@
   "name": "University of Minnesota",
   "ror": "017zqws13"
  },
+ "university of minnesota – twin cities|united states": {
+  "domain": "umn.edu",
+  "name": "University of Minnesota",
+  "ror": "017zqws13"
+ },
  "university of minnesota|united states": {
   "domain": "umn.edu",
   "name": "University of Minnesota",
   "ror": "017zqws13"
  },
  "university of missouri": {
+  "domain": "missouri.edu",
+  "name": "University of Missouri",
+  "ror": "02ymw8z06"
+ },
+ "university of missouri|united states": {
   "domain": "missouri.edu",
   "name": "University of Missouri",
   "ror": "02ymw8z06"
@@ -2533,6 +3414,12 @@
   "name": "University of Rochester",
   "ror": "022kthw22"
  },
+ "university of rochester|united states": {
+  "domain": "rochester.edu",
+  "logo": "data/logos/rochester.edu.png",
+  "name": "University of Rochester",
+  "ror": "022kthw22"
+ },
  "university of science and technology (guangzhou)": {
   "name": "University of Science and Technology (Guangzhou)"
  },
@@ -2556,10 +3443,20 @@
   "name": "University of Science and Technology of China",
   "ror": "04c4dkn09"
  },
+ "university of science and technology of china|china": {
+  "domain": "ustc.edu.cn",
+  "name": "University of Science and Technology of China",
+  "ror": "04c4dkn09"
+ },
  "university of seoul naver cloud kookmin university": {
   "domain": "kookmin.ac.kr",
   "name": "Kookmin University",
   "ror": "0049erg63"
+ },
+ "university of seoul|south korea": {
+  "domain": "english.uos.ac.kr",
+  "name": "University of Seoul",
+  "ror": "05en5nh73"
  },
  "university of southern california": {
   "domain": "usc.edu",
@@ -2602,6 +3499,12 @@
   "name": "University of Technology Nuremberg",
   "ror": "02sv65x64"
  },
+ "university of technology nuremberg|germany": {
+  "domain": "utn.de",
+  "logo": "data/logos/utn.de.png",
+  "name": "University of Technology Nuremberg",
+  "ror": "02sv65x64"
+ },
  "university of technology sydney": {
   "domain": "uts.edu.au",
   "name": "University of Technology Sydney",
@@ -2613,11 +3516,19 @@
   "name": "Hong Kong Polytechnic University",
   "ror": "0030zas98"
  },
+ "university of technology sydney|australia": {
+  "domain": "uts.edu.au",
+  "name": "University of Technology Sydney",
+  "ror": "03f0f6041"
+ },
  "university of texas": {
   "name": "University of Texas"
  },
  "university of texas at": {
   "name": "University of Texas at"
+ },
+ "university of texas at dallas|united states": {
+  "name": "University of Texas at Dallas"
  },
  "university of the basque country upv/ehu": {
   "domain": "ehu.eus",
@@ -2625,10 +3536,22 @@
   "name": "University of the Basque Country",
   "ror": "000xsnr85"
  },
+ "university of the chinese academy of sciences|china": {
+  "domain": "cas.cn",
+  "logo": "data/logos/cas.cn.png",
+  "name": "Chinese Academy of Sciences",
+  "ror": "034t30j35"
+ },
  "university of tokyo": {
   "name": "University of Tokyo"
  },
  "university of toronto": {
+  "domain": "utoronto.ca",
+  "logo": "data/logos/utoronto.ca.png",
+  "name": "University of Toronto",
+  "ror": "03dbr7087"
+ },
+ "university of toronto|canada": {
   "domain": "utoronto.ca",
   "logo": "data/logos/utoronto.ca.png",
   "name": "University of Toronto",
@@ -2640,11 +3563,26 @@
   "name": "University of Trento",
   "ror": "05trd4x28"
  },
+ "university of trento|italy": {
+  "domain": "unitn.it",
+  "logo": "data/logos/unitn.it.png",
+  "name": "University of Trento",
+  "ror": "05trd4x28"
+ },
  "university of utah": {
   "domain": "utah.edu",
   "logo": "data/logos/utah.edu.png",
   "name": "University of Utah",
   "ror": "03r0ha626"
+ },
+ "university of utah|united states": {
+  "domain": "utah.edu",
+  "logo": "data/logos/utah.edu.png",
+  "name": "University of Utah",
+  "ror": "03r0ha626"
+ },
+ "university of venice|italy": {
+  "name": "University of Venice"
  },
  "university of virginia": {
   "domain": "virginia.edu",
@@ -2658,7 +3596,19 @@
   "name": "University of Washington",
   "ror": "00cvxb145"
  },
+ "university of washington|united states": {
+  "domain": "washington.edu",
+  "logo": "data/logos/washington.edu.png",
+  "name": "University of Washington",
+  "ror": "00cvxb145"
+ },
  "university of waterloo": {
+  "domain": "uwaterloo.ca",
+  "logo": "data/logos/uwaterloo.ca.png",
+  "name": "University of Waterloo",
+  "ror": "01aff2v68"
+ },
+ "university of waterloo|canada": {
   "domain": "uwaterloo.ca",
   "logo": "data/logos/uwaterloo.ca.png",
   "name": "University of Waterloo",
@@ -2692,6 +3642,12 @@
   "name": "University of Zurich",
   "ror": "02crff812"
  },
+ "university of zurich|switzerland": {
+  "domain": "uzh.ch",
+  "logo": "data/logos/uzh.ch.png",
+  "name": "University of Zurich",
+  "ror": "02crff812"
+ },
  "università degli studi di genova": {
   "domain": "unige.it",
   "name": "University of Genoa",
@@ -2705,7 +3661,15 @@
   "name": "Université Paris-Saclay",
   "ror": "03xjwb503"
  },
+ "ustc|china": {
+  "name": "USTC"
+ },
  "vanderbilt university": {
+  "domain": "vanderbilt.edu",
+  "name": "Vanderbilt University",
+  "ror": "02vm5rt34"
+ },
+ "vanderbilt university|united states": {
   "domain": "vanderbilt.edu",
   "name": "Vanderbilt University",
   "ror": "02vm5rt34"
@@ -2736,6 +3700,9 @@
   "name": "Wake Forest University",
   "ror": "0207ad724"
  },
+ "waldiez pc|greece": {
+  "name": "Waldiez PC"
+ },
  "warsaw university of technology": {
   "domain": "pw.edu.pl",
   "logo": "data/logos/pw.edu.pl.png",
@@ -2747,11 +3714,22 @@
   "name": "Waseda University",
   "ror": "00ntfnx83"
  },
+ "waseda university|japan": {
+  "domain": "waseda.jp",
+  "name": "Waseda University",
+  "ror": "00ntfnx83"
+ },
  "washington university in st. louis georgia institute of technology university of illinois urbana-champaign": {
   "domain": "illinois.edu",
   "logo": "data/logos/illinois.edu.png",
   "name": "University of Illinois Urbana-Champaign",
   "ror": "047426m28"
+ },
+ "washington university in st. louis|united states": {
+  "domain": "wustl.edu",
+  "logo": "data/logos/wustl.edu.png",
+  "name": "Washington University in St. Louis",
+  "ror": "01yc7t268"
  },
  "we compared two context management strategies on document research and machine learning": {
   "name": "We compared two context management strategies on document research and machine learning"
@@ -2791,7 +3769,18 @@
   "name": "Wuhan University of Technology",
   "ror": "03fe7t173"
  },
+ "wuhan university of technology|china": {
+  "domain": "whut.edu.cn",
+  "name": "Wuhan University of Technology",
+  "ror": "03fe7t173"
+ },
  "wuhan university zhongguancun academy": {
+  "domain": "whu.edu.cn",
+  "logo": "data/logos/whu.edu.cn.png",
+  "name": "Wuhan University",
+  "ror": "033vjfk17"
+ },
+ "wuhan university|china": {
   "domain": "whu.edu.cn",
   "logo": "data/logos/whu.edu.cn.png",
   "name": "Wuhan University",
@@ -2821,6 +3810,12 @@
   "ror": "00mcjh785"
  },
  "xiaohongshu": {
+  "domain": "xiaohongshu.com",
+  "logo": "data/logos/xiaohongshu.com.png",
+  "name": "Xiaohongshu",
+  "ror": "02apw2076"
+ },
+ "xiaohongshu inc|china": {
   "domain": "xiaohongshu.com",
   "logo": "data/logos/xiaohongshu.com.png",
   "name": "Xiaohongshu",
@@ -2856,7 +3851,19 @@
  "xpeng robotics": {
   "name": "XPENG Robotics"
  },
+ "xpeng|china": {
+  "domain": "xiaopeng.com",
+  "logo": "data/logos/xiaopeng.com.png",
+  "name": "XPENG",
+  "ror": "05a5cgn70"
+ },
  "yale university": {
+  "domain": "yale.edu",
+  "logo": "data/logos/yale.edu.png",
+  "name": "Yale University",
+  "ror": "03v76x132"
+ },
+ "yale university|united states": {
   "domain": "yale.edu",
   "logo": "data/logos/yale.edu.png",
   "name": "Yale University",
@@ -2914,14 +3921,26 @@
  "zhongguancun institute of artificial intelligence deepcybo": {
   "name": "Zhongguancun Institute of Artificial Intelligence DeepCybo"
  },
+ "zhongguancun institute of artificial intelligence|china": {
+  "name": "Zhongguancun Institute of Artificial Intelligence"
+ },
  "zhuoyu technology|china": {
   "name": "Zhuoyu Technology"
  },
  "zozo research": {
   "name": "ZOZO Research"
  },
+ "zozo research|japan": {
+  "name": "ZOZO Research"
+ },
  "école normale supérieure|france": {
   "name": "École normale supérieure"
+ },
+ "école polytechnique fédérale de lausanne (epfl)|switzerland": {
+  "domain": "epfl.ch",
+  "logo": "data/logos/epfl.ch.png",
+  "name": "EPFL",
+  "ror": "02s376052"
  },
  "örebro university": {
   "domain": "oru.se",

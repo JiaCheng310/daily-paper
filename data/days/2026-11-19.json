@@ -41,9 +41,8 @@
    "updated": "2026-11-19T02:47:14Z",
    "comment": "Technical report, 18 pages",
    "tags": [
-    "LLM",
-    "efficiency",
     "pretraining",
+    "multimodal",
     "detection"
    ],
    "hf_upvotes": 66,
@@ -71,10 +70,10 @@
    "thumb_w": 640,
    "thumb_h": 350,
    "summary": {
-    "zh": "Antom 3-in-1 Transformer 是一个包含约 70 亿参数的支付基础模型，通过整合序列、表格和图表示用于支付风险检测。跨业务迁移实验表明，预训练使目标业务指标比从头训练提升了 34.5%，并在四个月的在线实验中将整体损失率降低了 37.88%。",
-    "en": "Antom 3-in-1 Transformer is a 7B-parameter payment foundation model integrating sequence, tabular, and graph representations for risk detection, improving target metrics by 34.5% and reducing loss rate by 37.88%."
+    "zh": "Antom 3-in-1 Transformer 是约 7B 参数的支付基础模型，融合序列、表格与图表示做支付风险检测，预训练使跨业务迁移目标指标较同架构从零训练提升 34.5%，仅用 25% 标签即在 AP 与 Recall@0.5% 上超过全标签基线，线上四个月实验相对 XGB-Online 降低整体损失率 37.88%。",
+    "en": "Antom 3-in-1 Transformer is a ~7B-parameter payment foundation model fusing sequence, tabular, and graph representations; pretraining lifts cross-business transfer by 34.5% over scratch and cuts online loss rate 37.88% versus XGB-Online."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26444",
@@ -135,10 +134,10 @@
    "updated": "2026-11-19T17:15:38Z",
    "comment": "",
    "tags": [
-    "robotics",
     "benchmark",
-    "multimodal",
-    "agents"
+    "robotics",
+    "VLA",
+    "reasoning"
    ],
    "hf_upvotes": 56,
    "ax_votes": 55,
@@ -174,24 +173,24 @@
      "ror": "02zhqgq86"
     },
     {
+     "logo": "data/logos/hkust.edu.hk.png",
      "name": "HKUST",
-     "ror": "00q4vv597",
-     "logo": "data/logos/hkust.edu.hk.png"
+     "ror": "00q4vv597"
     },
     {
+     "logo": "data/logos/cuhk.edu.hk.png",
      "name": "CUHK",
-     "ror": "00t33hh48",
-     "logo": "data/logos/cuhk.edu.hk.png"
+     "ror": "00t33hh48"
     }
    ],
    "thumb": "data/thumbs/2611.26444.jpg",
    "thumb_w": 635,
    "thumb_h": 440,
    "summary": {
-    "zh": "Mind2Act World是一个用于机器人操作中具身思维、物理动作及两者组合的诊断基准，包含180种配置。评估表明，单项能力优秀的系统在组合任务中表现显著下降，其中最强智能体在Mind和Act任务中分别成功52.7%和39.0%，但在Mind2Act任务中仅成功12.0%。",
-    "en": "Mind2Act World is a diagnostic benchmark evaluating embodied mind, physical action, and their composition in robotic manipulation across 180 configurations. Evaluations show single-view competence does not translate to composition, with the strongest agent dropping from 52.7% in Mind and 39.0% in Act to 12.0% in Mind2Act."
+    "zh": "Mind2Act World 构建 30 个仿真操作任务、180 种配置的诊断基准，分 Mind、Act、Mind2Act 三视角评测多模态智能体、VLA 与 WAM；最强智能体在 Mind 与 Act 上分别成功 52.7% 和 39.0%，Mind2Act 仅 12.0%。",
+    "en": "Mind2Act World is a 30-task, 180-configuration diagnostic manipulation benchmark with Mind, Act, and Mind2Act views; the best agent scores 52.7% and 39.0% but only 12.0% on Mind2Act."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26409",
@@ -221,9 +220,9 @@
    "comment": "",
    "tags": [
     "multimodal",
-    "VLM",
+    "video generation",
     "reasoning",
-    "speech"
+    "LLM"
    ],
    "hf_upvotes": 49,
    "ax_votes": 11,
@@ -231,8 +230,8 @@
    "heat": 88.1,
    "orgs": [
     {
-     "logo": "data/logos/tencent.com.png",
-     "name": "Tencent"
+     "name": "Tencent",
+     "logo": "data/logos/tencent.com.png"
     },
     {
      "name": "Tsinghua University",
@@ -243,10 +242,10 @@
    "thumb_w": 640,
    "thumb_h": 287,
    "summary": {
-    "zh": "WeMM-Video 是一系列中英双语全模态视频基础模型，通过混合思考范式统一了文本、图像、音频和视频处理。模型在约 1.2 万亿 tokens 的大规模语料上训练，并在超过 120 个基准测试中展现出卓越性能，其中旗舰型号 WeMM-Video-35B-A3B 创下了开源新 SOTA，显著超越 Qwen3.5-Omni-Flash 和 Seed2.0-Mini-0428。",
-    "en": "WeMM-Video is a family of bilingual omni-modal foundation models for video understanding that unifies text, image, audio, and video processing. Trained on 1.2 trillion tokens, the flagship WeMM-Video-35B-A3B establishes a new open-source SOTA across over 120 benchmarks, outperforming Qwen3.5-Omni-Flash and Seed2.0-Mini-0428."
+    "zh": "WeMM-Video 是覆盖 2B/4B/9B/35B-A3B 的中英双语全模态基础模型，统一文本、图像、音频、视频并支持非思考与思考双模式，用约 1.2 万亿 token 渐进预训练与多教师 OPD、MrDPO、专家 RL 训练，旗舰 35B-A3B 在全模态视频评测中超越 Qwen3.5-Omni-Flash 与 Seed2.0-Mini-0428。",
+    "en": "WeMM-Video is a bilingual omni-modal video model family (2B–35B-A3B) with thinking and non-thinking modes, trained on ~1.2T tokens; the 35B-A3B flagship outperforms Qwen3.5-Omni-Flash and Seed2.0-Mini-0428 on omni-modal video benchmarks."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26629",
@@ -276,9 +275,9 @@
    "heat": 116.1,
    "orgs": [
     {
+     "logo": "data/logos/vt.edu.png",
      "name": "Virginia Tech",
-     "ror": "02smfhw86",
-     "logo": "data/logos/vt.edu.png"
+     "ror": "02smfhw86"
     },
     {
      "logo": "data/logos/nvidia.com.png",
@@ -289,10 +288,10 @@
    "thumb_w": 640,
    "thumb_h": 203,
    "summary": {
-    "zh": "Posterior Matching Distillation (PMD) 是一种新型扩散模型蒸馏方法，通过结合模式覆盖的后验采样与任意步数生成，在零总体损失时恢复教师模型的完整后验分布。在 SDXL 和 FLUX.2 4B 上的实验表明，PMD 在 4 步生成方法中取得了最佳的 FID。",
-    "en": "Posterior Matching Distillation (PMD) combines mode-covering posterior sampling with any-step generation to recover the teacher's full posterior distribution, achieving the best FID among 4-step methods on SDXL and FLUX.2."
+    "zh": "PMD 将模式覆盖的后验采样与任意步数生成结合，通过匹配指数重加权学生样本均值来学习教师后验，在 SDXL 和 FLUX.2 [klein] 4B 上取得 4 步方法中最佳 FID。",
+    "en": "Posterior Matching Distillation combines mode-covering posterior sampling with any-step generation by matching exponentially tilted student sample means, achieving the best 4-step FID on SDXL and FLUX.2 [klein] 4B."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26595",
@@ -353,9 +352,9 @@
      "ror": "02v51f717"
     },
     {
+     "logo": "data/logos/hkust.edu.hk.png",
      "name": "HKUST",
-     "ror": "00q4vv597",
-     "logo": "data/logos/hkust.edu.hk.png"
+     "ror": "00q4vv597"
     },
     {
      "logo": "data/logos/hku.hk.png",
@@ -371,10 +370,10 @@
    "thumb_w": 532,
    "thumb_h": 440,
    "summary": {
-    "zh": "引入了Coda-DaVinci，一个任务自适应的Code2Video智能体框架，通过在实体间自适应调整建模粒度、结合物理模拟与代理引导提示词，在VTR和R2M基准测试中展现出领先的指令遵循能力与场景一致性。",
-    "en": "Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation, adapts modeling granularity, combines physics simulation with proxy-grounded prompting, and achieves leading instruction following and scene consistency."
+    "zh": "通过受控实验与盲测人类评估，系统考察 Code2Video 中代理粒度、物理模拟与提示词的影响，并据此构建任务自适应多智能体框架 Coda-DaVinci，在 VTR 与 R2M 上取得领先的指令遵循和场景一致性。",
+    "en": "Controlled experiments and blinded human evaluation probe proxy granularity, physics simulation, and prompting in Code2Video, yielding Coda-DaVinci, a task-adaptive multi-agent framework with leading instruction following on VTR and scene consistency on R2M."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26389",
@@ -400,7 +399,7 @@
     "video generation",
     "diffusion",
     "reasoning",
-    "robotics"
+    "RL"
    ],
    "hf_upvotes": 42,
    "ax_votes": 7,
@@ -424,10 +423,10 @@
    "thumb_w": 640,
    "thumb_h": 296,
    "summary": {
-    "zh": "ViDecide是一个将视频扩散模型转化为逐步推理和规划决策者的框架，通过因果预测状态转移和Corrective Fine-tuning策略，在多步机器人规划等任务上取得了83.8%的平均严格成功率，远超传统方法的23.3%。",
-    "en": "ViDecide trains video diffusion models to reason and plan step by step causally, achieving an 83.8% average strict success rate on multi-step planning tasks."
+    "zh": "ViDecide 将视频扩散模型的训练从固定长度片段改为以决策为中心的状态转移预测与终止判断，并用 Corrective Fine-tuning 将失败决策的噪声映射到自身成功续写，在抽象游戏、规划任务和新机器人规划基准上严格成功率平均 83.8%，高于标准微调的 23.3% 和最强先前方法的 67.8%。",
+    "en": "ViDecide trains video diffusion models as decision-centric state-transition predictors with stopping decisions and Corrective Fine-tuning, reaching 83.8% strict success versus 23.3% for fine-tuning and 67.8% for the best prior method."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26603",
@@ -453,7 +452,7 @@
    "comment": "Code and weights available at https://apple-aiml-research.github.io/ml-depth-pro-2/",
    "tags": [
     "3D",
-    "image generation"
+    "efficiency"
    ],
    "hf_upvotes": 41,
    "ax_votes": 61,
@@ -461,18 +460,18 @@
    "heat": 166.3,
    "orgs": [
     {
-     "name": "Apple",
-     "logo": "data/logos/apple.com.png"
+     "logo": "data/logos/apple.com.png",
+     "name": "Apple"
     }
    ],
    "thumb": "data/thumbs/2611.26603.jpg",
    "thumb_w": 247,
    "thumb_h": 440,
    "summary": {
-    "zh": "Depth Pro 2是一种用于图像和视频的全分辨率密集度量深度估计方法，通过训练单一可扩展网络，同时实现了度量准确性、边界清晰度和时间一致性，在各维度上均优于以往工作。",
-    "en": "Depth Pro 2 estimates dense metric depth for images and video at full resolution, achieving high metric accuracy, sharp boundaries, and temporal consistency simultaneously."
+    "zh": "Depth Pro 2 用单一可扩展网络统一处理图像与视频，以原生分辨率预测稠密深度，同时兼顾度量精度、边界锐利度与时序一致性，在四项指标上超越先前方法并重划 Pareto 前沿。",
+    "en": "Depth Pro 2 trains one scalable network on images and video to predict native-resolution depth that is metrically accurate, sharp, and temporally consistent, outperforming prior work and redefining the Pareto frontier."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.25509",
@@ -491,9 +490,9 @@
    "code_url": "https://github.com/inclusionAI/LingSante-MedGuard",
    "tags": [
     "safety",
-    "reasoning",
     "multimodal",
-    "alignment"
+    "reasoning",
+    "benchmark"
    ],
    "hf_upvotes": 33,
    "ax_votes": 2,
@@ -504,10 +503,10 @@
    "thumb_w": 424,
    "thumb_h": 245,
    "summary": {
-    "zh": "LingSante MedGuard整合了医疗护栏教师模型与六大专业医疗能力专家，通过离线监督微调与多教师在线策略蒸馏统一构建。在包含11个风险检测子集的MedGuardBench上，该模型在4B、9B和27B规模下分别取得了82.3%、82.4%和87.4%的平均F1分数。",
-    "en": "LingSante MedGuard integrates a medical guardrail teacher and six capability experts via SFT and multi-teacher distillation, achieving mean F1 scores of 82.3%, 82.4%, and 87.4% at 4B, 9B, and 27B scales on MedGuardBench."
+    "zh": "LingSante MedGuard 将医疗护栏教师模型与六个医疗能力专家整合为统一护栏，经离线监督微调与多教师在线策略蒸馏训练，并构建含 11 个风险子集的 MedGuardBench；在 4B、9B、27B 规模下平均 F1 分别达 82.3%、82.4%、87.4%。",
+    "en": "LingSante MedGuard unifies a medical guardrail teacher with six medical capability experts via supervised fine-tuning and multi-teacher on-policy distillation, plus the 11-subset MedGuardBench, reaching mean F1 of 82.3%/82.4%/87.4% at 4B/9B/27B scales."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26590",
@@ -528,8 +527,9 @@
    "comment": "",
    "tags": [
     "VLM",
+    "interpretability",
     "multimodal",
-    "interpretability"
+    "reasoning"
    ],
    "hf_upvotes": 32,
    "ax_votes": 1,
@@ -551,10 +551,10 @@
    "thumb_w": 587,
    "thumb_h": 440,
    "summary": {
-    "zh": "引入了 Multimodal Concept Lens (MC-Lens) 来研究视觉语言模型中的全局工作空间理论，通过将中间状态映射到共享语义空间发现多模态概念信息是可读且按任务选择性访问的，且访问的概念会参与下游计算与推理。",
-    "en": "Introduced Multimodal Concept Lens (MC-Lens) to study global workspace theory in vision-language models, revealing that multimodal concept information is selectively accessible and participates in downstream computation."
+    "zh": "Multimodal Concept Lens (MC-Lens) 用多模态 Jacobian lens 把 VLM 中间状态映射到解码器词表构成的共享语义空间，并通过概念干预验证概念信息参与下游推理；实验发现选择性访问比概念可读性更晚发展，且跨模型家族存在共享模式。",
+    "en": "Multimodal Concept Lens (MC-Lens), a multimodal Jacobian lens, maps VLM intermediate states into a shared semantic space and uses concept interventions to show accessed concepts feed downstream reasoning; selective access develops later than concept accessibility across VLM families."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26516",
@@ -577,9 +577,9 @@
    "comment": "NeurIPS 2026, Project Page: https://fogradio.github.io/plan4d-project",
    "tags": [
     "world model",
-    "3D",
     "video generation",
-    "diffusion"
+    "3D",
+    "multimodal"
    ],
    "hf_upvotes": 30,
    "ax_votes": 11,
@@ -587,18 +587,18 @@
    "heat": 55.5,
    "orgs": [
     {
-     "name": "Alibaba",
-     "logo": "data/logos/alibaba.com.png"
+     "logo": "data/logos/alibaba.com.png",
+     "name": "Alibaba"
     }
    ],
    "thumb": "data/thumbs/2611.26516.jpg",
    "thumb_w": 640,
    "thumb_h": 423,
    "summary": {
-    "zh": "Plan4D 结合了视频生成器与 3D 重建器的先验，通过模型拼接架构预测未来的 RGB 视频及密集的 4D 几何信息，在动态 3D 场景中实现了长视距、精细化的动作规划，并在合成与真实数据集上取得了最先进的生成性能。",
-    "en": "Plan4D leverages foundational video and 3D priors via a model-stitching architecture to predict future RGB videos and dense 4D geometry, achieving state-of-the-art performance in action-conditioned dynamic 3D scene generation."
+    "zh": "plan4d 将 Depth Anything 3 与 LongCat-Video 缝合，并加 DPT 头预测场景流，从场景上下文和文本动作生成 RGB 视频及稠密 4D 几何，在合成与真实数据上取得生成式 4D 建模最优性能。",
+    "en": "Plan4d stitches Depth Anything 3 with LongCat-Video plus a DPT head for scene flow, generating RGB videos and dense 4D geometry from scene context and text actions, achieving state-of-the-art generative 4D modeling."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26380",
@@ -632,9 +632,10 @@
    "updated": "2026-11-25T11:26:05Z",
    "comment": "44 pages",
    "tags": [
-    "multimodal",
+    "VLM",
     "video generation",
-    "RL"
+    "dataset",
+    "multimodal"
    ],
    "hf_upvotes": 26,
    "ax_votes": 2,
@@ -642,36 +643,40 @@
    "heat": 40.4,
    "orgs": [
     {
+     "logo": "data/logos/hkust.edu.hk.png",
      "name": "HKUST",
-     "ror": "00q4vv597",
-     "logo": "data/logos/hkust.edu.hk.png"
+     "ror": "00q4vv597"
     },
     {
      "name": "KlingAI Research"
     },
     {
-     "name": "PKU"
+     "logo": "data/logos/pku.edu.cn.png",
+     "name": "Peking University",
+     "ror": "02v51f717"
     },
     {
-     "name": "NJU"
+     "name": "Nanjing University",
+     "ror": "01rxvg760"
     },
     {
+     "logo": "data/logos/hku.hk.png",
      "name": "HKU",
-     "ror": "02zhqgq86",
-     "logo": "data/logos/hku.hk.png"
+     "ror": "02zhqgq86"
     },
     {
-     "name": "THU"
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
     }
    ],
    "thumb": "data/thumbs/2611.26380.jpg",
    "thumb_w": 640,
    "thumb_h": 385,
    "summary": {
-    "zh": "EgoCaptioner结合视频全局概览与自适应计时的步骤描述，通过粗到精的标注管线构建了50,000个训练样本，并利用GRPO进行偏好优化，在五个第一人称视角视频基准测试中取得了领先的开源模型性能。",
-    "en": "EgoCaptioner pairs a video overview with timed steps using a coarse-to-fine pipeline and GRPO, achieving leading performance among open-source models across five egocentric benchmarks."
+    "zh": "EgoCaptioner 用视频级概览加带时间戳的分步描述，通过粗到细标注流程从八个第一视角视频源生成5万训练样本，并用GRPO结合事实与时间对齐奖励精炼字幕，在五个第一视角基准上取得开源模型领先水平，PhysicsCapBench超过Gemini 3.1 Pro。",
+    "en": "EgoCaptioner pairs video-level overviews with timestamped step captions, built via coarse-to-fine annotation over 50K examples from eight egocentric sources and refined with GRPO rewards for factuality and temporal alignment, leading open-source models on five egocentric benchmarks."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.25387",
@@ -700,9 +705,9 @@
    "comment": "45 pages. Project page: https://xuweid.com/turingspace/",
    "tags": [
     "multimodal",
-    "agents",
     "benchmark",
-    "3D"
+    "reasoning",
+    "agents"
    ],
    "hf_upvotes": 24,
    "ax_votes": 1,
@@ -710,9 +715,9 @@
    "heat": 27.5,
    "orgs": [
     {
+     "logo": "data/logos/upenn.edu.png",
      "name": "University of Pennsylvania",
-     "ror": "00b30xv10",
-     "logo": "data/logos/upenn.edu.png"
+     "ror": "00b30xv10"
     },
     {
      "name": "University of Minnesota",
@@ -735,10 +740,10 @@
    "thumb_w": 640,
    "thumb_h": 287,
    "summary": {
-    "zh": "TuringSpace通过包含125个交互式CAPTCHA的合成网页环境评估多模态大模型的3D空间智能，人类准确率达94.1%，而GPT-4o（GPT-6 Astra）失败率为25.9%，Kimi K3失败率达68.0%。通过在该环境中微调Qwen2.5（Qwen3.5-9B），成功率从1.6%提升至33.1%，并在多个分布外基准测试中取得性能提升。",
-    "en": "TuringSpace evaluates multimodal spatial intelligence using 125 interactive CAPTCHAs, where humans achieve 94.1% accuracy while top models still struggle. Fine-tuning Qwen3.5-9B on this environment raises its success rate from 1.6% to 33.1% and improves out-of-distribution performance."
+    "zh": "TuringSpace 构建了包含 125 个交互式 CAPTCHA 的合成网页环境，覆盖五项空间能力，需通过鼠标点击和拖拽求解；人类成功率为 94.1%，最佳模型 GPT-6 Astra 失败 25.9%，开源模型 Kimi K3 失败 68.0%，在 Qwen3.5-9B 上微调后成功率从 1.6% 升至 33.1%，并在 VSI-Bench 上提升 9.9 分。",
+    "en": "TuringSpace is a synthetic web environment of 125 interactive CAPTCHAs testing five spatial abilities via clicks and drags. Humans solve 94.1%, GPT-6 Astra fails 25.9%, Kimi K3 fails 68.0%; fine-tuning Qwen3.5-9B raises success from 1.6% to 33.1% and gains 9.9 points on VSI-Bench."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26073",
@@ -763,7 +768,8 @@
    "tags": [
     "LLM",
     "benchmark",
-    "multimodal"
+    "theory",
+    "alignment"
    ],
    "hf_upvotes": 24,
    "ax_votes": 2,
@@ -771,14 +777,14 @@
    "heat": 28.8,
    "orgs": [
     {
+     "logo": "data/logos/technion.ac.il.png",
      "name": "Technion",
-     "ror": "03qryx823",
-     "logo": "data/logos/technion.ac.il.png"
+     "ror": "03qryx823"
     },
     {
+     "logo": "data/logos/haifa.ac.il.png",
      "name": "University of Haifa",
-     "ror": "02f009v59",
-     "logo": "data/logos/haifa.ac.il.png"
+     "ror": "02f009v59"
     },
     {
      "name": "Google",
@@ -789,10 +795,10 @@
    "thumb_w": 440,
    "thumb_h": 440,
    "summary": {
-    "zh": "AltRA-Test 是一种无需共享标注者的统计检验方法，通过对项目进行重采样并用 LLM 标注替代人类标注来构建面板，当混合面板的一致性在统计上不劣于全人类面板时，即支持用 LLM 替代人工。在 20 个数据集上的实验表明，约 100 个样本通常即足够使用该测试。",
-    "en": "AltRA-Test is a statistical test that does not require shared annotators to evaluate when replacing human annotators with LLMs is justified, showing in experiments that about 100 items are often sufficient."
+    "zh": "AltRA-Test 是一种无需所有条目由同一批标注者标注的统计检验，通过自助重采样条目、抽取 k 个人工标注并替换其中一条为 LLM 标注，构造配对的纯人工与混合人机评审组，以组内一致性（IAA）非劣于纯人工组作为替换成立的判据；在 18 个 LLM、5 种提示技术、20 个文本/图像/音频/视频数据集上验证，约 100 条数据常已足够，模拟中比现有基线做出更多正确的替换决策，真实数据约半数设置通过。",
+    "en": "AltRA-Test is a bootstrap-based statistical test that replaces one of k human annotations per item with an LLM annotation to compare inter-annotator agreement between all-human and mixed panels, requiring no shared annotators and often only ~100 items."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26107",
@@ -824,6 +830,7 @@
    "tags": [
     "multimodal",
     "image generation",
+    "VLM",
     "diffusion"
    ],
    "hf_upvotes": 24,
@@ -832,18 +839,18 @@
    "heat": 31.4,
    "orgs": [
     {
-     "name": "Baidu",
-     "logo": "data/logos/baidu.com.png"
+     "logo": "data/logos/baidu.com.png",
+     "name": "Baidu"
     }
    ],
    "thumb": "data/thumbs/2611.26107.jpg",
    "thumb_w": 640,
    "thumb_h": 266,
    "summary": {
-    "zh": "HiUni 通过复用预训练视觉语言模型的 ViT 和稠密 Transformer 主干网络，并在输出端引入 Pixel Diffusion Head 与 HiGate 通路，实现了视觉理解与像素空间图像生成的深度统一，且无需特定任务的主干计算。",
-    "en": "HiUni achieves unified visual understanding and pixel-space generation by reusing a pretrained VLM backbone with a Pixel Diffusion Head and HiGate pathway."
+    "zh": "HiUni 复用同一个与语言对齐的 ViT 和稠密 Transformer 骨干同时做视觉理解与生成，只在输出端加 Pixel Diffusion Head 直接优化像素空间，并用轻量 HiGate 补充细粒度空间细节；理解均分与预训练 VLM 接近，生成和编辑也具竞争力。",
+    "en": "HiUni reuses one language-aligned ViT and dense Transformer backbone for both visual understanding and generation, adding a Pixel Diffusion Head and lightweight HiGate at the output; it matches the pretrained VLM's average understanding score while remaining competitive on generation and editing."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26414",
@@ -871,8 +878,9 @@
    "comment": "",
    "tags": [
     "VLM",
-    "agents",
-    "RL"
+    "robotics",
+    "RL",
+    "agents"
    ],
    "hf_upvotes": 24,
    "ax_votes": 1,
@@ -895,10 +903,10 @@
    "thumb_w": 640,
    "thumb_h": 299,
    "summary": {
-    "zh": "ZeroVLN 是一种无需对 VLM 骨干进行导航领域监督微调的慢快导航框架，通过引入自然语言语义工具调用接口与闭环强化学习，在 VLN-CE 基准测试中大幅超越了代表性的基于 SFT 的分层 VLN 方法，同时保留了 VLM 的通用视觉能力。",
-    "en": "ZeroVLN is a slow-fast navigation framework that achieves effective navigation without supervised fine-tuning of the VLM brain by using a semantic tool-calling interface and closed-loop reinforcement learning, outperforming representative SFT-based hierarchical VLN methods on VLN-CE benchmarks."
+    "zh": "ZeroVLN 采用慢-快导航框架，VLM 大脑不做导航域 SFT，改以语义工具调用接口用自然语言向动作专家下达移动指令，再通过闭环强化学习联合优化两者；在 VLN-CE 基准上显著优于代表性 SFT 分层方法，且大脑权重变化极小、通用能力基本保留。",
+    "en": "ZeroVLN couples a frozen-ish VLM brain with an action expert via semantic tool calls, jointly trained by closed-loop RL; it beats SFT-based hierarchical VLN methods on VLN-CE while barely altering the brain's weights."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26358",
@@ -1146,9 +1154,8 @@
    "comment": "",
    "tags": [
     "LLM",
-    "agents",
-    "reasoning",
-    "RL"
+    "RL",
+    "code"
    ],
    "hf_upvotes": 23,
    "ax_votes": 12,
@@ -1156,17 +1163,17 @@
    "heat": 56.4,
    "orgs": [
     {
-     "name": "Reflection Team"
+     "name": "Reflection"
     }
    ],
    "thumb": "data/thumbs/2611.26358.jpg",
    "thumb_w": 544,
    "thumb_h": 440,
    "summary": {
-    "zh": "Beam是一个拥有501.3B总参数和23.4B激活参数的稀疏MoE模型，专为代码、推理和智能体任务优化。其通过两阶段中期训练实现了1M token的上下文窗口，并利用大规模异步强化学习在10.5K GB300 GPU上进行训练，在同类模型中以少3-4倍的推理计算量达到了前沿水平的推理能力，同时在有害请求上实现了开源模型中最高的88.9%拒绝或转换率。",
-    "en": "Beam is a 501.3B sparse MoE model optimized for coding, reasoning, and agents. It features a 1M-token context, frontier-level reasoning with 3-4x lower inference compute, and extensive RL training, achieving top-tier safety and performance among open models."
+    "zh": "Beam 是总参 501.3B、激活 23.4B 的稀疏 MoE 模型，面向编码、推理与智能体任务，预训练用 23.8T token，经两阶段 midtraining 获 1M 上下文，并在 10.5K GB300 GPU 上完成超 1 亿 rollout 的大规模异步 RL，推理性价比同类模型高 3-4 倍。",
+    "en": "Beam, a 501.3B-parameter sparse MoE with 23.4B active parameters, targets coding, reasoning and agentic workloads: 23.8T-token pretraining, 1M context via two-stage midtraining, and large-scale asynchronous RL on 10.5K GB300 GPUs."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26627",
@@ -1191,8 +1198,8 @@
    "tags": [
     "diffusion",
     "RL",
-    "image generation",
-    "video generation"
+    "interpretability",
+    "image generation"
    ],
    "hf_upvotes": 22,
    "ax_votes": 17,
@@ -1200,26 +1207,26 @@
    "heat": 58.1,
    "orgs": [
     {
+     "logo": "data/logos/vt.edu.png",
      "name": "Virginia Tech",
-     "ror": "02smfhw86",
-     "logo": "data/logos/vt.edu.png"
+     "ror": "02smfhw86"
     },
     {
      "name": "Georgia Tech"
     },
     {
-     "name": "IBM",
-     "logo": "data/logos/ibm.com.png"
+     "logo": "data/logos/ibm.com.png",
+     "name": "IBM"
     }
    ],
    "thumb": "data/thumbs/2611.26627.jpg",
    "thumb_w": 640,
    "thumb_h": 322,
    "summary": {
-    "zh": "通过将固定转向向量添加到冻结基础模型的块输出中，证明了扩散变压器中的强化学习后训练主要等同于激活转向，在没有奖励目标的情况下恢复了六个RL微调图像模型90.0-96.3%的奖励收益，并超越了文本渲染和人类偏好的权重基强化学习。",
-    "en": "Proves that RL post-training in diffusion transformers is primarily activation steering using fixed vectors, recovering 90.0-96.3% of reward gains across six RL-tuned image models without any reward objective."
+    "zh": "用固定的一组 steering vectors 加到冻结基座模型 block 输出上，以 SD3.5-M 上 0.29M 参数（比 RL-tuned LoRA 少 65 倍）复现六个图像 RL 模型 90.0–96.3% 的奖励增益，两个视频模型达 89.8% 和 111.9%。",
+    "en": "Fixed steering vectors added to frozen base-model block outputs, 65x smaller than RL-tuned LoRA, recover 90.0-96.3% of reward gains on six RL-tuned image models and 89.8%/111.9% on two video models."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.25419",
@@ -1247,9 +1254,10 @@
    "updated": "2026-11-19T02:59:32Z",
    "comment": "",
    "tags": [
-    "multimodal",
     "retrieval",
-    "LLM"
+    "multimodal",
+    "LLM",
+    "alignment"
    ],
    "hf_upvotes": 19,
    "ax_votes": 0,
@@ -1278,10 +1286,10 @@
    "thumb_w": 640,
    "thumb_h": 267,
    "summary": {
-    "zh": "DiLE是一个判别感知隐空间学习框架，通过结合任务引导与策略内检索反馈，在紧凑隐空间中编码任务相关信息，并在MMEB-v2、UVRB和MRMR上取得了SOTA性能。",
-    "en": "DiLE is a discrimination-aware latent-space learning framework combining task guidance and on-policy retrieval feedback, achieving SOTA performance on MMEB-v2, UVRB, and MRMR."
+    "zh": "DiLE 通过少量可学习 query 在紧凑隐空间编码任务信息，结合共享-私有专家适配与 on-policy 难负例蒸馏，使多模态嵌入保留区分性证据，在 MMEB-v2、UVRB、MRMR 上取得 SOTA。",
+    "en": "DiLE encodes task information into a compact latent space via learnable queries, combining shared-private expert adaptation and on-policy hard-negative distillation to preserve discriminative evidence, achieving SOTA on MMEB-v2, UVRB, and MRMR."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26408",
@@ -1300,8 +1308,9 @@
    "comment": "Project page: https://viscom.uni-ulm.de/wsp",
    "tags": [
     "LLM",
-    "efficiency",
-    "benchmark"
+    "VLM",
+    "benchmark",
+    "efficiency"
    ],
    "hf_upvotes": 19,
    "ax_votes": 0,
@@ -1309,19 +1318,19 @@
    "heat": 23.4,
    "orgs": [
     {
+     "logo": "data/logos/uni-ulm.de.png",
      "name": "Ulm University",
-     "ror": "032000t02",
-     "logo": "data/logos/uni-ulm.de.png"
+     "ror": "032000t02"
     }
    ],
    "thumb": "data/thumbs/2611.26408.jpg",
    "thumb_w": 640,
    "thumb_h": 224,
    "summary": {
-    "zh": "针对大语言模型驱动的权重空间编程的视觉模型专用训练方法Edit-Ready Training (ERT)，在Waterbirds、CIFAR-100、PACS和Entity-30数据集上进行了超2600次编辑评估，结果表明ERT显著提升了网络的可编辑性并在GPT-6 Astra和Claude Opus 5.5上取得了最高的平均分。",
-    "en": "We propose Edit-Ready Training (ERT) to train vision models for LLM-driven weight-space programming, significantly improving edit success rates and achieving the highest mean scores for GPT-6 Astra and Claude Opus 5.5 across multiple datasets."
+    "zh": "构建LLM驱动权重空间编程基准，让五个LLM在Waterbirds、CIFAR-100、PACS和Entity-30上编辑卷积网络与视觉Transformer，完成重标注和纠错任务，记录超2600次编辑并评估成功率、副作用与精度损失；提出Edit-Ready Training (ERT)通过预演LLM的直接闭式权重编辑来训练网络，在标准网络难以编辑处显著提升成功率，并在所有基线中为GPT-6 Astra和Claude Opus 5.5取得最高平均分。",
+    "en": "A benchmark of LLM-driven weight-space programming lets five LLMs edit CNNs and ViTs on four datasets, scoring 2,600+ edits. Edit-Ready Training rehearses closed-form weight edits, raising edit success, notably for GPT-6 Astra and Claude Opus 5.5."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26617",
@@ -1349,7 +1358,8 @@
    "code_url": "https://github.com/showlab/O2LaF",
    "tags": [
     "video generation",
-    "diffusion",
+    "world model",
+    "agents",
     "robotics"
    ],
    "hf_upvotes": 19,
@@ -1378,10 +1388,10 @@
    "thumb_w": 640,
    "thumb_h": 204,
    "summary": {
-    "zh": "O2LaF 框架利用预训练视频扩散 Transformer 同时提供逆动力学与正向动力学的先验，通过紧凑瓶颈端到端优化，从无标签视频中学习可迁移的动作，在导航和机器人操作任务的少样本动作探测中取得了新的 SOTA 性能。",
-    "en": "O2LaF repurposes pretrained video DiT to model both inverse and forward dynamics, achieving state-of-the-art few-shot action probing and zero-shot transfer in navigation and manipulation."
+    "zh": "O²LaF 将同一个预训练视频 DiT 复用作逆动力学与正动力学两个模型，通过控制信息通路与紧凑瓶颈端到端训练，在导航和机器人操作中刷新 few-shot 动作探测最优结果，并实现更强的零样本动作迁移。",
+    "en": "O²LaF repurposes one pretrained video DiT as both inverse and forward dynamics, trained end-to-end through a compact bottleneck, achieving state-of-the-art few-shot action probing and stronger zero-shot action transfer in navigation and manipulation."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26268",
@@ -1402,7 +1412,8 @@
    "updated": "2026-11-19T15:38:08Z",
    "comment": "",
    "tags": [
-    "efficiency"
+    "efficiency",
+    "LLM"
    ],
    "hf_upvotes": 18,
    "ax_votes": 1,
@@ -1410,18 +1421,18 @@
    "heat": 20.6,
    "orgs": [
     {
-     "logo": "data/logos/tencent.com.png",
-     "name": "Tencent"
+     "name": "Tencent",
+     "logo": "data/logos/tencent.com.png"
     }
    ],
    "thumb": "data/thumbs/2611.26268.jpg",
    "thumb_w": 440,
    "thumb_h": 440,
    "summary": {
-    "zh": "LightningMoBA通过动态路由、KV中心化执行与运行时流水线协同设计，解耦了注意力保留与GPU调度粒度，在匹配Top-16保留率下将端到端生成速度提升1.20至1.60倍，并将平均RULER得分从74.42提高到75.28。",
-    "en": "LightningMoBA co-designs dynamic routing, KV-centric ownership, and runtime pipelining to accelerate generation by 1.20 to 1.60x while raising mean RULER score from 74.42 to 75.28 at matched Top-16 retention."
+    "zh": "LightningMoBA 通过动态路由、以 KV 为中心的调度和运行时流水线协同优化 MoBA 长上下文注意力，在五个 checkpoint 上 Top-16 保留率下，端到端生成提速 1.20–1.60×，RULER 均分由 74.42 升至 75.28。",
+    "en": "LightningMoBA co-designs dynamic routing, KV-centric ownership and runtime pipelining for Mixture of Block Attention, achieving 1.20-1.60x faster end-to-end generation at Top-16 retention while raising mean RULER score from 74.42 to 75.28."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.25980",
@@ -1443,8 +1454,7 @@
    "tags": [
     "world model",
     "robotics",
-    "video generation",
-    "efficiency"
+    "VLA"
    ],
    "hf_upvotes": 17,
    "ax_votes": 1,
@@ -1464,10 +1474,10 @@
    "thumb_w": 640,
    "thumb_h": 287,
    "summary": {
-    "zh": "AFFECT 通过引入捕捉动作扰动所引起视觉变化分布的辅助训练目标，使世界模型能够更准确地反映微小动作变化对未来观测的影响；在 DROID 真实机器人设置中，世界模型与真实机器人的策略成功率皮尔逊相关系数从 0.47 提升至 0.79，FVD 降低高达 23%。",
-    "en": "AFFECT introduces an auxiliary training objective to capture visual change distributions from action perturbations, improving world model faithfulness and raising the policy success rate Pearson correlation on DROID from 0.47 to 0.79."
+    "zh": "AFFECT 通过在策略动作上注入时间相关噪声，训练世界模型生成的视频像真实视频一样响应动作扰动；在 DROID 上世界模型与真机策略成功率相关系数从 0.47 升至 0.79，FVD 最多降 23%，规划成功率最多提升 8.3%。",
+    "en": "AFFECT injects temporally correlated noise into policy actions and trains world models to mirror real video responses to action perturbations, raising DROID policy-success correlation from 0.47 to 0.79 and planning success by up to 8.3%."
    },
-   "summary_source": "gemini-3.5-flash-lite"
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.25773",
@@ -1498,7 +1508,10 @@
    "updated": "2026-11-19T09:09:23Z",
    "comment": "",
    "tags": [
-    "RL"
+    "LLM",
+    "agents",
+    "speech",
+    "reasoning"
    ],
    "hf_upvotes": 16,
    "ax_votes": 12,
@@ -1518,14 +1531,19 @@
      "ror": "006teas31"
     },
     {
-     "logo": "data/logos/bristol.ac.uk.png",
      "name": "University of Bristol",
-     "ror": "0524sp257"
+     "ror": "0524sp257",
+     "logo": "data/logos/bristol.ac.uk.png"
     }
    ],
    "thumb": "data/thumbs/2611.25773.jpg",
    "thumb_w": 640,
-   "thumb_h": 298
+   "thumb_h": 298,
+   "summary": {
+    "zh": "Duopra 将任务执行与全双工对话控制统一训练，把后端当作工具接受自包含自然语言请求，经协议 SFT、奖励及时完整执行的全双工 RL 和仅 projector 修复三阶段训练；同一后端下 Pass@1 从 4.7% 升至 44.7%，直接调用工具达 47.7%。",
+    "en": "Duopra learns task execution alongside full-duplex conversational control, treating the backend as a tool; three-stage training lifts Pass@1 from 4.7% to 44.7% and direct tool calling to 47.7%."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26510",
@@ -1548,8 +1566,10 @@
    "comment": "Website: https://aweai-team.github.io/AutoMaster/ Code: https://github.com/RUCAIBox/AutoMaster Models: https://huggingface.co/collections/RUC-AIBOX/automaster",
    "code_url": "https://github.com/RUCAIBox/AutoMaster",
    "tags": [
-    "imitation",
-    "VLM/LLM"
+    "LLM",
+    "agents",
+    "reasoning",
+    "pretraining"
    ],
    "hf_upvotes": 16,
    "ax_votes": 7,
@@ -1563,7 +1583,12 @@
    ],
    "thumb": "data/thumbs/2611.26510.jpg",
    "thumb_w": 640,
-   "thumb_h": 228
+   "thumb_h": 228,
+   "summary": {
+    "zh": "Skill-FT 利用自然语言技能干预教师 rollout 以抑制不良行为并激发有效行为，AutoMaster 让 LLM agent 自动设计这些干预；在 Terminal、Search 和软件工程任务上，4B 和 9B 学生模型相比 Vanilla SFT 平均性能提升 1.42–8.99 个百分点。",
+    "en": "Skill-FT uses natural-language skills to shape teacher rollouts, with AutoMaster autonomously designing interventions; it improves 4B and 9B students by 1.42–8.99 points over vanilla SFT on Terminal, Search, and software engineering tasks."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.25476",
@@ -1592,8 +1617,10 @@
    "comment": "26 pages, 11 figures, including appendix. Code: https://github.com/Gen-Verse/WeightCode",
    "code_url": "https://github.com/Gen-Verse/WeightCode",
    "tags": [
-    "imitation",
-    "navigation"
+    "LLM",
+    "interpretability",
+    "efficiency",
+    "reasoning"
    ],
    "hf_upvotes": 14,
    "ax_votes": 1,
@@ -1601,9 +1628,9 @@
    "heat": 28.5,
    "orgs": [
     {
-     "logo": "data/logos/um.edu.mo.png",
      "name": "University of Macau",
-     "ror": "01r4q9n85"
+     "ror": "01r4q9n85",
+     "logo": "data/logos/um.edu.mo.png"
     },
     {
      "name": "NUS",
@@ -1641,7 +1668,12 @@
    ],
    "thumb": "data/thumbs/2611.25476.jpg",
    "thumb_w": 640,
-   "thumb_h": 399
+   "thumb_h": 399,
+   "summary": {
+    "zh": "WeightCode 用冻结语言模型编写可执行权重程序，无需梯度训练即可向已训练网络装入新能力：新指令组合精确匹配从 0% 升至 99.8%，新动作成功率达 98.4%；ImageNet 上四个程序净提升 8.84–17.62 点，优于八种微调方法。",
+    "en": "WeightCode uses a frozen language model to write executable weight programs that install new capabilities into trained networks without gradient training, lifting unseen command compositions from 0% to 99.8% and a new action to 98.4%, and gaining 8.84-17.62 points on ImageNet over eight fine-tuning methods."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.25567",
@@ -1727,7 +1759,8 @@
    "comment": "",
    "tags": [
     "world model",
-    "benchmark"
+    "robotics",
+    "efficiency"
    ],
    "hf_upvotes": 9,
    "ax_votes": 9,
@@ -1735,16 +1768,30 @@
    "heat": 32.9,
    "orgs": [
     {
-     "logo": "data/logos/whu.edu.cn.png",
      "name": "Wuhan University",
-     "ror": "033vjfk17"
+     "ror": "033vjfk17",
+     "logo": "data/logos/whu.edu.cn.png"
     },
     {
-     "name": "Zhongguancun Institute of Artificial Intelligence DeepCybo"
+     "name": "Zhongguancun Academy"
+    },
+    {
+     "name": "Zhongguancun Institute of Artificial Intelligence"
+    },
+    {
+     "name": "DeepCybo"
+    },
+    {
+     "name": "Harbin Institute of Technology",
+     "ror": "01yqg2h08"
     },
     {
      "name": "Huazhong University of Science and Technology",
      "ror": "00p991c53"
+    },
+    {
+     "name": "Nanjing University",
+     "ror": "01rxvg760"
     },
     {
      "name": "East China Normal University",
@@ -1753,7 +1800,12 @@
    ],
    "thumb": "data/thumbs/2611.25927.jpg",
    "thumb_w": 640,
-   "thumb_h": 99
+   "thumb_h": 99,
+   "summary": {
+    "zh": "Fast-JEPA 重构潜在世界模型的预测计算，用目标导向计划引导搜索并直接预测完整动作候选的结果，避免递归 rollout；在 PushT、Reacher、Cube、TwoRoom 上平均成功率达 96.50%，规划速度比 INTACT 快 2.41 倍。",
+    "en": "Fast-JEPA restructures latent world model prediction to score complete action candidates directly instead of recursive rollout, reaching 96.50% average success on PushT, Reacher, Cube and TwoRoom with 2.41x faster planning than INTACT."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26239",
@@ -1942,7 +1994,10 @@
    "updated": "2026-11-19T17:18:38Z",
    "comment": "27 pages, 3 figures, 24 tables",
    "tags": [
-    "VLM/LLM"
+    "LLM",
+    "reasoning",
+    "math",
+    "efficiency"
    ],
    "hf_upvotes": 7,
    "ax_votes": 74,
@@ -1955,7 +2010,12 @@
    ],
    "thumb": "data/thumbs/2611.26450.jpg",
    "thumb_w": 618,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "闭式零梯度电路嫁接原语将精确多位数算术与布尔/多数/奇偶电路直接编译进预训练权重，无需训练样本或运行时钩子；IBM Granite 4.2 3B 与 Qwen 3.5 4B 在 6 位数算术上达 99.17%/100.00% ALU 前缀准确率，远超 12.8K 样本 LoRA 的 42.2%/61.7%。",
+    "en": "Closed-form zero-gradient circuit-grafting compiles exact multi-digit arithmetic and Boolean/majority circuits into pretrained LM weights without training data or runtime hooks; Granite 4.2 3B and Qwen 3.5 4B reach 99.17%/100.00% ALU-prefix accuracy versus 42.2%/61.7% for 12.8K-sample LoRA."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26511",
@@ -1977,7 +2037,11 @@
    "published": "2026-11-19T17:58:20Z",
    "updated": "2026-11-19T17:58:20Z",
    "comment": "The Project Page is: https://dreamtechai.github.io/Direct3D-V3. The Paper is published in ACM TOG (SIGGRAPH Asia 2026)",
-   "tags": [],
+   "tags": [
+    "3D",
+    "diffusion",
+    "image generation"
+   ],
    "hf_upvotes": 7,
    "ax_votes": 11,
    "ax_visits": 157,
@@ -1986,6 +2050,9 @@
     {
      "name": "Nanjing University",
      "ror": "01rxvg760"
+    },
+    {
+     "name": "DreamTech"
     },
     {
      "logo": "data/logos/hku.hk.png",
@@ -2000,7 +2067,12 @@
    ],
    "thumb": "data/thumbs/2611.26511.jpg",
    "thumb_w": 640,
-   "thumb_h": 360
+   "thumb_h": 360,
+   "summary": {
+    "zh": "Direct3D-V3 提出无 latent 的扩散 Transformer 框架，直接在原生 SDF 体素域训练与采样，引入隐式流形正则抑制非水密表面，并用 Marching Cubes 转网格施加渲染法向监督，生成网格局部细节更丰富。",
+    "en": "Direct3D-V3 is a latent-free diffusion transformer that models raw SDF voxel grids directly, using implicit manifold regularization and Marching Cubes normal supervision to generate meshes with richer local detail."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26613",
@@ -2028,8 +2100,9 @@
    "updated": "2026-11-19T18:57:25Z",
    "comment": "28 pages. Project page: https://adu2021.github.io/blog/AgentRoboCritic/",
    "tags": [
-    "manipulation",
-    "grasping",
+    "agents",
+    "robotics",
+    "multimodal",
     "benchmark"
    ],
    "hf_upvotes": 7,
@@ -2043,13 +2116,23 @@
      "ror": "05x2bcf33"
     },
     {
-     "logo": "data/logos/bosch.com.png",
-     "name": "Bosch"
+     "name": "University of Illinois Urbana-Champaign",
+     "ror": "047426m28",
+     "logo": "data/logos/illinois.edu.png"
+    },
+    {
+     "name": "Bosch",
+     "logo": "data/logos/bosch.com.png"
     }
    ],
    "thumb": "data/thumbs/2611.26613.jpg",
    "thumb_w": 640,
-   "thumb_h": 249
+   "thumb_h": 249,
+   "summary": {
+    "zh": "AgentRoboCritic 是一个以意图为依据的动作级评估框架：策略智能体在每步动作旁给出局部意图，评判器据此判断动作结果与失败模式，并在 12 个操作基准上分析前沿多模态智能体直接控制机器人的表现；微调后的开源评判器 Muse-Glimmer-30B 失败模式准确率从 32.58% 升至 74.24%。",
+    "en": "AgentRoboCritic critiques each robot action against a stated local intent, enabling action-level analysis of frontier agents across 12 manipulation benchmarks; a fine-tuned open-source critic, Muse-Glimmer-30B, raises failure-mode accuracy from 32.58% to 74.24%."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26809",
@@ -2533,7 +2616,9 @@
    "comment": "24 pages, 7 figures, 11 tables. Project page: https://marsaki.github.io/point-dynamics-proxy/",
    "tags": [
     "world model",
-    "manipulation"
+    "robotics",
+    "video generation",
+    "3D"
    ],
    "ax_votes": 3,
    "ax_visits": 189,
@@ -2541,14 +2626,19 @@
    "hf_upvotes": 1,
    "orgs": [
     {
-     "logo": "data/logos/mbzuai.ac.ae.png",
      "name": "Mohamed bin Zayed University of Artificial Intelligence",
-     "ror": "0258gkt32"
+     "ror": "0258gkt32",
+     "logo": "data/logos/mbzuai.ac.ae.png"
     }
    ],
    "thumb": "data/thumbs/2611.25946.jpg",
    "thumb_w": 640,
-   "thumb_h": 243
+   "thumb_h": 243,
+   "summary": {
+    "zh": "将首帧提升为3D点，用学习到的点动力学模型模拟机器人动作下点的响应，再渲染成像素对齐视频供视频模型读取；在DROID上搭配两种渲染器使物体运动误差降低8.6%和6.2%，真实双臂机器人上降低8.1%。",
+    "en": "Lifts the first frame into 3D points, simulates their response to robot actions with a learned point dynamics model, then renders pixel-aligned videos for any video model, cutting object motion error by 8.6%/6.2% on DROID and 8.1% on a real bimanual robot."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.26103",

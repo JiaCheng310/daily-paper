@@ -23,7 +23,10 @@
    "updated": "2026-11-21T17:31:05Z",
    "comment": "",
    "tags": [
-    "VLM/LLM"
+    "agents",
+    "VLM",
+    "efficiency",
+    "multimodal"
    ],
    "hf_upvotes": 65,
    "ax_votes": 3,
@@ -35,14 +38,26 @@
      "ror": "01tgyzw49"
     },
     {
-     "logo": "data/logos/hkbu.edu.hk.png",
+     "name": "A*STAR Centre for Frontier AI Research"
+    },
+    {
+     "name": "Sensetime",
+     "ror": "049wsmj07"
+    },
+    {
      "name": "Hong Kong Baptist University",
-     "ror": "0145fw131"
+     "ror": "0145fw131",
+     "logo": "data/logos/hkbu.edu.hk.png"
     }
    ],
    "thumb": "data/thumbs/2611.28947.jpg",
    "thumb_w": 640,
-   "thumb_h": 427
+   "thumb_h": 427,
+   "summary": {
+    "zh": "NightWatch 让任意 CUA 挂载 0.8B 的 System-1 监控器，流式跟踪界面状态以弥合感知-动作间隙；在 OSWorld 上非推理实际耗时降 33%、浪费时间降 53% 且成功率持平，DynaCU-Bench 上大模型成功率从 39.5% 升至 44.2%。",
+    "en": "NightWatch pairs any computer-use agent with a 0.8B System-1 watcher that streams interface state, cutting OSWorld wall-clock time 33% and wasted time 53% at equal success, and lifting DynaCU-Bench success from 39.5% to 44.2%."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28719",
@@ -60,16 +75,28 @@
    "updated": "2026-11-21T10:24:49Z",
    "comment": "Technical Report; 26 pages, 7 figures, 9 tables",
    "tags": [
-    "benchmark"
+    "LLM",
+    "alignment",
+    "dataset",
+    "efficiency"
    ],
    "hf_upvotes": 30,
    "ax_votes": 13,
    "ax_visits": 132,
    "heat": 56.2,
-   "orgs": [],
+   "orgs": [
+    {
+     "name": "NAVER"
+    }
+   ],
    "thumb": "data/thumbs/2611.28719.jpg",
    "thumb_w": 640,
-   "thumb_h": 376
+   "thumb_h": 376,
+   "summary": {
+    "zh": "KMed-31B 从开放权重模型后训练而来，按输出形式与反馈类型把医学任务分为四类，各类训练专用专家模型，再用 Multi-teacher On-policy Delta Distillation (MOPD$^2$) 合并为单一学生模型；非思考模式下 HealthBench Hard 由 22.95 升至 41.87，Professional 由 37.92 升至 50.20，四个多选题医学基准持平或略升。",
+    "en": "KMed-31B post-trains an open-weight model by splitting medical tasks into four feedback-based categories, training specialists, then merging them via Multi-teacher On-policy Delta Distillation; HealthBench Hard rises from 22.95 to 41.87."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28649",
@@ -101,7 +128,10 @@
    "updated": "2026-11-21T08:22:21Z",
    "comment": "",
    "tags": [
-    "benchmark"
+    "VLM",
+    "multimodal",
+    "reasoning",
+    "3D"
    ],
    "hf_upvotes": 41,
    "ax_votes": 2,
@@ -109,17 +139,31 @@
    "heat": 47.7,
    "orgs": [
     {
+     "logo": "data/logos/hkust.edu.hk.png",
+     "name": "HKUST",
+     "ror": "00q4vv597"
+    },
+    {
      "name": "NTU",
      "ror": "02e7b5302"
     },
     {
      "name": "NUS",
      "ror": "01tgyzw49"
+    },
+    {
+     "name": "Tongji University",
+     "ror": "03rc6as71"
     }
    ],
    "thumb": "data/thumbs/2611.28649.jpg",
    "thumb_w": 640,
-   "thumb_h": 350
+   "thumb_h": 350,
+   "summary": {
+    "zh": "S-Mind 用一组紧凑的空间 token 把多视角几何内化进 MLLM，监督这些 token 承载融合后的 3D 场景并在推理中重表达各视角，在四个空间基准上平均准确率较 Qwen3.5 骨干最高提升 22.26 分，融合与视角变换准确率达 65.11% 和 82.17%，基线至多 16.02% 和 37.28%，推理比工具型 agent 快约 100 倍。",
+    "en": "S-Mind internalizes multi-view geometry in MLLMs via compact spatial tokens that hold a fused 3D scene and re-express it per viewpoint, gaining up to 22.26 points on four spatial benchmarks and running ~100x faster than a tool-based agent."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28833",
@@ -138,7 +182,11 @@
    "published": "2026-11-21T14:36:04Z",
    "updated": "2026-11-21T14:36:04Z",
    "comment": "",
-   "tags": [],
+   "tags": [
+    "LLM",
+    "RL",
+    "interpretability"
+   ],
    "hf_upvotes": 12,
    "ax_votes": 16,
    "ax_visits": 54,
@@ -148,11 +196,19 @@
      "logo": "data/logos/cmu.edu.png",
      "name": "Carnegie Mellon University",
      "ror": "05x2bcf33"
+    },
+    {
+     "name": "MilkThink"
     }
    ],
    "thumb": "data/thumbs/2611.28833.jpg",
    "thumb_w": 566,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "Self-WSP 让 Qwen3.5-0.8B 读取并编辑自身权重，在 GSM8K 上将准确率从 11.8% 提升至 62.2%，在 MATH500 上从 7.0% 提升至 32.2%，有时仅改动 16 个参数；但模型对编辑缺乏理解，随机搜索驱动的 WSP 效果相近，可解释性仍欠缺。",
+    "en": "Self-WSP lets Qwen3.5-0.8B read and edit its own weights, raising GSM8K accuracy from 11.8% to 62.2% and MATH500 from 7.0% to 32.2%, sometimes via only 16 parameters; however, gains lack interpretability and random-search WSP performs comparably."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28732",
@@ -179,8 +235,10 @@
    "updated": "2026-11-25T12:43:55Z",
    "comment": "26 pages, 13 figures, including the appendix. Project page at https://entangle-robotics.github.io/",
    "tags": [
-    "manipulation",
-    "VLM/LLM"
+    "robotics",
+    "VLM",
+    "world model",
+    "manipulation"
    ],
    "hf_upvotes": 28,
    "ax_votes": 1,
@@ -190,11 +248,22 @@
     {
      "name": "Tsinghua University",
      "ror": "03cve4549"
+    },
+    {
+     "name": "GensPI Technology"
+    },
+    {
+     "name": "Motubrain"
     }
    ],
    "thumb": "data/thumbs/2611.28732.jpg",
    "thumb_w": 640,
-   "thumb_h": 382
+   "thumb_h": 382,
+   "summary": {
+    "zh": "Entangle 用视频到视频生成把机器人视频转成匹配的人类示范上下文，并结合变长视频窗口与任务内对比目标训练上下文世界-动作模型，在 Astribot S1 的六个未见任务上平均得分 83.5/100，在七个 RoboTwin 未见任务上平均成功率 69.5%，比 Zero-WAM 高 22.6 个百分点。",
+    "en": "Entangle converts robot videos into matched human contexts via video-to-video generation and trains an in-context world-action model with variable-length windows and intra-task contrastive objectives, scoring 83.5/100 on six unseen Astribot S1 tasks and 69.5% success on seven unseen RoboTwin tasks, 22.6 points above Zero-WAM."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28943",
@@ -223,7 +292,10 @@
    "updated": "2026-11-21T17:23:39Z",
    "comment": "",
    "tags": [
-    "world model"
+    "robotics",
+    "world model",
+    "efficiency",
+    "VLA"
    ],
    "ax_votes": 8,
    "ax_visits": 175,
@@ -234,19 +306,36 @@
      "name": "NVIDIA"
     },
     {
-     "logo": "data/logos/mit.edu.png",
+     "name": "UC San Diego",
+     "ror": "0168r3w48",
+     "logo": "data/logos/ucsd.edu.png"
+    },
+    {
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
+    },
+    {
      "name": "MIT",
-     "ror": "042nb2s44"
+     "ror": "042nb2s44",
+     "logo": "data/logos/mit.edu.png"
     },
     {
      "logo": "data/logos/hku.hk.png",
      "name": "HKU",
      "ror": "02zhqgq86"
+    },
+    {
+     "name": "Inco AI"
     }
    ],
    "thumb": "data/thumbs/2611.28943.jpg",
    "thumb_w": 640,
-   "thumb_h": 205
+   "thumb_h": 205,
+   "summary": {
+    "zh": "SANA-Robot 是一个 4.5B 的世界动作模型，通过线性注意力维持固定大小的全局记忆、滑动窗口 softmax 注意力传递历史信息，实现分钟级混合记忆与恒定开销推理；在 RoboDojo 记忆维度上取得中等规模模型最佳表现，并在 LIBERO-Plus、LIBERO-Pro、LIBERO-Max 上取得最高成功率，RTX 5090 上单动作块推理耗时 135 ms（FP8）/115 ms（NVFP4），边缘设备实现 30 Hz 闭环实时控制。",
+    "en": "SANA-Robot is a 4.5B world action model combining linear-attention global memory with sliding-window softmax attention for minute-level hybrid memory at constant cost, achieving top RoboDojo memory results and LIBERO-Plus/Pro/Max success rates, running 30 Hz closed-loop on edge devices."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28618",
@@ -266,13 +355,20 @@
    "updated": "2026-11-21T07:09:09Z",
    "comment": "",
    "tags": [
-    "navigation"
+    "agents",
+    "multimodal",
+    "efficiency",
+    "reasoning"
    ],
    "hf_upvotes": 21,
    "ax_votes": 1,
    "ax_visits": 29,
    "heat": 24.9,
    "orgs": [
+    {
+     "name": "University of Technology Sydney",
+     "ror": "03f0f6041"
+    },
     {
      "logo": "data/logos/polyu.edu.hk.png",
      "name": "Hong Kong Polytechnic University",
@@ -281,7 +377,12 @@
    ],
    "thumb": "data/thumbs/2611.28618.jpg",
    "thumb_w": 640,
-   "thumb_h": 363
+   "thumb_h": 363,
+   "summary": {
+    "zh": "用技能-上下文覆盖度与有序视觉决策相似度筛选少量轨迹，结合on-policy distillation训练视觉agent；仅4条固定轨迹即将4B学生在Navigation上从49.17%提升至82.08%、Sokoban从60.16%提升至85.55%，恢复对27B教师90%以上的差距。",
+    "en": "Selecting few trajectories via skill-context coverage and ordered visual-decision similarity, on-policy distillation lifts a 4B visual agent from 49.17% to 82.08% on Navigation and 60.16% to 85.55% on Sokoban, recovering over 90% of the gap to a 27B teacher."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29064",
@@ -299,7 +400,12 @@
    "published": "2026-11-21T22:05:52Z",
    "updated": "2026-11-21T22:05:52Z",
    "comment": "Project page: https://haoyuhsu.github.io/Unified-LDM/",
-   "tags": [],
+   "tags": [
+    "image generation",
+    "diffusion",
+    "efficiency",
+    "multimodal"
+   ],
    "hf_upvotes": 16,
    "ax_votes": 1,
    "ax_visits": 32,
@@ -313,7 +419,12 @@
    ],
    "thumb": "data/thumbs/2611.29064.jpg",
    "thumb_w": 440,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "UNIFIED 将编码、生成、解码三个模式统一到单个共享骨干的扩散 Transformer 中，仅用重建与流匹配损失从零训练；在 ImageNet-1K 256×256 上，约 215M 参数时 gFID 达 2.08，优于 UNITE，且 UNIFIED-B 在文本到图像 GenEval 上取得 0.87。",
+    "en": "UNIFIED folds encoding, generation and decoding into one shared diffusion transformer trained from scratch with only reconstruction and flow-matching losses, reaching 2.08 gFID on ImageNet-1K 256x256 and 0.87 GenEval."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28489",
@@ -337,7 +448,12 @@
    "published": "2026-11-21T02:09:03Z",
    "updated": "2026-11-21T02:09:03Z",
    "comment": "",
-   "tags": [],
+   "tags": [
+    "VLM",
+    "image generation",
+    "segmentation",
+    "diffusion"
+   ],
    "hf_upvotes": 18,
    "ax_votes": 0,
    "ax_visits": 9,
@@ -356,28 +472,38 @@
      "ror": "00a2xv884"
     },
     {
-     "logo": "data/logos/cumt.edu.cn.png",
      "name": "China University of Mining and Technology",
-     "ror": "01xt2dr21"
+     "ror": "01xt2dr21",
+     "logo": "data/logos/cumt.edu.cn.png"
     },
     {
-     "logo": "data/logos/cas.cn.png",
      "name": "Chinese Academy of Sciences",
-     "ror": "034t30j35"
+     "ror": "034t30j35",
+     "logo": "data/logos/cas.cn.png"
     },
     {
-     "logo": "data/logos/bytedance.com.png",
-     "name": "ByteDance"
+     "name": "ByteDance",
+     "logo": "data/logos/bytedance.com.png"
     },
     {
-     "logo": "data/logos/ucla.edu.png",
-     "name": "UC Los Angeles",
-     "ror": "046rm7j60"
+     "name": "Meituan",
+     "ror": "0272kpg92",
+     "logo": "data/logos/meituan.com.png"
+    },
+    {
+     "name": "University of California, Los Angeles",
+     "ror": "046rm7j60",
+     "logo": "data/logos/ucla.edu.png"
     }
    ],
    "thumb": "data/thumbs/2611.28489.jpg",
    "thumb_w": 640,
-   "thumb_h": 352
+   "thumb_h": 352,
+   "summary": {
+    "zh": "Open Vision Banana 将 Qwen-Image-2.1 的 7B 扩散生成器通过单一共享低秩适配器调成统一模型，覆盖深度、语义/实例/指代分割；在 42 个 checkpoint 上发现尺度未被学到（NYUv2 无对齐 δ1 仅 0.11–0.50，十种子集成提到 0.516），深度与分割争用适配器，验证 flow loss 与 Cityscapes mIoU 的 Spearman ρ≈-0.9，无法用于选型。",
+    "en": "Open Vision Banana adapts Qwen-Image-2.1's 7B diffusion generator with one shared low-rank adapter into a unified depth and segmentation model; across 42 checkpoints, absolute scale stays unlearned (NYUv2 unaligned δ1 0.11–0.50, 0.516 with ten-seed ensemble) and validation flow loss anti-correlates with Cityscapes mIoU (Spearman ρ≈-0.9)."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28621",
@@ -396,7 +522,12 @@
    "updated": "2026-11-24T07:29:30Z",
    "comment": "",
    "code_url": "https://github.com/yamanoko/dao",
-   "tags": [],
+   "tags": [
+    "diffusion",
+    "interpretability",
+    "image generation",
+    "LLM"
+   ],
    "ax_votes": 7,
    "ax_visits": 84,
    "heat": 15.4,
@@ -407,11 +538,20 @@
     },
     {
      "name": "ZOZO Research"
+    },
+    {
+     "name": "Institute of Science Tokyo",
+     "ror": "05dqf9946"
     }
    ],
    "thumb": "data/thumbs/2611.28621.jpg",
    "thumb_w": 640,
-   "thumb_h": 266
+   "thumb_h": 266,
+   "summary": {
+    "zh": "将 LatentQA 任务扩展到扩散模型激活，提出 DAO 把去噪激活翻译成自然语言回答，可从早期去噪步激活描述最终图像内容，并能引导生成目标属性、用 attribution patching 定位相关组件。",
+    "en": "Extending LatentQA to diffusion activations, DAO translates denoising activations into natural-language answers, describing final image content from early steps and steering generation toward target attributes."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28960",
@@ -435,20 +575,23 @@
    "comment": "Accepted to Transactions on Machine Learning Research, 2026",
    "code_url": "https://github.com/tianyi-lab/EmoRouter",
    "tags": [
-    "VLM/LLM",
-    "benchmark"
+    "multimodal",
+    "efficiency",
+    "LLM"
    ],
    "ax_votes": 6,
    "ax_visits": 61,
    "heat": 12.1,
    "orgs": [
     {
-     "name": "University of Maryland"
+     "name": "University of Maryland, College Park",
+     "ror": "047s2c258",
+     "logo": "data/logos/umd.edu.png"
     },
     {
-     "logo": "data/logos/uic.edu.png",
      "name": "University of Illinois Chicago",
-     "ror": "02mpq6x41"
+     "ror": "02mpq6x41",
+     "logo": "data/logos/uic.edu.png"
     },
     {
      "logo": "data/logos/illinois.edu.png",
@@ -456,14 +599,19 @@
      "ror": "047426m28"
     },
     {
-     "logo": "data/logos/mbzuai.ac.ae.png",
      "name": "Mohamed bin Zayed University of Artificial Intelligence",
-     "ror": "0258gkt32"
+     "ror": "0258gkt32",
+     "logo": "data/logos/mbzuai.ac.ae.png"
     }
    ],
    "thumb": "data/thumbs/2611.28960.jpg",
    "thumb_w": 443,
-   "thumb_h": 374
+   "thumb_h": 374,
+   "summary": {
+    "zh": "EmoRouter 是一个免训练、与模型无关的自适应模态级联框架，依据 Conformal Prediction 估计的不确定性为每句话选择退出层级，并用 Conformal Set Contraction 校准各层级误差预算；在 4 个 MER 基准、3 个 Omni-LLM 上，它匹配或超过全模态效果，同时将推理延迟降低 67.9–94.5%。",
+    "en": "EmoRouter, a training-free, model-agnostic adaptive modality cascading framework, uses Conformal Prediction uncertainty to pick per-utterance exit tiers with Conformal Set Contraction calibration, matching full-modality accuracy on 4 MER benchmarks and 3 Omni-LLMs while cutting latency 67.9–94.5%."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28783",
@@ -482,20 +630,30 @@
    "published": "2026-11-21T12:58:42Z",
    "updated": "2026-11-21T12:58:42Z",
    "comment": "",
-   "tags": [],
+   "tags": [
+    "code",
+    "agents",
+    "3D",
+    "dataset"
+   ],
    "ax_votes": 3,
    "ax_visits": 59,
    "heat": 8.9,
    "orgs": [
     {
-     "logo": "data/logos/xiaohongshu.com.png",
      "name": "Xiaohongshu",
-     "ror": "02apw2076"
+     "ror": "02apw2076",
+     "logo": "data/logos/xiaohongshu.com.png"
     }
    ],
    "thumb": "data/thumbs/2611.28783.jpg",
    "thumb_w": 640,
-   "thumb_h": 226
+   "thumb_h": 226,
+   "summary": {
+    "zh": "3DCodeFactory 用图像生成器把原始文本变成 3D 参考图，再据此构建建模规格与交互需求，并联合视觉、规格、功能三类评分规则自动筛选多轮 agent 轨迹，产出 5,045 条 3DCodeFactory-Data；微调 Qwen3.5-9B 与 Qwen3.8-27B 后在 BlenderWorld、P3D-Bench、3DCodeBench 上稳定超过现有开源 3D 代码数据训练的模型，27B 模型整体性能还超过同系列 Qwen3.8-Max。",
+    "en": "3DCodeFactory synthesizes 3D reference images from raw text, derives modeling specs and interaction requirements, and auto-scores multi-turn agent rollouts, releasing 5,045 instances; fine-tuned Qwen models beat existing open 3D code data on BlenderWorld, P3D-Bench and 3DCodeBench."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28792",
@@ -518,7 +676,10 @@
    "updated": "2026-11-21T13:11:25Z",
    "comment": "",
    "tags": [
-    "world model"
+    "3D",
+    "diffusion",
+    "world model",
+    "image generation"
    ],
    "ax_votes": 2,
    "ax_visits": 50,
@@ -535,7 +696,12 @@
    ],
    "thumb": "data/thumbs/2611.28792.jpg",
    "thumb_w": 503,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "ArgsWorld 是自回归扩散世界模型，每个生成块联合处理干净历史图像 latent 与新视角噪声 latent，并刷新场景特征以输出显式 3DGS；配合 3D Self-Forcing Distillation 在自生成历史上训练，统一了重建、生成与相机外推，多项 3D 场景建模任务达到 SOTA。",
+    "en": "ArgsWorld is an autoregressive diffusion world model that jointly outputs an explicit 3DGS scene per chunk; with 3D Self-Forcing Distillation it unifies reconstruction, generation, and camera extrapolation, achieving state-of-the-art results on multiple 3D scene modeling tasks."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28445",
@@ -558,31 +724,38 @@
    "updated": "2026-11-21T00:50:35Z",
    "comment": "Ongoning work",
    "tags": [
-    "VLM/LLM",
-    "benchmark"
+    "LLM",
+    "agents",
+    "reasoning",
+    "efficiency"
    ],
    "ax_votes": 2,
    "ax_visits": 40,
    "heat": 6.0,
    "orgs": [
     {
-     "logo": "data/logos/ucsd.edu.png",
      "name": "UC San Diego",
-     "ror": "0168r3w48"
+     "ror": "0168r3w48",
+     "logo": "data/logos/ucsd.edu.png"
     },
     {
      "logo": "data/logos/google.com.png",
      "name": "Google"
     },
     {
-     "logo": "data/logos/uwaterloo.ca.png",
      "name": "University of Waterloo",
-     "ror": "01aff2v68"
+     "ror": "01aff2v68",
+     "logo": "data/logos/uwaterloo.ca.png"
     }
    ],
    "thumb": "data/thumbs/2611.28445.jpg",
    "thumb_w": 640,
-   "thumb_h": 221
+   "thumb_h": 221,
+   "summary": {
+    "zh": "Muted Distillation（MD）隐藏学生的推理内容，让教师评分不受学生推理干扰，在多轮智能体任务中相比标准 OPD 将每回合输出 token 减少 57% 和 53%，在 SpreadsheetBench 上 pass@1 提升 4.8 分。",
+    "en": "Muted Distillation hides student reasoning from the teacher so scores are judged without distraction, cutting output tokens per episode by 57% and 53% versus on-policy distillation and raising SpreadsheetBench pass@1 by 4.8 points."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28878",
@@ -603,7 +776,8 @@
    "comment": "Project page: https://gabrielinger.github.io/Eidetic-Code-World-Model/",
    "tags": [
     "world model",
-    "benchmark"
+    "video generation",
+    "3D"
    ],
    "ax_votes": 2,
    "ax_visits": 34,
@@ -617,7 +791,12 @@
    ],
    "thumb": "data/thumbs/2611.28878.jpg",
    "thumb_w": 640,
-   "thumb_h": 327
+   "thumb_h": 327,
+   "summary": {
+    "zh": "Paintress 将可执行几何代理与独立参数的 3D 高斯外观记忆耦合在同一度量坐标系中，通过写读分离保持已访问地点的外观一致；在 Expedition-33 基准上，其 ROI-LPIPS 为 0.1220、细节保留率 52.12%，远优于 CWM 的 0.2731 和 10.91%。",
+    "en": "Paintress couples an executable geometric proxy with a separate 3D Gaussian appearance memory in a shared metric frame, separating writing from reading; on Expedition-33 it reaches 0.1220 ROI-LPIPS and 52.12% detail retention versus CWM's 0.2731 and 10.91%."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28442",
@@ -642,27 +821,37 @@
    "updated": "2026-11-21T00:34:17Z",
    "comment": "Accepted in WACV HARVEST Vision Workshop 2027",
    "tags": [
-    "VLM/LLM",
-    "aerial"
+    "detection",
+    "dataset",
+    "VLM",
+    "efficiency"
    ],
    "ax_votes": 4,
    "ax_visits": 12,
    "heat": 5.2,
    "orgs": [
     {
-     "logo": "data/logos/tue.nl.png",
-     "name": "Eindhoven University of Technology",
-     "ror": "02c2kyt77"
+     "name": "Eindhoven University of Technology"
     },
     {
-     "logo": "data/logos/uni.lu.png",
      "name": "University of Luxembourg",
-     "ror": "036x5ad56"
+     "ror": "036x5ad56",
+     "logo": "data/logos/uni.lu.png"
+    },
+    {
+     "name": "Universidad de Costa Rica",
+     "ror": "02yzgww51",
+     "logo": "data/logos/ucr.ac.cr.png"
     }
    ],
    "thumb": "data/thumbs/2611.28442.jpg",
    "thumb_w": 625,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "无需训练的小样本菠萝检测器把冻结视觉基础模型的稠密特征直接解码为检测框：用支持图像估计白化前景-背景方向打分查询patch，再自适应阈值与几何解码；在航拍菠萝影像上各支持样本数均优于PET-DINO和GeCo2，K=40时纯预测深度达DINOv2 RGB性能的92%，并发布含4,908帧的Pineapple Plantation数据集。",
+    "en": "A training-free few-shot pineapple detector decodes frozen foundation-model features via a whitened foreground-background direction and adaptive thresholding, beating PET-DINO and GeCo2 at all support sizes and releasing the 4,908-frame Pineapple Plantation dataset."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29008",
@@ -689,20 +878,27 @@
    "updated": "2026-11-21T19:36:37Z",
    "comment": "",
    "tags": [
-    "driving"
+    "theory",
+    "efficiency",
+    "robotics",
+    "segmentation"
    ],
    "ax_votes": 2,
    "ax_visits": 31,
    "heat": 5.1,
    "orgs": [
     {
-     "name": "Purdue University",
-     "ror": "04bm3wy68"
+     "name": "Purdue University"
     }
    ],
    "thumb": "data/thumbs/2611.29008.jpg",
    "thumb_w": 391,
-   "thumb_h": 175
+   "thumb_h": 175,
+   "summary": {
+    "zh": "镜像 Min-of-K（MMoK）在 MoK 训练中额外采样一个候选并按最近候选规则选取、再减去该距离，弥补候选间相对位置信息缺失；理论上可恢复 MoK 无法恢复的数据分布，在合成混合、轨迹预测、热带气旋预报、机器人策略学习和医学图像分割五类任务上验证有效。",
+    "en": "Mirrored Min-of-K (MMoK) adds one extra model sample to MoK training and subtracts its nearest-candidate distance, recovering distributions MoK cannot; validated on synthetic mixtures, trajectory prediction, cyclone forecasting, robotic policy learning, and ambiguous segmentation."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28469",
@@ -727,22 +923,23 @@
    "updated": "2026-11-21T01:42:07Z",
    "comment": "Extended version of the paper accepted at ICSE 2027, with appendices",
    "tags": [
-    "VLM/LLM",
-    "benchmark"
+    "agents",
+    "safety",
+    "code"
    ],
    "ax_votes": 1,
    "ax_visits": 35,
    "heat": 4.5,
    "orgs": [
     {
-     "logo": "data/logos/ucsd.edu.png",
-     "name": "UC San Diego",
-     "ror": "0168r3w48"
+     "name": "University of California San Diego",
+     "ror": "0168r3w48",
+     "logo": "data/logos/ucsd.edu.png"
     },
     {
-     "logo": "data/logos/ucla.edu.png",
-     "name": "UC Los Angeles",
-     "ror": "046rm7j60"
+     "name": "University of California, Los Angeles",
+     "ror": "046rm7j60",
+     "logo": "data/logos/ucla.edu.png"
     },
     {
      "logo": "data/logos/cityu.edu.hk.png",
@@ -750,13 +947,18 @@
      "ror": "03q8dnn23"
     },
     {
-     "name": "UC Santa Barbara",
+     "name": "University of California, Santa Barbara",
      "ror": "02t274463"
     }
    ],
    "thumb": "data/thumbs/2611.28469.jpg",
    "thumb_w": 618,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "Apsis 是一个静态安全分析器，将不同框架的 agentic workflow 代码提升为统一中间表示（语义图，含步骤、数据依赖与共享状态及行为属性），并用声明式 bug 描述语言匹配检测设计层面的 workflow 缺陷；在覆盖 13 个框架的 bug 语料基准上取得 91% 精确率与 84% 召回率，并在真实 workflow 中发现 36 个此前未知的 bug。",
+    "en": "Apsis statically analyzes agentic workflows by lifting framework-specific code into a unified intermediate representation and matching declarative bug patterns, achieving 91% precision and 84% recall and finding 36 previously unknown bugs."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28520",
@@ -782,22 +984,45 @@
    "comment": "",
    "code_url": "https://github.com/KTH-RPL/VG3R",
    "tags": [
-    "VLM/LLM"
+    "3D",
+    "video generation",
+    "efficiency",
+    "multimodal"
    ],
    "ax_votes": 1,
    "ax_visits": 33,
    "heat": 4.3,
    "orgs": [
     {
-     "name": "Concordia University Mila -- Quebec AI Institute"
+     "name": "Concordia University"
     },
     {
-     "name": "South Dakota State University KTH Royal Institute of Technology Aalto University"
+     "name": "Mila - Quebec AI Institute"
+    },
+    {
+     "name": "South Dakota State University",
+     "ror": "015jmes13",
+     "logo": "data/logos/sdstate.edu.png"
+    },
+    {
+     "name": "KTH Royal Institute of Technology",
+     "ror": "026vcq606",
+     "logo": "data/logos/kth.se.png"
+    },
+    {
+     "name": "Aalto University",
+     "ror": "020hwjq30",
+     "logo": "data/logos/aalto.fi.png"
     }
    ],
    "thumb": "data/thumbs/2611.28520.jpg",
    "thumb_w": 640,
-   "thumb_h": 216
+   "thumb_h": 216,
+   "summary": {
+    "zh": "VG3R 将预训练视频生成模型 Wan2.1 改造为前馈 3D 重建模型，通过 clip-level shift prediction 校正解码逆深度的未知平移畸变、用多层 camera head 融合 Transformer 各层特征预测逐帧相机参数，无需迭代去噪，ATE 与重建误差在视频生成类方法中最低，比 Aether 和 Geo4D 分别快约 4 倍和 14 倍。",
+    "en": "VG3R turns the Wan2.1 video generation model into a feed-forward 3D reconstructor using clip-level shift prediction and a multi-layer camera head, achieving the lowest ATE and reconstruction errors among video-generation-based methods while running about 4x and 14x faster than Aether and Geo4D."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28509",
@@ -817,26 +1042,29 @@
    "updated": "2026-11-21T02:54:46Z",
    "comment": "",
    "tags": [
+    "driving",
     "VLA",
-    "world model",
-    "driving"
+    "safety",
+    "efficiency"
    ],
    "ax_votes": 1,
    "ax_visits": 32,
    "heat": 4.2,
    "orgs": [
     {
-     "name": "Connected and Autonomous Research Laboratory"
-    },
-    {
-     "logo": "data/logos/udel.edu.png",
      "name": "University of Delaware",
-     "ror": "01sbq1a82"
+     "ror": "01sbq1a82",
+     "logo": "data/logos/udel.edu.png"
     }
    ],
    "thumb": "data/thumbs/2611.28509.jpg",
    "thumb_w": 640,
-   "thumb_h": 215
+   "thumb_h": 215,
+   "summary": {
+    "zh": "AlpaSafe 复用冻结驾驶 VLA 预填充阶段的最后一个隐藏 token，用 1.7M 参数的轻量头结合候选轨迹预测相对分数与碰撞/越界 logits，规则筛选后选出轨迹；在 525 个 AlpaSim 场景上把碰撞或越界率从 6.41%、6.10% 降至 4.93%，每次决策耗时 0.75 ms。",
+    "en": "AlpaSafe reuses a frozen driving VLA's last prefill token with a 1.7M-parameter head to score candidate trajectories and predict collision/offroad logits, cutting fault-collision or offroad rate from 6.41%/6.10% to 4.93% on 525 AlpaSim scenes at 0.75 ms per decision."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28645",
@@ -861,7 +1089,9 @@
    "updated": "2026-11-21T08:14:41Z",
    "comment": "Accepted at WSDM 2027(oral)",
    "tags": [
-    "VLM/LLM"
+    "retrieval",
+    "LLM",
+    "efficiency"
    ],
    "ax_votes": 1,
    "ax_visits": 32,
@@ -873,16 +1103,21 @@
      "ror": "034t30j35"
     },
     {
-     "name": "University of Amsterdam",
-     "ror": "04dkp9463"
+     "name": "University of Amsterdam"
     },
     {
-     "name": "Taobao & Tmall Group of Alibaba"
+     "name": "Alibaba",
+     "logo": "data/logos/alibaba.com.png"
     }
    ],
    "thumb": "data/thumbs/2611.28645.jpg",
    "thumb_w": 640,
-   "thumb_h": 301
+   "thumb_h": 301,
+   "summary": {
+    "zh": "PROSPER 将 LLM 用作稀疏检索器，通过字面残差网络补偿被低估的字面词、抑制语义扩展幻觉，并用词法聚焦窗口做 top-k 早期稀疏化，在离线评测与大尺度在线 A/B 测试中稳定优于现有稀疏检索器并提升工业混合检索收入。",
+    "en": "PROSPER uses LLMs as sparse retrievers with a literal residual network to curb semantic expansion hallucination and a lexical focusing window for top-k early sparsification, outperforming existing sparse retrievers in offline and online A/B tests."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28666",
@@ -908,16 +1143,42 @@
    "updated": "2026-11-21T08:46:31Z",
    "comment": "",
    "tags": [
+    "video generation",
     "world model",
-    "embodied"
+    "3D",
+    "agents"
    ],
    "ax_votes": 1,
    "ax_visits": 27,
    "heat": 3.7,
    "orgs": [
     {
-     "logo": "data/logos/amazon.com.png",
-     "name": "Amazon"
+     "name": "Amazon",
+     "logo": "data/logos/amazon.com.png"
+    },
+    {
+     "name": "University of California, Riverside",
+     "ror": "03nawhv43"
+    },
+    {
+     "logo": "data/logos/ox.ac.uk.png",
+     "name": "University of Oxford",
+     "ror": "052gg0110"
+    },
+    {
+     "name": "University of Maryland, College Park",
+     "ror": "047s2c258",
+     "logo": "data/logos/umd.edu.png"
+    },
+    {
+     "name": "Washington University in St. Louis",
+     "ror": "01yc7t268",
+     "logo": "data/logos/wustl.edu.png"
+    },
+    {
+     "name": "Georgia Institute of Technology",
+     "ror": "01zkghx44",
+     "logo": "data/logos/gatech.edu.png"
     },
     {
      "logo": "data/logos/illinois.edu.png",
@@ -927,7 +1188,12 @@
    ],
    "thumb": "data/thumbs/2611.28666.jpg",
    "thumb_w": 640,
-   "thumb_h": 361
+   "thumb_h": 361,
+   "summary": {
+    "zh": "RecallWorld 将多视角短片段联合重建为 Scenelet 以保持跨片段几何独立，并用基于覆盖率的检索与几何可见性判断融合历史记忆；在四个数据集上重访 PSNR 比最强基线提升 2.6 dB（部分重访）和 3.9 dB（完整环游）。",
+    "en": "RecallWorld jointly reconstructs multi-view episodes into Scenelets with episode-independent geometry, retrieving complementary memory via coverage and geometric visibility; it improves revisit PSNR by 2.6 dB (partial) and 3.9 dB (full cycles) over the strongest baseline on four datasets."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28671",
@@ -959,20 +1225,29 @@
    "comment": "Code: https://github.com/MAS-Sys-Bench/MAS-Sys ; Project page: https://mas-sys-bench.github.io/MAS-Sys-Page/ ; Trace dataset: https://huggingface.co/datasets/MAS-Sys/MAS-Sys-Traces",
    "code_url": "https://github.com/MAS-Sys-Bench/MAS-Sys",
    "tags": [
-    "VLM/LLM",
-    "benchmark"
+    "agents",
+    "benchmark",
+    "efficiency",
+    "LLM"
    ],
    "ax_votes": 2,
    "ax_visits": 17,
    "heat": 3.7,
    "orgs": [
     {
-     "name": "Computer ScienceDuke University"
+     "name": "Duke University",
+     "ror": "00py81415",
+     "logo": "data/logos/duke.edu.png"
     }
    ],
    "thumb": "data/thumbs/2611.28671.jpg",
    "thumb_w": 640,
-   "thumb_h": 343
+   "thumb_h": 343,
+   "summary": {
+    "zh": "MASSys 在多种 serving substrate 与负载条件下对同一批多智能体 LLM 工作流运行五类任务，记录质量、时延、成本与失败证据；在 KV-cache 压力下 Star 的平均延迟排名从第一跌至第四，Chain 则从第四升至第一。",
+    "en": "MASSys benchmarks multi-agent LLM workflows across serving substrates and load regimes on five task families, tracking quality, latency, cost, and failures; under KV-cache pressure, Star drops from first to fourth in latency rank while Chain rises from fourth to first."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29014",
@@ -998,8 +1273,10 @@
    "updated": "2026-11-21T19:50:24Z",
    "comment": "31 pages, 10 figures, 10 tables",
    "tags": [
+    "LLM",
     "RL",
-    "benchmark"
+    "reasoning",
+    "agents"
    ],
    "ax_votes": 1,
    "ax_visits": 27,
@@ -1011,13 +1288,18 @@
      "ror": "05x2bcf33"
     },
     {
-     "logo": "data/logos/nvidia.com.png",
-     "name": "NVIDIA"
+     "logo": "data/logos/apple.com.png",
+     "name": "Apple"
     }
    ],
    "thumb": "data/thumbs/2611.29014.jpg",
    "thumb_w": 464,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "PBPT 并行训练多个模型，并通过基于种群的训练（population-based training）自动调节超参数：定期在验证集上评估模型，复制表现好的并扰动其超参数，淘汰表现差的；在 Enigmata、Nemotron 和 Gaia2、AppWorld 上，它训练的 agent 强于同等算力下独立训练的 RLVR 模型，并能从较差的初始超参数中恢复。",
+    "en": "PBPT trains multiple LLMs in parallel with population-based hyperparameter tuning: periodically evaluate, duplicate and perturb top performers, replace losers. It beats compute-matched independent RLVR learners on Enigmata, Nemotron, Gaia2 and AppWorld, recovering from poor initial hyperparameters."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28853",
@@ -1040,8 +1322,10 @@
    "updated": "2026-11-21T15:08:36Z",
    "comment": "Project page: https://agenticivil.com/civilcadbench/",
    "tags": [
-    "VLM/LLM",
-    "benchmark"
+    "multimodal",
+    "benchmark",
+    "agents",
+    "LLM"
    ],
    "ax_votes": 0,
    "ax_visits": 33,
@@ -1052,14 +1336,28 @@
      "ror": "01yqg2h08"
     },
     {
+     "name": "Tongji University",
+     "ror": "03rc6as71"
+    },
+    {
      "logo": "data/logos/cityu.edu.hk.png",
      "name": "City University of Hong Kong",
      "ror": "03q8dnn23"
+    },
+    {
+     "logo": "data/logos/hku.hk.png",
+     "name": "HKU",
+     "ror": "02zhqgq86"
     }
    ],
    "thumb": "data/thumbs/2611.28853.jpg",
    "thumb_w": 640,
-   "thumb_h": 394
+   "thumb_h": 394,
+   "summary": {
+    "zh": "CivilCADBench 基于真实土木工程图纸与含 25 万以上 CAD 实体的源文件构建，包含理解、重建与设计三类任务，用确定性评分器对比几何、图层、文字与尺寸；七个前沿 MLLM 在理解与单页重建上超过 90%，但图层分配仅 60%、设计仅 48%。",
+    "en": "CivilCADBench benchmarks multimodal LLMs on real civil engineering drawing sets with understanding, reconstruction, and design tasks; top models exceed 90% on understanding and single-page reconstruction but reach only 60% on layer assignment and 48% on design."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28665",
@@ -1077,7 +1375,10 @@
    "updated": "2026-11-21T08:45:39Z",
    "comment": "46 pages, 7 figures, 46 tables; Project page: https://ming-zch.github.io/seeing-right-writing-wrong/",
    "tags": [
-    "VLM/LLM"
+    "VLM",
+    "reasoning",
+    "interpretability",
+    "benchmark"
    ],
    "hf_upvotes": 2,
    "ax_votes": 0,
@@ -1091,7 +1392,12 @@
    ],
    "thumb": "data/thumbs/2611.28665.jpg",
    "thumb_w": 640,
-   "thumb_h": 263
+   "thumb_h": 263,
+   "summary": {
+    "zh": "研究发现短链式思维把空间VQA变成转写问题：VLM一旦写出空间关系便依从该句而非图像。在15个开源模型与6个闭源前沿模型上，写作会削弱“越低越近”启发式并丢弃有效线索，结论句还可能反转正确关系，错误关系与结论映射占CoT损失的八成；Qwen3-VL-32B同样如此，闭源模型则无此损，且六分之三在写作后会重新检查图像。",
+    "en": "Short chain-of-thought turns spatial VQA into transcription: once a VLM writes a spatial relation, answers follow that sentence over the image. Across 15 open and 6 closed models, false relations and conclusion mis-mapping cause four in five CoT losses; frontier models re-ground after writing."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.29006",
@@ -1108,7 +1414,11 @@
    "published": "2026-11-21T19:36:14Z",
    "updated": "2026-11-21T19:36:14Z",
    "comment": "",
-   "tags": [],
+   "tags": [
+    "efficiency",
+    "LLM",
+    "interpretability"
+   ],
    "hf_upvotes": 2,
    "ax_votes": 0,
    "ax_visits": 3,
@@ -1116,7 +1426,12 @@
    "orgs": [],
    "thumb": "data/thumbs/2611.29006.jpg",
    "thumb_w": 618,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "summary": {
+    "zh": "将 H2O 与 StreamingLLM 统一为幂律打分 s_i=A_i·(t-i)^{-α} 的两个端点，用 no-hair 机制界定 α 范围，Qwen2.5-1.5B-Instruct 在 WikiText 上只需校准一次得 [0.556,0.822]；NoHairCache 在三个数据集上免调参取得最低 PPL，预算 512 时比 StreamingLLM 低 0.06–0.10。",
+    "en": "H2O and StreamingLLM are unified as endpoints of a power-law token score; NoHairCache calibrates the exponent once, bounds it via the no-hair mechanism, and achieves the lowest perplexity across three datasets without per-dataset tuning."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28574",
@@ -1134,7 +1449,12 @@
    "published": "2026-11-21T05:14:15Z",
    "updated": "2026-11-24T04:04:21Z",
    "comment": "28 pages, 26 figures. Project page: https://evovim.github.io/",
-   "tags": [],
+   "tags": [
+    "multimodal",
+    "agents",
+    "VLM",
+    "reasoning"
+   ],
    "hf_upvotes": 1,
    "ax_votes": 1,
    "ax_visits": 5,
@@ -1143,11 +1463,24 @@
     {
      "name": "Shanghai Jiao Tong University",
      "ror": "0220qvk04"
+    },
+    {
+     "name": "Hunan University",
+     "ror": "05htk5m33"
+    },
+    {
+     "name": "NUS",
+     "ror": "01tgyzw49"
     }
    ],
    "thumb": "data/thumbs/2611.28574.jpg",
    "thumb_w": 640,
-   "thumb_h": 249
+   "thumb_h": 249,
+   "summary": {
+    "zh": "EvoViM 让冻结的多模态模型把自身交互经验递归改写为一份视觉程序，直接在像素上保留并调用视觉证据；在六项视觉匹配、空间回忆与序列决策任务上，其留出回合平均分比最强基线 AutoMem 高 31.3–47.6 分。",
+    "en": "EvoViM lets a frozen multimodal model recursively rewrite its interaction experience into a visual program that keeps and uses pixel evidence; it beats AutoMem by 31.3-47.6 points on six held-out tasks."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28849",
@@ -1170,6 +1503,9 @@
    "updated": "2026-11-21T15:02:04Z",
    "comment": "29 pages and 9 figures",
    "tags": [
+    "safety",
+    "multimodal",
+    "alignment",
     "benchmark"
    ],
    "hf_upvotes": 1,
@@ -1184,7 +1520,12 @@
    ],
    "thumb": "data/thumbs/2611.28849.jpg",
    "thumb_w": 394,
-   "thumb_h": 362
+   "thumb_h": 362,
+   "summary": {
+    "zh": "JudiAct 将多模态安全干预分为 allow、warn、review、refuse 四类动作，构建 20,126 条审计训练语料与 JudiBench，先分别陈述来源证据、适用条件与规则适用再核对原始输入，在 JudiBench 上 request 与 answer 的 Macro-F1 较 4B 骨干提升超 28 个百分点，并将 MM-SafetyBench 攻击成功率从 40.78% 降至 25.30%。",
+    "en": "JudiAct frames multimodal safety intervention as four actions (allow, warn, review, refuse), building 20,126 training audits and JudiBench; it improves request and answer Macro-F1 by over 28 points over its 4B backbone and cuts MM-SafetyBench attack success from 40.78% to 25.30%."
+   },
+   "summary_source": "deepseek-flash"
   }
  ]
 }
