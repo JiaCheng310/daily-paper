@@ -570,5 +570,4104 @@
   "thumb": "data/thumbs/2611.34453.jpg",
   "w": 640,
   "h": 246
+ },
+ "2611.34449": {
+  "orgs": [
+   "Horizon Robotics"
+  ],
+  "affils": [
+   "Horizon Robotics HoloBrain Team"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34449.jpg",
+  "w": 640,
+  "h": 211
+ },
+ "2611.34428": {
+  "orgs": [
+   "University of Southern Denmark",
+   "Embry-Riddle Aeronautical University"
+  ],
+  "affils": [
+   "SDU Robotics, The Maersk Mc-Kinney Moller Institute, University of Southern Denmark, Denmark.",
+   "Department of Mechanical Engineering, Embry-Riddle Aeronautical University, United States."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34428.jpg",
+  "w": 640,
+  "h": 257
+ },
+ "2611.34422": {
+  "orgs": [
+   "TU Munich",
+   "Munich Center for Machine Learning"
+  ],
+  "affils": [
+   "Technical University of Munich",
+   "Munich Center for Machine Learning"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34422.jpg",
+  "w": 498,
+  "h": 440
+ },
+ "2611.34416": {
+  "orgs": [
+   "University of Alberta",
+   "Harbin Institute of Technology",
+   "Fudan University"
+  ],
+  "affils": [
+   "TECHNICAL REPORT |\nNovember 2026\nCHASE: Curiosity-Guided Skill Acquisition\nfor Embodied Task Execution\nZixuan Wang1\nWei Zhang2\nChenlei Zhu3\nNaiyu Chen3\nXihua Wang1\nJie Chen1,3,*\n1Department of Electrical and Computer Engineering, University of Alberta, Edmonton, Canada\n2Harbin Institute of Technology\n3School of Biomedical Engineering, Fudan University, China\n*Corresponding author"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34416.jpg",
+  "w": 409,
+  "h": 345
+ },
+ "2611.34408": {
+  "orgs": [],
+  "affils": [
+   "1\nEmbodied Lower-limb Exoskeleton Assistance:\nSurvey, Challenges, and Perspectives\nXiao-Yin Liu, Guotao Li*, Robert Riener, Zeng-Guang Hou*,"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34408.jpg",
+  "w": 484,
+  "h": 214
+ },
+ "2611.34403": {
+  "orgs": [
+   "Tsinghua University"
+  ],
+  "affils": [
+   "Recoverability policy editing for closed-loop\nsafety in autonomous driving\nYang Guan1*, Shengbo Eben Li1,2*\n1 School of Vehicle and Mobility, Tsinghua University, Beijing, China\n2 College of AI, Tsinghua University, Beijing, China\n* Corresponding authors: yguan@tsinghua.edu.cn, lishbo@tsinghua.edu.cn"
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.34403.jpg",
+  "w": 440,
+  "h": 440
+ },
+ "2611.34352": {
+  "orgs": [
+   "Nankai University",
+   "Beijing Zhongguancun Academy",
+   "University of Science and Technology of China",
+   "Harbin Institute of Technology",
+   "Chinese Academy of Sciences",
+   "Zhejiang University",
+   "Eastern Institute of Technology"
+  ],
+  "affils": [
+   "Nankai University",
+   "Beijing Zhongguancun Academy",
+   "University of Science and Technology of China",
+   "Harbin Institute of Technology",
+   "University of the Chinese Academy of Sciences",
+   "Zhejiang University",
+   "Eastern Institute of Technology, Ningbo"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34352.jpg",
+  "w": 640,
+  "h": 289
+ },
+ "2611.34328": {
+  "orgs": [
+   "LUDO robotics",
+   "KRAFTON",
+   "Seoul National Universityludorobotics.ai krafton.com"
+  ],
+  "affils": [
+   "LUDO robotics",
+   "KRAFTON, Inc.",
+   "Seoul National Universityludorobotics.ai krafton.com*Equal contribution."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34328.jpg",
+  "w": 430,
+  "h": 355
+ },
+ "2611.34302": {
+  "orgs": [
+   "Wuhan University",
+   "719th Research Institute of China State Shipbuilding Corporation Limited",
+   "Style3D Research"
+  ],
+  "affils": [
+   "School of Computer Science, Wuhan University, Wuhan 430072, China",
+   "School of Robotics, Wuhan University, Wuhan 430072, China",
+   "The 719th Research Institute of China State Shipbuilding Corporation Limited, Wuhan 430064, China",
+   "Style3D Research, China",
+   "Institute of Technological Sciences, Wuhan University, Wuhan 430072, China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34302.jpg",
+  "w": 615,
+  "h": 355
+ },
+ "2611.34297": {
+  "orgs": [],
+  "affils": [
+   "BOT-Scale: A Traceable Evaluation Methodology for Robotic\nManipulation\nYunfei Xue\nKemi Chen\nWeiling Chen\nWei Gao\nTiesong Zhao\nZheng-Jun Zha"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34297.jpg",
+  "w": 528,
+  "h": 440
+ },
+ "2611.34288": {
+  "orgs": [
+   "Tongji University",
+   "Huawei Technologies",
+   "Zhejiang University"
+  ],
+  "affils": [
+   "Rehearse in 3D, Render in 2D:\nPhysically Consistent and Editable Robot World Models\nGuangyu Liu1\nHanzhang Wang2\nHuijia Zhang2\nHanbei Zhan3\nLinjie Hu2\nBin Xiao2\nXuan Zhou2\nDong Zhang2\nHanwei Liu2,*\n1Tongji University\n2Huawei Technologies Ltd.\n3Zhejiang University\n*Corresponding author\nFigure 1. Rehearse in 3D, render in 2D. From an initial RGB-D observation and robot actions, RehearsalWorld rehearses interactions\nin 3D and renders videos, enabling material and viewpoint editing. The bar chart compares gripper-relative offsets for PointWorld and\nRehearsalWorld across deformable, articulated, and rigid objects."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34288.jpg",
+  "w": 640,
+  "h": 223
+ },
+ "2611.34287": {
+  "orgs": [
+   "Skolkovo Institute of Science and Technology",
+   "R&D Center"
+  ],
+  "affils": [
+   "Intelligent Space Robotics Laboratory, Skolkovo Institute of Science and Technology, Moscow, Russian Federation",
+   "R&D Center, MWS, Moscow, Russian Federation"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34287.jpg",
+  "w": 640,
+  "h": 266
+ },
+ "2611.34280": {
+  "orgs": [
+   "Wuhan University",
+   "Style3D Research",
+   "State Key Laboratory of Intelligent Vehicle Safety Technology"
+  ],
+  "affils": [
+   "School of Computer Science, Wuhan University, Wuhan, China",
+   "School of Robotics, Wuhan University, Wuhan, China",
+   "Style3D Research, China",
+   "State Key Laboratory of Intelligent Vehicle Safety Technology, Changan Automobile, China",
+   "Institute of Technological Sciences, Wuhan University, Wuhan, China",
+   "Correspondence: Miao Li (miao.li@whu.edu.cn)"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34280.jpg",
+  "w": 640,
+  "h": 249
+ },
+ "2611.34257": {
+  "orgs": [
+   "Harbin Institute of Technology",
+   "ACE Robotics",
+   "Zhejiang University"
+  ],
+  "affils": [
+   "Harbin Institute of Technology",
+   "ACE Robotics",
+   "Zhejiang University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34257.jpg",
+  "w": 474,
+  "h": 440
+ },
+ "2611.34246": {
+  "orgs": [
+   "Northeastern University",
+   "University College London"
+  ],
+  "affils": [
+   "Institute for Experiential Robotics, Northeastern University, Boston, Massachusetts, USA.",
+   "Department of Computer Science, University College London, Gower Street, WC1E 6BT, London, UK. d.kanoulas@ucl.ac.uk",
+   "Archimedes/Athena RC, Greece."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34246.jpg",
+  "w": 584,
+  "h": 440
+ },
+ "2611.34148": {
+  "orgs": [
+   "Chinese Academy of Sciences",
+   "D-Robotics"
+  ],
+  "affils": [
+   "Institute of Automation, Chinese Academy of Sciences",
+   "D-Robotics",
+   "School of Artificial Intelligence, University of Chinese Academy of Sciences{yanglicheng2026, hu.su}@ia.ac.cn, wei.sui@d-robotics.cc"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34148.jpg",
+  "w": 640,
+  "h": 297
+ },
+ "2611.34130": {
+  "orgs": [
+   "Zhejiang University",
+   "Nanjing University"
+  ],
+  "affils": [
+   "Zhejiang University",
+   "Nanjing University*Corresponding author"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34130.jpg",
+  "w": 327,
+  "h": 440
+ },
+ "2611.34128": {
+  "orgs": [
+   "Hong Kong Polytechnic University"
+  ],
+  "affils": [
+   "vLAR Group",
+   "DSAI, The Hong Kong Polytechnic University;",
+   "Regressor, Inc.{shenxing.wei,jinxi.li,zihui.zhang}@connect.polyu.hk, bo.yang@polyu.edu.hk"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34128.jpg",
+  "w": 640,
+  "h": 331
+ },
+ "2611.34124": {
+  "orgs": [
+   "NVIDIA"
+  ],
+  "affils": [
+   "Nanyang Technological University ⋅\\cdot KTH Royal Institute of Technology ⋅\\cdot NVIDIA",
+   "Project lead ⋅\\cdot Corresponding author"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34124.jpg",
+  "w": 640,
+  "h": 242
+ },
+ "2611.34117": {
+  "orgs": [
+   "Tsinghua University"
+  ],
+  "affils": [
+   "Tsinghua University Beihang University Manifold AI*Equal contribution. †Corresponding authors."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34117.jpg",
+  "w": 640,
+  "h": 288
+ },
+ "2611.34115": {
+  "orgs": [
+   "Harbin Institute of Technology (hit.edu.cn)",
+   "Hong Kong Polytechnic University (polyu.edu.hk)",
+   "Southeast University (seu.edu.cn)"
+  ],
+  "affils": [
+   "M3AIL\nA Simple Yet Effective Agent for Open-World Aerial\nObject Search\nJitai Hao1,∗Liangxing Yang1,∗Zhenyang Li2 Fan Liu3 Qiang Huang1,† Jun Yu1,†\n1Harbin Institute of Technology (hit.edu.cn)\n2Hong Kong Polytechnic University (polyu.edu.hk)\n3Southeast University (seu.edu.cn)\n∗Equal contribution.\n†Corresponding authors.\nBelief Maps (AeroBelief)\nOctree Memory (OctMem-Agent)\nWorld Model (SearchWorld)\n①Select\nFrozen VLM Agent\n③Check & Halt\nObserve Again\nPossible \nCollision!\nSimpleUAV\nUAV-ON  SR\n41.6% (+17.8%)\nHow Far Can a Minimal, Training-Free VLM Agent Go\nFigure 1 Stronger aerial search with a minimal agent. Representative prior systems (top) use semantic belief maps,\nexplicit spatial memory, or learned world models. SimpleUAV (bottom) uses a frozen VLM in a local depth-guided\nclosed loop, requiring neither persistent spatial maps nor task-specific training, yet improves success rate (SR) by 17.8%\nover the strongest prior result."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34115.jpg",
+  "w": 640,
+  "h": 357
+ },
+ "2611.34054": {
+  "orgs": [
+   "University of Southern California",
+   "Shanghai University"
+  ],
+  "affils": [
+   "University of Southern California",
+   "Shanghai University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34054.jpg",
+  "w": 394,
+  "h": 378
+ },
+ "2611.34053": {
+  "orgs": [
+   "Carnegie Mellon University"
+  ],
+  "affils": [
+   "\n\nRuogu Li\n\n   \nEaston R. Potokar\n\n   \nMichael Kaess\n††thanks: Authors are with the Robotics Institute, Carnegie Mellon University,\nPittsburgh, PA, USA. {ruoguli,potokar,kaess}@cmu.edu."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34053.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.34046": {
+  "orgs": [
+   "University of Zurich"
+  ],
+  "affils": [
+   "Robotics and Perception Group, University of Zurich, Switzerland"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34046.jpg",
+  "w": 390,
+  "h": 349
+ },
+ "2611.34043": {
+  "orgs": [
+   "HKU",
+   "HKUST"
+  ],
+  "affils": [
+   "\n\n\n\nKwunhang Wong1,∗ Yang Bai2,3,∗ Qingyang Bao1 Liudi Yang4 Chenzhi Liu1 Jiehong Lin1\nWei Huang1 Lin Li5 Ziyuan Liu6 Yujie Yang1 Gitta Kutyniok2,3 Zhongrui Wang7,† Xiaojuan Qi1,†\n1The University of Hong Kong  2LMU Munich  3Munich Center for Machine Learning (MCML)  4University of Freiburg\n5HKUST  6Huawei Heisenberg Research Center (Munich)  7Southern University of Science and Technology\n∗Equal contribution   †Corresponding authors:\nwangzr@sustech.edu.cn ;\nxjqi@eee.hku.hk\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34043.jpg",
+  "w": 640,
+  "h": 203
+ },
+ "2611.34020": {
+  "orgs": [
+   "Shanghai Jiao Tong University"
+  ],
+  "affils": [
+   "\n\nFangyu Sun\n\n  \nGuanyan Wu\n\n  \nYang Deng\n\n  \nJiahao Cui\n\n  \nFanxing Li\n\n  \nYuxiang Huang\n\n  \nWenxian Yu\n\n  \nDanping Zou\n††thanks: Manuscript received: May 19, 2026; Revised: July 19, 2026; Accepted: September 10, 2026. This paper was recommended for publication by Editor Giuseppe Loianno upon evaluation of the Associate Editor and Reviewers’ comments. This work was supported by the National Science Foundation of China (62073214).(Corresponding author: Danping Zou.)††thanks: All authors are with the School of Automation and Perception, Shanghai Jiao Tong University, China (e-mail: dpzou@sjtu.edu.cn).††thanks: Digital Object Identifier (DOI): see top of this page."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34020.jpg",
+  "w": 640,
+  "h": 397
+ },
+ "2611.34014": {
+  "orgs": [
+   "TU Munich"
+  ],
+  "affils": [
+   "\n\nRuncong Wang \n††thanks: Runcong Wang is with the Technical University of Munich."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34014.jpg",
+  "w": 640,
+  "h": 274
+ },
+ "2611.33993": {
+  "orgs": [
+   "Harbin Institute of Technology",
+   "University of Southern California",
+   "Yinwang Intelligent Technology",
+   "NUS"
+  ],
+  "affils": [
+   "Lennox Wei, Jiaqi Yao, Shixin Sun, Shaohui Liu and Wangmeng Zuo are with School of Computer Science and Technology, Faculty of Computing, Harbin Institute of Technology, Harbin 150001, China.",
+   "Yuanzheng Zhang is with University of Southern California, Los Angeles, CA 90089, USA.",
+   "Jianhua Han and Meng Tian are with Yinwang Intelligent Technology Co., Ltd., Shanghai 200135, China.",
+   "Meng Tian is with National University of Singapore, Singapore 119077, Singapore."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33993.jpg",
+  "w": 366,
+  "h": 440
+ },
+ "2611.33991": {
+  "orgs": [
+   "Harbin Institute of Technology",
+   "University of Southern California",
+   "Yinwang Intelligent Technology",
+   "NUS"
+  ],
+  "affils": [
+   "Lennox Wei, Jiaqi Yao, Shixin Sun, Shaohui Liu and Wangmeng Zuo are with School of Computer Science and Technology, Faculty of Computing, Harbin Institute of Technology, Harbin 150001, China.",
+   "Yuanzheng Zhang is with University of Southern California, Los Angeles, CA 90089, USA.",
+   "Jianhua Han and Meng Tian are with Yinwang Intelligent Technology Co., Ltd., Shanghai 200135, China.",
+   "Meng Tian is with National University of Singapore, Singapore 119077, Singapore."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33991.jpg",
+  "w": 480,
+  "h": 440
+ },
+ "2611.33963": {
+  "orgs": [
+   "UC Berkeley 2University of Toronto",
+   "MIT"
+  ],
+  "affils": [
+   "\n\nYuze Zhu1  Jacky Li2  Yusen Luo3  Ken Jiankun Zheng1\n\nChancharik Mitra4  Trevor Darrell1  Roei Herzig1\n\n\n\n\n\n1University of California, Berkeley  2University of Toronto\n\n3University of Southern California  4Massachusetts Institute of Technology\n\n\n\nhttps://headlight-wam.github.io/\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33963.jpg",
+  "w": 640,
+  "h": 400
+ },
+ "2611.33925": {
+  "orgs": [
+   "Zhejiang University Shanghai Innovation Institute"
+  ],
+  "affils": [
+   "\n\n\n\nZhiyue Zhao Mingyu Liu Bolin Zhang Liyang Li Guangyu Huang Canyu Zhao Jinchuan Shi Haokai Zhang Hao Chen Chunhua Shen\nZhejiang University  Shanghai Innovation Institute\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33925.jpg",
+  "w": 513,
+  "h": 440
+ },
+ "2611.33922": {
+  "orgs": [
+   "Peking University"
+  ],
+  "affils": [
+   "\n\nLisiyu Pan*Ting Huang*\n\n  \nZeyu Zhang\n\n  \nHao TangSchool of Computer Science, Peking University\n\n  \n*Equal contribution. Project lead. Corresponding author: bjdxtanghao@gmail.com\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33922.jpg",
+  "w": 640,
+  "h": 320
+ },
+ "2611.33915": {
+  "orgs": [
+   "NUS"
+  ],
+  "affils": [
+   "Nanyang Technological University Microsoft Research National University of SingaporeProject Page GitHub"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33915.jpg",
+  "w": 640,
+  "h": 266
+ },
+ "2611.33914": {
+  "orgs": [
+   "Fudan University",
+   "Shanghai Innovation Institute",
+   "Logos Intelligence Lab"
+  ],
+  "affils": [
+   "School of Data Science, Fudan University",
+   "Shanghai Innovation Institute",
+   "Logos Intelligence Labhttps://logosintelligencelab.github.io/X-World/"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33914.jpg",
+  "w": 640,
+  "h": 304
+ },
+ "2611.33911": {
+  "orgs": [
+   "KAIST"
+  ],
+  "affils": [
+   "The authors are with the Department of Mechanical Engineering, Korea Advanced Institute of Science and Technology (KAIST), Daejeon 34141, Republic of Korea. {woojin0624, jhwangbo}@kaist.ac.kr"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33911.jpg",
+  "w": 640,
+  "h": 334
+ },
+ "2611.33880": {
+  "orgs": [
+   "Toyota Central R&D Labs"
+  ],
+  "affils": [
+   "K. Oishi and S. Ito are with Toyota Central R&D Labs., Inc."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33880.jpg",
+  "w": 578,
+  "h": 440
+ },
+ "2611.33865": {
+  "orgs": [
+   "Tsinghua University"
+  ],
+  "affils": [
+   "Tsinghua University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33865.jpg",
+  "w": 408,
+  "h": 350
+ },
+ "2611.33828": {
+  "orgs": [
+   "University of Tokyo",
+   "Research Center"
+  ],
+  "affils": [
+   "\n\nRikuto Hidaka\n\n  \nTsung-Yuan Chen\n\n  \nKento Kawaharazuka\n††thanks: $ˆ1$College of Arts and Sciences, The University\nof Tokyo, Tokyo, Japan. rhdkreal@gmail.com††thanks: $ˆ2$Next Generation Artificial Intelligence\nResearch Center, Graduate School of Information Science and Technology,\nThe University of Tokyo, Tokyo, Japan. chen.tsungyuan@g.ecc.u-tokyo.ac.jp††thanks: $ˆ3$Department of Mechano-Informatics, Graduate\nSchool of Information Science and Technology, The University of Tokyo,\nTokyo, Japan. kawaharazuka@jsk.imi.i.u-tokyo.ac.jp"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33828.jpg",
+  "w": 391,
+  "h": 440
+ },
+ "2611.33816": {
+  "orgs": [],
+  "affils": [
+   "eε: Does Initial Noise Induce Directional Bias in\nVision-Language-Action Models?\nJunmyeong Lee1, Dongmin Shin1,2, Wooseok Jeon1, JunGyu Lee1, Seunghyun Shin3, Hae-Gon Jeon1,†\nhttps://june65.github.io/Epsilon-Tilde"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.33816.jpg",
+  "w": 397,
+  "h": 440
+ },
+ "2611.33804": {
+  "orgs": [
+   "Matemáticas del Instituto Politécnico Nacional"
+  ],
+  "affils": [
+   "\n\nM. Perez\n\nEscuela Superior de Física\ny Matemáticas del Instituto Politécnico Nacional, Edificio 9, Unidad\nProfesional Adolfo López Mateos, 07300 Mexico City, Mexico.\n\n  \nJ. Flores11footnotemark: \n          1\n          \n          \n          \n        \n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.33804.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.33799": {
+  "orgs": [
+   "Shanghai Jiao Tong University",
+   "Eastern Institute of Technology",
+   "Columbia University",
+   "Nanjing University",
+   "Beijing Zhongguancun Academy"
+  ],
+  "affils": [
+   "Shanghai Jiao Tong University",
+   "Eastern Institute of Technology, Ningbo",
+   "Columbia University",
+   "Nanjing University",
+   "Beijing Zhongguancun Academy"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33799.jpg",
+  "w": 640,
+  "h": 238
+ },
+ "2611.33797": {
+  "orgs": [
+   "HKUST",
+   "University of Sydney",
+   "University of Western Australia"
+  ],
+  "affils": [
+   "The Hong Kong University of Science and Technology (Guangzhou)",
+   "The University of Sydney",
+   "The Hong Kong University of Science and Technology",
+   "The University of Western Australia"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33797.jpg",
+  "w": 408,
+  "h": 278
+ },
+ "2611.33794": {
+  "orgs": [
+   "University of Wisconsin–Madison",
+   "UC Santa CruzProject page:"
+  ],
+  "affils": [
+   "University of Wisconsin–Madison",
+   "University of California, Santa CruzProject page: https://zilin-huang.github.io/SealedLoop/"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33794.jpg",
+  "w": 640,
+  "h": 241
+ },
+ "2611.33793": {
+  "orgs": [
+   "Shanghai Jiao Tong University"
+  ],
+  "affils": [
+   "Dachuan Liu, Shizhe Zhao, and Zhongqiang Ren are with Shanghai Jiao Tong University, Shanghai, China dachuan@umich.edu, {shizhe.zhao, zhongqiang.ren}@sjtu.edu.cn"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.33793.jpg",
+  "w": 383,
+  "h": 440
+ },
+ "2611.33779": {
+  "orgs": [
+   "University of International Business and Economics (uibe.edu.cn)",
+   "Tsinghua University",
+   "Peking University",
+   "Chinese Academy of Sciences",
+   "Beihang University (buaa.edu.cn)",
+   "Institute of AI for Industries (iaii.ac.cn)"
+  ],
+  "affils": [
+   "University of International Business and Economics (uibe.edu.cn)",
+   "First author.*Corresponding author.",
+   "Tsinghua University (tsinghua.edu.cn)",
+   "Peking University (pku.edu.cn)",
+   "University of the Chinese Academy of Sciences (ucas.ac.cn)",
+   "QiYuanLab (qiyuanlab.com)",
+   "Beihang University (buaa.edu.cn)",
+   "Institute of Software, Chinese Academy of Sciences (iscas.ac.cn)",
+   "Institute of AI for Industries (iaii.ac.cn)"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33779.jpg",
+  "w": 640,
+  "h": 381
+ },
+ "2611.33772": {
+  "orgs": [
+   "University of Wisconsin–Madison"
+  ],
+  "affils": [
+   "University of Wisconsin–Madison",
+   "Project page: https://zilin-huang.github.io/Triage/"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33772.jpg",
+  "w": 640,
+  "h": 415
+ },
+ "2611.33769": {
+  "orgs": [
+   "NTU"
+  ],
+  "affils": [
+   "Nanyang Technological University, Singapore*Equal contribution †Corresponding author"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33769.jpg",
+  "w": 640,
+  "h": 280
+ },
+ "2611.33739": {
+  "orgs": [
+   "Xiamen University Malaysia",
+   "Beijing Zhongke Huiling Robot Technology",
+   "Chinese Academy of Sciences"
+  ],
+  "affils": [
+   "School of Artificial Intelligence and Robotics, Xiamen University Malaysia, Sepang, Selangor, Malaysia",
+   "Embodied AI, Beijing Zhongke Huiling Robot Technology Co., Ltd., Beijing, China",
+   "Institute of Automation, Chinese Academy of Sciences, Beijing, China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33739.jpg",
+  "w": 640,
+  "h": 287
+ },
+ "2611.33733": {
+  "orgs": [],
+  "affils": [
+   "PROVE: Predict-to-Specify and Observe-to-Verify for Human-Aligned Evaluation\nof Mobile Manipulation\nBowen Lyu\nYunan Liu\nLiaoyuan Fan\nQinchuan Cheng\nJiafei Duan\nCheston Tan\nShijie Li"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.33733.jpg",
+  "w": 256,
+  "h": 256
+ },
+ "2611.33731": {
+  "orgs": [
+   "CosmicFlow Technology"
+  ],
+  "affils": [
+   "CosmicFlow Technology",
+   "qwsniuab@gmail.com, codyjcai@gmail.com"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33731.jpg",
+  "w": 640,
+  "h": 320
+ },
+ "2611.33722": {
+  "orgs": [
+   "KAIST"
+  ],
+  "affils": [
+   "\n\nMinseok Seo\n\nmailto:minseok.seo@kaist.ac.krminseok.seo@kaist.ac.krmailto:hskim98@kaist.ac.krhskim98@kaist.ac.krmailto:changick@kaist.ac.krchangick@kaist.ac.kr\n\n These authors contributed equally.\n\n  \nHee-Seon KimChangick KimSchool of Electrical Engineering, Korea Advanced Institute of Science and Technology (KAIST)\n\n These authors contributed equally.\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33722.jpg",
+  "w": 640,
+  "h": 130
+ },
+ "2611.33721": {
+  "orgs": [
+   "NTU",
+   "Huazhong University of Science and Technology"
+  ],
+  "affils": [
+   "Nanyang Technological University",
+   "Huazhong University of Science and Technology"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33721.jpg",
+  "w": 640,
+  "h": 343
+ },
+ "2611.33710": {
+  "orgs": [
+   "Harbin Institute of Technology",
+   "Robotics Foundation Model Team"
+  ],
+  "affils": [
+   "Harbin Institute of Technology, Shenzhen",
+   "Robotics Foundation Model Team, XPENG"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33710.jpg",
+  "w": 640,
+  "h": 299
+ },
+ "2611.33705": {
+  "orgs": [
+   "Beihang University",
+   "Beijing Humanoid Robot Innovation Center"
+  ],
+  "affils": [
+   "\n\n\n\nYuxin Lin1    Pei Ren2,†    Yirong Yang1    Xuxin Lv1    Xingchuang Liao1    Diyuan Hou1\n\nJiale He1    Zhengping Che2    Yongfei Zhang1    Wenjun Wu1,∗    Zhaoxin Fan1,∗\n\n1Beihang University, Beijing, China\n\n2Beijing Humanoid Robot Innovation Center, Beijing, China\n\n\n*Corresponding authors  †Project leader  Emails: {zhaoxinf, wwj09315}@buaa.edu.cn\n\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33705.jpg",
+  "w": 640,
+  "h": 210
+ },
+ "2611.33702": {
+  "orgs": [
+   "laboratory substrates",
+   "Georgia Institute of Technology",
+   "UC Berkeley",
+   "Northwestern University"
+  ],
+  "affils": [
+   "Systematic study of the performance of small robots on controlled\nlaboratory substrates\nChen Lia, Aaron M. Hooverb, Paul Birkmeyerb, Paul B. Umbanhowarc,\nRonald S. Fearingb, Daniel I. Goldmana\naSchool of Physics, Georgia Institute of Technology, Atlanta, GA 30332, USA\nbDepartment of Electrical Engineering and Computer Sciences, University of California, Berkeley, Berkeley, CA 94720, USA\ncDepartment of Mechanical Engineering, Northwestern University, Evanston, IL 60208, USA\nPublished in Proceedings of SPIE 7679, 76790Z (2010).\nDOI: 10.1117/12.851047"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.33702.jpg",
+  "w": 574,
+  "h": 440
+ },
+ "2611.33654": {
+  "orgs": [
+   "University of Georgia"
+  ],
+  "affils": [
+   "University of Georgia, United States",
+   "zb28097@uga.edu, Cami.Li@uga.edu",
+   "*Corresponding author"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33654.jpg",
+  "w": 640,
+  "h": 277
+ },
+ "2611.33635": {
+  "orgs": [
+   "HKUST",
+   "Tongji University· 4City University of Hong Kong"
+  ],
+  "affils": [
+   "FreshVLA: Frequency-Regularized Time Scale\nHierarchical Latent Actions for\nVision-Language-Action Models\nJiaming Liang1, 2, ∗, Yifeng Zhan1, ∗, Rongyi He1, ∗, Mu Li2, 3, ∗, Jiaqi Fan1, Zhiyuan Zhang1,\nQiwei Liang1, Zhengjie Zhang1, Boyang Cai1, Ningyuan Zhang2, †, Xingjian Jing4, Qiang Nie1, ‡\n1The Hong Kong University of Science and Technology (Guangzhou)· 2XPENG Robotics· 3Shanghai\nInstitute of Intelligent Science and Technology, Tongji University· 4City University of Hong Kong\n∗Equal Contribution,\n†Project Lead,\n‡Corresponding Author\nLearning reusable latent actions from action-free videos offers an effective route to improving Vision-Language-\nAction (VLA) policies. However, reconstruction-oriented latent actions do not necessarily benefit policy\nlearning: as they may encode task-irrelevant static appearance with scene identity, or entangle slowly varying\ntask progress with fine-grained execution dynamics in limited discrete code. We propose FreshVLA, a\nVLA framework built on a frequency-guided, dynamics-sensitive learning paradigm for acquiring temporally\nhierarchical continuous latent actions. FreshVLA uses a high-pass prior to guide visual transition encoding\ntoward dynamical regions, thereby reducing reliance on static appearance cues. It further organizes latent\nactions into coarse-grained task progress and fine-grained execution dynamics through cross-timescale sampling\nand frequency-domain regularization, enhancing their capacity to represent long-horizon behaviors. During\npolicy training, we freeze the pretrained latent action encoder and transfer its representations to robot\ncontrol through joint flow-matching of latent and robot actions. FreshVLA achieves 98.2% average success\non LIBERO and 98.0% on LIBERO-Long, exceeding GR00T-N1.6 on the latter by 3.6%. It also reaches\nan average sequence length of 4.52 on CALVIN and strong overall success rate of 80.4% in the zero-shot\nLIBERO-PLUS evaluation. Furthermore, FreshVLA exhibits greater robustness to visual perturbations and a\nmore distinct division of roles between two branches in modeling low- and high-frequency motion, respectively.\nIn 35-step action regression, it achieves a 51.3-percentage-point higher relative error reduction than its\nhierarchical discrete counterpart. Real-world experiments demonstrate that FreshVLA improves the average\nsuccess rate over π0.5 by 7.5%. The FreshVLA project page is available at https://freshvla.github.io/.\nKeywords: latent actions, vision-language-action models, temporal frequency\n1 Introduction\nVision-Language-Action (VLA) models aim to translate language-conditioned visual understanding into\nexecutable robot behavior. Recent systems have advanced this paradigm through larger multimodal backbones,\nbroader robot datasets, and more expressive action decoders [1–4]. Nevertheless, a fundamental interface\nchallenge remains: policies must transform visual intent into temporally coherent control behavior. This\nrequires representing the visual transitions that should occur in a scene, including which object should move,\nhow contact relationships evolve, and how local execution supports longer-horizon task progress.\nLatent Action Models (LAMs) provide a natural means of learning such representations. By predicting\nor reconstructing observation transitions, LAMs infer latent actions from adjacent frames or observation\nsequences [5–7]. These variables can provide supervision for policy pretraining while reducing the need to\ndirectly align raw action spaces across embodiments. However, reconstruction objectives do not guarantee that\nlatent actions capture controllable and task-relevant changes. They may instead encode background layouts,\nstatic appearance, or other cues that help predict future observations but are only weakly related to control [8–\n10]. Furthermore, manipulation trajectories contain both slowly evolving task progress, such as approaching\nand transporting an object, and local execution dynamics, such as grasp adjustments and release timing. Many\nprior LAMs represent fixed-interval visual transitions with vector-quantized codes [5, 7, 11], or continuous\nformulations with a single latent transition scale [6, 12], which may obscure this multi-timescale structure and\n1\narXiv:2611.33635v1  [cs.RO]  25 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.33635.jpg",
+  "w": 640,
+  "h": 302
+ },
+ "2611.33621": {
+  "orgs": [
+   "University of Georgia"
+  ],
+  "affils": [
+   "University of Georgia, United States",
+   "zb28097@uga.edu, Cami.Li@uga.edu",
+   "*Corresponding author"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33621.jpg",
+  "w": 397,
+  "h": 227
+ },
+ "2611.33586": {
+  "orgs": [
+   "University of Illinois Urbana-Champaign",
+   "University of Michigan",
+   "Toyota Motor North America"
+  ],
+  "affils": [
+   "Department of Electrical and Computer Engineering, University of Illinois Urbana-Champaign, Urbana, IL, 61801, USA {eyceel2, mitras}@illinois.edu",
+   "Department of Robotics, University of Michigan, Ann Arbor, MI, 48109, USA taekyung@umich.edu",
+   "Toyota Motor North America, Research & Development, Ann Arbor, MI, 48105, USA <first_name.last_name>@toyota.com"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33586.jpg",
+  "w": 640,
+  "h": 216
+ },
+ "2611.33579": {
+  "orgs": [],
+  "affils": [
+   "DexEngine: Scaling Human Demonstrations\ninto Physically Executable Whole-Robot Data\nWongyun Yu1,2\nHonggeun Kim1\nDonguk Lee2\nMinchan Kim2\nKyoung Whan Choe2\nMinsu Cho1,2†\n1POSTECH\n2RLWRLD\n wongyun-yu.github.io/dexengine\n§ github.com/wongyun-yu/DexEngine\nhuggingface.co/datasets/Wongyun/DexEngine"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.33579.jpg",
+  "w": 538,
+  "h": 440
+ },
+ "2611.33560": {
+  "orgs": [
+   "University of Amsterdam",
+   "South China Normal UniversityProject Page & Code"
+  ],
+  "affils": [
+   "University of Amsterdam",
+   "South China Normal UniversityProject Page & Code"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33560.jpg",
+  "w": 390,
+  "h": 396
+ },
+ "2611.33514": {
+  "orgs": [
+   "thanks: Independent Researcher"
+  ],
+  "affils": [
+   "\n\nAthanasios Zeris\n††thanks: Independent Researcher, Athens, Greece. Email: athzeris@gmail.com. ORCID: 0009-0002-6907-2400."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33514.jpg",
+  "w": 465,
+  "h": 191
+ },
+ "2611.33498": {
+  "orgs": [
+   "University of Zurich",
+   "ETH Zurich"
+  ],
+  "affils": [
+   "Elia Mergaert, Rong Zou, Roberto Pellerito, Simone Nascivera, and Davide Scaramuzza are with the Robotics and Perception Group, University of Zurich, Switzerland (https://rpg.ifi.uzh.ch/)",
+   "Elia Mergaert is with ETH Zurich, Switzerland."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33498.jpg",
+  "w": 587,
+  "h": 440
+ },
+ "2611.33467": {
+  "orgs": [
+   "University of Surrey",
+   "Locus Robotics"
+  ],
+  "affils": [
+   "\n\nFrank Tsu-Fang Lu1  Karthik Sundar Senthilkumar1  Christopher Thirgood1\n\nOscar Mendez2  Simon Hadfield1\n\n\n\n\n\n1CVSSP, University of Surrey\n2Locus Robotics\n\n\n\n{tsufanglu,k.senthilkumar,c.thirgood,s.hadfield}@surrey.ac.uk\nomendez@locusrobotics.com\n\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33467.jpg",
+  "w": 640,
+  "h": 205
+ },
+ "2611.33460": {
+  "orgs": [
+   "Clone Robotics",
+   "Tsinghua University",
+   "Peking University"
+  ],
+  "affils": [
+   "Clone Robotics",
+   "Tsinghua University",
+   "Peking University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33460.jpg",
+  "w": 640,
+  "h": 191
+ },
+ "2611.33439": {
+  "orgs": [
+   "Korea Advanced Institute of Science & Technology",
+   "CUHK",
+   "NTU"
+  ],
+  "affils": [
+   "Korea Advanced Institute of Science & Technology",
+   "Giga",
+   "The Chinese University of Hong Kong",
+   "Nanyang Technological University*Corresponding author: heye.huang@kaist.ac.kr"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33439.jpg",
+  "w": 450,
+  "h": 440
+ },
+ "2611.33407": {
+  "orgs": [
+   "Loyola University Chicago"
+  ],
+  "affils": [
+   "Department of Computer Science, Loyola University Chicago",
+   "{nhogg, mhyatt, nklingensmith, gthiruvathukal}@luc.edu"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33407.jpg",
+  "w": 640,
+  "h": 360
+ },
+ "2611.33398": {
+  "orgs": [
+   "Mitsubishi Electric Research Laboratories"
+  ],
+  "affils": [
+   "Virginia Tech",
+   "Mitsubishi Electric Research Laboratories"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.33398.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.33390": {
+  "orgs": [
+   "Carnegie Mellon University"
+  ],
+  "affils": [
+   "\n\n\n\nQineng Wang*1, Jianwen Lyu*1, Pingyue Zhang*1, Reuben Tan2†, Xiaoyu Huang3†,\n\nTonghe Zhang4†, Kangrui Wang1, Yelong Shen2, Jianfeng Gao2,\n\nGuanya Shi4, Ruohan Zhang1, Manling Li1\n\n\n\n1Northwestern University   2Microsoft   3UC Berkeley   4Carnegie Mellon University\n\n\n* Equal contribution; †{\\dagger} Core contributor.\n\n\n\nhttps://roboarc.embodied-first-exam.ai\n\n Website\n https://github.com/mll-lab-nu/RoboARC\n\n Code\n https://huggingface.co/datasets/RoboARC/RoboARC-runs\n\n Agent runs\n\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33390.jpg",
+  "w": 640,
+  "h": 391
+ },
+ "2611.33380": {
+  "orgs": [
+   "ETH Zurich",
+   "Trustworthy Robotics and AI Lab (TRAIL)"
+  ],
+  "affils": [
+   "The authors are with the Robotic Systems Lab, ETH Zürich, Switzerland. {margomez, mwilder, vklemm, patilv, mahutter}@ethz.ch",
+   "The authors are with the Trustworthy Robotics and AI Lab (TRAIL), IIT, Comillas (Spain). carlosmartinezcuenca@alu.comillas.edu, jtordesillas@comillas.edu"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33380.jpg",
+  "w": 640,
+  "h": 324
+ },
+ "2611.33352": {
+  "orgs": [
+   "South Dakota State University"
+  ],
+  "affils": [
+   "I. Rasool and S. Ahmed are with the Department of Mechanical Engineering, South Dakota State University, Brookings, SD 57007, USA. S. Ahmed ORCID: 0000-0001-8296-6025.",
+   "C. Pack is with the Department of Electrical Engineering and Computer Science, South Dakota State University, Brookings, SD 57007, USA. ORCID: 0000-0002-9876-4388."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33352.jpg",
+  "w": 640,
+  "h": 246
+ },
+ "2611.33158": {
+  "orgs": [
+   "University of Washington",
+   "Allen Institute for Artificial Intelligence",
+   "University of North Carolina",
+   "NUS"
+  ],
+  "affils": [
+   "University of Washington",
+   "Allen Institute for Artificial Intelligence",
+   "University of North Carolina at Chapel Hill",
+   "National University of Singapore *Equal contribution"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33158.jpg",
+  "w": 640,
+  "h": 357
+ },
+ "2611.33144": {
+  "orgs": [
+   "Peking University",
+   "Tongji University"
+  ],
+  "affils": [
+   "PyRUA-Dex: Learning Programmatic Policies for\nDexterous Bimanual Manipulation with Coding Agents\nFeixiang Ruan1,4∗, Guodong Lv1∗, Kewei Zhang1∗, Wenbo Huang1∗, Yintianrun Zhang1,\nQiang Wang1, Ruiyang Si1, Shunyu Yang1, Shulong Jiang1, Weicheng Duan4, Rui Ni1,\nJianxin Bi1,2, Lekai Wang1, Yuze Fan4, Haobo Li4, Zeliang Fu4, Jiankun Zhang5,\nDuomin Wang3, Enze Xie3, Daquan Zhou1†\n1Peking University, 2National University of Singapore, 3NVIDIA\n4Tongji University, 5University of Chicago\n∗Equal contribution, †Corresponding author"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.33144.jpg",
+  "w": 597,
+  "h": 440
+ },
+ "2611.33143": {
+  "orgs": [
+   "HKU",
+   "Innovation Institute"
+  ],
+  "affils": [
+   "ROAM-Bench: Evaluating Embodied Active Spatial\nIntelligence through Evidence Verification\nXingjian Ran1,4, Xiaoye Mo2, Sihao Liu1, Li Luo1, Taiqiang Wu1,4, Ji Zhao3,4,\nWenqi Shao4, Hongyang Li4,‡, Jiaqi Wang4,†, Bo Dai1\n1The University of Hong Kong, 2University of Electronic Science and Technology of China, 3Shanghai\nInnovation Institute, 4JD.com\n‡Project leader, †Corresponding author\nCode\nScene Assets\nProject Page"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.33143.jpg",
+  "w": 640,
+  "h": 359
+ },
+ "2611.33141": {
+  "orgs": [
+   "Carnegie Mellon University"
+  ],
+  "affils": [
+   "Carnegie Mellon University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33141.jpg",
+  "w": 640,
+  "h": 361
+ },
+ "2611.33130": {
+  "orgs": [
+   "Carnegie Mellon University",
+   "University of Washington",
+   "Toyota Research Institute",
+   "Princeton University Joint first authors. Correspondence emails: {kshitiz2"
+  ],
+  "affils": [
+   "Carnegie Mellon University",
+   "University of Washington",
+   "Toyota Research Institute",
+   "Princeton University #Joint first authors. Correspondence emails: {kshitiz2, zheyuanh}@andrew.cmu.edu"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33130.jpg",
+  "w": 640,
+  "h": 365
+ },
+ "2611.33118": {
+  "orgs": [
+   "University of Michigan"
+  ],
+  "affils": [
+   "\n\nTianxiang Lin, Sacchin Sundar, Fenghao Liu, Onur Bagoren, Katherine A. Skinner\n††thanks: T. Lin, S. Sundar, F. Liu, O. Bagoren, K.A. Skinner are with the Robotics Department, University of Michigan, Ann Arbor, MI, USA.\n{tianxian, sacchin, fenghao, obagoren, kskin}@umich.edu††thanks: This work was supported by the Office of Naval Research grant N00014-25-1-2039. Data used for experiments was collected in prior field expeditions supported by the NOAA Ocean Exploration Program under award #NA21OAR0110196."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33118.jpg",
+  "w": 640,
+  "h": 291
+ },
+ "2611.33054": {
+  "orgs": [
+   "HKU SJTU HKUST (GZ) SZU"
+  ],
+  "affils": [
+   "HKU SJTU HKUST (GZ) SZU *Equal contribution †Corresponding authorsProject page:http://embodisafety.github.io/"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33054.jpg",
+  "w": 640,
+  "h": 262
+ },
+ "2611.33040": {
+  "orgs": [
+   "Zhejiang University",
+   "Technische Universität Wien"
+  ],
+  "affils": [
+   "Zhejiang University, Hangzhou, China.",
+   "Technische Universität Wien, Vienna, Austria."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33040.jpg",
+  "w": 640,
+  "h": 360
+ },
+ "2611.33010": {
+  "orgs": [
+   "Weihao YuPeking UniversityCode:"
+  ],
+  "affils": [
+   "\n\nXuanchen Liu*, Hejun Zhang*,\nBoxuan Dong, Ying Wu\n\n  \nHeshuai Li\n\n  \nWen Gao\n\n  \nYonghong Tian\n\n  \nWeihao YuPeking UniversityCode: https://github.com/iPPLab/robodojo-mirror\n\n  \n*Equal contribution. Corresponding author:\nweihao@pku.edu.cn\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33010.jpg",
+  "w": 640,
+  "h": 304
+ },
+ "2611.32986": {
+  "orgs": [
+   "Yaran Chen Xi’an Jiaotong-Liverpool University"
+  ],
+  "affils": [
+   "\n\nHanzhao Xi\n\n  \nZhonghao Li\n\n  \nSuxuan Liu\n\n  \nShanghan Zhou\n\n  \nZesheng Chen\n\n  \nQiufeng Wang\n\n  \nYaran Chen*Xi’an Jiaotong-Liverpool University\n††thanks: *Corresponding author: Yaran Chen (email: yaran.chen@xjtlu.edu.cn)."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32986.jpg",
+  "w": 640,
+  "h": 240
+ },
+ "2611.32967": {
+  "orgs": [
+   "University of Bonn",
+   "Lamarr Institute",
+   "ETH Zurich",
+   "Microsoft :"
+  ],
+  "affils": [
+   "University of Bonn",
+   "Lamarr Institute",
+   "ETH Zurich",
+   "Microsoft*Corresponding author: rmohiudd@uni-bonn.de"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32967.jpg",
+  "w": 600,
+  "h": 393
+ },
+ "2611.32960": {
+  "orgs": [
+   "Federal Institute of Minas Gerais (IFMG)",
+   "University of Luxembourg"
+  ],
+  "affils": [
+   "Page 1 \nFrom Safety-Driven Redundancy to Value-Driven Architecture: \nAn ODD-Based Rationalization Framework for Level 4 Autonomous \nVehicles \nTiago Simão Ferreira1,*,  Farzad Fallahi2 \n1 Federal Institute of Minas Gerais (IFMG), Santa Luzia, Minas Gerais, Brazil \n2 University of Luxembourg, Luxembourg \n* Corresponding author: tiago.simao@ifmg.edu.br "
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.32960.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.32944": {
+  "orgs": [
+   "Australian National University AgiBot",
+   "HKUST",
+   "Beijing Institute of Technology"
+  ],
+  "affils": [
+   "The Australian National University AgiBot",
+   "The Hong Kong University of Science and Technology (Guangzhou)",
+   "Beijing Institute of Technology"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32944.jpg",
+  "w": 640,
+  "h": 258
+ },
+ "2611.32937": {
+  "orgs": [
+   "EPFL",
+   "Institute of Mechanical Intelligence",
+   "Loughborough University"
+  ],
+  "affils": [
+   "CREATE Lab, École Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland. (Email: huijiang.wang@epfl.ch)",
+   "Institute of Mechanical Intelligence, School of Advanced Studies Sant’Anna (SSSA), Pisa, Italy.",
+   "Department of Computer Science, Loughborough University, Loughborough, United Kingdom."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32937.jpg",
+  "w": 420,
+  "h": 363
+ },
+ "2611.32858": {
+  "orgs": [
+   "Karlsruhe Institute of Technology (KIT)",
+   "Robotics Institute Germany (RIG)"
+  ],
+  "affils": [
+   "Intuitive Robots Lab, Karlsruhe Institute of Technology (KIT), Germany",
+   "Robotics Institute Germany (RIG)"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32858.jpg",
+  "w": 640,
+  "h": 247
+ },
+ "2611.32846": {
+  "orgs": [
+   "NVIDIA"
+  ],
+  "affils": [
+   "NVIDIA"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32846.jpg",
+  "w": 390,
+  "h": 179
+ },
+ "2611.32813": {
+  "orgs": [
+   "Purdue University"
+  ],
+  "affils": [
+   "Guanlin Huang",
+   "Purdue University",
+   "*Equal contribution"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32813.jpg",
+  "w": 640,
+  "h": 220
+ },
+ "2611.32803": {
+  "orgs": [
+   "NUS"
+  ],
+  "affils": [
+   "Show Lab, National University of Singapore",
+   "*Equal contribution †Corresponding author"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32803.jpg",
+  "w": 640,
+  "h": 396
+ },
+ "2611.32797": {
+  "orgs": [
+   "University of Nottingham"
+  ],
+  "affils": [
+   "School of Computer Science, University of Nottingham ; Nottingham, United Kingdom ; aly.magassouba@nottingham.ac.uk"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32797.jpg",
+  "w": 292,
+  "h": 320
+ },
+ "2611.32788": {
+  "orgs": [
+   "thanks: $ˆ1$Tsinghua University. $ˆ2$DISCOVER Robotics. $ˆ $"
+  ],
+  "affils": [
+   "\n\nHaizhou Ge\n\n  \nMengshuo Wang\n\n  \nZhixing Chen\n\n  \nLei Han\n\n  \nChen Wang\n\n  \nLu Shi\n\n  \nGuyue Zhou\n\n  \nRuqi Huang\n††thanks: $ˆ1$Tsinghua University. $ˆ2$DISCOVER Robotics. $ˆ†$Corresponding authors.\n\n{ghz23, wangms25, chenzx24}@mails.tsinghua.edu.cn,\n{wangchen, zhouguyue}@air.tsinghua.edu.cn,\nlus@nvidia.com,\nruqihuang@sz.tsinghua.edu.cn,\nleo.han@discover-robotics.com"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32788.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.32786": {
+  "orgs": [
+   "Mohamed bin Zayed University of Artificial Intelligence",
+   "UC San Diego",
+   "NVIDIA"
+  ],
+  "affils": [
+   "Simulator-as-Proxy World Model for Robot Manipulation\nTingting Liao1, Mingjia Huo1,2, Hao Li1,3,*, Zhengzhong Liu1, Eric P. Xing1, Guangyi Liu1\n1Mohamed bin Zayed University of Artificial Intelligence\n2University of California, San Diego\n3Pinscreen\nProject Page: https://sim-pwm.pages.dev\nCode: https://github.com/TingtingLiao/SimPWM\nVideo world models for robots are increasingly conditioned on a simulated or rendered proxy\nof the scene, on the assumption that the video will show what the proxy shows. Testing this\nassumption requires a proxy whose state is explicit and can be perturbed. We present SimPWM\n(Simulator-as-Proxy World Model): given a calibrated camera, it represents, from the first frame\nalone, the robot by its 3D model and the objects the gripper may touch as 3D points; a rule-based\nsimulator with no trained parameters moves them under the actions, and a video model renders\nthe result. SimPWM returns the realistic video together with the simulated state. We then freeze\nthe simulated objects while the arm moves as recorded and check whether the video still shows the\nobject lifted. On DROID episodes from unseen setups, the answer differs for the arm and for the\nobjects. With each of three base video models, the arm follows the proxy (robot IoU 0.75–0.78,\nagainst at most 0.69 for end-to-end models); rendering the robot alone already gives this. What the\nsimulated objects add is the object state: against a robot-only proxy, they cut missed pick-ups from\n54% to 38%, and the video follows them only with some base models: on rigid objects, freezing\nthem lowers the lift rate of MiniMax-H3, fine-tuned on episodes whose simulation agrees with the\nreal video, from 42% to 10%, but that of LTX-2.3, trained on the same episodes, only from 57%\nto 49%, as if it inferred the grasp from the arm motion; more than half of the remaining lifts of\nMiniMax-H3 are of cloth and rope, which the simulator carries rigidly. With any base model, the\nsimulated state records what the simulation did; under perturbed actions, a video that disagrees\nwith it reveals that the video ignores the simulated state.\n1\nIntroduction\nAction-conditioned video world models take an observation and a sequence of robot actions and render\nthe future (Yang et al., 2024b; NVIDIA et al., 2025b; Zhu et al., 2025). They must follow the actions\nstrictly: the arm must move exactly as commanded, an object may move only when the gripper grasps\nit, and it must stay where it is released. To this end they are increasingly conditioned on a simulated or\nrendered proxy of the scene, such as the commanded robot rendered from its model (Kim et al., 2026), a\n4D occupancy sequence (Yang et al., 2026), structural controls such as depth (NVIDIA et al., 2025a) or a\nphysics simulation (Liu et al., 2024; Li et al., 2025b), on the assumption that the video will show what the\nproxy shows. Testing this assumption requires a proxy whose state is explicit and can be perturbed. Fig. 1\ndoes so: with the simulated cup frozen while the arm moves as recorded, one video model leaves the cup in\nplace, as the proxy does, and another still lifts it.\n∗Corresponding author.\narXiv:2611.32786v1  [cs.RO]  24 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32786.jpg",
+  "w": 557,
+  "h": 440
+ },
+ "2611.32760": {
+  "orgs": [
+   "Norwegian University of Science and Technology (NTNU)",
+   "RWTH Aachen University"
+  ],
+  "affils": [
+   "Department of Marine Technology (IMT), Norwegian University of Science and Technology (NTNU), Trondheim, NO-7052, Norway",
+   "Chair of Information and Automation Systems for Process and Material Technology, RWTH Aachen University, Aachen, D-52056, Germany"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32760.jpg",
+  "w": 640,
+  "h": 323
+ },
+ "2611.32727": {
+  "orgs": [
+   "Vijay KumarUniversity of Pennsylvania"
+  ],
+  "affils": [
+   "\n\nSamarth Chopra\n\n  \nAnkit Prabhu\n\n  \nAkshayan NagarajahSumer Murthy, Pratik Chaudhari, Vijay KumarUniversity of Pennsylvania\n\n{csamarth, praankit, aknag, sumerm, pratikac, kumar}@engineering.upenn.edu\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32727.jpg",
+  "w": 640,
+  "h": 304
+ },
+ "2611.32722": {
+  "orgs": [
+   "SenseTime Research"
+  ],
+  "affils": [
+   "Yuqiang Zhai",
+   "SenseTime Research"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32722.jpg",
+  "w": 433,
+  "h": 440
+ },
+ "2611.32718": {
+  "orgs": [
+   "Ariel University"
+  ],
+  "affils": [
+   "Department of Computer Science, Ariel University, Ariel, Israel ; itai.mizlish@msmail.ariel.ac.il, benmo@g.ariel.ac.il"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32718.jpg",
+  "w": 640,
+  "h": 360
+ },
+ "2611.32715": {
+  "orgs": [],
+  "affils": [
+   "GNSS Doppler-based alignment\nSemidefinite Programming for Cold-Start GNSS Doppler-Based\nAlignment: A Comparison with Nonlinear Least Squares\nBaoshan Song"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32715.jpg",
+  "w": 640,
+  "h": 290
+ },
+ "2611.32683": {
+  "orgs": [
+   "Gamma Robotics / TeleAI",
+   "Tongji University",
+   "University",
+   "a released object can settle out of the receiver’s reach. Team success",
+   "therefore depends on collective physical capability: the ability of team members to change the shared world in"
+  ],
+  "affils": [
+   "Gamma Robotics / TeleAI\nDeCoNav-Act: Benchmarking Collective Physical\nCapability in Multi-Robot Mobile Manipulation\nYunzi Wu1,2,∗, Sunyao Zhou3,∗, Xiaotao Zhang1,4,∗, Yucheng Deng1,4,∗, Yuehao Huang1,5, Lin Qian1,6,\nXuanrui Cui1,4, Xinhai Li1,†, Chenjia Bai1,‡, Hongqing Chu2,‡, Xuelong Li1,‡\n1TeleAI, 2Tongji University, 3Fudan University, 4Shanghai Jiao Tong University, 5Zhejiang\nUniversity, 6The University of Manchester\n∗Equal contribution, †Project leader, ‡Corresponding authors\nRobot teams can split workloads or combine complementary bodies, but only if each robot leaves\nthe shared world in a state its teammate can use. Existing multi-robot benchmarks emphasize task\nallocation and skill sequencing, rarely testing whether the resulting physical states are usable. To\nevaluate collective physical capability, we introduce DeCoNav-Act, a benchmark for language-guided\nmulti-robot mobile manipulation in a shared physics simulation. Its 350 homogeneous and 150\nheterogeneous tasks, each verified by joint reference execution, span two coordination mechanisms:\nparallel workloads in shared space and physical dependencies in which one robot establishes a condition\nfor a teammate to use. Beyond team success, DeCoNav-Act measures path efficiency and handoff\ncoverage and success, and adds a diagnostic from verified pre-handoff states. Evaluating sensor-\ngrounded adaptations of ASPIRE and RAX and our agent CoMoMa, we find that with GPT-5.6-luna\nno method completes a task, at most 8.8% of dependencies are reached, and even from pre-handoff\nstates no handoff is completed; with GPT-6.1-sol, CoMoMa establishes the condition in 26.5% of\ntrials, but only 4.1% succeed.\nDate: November 23, 2026\nCorrespondence to: Yunzi Wu (261159@tongji.edu.cn);\nChenjia Bai (baicj@chinatelecom.cn)\n1\nIntroduction\nHousehold robots increasingly execute long-horizon tasks that couple language, navigation, and manipu-\nlation (Li et al., 2022; Yenamandra et al., 2023; Yang et al., 2025), yet a single robot is bounded by its\nreach, payload, footprint, and time. Multiple robots can split a workload or combine different bodies: a tall\nmanipulator retrieves a mug from a high shelf and leaves it where a smaller teammate can grasp it, or loads a\ncarrier that transports several items at once. These benefits depend on physical execution: the robots share\naccess to counters and passages, and a released object can settle out of the receiver’s reach. Team success\ntherefore depends on collective physical capability: the ability of team members to change the shared world in\nways their teammates can build on.\nExisting benchmarks cover parts of this problem. Multi-agent mobile manipulation benchmarks emphasize\ntask allocation and sequencing through skill-level interfaces (Chang et al., 2025; Chen et al., 2025; Dong et al.,\n2026; Chen et al., 2026; Zhang et al., 2024a; Puig et al., 2024). Physically executed dependencies are evaluated\nbetween fixed-base arms on a shared tabletop (Qin et al., 2025; Mandi et al., 2024), while single-robot mobile\nmanipulation (Li et al., 2022; Yenamandra et al., 2023; Shukla et al., 2025) and collaborative navigation (Wang\net al., 2026; Zhou et al., 2026) cover complementary aspects. These settings leave a gap in evaluating whether\na physical state produced by one mobile robot is usable by its teammate in the same evolving scene.\nWe introduce DeCoNav-Act, a benchmark for language-guided multi-robot mobile manipulation in a shared\nphysics simulation (figure 1). Tasks are constructed around two coordination mechanisms. In parallel workload\ncoordination, robots advance separate goals while sharing sources, destinations, and passages. In physical\ndependency coordination, one robot establishes a condition for a teammate to use, such as an object released\nwithin reach, a payload settled on a carrier, or a cleared route. Homogeneous teams split workloads and clear\nshared space for each other; heterogeneous teams add relays and carrier transport that build on their different\nreach, footprint, and payload. DeCoNav-Act contains 350 homogeneous and 150 heterogeneous tasks, each\nverified by a continuous joint reference execution, with a 100-task test split.\n1\narXiv:2611.32683v1  [cs.RO]  24 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32683.jpg",
+  "w": 640,
+  "h": 369
+ },
+ "2611.32665": {
+  "orgs": [],
+  "affils": [
+   "DiffGR00T: Execution-Aware Differentiable Training for\nHumanoid Whole-Body Vision-Language-Action Models\nSichen Wu, Qian Sun, Mengfan Liu, Weikai Qin, Bike Zhu, and Hesheng Wang†\nFig. 1: DiffGR00T teaser. The VLA action head is updated while SONIC and the world model are frozen; the world\nmodel replaces the simulator during training. Simulation-only average task success rises from 59.2% to 71.7%."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32665.jpg",
+  "w": 640,
+  "h": 360
+ },
+ "2611.32654": {
+  "orgs": [
+   "EPFL",
+   "Galbot Peking University Tsinghua University Shanghai Qi Zhi Institute"
+  ],
+  "affils": [
+   "University of California, San Diego École Polytechnique Fédérale de Lausanne (EPFL), Switzerland",
+   "Galbot Peking University Tsinghua University Shanghai Qi Zhi Institute"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32654.jpg",
+  "w": 640,
+  "h": 328
+ },
+ "2611.32650": {
+  "orgs": [
+   "Southeast University Chery International :"
+  ],
+  "affils": [
+   "Southeast University Chery International†Corresponding author: wezhuang@seu.edu.cn"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32650.jpg",
+  "w": 390,
+  "h": 411
+ },
+ "2611.32649": {
+  "orgs": [
+   "Tsinghua University"
+  ],
+  "affils": [
+   "Sunqi Fan",
+   "Tsinghua University",
+   "Project page: iclworld.github.io Code: github.com/ICLWorld/ICLWorld",
+   "Dataset: huggingface.co/datasets/Aoraku/ICLWorld",
+   "†Corresponding author"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32649.jpg",
+  "w": 640,
+  "h": 342
+ },
+ "2611.32642": {
+  "orgs": [
+   "Shanghai Kepler Robotics",
+   "ShanghaiTech University"
+  ],
+  "affils": [
+   "\n\nZihao Li\n\n  \nTong Chen\n\n  \nHua Song\n\n  \nZitong Ding\n\n  \nZihao Xu\n\n  \nCe Hao\n\n  \nWeibang Bai∗\n††thanks: This work was supported by the Shanghai Pujiang Program under grant 23PJ1408500, Shanghai Kepler Robotics Co., Ltd., and the Key Laboratory of Intelligent Perception and Human-Machine Collaboration (ShanghaiTech University), Ministry of Education.\nCorresponding author: Weibang Bai (E-mail: wbbai@shanghaitech.edu.cn).††thanks: Zihao Li, Tong Chen, and Weibang Bai are with the School of Information Science and Technology, ShanghaiTech University, Shanghai 201210, China.††thanks: Zihao Xu is with National University of Singapore, Singapore 119077.††thanks: Ce Hao is with Zhongguancun Academy, Beijing 100094, China.††thanks: Zitong Ding is with Shanghai Jiao Tong University, Shanghai, 200240, China.††thanks: Hua Song is with the Shanghai Kepler Robotics Co., Ltd., Shanghai 201210, China."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32642.jpg",
+  "w": 640,
+  "h": 361
+ },
+ "2611.32639": {
+  "orgs": [
+   "Zhejiang University The University of Hong Kong"
+  ],
+  "affils": [
+   "Zhejiang University The University of Hong Kong"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32639.jpg",
+  "w": 640,
+  "h": 317
+ },
+ "2611.32622": {
+  "orgs": [
+   "Zhejiang University",
+   "Shenzhen University"
+  ],
+  "affils": [
+   "Zhejiang University",
+   "China Telecom",
+   "Shenzhen University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32622.jpg",
+  "w": 640,
+  "h": 328
+ },
+ "2611.32584": {
+  "orgs": [
+   "Università degli Studi di Genova",
+   "Robotics Lab"
+  ],
+  "affils": [
+   "DIBRIS & DLCM ; Università degli Studi di Genova ; Genova, Italy ; orcid.org/0009-0004-0471-4745",
+   "Robotics Lab ; Leonardo S.p.A ; Genova, Italy ; orcid.org/0009-0000-4661-8293",
+   "Robotics Lab ; Leonardo S.p.A ; Genova, Italy ; orcid.org/0000-0001-5833-5506",
+   "DIBRIS ; Università degli Studi di Genova ; Genova, Italy ; orcid.org/0000-0002-5032-4228",
+   "Robotics Lab ; Leonardo S.p.A ; Genova, Italy ; orcid.org/0000-0002-1219-2447"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32584.jpg",
+  "w": 640,
+  "h": 363
+ },
+ "2611.32582": {
+  "orgs": [
+   "MIT"
+  ],
+  "affils": [
+   "\n\nChao Liu*, Wil J. Norton*, Branden Romero, and Daniela Rus\n††thanks: $ˆ1$ Department of Electrical Engineering and Computer Science, Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology, 77 Massachusetts Ave, Cambridge, MA USA. $ˆ2$ Department of Mechanical Engineering, University of British Columbia, 170-6371 Crescent Road, Vancouver, BC Canada.††thanks: †denotes shared first authorship"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32582.jpg",
+  "w": 465,
+  "h": 440
+ },
+ "2611.32579": {
+  "orgs": [
+   "Southern University of Science and Technology",
+   "Socially-aware robot person following (RPF) [1–5] is a core capability for human-centered mobile robots in"
+  ],
+  "affils": [
+   "Follow-Bench 2.0: An End-to-End 3D Benchmark for\nSocially-Aware Robot Person Following\nHanjing Ye1,2,∗, Tianle Zeng1,∗, Jianwei Peng1,∗, Yanci Wen1, Yuchen Zhou2, Yonggen Ling2,3,#,\nHong Zhang1,#\n1Southern University of Science and Technology, 2Tencent Robotics X, 3Futian Laboratory\n∗Equal contribution\nSocially-aware robot person following (RPF) requires a mobile robot to follow a designated person in dynamic\nhuman environments while maintaining target identity, avoiding obstacles and pedestrians, and preserving\nsocially comfortable formations. Existing benchmarks only partially evaluate this coupled problem: embodied\nvisual tracking benchmarks emphasize target visibility with limited social interaction, person re-identification\nbenchmarks study perception without closed-loop control, and motion-planning benchmarks often assume\nground-truth target and pedestrian states. We introduce Follow-Bench 2.0, an end-to-end 3D benchmark\nfor evaluating socially-aware RPF under coupled perception–planning challenges. Built in Unreal Engine,\nFollow-Bench 2.0 provides difficulty-leveled scenarios with diverse pedestrian flows, lighting and weather\nconditions, cluttered layouts, bottlenecks, queueing behaviors, distractors, and temporary target occlusions.\nThe benchmark supports modular perception–planning pipelines, end-to-end visual policies, and foundation-\nmodel-based active trackers under a unified closed-loop protocol. It further evaluates both back- and side-\nfollowing configurations and reports safety–comfort metrics covering task success, target visibility, target\nrecovery, social-space intrusion, following formation, and motion smoothness. Experiments show that RPF-\noriented modular pipelines substantially outperform current end-to-end visual policies on close and socially\ncomfortable following, but also reveal that socially-aware RPF remains far from solved in interaction-heavy\nenvironments and especially in side-following. Follow-Bench 2.0 therefore provides a diagnostic platform\nfor studying how perception errors, occlusions, crowd interactions, and following configurations jointly affect\nrobot person following.\nProject page: https://medlartea.github.io/follow-bench-v2/\nCode: https://github.com/MedlarTea/follow-bench-2.0/\nCorrespondence: rolandling@tencent.com, hzhang@sustech.edu.cn\n1\nIntroduction\nSocially-aware robot person following (RPF) [1–5] is a core capability for human-centered mobile robots in\nlogistics, security patrol, shopping guidance, personal assistance, and companionship. Unlike generic visual\ntracking [6, 7] or obstacle avoidance [8, 9], RPF requires a robot to continuously follow a designated person\nin dynamic human environments while preserving target identity, avoiding pedestrians and obstacles, and\nmaintaining socially comfortable formations. This makes RPF a tightly coupled perception–planning problem:\nthe robot must track the target under viewpoint changes, illumination variations, distractors, and occlusions,\nwhile simultaneously deciding where and how to move around surrounding people in a socially acceptable\nmanner.\nDespite growing interest in this problem, existing benchmarks only evaluate partial aspects of socially-aware\nRPF. Embodied visual tracking (EVT) benchmarks [5, 10, 11] study target following in visually realistic\nenvironments, but mainly focus on keeping a target visible from behind and provide limited evaluation of social\ncomfort and crowd interaction. Person tracking and re-identification (ReID) benchmarks [12, 13] evaluate\nperception in isolation, without closing the loop between target localization and robot motion. Conversely,\nsocially-aware motion-planning benchmarks such as Follow-Bench 1.0 [14] evaluate safety and comfort in\ncrowded environments, but assume ground-truth target and pedestrian states in a 2D simulator.\nAs a\narXiv:2611.32579v1  [cs.RO]  24 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32579.jpg",
+  "w": 640,
+  "h": 233
+ },
+ "2611.32564": {
+  "orgs": [
+   "ai Sun Yat-sen University"
+  ],
+  "affils": [
+   "\n\n\n\nJialong Peng, Shihao Zhou, Feng Yan, Wen Xiao, Haozheng Wang, Wenqi Ren,\nWenyuan Sheng, Jian Qiao, Jiaxu Miao, Lin Ma, Chao Yang\n1011.ai Sun Yat-sen University\n*Corresponding authors\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32564.jpg",
+  "w": 640,
+  "h": 269
+ },
+ "2611.32550": {
+  "orgs": [
+   "Örebro University",
+   "European Union’s Horizon 2020 research and innovation programme under grant agreement No 101017274 (DARKO)"
+  ],
+  "affils": [
+   "\n\nUnal Artan\n\n  \nManuel Castellano-Quero\n\n  \nJohannes A. Stork\n\n  \nMartin Magnusson\n††thanks: The authors are with the Center for Advanced Autonomous Sensor Systemes (AASS), Örebro University, Fakultetsgatan 1, Sweden.\nCorresponding author unal.artan@oru.se.\nThis work has received funding from the Swedish Knowledge Foundation (KKS) project ”NiCE” under agreement number 20200247 01 H,\nthe Knut and Alice Wallenberg Foundation through Wallenberg AI, Autonomous Systems and Software Program (WASP),\nthe Swedish Knowledge Foundation in the TeamRob Synergy under Project 20210016,\nand the European Union’s Horizon 2020 research and innovation programme under grant agreement No 101017274 (DARKO)."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32550.jpg",
+  "w": 335,
+  "h": 435
+ },
+ "2611.32534": {
+  "orgs": [
+   "Shanghai Jiao Tong University"
+  ],
+  "affils": [
+   "EmbodiedStudio\nA Task-Driven Simulation Generation Platform for\nEmbodied Learning and Evaluation\nYang Zhao\nXubo Yang*\nShanghai Jiao Tong University\n*Correspondence: yangxubo@sjtu.edu.cn"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32534.jpg",
+  "w": 640,
+  "h": 275
+ },
+ "2611.32533": {
+  "orgs": [
+   "HKUST",
+   "Tencent",
+   "NTU"
+  ],
+  "affils": [
+   "HKUST (Guangzhou)",
+   "Tencent",
+   "NTU",
+   "HKUST"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32533.jpg",
+  "w": 485,
+  "h": 440
+ },
+ "2611.32529": {
+  "orgs": [
+   "Chen LvNTU KAIST UCLA"
+  ],
+  "affils": [
+   "\n\nZirui Li\n\n  \nZhiqi Mao\n\n  \nYangang Ren\n\n  \nHeye Huang\n\n  \nHaohan Yang\n\n  \nQihang Huang\n\n  \nZhan Chen\n\n  \nChen LvNTU  KAIST  UCLA*Equal contribution  †Corresponding author\n\n Code  \n\n Website\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32529.jpg",
+  "w": 640,
+  "h": 244
+ },
+ "2611.32523": {
+  "orgs": [
+   "NTU",
+   "Ruofei Bai is also with the A STAR Institute of Advanced Intelligence and Computing (A STAR IAIC)",
+   "University"
+  ],
+  "affils": [
+   "Kuan Xu, Tianxin Hu, Ruofei Bai, Ruimeng Liu, Zeyu Jiang, and Shenghai Yuan are with the Centre for Advanced Robotics Technology Innovation (CARTIN), School of Electrical and Electronic Engineering, Nanyang Technological University, 50 Nanyang Avenue, Singapore 639798, {kuan.xu, tianxin.hu, ruimeng.liu, shyuan}@ntu.edu.sg, zjiang015@e.ntu.edu.sg.",
+   "Ruofei Bai is also with the A*STAR Institute of Advanced Intelligence and Computing (A*STAR IAIC), Singapore, ruofei001@e.ntu.edu.sg.",
+   "Yuefan Hao, Zitong Zhan, and Chen Wang are with the Spatial AI & Robotics Lab, Department of Computer Science and Engineering, University at Buffalo, Buffalo, NY 14260, USA, yuefan.hao@outlook.com, {zitongz, chenw}@sairlab.org.",
+   "Lihua Xie is with the NTU-VinUni Joint Research Laboratory for Robotics and Embodied AI, School of Electrical and Electronic Engineering, Nanyang Technological University, Singapore 639798, and also with VinUniversity, Hanoi 100000, Vietnam, lihua.x@vinuni.edu.vn."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32523.jpg",
+  "w": 640,
+  "h": 282
+ },
+ "2611.32502": {
+  "orgs": [
+   "Shenzhen Institute of Artificial Intelligence and Robotics for Society",
+   "Mohamed bin Zayed University of Artificial Intelligence",
+   "CUHK"
+  ],
+  "affils": [
+   "The Shenzhen Institute of Artificial Intelligence and Robotics for Society",
+   "Mohamed bin Zayed University of Artificial Intelligence, Abu Dhabi, UAE",
+   "The Chinese University of Hong Kong - Shenzhen, China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32502.jpg",
+  "w": 640,
+  "h": 310
+ },
+ "2611.32493": {
+  "orgs": [
+   "Tongji University",
+   "HKUST"
+  ],
+  "affils": [
+   "Xuanpu Wang, Shun Hu, and Bing Li are with Tongji University. {2451267,2433295,lizi}@tongji.edu.cn",
+   "Rongqing Zhang is with The Hong Kong University of Science and Technology (Guangzhou). rongqingz@tongji.edu.cn"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32493.jpg",
+  "w": 473,
+  "h": 331
+ },
+ "2611.32483": {
+  "orgs": [
+   "NTU"
+  ],
+  "affils": [
+   "Nanyang Technological University Tsinghua University Independent Researcher",
+   "University of Science and Technology of China Fudan University University of Florida*Equal contribution. †Corresponding authors. github.com/Zhisheng-researcher/CodeWAM zhisheng.researcher@gmail.com"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32483.jpg",
+  "w": 567,
+  "h": 440
+ },
+ "2611.32476": {
+  "orgs": [
+   "HKU",
+   "Peking University",
+   "NUS"
+  ],
+  "affils": [
+   "\n\n\n\nLinjing You Zeming Yang Zhenhao Shen Shengqiang Xu Guanda Li Wenxuan Li\nJiyu Guo Jasper Lu Kyle Xu Shawn Xie Junjie Zhu Siyu Wu\nJian Liu Changhao Zhang Rongchong Li Zeyi Li Hengshuang Zhao Ruihai Wu\nThe University of Hong Kong Ant Group Shenzhen Loop Area Institute (SLAI)\nPeking University Zhejiang University\nLightwheel PsiBot National University of Singapore University of California, Berkeley\n*Equal contribution.  †Corresponding author: ruihai@berkeley.edu\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32476.jpg",
+  "w": 640,
+  "h": 284
+ },
+ "2611.32475": {
+  "orgs": [
+   "National University of Defense Technology",
+   "Hunan Provincial Key Laboratory of Image Measurement and Vision Navigation",
+   "Hunan Institute of Advanced Technology"
+  ],
+  "affils": [
+   "College of Aerospace Science and Engineering, National University of Defense Technology, Changsha 410000, China",
+   "Hunan Provincial Key Laboratory of Image Measurement and Vision Navigation, ; National University of Defense Technology, Changsha 410000, China",
+   "Hunan Institute of Advanced Technology, Changsha 410000, China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32475.jpg",
+  "w": 640,
+  "h": 313
+ },
+ "2611.32413": {
+  "orgs": [
+   "University of Tokyo"
+  ],
+  "affils": [
+   "The authors are with the Department of Mechano-Informatics, Graduate School of Information Science and Technology, The University of Tokyo, 7-3-1 Hongo, Bunkyo-ku, Tokyo, 113-8656, Japan. [kaneko, yoshimura, miki, kawaharazuka, k-okada]@jsk.imi.i.u-tokyo.ac.jp",
+   "The author is with the AI Center, Graduate School of Information Science and Technology, The University of Tokyo, Japan."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32413.jpg",
+  "w": 367,
+  "h": 440
+ },
+ "2611.32409": {
+  "orgs": [
+   "TU Munich"
+  ],
+  "affils": [
+   "\n\nYunfei Bi\n††thanks: Technical University of Munich, Germany. E-mail: yunfei.bi@tum.de."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32409.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.32381": {
+  "orgs": [
+   "Lab42 AI Research Institute"
+  ],
+  "affils": [
+   "AlpineAI AG ; Davos, Switzerland",
+   "Lab42 AI Research Institute ; Davos, Switzerland"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32381.jpg",
+  "w": 319,
+  "h": 440
+ },
+ "2611.32353": {
+  "orgs": [
+   "HKU"
+  ],
+  "affils": [
+   "Xuchuan Chen2,5 Zekun Qi2,5 He Wang3,5 Yanchao Yang1,† Li Yi2,4,5,†",
+   "1The University of Hong Kong 2Tsinghua University 3Peking University 4Shanghai Qi Zhi Institute 5Galbot",
+   "*Equal contribution †Corresponding authors",
+   "https://any2act.github.io"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32353.jpg",
+  "w": 640,
+  "h": 426
+ },
+ "2611.32335": {
+  "orgs": [
+   "Hunan University",
+   "Tsinghua University",
+   "China Railway Construction Bridge Engineering Bureau Group",
+   "Karlsruhe Institute of Technology",
+   "University of Oxford"
+  ],
+  "affils": [
+   "GOLD-SLAM:\nGaussian-splatting Omnidirectional LiDAR-Depth SLAM\nWeicong Zhang1,2 Yuan Huang1 Yu Zheng1 Lin Chenxiao1 Yingying Li2 Lilong Fan3\nLiangdong Zhuang2,† Yufan Chen4,5 Ruiping Liu4 Junwei Zheng4 Jiaming Zhang1,†\n1 Hunan University\n2 Tsinghua University\n3 China Railway Construction Bridge Engineering Bureau Group Co., Ltd.\n4 Karlsruhe Institute of Technology\n5 University of Oxford\n† Corresponding authors"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32335.jpg",
+  "w": 640,
+  "h": 213
+ },
+ "2611.32308": {
+  "orgs": [
+   "Beijing Institute of Technology"
+  ],
+  "affils": [
+   "Beijing Institute of Technology, Beijing, China",
+   "NovaXBot, Beijing, China"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32308.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.32260": {
+  "orgs": [
+   "Xi’an Jiaotong University",
+   "HKUST",
+   "Research Team",
+   "Lambda-humanoid Team"
+  ],
+  "affils": [
+   "EgoLoAF: Learning Humanoid Loco-Manipulation\nfrom Egocentric Demonstrations with Hand–Object\nAffordances\nYiming Zeng1,3,∗,†, Jiangyuxuan Dai1,3,∗, Yuheng Na1,2,3,∗,†, TAN ZHU XUAN1,3, Zihan Lin1, Xinfang Qi1, Shijian Zhang1,\nChengqi Shi1, Yihan Kuang1, Zhide Zhong2, Junjie He2, Junfeng Li2, Zimu Han1, Naipeng Li1,‡, Haoang Li2,‡\n1 Xi’an Jiaotong University\n2 The Hong Kong University of Science and Technology (Guangzhou)\n3 Xbotics\nResearch Team\n∗Equal contribution, †Project leads, ‡Corresponding authors\nTraining humanoid vision-language-action (VLA) models relies heavily on costly real-robot teleopera-\ntion. Recent efforts convert egocentric human demonstrations into humanoid training data. However,\nmost methods still require wearable motion trackers and leave important hand–object interaction cues\nimplicit. Many also mix in real-robot teleoperation data for VLA post-training. These dependencies\nlimit scalable data collection, while implicit interaction cues make precise contact harder to learn. To\novercome these limitations, we propose EgoLoAF, the first paradigm to derive all training data for\nhumanoid loco-manipulation directly from egocentric demonstrations without wearable motion trackers.\nWe post-train the VLA on the converted data alone, without real-robot teleoperation demonstrations,\nand use explicit hand–object interaction cues to guide action generation. Specifically, to obtain\nhumanoid action targets, we estimate torso motion from recorded camera poses and reconstruct both\nhand trajectories from video. From the same recording, we use each hand’s current pose relative to\nthe object to represent hand–object affordances. During post-training, we inject these affordances\ninto the action expert through cross-attention while keeping the vision-language backbone frozen.\nAdditionally, we release 128,400 egocentric demonstration episodes spanning 1,000 hours and 1,284\ntasks, together with converted humanoid action trajectories and rendered robot-view observations.\nAcross four real-world tasks, EgoLoAF nearly achieves teleoperation performance (73.1 vs. 74.4 in\nmean Task Progress Score), while achieving a mean 4.03× improvement in data-collection efficiency.\nProject Page: https://egoloaf.github.io/\n1\nIntroduction\nVision-language-action (VLA) models and related policies have made progress in robot manipulation and\nhumanoid loco-manipulation (Jiang et al., 2025; Hu et al., 2026; Lambda-humanoid Team, 2026; Na et al.,\n2026; Han et al., 2026; Yang et al., 2026; Zhang et al., 2026b). However, training humanoid VLAs still relies\nheavily on real-robot teleoperation. Each demonstration requires a skilled operator to teleoperate a physical\nhumanoid. Resetting the robot and workspace between trials further increases collection time. This makes it\ncostly to collect demonstrations across many tasks and environments. To address this challenge, egocentric\nhuman data offers an alternative.\nRecently, there have been efforts to convert egocentric human demonstrations into training data for humanoid\nloco-manipulation (Shi et al., 2026; Chen et al., 2026; Lambda-humanoid Team, 2026; Zhou et al., 2026).\nHowever, existing approaches still face two limitations. First, most of these methods use wearable motion\ntrackers to obtain humanoid action labels.\nEach recording session involves fitting the trackers to the\ndemonstrator and synchronizing their motion measurements with the video. These setup requirements make\ndata collection more difficult to scale. Second, most of these methods use converted human trajectories as\naction targets and leave the current hand–object relationship implicit. This makes precise contact harder\nbecause the policy must infer where the robot’s hands are relative to the object before deciding how to move.\nIf the robot misjudges the hand–object relationship, it will reach the right object but still miss the correct\ncontact required by the task.\nTo overcome these limitations, we propose EgoLoAF, a paradigm that converts egocentric human demon-\n1\narXiv:2611.32260v1  [cs.RO]  24 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32260.jpg",
+  "w": 609,
+  "h": 440
+ },
+ "2611.32256": {
+  "orgs": [
+   "Nanjing University Joy Future Academy",
+   "South China University of Technology The Chinese University of Hong Kong"
+  ],
+  "affils": [
+   "Nanjing University Joy Future Academy, JD",
+   "South China University of Technology The Chinese University of Hong Kong, Shenzhenhttps://robodemo-2027.github.io/"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32256.jpg",
+  "w": 640,
+  "h": 395
+ },
+ "2611.32245": {
+  "orgs": [
+   "University of Science and Technology (Guangzhou)",
+   "ShanghaiTech University"
+  ],
+  "affils": [
+   "\n\nJiajie Zhang1,†, Yankai Xiang2,†, and Changhao Chen1,∗\n††thanks: $ˆ1$Jiajie Zhang and Changhao Chen are with the Hong Kong\nUniversity of Science and Technology (Guangzhou), Guangzhou, China\njiajiezhang@hkust-gz.edu.cn,\nchanghaochen@hkust-gz.edu.cn††thanks: $ˆ2$Yankai Xiang is with ShanghaiTech University, Shanghai,\nChina xiangyk2025@shanghaitech.edu.cn††thanks: $ˆ†$These authors contributed equally to this work.††thanks: $ˆ*$Corresponding author."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32245.jpg",
+  "w": 640,
+  "h": 301
+ },
+ "2611.32241": {
+  "orgs": [
+   "Nanjing University The Chinese University of Hong Kong",
+   "HKUST",
+   "Joy Future Academy"
+  ],
+  "affils": [
+   "Nanjing University The Chinese University of Hong Kong, Shenzhen",
+   "Tsinghua University Hong Kong University of Science and Technology",
+   "Joy Future Academy, JD"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32241.jpg",
+  "w": 640,
+  "h": 383
+ },
+ "2611.32238": {
+  "orgs": [
+   "University of Electronic Science and Technology of China",
+   "Shanghai AI Lab"
+  ],
+  "affils": [
+   "\n\nKaipeng Fang1,2, Yuhao Wang1,* Ji Zhang1 Yunsong Zhou2,†\\dagger Jingkuan Song3,4 Lianli Gao1,†\\dagger\n\n\n1University of Electronic Science and Technology of China\n\n2Shanghai Artificial Intelligence Laboratory 3Tongji University 4Shanghai Innovation Institute\n††thanks: Equal contribution. †\\daggerCorresponding authors."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32238.jpg",
+  "w": 497,
+  "h": 277
+ },
+ "2611.32233": {
+  "orgs": [
+   "UC San Diego"
+  ],
+  "affils": [
+   "University of California, San Diego",
+   "Fremont Union High School District"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32233.jpg",
+  "w": 377,
+  "h": 440
+ },
+ "2611.32228": {
+  "orgs": [
+   "Xi’an Jiaotong University",
+   "China Mobile (Shanghai) Information and Communication Technology",
+   "Zhongguancun Academy"
+  ],
+  "affils": [
+   "Disentangling Visual Dynamics for World Model Planning\nYuhong Shi1\nYihan Guo1\nJie Wei2\nJianyi Liu1 B\nJingwen Fu3 B\n1Institute of Artificial Intelligence and Robotics, Xi’an Jiaotong University, Xi’an, China\n2China Mobile (Shanghai) Information and Communication Technology Co., Ltd., Shanghai, China\n3Zhongguancun Academy, Beijing, China\nyuhongshi2023@stu.xjtu.edu.cn\nyeehanguo26@stu.xjtu.edu.cn\nweijie@sn.chinamobile.com\nB jyliu@xjtu.edu.cn\nB fujingwen@bza.edu.cn"
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.32228.jpg",
+  "w": 640,
+  "h": 377
+ },
+ "2611.33229": {
+  "orgs": [
+   "Bogazici University",
+   "University of Innsbruck",
+   "Middle East Technical University"
+  ],
+  "affils": [
+   "Department of Computer Engineering, Bogazici University, Türkiye",
+   "Department of Computer Science, University of Innsbruck, Austria",
+   "Department of Computer Engineering, Middle East Technical University, Türkiye",
+   "Digital Science Center, University of Innsbruck, Austria"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33229.jpg",
+  "w": 640,
+  "h": 380
+ },
+ "2611.32206": {
+  "orgs": [
+   "Australian National University 2CSIRO 3GE Research"
+  ],
+  "affils": [
+   "\n\n\n\n\n\nQing Zhang1  Xuesong Li1,2  Zhaoyuan Yang3  Changlin Song1  Xinyu Tian1  Jing Zhang1\n\n1Australian National University  2CSIRO  3GE Research\n\n\n\n{Qing.Zhang, Xuesong.Li, Changlin.Song, Xinyu.Tian, Jing.Zhang}@anu.edu.au, zhaoyuan.yang.ge@gmail.com\n\nCode: https://github.com/QZhang2111/psg\n\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32206.jpg",
+  "w": 394,
+  "h": 249
+ },
+ "2611.32186": {
+  "orgs": [
+   "Fudan University",
+   "NTU",
+   "Shanghai Jiao Tong University"
+  ],
+  "affils": [
+   "Fudan University",
+   "Lenovo Group Limited",
+   "Nanyang Technological University",
+   "Shanghai Jiaotong University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32186.jpg",
+  "w": 606,
+  "h": 440
+ },
+ "2611.32185": {
+  "orgs": [
+   "Tsinghua University"
+  ],
+  "affils": [
+   "AIR, Tsinghua University",
+   "Qiuzhen College, Tsinghua University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32185.jpg",
+  "w": 426,
+  "h": 440
+ },
+ "2611.32184": {
+  "orgs": [
+   "Peking University"
+  ],
+  "affils": [
+   "Haozhe Wang and Xun Huang are with the School of Mechanics and Engineering Science, Peking University, Beijing, 100871, P.R. China (e-mail: 2501111813@stu.pku.edu.cn; huangxun@pku.edu.cn)."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32184.jpg",
+  "w": 414,
+  "h": 312
+ },
+ "2611.32162": {
+  "orgs": [
+   "College of Mechanical and Vehicle Engineering",
+   "Hunan University"
+  ],
+  "affils": [
+   "College of Mechanical and Vehicle Engineering",
+   "Hunan University, Changsha, China",
+   "School of Design"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32162.jpg",
+  "w": 640,
+  "h": 419
+ },
+ "2611.32152": {
+  "orgs": [],
+  "affils": [
+   "RoboProbe: Benchmarking Physical Plausibility of Robot World Models\nZhuoying Yang*\nJiachen Ni*\nYichen Guo\nXiaoshan Wu†\nMengyu Wang†\n*Equal contribution\n†Co-senior authors\nFigure 1. Generated robot videos look real but break physical laws. Left, the benchmark covers serial manipulators and humanoids in\nfirst- and third-person views. Middle, for each generator, the share of videos that RoboProbe finds plausible against the share the annotators\ndo on the 130 shared tasks; the rankings agree (Kendall τ=1.00). Right, one generated video per violation type, with the violation circled\nin red and the metric’s score, a higher score meaning a likelier violation."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32152.jpg",
+  "w": 621,
+  "h": 440
+ },
+ "2611.32108": {
+  "orgs": [
+   "Shanghai Jiao Tong University",
+   "Zhejiang University",
+   "Tsinghua University",
+   "TU Munich",
+   "ETH Zurich",
+   "HKUST"
+  ],
+  "affils": [
+   "Shanghai Jiao Tong University",
+   "Quicrobot",
+   "Zhejiang University",
+   "Tsinghua University",
+   "Technical University of Munich",
+   "ETH Zurich",
+   "The Hong Kong University of Science and Technology"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32108.jpg",
+  "w": 640,
+  "h": 379
+ },
+ "2611.32101": {
+  "orgs": [
+   "Zhejiang University",
+   "HKUST"
+  ],
+  "affils": [
+   "\n\n\n\n\n\nAnge Bao∗1,3   Haishan Zhang∗2,3   Lingzi Xie3   Shuang Li3\n\nPei Zhao1   Ling Shi2   Bidan Huang†3\n\n1Zhejiang University\n  2The Hong Kong University of Science and Technology\n  3AGILINK\n\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32101.jpg",
+  "w": 640,
+  "h": 296
+ },
+ "2611.32098": {
+  "orgs": [
+   "Shanghai Jiao Tong University",
+   "Shanghai Innovation Institution",
+   "Fudan University",
+   "East China Normal University"
+  ],
+  "affils": [
+   "ActiveBridge: Scaling Active Priors to Robots\nthrough Egocentric Perception-Interaction Modeling\nZixiao Gu1,2,3,∗, Qiren Qin2,4,∗, Yu He2,3,4, Zhengyang Liu2,3,4, Da Huang1,2,3,\nHongquan Zhang2,3,5, Simo Wu6, Peng Zhou6, Guangnan Ye3,4, Yunbo Wang1,†, Yanwei Fu3,4,†\n1 Shanghai Jiao Tong University\n2 ActiMind\n3 Shanghai Innovation Institution\n4 Fudan University\n5 East China Normal University\n6 Luxi Tech\n∗Equal contribution.\n† Corresponding authors.\nActive observation\nHead → camera\nPhysical interaction\nWrist → gripper\nActiveBridge\nActiveBridge\nActiveBridge\nActiveBridge\nActiveBridge\nActiveBridge\nActiveBridge\nActiveBridge\nActiveBridge\nActiveBridge\nJoint video, perception and interaction modeling\nHuman\nRobot\nHuman\nRobot\n(a) Pick-and-place\n(b) Assembly\n(c) Placement\n(d) Storage\nFigure 1. ActiveBridge learns human active priors from egocentric videos and transfers them to robots. Top: Head-wrist action\ntrajectories from egocentric videos form a 21D human action representation. Jointly predicting future video and human actions helps\nthe model learn active perception and physical interaction. Bottom: Human training and robot deployment examples span real-world (a)\npick-and-place and (b) assembly tasks, and simulation (c) placement and (d) storage tasks."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32098.jpg",
+  "w": 640,
+  "h": 322
+ },
+ "2611.32093": {
+  "orgs": [
+   "Tsinghua University",
+   "Southern University of Science and Technology Institute of Automation"
+  ],
+  "affils": [
+   "Tsinghua University Peng Cheng Laboratory",
+   "Southern University of Science and Technology Institute of Automation, Chinese Academy of Science"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32093.jpg",
+  "w": 640,
+  "h": 185
+ },
+ "2611.32081": {
+  "orgs": [
+   "Beihang University Zhongguancun Academy Nanjing University",
+   "Chinese Academy of Sciences",
+   "Tianjin University Fujian Key Laboratory of Financial Information Processing"
+  ],
+  "affils": [
+   "Beihang University Zhongguancun Academy Nanjing University",
+   "Institute of Automation, Chinese Academy of Sciences University of Chinese Academy of Sciences",
+   "Tianjin University Fujian Key Laboratory of Financial Information Processing, Putian University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32081.jpg",
+  "w": 640,
+  "h": 372
+ },
+ "2611.32025": {
+  "orgs": [
+   "Seoul National University"
+  ],
+  "affils": [
+   "Seoul National University",
+   "{martian35, swpants05, chaehyeon, ayoungk}@snu.ac.kr"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32025.jpg",
+  "w": 567,
+  "h": 440
+ },
+ "2611.32016": {
+  "orgs": [
+   "Chunhua ShenZhejiang University"
+  ],
+  "affils": [
+   "\n\nLiyang Li*Mingyu Liu*Xiaoman LiZhiyue ZhaoJin-Chuan ShiCanyu ZhaoHaokai ZhangJinyuan TianLinhao Zhong\n\n  \nHao Chen\n\n  \nChunhua ShenZhejiang University, State Key Lab of CAD & CG\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32016.jpg",
+  "w": 397,
+  "h": 164
+ },
+ "2611.31956": {
+  "orgs": [
+   "Johns Hopkins University University of Virginia"
+  ],
+  "affils": [
+   "Johns Hopkins University University of Virginia, Charlottesville University of Toronto"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31956.jpg",
+  "w": 640,
+  "h": 337
+ },
+ "2611.31954": {
+  "orgs": [
+   "Fuzhou University",
+   "University of Science and Technology of China"
+  ],
+  "affils": [
+   "\n\nYifeng Lin\n\n  \nLiuxiang Qiu\n\n  \nYunfeng Chen\n\n  \nTiesong Zhao\n††thanks: Corresponding author.\n  \n\n\nFujian Key Laboratory of Intelligent Processing and Wireless Transmission of Media Information, College of Physics and Information Engineering, Fuzhou University, Fuzhou 350108, China.\n\nMoE Key Laboratory of Brain-inspired Intelligent Perception and Cognition, University of Science and Technology of China, Hefei 230027, China.\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31954.jpg",
+  "w": 499,
+  "h": 440
+ },
+ "2611.31952": {
+  "orgs": [
+   "Georgia Institute of Technology",
+   "City University of New York Bosch North America"
+  ],
+  "affils": [
+   "Georgia Institute of Technology University of North Carolina at Chapel Hill",
+   "City University of New York Bosch North America*Equal contribution"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31952.jpg",
+  "w": 640,
+  "h": 310
+ },
+ "2611.31925": {
+  "orgs": [
+   "CSIRO Technology",
+   "Dana Kulić is also with Monash University"
+  ],
+  "affils": [
+   "Yanran Jiang, Cécile Paris, Dana Kulić, and Leimin Tian are with CSIRO Technology, Australia. yanran.jiang@csiro.au",
+   "Dana Kulić is also with Monash University, Australia."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31925.jpg",
+  "w": 640,
+  "h": 322
+ },
+ "2611.31919": {
+  "orgs": [
+   "University of Waterloo",
+   "National Yang Ming Chiao Tung University"
+  ],
+  "affils": [
+   "University of Waterloo",
+   "National Yang Ming Chiao Tung University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31919.jpg",
+  "w": 640,
+  "h": 287
+ },
+ "2611.31903": {
+  "orgs": [
+   "Fudan University",
+   "HKUST",
+   "New York University Abu Dhabi"
+  ],
+  "affils": [
+   "Fudan University",
+   "The Hong Kong University of Science and Technology (Guangzhou)",
+   "New York University Abu Dhabi"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31903.jpg",
+  "w": 435,
+  "h": 312
+ },
+ "2611.31901": {
+  "orgs": [
+   "Tongji University Rimbot",
+   "Xi’an University of Electronic Science and Technology",
+   "Southeast University Tsinghua University"
+  ],
+  "affils": [
+   "Tongji University Rimbot",
+   "Xi’an University of Electronic Science and Technology",
+   "Southeast University Tsinghua University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31901.jpg",
+  "w": 640,
+  "h": 267
+ },
+ "2611.31894": {
+  "orgs": [],
+  "affils": [
+   "RESET: One Demonstration, One Verified World,\nSelf-Improved Skills Across Embodiments\nZheng Sun1∗\nZhuo Li1∗\nZhihao Li1∗\nHeng Yi Sim1\nGe Wang2\nZiyue Zhu3\nMingkai Jia4\nFei Chen1\nProject page: zainzh.github.io/RESET\nFigure 1. Overview of RESET. (a) One real demonstration implicitly specifies the task procedure and terminal success condition. (b) One\nverified world: RESET reconstructs a contact-rich world and read-only criterion (Rebuild), checks it against the demonstration (Examine),\nand refines white-box control code from execution feedback (Self-improve). (c) Cross-embodiment transfer: the shared verified world and\ncriterion enable heterogeneous robots to acquire adapted skills without new demonstrations (Transfer) and run them on real robots (Execute).\n(d) Results across the eight tasks: the source robot against baselines, and all four robots in simulation and on real robots."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31894.jpg",
+  "w": 640,
+  "h": 261
+ },
+ "2611.31868": {
+  "orgs": [
+   "Forall Labs"
+  ],
+  "affils": [
+   "CALVIN-MAX: When Does a Mid-Execution Change Hurt a Robot Policy?\nSajjad Pakdamansavoji\nForall Labs\nsj.pakdaman.edu@gmail.com\nhttps://forall-labs.github.io/CALVIN-MAX\nPerceptual\n5 changes\noriginal\ncamera shift\nsensor noise\nillumination\nvisual theme\ndistractors\nPhysical\n3 changes\noriginal\ntarget moved\nreceptacle moved\nobstacle inserted\nEmbodiment\n2 changes\noriginal\narm push\ngrasp loss\nIntent & control\n3 types\noriginal\n“grasp and lift the blue block”\nnull nothing changes\n“grasp and lift the blue block”\ntransient block moved, then put back\n“grasp and lift the blue block”\nrevised new goal\n“grasp and lift the red block”\nThree arms per case\nidentical until the affected instruction\nBase\nno change\nPre\nchange in place\nfrom the start\nMid\nchange arrives\nwhile moving\nchange (here: target block moved)\nPre−Base: cost of the changed world\nMid−Pre: effect of the timing\nMain results\nAffected instruction (%)\n10 policies\n40\n60\n80\n100\nBase\nPre\nMid\nTiming effect, Mid−Pre (pp)\n−5\n0\n5\n+5.4\n−0.6\nperceptual\nphysical\nRewind check, rewindable set (pp)\n−5\n0\n5\n+4.5\n−2.8\nMid−Pre\nrewound−Pre\nNext instruction, after success (%)\n10 policies\n60\n70\n80\n90\n100\nBase\nMid\nFigure 1. CALVIN-MAX asks when a change during execution hurts a policy, not only whether it does. On the left, each family\nof change is applied to the same moment of a Base run, beside the unchanged original. In the intent and control card only the revised\ninstruction gives the robot a new goal, while the null and transient controls keep it, changing nothing or moving a block and putting it\nback. In the middle, each case is run three times, identically until the affected instruction begins: without the change (Base), with it in\nplace from that moment (Pre), and with it arriving while the robot is moving (Mid). Pre against Base gives the cost of the changed world,\nand Mid against Pre the effect of its timing. On the right, held-out results for ten policies (Sec. 4) show, from top to bottom, success on\nthe affected instruction in each run; the timing effect, positive for perceptual changes and not detectable for physical ones (which here\ninclude the changes to the robot); the perceptual timing effect on the cases where the robot can be rewound, where returning the arm and the\npolicy’s memory to the start of the instruction removes the benefit; and success on the next instruction among cases in which the affected one\nsucceeded in both runs."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31868.jpg",
+  "w": 560,
+  "h": 420
+ },
+ "2611.31863": {
+  "orgs": [
+   "Fudan University",
+   "Shanghai AI Lab",
+   "CUHK",
+   "Zhejiang University",
+   "Shanghai Jiao Tong University",
+   "Southeast University"
+  ],
+  "affils": [
+   "\n\n\n\nFurui Xu1,2∗   Weishuai Zeng2,3∗   Zirui Wang2,4∗   Kangning Yin2,5 \n\nJiacheng Bao2   Huayi Wang2   Yingying Qin6   Yufei Xue2   Yang Tang2 \n\nZenghao Tang2   Kailin Li2†   Jingbo Wang2†   Weinan Zhang2† \n\n1Fudan University  \n2Shanghai Artificial Intelligence Laboratory  \n3The Chinese University of Hong Kong\n4Zhejiang University  \n5Shanghai Jiao Tong University  \n6Southeast University\n*Equal contribution.  †Corresponding authors.\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31863.jpg",
+  "w": 640,
+  "h": 376
+ },
+ "2611.31844": {
+  "orgs": [
+   "Kyung Hee University College of Engineering"
+  ],
+  "affils": [
+   "College of Software, Kyung Hee University College of Engineering, Kyung Hee University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31844.jpg",
+  "w": 640,
+  "h": 262
+ },
+ "2611.31843": {
+  "orgs": [
+   "Harbin Institute of Technology"
+  ],
+  "affils": [
+   "Yonglong Zhang is with the School of Mechatronics Engineering, Harbin Institute of Technology, Harbin 150001, China."
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31843.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.31835": {
+  "orgs": [
+   "Kyung Hee University"
+  ],
+  "affils": [
+   "College of Software, Kyung Hee University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31835.jpg",
+  "w": 640,
+  "h": 139
+ },
+ "2611.31826": {
+  "orgs": [
+   "Harbin Institute of Technology"
+  ],
+  "affils": [
+   "School of Mechatronics Engineering, Harbin Institute of Technology"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31826.jpg",
+  "w": 640,
+  "h": 206
+ },
+ "2611.31822": {
+  "orgs": [
+   "Galaxea Team"
+  ],
+  "affils": [
+   "\n\nGalaxea Team\n\nhttps://www.galaxea-ai.com/model-g07.html\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31822.jpg",
+  "w": 588,
+  "h": 440
+ },
+ "2611.31814": {
+  "orgs": [
+   "Toyota North America R&D University of North Texas"
+  ],
+  "affils": [
+   "Toyota North America R&D University of North Texas"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31814.jpg",
+  "w": 640,
+  "h": 360
+ },
+ "2611.31782": {
+  "orgs": [
+   "National Key Laboratory of Human-Machine Hybrid Augmented Intelligence",
+   "Xi’an Jiaotong University"
+  ],
+  "affils": [
+   "National Key Laboratory of Human-Machine Hybrid Augmented Intelligence",
+   "Institute of Artificial Intelligence and Robotics, Xi’an Jiaotong University",
+   "{jin.yang, pingwei}@xjtu.edu.cn"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31782.jpg",
+  "w": 435,
+  "h": 440
+ },
+ "2611.31740": {
+  "orgs": [
+   "University of Michigan"
+  ],
+  "affils": [
+   "University of Michigan"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31740.jpg",
+  "w": 640,
+  "h": 240
+ },
+ "2611.31729": {
+  "orgs": [
+   "Amazon Prime Air"
+  ],
+  "affils": [
+   "Amazon Prime Air"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31729.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.31715": {
+  "orgs": [
+   "Siemens Research",
+   "instead of adapting it through gradient descent. MIT’s initial WSP report [1]"
+  ],
+  "affils": [
+   "Weight-Space Programming for Targeted \nRepair of Robot Foundation Models \n \nKyle Coelho, Eugen Solowjow \nSiemens Research \nkyle.coelho@siemens.com \n \n \n \nIntroduction \nWeight-space programming (WSP) asks whether a language-model agent can inspect and directly write a \nneural network’s parameters, instead of adapting it through gradient descent. MIT’s initial WSP report [1] \nbrought this idea into view, showing that frontier LLMs such as GPT Astra can directly read, edit, and write \nthe weights of neural networks to achieve a desired behavior and end goal. This was showcased on vision \ntasks and math problem solving, among others. Within two weeks of the authors’ post, the results attracted \nconsiderable attention due to the potentially profound implications of WSP. We report the application of \nWSP to robot foundation models (RFMs) and show how failure modes of an RFM can be mitigated without \nadditional data collection or training. \nWe test whether failures of RFM policies can be corrected through direct weight editing. Our hypothesis is \nthat many failures are not random: the policy repeatedly lands in the same recognizable stuck state, such as \nhovering above a target or being unable to reach a target pose. If that situation is recognizable in the model’s \ninternal activations, a small edit can use that signal to trigger a correction while leaving the other model \nparameters unchanged. Prior work has directly edited robot policies in weight space. Stranghöner et al. \nwrote state-dependent controllers into unused units of behavior-cloning policies [2]. Other work has edited \nPi0.5 [3] to change action execution speed [4] or repair instruction grounding [5, 6]. We investigate \nrecurring physical execution failures in a Pi0.5 policy. Our edits write task-specific corrective movements \ninto the action expert that activate in the diagnosed failure states. Paired held-out evaluations, including \nrandom and sign-reversed controls, test whether the edits improve performance through the intended \ncorrection. We also evaluate an edit on a policy already fine-tuned for its task. \n \n \n \n \n \n \n \n \n \n"
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.31715.jpg",
+  "w": 640,
+  "h": 325
+ },
+ "2611.31705": {
+  "orgs": [
+   "Beijing Zhongguancun Academy Peking University Beijing Academy of Artificial Intelligence"
+  ],
+  "affils": [
+   "Beijing Zhongguancun Academy Peking University Beijing Academy of Artificial Intelligence†Corresponding authors"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31705.jpg",
+  "w": 640,
+  "h": 432
+ },
+ "2611.31694": {
+  "orgs": [
+   "Czech Technical University in Prague"
+  ],
+  "affils": [
+   "organization=Czech Institute of Informatics, Robotics and Cybernetics (CIIRC), Czech Technical University in Prague, addressline=Jugoslávských partyzánů 1580/3, postcodesep=, postcode=160 00, city=Prague 6, country=Czech Republic"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31694.jpg",
+  "w": 600,
+  "h": 440
+ },
+ "2611.31676": {
+  "orgs": [
+   "Meta"
+  ],
+  "affils": [
+   "Meta"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31676.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.31667": {
+  "orgs": [],
+  "affils": [
+   "PREPRINT SUBMITTED TO IEEE, 2026\n1\nExteroceptive Sensor Faults in Autonomous Vehicles: A Cross-Modal\nTaxonomy and Fault Injection Toolkit\nDavide Possenti1,∗, Daniele Cianca1, Stefano Arrigoni1, Francesco Braghin1"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31667.jpg",
+  "w": 640,
+  "h": 382
+ },
+ "2611.31658": {
+  "orgs": [
+   "Purdue University"
+  ],
+  "affils": [
+   "Byoungkwon Yoon, Han Gyeom Lee, Hojun Lee, Yuseop Sim, Daniel Sungwoo Bae, and Martin Byung-Guk Jun are with School of Mechanical Engineering, Purdue University, West Lafayette, IN 47906, USA {yoon358, lee3034, lee1764, sim46, bae130, mbgjun}@purdue.edu"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31658.jpg",
+  "w": 640,
+  "h": 262
+ },
+ "2611.31644": {
+  "orgs": [
+   "University of Groningen"
+  ],
+  "affils": [
+   "The cyborg fly: reflexes survive engineered actuators,\ncoordination needs stand-ins\nMauricio Mu˜noz Arias1*\n1 Engineering and Technology Institute Groningen (ENTEG), University of Groningen,\nGroningen, The Netherlands\n* m.munoz.arias@rug.nl"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31644.jpg",
+  "w": 412,
+  "h": 440
+ },
+ "2611.31637": {
+  "orgs": [
+   "National Fisheries University"
+  ],
+  "affils": [
+   "1 \n \nA Self-Organizing Swarm Control Model for Underwater Robots Based on Turing-Ty\npe Reaction-Diffusion Principles \n \nTakeshi Ishida1* \n \n1Department of Ocean Mechanical Engineering, National Fisheries University; \n Shimonoseki, 759-6595, Japan. \n \n* Takeshi Ishida  \nAddress correspondence to: ishida@fish-u.ac.jp "
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.31637.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.31588": {
+  "orgs": [
+   "MIT"
+  ],
+  "affils": [
+   "Massachusetts Institute of Technology Improbable AI Lab"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31588.jpg",
+  "w": 640,
+  "h": 241
+ },
+ "2611.31577": {
+  "orgs": [
+   "Shanghai Jiao Tong University",
+   "Horizon Robotics",
+   "Style3D Research"
+  ],
+  "affils": [
+   "Shanghai Jiao Tong University",
+   "Horizon Robotics",
+   "Style3D Research*These authors contributed equally.",
+   "Corresponding author."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31577.jpg",
+  "w": 513,
+  "h": 440
+ },
+ "2611.31561": {
+  "orgs": [
+   "Georgia Institute of Technology",
+   "MIT"
+  ],
+  "affils": [
+   "Daniel Guggenheim School of Aerospace Engineering, Georgia Institute of Technology, Atlanta, GA, USA. {minchan.jung, dgeorgiou3, evangelos.theodorou}@gatech.edu",
+   "Department of Aeronautics and Astronautics, Massachusetts Institute of Technology, Cambridge, MA, USA. asaravan@mit.edu"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31561.jpg",
+  "w": 410,
+  "h": 437
+ },
+ "2611.31535": {
+  "orgs": [
+   "PSL Research University"
+  ],
+  "affils": [
+   "Inria, École normale supérieure, CNRS, PSL Research University",
+   "https://cshizhe.github.io/projects/hi3r_vla.html"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31535.jpg",
+  "w": 640,
+  "h": 230
+ },
+ "2611.31511": {
+  "orgs": [
+   "Computer Vision Center",
+   "Universitat Autònoma de Barcelona",
+   "IDEAS Research Institute"
+  ],
+  "affils": [
+   "KU Leuven",
+   "Computer Vision Center",
+   "Universitat Autònoma de Barcelona",
+   "IDEAS Research Institute"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31511.jpg",
+  "w": 640,
+  "h": 321
+ },
+ "2611.31488": {
+  "orgs": [
+   "Bosch Center for Artificial Intelligence",
+   "Carnegie Mellon University"
+  ],
+  "affils": [
+   "Bosch Center for Artificial Intelligence, Pittsburgh, PA, USA.",
+   "Carnegie Mellon University, Pittsburgh, PA, USA. ; {ruwan.wickramarachchi, alessandro.oltramari, jon.francis}@us.bosch.com"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31488.jpg",
+  "w": 640,
+  "h": 399
+ },
+ "2611.31470": {
+  "orgs": [
+   "Wybe Labs"
+  ],
+  "affils": [
+   "CRAB-H: Task-Centric Certification for Healthcare \nAutonomous Systems \n \nA robot performs a task. Governance certifies the relationship between them. \n \nTord Johan Eide, Einar Holt \nWybe Labs Inc. \nVersion 3 — draft for peer review "
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.31470.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.31463": {
+  "orgs": [],
+  "affils": [
+   "GEOMETRIC CONTROL ANALYSIS OF AN INTERNALLY\nACTUATED FLYING WING\nA PREPRINT\nJonathan Becker∗\nKevin T. Crofton Department of Aerospace and Ocean Engineering\nVirginia Tech\nBlacksburg, VA 24060\njonathanbecker@vt.edu\nElla M. Atkins\nKevin T. Crofton Department of Aerospace and Ocean Engineering\nVirginia Tech\nBlacksburg, VA 24060\nematkins@vt.edu\nNovember 25, 2026"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31463.jpg",
+  "w": 640,
+  "h": 251
+ },
+ "2611.31446": {
+  "orgs": [
+   "Yale University"
+  ],
+  "affils": [
+   "Yale University, New Haven, CT, United States"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31446.jpg",
+  "w": 640,
+  "h": 423
+ },
+ "2611.31240": {
+  "orgs": [
+   "KAIST"
+  ],
+  "affils": [
+   "\n\nSeongchan Kim\n\n  \nSoowon Son\n\n  \nSangoh Kim\n\n  \nHyunah Ko\n\n  \nEunbeen Hong\n\n  \nHyunkoo Lee\n\n  \nSanghyun Lee\n\n  \nWonJun Moon\n\n  \nKihong Kim\n\nLG Innotek\n\n Project Page\n\n Code\n\n  \nDongyeon Son\n\nLG Innotek\n\n Project Page\n\n Code\n\n  \nWoongchan Nam\n\nLG Innotek\n\n Project Page\n\n Code\n\n  \nSeungryong Kim\n\n  \n[6pt]\nKAIST\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31240.jpg",
+  "w": 640,
+  "h": 235
+ },
+ "2611.31205": {
+  "orgs": [
+   "NTU"
+  ],
+  "affils": [
+   "\n\nZexin He1 Rui Li1 Yushi Lan2 Chengkai Jin1 Zhi Hou3 Xingang Pan1,3\n\n\n1S-Lab, Nanyang Technological University 2University of Oxford 3ACE Robotics\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31205.jpg",
+  "w": 640,
+  "h": 300
+ },
+ "2611.31201": {
+  "orgs": [
+   "NTU",
+   "Xiamen University Lenovo Robotics Lab University of Connecticut"
+  ],
+  "affils": [
+   "S-Lab, Nanyang Technological University ACE Robotics SenseTime Research",
+   "Xiamen University Lenovo Robotics Lab University of Connecticut"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31201.jpg",
+  "w": 547,
+  "h": 440
+ },
+ "2611.31195": {
+  "orgs": [],
+  "affils": [
+   "VITA-WAM\nManifold-Aligned World-Action Modeling\nfor Real-Time Robot Control\nBoqi Zhao*\nDechen Gao*\nHanchu Zhou\nHang Wang\nJunshan Zhang†\n* Equal contributors\n† Corresponding author\nProject page: ucd-dare.github.io/VITA-WAM"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31195.jpg",
+  "w": 640,
+  "h": 401
+ },
+ "2611.31173": {
+  "orgs": [
+   "Sichuan University",
+   "HKUST",
+   "Griffith University",
+   "Tencent"
+  ],
+  "affils": [
+   "EmboEagle: An Efficient Agentic Embodied\nFramework for Long-horizon Robotic Manipulation\nFan Xu1∗, Zhongtao Wang2∗, Hao Wu3, Yitong Zhu4, Wenzhuo Ma1, Long Li5, Zhuohao Li1,\nZhisheng Chen6, Rui Su1, Kun Wang6, Xian Wu7†, Wanli Ouyang1,8†\n1Shenzhen Loop Area Institute, 2Sichuan University, 3Tsinghua University,\n4The Hong Kong University of Science and Technology (Guangzhou),\n5Griffith University, 6Nanyang Technological University,\n7Tencent, 8The Chinese University of Hong Kong\n∗Equal contribution\n†Corresponding Author\nLong-horizon robotic manipulation demands reliable execution across interdependent stages, yet\nstandalone World-Action Models (WAMs) suffer from compounding physical errors, while stateless\nVision-Language Model (VLM) supervision incurs prohibitive chunkwise latency and lacks 3D spatial\npersistence. We present EmboEagle, a closed-loop agentic framework that unifies subtask-conditioned\nWAM control, latent-space adaptive supervision, and memory-guided geometric recovery. First, we\nadapt sequential WAMs via decoupled two-stage flow matching that preserves cross-stage visual\nhistory while calibrating truncated action supervision at subtask boundaries. Second, without an\nauxiliary vision encoder, we distill teacher intervention decisions into a lightweight routing gate driven\nsolely by the WAM Action Expert’s pre- and post-chunk latent transitions and subtask embeddings.\nThird, upon invocation, the VLM decouples diagnostic status from discrete routing actions and\nexecutes parameterized recovery primitives grounded in structured memory (initial references, active\ngrasp bindings, and tool traces), followed by mandatory post-repair verification. Across RMBench\nand LIBERO-Mem, EmboEagle achieves 91.3% and 90.6% average success, surpassing the strongest\nbaselines by 8.0 and 9.8 percentage points, while boosting real-world success over VoLoAgent under\nidentical executor weights. Moreover, adaptive gating cuts VLM calls by 74.2% versus chunkwise\nmonitoring (91.3% vs. 93.7% success).\nDate: Nov 18, 2026\nAuthor emails: markxu@mail.ustc.edu.cn\n§ Project: https://github.com/Markus-xu/EmboEagle\n1\nIntroduction\nLong-horizon robotic manipulation requires a robot to preserve task intent across changing object configurations\nand grasp states, deciding when a subtask completes, retaining spatial cues needed by subsequent stages, and\ncorrecting physical errors before they compound. World-Action Models (WAMs) establish a strong foundation\nfor this execution layer by coupling visual dynamics prediction with continuous action generation. Recent\nadvances extend this paradigm through history-conditioned control in Long-WAM (Huang et al., 2026) and\nepisodic visual guidance in MaP-WAM (Zhao et al., 2026a). Nevertheless, turning a capable visuomotor\nexecutor into a reliable long-horizon agent raises a complementary control question: how should a system\nallocate high-level supervision and translate its decisions into physical corrections during an ongoing task?\nVLM-based orchestration bridges learned policies with explicit planning, monitoring, and manipulation\ntools (Chen et al., 2026a; Gu et al., 2026b), yet the timing of this supervision imposes a sharp efficiency–\nresponsiveness trade-off. As contrasted in Figure 1(a–b), open-loop execution lacks error recovery, whereas\nquerying a VLM after every action chunk repeatedly returns routine continuation commands and incurs\nunnecessary overhead; conversely, lengthening a fixed checking interval delays the detection of subtask\ncompletions, auxiliary tool opportunities, and failed grasps. While progress-based and event-driven triggers\nmitigate parts of this cost (Gu et al., 2026b), existing triggers often rely on heuristic rules or auxiliary\n1\narXiv:2611.31173v1  [cs.RO]  23 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31173.jpg",
+  "w": 640,
+  "h": 306
+ },
+ "2611.31126": {
+  "orgs": [
+   "HKUST",
+   "Hong Kong Polytechnic University",
+   "Xidian University",
+   "Zhejiang University"
+  ],
+  "affils": [
+   "The Hong Kong University of Science and Technology",
+   "Hong Kong Polytechnic University",
+   "Xidian University",
+   "Zhejiang University* Equal contribution.",
+   "Corresponding author."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31126.jpg",
+  "w": 640,
+  "h": 334
+ },
+ "2611.31115": {
+  "orgs": [
+   "NUS"
+  ],
+  "affils": [
+   "November, 2026\nRUIBench: What Makes a Good Robot-Use Interface?\nYanzhe Chen*\nZhijun Cao*\nZechen Bai*\nWenzheng Zeng*\nKevin Yuchen Ma\nYiqi Lin\nGuoqiang Liang\nXiaokang Liu\nKe Sun\nKevin Qinghong Lin\nMike Zheng Shou†\nShow Lab, National University of Singapore"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31115.jpg",
+  "w": 640,
+  "h": 351
+ },
+ "2611.31099": {
+  "orgs": [
+   "Johns Hopkins University"
+  ],
+  "affils": [
+   "Johns Hopkins University"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31099.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.31098": {
+  "orgs": [
+   "Carnegie Mellon University",
+   "NVIDIA"
+  ],
+  "affils": [
+   "University of Illinois Urbana-Champaign Carnegie Mellon University",
+   "University of California, Berkeley NVIDIA"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31098.jpg",
+  "w": 355,
+  "h": 440
+ },
+ "2611.31341": {
+  "orgs": [
+   "State University of New York"
+  ],
+  "affils": [
+   "State University of New York at Buffalo",
+   "{xwang277, ludong, inwogu, setlur, govind}@buffalo.edu"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31341.jpg",
+  "w": 640,
+  "h": 278
+ },
+ "2611.31079": {
+  "orgs": [
+   "ACE Robotics",
+   "Fudan University",
+   "NTU",
+   "Southeast University"
+  ],
+  "affils": [
+   "ACE Robotics",
+   "Fudan University",
+   "Nanyang Technological University",
+   "Southeast University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31079.jpg",
+  "w": 526,
+  "h": 303
+ },
+ "2611.31054": {
+  "orgs": [
+   "Sirius University of Science and Technology"
+  ],
+  "affils": [
+   "organization=Mathematical Robotics Science Division, Sirius University of Science and Technology, addressline=Olimpiyskiy Ave 1, city=Sirius, postcode=354340, state=Sirius Federal Territory, country=Russia"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31054.jpg",
+  "w": 499,
+  "h": 270
+ },
+ "2611.31053": {
+  "orgs": [
+   "Meta-Distillation",
+   "Zhejiang University"
+  ],
+  "affils": [
+   "ReWeave: Emergent Physical Task Topologies for\nEmbodied Harness Optimization and Cross-Task\nMeta-Distillation\nYicheng Xu1, Wencan Jiang1, Zihao Zhu2,4, Keru Zhou3, Chang Zhou4,\nLi Liu4, Maoqing Yao4, Yong Liu1, Jiangning Zhang1,†\n1 Zhejiang University, 2 Stanford University, 3 Tsinghua University, 4 AGIBOT Innovation\n†Corresponding author\nLong-horizon embodied tasks involve physical dependencies that may only become clear through interaction. As task\nunderstanding deepens, past trials can reveal new information for adaptation and transfer. However, coarse progress\nfeedback cannot identify which physical preconditions held, leaving search unguided, while task-specific optimization\neasily overfits to individual scenes, making cross-task transfer brittle. We introduce ReWeave, a framework that\njointly optimizes an embodied agent harness and an emergent physical task topology from interaction without\nupdating policy weights. Keeping execution policies and perception frozen, ReWeave co-optimizes coupled context,\nworkflows, and control loops. As new evidence revises the topology, ReWeave reprojects past trials onto the updated\ntask understanding, exposing retained progress, regressions, and bottlenecks that guide parent selection and search\nwidth. Across tasks, matching verified local mechanisms to unmet preconditions consolidates 72 specialist units\ninto 44 reusable groups (0.34× full concatenation) within a compact shared harness capable of continual learning.\nReWeave improves held-out success from 89.00% to 98.75% on LIBERO-PRO and from 25.50% to 58.25% on\nRoboDojo, while uncovering retained progress in 89% of 159 failed RoboDojo development trials and translating\nstronger offline reasoning into higher online performance. On eight unseen LIBERO-PRO tasks, the shared harness\nreaches 51.3% success versus 41.3% for direct distillation, rising to 75.0% after continual learning.\nDate: November 24, 2026\nCode: https://github.com/xuyicheng-zju/ReWeave\nProject: https://xuyicheng-zju.github.io/ReWeave/\nCorrespondence: 186368@zju.edu.cn\n(a) Three motivating observations\n(c) Performance\n1\n4/6 placed\n3/6 placed\n5/6 placed\n89%\nRoboDojo\n2\nA\n4/6\nB\n3/6\n52%\n78 / 149 revisions lower progress\n3\nHarness optimization\nvs. H0\nRoboDojo development tasks\n8% → 52% solved\nRevision round\nCross-task learning\nUnseen-task SR vs. source count\nContinual learning\n↓ Same 8-source harness\nNew tasks\n−1 placed\n+23.7 pp\n0.33\nMedian final progress\nFailures hide retained progress\nA bottleneck is not a prescription\nLIBERO-PRO\n89.00 → 98.75\n+9.75 pp\nRoboDojo\n25.50 → 58.25\n+32.75 pp\nof 159 failures\nretain progress\n(b) Evolving physical topology\nInitial topology · coarse progress\nclear\nTopology revision & reprojection\n1\nStable hold\n2\nτ: lift → slip\n3\nRim blocks motion\n4\nClear, then release\n1\n2\n3\n4\nSplit\nGrow\n0\n30\n60\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9 10\n0%\n40%\n80%\nH0\n8.8\n2\n40.0\n4\n38.8\n6\n48.8\n8\n51.3\n0%\n100%\n2\n51.3\n4\n51.3\n6\n56.3\n8\n75.0\nTask success ≠ transfer\nw/o topology\nLifted\nMoved\nPlaced\nCoarse states do not resolve contact stability\nSame τ:\nLifted\nStable hold\nnot retained\nNew evidence → re-read past trials\nTask: Fruit sorting\nSource\nUnseen\nSame harness\nSuccess rate drops\nFigure 1. From coarse progress to emergent physical topology. (a) Retained progress and revision regressions motivate ReWeave;\nillustrative G2 scenes depict the source-to-unseen transfer gap. (b) Illustrative G2 evidence separates stable hold from slip, adds rim\nclearance as a prerequisite, and reinterprets the same trial. (c) Harness optimization, cross-task transfer, and continual learning.\n1\narXiv:2611.31053v1  [cs.RO]  23 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31053.jpg",
+  "w": 640,
+  "h": 290
+ },
+ "2611.31037": {
+  "orgs": [],
+  "affils": [
+   "ML4H 2026 - Findings Track\nMachine Learning for Health (ML4H) 2026\nSurgeCount: A Protocol-Guided Composition Harness for\nBimanual Surgical Sponge Counting\nSung Eun Kim∗, Xiaoman Zhang∗, Xucheng Wang∗, and Pranav Rajpurkar\nDepartment of Biomedical Informatics, Harvard Medical School, Boston, MA, USA\nCorrespondence: Sung Eun Kim, sungeun kim2@hms.harvard.edu"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31037.jpg",
+  "w": 605,
+  "h": 440
+ },
+ "2611.31002": {
+  "orgs": [
+   "Robotics via Real-to-Sim Environments",
+   "Agentic Robotics",
+   "robotics remains constrained",
+   "Agentic Robotics—a paradigm in which frontier foundation models act as Coding Agents to control",
+   "Yet Agentic Robotics has not truly entered its scaling era"
+  ],
+  "affils": [
+   "RoboUniverse-10K: Toward the Scaling Era of Agentic\nRobotics via Real-to-Sim Environments\nJinkun Liu∗,1,2, Yingze Wang∗,1,2, Situ Wang∗,1,2, Deyao Hong∗,1,2, Mingju Gao∗,2,3, Wenyi Li∗,2, Yizhe Chi∗,2,\nYoujie Zheng1,2, Kaisen Yang1,2, Xiangyang Wang1,2, Bingxiang He1, Yuxin Zuo1, Boyuan Chen1, Yue Chen3,\nCheng Qian4, Tianxing Chen5, Huichi Zhou6, Huaxiu Yao7, Hao Tang3, Hao Zhou1, Ya-Qin Zhang1, Calvin Xiao‡,2,\nTiga Altman‡,1,2, Huan-ang Gao†,‡,1,2\n1THU, 2Einsia.AI, 3PKU, 4UIUC, 5HKU, 6UCL, 7UNC-Chapel Hill\n∗Equal Contribution\n†Project Lead\n‡Corresponding Authors\nAgentic Robotics, in which foundation models act as coding agents to control robots through executable\nprograms, has emerged as a compelling paradigm for embodied intelligence. Yet unlike software\nengineering, where massive executable environments power post-training, robotics remains constrained\nby small, manual benchmarks and in-distribution evaluation. To bridge this gap, we introduce\nRoboUniverse-10K, 10,807 interactive, resettable, and verifiable physics environments built from\nreal-world videos via an automated Real2Sim and quality assurance pipeline. Each runs in an isolated,\nHarbor-compatible harness that hides privileged states and grading logic to mirror real-world sensing.\nFrom the same pipeline, we hold out 500 unseen tasks to establish RoboUniverse-Verified, an\nexpert-verified zero-shot benchmark. Evaluating 11 closed- and open-source models reveals a huge gap:\nfrontier models reach 85.8% success, while open-source baselines lag at 2.6% to 10.0%, bottlenecked\nby low-level grasping, deformable-object manipulation, and post-contact physical control. Finally,\nwe collect about 17K multi-turn trajectories totaling 0.79B tokens with GPT-6 Astra and perform\nfull-parameter supervised fine-tuning on Qwen3.6-35B-A3B, yielding RoboUniverse-35B-A3B. Our\nmodel achieves substantial zero-shot gains on RoboUniverse-Verified, lifting the success rate from 0.8%\nto 21.2%, while achieving zero-shot task completions across LIBERO-MAX, RoboCasa, RoboTwin 2.0,\nand a real Franka arm. We open-source the RL-ready environments and model to lay the foundation\nfor large-scale reinforcement learning in Agentic Robotics.\nHomepage: https://lab.einsia.ai/robo-universe\nCorrespondence: gha24@mails.tsinghua.edu.cn\nDate: November 24, 2026\n1\nIntroduction\nRecently, Agentic Robotics—a paradigm in which frontier foundation models act as Coding Agents to control\nrobots—has emerged rapidly. Rather than relying solely on end-to-end visuomotor mappings, these agents\nwrite and execute code that invokes perception tools, planning routines, and low-level control interfaces\nin a closed-loop manner [1–6], already surpassing end-to-end Vision-Language-Action (VLA) policies on\nseveral mainstream leaderboards [7–9]. Looking to the trajectory of software engineering (SWE), the rapid\ncapability leap of coding agents has been fundamentally driven by large-scale, executable, and automatically\nverifiable post-training environments [10–16]. By mining real-world pull requests to construct hundreds\nof thousands of interactive repositories, the SWE community unlocked large-scale trajectory distillation\nand reinforcement learning with verifiable rewards (RLVR) [17–19], yielding substantial gains for open-\nsource models on benchmarks such as SWE-bench [20]. We posit that the cornerstone of general-purpose\nEmbodied Intelligence is generalization, and the root of generalization lies in the scale and diversity of training\nenvironments.\nYet Agentic Robotics has not truly entered its scaling era, primarily due to two fundamental bottlenecks. First,\n1\narXiv:2611.31002v1  [cs.RO]  23 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31002.jpg",
+  "w": 640,
+  "h": 372
+ },
+ "2611.30997": {
+  "orgs": [
+   "University of Central Florida",
+   "University of Southern California"
+  ],
+  "affils": [
+   "University of Central Florida",
+   "University of Southern California"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30997.jpg",
+  "w": 438,
+  "h": 440
+ },
+ "2611.30989": {
+  "orgs": [
+   "NUS"
+  ],
+  "affils": [
+   "xML Lab, National University of Singapore"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30989.jpg",
+  "w": 640,
+  "h": 246
+ },
+ "2611.30963": {
+  "orgs": [
+   "Shanghai Jiao Tong University",
+   "HKU",
+   "Shanghai Innovation Institute",
+   "Fudan University",
+   "HKUST",
+   "NUS"
+  ],
+  "affils": [
+   "Foresight Forcing: Learning Spatial Foresight for\nRobotic Manipulation\nMishuo Han1,3,4,*, Zhixuan Liang2,*,†, Zhaoyuan Wan1,4,*, Wendi Chen1,3,4,*,\nJiarui Chen3,4,5, Xinkai Wang3,4, Yue Ma6, Yu Zhou1,3,4, Junting Chen7,\nYao Mu1, Jun Lv4, Chuan Wen1, Cewu Lu1,3,4,†\n1 Shanghai Jiao Tong University\n2 The University of Hong Kong\n3 Shanghai Innovation Institute\n4 Noematrix\n5 Fudan University\n6 The Hong Kong University of Science and Technology\n7 National University of Singapore\n* Equal contribution.\n† Corresponding authors.\nRobotic manipulation policies can improve action prediction by anticipating how objects move and\nhow their spatial relationships change. World Action Models (WAMs) learn to predict future visual\nobservations, but their training objectives typically leave the underlying 3D geometric transitions im-\nplicit. To alleviate this problem, we introduce Foresight Forcing (F2), a WAM that learns a spatial\ntransition representation from changes in a pretrained 3D feature space. During training, a frozen\n3D foundation model extracts patch-wise feature differences from aligned current and future observa-\ntions that provide dense supervision for geometry-aware feature transitions. We distill these targets\ninto spatial transition queries, which are progressively refined from the current observation, language\ninstruction, and proprioceptive state, and use them alongside current visual features to generate ac-\ntions. At deployment, the policy predicts the queries without future observations or the 3D teacher.\nExperiments on LIBERO, LIBERO-Plus, and RoboTwin 2.0 demonstrate strong manipulation per-\nformance and improved robustness, including 95.01% average success on RoboTwin 2.0 Full. On six\nreal-world manipulation tasks, F2 achieves a mean task score of 85.8%.\nWebsite: https://anson2333.github.io/foresight-forcing\nLearning Spatial Transitions\nTraining only\n𝐼𝑡\n𝐼𝑡+𝐻\nVGGT\n𝑌−\n𝑌+\n−\n𝑌Δ = 𝑌+ −𝑌−\nℒalign\nProjector\n𝐼𝑡\nℓ: Stack the bowls.\n𝑠𝑡\nNoisy actions\nFLUX.2\nAction Expert\n𝑍Δ\n𝐴𝑡\nShared updater\nInference\n①Observe\n②Foresight Conditioning\n③Execute\n𝐼𝑡\nℓ\n𝑠𝑡\n𝐻cur\n𝑍Δ\nℱ² policy\n⋯\nForesight Forcing ℱ²\nLearning Spatial Foresight for Robotic Manipulation\nBenchmark performance\nLIBERO-Plus\nX-WAM\nImageWAM\nπ₀.₅\nℱ²\n50\n75\n100\n74.8\n81.6\n84.4\n84.5\nRoboTwin C2R Avg.\n4D-WAM\nImageWAM\nUniWAM\nℱ²\n50\n75\n100\n61.65\n70.35\n71.34\n77.45\nRoboTwin Full Avg.\nLingBot-VA\nImageWAM\nFlex-π\nℱ²\n50\n75\n100\n92.20\n93.38\n94.55\n95.01\nReal-world\nImageWAM\nπ₀.₅\nℱ²\n50\n75\n100\n70.2\n83.5\n85.8\nReal-world manipulation\nCup stacking\nEgg transfer\nBreakfast preparation\nTowel folding\nTool stowing\nSize sorting\nFigure 1 Foresight Forcing (F2) at a glance. F2 learns spatial transition queries from correspondence-aligned changes in 3D teacher\nfeatures. During training, a frozen VGGT extracts features from paired observations to supervise the queries. At inference,\nthe queries are predicted from the current observation, instruction, and proprioceptive state and, together with current visual\nfeatures, condition action generation without the teacher or future observations.\n1\narXiv:2611.30963v1  [cs.RO]  23 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30963.jpg",
+  "w": 640,
+  "h": 285
+ },
+ "2611.30957": {
+  "orgs": [
+   "Convergent Robotics"
+  ],
+  "affils": [
+   "Convergent Robotics"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30957.jpg",
+  "w": 600,
+  "h": 328
+ },
+ "2611.30928": {
+  "orgs": [
+   "University of North Carolina"
+  ],
+  "affils": [
+   "Lampe Joint Department of Biomedical Engineering, University of North Carolina at Chapel Hill and North Carolina State University, Raleigh, NC, USA.",
+   "Össur, Reykjavík, Iceland."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30928.jpg",
+  "w": 640,
+  "h": 313
+ },
+ "2611.30918": {
+  "orgs": [
+   "University of Georgia"
+  ],
+  "affils": [
+   "University of Georgia",
+   "{Yiping.Li, Haohua.Que, zb28097, Wenjie.Zhao1, Cami.Li}@uga.edu"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30918.jpg",
+  "w": 630,
+  "h": 440
+ },
+ "2611.30907": {
+  "orgs": [
+   "Embodied Dexterity Lab (DexLab)",
+   "Imperial College London"
+  ],
+  "affils": [
+   "Embodied Dexterity Lab (DexLab)",
+   "Imperial College London"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30907.jpg",
+  "w": 640,
+  "h": 205
+ },
+ "2611.30900": {
+  "orgs": [
+   "University of Central Florida",
+   "University of Southern California"
+  ],
+  "affils": [
+   "GlanceNav: Efficient Vision-and-Language Navigation with\nStreaming Memory and Counterfactual Rewind\nAnh Dao1,2\nQuan-Dung Pham2\nDanh Vinh Le2\nTuyen Pham Le2\nQuan Nguyen2,3\nYuzhang Shang1\n1University of Central Florida\n2VinMotion\n3University of Southern California"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30900.jpg",
+  "w": 640,
+  "h": 206
+ },
+ "2611.30898": {
+  "orgs": [
+   "NTU"
+  ],
+  "affils": [
+   "World Models as Native Latent Action Models\nQinyue Li1*, Weijie Qiao1,2*, Qingyi Tao1*†, Zerui Gong1, Zhe Yang2, Quanzhou Li2,\nTaolin Zhang2, Jinglin He1, Zhonghua Wu1, Chen Change Loy2,3\n1SenseTime Research, Singapore, 2S-Lab, Nanyang Technological University, 3ACE Robotics\n*Equal contribution, †Project lead\nLarge and diverse video sources, such as egocentric human video and recordings from heterogeneous robots,\ncarry rich dynamics but come either without actions or without a shared action space. Latent action models\n(LAMs) can recover these dynamics, but they train their inverse- and forward-dynamics models (IDM,\nFDM) from scratch, trading off pixel reconstruction against latent capacity and accuracy. Pretrained video\nworld models natively generate dynamics and produce high-fidelity subsequent frames, yet represent them\ndensely, entangled across the hidden states of every layer. Viewing the world model as a LAM, we show\nthat these dynamics can be extracted with minimal changes to the model. Native LAM operates one\npretrained video diffusion transformer as both IDM and FDM, with learnable dynamics registers as the\nonly causal bridge between the two, and trains on counterfactual temporal pairs that differ in motion alone,\nso that the registers distill a video’s dynamics into a compact native latent action. We further propose a\npretraining paradigm for vision-language-action (VLA) policies, Pretraining Actions from World models\n(PAWlicy), in which Native LAM serves as a dynamics teacher on large-scale video; unlike world action\nmodels, it generates video neither during training nor during inference. Native latent actions outperform\nexisting LAMs on the LARY benchmark in both action classification and control regression, and replay the\nsame motion on new robots, in new scenes, and from human hands to robots, although no transfer objective\nis used in training. With a 3.8B model, PAWlicy reaches a 93.6% average success rate on RoboTwin 2.0\ntrained with domain-randomized demonstrations, the highest among VLAs. On RoboDojo, it achieves\ncompetitive results on every dimension we evaluate, and its Precision, evaluated by us, is on par with the\nleading entries of the public leaderboard. On real robots, it improves over the π0.5 baseline on both tasks.\nBoth stages are trained only on publicly available data on top of a publicly released world model.\nKeywords: Latent Action Models; Video World Models; Vision-Language-Action Models; Robot Learning.\nProject Page: https://pawteam-eai.github.io/native-lam/\n1\nIntroduction\nVideo is the most abundant record of how agents act in the physical world, spanning robots of many embodiments,\nhuman manipulation, and simulation. Much of it cannot serve directly as action supervision, since egocentric human\nvideo provides no robot action labels and robot datasets record actions in embodiment-specific spaces. Latent\naction models (LAMs) [9, 71, 94] address this gap. An inverse-dynamics model (IDM) infers a latent action from\nan observed change, and a forward-dynamics model (FDM) reproduces the change from it. The resulting shared\naction space is used to pretrain vision-language-action (VLA) policies [11, 20, 45, 62, 94] and to control world\nmodels [29, 30, 74].\nThe quality of this space, however, is limited by how it is learned. A typical LAM trains its IDM and FDM from\nscratch (Fig. 1a), so the objective trades off pixel reconstruction against the capacity and accuracy of the latent.\nTraining is also fragile [60, 94]. A loose bottleneck can leak the future frame [71], a tight one cannot describe the\nmotion [60, 94], and in between the latent drifts toward camera motion or distractors unrelated to the agent [11, 60].\nWe start from a simple observation. A video world model is natively an FDM (Fig. 1b). Pretrained on large-scale robot\nand human video, it carries a strong forward-dynamics prior on how scenes evolve, renders the future faithfully, and\nimplicitly captures inverse dynamics, which world action models (WAMs) exploit to decode actions [44, 46, 95, 108].\n1\narXiv:2611.30898v1  [cs.CV]  23 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30898.jpg",
+  "w": 640,
+  "h": 422
+ },
+ "2611.30889": {
+  "orgs": [
+   "Nanjing University"
+  ],
+  "affils": [
+   "School of Artificial Intelligence, Nanjing University",
+   "National Key Laboratory for Novel Software Technology, Nanjing University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30889.jpg",
+  "w": 640,
+  "h": 286
+ },
+ "2611.30874": {
+  "orgs": [
+   "UC Irvine"
+  ],
+  "affils": [
+   "Department of Electrical and Information Engineering, Politecnico di Bari, Bari, Italy",
+   "E80 Group S.p.A., Viano, Italy",
+   "Department of Computer Science, University of California, Irvine, CA, USA"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30874.jpg",
+  "w": 440,
+  "h": 440
+ },
+ "2611.30836": {
+  "orgs": [
+   "National Cheng Kung University",
+   "National Taiwan University",
+   "RIKEN Center for Computational Science",
+   "University of Osaka",
+   "National Yang Ming Chiao Tung University"
+  ],
+  "affils": [
+   "\n\n\n\nCheng-Ru Chou*,1,\nShih-Yu Lai*,2,3,4,\nPei-Lin Chiang1,\nShou-Po Tsai1,\nJing-Zhe Huang1\n\nFukuharu Tanaka4,5,\nHirozumi Yamaguchi†,4,5,\nBing-Yu Chen†,2,\nYu-Lun Liu†,6,\nand Hsun-Ping Hsieh†,1\n\n\n\n\n\n\n1National Cheng Kung University, Tainan, Taiwan\n2National Taiwan University, Taipei, Taiwan\n\n3MoonShine Animation Studio, Taipei, Taiwan\n4RIKEN Center for Computational Science, Kobe, Japan\n\n5The University of Osaka, Osaka, Japan\n6National Yang Ming Chiao Tung University, Hsinchu, Taiwan\n\n\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30836.jpg",
+  "w": 640,
+  "h": 225
+ },
+ "2611.30813": {
+  "orgs": [
+   "HKUST",
+   "Shanghai Jiao Tong University",
+   "NTU"
+  ],
+  "affils": [
+   "1The Hong Kong University of Science and Technology (Guangzhou) 2Xense Robotics ; 3Institute of Automation, Chinese Academy of Sciences 4Zhongguancun Academy 5Shanghai Jiao Tong University ; 6Nanyang Technological University 7The University of Hong Kong 8Peking University 9Tsinghua University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30813.jpg",
+  "w": 640,
+  "h": 208
+ },
+ "2611.30784": {
+  "orgs": [
+   "Humanoids and Human-Centered Mechatronics Research Line",
+   "Southern University of Science and Technology"
+  ],
+  "affils": [
+   "Humanoids and Human-Centered Mechatronics Research Line, Istituto Italiano di Tecnologia (IIT), 16163 Genova, Italy.",
+   "LimX Dynamics, 518055 Shenzhen, China.",
+   "School of Automation and Intelligent Manufacturing (AIM), Southern University of Science and Technology, 518055 Shenzhen, China."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30784.jpg",
+  "w": 640,
+  "h": 349
+ },
+ "2611.30765": {
+  "orgs": [
+   "Germany 2Technische Universität Berlin",
+   "BIFOLD – Berlin Institute for the Foundations of Learning and Data",
+   "Robotics Institute Germany"
+  ],
+  "affils": [
+   "\n\nPaul Mattes1,2,∗  Ayman Abdeldayem1,2  Denis Shcherba1,2 \n\nWojciech Samek1,2,3   Marc Toussaint1,2,4 \n\n\n1Fraunhofer Heinrich Hertz Institute, Berlin, Germany  2Technische Universität Berlin, Germany \n\n3BIFOLD – Berlin Institute for the Foundations of Learning and Data, Germany \n\n4Robotics Institute Germany  ∗Corresponding author, paul.mattes@hhi.fraunhofer.de\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30765.jpg",
+  "w": 640,
+  "h": 328
+ },
+ "2611.30741": {
+  "orgs": [
+   "State key Lab of Info Engineering in Surveying",
+   "Wuhan University",
+   "State Key Laboratory of Comprehensive PNT",
+   "Southeast University",
+   "Wroclaw University of Environmental and Life"
+  ],
+  "affils": [
+   "Place-Revisit Consistency Evaluation of\nReference Poses\nJianzhu Huai1, Yujia Zhang*2,3, and Grzegorz Jozkow4\n1 State key Lab of Info Engineering in Surveying, Mapping and Remote Sensing (LIESMARS),\nWuhan University, Wuhan, Hubei, China (jianzhu.huai@whu.edu.cn)\n2 School of Instrument Science and Engineering, State Key Laboratory of Comprehensive PNT\nNetwork and Equipment Technology, Southeast University, Nanjing, Jiangsu, China\n(yujia zhang@seu.edu.cn)\n3 UK-China Intelligent Mobility Research Centre, Southeast University, Nanjing, Jiangsu, China\n4 Institute of Geodesy and Geoinformatics, Wroclaw University of Environmental and Life\nSciences, Wroclaw, Poland (grzegorz.jozkow@upwr.edu.pl)\n∗Corresponding author: yujia zhang@seu.edu.cn"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30741.jpg",
+  "w": 640,
+  "h": 293
+ },
+ "2611.30739": {
+  "orgs": [
+   "Tongji University",
+   "NTU"
+  ],
+  "affils": [
+   "Coordinating Perception and Planning for Test-Time Adaptation\nin End-to-End Driving under Distribution Shifts\nShiyu Fang1\nYiming Cui1\nQihang Huang2\nZhan Chen2\nCollister Chua2\nWenhui Huang2\nPeng Hang1\nChen Lv2\nJian Sun1\n1Tongji University\n2Nanyang Technological University"
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.30739.jpg",
+  "w": 312,
+  "h": 440
+ },
+ "2611.30734": {
+  "orgs": [],
+  "affils": [
+   "EgoDepth-Bench: Benchmarking\nMetric Depth for Egocentric Manipulation\nYuan Gao*, Dongchen Wei†, Xinyang Lin, Shuhua Cao, Xueliang Guo, Zhuohan Li, Yihao Wang\nGenRobot\nhttps://egodepth-bench.github.io"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30734.jpg",
+  "w": 414,
+  "h": 248
+ },
+ "2611.30667": {
+  "orgs": [],
+  "affils": [
+   "LLM-Guided Compositional Continual Learning for Robot Manipulation\nwith Gated Low-Rank Experts\nNilay Kushawaha*1, Abdalla Swikir2, and Fares Abu-Dakka1"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30667.jpg",
+  "w": 640,
+  "h": 348
+ },
+ "2611.30658": {
+  "orgs": [
+   "Huazhong University of Science and Technology"
+  ],
+  "affils": [
+   "Zhilun Hu, Yuqi Cheng, Yuxiang Tan, Wenpan Li, and Weiming Shen are with the National Center of Technology Innovation for Intelligent Design and Numerical Control, Huazhong University of Science and Technology, Wuhan 430074, China (e-mail: wshen@ieee.org)."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30658.jpg",
+  "w": 465,
+  "h": 440
+ },
+ "2611.30637": {
+  "orgs": [
+   "University of Tokyo"
+  ],
+  "affils": [
+   "The University of Tokyo, Japan"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30637.jpg",
+  "w": 640,
+  "h": 238
+ },
+ "2611.30636": {
+  "orgs": [
+   "Shanghai AI Lab",
+   "Shanghai Jiao Tong University",
+   "Fudan University",
+   "Zhejiang University"
+  ],
+  "affils": [
+   "Shanghai Artificial Intelligence Laboratory",
+   "Shanghai Jiao Tong University",
+   "Fudan University",
+   "Zhejiang University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30636.jpg",
+  "w": 640,
+  "h": 276
+ },
+ "2611.30632": {
+  "orgs": [
+   "Sun Yat-sen University City University of Hong Kong",
+   "HKUST"
+  ],
+  "affils": [
+   "Sun Yat-sen University City University of Hong Kong",
+   "The Hong Kong University of Science and Technology (Guangzhou)"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30632.jpg",
+  "w": 640,
+  "h": 423
+ },
+ "2611.30572": {
+  "orgs": [
+   "Zhejiang University",
+   "City University of Hong Kong",
+   "NTU",
+   "TU Munich",
+   "Zhejiang University City College",
+   "Nanjing University",
+   "Hangzhou Institute for Advanced Study"
+  ],
+  "affils": [
+   "Zhejiang University",
+   "City University of Hong Kong",
+   "Nanyang Technological University",
+   "Technical University of Munich",
+   "Zhejiang University City College",
+   "Nanjing University",
+   "Hangzhou Institute for Advanced Study, UCAS*Equal contribution.†Corresponding author."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30572.jpg",
+  "w": 640,
+  "h": 347
+ },
+ "2611.30555": {
+  "orgs": [
+   "Tongji University",
+   "Shanghai Jiao Tong University"
+  ],
+  "affils": [
+   "Tongji University",
+   "Shanghai Jiao Tong University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30555.jpg",
+  "w": 640,
+  "h": 337
+ },
+ "2611.30550": {
+  "orgs": [
+   "Polyadic Research Group",
+   "CUHK",
+   "HKUST",
+   "NVIDIA"
+  ],
+  "affils": [
+   "Polyadic Research Group",
+   "SAGA Lab, The Chinese University of Hong Kong, Shenzhen",
+   "The Hong Kong University of Science and Technology",
+   "NVIDIA",
+   "Dots Studio, Xiaohongshu"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30550.jpg",
+  "w": 640,
+  "h": 228
+ },
+ "2611.30534": {
+  "orgs": [
+   "KAIST",
+   "Sungkyunkwan University"
+  ],
+  "affils": [
+   "Korea Advanced Institute of Science and Technology (KAIST)",
+   "Sungkyunkwan Universityhttps://github.com/present091/DelayOPSD"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30534.jpg",
+  "w": 377,
+  "h": 440
+ },
+ "2611.30516": {
+  "orgs": [
+   "Mohamed bin Zayed University of Artificial Intelligence",
+   "Nanchang University",
+   "Stanford University",
+   "University of Science and Technology of China",
+   "University of Technology Sydney"
+  ],
+  "affils": [
+   "Mohamed bin Zayed University of Artificial Intelligence",
+   "Nanchang University",
+   "Stanford University",
+   "University of Science and Technology of China*Equal contribution",
+   "University of Technology Sydney"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30516.jpg",
+  "w": 390,
+  "h": 263
+ },
+ "2611.30511": {
+  "orgs": [
+   "KAIST AXE Lab"
+  ],
+  "affils": [
+   "\n\n\n\nJoonhee Lim†   Seonmyeong Lee‡   Sihwan Hwang‡   Hanbin Jang‡   Hiwon Shin‡   Dogun Kim‡\n\nHyelin Jo‡   Hyeonjun Jeong‡   Yongjae Lee   Junseong Kwak   Junhyeok Park   Satyam Mishra\n\nJuyeb Shin   Uisung Kim   Hyeonseo Kim   Saparkhan Kassymbekov   Hailemichael Molla Gashaw\n\nAbi Rahman Syamil   Mingyu Kim   Hyeongjun Kim   Yeina Lee   Moogeun Park   Dongsuk Kum*\n\nKAIST AXE Lab\nkingear3@kaist.ac.kr† dskum@kaist.ac.kr*\n\n†Project lead ‡Part lead *Corresponding author\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30511.jpg",
+  "w": 640,
+  "h": 234
+ },
+ "2611.30495": {
+  "orgs": [
+   "Mohamed bin Zayed University of Artificial Intelligence"
+  ],
+  "affils": [
+   "Mohamed bin Zayed University of Artificial Intelligence",
+   "Motphys*Corresponding author"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30495.jpg",
+  "w": 640,
+  "h": 307
+ },
+ "2611.30490": {
+  "orgs": [
+   "Tsinghua University"
+  ],
+  "affils": [
+   "Tsinghua University Shanghai Qi Zhi Institute Shanghai Jiao Tong University HKUST (GZ)*Equal contribution †Corresponding authorProject page: https://puzhenyuan.github.io/EgoStudy-website"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30490.jpg",
+  "w": 402,
+  "h": 236
+ },
+ "2611.30477": {
+  "orgs": [
+   "Chinese Academy of Sciences",
+   "University of Science and Technology of China",
+   "Intelligent Software Research Center"
+  ],
+  "affils": [
+   "State Key Lab of Processors, Institute of Computing TechnologyChinese Academy of Sciences, Beijing, China",
+   "University of Chinese Academy of Sciences",
+   "University of Science and Technology of China",
+   "Institute of AI for Industries, Chinese Academy of Sciences",
+   "Intelligent Software Research Center, Institute of SoftwareChinese Academy of Sciences, Beijing, China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30477.jpg",
+  "w": 640,
+  "h": 265
+ },
+ "2611.30463": {
+  "orgs": [],
+  "affils": [
+   "Autonomous UAV Navigation in an Unknown Environment via\nMulti-Trajectory Model Predictive Control\nDanilo Saccani and Lorenzo Fagiano"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30463.jpg",
+  "w": 640,
+  "h": 339
+ },
+ "2611.30449": {
+  "orgs": [
+   "D-Robotics",
+   "Chinese Academy of Sciences"
+  ],
+  "affils": [
+   "D-Robotics",
+   "Institute of Automation, Chinese Academy of Sciences"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30449.jpg",
+  "w": 640,
+  "h": 225
+ },
+ "2611.30438": {
+  "orgs": [
+   "NTU"
+  ],
+  "affils": [
+   "\n\nQihang Huang1 Zhidong Wang1 Zirui Li1 YuJie Yan1 Jingsong Liang1\n\nShiyu Fang2 Collister Chua1 Zhan Chen1 Chen Lv1*\n\n\n1Nanyang Technological University 2Tongji University\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30438.jpg",
+  "w": 640,
+  "h": 406
+ },
+ "2611.30402": {
+  "orgs": [
+   "Luleå University of Technology"
+  ],
+  "affils": [
+   "\n\nNikolaos Stathoulopoulos\n††thanks: The authors are with the Robotics and AI Group, Department of Computer, Electrical and Space Engineering, Luleå University of Technology, 971 87 Luleå, Sweden. Corresponding Author’s e-mail: niksta@ltu.se††thanks: Additional demonstration material, examples and the source code of this paper will be available upon acceptance at our github repo.\n  \nGeorge Nikolakopoulos\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30402.jpg",
+  "w": 587,
+  "h": 440
+ },
+ "2611.30389": {
+  "orgs": [
+   "NTU",
+   "Tongji University"
+  ],
+  "affils": [
+   "Nanyang Technological University",
+   "Tongji University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30389.jpg",
+  "w": 640,
+  "h": 436
+ },
+ "2611.30363": {
+  "orgs": [
+   "University of Science and Technology of China 2 LeapWing AI"
+  ],
+  "affils": [
+   "LeapWing AI\nTechnical Report\nNovember 2026\nSOAR: temporal Structure-guided One-step Action\ngeneration for Robotic manipulation\nDi Xin1*, Mingfei Han1,2*†, Genming Cui1, Yuanxiang Chen1, Xiaolong Wu1, Siyu Ning1, Xiaojun Chang1,2, Zhihui Li1\n1 Future Media Computing Lab, University of Science and Technology of China 2 LeapWing AI\n*Equal contribution\n†Project lead"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30363.jpg",
+  "w": 640,
+  "h": 410
+ },
+ "2611.30354": {
+  "orgs": [
+   "This work was supported by the 2026 National University",
+   "Kyungpook National University"
+  ],
+  "affils": [
+   "\n\nYawar Rehman \n\n  \nMin Young Kim \n††thanks: Manuscript created May, 2026; This work was supported by the 2026 National University\nDevelopment Project funded by the Ministry of Education,\nRepublic of Korea.\n(corresponding author: Min Young Kim)\nYawar Rehman is with Institute for Advanced Technology Convergence (Mobility), Kyungpook National University, Buk-gu, Daegu 41566, Republic of Korea (email: yawar@knu.ac.kr)\nMin Young Kim is with School of Electronics Engineering, IT College, Kyungpook National University, Buk-gu, Daegu 41566, Republic of Korea (email: minykim@knu.ac.kr) "
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30354.jpg",
+  "w": 330,
+  "h": 440
+ },
+ "2611.30312": {
+  "orgs": [
+   "ETH Zurich",
+   "ETH AI Center"
+  ],
+  "affils": [
+   "1,2,†",
+   "1,3",
+   "1,4",
+   "†",
+   "Robotic Systems Lab, ETH Zurich",
+   "Computational Robotics Lab, ETH Zurich",
+   "ETH AI Center",
+   "Computer Vision and Geometry Group, ETH Zurich"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30312.jpg",
+  "w": 640,
+  "h": 211
+ },
+ "2611.30310": {
+  "orgs": [
+   "Future Media Computing Lab",
+   "Shanghai AI Lab",
+   "Stanford University"
+  ],
+  "affils": [
+   "LeapWing AI\nTechnical Report\nAugust 2026\nSeeing Together, Acting Apart:\nShared Environmental Understanding\nfor Multi-Robot Navigation\nHaihong Hao1†\nLei Chen1†\nMingfei Han1,2,3†‡\nChenglong Yan1\nDong An3\nYuqiang Yang4\nChanglin Li5\nMinghao Guo3\nSalman Khan3§\nXiaojun Chang1,2§,∗\n1Future Media Computing Lab, USTC\n2LeapWing AI\n3MBZUAI\n4Shanghai AI Laboratory\n5Stanford University\n† Equal contribution.\n‡ Project lead.\n§ Equal supervision.\n∗Corresponding author."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30310.jpg",
+  "w": 640,
+  "h": 276
+ },
+ "2611.30308": {
+  "orgs": [
+   "Xidian University",
+   "Beihang University"
+  ],
+  "affils": [
+   "Xidian University",
+   "Beihang University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30308.jpg",
+  "w": 640,
+  "h": 278
+ },
+ "2611.30307": {
+  "orgs": [
+   "Texas A$&$M University"
+  ],
+  "affils": [
+   "\n\nSixu Li\n\n  \nSwaroop Darbha\n\n  \nYang Zhou\n††thanks: (Corresponding authors: Swaroop Darbha, Yang Zhou)††thanks: The authors are with Texas A$&$M University, College Station, TX 77843, USA (e-mail: sixuli@tamu.edu; dswaroop@tamu.edu; yangzhou295@tamu.edu)."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30307.jpg",
+  "w": 640,
+  "h": 324
+ },
+ "2611.30291": {
+  "orgs": [
+   "Xidian University"
+  ],
+  "affils": [
+   "Xidian University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30291.jpg",
+  "w": 639,
+  "h": 440
+ },
+ "2611.30265": {
+  "orgs": [
+   "South China University of Technology"
+  ],
+  "affils": [
+   "\n\nYifan Liu\n\n  \nNan Zhang\n\n  \nYang Cong\n††thanks: Yifan Liu and Yang Cong are with the School of Automation Science and Engineering, South China University of Technology, Guangzhou, 510641, China (e-mail: yifanliu@scut.edu.cn, congyang81@gmail.com).††thanks: Nan Zhang is with the China Southern Power Dispatching & Control Center, China Southern Power Grid Company Limited, Guangzhou, 510641, China (e-mail: zhangnan1116@csg.cn)."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30265.jpg",
+  "w": 640,
+  "h": 328
+ },
+ "2611.30264": {
+  "orgs": [
+   "Sungkyunkwan University"
+  ],
+  "affils": [
+   "Department of Computer Science and Engineering, Sungkyunkwan University",
+   "Department of Artificial Intelligence, Sungkyunkwan University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30264.jpg",
+  "w": 640,
+  "h": 225
+ },
+ "2611.30254": {
+  "orgs": [
+   "Innata Team"
+  ],
+  "affils": [
+   "\n\nInnata Team\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30254.jpg",
+  "w": 640,
+  "h": 386
+ },
+ "2611.30209": {
+  "orgs": [
+   "NTU"
+  ],
+  "affils": [
+   "Tulane University New York University Nanyang Technological University MIT Harvard UniversityProject Page & Code:https://RoboAda.github.io"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30209.jpg",
+  "w": 640,
+  "h": 158
+ },
+ "2611.30204": {
+  "orgs": [],
+  "affils": [
+   "Counterfactual Velocity Steering for World Action Models\nXufeng Zhan, Yuanzhi Liang, Ye Lu, Haibin Huang, Chi Zhang, Xuelong Li"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30204.jpg",
+  "w": 640,
+  "h": 283
+ },
+ "2611.30188": {
+  "orgs": [
+   "Central South University ACE Robotics",
+   "University of Sydney University of California"
+  ],
+  "affils": [
+   "Central South University ACE Robotics",
+   "University of Sydney University of California, San Diego"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30188.jpg",
+  "w": 640,
+  "h": 351
+ },
+ "2611.30184": {
+  "orgs": [
+   "AI Lab",
+   "Huazhong University of Science and Technology"
+  ],
+  "affils": [
+   "AI Lab, Country Garden Services",
+   "School of Mechanical Science and Engineering, Huazhong University of Science and Technology",
+   "Omni AI"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30184.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.30179": {
+  "orgs": [
+   "Tsinghua University"
+  ],
+  "affils": [
+   "organization=School of Aerospace Engineering, Tsinghua University, city=Beijing, postcode=100084, country=China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30179.jpg",
+  "w": 546,
+  "h": 440
+ },
+ "2611.30178": {
+  "orgs": [
+   "NTU"
+  ],
+  "affils": [
+   "Mohan Liu",
+   "Nanyang Technological University",
+   "†Corresponding author",
+   "github.com/ForeverBlue816/LoopQ"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30178.jpg",
+  "w": 640,
+  "h": 382
+ },
+ "2611.30173": {
+  "orgs": [
+   "Purdue University"
+  ],
+  "affils": [
+   "Purdue University, West Lafayette, IN 47907, USA"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30173.jpg",
+  "w": 640,
+  "h": 229
+ },
+ "2611.30166": {
+  "orgs": [
+   "KAIST"
+  ],
+  "affils": [
+   "Toward Open Room-Scale Scanning with Consumer LiDAR\nvia Depth–Inertial Odometry\nMinsuk Jang\nKAIST, Daejeon, Republic of Korea. Email: minsukjang@kaist.ac.kr"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30166.jpg",
+  "w": 640,
+  "h": 256
+ },
+ "2611.30149": {
+  "orgs": [
+   "Southern University of Science and Technology",
+   "Tencent Robotics X",
+   "Futian Laboratory"
+  ],
+  "affils": [
+   "LeadVLA: Learning Follower-Aware Route Execution\nfor Robot Leading\nTianle Zeng1,2,\nHanjing Ye2,†,∗,\nBingyi Xia1,\nYuchen Zhou2\nZibo Zhang3,\nYufei Huang2,3,\nYonggen Ling2,3,\nHong Zhang1,∗\n1Southern University of Science and Technology\n2Tencent Robotics X\n3Futian Laboratory\n†Project leader.\n∗Corresponding authors."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30149.jpg",
+  "w": 640,
+  "h": 417
+ },
+ "2611.30145": {
+  "orgs": [
+   "Peking University",
+   "Tsinghua University"
+  ],
+  "affils": [
+   "RMR-VLA: Recurrent Memory Reasoning for\nVision-Language-Action Models\nYiheng Du1,*\nJingqi Tian2,*\nXu Jiang1,*\nJiexuan Zhang1\nShuyu Wang1\nZecheng Tang1\nJian Zhang1\n1Peking University\n2Tsinghua University"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30145.jpg",
+  "w": 640,
+  "h": 302
+ },
+ "2611.30133": {
+  "orgs": [
+   "Indian Institute of Technology",
+   "Indian Institute of Science (IISc)"
+  ],
+  "affils": [
+   "Department of Engineering Design, Indian Institute of Technology, Madras. ed22b017@smail.iitm.ac.in .",
+   "Center for Cyber-Physical Systems, Indian Institute of Science (IISc), Bengaluru. {manantayal, shishirk}@iisc.ac.in ."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30133.jpg",
+  "w": 490,
+  "h": 405
+ },
+ "2611.30111": {
+  "orgs": [
+   "Tulane University NYU Northeastern University Stanford University MIT Harvard UniversityProject Page &"
+  ],
+  "affils": [
+   "Tulane University NYU Northeastern University Stanford University MIT Harvard UniversityProject Page & Code:https://Robo-Think.github.io"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30111.jpg",
+  "w": 640,
+  "h": 320
+ },
+ "2611.30101": {
+  "orgs": [
+   "University of Science and Technology of China 2LeapWing AI 3MBZUAI 4IA"
+  ],
+  "affils": [
+   "LeapWing AI\nTechnical Report\nNovember 2026\nAgent on Guard: Self-Improving Runtime\nIntervention for Robust Robotic Manipulation\nGengming Cui1*\nMingfei Han1,2,3*†\nJiawei Zhang1\nMozheng Liao1\nYunkai Guo4\nMinghao Jin1\nTingwen Du1\nSalman Khan3\nXiaojun Chang1,2,3\nZhihui Li1\n1Future Media Computing Lab, University of Science and Technology of China 2LeapWing AI 3MBZUAI 4IA, CAS\n*Equal contribution\n†Project lead"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30101.jpg",
+  "w": 640,
+  "h": 339
+ },
+ "2611.30099": {
+  "orgs": [
+   "Kyung Hee University",
+   "LTD.{sunj"
+  ],
+  "affils": [
+   "Kyung Hee University",
+   "MOBILTECH CO., LTD.{sunj, geunhyeok, pauldoun, hyoseok}@khu.ac.kr"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30099.jpg",
+  "w": 631,
+  "h": 440
+ },
+ "2611.30083": {
+  "orgs": [],
+  "affils": [
+   "MOTIONSERVE: EFFICIENT MULTI-ROBOT SERVING BY EXPLOITING ROBOT\nEXECUTION SLACK\nZikang Wen 1 Yuning Zhang 1 Dong Yuan 1"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30083.jpg",
+  "w": 460,
+  "h": 440
+ },
+ "2611.30078": {
+  "orgs": [],
+  "affils": [
+   "RadarOSV: Unified 3D Scene and Motion Perception from mmWave Radars\nYuan Fang1\nLong Zhuang2,3\nXijia Wei1\nJingqi Jiang4\nFangzhan Shi1\nSimon Julier1\nKevin Chetty1\n(a) Motorway: truck & car\n0\n50 m\n24.0 m/s\n31.8 m/s\nvego = 28.0 m/s\n(b) Suburban traffic\n10.8 m/s\n11.3 m/s\n13.0 m/s\nvego = 12.0 m/s\n(c) Stationary ego\n5.9 m/s\n6.0 m/s\nStationary vehicles\nvego = 0.0 m/s\n(d) Urban: cyclist & pedestrian\n1.5 m/s\n4.5 m/s\nvego = 1.4 m/s\nRGB reference only\nRadarOSV predictions\nCar\nPerson\nTwo-wheeler\nLarge vehicle\nStatic\nGround\nFigure 1.\nRadarOSV predictions in four driving scenes. RadarOSV integrates complementary information from cascaded imaging\nradar and single-chip radar to jointly predict 3D occupancy, dynamic-object semantics and velocities, as well as ego speed (vego). Arrows\nshow the moving direction, and each labeled speed is the median predicted velocity within the annotated object region. In (a)–(c), each\nconnected component is colored by its majority class. Each panel covers the region up to 50 m ahead. RGB images are for visual reference\nonly."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30078.jpg",
+  "w": 640,
+  "h": 270
+ },
+ "2611.30077": {
+  "orgs": [
+   "University of Michigan"
+  ],
+  "affils": [
+   "\n\nYulun Zhuang\n\n  \nHanyu Zhang\n\n  \nJingyu Liu\n\n  \nYanran Ding*\n††thanks: \n* Corresponding author email: yanrand@umich.edu.\nAuthors are with the Department of Robotics, University of Michigan, Ann Arbor, MI 48109, USA.\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30077.jpg",
+  "w": 408,
+  "h": 274
+ },
+ "2611.30072": {
+  "orgs": [],
+  "affils": [
+   "HERO: Hierarchical Region-Aware Reinforcement Learning for\nAutonomous Exploration\nXulin Xiao*, Shengyi Liang, Mingjie Zhang, Chengkai Wu, Chen Chen, Zhigang Li, Jinni ZHOU, Jun Ma, Boyu Zhou\nFig. 1.\nAutonomous exploration of an underground parking garage (Site I) using HERO. (a) Reconstructed point-cloud map and executed trajectory. (b)\nand (c) Local candidate-node evaluations during exploration. (d) Top view of the map and trajectory. (e) Robot in the test environment. Trajectory color\nindicates robot velocity in m/s."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30072.jpg",
+  "w": 640,
+  "h": 369
+ },
+ "2611.30064": {
+  "orgs": [
+   "University of Surrey",
+   "University of York"
+  ],
+  "affils": [
+   "University of Surrey",
+   "University of York"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30064.jpg",
+  "w": 640,
+  "h": 411
+ },
+ "2611.30047": {
+  "orgs": [
+   "Tulane CMU Amazon UCSD MIT Co- Project Page &"
+  ],
+  "affils": [
+   "Tulane CMU Amazon UCSD MIT†Equal contribution *Co-corresponding authorsProject Page & Code: https://RoboLiveMem.github.io"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30047.jpg",
+  "w": 396,
+  "h": 432
+ },
+ "2611.30041": {
+  "orgs": [
+   "University of Electronic Science and Technology of China",
+   "Northwestern Polytechnical University"
+  ],
+  "affils": [
+   "University of Electronic Science and Technology of China",
+   "LuxiTech",
+   "Northwestern Polytechnical University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30041.jpg",
+  "w": 397,
+  "h": 440
+ },
+ "2611.30026": {
+  "orgs": [
+   "Shanghai Jiao Tong University",
+   "EPFL"
+  ],
+  "affils": [
+   "Shanghai Jiao Tong University, School of Mechanical Engineering",
+   "Biorobotics Laboratory, EPFL, 1015 Lausanne, Switzerland"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30026.jpg",
+  "w": 429,
+  "h": 440
+ },
+ "2611.30024": {
+  "orgs": [
+   "Shanghai Jiao Tong University"
+  ],
+  "affils": [
+   "Zhejiang University Shanghai Jiao Tong University Noematrix University of Minnesota EndlessAI"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30024.jpg",
+  "w": 640,
+  "h": 274
+ },
+ "2611.30022": {
+  "orgs": [
+   "University of Texas"
+  ],
+  "affils": [
+   "MOVER: Planning Beyond Motion\nXiangyu Li1, Yu Jiang1, Tianyi Wang1, Liang He2, Qixing Huang1, Zhaomiao Guo1,†\n1University of Texas at Austin\n2ETH Zurich\n†Corresponding author: Zhaomiao Guo (zguo@utexas.edu)"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30022.jpg",
+  "w": 640,
+  "h": 259
+ },
+ "2611.30007": {
+  "orgs": [],
+  "affils": [
+   "One Latent World for Heterogeneous LiDARs:\nA Scan Pattern Agnostic 4D World Model via Direct Ray Decoding\nMinwoo Jung1, Dongjae Lee1, DongGuw Lee1, Yeong Sang Park2, Maurice Fallon3, and Ayoung Kim1"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30007.jpg",
+  "w": 429,
+  "h": 440
+ },
+ "2611.30004": {
+  "orgs": [
+   "Shanghai Jiao Tong University",
+   "HKUST"
+  ],
+  "affils": [
+   "Shanghai Jiao Tong University",
+   "The Hong Kong University of Science and Technology (Guangzhou)"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30004.jpg",
+  "w": 640,
+  "h": 294
+ },
+ "2611.29980": {
+  "orgs": [],
+  "affils": [
+   "TeleMultiStream: An Integrated Robot Teleoperation System with\nLow-Latency Multi-Stream Video Feedback\nChenchen Lv, Lingchen Hu, Yaosai Zhang, Chunlan Li, Gengkui Wei, Wei Xin, and Li Li*"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.29980.jpg",
+  "w": 420,
+  "h": 198
+ },
+ "2611.29947": {
+  "orgs": [],
+  "affils": [
+   "1 \n \n \nSAGE-Drive: Benefit-Aware Adaptive Reasoning for \nAutonomous Driving Planning \n \nDonglei Rong, Wenbin Yao, Congcong Bai, Xi Gao, Qiaoqiao Ren, Sheng Jin, Cheng Xu \n "
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.29947.jpg",
+  "w": 640,
+  "h": 359
+ },
+ "2611.29918": {
+  "orgs": [
+   "Beijing Roborock Technology"
+  ],
+  "affils": [
+   "Chenyu Niu",
+   "Beijing Roborock Technology Co., Ltd.",
+   "qianjiahui@roborock.com, wangtiandong@roborock.com, fanshubao@roborock.com",
+   "niuchenyu@roborock.com, rafe@roborock.com"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29918.jpg",
+  "w": 640,
+  "h": 360
+ },
+ "2611.29913": {
+  "orgs": [
+   "Carnegie Mellon University"
+  ],
+  "affils": [
+   "\n\nAdam Kan\n\n  \nJason Jingzhou Liu\n\n  \nJiahui Yang\n\n  \nKenneth Shaw\n\n  \nDeepak Pathak\n††thanks: All authors are with Carnegie Mellon University, Pittsburgh, PA, USA. Corresponding author: Adam Kan (ahkan@andrew.cmu.edu)."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29913.jpg",
+  "w": 640,
+  "h": 317
+ },
+ "2611.29912": {
+  "orgs": [
+   "Zhejiang University",
+   "BYD New Technology Research Institute",
+   "Shenzhen University"
+  ],
+  "affils": [
+   "Zhejiang University",
+   "BYD New Technology Research Institute",
+   "Shenzhen University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29912.jpg",
+  "w": 640,
+  "h": 316
+ },
+ "2611.29907": {
+  "orgs": [
+   "Beijing Institute of Technology",
+   "Beijing University of Technology"
+  ],
+  "affils": [
+   "Zhiwen Song, Guanglu Jia, Zuowei Chen, Hao Wen and Qing Shi are with Beijing Institute of Technology, Beijing, China",
+   "Ruidi Liu is with Beijing University of Technology, Beijing, China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29907.jpg",
+  "w": 640,
+  "h": 403
+ },
+ "2611.29897": {
+  "orgs": [
+   "Peking University",
+   "Korea University"
+  ],
+  "affils": [
+   "\n\nYue Huang*\n\n  \nTianshan Zhang*\n\n  \nZeyu Zhang\n\n  \nJayeon Kang\n\n  \nAkide Liu\n\n  \nSungjoon Choi\n\n  \nDacheng Tao\n\n  \nHao Tang\n††thanks: \n*Equal contribution. $ˆ†$Project lead. $ˆ‡$Corresponding author, E-mail: bjdxtanghao@gmail.com. Yue Huang, Tianshan Zhang, Zeyu Zhang, and Hao Tang are with the School of Computer Science, Peking University, Beijing 100871, China.\nJayeon Kang and Sungjoon Choi are with the Department of Artificial Intelligence, Korea University, Seoul 02841, Korea. Akide Liu is with the Department of Data Science and AI, Monash University, Melbourne VIC 3800, Australia. Dacheng Tao is with the College of Computing and Data Science, Nanyang Technological University, Singapore.\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29897.jpg",
+  "w": 640,
+  "h": 272
+ },
+ "2611.29886": {
+  "orgs": [
+   "Northwestern University",
+   "University of Chicago"
+  ],
+  "affils": [
+   "Department of Mechanical Engineering, Northwestern University, Evanston, IL, USA",
+   "Present address: Department of Neurological Surgery, University of Chicago, Chicago, IL, USA",
+   "*Corresponding author. Email: hartmann@northwestern.edu",
+   "Department of Biomedical Engineering, Northwestern University, Evanston, IL, USA"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29886.jpg",
+  "w": 640,
+  "h": 245
+ },
+ "2611.29884": {
+  "orgs": [
+   "University of Colorado BoulderEmail:",
+   "University of Colorado Boulder"
+  ],
+  "affils": [
+   "Department of Computer Science, University of Colorado BoulderEmail: {firstname.lastname}@colorado.edu",
+   "Department of Aerospace Engineering Sciences, University of Colorado Boulder"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.29884.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.29873": {
+  "orgs": [
+   "HKUST"
+  ],
+  "affils": [
+   "Hong Kong University of Science and Technology"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29873.jpg",
+  "w": 640,
+  "h": 318
+ },
+ "2611.29868": {
+  "orgs": [
+   "University of Michigan"
+  ],
+  "affils": [
+   "\n\nZelin Shen\n\n  \nGabriel Ramos Salinas\n\n  \nQiyu Zhang\n\n  \nYue Qin\n\n  \nChen Qian\n\n  \nYanran Ding\n††thanks: Authors are with the Department of Robotics, University of Michigan, Ann Arbor, MI 48109, USA.\n{zelin, gramsal, qiyuzh, yueqin, chq, yanrand}@umich.edu"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29868.jpg",
+  "w": 640,
+  "h": 396
  }
 }
