@@ -1,0 +1,41 @@
+name: Check API keys
+
+# Confirms the GEMINI_API_KEY secret works and lists the models it can use.
+# The key itself is never printed.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Gemini
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "::error::GEMINI_API_KEY is empty"
+            exit 1
+          fi
+          echo "key length: ${#GEMINI_API_KEY}"
+          case "$GEMINI_API_KEY" in AIza*) echo "prefix: looks like a Google API key";; *) echo "::warning::key does not start with AIza";; esac
+          code=$(curl -s -o models.json -w '%{http_code}' -H "x-goog-api-key: $GEMINI_API_KEY" \
+            "https://generativelanguage.googleapis.com/v1beta/models?pageSize=1000")
+          echo "HTTP $code"
+          if [ "$code" != "200" ]; then
+            python3 -c "import json; print(json.load(open('models.json')).get('error', {}).get('message', ''))" || true
+            exit 1
+          fi
+          python3 - <<'EOF'
+          import json
+          models = json.load(open("models.json")).get("models", [])
+          gen = [m["name"].removeprefix("models/") for m in models
+                 if "generateContent" in m.get("supportedGenerationMethods", [])]
+          print(f"{len(gen)} models support generateContent:")
+          for name in sorted(gen):
+              print(" ", name)
+          EOF
