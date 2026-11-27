@@ -22,7 +22,7 @@
     zh: {
       skip: '跳到论文列表',
       total: (shown, all) => (shown === all ? `共 ${all} 篇` : `显示 ${shown} / ${all} 篇`),
-      showRest: (n) => `显示其余 ${n} 篇`,
+      showRest: (n) => `显示其余 ${n} 篇`, views: (n) => `${n} 次阅读`,
       sortHot: '按热度', sortOriginal: '原始顺序', sortHf: '按 HF 点赞',
       popular: (n) => `热门 · 近 ${n} 天`, popularNote: '按 HF 与 alphaXiv 点赞（alphaXiv 每 10 次访问折合 1 赞）排序', heatTip: (hf, ax, v) => `HF 点赞 ${hf} · alphaXiv 点赞 ${ax} · alphaXiv 访问 ${v}`,
       prevDay: '前一天', nextDay: '后一天', theme: '切换深色 / 浅色',
@@ -42,7 +42,7 @@
     en: {
       skip: 'Skip to papers',
       total: (shown, all) => (shown === all ? `${all} papers` : `${shown} / ${all} papers`),
-      showRest: (n) => `Show the other ${n}`,
+      showRest: (n) => `Show the other ${n}`, views: (n) => `${n} views`,
       sortHot: 'By popularity', sortOriginal: 'arXiv order', sortHf: 'By HF upvotes',
       popular: (n) => `Popular · last ${n} days`, popularNote: 'Ranked by HF + alphaXiv upvotes (10 alphaXiv visits count as one)', heatTip: (hf, ax, v) => `HF upvotes ${hf} · alphaXiv upvotes ${ax} · alphaXiv visits ${v}`,
       prevDay: 'Previous day', nextDay: 'Next day', theme: 'Toggle dark / light',
@@ -338,8 +338,8 @@
     const hf = (paper.hf_upvotes
       ? `<a class="hf" href="https://huggingface.co/papers/${id}" target="_blank" rel="noopener" title="${tip}">HF ▲ ${paper.hf_upvotes}</a>`
       : '')
-      + (paper.ax_votes
-        ? `<a class="hf" href="https://www.alphaxiv.org/abs/${id}" target="_blank" rel="noopener" title="${tip}">alphaXiv ▲ ${paper.ax_votes}</a>`
+      + (paper.ax_votes || paper.ax_visits
+        ? `<a class="hf" href="https://www.alphaxiv.org/abs/${id}" target="_blank" rel="noopener" title="${tip}">alphaXiv${paper.ax_votes ? ` ▲ ${paper.ax_votes}` : ''}${paper.ax_visits ? ` · ${escapeHtml(t('views', paper.ax_visits))}` : ''}</a>`
         : '');
     const code = paper.code_url
       ? `<a class="act" href="${escapeHtml(paper.code_url)}" target="_blank" rel="noopener">[Code]</a>`
