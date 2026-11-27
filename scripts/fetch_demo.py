@@ -180,6 +180,8 @@ def main():
 
     notes_path = out / "demo_notes.json"
     notes = json.loads(notes_path.read_text()) if notes_path.exists() else {}
+    enrich_path = out / "enrich.json"  # written by scripts/enrich.py
+    enrich = json.loads(enrich_path.read_text()) if enrich_path.exists() else {}
 
     (out / "days").mkdir(parents=True, exist_ok=True)
     index_days = []
@@ -194,6 +196,11 @@ def main():
             if note.get("summary"):
                 paper["summary"] = note["summary"]
             paper["faq"] = (out / "faq" / f"{paper['id']}.json").exists()
+            extra = enrich.get(paper["id"])
+            if extra:
+                paper["orgs"] = extra.get("orgs", [])
+                if extra.get("thumb"):
+                    paper["thumb"], paper["thumb_w"], paper["thumb_h"] = extra["thumb"], extra["w"], extra["h"]
             rows.append(paper)
         payload = {"date": date, "category": args.cat, "demo": True, "papers": rows}
         (out / "days" / f"{date}.json").write_text(json.dumps(payload, ensure_ascii=False, indent=1))

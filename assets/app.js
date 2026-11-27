@@ -34,6 +34,8 @@
       noStars: '还没有星标论文。点标题右边的 ☆ 收藏。', exportMd: '复制 Markdown', exportDl: '下载 .md',
       showAbstract: '显示摘要', onlyFaq: '只看有解读的', onlySummary: '只看有一句话总结的',
       star: '星标', unstar: '取消星标', moreAuthors: (n) => `+${n} 人`,
+      orgs: '机构', expandAbs: '展开', collapseAbs: '收起', fullAbstract: '摘要完整显示', preview: '预览图',
+      showThumbs: '显示预览图',
       disclaimer: '论文元数据来自 arXiv，点赞数来自 Hugging Face Daily Papers。解读由 AI 生成，可能有误，请以原文为准；论文版权归原作者所有。',
     },
     en: {
@@ -51,12 +53,16 @@
       noStars: 'No starred papers yet. Click ☆ next to a title.', exportMd: 'Copy Markdown', exportDl: 'Download .md',
       showAbstract: 'Show abstracts', onlyFaq: 'Only papers with AI reading', onlySummary: 'Only papers with a summary',
       star: 'Star', unstar: 'Unstar', moreAuthors: (n) => `+${n} more`,
+      orgs: 'Organizations', expandAbs: 'more', collapseAbs: 'less', fullAbstract: 'Show full abstracts', preview: 'Preview',
+      showThumbs: 'Show preview images',
       disclaimer: 'Paper metadata from arXiv; upvotes from Hugging Face Daily Papers. Readings are AI-generated and may contain errors; please check the original paper. Copyright belongs to the authors.',
     },
   };
 
   const STAR_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>';
   const AUTHOR_LIMIT = 12;
+  const ABS_CLAMP_CHARS = 420; // shorter abstracts are shown in full
+  const ORG_LIMIT = 5;
 
   const params = new URLSearchParams(location.search);
   const state = {
@@ -72,6 +78,9 @@
     showAbstract: store.get('dp-abs', true),
     onlyFaq: store.get('dp-onlyfaq', false),
     onlySummary: store.get('dp-onlysum', false),
+    fullAbstract: store.get('dp-fullabs', false),
+    showThumbs: store.get('dp-thumbs', true),
+    expandedAbs: new Set(),
     search: Object.assign({ inc: '', exc: '', logic: 'OR', filter: true, highlight: true }, store.get('dp-search', {})),
     stars: store.get('dp-stars', {}),
     visited: new Set(store.get('dp-visited', [])),
@@ -99,7 +108,7 @@
   }
 
   function matches(paper, terms) {
-    const hay = `${paper.title} ${paper.abstract} ${paper.authors.join(' ')} ${(paper.tags || []).join(' ')} ${summaryText(paper)}`.toLowerCase();
+    const hay = `${paper.title} ${paper.abstract} ${paper.authors.join(' ')} ${(paper.orgs || []).join(' ')} ${(paper.tags || []).join(' ')} ${summaryText(paper)}`.toLowerCase();
     if (terms.exc.some((k) => hay.includes(k.toLowerCase()))) return false;
     if (!terms.inc.length) return true;
     const hit = (k) => hay.includes(k.toLowerCase());
@@ -312,6 +321,21 @@
       ? `<a class="act" href="${escapeHtml(paper.code_url)}" target="_blank" rel="noopener">[Code]</a>`
       : '';
     const faqCls = paper.faq ? 'act' : 'act unavailable';
+    const orgs = paper.orgs || [];
+    const orgHtml = orgs.length
+      ? `<div class="orgs" title="${escapeHtml(t('orgs'))}">${orgs.slice(0, ORG_LIMIT).map((o) => `<span class="org">${hl(o)}</span>`).join('')}${orgs.length > ORG_LIMIT ? `<span class="org more">+${orgs.length - ORG_LIMIT}</span>` : ''}</div>`
+      : '';
+    const thumb = state.showThumbs && paper.thumb
+      ? `<button type="button" class="thumb" data-act="thumb" title="${escapeHtml(t('preview'))}"><img src="${escapeHtml(paper.thumb)}" width="${paper.thumb_w || ''}" height="${paper.thumb_h || ''}" loading="lazy" decoding="async" alt="${escapeHtml(t('preview'))}: ${escapeHtml(paper.title)}"></button>`
+      : '';
+    const longAbs = (paper.abstract || '').length > ABS_CLAMP_CHARS;
+    const clamp = longAbs && !state.fullAbstract && !state.expandedAbs.has(paper.id);
+    const absToggle = longAbs && !state.fullAbstract
+      ? ` <button type="button" class="link abs-toggle" data-act="abs">${escapeHtml(t(clamp ? 'expandAbs' : 'collapseAbs'))}</button>`
+      : '';
+    const abstract = state.showAbstract
+      ? `<div class="abstract-wrap"><p class="abstract${clamp ? ' clamp' : ''}">${hl(paper.abstract)}</p>${absToggle}</div>`
+      : '';
     return `
 <li class="paper${state.visited.has(paper.id) ? ' visited' : ''}" id="${id}" data-id="${id}">
   <div class="paper-head">
@@ -320,24 +344,30 @@
     <button type="button" class="star" data-act="star" aria-pressed="${starred}" title="${escapeHtml(t(starred ? 'unstar' : 'star'))}">${STAR_SVG}</button>
   </div>
   <div class="paper-body">
-    <div class="paper-actions">
-      <button type="button" class="act" data-act="pdf" aria-expanded="${state.openPdf.has(paper.id)}">[PDF]</button>
-      <button type="button" class="act" data-act="copy">[Copy]</button>
-      <button type="button" class="${faqCls}" data-act="faq" aria-expanded="${state.openFaq.has(paper.id)}">[FAQ]</button>
-      <button type="button" class="act" data-act="rel">[REL]</button>
-      ${code}
+    <div class="paper-grid${thumb ? ' has-thumb' : ''}">
+      <div class="paper-main">
+        <div class="paper-actions">
+          <button type="button" class="act" data-act="pdf" aria-expanded="${state.openPdf.has(paper.id)}">[PDF]</button>
+          <button type="button" class="act" data-act="copy">[Copy]</button>
+          <button type="button" class="${faqCls}" data-act="faq" aria-expanded="${state.openFaq.has(paper.id)}">[FAQ]</button>
+          <button type="button" class="act" data-act="rel">[REL]</button>
+          ${code}
+        </div>
+        ${orgHtml}
+        <p class="authors"><span class="label">${escapeHtml(t('authors'))}:</span> ${authorsHtml(paper)}</p>
+        <div class="badges">
+          ${score === null ? '' : `<span class="score${scoreCls}" title="${escapeHtml(t('relevance'))}">${fmtScore(score)}</span>`}
+          ${tags}${hf}
+        </div>
+        ${summary ? `<p class="summary">${hl(summary)}</p>` : ''}
+        ${abstract}
+        <p class="paper-meta">
+          <span class="label">${escapeHtml(t('subject'))}:</span> ${subjects}<span class="sep">|</span><span class="label">${escapeHtml(t('submitted'))}:</span> ${escapeHtml(fmtTime(paper.published))}
+          ${paper.comment ? `<br><span class="label">${escapeHtml(t('comment'))}:</span> ${hl(paper.comment)}` : ''}
+        </p>
+      </div>
+      ${thumb}
     </div>
-    <p class="authors"><span class="label">${escapeHtml(t('authors'))}:</span> ${authorsHtml(paper)}</p>
-    <div class="badges">
-      ${score === null ? '' : `<span class="score${scoreCls}" title="${escapeHtml(t('relevance'))}">${fmtScore(score)}</span>`}
-      ${tags}${hf}
-    </div>
-    ${summary ? `<p class="summary">${hl(summary)}</p>` : ''}
-    ${state.showAbstract ? `<p class="abstract">${hl(paper.abstract)}</p>` : ''}
-    <p class="paper-meta">
-      <span class="label">${escapeHtml(t('subject'))}:</span> ${subjects}<span class="sep">|</span><span class="label">${escapeHtml(t('submitted'))}:</span> ${escapeHtml(fmtTime(paper.published))}
-      ${paper.comment ? `<br><span class="label">${escapeHtml(t('comment'))}:</span> ${hl(paper.comment)}` : ''}
-    </p>
     <div class="slot-pdf"></div>
     <div class="slot-faq"></div>
   </div>
@@ -532,6 +562,28 @@
     render();
   }
 
+  // ---------- preview lightbox ----------
+  function openLightbox(paper) {
+    if (!paper?.thumb) return;
+    const box = $('#lightbox');
+    box.innerHTML = `
+<figure>
+  <img src="${escapeHtml(paper.thumb)}" alt="${escapeHtml(t('preview'))}">
+  <figcaption><span>${escapeHtml(paper.title)}</span> <a href="https://arxiv.org/abs/${escapeHtml(paper.id)}" target="_blank" rel="noopener">arXiv ↗</a></figcaption>
+</figure>`;
+    renderMath(box);
+    box.hidden = false;
+    document.body.classList.add('no-scroll');
+  }
+
+  function closeLightbox() {
+    const box = $('#lightbox');
+    if (box.hidden) return;
+    box.hidden = true;
+    box.innerHTML = '';
+    document.body.classList.remove('no-scroll');
+  }
+
   // ---------- events ----------
   function bind() {
     $('#papers').addEventListener('click', async (ev) => {
@@ -554,6 +606,14 @@
         case 'pdf': openPdf(id); break;
         case 'faq': openFaq(id); break;
         case 'star': toggleStar(id); break;
+        case 'abs': {
+          if (state.expandedAbs.has(id)) state.expandedAbs.delete(id); else state.expandedAbs.add(id);
+          const open = state.expandedAbs.has(id);
+          $('.abstract', card).classList.toggle('clamp', !open);
+          actBtn.textContent = t(open ? 'collapseAbs' : 'expandAbs');
+          break;
+        }
+        case 'thumb': openLightbox(paper); break;
         case 'authors':
           state.expandedAuthors.add(id);
           $('.authors', card).innerHTML = `<span class="label">${escapeHtml(t('authors'))}:</span> ${authorsHtml(paper)}`;
@@ -632,7 +692,7 @@
       $$('.bar-panel').forEach((p) => { p.hidden = true; });
       $$('.bar-btn[data-panel]').forEach((b) => b.setAttribute('aria-expanded', 'false'));
     };
-    document.addEventListener('keydown', (ev) => { if (ev.key === 'Escape') closePanels(); });
+    document.addEventListener('keydown', (ev) => { if (ev.key === 'Escape') { closePanels(); closeLightbox(); } });
     document.addEventListener('click', (ev) => { if (!ev.target.closest('#app-bar')) closePanels(); });
     $('#top-btn').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
@@ -680,6 +740,12 @@
     opt('#opt-abstract', 'showAbstract', 'dp-abs');
     opt('#opt-onlyfaq', 'onlyFaq', 'dp-onlyfaq');
     opt('#opt-onlysummary', 'onlySummary', 'dp-onlysum');
+    opt('#opt-fullabs', 'fullAbstract', 'dp-fullabs');
+    opt('#opt-thumbs', 'showThumbs', 'dp-thumbs');
+
+    $('#lightbox').addEventListener('click', (ev) => {
+      if (!ev.target.closest('a')) closeLightbox();
+    });
   }
 
   async function init() {
