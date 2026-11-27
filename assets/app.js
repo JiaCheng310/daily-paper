@@ -22,6 +22,7 @@
     zh: {
       skip: '跳到论文列表',
       total: (shown, all) => (shown === all ? `共 ${all} 篇` : `显示 ${shown} / ${all} 篇`),
+      showRest: (n) => `显示其余 ${n} 篇`,
       sortHot: '按热度', sortOriginal: '原始顺序', sortHf: '按 HF 点赞',
       popular: (n) => `热门 · 近 ${n} 天`, popularNote: '按 HF 与 alphaXiv 累计点赞之和排序', heatTip: (hf, ax, v) => `HF 点赞 ${hf} · alphaXiv 点赞 ${ax} · alphaXiv 访问 ${v}`,
       prevDay: '前一天', nextDay: '后一天', theme: '切换深色 / 浅色',
@@ -41,6 +42,7 @@
     en: {
       skip: 'Skip to papers',
       total: (shown, all) => (shown === all ? `${all} papers` : `${shown} / ${all} papers`),
+      showRest: (n) => `Show the other ${n}`,
       sortHot: 'By popularity', sortOriginal: 'arXiv order', sortHf: 'By HF upvotes',
       popular: (n) => `Popular · last ${n} days`, popularNote: 'Ranked by HF + alphaXiv upvotes', heatTip: (hf, ax, v) => `HF upvotes ${hf} · alphaXiv upvotes ${ax} · alphaXiv visits ${v}`,
       prevDay: 'Previous day', nextDay: 'Next day', theme: 'Toggle dark / light',
@@ -62,6 +64,7 @@
   const STAR_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>';
   const AUTHOR_LIMIT = 6; // names shown inline next to the organizations
   const ORG_LIMIT = 4;
+  const DAY_LIMIT = 50; // a day shows its top 50; the rest behind a button
 
   const params = new URLSearchParams(location.search);
   const state = {
@@ -241,6 +244,7 @@
       return;
     }
     state.openPdf.clear();
+    state.showAll = false;
     render();
   }
 
@@ -293,7 +297,10 @@
       original: (a, b) => a.order - b.order,
     }[state.sort] || ((a, b) => a.order - b.order);
     list.sort(by);
-    return { list: list.map((x) => x.p), total: all.length };
+    const searching = terms.inc.length > 0 || terms.exc.length > 0;
+    const rest = state.day?.popular || searching || state.showAll ? 0 : Math.max(0, list.length - DAY_LIMIT);
+    if (rest) list = list.slice(0, DAY_LIMIT);
+    return { list: list.map((x) => x.p), total: all.length, rest };
   }
 
   function authorsHtml(paper) {
@@ -370,10 +377,11 @@
   function render() {
     if (!state.day) return;
     renderChrome();
-    const { list, total } = visiblePapers();
+    const { list, total, rest } = visiblePapers();
     $('#total').textContent = t('total', list.length, total);
     const container = $('#papers');
-    container.innerHTML = list.map((p, i) => cardHtml(p, i + 1)).join('');
+    container.innerHTML = list.map((p, i) => cardHtml(p, i + 1)).join('')
+      + (rest ? `<li class="show-rest"><button type="button" class="btn" data-act="show-rest">${escapeHtml(t('showRest', rest))}</button></li>` : '');
     $('#status').textContent = list.length ? '' : t('empty');
     renderMath(container);
     state.openPdf.forEach((id) => openPdf(id, false));
@@ -515,6 +523,11 @@
     $('#papers').addEventListener('click', async (ev) => {
       const tagBtn = ev.target.closest('[data-tag]');
       const actBtn = ev.target.closest('[data-act]');
+      if (ev.target.closest('[data-act="show-rest"]')) {
+        state.showAll = true;
+        render();
+        return;
+      }
       const card = ev.target.closest('.paper');
       if (!card) return;
       const id = card.dataset.id;

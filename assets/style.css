@@ -399,3 +399,5 @@ textarea {
   .bar-btn span[data-i18n] { display: none; }
   .pdf-panel iframe { height: 70vh; }
   }
+
+.show-rest { list-style: none; display: flex; justify-content: center; padding: 28px 0 8px; }

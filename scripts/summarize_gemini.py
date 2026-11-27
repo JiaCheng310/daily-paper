@@ -26,8 +26,8 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-MODEL = "gemini-3.5-flash"  # chosen 2026-11-27 over 3.5-flash-lite (sharper) and 3.8-flash (no free quota)
-FALLBACK = "gemini-3.5-flash-lite"  # used when the main model's free quota is exhausted
+MODEL = "gemini-3.5-flash-lite"  # 2026-11-27: user picked speed (~1 s/paper) over 3.5-flash (~37 s, sharper)
+FALLBACK = ""  # optional second model for when the main model's daily free quota is exhausted
 API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
 TAGS = ["VLA", "world model", "manipulation", "dexterous", "grasping", "bimanual", "mobile manipulation",
@@ -207,7 +207,7 @@ def main():
     ap.add_argument("--model", default=MODEL)
     ap.add_argument("--fallback", default=FALLBACK)
     ap.add_argument("--limit", type=int, default=0, help="process at most N papers (0 = all)")
-    ap.add_argument("--workers", type=int, default=3)
+    ap.add_argument("--workers", type=int, default=1)
     ap.add_argument("--delay", type=float, default=4.0, help="seconds between requests (free-tier rate limits)")
     ap.add_argument("--compare", default="", help="comma-separated models: write compare.json/.md, change no data")
     ap.add_argument("--out", default="compare.json")
