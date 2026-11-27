@@ -37,6 +37,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+      - name: Install dependencies
+        if: inputs.mode == 'run'
+        run: python -m pip install -r scripts/requirements.txt
       - name: Compare models
         if: inputs.mode == 'compare'
         env:
@@ -56,6 +61,9 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LIMIT: ${{ inputs.limit }}
         run: python -I -u scripts/summarize_gemini.py --limit "$LIMIT"
+      - name: Organizations from the summaries
+        if: inputs.mode == 'run'
+        run: python -I -u scripts/enrich.py --merge
       - name: Commit data
         if: inputs.mode == 'run'
         run: |
@@ -66,7 +74,7 @@ jobs:
             echo "No changes"
             exit 0
           fi
-          git commit -m "Update tags and one-line summaries (Gemini)"
+          git commit -m "Update tags, summaries and organizations (Gemini)"
           git pull --rebase origin main
           git push
       - name: Rebuild GitHub Pages

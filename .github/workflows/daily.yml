@@ -1,7 +1,8 @@
 name: Daily update
 
 # Every day: fetch new cs.RO papers from arXiv, refresh upvotes, add preview images and
-# organizations, write tags + one-line summaries (Gemini) for each day's top 50, commit, redeploy.
+# organizations, write tags + one-line summaries + organizations (Gemini) for each day's top 50,
+# commit, redeploy.
 #
 # arXiv announces new papers Sunday-Thursday at 20:00 US Eastern, i.e. 08:00-09:00
 # Beijing time Monday-Friday. 02:30 UTC = 10:30 Beijing, safely after the announcement
@@ -45,6 +46,9 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python -I -u scripts/summarize_gemini.py
+      - name: Organizations from the summaries
+        continue-on-error: true
+        run: python -I -u scripts/enrich.py --merge
       - name: Commit data
         run: |
           git config user.name "github-actions[bot]"

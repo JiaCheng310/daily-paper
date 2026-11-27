@@ -328,8 +328,20 @@ def _host(url):
     return host.removeprefix("www.")
 
 
-def ror_lookup(name):
-    """Return (display_name, ror_id, domain) or None. Accepts only confident matches."""
+COUNTRY_ALIASES = {"usa": "united states", "us": "united states", "united states of america": "united states",
+                   "uk": "united kingdom", "england": "united kingdom", "korea": "south korea",
+                   "republic of korea": "south korea", "prc": "china", "hong kong sar": "hong kong"}
+GREATER_CHINA = {"china", "hong kong", "macao", "macau"}
+
+
+def same_country(a, b):
+    a, b = (COUNTRY_ALIASES.get(x.lower(), x.lower()) for x in (a, b))
+    return a == b or (a in GREATER_CHINA and b in GREATER_CHINA)
+
+
+def ror_lookup(name, country=""):
+    """Return (display_name, ror_id, domain) or None. Accepts only confident matches; with a
+    country (from the model), a match in another country is rejected (EIT Ningbo is not EIT NZ)."""
     q = urllib.parse.urlencode({"affiliation": name})
     items = json.loads(fetch(f"{ROR_API}?{q}", timeout=30)[0]).get("items", [])
     org = next((it["organization"] for it in items if it.get("chosen")), None)
@@ -343,8 +355,10 @@ def ror_lookup(name):
                 break
     if org is None:
         return None
-    display = next((n["value"] for n in org.get("names", []) if "ror_display" in n.get("types", [])), name)
     countries = {loc.get("geonames_details", {}).get("country_name", "") for loc in org.get("locations", [])}
+    if country and countries and not any(same_country(country, c) for c in countries):
+        return None
+    display = next((n["value"] for n in org.get("names", []) if "ror_display" in n.get("types", [])), name)
     m = re.fullmatch(r"(.*?)\s*\(([^()]+)\)", display)
     if m and m.group(2) in countries:  # "Horizon Robotics (China)" -> "Horizon Robotics"
         display = m.group(1)
@@ -418,9 +432,9 @@ def fetch_logo(domain, logos_dir):
     return path
 
 
-def resolve_org(name, org_cache, logos_dir, online=True):
-    """Map an extracted organization name to {name, logo?, ror?}, cached by name."""
-    key = name.lower()
+def resolve_org(name, org_cache, logos_dir, online=True, country=""):
+    """Map an extracted organization name to {name, logo?, ror?}, cached by name (and country)."""
+    key = f"{name.lower()}|{country.lower()}" if country else name.lower()
     if key in org_cache:
         return org_cache[key]
     display, ror_id, domain = canonical(name), None, ""
@@ -432,7 +446,7 @@ def resolve_org(name, org_cache, logos_dir, online=True):
         if online:
             short = display in LOOKUP_NAMES
             try:
-                hit = ror_lookup(LOOKUP_NAMES.get(display, display))
+                hit = ror_lookup(LOOKUP_NAMES.get(display, display), country)
                 time.sleep(0.3)
             except Exception as exc:
                 print(f"  ROR failed for {name!r}: {exc}", file=sys.stderr)
@@ -553,6 +567,10 @@ def plausible_org(rec, kind):
 
 
 def merge(data_dir, cache, online=True):
+    """Write orgs and previews into the day files. Organizations come from the model
+    (data/llm.json, written by summarize_gemini.py) when it found any, else from the rules."""
+    llm_path = data_dir / "llm.json"
+    llm = json.loads(llm_path.read_text()) if llm_path.exists() else {}
     logos_dir = data_dir / "logos"
     logos_dir.mkdir(parents=True, exist_ok=True)
     org_path = data_dir / "orgs.json"
@@ -563,10 +581,13 @@ def merge(data_dir, cache, online=True):
             info = cache.get(paper["id"])
             if not info:
                 continue
+            ai = llm.get(paper["id"], {}).get("orgs")
+            names = [(o["name"], o.get("country", "")) for o in ai] if ai else [(n, "") for n in info.get("orgs", [])]
+            kind = "tagged" if ai else info.get("kind", "tagged")
             orgs, seen = [], set()
-            for name in info.get("orgs", []):
-                rec = resolve_org(name, org_cache, logos_dir, online)
-                if not plausible_org(rec, info.get("kind", "tagged")):
+            for name, country in names:
+                rec = resolve_org(name, org_cache, logos_dir, online, country)
+                if not plausible_org(rec, kind):
                     continue
                 if rec["name"].lower() not in seen:
                     seen.add(rec["name"].lower())
@@ -579,6 +600,15 @@ def merge(data_dir, cache, online=True):
                     paper.pop(key, None)
         path.write_text(json.dumps(day, ensure_ascii=False, indent=1))
         org_path.write_text(json.dumps(org_cache, ensure_ascii=False, indent=1, sort_keys=True))
+    # popular.json keeps copies of papers: give it the updated versions too.
+    popular_path = data_dir / "popular.json"
+    if popular_path.exists():
+        current = {p["id"]: p for path in (data_dir / "days").glob("*.json")
+                   for p in json.loads(path.read_text())["papers"]}
+        popular = json.loads(popular_path.read_text())
+        for period in popular.get("periods", {}).values():
+            period["papers"] = [current.get(p["id"], p) for p in period["papers"]]
+        popular_path.write_text(json.dumps(popular, ensure_ascii=False, indent=1))
     used = {Path(rec["logo"]).name for rec in org_cache.values() if rec.get("logo")}
     for f in logos_dir.glob("*.png"):  # logos of organizations no longer referenced
         if f.name not in used:
@@ -592,6 +622,7 @@ def main():
     ap.add_argument("--delay", type=float, default=1.0, help="seconds between papers")
     ap.add_argument("--refresh", action="store_true", help="ignore the cache")
     ap.add_argument("--renorm", action="store_true", help="recompute orgs from cached affiliations (no arXiv requests)")
+    ap.add_argument("--merge", action="store_true", help="only merge cached data into the day files (after summarize_gemini.py)")
     ap.add_argument("--offline", action="store_true", help="skip ROR and logo lookups")
     ap.add_argument("--refresh-logos", action="store_true", help="re-fetch all organization logos")
     args = ap.parse_args()
@@ -617,6 +648,11 @@ def main():
         org_path.write_text(json.dumps(org_cache, ensure_ascii=False, indent=1, sort_keys=True))
         print(f"logos: {sum('logo' in r for r in org_cache.values())} of "
               f"{sum('domain' in r for r in org_cache.values())} organizations with a site", flush=True)
+
+    if args.merge:
+        merge(data_dir, cache, online=not args.offline)
+        print("merged", flush=True)
+        return
 
     if args.renorm or args.refresh_logos:
         for entry in cache.values():

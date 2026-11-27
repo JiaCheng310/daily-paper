@@ -40,8 +40,11 @@ SYSTEM = f"""你在为一个公开的具身智能论文日报处理 arXiv 新论
 1. tags：1–4 个英文短标签，按与论文核心内容的相关程度排序，优先从这些里选：{", ".join(TAGS)}。只给论文真正在做的方向，摘要里仅顺带提到的不算。
 2. summary_zh：一句中文概括，40–90 字，写清做了什么、怎么做、关键结果。方法名、模型名、数据集名保留英文原文；摘要里有关键数字就带上，并写明对比对象；不要用“本文提出”“该论文”“作者”这类开头，直接从方法名或做法写起。
 3. summary_en：同一句话的英文版，不超过 40 个词。
+4. orgs：作者所属机构，按第一次出现的顺序，最多 8 个，只依据给出的"作者与单位"原文；没有这段原文就给空数组。
+   - name：顶层机构的常用英文名，例如 "Tsinghua University"、"XPENG"、"Hong Kong Polytechnic University"；院系、实验室、团队归到所属的大学或公司（"GRASP Laboratory, University of Pennsylvania" → "University of Pennsylvania"，"Robotics Foundation Model Team, XPENG" → "XPENG"）；同名机构要写清楚，例如 "Eastern Institute of Technology, Ningbo"。
+   - country：机构所在国家或地区的英文名，例如 "China"、"Hong Kong"、"United States"、"United Kingdom"、"South Korea"；看不出来就给空字符串。
 
-只依据给出的标题和摘要，不要推测摘要里没有的数字或结论。"""
+只依据给出的内容，不要推测摘要里没有的数字或结论，不要编造原文里没有的机构。"""
 
 SCHEMA = {
     "type": "OBJECT",
@@ -49,9 +52,14 @@ SCHEMA = {
         "tags": {"type": "ARRAY", "items": {"type": "STRING"}},
         "summary_zh": {"type": "STRING"},
         "summary_en": {"type": "STRING"},
+        "orgs": {"type": "ARRAY", "items": {
+            "type": "OBJECT",
+            "properties": {"name": {"type": "STRING"}, "country": {"type": "STRING"}},
+            "required": ["name", "country"],
+            "propertyOrdering": ["name", "country"]}},
     },
-    "required": ["tags", "summary_zh", "summary_en"],
-    "propertyOrdering": ["tags", "summary_zh", "summary_en"],
+    "required": ["tags", "summary_zh", "summary_en", "orgs"],
+    "propertyOrdering": ["tags", "summary_zh", "summary_en", "orgs"],
 }
 
 
@@ -59,10 +67,18 @@ def prompt_version(model):
     return hashlib.sha256((model + SYSTEM + json.dumps(SCHEMA, sort_keys=True)).encode()).hexdigest()[:12]
 
 
+AFFIL_CHARS = 1500  # the author block; PDF fallbacks carry the whole first page, cut it short
+AFFILS = {}  # paper id -> raw author/affiliation text from data/enrich.json, filled in main()
+
+
 def user_text(paper):
-    return (f"标题：{paper['title']}\n"
+    text = (f"标题：{paper['title']}\n"
             f"分类：{', '.join(paper.get('categories') or [paper.get('primary', '')])}\n"
             f"摘要：{paper['abstract']}")
+    affils = AFFILS.get(paper["id"])
+    if affils:
+        text += f"\n作者与单位（从论文页面抽取的原文，可能夹杂别的文字）：\n{affils[:AFFIL_CHARS]}"
+    return text
 
 
 def body(paper):
@@ -142,8 +158,14 @@ def clean(resp):
     en = en[:1].upper() + en[1:]
     if not zh or not en:
         raise ValueError("empty summary")
+    orgs, seen = [], set()
+    for org in out.get("orgs") or []:
+        name = re.sub(r"\s+", " ", str(org.get("name", ""))).strip(" .,;")
+        if name and len(name) <= 120 and name.lower() not in seen:
+            seen.add(name.lower())
+            orgs.append({"name": name, "country": str(org.get("country", "")).strip()})
     usage = resp.get("usageMetadata", {})
-    return {"tags": tags, "summary": {"zh": zh, "en": en},
+    return {"tags": tags, "summary": {"zh": zh, "en": en}, "orgs": orgs[:8],
             "usage": {"in": usage.get("promptTokenCount", 0), "out": usage.get("candidatesTokenCount", 0),
                       "thoughts": usage.get("thoughtsTokenCount", 0)}}
 
@@ -163,6 +185,20 @@ def merge(days, cache):
             for gone in ("score", "score_source", "faq"):
                 paper.pop(gone, None)
         path.write_text(json.dumps(day, ensure_ascii=False, indent=1))
+    # Organizations from the model are resolved (ROR names, logos) by `enrich.py --merge`.
+    refresh_popular(days)
+
+
+def refresh_popular(days):
+    """popular.json keeps copies of papers; replace them with the current day-file versions."""
+    path = next(iter(days)).parent.parent / "popular.json"
+    if not path.exists():
+        return
+    current = {p["id"]: p for day in days.values() for p in day["papers"]}
+    popular = json.loads(path.read_text())
+    for period in popular.get("periods", {}).values():
+        period["papers"] = [current.get(p["id"], p) for p in period["papers"]]
+    path.write_text(json.dumps(popular, ensure_ascii=False, indent=1))
 
 
 def sample(papers, n):
@@ -226,6 +262,11 @@ def main():
     cache_path = data_dir / "llm.json"
     cache = json.loads(cache_path.read_text()) if cache_path.exists() else {}
     days = load_days(data_dir)
+    enrich_path = data_dir / "enrich.json"
+    if enrich_path.exists():
+        for pid, entry in json.loads(enrich_path.read_text()).items():
+            if entry.get("affils"):
+                AFFILS[pid] = "\n".join(entry["affils"]).strip()
     papers = list({p["id"]: p for day in days.values() for p in day["papers"]}.values())
 
     if args.dry_run:
