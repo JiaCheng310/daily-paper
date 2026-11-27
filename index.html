@@ -41,12 +41,14 @@
     <div class="edition">
       <h1 id="cat-title">&nbsp;</h1>
       <span id="total" class="muted"></span>
+      <span id="popular-note" class="muted" data-i18n="popularNote" hidden></span>
     </div>
     <div class="controls">
       <button id="prev-day" class="arrow" type="button" data-i18n-title="prevDay" aria-label="previous day">‹</button>
       <select id="date-select" aria-label="date"></select>
       <button id="next-day" class="arrow" type="button" data-i18n-title="nextDay" aria-label="next day">›</button>
       <select id="sort-select" aria-label="sort">
+        <option value="hot" data-i18n="sortHot">按热度</option>
         <option value="original" data-i18n="sortOriginal">原始顺序</option>
         <option value="hf" data-i18n="sortHf">按 HF 点赞</option>
       </select>

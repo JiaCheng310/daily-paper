@@ -22,7 +22,8 @@
     zh: {
       skip: '跳到论文列表',
       total: (shown, all) => (shown === all ? `共 ${all} 篇` : `显示 ${shown} / ${all} 篇`),
-      sortOriginal: '原始顺序', sortHf: '按 HF 点赞',
+      sortHot: '按热度', sortOriginal: '原始顺序', sortHf: '按 HF 点赞',
+      popular: (n) => `热门 · 近 ${n} 天`, popularNote: '按 HF 与 alphaXiv 累计点赞之和排序', heatTip: (hf, ax, v) => `HF 点赞 ${hf} · alphaXiv 点赞 ${ax} · alphaXiv 访问 ${v}`,
       prevDay: '前一天', nextDay: '后一天', theme: '切换深色 / 浅色',
       authors: '作者', subject: '分类', submitted: '提交', comment: '备注',
       loading: '正在加载…', loadFail: '数据加载失败：',
@@ -41,7 +42,8 @@
     en: {
       skip: 'Skip to papers',
       total: (shown, all) => (shown === all ? `${all} papers` : `${shown} / ${all} papers`),
-      sortOriginal: 'arXiv order', sortHf: 'By HF upvotes',
+      sortHot: 'By popularity', sortOriginal: 'arXiv order', sortHf: 'By HF upvotes',
+      popular: (n) => `Popular · last ${n} days`, popularNote: 'Ranked by HF + alphaXiv upvotes', heatTip: (hf, ax, v) => `HF upvotes ${hf} · alphaXiv upvotes ${ax} · alphaXiv visits ${v}`,
       prevDay: 'Previous day', nextDay: 'Next day', theme: 'Toggle dark / light',
       authors: 'Authors', subject: 'Subject', submitted: 'Submitted', comment: 'Comment',
       loading: 'Loading…', loadFail: 'Failed to load data: ',
@@ -72,7 +74,7 @@
     date: params.get('date'),
     cat: params.get('cat'),
     lang: store.get('dp-lang', (navigator.language || '').toLowerCase().startsWith('zh') ? 'zh' : 'en'),
-    sort: ['original', 'hf'].includes(store.get('dp-sort')) ? store.get('dp-sort') : 'original',
+    sort: ['hot', 'original', 'hf'].includes(store.get('dp-sort')) ? store.get('dp-sort') : 'hot',
     onlyFaq: store.get('dp-onlyfaq', false),
     showThumbs: store.get('dp-thumbs', true),
     search: { inc: '', exc: '', logic: 'OR', filter: true },
@@ -196,10 +198,29 @@
     return resp.json();
   }
 
+  // Popular views live in the date select as "hot7" / "hot30".
+  function popularPeriod(value) {
+    const m = /^hot(\d+)$/.exec(value || '');
+    return m && state.index?.popular?.periods?.[m[1]] ? m[1] : null;
+  }
+
+  function popularPeriods() {
+    const periods = state.index?.popular?.periods || {};
+    // Hide a longer period while it covers no more days than a shorter one (same list).
+    let lastDays = 0;
+    return Object.keys(periods).map(Number).sort((x, y) => x - y).filter((n) => {
+      const p = periods[n];
+      if (!p.papers.length || p.days <= lastDays) return false;
+      lastDays = p.days;
+      return true;
+    });
+  }
+
   async function loadIndex() {
     state.index = await getJson('data/index.json');
+    state.index.popular = await getJson('data/popular.json').catch(() => null);
     const days = state.index.days.map((d) => d.date);
-    if (!days.includes(state.date)) state.date = days[0];
+    if (!days.includes(state.date) && !popularPeriods().includes(Number(popularPeriod(state.date)))) state.date = days[0];
     const cats = state.index.categories.map((c) => c.id);
     if (!cats.includes(state.cat)) state.cat = state.index.default_category || cats[0];
   }
@@ -208,10 +229,16 @@
     $('#status').textContent = t('loading');
     $('#papers').innerHTML = '';
     try {
-      if (!state.dayCache.has(state.date)) {
-        state.dayCache.set(state.date, await getJson(`data/days/${state.date}.json`));
+      const period = popularPeriod(state.date);
+      if (period) {
+        const popular = state.index.popular;
+        state.day = { date: state.date, popular: true, papers: popular.periods[period].papers };
+      } else {
+        if (!state.dayCache.has(state.date)) {
+          state.dayCache.set(state.date, await getJson(`data/days/${state.date}.json`));
+        }
+        state.day = state.dayCache.get(state.date);
       }
-      state.day = state.dayCache.get(state.date);
       $('#status').textContent = '';
     } catch (e) {
       state.day = null;
@@ -241,16 +268,22 @@
     $('#cat-title').textContent = cat ? (state.lang === 'zh' ? (cat.name_zh || cat.name) : cat.name) : state.cat;
 
     const sel = $('#date-select');
-    sel.innerHTML = state.index.days
-      .map((d) => `<option value="${escapeHtml(d.date)}">${escapeHtml(d.date)} (${d.count})</option>`)
-      .join('');
+    sel.innerHTML = popularPeriods()
+      .map((n) => `<option value="hot${n}">${escapeHtml(t('popular', n))}</option>`)
+      .join('')
+      + state.index.days
+        .map((d) => `<option value="${escapeHtml(d.date)}">${escapeHtml(d.date)} (${d.count})</option>`)
+        .join('');
     sel.value = state.date;
     const days = state.index.days.map((d) => d.date);
     const i = days.indexOf(state.date);
-    $('#prev-day').disabled = i >= days.length - 1;
+    $('#prev-day').disabled = i < 0 || i >= days.length - 1;
     $('#next-day').disabled = i <= 0;
 
+    const isPopular = Boolean(state.day?.popular);
+    $('#sort-select').hidden = isPopular;
     $('#sort-select').value = state.sort;
+    $('#popular-note').hidden = !isPopular;
   }
 
   // ---------- paper list ----------
@@ -260,7 +293,9 @@
     let list = all.map((p, i) => ({ p, order: i }));
     if (state.onlyFaq) list = list.filter(({ p }) => p.faq);
     if (state.search.filter) list = list.filter(({ p }) => matches(p, terms));
-    const by = {
+    const heat = (p) => p.heat ?? p.hf_upvotes ?? 0;
+    const by = state.day?.popular ? (a, b) => a.order - b.order : {
+      hot: (a, b) => heat(b.p) - heat(a.p) || (b.p.ax_visits ?? 0) - (a.p.ax_visits ?? 0) || a.order - b.order,
       hf: (a, b) => (b.p.hf_upvotes ?? -1) - (a.p.hf_upvotes ?? -1) || a.order - b.order,
       original: (a, b) => a.order - b.order,
     }[state.sort] || ((a, b) => a.order - b.order);
@@ -299,9 +334,13 @@
     const tags = (paper.tags || [])
       .map((tag) => `<button type="button" class="tag" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`)
       .join('<span class="dot">·</span>');
-    const hf = paper.hf_upvotes
-      ? `<a class="hf" href="https://huggingface.co/papers/${id}" target="_blank" rel="noopener" title="Hugging Face upvotes">▲ ${paper.hf_upvotes}</a>`
-      : '';
+    const tip = escapeHtml(t('heatTip', paper.hf_upvotes || 0, paper.ax_votes || 0, paper.ax_visits || 0));
+    const hf = (paper.hf_upvotes
+      ? `<a class="hf" href="https://huggingface.co/papers/${id}" target="_blank" rel="noopener" title="${tip}">HF ▲ ${paper.hf_upvotes}</a>`
+      : '')
+      + (paper.ax_votes
+        ? `<a class="hf" href="https://www.alphaxiv.org/abs/${id}" target="_blank" rel="noopener" title="${tip}">alphaXiv ▲ ${paper.ax_votes}</a>`
+        : '');
     const code = paper.code_url
       ? `<a class="act" href="${escapeHtml(paper.code_url)}" target="_blank" rel="noopener">[Code]</a>`
       : '';

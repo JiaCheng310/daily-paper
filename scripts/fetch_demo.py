@@ -182,6 +182,8 @@ def main():
     enrich = json.loads(enrich_path.read_text()) if enrich_path.exists() else {}
     llm_path = out / "llm.json"  # written by scripts/summarize.py
     llm = json.loads(llm_path.read_text()) if llm_path.exists() else {}
+    pop_path = out / "popularity.json"  # written by scripts/popularity.py
+    pop = json.loads(pop_path.read_text()) if pop_path.exists() else {}
 
     (out / "days").mkdir(parents=True, exist_ok=True)
     index_days = []
@@ -195,8 +197,14 @@ def main():
             else:
                 paper["score"], paper["tags"] = demo_score(paper)
                 paper["score_source"] = "keyword-demo"
-            if paper["id"] in votes:
-                paper["hf_upvotes"] = votes[paper["id"]]
+            row = pop.get(paper["id"], {})
+            hf_up = max(votes.get(paper["id"], 0), row.get("hf") or 0)
+            if hf_up:
+                paper["hf_upvotes"] = hf_up
+            if row:
+                paper["ax_votes"] = row.get("ax_votes") or 0
+                paper["ax_visits"] = row.get("ax_visits") or 0
+            paper["heat"] = hf_up + (row.get("ax_votes") or 0)
             paper["faq"] = (out / "faq" / f"{paper['id']}.json").exists()
             extra = enrich.get(paper["id"])
             if extra:

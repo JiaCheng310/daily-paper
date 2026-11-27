@@ -1,0 +1,44 @@
+name: Update popularity
+
+# Refreshes Hugging Face and alphaXiv upvotes for the last 30 days of papers,
+# re-ranks the "popular" lists and commits the data back.
+on:
+  schedule:
+    - cron: "23 1,9,17 * * *"  # three times a day (UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: data-update
+  cancel-in-progress: false
+
+jobs:
+  popularity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch upvotes
+        run: python -I -u scripts/popularity.py --window 30 --workers 4
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Update popularity"
+          git pull --rebase origin main
+          git push
+      - name: Rebuild GitHub Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || true
