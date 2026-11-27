@@ -9,6 +9,10 @@ on:
         description: "Max new papers to process (0 = all)"
         default: "0"
         required: true
+      refresh_logos:
+        description: "Re-fetch all organization logos (higher resolution)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -34,7 +38,10 @@ jobs:
       - name: Enrich
         env:
           LIMIT: ${{ inputs.limit }}
-        run: python -I -u scripts/enrich.py --delay 1 --limit "$LIMIT"
+          REFRESH_LOGOS: ${{ inputs.refresh_logos }}
+        run: |
+          if [ "$REFRESH_LOGOS" = "true" ]; then extra="--refresh-logos"; else extra=""; fi
+          python -I -u scripts/enrich.py --delay 1 --limit "$LIMIT" $extra
       - name: Commit data
         run: |
           git config user.name "github-actions[bot]"

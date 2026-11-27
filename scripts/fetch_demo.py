@@ -178,23 +178,25 @@ def main():
     hf_dates = [(newest + dt.timedelta(days=d)).isoformat() for d in range(-args.days, 3)]
     votes = hf_upvotes(hf_dates)
 
-    notes_path = out / "demo_notes.json"
-    notes = json.loads(notes_path.read_text()) if notes_path.exists() else {}
     enrich_path = out / "enrich.json"  # written by scripts/enrich.py
     enrich = json.loads(enrich_path.read_text()) if enrich_path.exists() else {}
+    llm_path = out / "llm.json"  # written by scripts/summarize.py
+    llm = json.loads(llm_path.read_text()) if llm_path.exists() else {}
 
     (out / "days").mkdir(parents=True, exist_ok=True)
     index_days = []
     for date in days:
         rows = []
         for paper in by_day[date]:
-            paper["score"], paper["tags"] = demo_score(paper)
-            paper["score_source"] = "keyword-demo"
+            if paper["id"] in llm:
+                entry = llm[paper["id"]]
+                paper["score"], paper["tags"], paper["summary"] = entry["score"], entry["tags"], entry["summary"]
+                paper["score_source"] = entry["model"]
+            else:
+                paper["score"], paper["tags"] = demo_score(paper)
+                paper["score_source"] = "keyword-demo"
             if paper["id"] in votes:
                 paper["hf_upvotes"] = votes[paper["id"]]
-            note = notes.get(paper["id"], {})
-            if note.get("summary"):
-                paper["summary"] = note["summary"]
             paper["faq"] = (out / "faq" / f"{paper['id']}.json").exists()
             extra = enrich.get(paper["id"])
             if extra:

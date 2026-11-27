@@ -1,2 +1,3 @@
 Pillow>=10
 pymupdf>=1.24
+anthropic>=2.14

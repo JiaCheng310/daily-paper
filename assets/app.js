@@ -32,9 +32,9 @@
       starred: '星标', search: '搜索', settings: '设置', top: '顶部',
       include: '包含', exclude: '排除', apply: '搜索', clear: '清空', filter: '只显示匹配',
       noStars: '还没有星标论文。点标题右边的 ☆ 收藏。', exportMd: '复制 Markdown', exportDl: '下载 .md',
-      showAbstract: '显示摘要', onlyFaq: '只看有解读的', onlySummary: '只看有一句话总结的',
+      onlyFaq: '只看有解读的',
       star: '星标', unstar: '取消星标', moreAuthors: (n) => `+${n} 人`,
-      orgs: '机构', expandAbs: '展开', collapseAbs: '收起', fullAbstract: '摘要完整显示', preview: '预览图',
+      orgs: '机构', preview: '预览图',
       showThumbs: '显示预览图',
       disclaimer: '论文元数据来自 arXiv，点赞数来自 Hugging Face Daily Papers。解读由 AI 生成，可能有误，请以原文为准；论文版权归原作者所有。',
     },
@@ -51,9 +51,9 @@
       starred: 'Starred', search: 'Search', settings: 'Settings', top: 'Top',
       include: 'Include', exclude: 'Exclude', apply: 'Search', clear: 'Clear', filter: 'Filter',
       noStars: 'No starred papers yet. Click ☆ next to a title.', exportMd: 'Copy Markdown', exportDl: 'Download .md',
-      showAbstract: 'Show abstracts', onlyFaq: 'Only papers with AI reading', onlySummary: 'Only papers with a summary',
+      onlyFaq: 'Only papers with AI reading',
       star: 'Star', unstar: 'Unstar', moreAuthors: (n) => `+${n} more`,
-      orgs: 'Organizations', expandAbs: 'more', collapseAbs: 'less', fullAbstract: 'Show full abstracts', preview: 'Preview',
+      orgs: 'Organizations', preview: 'Preview',
       showThumbs: 'Show preview images',
       disclaimer: 'Paper metadata from arXiv; upvotes from Hugging Face Daily Papers. Readings are AI-generated and may contain errors; please check the original paper. Copyright belongs to the authors.',
     },
@@ -61,7 +61,6 @@
 
   const STAR_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>';
   const AUTHOR_LIMIT = 6; // names shown inline next to the organizations
-  const ABS_CLAMP_CHARS = 330; // shorter abstracts are shown in full
   const ORG_LIMIT = 4;
 
   const params = new URLSearchParams(location.search);
@@ -75,12 +74,8 @@
     lang: store.get('dp-lang', (navigator.language || '').toLowerCase().startsWith('zh') ? 'zh' : 'en'),
     sort: store.get('dp-sort', 'score'),
     minScore: store.get('dp-min', 0),
-    showAbstract: store.get('dp-abs', true),
     onlyFaq: store.get('dp-onlyfaq', false),
-    onlySummary: store.get('dp-onlysum', false),
-    fullAbstract: store.get('dp-fullabs', false),
     showThumbs: store.get('dp-thumbs', true),
-    expandedAbs: new Set(),
     search: { inc: '', exc: '', logic: 'OR', filter: true },
     stars: store.get('dp-stars', {}),
     visited: new Set(store.get('dp-visited', [])),
@@ -270,7 +265,6 @@
     let list = all.map((p, i) => ({ p, order: i }));
     list = list.filter(({ p }) => (p.score ?? 0) >= state.minScore);
     if (state.onlyFaq) list = list.filter(({ p }) => p.faq);
-    if (state.onlySummary) list = list.filter(({ p }) => summaryText(p));
     if (state.search.filter) list = list.filter(({ p }) => matches(p, terms));
     const by = {
       score: (a, b) => (b.p.score ?? 0) - (a.p.score ?? 0) || a.order - b.order,
@@ -324,11 +318,6 @@
     const thumb = state.showThumbs && paper.thumb
       ? `<button type="button" class="thumb" data-act="thumb" title="${escapeHtml(t('preview'))}"><img src="${escapeHtml(paper.thumb)}" width="${paper.thumb_w || ''}" height="${paper.thumb_h || ''}" loading="lazy" decoding="async" alt="${escapeHtml(t('preview'))}: ${escapeHtml(paper.title)}"></button>`
       : '';
-    const longAbs = (paper.abstract || '').length > ABS_CLAMP_CHARS;
-    const clamp = longAbs && !state.fullAbstract && !state.expandedAbs.has(paper.id);
-    const absToggle = longAbs && !state.fullAbstract
-      ? `<button type="button" class="link abs-toggle" data-act="abs">${escapeHtml(t(clamp ? 'expandAbs' : 'collapseAbs'))}</button>`
-      : '';
     const subjects = (paper.categories || [paper.primary]).map((c) => catName(c)).join('; ');
     return `
 <li class="paper${state.visited.has(paper.id) ? ' visited' : ''}${thumb ? ' has-thumb' : ''}" id="${id}" data-id="${id}">
@@ -337,7 +326,6 @@
     <h2 class="paper-title">${escapeHtml(paper.title)}</h2>
     <div class="paper-sub">${orgHtml}${orgHtml ? '<span class="sub-sep" aria-hidden="true"></span>' : ''}<span class="authors">${authorsHtml(paper)}</span></div>
     ${summary ? `<p class="summary">${escapeHtml(summary)}</p>` : ''}
-    ${state.showAbstract ? `<p class="abstract${clamp ? ' clamp' : ''}">${escapeHtml(paper.abstract)}</p>${absToggle}` : ''}
     <div class="paper-foot">
       <div class="paper-tags">
         <span class="date" title="${escapeHtml(subjects)}">${date}</span>
@@ -586,13 +574,6 @@
         case 'pdf': openPdf(id); break;
         case 'faq': openFaq(id); break;
         case 'star': toggleStar(id); break;
-        case 'abs': {
-          if (state.expandedAbs.has(id)) state.expandedAbs.delete(id); else state.expandedAbs.add(id);
-          const open = state.expandedAbs.has(id);
-          $('.abstract', card).classList.toggle('clamp', !open);
-          actBtn.textContent = t(open ? 'collapseAbs' : 'expandAbs');
-          break;
-        }
         case 'thumb': openLightbox(paper); break;
         case 'authors':
           state.expandedAuthors.add(id);
@@ -716,10 +697,7 @@
       el.checked = state[key];
       el.addEventListener('change', () => { state[key] = el.checked; store.set(storeKey, state[key]); render(); });
     };
-    opt('#opt-abstract', 'showAbstract', 'dp-abs');
     opt('#opt-onlyfaq', 'onlyFaq', 'dp-onlyfaq');
-    opt('#opt-onlysummary', 'onlySummary', 'dp-onlysum');
-    opt('#opt-fullabs', 'fullAbstract', 'dp-fullabs');
     opt('#opt-thumbs', 'showThumbs', 'dp-thumbs');
 
     $('#lightbox').addEventListener('click', (ev) => {

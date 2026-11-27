@@ -348,6 +348,39 @@ def ror_lookup(name):
     return display, org["id"].rsplit("/", 1)[-1], domain
 
 
+LINK_TAG = re.compile(r"<link\b[^>]*>", re.I)
+LOGO_MIN_PX = 48   # smaller icons look blurry at 22 CSS px on high-DPI screens
+LOGO_SAVE_PX = 96
+
+
+def _attr(tag, name):
+    m = re.search(rf"\b{name}\s*=\s*[\"']([^\"']+)[\"']", tag, re.I)
+    return m.group(1) if m else ""
+
+
+def icon_candidates(domain):
+    """Site icon URLs, largest declared first, then common fallbacks."""
+    found = []
+    try:
+        html, final = fetch(f"https://{domain}/", timeout=20)
+        for tag in LINK_TAG.findall(html[:400_000].decode("utf-8", "replace")):
+            rel, href = _attr(tag, "rel").lower(), _attr(tag, "href")
+            if "icon" not in rel or "mask-icon" in rel or not href or href.startswith("data:"):
+                continue
+            if href.lower().split("?")[0].endswith(".svg"):
+                continue  # raster only: SVGs from third parties are not stored
+            sizes = [int(x) for x in re.findall(r"(\d+)x\d+", _attr(tag, "sizes"))]
+            size = max(sizes, default=180 if "apple-touch" in rel else 0)
+            found.append((size, urllib.parse.urljoin(final, href)))
+    except Exception:
+        pass
+    urls = [u for _, u in sorted(found, key=lambda x: -x[0])]
+    urls += [f"https://{domain}/apple-touch-icon.png",
+             f"https://www.google.com/s2/favicons?domain={domain}&sz=128",
+             f"https://icons.duckduckgo.com/ip3/{domain}.ico"]
+    return list(dict.fromkeys(urls))
+
+
 def fetch_logo(domain, logos_dir):
     slug = re.sub(r"[^a-z0-9.-]", "", domain.lower())
     if not slug:
@@ -355,21 +388,27 @@ def fetch_logo(domain, logos_dir):
     path = logos_dir / f"{slug}.png"
     if path.exists():
         return path
-    for url in (f"https://icons.duckduckgo.com/ip3/{slug}.ico",
-                f"https://www.google.com/s2/favicons?domain={slug}&sz=64"):
+    best = None
+    for url in icon_candidates(slug):
         try:
             data, _ = fetch(url, timeout=20)
             img = Image.open(io.BytesIO(data))
+            if getattr(img, "ico", None):  # pick the largest frame of an .ico
+                img.size = max(img.ico.sizes())
             img.load()
         except Exception:
             continue
-        if min(img.size) < 16:
-            continue
-        img = img.convert("RGBA")
-        img.thumbnail((64, 64), Image.LANCZOS)
-        img.save(path, "PNG", optimize=True)
-        return path
-    return None
+        side = min(img.size)
+        if side >= LOGO_MIN_PX and (best is None or side > min(best.size)):
+            best = img
+        if side >= LOGO_SAVE_PX:
+            break
+    if best is None:
+        return None
+    best = best.convert("RGBA")
+    best.thumbnail((LOGO_SAVE_PX, LOGO_SAVE_PX), Image.LANCZOS)
+    best.save(path, "PNG", optimize=True)
+    return path
 
 
 def resolve_org(name, org_cache, logos_dir, online=True):
@@ -545,12 +584,30 @@ def main():
     ap.add_argument("--refresh", action="store_true", help="ignore the cache")
     ap.add_argument("--renorm", action="store_true", help="recompute orgs from cached affiliations (no arXiv requests)")
     ap.add_argument("--offline", action="store_true", help="skip ROR and logo lookups")
+    ap.add_argument("--refresh-logos", action="store_true", help="re-fetch all organization logos")
     args = ap.parse_args()
     data_dir = Path(args.data)
     thumbs = data_dir / "thumbs"
     thumbs.mkdir(parents=True, exist_ok=True)
     cache_path = data_dir / "enrich.json"
     cache = {} if args.refresh or not cache_path.exists() else json.loads(cache_path.read_text())
+
+    if args.refresh_logos:
+        org_path = data_dir / "orgs.json"
+        org_cache = json.loads(org_path.read_text()) if org_path.exists() else {}
+        logos_dir = data_dir / "logos"
+        logos_dir.mkdir(parents=True, exist_ok=True)
+        for f in logos_dir.glob("*.png"):
+            f.unlink()
+        for rec in org_cache.values():
+            rec.pop("logo", None)
+            if rec.get("domain"):
+                logo = fetch_logo(rec["domain"], logos_dir)
+                if logo:
+                    rec["logo"] = f"data/logos/{logo.name}"
+        org_path.write_text(json.dumps(org_cache, ensure_ascii=False, indent=1, sort_keys=True))
+        print(f"logos: {sum('logo' in r for r in org_cache.values())} of "
+              f"{sum('domain' in r for r in org_cache.values())} organizations with a site", flush=True)
 
     if args.renorm:
         for entry in cache.values():
