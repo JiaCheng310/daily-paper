@@ -20,15 +20,12 @@
    "published": "2026-11-25T18:59:36Z",
    "updated": "2026-11-25T18:59:36Z",
    "comment": "",
-   "score": 9.0,
    "tags": [
-    "dexterous",
     "manipulation",
-    "grasping",
-    "imitation"
+    "dexterous",
+    "RL",
+    "simulation"
    ],
-   "score_source": "keyword-demo",
-   "faq": true,
    "orgs": [
     {
      "logo": "data/logos/princeton.edu.png",
@@ -44,7 +41,12 @@
    "thumb_h": 216,
    "ax_votes": 1,
    "ax_visits": 32,
-   "heat": 4.2
+   "heat": 4.2,
+   "summary": {
+    "zh": "DexLink通过稀疏的可复用手物交互模板来合成多样化的灵巧操作行为。该方法利用优化将静态模板重定向至目标对象并连成参考轨迹，再通过残差强化学习在仿真中精炼为闭环策略，实验表明其无需特定物体的示范便可匹配密集参考追踪方法的效果，并具备零样本部署潜力。",
+    "en": "DexLink synthesizes diverse dexterous manipulation policies from sparse interaction templates combined with residual reinforcement learning, achieving performance comparable to dense tracking methods without requiring object-specific human demonstrations."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34932",
@@ -64,12 +66,11 @@
    "published": "2026-11-25T18:59:23Z",
    "updated": "2026-11-25T18:59:23Z",
    "comment": "",
-   "score": 2.0,
    "tags": [
-    "navigation"
+    "navigation",
+    "perception",
+    "simulation"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/ethz.ch.png",
@@ -86,7 +87,12 @@
    "thumb_h": 360,
    "ax_votes": 0,
    "ax_visits": 18,
-   "heat": 1.8
+   "heat": 1.8,
+   "summary": {
+    "zh": "MERLoc将单次3D Gaussian Splatting扫描转化为致密的功能参考内存，通过基于位姿的检索策略而非外观选择参考视图，在动态环境中实现了更稳健的机器人定位。在真实数据测试中，它在九分之十的后端组合中将位置RMSE降低了15-60%，并能在Jetson Orin NX上以5 Hz的频率板载运行。",
+    "en": "MERLoc uses a pose-based retrieval strategy over 3D Gaussian Splatting references for robust robot localization in dynamic environments, reducing position RMSE by 15-60% on real data while running onboard at 5 Hz."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34925",
@@ -162,13 +168,11 @@
    "published": "2026-11-25T18:57:52Z",
    "updated": "2026-11-25T18:57:52Z",
    "comment": "9 pages, 3 figures, 5 tables",
-   "score": 3.0,
    "tags": [
+    "navigation",
     "VLM/LLM",
-    "navigation"
+    "perception"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "name": "GRASP Laboratory",
@@ -185,7 +189,12 @@
    "thumb_h": 328,
    "ax_votes": 0,
    "ax_visits": 8,
-   "heat": 0.8
+   "heat": 0.8,
+   "summary": {
+    "zh": "针对持久语义导航中VLM感知证据不可靠的问题，提出了一种依赖感知且可逆的记忆更新机制，能够避免重复计算相关未命中并动态修正记忆的可操作性。在真实机器人实验中，该方法成功避免了将陈旧记忆选为导航目标，表现优于基线方法。",
+    "en": "We propose a dependence-aware, reversible memory-update mechanism to revise navigation authority under unreliable VLM evidence, preventing robots from relying on stale memories and outperforming baseline methods in real-world experiments."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34914",
@@ -204,14 +213,12 @@
    "published": "2026-11-25T18:57:29Z",
    "updated": "2026-11-25T18:57:29Z",
    "comment": "",
-   "score": 6.0,
    "tags": [
     "VLA",
-    "grasping",
-    "benchmark"
+    "manipulation",
+    "planning",
+    "simulation"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/upenn.edu.png",
@@ -224,7 +231,12 @@
    "thumb_h": 296,
    "ax_votes": 0,
    "ax_visits": 15,
-   "heat": 1.5
+   "heat": 1.5,
+   "summary": {
+    "zh": "Cairn通过在测试时引导冻结的VLA沿学习到的3D轨迹运动，解决了VLA在面对新布局或障碍物时导航失效的问题。在LIBERO测试中，该方法将冻结的π0.5模型的成功率从24.5%提升至95.1%，并在真实Franka机器人实验中成功避开障碍物。",
+    "en": "Cairn steers frozen VLAs along learned 3D object trajectories at test time, raising the success rate of a frozen pi0.5 model from 24.5% to 95.1% across LIBERO scenes with displaced objects and obstacles."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34884",
@@ -249,15 +261,12 @@
    "published": "2026-11-25T18:40:47Z",
    "updated": "2026-11-25T18:40:47Z",
    "comment": "Project page: https://finedex.github.io/",
-   "score": 8.5,
    "tags": [
     "dexterous",
     "manipulation",
     "humanoid",
-    "imitation"
+    "simulation"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/berkeley.edu.png",
@@ -275,7 +284,12 @@
    "thumb_h": 268,
    "ax_votes": 1,
    "ax_visits": 55,
-   "heat": 6.5
+   "heat": 6.5,
+   "summary": {
+    "zh": "FineDex是一个将细粒度人机交互生成与灵巧人形操作相结合的框架，利用生成的交互作为可行先验，在物理数字孪生中发现物理可行的接触策略，实现了最先进的HOI生成质量和灵巧操作成功率，并成功部署在真实灵巧人形机器人上。",
+    "en": "FineDex bridges fine-grained human-object interaction generation and dexterous humanoid manipulation by learning actionable priors and adapting at test time in a physics-based digital twin, achieving state-of-the-art results on real hardware."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34864",
@@ -353,13 +367,11 @@
    "published": "2026-11-25T18:29:36Z",
    "updated": "2026-11-25T18:29:36Z",
    "comment": "",
-   "score": 1.5,
    "tags": [
-    "VLM/LLM",
-    "benchmark"
+    "benchmark",
+    "perception",
+    "dataset"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/nvidia.com.png",
@@ -371,7 +383,12 @@
    "thumb_h": 440,
    "ax_votes": 0,
    "ax_visits": 19,
-   "heat": 1.9
+   "heat": 1.9,
+   "summary": {
+    "zh": "推出了首个针对日常与工业物体的单目3D和2D视觉定位基准BOP-Refer，通过对17个前沿VLM的系统评估发现，表现最好的Gemini 4 Carbon在2D中达到72.6%的AP_IoU2D，但在3D中仅有12.4%的AP_IoU3D，表明缺乏可靠物体尺寸先验的度量尺度估计是当前误差的主要来源。",
+    "en": "We introduce BOP-Refer, a benchmark for monocular 3D and 2D object grounding. Evaluating 17 frontier VLMs shows Gemini 4 Carbon achieves 72.6% AP_IoU2D in 2D but only 12.4% AP_IoU3D in 3D, revealing scale estimation as the primary error source."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34849",
@@ -400,13 +417,12 @@
    "published": "2026-11-25T18:23:41Z",
    "updated": "2026-11-25T18:23:41Z",
    "comment": "Project page: https://real2simhub.github.io/",
-   "score": 2.0,
    "tags": [
-    "benchmark"
+    "simulation",
+    "benchmark",
+    "dataset"
    ],
-   "score_source": "keyword-demo",
    "hf_upvotes": 108,
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/hku.hk.png",
@@ -422,7 +438,12 @@
    "thumb_h": 201,
    "ax_votes": 1,
    "ax_visits": 47,
-   "heat": 113.7
+   "heat": 113.7,
+   "summary": {
+    "zh": "Real2SimLab是一个用于真实到仿真迁移的统一平台，通过集成原有的评分标准来评估代码智能体生成的仿真程序，并提供防数据污染的训练数据与奖励标注生成流程，目前支持6个基准测试中的52种方法。",
+    "en": "Real2SimLab is a unified platform for real-to-simulation transfer that standardizes evaluation, training data generation, and reward annotation across multiple benchmarks, currently supporting 52 methods on 6 benchmarks."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34811",
@@ -448,13 +469,13 @@
    "updated": "2026-11-25T17:59:24Z",
    "comment": "Code: https://github.com/iPPLab/HOG-WAM",
    "code_url": "https://github.com/iPPLab/HOG-WAM",
-   "score": 1.5,
    "tags": [
-    "imitation"
+    "world model",
+    "manipulation",
+    "imitation",
+    "simulation"
    ],
-   "score_source": "keyword-demo",
    "hf_upvotes": 22,
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/pku.edu.cn.png",
@@ -471,7 +492,12 @@
    "thumb_h": 256,
    "ax_votes": 3,
    "ax_visits": 38,
-   "heat": 28.8
+   "heat": 28.8,
+   "summary": {
+    "zh": "引入HOG-WAM通过未来梯度预测提升世界动作模型的视觉鲁棒性，利用HOG作为结构监督塑造控制的视觉表征。在RoboTwin-Plus的混合噪声测试中，成功率由FastWAM的78.86%提升至82.86%，并在LIBERO Plus和Franka真实任务中取得性能提升。",
+    "en": "HOG-WAM improves the visual robustness of world-action models by predicting future HOG features as structural supervision, increasing mixed-noise success from 78.86% to 82.86% on RoboTwin-Plus while maintaining clean-scene performance."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34778",
@@ -498,15 +524,12 @@
    "published": "2026-11-25T17:39:10Z",
    "updated": "2026-11-25T17:39:10Z",
    "comment": "",
-   "score": 7.5,
    "tags": [
-    "VLA",
-    "manipulation",
     "VLM/LLM",
-    "benchmark"
+    "manipulation",
+    "VLA",
+    "simulation"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/emory.edu.png",
@@ -546,7 +569,12 @@
    "thumb_h": 440,
    "ax_votes": 1,
    "ax_visits": 102,
-   "heat": 11.2
+   "heat": 11.2,
+   "summary": {
+    "zh": "通过对八个仿真基准中超过47万次运行的大规模研究，评估了结合VLM推理与VLA/WAM控制的策略外壳设计，发现参考方案X-Harness在无需权重更新的情况下，使基础策略在内存、推理和域偏移方面提升了最高42.8个百分点。",
+    "en": "Evaluating over 470,000 rollouts across benchmarks, we show that our reference recipe X-Harness lifts base policies up to +42.8 points in memory, reasoning, and domain shifts without weight updates."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34764",
@@ -603,15 +631,11 @@
    "published": "2026-11-25T17:25:17Z",
    "updated": "2026-11-25T17:25:17Z",
    "comment": "",
-   "score": 7.0,
    "tags": [
     "manipulation",
-    "imitation",
     "VLM/LLM",
-    "teleop"
+    "planning"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "name": "Tsinghua University",
@@ -628,7 +652,12 @@
    "ax_votes": 1,
    "ax_visits": 29,
    "heat": 4.9,
-   "hf_upvotes": 1
+   "hf_upvotes": 1,
+   "summary": {
+    "zh": "SOLVE是一种免训练的多模态大语言模型智能体策略，通过生成稀疏有序的6自由度末端关键位姿来替代密集控制，结合运动规划实现高效操作。它在RoboDojo和RoboLab上分别取得了74.5%和84.5%的最先进性能，成本比以往密集控制策略降低12倍，真实机器人零样本任务成功率达到88%。",
+    "en": "SOLVE is a training-free VLM agent policy that uses sparse ordered keyposes instead of dense control. It achieves 74.5% on RoboDojo and 84.5% on RoboLab at 12x lower cost, with an 88% success rate on real-world zero-shot tasks."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34745",
@@ -686,15 +715,11 @@
    "published": "2026-11-25T17:19:06Z",
    "updated": "2026-11-25T17:19:06Z",
    "comment": "",
-   "score": 8.0,
    "tags": [
-    "VLA",
-    "grasping",
     "imitation",
-    "benchmark"
+    "manipulation",
+    "planning"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "name": "Vector Institute",
@@ -711,7 +736,12 @@
    "thumb_h": 269,
    "ax_votes": 0,
    "ax_visits": 14,
-   "heat": 1.4
+   "heat": 1.4,
+   "summary": {
+    "zh": "ELMO是一个端到端模仿学习框架，通过动态分层动作分块联合训练VLA规划器与观测条件解码器，学习环境基础语义动作空间。在LIBERO-Plus上比同类方法提升9.6个百分点，在CALVIN平均任务长度上提升0.75。",
+    "en": "ELMO is an end-to-end imitation learning framework that jointly trains a VLA planner and decoder via dynamic hierarchical action chunking, outperforming prior methods by 9.6 percentage points on LIBERO-Plus."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34739",
@@ -731,13 +761,11 @@
    "published": "2026-11-25T17:18:15Z",
    "updated": "2026-11-25T17:18:15Z",
    "comment": "26 pages, 8 figures, 10 tables",
-   "score": 3.0,
    "tags": [
     "world model",
-    "navigation"
+    "navigation",
+    "control"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "name": "University of Dhaka",
@@ -754,7 +782,12 @@
    "thumb_h": 396,
    "ax_votes": 0,
    "ax_visits": 8,
-   "heat": 0.8
+   "heat": 0.8,
+   "summary": {
+    "zh": "针对导航世界模型中训练与部署阶段动作接口不匹配的问题，提出ActRosetta工具来审核并修复动作编码。在RECON数据集上无需重新训练即可将视觉预测误差降低42%，凸显了验证动作编码一致性的重要性。",
+    "en": "We introduce ActRosetta to audit and repair action interface mismatches in navigation world models, reducing visual prediction error by 42% on RECON without retraining."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34675",
@@ -783,14 +816,12 @@
    "published": "2026-11-25T16:39:10Z",
    "updated": "2026-11-25T16:39:10Z",
    "comment": "Project page: https://kaiknower.github.io/RoboEvo2/",
-   "score": 5.5,
    "tags": [
     "VLA",
-    "imitation"
+    "imitation",
+    "RL"
    ],
-   "score_source": "keyword-demo",
    "hf_upvotes": 9,
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/hku.hk.png",
@@ -808,7 +839,12 @@
    "thumb_h": 278,
    "ax_votes": 3,
    "ax_visits": 57,
-   "heat": 17.7
+   "heat": 17.7,
+   "summary": {
+    "zh": "RoboEvo2 框架通过递归的代码与策略协同进化实现机器人自我提升，在 LIBERO-PRO 上将独立成功率从 11.0% 提升至 84.1%，无需额外人工示范即可实现强大的自主技能习得。",
+    "en": "RoboEvo2 achieves recursive robot self-improvement via harness-policy co-evolution, boosting independent success from 11.0% to 84.1% on LIBERO-PRO without extra human demonstrations."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34671",
@@ -830,13 +866,12 @@
    "published": "2026-11-25T16:37:10Z",
    "updated": "2026-11-25T16:37:10Z",
    "comment": "Project page: https://robbinw.github.io/DemoFoundry-Web",
-   "score": 2.5,
    "tags": [
-    "imitation"
+    "simulation",
+    "imitation",
+    "dataset"
    ],
-   "score_source": "keyword-demo",
    "hf_upvotes": 2,
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/cuhk.edu.hk.png",
@@ -853,7 +888,12 @@
    "thumb_h": 315,
    "ax_votes": 1,
    "ax_visits": 61,
-   "heat": 9.1
+   "heat": 9.1,
+   "summary": {
+    "zh": "DemoFoundry利用编程智能体与生成式渲染技术合成了具备真实视觉与物理基础的机器人示范数据，通过构建对齐的真实-代理视频对并结合物理仿真执行程序生成数据，在策略训练中接近了等量真实示范的性能。",
+    "en": "DemoFoundry uses coding agents and generative rendering to synthesize photorealistic and physically grounded robot demonstrations, achieving policy performance close to training on real data."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34670",
@@ -966,15 +1006,12 @@
    "published": "2026-11-25T16:29:17Z",
    "updated": "2026-11-25T16:29:17Z",
    "comment": "",
-   "score": 8.0,
    "tags": [
+    "mobile manipulation",
     "dexterous",
-    "manipulation",
-    "RL",
-    "navigation"
+    "navigation",
+    "world model"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/pku.edu.cn.png",
@@ -991,7 +1028,12 @@
    "thumb_h": 368,
    "ax_votes": 1,
    "ax_visits": 18,
-   "heat": 2.8
+   "heat": 2.8,
+   "summary": {
+    "zh": "Nav4Manip是一个双向耦合的共进系统，用于长视野灵巧移动操作。它通过Nav4Manip-N学习导航并利用操作反馈进行优化，同时通过Nav4Manip-M训练世界动作模型（WAM）处理下游操作，在公共VLN和Nav-N-Manip基准测试中展现出最先进的性能。",
+    "en": "Nav4Manip is a bidirectionally coupled co-evolution system for long-horizon dexterous mobile manipulation, integrating navigation and manipulation feedback to achieve state-of-the-art performance on benchmarks and real-world tasks."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34644",
@@ -1018,15 +1060,12 @@
    "published": "2026-11-25T16:24:11Z",
    "updated": "2026-11-25T16:24:11Z",
    "comment": "Project page: https://xyz1206.github.io/MotionRep/",
-   "score": 6.5,
    "tags": [
     "world model",
     "manipulation",
-    "embodied",
-    "benchmark"
+    "perception",
+    "simulation"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "name": "Harbin Institute of Technology",
@@ -1046,7 +1085,12 @@
    "thumb_h": 237,
    "ax_votes": 1,
    "ax_visits": 17,
-   "heat": 2.7
+   "heat": 2.7,
+   "summary": {
+    "zh": "MotionRep结合了DINO表示与3D物体流来联合预测未来状态，利用DINO-VAE进行高维特征压缩并通过扩散Transformer实现条件生成。实验表明，该方法在3D物体流精度和未见场景泛化能力上优于基于像素的基线，推理仅需三步去噪。",
+    "en": "MotionRep jointly predicts future DINO representations and 3D object flow using a diffusion transformer, outperforming pixel-based baselines in 3D accuracy and generalization with only three denoising steps."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34597",
@@ -1067,15 +1111,12 @@
    "published": "2026-11-25T15:56:47Z",
    "updated": "2026-11-25T15:56:47Z",
    "comment": "9 pages, 4 figures. Project Website: https://www.deveshnath.com/projects/micrompc/",
-   "score": 3.5,
    "tags": [
+    "control",
     "world model",
     "locomotion",
-    "benchmark",
-    "aerial"
+    "planning"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/gatech.edu.png",
@@ -1088,7 +1129,12 @@
    "thumb_h": 307,
    "ax_votes": 0,
    "ax_visits": 8,
-   "heat": 0.8
+   "heat": 0.8,
+   "summary": {
+    "zh": "μMPC是一个通过学习Koopman线性化动态实现微秒级非线性与世界模型控制的框架，利用预计算的控制到输出映射消除了提升状态轨迹。该方法在桌面CPU上实现了低至23μs的求解时间，并在多个基准测试中比对比方法快高达108倍的约束MPC和1907倍的视触觉规划。",
+    "en": "ΜMPC is a fast MPC framework using learned Koopman-linearized dynamics for microsecond-scale control, achieving up to 108x faster constrained MPC and 1907x faster visuomotor planning than competing methods."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34586",
@@ -1150,13 +1196,12 @@
    "published": "2026-11-25T15:36:13Z",
    "updated": "2026-11-25T15:36:13Z",
    "comment": "",
-   "score": 5.0,
    "tags": [
     "humanoid",
-    "sim2real"
+    "locomotion",
+    "sim2real",
+    "simulation"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "name": "Tsinghua University",
@@ -1193,7 +1238,12 @@
    "thumb_h": 154,
    "ax_votes": 1,
    "ax_visits": 16,
-   "heat": 2.6
+   "heat": 2.6,
+   "summary": {
+    "zh": "RIPPLE框架，通过结合ElasticMembrane模型和MJLab实现人形机器人在大变形弹性地形上的强化学习与Sim-to-Real迁移。实验表明，该方法在仿真中实现了至少98.7%的站立成功率，并成功零样本部署于MagicBot Z1机器人完成平衡与连续跳跃。",
+    "en": "RIPPLE integrates ElasticMembrane and MJLab for sim-to-real humanoid control on elastic terrains, achieving at least 98.7% standing success in simulation and zero-shot deployment on a MagicBot Z1 robot."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34561",
@@ -1255,21 +1305,24 @@
    "published": "2026-11-25T15:32:21Z",
    "updated": "2026-11-25T15:32:21Z",
    "comment": "16 pages, 11 figures, 8 tables, including supplementary material",
-   "score": 8.0,
    "tags": [
     "VLA",
     "manipulation",
+    "tactile",
     "imitation"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [],
    "thumb": "data/thumbs/2611.34560.jpg",
    "thumb_w": 410,
    "thumb_h": 194,
    "ax_votes": 0,
    "ax_visits": 14,
-   "heat": 1.4
+   "heat": 1.4,
+   "summary": {
+    "zh": "M2AdaptVLA结合了视觉与力觉记忆以及预测性测试时自适应，通过视觉测试时训练、力觉上下文门控和辅助力觉预测损失，在八项需视觉与力觉记忆的任务中取得了82.71%的平均成功率，比最强基线绝对提升了31.46%。",
+    "en": "M2AdaptVLA integrates visual and wrench memories with predictive test-time adaptation, achieving an 82.71% mean success rate across eight challenging robotic tasks, yielding a 31.46% absolute gain over the strongest baseline."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34540",
@@ -1381,12 +1434,11 @@
    "published": "2026-11-25T15:06:26Z",
    "updated": "2026-11-25T15:06:26Z",
    "comment": "Project Page: https://syuan8889.github.io/AGLR-project/",
-   "score": 3.0,
    "tags": [
-    "humanoid"
+    "humanoid",
+    "control",
+    "imitation"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/cas.cn.png",
@@ -1402,7 +1454,12 @@
    "thumb_h": 326,
    "ax_votes": 0,
    "ax_visits": 10,
-   "heat": 1.0
+   "heat": 1.0,
+   "summary": {
+    "zh": "AGLR是一个用于人形机器人运动生成和编辑的统一框架，通过属性引导的潜在空间精炼，支持对肢体范围、躯干方向和根轨迹的可组合时变控制。在HumanML3D-G1数据集上，该方法取得了最高的可控生成和保持约束编辑成功率，500帧运动的编辑仅需9.1毫秒。",
+    "en": "AGLR is a unified framework for fine-grained humanoid motion generation and editing via attribute-guided latent refinement, achieving high success rates and fast editing speeds without test-time optimization."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34509",
@@ -1428,13 +1485,12 @@
    "updated": "2026-11-25T14:58:31Z",
    "comment": "Project page: https://syed-nazmus-sakib.github.io/graph-anchors/ | Code: https://github.com/syed-nazmus-sakib/graph-anchors",
    "code_url": "https://github.com/syed-nazmus-sakib/graph-anchors",
-   "score": 5.0,
    "tags": [
     "world model",
-    "manipulation"
+    "planning",
+    "manipulation",
+    "simulation"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "name": "University of Dhaka",
@@ -1456,7 +1512,12 @@
    "thumb_h": 282,
    "ax_votes": 0,
    "ax_visits": 11,
-   "heat": 1.1
+   "heat": 1.1,
+   "summary": {
+    "zh": "Graph Anchors通过在潜在世界模型的训练帧上构建稀疏图，将长视距规划转化为一系列短视距导航，从而解决了潜在世界模型在远距离和接触阶段的规划失效问题。在多个任务中，该方法将LeWM的成功率从5%-13%大幅提升至71%-87%。",
+    "en": "Graph Anchors improves long-horizon planning in latent world models by replacing distant goals with intermediate graph nodes, raising success rates from low single digits to over 70% across multiple tasks."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34490",
@@ -1748,15 +1809,12 @@
    "published": "2026-11-25T14:28:05Z",
    "updated": "2026-11-25T14:28:05Z",
    "comment": "Technical report. 23 pages, 13 figures, 9 tables. Project page: https://horizonrobotics.github.io/robot_lab/holobrain_0_5/",
-   "score": 10.0,
    "tags": [
     "VLA",
     "manipulation",
-    "humanoid",
-    "imitation"
+    "bimanual",
+    "humanoid"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/horizon.auto.png",
@@ -1768,7 +1826,12 @@
    "thumb_h": 211,
    "ax_votes": 1,
    "ax_visits": 16,
-   "heat": 2.6
+   "heat": 2.6,
+   "summary": {
+    "zh": "HoloBrain-0.5 是一系列跨具身的视觉-语言-动作模型，通过统一的 3D 运动学表示在共享动作空间中规划。在六个仿真任务中离散策略取得了更高的平均成功率（56.77% 对 49.71%），而后训练的连续策略在七个真实任务 benchmark 上超越了 $\\pi_{0.5}$（94.52% 对 86.25%）。",
+    "en": "HoloBrain-0.5 is a family of VLA models for cross-embodiment manipulation. The post-trained continuous policy outperforms pi_0.5 on a seven-task benchmark (94.52% vs. 86.25%) and an 11-task dual-arm benchmark (79.07% vs. 69.41%)."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34428",
@@ -1826,15 +1889,11 @@
    "published": "2026-11-25T14:12:10Z",
    "updated": "2026-11-25T14:12:10Z",
    "comment": "",
-   "score": 8.0,
    "tags": [
-    "VLA",
     "world model",
     "manipulation",
-    "VLM/LLM"
+    "perception"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/tum.de.png",
@@ -1852,7 +1911,12 @@
    "thumb_h": 440,
    "ax_votes": 0,
    "ax_visits": 18,
-   "heat": 1.8
+   "heat": 1.8,
+   "summary": {
+    "zh": "通过在两个操作数据集上训练轻量级读取头，评估了冻结的视觉基础模型、世界模型和策略模型表示对接触力的感知能力。实验表明，大多数模型能捕捉接触发生的时机，但无法捕捉施加的具体力大小，且机器人后训练也无法改善这一问题。",
+    "en": "Evaluating vision foundation models on force awareness reveals they capture contact timing but fail to quantify applied interaction force, highlighting a key capability gap."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34416",
@@ -1919,19 +1983,23 @@
    "published": "2026-11-25T14:04:32Z",
    "updated": "2026-11-25T14:04:32Z",
    "comment": "24 pages, 6 figures, https://xiaoyinliu0714.github.io/EmbExo/",
-   "score": 2.5,
    "tags": [
-    "embodied"
+    "locomotion",
+    "control",
+    "HRI"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [],
    "thumb": "data/thumbs/2611.34408.jpg",
    "thumb_w": 484,
    "thumb_h": 214,
    "ax_votes": 0,
    "ax_visits": 9,
-   "heat": 0.9
+   "heat": 0.9,
+   "summary": {
+    "zh": "这篇综述从具身视角系统梳理了下肢外骨骼技术，将其划分为结构自适应、任务自适应、用户特定自适应和控制自我调节四个维度，探讨了轻量化设计、数据融合与策略优化等核心挑战，并指出了未来发展方向。",
+    "en": "This review surveys embodied lower-limb exoskeletons across four dimensions—structural, task, user adaptation, and control self-regulation—highlighting key challenges and future directions."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34403",
@@ -1989,12 +2057,12 @@
    "published": "2026-11-25T13:20:34Z",
    "updated": "2026-11-25T13:20:34Z",
    "comment": "",
-   "score": 4.0,
    "tags": [
-    "VLA"
+    "VLA",
+    "planning",
+    "imitation",
+    "perception"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/nankai.edu.cn.png",
@@ -2032,7 +2100,12 @@
    "thumb_h": 289,
    "ax_votes": 0,
    "ax_visits": 21,
-   "heat": 2.1
+   "heat": 2.1,
+   "summary": {
+    "zh": "TL-VLA通过引入时序逻辑替代自然语言指令，结合图编码器与视觉逻辑融合模块，实现具备长视距规划能力的具身智能控制。在CALVIN ABC->D任务中平均链长达到3.800且五任务成功率达62.3%，优于基线模型。",
+    "en": "TL-VLA replaces natural-language instructions with temporal logic for vision-language-action models, achieving 3.800 average chain length and 62.3% five-task success on CALVIN ABC->D."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34328",
@@ -2187,14 +2260,12 @@
    "published": "2026-11-25T12:41:56Z",
    "updated": "2026-11-25T12:41:56Z",
    "comment": "Includes supplementary material",
-   "score": 6.0,
    "tags": [
     "world model",
-    "grasping",
-    "embodied"
+    "manipulation",
+    "perception",
+    "simulation"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "name": "Tongji University",
@@ -2214,7 +2285,12 @@
    "thumb_h": 223,
    "ax_votes": 0,
    "ax_visits": 22,
-   "heat": 2.2
+   "heat": 2.2,
+   "summary": {
+    "zh": "RehearsalWorld通过3D交互预演将物理约束与视频生成解耦，利用预训练3D点流模型预测轨迹并经几何投影引导视频生成器，在真实DROID抓取数据集上将夹爪相对偏移降低了约79%至84%，达到23.92 dB的PSNR和149的FVD。",
+    "en": "RehearsalWorld decouples physical priors from video generation using 3D Interaction Rehearsal, reducing gripper-relative offset by 79% to 84% on real DROID sequences while achieving a 23.92 dB PSNR and 149 FVD."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34287",
@@ -2320,14 +2396,12 @@
    "published": "2026-11-25T12:19:59Z",
    "updated": "2026-11-25T12:19:59Z",
    "comment": "",
-   "score": 8.0,
    "tags": [
     "VLA",
     "manipulation",
-    "imitation"
+    "imitation",
+    "perception"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "name": "Harbin Institute of Technology",
@@ -2346,7 +2420,12 @@
    "thumb_h": 440,
    "ax_votes": 0,
    "ax_visits": 10,
-   "heat": 1.0
+   "heat": 1.0,
+   "summary": {
+    "zh": "CamAct通过引入野外视频中恢复的相机运动监督来辅助机器人操作策略，将其与机器人示范数据结合，在LIBERO上的成功率从96.40%提升至98.10%，在RoboCasa 365上从22.96%提升至29.32%。",
+    "en": "CamAct improves robotic manipulation by incorporating camera motion supervision from in-the-wild videos alongside robot demonstrations, raising success rates on LIBERO from 96.40% to 98.10% and on RoboCasa 365 from 22.96% to 29.32%."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34246",
@@ -2368,13 +2447,10 @@
    "published": "2026-11-25T12:09:30Z",
    "updated": "2026-11-25T12:09:30Z",
    "comment": "5 pages, 5 figures, Agri-robotics Workshop @ICRA 2026",
-   "score": 3.5,
    "tags": [
-    "locomotion",
-    "navigation"
+    "navigation",
+    "locomotion"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/neu.edu.png",
@@ -2392,7 +2468,12 @@
    "thumb_h": 440,
    "ax_votes": 0,
    "ax_visits": 9,
-   "heat": 0.9
+   "heat": 0.9,
+   "summary": {
+    "zh": "基于Unitree Go2 Wheeled四足机器人开发了一套LiDAR自主探索系统，结合迭代RANSAC直线检测与有限状态导航策略。在英国Denbies葡萄园的实地评估中，系统成功完成了不间断的370米往返自主行间穿行，验证了其在复杂农业环境中的可行性。",
+    "en": "A LiDAR-based autonomous exploration system on a Unitree Go2 Wheeled quadruped successfully completed a 370m vineyard traversal, demonstrating robust row-following capabilities in field tests."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34148",
@@ -2458,15 +2539,12 @@
    "published": "2026-11-25T10:30:48Z",
    "updated": "2026-11-25T10:30:48Z",
    "comment": "",
-   "score": 6.0,
    "tags": [
     "world model",
-    "embodied",
-    "VLM/LLM",
-    "benchmark"
+    "benchmark",
+    "simulation",
+    "perception"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "name": "Zhejiang University",
@@ -2482,7 +2560,12 @@
    "thumb_h": 440,
    "ax_votes": 0,
    "ax_visits": 9,
-   "heat": 0.9
+   "heat": 0.9,
+   "summary": {
+    "zh": "WorldPhy基准用于评估机器人世界模型的细粒度物理合理性，包含300个任务和超12K条人类标注，训练了WorldPhyReward模型，并对13个前沿世界模型进行了系统评估，发现现有模型在保持物理合理性方面仍存在不足。",
+    "en": "WorldPhy is introduced to benchmark fine-grained physical plausibility for robotics world models, featuring 300 tasks, 12K+ human annotations, WorldPhyReward, and evaluations of 13 frontier models revealing current limitations."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34128",
@@ -2507,13 +2590,11 @@
    "published": "2026-11-25T10:30:24Z",
    "updated": "2026-11-25T10:30:24Z",
    "comment": "NeurIPS 2026. Project page: https://vlar-group.github.io/FoundSurface.html",
-   "score": 1.0,
    "tags": [
-    "VLM/LLM"
+    "perception",
+    "simulation"
    ],
-   "score_source": "keyword-demo",
    "hf_upvotes": 17,
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/polyu.edu.hk.png",
@@ -2526,7 +2607,12 @@
    "thumb_h": 331,
    "ax_votes": 0,
    "ax_visits": 36,
-   "heat": 20.6
+   "heat": 20.6,
+   "summary": {
+    "zh": "FoundSurface 是一种从无位姿图像中直接重建连续高保真 3D 表面的通用前馈流程，通过结合点图和基于射线的方法提取几何先验并聚合局部特征，在 9 个数据集上训练后在 6 个未见数据集上展现出卓越的零样本泛化能力，几何精度和细节保留显著优于现有基线。",
+    "en": "FoundSurface is a generalizable feedforward pipeline for continuous 3D surface reconstruction from unposed images, demonstrating exceptional zero-shot generalization across unseen datasets."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34124",
@@ -2552,14 +2638,12 @@
    "published": "2026-11-25T10:25:08Z",
    "updated": "2026-11-25T10:25:08Z",
    "comment": "12 pages, 4 figures, 6 tables. Project page: https://zyshan0929.github.io/WAtcher",
-   "score": 5.5,
    "tags": [
+    "world model",
     "manipulation",
-    "imitation",
-    "benchmark"
+    "control",
+    "simulation"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/nvidia.com.png",
@@ -2571,7 +2655,12 @@
    "thumb_h": 242,
    "ax_votes": 0,
    "ax_visits": 23,
-   "heat": 2.3
+   "heat": 2.3,
+   "summary": {
+    "zh": "WAtcher是一个具身安全意识的世界动作框架，利用两步去噪的高效世界动作模型和一个轻量级安全防护模块来想象未来并评估风险。该方法将训练任务中的危险闭环试验从27.0%降至10.8%，在保持任务成功率的同时显著提升了安全性。",
+    "en": "WAtcher is a safety-aware world-action framework that imagines future outcomes and evaluates risks to prevent hazardous actions, reducing risky closed-loop trials from 27.0% to 10.8% while maintaining success rates."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34117",
@@ -2595,12 +2684,12 @@
    "published": "2026-11-25T10:18:08Z",
    "updated": "2026-11-25T10:18:08Z",
    "comment": "19 pages, including appendix",
-   "score": 3.5,
    "tags": [
-    "manipulation"
+    "tactile",
+    "manipulation",
+    "world model",
+    "perception"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "name": "Tsinghua University",
@@ -2612,7 +2701,12 @@
    "thumb_h": 288,
    "ax_votes": 0,
    "ax_visits": 10,
-   "heat": 1.0
+   "heat": 1.0,
+   "summary": {
+    "zh": "CoTacWAM通过联合建模手腕视觉与触觉的共享接触语义，实现了卓越的机器人操作性能，在四项真实世界任务中超越了对比基线，并展现出对缺失局部观测的鲁棒性及自主重试的增益效果。",
+    "en": "CoTacWAM jointly models vision and touch semantics for robotic manipulation, outperforming baselines and ensuring robustness to missing inputs across four real-world tasks."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34115",
@@ -2634,15 +2728,12 @@
    "published": "2026-11-25T10:17:35Z",
    "updated": "2026-11-25T10:17:35Z",
    "comment": "20 pages, 10 figures",
-   "score": 3.0,
    "tags": [
-    "world model",
-    "VLM/LLM",
     "navigation",
-    "benchmark"
+    "VLM/LLM",
+    "aerial",
+    "perception"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "name": "Harbin Institute of Technology",
@@ -2663,7 +2754,12 @@
    "thumb_h": 357,
    "ax_votes": 0,
    "ax_visits": 12,
-   "heat": 1.2
+   "heat": 1.2,
+   "summary": {
+    "zh": "SimpleUAV利用冻结的视觉语言模型构建了一个免训练的极简空中物体搜索智能体，无需持久化空间地图。它在UAV-ON数据集上取得了41.61%的成功率，显著超越以往基线模型。",
+    "en": "SimpleUAV is a training-free agent for aerial object search using a frozen VLM without persistent maps, achieving a 41.61% success rate on UAV-ON."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34054",
@@ -2756,14 +2852,12 @@
    "published": "2026-11-25T09:23:33Z",
    "updated": "2026-11-25T09:23:33Z",
    "comment": "",
-   "score": 1.5,
    "tags": [
-    "RL",
     "navigation",
-    "aerial"
+    "aerial",
+    "RL",
+    "perception"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/uzh.ch.png",
@@ -2776,7 +2870,12 @@
    "thumb_h": 349,
    "ax_votes": 0,
    "ax_visits": 8,
-   "heat": 0.8
+   "heat": 0.8,
+   "summary": {
+    "zh": "针对敏捷四旋翼无人机提出了一种端到端图像目标导航策略，通过四阶段训练流水线直接输出推力和角速度控制指令，无需状态估计器或SLAM。在未见过的环境中实现了82.3%的成功率，平均终端位置误差为0.10米，并在真实四旋翼上取得了84%的零样本成功率。",
+    "en": "An end-to-end image-goal navigation policy for agile quadrotors directly commands thrust and angular rates without state estimation, achieving an 82.3% success rate in unseen environments and an 84% zero-shot success rate on a real drone."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.34043",
@@ -2931,15 +3030,12 @@
    "published": "2026-11-25T08:46:50Z",
    "updated": "2026-11-25T08:46:50Z",
    "comment": "",
-   "score": 10.0,
    "tags": [
     "VLA",
     "world model",
     "manipulation",
-    "imitation"
+    "simulation"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "name": "Harbin Institute of Technology",
@@ -2963,7 +3059,12 @@
    "thumb_h": 440,
    "ax_votes": 0,
    "ax_visits": 11,
-   "heat": 1.1
+   "heat": 1.1,
+   "summary": {
+    "zh": "Aegis-VLA是一个由世界模型引导的视觉-语言-动作框架，通过轨迹世界模型预测物体运动与不确定性，并利用可靠性门控机制动态修正动作。在模拟动态物体操作基准测试中，其成功率达到56.72%，比基线高出11.28个百分点。",
+    "en": "Aegis-VLA is a world-model-guided VLA framework that refines actions using a trajectory world model and reliability gating, achieving a 56.72% success rate on the DOM benchmark."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.33991",
@@ -2987,13 +3088,12 @@
    "published": "2026-11-25T08:45:45Z",
    "updated": "2026-11-25T08:45:45Z",
    "comment": "",
-   "score": 3.0,
    "tags": [
-    "grasping",
-    "benchmark"
+    "benchmark",
+    "VLM/LLM",
+    "perception",
+    "planning"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "name": "Harbin Institute of Technology",
@@ -3017,7 +3117,12 @@
    "thumb_h": 440,
    "ax_votes": 0,
    "ax_visits": 8,
-   "heat": 0.8
+   "heat": 0.8,
+   "summary": {
+    "zh": "针对多模态大语言模型提出了包含2,341个多项式问答对的QK-Bench，用于评估动态空间智能中的定量运动学理解能力。实验表明，当前最强模型的总体准确率仅为41.2%，现有空间大模型在此任务上并未表现出明显优势。",
+    "en": "QK-Bench with 2,341 QA pairs to evaluate quantitative kinematic understanding in MLLMs, revealing that the strongest model achieves only 41.2% accuracy without consistent advantages from spatial MLLMs."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.33963",
@@ -3040,13 +3145,11 @@
    "published": "2026-11-25T08:28:00Z",
    "updated": "2026-11-25T08:28:00Z",
    "comment": "Project page: https://headlight-wam.github.io/",
-   "score": 4.5,
    "tags": [
+    "world model",
     "manipulation",
-    "grasping"
+    "imitation"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/utoronto.ca.png",
@@ -3064,7 +3167,12 @@
    "thumb_h": 400,
    "ax_votes": 0,
    "ax_visits": 22,
-   "heat": 2.2
+   "heat": 2.2,
+   "summary": {
+    "zh": "引入HeadLight参数高效微调方法，针对性地联合适应World-Action Models中的Next-Interaction Heads和Motion Heads。在未见过的RoboTwin任务中，仅更新1.1%的参数即达到62.28%的成功率，优于全参数微调的57.89%和LoRA的58.66%。",
+    "en": "HeadLight efficiently adapts specialized Next-Interaction and Motion heads in World-Action Models, achieving 62.28% success on RoboTwin tasks while updating only 1.1% of parameters, outperforming full fine-tuning and LoRA."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.33925",
@@ -3090,16 +3198,13 @@
    "published": "2026-11-25T07:45:51Z",
    "updated": "2026-11-25T07:45:51Z",
    "comment": "",
-   "score": 8.0,
    "tags": [
     "world model",
     "manipulation",
-    "grasping",
-    "imitation"
+    "simulation",
+    "dataset"
    ],
-   "score_source": "keyword-demo",
    "hf_upvotes": 13,
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/sii.edu.cn.png",
@@ -3112,7 +3217,12 @@
    "thumb_h": 440,
    "ax_votes": 3,
    "ax_visits": 49,
-   "heat": 20.9
+   "heat": 20.9,
+   "summary": {
+    "zh": "WorldReforge利用包含62k条模拟失败轨迹的Reforge数据集，通过Interaction Alignment和Surface Correspondence训练信号，使Cosmos3 Nano的世界模型在整体物体轨迹预测误差上降低了28.2%， unseen物体误差降低了35.0%。",
+    "en": "WorldReforge improves robot world models in failure scenarios using a 62k simulated failure dataset and novel training signals, reducing object trajectory error by 28.2% overall."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.33922",
@@ -3133,14 +3243,13 @@
    "updated": "2026-11-25T07:43:15Z",
    "comment": "",
    "code_url": "https://github.com/AIGeeksGroup/iMFPO",
-   "score": 3.5,
    "tags": [
-    "embodied",
-    "RL"
+    "RL",
+    "control",
+    "locomotion",
+    "simulation"
    ],
-   "score_source": "keyword-demo",
    "hf_upvotes": 10,
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/pku.edu.cn.png",
@@ -3153,7 +3262,12 @@
    "thumb_h": 320,
    "ax_votes": 0,
    "ax_visits": 6,
-   "heat": 10.6
+   "heat": 10.6,
+   "summary": {
+    "zh": "iMFPO通过解耦速度学习和漂移感知速度对齐，实现了具身控制的高效一步生成策略优化。在Go2、G1、H1和Spot上评估取得了显著回报，在Go2上动作生成延迟相比64步RFPO从15.57毫秒降至0.41毫秒。",
+    "en": "IMFPO achieves efficient one-step generative policy optimization for embodied control via decoupled velocity learning and drift-aware velocity alignment, reducing action-generation latency on Go2 from 15.57 ms to 0.41 ms compared to 64-step RFPO."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.33915",
@@ -3185,15 +3299,12 @@
    "published": "2026-11-25T07:37:06Z",
    "updated": "2026-11-25T07:37:06Z",
    "comment": "17 pages",
-   "score": 5.5,
    "tags": [
     "manipulation",
-    "imitation",
+    "planning",
     "VLM/LLM"
    ],
-   "score_source": "keyword-demo",
    "hf_upvotes": 11,
-   "faq": false,
    "orgs": [
     {
      "name": "NUS",
@@ -3205,7 +3316,12 @@
    "thumb_h": 266,
    "ax_votes": 2,
    "ax_visits": 44,
-   "heat": 17.4
+   "heat": 17.4,
+   "summary": {
+    "zh": "SEEK是一个具身智能体框架，通过将操作编码为可执行程序并利用持久动作效果库跨尝试保留执行知识，使机器人在保持底层模型不变的情况下实现自我进化。在RoboDojo的42个任务中，其平均任务得分经10次尝试从27.0提升至54.4，成功率从19.7%提高到48.0%。",
+    "en": "SEEK is an agentic framework that retains execution knowledge across attempts using programmatic policies and an action-effect bank, raising average task scores from 27.0 to 54.4 over ten attempts on RoboDojo."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.33914",
@@ -3268,13 +3384,11 @@
    "published": "2026-11-25T07:29:12Z",
    "updated": "2026-11-25T07:29:12Z",
    "comment": "8 pages, 8 figures",
-   "score": 3.5,
    "tags": [
+    "planning",
     "locomotion",
     "VLM/LLM"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/kaist.ac.kr.png",
@@ -3287,7 +3401,12 @@
    "thumb_h": 334,
    "ax_votes": 0,
    "ax_visits": 9,
-   "heat": 0.9
+   "heat": 0.9,
+   "summary": {
+    "zh": "CoTAMP通过结合大语言模型和代码模块实现了四足机器人的协作式任务与动作规划，在30次模拟试验中全部生成了运动学有效的参考轨迹，并在成功率、动态可行性等方面优于多个基线。",
+    "en": "CoTAMP combines LLMs and code modules for cooperative task and motion planning in quadruped robots, achieving a 100 percent success rate in 30 trials and outperforming baselines in feasibility and efficiency."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.33880",
@@ -3414,20 +3533,24 @@
    "published": "2026-11-25T05:46:45Z",
    "updated": "2026-11-25T05:46:45Z",
    "comment": "Project page: https://june65.github.io/Epsilon-Tilde",
-   "score": 4.5,
    "tags": [
     "VLA",
-    "benchmark"
+    "diffusion policy",
+    "control",
+    "simulation"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [],
    "thumb": "data/thumbs/2611.33816.jpg",
    "thumb_w": 397,
    "thumb_h": 440,
    "ax_votes": 1,
    "ax_visits": 10,
-   "heat": 2.0
+   "heat": 2.0,
+   "summary": {
+    "zh": "针对视觉-语言-动作模型中初始噪声导致动作空间方向偏差的问题，提出了一种在训练和推理阶段进行干预的简单框架。该方法在训练时强制对偶噪声对产生一致的预测，并在推理时去除噪声的时间均值，在真实机器人实验中将$\\pi_{0.5}$的平均任务成功率从40%提升至68%。",
+    "en": "To mitigate directional bias caused by initial noise in VLAs, we propose a framework with training and inference interventions, increasing the success rate of $\\pi_{0.5}$ from 40% to 68% in real-world experiments."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.33804",
@@ -3489,13 +3612,12 @@
    "published": "2026-11-25T05:27:15Z",
    "updated": "2026-11-25T05:27:15Z",
    "comment": "",
-   "score": 4.5,
    "tags": [
     "world model",
-    "manipulation"
+    "manipulation",
+    "imitation",
+    "control"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "name": "Shanghai Jiao Tong University",
@@ -3524,7 +3646,12 @@
    "thumb_h": 238,
    "ax_votes": 0,
    "ax_visits": 14,
-   "heat": 1.4
+   "heat": 1.4,
+   "summary": {
+    "zh": "CompactWAM通过稀疏动态表示学习优化世界动作模型，利用Dynamic Forcing结合直接动作监督与稠密未来引导，在LIBERO上实现了98.4%的成功率，且仅需9.2%的稠密未来Token预算。",
+    "en": "CompactWAM optimizes world action models via sparse dynamic representation learning and Dynamic Forcing, achieving 98.4% success on LIBERO while using only 9.2% of the dense future token budget."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.33797",
@@ -3546,13 +3673,12 @@
    "published": "2026-11-25T05:23:59Z",
    "updated": "2026-11-25T05:23:59Z",
    "comment": "16 pages, 5 figures",
-   "score": 3.0,
    "tags": [
+    "world model",
     "manipulation",
-    "benchmark"
+    "imitation",
+    "control"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/hkust.edu.hk.png",
@@ -3575,7 +3701,12 @@
    "thumb_h": 278,
    "ax_votes": 1,
    "ax_visits": 16,
-   "heat": 2.6
+   "heat": 2.6,
+   "summary": {
+    "zh": "DriftWAM是一个用于机器人控制的高效world-action models蒸馏框架，通过引入动作感知的视频漂移和动作引导的视频正则化，在RoboTwin 2.0和LIBERO基准及真实世界任务中，以相同推理速度持续优于以往的一致性蒸馏方法。",
+    "en": "DriftWAM is an efficient distillation framework for world-action models that incorporates action-aware video drifting and action-guided regularization, outperforming prior consistency methods on RoboTwin 2.0, LIBERO, and real-world tasks."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.33794",
@@ -3684,13 +3815,12 @@
    "published": "2026-11-25T05:04:06Z",
    "updated": "2026-11-25T05:04:06Z",
    "comment": "",
-   "score": 0.5,
    "tags": [
     "world model",
-    "aerial"
+    "aerial",
+    "perception",
+    "simulation"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "name": "University of International Business and Economics",
@@ -3720,7 +3850,12 @@
    "thumb_h": 381,
    "ax_votes": 0,
    "ax_visits": 12,
-   "heat": 1.2
+   "heat": 1.2,
+   "summary": {
+    "zh": "DuoWM引入了动作流和物体流两种视觉条件，并通过变换感知预训练，在Sekai-drone数据集上取得了最佳的视频质量、3D一致性和轨迹跟随性能，相比Captain Safari在真实域的FVD和LPIPS分别降低了17.2%和21.6%。",
+    "en": "DuoWM integrates dual 6-DoF visual flows and transform-aware pretraining for drone video world modeling, outperforming Captain Safari in video quality, 3D consistency, and real-domain FVD by 17.2%."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.33772",
@@ -3948,10 +4083,11 @@
    "published": "2026-11-25T03:36:01Z",
    "updated": "2026-11-25T03:36:01Z",
    "comment": "11pages, 4 figures",
-   "score": 1.5,
-   "tags": [],
-   "score_source": "keyword-demo",
-   "faq": false,
+   "tags": [
+    "manipulation",
+    "control",
+    "imitation"
+   ],
    "orgs": [
     {
      "logo": "data/logos/kaist.ac.kr.png",
@@ -3964,7 +4100,12 @@
    "thumb_h": 130,
    "ax_votes": 0,
    "ax_visits": 8,
-   "heat": 0.8
+   "heat": 0.8,
+   "summary": {
+    "zh": "FLUENT方法训练循环模型，通过蒸馏早期预测并利用冻结教师模型锚定最终预测，使模型在实践中学会使用更少计算步骤。在真实机器人实验中，成功率从62.3%提升至74.6%，成功任务的平均时间从69秒降至31秒。",
+    "en": "FLUENT trains looped models to use fewer computation steps through practice, improving real-robot success from 62.3% to 74.6% and reducing mean time from 69s to 31s."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.33721",
@@ -4031,13 +4172,12 @@
    "published": "2026-11-25T03:24:00Z",
    "updated": "2026-11-25T03:24:00Z",
    "comment": "",
-   "score": 4.0,
    "tags": [
+    "world model",
     "manipulation",
-    "benchmark"
+    "imitation",
+    "simulation"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "name": "Harbin Institute of Technology",
@@ -4052,7 +4192,12 @@
    "thumb_h": 299,
    "ax_votes": 0,
    "ax_visits": 8,
-   "heat": 0.8
+   "heat": 0.8,
+   "summary": {
+    "zh": "M^2-WAM是一种具备分层视觉与交互记忆的世界-动作模型，通过门控增量更新和跨模态分层检索机制，在保持恒定在线内存开销的同时支持长周期操作。在MIKASA-Robo和RMBench仿真基准上，其平均成功率较Fast-WAM分别绝对提升了53.2%和61.2%。",
+    "en": "M^2-WAM introduces hierarchical visual and interaction memories for world-action models, achieving bounded memory footprints and outperforming Fast-WAM by over 50% on long-horizon benchmarks."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.33705",
@@ -4211,12 +4356,11 @@
    "published": "2026-11-25T02:03:41Z",
    "updated": "2026-11-25T02:03:41Z",
    "comment": "20 pages",
-   "score": 4.5,
    "tags": [
-    "VLA"
+    "VLA",
+    "imitation",
+    "manipulation"
    ],
-   "score_source": "keyword-demo",
-   "faq": false,
    "orgs": [
     {
      "logo": "data/logos/hkust.edu.hk.png",
@@ -4234,7 +4378,12 @@
    "thumb_h": 302,
    "ax_votes": 0,
    "ax_visits": 9,
-   "heat": 0.9
+   "heat": 0.9,
+   "summary": {
+    "zh": "FreshVLA是一种基于频率引导与动态敏感学习范式的视觉-语言-动作（VLA）模型，通过时序分层连续潜空间动作提升长周期行为能力。在LIBERO和LIBERO-Long上分别达到98.2%和98.0%的平均成功率，在CALVIN上达到4.52的平均序列长度，真实世界实验较π_{0.5}平均成功率提升7.5%。",
+    "en": "FreshVLA is a VLA framework utilizing frequency-guided latent actions for hierarchical robot control, achieving 98.2% success on LIBERO and a 7.5% improvement over π_{0.5} in real-world experiments."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.33621",
@@ -4348,23 +4497,25 @@
    "updated": "2026-11-25T00:46:23Z",
    "comment": "Project page: https://wongyun-yu.github.io/dexengine/ Code: https://github.com/wongyun-yu/DexEngine Data: https://huggingface.co/datasets/Wongyun/DexEngine",
    "code_url": "https://github.com/wongyun-yu/DexEngine",
-   "score": 8.0,
    "tags": [
     "dexterous",
     "manipulation",
     "imitation",
-    "RL"
+    "simulation"
    ],
-   "score_source": "keyword-demo",
    "hf_upvotes": 19,
-   "faq": false,
    "orgs": [],
    "thumb": "data/thumbs/2611.33579.jpg",
    "thumb_w": 538,
    "thumb_h": 440,
    "ax_votes": 0,
    "ax_visits": 16,
-   "heat": 20.6
+   "heat": 20.6,
+   "summary": {
+    "zh": "DexEngine通过物理仿真流水线将人类手物示范转化为可执行的全机器人轨迹，结合残差强化学习修正动作，从9个数据集中为4种灵巧手生成了32.5万个总计578小时的训练回合，在模拟和真实机器人上均显著优于基线方法。",
+    "en": "DexEngine scales human demonstrations into physically executable arm-hand trajectories using simulation and residual reinforcement learning, generating 325,000 episodes that significantly outperform baseline policies in simulation and real-world deployment."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   },
   {
    "id": "2611.33560",
@@ -4384,10 +4535,11 @@
    "published": "2026-11-25T00:19:07Z",
    "updated": "2026-11-25T00:19:07Z",
    "comment": "",
-   "score": 1.0,
-   "tags": [],
-   "score_source": "keyword-demo",
-   "faq": false,
+   "tags": [
+    "planning",
+    "imitation",
+    "manipulation"
+   ],
    "orgs": [
     {
      "name": "University of Amsterdam",
@@ -4403,7 +4555,12 @@
    "thumb_h": 396,
    "ax_votes": 6,
    "ax_visits": 59,
-   "heat": 11.9
+   "heat": 11.9,
+   "summary": {
+    "zh": "Skeptic是一个零训练成本的失败诊断协议，利用测量得到的动作结果指导修复并把关技能收录。在60个审计任务中，该方法将错误判断为不可能的任务平均数从19.5降至8.5，并在LIBERO-Pro和Robosuite任务上分别将测试成功率提升了14.9和11.7个百分点。",
+    "en": "Skeptic is a training-free failure diagnosis protocol that uses measured outcomes to guide repair and task success to govern skill admission, improving held-out success by 14.9 and 11.7 percentage points on LIBERO-Pro and Robosuite tasks."
+   },
+   "summary_source": "gemini-3.5-flash-lite"
   }
  ]
 }
