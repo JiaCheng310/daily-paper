@@ -30,12 +30,12 @@ MODEL = "gemini-3.5-flash-lite"  # 2026-11-27: user picked speed (~1 s/paper) ov
 FALLBACK = ""  # optional second model for when the main model's daily free quota is exhausted
 API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
-TAGS = ["VLA", "world model", "manipulation", "dexterous", "grasping", "bimanual", "mobile manipulation",
-        "humanoid", "locomotion", "sim2real", "imitation", "RL", "diffusion policy", "VLM/LLM", "tactile",
-        "navigation", "planning", "perception", "simulation", "dataset", "benchmark", "aerial", "driving",
-        "control", "HRI"]
+TAGS = ["LLM", "VLM", "multimodal", "agents", "reasoning", "RL", "alignment", "efficiency", "pretraining",
+        "code", "math", "retrieval", "speech", "image generation", "video generation", "diffusion", "3D",
+        "detection", "segmentation", "world model", "robotics", "VLA", "manipulation", "humanoid", "driving",
+        "dataset", "benchmark", "theory", "interpretability", "safety"]
 
-SYSTEM = f"""你在为一个公开的具身智能论文日报处理 arXiv 新论文。每次会给你一篇论文的标题、分类和摘要，请按要求输出 JSON。
+SYSTEM = f"""你在为一个公开的 AI 论文日报（Hugging Face 与 alphaXiv 上的热门论文）处理 arXiv 新论文。每次会给你一篇论文的标题、分类和摘要，请按要求输出 JSON。
 
 1. tags：1–4 个英文短标签，按与论文核心内容的相关程度排序，优先从这些里选：{", ".join(TAGS)}。只给论文真正在做的方向，摘要里仅顺带提到的不算。
 2. summary_zh：一句中文概括，40–90 字，写清做了什么、怎么做、关键结果。方法名、模型名、数据集名保留英文原文；摘要里有关键数字就带上，并写明对比对象；不要用“本文提出”“该论文”“作者”这类开头，直接从方法名或做法写起。
@@ -251,7 +251,7 @@ def main():
     ap.add_argument("--fallback", default=FALLBACK)
     ap.add_argument("--limit", type=int, default=0, help="process at most N papers (0 = all)")
     ap.add_argument("--workers", type=int, default=4)
-    ap.add_argument("--top", type=int, default=50, help="per day, only the N most popular papers (0 = all)")
+    ap.add_argument("--top", type=int, default=30, help="per day, only the N most popular papers (0 = all)")
     ap.add_argument("--delay", type=float, default=0.0, help="seconds between requests per worker (429s are handled anyway)")
     ap.add_argument("--compare", default="", help="comma-separated models: write compare.json/.md, change no data")
     ap.add_argument("--out", default="compare.json")

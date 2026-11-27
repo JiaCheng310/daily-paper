@@ -64,7 +64,7 @@
   const STAR_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>';
   const AUTHOR_LIMIT = 6; // names shown inline next to the organizations
   const ORG_LIMIT = 4;
-  const DAY_LIMIT = 50; // a day shows its top 50; the rest behind a button
+  const DAY_LIMIT = 30; // a day shows its top 30; the rest behind a button
 
   const params = new URLSearchParams(location.search);
   const state = {
@@ -286,7 +286,7 @@
 
   // ---------- paper list ----------
   function visiblePapers() {
-    const all = (state.day?.papers || []).filter((p) => (p.categories || [p.primary]).includes(state.cat));
+    const all = (state.day?.papers || []).filter((p) => state.cat === 'all' || (p.categories || [p.primary]).includes(state.cat));
     const terms = searchTerms();
     let list = all.map((p, i) => ({ p, order: i }));
     if (state.search.filter) list = list.filter(({ p }) => matches(p, terms));

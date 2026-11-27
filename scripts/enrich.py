@@ -619,6 +619,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", default="data")
     ap.add_argument("--limit", type=int, default=0, help="process at most N new papers (0 = all)")
+    ap.add_argument("--top", type=int, default=40, help="per day, only the N most popular papers (0 = all)")
     ap.add_argument("--delay", type=float, default=1.0, help="seconds between papers")
     ap.add_argument("--refresh", action="store_true", help="ignore the cache")
     ap.add_argument("--renorm", action="store_true", help="recompute orgs from cached affiliations (no arXiv requests)")
@@ -665,7 +666,10 @@ def main():
 
     ids = []
     for path in sorted((data_dir / "days").glob("*.json"), reverse=True):
-        ids += [p["id"] for p in json.loads(path.read_text())["papers"]]
+        papers = json.loads(path.read_text())["papers"]
+        if args.top:  # only each day's most popular papers (the ones the site shows first)
+            papers = sorted(papers, key=lambda p: -(p.get("heat") or 0))[: args.top]
+        ids += [p["id"] for p in papers]
     todo = [pid for pid in dict.fromkeys(ids) if pid not in cache]
     if args.limit:
         todo = todo[: args.limit]
