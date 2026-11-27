@@ -45,6 +45,7 @@ jobs:
             exit 0
           fi
           git commit -m "Update preview images and organizations"
+          git pull --rebase origin main
           git push
       - name: Rebuild GitHub Pages
         env:
