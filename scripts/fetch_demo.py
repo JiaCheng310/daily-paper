@@ -215,7 +215,14 @@ def main():
         index_days.append({"date": date, "count": len(rows)})
         print(f"{date}: {len(rows)} papers")
 
-    cats = sorted({c for d in days for p in by_day[d] for c in p["categories"]})
+    # Keep the archive: list every day file on disk, not just the days fetched now.
+    fetched = {d["date"] for d in index_days}
+    for path in sorted((out / "days").glob("*.json")):
+        if path.stem not in fetched:
+            index_days.append({"date": path.stem, "count": len(json.loads(path.read_text())["papers"])})
+    index_days.sort(key=lambda d: d["date"], reverse=True)
+    cats = sorted({c for path in (out / "days").glob("*.json")
+                   for p in json.loads(path.read_text())["papers"] for c in p["categories"]})
     index = {
         "title": "Daily Paper",
         "updated_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
