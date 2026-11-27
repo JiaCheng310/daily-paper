@@ -22,10 +22,10 @@
     zh: {
       skip: '跳到论文列表',
       total: (shown, all) => (shown === all ? `共 ${all} 篇` : `显示 ${shown} / ${all} 篇`),
-      sortScore: '按相关度', sortOriginal: '原始顺序', sortHf: '按 HF 点赞', scoreAll: '全部分数',
+      sortOriginal: '原始顺序', sortHf: '按 HF 点赞',
       prevDay: '前一天', nextDay: '后一天', theme: '切换深色 / 浅色',
       authors: '作者', subject: '分类', submitted: '提交', comment: '备注',
-      relevance: '相关度', loading: '正在加载…', loadFail: '数据加载失败：',
+      loading: '正在加载…', loadFail: '数据加载失败：',
       empty: '没有符合条件的论文。', noFaq: '这篇还没有 AI 解读。', faqTitle: 'AI 解读',
       faqDemo: '示例', openNew: '新标签打开 ↗', close: '收起', copied: '已复制到剪贴板',
       copyFail: '复制失败', relDone: (n) => `已按 ${n} 个标签筛选相关论文`, relNone: '这篇没有标签可用于相关推荐',
@@ -41,10 +41,10 @@
     en: {
       skip: 'Skip to papers',
       total: (shown, all) => (shown === all ? `${all} papers` : `${shown} / ${all} papers`),
-      sortScore: 'By relevance', sortOriginal: 'arXiv order', sortHf: 'By HF upvotes', scoreAll: 'Any score',
+      sortOriginal: 'arXiv order', sortHf: 'By HF upvotes',
       prevDay: 'Previous day', nextDay: 'Next day', theme: 'Toggle dark / light',
       authors: 'Authors', subject: 'Subject', submitted: 'Submitted', comment: 'Comment',
-      relevance: 'Relevance', loading: 'Loading…', loadFail: 'Failed to load data: ',
+      loading: 'Loading…', loadFail: 'Failed to load data: ',
       empty: 'No papers match the current filters.', noFaq: 'No AI reading for this paper yet.', faqTitle: 'AI reading',
       faqDemo: 'demo', openNew: 'Open in new tab ↗', close: 'Close', copied: 'Copied to clipboard',
       copyFail: 'Copy failed', relDone: (n) => `Filtered by ${n} tag(s)`, relNone: 'No tags to find related papers',
@@ -72,8 +72,7 @@
     date: params.get('date'),
     cat: params.get('cat'),
     lang: store.get('dp-lang', (navigator.language || '').toLowerCase().startsWith('zh') ? 'zh' : 'en'),
-    sort: store.get('dp-sort', 'score'),
-    minScore: store.get('dp-min', 0),
+    sort: ['original', 'hf'].includes(store.get('dp-sort')) ? store.get('dp-sort') : 'original',
     onlyFaq: store.get('dp-onlyfaq', false),
     showThumbs: store.get('dp-thumbs', true),
     search: { inc: '', exc: '', logic: 'OR', filter: true },
@@ -134,9 +133,6 @@
     return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())} UTC`;
   }
 
-  function fmtScore(score) {
-    return Number.isInteger(score) ? `${score}` : score.toFixed(1);
-  }
 
   let toastTimer = null;
   function toast(msg) {
@@ -255,7 +251,6 @@
     $('#next-day').disabled = i <= 0;
 
     $('#sort-select').value = state.sort;
-    $('#score-select').value = String(state.minScore);
   }
 
   // ---------- paper list ----------
@@ -263,12 +258,10 @@
     const all = (state.day?.papers || []).filter((p) => (p.categories || [p.primary]).includes(state.cat));
     const terms = searchTerms();
     let list = all.map((p, i) => ({ p, order: i }));
-    list = list.filter(({ p }) => (p.score ?? 0) >= state.minScore);
     if (state.onlyFaq) list = list.filter(({ p }) => p.faq);
     if (state.search.filter) list = list.filter(({ p }) => matches(p, terms));
     const by = {
-      score: (a, b) => (b.p.score ?? 0) - (a.p.score ?? 0) || a.order - b.order,
-      hf: (a, b) => (b.p.hf_upvotes ?? -1) - (a.p.hf_upvotes ?? -1) || (b.p.score ?? 0) - (a.p.score ?? 0) || a.order - b.order,
+      hf: (a, b) => (b.p.hf_upvotes ?? -1) - (a.p.hf_upvotes ?? -1) || a.order - b.order,
       original: (a, b) => a.order - b.order,
     }[state.sort] || ((a, b) => a.order - b.order);
     list.sort(by);
@@ -298,8 +291,6 @@
   function cardHtml(paper, n) {
     const id = escapeHtml(paper.id);
     const starred = Boolean(state.stars[paper.id]);
-    const score = paper.score ?? null;
-    const scoreCls = score === null ? '' : score >= 7 ? ' high' : score < 4 ? ' low' : '';
     const summary = summaryText(paper);
     const orgs = paper.orgs || [];
     const orgHtml = orgs.slice(0, ORG_LIMIT).map(orgChip).join('')
@@ -329,7 +320,6 @@
     <div class="paper-foot">
       <div class="paper-tags">
         <span class="date" title="${escapeHtml(subjects)}">${date}</span>
-        ${score === null ? '' : `<span class="score${scoreCls}" title="${escapeHtml(t('relevance'))}">${fmtScore(score)}</span>`}
         ${tags}${hf}
       </div>
       <div class="paper-actions">
@@ -619,7 +609,6 @@
     $('#prev-day').addEventListener('click', () => step(1));
     $('#next-day').addEventListener('click', () => step(-1));
     $('#sort-select').addEventListener('change', (ev) => { state.sort = ev.target.value; store.set('dp-sort', state.sort); render(); });
-    $('#score-select').addEventListener('change', (ev) => { state.minScore = Number(ev.target.value); store.set('dp-min', state.minScore); render(); });
 
     $('#lang-btn').addEventListener('click', () => {
       state.lang = state.lang === 'zh' ? 'en' : 'zh';

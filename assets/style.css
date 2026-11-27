@@ -199,17 +199,6 @@ mark { background: var(--mark); color: inherit; padding: 0 1px; border-radius: 2
   margin-top: 14px;
 }
 .paper-tags { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 13.5px; color: var(--muted); }
-.score {
-  font-size: 13px;
-  line-height: 1.6;
-  padding: 0 8px;
-  border: 1px solid var(--fg);
-  border-radius: 3px;
-  font-weight: 600;
-  font-variant-numeric: tabular-nums;
-}
-.score.high { background: var(--fg); color: var(--bg); }
-.score.low { border-color: var(--line); color: var(--muted); font-weight: 500; }
 .tag { color: var(--muted); font-size: 13.5px; }
 .tag:hover { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; }
 .dot { color: var(--disabled); }

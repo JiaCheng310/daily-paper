@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Daily Paper</title>
-<meta name="description" content="Daily embodied-AI papers from arXiv, ranked by relevance, with AI-generated FAQ.">
+<meta name="description" content="Daily embodied-AI papers from arXiv, with AI-generated FAQ.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,15 +47,8 @@
       <select id="date-select" aria-label="date"></select>
       <button id="next-day" class="arrow" type="button" data-i18n-title="nextDay" aria-label="next day">›</button>
       <select id="sort-select" aria-label="sort">
-        <option value="score" data-i18n="sortScore">按相关度</option>
         <option value="original" data-i18n="sortOriginal">原始顺序</option>
         <option value="hf" data-i18n="sortHf">按 HF 点赞</option>
-      </select>
-      <select id="score-select" aria-label="minimum score">
-        <option value="0" data-i18n="scoreAll">全部分数</option>
-        <option value="3">≥ 3</option>
-        <option value="5">≥ 5</option>
-        <option value="7">≥ 7</option>
       </select>
     </div>
   </div>
