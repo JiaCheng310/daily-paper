@@ -38,13 +38,13 @@ ORG_KW = re.compile(
     r"Company|\bLtd\b|GmbH|Research|Robotics|Technolog|Centre|Center|Hospital|Polytechn|\bTeam\b|"
     r"DeepMind|NVIDIA|Google|\bMeta\b|Microsoft|Amazon|Apple|Tesla|Toyota|Samsung|Huawei|Alibaba|"
     r"Tencent|ByteDance|Baidu|OpenAI|Anthropic|Physical Intelligence|Unitree|AgiBot|Galbot|"
-    r"\bETH\b|EPFL|KAIST|\bMIT\b|\bCMU\b|\bUCLA\b|\bNUS\b|\bNTU\b|\bHKU\b|HKUST|\bKTH\b|\bTUM\b",
+    r"\bETH\b|EPFL|KAIST|\bMIT\b|\bCMU\b|\bUCLA\b|\bNUS\b|\bNTU\b|\bHKU\b|HKUST|\bKTH\b|\bTUM\b|\bUC [A-Z]",
     re.I,
 )
 TOP_LEVEL = re.compile(
     r"Universit|Institute of Technology|Polytechn|\bETH\b|EPFL|KAIST|DeepMind|NVIDIA|Google|\bMeta\b|"
     r"Microsoft|Amazon|Apple|Tesla|Toyota|Samsung|Huawei|Alibaba|Tencent|ByteDance|Baidu|OpenAI|"
-    r"Anthropic|\bInc\b|Corporation|\bLtd\b|GmbH|Company|Academy of Sciences|Shanghai AI Lab",
+    r"Anthropic|\bInc\b|Corporation|\bLtd\b|GmbH|Company|Academy of Sciences|Shanghai AI Lab|^UC [A-Z]",
     re.I,
 )
 SUBUNIT = re.compile(
@@ -173,12 +173,19 @@ def clean_affil(text):
     text = re.sub(r"\\[A-Za-z]+(?=\s|$)", " ", text)  # LaTeX macros LaTeXML could not expand
     text = re.sub(r"[†‡§¶∗*#♯♮♭⋆★☆✉]", " ", text)
     text = NOTE_PHRASES.sub(" ", text)
-    text = re.sub(r"\b(project page|homepage|website|code)\s*:.*$", "", text, flags=re.I)
+    text = re.sub(r"\$|ˆ", "", text)  # TeX leftovers: "Texas A$&$M", "$ˆ1$"
+    text = re.sub(r"^\s*thanks\s*:\s*", "", text, flags=re.I)
+    # "Weihao YuPeking UniversityCode:" -> split glued words before org / link words
+    text = re.sub(r"(?<=[a-z])(?=(University|Universit|Institute|College|Laborator|Project|Code|School)\b)", ", ", text)
+    text = re.sub(r"(project page|homepage|website|code)\s*:.*$", "", text, flags=re.I)
+    text = re.sub(r"\s*\([^()]*\.(edu|com|org|cn|hk|ac|ai|net)\b[^()]*\)", "", text)  # "(seu.edu.cn)"
+    if re.match(r"\s*(this work|supported by|funded by|acknowledg)", text, re.I):
+        return ""
     text = re.sub(r"\S+@\S+|https?://\S+", " ", text)
     m = re.search(r"\b(?:are|is) (?:with|at|from) (?:the )?(.*)", text, re.I)
     if m:
         text = m.group(1)
-    return re.sub(r"\s+", " ", text).strip(" .;,")
+    return re.sub(r"\s+", " ", text).strip(" .;,:")
 
 
 def pick_org(affil):
@@ -540,6 +547,8 @@ def plausible_org(rec, kind):
     name = rec["name"]
     if not name or name[0].islower() or SUBUNIT.search(name):
         return False
+    if not re.search(r"[a-z]", name) and len(name.split()) > 2:  # "HKU SJTU HKUST (GZ) SZU"
+        return False
     return kind == "tagged" or bool(ORG_WORDS.search(name))
 
 
@@ -609,7 +618,7 @@ def main():
         print(f"logos: {sum('logo' in r for r in org_cache.values())} of "
               f"{sum('domain' in r for r in org_cache.values())} organizations with a site", flush=True)
 
-    if args.renorm:
+    if args.renorm or args.refresh_logos:
         for entry in cache.values():
             if "affils" in entry:
                 entry["orgs"] = compute_orgs(entry.get("kind", "tagged"), entry["affils"])
