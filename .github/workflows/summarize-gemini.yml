@@ -1,0 +1,76 @@
+name: Summarize papers (Gemini)
+
+# Tags and a one-sentence zh/en summary per paper with Gemini (free API tier).
+# Needs the repository secret GEMINI_API_KEY.
+#   compare: runs a few papers on several models and uploads compare.md (no data changes)
+#   run:     summarizes papers without a summary and commits the data
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "compare or run"
+        type: choice
+        options: [compare, run]
+        default: compare
+      models:
+        description: "compare: comma-separated models"
+        default: "gemini-3.8-flash,gemini-3.5-flash-lite"
+      limit:
+        description: "Max papers (compare: sample size; run: 0 = all without a summary)"
+        default: "10"
+        required: true
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: data-update
+  cancel-in-progress: false
+
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compare models
+        if: inputs.mode == 'compare'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MODELS: ${{ inputs.models }}
+          LIMIT: ${{ inputs.limit }}
+        run: python -I -u scripts/summarize_gemini.py --compare "$MODELS" --limit "$LIMIT" --out compare.json
+      - uses: actions/upload-artifact@v4
+        if: inputs.mode == 'compare' && always()
+        with:
+          name: compare
+          path: compare.*
+          if-no-files-found: ignore
+      - name: Summarize
+        if: inputs.mode == 'run'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LIMIT: ${{ inputs.limit }}
+        run: python -I -u scripts/summarize_gemini.py --limit "$LIMIT"
+      - name: Commit data
+        if: inputs.mode == 'run'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Update tags and one-line summaries (Gemini)"
+          git pull --rebase origin main
+          git push
+      - name: Rebuild GitHub Pages
+        if: inputs.mode == 'run'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || true
