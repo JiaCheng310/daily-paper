@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Tags and a one-sentence zh/en summary for every paper, with Gemini (free API tier).
+"""Tags, a one-sentence zh/en summary and the organizations for every paper, with DeepSeek
+(deepseek-flash, thinking off) and Gemini's free tier as the fallback.
 
 Reads data/days/*.json, asks the model about each paper's title + abstract, caches the
 answers in data/llm.json (keyed by paper id and prompt version, so re-runs only ask
 about new papers) and merges `tags` and `summary` back into the day files.
 
-The API key is read from GEMINI_API_KEY (a GitHub Actions secret); it is never written
-to the repository or printed.
+API keys come from DEEPSEEK_API_KEY and GEMINI_API_KEY (GitHub Actions secrets); they are
+never written to the repository or printed. Either one is enough.
 
 Usage (from the repository root):
     python -I scripts/summarize_gemini.py --dry-run
@@ -26,9 +27,21 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-MODEL = "gemini-3.5-flash-lite"  # 2026-11-27: user picked speed (~1 s/paper) over 3.5-flash (~37 s, sharper)
-FALLBACK = ""  # optional second model for when the main model's daily free quota is exhausted
+# 2026-11-27: DeepSeek (about $0.5 a month off-peak, no daily cap) replaced Gemini's free
+# tier, whose daily quota ran out; Gemini stays as the fallback.
+MODEL = "deepseek-flash"
+FALLBACK = "gemini-3.5-flash-lite"
 API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+DEEPSEEK_API = "https://api.deepseek.com/chat/completions"
+KEY_ENV = {"deepseek": "DEEPSEEK_API_KEY", "gemini": "GEMINI_API_KEY"}
+
+
+def provider(model):
+    return "deepseek" if model.startswith("deepseek") else "gemini"
+
+
+def key_for(model):
+    return os.environ.get(KEY_ENV[provider(model)]) if model else None
 
 TAGS = ["LLM", "VLM", "multimodal", "agents", "reasoning", "RL", "alignment", "efficiency", "pretraining",
         "code", "math", "retrieval", "speech", "image generation", "video generation", "diffusion", "3D",
@@ -44,7 +57,10 @@ SYSTEM = f"""你在为一个公开的 AI 论文日报（Hugging Face 与 alphaXi
    - name：顶层机构的常用英文名，例如 "Tsinghua University"、"XPENG"、"Hong Kong Polytechnic University"；院系、实验室、团队归到所属的大学或公司（"GRASP Laboratory, University of Pennsylvania" → "University of Pennsylvania"，"Robotics Foundation Model Team, XPENG" → "XPENG"）；同名机构要写清楚，例如 "Eastern Institute of Technology, Ningbo"。
    - country：机构所在国家或地区的英文名，例如 "China"、"Hong Kong"、"United States"、"United Kingdom"、"South Korea"；看不出来就给空字符串。
 
-只依据给出的内容，不要推测摘要里没有的数字或结论，不要编造原文里没有的机构。"""
+只依据给出的内容，不要推测摘要里没有的数字或结论，不要编造原文里没有的机构。
+
+输出一个 JSON 对象，格式如下：
+{{"tags": ["LLM", "reasoning"], "summary_zh": "……", "summary_en": "……", "orgs": [{{"name": "Tsinghua University", "country": "China"}}]}}"""
 
 SCHEMA = {
     "type": "OBJECT",
@@ -107,13 +123,42 @@ def retry_delay(detail):
     return float(m.group(1)) if m else None
 
 
+def deepseek_body(model, paper):
+    return {
+        "model": model,
+        "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user_text(paper)}],
+        "thinking": {"type": "disabled"},  # a one-line summary needs no reasoning; thinking is billed
+        "response_format": {"type": "json_object"},
+        "max_tokens": 2048,
+        "stream": False,
+    }
+
+
 def call(model, paper, key, retries=8):
-    """One request. Per-minute 429s wait as long as Google says and retry; a daily-quota
-    429 raises QuotaExhausted at once."""
-    data = json.dumps(body(paper), ensure_ascii=False).encode()
+    """One request -> {"text", "finish", "usage"}. Per-minute 429s wait as long as asked and
+    retry; an exhausted daily quota or balance raises QuotaExhausted at once."""
+    if provider(model) == "deepseek":
+        resp = post(DEEPSEEK_API, deepseek_body(model, paper),
+                    {"Content-Type": "application/json", "Authorization": f"Bearer {key}"}, retries)
+        choice = (resp.get("choices") or [{}])[0]
+        usage = resp.get("usage") or {}
+        return {"text": (choice.get("message") or {}).get("content") or "",
+                "finish": "STOP" if choice.get("finish_reason") == "stop" else choice.get("finish_reason"),
+                "usage": {"in": usage.get("prompt_tokens", 0), "out": usage.get("completion_tokens", 0),
+                          "cached": usage.get("prompt_cache_hit_tokens", 0)}}
+    resp = post(API.format(model=model), body(paper), {"Content-Type": "application/json", "x-goog-api-key": key}, retries)
+    cand = (resp.get("candidates") or [{}])[0]
+    usage = resp.get("usageMetadata", {})
+    return {"text": "".join(p.get("text", "") for p in cand.get("content", {}).get("parts", []) if not p.get("thought")),
+            "finish": cand.get("finishReason"),
+            "usage": {"in": usage.get("promptTokenCount", 0), "out": usage.get("candidatesTokenCount", 0),
+                      "thoughts": usage.get("thoughtsTokenCount", 0)}}
+
+
+def post(url, payload, headers, retries):
+    data = json.dumps(payload, ensure_ascii=False).encode()
     for attempt in range(retries + 1):
-        req = urllib.request.Request(API.format(model=model), data=data, method="POST",
-                                     headers={"Content-Type": "application/json", "x-goog-api-key": key})
+        req = urllib.request.Request(url, data=data, method="POST", headers=headers)
         try:
             with urllib.request.urlopen(req, timeout=120) as resp:
                 return json.load(resp)
@@ -122,6 +167,8 @@ def call(model, paper, key, retries=8):
             short = re.sub(r"\s+", " ", detail)[:300]
             if exc.code in (401, 403):
                 raise AuthFailed(short)
+            if exc.code == 402:  # DeepSeek: balance used up
+                raise QuotaExhausted(short)
             if exc.code == 429:
                 if "PerDay" in detail or "per day" in detail.lower():
                     raise QuotaExhausted(short)
@@ -146,11 +193,9 @@ BOILERPLATE_EN = re.compile(r"^(this (paper|work|study) )?(proposes|presents|int
 
 def clean(resp):
     """Validate the model's JSON; raises ValueError on anything unusable."""
-    cand = (resp.get("candidates") or [{}])[0]
-    if cand.get("finishReason") not in (None, "STOP"):
-        raise ValueError(f"finishReason {cand.get('finishReason')}")
-    text = "".join(p.get("text", "") for p in cand.get("content", {}).get("parts", []) if not p.get("thought"))
-    out = json.loads(text)
+    if resp["finish"] not in (None, "STOP"):
+        raise ValueError(f"finish reason {resp['finish']}")
+    out = json.loads(resp["text"])
     allowed = {t.lower(): t for t in TAGS}
     tags = list(dict.fromkeys(allowed[t] for t in (str(x).strip().lower() for x in out["tags"]) if t in allowed))[:4]
     zh = BOILERPLATE_ZH.sub("", out["summary_zh"].strip())
@@ -164,10 +209,7 @@ def clean(resp):
         if name and len(name) <= 120 and name.lower() not in seen:
             seen.add(name.lower())
             orgs.append({"name": name, "country": str(org.get("country", "")).strip()})
-    usage = resp.get("usageMetadata", {})
-    return {"tags": tags, "summary": {"zh": zh, "en": en}, "orgs": orgs[:8],
-            "usage": {"in": usage.get("promptTokenCount", 0), "out": usage.get("candidatesTokenCount", 0),
-                      "thoughts": usage.get("thoughtsTokenCount", 0)}}
+    return {"tags": tags, "summary": {"zh": zh, "en": en}, "orgs": orgs[:8], "usage": resp["usage"]}
 
 
 def load_days(data_dir):
@@ -209,14 +251,14 @@ def sample(papers, n):
     return day[::step][:n]
 
 
-def compare(models, papers, key, out_path, delay):
+def compare(models, papers, out_path, delay):
     rows = []
     for paper in papers:
         row = {"id": paper["id"], "title": paper["title"], "abstract": paper["abstract"], "results": {}}
         for model in models:
             t0 = time.time()
             try:
-                row["results"][model] = clean(call(model, paper, key))
+                row["results"][model] = clean(call(model, paper, key_for(model)))
             except Exception as exc:
                 row["results"][model] = {"error": f"{type(exc).__name__}: {str(exc)[:300]}"}
             row["results"][model]["seconds"] = round(time.time() - t0, 1)
@@ -270,16 +312,22 @@ def main():
     papers = list({p["id"]: p for day in days.values() for p in day["papers"]}.values())
 
     if args.dry_run:
-        print(json.dumps(body(papers[0]), ensure_ascii=False, indent=1))
+        print(json.dumps(deepseek_body(args.model, papers[0]) if provider(args.model) == "deepseek"
+                         else body(papers[0]), ensure_ascii=False, indent=1))
         return
-    key = os.environ.get("GEMINI_API_KEY")
-    if not key:
-        sys.exit("GEMINI_API_KEY is not set (add it as a repository secret)")
+    # A model without its key is skipped: the fallback becomes the main model.
+    if not key_for(args.model):
+        print(f"{KEY_ENV[provider(args.model)]} is not set; using {args.fallback or 'nothing'}", flush=True)
+        args.model, args.fallback = args.fallback, ""
+    if args.fallback and not key_for(args.fallback):
+        args.fallback = ""
+    if not args.model or not key_for(args.model):
+        sys.exit("no API key: set DEEPSEEK_API_KEY or GEMINI_API_KEY as a repository secret")
 
     try:
         if args.compare:
             models = [m.strip() for m in args.compare.split(",") if m.strip()]
-            compare(models, sample(papers, args.limit or 10), key, Path(args.out), args.delay)
+            compare(models, sample(papers, args.limit or 10), Path(args.out), args.delay)
             return
 
         if args.top:  # only each day's most popular papers (heat from popularity.py)
@@ -305,18 +353,21 @@ def main():
                 return
             model = state["model"]
             try:
-                result = clean(call(model, paper, key))
+                result = clean(call(model, paper, key_for(model)))
             except QuotaExhausted:
                 with lock:
                     if state["model"] == args.fallback or not args.fallback:
                         stop.set()
                         raise
                     if state["model"] == model:
-                        print(f"{model}: daily quota exhausted, switching to {args.fallback}", flush=True)
+                        print(f"{model}: quota or balance exhausted, switching to {args.fallback}", flush=True)
                         state["model"] = args.fallback
                 model = state["model"]
-                result = clean(call(model, paper, key))
-            result.pop("usage", None)
+                result = clean(call(model, paper, key_for(model)))
+            usage = result.pop("usage", {})
+            with lock:
+                for k in ("in", "out", "cached"):
+                    state[k] = state.get(k, 0) + (usage.get(k) or 0)
             with lock:
                 cache[paper["id"]] = {"v": prompt_version(model), "model": model, **result}
                 cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=1, sort_keys=True))
@@ -341,8 +392,9 @@ def main():
         if stop.is_set():
             print("daily quota exhausted on every model; the rest waits for the next run", flush=True)
         print(f"{state['done']} summarized, {state['failed']} failed", flush=True)
+        print(f"tokens: {state.get('in', 0)} in ({state.get('cached', 0)} cached), {state.get('out', 0)} out", flush=True)
     except AuthFailed as exc:
-        sys.exit(f"authentication failed: check the GEMINI_API_KEY secret ({exc})")
+        sys.exit(f"authentication failed: check the API key secrets ({exc})")
     merge(days, cache)
     print("done")
 

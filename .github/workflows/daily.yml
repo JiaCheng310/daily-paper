@@ -5,11 +5,12 @@ name: Daily update
 # commit, redeploy.
 #
 # arXiv announces new papers Sunday-Thursday at 20:00 US Eastern, i.e. 08:00-09:00
-# Beijing time Monday-Friday. 02:30 UTC = 10:30 Beijing, safely after the announcement
-# in both summer and winter time. Weekend runs find nothing new and only refresh upvotes.
+# Beijing time Monday-Friday. 04:30 UTC = 12:30 Beijing: after the announcement in summer
+# and winter time, and outside DeepSeek's peak hours (01-04 and 06-10 UTC), when its
+# prices are half. Weekend runs find little new and mostly refresh upvotes.
 on:
   schedule:
-    - cron: "30 2 * * *"
+    - cron: "30 4 * * *"
   workflow_dispatch:
 
 permissions:
@@ -44,8 +45,9 @@ jobs:
       - name: Tags and one-line summaries
         continue-on-error: true
         env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python -I -u scripts/summarize_gemini.py
+        run: python -I -u scripts/summarize_gemini.py --workers 8
       - name: Organizations from the summaries
         continue-on-error: true
         run: python -I -u scripts/enrich.py --merge

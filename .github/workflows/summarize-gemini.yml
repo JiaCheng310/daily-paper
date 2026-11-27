@@ -1,7 +1,7 @@
-name: Summarize papers (Gemini)
+name: Summarize papers (DeepSeek / Gemini)
 
-# Tags and a one-sentence zh/en summary per paper with Gemini (free API tier).
-# Needs the repository secret GEMINI_API_KEY.
+# Tags, a one-sentence zh/en summary and organizations per paper: DeepSeek, with Gemini's
+# free tier as the fallback. Needs DEEPSEEK_API_KEY and/or GEMINI_API_KEY.
 #   compare: runs a few papers on several models and uploads compare.md (no data changes)
 #   run:     summarizes papers without a summary and commits the data
 on:
@@ -14,7 +14,7 @@ on:
         default: compare
       models:
         description: "compare: comma-separated models"
-        default: "gemini-3.8-flash,gemini-3.5-flash-lite"
+        default: "deepseek-flash,gemini-3.5-flash-lite"
       limit:
         description: "Max papers (compare: sample size; run: 0 = all without a summary)"
         default: "10"
@@ -45,6 +45,7 @@ jobs:
       - name: Compare models
         if: inputs.mode == 'compare'
         env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           MODELS: ${{ inputs.models }}
           LIMIT: ${{ inputs.limit }}
@@ -58,6 +59,7 @@ jobs:
       - name: Summarize
         if: inputs.mode == 'run'
         env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LIMIT: ${{ inputs.limit }}
         run: python -I -u scripts/summarize_gemini.py --limit "$LIMIT"
