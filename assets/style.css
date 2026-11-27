@@ -9,7 +9,8 @@
   --disabled: #a6a6a6;
   --mark: #fff0a0;
   --shadow: 0 6px 24px rgba(0, 0, 0, .08);
-  --font: "Roboto Mono", "Noto Sans SC", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font: "Inter", "Noto Sans SC", "Source Han Sans SC", -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 :root[data-theme=dark] {
   color-scheme: dark;
@@ -284,7 +285,7 @@ mark { background: var(--mark); color: inherit; padding: 0 1px; border-radius: 2
 .faq-a { padding-left: 36px; font-size: 15.5px; line-height: 1.85; }
 .faq-a p { margin: 6px 0; }
 .faq-a ul, .faq-a ol { margin: 6px 0; padding-left: 24px; }
-.faq-a code { background: var(--hover); padding: 0 4px; border-radius: 3px; }
+.faq-a code { font-family: var(--mono); background: var(--hover); padding: 0 4px; border-radius: 3px; }
 .faq-a table { border-collapse: collapse; margin: 8px 0; font-size: 14px; }
 .faq-a th, .faq-a td { border: 1px solid var(--line); padding: 3px 8px; }
 .faq-empty { padding: 16px 20px; color: var(--muted); font-size: 15px; }
