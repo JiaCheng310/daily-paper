@@ -190,13 +190,12 @@ def main():
     for date in days:
         rows = []
         for paper in by_day[date]:
-            if paper["id"] in llm:
+            if paper["id"] in llm:  # written by scripts/summarize_gemini.py
                 entry = llm[paper["id"]]
-                paper["score"], paper["tags"], paper["summary"] = entry["score"], entry["tags"], entry["summary"]
-                paper["score_source"] = entry["model"]
+                paper["tags"], paper["summary"] = entry["tags"], entry["summary"]
+                paper["summary_source"] = entry["model"]
             else:
-                paper["score"], paper["tags"] = demo_score(paper)
-                paper["score_source"] = "keyword-demo"
+                _, paper["tags"] = demo_score(paper)  # keyword tags until the summarizer runs
             row = pop.get(paper["id"], {})
             hf_up = max(votes.get(paper["id"], 0), row.get("hf") or 0)
             if hf_up:
@@ -205,7 +204,6 @@ def main():
                 paper["ax_votes"] = row.get("ax_votes") or 0
                 paper["ax_visits"] = row.get("ax_visits") or 0
             paper["heat"] = hf_up + (row.get("ax_votes") or 0)
-            paper["faq"] = (out / "faq" / f"{paper['id']}.json").exists()
             extra = enrich.get(paper["id"])
             if extra:
                 paper["orgs"] = extra.get("orgs", [])

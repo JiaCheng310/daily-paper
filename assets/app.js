@@ -27,13 +27,12 @@
       prevDay: '前一天', nextDay: '后一天', theme: '切换深色 / 浅色',
       authors: '作者', subject: '分类', submitted: '提交', comment: '备注',
       loading: '正在加载…', loadFail: '数据加载失败：',
-      empty: '没有符合条件的论文。', noFaq: '这篇还没有 AI 解读。', faqTitle: 'AI 解读',
-      faqDemo: '示例', openNew: '新标签打开 ↗', close: '收起', copied: '已复制到剪贴板',
+      empty: '没有符合条件的论文。',
+      openNew: '新标签打开 ↗', close: '收起', copied: '已复制到剪贴板',
       copyFail: '复制失败', relDone: (n) => `已按 ${n} 个标签筛选相关论文`, relNone: '这篇没有标签可用于相关推荐',
       starred: '星标', search: '搜索', settings: '设置', top: '顶部',
       include: '包含', exclude: '排除', apply: '搜索', clear: '清空', filter: '只显示匹配',
       noStars: '还没有星标论文。点标题右边的 ☆ 收藏。', exportMd: '复制 Markdown', exportDl: '下载 .md',
-      onlyFaq: '只看有解读的',
       star: '星标', unstar: '取消星标', moreAuthors: (n) => `+${n} 人`,
       orgs: '机构', preview: '预览图',
       showThumbs: '显示预览图',
@@ -47,13 +46,12 @@
       prevDay: 'Previous day', nextDay: 'Next day', theme: 'Toggle dark / light',
       authors: 'Authors', subject: 'Subject', submitted: 'Submitted', comment: 'Comment',
       loading: 'Loading…', loadFail: 'Failed to load data: ',
-      empty: 'No papers match the current filters.', noFaq: 'No AI reading for this paper yet.', faqTitle: 'AI reading',
-      faqDemo: 'demo', openNew: 'Open in new tab ↗', close: 'Close', copied: 'Copied to clipboard',
+      empty: 'No papers match the current filters.',
+      openNew: 'Open in new tab ↗', close: 'Close', copied: 'Copied to clipboard',
       copyFail: 'Copy failed', relDone: (n) => `Filtered by ${n} tag(s)`, relNone: 'No tags to find related papers',
       starred: 'Starred', search: 'Search', settings: 'Settings', top: 'Top',
       include: 'Include', exclude: 'Exclude', apply: 'Search', clear: 'Clear', filter: 'Filter',
       noStars: 'No starred papers yet. Click ☆ next to a title.', exportMd: 'Copy Markdown', exportDl: 'Download .md',
-      onlyFaq: 'Only papers with AI reading',
       star: 'Star', unstar: 'Unstar', moreAuthors: (n) => `+${n} more`,
       orgs: 'Organizations', preview: 'Preview',
       showThumbs: 'Show preview images',
@@ -70,18 +68,15 @@
     index: null,
     day: null,
     dayCache: new Map(),
-    faqCache: new Map(),
     date: params.get('date'),
     cat: params.get('cat'),
     lang: store.get('dp-lang', (navigator.language || '').toLowerCase().startsWith('zh') ? 'zh' : 'en'),
     sort: ['hot', 'original', 'hf'].includes(store.get('dp-sort')) ? store.get('dp-sort') : 'hot',
-    onlyFaq: store.get('dp-onlyfaq', false),
     showThumbs: store.get('dp-thumbs', true),
     search: { inc: '', exc: '', logic: 'OR', filter: true },
     stars: store.get('dp-stars', {}),
     visited: new Set(store.get('dp-visited', [])),
     openPdf: new Set(),
-    openFaq: new Set(),
     expandedAuthors: new Set(),
     scrolledToHash: false,
   };
@@ -246,7 +241,6 @@
       return;
     }
     state.openPdf.clear();
-    state.openFaq.clear();
     render();
   }
 
@@ -291,7 +285,6 @@
     const all = (state.day?.papers || []).filter((p) => (p.categories || [p.primary]).includes(state.cat));
     const terms = searchTerms();
     let list = all.map((p, i) => ({ p, order: i }));
-    if (state.onlyFaq) list = list.filter(({ p }) => p.faq);
     if (state.search.filter) list = list.filter(({ p }) => matches(p, terms));
     const heat = (p) => p.heat ?? p.hf_upvotes ?? 0;
     const by = state.day?.popular ? (a, b) => a.order - b.order : {
@@ -344,7 +337,6 @@
     const code = paper.code_url
       ? `<a class="act" href="${escapeHtml(paper.code_url)}" target="_blank" rel="noopener">[Code]</a>`
       : '';
-    const faqCls = paper.faq ? 'act' : 'act unavailable';
     const thumb = state.showThumbs && paper.thumb
       ? `<button type="button" class="thumb" data-act="thumb" title="${escapeHtml(t('preview'))}"><img src="${escapeHtml(paper.thumb)}" width="${paper.thumb_w || ''}" height="${paper.thumb_h || ''}" loading="lazy" decoding="async" alt="${escapeHtml(t('preview'))}: ${escapeHtml(paper.title)}"></button>`
       : '';
@@ -364,7 +356,6 @@
       <div class="paper-actions">
         <button type="button" class="act" data-act="pdf" aria-expanded="${state.openPdf.has(paper.id)}">[PDF]</button>
         <button type="button" class="act" data-act="copy">[Copy]</button>
-        <button type="button" class="${faqCls}" data-act="faq" aria-expanded="${state.openFaq.has(paper.id)}">[FAQ]</button>
         <button type="button" class="act" data-act="rel">[REL]</button>
         ${code}
         <button type="button" class="star" data-act="star" aria-pressed="${starred}" title="${escapeHtml(t(starred ? 'unstar' : 'star'))}">${STAR_SVG}</button>
@@ -372,7 +363,7 @@
     </div>
   </div>
   ${thumb}
-  <div class="paper-panels"><div class="slot-pdf"></div><div class="slot-faq"></div></div>
+  <div class="paper-panels"><div class="slot-pdf"></div></div>
 </li>`;
   }
 
@@ -386,7 +377,6 @@
     $('#status').textContent = list.length ? '' : t('empty');
     renderMath(container);
     state.openPdf.forEach((id) => openPdf(id, false));
-    state.openFaq.forEach((id) => openFaq(id, false));
     renderStars();
     renderSearchBadge();
     syncUrl();
@@ -432,68 +422,6 @@
   <iframe src="${url}" title="PDF ${escapeHtml(id)}" loading="lazy"></iframe>
 </div>`;
     markVisited(id);
-  }
-
-  // ---------- FAQ ----------
-  function mdToHtml(md) {
-    if (window.marked && window.DOMPurify) {
-      return window.DOMPurify.sanitize(window.marked.parse(md));
-    }
-    return `<p>${escapeHtml(md).replace(/\n/g, '<br>')}</p>`;
-  }
-
-  // Protect TeX from Markdown so that "_" and "*" inside formulas survive.
-  function mdWithMath(md) {
-    const stash = [];
-    const protectedMd = md.replace(/\$\$[\s\S]+?\$\$|\$[^$\n]+?\$/g, (m) => {
-      stash.push(m);
-      return `@@MATH${stash.length - 1}@@`;
-    });
-    return mdToHtml(protectedMd).replace(/@@MATH(\d+)@@/g, (_, i) => escapeHtml(stash[Number(i)]));
-  }
-
-  async function openFaq(id, toggle = true) {
-    const card = document.getElementById(id);
-    if (!card) return;
-    const paper = findPaper(id);
-    const slot = $('.slot-faq', card);
-    const btn = $('[data-act="faq"]', card);
-    if (!paper?.faq) {
-      if (toggle) toast(t('noFaq'));
-      return;
-    }
-    if (toggle && state.openFaq.has(id)) {
-      state.openFaq.delete(id);
-      slot.innerHTML = '';
-      btn.setAttribute('aria-expanded', 'false');
-      return;
-    }
-    state.openFaq.add(id);
-    btn.setAttribute('aria-expanded', 'true');
-    markVisited(id);
-    slot.innerHTML = `<div class="panel faq-panel"><div class="faq-empty">${escapeHtml(t('loading'))}</div></div>`;
-    let faq;
-    try {
-      if (!state.faqCache.has(id)) state.faqCache.set(id, await getJson(`data/faq/${encodeURIComponent(id)}.json`));
-      faq = state.faqCache.get(id);
-    } catch (e) {
-      slot.innerHTML = `<div class="panel faq-panel"><div class="faq-empty">${escapeHtml(t('loadFail') + e.message)}</div></div>`;
-      return;
-    }
-    if (!state.openFaq.has(id) || !document.getElementById(id)) return; // closed or re-rendered meanwhile
-    const qa = faq.qa?.[state.lang] || faq.qa?.zh || faq.qa?.en || [];
-    const meta = [faq.model, faq.generated_at].filter(Boolean).map(escapeHtml).join(' · ');
-    const body = qa.map((item, i) => `
-<div class="faq-q"><span class="qn">Q${i + 1}</span>${escapeHtml(item.q)}</div>
-<div class="faq-a">${mdWithMath(item.a)}</div>`).join('');
-    const target = $('.slot-faq', document.getElementById(id));
-    target.innerHTML = `
-<div class="panel faq-panel">
-  <div class="panel-head"><span>${escapeHtml(t('faqTitle'))}${faq.demo ? ` (${escapeHtml(t('faqDemo'))})` : ''}${meta ? ` · ${meta}` : ''}</span>
-    <span class="head-actions"><button type="button" data-act="faq">${escapeHtml(t('close'))}</button></span></div>
-  <div class="faq-body">${body || `<div class="faq-empty">${escapeHtml(t('noFaq'))}</div>`}</div>
-</div>`;
-    renderMath(target);
   }
 
   // ---------- stars ----------
@@ -601,7 +529,6 @@
       const paper = findPaper(id);
       switch (actBtn.dataset.act) {
         case 'pdf': openPdf(id); break;
-        case 'faq': openFaq(id); break;
         case 'star': toggleStar(id); break;
         case 'thumb': openLightbox(paper); break;
         case 'authors':
@@ -725,7 +652,6 @@
       el.checked = state[key];
       el.addEventListener('change', () => { state[key] = el.checked; store.set(storeKey, state[key]); render(); });
     };
-    opt('#opt-onlyfaq', 'onlyFaq', 'dp-onlyfaq');
     opt('#opt-thumbs', 'showThumbs', 'dp-thumbs');
 
     $('#lightbox').addEventListener('click', (ev) => {

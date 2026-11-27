@@ -255,7 +255,7 @@ mark { background: var(--mark); color: inherit; padding: 0 1px; border-radius: 2
 .lightbox figcaption { margin-top: 10px; color: #fff; font-size: 15px; text-align: center; }
 .lightbox figcaption a { text-decoration: underline; text-underline-offset: 3px; margin-left: 8px; }
 
-/* Inline PDF / FAQ panels */
+/* Inline PDF panel */
 .panel { margin-top: 16px; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
 .panel-head {
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
@@ -268,16 +268,6 @@ mark { background: var(--mark); color: inherit; padding: 0 1px; border-radius: 2
 .panel-head a, .panel-head button { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; font-size: 13.5px; }
 .panel-head .head-actions { display: flex; gap: 16px; }
 .pdf-panel iframe { display: block; width: 100%; height: 82vh; border: 0; background: #fff; }
-.faq-body { padding: 4px 20px 18px; }
-.faq-q { margin: 18px 0 5px; font-weight: 700; font-size: 16px; }
-.faq-q .qn { display: inline-block; min-width: 36px; color: var(--muted); }
-.faq-a { padding-left: 36px; font-size: 15.5px; line-height: 1.85; }
-.faq-a p { margin: 6px 0; }
-.faq-a ul, .faq-a ol { margin: 6px 0; padding-left: 24px; }
-.faq-a code { font-family: var(--mono); background: var(--hover); padding: 0 4px; border-radius: 3px; }
-.faq-a table { border-collapse: collapse; margin: 8px 0; font-size: 14px; }
-.faq-a th, .faq-a td { border: 1px solid var(--line); padding: 3px 8px; }
-.faq-empty { padding: 16px 20px; color: var(--muted); font-size: 15px; }
 
 /* Footer */
 .footer {
@@ -408,5 +398,4 @@ textarea {
   .bar-btn { padding: 7px 11px; }
   .bar-btn span[data-i18n] { display: none; }
   .pdf-panel iframe { height: 70vh; }
-  .faq-a { padding-left: 0; }
-}
+  }

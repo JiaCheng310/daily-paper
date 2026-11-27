@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Daily Paper</title>
-<meta name="description" content="Daily embodied-AI papers from arXiv, with AI-generated FAQ.">
+<meta name="description" content="Daily embodied-AI papers from arXiv, ranked by Hugging Face and alphaXiv upvotes, with one-line AI summaries.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -91,7 +91,6 @@
   </section>
   <section id="panel-settings" class="bar-panel" hidden>
     <div class="bar-actions column">
-      <label class="check"><input type="checkbox" id="opt-onlyfaq"> <span data-i18n="onlyFaq">只看有解读的</span></label>
       <label class="check"><input type="checkbox" id="opt-thumbs"> <span data-i18n="showThumbs">显示预览图</span></label>
     </div>
   </section>
@@ -117,8 +116,6 @@
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <div id="lightbox" class="lightbox" hidden></div>
 
-<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" defer></script>
 <script src="assets/app.js" defer></script>

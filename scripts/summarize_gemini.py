@@ -17,13 +17,16 @@ import argparse
 import hashlib
 import json
 import os
+import re
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import sys
 import time
 import urllib.error
 import urllib.request
 from pathlib import Path
 
-MODEL = "gemini-3.8-flash"
+MODEL = "gemini-3.5-flash"  # chosen 2026-11-27 over 3.5-flash-lite (sharper) and 3.8-flash (no free quota)
 FALLBACK = "gemini-3.5-flash-lite"  # used when the main model's free quota is exhausted
 API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
@@ -113,6 +116,11 @@ def call(model, paper, key, retries=4):
             time.sleep(5 * (attempt + 1))
 
 
+# Openers the prompt forbids but the model still writes now and then.
+BOILERPLATE_ZH = re.compile(r"^(本文|该论文|该研究|作者们?|研究者们?)?(提出了?|介绍了?)(一种|一个)?(名为)?")
+BOILERPLATE_EN = re.compile(r"^(this (paper|work|study) )?(proposes|presents|introduces) ", re.I)
+
+
 def clean(resp):
     """Validate the model's JSON; raises ValueError on anything unusable."""
     cand = (resp.get("candidates") or [{}])[0]
@@ -120,8 +128,11 @@ def clean(resp):
         raise ValueError(f"finishReason {cand.get('finishReason')}")
     text = "".join(p.get("text", "") for p in cand.get("content", {}).get("parts", []) if not p.get("thought"))
     out = json.loads(text)
-    tags = [str(t).strip() for t in out["tags"] if str(t).strip()][:4]
-    zh, en = out["summary_zh"].strip(), out["summary_en"].strip()
+    allowed = {t.lower(): t for t in TAGS}
+    tags = list(dict.fromkeys(allowed[t] for t in (str(x).strip().lower() for x in out["tags"]) if t in allowed))[:4]
+    zh = BOILERPLATE_ZH.sub("", out["summary_zh"].strip())
+    en = BOILERPLATE_EN.sub("", out["summary_en"].strip())
+    en = en[:1].upper() + en[1:]
     if not zh or not en:
         raise ValueError("empty summary")
     usage = resp.get("usageMetadata", {})
@@ -142,8 +153,8 @@ def merge(days, cache):
                 continue
             paper["tags"], paper["summary"] = entry["tags"], entry["summary"]
             paper["summary_source"] = entry["model"]
-            paper.pop("score", None)
-            paper.pop("score_source", None)
+            for gone in ("score", "score_source", "faq"):
+                paper.pop(gone, None)
         path.write_text(json.dumps(day, ensure_ascii=False, indent=1))
 
 
@@ -196,6 +207,7 @@ def main():
     ap.add_argument("--model", default=MODEL)
     ap.add_argument("--fallback", default=FALLBACK)
     ap.add_argument("--limit", type=int, default=0, help="process at most N papers (0 = all)")
+    ap.add_argument("--workers", type=int, default=3)
     ap.add_argument("--delay", type=float, default=4.0, help="seconds between requests (free-tier rate limits)")
     ap.add_argument("--compare", default="", help="comma-separated models: write compare.json/.md, change no data")
     ap.add_argument("--out", default="compare.json")
@@ -221,37 +233,59 @@ def main():
             compare(models, sample(papers, args.limit or 10), key, Path(args.out), args.delay)
             return
 
-        model = args.model
-        todo = [p for p in papers if cache.get(p["id"], {}).get("v") != prompt_version(model)]
+        todo = [p for p in papers if cache.get(p["id"], {}).get("v") not in
+                {prompt_version(args.model), prompt_version(args.fallback)}]
         if args.limit:
             todo = todo[: args.limit]
-        print(f"{len(todo)} papers to summarize with {model} ({len(papers) - len(todo)} cached)")
-        failed = 0
-        for n, paper in enumerate(todo, 1):
+        print(f"{len(todo)} papers to summarize with {args.model} ({len(papers) - len(todo)} cached), "
+              f"{args.workers} workers", flush=True)
+        state = {"model": args.model, "done": 0, "failed": 0}
+        lock = threading.Lock()
+        stop = threading.Event()
+
+        def work(paper):
+            if stop.is_set():
+                return
+            model = state["model"]
             try:
-                try:
-                    result = clean(call(model, paper, key))
-                except QuotaExhausted:
-                    if not args.fallback or model == args.fallback:
+                result = clean(call(model, paper, key))
+            except QuotaExhausted:
+                with lock:
+                    if state["model"] == args.fallback or not args.fallback:
+                        stop.set()
                         raise
-                    print(f"{model}: daily quota exhausted, switching to {args.fallback}", flush=True)
-                    model = args.fallback
-                    result = clean(call(model, paper, key))
-            except (AuthFailed, QuotaExhausted):
-                raise
-            except Exception as exc:
-                failed += 1
-                print(f"[{n}/{len(todo)}] {paper['id']} FAILED: {exc}", flush=True)
-                continue
+                    if state["model"] == model:
+                        print(f"{model}: daily quota exhausted, switching to {args.fallback}", flush=True)
+                        state["model"] = args.fallback
+                model = state["model"]
+                result = clean(call(model, paper, key))
             result.pop("usage", None)
-            cache[paper["id"]] = {"v": prompt_version(model), "model": model, **result}
-            cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=1, sort_keys=True))
-            print(f"[{n}/{len(todo)}] {paper['id']} {result['summary']['zh'][:40]}", flush=True)
+            with lock:
+                cache[paper["id"]] = {"v": prompt_version(model), "model": model, **result}
+                cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=1, sort_keys=True))
+                state["done"] += 1
+                print(f"[{state['done']}/{len(todo)}] {paper['id']} {model} {result['summary']['zh'][:36]}",
+                      flush=True)
             time.sleep(args.delay)
+
+        with ThreadPoolExecutor(max_workers=args.workers) as pool:
+            futures = {pool.submit(work, p): p["id"] for p in todo}
+            for fut in as_completed(futures):
+                try:
+                    fut.result()
+                except AuthFailed:
+                    stop.set()
+                    raise
+                except QuotaExhausted:
+                    stop.set()
+                except Exception as exc:
+                    state["failed"] += 1
+                    print(f"{futures[fut]} FAILED: {exc}", flush=True)
+        if stop.is_set():
+            print("daily quota exhausted on every model; the rest waits for the next run", flush=True)
+        print(f"{state['done']} summarized, {state['failed']} failed", flush=True)
     except AuthFailed as exc:
         sys.exit(f"authentication failed: check the GEMINI_API_KEY secret ({exc})")
-    except QuotaExhausted as exc:
-        print(f"daily quota exhausted on every model; the rest waits for the next run ({str(exc)[:200]})")
     merge(days, cache)
     print("done")
 
