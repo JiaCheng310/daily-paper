@@ -277,7 +277,7 @@ def compare(models, papers, out_path, delay):
                 md += [f"**{model}** — ERROR {r['error']}", ""]
                 continue
             u = r["usage"]
-            md += [f"**{model}** ({r['seconds']}s, {u['in']} in / {u['out']} out / {u['thoughts']} thinking tokens)",
+            md += [f"**{model}** ({r['seconds']}s, {u['in']} in / {u['out']} out / {u.get('thoughts', 0)} thinking tokens)",
                    f"- tags: {', '.join(r['tags'])}", f"- zh: {r['summary']['zh']}", f"- en: {r['summary']['en']}", ""]
     out_path.with_suffix(".md").write_text("\n".join(md))
     ok = {m: sum("error" not in row["results"][m] for row in rows) for m in models}
