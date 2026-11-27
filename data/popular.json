@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-27T13:12:04+00:00",
+ "updated_at": "2026-11-27T19:08:33+00:00",
  "newest": "2026-11-25",
  "periods": {
   "7": {
@@ -31,69 +31,25 @@
       "RL",
       "alignment"
      ],
-     "ax_votes": 203,
-     "ax_visits": 2199,
-     "heat": 422.9,
+     "summary": {
+      "en": "VOPD projects sparse verifier preferences onto the teacher's implicit-reward direction and Rao-Blackwellizes them over the vocabulary for dense verifier-grounded supervision, improving final performance and learning efficiency over vanilla OPD and other on-policy distillation baselines on eight math reasoning benchmarks.",
+      "zh": "VOPD 将稀疏的验证器奖励投影到教师的隐式奖励方向上，并在整个词表上做 Rao-Blackwell 化，得到稠密的、基于验证器的监督信号，在八项数学推理基准上相比 vanilla OPD 与其他 on-policy distillation 基线同时提升最终性能与学习效率。"
+     },
+     "summary_source": "deepseek-flash",
+     "ax_votes": 232,
+     "ax_visits": 2309,
+     "heat": 462.9,
      "orgs": [
       {
-       "logo": "data/logos/stanford.edu.png",
-       "name": "Stanford University",
-       "ror": "00f54p054"
+       "name": "Stanford University"
       },
       {
-       "name": "Google DeepMind",
-       "logo": "data/logos/deepmind.google.png"
+       "name": "Google DeepMind"
       }
      ],
      "thumb": "data/thumbs/2611.30325.jpg",
      "thumb_w": 618,
-     "thumb_h": 440,
-     "summary": {
-      "zh": "VOPD 将稀疏的验证器奖励投影到教师的隐式奖励方向上，并在整个词表上做 Rao-Blackwell 化，得到稠密的、基于验证器的监督信号，在八项数学推理基准上相比 vanilla OPD 与其他 on-policy distillation 基线同时提升最终性能与学习效率。",
-      "en": "VOPD projects sparse verifier preferences onto the teacher's implicit-reward direction and Rao-Blackwellizes them over the vocabulary for dense verifier-grounded supervision, improving final performance and learning efficiency over vanilla OPD and other on-policy distillation baselines on eight math reasoning benchmarks."
-     },
-     "summary_source": "deepseek-flash"
-    },
-    {
-     "id": "2611.28298",
-     "title": "Language Model Harnesses can be Compositional Generalizers",
-     "authors": [
-      "Alex L. Zhang",
-      "Souradip Chakraborty",
-      "Omar Khattab"
-     ],
-     "abstract": "Modern language models (LMs) are post-trained and deployed as agents inside a \"harness\", but standard harness designs accumulate context that the neural network is forced to generalize to, making training for long-horizon tasks expensive and time-consuming. We study an alternative emerging path: training inherently neurosymbolic LM harnesses, which externalize and manage context programmatically to compose existing LM capabilities. We hypothesize that training around these harnesses can offer a better return on compute by enabling compositional generalization, as they can learn to decompose complex problems so that every observation their neural LM receives is locally in-distribution, even when the full task is novel. We find that harnesses like the Recursive Language Model (RLM) learn such decompositions readily under reinforcement learning post-training: (1) we demonstrate that training only on short tasks can generalize to tasks 2-64$\\times$ longer while the base neural LM improves less, and (2) training on one domain transfers to novel domains that share latent structure. On messier, complex tasks, we find that we can target individual LLM calls within a harness by generating and training on easier, synthetically generated surrogate environments with fake tool / sub-calls, a technique we call surrogate harness training. From this finding, we train RLM-27B on synthetic data, and show it improves Qwen3.8-27B in the same RLM harness on a hard suite of long-context tasks like CTC-Bench and ExpertLongBench by 26.9% on average while using $\\sim$2$\\times$ fewer tokens at inference time. Finally, we show that harnesses can compose over these newly learned decompositions using recursive sub-harness calls.",
-     "primary": "cs.CL",
-     "categories": [
-      "cs.CL",
-      "cs.AI"
-     ],
-     "published": "2026-11-20T20:31:19Z",
-     "updated": "2026-11-20T20:31:19Z",
-     "comment": "12 pages, 63 pages with appendix",
-     "tags": [
-      "LLM",
-      "agents",
-      "RL",
-      "reasoning"
-     ],
-     "ax_votes": 92,
-     "ax_visits": 1890,
-     "heat": 281.0,
-     "orgs": [
-      {
-       "name": "MIT CSAIL",
-       "ror": "01e85r662"
-      }
-     ],
-     "thumb": "data/thumbs/2611.28298.jpg",
-     "thumb_w": 640,
-     "thumb_h": 346,
-     "summary": {
-      "zh": "研究以神经符号式 harness 管理上下文的组合泛化能力：仅用短任务强化学习训练 RLM，即可泛化到长 2-64 倍的任务；用合成数据训练 RLM-27B，在 CTC-Bench 和 ExpertLongBench 上平均提升 Qwen3.8-27B 26.9%，推理 token 约减半。",
-      "en": "Training neurosymbolic LM harnesses like RLM with RL on short tasks generalizes to 2-64x longer ones; RLM-27B, trained on synthetic data, beats Qwen3.8-27B by 26.9% on CTC-Bench and ExpertLongBench with ~2x fewer inference tokens."
-     },
-     "summary_source": "deepseek-flash"
+     "thumb_h": 440
     },
     {
      "id": "2611.32606",
@@ -126,38 +82,77 @@
       "reasoning",
       "efficiency"
      ],
-     "ax_votes": 106,
-     "ax_visits": 1645,
-     "heat": 270.5,
+     "summary": {
+      "en": "The equal-budget ladder grades multi-agent LLM teams against a single agent, compute-matched majority vote, and pass@n; recursively self-trained groups, which forward split facts, beat pass@n by ~1/3 at 27B, gain 18 points from emergent hubs, and improve for 4-6 generations.",
+      "zh": "等算力阶梯（equal-budget ladder），在单智能体、算力对齐多数投票与算力对齐 pass@n 三级上衡量多智能体团队，并定义 Recursive Collective Intelligence（RCI）：无教师、无外部标签，团队用自身输出让下一代同等成本更聪明；转发拆分事实可在 27B 上超 pass@n 约三分之一，同质 27B 智能体自发形成枢纽使准确率提升 18 个百分点，两代无标签训练在 PlanBench、HiddenBench、Hanabi 上连续 4–6 代优于前代。"
+     },
+     "summary_source": "deepseek-flash",
+     "ax_votes": 156,
+     "ax_visits": 1781,
+     "heat": 334.1,
      "orgs": [
       {
-       "logo": "data/logos/stanford.edu.png",
-       "name": "Stanford University",
-       "ror": "00f54p054"
+       "name": "Stanford University"
       },
       {
-       "logo": "data/logos/berkeley.edu.png",
-       "name": "University of California, Berkeley",
-       "ror": "01an7q238"
+       "name": "UC Berkeley"
       },
       {
-       "logo": "data/logos/nvidia.com.png",
        "name": "NVIDIA"
       },
       {
-       "name": "Northwestern University",
-       "ror": "000e0be47",
-       "logo": "data/logos/northwestern.edu.png"
+       "name": "Northwestern University"
+      },
+      {
+       "name": "a team is expected to solve problems beyond the"
+      },
+      {
+       "name": "without accounting for the additional computation: a team may consume many times the tokens of one agent"
       }
      ],
      "thumb": "data/thumbs/2611.32606.jpg",
      "thumb_w": 640,
-     "thumb_h": 281,
+     "thumb_h": 281
+    },
+    {
+     "id": "2611.28298",
+     "title": "Language Model Harnesses can be Compositional Generalizers",
+     "authors": [
+      "Alex L. Zhang",
+      "Souradip Chakraborty",
+      "Omar Khattab"
+     ],
+     "abstract": "Modern language models (LMs) are post-trained and deployed as agents inside a \"harness\", but standard harness designs accumulate context that the neural network is forced to generalize to, making training for long-horizon tasks expensive and time-consuming. We study an alternative emerging path: training inherently neurosymbolic LM harnesses, which externalize and manage context programmatically to compose existing LM capabilities. We hypothesize that training around these harnesses can offer a better return on compute by enabling compositional generalization, as they can learn to decompose complex problems so that every observation their neural LM receives is locally in-distribution, even when the full task is novel. We find that harnesses like the Recursive Language Model (RLM) learn such decompositions readily under reinforcement learning post-training: (1) we demonstrate that training only on short tasks can generalize to tasks 2-64$\\times$ longer while the base neural LM improves less, and (2) training on one domain transfers to novel domains that share latent structure. On messier, complex tasks, we find that we can target individual LLM calls within a harness by generating and training on easier, synthetically generated surrogate environments with fake tool / sub-calls, a technique we call surrogate harness training. From this finding, we train RLM-27B on synthetic data, and show it improves Qwen3.8-27B in the same RLM harness on a hard suite of long-context tasks like CTC-Bench and ExpertLongBench by 26.9% on average while using $\\sim$2$\\times$ fewer tokens at inference time. Finally, we show that harnesses can compose over these newly learned decompositions using recursive sub-harness calls.",
+     "primary": "cs.CL",
+     "categories": [
+      "cs.CL",
+      "cs.AI"
+     ],
+     "published": "2026-11-20T20:31:19Z",
+     "updated": "2026-11-20T20:31:19Z",
+     "comment": "12 pages, 63 pages with appendix",
+     "tags": [
+      "LLM",
+      "agents",
+      "RL",
+      "reasoning"
+     ],
      "summary": {
-      "zh": "等算力阶梯（equal-budget ladder），在单智能体、算力对齐多数投票与算力对齐 pass@n 三级上衡量多智能体团队，并定义 Recursive Collective Intelligence（RCI）：无教师、无外部标签，团队用自身输出让下一代同等成本更聪明；转发拆分事实可在 27B 上超 pass@n 约三分之一，同质 27B 智能体自发形成枢纽使准确率提升 18 个百分点，两代无标签训练在 PlanBench、HiddenBench、Hanabi 上连续 4–6 代优于前代。",
-      "en": "The equal-budget ladder grades multi-agent LLM teams against a single agent, compute-matched majority vote, and pass@n; recursively self-trained groups, which forward split facts, beat pass@n by ~1/3 at 27B, gain 18 points from emergent hubs, and improve for 4-6 generations."
+      "en": "Training neurosymbolic LM harnesses like RLM with RL on short tasks generalizes to 2-64x longer ones; RLM-27B, trained on synthetic data, beats Qwen3.8-27B by 26.9% on CTC-Bench and ExpertLongBench with ~2x fewer inference tokens.",
+      "zh": "研究以神经符号式 harness 管理上下文的组合泛化能力：仅用短任务强化学习训练 RLM，即可泛化到长 2-64 倍的任务；用合成数据训练 RLM-27B，在 CTC-Bench 和 ExpertLongBench 上平均提升 Qwen3.8-27B 26.9%，推理 token 约减半。"
      },
-     "summary_source": "deepseek-flash"
+     "summary_source": "deepseek-flash",
+     "ax_votes": 99,
+     "ax_visits": 1954,
+     "heat": 294.4,
+     "orgs": [
+      {
+       "name": "MIT CSAIL"
+      }
+     ],
+     "thumb": "data/thumbs/2611.28298.jpg",
+     "thumb_w": 640,
+     "thumb_h": 346
     },
     {
      "id": "2611.26450",
@@ -179,10 +174,15 @@
       "math",
       "efficiency"
      ],
+     "summary": {
+      "en": "Closed-form zero-gradient circuit-grafting compiles exact multi-digit arithmetic and Boolean/majority circuits into pretrained LM weights without training data or runtime hooks; Granite 4.2 3B and Qwen 3.5 4B reach 99.17%/100.00% ALU-prefix accuracy versus 42.2%/61.7% for 12.8K-sample LoRA.",
+      "zh": "闭式零梯度电路嫁接原语将精确多位数算术与布尔/多数/奇偶电路直接编译进预训练权重，无需训练样本或运行时钩子；IBM Granite 4.2 3B 与 Qwen 3.5 4B 在 6 位数算术上达 99.17%/100.00% ALU 前缀准确率，远超 12.8K 样本 LoRA 的 42.2%/61.7%。"
+     },
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 7,
      "ax_votes": 74,
-     "ax_visits": 1851,
-     "heat": 266.1,
+     "ax_visits": 1881,
+     "heat": 269.1,
      "orgs": [
       {
        "name": "Independent Researcher"
@@ -190,12 +190,52 @@
      ],
      "thumb": "data/thumbs/2611.26450.jpg",
      "thumb_w": 618,
-     "thumb_h": 440,
+     "thumb_h": 440
+    },
+    {
+     "id": "2611.34923",
+     "title": "Mixture-of-Loops Transformer",
+     "authors": [
+      "Lianghui Zhu",
+      "Shijie Wang",
+      "Xinggang Wang",
+      "Jinze Bai",
+      "Bo Wang",
+      "Xiang Bai"
+     ],
+     "abstract": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops: What should be passed as a Transformer loops? We introduce Mixture-of-Loops Transformer (MoLT), whose Mixture-of-Loops Attention (MoLA) uses keys and values (KV) as memory for selective reuse across depths and loops. Under loop residual, MoLT-R retains the residual stream and reads local KV across loops for expressivity. Under loop KV, MoLT-KV instead restarts from embeddings and reads current-loop local KV with preceding-loop memory KV at earlier positions for efficiency. MoLT-KV eliminates same-position cross-loop dependence and, paired with loop forcing for parallel training, unlocks single-traversal Mixture-of-Loops (MoL) decoding beyond the training loop horizon. To balance efficiency and quality, we introduce U-shaped MoLT (U-MoLT), which separates memory construction from prediction readout and skips unused decoder traversals without changing predictions. In 400B-token pretraining, U-MoLT outperforms OLMo3 across 700M/1.5B dense and 3B MoE models, achieving 1.7x validation cross-entropy (CE) token efficiency at 700M while improving 3B MoE 10-domain perplexity by 0.75 and 10-task accuracy by 2.1 percentage points. In 100B-token continued pretraining of Qwen3.5-0.8B-Base, our U-MoLT adaptation lowers CE on all 11 domains over the matched baseline with 1.4x mean token efficiency. At inference, U-MoLT with MoL-Hybrid-2 matches non-looped OLMo3 latency at 996.6 vs. 1,000.6 ms on S-size (~113M) models. Code is available at https://github.com/hustvl/MoLT",
+     "primary": "cs.LG",
+     "categories": [
+      "cs.LG",
+      "cs.CL"
+     ],
+     "published": "2026-11-25T18:58:53Z",
+     "updated": "2026-11-25T18:58:53Z",
+     "comment": "Code is available at https://github.com/hustvl/MoLT",
+     "code_url": "https://github.com/hustvl/MoLT",
+     "tags": [
+      "LLM",
+      "efficiency",
+      "pretraining",
+      "interpretability"
+     ],
      "summary": {
-      "zh": "闭式零梯度电路嫁接原语将精确多位数算术与布尔/多数/奇偶电路直接编译进预训练权重，无需训练样本或运行时钩子；IBM Granite 4.2 3B 与 Qwen 3.5 4B 在 6 位数算术上达 99.17%/100.00% ALU 前缀准确率，远超 12.8K 样本 LoRA 的 42.2%/61.7%。",
-      "en": "Closed-form zero-gradient circuit-grafting compiles exact multi-digit arithmetic and Boolean/majority circuits into pretrained LM weights without training data or runtime hooks; Granite 4.2 3B and Qwen 3.5 4B reach 99.17%/100.00% ALU-prefix accuracy versus 42.2%/61.7% for 12.8K-sample LoRA."
+      "en": "Mixture-of-Loops Transformer reuses keys and values as memory across depths and loops; U-MoLT beats OLMo3 with 1.7x CE token efficiency at 700M and +2.1 points on 10-task accuracy at 3B MoE.",
+      "zh": "Mixture-of-Loops Transformer 用 Mixture-of-Loops Attention 把 KV 当作跨深度和循环复用记忆，其 U-MoLT 变体在 400B token 预训练中于 700M 模型上比 OLMo3 达到 1.7 倍的验证交叉熵 token 效率，3B MoE 困惑度降低 0.75、10 项任务准确率提升 2.1 个百分点。"
      },
-     "summary_source": "deepseek-flash"
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 74,
+     "ax_votes": 88,
+     "ax_visits": 825,
+     "heat": 244.5,
+     "orgs": [
+      {
+       "name": "Huazhong University of Science & Technology"
+      }
+     ],
+     "thumb": "data/thumbs/2611.34923.jpg",
+     "thumb_w": 618,
+     "thumb_h": 440
     },
     {
      "id": "2611.29897",
@@ -227,31 +267,20 @@
       "efficiency"
      ],
      "summary": {
-      "zh": "Motion Mamba 2.0 用 Mamba 循环状态加持久内容记忆 PCM 做根-身体扩散式自回归动作生成，支持最长 39.52 s 的长程末端控制；配合 CUDA Graph 等优化，RTX 4090 上完整窗口延迟从 1685.35 ms 降到 276.14 ms，中位加速 6.138 倍，并在 Unitree G1 上验证了文本引导动作组合与交互式行走。",
-      "en": "Motion Mamba 2.0 combines Mamba recurrent states with persistent content memory for autoregressive root-body diffusion, enabling terminal control over 39.52 s rollouts; CUDA Graph optimizations cut latency from 1685.35 to 276.14 ms (6.138x median speedup), validated on Unitree G1."
+      "en": "Motion Mamba 2.0 combines Mamba recurrent states with persistent content memory for autoregressive root-body diffusion, enabling terminal control over 39.52 s rollouts; CUDA Graph optimizations cut latency from 1685.35 to 276.14 ms (6.138x median speedup), validated on Unitree G1.",
+      "zh": "Motion Mamba 2.0 用 Mamba 循环状态加持久内容记忆 PCM 做根-身体扩散式自回归动作生成，支持最长 39.52 s 的长程末端控制；配合 CUDA Graph 等优化，RTX 4090 上完整窗口延迟从 1685.35 ms 降到 276.14 ms，中位加速 6.138 倍，并在 Unitree G1 上验证了文本引导动作组合与交互式行走。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 226,
-     "ax_votes": 0,
-     "ax_visits": 63,
-     "heat": 232.3,
+     "hf_upvotes": 227,
+     "ax_votes": 1,
+     "ax_visits": 71,
+     "heat": 235.1,
      "orgs": [
       {
-       "logo": "data/logos/pku.edu.cn.png",
-       "name": "Peking University",
-       "ror": "02v51f717"
+       "name": "Peking University"
       },
       {
        "name": "Korea University"
-      },
-      {
-       "name": "Monash University",
-       "ror": "02bfwt286",
-       "logo": "data/logos/monash.edu.png"
-      },
-      {
-       "name": "NTU",
-       "ror": "02e7b5302"
       }
      ],
      "thumb": "data/thumbs/2611.29897.jpg",
@@ -284,24 +313,23 @@
       "3D",
       "efficiency"
      ],
+     "summary": {
+      "en": "Depth Pro 2 trains one scalable network on images and video to predict native-resolution depth that is metrically accurate, sharp, and temporally consistent, outperforming prior work and redefining the Pareto frontier.",
+      "zh": "Depth Pro 2 用单一可扩展网络统一处理图像与视频，以原生分辨率预测稠密深度，同时兼顾度量精度、边界锐利度与时序一致性，在四项指标上超越先前方法并重划 Pareto 前沿。"
+     },
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 41,
-     "ax_votes": 61,
-     "ax_visits": 643,
-     "heat": 166.3,
+     "ax_votes": 66,
+     "ax_visits": 653,
+     "heat": 172.3,
      "orgs": [
       {
-       "logo": "data/logos/apple.com.png",
        "name": "Apple"
       }
      ],
      "thumb": "data/thumbs/2611.26603.jpg",
      "thumb_w": 247,
-     "thumb_h": 440,
-     "summary": {
-      "zh": "Depth Pro 2 用单一可扩展网络统一处理图像与视频，以原生分辨率预测稠密深度，同时兼顾度量精度、边界锐利度与时序一致性，在四项指标上超越先前方法并重划 Pareto 前沿。",
-      "en": "Depth Pro 2 trains one scalable network on images and video to predict native-resolution depth that is metrically accurate, sharp, and temporally consistent, outperforming prior work and redefining the Pareto frontier."
-     },
-     "summary_source": "deepseek-flash"
+     "thumb_h": 440
     },
     {
      "id": "2611.26444",
@@ -367,113 +395,26 @@
       "VLA",
       "reasoning"
      ],
-     "hf_upvotes": 56,
-     "ax_votes": 55,
-     "ax_visits": 551,
-     "heat": 166.1,
+     "summary": {
+      "en": "Mind2Act World is a 30-task, 180-configuration diagnostic manipulation benchmark with Mind, Act, and Mind2Act views; the best agent scores 52.7% and 39.0% but only 12.0% on Mind2Act.",
+      "zh": "Mind2Act World 构建 30 个仿真操作任务、180 种配置的诊断基准，分 Mind、Act、Mind2Act 三视角评测多模态智能体、VLA 与 WAM；最强智能体在 Mind 与 Act 上分别成功 52.7% 和 39.0%，Mind2Act 仅 12.0%。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 57,
+     "ax_votes": 56,
+     "ax_visits": 563,
+     "heat": 169.3,
      "orgs": [
       {
-       "name": "Tsinghua University",
-       "ror": "03cve4549"
+       "name": "THU 2UCam 3Oxford 4Stanford 5CMU 6HKU 7HKUST 8CUHK"
       },
       {
-       "name": "University of Cambridge",
-       "ror": "013meh722"
-      },
-      {
-       "logo": "data/logos/ox.ac.uk.png",
-       "name": "University of Oxford",
-       "ror": "052gg0110"
-      },
-      {
-       "logo": "data/logos/stanford.edu.png",
-       "name": "Stanford University",
-       "ror": "00f54p054"
-      },
-      {
-       "logo": "data/logos/cmu.edu.png",
-       "name": "Carnegie Mellon University",
-       "ror": "05x2bcf33"
-      },
-      {
-       "logo": "data/logos/hku.hk.png",
-       "name": "HKU",
-       "ror": "02zhqgq86"
-      },
-      {
-       "logo": "data/logos/hkust.edu.hk.png",
-       "name": "HKUST",
-       "ror": "00q4vv597"
-      },
-      {
-       "logo": "data/logos/cuhk.edu.hk.png",
-       "name": "CUHK",
-       "ror": "00t33hh48"
+       "name": "PKU 10SJTU 11FDU 12RUC 13SZU 14Velabot AI 15Simple AI 16Baidu AI Cloud"
       }
      ],
      "thumb": "data/thumbs/2611.26444.jpg",
      "thumb_w": 635,
-     "thumb_h": 440,
-     "summary": {
-      "zh": "Mind2Act World 构建 30 个仿真操作任务、180 种配置的诊断基准，分 Mind、Act、Mind2Act 三视角评测多模态智能体、VLA 与 WAM；最强智能体在 Mind 与 Act 上分别成功 52.7% 和 39.0%，Mind2Act 仅 12.0%。",
-      "en": "Mind2Act World is a 30-task, 180-configuration diagnostic manipulation benchmark with Mind, Act, and Mind2Act views; the best agent scores 52.7% and 39.0% but only 12.0% on Mind2Act."
-     },
-     "summary_source": "deepseek-flash"
-    },
-    {
-     "id": "2611.34923",
-     "title": "Mixture-of-Loops Transformer",
-     "authors": [
-      "Lianghui Zhu",
-      "Shijie Wang",
-      "Xinggang Wang",
-      "Jinze Bai",
-      "Bo Wang",
-      "Xiang Bai"
-     ],
-     "abstract": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops: What should be passed as a Transformer loops? We introduce Mixture-of-Loops Transformer (MoLT), whose Mixture-of-Loops Attention (MoLA) uses keys and values (KV) as memory for selective reuse across depths and loops. Under loop residual, MoLT-R retains the residual stream and reads local KV across loops for expressivity. Under loop KV, MoLT-KV instead restarts from embeddings and reads current-loop local KV with preceding-loop memory KV at earlier positions for efficiency. MoLT-KV eliminates same-position cross-loop dependence and, paired with loop forcing for parallel training, unlocks single-traversal Mixture-of-Loops (MoL) decoding beyond the training loop horizon. To balance efficiency and quality, we introduce U-shaped MoLT (U-MoLT), which separates memory construction from prediction readout and skips unused decoder traversals without changing predictions. In 400B-token pretraining, U-MoLT outperforms OLMo3 across 700M/1.5B dense and 3B MoE models, achieving 1.7x validation cross-entropy (CE) token efficiency at 700M while improving 3B MoE 10-domain perplexity by 0.75 and 10-task accuracy by 2.1 percentage points. In 100B-token continued pretraining of Qwen3.5-0.8B-Base, our U-MoLT adaptation lowers CE on all 11 domains over the matched baseline with 1.4x mean token efficiency. At inference, U-MoLT with MoL-Hybrid-2 matches non-looped OLMo3 latency at 996.6 vs. 1,000.6 ms on S-size (~113M) models. Code is available at https://github.com/hustvl/MoLT",
-     "primary": "cs.LG",
-     "categories": [
-      "cs.LG",
-      "cs.CL"
-     ],
-     "published": "2026-11-25T18:58:53Z",
-     "updated": "2026-11-25T18:58:53Z",
-     "comment": "Code is available at https://github.com/hustvl/MoLT",
-     "code_url": "https://github.com/hustvl/MoLT",
-     "tags": [
-      "LLM",
-      "efficiency",
-      "pretraining",
-      "interpretability"
-     ],
-     "hf_upvotes": 72,
-     "ax_votes": 31,
-     "ax_visits": 622,
-     "heat": 165.2,
-     "orgs": [
-      {
-       "name": "Huazhong University of Science & Technology",
-       "ror": "00p991c53"
-      },
-      {
-       "name": "ByteDance",
-       "logo": "data/logos/bytedance.com.png"
-      },
-      {
-       "name": "University of Toronto",
-       "ror": "03dbr7087",
-       "logo": "data/logos/utoronto.ca.png"
-      }
-     ],
-     "thumb": "data/thumbs/2611.34923.jpg",
-     "thumb_w": 618,
-     "thumb_h": 440,
-     "summary": {
-      "zh": "Mixture-of-Loops Transformer 用 Mixture-of-Loops Attention 把 KV 当作跨深度和循环复用记忆，其 U-MoLT 变体在 400B token 预训练中于 700M 模型上比 OLMo3 达到 1.7 倍的验证交叉熵 token 效率，3B MoE 困惑度降低 0.75、10 项任务准确率提升 2.1 个百分点。",
-      "en": "Mixture-of-Loops Transformer reuses keys and values as memory across depths and loops; U-MoLT beats OLMo3 with 1.7x CE token efficiency at 700M and +2.1 points on 10-task accuracy at 3B MoE."
-     },
-     "summary_source": "deepseek-flash"
+     "thumb_h": 440
     },
     {
      "id": "2611.30111",
@@ -503,45 +444,121 @@
       "manipulation"
      ],
      "summary": {
-      "zh": "RoboThink 让智能体负责思考、策略网络负责执行：智能体通过指令通道改写任务指令、通过反馈通道给动作反馈，借助 agent-labelled DAgger 训练；在 LIBERO 上把恒定漂移下的成功率从 0.09 提到 0.87，在 RoboTwin 2.0 双臂任务上从 0.12 提到 0.74，单个成功仅需 55 秒和 8k tokens。",
-      "en": "RoboThink lets an agent think while a policy acts: the agent rewrites instructions and supplies motion feedback trained via agent-labelled DAgger, raising LIBERO success from 0.09 to 0.87 under drift with 55 s and 8k tokens per success."
+      "en": "RoboThink lets an agent think while a policy acts: the agent rewrites instructions and supplies motion feedback trained via agent-labelled DAgger, raising LIBERO success from 0.09 to 0.87 under drift with 55 s and 8k tokens per success.",
+      "zh": "RoboThink 让智能体负责思考、策略网络负责执行：智能体通过指令通道改写任务指令、通过反馈通道给动作反馈，借助 agent-labelled DAgger 训练；在 LIBERO 上把恒定漂移下的成功率从 0.09 提到 0.87，在 RoboTwin 2.0 双臂任务上从 0.12 提到 0.74，单个成功仅需 55 秒和 8k tokens。"
      },
      "summary_source": "deepseek-flash",
-     "ax_votes": 77,
-     "ax_visits": 818,
-     "heat": 158.8,
+     "ax_votes": 79,
+     "ax_visits": 829,
+     "heat": 161.9,
      "orgs": [
       {
-       "name": "Tulane University",
-       "ror": "04vmvtb21",
-       "logo": "data/logos/tulane.edu.png"
-      },
-      {
-       "name": "New York University",
-       "ror": "0190ak572"
-      },
-      {
-       "name": "Northeastern University"
-      },
-      {
-       "logo": "data/logos/stanford.edu.png",
-       "name": "Stanford University",
-       "ror": "00f54p054"
-      },
-      {
-       "logo": "data/logos/mit.edu.png",
-       "name": "MIT",
-       "ror": "042nb2s44"
-      },
-      {
-       "name": "Harvard University",
-       "ror": "03vek6s52",
-       "logo": "data/logos/harvard.edu.png"
+       "name": "Tulane University NYU Northeastern University Stanford University MIT Harvard University"
       }
      ],
      "thumb": "data/thumbs/2611.30111.jpg",
      "thumb_w": 640,
      "thumb_h": 320
+    },
+    {
+     "id": "2611.33102",
+     "title": "Reinforcement Learning Can Be Recovered From Its Own Rollouts",
+     "authors": [
+      "Jiayi Sheng",
+      "Jingwen Gu",
+      "Guanning Zeng",
+      "Zhaoyi Zhou",
+      "Stefano Viel",
+      "Qianqian Wang",
+      "Fahim Tajwar",
+      "Andrea Zanette"
+     ],
+     "abstract": "Broadly speaking, reinforcement learning (RL) post-training converts compute into model capabilities by training on model-generated data. Typically, the rollouts are discarded after each update, and the knowledge acquired during RL resides in the model weights. In this work, we investigate how much of this knowledge is retained in the rollouts themselves. A natural first attempt is to replay the original RL algorithm on archived (rather than freshly generated) rollouts, but this generally leads to catastrophic collapse. We provide a simple explanation for this phenomenon, which in turn suggests a remedy we call maximum likelihood replay: fitting the model to its archived rollouts. Surprisingly, starting from the same base model and replaying the rollouts in the order in which they were generated, without any distinction between correct and incorrect responses, is sufficient to recover the performance of online RL. In fact, a single maximum likelihood update per rollout batch closely tracks the entire learning curve of online RL. Furthermore, maximum likelihood replay on the rollouts of the last few RL steps often suffices to recover the final model's performance. This suggests that much of the compute invested in RL goes into discovering an improved sampling distribution rather than learning it from samples.",
+     "primary": "cs.LG",
+     "categories": [
+      "cs.LG"
+     ],
+     "published": "2026-11-24T18:38:06Z",
+     "updated": "2026-11-25T18:46:02Z",
+     "comment": "Preprint. 23 pages, 20 figures, 7 tables",
+     "tags": [
+      "RL",
+      "LLM",
+      "efficiency"
+     ],
+     "summary": {
+      "en": "Investigating how much RL-acquired knowledge persists in rollouts, maximum likelihood replay that fits archived rollouts in generation order without distinguishing correct responses matches online RL performance.",
+      "zh": "研究RL后训练产生的rollout中保留多少知识，发现直接用最大似然拟合归档rollout（maximum likelihood replay），不区分对错、按生成顺序回放，即可复现在线RL的性能，单次更新即可追踪完整学习曲线。"
+     },
+     "summary_source": "deepseek-flash",
+     "ax_votes": 72,
+     "ax_visits": 875,
+     "heat": 159.5,
+     "orgs": [
+      {
+       "name": "Tufa Labs"
+      },
+      {
+       "name": "Harvard University"
+      },
+      {
+       "name": "University of Illinois Urbana-Champaign"
+      }
+     ],
+     "thumb": "data/thumbs/2611.33102.jpg",
+     "thumb_w": 566,
+     "thumb_h": 440
+    },
+    {
+     "id": "2611.34051",
+     "title": "Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability",
+     "authors": [
+      "Xichong Zhang",
+      "Xixuan Hao",
+      "Zhichen Liu",
+      "Le Zhou",
+      "Zeyu Zhang",
+      "Boyu Chen",
+      "Mingfei Lu",
+      "Zehao Lin",
+      "Bo Tang",
+      "Yonggang Zhang",
+      "Linyun Liu",
+      "Feiyu Xiong",
+      "Jianlin Su",
+      "Zhiyu Li"
+     ],
+     "abstract": "Linear attention offers an efficient solution for long-sequence modeling via linear complexity and fixed-size recurrent states. Gated DeltaNet-2 (GDN-2) introduces independent channel-wise control over erasure and writing, enhancing state-update expressiveness and in-context retrieval, yet it suffers from training failures during long-context training. We trace these failures to the asymmetry between reading and modification directions during erasure, which yields non-normal erase operators whose directional gains accumulate across tokens, triggering exponential state growth even without new writes. To resolve this, we propose \\model{}, employing symmetric erasure to ensure non-expansive state propagation and decay-regulated residual writing to preserve writing flexibility. Theoretically, we establish an $O(\\sqrt{T})$ upper bound on recurrent state growth while retaining chunkwise parallel computation. Experiments on ~1.6B parameter models show that \\model{} achieves stable training alongside improved long-context retrieval. Compared to GDN-2, it boosts the 128K average RULER score by 6.80 points in the recurrent setting and average accuracy across nine downstream tasks by 0.62 points in the hybrid setting.",
+     "primary": "cs.CL",
+     "categories": [
+      "cs.CL",
+      "cs.LG"
+     ],
+     "published": "2026-11-25T09:30:49Z",
+     "updated": "2026-11-25T09:30:49Z",
+     "comment": "",
+     "tags": [
+      "LLM",
+      "efficiency",
+      "pretraining"
+     ],
+     "summary": {
+      "en": "Stable Gated DeltaNet-2 fixes GDN-2's exponential recurrent state growth via symmetric erasure and decay-regulated residual writing, with an O(√T) bound. On 1.6B models it raises 128K RULER by 6.80 and nine-task accuracy by 0.62.",
+      "zh": "针对 Gated DeltaNet-2 长上下文训练中擦除方向不对称导致循环状态指数增长的问题，提出 Stable Gated DeltaNet-2，用对称擦除保证非扩张状态传播，并配合衰减调节的残差写入，理论上给出 O(√T) 状态增长上界且保留分块并行。1.6B 参数模型上训练稳定，128K 平均 RULER 分数提升 6.80 分，九个下游任务平均准确率提升 0.62 分。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 126,
+     "ax_votes": 8,
+     "ax_visits": 110,
+     "heat": 145.0,
+     "orgs": [
+      {
+       "name": "HKUST"
+      }
+     ],
+     "thumb": "data/thumbs/2611.34051.jpg",
+     "thumb_w": 640,
+     "thumb_h": 348
     },
     {
      "id": "2611.31201",
@@ -578,36 +595,20 @@
       "manipulation"
      ],
      "summary": {
-      "zh": "Embo-Harness 系统研究前沿多模态模型直接作为机器人策略的闭环框架，梳理提示、规划、动作执行与工具使用四个环节并总结六条经验，在 RoboLab-120 上取得 83.3% 成功率，超最强基线 26.2 个百分点，真实世界四项操作任务零样本 20 次试验成功 15 次。",
-      "en": "Embo-Harness systematically studies frontier multimodal models as closed-loop robot policies, distilling six findings; it reaches 83.3% success on RoboLab-120, beating the best baseline by 26.2 points, and solves 15 of 20 zero-shot real-world trials."
+      "en": "Embo-Harness systematically studies frontier multimodal models as closed-loop robot policies, distilling six findings; it reaches 83.3% success on RoboLab-120, beating the best baseline by 26.2 points, and solves 15 of 20 zero-shot real-world trials.",
+      "zh": "Embo-Harness 系统研究前沿多模态模型直接作为机器人策略的闭环框架，梳理提示、规划、动作执行与工具使用四个环节并总结六条经验，在 RoboLab-120 上取得 83.3% 成功率，超最强基线 26.2 个百分点，真实世界四项操作任务零样本 20 次试验成功 15 次。"
      },
      "summary_source": "deepseek-flash",
      "hf_upvotes": 106,
-     "ax_votes": 14,
-     "ax_visits": 160,
-     "heat": 136.0,
+     "ax_votes": 16,
+     "ax_visits": 167,
+     "heat": 138.7,
      "orgs": [
       {
-       "name": "NTU",
-       "ror": "02e7b5302"
+       "name": "NTU"
       },
       {
-       "name": "ACE Robotics"
-      },
-      {
-       "name": "SenseTime Research"
-      },
-      {
-       "name": "Xiamen University",
-       "ror": "00mcjh785"
-      },
-      {
-       "name": "Lenovo Robotics Lab"
-      },
-      {
-       "logo": "data/logos/uconn.edu.png",
-       "name": "University of Connecticut",
-       "ror": "02der9h97"
+       "name": "Xiamen University Lenovo Robotics Lab University of Connecticut"
       }
      ],
      "thumb": "data/thumbs/2611.31201.jpg",
@@ -659,46 +660,29 @@
       "VLA"
      ],
      "summary": {
-      "zh": "RoboUniverse-10K 通过自动化 Real2Sim 与质检流程从真实视频构建 10,807 个可交互、可重置、可验证的物理环境，并留出 500 个任务组成 RoboUniverse-Verified 零样本基准；11 个模型评测中前沿模型成功率 85.8%，开源基线仅 2.6%–10.0%；再用约 17K 多轮轨迹微调 Qwen3.6-35B-A3B 得到 RoboUniverse-35B-A3B，零样本成功率从 0.8% 提升到 21.2%。",
-      "en": "RoboUniverse-10K builds 10,807 resettable, verifiable physics environments from real videos via automated Real2Sim, plus a 500-task zero-shot benchmark where frontier models hit 85.8% versus 2.6-10.0% for open baselines; fine-tuning Qwen3.6-35B-A3B lifts success from 0.8% to 21.2%."
+      "en": "RoboUniverse-10K builds 10,807 resettable, verifiable physics environments from real videos via automated Real2Sim, plus a 500-task zero-shot benchmark where frontier models hit 85.8% versus 2.6-10.0% for open baselines; fine-tuning Qwen3.6-35B-A3B lifts success from 0.8% to 21.2%.",
+      "zh": "RoboUniverse-10K 通过自动化 Real2Sim 与质检流程从真实视频构建 10,807 个可交互、可重置、可验证的物理环境，并留出 500 个任务组成 RoboUniverse-Verified 零样本基准；11 个模型评测中前沿模型成功率 85.8%，开源基线仅 2.6%–10.0%；再用约 17K 多轮轨迹微调 Qwen3.6-35B-A3B 得到 RoboUniverse-35B-A3B，零样本成功率从 0.8% 提升到 21.2%。"
      },
      "summary_source": "deepseek-flash",
      "hf_upvotes": 1,
-     "ax_votes": 54,
-     "ax_visits": 666,
-     "heat": 121.6,
+     "ax_votes": 56,
+     "ax_visits": 692,
+     "heat": 126.2,
      "orgs": [
       {
-       "name": "Tsinghua University",
-       "ror": "03cve4549"
+       "name": "Robotics via Real-to-Sim Environments"
       },
       {
-       "name": "Einsia.AI"
+       "name": "Agentic Robotics"
       },
       {
-       "logo": "data/logos/pku.edu.cn.png",
-       "name": "Peking University",
-       "ror": "02v51f717"
+       "name": "robotics remains constrained"
       },
       {
-       "logo": "data/logos/illinois.edu.png",
-       "name": "University of Illinois Urbana-Champaign",
-       "ror": "047426m28"
+       "name": "Agentic Robotics—a paradigm in which frontier foundation models act as Coding Agents to control"
       },
       {
-       "logo": "data/logos/hku.hk.png",
-       "name": "HKU",
-       "ror": "02zhqgq86"
-      },
-      {
-       "logo": "data/logos/ucl.ac.uk.png",
-       "name": "University College London",
-       "ror": "02jx3x895"
-      },
-      {
-       "logo": "data/logos/unc.edu.png",
-       "name": "University of North Carolina at Chapel Hill",
-       "ror": "0130frc33"
+       "name": "Yet Agentic Robotics has not truly entered its scaling era"
       }
      ],
      "thumb": "data/thumbs/2611.31002.jpg",
@@ -727,150 +711,23 @@
       "image generation",
       "efficiency"
      ],
+     "summary": {
+      "en": "Posterior Matching Distillation combines mode-covering posterior sampling with any-step generation by matching exponentially tilted student sample means, achieving the best 4-step FID on SDXL and FLUX.2 [klein] 4B.",
+      "zh": "PMD 将模式覆盖的后验采样与任意步数生成结合，通过匹配指数重加权学生样本均值来学习教师后验，在 SDXL 和 FLUX.2 [klein] 4B 上取得 4 步方法中最佳 FID。"
+     },
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 47,
-     "ax_votes": 34,
-     "ax_visits": 351,
-     "heat": 116.1,
+     "ax_votes": 35,
+     "ax_visits": 359,
+     "heat": 117.9,
      "orgs": [
       {
-       "logo": "data/logos/vt.edu.png",
-       "name": "Virginia Tech",
-       "ror": "02smfhw86"
-      },
-      {
-       "logo": "data/logos/nvidia.com.png",
        "name": "NVIDIA"
       }
      ],
      "thumb": "data/thumbs/2611.26629.jpg",
      "thumb_w": 640,
-     "thumb_h": 203,
-     "summary": {
-      "zh": "PMD 将模式覆盖的后验采样与任意步数生成结合，通过匹配指数重加权学生样本均值来学习教师后验，在 SDXL 和 FLUX.2 [klein] 4B 上取得 4 步方法中最佳 FID。",
-      "en": "Posterior Matching Distillation combines mode-covering posterior sampling with any-step generation by matching exponentially tilted student sample means, achieving the best 4-step FID on SDXL and FLUX.2 [klein] 4B."
-     },
-     "summary_source": "deepseek-flash"
-    },
-    {
-     "id": "2611.33102",
-     "title": "Reinforcement Learning Can Be Recovered From Its Own Rollouts",
-     "authors": [
-      "Jiayi Sheng",
-      "Jingwen Gu",
-      "Guanning Zeng",
-      "Zhaoyi Zhou",
-      "Stefano Viel",
-      "Qianqian Wang",
-      "Fahim Tajwar",
-      "Andrea Zanette"
-     ],
-     "abstract": "Broadly speaking, reinforcement learning (RL) post-training converts compute into model capabilities by training on model-generated data. Typically, the rollouts are discarded after each update, and the knowledge acquired during RL resides in the model weights. In this work, we investigate how much of this knowledge is retained in the rollouts themselves. A natural first attempt is to replay the original RL algorithm on archived (rather than freshly generated) rollouts, but this generally leads to catastrophic collapse. We provide a simple explanation for this phenomenon, which in turn suggests a remedy we call maximum likelihood replay: fitting the model to its archived rollouts. Surprisingly, starting from the same base model and replaying the rollouts in the order in which they were generated, without any distinction between correct and incorrect responses, is sufficient to recover the performance of online RL. In fact, a single maximum likelihood update per rollout batch closely tracks the entire learning curve of online RL. Furthermore, maximum likelihood replay on the rollouts of the last few RL steps often suffices to recover the final model's performance. This suggests that much of the compute invested in RL goes into discovering an improved sampling distribution rather than learning it from samples.",
-     "primary": "cs.LG",
-     "categories": [
-      "cs.LG"
-     ],
-     "published": "2026-11-24T18:38:06Z",
-     "updated": "2026-11-25T18:46:02Z",
-     "comment": "Preprint. 23 pages, 20 figures, 7 tables",
-     "tags": [
-      "RL",
-      "LLM",
-      "efficiency"
-     ],
-     "ax_votes": 40,
-     "ax_visits": 751,
-     "heat": 115.1,
-     "orgs": [
-      {
-       "name": "Tufa Labs"
-      },
-      {
-       "name": "Harvard University",
-       "ror": "03vek6s52",
-       "logo": "data/logos/harvard.edu.png"
-      },
-      {
-       "logo": "data/logos/illinois.edu.png",
-       "name": "University of Illinois Urbana-Champaign",
-       "ror": "047426m28"
-      }
-     ],
-     "thumb": "data/thumbs/2611.33102.jpg",
-     "thumb_w": 566,
-     "thumb_h": 440,
-     "summary": {
-      "zh": "研究RL后训练产生的rollout中保留多少知识，发现直接用最大似然拟合归档rollout（maximum likelihood replay），不区分对错、按生成顺序回放，即可复现在线RL的性能，单次更新即可追踪完整学习曲线。",
-      "en": "Investigating how much RL-acquired knowledge persists in rollouts, maximum likelihood replay that fits archived rollouts in generation order without distinguishing correct responses matches online RL performance."
-     },
-     "summary_source": "deepseek-flash"
-    },
-    {
-     "id": "2611.34051",
-     "title": "Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability",
-     "authors": [
-      "Xichong Zhang",
-      "Xixuan Hao",
-      "Zhichen Liu",
-      "Le Zhou",
-      "Zeyu Zhang",
-      "Boyu Chen",
-      "Mingfei Lu",
-      "Zehao Lin",
-      "Bo Tang",
-      "Yonggang Zhang",
-      "Linyun Liu",
-      "Feiyu Xiong",
-      "Jianlin Su",
-      "Zhiyu Li"
-     ],
-     "abstract": "Linear attention offers an efficient solution for long-sequence modeling via linear complexity and fixed-size recurrent states. Gated DeltaNet-2 (GDN-2) introduces independent channel-wise control over erasure and writing, enhancing state-update expressiveness and in-context retrieval, yet it suffers from training failures during long-context training. We trace these failures to the asymmetry between reading and modification directions during erasure, which yields non-normal erase operators whose directional gains accumulate across tokens, triggering exponential state growth even without new writes. To resolve this, we propose \\model{}, employing symmetric erasure to ensure non-expansive state propagation and decay-regulated residual writing to preserve writing flexibility. Theoretically, we establish an $O(\\sqrt{T})$ upper bound on recurrent state growth while retaining chunkwise parallel computation. Experiments on ~1.6B parameter models show that \\model{} achieves stable training alongside improved long-context retrieval. Compared to GDN-2, it boosts the 128K average RULER score by 6.80 points in the recurrent setting and average accuracy across nine downstream tasks by 0.62 points in the hybrid setting.",
-     "primary": "cs.CL",
-     "categories": [
-      "cs.CL",
-      "cs.LG"
-     ],
-     "published": "2026-11-25T09:30:49Z",
-     "updated": "2026-11-25T09:30:49Z",
-     "comment": "",
-     "tags": [
-      "LLM",
-      "efficiency",
-      "pretraining"
-     ],
-     "hf_upvotes": 105,
-     "ax_votes": 1,
-     "ax_visits": 80,
-     "heat": 114.0,
-     "orgs": [
-      {
-       "name": "MemTensor"
-      },
-      {
-       "name": "University of Science and Technology of China",
-       "ror": "04c4dkn09"
-      },
-      {
-       "logo": "data/logos/hkust.edu.hk.png",
-       "name": "HKUST",
-       "ror": "00q4vv597"
-      },
-      {
-       "name": "Southern University of Science and Technology",
-       "ror": "049tv2d57"
-      },
-      {
-       "name": "Shanghai Jiao Tong University",
-       "ror": "0220qvk04"
-      }
-     ],
-     "thumb": "data/thumbs/2611.34051.jpg",
-     "thumb_w": 640,
-     "thumb_h": 348,
-     "summary": {
-      "zh": "针对 Gated DeltaNet-2 长上下文训练中擦除方向不对称导致循环状态指数增长的问题，提出 Stable Gated DeltaNet-2，用对称擦除保证非扩张状态传播，并配合衰减调节的残差写入，理论上给出 O(√T) 状态增长上界且保留分块并行。1.6B 参数模型上训练稳定，128K 平均 RULER 分数提升 6.80 分，九个下游任务平均准确率提升 0.62 分。",
-      "en": "Stable Gated DeltaNet-2 fixes GDN-2's exponential recurrent state growth via symmetric erasure and decay-regulated residual writing, with an O(√T) bound. On 1.6B models it raises 128K RULER by 6.80 and nine-task accuracy by 0.62."
-     },
-     "summary_source": "deepseek-flash"
+     "thumb_h": 203
     },
     {
      "id": "2611.27193",
@@ -904,36 +761,32 @@
       "efficiency",
       "theory"
      ],
+     "summary": {
+      "en": "CmHC geometrically contracts the Birkhoff polytope inward to mix residual streams, mitigating under- and over-mixing; it stabilizes pretraining of dense and MoE models and cuts hyper-connection latency by up to 44.8% on Ascend NPUs.",
+      "zh": "cmHC 通过将 Birkhoff 多面体几何收缩到内部来混合残差流，缓解 under-mixing 与 over-mixing 的权衡，在稠密和 MoE 模型预训练中稳定梯度传播，并在 Ascend NPU 上将超连接执行延迟降低最多 44.8%。"
+     },
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 94,
      "ax_votes": 6,
-     "ax_visits": 80,
-     "heat": 108.0,
+     "ax_visits": 83,
+     "heat": 108.3,
      "orgs": [
       {
-       "name": "China Telecom"
+       "name": "Xingchen AGI Lab"
       },
       {
-       "logo": "data/logos/hkust.edu.hk.png",
-       "name": "HKUST",
-       "ror": "00q4vv597"
+       "name": "HKUST"
       },
       {
-       "name": "Harbin Institute of Technology",
-       "ror": "01yqg2h08"
+       "name": "Harbin Institute of Technology (Shenzhen)"
       },
       {
-       "name": "Huawei",
-       "logo": "data/logos/huawei.com.png"
+       "name": "Huawei Technologies"
       }
      ],
      "thumb": "data/thumbs/2611.27193.jpg",
      "thumb_w": 640,
-     "thumb_h": 310,
-     "summary": {
-      "zh": "cmHC 通过将 Birkhoff 多面体几何收缩到内部来混合残差流，缓解 under-mixing 与 over-mixing 的权衡，在稠密和 MoE 模型预训练中稳定梯度传播，并在 Ascend NPU 上将超连接执行延迟降低最多 44.8%。",
-      "en": "CmHC geometrically contracts the Birkhoff polytope inward to mix residual streams, mitigating under- and over-mixing; it stabilizes pretraining of dense and MoE models and cuts hyper-connection latency by up to 44.8% on Ascend NPUs."
-     },
-     "summary_source": "deepseek-flash"
+     "thumb_h": 310
     },
     {
      "id": "2611.30634",
@@ -959,14 +812,18 @@
       "efficiency",
       "interpretability"
      ],
+     "summary": {
+      "en": "Loom attention interweaves vertical attention over prior head outputs via normalized gated linear attention with horizontal token attention, yielding LoomFormer; with only ~2% extra FLOPs, LoomPythia-2.8B reaches ~1.6x mHC-Pythia-2.8B's downstream gain and matches Pythia-12B zero-shot.",
+      "zh": "Loom attention 通过垂直注意力对前序 head 输出做归一化门控线性注意力，并与水平 token 注意力交织，实现逐 token 动态重连电路，构成 LoomFormer 双流架构；在 300B token、仅增约 2% FLOPs 下，LoomPythia-2.8B 下游增益约为 mHC-Pythia-2.8B 的 1.6 倍，0-shot 追平 Pythia-12B。"
+     },
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 95,
      "ax_votes": 2,
-     "ax_visits": 67,
-     "heat": 103.7,
+     "ax_visits": 73,
+     "heat": 104.3,
      "orgs": [
       {
-       "name": "Beijing University of Posts and Telecommunications",
-       "ror": "04w9fbh59"
+       "name": "Beijing University of Posts and Telecommunications"
       },
       {
        "name": "ColorfulClouds Technology"
@@ -974,120 +831,7 @@
      ],
      "thumb": "data/thumbs/2611.30634.jpg",
      "thumb_w": 640,
-     "thumb_h": 392,
-     "summary": {
-      "zh": "Loom attention 通过垂直注意力对前序 head 输出做归一化门控线性注意力，并与水平 token 注意力交织，实现逐 token 动态重连电路，构成 LoomFormer 双流架构；在 300B token、仅增约 2% FLOPs 下，LoomPythia-2.8B 下游增益约为 mHC-Pythia-2.8B 的 1.6 倍，0-shot 追平 Pythia-12B。",
-      "en": "Loom attention interweaves vertical attention over prior head outputs via normalized gated linear attention with horizontal token attention, yielding LoomFormer; with only ~2% extra FLOPs, LoomPythia-2.8B reaches ~1.6x mHC-Pythia-2.8B's downstream gain and matches Pythia-12B zero-shot."
-     },
-     "summary_source": "deepseek-flash"
-    },
-    {
-     "id": "2611.34232",
-     "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
-     "authors": [
-      "Hui Shen",
-      "Yunta Hsieh",
-      "Jianing Ma",
-      "Zhuoran Yin",
-      "Zhuhan Bao",
-      "Ziyuan Liu",
-      "Qi Han",
-      "Xiuqi Xu",
-      "Xianbang Wang",
-      "Wenhao Chai",
-      "Sihan Xu",
-      "Chenyang Zhao",
-      "Yanheng Shang",
-      "Dongfu Jiang",
-      "Rui Sun",
-      "Xingzhi Li",
-      "Chenqi Yin",
-      "Zesen Zhao",
-      "Boyuan Zheng",
-      "Jisen Li",
-      "Xiaoxia Wu",
-      "Ruoyan Zhang",
-      "Ruiyao Liu",
-      "Jing Xiong",
-      "He Xiao",
-      "Nan Zheng",
-      "Hangxiang Chen",
-      "Shengyang Tao",
-      "Deyang Luorong",
-      "Yifeng Liu",
-      "Jingxuan Zhang",
-      "Chaofan Tao",
-      "Yuren Wang",
-      "Jiaqi Mo",
-      "Rui Hu",
-      "Xing Wei",
-      "Xiaofeng Liu",
-      "Xin Xu",
-      "Han Wu",
-      "Mengyao Wen",
-      "Guobin Zhang",
-      "Shatong Zhu",
-      "Hei Ting Una Chan",
-      "Sicheng Chen",
-      "Kai Zhang",
-      "Mengkang Hu",
-      "Zhongwei Wan",
-      "Xin Wang",
-      "Chuanyang Zheng",
-      "Ziheng Zhang",
-      "Hengyuan Zhang",
-      "Zunhai Su",
-      "Kanzhi Cheng",
-      "Dehan Kong",
-      "Yian Wang",
-      "Hanrong Zhang",
-      "Jiawei Lu",
-      "Yifan Zhang",
-      "Junnan Li",
-      "Changyi Yang",
-      "Jintao Qu",
-      "Wenyao Gao",
-      "Jiaxuan Luo",
-      "Jiaxin Deng",
-      "Yuhao Chen",
-      "Xuesong Ye",
-      "Jingwen Gu",
-      "Yichi Zhang",
-      "Qun Lou",
-      "Shen Yan",
-      "Ben Athiwaratkun",
-      "Qiushi Sun",
-      "Mi Zhang",
-      "Ping Luo",
-      "Wenhu Chen",
-      "Ngai Wong"
-     ],
-     "abstract": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes.",
-     "primary": "cs.CV",
-     "categories": [
-      "cs.CV"
-     ],
-     "published": "2026-11-25T11:55:12Z",
-     "updated": "2026-11-25T11:55:12Z",
-     "comment": "NeurIPS 2026",
-     "tags": [
-      "agents",
-      "benchmark",
-      "multimodal"
-     ],
-     "hf_upvotes": 96,
-     "ax_votes": 0,
-     "ax_visits": 18,
-     "heat": 97.8,
-     "orgs": [],
-     "thumb": "data/thumbs/2611.34232.jpg",
-     "thumb_w": 640,
-     "thumb_h": 368,
-     "summary": {
-      "zh": "OS-Omni 是覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的跨平台计算机代理实时基准，v1 每平台 48 个任务、另含 12 个跨平台工作流，任务平均需 67.54 步；最强代理 Claude Opus 5.5 平均成功率 68.5%，低于人类 77.3%，在 iOS 和 macOS 上差距超过 25 点。",
-      "en": "OS-Omni is a live cross-platform benchmark for computer-using agents spanning Windows, Ubuntu, macOS, iOS, Android, and Web; its v1 has 48 tasks per platform plus 12 cross-platform workflows averaging 67.54 steps. Claude Opus 5.5 scores 68.5% versus 77.3% human, trailing by over 25 points on iOS and macOS."
-     },
-     "summary_source": "deepseek-flash"
+     "thumb_h": 392
     },
     {
      "id": "2611.34575",
@@ -1218,110 +962,235 @@
       "pretraining",
       "RL"
      ],
-     "hf_upvotes": 80,
-     "ax_votes": 4,
-     "ax_visits": 102,
-     "heat": 94.2,
+     "summary": {
+      "en": "Sage-Med-Preview, a 35B-parameter (3B activated) medical MLLM trained via curated 322.7M-record data and a progressive pretraining-to-SFT-to-RL curriculum, scores 58.26% on 31 public multimodal benchmarks, beating Hulu-Med-235B-A22B (50.99%) and Intern-S2-Preview (52.24%).",
+      "zh": "Sage-Med-Preview 是 35B 参数（激活 3B）的医学多模态模型，用 3.227 亿条候选数据分阶段筛选结合医学预训练、分阶段监督微调与自适应强化学习的渐进课程训练，在 31 个公开多模态基准上均分 58.26%，超过 Hulu-Med-235B-A22B 的 50.99% 和 Intern-S2-Preview 的 52.24%。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 81,
+     "ax_votes": 10,
+     "ax_visits": 128,
+     "heat": 103.8,
      "orgs": [
+      {
+       "name": "Sage-Med Team"
+      },
       {
        "name": "Shanghai AI Lab"
       }
      ],
      "thumb": "data/thumbs/2611.34575.jpg",
      "thumb_w": 640,
-     "thumb_h": 302,
-     "summary": {
-      "zh": "Sage-Med-Preview 是 35B 参数（激活 3B）的医学多模态模型，用 3.227 亿条候选数据分阶段筛选结合医学预训练、分阶段监督微调与自适应强化学习的渐进课程训练，在 31 个公开多模态基准上均分 58.26%，超过 Hulu-Med-235B-A22B 的 50.99% 和 Intern-S2-Preview 的 52.24%。",
-      "en": "Sage-Med-Preview, a 35B-parameter (3B activated) medical MLLM trained via curated 322.7M-record data and a progressive pretraining-to-SFT-to-RL curriculum, scores 58.26% on 31 public multimodal benchmarks, beating Hulu-Med-235B-A22B (50.99%) and Intern-S2-Preview (52.24%)."
-     },
-     "summary_source": "deepseek-flash"
+     "thumb_h": 302
     },
     {
-     "id": "2611.30989",
-     "title": "WorldLeague: Benchmarking Physical Agency",
+     "id": "2611.31154",
+     "title": "Attention Latent Feedback",
      "authors": [
-      "Xinyang Zhou",
-      "Qi Li",
-      "Xinchao Wang"
+      "Xuyuan Xiong",
+      "Siyu Chen",
+      "Mengzhao Chen",
+      "Yue Su",
+      "Zhuoran Yang",
+      "Ping Luo",
+      "Xihui Liu"
      ],
-     "abstract": "AI systems can now operate Blender, follow instructions in complex video games, and manipulate objects with robot arms. What range of physical goals can today's AI systems achieve autonomously? Answering this question requires testing systems on tasks that demand different combinations of perception, memory, planning, and action. We introduce \\textbf{WorldLeague}, a benchmark that compares AI systems on a common set of \\textbf{60 simulated robot tasks} by measuring progress toward each task's physical goal from the robot's trajectory. Robots explore scenes to gather evidence in \\textbf{WorldSeek}, rearrange objects in \\textbf{WorldShape}, and adapt to changes in \\textbf{WorldShift}. Tying these goals to a single control interface limits which AI systems can be compared. In WorldLeague, vision-language models (VLMs) choose targets and motions, while vision-language-action models (VLAs) and world-action models (WAMs) use their native controls. For each of six capability dimensions, we measure how much progress a system makes toward its goals (Interactive Score) and how often it achieves them (physical success rate). Together, these measures form the system's \\emph{Physical Agency Profile}. Among 13 representative AI systems, Claude Fable 5.2 achieves 13 of the 60 goals and earns the highest mean Interactive Score (28.58/100). Fable leads in four dimensions, while GPT-6.1-Sol and GPT-6-Astra tie for first on rule-following tasks. Even when VLMs answer every final question correctly, they receive an Interactive Score of zero in 71.8\\% of those episodes. WorldLeague gives Embodied AI, Physical AI, and Agentic AI a shared basis for comparing what AI systems achieve autonomously, from partial progress toward a physical goal to full goal completion. Project Webpage: https://xyangzhou.github.io/WorldLeague",
-     "primary": "cs.RO",
+     "abstract": "During autoregressive decoding, the deeper representations of the previous token have already been computed, yet shallow layers at the current token cannot read them directly because standard self-attention connects positions only at the same depth. We introduce Attention Latent Feedback (ALF), an architecture that allows every sublayer to attend to the outputs of the deeper layers at the previous position. Training unrolls this cross-position recurrence into two parallel passes, whereas decoding remains single-pass using cached previous-token states. Across mixture-of-experts models with up to 4.0B parameters, ALF lowers held-out loss by 0.022-0.024 nats over the standard residual with about 1.1% decoding FLOP overhead, and consistently outperforms prior final-state feedback across all three scales on both standard and attention residual backbones. On MoE-1.6B, ALF matches a $1.38\\times$ larger baseline token budget, and on MoE-4.0B it lifts average accuracy across seventeen downstream benchmarks from 45.1% to 47.0%. Analysis further reveals that intermediate and nearby deeper layers drive most of this benefit, allowing a fixed nearest-window variant to retain 89%-94% of the gain at linear read cost while learned attention widens its margin with scale.",
+     "primary": "cs.LG",
      "categories": [
-      "cs.RO"
+      "cs.LG"
      ],
-     "published": "2026-11-23T16:44:19Z",
-     "updated": "2026-11-23T16:44:19Z",
+     "published": "2026-11-23T18:21:05Z",
+     "updated": "2026-11-23T18:21:05Z",
      "comment": "",
      "tags": [
-      "benchmark",
-      "robotics",
-      "agents",
-      "VLM"
+      "LLM",
+      "efficiency",
+      "pretraining"
      ],
      "summary": {
-      "zh": "WorldLeague 基准用 60 个模拟机器人任务，通过机器人轨迹衡量系统向物理目标推进的程度与成功率，比较 13 个系统；Claude Fable 5.2 完成 13 个目标，平均 Interactive Score 最高，为 28.58/100。",
-      "en": "WorldLeague benchmarks AI systems on 60 simulated robot tasks via trajectory-based progress and success; Claude Fable 5.2 completes 13 goals and leads with a mean Interactive Score of 28.58/100."
+      "en": "Attention Latent Feedback lets each sublayer attend to deeper layers' outputs at the previous position, lowering held-out loss by 0.022-0.024 nats at ~1.1% decoding FLOP overhead and lifting MoE-4.0B average accuracy from 45.1% to 47.0%.",
+      "zh": "Attention Latent Feedback (ALF) 让每个子层关注前一个位置更深层的输出，训练时展开为两遍并行计算、解码仍为单遍；在最多 4.0B 参数的 MoE 模型上使 held-out loss 比标准残差降低 0.022–0.024 nats，解码 FLOP 开销约 1.1%，MoE-4.0B 在十七个下游基准上平均准确率从 45.1% 提升到 47.0%。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 87,
-     "ax_votes": 2,
-     "ax_visits": 42,
-     "heat": 93.2,
+     "hf_upvotes": 10,
+     "ax_votes": 41,
+     "ax_visits": 526,
+     "heat": 103.6,
      "orgs": [
       {
-       "name": "NUS",
-       "ror": "01tgyzw49"
+       "name": "HKU"
+      },
+      {
+       "name": "Yale University"
       }
      ],
-     "thumb": "data/thumbs/2611.30989.jpg",
+     "thumb": "data/thumbs/2611.31154.jpg",
      "thumb_w": 640,
      "thumb_h": 246
     },
     {
-     "id": "2611.27963",
-     "title": "Non-penetrating World Models",
+     "id": "2611.34232",
+     "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
      "authors": [
-      "Yuhang Dai",
-      "Yinwei Wu",
-      "Ziyue Lin",
-      "Han Ji",
-      "Xingyi Yang"
+      "Hui Shen",
+      "Yunta Hsieh",
+      "Jianing Ma",
+      "Zhuoran Yin",
+      "Zhuhan Bao",
+      "Ziyuan Liu",
+      "Qi Han",
+      "Xiuqi Xu",
+      "Xianbang Wang",
+      "Wenhao Chai",
+      "Sihan Xu",
+      "Chenyang Zhao",
+      "Yanheng Shang",
+      "Dongfu Jiang",
+      "Rui Sun",
+      "Xingzhi Li",
+      "Chenqi Yin",
+      "Zesen Zhao",
+      "Boyuan Zheng",
+      "Jisen Li",
+      "Xiaoxia Wu",
+      "Ruoyan Zhang",
+      "Ruiyao Liu",
+      "Jing Xiong",
+      "He Xiao",
+      "Nan Zheng",
+      "Hangxiang Chen",
+      "Shengyang Tao",
+      "Deyang Luorong",
+      "Yifeng Liu",
+      "Jingxuan Zhang",
+      "Chaofan Tao",
+      "Yuren Wang",
+      "Jiaqi Mo",
+      "Rui Hu",
+      "Xing Wei",
+      "Xiaofeng Liu",
+      "Xin Xu",
+      "Han Wu",
+      "Mengyao Wen",
+      "Guobin Zhang",
+      "Shatong Zhu",
+      "Hei Ting Una Chan",
+      "Sicheng Chen",
+      "Kai Zhang",
+      "Mengkang Hu",
+      "Zhongwei Wan",
+      "Xin Wang",
+      "Chuanyang Zheng",
+      "Ziheng Zhang",
+      "Hengyuan Zhang",
+      "Zunhai Su",
+      "Kanzhi Cheng",
+      "Dehan Kong",
+      "Yian Wang",
+      "Hanrong Zhang",
+      "Jiawei Lu",
+      "Yifan Zhang",
+      "Junnan Li",
+      "Changyi Yang",
+      "Jintao Qu",
+      "Wenyao Gao",
+      "Jiaxuan Luo",
+      "Jiaxin Deng",
+      "Yuhao Chen",
+      "Xuesong Ye",
+      "Jingwen Gu",
+      "Yichi Zhang",
+      "Qun Lou",
+      "Shen Yan",
+      "Ben Athiwaratkun",
+      "Qiushi Sun",
+      "Mi Zhang",
+      "Ping Luo",
+      "Wenhu Chen",
+      "Ngai Wong"
      ],
-     "abstract": "We study a new problem of preventing object penetration in interactive video world models. To understand how existing models handle this, we introduce NoPeBench, a benchmark that evaluates how world models respond to physical obstacles. Our evaluation reveals that none of the open-source models can reliably prevent such failures. Surprisingly, however, these models already encode the information needed to predict such violations. We find that the hidden states of diffusion transformers (DiTs) can predict whether a candidate action will penetrate an obstacle. Building on this, we introduce NoPeWorld, a lightweight framework that detects and prevents penetration. Specifically, we train a small prediction head on top of a frozen DiT's hidden states to read out if a candidate action is safe or not. Unsafe actions are then replaced with safe ones that best preserve the original intent. Despite its simplicity, NoPeWorld substantially reduces the physical violation rate, averaged over six video world models, from 74% to 16%. Remarkably, our method shows zero-shot generalization to open-domain imagery, third-person viewpoints, and moving obstacles. We publicly release our code, the NoPeBench benchmark, and model weights. Project Page: https://nopeworld.github.io .",
+     "abstract": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes.",
      "primary": "cs.CV",
      "categories": [
-      "cs.CV",
-      "cs.AI"
+      "cs.CV"
      ],
-     "published": "2026-11-20T18:44:57Z",
-     "updated": "2026-11-20T18:44:57Z",
-     "comment": "20 pages, 13 figures. Code: https://github.com/yuhangdai427/NoPeWorld",
-     "code_url": "https://github.com/yuhangdai427/NoPeWorld",
+     "published": "2026-11-25T11:55:12Z",
+     "updated": "2026-11-25T11:55:12Z",
+     "comment": "NeurIPS 2026",
      "tags": [
-      "world model",
-      "video generation",
-      "diffusion",
-      "safety"
+      "agents",
+      "benchmark",
+      "multimodal"
      ],
-     "hf_upvotes": 62,
-     "ax_votes": 10,
-     "ax_visits": 201,
-     "heat": 92.1,
+     "summary": {
+      "en": "OS-Omni is a live cross-platform benchmark for computer-using agents spanning Windows, Ubuntu, macOS, iOS, Android, and Web; its v1 has 48 tasks per platform plus 12 cross-platform workflows averaging 67.54 steps. Claude Opus 5.5 scores 68.5% versus 77.3% human, trailing by over 25 points on iOS and macOS.",
+      "zh": "OS-Omni 是覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的跨平台计算机代理实时基准，v1 每平台 48 个任务、另含 12 个跨平台工作流，任务平均需 67.54 步；最强代理 Claude Opus 5.5 平均成功率 68.5%，低于人类 77.3%，在 iOS 和 macOS 上差距超过 25 点。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 100,
+     "ax_votes": 1,
+     "ax_visits": 20,
+     "heat": 103.0,
      "orgs": [
       {
-       "name": "Hong Kong Polytechnic University",
-       "ror": "0030zas98",
-       "logo": "data/logos/polyu.edu.hk.png"
+       "name": "OS-Omni Team"
       }
      ],
-     "thumb": "data/thumbs/2611.27963.jpg",
+     "thumb": "data/thumbs/2611.34232.jpg",
      "thumb_w": 640,
-     "thumb_h": 355,
+     "thumb_h": 368
+    },
+    {
+     "id": "2611.31094",
+     "title": "Unlocking the Power of Loops in Pretrained LLMs with Loop Residuals",
+     "authors": [
+      "Xuanlei Zhao",
+      "Hailun Xu",
+      "Kai Wang",
+      "Yang Luo",
+      "Yingxuan Ren",
+      "Zirui Zhu",
+      "Yuxuan Lou",
+      "Kun Xu",
+      "Yan Wang",
+      "Kanchan Sarkar",
+      "Yang You"
+     ],
+     "abstract": "Looped Transformers iterate a shared block of layers to increase computation without adding parameters, offering stronger performance and test-time scaling. However, this power has so far required training from scratch and yielded only modest gains for LLMs. Finetuning existing models into loops is far cheaper, yet also brings only marginal gains over SFT. We propose LoopRes, an effective, scalable, and simple approach that turns loops into significant and consistent gains for pretrained LLMs. Building on Attention Residuals, LoopRes lets each looped layer attend directly to the outputs of earlier loops. Since these outputs are iterates of the same layers and become harder to tell apart, we give each a trainable loop-aware key that encodes its structural identity. Attending to all earlier loops also lets layers skip intermediate ones, so we restrict each layer to a residual window of the latest W loops, forcing every loop to build incrementally on recent ones. Across 6 pretrained LLMs from 3 model families and 9 benchmarks, LoopRes delivers significant and consistent gains: at 2x compute, it improves Qwen3-1.7B-Base by 29.1% over SFT, more than doubling the gain of the state-of-the-art baseline. The gains hold on larger models up to 30B and across all three families. More importantly, from 1.7B to 8B, LoopRes scales more steeply than SFT as compute grows, reaching a higher ceiling while needing less compute on long outputs. These results establish LoopRes as an effective looping approach, delivering both better performance and better test-time scaling.",
+     "primary": "cs.CL",
+     "categories": [
+      "cs.CL",
+      "cs.LG"
+     ],
+     "published": "2026-11-23T17:38:43Z",
+     "updated": "2026-11-24T17:16:14Z",
+     "comment": "",
+     "tags": [
+      "LLM",
+      "efficiency",
+      "pretraining"
+     ],
      "summary": {
-      "zh": "针对交互式视频世界模型中的物体穿透问题，构建 NoPeBench 基准并发现冻结 DiT 的隐状态已能预测碰撞，据此训练轻量预测头筛除不安全动作并替换为安全动作，在六个世界模型上将物理违规率从 74% 降至 16%。",
-      "en": "NoPeBench benchmark reveals object penetration in interactive video world models; NoPeWorld trains a small head on frozen DiT hidden states to filter unsafe actions, cutting violation rates from 74% to 16% across six models."
+      "en": "LoopRes lets looped layers attend to earlier loops with trainable loop-aware keys and a residual window W; on 6 pretrained LLMs and 9 benchmarks it beats SFT by 29.1% on Qwen3-1.7B-Base at 2x compute and scales better.",
+      "zh": "LoopRes 通过让循环层关注此前各循环输出并引入可训练循环感知 key、限制残差窗口 W，将循环式微调用于预训练 LLM；在 6 个模型、9 个基准上，2 倍计算下 Qwen3-1.7B-Base 较 SFT 提升 29.1%，超过最强基线增益两倍，且在 30B 以内及三个模型家族上稳定，测试时扩展更优。"
      },
-     "summary_source": "deepseek-flash"
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 25,
+     "ax_votes": 34,
+     "ax_visits": 351,
+     "heat": 94.1,
+     "orgs": [
+      {
+       "name": "NUS"
+      },
+      {
+       "name": "Independent Researcher"
+      }
+     ],
+     "thumb": "data/thumbs/2611.31094.jpg",
+     "thumb_w": 618,
+     "thumb_h": 440
     }
    ]
   },
@@ -1354,69 +1223,25 @@
       "RL",
       "alignment"
      ],
-     "ax_votes": 203,
-     "ax_visits": 2199,
-     "heat": 422.9,
+     "summary": {
+      "en": "VOPD projects sparse verifier preferences onto the teacher's implicit-reward direction and Rao-Blackwellizes them over the vocabulary for dense verifier-grounded supervision, improving final performance and learning efficiency over vanilla OPD and other on-policy distillation baselines on eight math reasoning benchmarks.",
+      "zh": "VOPD 将稀疏的验证器奖励投影到教师的隐式奖励方向上，并在整个词表上做 Rao-Blackwell 化，得到稠密的、基于验证器的监督信号，在八项数学推理基准上相比 vanilla OPD 与其他 on-policy distillation 基线同时提升最终性能与学习效率。"
+     },
+     "summary_source": "deepseek-flash",
+     "ax_votes": 232,
+     "ax_visits": 2309,
+     "heat": 462.9,
      "orgs": [
       {
-       "logo": "data/logos/stanford.edu.png",
-       "name": "Stanford University",
-       "ror": "00f54p054"
+       "name": "Stanford University"
       },
       {
-       "name": "Google DeepMind",
-       "logo": "data/logos/deepmind.google.png"
+       "name": "Google DeepMind"
       }
      ],
      "thumb": "data/thumbs/2611.30325.jpg",
      "thumb_w": 618,
-     "thumb_h": 440,
-     "summary": {
-      "zh": "VOPD 将稀疏的验证器奖励投影到教师的隐式奖励方向上，并在整个词表上做 Rao-Blackwell 化，得到稠密的、基于验证器的监督信号，在八项数学推理基准上相比 vanilla OPD 与其他 on-policy distillation 基线同时提升最终性能与学习效率。",
-      "en": "VOPD projects sparse verifier preferences onto the teacher's implicit-reward direction and Rao-Blackwellizes them over the vocabulary for dense verifier-grounded supervision, improving final performance and learning efficiency over vanilla OPD and other on-policy distillation baselines on eight math reasoning benchmarks."
-     },
-     "summary_source": "deepseek-flash"
-    },
-    {
-     "id": "2611.28298",
-     "title": "Language Model Harnesses can be Compositional Generalizers",
-     "authors": [
-      "Alex L. Zhang",
-      "Souradip Chakraborty",
-      "Omar Khattab"
-     ],
-     "abstract": "Modern language models (LMs) are post-trained and deployed as agents inside a \"harness\", but standard harness designs accumulate context that the neural network is forced to generalize to, making training for long-horizon tasks expensive and time-consuming. We study an alternative emerging path: training inherently neurosymbolic LM harnesses, which externalize and manage context programmatically to compose existing LM capabilities. We hypothesize that training around these harnesses can offer a better return on compute by enabling compositional generalization, as they can learn to decompose complex problems so that every observation their neural LM receives is locally in-distribution, even when the full task is novel. We find that harnesses like the Recursive Language Model (RLM) learn such decompositions readily under reinforcement learning post-training: (1) we demonstrate that training only on short tasks can generalize to tasks 2-64$\\times$ longer while the base neural LM improves less, and (2) training on one domain transfers to novel domains that share latent structure. On messier, complex tasks, we find that we can target individual LLM calls within a harness by generating and training on easier, synthetically generated surrogate environments with fake tool / sub-calls, a technique we call surrogate harness training. From this finding, we train RLM-27B on synthetic data, and show it improves Qwen3.8-27B in the same RLM harness on a hard suite of long-context tasks like CTC-Bench and ExpertLongBench by 26.9% on average while using $\\sim$2$\\times$ fewer tokens at inference time. Finally, we show that harnesses can compose over these newly learned decompositions using recursive sub-harness calls.",
-     "primary": "cs.CL",
-     "categories": [
-      "cs.CL",
-      "cs.AI"
-     ],
-     "published": "2026-11-20T20:31:19Z",
-     "updated": "2026-11-20T20:31:19Z",
-     "comment": "12 pages, 63 pages with appendix",
-     "tags": [
-      "LLM",
-      "agents",
-      "RL",
-      "reasoning"
-     ],
-     "ax_votes": 92,
-     "ax_visits": 1890,
-     "heat": 281.0,
-     "orgs": [
-      {
-       "name": "MIT CSAIL",
-       "ror": "01e85r662"
-      }
-     ],
-     "thumb": "data/thumbs/2611.28298.jpg",
-     "thumb_w": 640,
-     "thumb_h": 346,
-     "summary": {
-      "zh": "研究以神经符号式 harness 管理上下文的组合泛化能力：仅用短任务强化学习训练 RLM，即可泛化到长 2-64 倍的任务；用合成数据训练 RLM-27B，在 CTC-Bench 和 ExpertLongBench 上平均提升 Qwen3.8-27B 26.9%，推理 token 约减半。",
-      "en": "Training neurosymbolic LM harnesses like RLM with RL on short tasks generalizes to 2-64x longer ones; RLM-27B, trained on synthetic data, beats Qwen3.8-27B by 26.9% on CTC-Bench and ExpertLongBench with ~2x fewer inference tokens."
-     },
-     "summary_source": "deepseek-flash"
+     "thumb_h": 440
     },
     {
      "id": "2611.32606",
@@ -1449,38 +1274,77 @@
       "reasoning",
       "efficiency"
      ],
-     "ax_votes": 106,
-     "ax_visits": 1645,
-     "heat": 270.5,
+     "summary": {
+      "en": "The equal-budget ladder grades multi-agent LLM teams against a single agent, compute-matched majority vote, and pass@n; recursively self-trained groups, which forward split facts, beat pass@n by ~1/3 at 27B, gain 18 points from emergent hubs, and improve for 4-6 generations.",
+      "zh": "等算力阶梯（equal-budget ladder），在单智能体、算力对齐多数投票与算力对齐 pass@n 三级上衡量多智能体团队，并定义 Recursive Collective Intelligence（RCI）：无教师、无外部标签，团队用自身输出让下一代同等成本更聪明；转发拆分事实可在 27B 上超 pass@n 约三分之一，同质 27B 智能体自发形成枢纽使准确率提升 18 个百分点，两代无标签训练在 PlanBench、HiddenBench、Hanabi 上连续 4–6 代优于前代。"
+     },
+     "summary_source": "deepseek-flash",
+     "ax_votes": 156,
+     "ax_visits": 1781,
+     "heat": 334.1,
      "orgs": [
       {
-       "logo": "data/logos/stanford.edu.png",
-       "name": "Stanford University",
-       "ror": "00f54p054"
+       "name": "Stanford University"
       },
       {
-       "logo": "data/logos/berkeley.edu.png",
-       "name": "University of California, Berkeley",
-       "ror": "01an7q238"
+       "name": "UC Berkeley"
       },
       {
-       "logo": "data/logos/nvidia.com.png",
        "name": "NVIDIA"
       },
       {
-       "name": "Northwestern University",
-       "ror": "000e0be47",
-       "logo": "data/logos/northwestern.edu.png"
+       "name": "Northwestern University"
+      },
+      {
+       "name": "a team is expected to solve problems beyond the"
+      },
+      {
+       "name": "without accounting for the additional computation: a team may consume many times the tokens of one agent"
       }
      ],
      "thumb": "data/thumbs/2611.32606.jpg",
      "thumb_w": 640,
-     "thumb_h": 281,
+     "thumb_h": 281
+    },
+    {
+     "id": "2611.28298",
+     "title": "Language Model Harnesses can be Compositional Generalizers",
+     "authors": [
+      "Alex L. Zhang",
+      "Souradip Chakraborty",
+      "Omar Khattab"
+     ],
+     "abstract": "Modern language models (LMs) are post-trained and deployed as agents inside a \"harness\", but standard harness designs accumulate context that the neural network is forced to generalize to, making training for long-horizon tasks expensive and time-consuming. We study an alternative emerging path: training inherently neurosymbolic LM harnesses, which externalize and manage context programmatically to compose existing LM capabilities. We hypothesize that training around these harnesses can offer a better return on compute by enabling compositional generalization, as they can learn to decompose complex problems so that every observation their neural LM receives is locally in-distribution, even when the full task is novel. We find that harnesses like the Recursive Language Model (RLM) learn such decompositions readily under reinforcement learning post-training: (1) we demonstrate that training only on short tasks can generalize to tasks 2-64$\\times$ longer while the base neural LM improves less, and (2) training on one domain transfers to novel domains that share latent structure. On messier, complex tasks, we find that we can target individual LLM calls within a harness by generating and training on easier, synthetically generated surrogate environments with fake tool / sub-calls, a technique we call surrogate harness training. From this finding, we train RLM-27B on synthetic data, and show it improves Qwen3.8-27B in the same RLM harness on a hard suite of long-context tasks like CTC-Bench and ExpertLongBench by 26.9% on average while using $\\sim$2$\\times$ fewer tokens at inference time. Finally, we show that harnesses can compose over these newly learned decompositions using recursive sub-harness calls.",
+     "primary": "cs.CL",
+     "categories": [
+      "cs.CL",
+      "cs.AI"
+     ],
+     "published": "2026-11-20T20:31:19Z",
+     "updated": "2026-11-20T20:31:19Z",
+     "comment": "12 pages, 63 pages with appendix",
+     "tags": [
+      "LLM",
+      "agents",
+      "RL",
+      "reasoning"
+     ],
      "summary": {
-      "zh": "等算力阶梯（equal-budget ladder），在单智能体、算力对齐多数投票与算力对齐 pass@n 三级上衡量多智能体团队，并定义 Recursive Collective Intelligence（RCI）：无教师、无外部标签，团队用自身输出让下一代同等成本更聪明；转发拆分事实可在 27B 上超 pass@n 约三分之一，同质 27B 智能体自发形成枢纽使准确率提升 18 个百分点，两代无标签训练在 PlanBench、HiddenBench、Hanabi 上连续 4–6 代优于前代。",
-      "en": "The equal-budget ladder grades multi-agent LLM teams against a single agent, compute-matched majority vote, and pass@n; recursively self-trained groups, which forward split facts, beat pass@n by ~1/3 at 27B, gain 18 points from emergent hubs, and improve for 4-6 generations."
+      "en": "Training neurosymbolic LM harnesses like RLM with RL on short tasks generalizes to 2-64x longer ones; RLM-27B, trained on synthetic data, beats Qwen3.8-27B by 26.9% on CTC-Bench and ExpertLongBench with ~2x fewer inference tokens.",
+      "zh": "研究以神经符号式 harness 管理上下文的组合泛化能力：仅用短任务强化学习训练 RLM，即可泛化到长 2-64 倍的任务；用合成数据训练 RLM-27B，在 CTC-Bench 和 ExpertLongBench 上平均提升 Qwen3.8-27B 26.9%，推理 token 约减半。"
      },
-     "summary_source": "deepseek-flash"
+     "summary_source": "deepseek-flash",
+     "ax_votes": 99,
+     "ax_visits": 1954,
+     "heat": 294.4,
+     "orgs": [
+      {
+       "name": "MIT CSAIL"
+      }
+     ],
+     "thumb": "data/thumbs/2611.28298.jpg",
+     "thumb_w": 640,
+     "thumb_h": 346
     },
     {
      "id": "2611.26450",
@@ -1502,10 +1366,15 @@
       "math",
       "efficiency"
      ],
+     "summary": {
+      "en": "Closed-form zero-gradient circuit-grafting compiles exact multi-digit arithmetic and Boolean/majority circuits into pretrained LM weights without training data or runtime hooks; Granite 4.2 3B and Qwen 3.5 4B reach 99.17%/100.00% ALU-prefix accuracy versus 42.2%/61.7% for 12.8K-sample LoRA.",
+      "zh": "闭式零梯度电路嫁接原语将精确多位数算术与布尔/多数/奇偶电路直接编译进预训练权重，无需训练样本或运行时钩子；IBM Granite 4.2 3B 与 Qwen 3.5 4B 在 6 位数算术上达 99.17%/100.00% ALU 前缀准确率，远超 12.8K 样本 LoRA 的 42.2%/61.7%。"
+     },
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 7,
      "ax_votes": 74,
-     "ax_visits": 1851,
-     "heat": 266.1,
+     "ax_visits": 1881,
+     "heat": 269.1,
      "orgs": [
       {
        "name": "Independent Researcher"
@@ -1513,12 +1382,52 @@
      ],
      "thumb": "data/thumbs/2611.26450.jpg",
      "thumb_w": 618,
-     "thumb_h": 440,
+     "thumb_h": 440
+    },
+    {
+     "id": "2611.34923",
+     "title": "Mixture-of-Loops Transformer",
+     "authors": [
+      "Lianghui Zhu",
+      "Shijie Wang",
+      "Xinggang Wang",
+      "Jinze Bai",
+      "Bo Wang",
+      "Xiang Bai"
+     ],
+     "abstract": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops: What should be passed as a Transformer loops? We introduce Mixture-of-Loops Transformer (MoLT), whose Mixture-of-Loops Attention (MoLA) uses keys and values (KV) as memory for selective reuse across depths and loops. Under loop residual, MoLT-R retains the residual stream and reads local KV across loops for expressivity. Under loop KV, MoLT-KV instead restarts from embeddings and reads current-loop local KV with preceding-loop memory KV at earlier positions for efficiency. MoLT-KV eliminates same-position cross-loop dependence and, paired with loop forcing for parallel training, unlocks single-traversal Mixture-of-Loops (MoL) decoding beyond the training loop horizon. To balance efficiency and quality, we introduce U-shaped MoLT (U-MoLT), which separates memory construction from prediction readout and skips unused decoder traversals without changing predictions. In 400B-token pretraining, U-MoLT outperforms OLMo3 across 700M/1.5B dense and 3B MoE models, achieving 1.7x validation cross-entropy (CE) token efficiency at 700M while improving 3B MoE 10-domain perplexity by 0.75 and 10-task accuracy by 2.1 percentage points. In 100B-token continued pretraining of Qwen3.5-0.8B-Base, our U-MoLT adaptation lowers CE on all 11 domains over the matched baseline with 1.4x mean token efficiency. At inference, U-MoLT with MoL-Hybrid-2 matches non-looped OLMo3 latency at 996.6 vs. 1,000.6 ms on S-size (~113M) models. Code is available at https://github.com/hustvl/MoLT",
+     "primary": "cs.LG",
+     "categories": [
+      "cs.LG",
+      "cs.CL"
+     ],
+     "published": "2026-11-25T18:58:53Z",
+     "updated": "2026-11-25T18:58:53Z",
+     "comment": "Code is available at https://github.com/hustvl/MoLT",
+     "code_url": "https://github.com/hustvl/MoLT",
+     "tags": [
+      "LLM",
+      "efficiency",
+      "pretraining",
+      "interpretability"
+     ],
      "summary": {
-      "zh": "闭式零梯度电路嫁接原语将精确多位数算术与布尔/多数/奇偶电路直接编译进预训练权重，无需训练样本或运行时钩子；IBM Granite 4.2 3B 与 Qwen 3.5 4B 在 6 位数算术上达 99.17%/100.00% ALU 前缀准确率，远超 12.8K 样本 LoRA 的 42.2%/61.7%。",
-      "en": "Closed-form zero-gradient circuit-grafting compiles exact multi-digit arithmetic and Boolean/majority circuits into pretrained LM weights without training data or runtime hooks; Granite 4.2 3B and Qwen 3.5 4B reach 99.17%/100.00% ALU-prefix accuracy versus 42.2%/61.7% for 12.8K-sample LoRA."
+      "en": "Mixture-of-Loops Transformer reuses keys and values as memory across depths and loops; U-MoLT beats OLMo3 with 1.7x CE token efficiency at 700M and +2.1 points on 10-task accuracy at 3B MoE.",
+      "zh": "Mixture-of-Loops Transformer 用 Mixture-of-Loops Attention 把 KV 当作跨深度和循环复用记忆，其 U-MoLT 变体在 400B token 预训练中于 700M 模型上比 OLMo3 达到 1.7 倍的验证交叉熵 token 效率，3B MoE 困惑度降低 0.75、10 项任务准确率提升 2.1 个百分点。"
      },
-     "summary_source": "deepseek-flash"
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 74,
+     "ax_votes": 88,
+     "ax_visits": 825,
+     "heat": 244.5,
+     "orgs": [
+      {
+       "name": "Huazhong University of Science & Technology"
+      }
+     ],
+     "thumb": "data/thumbs/2611.34923.jpg",
+     "thumb_w": 618,
+     "thumb_h": 440
     },
     {
      "id": "2611.29897",
@@ -1550,31 +1459,20 @@
       "efficiency"
      ],
      "summary": {
-      "zh": "Motion Mamba 2.0 用 Mamba 循环状态加持久内容记忆 PCM 做根-身体扩散式自回归动作生成，支持最长 39.52 s 的长程末端控制；配合 CUDA Graph 等优化，RTX 4090 上完整窗口延迟从 1685.35 ms 降到 276.14 ms，中位加速 6.138 倍，并在 Unitree G1 上验证了文本引导动作组合与交互式行走。",
-      "en": "Motion Mamba 2.0 combines Mamba recurrent states with persistent content memory for autoregressive root-body diffusion, enabling terminal control over 39.52 s rollouts; CUDA Graph optimizations cut latency from 1685.35 to 276.14 ms (6.138x median speedup), validated on Unitree G1."
+      "en": "Motion Mamba 2.0 combines Mamba recurrent states with persistent content memory for autoregressive root-body diffusion, enabling terminal control over 39.52 s rollouts; CUDA Graph optimizations cut latency from 1685.35 to 276.14 ms (6.138x median speedup), validated on Unitree G1.",
+      "zh": "Motion Mamba 2.0 用 Mamba 循环状态加持久内容记忆 PCM 做根-身体扩散式自回归动作生成，支持最长 39.52 s 的长程末端控制；配合 CUDA Graph 等优化，RTX 4090 上完整窗口延迟从 1685.35 ms 降到 276.14 ms，中位加速 6.138 倍，并在 Unitree G1 上验证了文本引导动作组合与交互式行走。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 226,
-     "ax_votes": 0,
-     "ax_visits": 63,
-     "heat": 232.3,
+     "hf_upvotes": 227,
+     "ax_votes": 1,
+     "ax_visits": 71,
+     "heat": 235.1,
      "orgs": [
       {
-       "logo": "data/logos/pku.edu.cn.png",
-       "name": "Peking University",
-       "ror": "02v51f717"
+       "name": "Peking University"
       },
       {
        "name": "Korea University"
-      },
-      {
-       "name": "Monash University",
-       "ror": "02bfwt286",
-       "logo": "data/logos/monash.edu.png"
-      },
-      {
-       "name": "NTU",
-       "ror": "02e7b5302"
       }
      ],
      "thumb": "data/thumbs/2611.29897.jpg",
@@ -1607,24 +1505,23 @@
       "3D",
       "efficiency"
      ],
+     "summary": {
+      "en": "Depth Pro 2 trains one scalable network on images and video to predict native-resolution depth that is metrically accurate, sharp, and temporally consistent, outperforming prior work and redefining the Pareto frontier.",
+      "zh": "Depth Pro 2 用单一可扩展网络统一处理图像与视频，以原生分辨率预测稠密深度，同时兼顾度量精度、边界锐利度与时序一致性，在四项指标上超越先前方法并重划 Pareto 前沿。"
+     },
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 41,
-     "ax_votes": 61,
-     "ax_visits": 643,
-     "heat": 166.3,
+     "ax_votes": 66,
+     "ax_visits": 653,
+     "heat": 172.3,
      "orgs": [
       {
-       "logo": "data/logos/apple.com.png",
        "name": "Apple"
       }
      ],
      "thumb": "data/thumbs/2611.26603.jpg",
      "thumb_w": 247,
-     "thumb_h": 440,
-     "summary": {
-      "zh": "Depth Pro 2 用单一可扩展网络统一处理图像与视频，以原生分辨率预测稠密深度，同时兼顾度量精度、边界锐利度与时序一致性，在四项指标上超越先前方法并重划 Pareto 前沿。",
-      "en": "Depth Pro 2 trains one scalable network on images and video to predict native-resolution depth that is metrically accurate, sharp, and temporally consistent, outperforming prior work and redefining the Pareto frontier."
-     },
-     "summary_source": "deepseek-flash"
+     "thumb_h": 440
     },
     {
      "id": "2611.26444",
@@ -1690,113 +1587,26 @@
       "VLA",
       "reasoning"
      ],
-     "hf_upvotes": 56,
-     "ax_votes": 55,
-     "ax_visits": 551,
-     "heat": 166.1,
+     "summary": {
+      "en": "Mind2Act World is a 30-task, 180-configuration diagnostic manipulation benchmark with Mind, Act, and Mind2Act views; the best agent scores 52.7% and 39.0% but only 12.0% on Mind2Act.",
+      "zh": "Mind2Act World 构建 30 个仿真操作任务、180 种配置的诊断基准，分 Mind、Act、Mind2Act 三视角评测多模态智能体、VLA 与 WAM；最强智能体在 Mind 与 Act 上分别成功 52.7% 和 39.0%，Mind2Act 仅 12.0%。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 57,
+     "ax_votes": 56,
+     "ax_visits": 563,
+     "heat": 169.3,
      "orgs": [
       {
-       "name": "Tsinghua University",
-       "ror": "03cve4549"
+       "name": "THU 2UCam 3Oxford 4Stanford 5CMU 6HKU 7HKUST 8CUHK"
       },
       {
-       "name": "University of Cambridge",
-       "ror": "013meh722"
-      },
-      {
-       "logo": "data/logos/ox.ac.uk.png",
-       "name": "University of Oxford",
-       "ror": "052gg0110"
-      },
-      {
-       "logo": "data/logos/stanford.edu.png",
-       "name": "Stanford University",
-       "ror": "00f54p054"
-      },
-      {
-       "logo": "data/logos/cmu.edu.png",
-       "name": "Carnegie Mellon University",
-       "ror": "05x2bcf33"
-      },
-      {
-       "logo": "data/logos/hku.hk.png",
-       "name": "HKU",
-       "ror": "02zhqgq86"
-      },
-      {
-       "logo": "data/logos/hkust.edu.hk.png",
-       "name": "HKUST",
-       "ror": "00q4vv597"
-      },
-      {
-       "logo": "data/logos/cuhk.edu.hk.png",
-       "name": "CUHK",
-       "ror": "00t33hh48"
+       "name": "PKU 10SJTU 11FDU 12RUC 13SZU 14Velabot AI 15Simple AI 16Baidu AI Cloud"
       }
      ],
      "thumb": "data/thumbs/2611.26444.jpg",
      "thumb_w": 635,
-     "thumb_h": 440,
-     "summary": {
-      "zh": "Mind2Act World 构建 30 个仿真操作任务、180 种配置的诊断基准，分 Mind、Act、Mind2Act 三视角评测多模态智能体、VLA 与 WAM；最强智能体在 Mind 与 Act 上分别成功 52.7% 和 39.0%，Mind2Act 仅 12.0%。",
-      "en": "Mind2Act World is a 30-task, 180-configuration diagnostic manipulation benchmark with Mind, Act, and Mind2Act views; the best agent scores 52.7% and 39.0% but only 12.0% on Mind2Act."
-     },
-     "summary_source": "deepseek-flash"
-    },
-    {
-     "id": "2611.34923",
-     "title": "Mixture-of-Loops Transformer",
-     "authors": [
-      "Lianghui Zhu",
-      "Shijie Wang",
-      "Xinggang Wang",
-      "Jinze Bai",
-      "Bo Wang",
-      "Xiang Bai"
-     ],
-     "abstract": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops: What should be passed as a Transformer loops? We introduce Mixture-of-Loops Transformer (MoLT), whose Mixture-of-Loops Attention (MoLA) uses keys and values (KV) as memory for selective reuse across depths and loops. Under loop residual, MoLT-R retains the residual stream and reads local KV across loops for expressivity. Under loop KV, MoLT-KV instead restarts from embeddings and reads current-loop local KV with preceding-loop memory KV at earlier positions for efficiency. MoLT-KV eliminates same-position cross-loop dependence and, paired with loop forcing for parallel training, unlocks single-traversal Mixture-of-Loops (MoL) decoding beyond the training loop horizon. To balance efficiency and quality, we introduce U-shaped MoLT (U-MoLT), which separates memory construction from prediction readout and skips unused decoder traversals without changing predictions. In 400B-token pretraining, U-MoLT outperforms OLMo3 across 700M/1.5B dense and 3B MoE models, achieving 1.7x validation cross-entropy (CE) token efficiency at 700M while improving 3B MoE 10-domain perplexity by 0.75 and 10-task accuracy by 2.1 percentage points. In 100B-token continued pretraining of Qwen3.5-0.8B-Base, our U-MoLT adaptation lowers CE on all 11 domains over the matched baseline with 1.4x mean token efficiency. At inference, U-MoLT with MoL-Hybrid-2 matches non-looped OLMo3 latency at 996.6 vs. 1,000.6 ms on S-size (~113M) models. Code is available at https://github.com/hustvl/MoLT",
-     "primary": "cs.LG",
-     "categories": [
-      "cs.LG",
-      "cs.CL"
-     ],
-     "published": "2026-11-25T18:58:53Z",
-     "updated": "2026-11-25T18:58:53Z",
-     "comment": "Code is available at https://github.com/hustvl/MoLT",
-     "code_url": "https://github.com/hustvl/MoLT",
-     "tags": [
-      "LLM",
-      "efficiency",
-      "pretraining",
-      "interpretability"
-     ],
-     "hf_upvotes": 72,
-     "ax_votes": 31,
-     "ax_visits": 622,
-     "heat": 165.2,
-     "orgs": [
-      {
-       "name": "Huazhong University of Science & Technology",
-       "ror": "00p991c53"
-      },
-      {
-       "name": "ByteDance",
-       "logo": "data/logos/bytedance.com.png"
-      },
-      {
-       "name": "University of Toronto",
-       "ror": "03dbr7087",
-       "logo": "data/logos/utoronto.ca.png"
-      }
-     ],
-     "thumb": "data/thumbs/2611.34923.jpg",
-     "thumb_w": 618,
-     "thumb_h": 440,
-     "summary": {
-      "zh": "Mixture-of-Loops Transformer 用 Mixture-of-Loops Attention 把 KV 当作跨深度和循环复用记忆，其 U-MoLT 变体在 400B token 预训练中于 700M 模型上比 OLMo3 达到 1.7 倍的验证交叉熵 token 效率，3B MoE 困惑度降低 0.75、10 项任务准确率提升 2.1 个百分点。",
-      "en": "Mixture-of-Loops Transformer reuses keys and values as memory across depths and loops; U-MoLT beats OLMo3 with 1.7x CE token efficiency at 700M and +2.1 points on 10-task accuracy at 3B MoE."
-     },
-     "summary_source": "deepseek-flash"
+     "thumb_h": 440
     },
     {
      "id": "2611.30111",
@@ -1826,45 +1636,121 @@
       "manipulation"
      ],
      "summary": {
-      "zh": "RoboThink 让智能体负责思考、策略网络负责执行：智能体通过指令通道改写任务指令、通过反馈通道给动作反馈，借助 agent-labelled DAgger 训练；在 LIBERO 上把恒定漂移下的成功率从 0.09 提到 0.87，在 RoboTwin 2.0 双臂任务上从 0.12 提到 0.74，单个成功仅需 55 秒和 8k tokens。",
-      "en": "RoboThink lets an agent think while a policy acts: the agent rewrites instructions and supplies motion feedback trained via agent-labelled DAgger, raising LIBERO success from 0.09 to 0.87 under drift with 55 s and 8k tokens per success."
+      "en": "RoboThink lets an agent think while a policy acts: the agent rewrites instructions and supplies motion feedback trained via agent-labelled DAgger, raising LIBERO success from 0.09 to 0.87 under drift with 55 s and 8k tokens per success.",
+      "zh": "RoboThink 让智能体负责思考、策略网络负责执行：智能体通过指令通道改写任务指令、通过反馈通道给动作反馈，借助 agent-labelled DAgger 训练；在 LIBERO 上把恒定漂移下的成功率从 0.09 提到 0.87，在 RoboTwin 2.0 双臂任务上从 0.12 提到 0.74，单个成功仅需 55 秒和 8k tokens。"
      },
      "summary_source": "deepseek-flash",
-     "ax_votes": 77,
-     "ax_visits": 818,
-     "heat": 158.8,
+     "ax_votes": 79,
+     "ax_visits": 829,
+     "heat": 161.9,
      "orgs": [
       {
-       "name": "Tulane University",
-       "ror": "04vmvtb21",
-       "logo": "data/logos/tulane.edu.png"
-      },
-      {
-       "name": "New York University",
-       "ror": "0190ak572"
-      },
-      {
-       "name": "Northeastern University"
-      },
-      {
-       "logo": "data/logos/stanford.edu.png",
-       "name": "Stanford University",
-       "ror": "00f54p054"
-      },
-      {
-       "logo": "data/logos/mit.edu.png",
-       "name": "MIT",
-       "ror": "042nb2s44"
-      },
-      {
-       "name": "Harvard University",
-       "ror": "03vek6s52",
-       "logo": "data/logos/harvard.edu.png"
+       "name": "Tulane University NYU Northeastern University Stanford University MIT Harvard University"
       }
      ],
      "thumb": "data/thumbs/2611.30111.jpg",
      "thumb_w": 640,
      "thumb_h": 320
+    },
+    {
+     "id": "2611.33102",
+     "title": "Reinforcement Learning Can Be Recovered From Its Own Rollouts",
+     "authors": [
+      "Jiayi Sheng",
+      "Jingwen Gu",
+      "Guanning Zeng",
+      "Zhaoyi Zhou",
+      "Stefano Viel",
+      "Qianqian Wang",
+      "Fahim Tajwar",
+      "Andrea Zanette"
+     ],
+     "abstract": "Broadly speaking, reinforcement learning (RL) post-training converts compute into model capabilities by training on model-generated data. Typically, the rollouts are discarded after each update, and the knowledge acquired during RL resides in the model weights. In this work, we investigate how much of this knowledge is retained in the rollouts themselves. A natural first attempt is to replay the original RL algorithm on archived (rather than freshly generated) rollouts, but this generally leads to catastrophic collapse. We provide a simple explanation for this phenomenon, which in turn suggests a remedy we call maximum likelihood replay: fitting the model to its archived rollouts. Surprisingly, starting from the same base model and replaying the rollouts in the order in which they were generated, without any distinction between correct and incorrect responses, is sufficient to recover the performance of online RL. In fact, a single maximum likelihood update per rollout batch closely tracks the entire learning curve of online RL. Furthermore, maximum likelihood replay on the rollouts of the last few RL steps often suffices to recover the final model's performance. This suggests that much of the compute invested in RL goes into discovering an improved sampling distribution rather than learning it from samples.",
+     "primary": "cs.LG",
+     "categories": [
+      "cs.LG"
+     ],
+     "published": "2026-11-24T18:38:06Z",
+     "updated": "2026-11-25T18:46:02Z",
+     "comment": "Preprint. 23 pages, 20 figures, 7 tables",
+     "tags": [
+      "RL",
+      "LLM",
+      "efficiency"
+     ],
+     "summary": {
+      "en": "Investigating how much RL-acquired knowledge persists in rollouts, maximum likelihood replay that fits archived rollouts in generation order without distinguishing correct responses matches online RL performance.",
+      "zh": "研究RL后训练产生的rollout中保留多少知识，发现直接用最大似然拟合归档rollout（maximum likelihood replay），不区分对错、按生成顺序回放，即可复现在线RL的性能，单次更新即可追踪完整学习曲线。"
+     },
+     "summary_source": "deepseek-flash",
+     "ax_votes": 72,
+     "ax_visits": 875,
+     "heat": 159.5,
+     "orgs": [
+      {
+       "name": "Tufa Labs"
+      },
+      {
+       "name": "Harvard University"
+      },
+      {
+       "name": "University of Illinois Urbana-Champaign"
+      }
+     ],
+     "thumb": "data/thumbs/2611.33102.jpg",
+     "thumb_w": 566,
+     "thumb_h": 440
+    },
+    {
+     "id": "2611.34051",
+     "title": "Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability",
+     "authors": [
+      "Xichong Zhang",
+      "Xixuan Hao",
+      "Zhichen Liu",
+      "Le Zhou",
+      "Zeyu Zhang",
+      "Boyu Chen",
+      "Mingfei Lu",
+      "Zehao Lin",
+      "Bo Tang",
+      "Yonggang Zhang",
+      "Linyun Liu",
+      "Feiyu Xiong",
+      "Jianlin Su",
+      "Zhiyu Li"
+     ],
+     "abstract": "Linear attention offers an efficient solution for long-sequence modeling via linear complexity and fixed-size recurrent states. Gated DeltaNet-2 (GDN-2) introduces independent channel-wise control over erasure and writing, enhancing state-update expressiveness and in-context retrieval, yet it suffers from training failures during long-context training. We trace these failures to the asymmetry between reading and modification directions during erasure, which yields non-normal erase operators whose directional gains accumulate across tokens, triggering exponential state growth even without new writes. To resolve this, we propose \\model{}, employing symmetric erasure to ensure non-expansive state propagation and decay-regulated residual writing to preserve writing flexibility. Theoretically, we establish an $O(\\sqrt{T})$ upper bound on recurrent state growth while retaining chunkwise parallel computation. Experiments on ~1.6B parameter models show that \\model{} achieves stable training alongside improved long-context retrieval. Compared to GDN-2, it boosts the 128K average RULER score by 6.80 points in the recurrent setting and average accuracy across nine downstream tasks by 0.62 points in the hybrid setting.",
+     "primary": "cs.CL",
+     "categories": [
+      "cs.CL",
+      "cs.LG"
+     ],
+     "published": "2026-11-25T09:30:49Z",
+     "updated": "2026-11-25T09:30:49Z",
+     "comment": "",
+     "tags": [
+      "LLM",
+      "efficiency",
+      "pretraining"
+     ],
+     "summary": {
+      "en": "Stable Gated DeltaNet-2 fixes GDN-2's exponential recurrent state growth via symmetric erasure and decay-regulated residual writing, with an O(√T) bound. On 1.6B models it raises 128K RULER by 6.80 and nine-task accuracy by 0.62.",
+      "zh": "针对 Gated DeltaNet-2 长上下文训练中擦除方向不对称导致循环状态指数增长的问题，提出 Stable Gated DeltaNet-2，用对称擦除保证非扩张状态传播，并配合衰减调节的残差写入，理论上给出 O(√T) 状态增长上界且保留分块并行。1.6B 参数模型上训练稳定，128K 平均 RULER 分数提升 6.80 分，九个下游任务平均准确率提升 0.62 分。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 126,
+     "ax_votes": 8,
+     "ax_visits": 110,
+     "heat": 145.0,
+     "orgs": [
+      {
+       "name": "HKUST"
+      }
+     ],
+     "thumb": "data/thumbs/2611.34051.jpg",
+     "thumb_w": 640,
+     "thumb_h": 348
     },
     {
      "id": "2611.31201",
@@ -1901,36 +1787,20 @@
       "manipulation"
      ],
      "summary": {
-      "zh": "Embo-Harness 系统研究前沿多模态模型直接作为机器人策略的闭环框架，梳理提示、规划、动作执行与工具使用四个环节并总结六条经验，在 RoboLab-120 上取得 83.3% 成功率，超最强基线 26.2 个百分点，真实世界四项操作任务零样本 20 次试验成功 15 次。",
-      "en": "Embo-Harness systematically studies frontier multimodal models as closed-loop robot policies, distilling six findings; it reaches 83.3% success on RoboLab-120, beating the best baseline by 26.2 points, and solves 15 of 20 zero-shot real-world trials."
+      "en": "Embo-Harness systematically studies frontier multimodal models as closed-loop robot policies, distilling six findings; it reaches 83.3% success on RoboLab-120, beating the best baseline by 26.2 points, and solves 15 of 20 zero-shot real-world trials.",
+      "zh": "Embo-Harness 系统研究前沿多模态模型直接作为机器人策略的闭环框架，梳理提示、规划、动作执行与工具使用四个环节并总结六条经验，在 RoboLab-120 上取得 83.3% 成功率，超最强基线 26.2 个百分点，真实世界四项操作任务零样本 20 次试验成功 15 次。"
      },
      "summary_source": "deepseek-flash",
      "hf_upvotes": 106,
-     "ax_votes": 14,
-     "ax_visits": 160,
-     "heat": 136.0,
+     "ax_votes": 16,
+     "ax_visits": 167,
+     "heat": 138.7,
      "orgs": [
       {
-       "name": "NTU",
-       "ror": "02e7b5302"
+       "name": "NTU"
       },
       {
-       "name": "ACE Robotics"
-      },
-      {
-       "name": "SenseTime Research"
-      },
-      {
-       "name": "Xiamen University",
-       "ror": "00mcjh785"
-      },
-      {
-       "name": "Lenovo Robotics Lab"
-      },
-      {
-       "logo": "data/logos/uconn.edu.png",
-       "name": "University of Connecticut",
-       "ror": "02der9h97"
+       "name": "Xiamen University Lenovo Robotics Lab University of Connecticut"
       }
      ],
      "thumb": "data/thumbs/2611.31201.jpg",
@@ -1982,46 +1852,29 @@
       "VLA"
      ],
      "summary": {
-      "zh": "RoboUniverse-10K 通过自动化 Real2Sim 与质检流程从真实视频构建 10,807 个可交互、可重置、可验证的物理环境，并留出 500 个任务组成 RoboUniverse-Verified 零样本基准；11 个模型评测中前沿模型成功率 85.8%，开源基线仅 2.6%–10.0%；再用约 17K 多轮轨迹微调 Qwen3.6-35B-A3B 得到 RoboUniverse-35B-A3B，零样本成功率从 0.8% 提升到 21.2%。",
-      "en": "RoboUniverse-10K builds 10,807 resettable, verifiable physics environments from real videos via automated Real2Sim, plus a 500-task zero-shot benchmark where frontier models hit 85.8% versus 2.6-10.0% for open baselines; fine-tuning Qwen3.6-35B-A3B lifts success from 0.8% to 21.2%."
+      "en": "RoboUniverse-10K builds 10,807 resettable, verifiable physics environments from real videos via automated Real2Sim, plus a 500-task zero-shot benchmark where frontier models hit 85.8% versus 2.6-10.0% for open baselines; fine-tuning Qwen3.6-35B-A3B lifts success from 0.8% to 21.2%.",
+      "zh": "RoboUniverse-10K 通过自动化 Real2Sim 与质检流程从真实视频构建 10,807 个可交互、可重置、可验证的物理环境，并留出 500 个任务组成 RoboUniverse-Verified 零样本基准；11 个模型评测中前沿模型成功率 85.8%，开源基线仅 2.6%–10.0%；再用约 17K 多轮轨迹微调 Qwen3.6-35B-A3B 得到 RoboUniverse-35B-A3B，零样本成功率从 0.8% 提升到 21.2%。"
      },
      "summary_source": "deepseek-flash",
      "hf_upvotes": 1,
-     "ax_votes": 54,
-     "ax_visits": 666,
-     "heat": 121.6,
+     "ax_votes": 56,
+     "ax_visits": 692,
+     "heat": 126.2,
      "orgs": [
       {
-       "name": "Tsinghua University",
-       "ror": "03cve4549"
+       "name": "Robotics via Real-to-Sim Environments"
       },
       {
-       "name": "Einsia.AI"
+       "name": "Agentic Robotics"
       },
       {
-       "logo": "data/logos/pku.edu.cn.png",
-       "name": "Peking University",
-       "ror": "02v51f717"
+       "name": "robotics remains constrained"
       },
       {
-       "logo": "data/logos/illinois.edu.png",
-       "name": "University of Illinois Urbana-Champaign",
-       "ror": "047426m28"
+       "name": "Agentic Robotics—a paradigm in which frontier foundation models act as Coding Agents to control"
       },
       {
-       "logo": "data/logos/hku.hk.png",
-       "name": "HKU",
-       "ror": "02zhqgq86"
-      },
-      {
-       "logo": "data/logos/ucl.ac.uk.png",
-       "name": "University College London",
-       "ror": "02jx3x895"
-      },
-      {
-       "logo": "data/logos/unc.edu.png",
-       "name": "University of North Carolina at Chapel Hill",
-       "ror": "0130frc33"
+       "name": "Yet Agentic Robotics has not truly entered its scaling era"
       }
      ],
      "thumb": "data/thumbs/2611.31002.jpg",
@@ -2050,150 +1903,23 @@
       "image generation",
       "efficiency"
      ],
+     "summary": {
+      "en": "Posterior Matching Distillation combines mode-covering posterior sampling with any-step generation by matching exponentially tilted student sample means, achieving the best 4-step FID on SDXL and FLUX.2 [klein] 4B.",
+      "zh": "PMD 将模式覆盖的后验采样与任意步数生成结合，通过匹配指数重加权学生样本均值来学习教师后验，在 SDXL 和 FLUX.2 [klein] 4B 上取得 4 步方法中最佳 FID。"
+     },
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 47,
-     "ax_votes": 34,
-     "ax_visits": 351,
-     "heat": 116.1,
+     "ax_votes": 35,
+     "ax_visits": 359,
+     "heat": 117.9,
      "orgs": [
       {
-       "logo": "data/logos/vt.edu.png",
-       "name": "Virginia Tech",
-       "ror": "02smfhw86"
-      },
-      {
-       "logo": "data/logos/nvidia.com.png",
        "name": "NVIDIA"
       }
      ],
      "thumb": "data/thumbs/2611.26629.jpg",
      "thumb_w": 640,
-     "thumb_h": 203,
-     "summary": {
-      "zh": "PMD 将模式覆盖的后验采样与任意步数生成结合，通过匹配指数重加权学生样本均值来学习教师后验，在 SDXL 和 FLUX.2 [klein] 4B 上取得 4 步方法中最佳 FID。",
-      "en": "Posterior Matching Distillation combines mode-covering posterior sampling with any-step generation by matching exponentially tilted student sample means, achieving the best 4-step FID on SDXL and FLUX.2 [klein] 4B."
-     },
-     "summary_source": "deepseek-flash"
-    },
-    {
-     "id": "2611.33102",
-     "title": "Reinforcement Learning Can Be Recovered From Its Own Rollouts",
-     "authors": [
-      "Jiayi Sheng",
-      "Jingwen Gu",
-      "Guanning Zeng",
-      "Zhaoyi Zhou",
-      "Stefano Viel",
-      "Qianqian Wang",
-      "Fahim Tajwar",
-      "Andrea Zanette"
-     ],
-     "abstract": "Broadly speaking, reinforcement learning (RL) post-training converts compute into model capabilities by training on model-generated data. Typically, the rollouts are discarded after each update, and the knowledge acquired during RL resides in the model weights. In this work, we investigate how much of this knowledge is retained in the rollouts themselves. A natural first attempt is to replay the original RL algorithm on archived (rather than freshly generated) rollouts, but this generally leads to catastrophic collapse. We provide a simple explanation for this phenomenon, which in turn suggests a remedy we call maximum likelihood replay: fitting the model to its archived rollouts. Surprisingly, starting from the same base model and replaying the rollouts in the order in which they were generated, without any distinction between correct and incorrect responses, is sufficient to recover the performance of online RL. In fact, a single maximum likelihood update per rollout batch closely tracks the entire learning curve of online RL. Furthermore, maximum likelihood replay on the rollouts of the last few RL steps often suffices to recover the final model's performance. This suggests that much of the compute invested in RL goes into discovering an improved sampling distribution rather than learning it from samples.",
-     "primary": "cs.LG",
-     "categories": [
-      "cs.LG"
-     ],
-     "published": "2026-11-24T18:38:06Z",
-     "updated": "2026-11-25T18:46:02Z",
-     "comment": "Preprint. 23 pages, 20 figures, 7 tables",
-     "tags": [
-      "RL",
-      "LLM",
-      "efficiency"
-     ],
-     "ax_votes": 40,
-     "ax_visits": 751,
-     "heat": 115.1,
-     "orgs": [
-      {
-       "name": "Tufa Labs"
-      },
-      {
-       "name": "Harvard University",
-       "ror": "03vek6s52",
-       "logo": "data/logos/harvard.edu.png"
-      },
-      {
-       "logo": "data/logos/illinois.edu.png",
-       "name": "University of Illinois Urbana-Champaign",
-       "ror": "047426m28"
-      }
-     ],
-     "thumb": "data/thumbs/2611.33102.jpg",
-     "thumb_w": 566,
-     "thumb_h": 440,
-     "summary": {
-      "zh": "研究RL后训练产生的rollout中保留多少知识，发现直接用最大似然拟合归档rollout（maximum likelihood replay），不区分对错、按生成顺序回放，即可复现在线RL的性能，单次更新即可追踪完整学习曲线。",
-      "en": "Investigating how much RL-acquired knowledge persists in rollouts, maximum likelihood replay that fits archived rollouts in generation order without distinguishing correct responses matches online RL performance."
-     },
-     "summary_source": "deepseek-flash"
-    },
-    {
-     "id": "2611.34051",
-     "title": "Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability",
-     "authors": [
-      "Xichong Zhang",
-      "Xixuan Hao",
-      "Zhichen Liu",
-      "Le Zhou",
-      "Zeyu Zhang",
-      "Boyu Chen",
-      "Mingfei Lu",
-      "Zehao Lin",
-      "Bo Tang",
-      "Yonggang Zhang",
-      "Linyun Liu",
-      "Feiyu Xiong",
-      "Jianlin Su",
-      "Zhiyu Li"
-     ],
-     "abstract": "Linear attention offers an efficient solution for long-sequence modeling via linear complexity and fixed-size recurrent states. Gated DeltaNet-2 (GDN-2) introduces independent channel-wise control over erasure and writing, enhancing state-update expressiveness and in-context retrieval, yet it suffers from training failures during long-context training. We trace these failures to the asymmetry between reading and modification directions during erasure, which yields non-normal erase operators whose directional gains accumulate across tokens, triggering exponential state growth even without new writes. To resolve this, we propose \\model{}, employing symmetric erasure to ensure non-expansive state propagation and decay-regulated residual writing to preserve writing flexibility. Theoretically, we establish an $O(\\sqrt{T})$ upper bound on recurrent state growth while retaining chunkwise parallel computation. Experiments on ~1.6B parameter models show that \\model{} achieves stable training alongside improved long-context retrieval. Compared to GDN-2, it boosts the 128K average RULER score by 6.80 points in the recurrent setting and average accuracy across nine downstream tasks by 0.62 points in the hybrid setting.",
-     "primary": "cs.CL",
-     "categories": [
-      "cs.CL",
-      "cs.LG"
-     ],
-     "published": "2026-11-25T09:30:49Z",
-     "updated": "2026-11-25T09:30:49Z",
-     "comment": "",
-     "tags": [
-      "LLM",
-      "efficiency",
-      "pretraining"
-     ],
-     "hf_upvotes": 105,
-     "ax_votes": 1,
-     "ax_visits": 80,
-     "heat": 114.0,
-     "orgs": [
-      {
-       "name": "MemTensor"
-      },
-      {
-       "name": "University of Science and Technology of China",
-       "ror": "04c4dkn09"
-      },
-      {
-       "logo": "data/logos/hkust.edu.hk.png",
-       "name": "HKUST",
-       "ror": "00q4vv597"
-      },
-      {
-       "name": "Southern University of Science and Technology",
-       "ror": "049tv2d57"
-      },
-      {
-       "name": "Shanghai Jiao Tong University",
-       "ror": "0220qvk04"
-      }
-     ],
-     "thumb": "data/thumbs/2611.34051.jpg",
-     "thumb_w": 640,
-     "thumb_h": 348,
-     "summary": {
-      "zh": "针对 Gated DeltaNet-2 长上下文训练中擦除方向不对称导致循环状态指数增长的问题，提出 Stable Gated DeltaNet-2，用对称擦除保证非扩张状态传播，并配合衰减调节的残差写入，理论上给出 O(√T) 状态增长上界且保留分块并行。1.6B 参数模型上训练稳定，128K 平均 RULER 分数提升 6.80 分，九个下游任务平均准确率提升 0.62 分。",
-      "en": "Stable Gated DeltaNet-2 fixes GDN-2's exponential recurrent state growth via symmetric erasure and decay-regulated residual writing, with an O(√T) bound. On 1.6B models it raises 128K RULER by 6.80 and nine-task accuracy by 0.62."
-     },
-     "summary_source": "deepseek-flash"
+     "thumb_h": 203
     },
     {
      "id": "2611.27193",
@@ -2227,36 +1953,32 @@
       "efficiency",
       "theory"
      ],
+     "summary": {
+      "en": "CmHC geometrically contracts the Birkhoff polytope inward to mix residual streams, mitigating under- and over-mixing; it stabilizes pretraining of dense and MoE models and cuts hyper-connection latency by up to 44.8% on Ascend NPUs.",
+      "zh": "cmHC 通过将 Birkhoff 多面体几何收缩到内部来混合残差流，缓解 under-mixing 与 over-mixing 的权衡，在稠密和 MoE 模型预训练中稳定梯度传播，并在 Ascend NPU 上将超连接执行延迟降低最多 44.8%。"
+     },
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 94,
      "ax_votes": 6,
-     "ax_visits": 80,
-     "heat": 108.0,
+     "ax_visits": 83,
+     "heat": 108.3,
      "orgs": [
       {
-       "name": "China Telecom"
+       "name": "Xingchen AGI Lab"
       },
       {
-       "logo": "data/logos/hkust.edu.hk.png",
-       "name": "HKUST",
-       "ror": "00q4vv597"
+       "name": "HKUST"
       },
       {
-       "name": "Harbin Institute of Technology",
-       "ror": "01yqg2h08"
+       "name": "Harbin Institute of Technology (Shenzhen)"
       },
       {
-       "name": "Huawei",
-       "logo": "data/logos/huawei.com.png"
+       "name": "Huawei Technologies"
       }
      ],
      "thumb": "data/thumbs/2611.27193.jpg",
      "thumb_w": 640,
-     "thumb_h": 310,
-     "summary": {
-      "zh": "cmHC 通过将 Birkhoff 多面体几何收缩到内部来混合残差流，缓解 under-mixing 与 over-mixing 的权衡，在稠密和 MoE 模型预训练中稳定梯度传播，并在 Ascend NPU 上将超连接执行延迟降低最多 44.8%。",
-      "en": "CmHC geometrically contracts the Birkhoff polytope inward to mix residual streams, mitigating under- and over-mixing; it stabilizes pretraining of dense and MoE models and cuts hyper-connection latency by up to 44.8% on Ascend NPUs."
-     },
-     "summary_source": "deepseek-flash"
+     "thumb_h": 310
     },
     {
      "id": "2611.30634",
@@ -2282,14 +2004,18 @@
       "efficiency",
       "interpretability"
      ],
+     "summary": {
+      "en": "Loom attention interweaves vertical attention over prior head outputs via normalized gated linear attention with horizontal token attention, yielding LoomFormer; with only ~2% extra FLOPs, LoomPythia-2.8B reaches ~1.6x mHC-Pythia-2.8B's downstream gain and matches Pythia-12B zero-shot.",
+      "zh": "Loom attention 通过垂直注意力对前序 head 输出做归一化门控线性注意力，并与水平 token 注意力交织，实现逐 token 动态重连电路，构成 LoomFormer 双流架构；在 300B token、仅增约 2% FLOPs 下，LoomPythia-2.8B 下游增益约为 mHC-Pythia-2.8B 的 1.6 倍，0-shot 追平 Pythia-12B。"
+     },
+     "summary_source": "deepseek-flash",
      "hf_upvotes": 95,
      "ax_votes": 2,
-     "ax_visits": 67,
-     "heat": 103.7,
+     "ax_visits": 73,
+     "heat": 104.3,
      "orgs": [
       {
-       "name": "Beijing University of Posts and Telecommunications",
-       "ror": "04w9fbh59"
+       "name": "Beijing University of Posts and Telecommunications"
       },
       {
        "name": "ColorfulClouds Technology"
@@ -2297,120 +2023,7 @@
      ],
      "thumb": "data/thumbs/2611.30634.jpg",
      "thumb_w": 640,
-     "thumb_h": 392,
-     "summary": {
-      "zh": "Loom attention 通过垂直注意力对前序 head 输出做归一化门控线性注意力，并与水平 token 注意力交织，实现逐 token 动态重连电路，构成 LoomFormer 双流架构；在 300B token、仅增约 2% FLOPs 下，LoomPythia-2.8B 下游增益约为 mHC-Pythia-2.8B 的 1.6 倍，0-shot 追平 Pythia-12B。",
-      "en": "Loom attention interweaves vertical attention over prior head outputs via normalized gated linear attention with horizontal token attention, yielding LoomFormer; with only ~2% extra FLOPs, LoomPythia-2.8B reaches ~1.6x mHC-Pythia-2.8B's downstream gain and matches Pythia-12B zero-shot."
-     },
-     "summary_source": "deepseek-flash"
-    },
-    {
-     "id": "2611.34232",
-     "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
-     "authors": [
-      "Hui Shen",
-      "Yunta Hsieh",
-      "Jianing Ma",
-      "Zhuoran Yin",
-      "Zhuhan Bao",
-      "Ziyuan Liu",
-      "Qi Han",
-      "Xiuqi Xu",
-      "Xianbang Wang",
-      "Wenhao Chai",
-      "Sihan Xu",
-      "Chenyang Zhao",
-      "Yanheng Shang",
-      "Dongfu Jiang",
-      "Rui Sun",
-      "Xingzhi Li",
-      "Chenqi Yin",
-      "Zesen Zhao",
-      "Boyuan Zheng",
-      "Jisen Li",
-      "Xiaoxia Wu",
-      "Ruoyan Zhang",
-      "Ruiyao Liu",
-      "Jing Xiong",
-      "He Xiao",
-      "Nan Zheng",
-      "Hangxiang Chen",
-      "Shengyang Tao",
-      "Deyang Luorong",
-      "Yifeng Liu",
-      "Jingxuan Zhang",
-      "Chaofan Tao",
-      "Yuren Wang",
-      "Jiaqi Mo",
-      "Rui Hu",
-      "Xing Wei",
-      "Xiaofeng Liu",
-      "Xin Xu",
-      "Han Wu",
-      "Mengyao Wen",
-      "Guobin Zhang",
-      "Shatong Zhu",
-      "Hei Ting Una Chan",
-      "Sicheng Chen",
-      "Kai Zhang",
-      "Mengkang Hu",
-      "Zhongwei Wan",
-      "Xin Wang",
-      "Chuanyang Zheng",
-      "Ziheng Zhang",
-      "Hengyuan Zhang",
-      "Zunhai Su",
-      "Kanzhi Cheng",
-      "Dehan Kong",
-      "Yian Wang",
-      "Hanrong Zhang",
-      "Jiawei Lu",
-      "Yifan Zhang",
-      "Junnan Li",
-      "Changyi Yang",
-      "Jintao Qu",
-      "Wenyao Gao",
-      "Jiaxuan Luo",
-      "Jiaxin Deng",
-      "Yuhao Chen",
-      "Xuesong Ye",
-      "Jingwen Gu",
-      "Yichi Zhang",
-      "Qun Lou",
-      "Shen Yan",
-      "Ben Athiwaratkun",
-      "Qiushi Sun",
-      "Mi Zhang",
-      "Ping Luo",
-      "Wenhu Chen",
-      "Ngai Wong"
-     ],
-     "abstract": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes.",
-     "primary": "cs.CV",
-     "categories": [
-      "cs.CV"
-     ],
-     "published": "2026-11-25T11:55:12Z",
-     "updated": "2026-11-25T11:55:12Z",
-     "comment": "NeurIPS 2026",
-     "tags": [
-      "agents",
-      "benchmark",
-      "multimodal"
-     ],
-     "hf_upvotes": 96,
-     "ax_votes": 0,
-     "ax_visits": 18,
-     "heat": 97.8,
-     "orgs": [],
-     "thumb": "data/thumbs/2611.34232.jpg",
-     "thumb_w": 640,
-     "thumb_h": 368,
-     "summary": {
-      "zh": "OS-Omni 是覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的跨平台计算机代理实时基准，v1 每平台 48 个任务、另含 12 个跨平台工作流，任务平均需 67.54 步；最强代理 Claude Opus 5.5 平均成功率 68.5%，低于人类 77.3%，在 iOS 和 macOS 上差距超过 25 点。",
-      "en": "OS-Omni is a live cross-platform benchmark for computer-using agents spanning Windows, Ubuntu, macOS, iOS, Android, and Web; its v1 has 48 tasks per platform plus 12 cross-platform workflows averaging 67.54 steps. Claude Opus 5.5 scores 68.5% versus 77.3% human, trailing by over 25 points on iOS and macOS."
-     },
-     "summary_source": "deepseek-flash"
+     "thumb_h": 392
     },
     {
      "id": "2611.34575",
@@ -2541,110 +2154,235 @@
       "pretraining",
       "RL"
      ],
-     "hf_upvotes": 80,
-     "ax_votes": 4,
-     "ax_visits": 102,
-     "heat": 94.2,
+     "summary": {
+      "en": "Sage-Med-Preview, a 35B-parameter (3B activated) medical MLLM trained via curated 322.7M-record data and a progressive pretraining-to-SFT-to-RL curriculum, scores 58.26% on 31 public multimodal benchmarks, beating Hulu-Med-235B-A22B (50.99%) and Intern-S2-Preview (52.24%).",
+      "zh": "Sage-Med-Preview 是 35B 参数（激活 3B）的医学多模态模型，用 3.227 亿条候选数据分阶段筛选结合医学预训练、分阶段监督微调与自适应强化学习的渐进课程训练，在 31 个公开多模态基准上均分 58.26%，超过 Hulu-Med-235B-A22B 的 50.99% 和 Intern-S2-Preview 的 52.24%。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 81,
+     "ax_votes": 10,
+     "ax_visits": 128,
+     "heat": 103.8,
      "orgs": [
+      {
+       "name": "Sage-Med Team"
+      },
       {
        "name": "Shanghai AI Lab"
       }
      ],
      "thumb": "data/thumbs/2611.34575.jpg",
      "thumb_w": 640,
-     "thumb_h": 302,
-     "summary": {
-      "zh": "Sage-Med-Preview 是 35B 参数（激活 3B）的医学多模态模型，用 3.227 亿条候选数据分阶段筛选结合医学预训练、分阶段监督微调与自适应强化学习的渐进课程训练，在 31 个公开多模态基准上均分 58.26%，超过 Hulu-Med-235B-A22B 的 50.99% 和 Intern-S2-Preview 的 52.24%。",
-      "en": "Sage-Med-Preview, a 35B-parameter (3B activated) medical MLLM trained via curated 322.7M-record data and a progressive pretraining-to-SFT-to-RL curriculum, scores 58.26% on 31 public multimodal benchmarks, beating Hulu-Med-235B-A22B (50.99%) and Intern-S2-Preview (52.24%)."
-     },
-     "summary_source": "deepseek-flash"
+     "thumb_h": 302
     },
     {
-     "id": "2611.30989",
-     "title": "WorldLeague: Benchmarking Physical Agency",
+     "id": "2611.31154",
+     "title": "Attention Latent Feedback",
      "authors": [
-      "Xinyang Zhou",
-      "Qi Li",
-      "Xinchao Wang"
+      "Xuyuan Xiong",
+      "Siyu Chen",
+      "Mengzhao Chen",
+      "Yue Su",
+      "Zhuoran Yang",
+      "Ping Luo",
+      "Xihui Liu"
      ],
-     "abstract": "AI systems can now operate Blender, follow instructions in complex video games, and manipulate objects with robot arms. What range of physical goals can today's AI systems achieve autonomously? Answering this question requires testing systems on tasks that demand different combinations of perception, memory, planning, and action. We introduce \\textbf{WorldLeague}, a benchmark that compares AI systems on a common set of \\textbf{60 simulated robot tasks} by measuring progress toward each task's physical goal from the robot's trajectory. Robots explore scenes to gather evidence in \\textbf{WorldSeek}, rearrange objects in \\textbf{WorldShape}, and adapt to changes in \\textbf{WorldShift}. Tying these goals to a single control interface limits which AI systems can be compared. In WorldLeague, vision-language models (VLMs) choose targets and motions, while vision-language-action models (VLAs) and world-action models (WAMs) use their native controls. For each of six capability dimensions, we measure how much progress a system makes toward its goals (Interactive Score) and how often it achieves them (physical success rate). Together, these measures form the system's \\emph{Physical Agency Profile}. Among 13 representative AI systems, Claude Fable 5.2 achieves 13 of the 60 goals and earns the highest mean Interactive Score (28.58/100). Fable leads in four dimensions, while GPT-6.1-Sol and GPT-6-Astra tie for first on rule-following tasks. Even when VLMs answer every final question correctly, they receive an Interactive Score of zero in 71.8\\% of those episodes. WorldLeague gives Embodied AI, Physical AI, and Agentic AI a shared basis for comparing what AI systems achieve autonomously, from partial progress toward a physical goal to full goal completion. Project Webpage: https://xyangzhou.github.io/WorldLeague",
-     "primary": "cs.RO",
+     "abstract": "During autoregressive decoding, the deeper representations of the previous token have already been computed, yet shallow layers at the current token cannot read them directly because standard self-attention connects positions only at the same depth. We introduce Attention Latent Feedback (ALF), an architecture that allows every sublayer to attend to the outputs of the deeper layers at the previous position. Training unrolls this cross-position recurrence into two parallel passes, whereas decoding remains single-pass using cached previous-token states. Across mixture-of-experts models with up to 4.0B parameters, ALF lowers held-out loss by 0.022-0.024 nats over the standard residual with about 1.1% decoding FLOP overhead, and consistently outperforms prior final-state feedback across all three scales on both standard and attention residual backbones. On MoE-1.6B, ALF matches a $1.38\\times$ larger baseline token budget, and on MoE-4.0B it lifts average accuracy across seventeen downstream benchmarks from 45.1% to 47.0%. Analysis further reveals that intermediate and nearby deeper layers drive most of this benefit, allowing a fixed nearest-window variant to retain 89%-94% of the gain at linear read cost while learned attention widens its margin with scale.",
+     "primary": "cs.LG",
      "categories": [
-      "cs.RO"
+      "cs.LG"
      ],
-     "published": "2026-11-23T16:44:19Z",
-     "updated": "2026-11-23T16:44:19Z",
+     "published": "2026-11-23T18:21:05Z",
+     "updated": "2026-11-23T18:21:05Z",
      "comment": "",
      "tags": [
-      "benchmark",
-      "robotics",
-      "agents",
-      "VLM"
+      "LLM",
+      "efficiency",
+      "pretraining"
      ],
      "summary": {
-      "zh": "WorldLeague 基准用 60 个模拟机器人任务，通过机器人轨迹衡量系统向物理目标推进的程度与成功率，比较 13 个系统；Claude Fable 5.2 完成 13 个目标，平均 Interactive Score 最高，为 28.58/100。",
-      "en": "WorldLeague benchmarks AI systems on 60 simulated robot tasks via trajectory-based progress and success; Claude Fable 5.2 completes 13 goals and leads with a mean Interactive Score of 28.58/100."
+      "en": "Attention Latent Feedback lets each sublayer attend to deeper layers' outputs at the previous position, lowering held-out loss by 0.022-0.024 nats at ~1.1% decoding FLOP overhead and lifting MoE-4.0B average accuracy from 45.1% to 47.0%.",
+      "zh": "Attention Latent Feedback (ALF) 让每个子层关注前一个位置更深层的输出，训练时展开为两遍并行计算、解码仍为单遍；在最多 4.0B 参数的 MoE 模型上使 held-out loss 比标准残差降低 0.022–0.024 nats，解码 FLOP 开销约 1.1%，MoE-4.0B 在十七个下游基准上平均准确率从 45.1% 提升到 47.0%。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 87,
-     "ax_votes": 2,
-     "ax_visits": 42,
-     "heat": 93.2,
+     "hf_upvotes": 10,
+     "ax_votes": 41,
+     "ax_visits": 526,
+     "heat": 103.6,
      "orgs": [
       {
-       "name": "NUS",
-       "ror": "01tgyzw49"
+       "name": "HKU"
+      },
+      {
+       "name": "Yale University"
       }
      ],
-     "thumb": "data/thumbs/2611.30989.jpg",
+     "thumb": "data/thumbs/2611.31154.jpg",
      "thumb_w": 640,
      "thumb_h": 246
     },
     {
-     "id": "2611.27963",
-     "title": "Non-penetrating World Models",
+     "id": "2611.34232",
+     "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
      "authors": [
-      "Yuhang Dai",
-      "Yinwei Wu",
-      "Ziyue Lin",
-      "Han Ji",
-      "Xingyi Yang"
+      "Hui Shen",
+      "Yunta Hsieh",
+      "Jianing Ma",
+      "Zhuoran Yin",
+      "Zhuhan Bao",
+      "Ziyuan Liu",
+      "Qi Han",
+      "Xiuqi Xu",
+      "Xianbang Wang",
+      "Wenhao Chai",
+      "Sihan Xu",
+      "Chenyang Zhao",
+      "Yanheng Shang",
+      "Dongfu Jiang",
+      "Rui Sun",
+      "Xingzhi Li",
+      "Chenqi Yin",
+      "Zesen Zhao",
+      "Boyuan Zheng",
+      "Jisen Li",
+      "Xiaoxia Wu",
+      "Ruoyan Zhang",
+      "Ruiyao Liu",
+      "Jing Xiong",
+      "He Xiao",
+      "Nan Zheng",
+      "Hangxiang Chen",
+      "Shengyang Tao",
+      "Deyang Luorong",
+      "Yifeng Liu",
+      "Jingxuan Zhang",
+      "Chaofan Tao",
+      "Yuren Wang",
+      "Jiaqi Mo",
+      "Rui Hu",
+      "Xing Wei",
+      "Xiaofeng Liu",
+      "Xin Xu",
+      "Han Wu",
+      "Mengyao Wen",
+      "Guobin Zhang",
+      "Shatong Zhu",
+      "Hei Ting Una Chan",
+      "Sicheng Chen",
+      "Kai Zhang",
+      "Mengkang Hu",
+      "Zhongwei Wan",
+      "Xin Wang",
+      "Chuanyang Zheng",
+      "Ziheng Zhang",
+      "Hengyuan Zhang",
+      "Zunhai Su",
+      "Kanzhi Cheng",
+      "Dehan Kong",
+      "Yian Wang",
+      "Hanrong Zhang",
+      "Jiawei Lu",
+      "Yifan Zhang",
+      "Junnan Li",
+      "Changyi Yang",
+      "Jintao Qu",
+      "Wenyao Gao",
+      "Jiaxuan Luo",
+      "Jiaxin Deng",
+      "Yuhao Chen",
+      "Xuesong Ye",
+      "Jingwen Gu",
+      "Yichi Zhang",
+      "Qun Lou",
+      "Shen Yan",
+      "Ben Athiwaratkun",
+      "Qiushi Sun",
+      "Mi Zhang",
+      "Ping Luo",
+      "Wenhu Chen",
+      "Ngai Wong"
      ],
-     "abstract": "We study a new problem of preventing object penetration in interactive video world models. To understand how existing models handle this, we introduce NoPeBench, a benchmark that evaluates how world models respond to physical obstacles. Our evaluation reveals that none of the open-source models can reliably prevent such failures. Surprisingly, however, these models already encode the information needed to predict such violations. We find that the hidden states of diffusion transformers (DiTs) can predict whether a candidate action will penetrate an obstacle. Building on this, we introduce NoPeWorld, a lightweight framework that detects and prevents penetration. Specifically, we train a small prediction head on top of a frozen DiT's hidden states to read out if a candidate action is safe or not. Unsafe actions are then replaced with safe ones that best preserve the original intent. Despite its simplicity, NoPeWorld substantially reduces the physical violation rate, averaged over six video world models, from 74% to 16%. Remarkably, our method shows zero-shot generalization to open-domain imagery, third-person viewpoints, and moving obstacles. We publicly release our code, the NoPeBench benchmark, and model weights. Project Page: https://nopeworld.github.io .",
+     "abstract": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes.",
      "primary": "cs.CV",
      "categories": [
-      "cs.CV",
-      "cs.AI"
+      "cs.CV"
      ],
-     "published": "2026-11-20T18:44:57Z",
-     "updated": "2026-11-20T18:44:57Z",
-     "comment": "20 pages, 13 figures. Code: https://github.com/yuhangdai427/NoPeWorld",
-     "code_url": "https://github.com/yuhangdai427/NoPeWorld",
+     "published": "2026-11-25T11:55:12Z",
+     "updated": "2026-11-25T11:55:12Z",
+     "comment": "NeurIPS 2026",
      "tags": [
-      "world model",
-      "video generation",
-      "diffusion",
-      "safety"
+      "agents",
+      "benchmark",
+      "multimodal"
      ],
-     "hf_upvotes": 62,
-     "ax_votes": 10,
-     "ax_visits": 201,
-     "heat": 92.1,
+     "summary": {
+      "en": "OS-Omni is a live cross-platform benchmark for computer-using agents spanning Windows, Ubuntu, macOS, iOS, Android, and Web; its v1 has 48 tasks per platform plus 12 cross-platform workflows averaging 67.54 steps. Claude Opus 5.5 scores 68.5% versus 77.3% human, trailing by over 25 points on iOS and macOS.",
+      "zh": "OS-Omni 是覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的跨平台计算机代理实时基准，v1 每平台 48 个任务、另含 12 个跨平台工作流，任务平均需 67.54 步；最强代理 Claude Opus 5.5 平均成功率 68.5%，低于人类 77.3%，在 iOS 和 macOS 上差距超过 25 点。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 100,
+     "ax_votes": 1,
+     "ax_visits": 20,
+     "heat": 103.0,
      "orgs": [
       {
-       "name": "Hong Kong Polytechnic University",
-       "ror": "0030zas98",
-       "logo": "data/logos/polyu.edu.hk.png"
+       "name": "OS-Omni Team"
       }
      ],
-     "thumb": "data/thumbs/2611.27963.jpg",
+     "thumb": "data/thumbs/2611.34232.jpg",
      "thumb_w": 640,
-     "thumb_h": 355,
+     "thumb_h": 368
+    },
+    {
+     "id": "2611.31094",
+     "title": "Unlocking the Power of Loops in Pretrained LLMs with Loop Residuals",
+     "authors": [
+      "Xuanlei Zhao",
+      "Hailun Xu",
+      "Kai Wang",
+      "Yang Luo",
+      "Yingxuan Ren",
+      "Zirui Zhu",
+      "Yuxuan Lou",
+      "Kun Xu",
+      "Yan Wang",
+      "Kanchan Sarkar",
+      "Yang You"
+     ],
+     "abstract": "Looped Transformers iterate a shared block of layers to increase computation without adding parameters, offering stronger performance and test-time scaling. However, this power has so far required training from scratch and yielded only modest gains for LLMs. Finetuning existing models into loops is far cheaper, yet also brings only marginal gains over SFT. We propose LoopRes, an effective, scalable, and simple approach that turns loops into significant and consistent gains for pretrained LLMs. Building on Attention Residuals, LoopRes lets each looped layer attend directly to the outputs of earlier loops. Since these outputs are iterates of the same layers and become harder to tell apart, we give each a trainable loop-aware key that encodes its structural identity. Attending to all earlier loops also lets layers skip intermediate ones, so we restrict each layer to a residual window of the latest W loops, forcing every loop to build incrementally on recent ones. Across 6 pretrained LLMs from 3 model families and 9 benchmarks, LoopRes delivers significant and consistent gains: at 2x compute, it improves Qwen3-1.7B-Base by 29.1% over SFT, more than doubling the gain of the state-of-the-art baseline. The gains hold on larger models up to 30B and across all three families. More importantly, from 1.7B to 8B, LoopRes scales more steeply than SFT as compute grows, reaching a higher ceiling while needing less compute on long outputs. These results establish LoopRes as an effective looping approach, delivering both better performance and better test-time scaling.",
+     "primary": "cs.CL",
+     "categories": [
+      "cs.CL",
+      "cs.LG"
+     ],
+     "published": "2026-11-23T17:38:43Z",
+     "updated": "2026-11-24T17:16:14Z",
+     "comment": "",
+     "tags": [
+      "LLM",
+      "efficiency",
+      "pretraining"
+     ],
      "summary": {
-      "zh": "针对交互式视频世界模型中的物体穿透问题，构建 NoPeBench 基准并发现冻结 DiT 的隐状态已能预测碰撞，据此训练轻量预测头筛除不安全动作并替换为安全动作，在六个世界模型上将物理违规率从 74% 降至 16%。",
-      "en": "NoPeBench benchmark reveals object penetration in interactive video world models; NoPeWorld trains a small head on frozen DiT hidden states to filter unsafe actions, cutting violation rates from 74% to 16% across six models."
+      "en": "LoopRes lets looped layers attend to earlier loops with trainable loop-aware keys and a residual window W; on 6 pretrained LLMs and 9 benchmarks it beats SFT by 29.1% on Qwen3-1.7B-Base at 2x compute and scales better.",
+      "zh": "LoopRes 通过让循环层关注此前各循环输出并引入可训练循环感知 key、限制残差窗口 W，将循环式微调用于预训练 LLM；在 6 个模型、9 个基准上，2 倍计算下 Qwen3-1.7B-Base 较 SFT 提升 29.1%，超过最强基线增益两倍，且在 30B 以内及三个模型家族上稳定，测试时扩展更优。"
      },
-     "summary_source": "deepseek-flash"
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 25,
+     "ax_votes": 34,
+     "ax_visits": 351,
+     "heat": 94.1,
+     "orgs": [
+      {
+       "name": "NUS"
+      },
+      {
+       "name": "Independent Researcher"
+      }
+     ],
+     "thumb": "data/thumbs/2611.31094.jpg",
+     "thumb_w": 618,
+     "thumb_h": 440
     }
    ]
   }

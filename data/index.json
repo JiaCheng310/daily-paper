@@ -1,6 +1,6 @@
 {
  "title": "Daily Paper",
- "updated_at": "2026-11-27T13:07:03+00:00",
+ "updated_at": "2026-11-27T19:06:22+00:00",
  "default_category": "all",
  "categories": [
   {
@@ -54,27 +54,27 @@
  "days": [
   {
    "date": "2026-11-25",
-   "count": 189
+   "count": 214
   },
   {
    "date": "2026-11-24",
-   "count": 147
+   "count": 172
   },
   {
    "date": "2026-11-23",
-   "count": 128
+   "count": 135
   },
   {
    "date": "2026-11-22",
-   "count": 31
+   "count": 33
   },
   {
    "date": "2026-11-21",
-   "count": 29
+   "count": 30
   },
   {
    "date": "2026-11-20",
-   "count": 40
+   "count": 41
   },
   {
    "date": "2026-11-19",

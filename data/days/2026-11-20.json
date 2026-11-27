@@ -26,23 +26,22 @@
     "RL",
     "reasoning"
    ],
-   "ax_votes": 92,
-   "ax_visits": 1890,
-   "heat": 281.0,
+   "summary": {
+    "en": "Training neurosymbolic LM harnesses like RLM with RL on short tasks generalizes to 2-64x longer ones; RLM-27B, trained on synthetic data, beats Qwen3.8-27B by 26.9% on CTC-Bench and ExpertLongBench with ~2x fewer inference tokens.",
+    "zh": "研究以神经符号式 harness 管理上下文的组合泛化能力：仅用短任务强化学习训练 RLM，即可泛化到长 2-64 倍的任务；用合成数据训练 RLM-27B，在 CTC-Bench 和 ExpertLongBench 上平均提升 Qwen3.8-27B 26.9%，推理 token 约减半。"
+   },
+   "summary_source": "deepseek-flash",
+   "ax_votes": 99,
+   "ax_visits": 1954,
+   "heat": 294.4,
    "orgs": [
     {
-     "name": "MIT CSAIL",
-     "ror": "01e85r662"
+     "name": "MIT CSAIL"
     }
    ],
    "thumb": "data/thumbs/2611.28298.jpg",
    "thumb_w": 640,
-   "thumb_h": 346,
-   "summary": {
-    "zh": "研究以神经符号式 harness 管理上下文的组合泛化能力：仅用短任务强化学习训练 RLM，即可泛化到长 2-64 倍的任务；用合成数据训练 RLM-27B，在 CTC-Bench 和 ExpertLongBench 上平均提升 Qwen3.8-27B 26.9%，推理 token 约减半。",
-    "en": "Training neurosymbolic LM harnesses like RLM with RL on short tasks generalizes to 2-64x longer ones; RLM-27B, trained on synthetic data, beats Qwen3.8-27B by 26.9% on CTC-Bench and ExpertLongBench with ~2x fewer inference tokens."
-   },
-   "summary_source": "deepseek-flash"
+   "thumb_h": 346
   },
   {
    "id": "2611.27193",
@@ -76,36 +75,32 @@
     "efficiency",
     "theory"
    ],
+   "summary": {
+    "en": "CmHC geometrically contracts the Birkhoff polytope inward to mix residual streams, mitigating under- and over-mixing; it stabilizes pretraining of dense and MoE models and cuts hyper-connection latency by up to 44.8% on Ascend NPUs.",
+    "zh": "cmHC 通过将 Birkhoff 多面体几何收缩到内部来混合残差流，缓解 under-mixing 与 over-mixing 的权衡，在稠密和 MoE 模型预训练中稳定梯度传播，并在 Ascend NPU 上将超连接执行延迟降低最多 44.8%。"
+   },
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 94,
    "ax_votes": 6,
-   "ax_visits": 80,
-   "heat": 108.0,
+   "ax_visits": 83,
+   "heat": 108.3,
    "orgs": [
     {
-     "name": "China Telecom"
+     "name": "Xingchen AGI Lab"
     },
     {
-     "logo": "data/logos/hkust.edu.hk.png",
-     "name": "HKUST",
-     "ror": "00q4vv597"
+     "name": "HKUST"
     },
     {
-     "name": "Harbin Institute of Technology",
-     "ror": "01yqg2h08"
+     "name": "Harbin Institute of Technology (Shenzhen)"
     },
     {
-     "name": "Huawei",
-     "logo": "data/logos/huawei.com.png"
+     "name": "Huawei Technologies"
     }
    ],
    "thumb": "data/thumbs/2611.27193.jpg",
    "thumb_w": 640,
-   "thumb_h": 310,
-   "summary": {
-    "zh": "cmHC 通过将 Birkhoff 多面体几何收缩到内部来混合残差流，缓解 under-mixing 与 over-mixing 的权衡，在稠密和 MoE 模型预训练中稳定梯度传播，并在 Ascend NPU 上将超连接执行延迟降低最多 44.8%。",
-    "en": "CmHC geometrically contracts the Birkhoff polytope inward to mix residual streams, mitigating under- and over-mixing; it stabilizes pretraining of dense and MoE models and cuts hyper-connection latency by up to 44.8% on Ascend NPUs."
-   },
-   "summary_source": "deepseek-flash"
+   "thumb_h": 310
   },
   {
    "id": "2611.27963",
@@ -133,25 +128,23 @@
     "diffusion",
     "safety"
    ],
+   "summary": {
+    "en": "NoPeBench benchmark reveals object penetration in interactive video world models; NoPeWorld trains a small head on frozen DiT hidden states to filter unsafe actions, cutting violation rates from 74% to 16% across six models.",
+    "zh": "针对交互式视频世界模型中的物体穿透问题，构建 NoPeBench 基准并发现冻结 DiT 的隐状态已能预测碰撞，据此训练轻量预测头筛除不安全动作并替换为安全动作，在六个世界模型上将物理违规率从 74% 降至 16%。"
+   },
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 62,
    "ax_votes": 10,
-   "ax_visits": 201,
-   "heat": 92.1,
+   "ax_visits": 203,
+   "heat": 92.3,
    "orgs": [
     {
-     "name": "Hong Kong Polytechnic University",
-     "ror": "0030zas98",
-     "logo": "data/logos/polyu.edu.hk.png"
+     "name": "Hong Kong Polytechnic University"
     }
    ],
    "thumb": "data/thumbs/2611.27963.jpg",
    "thumb_w": 640,
-   "thumb_h": 355,
-   "summary": {
-    "zh": "针对交互式视频世界模型中的物体穿透问题，构建 NoPeBench 基准并发现冻结 DiT 的隐状态已能预测碰撞，据此训练轻量预测头筛除不安全动作并替换为安全动作，在六个世界模型上将物理违规率从 74% 降至 16%。",
-    "en": "NoPeBench benchmark reveals object penetration in interactive video world models; NoPeWorld trains a small head on frozen DiT hidden states to filter unsafe actions, cutting violation rates from 74% to 16% across six models."
-   },
-   "summary_source": "deepseek-flash"
+   "thumb_h": 355
   },
   {
    "id": "2611.27973",
@@ -176,210 +169,26 @@
     "efficiency",
     "pretraining"
    ],
+   "summary": {
+    "en": "MemOnce caches only compact final-layer hidden states and decodes them back into KV caches, with layer-shared sparse memory attention; adapting Qwen3.5-4B cuts memory cache 1313x and prefill latency 6.9x at 1M context.",
+    "zh": "MemOnce 通过内存编码器-解码器仅缓存末层少量隐状态为紧凑记忆表示并按需解码回 KV 缓存，配合跨层仅计算一次稀疏索引的内存稀疏注意力，将 Qwen3.5-4B 适配后 1M 上下文下记忆缓存降低 1313 倍、prefill 延迟降低 6.9 倍，吞吐提升 3.5 倍、记忆性能提升 5.77%。"
+   },
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 30,
-   "ax_votes": 16,
-   "ax_visits": 198,
-   "heat": 65.8,
+   "ax_votes": 18,
+   "ax_visits": 215,
+   "heat": 69.5,
    "orgs": [
     {
-     "name": "Nanjing University",
-     "ror": "01rxvg760"
+     "name": "Nanjing University"
     },
     {
-     "name": "University of Science and Technology of China",
-     "ror": "04c4dkn09"
+     "name": "University of Science and Technology of China"
     }
    ],
    "thumb": "data/thumbs/2611.27973.jpg",
    "thumb_w": 522,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "MemOnce 通过内存编码器-解码器仅缓存末层少量隐状态为紧凑记忆表示并按需解码回 KV 缓存，配合跨层仅计算一次稀疏索引的内存稀疏注意力，将 Qwen3.5-4B 适配后 1M 上下文下记忆缓存降低 1313 倍、prefill 延迟降低 6.9 倍，吞吐提升 3.5 倍、记忆性能提升 5.77%。",
-    "en": "MemOnce caches only compact final-layer hidden states and decodes them back into KV caches, with layer-shared sparse memory attention; adapting Qwen3.5-4B cuts memory cache 1313x and prefill latency 6.9x at 1M context."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.26954",
-   "title": "Learning Video Foresight Reasoning from Unlabeled Videos via On-Policy Self-Distillation",
-   "authors": [
-    "Jingchen Sun",
-    "Jiaxing Zhang",
-    "Qingqiao Hu",
-    "Dingqiang Ye",
-    "Yuqi Jia",
-    "Yijun Liang",
-    "Di Fu",
-    "Yunjie Tian",
-    "Dongdi Zhao",
-    "Changyou Chen"
-   ],
-   "abstract": "Video foresight reasoning requires vision-language models to anticipate future events or next actions from currently observed videos. Existing methods fit future captions, rationales, or full visual states, but face two limitations. First, they rely on annotations or external large models for supervision, limiting scalability. We address this with an on-policy self-distillation framework that turns past-future video pairs into a natural self-supervised signal without extra annotations or LLM supervision. Second, they treat the whole future clip as equally valuable, although most of it is irrelevant context information. We address this by defining a foresight score, from which we obtain a contrastive privilege advantage that drives the model to learn the most valuable future information. Since the score is intractable, we optimize a tractable lower-bound surrogate that interpolates this advantage, computed between the true and a random reference future, with a teacher-student distillation advantage; together, they amplify decision-relevant content information and suppress irrelevant context information. We call the resulting framework Future-OPSD. On open-ended prediction and closed-ended planning, Future-OPSD improves base models by up to 14.2 and 15.9 points without compromising general video understanding. Code will be available at https://jingchensun.github.io/future-opsd/",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-20T01:08:12Z",
-   "updated": "2026-11-20T01:08:12Z",
-   "comment": "",
-   "tags": [
-    "VLM",
-    "reasoning",
-    "video generation",
-    "efficiency"
-   ],
-   "hf_upvotes": 43,
-   "ax_votes": 3,
-   "ax_visits": 42,
-   "heat": 50.2,
-   "orgs": [
-    {
-     "name": "University at Buffalo",
-     "ror": "01y64my43"
-    },
-    {
-     "name": "Stony Brook University",
-     "ror": "05qghxh33",
-     "logo": "data/logos/stonybrook.edu.png"
-    },
-    {
-     "name": "Johns Hopkins University",
-     "ror": "00za53h95",
-     "logo": "data/logos/jhu.edu.png"
-    },
-    {
-     "name": "Duke University",
-     "ror": "00py81415",
-     "logo": "data/logos/duke.edu.png"
-    },
-    {
-     "name": "University of Maryland, College Park",
-     "ror": "047s2c258",
-     "logo": "data/logos/umd.edu.png"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26954.jpg",
-   "thumb_w": 429,
-   "thumb_h": 267,
-   "summary": {
-    "zh": "Future-OPSD 用 on-policy 自蒸馏把无标注的过去-未来视频对转成自监督信号，并用对比式特权优势聚焦关键未来信息，在开放式预测和封闭式规划上分别比基座模型最高提升 14.2 和 15.9 分。",
-    "en": "Future-OPSD turns unlabeled past-future video pairs into on-policy self-distillation signals and uses a contrastive privilege advantage to focus on decision-relevant future content, improving base models by up to 14.2 and 15.9 points on open-ended prediction and closed-ended planning."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.28202",
-   "title": "AutoPILOT: A Visual Agent Harness for Real-Time Gameplay",
-   "authors": [
-    "Mark Zhao",
-    "Pengcheng Wang",
-    "Rui Yang",
-    "Jiarui Yao",
-    "Xirui Jiang",
-    "Yuxi Chen",
-    "Bingxuan Li",
-    "Hanyang Chen",
-    "Ke Yang",
-    "Manling Li",
-    "Tong Zhang",
-    "Huan Zhang"
-   ],
-   "abstract": "Multimodal foundation models can play video games well when the game waits for them, but often fail when it keeps running. We find that much of this gap lies in the harness, which decides what the model sees, what it remembers, and how its outputs become actions over time. Existing harnesses such as VISTA improve the first two, yet turn each model call into at most one action, so the agent acts only as often as its model thinks. We introduce AutoPILOT, which changes the third: in each model call, the model can send a primitive action, start an open-loop macro, or write a closed-loop controller that keeps playing from the screen without further model calls until it hands control back. To evaluate agents in real-time games, we build AFK-Bench, 120 diverse browser games grouped by how they respond to inaction and playable in real time or with the clock paused. With GPT-6.1 Sol under the same budgets, AutoPILOT reaches 68.6% real-time success against 38.3% for VISTA, and on GameWorld it keeps 80.0% in real time while VISTA drops from 84.1% to 42.9%. Its gains hold across closed and open-source models, and it reaches VISTA's final success rate at a fifth of its API cost. Our results suggest that how a harness turns model outputs into actions over time is a central yet underexplored part of agent design, and we hope AutoPILOT and AFK-Bench will serve as a foundation for agents in a world that does not wait.",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI"
-   ],
-   "published": "2026-11-20T18:56:49Z",
-   "updated": "2026-11-25T00:54:12Z",
-   "comment": "33 pages, 10 figures, 21 tables. Project page: https://autopilot-harness.github.io/",
-   "tags": [
-    "agents",
-    "multimodal",
-    "benchmark",
-    "VLM"
-   ],
-   "hf_upvotes": 35,
-   "ax_votes": 3,
-   "ax_visits": 35,
-   "heat": 41.5,
-   "orgs": [
-    {
-     "logo": "data/logos/illinois.edu.png",
-     "name": "University of Illinois Urbana-Champaign",
-     "ror": "047426m28"
-    },
-    {
-     "name": "Georgia Institute of Technology",
-     "ror": "01zkghx44",
-     "logo": "data/logos/gatech.edu.png"
-    },
-    {
-     "name": "Northwestern University",
-     "ror": "000e0be47",
-     "logo": "data/logos/northwestern.edu.png"
-    }
-   ],
-   "thumb": "data/thumbs/2611.28202.jpg",
-   "thumb_w": 397,
-   "thumb_h": 430,
-   "summary": {
-    "zh": "AutoPILOT 把 harness 的模型输出转成持续动作：模型可发原语动作、启动开环宏或写闭环控制器，在无新模型调用下继续玩；新建 AFK-Bench（120 款浏览器游戏），GPT-6.1 Sol 实时成功率 68.6%，VISTA 为 38.3%，GameWorld 保持 80.0% 而 VISTA 跌至 42.9%，并以五分之一 API 成本达到 VISTA 最终成功率。",
-    "en": "AutoPILOT lets each model call emit a primitive action, an open-loop macro, or a closed-loop controller that keeps playing without further calls. On new AFK-Bench, GPT-6.1 Sol hits 68.6% real-time success versus VISTA's 38.3%, and 80.0% on GameWorld."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.27689",
-   "title": "Embodied-Harness: Towards Recursive Self-Improvement for Robotic Manipulation",
-   "authors": [
-    "Zhenxuan Fan",
-    "Zhuoya Wang",
-    "Yuqian Yuan",
-    "Wenqiao Zhang",
-    "Juncheng Li",
-    "Jun Xiao",
-    "Siliang Tang",
-    "Yueting Zhuang"
-   ],
-   "abstract": "Vision-language model (VLM)-based agents offer a promising approach to robotic manipulation, yet remain limited by inadequate memory organization, uncertain failure attribution, and limited reuse of execution experience. We propose Embodied-Harness, a dual-agent framework that improves manipulation by refining the execution harness without updating model parameters. The Actor interacts with the environment through a robot-control interface, while the Reflector converts execution evidence into reusable operational guidance. Hierarchical Memory Architecture maintains short-term execution context and long-term experiential knowledge to support execution and reflection. Evidence-based Experience Reflection grounds failure diagnosis in observed interactions, while Recursive Harness Self-Improvement refines operational guidance across successive attempts. Experiments on RoboTwin 2.0, RoboSPA, and RMBench demonstrate the effectiveness of Embodied-Harness in generalization under environmental variations, spatial reasoning, long-horizon planning, and memory-dependent manipulation. Our method achieves success rates of 82.4%, 76.7%, and 94.4% on the three benchmarks, respectively. Real-world evaluation further yields an average success rate of 96.7% across three manipulation tasks. These results highlight the potential of Embodied-Harness to improve robotic manipulation through experience-driven harness self-improvement.",
-   "primary": "cs.RO",
-   "categories": [
-    "cs.RO",
-    "cs.AI",
-    "cs.CV",
-    "cs.MA"
-   ],
-   "published": "2026-11-20T14:55:07Z",
-   "updated": "2026-11-23T03:37:11Z",
-   "comment": "",
-   "tags": [
-    "robotics",
-    "manipulation",
-    "agents",
-    "VLM"
-   ],
-   "hf_upvotes": 8,
-   "ax_votes": 12,
-   "ax_visits": 174,
-   "heat": 37.4,
-   "orgs": [
-    {
-     "name": "Zhejiang University",
-     "ror": "00a2xv884"
-    },
-    {
-     "name": "Huazhong University of Science and Technology",
-     "ror": "00p991c53"
-    }
-   ],
-   "thumb": "data/thumbs/2611.27689.jpg",
-   "thumb_w": 640,
-   "thumb_h": 297,
-   "summary": {
-    "zh": "Embodied-Harness 用 Actor–Reflector 双智能体在不更新模型参数的情况下递归精炼执行框架，并通过分层记忆和基于证据的失败归因进行经验反思，在 RoboTwin 2.0、RoboSPA、RMBench 上分别达到 82.4%、76.7%、94.4% 的成功率，真实世界三项任务平均成功率达 96.7%。",
-    "en": "Embodied-Harness uses an Actor–Reflector dual-agent framework to recursively refine the execution harness without parameter updates, combining hierarchical memory and evidence-based failure reflection; it achieves 82.4%, 76.7%, and 94.4% success on RoboTwin 2.0, RoboSPA, and RMBench, and 96.7% real-world average."
-   },
-   "summary_source": "deepseek-flash"
+   "thumb_h": 440
   },
   {
    "id": "2611.27376",
@@ -429,56 +238,209 @@
     "efficiency",
     "alignment"
    ],
+   "summary": {
+    "en": "CSPD freezes the pre-RL backbone, distills each RL expert into an independent soft prompt, and composes experts by concatenating prompts without joint training, matching MOPD (67.83 vs. 67.79) and reaching 2.40x LoRA throughput.",
+    "zh": "CSPD 冻结 RL 前的基座模型，将每个 RL 专家独立蒸馏为一个 soft prompt，再通过拼接 prompt 组合专家而无需联合训练；单个 prompt 在 23 个数学、代码、agent 设置中的 22 个恢复至少 90% 的教师提升，完整组合在多专家设置下达到 67.83，与 MOPD 的 67.79 持平，吞吐量为未适配基座的 1.5% 以内、是 rank-4 LoRA 的 2.40 倍。"
+   },
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 33,
    "ax_votes": 10,
-   "ax_visits": 145,
-   "heat": 57.5,
+   "ax_visits": 147,
+   "heat": 57.7,
    "orgs": [
     {
-     "name": "University of California, Santa Barbara",
-     "ror": "02t274463"
+     "name": "UC Santa Barbara"
     },
     {
-     "logo": "data/logos/cmu.edu.png",
-     "name": "Carnegie Mellon University",
-     "ror": "05x2bcf33"
+     "name": "Carnegie Mellon University"
     },
     {
-     "name": "University of California, Santa Cruz",
-     "ror": "03s65by71",
-     "logo": "data/logos/ucsc.edu.png"
+     "name": "UC Santa Cruz"
     },
     {
-     "name": "Northwestern University",
-     "ror": "000e0be47",
-     "logo": "data/logos/northwestern.edu.png"
+     "name": "Northwestern University"
     },
     {
-     "logo": "data/logos/nvidia.com.png",
      "name": "NVIDIA"
     },
     {
-     "logo": "data/logos/illinois.edu.png",
-     "name": "University of Illinois Urbana-Champaign",
-     "ror": "047426m28"
+     "name": "University of Illinois Urbana-Champaign"
     },
     {
      "name": "Independent Researcher"
     },
     {
-     "name": "University of California, Los Angeles",
-     "ror": "046rm7j60",
-     "logo": "data/logos/ucla.edu.png"
+     "name": "UC Los Angeles"
+    },
+    {
+     "name": "University of Michigan"
+    },
+    {
+     "name": "Princeton University"
+    },
+    {
+     "name": "Mind Lab"
+    },
+    {
+     "name": "Columbia University"
+    },
+    {
+     "name": "Apple"
     }
    ],
    "thumb": "data/thumbs/2611.27376.jpg",
    "thumb_w": 640,
-   "thumb_h": 265,
+   "thumb_h": 265
+  },
+  {
+   "id": "2611.26954",
+   "title": "Learning Video Foresight Reasoning from Unlabeled Videos via On-Policy Self-Distillation",
+   "authors": [
+    "Jingchen Sun",
+    "Jiaxing Zhang",
+    "Qingqiao Hu",
+    "Dingqiang Ye",
+    "Yuqi Jia",
+    "Yijun Liang",
+    "Di Fu",
+    "Yunjie Tian",
+    "Dongdi Zhao",
+    "Changyou Chen"
+   ],
+   "abstract": "Video foresight reasoning requires vision-language models to anticipate future events or next actions from currently observed videos. Existing methods fit future captions, rationales, or full visual states, but face two limitations. First, they rely on annotations or external large models for supervision, limiting scalability. We address this with an on-policy self-distillation framework that turns past-future video pairs into a natural self-supervised signal without extra annotations or LLM supervision. Second, they treat the whole future clip as equally valuable, although most of it is irrelevant context information. We address this by defining a foresight score, from which we obtain a contrastive privilege advantage that drives the model to learn the most valuable future information. Since the score is intractable, we optimize a tractable lower-bound surrogate that interpolates this advantage, computed between the true and a random reference future, with a teacher-student distillation advantage; together, they amplify decision-relevant content information and suppress irrelevant context information. We call the resulting framework Future-OPSD. On open-ended prediction and closed-ended planning, Future-OPSD improves base models by up to 14.2 and 15.9 points without compromising general video understanding. Code will be available at https://jingchensun.github.io/future-opsd/",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-20T01:08:12Z",
+   "updated": "2026-11-20T01:08:12Z",
+   "comment": "",
+   "tags": [
+    "VLM",
+    "reasoning",
+    "video generation",
+    "efficiency"
+   ],
    "summary": {
-    "zh": "CSPD 冻结 RL 前的基座模型，将每个 RL 专家独立蒸馏为一个 soft prompt，再通过拼接 prompt 组合专家而无需联合训练；单个 prompt 在 23 个数学、代码、agent 设置中的 22 个恢复至少 90% 的教师提升，完整组合在多专家设置下达到 67.83，与 MOPD 的 67.79 持平，吞吐量为未适配基座的 1.5% 以内、是 rank-4 LoRA 的 2.40 倍。",
-    "en": "CSPD freezes the pre-RL backbone, distills each RL expert into an independent soft prompt, and composes experts by concatenating prompts without joint training, matching MOPD (67.83 vs. 67.79) and reaching 2.40x LoRA throughput."
+    "en": "Future-OPSD turns unlabeled past-future video pairs into on-policy self-distillation signals and uses a contrastive privilege advantage to focus on decision-relevant future content, improving base models by up to 14.2 and 15.9 points on open-ended prediction and closed-ended planning.",
+    "zh": "Future-OPSD 用 on-policy 自蒸馏把无标注的过去-未来视频对转成自监督信号，并用对比式特权优势聚焦关键未来信息，在开放式预测和封闭式规划上分别比基座模型最高提升 14.2 和 15.9 分。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 43,
+   "ax_votes": 3,
+   "ax_visits": 43,
+   "heat": 50.3,
+   "orgs": [
+    {
+     "name": "University"
+    },
+    {
+     "name": "Duke University University of Maryland"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26954.jpg",
+   "thumb_w": 429,
+   "thumb_h": 267
+  },
+  {
+   "id": "2611.28202",
+   "title": "AutoPILOT: A Visual Agent Harness for Real-Time Gameplay",
+   "authors": [
+    "Mark Zhao",
+    "Pengcheng Wang",
+    "Rui Yang",
+    "Jiarui Yao",
+    "Xirui Jiang",
+    "Yuxi Chen",
+    "Bingxuan Li",
+    "Hanyang Chen",
+    "Ke Yang",
+    "Manling Li",
+    "Tong Zhang",
+    "Huan Zhang"
+   ],
+   "abstract": "Multimodal foundation models can play video games well when the game waits for them, but often fail when it keeps running. We find that much of this gap lies in the harness, which decides what the model sees, what it remembers, and how its outputs become actions over time. Existing harnesses such as VISTA improve the first two, yet turn each model call into at most one action, so the agent acts only as often as its model thinks. We introduce AutoPILOT, which changes the third: in each model call, the model can send a primitive action, start an open-loop macro, or write a closed-loop controller that keeps playing from the screen without further model calls until it hands control back. To evaluate agents in real-time games, we build AFK-Bench, 120 diverse browser games grouped by how they respond to inaction and playable in real time or with the clock paused. With GPT-6.1 Sol under the same budgets, AutoPILOT reaches 68.6% real-time success against 38.3% for VISTA, and on GameWorld it keeps 80.0% in real time while VISTA drops from 84.1% to 42.9%. Its gains hold across closed and open-source models, and it reaches VISTA's final success rate at a fifth of its API cost. Our results suggest that how a harness turns model outputs into actions over time is a central yet underexplored part of agent design, and we hope AutoPILOT and AFK-Bench will serve as a foundation for agents in a world that does not wait.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-20T18:56:49Z",
+   "updated": "2026-11-25T00:54:12Z",
+   "comment": "33 pages, 10 figures, 21 tables. Project page: https://autopilot-harness.github.io/",
+   "tags": [
+    "agents",
+    "multimodal",
+    "benchmark",
+    "VLM"
+   ],
+   "summary": {
+    "en": "AutoPILOT lets each model call emit a primitive action, an open-loop macro, or a closed-loop controller that keeps playing without further calls. On new AFK-Bench, GPT-6.1 Sol hits 68.6% real-time success versus VISTA's 38.3%, and 80.0% on GameWorld.",
+    "zh": "AutoPILOT 把 harness 的模型输出转成持续动作：模型可发原语动作、启动开环宏或写闭环控制器，在无新模型调用下继续玩；新建 AFK-Bench（120 款浏览器游戏），GPT-6.1 Sol 实时成功率 68.6%，VISTA 为 38.3%，GameWorld 保持 80.0% 而 VISTA 跌至 42.9%，并以五分之一 API 成本达到 VISTA 最终成功率。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 35,
+   "ax_votes": 4,
+   "ax_visits": 37,
+   "heat": 42.7,
+   "orgs": [
+    {
+     "name": "University of Illinois Urbana-Champaign"
+    }
+   ],
+   "thumb": "data/thumbs/2611.28202.jpg",
+   "thumb_w": 397,
+   "thumb_h": 430
+  },
+  {
+   "id": "2611.27689",
+   "title": "Embodied-Harness: Towards Recursive Self-Improvement for Robotic Manipulation",
+   "authors": [
+    "Zhenxuan Fan",
+    "Zhuoya Wang",
+    "Yuqian Yuan",
+    "Wenqiao Zhang",
+    "Juncheng Li",
+    "Jun Xiao",
+    "Siliang Tang",
+    "Yueting Zhuang"
+   ],
+   "abstract": "Vision-language model (VLM)-based agents offer a promising approach to robotic manipulation, yet remain limited by inadequate memory organization, uncertain failure attribution, and limited reuse of execution experience. We propose Embodied-Harness, a dual-agent framework that improves manipulation by refining the execution harness without updating model parameters. The Actor interacts with the environment through a robot-control interface, while the Reflector converts execution evidence into reusable operational guidance. Hierarchical Memory Architecture maintains short-term execution context and long-term experiential knowledge to support execution and reflection. Evidence-based Experience Reflection grounds failure diagnosis in observed interactions, while Recursive Harness Self-Improvement refines operational guidance across successive attempts. Experiments on RoboTwin 2.0, RoboSPA, and RMBench demonstrate the effectiveness of Embodied-Harness in generalization under environmental variations, spatial reasoning, long-horizon planning, and memory-dependent manipulation. Our method achieves success rates of 82.4%, 76.7%, and 94.4% on the three benchmarks, respectively. Real-world evaluation further yields an average success rate of 96.7% across three manipulation tasks. These results highlight the potential of Embodied-Harness to improve robotic manipulation through experience-driven harness self-improvement.",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV",
+    "cs.MA"
+   ],
+   "published": "2026-11-20T14:55:07Z",
+   "updated": "2026-11-23T03:37:11Z",
+   "comment": "",
+   "tags": [
+    "robotics",
+    "manipulation",
+    "agents",
+    "VLM"
+   ],
+   "summary": {
+    "en": "Embodied-Harness uses an Actor–Reflector dual-agent framework to recursively refine the execution harness without parameter updates, combining hierarchical memory and evidence-based failure reflection; it achieves 82.4%, 76.7%, and 94.4% success on RoboTwin 2.0, RoboSPA, and RMBench, and 96.7% real-world average.",
+    "zh": "Embodied-Harness 用 Actor–Reflector 双智能体在不更新模型参数的情况下递归精炼执行框架，并通过分层记忆和基于证据的失败归因进行经验反思，在 RoboTwin 2.0、RoboSPA、RMBench 上分别达到 82.4%、76.7%、94.4% 的成功率，真实世界三项任务平均成功率达 96.7%。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 8,
+   "ax_votes": 14,
+   "ax_visits": 179,
+   "heat": 39.9,
+   "orgs": [
+    {
+     "name": "Zhejiang University"
+    },
+    {
+     "name": "Huazhong University of Science and Technology"
+    }
+   ],
+   "thumb": "data/thumbs/2611.27689.jpg",
+   "thumb_w": 640,
+   "thumb_h": 297
   },
   {
    "id": "2611.27962",
@@ -501,29 +463,26 @@
     "efficiency",
     "pretraining"
    ],
-   "hf_upvotes": 2,
-   "ax_votes": 8,
-   "ax_visits": 98,
-   "heat": 19.8,
+   "summary": {
+    "en": "Model Carving learns scalar gates to prune Transformer sublayers during pretraining, jointly learning weights and topology; carved models beat dense models trained with up to 1.7x more compute, cutting FLOPs up to 34% and decoding 1.6x faster.",
+    "zh": "Model Carving 用可学习标量门在预训练中剪除 Transformer 子层，从而在单次训练里同时学权重与架构；从 140M 到 2.7B 参数预训练，同等算力下验证损失低于最多多用 1.7 倍算力的稠密模型，每 token FLOPs 最多降 34%，解码快 1.6 倍。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 3,
+   "ax_votes": 11,
+   "ax_visits": 110,
+   "heat": 25.0,
    "orgs": [
     {
-     "name": "Harvard University",
-     "ror": "03vek6s52",
-     "logo": "data/logos/harvard.edu.png"
+     "name": "Harvard University"
     },
     {
-     "name": "New York University",
-     "ror": "0190ak572"
+     "name": "New York University"
     }
    ],
    "thumb": "data/thumbs/2611.27962.jpg",
    "thumb_w": 640,
-   "thumb_h": 202,
-   "summary": {
-    "zh": "Model Carving 用可学习标量门在预训练中剪除 Transformer 子层，从而在单次训练里同时学权重与架构；从 140M 到 2.7B 参数预训练，同等算力下验证损失低于最多多用 1.7 倍算力的稠密模型，每 token FLOPs 最多降 34%，解码快 1.6 倍。",
-    "en": "Model Carving learns scalar gates to prune Transformer sublayers during pretraining, jointly learning weights and topology; carved models beat dense models trained with up to 1.7x more compute, cutting FLOPs up to 34% and decoding 1.6x faster."
-   },
-   "summary_source": "deepseek-flash"
+   "thumb_h": 202
   },
   {
    "id": "2611.27673",
@@ -558,8 +517,8 @@
     "dataset"
    ],
    "ax_votes": 7,
-   "ax_visits": 108,
-   "heat": 17.8,
+   "ax_visits": 115,
+   "heat": 20.5,
    "orgs": [
     {
      "name": "Tencent",
@@ -570,10 +529,54 @@
    "thumb_w": 440,
    "thumb_h": 440,
    "summary": {
-    "zh": "腾讯混元发布 Hy-MT3 多语言翻译模型族（1.8B/7B/30B-A3B MoE），真实场景数据上误译降 43%、漏译增译降 74%、指令遵循错误降 40%，语种从 38 扩至 102；30B-A3B 仅激活 3B 参数，非思考模式下综合性能超过 Qwen3.8-Max、Kimi-K3.1-Pro、DeepSeek-V4.1-Flash，并开源基于评分量表的评测套件 TransRubric。",
-    "en": "Tencent Hunyuan's Hy-MT3 multilingual translation family (1.8B/7B/30B-A3B MoE) cuts mistranslations 43%, omissions/additions 74% and instruction errors 40%, expands coverage from 38 to 102 languages; the 3B-activated 30B-A3B beats Qwen3.8-Max, Kimi-K3.1-Pro and DeepSeek-V4.1-Flash in non-thinking mode, and releases the TransRubric evaluation suite."
+    "en": "Tencent Hunyuan's Hy-MT3 multilingual translation family (1.8B/7B/30B-A3B MoE) cuts mistranslations 43%, omissions/additions 74% and instruction errors 40%, expands coverage from 38 to 102 languages; the 3B-activated 30B-A3B beats Qwen3.8-Max, Kimi-K3.1-Pro and DeepSeek-V4.1-Flash in non-thinking mode, and releases the TransRubric evaluation suite.",
+    "zh": "腾讯混元发布 Hy-MT3 多语言翻译模型族（1.8B/7B/30B-A3B MoE），真实场景数据上误译降 43%、漏译增译降 74%、指令遵循错误降 40%，语种从 38 扩至 102；30B-A3B 仅激活 3B 参数，非思考模式下综合性能超过 Qwen3.8-Max、Kimi-K3.1-Pro、DeepSeek-V4.1-Flash，并开源基于评分量表的评测套件 TransRubric。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 2
+  },
+  {
+   "id": "2611.27398",
+   "title": "Taking Apart and Putting Together: Tracking Objects Through Physical Transformations",
+   "authors": [
+    "Davide Gardenal",
+    "Mingxuan Liu",
+    "Flavio Vella",
+    "Quentin Guimard",
+    "Elisa Ricci"
+   ],
+   "abstract": "We introduce Transformation Tracking and Understanding (TTU), extending video object tracking to environments where objects undergo physical assemblies and disassemblies. TTU requires continuously tracking objects through transformations, identifying new entities, maintaining a state graph of their relationships, and assigning semantic labels to transformations. While foundation models (e.g., SAM 2/3) maintain tracklets through appearance changes, they cannot update semantic identities as objects physically evolve. Prior work addresses only disassemblies, relying on expensive searches triggered only when tracking fails. We propose Tracking Instances via Proposals and Overlaps (TIPO), a training-free framework that continuously infers transformations via a generate-evaluate-judge pipeline. TIPO generates split and merge proposals from disjoint mask components, scores them against mask-decoder priors using inner and external overlap, and queries an MLLM on the top proposal for visual verification and semantic labeling. To benchmark TTU, we curate Video Instances, States, and Transformation Annotations (VISTA), a dataset including state graphs with 124 assembly and 132 disassembly events across 50 sequences and over 26,000 frames. TIPO achieves state-of-the-art tracking and state-graph accuracy on VISTA, while operating $6\\times$ to $15\\times$ faster than prior methods. Project page: https://davidegardenal.github.io/tipo-tracking",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-20T10:03:29Z",
+   "updated": "2026-11-20T10:03:29Z",
+   "comment": "Project page: https://davidegardenal.github.io/tipo-tracking",
+   "tags": [
+    "video generation",
+    "multimodal",
+    "benchmark",
+    "interpretability"
+   ],
+   "summary": {
+    "en": "TIPO, a training-free generate-evaluate-judge pipeline, tracks object assemblies and disassemblies using mask proposals, overlap scoring, and MLLM verification; on the new VISTA benchmark it achieves state-of-the-art tracking and state-graph accuracy while running 6–15× faster.",
+    "zh": "TIPO 提出无需训练、基于生成-评估-判别流程的变换跟踪框架，通过 mask 提案与重叠打分并用 MLLM 判定部件拆分与合并；在新建 VISTA（50 段视频、256 个变换事件、超 2.6 万帧）上取得最优跟踪与状态图精度，速度比此前方法快 6–15 倍。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 14,
+   "ax_votes": 1,
+   "ax_visits": 27,
+   "heat": 17.7,
+   "orgs": [
+    {
+     "name": "University of Trento"
+    }
+   ],
+   "thumb": "data/thumbs/2611.27398.jpg",
+   "thumb_w": 640,
+   "thumb_h": 360
   },
   {
    "id": "2611.27915",
@@ -602,30 +605,26 @@
     "reasoning",
     "robotics"
    ],
+   "summary": {
+    "en": "StereoVLM is a geometry-aware binocular VLM trained hierarchically from cross-view correspondence and disparity to metric depth and spatial reasoning, reaching 95.17% δ1 depth accuracy and 66.98 object-level score on Stereo3D-Bench, with 3.54-point average gains on five spatial benchmarks and +4.3 points RoboCasa manipulation success.",
+    "zh": "StereoVLM 是首个具备几何感知的双目 VLM，按跨视角对应、视差估计、标定条件度量深度、语义空间推理分层学习，在 Stereo3D-Bench 上 depth 准确率 δ1 达 95.17%、物体级均分 66.98，并在五个空间基准上平均提升 3.54 分、RoboCasa 操作成功率提升 4.3 个百分点。"
+   },
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 10,
    "ax_votes": 1,
-   "ax_visits": 62,
-   "heat": 17.2,
+   "ax_visits": 64,
+   "heat": 17.4,
    "orgs": [
     {
-     "logo": "data/logos/hkust.edu.hk.png",
-     "name": "HKUST",
-     "ror": "00q4vv597"
+     "name": "HKUST"
     },
     {
-     "name": "XPENG",
-     "ror": "05a5cgn70",
-     "logo": "data/logos/xiaopeng.com.png"
+     "name": "XPENG Robotics"
     }
    ],
    "thumb": "data/thumbs/2611.27915.jpg",
    "thumb_w": 640,
-   "thumb_h": 253,
-   "summary": {
-    "zh": "StereoVLM 是首个具备几何感知的双目 VLM，按跨视角对应、视差估计、标定条件度量深度、语义空间推理分层学习，在 Stereo3D-Bench 上 depth 准确率 δ1 达 95.17%、物体级均分 66.98，并在五个空间基准上平均提升 3.54 分、RoboCasa 操作成功率提升 4.3 个百分点。",
-    "en": "StereoVLM is a geometry-aware binocular VLM trained hierarchically from cross-view correspondence and disparity to metric depth and spatial reasoning, reaching 95.17% δ1 depth accuracy and 66.98 object-level score on Stereo3D-Bench, with 3.54-point average gains on five spatial benchmarks and +4.3 points RoboCasa manipulation success."
-   },
-   "summary_source": "deepseek-flash"
+   "thumb_h": 253
   },
   {
    "id": "2611.28244",
@@ -656,36 +655,26 @@
     "agents",
     "reasoning"
    ],
+   "summary": {
+    "en": "A systematic study of autoresearch harness design shows context folding beats recency truncation by up to 19.2%, and MLEvolver, combining context folding with skill deletion, reaches 72.7% medal rate on MLE-Bench Lite and 94% fast1 on KernelBench Level 3.",
+    "zh": "系统研究 autoresearch agent 的 harness 设计：对比上下文管理与技能管理策略，在 MLE-Bench 和 KernelBench 上发现 context folding 比近期截断基线最高提升 19.2%，结合技能删除的 MLEvolver 在 MLE-Bench Lite 达 72.7% 奖牌率、KernelBench Level 3 达 94% fast1。"
+   },
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 5,
    "ax_votes": 4,
-   "ax_visits": 67,
-   "heat": 15.7,
+   "ax_visits": 73,
+   "heat": 16.3,
    "orgs": [
     {
-     "logo": "data/logos/hkust.edu.hk.png",
-     "name": "HKUST",
-     "ror": "00q4vv597"
+     "name": "HKUST"
     },
     {
-     "name": "University of Tokyo"
-    },
-    {
-     "name": "National Taiwan University",
-     "ror": "05bqach95"
-    },
-    {
-     "name": "NVIDIA",
-     "logo": "data/logos/nvidia.com.png"
+     "name": "NVIDIA"
     }
    ],
    "thumb": "data/thumbs/2611.28244.jpg",
    "thumb_w": 566,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "系统研究 autoresearch agent 的 harness 设计：对比上下文管理与技能管理策略，在 MLE-Bench 和 KernelBench 上发现 context folding 比近期截断基线最高提升 19.2%，结合技能删除的 MLEvolver 在 MLE-Bench Lite 达 72.7% 奖牌率、KernelBench Level 3 达 94% fast1。",
-    "en": "A systematic study of autoresearch harness design shows context folding beats recency truncation by up to 19.2%, and MLEvolver, combining context folding with skill deletion, reaches 72.7% medal rate on MLE-Bench Lite and 94% fast1 on KernelBench Level 3."
-   },
-   "summary_source": "deepseek-flash"
+   "thumb_h": 440
   },
   {
    "id": "2611.27924",
@@ -738,8 +727,8 @@
     "benchmark"
    ],
    "ax_votes": 7,
-   "ax_visits": 76,
-   "heat": 14.6,
+   "ax_visits": 86,
+   "heat": 15.6,
    "orgs": [
     {
      "name": "Microsoft",
@@ -750,60 +739,8 @@
    "thumb_w": 405,
    "thumb_h": 440,
    "summary": {
-    "zh": "BioEmu2 是一个生成式模型，将静态结构预测、平衡采样与时间演化统一到同一框架，速度比分子动力学（MD）快数个数量级；自由能误差约为 1 kcal/mol，可达到 MD 参考水平；结构预测精度与顶级开源折叠模型相当；支持兆道尔顿级复合物与蛋白、核酸、配体和离子的多组分体系。",
-    "en": "BioEmu2 is a generative model unifying structure prediction, equilibrium sampling, and time evolution, sampling orders of magnitude faster than MD with free-energy errors near 1 kcal/mol and folding accuracy comparable to top open-weight models."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.27398",
-   "title": "Taking Apart and Putting Together: Tracking Objects Through Physical Transformations",
-   "authors": [
-    "Davide Gardenal",
-    "Mingxuan Liu",
-    "Flavio Vella",
-    "Quentin Guimard",
-    "Elisa Ricci"
-   ],
-   "abstract": "We introduce Transformation Tracking and Understanding (TTU), extending video object tracking to environments where objects undergo physical assemblies and disassemblies. TTU requires continuously tracking objects through transformations, identifying new entities, maintaining a state graph of their relationships, and assigning semantic labels to transformations. While foundation models (e.g., SAM 2/3) maintain tracklets through appearance changes, they cannot update semantic identities as objects physically evolve. Prior work addresses only disassemblies, relying on expensive searches triggered only when tracking fails. We propose Tracking Instances via Proposals and Overlaps (TIPO), a training-free framework that continuously infers transformations via a generate-evaluate-judge pipeline. TIPO generates split and merge proposals from disjoint mask components, scores them against mask-decoder priors using inner and external overlap, and queries an MLLM on the top proposal for visual verification and semantic labeling. To benchmark TTU, we curate Video Instances, States, and Transformation Annotations (VISTA), a dataset including state graphs with 124 assembly and 132 disassembly events across 50 sequences and over 26,000 frames. TIPO achieves state-of-the-art tracking and state-graph accuracy on VISTA, while operating $6\\times$ to $15\\times$ faster than prior methods. Project page: https://davidegardenal.github.io/tipo-tracking",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.AI"
-   ],
-   "published": "2026-11-20T10:03:29Z",
-   "updated": "2026-11-20T10:03:29Z",
-   "comment": "Project page: https://davidegardenal.github.io/tipo-tracking",
-   "tags": [
-    "video generation",
-    "multimodal",
-    "benchmark",
-    "interpretability"
-   ],
-   "hf_upvotes": 14,
-   "ax_votes": 1,
-   "ax_visits": 24,
-   "heat": 17.4,
-   "orgs": [
-    {
-     "name": "University of Trento",
-     "ror": "05trd4x28",
-     "logo": "data/logos/unitn.it.png"
-    },
-    {
-     "name": "AMIAD"
-    },
-    {
-     "name": "Fondazione Bruno Kessler",
-     "ror": "01j33xk10"
-    }
-   ],
-   "thumb": "data/thumbs/2611.27398.jpg",
-   "thumb_w": 640,
-   "thumb_h": 360,
-   "summary": {
-    "zh": "TIPO 提出无需训练、基于生成-评估-判别流程的变换跟踪框架，通过 mask 提案与重叠打分并用 MLLM 判定部件拆分与合并；在新建 VISTA（50 段视频、256 个变换事件、超 2.6 万帧）上取得最优跟踪与状态图精度，速度比此前方法快 6–15 倍。",
-    "en": "TIPO, a training-free generate-evaluate-judge pipeline, tracks object assemblies and disassemblies using mask proposals, overlap scoring, and MLLM verification; on the new VISTA benchmark it achieves state-of-the-art tracking and state-graph accuracy while running 6–15× faster."
+    "en": "BioEmu2 is a generative model unifying structure prediction, equilibrium sampling, and time evolution, sampling orders of magnitude faster than MD with free-energy errors near 1 kcal/mol and folding accuracy comparable to top open-weight models.",
+    "zh": "BioEmu2 是一个生成式模型，将静态结构预测、平衡采样与时间演化统一到同一框架，速度比分子动力学（MD）快数个数量级；自由能误差约为 1 kcal/mol，可达到 MD 参考水平；结构预测精度与顶级开源折叠模型相当；支持兆道尔顿级复合物与蛋白、核酸、配体和离子的多组分体系。"
    },
    "summary_source": "deepseek-flash"
   },
@@ -834,83 +771,28 @@
     "efficiency",
     "world model"
    ],
+   "summary": {
+    "en": "Scalable Beckmann Maps (SBM) adds classifier-free guidance and a scalable training recipe to Beckmann transport models for one-step sampling, reaching 1.6 one-step FID on ImageNet 256x256 with 3.2x fewer FLOPs than Improved-MeanFlow and 0.86 GenEval, and beating DriftWorld on robot-manipulation benchmarks.",
+    "zh": "Scalable Beckmann Maps (SBM) 将无分类器引导（CFG）与可扩展训练配方引入 Beckmann 传输模型，同时保持单次网络前向采样；在 ImageNet 256x256 上以无教师和特征损失方式从零训练，达到一步 FID 1.6，FLOPs 比 Improved-MeanFlow 基线少 3.2 倍，文本到图像 GenEval 得分 0.86，作为世界模型在两个机器人操作基准的五项指标上均优于 DriftWorld，训练算力减少 1.9–2.8 倍。"
+   },
+   "summary_source": "deepseek-flash",
    "ax_votes": 7,
-   "ax_visits": 68,
-   "heat": 13.8,
+   "ax_visits": 73,
+   "heat": 14.3,
    "orgs": [
     {
-     "name": "Harvard University",
-     "ror": "03vek6s52",
-     "logo": "data/logos/harvard.edu.png"
+     "name": "Harvard University"
     },
     {
-     "logo": "data/logos/imperial.ac.uk.png",
-     "name": "Imperial College London",
-     "ror": "041kmwe10"
+     "name": "Imperial College London"
     },
     {
-     "name": "New York University",
-     "ror": "0190ak572"
-    },
-    {
-     "name": "Capital Fund Management"
+     "name": "New York University"
     }
    ],
    "thumb": "data/thumbs/2611.28286.jpg",
    "thumb_w": 640,
-   "thumb_h": 239,
-   "summary": {
-    "zh": "Scalable Beckmann Maps (SBM) 将无分类器引导（CFG）与可扩展训练配方引入 Beckmann 传输模型，同时保持单次网络前向采样；在 ImageNet 256x256 上以无教师和特征损失方式从零训练，达到一步 FID 1.6，FLOPs 比 Improved-MeanFlow 基线少 3.2 倍，文本到图像 GenEval 得分 0.86，作为世界模型在两个机器人操作基准的五项指标上均优于 DriftWorld，训练算力减少 1.9–2.8 倍。",
-    "en": "Scalable Beckmann Maps (SBM) adds classifier-free guidance and a scalable training recipe to Beckmann transport models for one-step sampling, reaching 1.6 one-step FID on ImageNet 256x256 with 3.2x fewer FLOPs than Improved-MeanFlow and 0.86 GenEval, and beating DriftWorld on robot-manipulation benchmarks."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.28227",
-   "title": "Feedback Shortcut: Speculative Decoding for Latent Feedback Transformers",
-   "authors": [
-    "Benhao Huang",
-    "Xuezhe Ma",
-    "Hector Liu"
-   ],
-   "abstract": "Feeding each position's top-layer hidden state back into the next position's input improves Transformer performance. However, this feedback breaks speculative decoding, since verifying a drafted token requires the top-layer state from its preceding position, which forces the draft to rely on an approximate stand-in. Training the model to adapt to this stand-in can lower the exact-decoding performance ceiling, while using it at inference time further introduces approximation error. We propose Feedback Shortcut to address both bottlenecks. First, state alignment trains a lightweight projection from multi-token prediction head states to stand-ins, leaving base model training untouched. Second, pipelined correction re-evaluates each draft using its predecessor's newly computed state, a much closer proxy to true feedback. Running this correction inside the verification pass of subsequent drafts improves accuracy with zero extra calls. Across 135M and 780M scales, Feedback Shortcut stays within $10^{-4}$ bits per byte of the exact-decoding ceiling on Paloma and accelerates decoding by 2.4-2.8x with about 2% more training compute than the latent feedback Transformer. At large batch sizes, skipping correction still preserves Transformer speed and over 80% of latent feedback's gains.",
-   "primary": "cs.LG",
-   "categories": [
-    "cs.LG"
-   ],
-   "published": "2026-11-20T19:02:38Z",
-   "updated": "2026-11-20T19:02:38Z",
-   "comment": "17 pages, 8 figures, 8 tables. Code: https://github.com/ifm-ai/LoRM",
-   "code_url": "https://github.com/ifm-ai/LoRM",
-   "tags": [
-    "efficiency",
-    "LLM",
-    "pretraining"
-   ],
-   "hf_upvotes": 5,
-   "ax_votes": 3,
-   "ax_visits": 38,
-   "heat": 11.8,
-   "orgs": [
-    {
-     "logo": "data/logos/cmu.edu.png",
-     "name": "Carnegie Mellon University",
-     "ror": "05x2bcf33"
-    },
-    {
-     "logo": "data/logos/usc.edu.png",
-     "name": "University of Southern California",
-     "ror": "03taz7m60"
-    }
-   ],
-   "thumb": "data/thumbs/2611.28227.jpg",
-   "thumb_w": 618,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "Feedback Shortcut 用 state alignment 训练轻量投影，把多 token 预测头状态映射为反馈替代量，再用 pipelined correction 在验证阶段重评草稿，在 135M 和 780M 模型上将 Paloma 上的 bpb 差距控制在 10^-4 内，并实现 2.4–2.8 倍解码加速，仅增约 2% 训练算力。",
-    "en": "Feedback Shortcut combines state alignment, which projects multi-token prediction head states into feedback stand-ins, with pipelined correction that re-evaluates drafts during verification, staying within 10^-4 bits per byte of exact decoding on Paloma while speeding decoding 2.4-2.8x with ~2% extra training compute."
-   },
-   "summary_source": "deepseek-flash"
+   "thumb_h": 239
   },
   {
    "id": "2611.27319",
@@ -940,27 +822,66 @@
     "dataset",
     "benchmark"
    ],
+   "summary": {
+    "en": "SAVIOR curates sample-efficient data for high-impact financial-OCR failures and fine-tunes Qwen2.5-VL-Instruct, reaching 0.93 word recall and 0.89 document-QA F1, beating GPT-4o, Mistral-OCR, PaddleOCR-VL and DeepSeek-OCR; PaIRS measures layout fidelity.",
+    "zh": "SAVIOR 针对金融 OCR 中的旋转文本、logo 内嵌名称、细小条款与退化扫描等高频失败模式做样本高效数据筛选，并用 Qwen2.5-VL-Instruct 微调；配套的 PaIRS 指标衡量布局保真度，词召回达 0.93，文档问答 F1 为 0.89，超过 GPT-4o、Mistral-OCR、PaddleOCR-VL 和 DeepSeek-OCR。"
+   },
+   "summary_source": "deepseek-flash",
    "hf_upvotes": 11,
    "ax_votes": 0,
-   "ax_visits": 13,
-   "heat": 12.3,
+   "ax_visits": 14,
+   "heat": 12.4,
    "orgs": [
     {
      "name": "Hyperbots"
     },
     {
-     "name": "Indian Institute of Technology Bombay",
-     "ror": "02qyf5152"
+     "name": "Indian Institute of Technology Bombay"
     }
    ],
    "thumb": "data/thumbs/2611.27319.jpg",
    "thumb_w": 312,
-   "thumb_h": 440,
+   "thumb_h": 440
+  },
+  {
+   "id": "2611.28227",
+   "title": "Feedback Shortcut: Speculative Decoding for Latent Feedback Transformers",
+   "authors": [
+    "Benhao Huang",
+    "Xuezhe Ma",
+    "Hector Liu"
+   ],
+   "abstract": "Feeding each position's top-layer hidden state back into the next position's input improves Transformer performance. However, this feedback breaks speculative decoding, since verifying a drafted token requires the top-layer state from its preceding position, which forces the draft to rely on an approximate stand-in. Training the model to adapt to this stand-in can lower the exact-decoding performance ceiling, while using it at inference time further introduces approximation error. We propose Feedback Shortcut to address both bottlenecks. First, state alignment trains a lightweight projection from multi-token prediction head states to stand-ins, leaving base model training untouched. Second, pipelined correction re-evaluates each draft using its predecessor's newly computed state, a much closer proxy to true feedback. Running this correction inside the verification pass of subsequent drafts improves accuracy with zero extra calls. Across 135M and 780M scales, Feedback Shortcut stays within $10^{-4}$ bits per byte of the exact-decoding ceiling on Paloma and accelerates decoding by 2.4-2.8x with about 2% more training compute than the latent feedback Transformer. At large batch sizes, skipping correction still preserves Transformer speed and over 80% of latent feedback's gains.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-20T19:02:38Z",
+   "updated": "2026-11-20T19:02:38Z",
+   "comment": "17 pages, 8 figures, 8 tables. Code: https://github.com/ifm-ai/LoRM",
+   "code_url": "https://github.com/ifm-ai/LoRM",
+   "tags": [
+    "efficiency",
+    "LLM",
+    "pretraining"
+   ],
    "summary": {
-    "zh": "SAVIOR 针对金融 OCR 中的旋转文本、logo 内嵌名称、细小条款与退化扫描等高频失败模式做样本高效数据筛选，并用 Qwen2.5-VL-Instruct 微调；配套的 PaIRS 指标衡量布局保真度，词召回达 0.93，文档问答 F1 为 0.89，超过 GPT-4o、Mistral-OCR、PaddleOCR-VL 和 DeepSeek-OCR。",
-    "en": "SAVIOR curates sample-efficient data for high-impact financial-OCR failures and fine-tunes Qwen2.5-VL-Instruct, reaching 0.93 word recall and 0.89 document-QA F1, beating GPT-4o, Mistral-OCR, PaddleOCR-VL and DeepSeek-OCR; PaIRS measures layout fidelity."
+    "en": "Feedback Shortcut combines state alignment, which projects multi-token prediction head states into feedback stand-ins, with pipelined correction that re-evaluates drafts during verification, staying within 10^-4 bits per byte of exact decoding on Paloma while speeding decoding 2.4-2.8x with ~2% extra training compute.",
+    "zh": "Feedback Shortcut 用 state alignment 训练轻量投影，把多 token 预测头状态映射为反馈替代量，再用 pipelined correction 在验证阶段重评草稿，在 135M 和 780M 模型上将 Paloma 上的 bpb 差距控制在 10^-4 内，并实现 2.4–2.8 倍解码加速，仅增约 2% 训练算力。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 5,
+   "ax_votes": 3,
+   "ax_visits": 39,
+   "heat": 11.9,
+   "orgs": [
+    {
+     "name": "CMU"
+    }
+   ],
+   "thumb": "data/thumbs/2611.28227.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440
   },
   {
    "id": "2611.27889",
@@ -985,8 +906,8 @@
     "alignment"
    ],
    "ax_votes": 2,
-   "ax_visits": 74,
-   "heat": 9.4,
+   "ax_visits": 80,
+   "heat": 10.0,
    "orgs": [
     {
      "logo": "data/logos/ucl.ac.uk.png",
@@ -998,10 +919,53 @@
    "thumb_w": 618,
    "thumb_h": 440,
    "summary": {
-    "zh": "通过在高斯正则化 Langevin 动力学的零正则化极限下计算函数空间平衡分布，推导出源自参数对称性的重整化熵；对线性网络得到偏好奇异、低秩函数的显式熵项，对齐次激活网络发现偏好失活神经元的熵项，可能导致输出趋于零的 neural heat death，并用 neural tangent kernel 解释为慢变函数的 simplicity bias。",
-    "en": "A renormalized entropy from parameter symmetries predicts equilibrium preference for singular, low-rank functions and inactive neurons, yielding neural 'heat death'; interpreted via the neural tangent kernel as slow-variation simplicity bias."
+    "en": "A renormalized entropy from parameter symmetries predicts equilibrium preference for singular, low-rank functions and inactive neurons, yielding neural 'heat death'; interpreted via the neural tangent kernel as slow-variation simplicity bias.",
+    "zh": "通过在高斯正则化 Langevin 动力学的零正则化极限下计算函数空间平衡分布，推导出源自参数对称性的重整化熵；对线性网络得到偏好奇异、低秩函数的显式熵项，对齐次激活网络发现偏好失活神经元的熵项，可能导致输出趋于零的 neural heat death，并用 neural tangent kernel 解释为慢变函数的 simplicity bias。"
    },
    "summary_source": "deepseek-flash"
+  },
+  {
+   "id": "2611.28167",
+   "title": "VideoJSON: A Minimal Harness Beats Purpose-Built Memory for Ultra-Long Video Understanding",
+   "authors": [
+    "Wenqi Marshall Guo",
+    "Kuan-Hao Huang",
+    "Junda Chen",
+    "Hao Zhang"
+   ],
+   "abstract": "Answering questions over days or weeks of video requires searching for scattered clues across long timelines. Existing video agents rely on complex memory graphs and fixed retrieval pipelines, which restrict how the agent can search. We propose VideoJSON, a minimal harness for ultra-long video understanding that keeps the memory simple and lets a coding agent write its own search programs. During indexing, a vision-language model turns each minute of video into a single JSON record containing a dense caption and structured fields such as events, entities, places, and speech transcripts. At query time, the agent writes Python or Bash programs in a sandboxed container to filter, link, and read these records over multiple steps, without task-specific training or raw video access. On four ultra-long video benchmarks, VideoJSON with DeepSeek V4.1 Flash outperforms MAGIC-Video by 7.0, 20.0, and 24.75 points on EgoLifeQA, Ego-R1-Bench, and MM-Lifelong Week, and beats the best prior EgoMemReason score by 12.6 points. Across four policy models of increasing capability, VideoJSON's average score rises by up to 11.58 points over the weakest model, compared with at most 5.50 points for MAGIC-Video. Ablations show that both agentic code search and the structured JSON records drive these gains, while adding hourly summaries, extra tools, or video access changes the average score by less than 1.5 points. In addition, fine-tuning Qwen-3.5-Flash on 64 VideoJSON trajectories from an unrelated 100-hour livestream improves its MM-Lifelong scores by up to 8.25 points. Code will be open-sourced after publication.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-20T02:38:38Z",
+   "updated": "2026-11-20T02:38:38Z",
+   "comment": "",
+   "tags": [
+    "LLM",
+    "agents",
+    "retrieval"
+   ],
+   "summary": {
+    "en": "VideoJSON converts each video minute into a JSON record via a VLM; at query time a coding agent writes sandboxed Python/Bash to filter and link records, beating MAGIC-Video by 7.0, 20.0, 24.75 points on three ultra-long video benchmarks.",
+    "zh": "VideoJSON 用视觉语言模型把每分钟视频转成含密集描述、事件、实体、地点和语音转录的 JSON 记录，查询时由 coding agent 在沙箱里写 Python/Bash 程序做多步过滤与关联；在四个超长视频基准上，配合 DeepSeek V4.1 Flash 于 EgoLifeQA、Ego-R1-Bench、MM-Lifelong Week 分别超过 MAGIC-Video 7.0、20.0、24.75 分。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 8,
+   "ax_votes": 0,
+   "ax_visits": 11,
+   "heat": 9.1,
+   "orgs": [
+    {
+     "name": "University of British Columbia"
+    },
+    {
+     "name": "National Taichung University of Education University of California"
+    }
+   ],
+   "thumb": "data/thumbs/2611.28167.jpg",
+   "thumb_w": 640,
+   "thumb_h": 247
   },
   {
    "id": "2611.27601",
@@ -1031,8 +995,8 @@
     "multimodal"
    ],
    "ax_votes": 3,
-   "ax_visits": 51,
-   "heat": 8.1,
+   "ax_visits": 53,
+   "heat": 8.3,
    "orgs": [
     {
      "name": "Beijing University of Posts and Telecommunications",
@@ -1046,61 +1010,105 @@
    "thumb_w": 640,
    "thumb_h": 238,
    "summary": {
-    "zh": "PromptTTSD 构建多旁白有声书语音提取流水线，结合改进的两阶段对齐算法与 LLM 风格描述抽取，发布含 8,383 小时中文、120 小时英文对话语音及开放风格描述的 PromptDialog；其提示感知微调支持零样本音色克隆与自然语言风格控制，多轮语境适切性显著提升。",
-    "en": "PromptTTSD builds a scalable audiobook-based pipeline with improved two-stage alignment and LLM-extracted style descriptions to release PromptDialog (8,383h Chinese, 120h English); prompt-aware fine-tuning enables zero-shot voice cloning and natural-language style control with better multi-turn contextual appropriateness."
+    "en": "PromptTTSD builds a scalable audiobook-based pipeline with improved two-stage alignment and LLM-extracted style descriptions to release PromptDialog (8,383h Chinese, 120h English); prompt-aware fine-tuning enables zero-shot voice cloning and natural-language style control with better multi-turn contextual appropriateness.",
+    "zh": "PromptTTSD 构建多旁白有声书语音提取流水线，结合改进的两阶段对齐算法与 LLM 风格描述抽取，发布含 8,383 小时中文、120 小时英文对话语音及开放风格描述的 PromptDialog；其提示感知微调支持零样本音色克隆与自然语言风格控制，多轮语境适切性显著提升。"
    },
    "summary_source": "deepseek-flash"
   },
   {
-   "id": "2611.28167",
-   "title": "VideoJSON: A Minimal Harness Beats Purpose-Built Memory for Ultra-Long Video Understanding",
+   "id": "2611.27211",
+   "title": "Explicit Style Extraction for Personalized Long-Form Text Generation",
    "authors": [
-    "Wenqi Marshall Guo",
-    "Kuan-Hao Huang",
-    "Junda Chen",
-    "Hao Zhang"
+    "Jenitha Reddy Patel",
+    "Sameeksha Kini",
+    "Amulya Rayasam",
+    "Anisa Dye",
+    "Abhinav Sharma",
+    "Sai Karthik Navuluru",
+    "Bo Ni",
+    "Li Li",
+    "Junda Wu",
+    "Tong Yu",
+    "Nedim Lipka",
+    "Xiaolei Huang",
+    "Tyler Derr",
+    "Yue Zhao",
+    "Zhengzhong Tu",
+    "Yu Wang",
+    "Hongjie Chen",
+    "Thien Huu Nguyen",
+    "Nesreen K. Ahmed",
+    "Franck Dernoncourt",
+    "Ryan A. Rossi"
    ],
-   "abstract": "Answering questions over days or weeks of video requires searching for scattered clues across long timelines. Existing video agents rely on complex memory graphs and fixed retrieval pipelines, which restrict how the agent can search. We propose VideoJSON, a minimal harness for ultra-long video understanding that keeps the memory simple and lets a coding agent write its own search programs. During indexing, a vision-language model turns each minute of video into a single JSON record containing a dense caption and structured fields such as events, entities, places, and speech transcripts. At query time, the agent writes Python or Bash programs in a sandboxed container to filter, link, and read these records over multiple steps, without task-specific training or raw video access. On four ultra-long video benchmarks, VideoJSON with DeepSeek V4.1 Flash outperforms MAGIC-Video by 7.0, 20.0, and 24.75 points on EgoLifeQA, Ego-R1-Bench, and MM-Lifelong Week, and beats the best prior EgoMemReason score by 12.6 points. Across four policy models of increasing capability, VideoJSON's average score rises by up to 11.58 points over the weakest model, compared with at most 5.50 points for MAGIC-Video. Ablations show that both agentic code search and the structured JSON records drive these gains, while adding hourly summaries, extra tools, or video access changes the average score by less than 1.5 points. In addition, fine-tuning Qwen-3.5-Flash on 64 VideoJSON trajectories from an unrelated 100-hour livestream improves its MM-Lifelong scores by up to 8.25 points. Code will be open-sourced after publication.",
-   "primary": "cs.CV",
+   "abstract": "Personalized long-form generation asks a language model to write new text the way a specific user would. The standard recipe, retrieval-augmented generation, places a few of the user's past texts in the prompt but leaves the model to decide what to take from them. We introduce StylePrism, a taxonomy of 28 stylistic aspects in seven categories, and SP-Refine, an inference-time method that makes style extraction an explicit step: the model first fills StylePrism with the user's patterns, quoted evidence, and habits to avoid, then drafts from the user's samples and revises the draft twice against this profile, guided by its own style scores. On the three long-form tasks of LongLaMP with three LLMs, SP-Refine outperforms LongLaMP's retrieval-augmented baseline in 25 of 27 ROUGE and METEOR comparisons, by 10.2% on average and by up to 35.8%. Annotating users' own texts with the extracted profiles shows that StylePrism captures concrete, checkable habits, from the order of rhetorical moves to a reviewer's sign-off. Ablations show that the profile helps as revision guidance, not as a replacement for the samples: writing from the profile alone is worse in all 27 comparisons, while a single implicit-inference call is a cheaper alternative that comes close. Oracle variants that let the reviser see the reference, together with reference-free controls, show that larger refinement gains require information unavailable at inference time.",
+   "primary": "cs.CL",
    "categories": [
-    "cs.CV"
+    "cs.CL",
+    "cs.AI",
+    "cs.IR"
    ],
-   "published": "2026-11-20T02:38:38Z",
-   "updated": "2026-11-20T02:38:38Z",
-   "comment": "",
+   "published": "2026-11-20T06:52:18Z",
+   "updated": "2026-11-20T06:52:18Z",
+   "comment": "21 pages, 8 figures, 11 tables",
    "tags": [
     "LLM",
-    "agents",
-    "retrieval"
+    "retrieval",
+    "efficiency"
    ],
-   "hf_upvotes": 8,
-   "ax_votes": 0,
-   "ax_visits": 10,
-   "heat": 9.0,
+   "summary": {
+    "en": "StylePrism defines 28 stylistic aspects in seven categories, and SP-Refine extracts an explicit style profile at inference, then drafts from user samples and revises twice against it. On LongLaMP with three LLMs it beats the retrieval-augmented baseline in 25 of 27 ROUGE/METEOR comparisons, averaging 10.2% and up to 35.8% gains.",
+    "zh": "StylePrism 将用户写作风格归纳为 7 类 28 个方面的显式画像，SP-Refine 在推理时先生成该画像，再基于用户样本起草并对照画像和风格分数修订两次；在 LongLaMP 三个长文任务、三个 LLM 上，27 项 ROUGE/METEOR 对比中 25 项优于检索增强基线，平均提升 10.2%，最高 35.8%。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 4,
+   "ax_votes": 1,
+   "ax_visits": 31,
+   "heat": 8.1,
    "orgs": [
     {
-     "name": "University of British Columbia",
-     "ror": "03rmrcq20",
-     "logo": "data/logos/ubc.ca.png"
+     "name": "University of Chicago"
     },
     {
-     "name": "National Taichung University of Education",
-     "ror": "006tnfe02"
+     "name": "University of Massachusetts Amherst"
     },
     {
-     "name": "University of California San Diego",
-     "ror": "0168r3w48",
-     "logo": "data/logos/ucsd.edu.png"
+     "name": "University of Texas"
+    },
+    {
+     "name": "Vanderbilt University"
+    },
+    {
+     "name": "University of Southern California"
+    },
+    {
+     "name": "Adobe Research"
+    },
+    {
+     "name": "University of Missouri"
+    },
+    {
+     "name": "University of Memphis"
+    },
+    {
+     "name": "Texas A&M University"
+    },
+    {
+     "name": "University of Georgia"
+    },
+    {
+     "name": "University of Oregon"
+    },
+    {
+     "name": "Dolby Laboratories"
+    },
+    {
+     "name": "Amazon"
     }
    ],
-   "thumb": "data/thumbs/2611.28167.jpg",
-   "thumb_w": 640,
-   "thumb_h": 247,
-   "summary": {
-    "zh": "VideoJSON 用视觉语言模型把每分钟视频转成含密集描述、事件、实体、地点和语音转录的 JSON 记录，查询时由 coding agent 在沙箱里写 Python/Bash 程序做多步过滤与关联；在四个超长视频基准上，配合 DeepSeek V4.1 Flash 于 EgoLifeQA、Ego-R1-Bench、MM-Lifelong Week 分别超过 MAGIC-Video 7.0、20.0、24.75 分。",
-    "en": "VideoJSON converts each video minute into a JSON record via a VLM; at query time a coding agent writes sandboxed Python/Bash to filter and link records, beating MAGIC-Video by 7.0, 20.0, 24.75 points on three ultra-long video benchmarks."
-   },
-   "summary_source": "deepseek-flash"
+   "thumb": "data/thumbs/2611.27211.jpg",
+   "thumb_w": 550,
+   "thumb_h": 392
   },
   {
    "id": "2611.27967",
@@ -1126,8 +1134,8 @@
     "VLA"
    ],
    "ax_votes": 2,
-   "ax_visits": 58,
-   "heat": 7.8,
+   "ax_visits": 61,
+   "heat": 8.1,
    "orgs": [
     {
      "name": "Beijing University of Chemical Technology",
@@ -1152,8 +1160,8 @@
    "thumb_w": 640,
    "thumb_h": 398,
    "summary": {
-    "zh": "Task2Hand 技能将功能操作需求转为参数化灵巧手模型，按成本排序依次通过接触、动力学与学习闸门生成 SAGE Hand（四指 16 驱动自由度），在六棱柱与双色圆柱任务上成功率 45.6%/70.8%，超过 LEAP 的 37.3%/51.6%。",
-    "en": "Task2Hand, a skill turning manipulation briefs into parameterized dexterous hands validated by cost-ordered contact, dynamics and learning gates, produced SAGE Hand, reaching 45.6% and 70.8% success versus LEAP's 37.3% and 51.6%."
+    "en": "Task2Hand, a skill turning manipulation briefs into parameterized dexterous hands validated by cost-ordered contact, dynamics and learning gates, produced SAGE Hand, reaching 45.6% and 70.8% success versus LEAP's 37.3% and 51.6%.",
+    "zh": "Task2Hand 技能将功能操作需求转为参数化灵巧手模型，按成本排序依次通过接触、动力学与学习闸门生成 SAGE Hand（四指 16 驱动自由度），在六棱柱与双色圆柱任务上成功率 45.6%/70.8%，超过 LEAP 的 37.3%/51.6%。"
    },
    "summary_source": "deepseek-flash"
   },
@@ -1179,9 +1187,9 @@
     "embodied",
     "VLM/LLM"
    ],
-   "ax_votes": 2,
-   "ax_visits": 57,
-   "heat": 7.7,
+   "ax_votes": 3,
+   "ax_visits": 60,
+   "heat": 9.0,
    "orgs": [
     {
      "logo": "data/logos/cas.cn.png",
@@ -1192,6 +1200,80 @@
    "thumb": "data/thumbs/2611.27797.jpg",
    "thumb_w": 640,
    "thumb_h": 293
+  },
+  {
+   "id": "2611.27490",
+   "title": "Which Dwarf Is This? Doppeldwarf-306 and Near-Identical Instance Retrieval",
+   "authors": [
+    "Turhan Can Kargin"
+   ],
+   "abstract": "Most established instance-retrieval benchmarks emphasise landmarks; small sculptures from visually similar series offer a complementary challenge. We introduce Doppeldwarf-306: 1,691 openly licensed photographs of 306 bronze dwarf statues in Wrocław, Poland, many made in themed series that share one style, with the photographer of each image recorded. With no training, nearest-neighbour search over frozen DINOv2 features names the right statue first for 93.1% of leave-one-out queries, and the best of thirteen backbones from seven pretraining paradigms reaches 94.7%. Accuracy falls slowly as candidates are added: for DINOv2, by about 0.8 points each time their number doubles. A natural design for a phone guide compares a photograph only with statues near the user. In simulation this helps, but less than an equal number of randomly chosen statues does, so random subsampling overstates its value; a permutation test ties the penalty to the real layout (p = 0.005). Used as a weight instead of a filter, location raises DINOv2 from 93.4% to 98.7% for a simulated user 25 m from the statue. With the query's photographer withheld, learned local-feature matching raises DINOv2 accuracy from 81.8% to 85.5% and also improves DINOv3. Comparing the two best candidates cuts DINOv2's false acceptance of unknown statues from 38.3% to 19.6% at 90% known acceptance.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.IR"
+   ],
+   "published": "2026-11-20T11:36:19Z",
+   "updated": "2026-11-20T11:36:19Z",
+   "comment": "23 pages, 6 figures in the main text; includes appendix. Project page: https://turhancan97.github.io/doppeldwarf-306/",
+   "tags": [
+    "retrieval",
+    "benchmark",
+    "dataset",
+    "image generation"
+   ],
+   "summary": {
+    "en": "Doppeldwarf-306 benchmarks near-identical instance retrieval with 1,691 photos of 306 bronze dwarf statues; frozen DINOv2 nearest-neighbor reaches 93.1% leave-one-out accuracy, and using location as a weight lifts it to 98.7%.",
+    "zh": "Doppeldwarf-306 收录 306 尊波兰弗罗茨瓦夫铜侏儒雕像的 1,691 张照片，构成近同款实例检索基准；冻结 DINOv2 特征最近邻在留一查询上达 93.1%，13 个骨干中最佳 94.7%；定位信息作权重时 DINOv2 从 93.4% 升至 98.7%。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 2,
+   "ax_votes": 2,
+   "ax_visits": 32,
+   "heat": 7.2,
+   "orgs": [],
+   "thumb": "data/thumbs/2611.27490.jpg",
+   "thumb_w": 640,
+   "thumb_h": 301
+  },
+  {
+   "id": "2611.27229",
+   "title": "Prune to Expand: Training Prompt Enhancers with Less to Imitate",
+   "authors": [
+    "Tianhe Wu",
+    "Qilin Sun",
+    "Kede Ma"
+   ],
+   "abstract": "Prompt enhancement (PE) refines concise user prompts into detailed descriptions to improve the compositional aesthetics of generated images while preserving user intent. A common practice constructs supervised fine-tuning (SFT) pairs by deriving short, user-like prompts from dense captions, implicitly assuming that captions that improve image generation also provide effective supervision. In this paper, however, we uncover a counterintuitive finding: PE models trained on caption pairs with substantial generation gains perform comparably to those trained on pairs with only marginal gains. We argue that dense captions can impose redundant supervision by requiring PE models to reproduce image-specific details weakly related to user intent. Motivated by this discrepancy, we introduce Prune to Expand (P2E), a simple text-only method that refines dense-caption supervision by selectively removing redundant sentences under a per-example deletion bound while preserving explicit user requirements and informative visual structure. Extensive experiments under identical training configurations demonstrate that P2E improves alignment with human preferences and visual quality over conventional dense-caption SFT across diverse image categories and visual generators.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-20T07:28:45Z",
+   "updated": "2026-11-20T07:28:45Z",
+   "comment": "",
+   "tags": [
+    "image generation",
+    "LLM",
+    "efficiency"
+   ],
+   "summary": {
+    "en": "Prune to Expand (P2E), a text-only method that prunes redundant sentences from dense-caption supervision under a per-example deletion bound, improves prompt-enhancer alignment with human preferences and image quality over dense-caption SFT.",
+    "zh": "Prune to Expand (P2E) 是一种纯文本方法，通过按样本删除上限选择性移除密集描述中的冗余句子来精炼监督信号，在相同训练配置下相比常规密集描述 SFT 提升了生成图像与人类偏好的一致性和视觉质量。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 4,
+   "ax_votes": 0,
+   "ax_visits": 32,
+   "heat": 7.2,
+   "orgs": [
+    {
+     "name": "City University of Hong Kong The Chinese University of Hong Kong"
+    }
+   ],
+   "thumb": "data/thumbs/2611.27229.jpg",
+   "thumb_w": 640,
+   "thumb_h": 257
   },
   {
    "id": "2611.27891",
@@ -1214,8 +1296,8 @@
     "reasoning"
    ],
    "ax_votes": 4,
-   "ax_visits": 24,
-   "heat": 6.4,
+   "ax_visits": 25,
+   "heat": 6.5,
    "orgs": [
     {
      "logo": "data/logos/cmu.edu.png",
@@ -1227,8 +1309,8 @@
    "thumb_w": 566,
    "thumb_h": 440,
    "summary": {
-    "zh": "DICE 通过在起草与验证之间预采样并同步随机数，将已知采样随机性与现有 drafter 预测结合，把计算分配给本次采样更可能用到的续写，并扩展到异步预取；无需额外训练或改变目标采样分布，吞吐量在多种设置下达到 SOTA，相较强基线最高提升 24.6pp。",
-    "en": "DICE pre-samples and synchronizes verification randomness across drafting and verification, combining known draws with drafter predictions to allocate computation to likely-used continuations and extend to asynchronous prefetching; without extra training or changing the target sampling distribution, it achieves state-of-the-art decoding throughput with up to 24.6pp speedup over strong baselines."
+    "en": "DICE pre-samples and synchronizes verification randomness across drafting and verification, combining known draws with drafter predictions to allocate computation to likely-used continuations and extend to asynchronous prefetching; without extra training or changing the target sampling distribution, it achieves state-of-the-art decoding throughput with up to 24.6pp speedup over strong baselines.",
+    "zh": "DICE 通过在起草与验证之间预采样并同步随机数，将已知采样随机性与现有 drafter 预测结合，把计算分配给本次采样更可能用到的续写，并扩展到异步预取；无需额外训练或改变目标采样分布，吞吐量在多种设置下达到 SOTA，相较强基线最高提升 24.6pp。"
    },
    "summary_source": "deepseek-flash"
   },
@@ -1252,8 +1334,8 @@
     "efficiency"
    ],
    "ax_votes": 0,
-   "ax_visits": 61,
-   "heat": 6.1,
+   "ax_visits": 63,
+   "heat": 6.3,
    "orgs": [
     {
      "name": "CyberAgent"
@@ -1271,8 +1353,8 @@
    "thumb_w": 618,
    "thumb_h": 440,
    "summary": {
-    "zh": "基于follow-the-regularized-leader框架与多基学习器混合、扩展Gupta等(2026)的度量更新撤销机制，在只需每轮一个次梯度、无需知道Δ_T^⋆的条件下取得小损失遗憾O(1+√Δ_T^⋆)，在ℓ_p球上具minimax最优性；用于上下文搜索时达到Θ(√d/κ²)期望累积绝对误差，解决Liu等(2021)的开放问题。",
-    "en": "Extending metric-update revocation within follow-the-regularized-leader and a mixture of base learners, the algorithm achieves minimax-optimal small-loss regret O(1+sqrt(Delta_T^*)) on l_p balls without knowing Delta_T^*, yielding Theta(sqrt(d)/kappa^2) contextual-search error and resolving an open question."
+    "en": "Extending metric-update revocation within follow-the-regularized-leader and a mixture of base learners, the algorithm achieves minimax-optimal small-loss regret O(1+sqrt(Delta_T^*)) on l_p balls without knowing Delta_T^*, yielding Theta(sqrt(d)/kappa^2) contextual-search error and resolving an open question.",
+    "zh": "基于follow-the-regularized-leader框架与多基学习器混合、扩展Gupta等(2026)的度量更新撤销机制，在只需每轮一个次梯度、无需知道Δ_T^⋆的条件下取得小损失遗憾O(1+√Δ_T^⋆)，在ℓ_p球上具minimax最优性；用于上下文搜索时达到Θ(√d/κ²)期望累积绝对误差，解决Liu等(2021)的开放问题。"
    },
    "summary_source": "deepseek-flash"
   },
@@ -1307,8 +1389,8 @@
     "robotics"
    ],
    "ax_votes": 2,
-   "ax_visits": 37,
-   "heat": 5.7,
+   "ax_visits": 40,
+   "heat": 6.0,
    "orgs": [
     {
      "name": "Nanjing University",
@@ -1322,8 +1404,8 @@
    "thumb_w": 640,
    "thumb_h": 349,
    "summary": {
-    "zh": "LS-MBPO 用轻量潜在世界模型对预训练 VLA 做残差强化学习，结合 Hierarchical Forcing 与 Latent Subchunk Rollouts 缓解递归预测误差并衔接潜在想象与动作执行，在 LIBERO、RoboTwin 和真实 ALOHA 机器人上任务表现与训练效率优于现有方法。",
-    "en": "LS-MBPO performs residual RL on pretrained VLAs with a lightweight latent world model, using Hierarchical Forcing and Latent Subchunk Rollouts to cut compounding errors and bridge latent imagination with action execution."
+    "en": "LS-MBPO performs residual RL on pretrained VLAs with a lightweight latent world model, using Hierarchical Forcing and Latent Subchunk Rollouts to cut compounding errors and bridge latent imagination with action execution.",
+    "zh": "LS-MBPO 用轻量潜在世界模型对预训练 VLA 做残差强化学习，结合 Hierarchical Forcing 与 Latent Subchunk Rollouts 缓解递归预测误差并衔接潜在想象与动作执行，在 LIBERO、RoboTwin 和真实 ALOHA 机器人上任务表现与训练效率优于现有方法。"
    },
    "summary_source": "deepseek-flash"
   },
@@ -1351,9 +1433,9 @@
     "retrieval",
     "RL"
    ],
-   "ax_votes": 0,
-   "ax_visits": 51,
-   "heat": 5.1,
+   "ax_votes": 1,
+   "ax_visits": 52,
+   "heat": 6.2,
    "orgs": [
     {
      "name": "Hunan University",
@@ -1368,10 +1450,47 @@
    "thumb_w": 437,
    "thumb_h": 440,
    "summary": {
-    "zh": "Search-RSI 让多模态搜索智能体沿能力边界递归扩展搜索世界：每轮按跳数、关系稀有度和干扰密度诊断半掌握区域，并同步生成任务与证据，对策略探测有分歧的样本做强化学习、超出能力的转为提示示范；在九个多模态搜索基准上，9B 和 27B 模型平均准确率分别较基线提升 9.8 和 9.5 点，算力为静态增长的 1.27 倍。",
-    "en": "Search-RSI recursively expands the searchable world along a multimodal agent's capability frontier, growing tasks with their evidence and routing probe-disagreement cases to RL; it beats static task growth by 9.8 and 9.5 points on nine benchmarks at 9B and 27B."
+    "en": "Search-RSI recursively expands the searchable world along a multimodal agent's capability frontier, growing tasks with their evidence and routing probe-disagreement cases to RL; it beats static task growth by 9.8 and 9.5 points on nine benchmarks at 9B and 27B.",
+    "zh": "Search-RSI 让多模态搜索智能体沿能力边界递归扩展搜索世界：每轮按跳数、关系稀有度和干扰密度诊断半掌握区域，并同步生成任务与证据，对策略探测有分歧的样本做强化学习、超出能力的转为提示示范；在九个多模态搜索基准上，9B 和 27B 模型平均准确率分别较基线提升 9.8 和 9.5 点，算力为静态增长的 1.27 倍。"
    },
    "summary_source": "deepseek-flash"
+  },
+  {
+   "id": "2611.27494",
+   "title": "Typhoon OCR 2: From Thai Document Transcription to Multilingual, Multi-Task OCR",
+   "authors": [
+    "Surapon Nonesung",
+    "Natapong Nitarach",
+    "Sittipong Sripaisarnmongkol",
+    "Kunat Pipatanakul",
+    "Warit Sirichotedumrong"
+   ],
+   "abstract": "Typhoon OCR 1.5 focused on reading Thai documents. However, in real-world workflows, users often need to extract specific information or preserve the structure of an entire page for further processing. Typhoon OCR 2 handles both tasks in a single model, with prompt-driven extraction and structured full-page parsing. Full-page parsing covers Thai, English, and Chinese. We release compact 2B and 0.8B models adapted from open document parsers through supervised fine-tuning on curated Thai and public multilingual data, followed by Group Relative Policy Optimization (GRPO) with task rewards and a rule penalizing unfinished responses. Among evaluated open models, Typhoon OCR 2 2B scores highest on Thai MDPBench (80.7 versus 68.9 for Typhoon OCR 1.5) and on ThaiOCRBench (59.91 versus 40.45), which covers recognition, extraction, and document understanding. The 2B model remains close to its base on English olmOCR-bench (84.7 versus 84.4) and on OmniDocBench, which evaluates English and Chinese together (90.97 versus 91.03). On MDPBench, GRPO reduces the mean share of pages with repetition loops for the 2B model from 3.2% to 0.7%, with a smaller and statistically uncertain score gain for the 0.8B model. We release the model weights, Python package, and evaluation suite.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL"
+   ],
+   "published": "2026-11-20T11:39:56Z",
+   "updated": "2026-11-23T06:14:48Z",
+   "comment": "",
+   "tags": [
+    "LLM",
+    "multimodal",
+    "dataset"
+   ],
+   "summary": {
+    "en": "Typhoon OCR 2 unifies prompt-driven extraction and structured full-page parsing in Thai, English, and Chinese via a 2B/0.8B model SFT-tuned and GRPO-trained; it scores 80.7 on Thai MDPBench and 59.91 on ThaiOCRBench, cutting repetition loops from 3.2% to 0.7%.",
+    "zh": "Typhoon OCR 2 用单一模型同时支持提示驱动抽取与泰文、英文、中文结构化整页解析，2B 和 0.8B 模型由开放文档解析器经监督微调与 GRPO 得到；2B 在 Thai MDPBench 得 80.7（Typhoon OCR 1.5 为 68.9），ThaiOCRBench 得 59.91（对比 40.45），英文与中英基准基本持平，GRPO 将 2B 的重复循环页面比例从 3.2% 降至 0.7%。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 3,
+   "ax_votes": 1,
+   "ax_visits": 10,
+   "heat": 5.0,
+   "orgs": [],
+   "thumb": "data/thumbs/2611.27494.jpg",
+   "thumb_w": 640,
+   "thumb_h": 379
   },
   {
    "id": "2611.27759",
@@ -1399,8 +1518,8 @@
     "benchmark"
    ],
    "ax_votes": 0,
-   "ax_visits": 43,
-   "heat": 4.3,
+   "ax_visits": 48,
+   "heat": 4.8,
    "orgs": [
     {
      "logo": "data/logos/ehu.eus.png",
@@ -1444,8 +1563,8 @@
     "benchmark"
    ],
    "ax_votes": 1,
-   "ax_visits": 32,
-   "heat": 4.2,
+   "ax_visits": 35,
+   "heat": 4.5,
    "orgs": [
     {
      "logo": "data/logos/hku.hk.png",
@@ -1461,143 +1580,6 @@
    "thumb": "data/thumbs/2611.27901.jpg",
    "thumb_w": 640,
    "thumb_h": 254
-  },
-  {
-   "id": "2611.27211",
-   "title": "Explicit Style Extraction for Personalized Long-Form Text Generation",
-   "authors": [
-    "Jenitha Reddy Patel",
-    "Sameeksha Kini",
-    "Amulya Rayasam",
-    "Anisa Dye",
-    "Abhinav Sharma",
-    "Sai Karthik Navuluru",
-    "Bo Ni",
-    "Li Li",
-    "Junda Wu",
-    "Tong Yu",
-    "Nedim Lipka",
-    "Xiaolei Huang",
-    "Tyler Derr",
-    "Yue Zhao",
-    "Zhengzhong Tu",
-    "Yu Wang",
-    "Hongjie Chen",
-    "Thien Huu Nguyen",
-    "Nesreen K. Ahmed",
-    "Franck Dernoncourt",
-    "Ryan A. Rossi"
-   ],
-   "abstract": "Personalized long-form generation asks a language model to write new text the way a specific user would. The standard recipe, retrieval-augmented generation, places a few of the user's past texts in the prompt but leaves the model to decide what to take from them. We introduce StylePrism, a taxonomy of 28 stylistic aspects in seven categories, and SP-Refine, an inference-time method that makes style extraction an explicit step: the model first fills StylePrism with the user's patterns, quoted evidence, and habits to avoid, then drafts from the user's samples and revises the draft twice against this profile, guided by its own style scores. On the three long-form tasks of LongLaMP with three LLMs, SP-Refine outperforms LongLaMP's retrieval-augmented baseline in 25 of 27 ROUGE and METEOR comparisons, by 10.2% on average and by up to 35.8%. Annotating users' own texts with the extracted profiles shows that StylePrism captures concrete, checkable habits, from the order of rhetorical moves to a reviewer's sign-off. Ablations show that the profile helps as revision guidance, not as a replacement for the samples: writing from the profile alone is worse in all 27 comparisons, while a single implicit-inference call is a cheaper alternative that comes close. Oracle variants that let the reviser see the reference, together with reference-free controls, show that larger refinement gains require information unavailable at inference time.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL",
-    "cs.AI",
-    "cs.IR"
-   ],
-   "published": "2026-11-20T06:52:18Z",
-   "updated": "2026-11-20T06:52:18Z",
-   "comment": "21 pages, 8 figures, 11 tables",
-   "tags": [
-    "LLM",
-    "retrieval",
-    "efficiency"
-   ],
-   "hf_upvotes": 4,
-   "ax_votes": 1,
-   "ax_visits": 28,
-   "heat": 7.8,
-   "orgs": [
-    {
-     "name": "University of Chicago",
-     "ror": "024mw5h28",
-     "logo": "data/logos/uchicago.edu.png"
-    },
-    {
-     "name": "University of Massachusetts Amherst",
-     "ror": "0072zz521",
-     "logo": "data/logos/umass.edu.png"
-    },
-    {
-     "name": "University of Texas at Dallas"
-    },
-    {
-     "name": "Vanderbilt University",
-     "ror": "02vm5rt34"
-    },
-    {
-     "logo": "data/logos/usc.edu.png",
-     "name": "University of Southern California",
-     "ror": "03taz7m60"
-    },
-    {
-     "name": "Adobe",
-     "logo": "data/logos/adobe.com.png"
-    },
-    {
-     "name": "University of California San Diego",
-     "ror": "0168r3w48",
-     "logo": "data/logos/ucsd.edu.png"
-    },
-    {
-     "name": "University of Missouri",
-     "ror": "02ymw8z06"
-    }
-   ],
-   "thumb": "data/thumbs/2611.27211.jpg",
-   "thumb_w": 550,
-   "thumb_h": 392,
-   "summary": {
-    "zh": "StylePrism 将用户写作风格归纳为 7 类 28 个方面的显式画像，SP-Refine 在推理时先生成该画像，再基于用户样本起草并对照画像和风格分数修订两次；在 LongLaMP 三个长文任务、三个 LLM 上，27 项 ROUGE/METEOR 对比中 25 项优于检索增强基线，平均提升 10.2%，最高 35.8%。",
-    "en": "StylePrism defines 28 stylistic aspects in seven categories, and SP-Refine extracts an explicit style profile at inference, then drafts from user samples and revises twice against it. On LongLaMP with three LLMs it beats the retrieval-augmented baseline in 25 of 27 ROUGE/METEOR comparisons, averaging 10.2% and up to 35.8% gains."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.27229",
-   "title": "Prune to Expand: Training Prompt Enhancers with Less to Imitate",
-   "authors": [
-    "Tianhe Wu",
-    "Qilin Sun",
-    "Kede Ma"
-   ],
-   "abstract": "Prompt enhancement (PE) refines concise user prompts into detailed descriptions to improve the compositional aesthetics of generated images while preserving user intent. A common practice constructs supervised fine-tuning (SFT) pairs by deriving short, user-like prompts from dense captions, implicitly assuming that captions that improve image generation also provide effective supervision. In this paper, however, we uncover a counterintuitive finding: PE models trained on caption pairs with substantial generation gains perform comparably to those trained on pairs with only marginal gains. We argue that dense captions can impose redundant supervision by requiring PE models to reproduce image-specific details weakly related to user intent. Motivated by this discrepancy, we introduce Prune to Expand (P2E), a simple text-only method that refines dense-caption supervision by selectively removing redundant sentences under a per-example deletion bound while preserving explicit user requirements and informative visual structure. Extensive experiments under identical training configurations demonstrate that P2E improves alignment with human preferences and visual quality over conventional dense-caption SFT across diverse image categories and visual generators.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-20T07:28:45Z",
-   "updated": "2026-11-20T07:28:45Z",
-   "comment": "",
-   "tags": [
-    "image generation",
-    "LLM",
-    "efficiency"
-   ],
-   "hf_upvotes": 4,
-   "ax_votes": 0,
-   "ax_visits": 28,
-   "heat": 6.8,
-   "orgs": [
-    {
-     "logo": "data/logos/cityu.edu.hk.png",
-     "name": "City University of Hong Kong",
-     "ror": "03q8dnn23"
-    },
-    {
-     "name": "CUHK",
-     "ror": "00t33hh48",
-     "logo": "data/logos/cuhk.edu.hk.png"
-    }
-   ],
-   "thumb": "data/thumbs/2611.27229.jpg",
-   "thumb_w": 640,
-   "thumb_h": 257,
-   "summary": {
-    "zh": "Prune to Expand (P2E) 是一种纯文本方法，通过按样本删除上限选择性移除密集描述中的冗余句子来精炼监督信号，在相同训练配置下相比常规密集描述 SFT 提升了生成图像与人类偏好的一致性和视觉质量。",
-    "en": "Prune to Expand (P2E), a text-only method that prunes redundant sentences from dense-caption supervision under a per-example deletion bound, improves prompt-enhancer alignment with human preferences and image quality over dense-caption SFT."
-   },
-   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28359",
@@ -1619,8 +1601,8 @@
    "comment": "",
    "tags": [],
    "ax_votes": 2,
-   "ax_visits": 20,
-   "heat": 4.0,
+   "ax_visits": 21,
+   "heat": 4.1,
    "orgs": [
     {
      "logo": "data/logos/ucmerced.edu.png",
@@ -1666,8 +1648,8 @@
    "comment": "",
    "tags": [],
    "ax_votes": 0,
-   "ax_visits": 39,
-   "heat": 3.9,
+   "ax_visits": 40,
+   "heat": 4.0,
    "orgs": [
     {
      "name": "Shanghai Jiao Tong University",
@@ -1709,8 +1691,8 @@
     "VLM/LLM"
    ],
    "ax_votes": 0,
-   "ax_visits": 38,
-   "heat": 3.8,
+   "ax_visits": 41,
+   "heat": 4.1,
    "orgs": [
     {
      "name": "Unigroup Guoxin Microelectronics"
@@ -1729,52 +1711,6 @@
    "thumb": "data/thumbs/2611.27701.jpg",
    "thumb_w": 561,
    "thumb_h": 246
-  },
-  {
-   "id": "2611.27494",
-   "title": "Typhoon OCR 2: From Thai Document Transcription to Multilingual, Multi-Task OCR",
-   "authors": [
-    "Surapon Nonesung",
-    "Natapong Nitarach",
-    "Sittipong Sripaisarnmongkol",
-    "Kunat Pipatanakul",
-    "Warit Sirichotedumrong"
-   ],
-   "abstract": "Typhoon OCR 1.5 focused on reading Thai documents. However, in real-world workflows, users often need to extract specific information or preserve the structure of an entire page for further processing. Typhoon OCR 2 handles both tasks in a single model, with prompt-driven extraction and structured full-page parsing. Full-page parsing covers Thai, English, and Chinese. We release compact 2B and 0.8B models adapted from open document parsers through supervised fine-tuning on curated Thai and public multilingual data, followed by Group Relative Policy Optimization (GRPO) with task rewards and a rule penalizing unfinished responses. Among evaluated open models, Typhoon OCR 2 2B scores highest on Thai MDPBench (80.7 versus 68.9 for Typhoon OCR 1.5) and on ThaiOCRBench (59.91 versus 40.45), which covers recognition, extraction, and document understanding. The 2B model remains close to its base on English olmOCR-bench (84.7 versus 84.4) and on OmniDocBench, which evaluates English and Chinese together (90.97 versus 91.03). On MDPBench, GRPO reduces the mean share of pages with repetition loops for the 2B model from 3.2% to 0.7%, with a smaller and statistically uncertain score gain for the 0.8B model. We release the model weights, Python package, and evaluation suite.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL"
-   ],
-   "published": "2026-11-20T11:39:56Z",
-   "updated": "2026-11-23T06:14:48Z",
-   "comment": "",
-   "tags": [
-    "LLM",
-    "multimodal",
-    "dataset"
-   ],
-   "hf_upvotes": 3,
-   "ax_votes": 1,
-   "ax_visits": 9,
-   "heat": 4.9,
-   "orgs": [
-    {
-     "name": "Typhoon, SCB DataX"
-    },
-    {
-     "name": "AI Singapore",
-     "ror": "00ntacr26",
-     "logo": "data/logos/aisingapore.org.png"
-    }
-   ],
-   "thumb": "data/thumbs/2611.27494.jpg",
-   "thumb_w": 640,
-   "thumb_h": 379,
-   "summary": {
-    "zh": "Typhoon OCR 2 用单一模型同时支持提示驱动抽取与泰文、英文、中文结构化整页解析，2B 和 0.8B 模型由开放文档解析器经监督微调与 GRPO 得到；2B 在 Thai MDPBench 得 80.7（Typhoon OCR 1.5 为 68.9），ThaiOCRBench 得 59.91（对比 40.45），英文与中英基准基本持平，GRPO 将 2B 的重复循环页面比例从 3.2% 降至 0.7%。",
-    "en": "Typhoon OCR 2 unifies prompt-driven extraction and structured full-page parsing in Thai, English, and Chinese via a 2B/0.8B model SFT-tuned and GRPO-trained; it scores 80.7 on Thai MDPBench and 59.91 on ThaiOCRBench, cutting repetition loops from 3.2% to 0.7%."
-   },
-   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.28231",
@@ -1800,13 +1736,11 @@
    ],
    "hf_upvotes": 3,
    "ax_votes": 0,
-   "ax_visits": 4,
-   "heat": 3.4,
+   "ax_visits": 5,
+   "heat": 3.5,
    "orgs": [
     {
-     "logo": "data/logos/uoguelph.ca.png",
-     "name": "University of Guelph",
-     "ror": "01r7awg59"
+     "name": "University of Guelph"
     },
     {
      "name": "EdgeAI Innovations Inc.Correspondence"
@@ -1841,8 +1775,8 @@
     "benchmark"
    ],
    "ax_votes": 0,
-   "ax_visits": 29,
-   "heat": 2.9,
+   "ax_visits": 32,
+   "heat": 3.2,
    "orgs": [
     {
      "logo": "data/logos/cispa.de.png",
@@ -1879,8 +1813,8 @@
     "benchmark"
    ],
    "ax_votes": 0,
-   "ax_visits": 27,
-   "heat": 2.7,
+   "ax_visits": 28,
+   "heat": 2.8,
    "orgs": [
     {
      "logo": "data/logos/tum.de.png",
@@ -1891,70 +1825,6 @@
    "thumb": "data/thumbs/2611.28197.jpg",
    "thumb_w": 390,
    "thumb_h": 325
-  },
-  {
-   "id": "2611.27490",
-   "title": "Which Dwarf Is This? Doppeldwarf-306 and Near-Identical Instance Retrieval",
-   "authors": [
-    "Turhan Can Kargin"
-   ],
-   "abstract": "Most established instance-retrieval benchmarks emphasise landmarks; small sculptures from visually similar series offer a complementary challenge. We introduce Doppeldwarf-306: 1,691 openly licensed photographs of 306 bronze dwarf statues in Wrocław, Poland, many made in themed series that share one style, with the photographer of each image recorded. With no training, nearest-neighbour search over frozen DINOv2 features names the right statue first for 93.1% of leave-one-out queries, and the best of thirteen backbones from seven pretraining paradigms reaches 94.7%. Accuracy falls slowly as candidates are added: for DINOv2, by about 0.8 points each time their number doubles. A natural design for a phone guide compares a photograph only with statues near the user. In simulation this helps, but less than an equal number of randomly chosen statues does, so random subsampling overstates its value; a permutation test ties the penalty to the real layout (p = 0.005). Used as a weight instead of a filter, location raises DINOv2 from 93.4% to 98.7% for a simulated user 25 m from the statue. With the query's photographer withheld, learned local-feature matching raises DINOv2 accuracy from 81.8% to 85.5% and also improves DINOv3. Comparing the two best candidates cuts DINOv2's false acceptance of unknown statues from 38.3% to 19.6% at 90% known acceptance.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.IR"
-   ],
-   "published": "2026-11-20T11:36:19Z",
-   "updated": "2026-11-20T11:36:19Z",
-   "comment": "23 pages, 6 figures in the main text; includes appendix. Project page: https://turhancan97.github.io/doppeldwarf-306/",
-   "tags": [
-    "retrieval",
-    "benchmark",
-    "dataset",
-    "image generation"
-   ],
-   "hf_upvotes": 2,
-   "ax_votes": 2,
-   "ax_visits": 31,
-   "heat": 7.1,
-   "orgs": [],
-   "thumb": "data/thumbs/2611.27490.jpg",
-   "thumb_w": 640,
-   "thumb_h": 301,
-   "summary": {
-    "zh": "Doppeldwarf-306 收录 306 尊波兰弗罗茨瓦夫铜侏儒雕像的 1,691 张照片，构成近同款实例检索基准；冻结 DINOv2 特征最近邻在留一查询上达 93.1%，13 个骨干中最佳 94.7%；定位信息作权重时 DINOv2 从 93.4% 升至 98.7%。",
-    "en": "Doppeldwarf-306 benchmarks near-identical instance retrieval with 1,691 photos of 306 bronze dwarf statues; frozen DINOv2 nearest-neighbor reaches 93.1% leave-one-out accuracy, and using location as a weight lifts it to 98.7%."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.27404",
-   "title": "Degradation of Language Models under Controlled Load: Synchronization, Rule Execution and Misfires on the Background",
-   "authors": [
-    "Hennadii Kutomanov"
-   ],
-   "abstract": "As the load grows, a language model makes more and more errors, but different processes stand behind this decline in quality. The model may lose the correspondence with the source text, it may keep its place in the text but execute a rule wrongly, or it may change a word that no rule concerns. In this work the degradation of a model under controlled load is separated into these three components: synchronization, rule execution and misfires. The load is set by rules that replace one word with another in a meaningless text, and each kind of load (the text length, the position of a word in the answer, the replacement density, the number of rules and the place of a rule in the list) is set separately. The alignment of the answer with the reference makes it possible to follow the outcome of every word, and a statistical model that takes into account that the spread of difficulty between requests itself depends on the load restores, for each component, the laws of its dependence on every kind of load. These laws make up the passport of a model. The paper presents the method of the separation, the principles of constructing the laws and the passports of seven models built by this method; the separation opens the way to studying the fine structure of the behavior of a neural network.",
-   "primary": "cs.LG",
-   "categories": [
-    "cs.LG"
-   ],
-   "published": "2026-11-20T10:12:22Z",
-   "updated": "2026-11-20T10:12:22Z",
-   "comment": "35 pages, 15 figures, 5 tables. Code and passports: https://github.com/kutomanovhennadii/instruction-capacity",
-   "code_url": "https://github.com/kutomanovhennadii/instruction-capacity",
-   "tags": [],
-   "hf_upvotes": 1,
-   "ax_votes": 0,
-   "ax_visits": 8,
-   "heat": 1.8,
-   "orgs": [
-    {
-     "name": "Independent Researcher"
-    }
-   ],
-   "thumb": "data/thumbs/2611.27404.jpg",
-   "thumb_w": 640,
-   "thumb_h": 427
   },
   {
    "id": "2611.28194",
@@ -1988,38 +1858,77 @@
    ],
    "hf_upvotes": 1,
    "ax_votes": 0,
-   "ax_visits": 15,
-   "heat": 2.5,
+   "ax_visits": 16,
+   "heat": 2.6,
    "orgs": [
     {
-     "logo": "data/logos/mit.edu.png",
-     "name": "MIT",
-     "ror": "042nb2s44"
+     "name": "MIT"
     },
     {
-     "logo": "data/logos/iaifi.org.png",
-     "name": "The NSF AI Institute for Artificial Intelligence and Fundamental Interactions",
-     "ror": "04pvzz946"
+     "name": "NSF AI Institute for Artificial Intelligence and Fundamental Interactions (IAIFI)"
     },
     {
-     "logo": "data/logos/www6.slac.stanford.edu.png",
-     "name": "SLAC National Accelerator Laboratory",
-     "ror": "05gzmn429"
+     "name": "SLAC National Accelerator Laboratory"
     },
     {
-     "logo": "data/logos/harvard.edu.png",
-     "name": "Harvard University",
-     "ror": "03vek6s52"
+     "name": "Harvard University"
     },
     {
-     "logo": "data/logos/tum.de.png",
-     "name": "TU Munich",
-     "ror": "02kkvpp62"
+     "name": "TU Munich"
     }
    ],
    "thumb": "data/thumbs/2611.28194.jpg",
    "thumb_w": 618,
    "thumb_h": 440
+  },
+  {
+   "id": "2611.27404",
+   "title": "Degradation of Language Models under Controlled Load: Synchronization, Rule Execution and Misfires on the Background",
+   "authors": [
+    "Hennadii Kutomanov"
+   ],
+   "abstract": "As the load grows, a language model makes more and more errors, but different processes stand behind this decline in quality. The model may lose the correspondence with the source text, it may keep its place in the text but execute a rule wrongly, or it may change a word that no rule concerns. In this work the degradation of a model under controlled load is separated into these three components: synchronization, rule execution and misfires. The load is set by rules that replace one word with another in a meaningless text, and each kind of load (the text length, the position of a word in the answer, the replacement density, the number of rules and the place of a rule in the list) is set separately. The alignment of the answer with the reference makes it possible to follow the outcome of every word, and a statistical model that takes into account that the spread of difficulty between requests itself depends on the load restores, for each component, the laws of its dependence on every kind of load. These laws make up the passport of a model. The paper presents the method of the separation, the principles of constructing the laws and the passports of seven models built by this method; the separation opens the way to studying the fine structure of the behavior of a neural network.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-20T10:12:22Z",
+   "updated": "2026-11-20T10:12:22Z",
+   "comment": "35 pages, 15 figures, 5 tables. Code and passports: https://github.com/kutomanovhennadii/instruction-capacity",
+   "code_url": "https://github.com/kutomanovhennadii/instruction-capacity",
+   "tags": [],
+   "hf_upvotes": 1,
+   "ax_votes": 0,
+   "ax_visits": 9,
+   "heat": 1.9,
+   "orgs": [
+    {
+     "name": "Independent researcher"
+    }
+   ],
+   "thumb": "data/thumbs/2611.27404.jpg",
+   "thumb_w": 640,
+   "thumb_h": 427
+  },
+  {
+   "id": "2611.27112",
+   "title": "Markdown Is Not a Firewall: four coding agents, one rules file, four boundaries",
+   "authors": [
+    "Sandeep Dhuri"
+   ],
+   "abstract": "Teams put a one-page rules file in a repository and call it a control on coding agents. A registered study found agents rarely look up a repository's contribution rules. I asked the security question: what does a rules file do at a boundary, against a gate? I tested one 278-word rules file, with hypotheses and analysis code deposited first. Claude Code, Codex CLI, Gemini CLI and OpenCode with DeepSeek worked through 20 small repositories with hidden tests, 12 for three of them. Three agents met four boundaries I built: a refused endpoint, a destructive shortcut, a planted instruction and a planted package. Permission prompts, each vendor's own control layer, were off by design. A gate in front of the mock service blocked and logged forbidden requests. Every verdict was read from records the agent could not change. Only my first scoring pass was blind to arm. My checkers found no real bugs, with the file or without it. The file cost one agent a third of its score: Codex CLI fell from 99.0 to 67.7 percent on hidden tests, and in 11 of its 36 steps reported the task complete with all tests passing while under half of the hidden tests passed. Its own tests passed. Faced with two of its rules that clash on these tasks, three agents followed the task and one followed the rule. Pooled, passes fell from 98.2 to 90.9 percent. Matched pairs fell 7.7 points, 1.3 without Codex CLI. Attempts to cross were rare: 5 in 90 gated steps, 3 without the file, 2 with it, all by OpenCode with DeepSeek, all blocked. With no gate, under the neutral file, the same requests reached the mock in 7 of 45 runs. By an error in my run script, the no-file and rules-file arms always ran behind the gate at the three HTTP boundaries, so I could not test whether the file changes what an agent does there. On what I could measure, the file acted as advice. A file tells an agent what you want. A gate decides what it gets.",
+   "primary": "cs.SE",
+   "categories": [
+    "cs.SE",
+    "cs.CR"
+   ],
+   "published": "2026-11-20T04:35:33Z",
+   "updated": "2026-11-20T04:35:33Z",
+   "comment": "22 pages, 7 figures. Pre-registration: doi.org/10.5281/zenodo.23608308. Results dataset: doi.org/10.5281/zenodo.24238904",
+   "tags": [],
+   "ax_votes": 0,
+   "ax_visits": 1,
+   "heat": 0.1
   }
  ]
 }
