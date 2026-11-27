@@ -34,7 +34,6 @@
       noStars: '还没有星标论文。点标题右边的 ☆ 收藏。', exportMd: '复制 Markdown', exportDl: '下载 .md',
       showAbstract: '显示摘要', onlyFaq: '只看有解读的', onlySummary: '只看有一句话总结的',
       star: '星标', unstar: '取消星标', moreAuthors: (n) => `+${n} 人`,
-      demo: '示例数据：论文元数据和 HF 点赞是真实的；相关度分数来自关键词规则，一句话总结和 FAQ 是手写示例。正式版由 LLM 生成。',
       disclaimer: '论文元数据来自 arXiv，点赞数来自 Hugging Face Daily Papers。解读由 AI 生成，可能有误，请以原文为准；论文版权归原作者所有。',
     },
     en: {
@@ -52,7 +51,6 @@
       noStars: 'No starred papers yet. Click ☆ next to a title.', exportMd: 'Copy Markdown', exportDl: 'Download .md',
       showAbstract: 'Show abstracts', onlyFaq: 'Only papers with AI reading', onlySummary: 'Only papers with a summary',
       star: 'Star', unstar: 'Unstar', moreAuthors: (n) => `+${n} more`,
-      demo: 'Demo data: paper metadata and HF upvotes are real; relevance scores come from a keyword rule, and the summaries and FAQ are hand-written samples. The production version uses an LLM.',
       disclaimer: 'Paper metadata from arXiv; upvotes from Hugging Face Daily Papers. Readings are AI-generated and may contain errors; please check the original paper. Copyright belongs to the authors.',
     },
   };
@@ -266,7 +264,6 @@
 
     $('#sort-select').value = state.sort;
     $('#score-select').value = String(state.minScore);
-    $('#demo-note').hidden = !(state.index.demo || state.day?.demo);
   }
 
   // ---------- paper list ----------
