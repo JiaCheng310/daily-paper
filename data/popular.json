@@ -29,14 +29,13 @@
      "updated": "2026-11-23T01:51:57Z",
      "comment": "Code: https://github.com/AIGeeksGroup/MotionMamba2.0. Website: https://aigeeksgroup.github.io/MotionMamba2.0",
      "code_url": "https://github.com/AIGeeksGroup/MotionMamba2.0",
-     "score": 5.0,
      "tags": [
       "humanoid",
-      "locomotion"
+      "locomotion",
+      "diffusion policy",
+      "control"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 224,
-     "faq": false,
      "orgs": [
       {
        "logo": "data/logos/pku.edu.cn.png",
@@ -53,7 +52,12 @@
      "thumb_h": 272,
      "ax_votes": 0,
      "ax_visits": 63,
-     "heat": 230.3
+     "heat": 230.3,
+     "summary": {
+      "en": "Motion Mamba 2.0 integrates local attention, recurrent states, and persistent content memory for long-horizon humanoid motion generation, achieving accurate 39.52 s control and a 6.138x speedup on an RTX 4090 while deployed on Unitree G1.",
+      "zh": "Motion Mamba 2.0 是一种基于 Mamba 的根体扩散架构，通过融合局部注意力、可恢复循环状态和持久内容记忆来实现长视野可控动作生成，在 HiPHI 数据集上实现了长达 39.52 秒的精确终端控制，并在 RTX 4090 上将中位完整窗口延迟从 1685.35 毫秒降至 276.14 毫秒，实现了 6.138 倍的加速。同时，该方法在 Unitree G1 机器人上完成了真实的键盘鼠标交互与文本引导动作测试。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.30111",
@@ -76,19 +80,17 @@
      "published": "2026-11-23T06:10:48Z",
      "updated": "2026-11-24T17:50:11Z",
      "comment": "This version was posted before the coauthors completed their review of the paper",
-     "score": 8.0,
      "tags": [
-      "VLA",
-      "world model",
-      "manipulation"
+      "manipulation",
+      "VLM/LLM",
+      "bimanual",
+      "mobile manipulation"
      ],
-     "score_source": "keyword-demo",
-     "faq": false,
      "orgs": [
       {
+       "logo": "data/logos/stanford.edu.png",
        "name": "Stanford University",
-       "ror": "00f54p054",
-       "logo": "data/logos/stanford.edu.png"
+       "ror": "00f54p054"
       }
      ],
      "thumb": "data/thumbs/2611.30111.jpg",
@@ -96,7 +98,12 @@
      "thumb_h": 320,
      "ax_votes": 77,
      "ax_visits": 818,
-     "heat": 158.8
+     "heat": 158.8,
+     "summary": {
+      "en": "RoboThink separates a reasoning agent from a fast policy using instruction and feedback channels for real-time robotic correction, raising success rates significantly on LIBERO and RoboTwin 2.0 under various drifts.",
+      "zh": "RoboThink将推理agent与策略分离，通过指令通道和反馈通道实现实时纠错与引导。在LIBERO上，未知恒定漂移下的成功率从0.09提升至0.87，在RoboTwin 2.0的双臂任务中也将成功率从0.12提升至0.74。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.30989",
@@ -114,16 +121,13 @@
      "published": "2026-11-23T16:44:19Z",
      "updated": "2026-11-23T16:44:19Z",
      "comment": "",
-     "score": 9.0,
      "tags": [
+      "benchmark",
+      "VLM/LLM",
       "VLA",
-      "manipulation",
-      "embodied",
-      "VLM/LLM"
+      "world model"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 138,
-     "faq": false,
      "orgs": [
       {
        "name": "NUS",
@@ -135,7 +139,12 @@
      "thumb_h": 246,
      "ax_votes": 2,
      "ax_visits": 42,
-     "heat": 144.2
+     "heat": 144.2,
+     "summary": {
+      "zh": "推出了 WorldLeague 基准测试，包含 60 个模拟机器人任务，用于评估 AI 系统在感知、记忆、规划和行动方面的物理代理能力。测试显示在 13 个代表性系统中，Claude Fable 5.2 取得了最高的平均交互分 28.58/100 并完成了 13 个目标。",
+      "en": "WorldLeague benchmarks 13 AI systems across 60 simulated robot tasks, where Claude Fable 5.2 achieves the highest mean Interactive Score of 28.58/100 and completes 13 goals."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.31201",
@@ -165,22 +174,32 @@
      "published": "2026-11-23T18:48:54Z",
      "updated": "2026-11-23T18:48:54Z",
      "comment": "Project Page: https://dravenalg.github.io/projects/Embo-Harness/",
-     "score": 3.5,
      "tags": [
-      "manipulation"
+      "VLM/LLM",
+      "manipulation",
+      "planning",
+      "perception"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 106,
-     "faq": false,
      "orgs": [
       {
        "name": "NTU",
        "ror": "02e7b5302"
       },
       {
-       "logo": "data/logos/uconn.edu.png",
+       "name": "SenseTime Research"
+      },
+      {
+       "name": "Xiamen University",
+       "ror": "00mcjh785"
+      },
+      {
+       "name": "Lenovo"
+      },
+      {
        "name": "University of Connecticut",
-       "ror": "02der9h97"
+       "ror": "02der9h97",
+       "logo": "data/logos/uconn.edu.png"
       }
      ],
      "thumb": "data/thumbs/2611.31201.jpg",
@@ -188,7 +207,12 @@
      "thumb_h": 440,
      "ax_votes": 14,
      "ax_visits": 160,
-     "heat": 136.0
+     "heat": 136.0,
+     "summary": {
+      "zh": "Embo-Harness系统性研究了前沿多模态大模型作为具身智能策略的设计原则，通过探索提示词、规划、动作执行和工具使用四个组件提炼出六项经验法则。该方法在RoboLab-120基准测试中取得了83.3%的成功率，比最强基线提升了26.2个百分点，并在4个真实世界的操纵任务的20次零样本试验中成功了15次。",
+      "en": "Embo-Harness systematically studies frontier-model-as-policy harnesses, achieving an 83.3% success rate on RoboLab-120 and outperforming the strongest baseline by 26.2 percentage points."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.31002",
@@ -228,23 +252,58 @@
      "published": "2026-11-23T16:53:57Z",
      "updated": "2026-11-23T16:53:57Z",
      "comment": "Project Page: https://lab.einsia.ai/robo-universe/",
-     "score": 9.0,
      "tags": [
-      "manipulation",
-      "grasping",
-      "embodied",
-      "RL"
+      "simulation",
+      "dataset",
+      "benchmark",
+      "VLM/LLM"
      ],
-     "score_source": "keyword-demo",
-     "faq": false,
-     "orgs": [],
+     "orgs": [
+      {
+       "name": "Tsinghua University",
+       "ror": "03cve4549"
+      },
+      {
+       "name": "Einsia.AI"
+      },
+      {
+       "name": "Peking University",
+       "ror": "02v51f717",
+       "logo": "data/logos/pku.edu.cn.png"
+      },
+      {
+       "name": "University of Illinois Urbana-Champaign",
+       "ror": "047426m28",
+       "logo": "data/logos/illinois.edu.png"
+      },
+      {
+       "name": "HKU",
+       "ror": "02zhqgq86",
+       "logo": "data/logos/hku.hk.png"
+      },
+      {
+       "name": "University College London",
+       "ror": "02jx3x895",
+       "logo": "data/logos/ucl.ac.uk.png"
+      },
+      {
+       "name": "University of North Carolina at Chapel Hill",
+       "ror": "0130frc33",
+       "logo": "data/logos/unc.edu.png"
+      }
+     ],
      "thumb": "data/thumbs/2611.31002.jpg",
      "thumb_w": 640,
      "thumb_h": 372,
      "hf_upvotes": 1,
      "ax_votes": 53,
      "ax_visits": 666,
-     "heat": 120.6
+     "heat": 120.6,
+     "summary": {
+      "zh": "RoboUniverse-10K 包含了 10,807 个由真实视频自动生成的交互式物理环境，并建立了 RoboUniverse-Verified 零样本评测基准。对 11 个模型的评估表明前沿模型可达 85.8% 的成功率，而微调后的 RoboUniverse-35B-A3B 将成功率从 0.8% 提升至 21.2%。",
+      "en": "RoboUniverse-10K introduces 10,807 interactive environments and a zero-shot benchmark, RoboUniverse-Verified. Evaluations reveal frontier models reach 85.8% success, and fine-tuning RoboUniverse-35B-A3B lifts success from 0.8% to 21.2%."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.34849",
@@ -273,13 +332,12 @@
      "published": "2026-11-25T18:23:41Z",
      "updated": "2026-11-25T18:23:41Z",
      "comment": "Project page: https://real2simhub.github.io/",
-     "score": 2.0,
      "tags": [
-      "benchmark"
+      "simulation",
+      "benchmark",
+      "dataset"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 108,
-     "faq": false,
      "orgs": [
       {
        "logo": "data/logos/hku.hk.png",
@@ -295,7 +353,12 @@
      "thumb_h": 201,
      "ax_votes": 1,
      "ax_visits": 47,
-     "heat": 113.7
+     "heat": 113.7,
+     "summary": {
+      "en": "Real2SimLab is a unified platform for real-to-simulation transfer that standardizes evaluation, training data generation, and reward annotation across multiple benchmarks, currently supporting 52 methods on 6 benchmarks.",
+      "zh": "Real2SimLab是一个用于真实到仿真迁移的统一平台，通过集成原有的评分标准来评估代码智能体生成的仿真程序，并提供防数据污染的训练数据与奖励标注生成流程，目前支持6个基准测试中的52种方法。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.31205",
@@ -317,17 +380,24 @@
      "published": "2026-11-23T18:52:19Z",
      "updated": "2026-11-23T18:52:19Z",
      "comment": "Project page: https://projects.zxhezexin.com/acap",
-     "score": 3.5,
      "tags": [
-      "manipulation"
+      "control",
+      "mobile manipulation",
+      "planning"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 66,
-     "faq": false,
      "orgs": [
       {
        "name": "NTU",
        "ror": "02e7b5302"
+      },
+      {
+       "name": "University of Oxford",
+       "ror": "052gg0110",
+       "logo": "data/logos/ox.ac.uk.png"
+      },
+      {
+       "name": "ACE Robotics"
       }
      ],
      "thumb": "data/thumbs/2611.31205.jpg",
@@ -335,7 +405,12 @@
      "thumb_h": 300,
      "ax_votes": 5,
      "ax_visits": 60,
-     "heat": 77.0
+     "heat": 77.0,
+     "summary": {
+      "zh": "引入了一种异步编码智能体策略（ACAP）框架，将机器人组织为多个持久智能体团队，通过超智能体协调物理依赖并动态分配控制权；在72次真实世界测试中，相较于单智能体Direct Policy，任务平衡时间成本降低了28.2%。",
+      "en": "We introduce Asynchronous Coding Agents as Policy (ACAP), an asynchronous framework that organizes a robot as a team of persistent agents, reducing task-balanced time cost by 28.2% compared to Direct Policy."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.33144",
@@ -370,16 +445,13 @@
      "published": "2026-11-24T18:56:44Z",
      "updated": "2026-11-24T18:56:44Z",
      "comment": "23 pages, 9 figures, 7 tables. Project page: https://vme0522.github.io/PyRUA-Dex/",
-     "score": 8.5,
      "tags": [
       "dexterous",
+      "bimanual",
       "manipulation",
-      "imitation",
-      "teleop"
+      "simulation"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 44,
-     "faq": false,
      "orgs": [
       {
        "logo": "data/logos/pku.edu.cn.png",
@@ -396,7 +468,12 @@
      "thumb_h": 440,
      "ax_votes": 3,
      "ax_visits": 116,
-     "heat": 58.6
+     "heat": 58.6,
+     "summary": {
+      "en": "PyRUA-Dex enables coding agents to learn dexterous bimanual manipulation without demonstrations, achieving 72.9 on Bench2Dex and 81.0% success on DexJoCo while efficiently learning piano and calligraphy in the real world.",
+      "zh": "PyRUA-Dex 框架利用编码智能体通过程序化策略实现具身双臂灵巧操作，无需高质量示范。该方法在 Bench2Dex 上取得了 72.9 的 SOTA 分数，并在 DexJoCo 全随机化下达到 81.0% 的成功率。真实世界双臂 22 自由度手部实验表明，它能高效完成弹钢琴和写书法等任务，学习新曲谱仅需 30 分钟。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.30898",
@@ -423,20 +500,23 @@
      "published": "2026-11-23T16:01:06Z",
      "updated": "2026-11-23T16:01:06Z",
      "comment": "19 pages, 7 figures, 6 tables. Project page: https://pawteam-eai.github.io/native-lam/",
-     "score": 7.5,
      "tags": [
-      "VLA",
       "world model",
+      "VLA",
       "imitation",
-      "benchmark"
+      "simulation"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 28,
-     "faq": false,
      "orgs": [
+      {
+       "name": "SenseTime Research"
+      },
       {
        "name": "NTU",
        "ror": "02e7b5302"
+      },
+      {
+       "name": "ACE Robotics"
       }
      ],
      "thumb": "data/thumbs/2611.30898.jpg",
@@ -444,7 +524,12 @@
      "thumb_h": 422,
      "ax_votes": 12,
      "ax_visits": 140,
-     "heat": 54.0
+     "heat": 54.0,
+     "summary": {
+      "zh": "Native LAM将预训练视频扩散Transformer作为逆向和正向动力学模型，通过学习型动力学寄存器提取紧凑的原生潜在动作。基于此提出的PAWlicy预训练范式在RoboTwin 2.0上达到了93.6%的平均成功率，在真实机器人上也超越了pi_0.5基线。",
+      "en": "Native LAM extracts compact native latent actions from pretrained video world models using learnable dynamics registers. The proposed PAWlicy pretraining paradigm achieves a 93.6% average success rate on RoboTwin 2.0 and outperforms the pi_0.5 baseline on real robots."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.33158",
@@ -472,13 +557,12 @@
      "published": "2026-11-24T18:59:58Z",
      "updated": "2026-11-25T10:18:21Z",
      "comment": "",
-     "score": 5.0,
      "tags": [
       "manipulation",
+      "imitation",
+      "simulation",
       "diffusion policy"
      ],
-     "score_source": "keyword-demo",
-     "faq": false,
      "orgs": [
       {
        "logo": "data/logos/washington.edu.png",
@@ -504,7 +588,12 @@
      "hf_upvotes": 1,
      "ax_votes": 21,
      "ax_visits": 295,
-     "heat": 51.5
+     "heat": 51.5,
+     "summary": {
+      "en": "OmniAct is a cross-embodiment manipulation policy conditioning on robot kinematics and scene geometry to predict relative joint motions using flow-matching, achieving 63.0% success on held-out evaluations and outperforming baselines.",
+      "zh": "OmniAct是一种直接根据机器人在特定场景中的运动学进行条件化的跨具身操作策略，通过流匹配策略预测相对关节运动。在2000个具身-场景测试集上取得63.0%的成功率，优于pi0.5的17.8%和最强基线的57.9%，并在真实世界机器人上实现了接近次优方法两倍的成功率。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.30254",
@@ -561,22 +650,25 @@
      "published": "2026-11-23T08:20:59Z",
      "updated": "2026-11-23T08:20:59Z",
      "comment": "87 pages, 25 figures, Project Page: https://baai-eai.github.io/innata-0/",
-     "score": 5.5,
      "tags": [
+      "world model",
       "manipulation",
-      "embodied",
-      "VLM/LLM"
+      "VLA",
+      "planning"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 45,
-     "faq": false,
      "orgs": [],
      "thumb": "data/thumbs/2611.30254.jpg",
      "thumb_w": 640,
      "thumb_h": 386,
      "ax_votes": 1,
      "ax_visits": 35,
-     "heat": 49.5
+     "heat": 49.5,
+     "summary": {
+      "en": "Innata-0 is a native embodied world system featuring co-designed world-action models and agents for robust long-horizon reasoning, prediction, and robotic manipulation.",
+      "zh": "Innate-0是一个具身世界系统，通过联合设计具身世界动作模型Innata-0-WAM和智能体Innata-0-Agent，将理解、预测与动作生成结合，并通过协同设计协议协调长视距执行，在理解、世界预测和机器人操作任务中展现出强大的具身能力。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.31240",
@@ -605,19 +697,20 @@
      "published": "2026-11-23T18:59:52Z",
      "updated": "2026-11-23T18:59:52Z",
      "comment": "45 pages. Project page: https://cvlab-kaist.github.io/MoOP",
-     "score": 3.0,
      "tags": [
       "VLA",
-      "VLM/LLM",
-      "driving"
+      "driving",
+      "perception",
+      "control"
      ],
-     "score_source": "keyword-demo",
-     "faq": false,
      "orgs": [
       {
-       "logo": "data/logos/kaist.ac.kr.png",
+       "name": "LG Innotek"
+      },
+      {
        "name": "KAIST",
-       "ror": "05apxxy63"
+       "ror": "05apxxy63",
+       "logo": "data/logos/kaist.ac.kr.png"
       }
      ],
      "thumb": "data/thumbs/2611.31240.jpg",
@@ -625,7 +718,12 @@
      "thumb_h": 235,
      "ax_votes": 22,
      "ax_visits": 254,
-     "heat": 47.4
+     "heat": 47.4,
+     "summary": {
+      "zh": "针对自动驾驶VLA模型提出了一种名为MoOP的结构化剪枝方法，通过结合场景理解和轨迹预测的目标进行VLM剪枝并选择专家MLP通道。在减少24.0%的参数量时，该方法保留了密集模型94.0%的LingoQA得分，并在无后微调的情况下实现了1.37倍的端到端推理加速和36.6%的峰值内存降低。",
+      "en": "MoOP is proposed for structured pruning of autonomous driving VLAs, combining reasoning and trajectory objectives to prune VLM structures and select expert MLP channels, achieving a 1.37x speedup and 36.6% lower peak memory at a 24.0% parameter reduction without fine-tuning."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.33010",
@@ -651,21 +749,17 @@
      "updated": "2026-11-24T17:32:00Z",
      "comment": "Code: https://github.com/iPPLab/robodojo-mirror",
      "code_url": "https://github.com/iPPLab/robodojo-mirror",
-     "score": 10.0,
      "tags": [
-      "VLA",
-      "world model",
       "manipulation",
-      "grasping"
+      "benchmark",
+      "perception"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 34,
-     "faq": false,
      "orgs": [
       {
+       "logo": "data/logos/gouni.edu.ng.png",
        "name": "Godfrey Okoye University",
-       "ror": "04japw488",
-       "logo": "data/logos/gouni.edu.ng.png"
+       "ror": "04japw488"
       }
      ],
      "thumb": "data/thumbs/2611.33010.jpg",
@@ -673,7 +767,12 @@
      "thumb_h": 304,
      "ax_votes": 5,
      "ax_visits": 56,
-     "heat": 44.6
+     "heat": 44.6,
+     "summary": {
+      "en": "We introduce RoboDojo-Mirror to evaluate robot policies in mirrored environments, revealing that five mainstream policies suffer a 10.8 to 56.7 percentage point drop in success rates due to spatial mislocalization rather than collisions.",
+      "zh": "引入RoboDojo-Mirror基准测试来评估具身机器人策略在镜面环境下的表现，结果表明五种主流策略在镜面条件下的成功率显著下降，下降幅度达10.8至56.7个百分点，主要归因于空间定位错误而非物理碰撞。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.30813",
@@ -705,19 +804,28 @@
      "published": "2026-11-23T15:06:14Z",
      "updated": "2026-11-23T15:06:14Z",
      "comment": "39 pages, 12 figures",
-     "score": 4.5,
      "tags": [
+      "bimanual",
       "manipulation",
-      "diffusion policy"
+      "perception"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 10,
-     "faq": false,
      "orgs": [
       {
-       "logo": "data/logos/hkust.edu.hk.png",
        "name": "HKUST",
-       "ror": "00q4vv597"
+       "ror": "00q4vv597",
+       "logo": "data/logos/hkust.edu.hk.png"
+      },
+      {
+       "name": "Xense Robotics"
+      },
+      {
+       "name": "Chinese Academy of Sciences",
+       "ror": "034t30j35",
+       "logo": "data/logos/cas.cn.png"
+      },
+      {
+       "name": "Zhongguancun Academy"
       },
       {
        "name": "Shanghai Jiao Tong University",
@@ -726,6 +834,16 @@
       {
        "name": "NTU",
        "ror": "02e7b5302"
+      },
+      {
+       "name": "HKU",
+       "ror": "02zhqgq86",
+       "logo": "data/logos/hku.hk.png"
+      },
+      {
+       "name": "Peking University",
+       "ror": "02v51f717",
+       "logo": "data/logos/pku.edu.cn.png"
       }
      ],
      "thumb": "data/thumbs/2611.30813.jpg",
@@ -733,7 +851,12 @@
      "thumb_h": 208,
      "ax_votes": 13,
      "ax_visits": 163,
-     "heat": 39.3
+     "heat": 39.3,
+     "summary": {
+      "zh": "引入了HIVE-Bench基准，通过一个共享的flow-matching策略在24个以第一人称视角开展的双臂任务上评估了20个视觉编码器，发现保留patch级别的视觉表示对具身操作至关重要，且逆动力学读数是策略训练前最强的性能衡量指标之一。",
+      "en": "HIVE-Bench to evaluate patch-level visual representations across 24 egocentric bimanual tasks, showing that preserving patches is critical for bimanual policies and inverse-dynamics readouts strongly predict performance."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.31098",
@@ -763,22 +886,31 @@
      "published": "2026-11-23T17:39:59Z",
      "updated": "2026-11-23T17:39:59Z",
      "comment": "",
-     "score": 5.5,
      "tags": [
       "manipulation",
-      "sim2real"
+      "simulation",
+      "sim2real",
+      "RL"
      ],
-     "score_source": "keyword-demo",
-     "faq": false,
      "orgs": [
       {
-       "logo": "data/logos/cmu.edu.png",
-       "name": "Carnegie Mellon University",
-       "ror": "05x2bcf33"
+       "name": "University of Illinois Urbana-Champaign",
+       "ror": "047426m28",
+       "logo": "data/logos/illinois.edu.png"
       },
       {
-       "logo": "data/logos/nvidia.com.png",
-       "name": "NVIDIA"
+       "name": "Carnegie Mellon University",
+       "ror": "05x2bcf33",
+       "logo": "data/logos/cmu.edu.png"
+      },
+      {
+       "name": "University of California, Berkeley",
+       "ror": "01an7q238",
+       "logo": "data/logos/berkeley.edu.png"
+      },
+      {
+       "name": "NVIDIA",
+       "logo": "data/logos/nvidia.com.png"
       }
      ],
      "thumb": "data/thumbs/2611.31098.jpg",
@@ -787,7 +919,12 @@
      "hf_upvotes": 4,
      "ax_votes": 10,
      "ax_visits": 187,
-     "heat": 32.7
+     "heat": 32.7,
+     "summary": {
+      "zh": "Real2Worlds2Real是一个自改进的智能体框架，通过集成可扩展的模拟世界构建与策略开发，利用有限的视觉观测生成数字孪生并扩展为数字亲属，实现了高效的真实世界策略迁移，并在世界保真度与长周期任务成功率上取得显著提升。",
+      "en": "Real2Worlds2Real is a self-improving agentic framework that integrates scalable simulation-world construction with policy development to enable successful real-world policy transfer and improve long-horizon task success."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.34811",
@@ -813,13 +950,13 @@
      "updated": "2026-11-25T17:59:24Z",
      "comment": "Code: https://github.com/iPPLab/HOG-WAM",
      "code_url": "https://github.com/iPPLab/HOG-WAM",
-     "score": 1.5,
      "tags": [
-      "imitation"
+      "world model",
+      "manipulation",
+      "imitation",
+      "simulation"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 22,
-     "faq": false,
      "orgs": [
       {
        "logo": "data/logos/pku.edu.cn.png",
@@ -836,7 +973,12 @@
      "thumb_h": 256,
      "ax_votes": 3,
      "ax_visits": 38,
-     "heat": 28.8
+     "heat": 28.8,
+     "summary": {
+      "en": "HOG-WAM improves the visual robustness of world-action models by predicting future HOG features as structural supervision, increasing mixed-noise success from 78.86% to 82.86% on RoboTwin-Plus while maintaining clean-scene performance.",
+      "zh": "引入HOG-WAM通过未来梯度预测提升世界动作模型的视觉鲁棒性，利用HOG作为结构监督塑造控制的视觉表征。在RoboTwin-Plus的混合噪声测试中，成功率由FastWAM的78.86%提升至82.86%，并在LIBERO Plus和Franka真实任务中取得性能提升。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.30963",
@@ -865,38 +1007,39 @@
      "published": "2026-11-23T16:32:22Z",
      "updated": "2026-11-23T16:32:22Z",
      "comment": "Project website: https://anson2333.github.io/foresight-forcing",
-     "score": 6.5,
      "tags": [
       "world model",
       "manipulation",
-      "VLM/LLM"
+      "imitation",
+      "perception"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 2,
-     "faq": false,
      "orgs": [
       {
        "name": "Shanghai Jiao Tong University",
        "ror": "0220qvk04"
       },
       {
-       "logo": "data/logos/hku.hk.png",
        "name": "HKU",
-       "ror": "02zhqgq86"
+       "ror": "02zhqgq86",
+       "logo": "data/logos/hku.hk.png"
       },
       {
-       "logo": "data/logos/sii.edu.cn.png",
        "name": "Shanghai Innovation Institute",
-       "ror": "01fatbw66"
+       "ror": "01fatbw66",
+       "logo": "data/logos/sii.edu.cn.png"
+      },
+      {
+       "name": "Noematrix"
       },
       {
        "name": "Fudan University",
        "ror": "013q1eq08"
       },
       {
-       "logo": "data/logos/hkust.edu.hk.png",
        "name": "HKUST",
-       "ror": "00q4vv597"
+       "ror": "00q4vv597",
+       "logo": "data/logos/hkust.edu.hk.png"
       },
       {
        "name": "NUS",
@@ -908,7 +1051,12 @@
      "thumb_h": 285,
      "ax_votes": 11,
      "ax_visits": 150,
-     "heat": 28.0
+     "heat": 28.0,
+     "summary": {
+      "zh": "Foresight Forcing ($\text{F}^2$) 是一种利用预训练3D特征空间学习空间转换表示的世界动作模型，通过蒸馏3D基础模型的特征差异来监督几何感知的特征转换。在 RoboTwin2.0 Full 上取得了 95.01% 的平均成功率，在六项真实世界操作任务中达到了 85.8% 的平均任务得分。",
+      "en": "Foresight Forcing is a World Action Model that learns spatial transitions from pretrained 3D features, achieving 95.01% success on RoboTwin2.0 Full and 85.8% on real-world tasks."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.31115",
@@ -937,15 +1085,12 @@
      "published": "2026-11-23T17:52:55Z",
      "updated": "2026-11-23T17:52:55Z",
      "comment": "Project website: https://showlab.github.io/RUIBench",
-     "score": 5.5,
      "tags": [
       "manipulation",
-      "embodied",
-      "VLM/LLM"
+      "benchmark",
+      "simulation"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 22,
-     "faq": false,
      "orgs": [
       {
        "name": "NUS",
@@ -957,7 +1102,12 @@
      "thumb_h": 351,
      "ax_votes": 2,
      "ax_visits": 31,
-     "heat": 27.1
+     "heat": 27.1,
+     "summary": {
+      "zh": "推出了包含30个操作任务的RUIBench和统一框架RUIKit，用于系统研究机器人使用接口（RUI）对具身智能体可靠性的影响。仿真实验表明，仅改变RUI就能将前沿智能体的成功率从45%提升至81%，微调4B模型的成功率从13%提升至47%。",
+      "en": "We introduce RUIBench and RUIKit to study robot-use interfaces, showing that interface design can shift an agent's success rate from 45% to 81% in simulation."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.32649",
@@ -985,14 +1135,13 @@
      "updated": "2026-11-24T14:07:17Z",
      "comment": "Project page: https://iclworld.github.io Code: https://github.com/ICLWorld/ICLWorld Dataset: https://huggingface.co/datasets/Aoraku/ICLWorld",
      "code_url": "https://github.com/ICLWorld/ICLWorld",
-     "score": 2.0,
      "tags": [
-      "imitation",
-      "benchmark"
+      "benchmark",
+      "dataset",
+      "perception",
+      "planning"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 21,
-     "faq": false,
      "orgs": [
       {
        "name": "Tsinghua University",
@@ -1004,7 +1153,12 @@
      "thumb_h": 342,
      "ax_votes": 0,
      "ax_visits": 35,
-     "heat": 24.5
+     "heat": 24.5,
+     "summary": {
+      "en": "ICLWorld evaluates agent in-context learning across digital and physical worlds with 30 environments and 160 tasks, showing frontier models achieve up to 82% success in computer use but only 27% in robot use.",
+      "zh": "ICLWorld是一个涵盖数字和物理世界的在线基准测试，包含30个环境和160个任务，用于评估智能体的上下文学习能力。实验表明，最强智能体Claude Opus 5.5和GPT-6 Astra在计算机使用任务上的成功率分别为82%和76%，但在机器人任务上仅为27%和26%。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.30495",
@@ -1025,16 +1179,13 @@
      "published": "2026-11-23T11:13:23Z",
      "updated": "2026-11-23T11:13:23Z",
      "comment": "",
-     "score": 7.0,
      "tags": [
+      "bimanual",
       "dexterous",
       "manipulation",
-      "imitation",
-      "benchmark"
+      "imitation"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 14,
-     "faq": false,
      "orgs": [
       {
        "logo": "data/logos/mbzuai.ac.ae.png",
@@ -1047,7 +1198,12 @@
      "thumb_h": 307,
      "ax_votes": 4,
      "ax_visits": 53,
-     "heat": 23.3
+     "heat": 23.3,
+     "summary": {
+      "en": "DexDuet learns contact-preserving bimanual dexterity from a single human demonstration using interaction rewards and a coordinated policy, improving object-tracking ADD-AUC by 11 to 41 points across four benchmarks.",
+      "zh": "DexDuet框架通过单个人类示范学习保持接触的双手灵巧操作，利用两个交互奖励和协同策略分解来实现精确模仿。在三个模拟器和五个机器人形态的四个基准测试中，该方法将物体追踪ADD-AUC较基线提升了11到41点，并在122次对比中更好地保持了人类接触。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     }
    ]
   },
@@ -1078,14 +1234,13 @@
      "updated": "2026-11-23T01:51:57Z",
      "comment": "Code: https://github.com/AIGeeksGroup/MotionMamba2.0. Website: https://aigeeksgroup.github.io/MotionMamba2.0",
      "code_url": "https://github.com/AIGeeksGroup/MotionMamba2.0",
-     "score": 5.0,
      "tags": [
       "humanoid",
-      "locomotion"
+      "locomotion",
+      "diffusion policy",
+      "control"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 224,
-     "faq": false,
      "orgs": [
       {
        "logo": "data/logos/pku.edu.cn.png",
@@ -1102,7 +1257,12 @@
      "thumb_h": 272,
      "ax_votes": 0,
      "ax_visits": 63,
-     "heat": 230.3
+     "heat": 230.3,
+     "summary": {
+      "en": "Motion Mamba 2.0 integrates local attention, recurrent states, and persistent content memory for long-horizon humanoid motion generation, achieving accurate 39.52 s control and a 6.138x speedup on an RTX 4090 while deployed on Unitree G1.",
+      "zh": "Motion Mamba 2.0 是一种基于 Mamba 的根体扩散架构，通过融合局部注意力、可恢复循环状态和持久内容记忆来实现长视野可控动作生成，在 HiPHI 数据集上实现了长达 39.52 秒的精确终端控制，并在 RTX 4090 上将中位完整窗口延迟从 1685.35 毫秒降至 276.14 毫秒，实现了 6.138 倍的加速。同时，该方法在 Unitree G1 机器人上完成了真实的键盘鼠标交互与文本引导动作测试。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.30111",
@@ -1125,19 +1285,17 @@
      "published": "2026-11-23T06:10:48Z",
      "updated": "2026-11-24T17:50:11Z",
      "comment": "This version was posted before the coauthors completed their review of the paper",
-     "score": 8.0,
      "tags": [
-      "VLA",
-      "world model",
-      "manipulation"
+      "manipulation",
+      "VLM/LLM",
+      "bimanual",
+      "mobile manipulation"
      ],
-     "score_source": "keyword-demo",
-     "faq": false,
      "orgs": [
       {
+       "logo": "data/logos/stanford.edu.png",
        "name": "Stanford University",
-       "ror": "00f54p054",
-       "logo": "data/logos/stanford.edu.png"
+       "ror": "00f54p054"
       }
      ],
      "thumb": "data/thumbs/2611.30111.jpg",
@@ -1145,7 +1303,12 @@
      "thumb_h": 320,
      "ax_votes": 77,
      "ax_visits": 818,
-     "heat": 158.8
+     "heat": 158.8,
+     "summary": {
+      "en": "RoboThink separates a reasoning agent from a fast policy using instruction and feedback channels for real-time robotic correction, raising success rates significantly on LIBERO and RoboTwin 2.0 under various drifts.",
+      "zh": "RoboThink将推理agent与策略分离，通过指令通道和反馈通道实现实时纠错与引导。在LIBERO上，未知恒定漂移下的成功率从0.09提升至0.87，在RoboTwin 2.0的双臂任务中也将成功率从0.12提升至0.74。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.30989",
@@ -1163,16 +1326,13 @@
      "published": "2026-11-23T16:44:19Z",
      "updated": "2026-11-23T16:44:19Z",
      "comment": "",
-     "score": 9.0,
      "tags": [
+      "benchmark",
+      "VLM/LLM",
       "VLA",
-      "manipulation",
-      "embodied",
-      "VLM/LLM"
+      "world model"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 138,
-     "faq": false,
      "orgs": [
       {
        "name": "NUS",
@@ -1184,7 +1344,12 @@
      "thumb_h": 246,
      "ax_votes": 2,
      "ax_visits": 42,
-     "heat": 144.2
+     "heat": 144.2,
+     "summary": {
+      "zh": "推出了 WorldLeague 基准测试，包含 60 个模拟机器人任务，用于评估 AI 系统在感知、记忆、规划和行动方面的物理代理能力。测试显示在 13 个代表性系统中，Claude Fable 5.2 取得了最高的平均交互分 28.58/100 并完成了 13 个目标。",
+      "en": "WorldLeague benchmarks 13 AI systems across 60 simulated robot tasks, where Claude Fable 5.2 achieves the highest mean Interactive Score of 28.58/100 and completes 13 goals."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.31201",
@@ -1214,22 +1379,32 @@
      "published": "2026-11-23T18:48:54Z",
      "updated": "2026-11-23T18:48:54Z",
      "comment": "Project Page: https://dravenalg.github.io/projects/Embo-Harness/",
-     "score": 3.5,
      "tags": [
-      "manipulation"
+      "VLM/LLM",
+      "manipulation",
+      "planning",
+      "perception"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 106,
-     "faq": false,
      "orgs": [
       {
        "name": "NTU",
        "ror": "02e7b5302"
       },
       {
-       "logo": "data/logos/uconn.edu.png",
+       "name": "SenseTime Research"
+      },
+      {
+       "name": "Xiamen University",
+       "ror": "00mcjh785"
+      },
+      {
+       "name": "Lenovo"
+      },
+      {
        "name": "University of Connecticut",
-       "ror": "02der9h97"
+       "ror": "02der9h97",
+       "logo": "data/logos/uconn.edu.png"
       }
      ],
      "thumb": "data/thumbs/2611.31201.jpg",
@@ -1237,7 +1412,12 @@
      "thumb_h": 440,
      "ax_votes": 14,
      "ax_visits": 160,
-     "heat": 136.0
+     "heat": 136.0,
+     "summary": {
+      "zh": "Embo-Harness系统性研究了前沿多模态大模型作为具身智能策略的设计原则，通过探索提示词、规划、动作执行和工具使用四个组件提炼出六项经验法则。该方法在RoboLab-120基准测试中取得了83.3%的成功率，比最强基线提升了26.2个百分点，并在4个真实世界的操纵任务的20次零样本试验中成功了15次。",
+      "en": "Embo-Harness systematically studies frontier-model-as-policy harnesses, achieving an 83.3% success rate on RoboLab-120 and outperforming the strongest baseline by 26.2 percentage points."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.31002",
@@ -1277,23 +1457,58 @@
      "published": "2026-11-23T16:53:57Z",
      "updated": "2026-11-23T16:53:57Z",
      "comment": "Project Page: https://lab.einsia.ai/robo-universe/",
-     "score": 9.0,
      "tags": [
-      "manipulation",
-      "grasping",
-      "embodied",
-      "RL"
+      "simulation",
+      "dataset",
+      "benchmark",
+      "VLM/LLM"
      ],
-     "score_source": "keyword-demo",
-     "faq": false,
-     "orgs": [],
+     "orgs": [
+      {
+       "name": "Tsinghua University",
+       "ror": "03cve4549"
+      },
+      {
+       "name": "Einsia.AI"
+      },
+      {
+       "name": "Peking University",
+       "ror": "02v51f717",
+       "logo": "data/logos/pku.edu.cn.png"
+      },
+      {
+       "name": "University of Illinois Urbana-Champaign",
+       "ror": "047426m28",
+       "logo": "data/logos/illinois.edu.png"
+      },
+      {
+       "name": "HKU",
+       "ror": "02zhqgq86",
+       "logo": "data/logos/hku.hk.png"
+      },
+      {
+       "name": "University College London",
+       "ror": "02jx3x895",
+       "logo": "data/logos/ucl.ac.uk.png"
+      },
+      {
+       "name": "University of North Carolina at Chapel Hill",
+       "ror": "0130frc33",
+       "logo": "data/logos/unc.edu.png"
+      }
+     ],
      "thumb": "data/thumbs/2611.31002.jpg",
      "thumb_w": 640,
      "thumb_h": 372,
      "hf_upvotes": 1,
      "ax_votes": 53,
      "ax_visits": 666,
-     "heat": 120.6
+     "heat": 120.6,
+     "summary": {
+      "zh": "RoboUniverse-10K 包含了 10,807 个由真实视频自动生成的交互式物理环境，并建立了 RoboUniverse-Verified 零样本评测基准。对 11 个模型的评估表明前沿模型可达 85.8% 的成功率，而微调后的 RoboUniverse-35B-A3B 将成功率从 0.8% 提升至 21.2%。",
+      "en": "RoboUniverse-10K introduces 10,807 interactive environments and a zero-shot benchmark, RoboUniverse-Verified. Evaluations reveal frontier models reach 85.8% success, and fine-tuning RoboUniverse-35B-A3B lifts success from 0.8% to 21.2%."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.34849",
@@ -1322,13 +1537,12 @@
      "published": "2026-11-25T18:23:41Z",
      "updated": "2026-11-25T18:23:41Z",
      "comment": "Project page: https://real2simhub.github.io/",
-     "score": 2.0,
      "tags": [
-      "benchmark"
+      "simulation",
+      "benchmark",
+      "dataset"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 108,
-     "faq": false,
      "orgs": [
       {
        "logo": "data/logos/hku.hk.png",
@@ -1344,7 +1558,12 @@
      "thumb_h": 201,
      "ax_votes": 1,
      "ax_visits": 47,
-     "heat": 113.7
+     "heat": 113.7,
+     "summary": {
+      "en": "Real2SimLab is a unified platform for real-to-simulation transfer that standardizes evaluation, training data generation, and reward annotation across multiple benchmarks, currently supporting 52 methods on 6 benchmarks.",
+      "zh": "Real2SimLab是一个用于真实到仿真迁移的统一平台，通过集成原有的评分标准来评估代码智能体生成的仿真程序，并提供防数据污染的训练数据与奖励标注生成流程，目前支持6个基准测试中的52种方法。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.31205",
@@ -1366,17 +1585,24 @@
      "published": "2026-11-23T18:52:19Z",
      "updated": "2026-11-23T18:52:19Z",
      "comment": "Project page: https://projects.zxhezexin.com/acap",
-     "score": 3.5,
      "tags": [
-      "manipulation"
+      "control",
+      "mobile manipulation",
+      "planning"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 66,
-     "faq": false,
      "orgs": [
       {
        "name": "NTU",
        "ror": "02e7b5302"
+      },
+      {
+       "name": "University of Oxford",
+       "ror": "052gg0110",
+       "logo": "data/logos/ox.ac.uk.png"
+      },
+      {
+       "name": "ACE Robotics"
       }
      ],
      "thumb": "data/thumbs/2611.31205.jpg",
@@ -1384,7 +1610,12 @@
      "thumb_h": 300,
      "ax_votes": 5,
      "ax_visits": 60,
-     "heat": 77.0
+     "heat": 77.0,
+     "summary": {
+      "zh": "引入了一种异步编码智能体策略（ACAP）框架，将机器人组织为多个持久智能体团队，通过超智能体协调物理依赖并动态分配控制权；在72次真实世界测试中，相较于单智能体Direct Policy，任务平衡时间成本降低了28.2%。",
+      "en": "We introduce Asynchronous Coding Agents as Policy (ACAP), an asynchronous framework that organizes a robot as a team of persistent agents, reducing task-balanced time cost by 28.2% compared to Direct Policy."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.33144",
@@ -1419,16 +1650,13 @@
      "published": "2026-11-24T18:56:44Z",
      "updated": "2026-11-24T18:56:44Z",
      "comment": "23 pages, 9 figures, 7 tables. Project page: https://vme0522.github.io/PyRUA-Dex/",
-     "score": 8.5,
      "tags": [
       "dexterous",
+      "bimanual",
       "manipulation",
-      "imitation",
-      "teleop"
+      "simulation"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 44,
-     "faq": false,
      "orgs": [
       {
        "logo": "data/logos/pku.edu.cn.png",
@@ -1445,7 +1673,12 @@
      "thumb_h": 440,
      "ax_votes": 3,
      "ax_visits": 116,
-     "heat": 58.6
+     "heat": 58.6,
+     "summary": {
+      "en": "PyRUA-Dex enables coding agents to learn dexterous bimanual manipulation without demonstrations, achieving 72.9 on Bench2Dex and 81.0% success on DexJoCo while efficiently learning piano and calligraphy in the real world.",
+      "zh": "PyRUA-Dex 框架利用编码智能体通过程序化策略实现具身双臂灵巧操作，无需高质量示范。该方法在 Bench2Dex 上取得了 72.9 的 SOTA 分数，并在 DexJoCo 全随机化下达到 81.0% 的成功率。真实世界双臂 22 自由度手部实验表明，它能高效完成弹钢琴和写书法等任务，学习新曲谱仅需 30 分钟。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.30898",
@@ -1472,20 +1705,23 @@
      "published": "2026-11-23T16:01:06Z",
      "updated": "2026-11-23T16:01:06Z",
      "comment": "19 pages, 7 figures, 6 tables. Project page: https://pawteam-eai.github.io/native-lam/",
-     "score": 7.5,
      "tags": [
-      "VLA",
       "world model",
+      "VLA",
       "imitation",
-      "benchmark"
+      "simulation"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 28,
-     "faq": false,
      "orgs": [
+      {
+       "name": "SenseTime Research"
+      },
       {
        "name": "NTU",
        "ror": "02e7b5302"
+      },
+      {
+       "name": "ACE Robotics"
       }
      ],
      "thumb": "data/thumbs/2611.30898.jpg",
@@ -1493,7 +1729,12 @@
      "thumb_h": 422,
      "ax_votes": 12,
      "ax_visits": 140,
-     "heat": 54.0
+     "heat": 54.0,
+     "summary": {
+      "zh": "Native LAM将预训练视频扩散Transformer作为逆向和正向动力学模型，通过学习型动力学寄存器提取紧凑的原生潜在动作。基于此提出的PAWlicy预训练范式在RoboTwin 2.0上达到了93.6%的平均成功率，在真实机器人上也超越了pi_0.5基线。",
+      "en": "Native LAM extracts compact native latent actions from pretrained video world models using learnable dynamics registers. The proposed PAWlicy pretraining paradigm achieves a 93.6% average success rate on RoboTwin 2.0 and outperforms the pi_0.5 baseline on real robots."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.33158",
@@ -1521,13 +1762,12 @@
      "published": "2026-11-24T18:59:58Z",
      "updated": "2026-11-25T10:18:21Z",
      "comment": "",
-     "score": 5.0,
      "tags": [
       "manipulation",
+      "imitation",
+      "simulation",
       "diffusion policy"
      ],
-     "score_source": "keyword-demo",
-     "faq": false,
      "orgs": [
       {
        "logo": "data/logos/washington.edu.png",
@@ -1553,7 +1793,12 @@
      "hf_upvotes": 1,
      "ax_votes": 21,
      "ax_visits": 295,
-     "heat": 51.5
+     "heat": 51.5,
+     "summary": {
+      "en": "OmniAct is a cross-embodiment manipulation policy conditioning on robot kinematics and scene geometry to predict relative joint motions using flow-matching, achieving 63.0% success on held-out evaluations and outperforming baselines.",
+      "zh": "OmniAct是一种直接根据机器人在特定场景中的运动学进行条件化的跨具身操作策略，通过流匹配策略预测相对关节运动。在2000个具身-场景测试集上取得63.0%的成功率，优于pi0.5的17.8%和最强基线的57.9%，并在真实世界机器人上实现了接近次优方法两倍的成功率。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.30254",
@@ -1610,22 +1855,25 @@
      "published": "2026-11-23T08:20:59Z",
      "updated": "2026-11-23T08:20:59Z",
      "comment": "87 pages, 25 figures, Project Page: https://baai-eai.github.io/innata-0/",
-     "score": 5.5,
      "tags": [
+      "world model",
       "manipulation",
-      "embodied",
-      "VLM/LLM"
+      "VLA",
+      "planning"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 45,
-     "faq": false,
      "orgs": [],
      "thumb": "data/thumbs/2611.30254.jpg",
      "thumb_w": 640,
      "thumb_h": 386,
      "ax_votes": 1,
      "ax_visits": 35,
-     "heat": 49.5
+     "heat": 49.5,
+     "summary": {
+      "en": "Innata-0 is a native embodied world system featuring co-designed world-action models and agents for robust long-horizon reasoning, prediction, and robotic manipulation.",
+      "zh": "Innate-0是一个具身世界系统，通过联合设计具身世界动作模型Innata-0-WAM和智能体Innata-0-Agent，将理解、预测与动作生成结合，并通过协同设计协议协调长视距执行，在理解、世界预测和机器人操作任务中展现出强大的具身能力。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.31240",
@@ -1654,19 +1902,20 @@
      "published": "2026-11-23T18:59:52Z",
      "updated": "2026-11-23T18:59:52Z",
      "comment": "45 pages. Project page: https://cvlab-kaist.github.io/MoOP",
-     "score": 3.0,
      "tags": [
       "VLA",
-      "VLM/LLM",
-      "driving"
+      "driving",
+      "perception",
+      "control"
      ],
-     "score_source": "keyword-demo",
-     "faq": false,
      "orgs": [
       {
-       "logo": "data/logos/kaist.ac.kr.png",
+       "name": "LG Innotek"
+      },
+      {
        "name": "KAIST",
-       "ror": "05apxxy63"
+       "ror": "05apxxy63",
+       "logo": "data/logos/kaist.ac.kr.png"
       }
      ],
      "thumb": "data/thumbs/2611.31240.jpg",
@@ -1674,7 +1923,12 @@
      "thumb_h": 235,
      "ax_votes": 22,
      "ax_visits": 254,
-     "heat": 47.4
+     "heat": 47.4,
+     "summary": {
+      "zh": "针对自动驾驶VLA模型提出了一种名为MoOP的结构化剪枝方法，通过结合场景理解和轨迹预测的目标进行VLM剪枝并选择专家MLP通道。在减少24.0%的参数量时，该方法保留了密集模型94.0%的LingoQA得分，并在无后微调的情况下实现了1.37倍的端到端推理加速和36.6%的峰值内存降低。",
+      "en": "MoOP is proposed for structured pruning of autonomous driving VLAs, combining reasoning and trajectory objectives to prune VLM structures and select expert MLP channels, achieving a 1.37x speedup and 36.6% lower peak memory at a 24.0% parameter reduction without fine-tuning."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.33010",
@@ -1700,21 +1954,17 @@
      "updated": "2026-11-24T17:32:00Z",
      "comment": "Code: https://github.com/iPPLab/robodojo-mirror",
      "code_url": "https://github.com/iPPLab/robodojo-mirror",
-     "score": 10.0,
      "tags": [
-      "VLA",
-      "world model",
       "manipulation",
-      "grasping"
+      "benchmark",
+      "perception"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 34,
-     "faq": false,
      "orgs": [
       {
+       "logo": "data/logos/gouni.edu.ng.png",
        "name": "Godfrey Okoye University",
-       "ror": "04japw488",
-       "logo": "data/logos/gouni.edu.ng.png"
+       "ror": "04japw488"
       }
      ],
      "thumb": "data/thumbs/2611.33010.jpg",
@@ -1722,7 +1972,12 @@
      "thumb_h": 304,
      "ax_votes": 5,
      "ax_visits": 56,
-     "heat": 44.6
+     "heat": 44.6,
+     "summary": {
+      "en": "We introduce RoboDojo-Mirror to evaluate robot policies in mirrored environments, revealing that five mainstream policies suffer a 10.8 to 56.7 percentage point drop in success rates due to spatial mislocalization rather than collisions.",
+      "zh": "引入RoboDojo-Mirror基准测试来评估具身机器人策略在镜面环境下的表现，结果表明五种主流策略在镜面条件下的成功率显著下降，下降幅度达10.8至56.7个百分点，主要归因于空间定位错误而非物理碰撞。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.30813",
@@ -1754,19 +2009,28 @@
      "published": "2026-11-23T15:06:14Z",
      "updated": "2026-11-23T15:06:14Z",
      "comment": "39 pages, 12 figures",
-     "score": 4.5,
      "tags": [
+      "bimanual",
       "manipulation",
-      "diffusion policy"
+      "perception"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 10,
-     "faq": false,
      "orgs": [
       {
-       "logo": "data/logos/hkust.edu.hk.png",
        "name": "HKUST",
-       "ror": "00q4vv597"
+       "ror": "00q4vv597",
+       "logo": "data/logos/hkust.edu.hk.png"
+      },
+      {
+       "name": "Xense Robotics"
+      },
+      {
+       "name": "Chinese Academy of Sciences",
+       "ror": "034t30j35",
+       "logo": "data/logos/cas.cn.png"
+      },
+      {
+       "name": "Zhongguancun Academy"
       },
       {
        "name": "Shanghai Jiao Tong University",
@@ -1775,6 +2039,16 @@
       {
        "name": "NTU",
        "ror": "02e7b5302"
+      },
+      {
+       "name": "HKU",
+       "ror": "02zhqgq86",
+       "logo": "data/logos/hku.hk.png"
+      },
+      {
+       "name": "Peking University",
+       "ror": "02v51f717",
+       "logo": "data/logos/pku.edu.cn.png"
       }
      ],
      "thumb": "data/thumbs/2611.30813.jpg",
@@ -1782,7 +2056,12 @@
      "thumb_h": 208,
      "ax_votes": 13,
      "ax_visits": 163,
-     "heat": 39.3
+     "heat": 39.3,
+     "summary": {
+      "zh": "引入了HIVE-Bench基准，通过一个共享的flow-matching策略在24个以第一人称视角开展的双臂任务上评估了20个视觉编码器，发现保留patch级别的视觉表示对具身操作至关重要，且逆动力学读数是策略训练前最强的性能衡量指标之一。",
+      "en": "HIVE-Bench to evaluate patch-level visual representations across 24 egocentric bimanual tasks, showing that preserving patches is critical for bimanual policies and inverse-dynamics readouts strongly predict performance."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.31098",
@@ -1812,22 +2091,31 @@
      "published": "2026-11-23T17:39:59Z",
      "updated": "2026-11-23T17:39:59Z",
      "comment": "",
-     "score": 5.5,
      "tags": [
       "manipulation",
-      "sim2real"
+      "simulation",
+      "sim2real",
+      "RL"
      ],
-     "score_source": "keyword-demo",
-     "faq": false,
      "orgs": [
       {
-       "logo": "data/logos/cmu.edu.png",
-       "name": "Carnegie Mellon University",
-       "ror": "05x2bcf33"
+       "name": "University of Illinois Urbana-Champaign",
+       "ror": "047426m28",
+       "logo": "data/logos/illinois.edu.png"
       },
       {
-       "logo": "data/logos/nvidia.com.png",
-       "name": "NVIDIA"
+       "name": "Carnegie Mellon University",
+       "ror": "05x2bcf33",
+       "logo": "data/logos/cmu.edu.png"
+      },
+      {
+       "name": "University of California, Berkeley",
+       "ror": "01an7q238",
+       "logo": "data/logos/berkeley.edu.png"
+      },
+      {
+       "name": "NVIDIA",
+       "logo": "data/logos/nvidia.com.png"
       }
      ],
      "thumb": "data/thumbs/2611.31098.jpg",
@@ -1836,7 +2124,12 @@
      "hf_upvotes": 4,
      "ax_votes": 10,
      "ax_visits": 187,
-     "heat": 32.7
+     "heat": 32.7,
+     "summary": {
+      "zh": "Real2Worlds2Real是一个自改进的智能体框架，通过集成可扩展的模拟世界构建与策略开发，利用有限的视觉观测生成数字孪生并扩展为数字亲属，实现了高效的真实世界策略迁移，并在世界保真度与长周期任务成功率上取得显著提升。",
+      "en": "Real2Worlds2Real is a self-improving agentic framework that integrates scalable simulation-world construction with policy development to enable successful real-world policy transfer and improve long-horizon task success."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.34811",
@@ -1862,13 +2155,13 @@
      "updated": "2026-11-25T17:59:24Z",
      "comment": "Code: https://github.com/iPPLab/HOG-WAM",
      "code_url": "https://github.com/iPPLab/HOG-WAM",
-     "score": 1.5,
      "tags": [
-      "imitation"
+      "world model",
+      "manipulation",
+      "imitation",
+      "simulation"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 22,
-     "faq": false,
      "orgs": [
       {
        "logo": "data/logos/pku.edu.cn.png",
@@ -1885,7 +2178,12 @@
      "thumb_h": 256,
      "ax_votes": 3,
      "ax_visits": 38,
-     "heat": 28.8
+     "heat": 28.8,
+     "summary": {
+      "en": "HOG-WAM improves the visual robustness of world-action models by predicting future HOG features as structural supervision, increasing mixed-noise success from 78.86% to 82.86% on RoboTwin-Plus while maintaining clean-scene performance.",
+      "zh": "引入HOG-WAM通过未来梯度预测提升世界动作模型的视觉鲁棒性，利用HOG作为结构监督塑造控制的视觉表征。在RoboTwin-Plus的混合噪声测试中，成功率由FastWAM的78.86%提升至82.86%，并在LIBERO Plus和Franka真实任务中取得性能提升。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.30963",
@@ -1914,38 +2212,39 @@
      "published": "2026-11-23T16:32:22Z",
      "updated": "2026-11-23T16:32:22Z",
      "comment": "Project website: https://anson2333.github.io/foresight-forcing",
-     "score": 6.5,
      "tags": [
       "world model",
       "manipulation",
-      "VLM/LLM"
+      "imitation",
+      "perception"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 2,
-     "faq": false,
      "orgs": [
       {
        "name": "Shanghai Jiao Tong University",
        "ror": "0220qvk04"
       },
       {
-       "logo": "data/logos/hku.hk.png",
        "name": "HKU",
-       "ror": "02zhqgq86"
+       "ror": "02zhqgq86",
+       "logo": "data/logos/hku.hk.png"
       },
       {
-       "logo": "data/logos/sii.edu.cn.png",
        "name": "Shanghai Innovation Institute",
-       "ror": "01fatbw66"
+       "ror": "01fatbw66",
+       "logo": "data/logos/sii.edu.cn.png"
+      },
+      {
+       "name": "Noematrix"
       },
       {
        "name": "Fudan University",
        "ror": "013q1eq08"
       },
       {
-       "logo": "data/logos/hkust.edu.hk.png",
        "name": "HKUST",
-       "ror": "00q4vv597"
+       "ror": "00q4vv597",
+       "logo": "data/logos/hkust.edu.hk.png"
       },
       {
        "name": "NUS",
@@ -1957,7 +2256,12 @@
      "thumb_h": 285,
      "ax_votes": 11,
      "ax_visits": 150,
-     "heat": 28.0
+     "heat": 28.0,
+     "summary": {
+      "zh": "Foresight Forcing ($\text{F}^2$) 是一种利用预训练3D特征空间学习空间转换表示的世界动作模型，通过蒸馏3D基础模型的特征差异来监督几何感知的特征转换。在 RoboTwin2.0 Full 上取得了 95.01% 的平均成功率，在六项真实世界操作任务中达到了 85.8% 的平均任务得分。",
+      "en": "Foresight Forcing is a World Action Model that learns spatial transitions from pretrained 3D features, achieving 95.01% success on RoboTwin2.0 Full and 85.8% on real-world tasks."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.31115",
@@ -1986,15 +2290,12 @@
      "published": "2026-11-23T17:52:55Z",
      "updated": "2026-11-23T17:52:55Z",
      "comment": "Project website: https://showlab.github.io/RUIBench",
-     "score": 5.5,
      "tags": [
       "manipulation",
-      "embodied",
-      "VLM/LLM"
+      "benchmark",
+      "simulation"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 22,
-     "faq": false,
      "orgs": [
       {
        "name": "NUS",
@@ -2006,7 +2307,12 @@
      "thumb_h": 351,
      "ax_votes": 2,
      "ax_visits": 31,
-     "heat": 27.1
+     "heat": 27.1,
+     "summary": {
+      "zh": "推出了包含30个操作任务的RUIBench和统一框架RUIKit，用于系统研究机器人使用接口（RUI）对具身智能体可靠性的影响。仿真实验表明，仅改变RUI就能将前沿智能体的成功率从45%提升至81%，微调4B模型的成功率从13%提升至47%。",
+      "en": "We introduce RUIBench and RUIKit to study robot-use interfaces, showing that interface design can shift an agent's success rate from 45% to 81% in simulation."
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.32649",
@@ -2034,14 +2340,13 @@
      "updated": "2026-11-24T14:07:17Z",
      "comment": "Project page: https://iclworld.github.io Code: https://github.com/ICLWorld/ICLWorld Dataset: https://huggingface.co/datasets/Aoraku/ICLWorld",
      "code_url": "https://github.com/ICLWorld/ICLWorld",
-     "score": 2.0,
      "tags": [
-      "imitation",
-      "benchmark"
+      "benchmark",
+      "dataset",
+      "perception",
+      "planning"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 21,
-     "faq": false,
      "orgs": [
       {
        "name": "Tsinghua University",
@@ -2053,7 +2358,12 @@
      "thumb_h": 342,
      "ax_votes": 0,
      "ax_visits": 35,
-     "heat": 24.5
+     "heat": 24.5,
+     "summary": {
+      "en": "ICLWorld evaluates agent in-context learning across digital and physical worlds with 30 environments and 160 tasks, showing frontier models achieve up to 82% success in computer use but only 27% in robot use.",
+      "zh": "ICLWorld是一个涵盖数字和物理世界的在线基准测试，包含30个环境和160个任务，用于评估智能体的上下文学习能力。实验表明，最强智能体Claude Opus 5.5和GPT-6 Astra在计算机使用任务上的成功率分别为82%和76%，但在机器人任务上仅为27%和26%。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     },
     {
      "id": "2611.30495",
@@ -2074,16 +2384,13 @@
      "published": "2026-11-23T11:13:23Z",
      "updated": "2026-11-23T11:13:23Z",
      "comment": "",
-     "score": 7.0,
      "tags": [
+      "bimanual",
       "dexterous",
       "manipulation",
-      "imitation",
-      "benchmark"
+      "imitation"
      ],
-     "score_source": "keyword-demo",
      "hf_upvotes": 14,
-     "faq": false,
      "orgs": [
       {
        "logo": "data/logos/mbzuai.ac.ae.png",
@@ -2096,7 +2403,12 @@
      "thumb_h": 307,
      "ax_votes": 4,
      "ax_visits": 53,
-     "heat": 23.3
+     "heat": 23.3,
+     "summary": {
+      "en": "DexDuet learns contact-preserving bimanual dexterity from a single human demonstration using interaction rewards and a coordinated policy, improving object-tracking ADD-AUC by 11 to 41 points across four benchmarks.",
+      "zh": "DexDuet框架通过单个人类示范学习保持接触的双手灵巧操作，利用两个交互奖励和协同策略分解来实现精确模仿。在三个模拟器和五个机器人形态的四个基准测试中，该方法将物体追踪ADD-AUC较基线提升了11到41点，并在122次对比中更好地保持了人类接触。"
+     },
+     "summary_source": "gemini-3.5-flash-lite"
     }
    ]
   }

@@ -272,36 +272,87 @@
  },
  "2611.30534": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "South Korea",
+    "name": "Korea Advanced Institute of Science and Technology (KAIST)"
+   },
+   {
+    "country": "South Korea",
+    "name": "Sungkyunkwan University"
+   }
+  ],
   "summary": {
-   "en": "DelayOPSD trains an asynchronous policy to imitate a synchronous teacher on its own rollouts, improving success rates across benchmarks and real robots without deployment overhead.",
-   "zh": "DelayOPSD通过让异步学生策略在自身运行轨迹上模仿同步教师策略来解决延迟问题，在10步延迟下将SmolVLA成功率从70.4%提升至78.7%，并在LIBERO、Kinetix和真实机器人实验中超越对比方法。"
+   "en": "DelayOPSD trains an asynchronous policy to imitate a synchronous teacher on its own rollouts, improving success from 70.4% to 78.7% under a 10-step delay on SmolVLA and outperforming compared methods across benchmarks and real-world robots.",
+   "zh": "DelayOPSD通过让异步策略在自身轨迹上模仿同步教师，解决了由观察延迟导致的性能下降问题；在LIBERO和Kinetix任务中取得了最高平均成功率，在10步延迟下将SmolVLA成功率从70.4%提升至78.7%，在真实机器人上从46%提升至62%。"
   },
   "tags": [
    "VLA",
    "imitation",
-   "diffusion policy",
-   "control"
+   "control",
+   "simulation"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.30555": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Tongji University"
+   },
+   {
+    "country": "China",
+    "name": "Shanghai Jiao Tong University"
+   }
+  ],
   "summary": {
-   "en": "RoboInF is a benchmark evaluating instruction fidelity in robotic manipulation with a 4,2-demonstration dataset, revealing gaps between task completion and faithful execution across four leading models.",
-   "zh": "RoboInF是一个用于评估机器人操作中指令保真度的基准测试，通过固定初始场景并变换指令分支来测量策略行为的自适应性。配套的RoboInF-4K数据集包含4,242个专家演示，对四种领先模型的评估表明任务完成度与忠实执行之间存在明显差距。"
+   "en": "RoboInF is a benchmark evaluating instruction fidelity in robotic manipulation, supported by the RoboInF-4K dataset of 4,242 demonstrations. Evaluations reveal a gap between task completion and faithful execution across leading models.",
+   "zh": "RoboInF是一个专注于具身操作中指令保真度的基准测试，通过固定初始场景和机器人状态，评估策略随指令变化调整行为的可靠性。随附的RoboInF-4K数据集包含4242个专家演示，对主流策略和智能体的评估表明任务完成度与忠实执行之间存在显著差距。"
   },
   "tags": [
-   "benchmark",
    "manipulation",
-   "dataset"
+   "benchmark",
+   "dataset",
+   "imitation"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.30572": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Zhejiang University"
+   },
+   {
+    "country": "Hong Kong",
+    "name": "City University of Hong Kong"
+   },
+   {
+    "country": "Singapore",
+    "name": "Nanyang Technological University"
+   },
+   {
+    "country": "Germany",
+    "name": "Technical University of Munich"
+   },
+   {
+    "country": "China",
+    "name": "Zhejiang University City College"
+   },
+   {
+    "country": "China",
+    "name": "Nanjing University"
+   },
+   {
+    "country": "China",
+    "name": "University of Chinese Academy of Sciences"
+   }
+  ],
   "summary": {
-   "en": "VeriTouch generates and verifies synthetic visuo-tactile trajectories using a world model, verifier, and inverse dynamics model, significantly improving robot policy learning across five real-world tasks without additional real-world data collection.",
-   "zh": "VeriTouch通过联合生成和验证视触觉合成轨迹来提升机器人策略学习，利用VeriGen世界模型生成双视角视频和触觉序列，通过VeriEval验证器过滤不可靠数据，并利用VeriIDM提取动作品，在五个真实任务中验证了合成数据能显著提升策略性能。"
+   "en": "VeriTouch is a framework for generating and verifying synthetic visuo-tactile trajectories to improve robot policy learning, combining a joint world model, a multimodal verifier, and an inverse dynamics model.",
+   "zh": "VeriTouch是一个用于生成和验证合成视触觉轨迹的框架，通过VeriGen联合生成高保真双视角视频和真实的触觉序列，利用VeriEval多模态验证器过滤不可靠序列，并通过VeriIDM提取动作，实验证明合成数据有效提升了五项真实世界任务中的机器人策略性能。"
   },
   "tags": [
    "world model",
@@ -309,13 +360,27 @@
    "manipulation",
    "imitation"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.30632": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Sun Yat-sen University"
+   },
+   {
+    "country": "Hong Kong",
+    "name": "City University of Hong Kong"
+   },
+   {
+    "country": "China",
+    "name": "The Hong Kong University of Science and Technology (Guangzhou)"
+   }
+  ],
   "summary": {
-   "en": "GeoMerge-OPD combines response-space regularization, parameter merging, and on-policy distillation to integrate heterogeneous robotic skills into a single VLA model, outperforming joint fine-tuning on humanoid and manipulation benchmarks.",
-   "zh": "GeoMerge-OPD通过响应空间正则化、参数融合与在线策略蒸馏，解决了具身视觉语言行动模型中异构技能整合导致的策略退化问题，在SIMPLE和LIBERO基准测试中展现出强大且均衡的人形机器人技能整合能力。"
+   "en": "GeoMerge-OPD combines response-space regularization, parameter merging, and on-policy distillation to integrate heterogeneous robotic skills in VLA models, outperforming baselines on SIMPLE and LIBERO benchmarks.",
+   "zh": "GeoMerge-OPD方法通过结合响应空间正则化、参数合并与在线蒸馏，解决了视觉-语言-动作模型中多异构技能整合时的动作漂移问题，在SIMPLE基准的具身人形任务和LIBERO中展现了强大的平衡技能整合能力。"
   },
   "tags": [
    "VLA",
@@ -323,159 +388,346 @@
    "locomotion",
    "manipulation"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.30636": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Shanghai Artificial Intelligence Laboratory"
+   },
+   {
+    "country": "China",
+    "name": "Shanghai Jiao Tong University"
+   },
+   {
+    "country": "China",
+    "name": "Fudan University"
+   },
+   {
+    "country": "China",
+    "name": "Zhejiang University"
+   }
+  ],
   "summary": {
-   "en": "Actor-Free Behavior-Induced Representations (ABI) to learn multi-horizon action-chunk representations from unlabeled trajectories without reward supervision, improving zero-shot generalization across 65 tasks.",
-   "zh": "无智能体行为诱导表征（ABI）方法，从无标签轨迹中学习多视界动作块表征，无需奖励监督或智能体训练，在65个任务中显著提升了模仿策略的零样本泛化能力。"
+   "en": "ABI to learn multi-horizon action-chunk representations without rewards, guiding target policies at test time to surpass zero-shot RL baselines across 65 tasks.",
+   "zh": "Actor-Free Behavior-Induced Representations（ABI）方法，通过无奖励的后继预测学习多视界动作块表示，在测试时引导目标策略提升零样本泛化能力，在65个运动、导航和操作任务中超越了现有的零样本RL基线。"
   },
   "tags": [
    "imitation",
    "RL",
-   "control",
+   "locomotion",
    "manipulation"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.30637": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "Japan",
+    "name": "The University of Tokyo"
+   }
+  ],
   "summary": {
-   "en": "SWEEP-Bench, a simulation benchmark with 80 conveyor tasks, evaluates embodied policies on moving-object speeds, revealing that models often fail by outputting average demonstration speeds and benefit significantly from past frames or explicit speed inputs.",
-   "zh": "SWEEP-Bench是一个包含80个传送带操作任务的仿真基准，用于评估具身策略对不同运动速度的适应能力。对八个模型的测试表明，其成功率通常在中速时达到峰值，倾向于生成平均速度而非实际速度的动作，而历史帧或显式速度输入可将成功率显著提升10-40个百分点。"
+   "en": "SWEEP-Bench, a simulation benchmark with 80 conveyor-belt manipulation tasks, evaluates embodied policies across varying speeds, revealing that models often fail by outputting actions suited to average demonstration speeds rather than actual ones.",
+   "zh": "SWEEP-Bench是一个包含80个传送带操作任务的仿真基准，用于评估具身策略在不同物体运动速度下的表现。通过对8个vision-language-action和world-action模型的测试发现，大多数模型的成功率在中等速度时达到峰值，且倾向于产生适应平均示范速度而不是实际速度的动作，而引入过去帧或速度输入可以显著提升性能。"
   },
   "tags": [
-   "benchmark",
    "manipulation",
+   "benchmark",
    "VLA",
-   "simulation"
+   "world model"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.30813": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "The Hong Kong University of Science and Technology"
+   },
+   {
+    "country": "China",
+    "name": "Xense Robotics"
+   },
+   {
+    "country": "China",
+    "name": "Chinese Academy of Sciences"
+   },
+   {
+    "country": "China",
+    "name": "Zhongguancun Academy"
+   },
+   {
+    "country": "China",
+    "name": "Shanghai Jiao Tong University"
+   },
+   {
+    "country": "Singapore",
+    "name": "Nanyang Technological University"
+   },
+   {
+    "country": "Hong Kong",
+    "name": "The University of Hong Kong"
+   },
+   {
+    "country": "China",
+    "name": "Peking University"
+   }
+  ],
   "summary": {
-   "en": "HIVE-Bench evaluates patch-level visual representations for egocentric robot manipulation across 24 tasks using a shared flow-matching policy, showing that retaining patches and adaptation are crucial for policy success.",
-   "zh": "HIVE-Bench基准测试评估了具身机器人操作中的斑块级视觉表征，使用共享的流匹配策略在24个第一人称双臂任务上测试了来自7个系列的20个编码器，结果表明保留图像斑块和微调对策略成功率至关重要。"
+   "en": "HIVE-Bench to evaluate patch-level visual representations across 24 egocentric bimanual tasks, showing that preserving patches is critical for bimanual policies and inverse-dynamics readouts strongly predict performance.",
+   "zh": "引入了HIVE-Bench基准，通过一个共享的flow-matching策略在24个以第一人称视角开展的双臂任务上评估了20个视觉编码器，发现保留patch级别的视觉表示对具身操作至关重要，且逆动力学读数是策略训练前最强的性能衡量指标之一。"
   },
   "tags": [
-   "manipulation",
    "bimanual",
-   "perception",
-   "benchmark"
+   "manipulation",
+   "perception"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.30836": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "Taiwan",
+    "name": "National Cheng Kung University"
+   },
+   {
+    "country": "Taiwan",
+    "name": "National Taiwan University"
+   },
+   {
+    "country": "Taiwan",
+    "name": "MoonShine Animation Studio"
+   },
+   {
+    "country": "Japan",
+    "name": "RIKEN Center for Computational Science"
+   },
+   {
+    "country": "Japan",
+    "name": "The University of Osaka"
+   },
+   {
+    "country": "Taiwan",
+    "name": "National Yang Ming Chiao Tung University"
+   }
+  ],
   "summary": {
-   "en": "MakeSense uses private streams and shared bottleneck tokens for multimodal fusion, reducing negative fusion and improving perception across five diverse datasets.",
-   "zh": "MakeSense多模态融合框架通过私有流保留特定传感器证据并通过共享瓶颈标记组合信息，有效减少负融合现象，在MM-Fi、MMAUD、V2X-Real、RELI11D和Humanoid-Everyday五个数据集上均提升了感知与定位性能。"
+   "en": "MakeSense is a multimodal fusion framework that preserves sensor-specific evidence and reduces negative fusion, improving localization, detection, pose transfer, and command prediction across five datasets.",
+   "zh": "MakeSense是一个多模态融合框架，通过私有流保留传感器特定证据并通过共享瓶颈标记组合信息，有效减少了多模态融合中的负面融合现象，并在MM-Fi、MMAUD、V2X-Real、RELI11D和Humanoid-Everyday等五个数据集上提升了定位、3D检测、位姿传输和命令预测性能。"
   },
   "tags": [
    "perception",
-   "aerial"
+   "aerial",
+   "navigation",
+   "humanoid"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.30874": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "Italy",
+    "name": "Politecnico di Bari"
+   },
+   {
+    "country": "Italy",
+    "name": "E80 Group S.p.A"
+   },
+   {
+    "country": "United States",
+    "name": "University of California, Irvine"
+   }
+  ],
   "summary": {
-   "en": "We formalize AGV-MAPF_R-CTC and introduce Lazy-CPBS to reduce CPBS overhead for industrial AGV fleet coordination, achieving superior robustness and runtime trade-offs on industrial layouts.",
-   "zh": "针对工业AGV车队协调提出AGV-MAPF_R-CTC形式化方法，并开发了Lazy-CPBS算法，通过延迟高层节点计算有效降低了CPBS的开销，在工业布局测试中表现出最佳的鲁棒性与运行时间权衡。"
+   "en": "Introduced AGV-MAPF_R-CTC and the Lazy-CPBS algorithm to bridge continuous-time MAPF and industrial AGV fleet coordination, significantly reducing search overhead and offering robust runtime trade-offs.",
+   "zh": "将连续时间多智能体路径规划应用于工业自动导引车车队协同的新方法 AGV-MAPF_R-CTC，并设计了 Lazy-CPBS 算法，在工业布局的实验中显著降低了搜索开销并提供了最稳健的运行时间权衡。"
   },
   "tags": [
-   "planning",
-   "navigation"
+   "navigation",
+   "planning"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.30889": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Nanjing University"
+   }
+  ],
   "summary": {
-   "en": "TabAct casts visual imitation as numerical prediction using Tabular Foundation Models for in-context robot learning, outperforming the strongest baselines by 20.9 and 5.8 percentage points on LIBERO and Meta-World.",
-   "zh": "TabAct 将视觉模仿转化为数值预测任务，利用冻结的 Tabular Foundation Models 进行上下文机器人学习。该方法在不需要机器人特定训练的情况下，在 LIBERO 和 Meta-World 上分别比最强基线高出 20.9 和 5.8 个百分点，且增加示范可进一步提升成功率。"
+   "en": "TabAct casts visual imitation as numerical prediction using frozen tabular foundation models for in-context robot control, outperforming baselines on LIBERO and Meta-World with few demonstrations.",
+   "zh": "TabAct 将视觉模仿转化为数值预测任务，利用冻结的表格基础模型 TabICLv2 实现上下文机器人学习，无需针对目标任务进行微调。在 LIBERO 和 Meta-World 任务中，该方法仅凭单条示范就超越了最强基线，成功率分别高出 20.9 和 5.8 个百分点，且增加示范可进一步提升性能。"
   },
   "tags": [
    "imitation",
-   "perception"
+   "manipulation",
+   "diffusion policy"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.30898": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "Singapore",
+    "name": "SenseTime Research"
+   },
+   {
+    "country": "Singapore",
+    "name": "Nanyang Technological University"
+   },
+   {
+    "country": "",
+    "name": "ACE Robotics"
+   }
+  ],
   "summary": {
-   "en": "Native LAM extracts compact latent actions from pretrained video diffusion models, and the proposed PAWlicy achieves a 93.6% success rate on RoboTwin 2.0 and outperforms the pi_0.5 baseline on real robots.",
-   "zh": "Native LAM利用预训练视频扩散Transformer同时作为逆动力学与正向动力学模型，提取紧凑的潜在动作。基于此提出的PAWlicy策略在RoboTwin 2.0上取得了93.6%的平均成功率，并在真实机器人任务中超越了pi_0.5基线。"
+   "en": "Native LAM extracts compact native latent actions from pretrained video world models using learnable dynamics registers. The proposed PAWlicy pretraining paradigm achieves a 93.6% average success rate on RoboTwin 2.0 and outperforms the pi_0.5 baseline on real robots.",
+   "zh": "Native LAM将预训练视频扩散Transformer作为逆向和正向动力学模型，通过学习型动力学寄存器提取紧凑的原生潜在动作。基于此提出的PAWlicy预训练范式在RoboTwin 2.0上达到了93.6%的平均成功率，在真实机器人上也超越了pi_0.5基线。"
   },
   "tags": [
    "world model",
-   "imitation",
    "VLA",
-   "manipulation"
+   "imitation",
+   "simulation"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.30900": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "University of Central Florida"
+   },
+   {
+    "country": "",
+    "name": "VinMotion"
+   },
+   {
+    "country": "United States",
+    "name": "University of Southern California"
+   }
+  ],
   "summary": {
-   "en": "GlanceNav uses a streaming hybrid MLLM and counterfactual rewind RL for efficient vision-and-language navigation, achieving 71.9% and 73.6% success rates on R2R-CE and RxR-CE val-unseen at 104 ms per step.",
-   "zh": "GlanceNav引入了流式混合MLLM和Counterfactual Rewind强化学习，通过恒定大小的记忆实现每步固定开销的高效视觉语言导航。在R2R-CE和RxR-CE验证集上分别达到71.9%和73.6%的成功率，比最强基线提升9.1个百分点，且单步运行时间仅为104毫秒。"
+   "en": "GlanceNav achieves efficient vision-and-language navigation with constant per-step cost using streaming memory and counterfactual rewind, reaching 71.9% and 73.6% success rates on R2R-CE and RxR-CE val-unseen.",
+   "zh": "GlanceNav通过流式混合MLLM架构与反事实回溯强化学习，实现恒定单步计算开销的视觉语言导航。该4B模型在R2R-CE和RxR-CE验证集上分别达到71.9%和73.6%的成功率，其中在R2R-CE上比最强先前单RGB方法提升9.1个百分点，单步耗时104毫秒。"
   },
   "tags": [
    "navigation",
    "VLM/LLM",
    "RL"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.30907": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "United Kingdom",
+    "name": "Imperial College London"
+   }
+  ],
   "summary": {
-   "en": "DexLatentWorld introduces a 3D cross-embodiment latent-action world model learned from human demonstrations, achieving zero-shot robotic manipulation across unseen robot embodiments and improving success rates over DexWM.",
-   "zh": "DexLatentWorld利用点云观测通过对比学习从人类演示中学习3D连续潜在动作，构建跨具身世界模型并支持模型预测控制。在任务无关自适应后，其到达、抓取和放置成功率分别达到90%、92%和60%，优于DexWM的72%、58%和28%，并在真实世界中实现了未见过灵巧手86%的零样本操作成功率。"
+   "en": "DexLatentWorld introduces a 3D cross-embodiment latent action world model for zero-shot robotic manipulation, achieving 90%, 92%, and 60% success on reaching, grasping, and placing, outperforming DexWM.",
+   "zh": "DexLatentWorld通过从人类操作点云数据中学习连续动作表示，构建了跨具身的3D潜在动作世界模型，实现了对未见机器人具身的零样本迁移。在任务无关适配后，reaching、grasping和placing成功率分别达到90%、92%和60%，相比DexWM的72%、58%和28%显著提升，并在真实世界未见灵巧手上实现86%的成功率。"
   },
   "tags": [
    "world model",
-   "manipulation",
    "dexterous",
+   "manipulation",
    "sim2real"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.30963": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Shanghai Jiao Tong University"
+   },
+   {
+    "country": "Hong Kong",
+    "name": "The University of Hong Kong"
+   },
+   {
+    "country": "China",
+    "name": "Shanghai Innovation Institute"
+   },
+   {
+    "country": "China",
+    "name": "Noematrix"
+   },
+   {
+    "country": "China",
+    "name": "Fudan University"
+   },
+   {
+    "country": "Hong Kong",
+    "name": "The Hong Kong University of Science and Technology"
+   },
+   {
+    "country": "Singapore",
+    "name": "National University of Singapore"
+   }
+  ],
   "summary": {
-   "en": "Foresight Forcing improves robotic manipulation by learning spatial transition representations in a pretrained 3D feature space, achieving a 95.01% success rate on RoboTwin2.0 Full and an 85.8% mean score on six real-world tasks.",
-   "zh": "Foresight Forcing通过在预训练3D特征空间中学习空间转换表示来改进机器人操作策略，在LIBERO-Plus和RoboTwin2.0上分别取得强劲性能，在RoboTwin2.0 Full上平均成功率达95.01%，并在6个真实世界任务中获得85.8%的平均分。"
+   "en": "Foresight Forcing is a World Action Model that learns spatial transitions from pretrained 3D features, achieving 95.01% success on RoboTwin2.0 Full and 85.8% on real-world tasks.",
+   "zh": "Foresight Forcing ($\text{F}^2$) 是一种利用预训练3D特征空间学习空间转换表示的世界动作模型，通过蒸馏3D基础模型的特征差异来监督几何感知的特征转换。在 RoboTwin2.0 Full 上取得了 95.01% 的平均成功率，在六项真实世界操作任务中达到了 85.8% 的平均任务得分。"
   },
   "tags": [
-   "manipulation",
    "world model",
-   "imitation"
+   "manipulation",
+   "imitation",
+   "perception"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.30989": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "Singapore",
+    "name": "National University of Singapore"
+   }
+  ],
   "summary": {
-   "en": "WorldLeague is a benchmark with 60 simulated robot tasks to evaluate physical agency, where Claude Fable 5.2 achieved the highest mean Interactive Score of 28.58 and completed 13 goals among 13 systems.",
-   "zh": "WorldLeague是一个包含60个模拟机器人任务的新基准，用于评估AI系统的物理自主能力。在13个代表性系统中，Claude Fable 5.2取得了最高的28.58分平均互动得分并完成了13个目标。"
+   "en": "WorldLeague benchmarks 13 AI systems across 60 simulated robot tasks, where Claude Fable 5.2 achieves the highest mean Interactive Score of 28.58/100 and completes 13 goals.",
+   "zh": "推出了 WorldLeague 基准测试，包含 60 个模拟机器人任务，用于评估 AI 系统在感知、记忆、规划和行动方面的物理代理能力。测试显示在 13 个代表性系统中，Claude Fable 5.2 取得了最高的平均交互分 28.58/100 并完成了 13 个目标。"
   },
   "tags": [
    "benchmark",
-   "simulation",
-   "manipulation",
-   "VLM/LLM"
+   "VLM/LLM",
+   "VLA",
+   "world model"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.30997": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "University of Central Florida"
+   },
+   {
+    "country": "United States",
+    "name": "University of Southern California"
+   }
+  ],
   "summary": {
-   "en": "Robo-MOPD consolidates domain specialists into a single generalist planner via multi-teacher on-policy distillation, achieving a 58.9% average success rate on LIBERO-PRO and RoboCasa365 and outperforming all baselines.",
-   "zh": "Robo-MOPD通过多教师在线策略蒸馏将多个领域专家模型整合为单个通用具身规划器，在仿真环境的闭环评估中，LIBERO-PRO和RoboCasa365上的平均成功率达到58.9%，超越所有基线并展现出优异的长序列任务性能。"
+   "en": "Robo-MOPD consolidates domain specialists into a single planner via multi-teacher on-policy distillation, achieving 58.9% average success on LIBERO-PRO and RoboCasa365, outperforming all baselines.",
+   "zh": "Robo-MOPD通过多教师在线策略蒸馏将多个领域专家的知识整合进单个学生规划器中，在仿真闭环交互中进行Token级监督。实验表明，单个9B的Robo-MOPD规划器在LIBERO-PRO和RoboCasa365上分别取得了72.9%和44.8%的成功率，平均成功率达到58.9%，超越了所有对比基线。"
   },
   "tags": [
    "planning",
@@ -483,163 +735,370 @@
    "VLM/LLM",
    "simulation"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.31002": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Tsinghua University"
+   },
+   {
+    "country": "",
+    "name": "Einsia.AI"
+   },
+   {
+    "country": "China",
+    "name": "Peking University"
+   },
+   {
+    "country": "United States",
+    "name": "University of Illinois Urbana-Champaign"
+   },
+   {
+    "country": "Hong Kong",
+    "name": "University of Hong Kong"
+   },
+   {
+    "country": "United Kingdom",
+    "name": "University College London"
+   },
+   {
+    "country": "United States",
+    "name": "University of North Carolina at Chapel Hill"
+   }
+  ],
   "summary": {
-   "en": "RoboUniverse-10K provides 10,807 interactive physics environments from real videos. Fine-tuned RoboUniverse-35B-A3B boosts zero-shot success from 0.8% to 21.2% on the verified benchmark.",
-   "zh": "RoboUniverse-10K 包含 10,807 个基于真实视频自动生成的交互式物理环境，用于赋能具身智能后训练。评估显示前沿模型可达 85.8% 成功率，而开源基线仅 2.6% 至 10.0%。微调后的 RoboUniverse-35B-A3B 将验证集零样本成功率从 0.8% 提升至 21.2%。"
+   "en": "RoboUniverse-10K introduces 10,807 interactive environments and a zero-shot benchmark, RoboUniverse-Verified. Evaluations reveal frontier models reach 85.8% success, and fine-tuning RoboUniverse-35B-A3B lifts success from 0.8% to 21.2%.",
+   "zh": "RoboUniverse-10K 包含了 10,807 个由真实视频自动生成的交互式物理环境，并建立了 RoboUniverse-Verified 零样本评测基准。对 11 个模型的评估表明前沿模型可达 85.8% 的成功率，而微调后的 RoboUniverse-35B-A3B 将成功率从 0.8% 提升至 21.2%。"
   },
   "tags": [
    "simulation",
+   "dataset",
    "benchmark",
-   "manipulation",
-   "dataset"
+   "VLM/LLM"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.31053": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Zhejiang University"
+   },
+   {
+    "country": "United States",
+    "name": "Stanford University"
+   },
+   {
+    "country": "China",
+    "name": "Tsinghua University"
+   },
+   {
+    "country": "China",
+    "name": "AGIBOT Innovation"
+   }
+  ],
   "summary": {
-   "en": "ReWeave jointly optimizes agent harnesses and task topologies from interaction for cross-task meta-distillation, improving success from 89.00% to 98.75% on LIBERO-PRO and 25.50% to 58.25% on RoboDojo.",
-   "zh": "ReWeave通过交互联合优化具生智能体组件和物理任务拓扑，无需更新策略权重即可实现跨任务元蒸馏。该方法在LIBERO-PRO上的保持任务成功率从89.00%提升至98.75%，在RoboDojo上从25.50%提升至58.25%。"
+   "en": "ReWeave jointly optimizes an embodied harness and task topology from interaction with frozen policies, improving success from 89.00% to 98.75% on LIBERO-PRO and 25.50% to 58.25% on RoboDojo.",
+   "zh": "ReWeave 在保持策略和感知冻结的情况下，通过交互联合优化智能体外设与物理任务拓扑，将 LIBERO-PRO 上的成功率从 89.00% 提升至 98.75%，RoboDojo 上的成功率从 25.50% 提升至 58.25%。"
   },
   "tags": [
+   "planning",
    "manipulation",
-   "control",
-   "simulation"
+   "control"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.31079": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "",
+    "name": "ACE Robotics"
+   },
+   {
+    "country": "China",
+    "name": "Fudan University"
+   },
+   {
+    "country": "Singapore",
+    "name": "Nanyang Technological University"
+   },
+   {
+    "country": "China",
+    "name": "Southeast University"
+   }
+  ],
   "summary": {
-   "en": "Wrist Video Policy (WVP) learns manipulation through video prediction and geometric estimation, achieving over 50% success in zero-shot evaluations and generalizing across robot embodiments without fine-tuning.",
-   "zh": "Wrist Video Policy (WVP) 框架通过视频预测学习操作过程并通过几何估计恢复可执行运动，利用手眼变换将腕式相机轨迹转化为末端执行器位姿。该方法在零样本分布外评估中取得了超过50%的成功率，并实现了跨机器人的零微调泛化。"
+   "en": "Wrist Video Policy introduces a closed-loop manipulation framework using video prediction and geometric estimation, achieving over 50% success rate in zero-shot OOD evaluations across multiple robot embodiments.",
+   "zh": "Wrist Video Policy通过视频预测和几何估计学习机械臂操作，实现了跨具身的通用控制。该方法在零样本分布外评估中取得了超过50%的成功率，并可直接泛化至Franka Panda、PiPER-X和Galaxea R1 Pro等不同机器人。"
   },
   "tags": [
    "manipulation",
    "diffusion policy",
-   "imitation",
-   "sim2real"
+   "sim2real",
+   "imitation"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.31098": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "University of Illinois Urbana-Champaign"
+   },
+   {
+    "country": "United States",
+    "name": "Carnegie Mellon University"
+   },
+   {
+    "country": "United States",
+    "name": "University of California, Berkeley"
+   },
+   {
+    "country": "United States",
+    "name": "NVIDIA"
+   }
+  ],
   "summary": {
-   "en": "Real2Worlds2Real is a self-improving agentic framework that scales robot manipulation learning by integrating simulation-world construction with policy development for successful real-world transfer.",
-   "zh": "Real2Worlds2Real是一个自改进的智能体框架，通过集成可扩展的模拟世界构建与策略开发，利用视觉和执行反馈构建逼真的数字孪生并扩展为数字群，从而实现高效的机器人操作学习与真实世界策略迁移。"
+   "en": "Real2Worlds2Real is a self-improving agentic framework that integrates scalable simulation-world construction with policy development to enable successful real-world policy transfer and improve long-horizon task success.",
+   "zh": "Real2Worlds2Real是一个自改进的智能体框架，通过集成可扩展的模拟世界构建与策略开发，利用有限的视觉观测生成数字孪生并扩展为数字亲属，实现了高效的真实世界策略迁移，并在世界保真度与长周期任务成功率上取得显著提升。"
   },
   "tags": [
    "manipulation",
    "simulation",
-   "sim2real"
+   "sim2real",
+   "RL"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.31115": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "Singapore",
+    "name": "National University of Singapore"
+   }
+  ],
   "summary": {
-   "en": "Introduced RUIBench with 30 manipulation tasks across 5 suites to evaluate robot-use interfaces, showing that changing the interface alone shifts success rate from 45% to 81% in simulation.",
-   "zh": "推出了 RUIBench 评估机器人交互接口，包含 5 个套件中的 30 个操作任务，并通过统一框架 RUIKit 测试了 13 种接口。在仿真中，仅改变接口就使前沿智能体的成功率从 45% 提升至 81%，并揭示了任务级验证的必要性。"
+   "en": "We introduce RUIBench and RUIKit to study robot-use interfaces, showing that interface design can shift an agent's success rate from 45% to 81% in simulation.",
+   "zh": "推出了包含30个操作任务的RUIBench和统一框架RUIKit，用于系统研究机器人使用接口（RUI）对具身智能体可靠性的影响。仿真实验表明，仅改变RUI就能将前沿智能体的成功率从45%提升至81%，微调4B模型的成功率从13%提升至47%。"
   },
   "tags": [
    "manipulation",
    "benchmark",
-   "simulation",
-   "planning"
+   "simulation"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.31126": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "Hong Kong",
+    "name": "The Hong Kong University of Science and Technology"
+   },
+   {
+    "country": "Hong Kong",
+    "name": "Hong Kong Polytechnic University"
+   },
+   {
+    "country": "China",
+    "name": "Xidian University"
+   },
+   {
+    "country": "China",
+    "name": "Zhejiang University"
+   }
+  ],
   "summary": {
-   "en": "WeaveVLA enhances vision-language-action models by explicitly modeling 3D relative relations and maintaining relational context across observations, achieving over 98% success on LIBERO and outperforming baselines on LIBERO-Plus and real-world tasks.",
-   "zh": "WeaveVLA通过显式建模任务相关的3D相对关系并在观测中维护时空上下文，增强了VLA模型的动作生成能力。基于StarVLA-GR00T和π0.5，该方法在LIBERO上平均成功率超过98%，在LIBERO-Plus上分别将成功率由74.9%提升至82.0%和由85.7%提升至87.8%，并在真实世界任务中展现出更强的泛化能力。"
+   "en": "WeaveVLA enhances VLA action generation by explicitly modeling task-relevant 3D relative relations and maintaining relational context, achieving over 98% average success on LIBERO and outperforming baselines on complex benchmarks.",
+   "zh": "WeaveVLA通过显式建模任务相关的3D相对关系和维护关系上下文来增强VLA动作生成，在LIBERO上实现了超过98%的平均成功率，并在LIBERO-Plus和真实世界任务中显著超越基线。"
   },
   "tags": [
    "VLA",
    "manipulation",
-   "perception",
-   "simulation"
+   "perception"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.31173": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Shenzhen Loop Area Institute"
+   },
+   {
+    "country": "China",
+    "name": "Sichuan University"
+   },
+   {
+    "country": "China",
+    "name": "Tsinghua University"
+   },
+   {
+    "country": "China",
+    "name": "The Hong Kong University of Science and Technology"
+   },
+   {
+    "country": "Australia",
+    "name": "Griffith University"
+   },
+   {
+    "country": "Singapore",
+    "name": "Nanyang Technological University"
+   },
+   {
+    "country": "China",
+    "name": "Tencent"
+   },
+   {
+    "country": "Hong Kong",
+    "name": "The Chinese University of Hong Kong"
+   }
+  ],
   "summary": {
-   "en": "EmboEagle is an efficient agentic embodied framework for long-horizon robotic manipulation that combines subtask-conditioned WAM control, latent-space supervision, and memory-guided recovery, achieving 91.3% and 90.6% average success on RMBench and LIBERO-Mem.",
-   "zh": "EmboEagle是一个用于长序列机器人操作的高效具身智能框架，通过结合子任务条件世界-动作模型控制、潜在空间自适应监督与记忆引导的几何恢复，在RMBench和LIBERO-Mem上分别取得了91.3%和90.6%的平均成功率。"
+   "en": "EmboEagle is a closed-loop agentic framework for long-horizon robotic manipulation that unifies WAM control, latent-space adaptive supervision, and memory-guided recovery, achieving 91.3% success on RMBench while cutting VLM calls by 74.2%.",
+   "zh": "EmboEagle是一个用于长序列机器人操作的闭环智能体框架，它统一了子任务条件下的世界动作模型控制、潜在空间自适应监督和记忆引导的几何恢复。在RMBench和LIBERO-Mem上，该方法取得了91.3%和90.6%的平均成功率，分别比最强的基线高出8.0和9.8个百分点，同时将VLM调用次数减少了74.2%。"
   },
   "tags": [
    "manipulation",
    "world model",
    "VLM/LLM",
-   "imitation"
+   "benchmark"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.31195": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [],
   "summary": {
-   "en": "VITA-WAM introduces a manifold-aligned world-action model that accelerates action generation without distillation, outperforming FastWAM on LIBERO benchmarks with a single ODE step and achieving a 2.10x speedup.",
-   "zh": "VITA-WAM 提出了一种流形对齐的世界-动作模型，通过联合学习和对齐源流形与动作流形来加速动作生成，无需蒸馏。在单步 ODE 下，其在 LIBERO-Plus 上比 10 步的 FastWAM 提升了 21.47 个百分点，在 LIBERO 上提升了 1.65 个百分点，推理延迟低至 55.67 毫秒，实现了 2.10 倍的加速。"
+   "en": "VITA-WAM achieves real-time robot control via manifold-aligned world-action modeling, outperforming FastWAM by 21.47 pp on LIBERO-Plus with a single ODE step while achieving a 2.10x speedup.",
+   "zh": "VITA-WAM通过流形对齐的世界-动作建模方法实现了实时机器人控制，采用VITA流匹配直接将潜空间观测表征转换为潜空间动作。在LIBERO-Plus和LIBERO任务中，该方法仅需单步ODE即可分别超越10步的FastWAM达21.47个百分点和1.65个百分点，同时推理延迟降低至55.67毫秒，实现了2.10倍的加速。"
   },
   "tags": [
    "world model",
-   "manipulation",
    "control",
-   "diffusion policy"
+   "diffusion policy",
+   "manipulation"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.31201": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "Singapore",
+    "name": "Nanyang Technological University"
+   },
+   {
+    "country": "China",
+    "name": "SenseTime Research"
+   },
+   {
+    "country": "China",
+    "name": "Xiamen University"
+   },
+   {
+    "country": "China",
+    "name": "Lenovo"
+   },
+   {
+    "country": "United States",
+    "name": "University of Connecticut"
+   }
+  ],
   "summary": {
-   "en": "Embo-Harness systematically studies frontier-model-as-policy frameworks, achieving an 83.3% success rate on RoboLab-120 and outperforming baselines by 26.2 percentage points.",
-   "zh": "Embo-Harness系统性研究了前沿多模态模型作为具身策略的设计原则，通过探究提示词、规划、动作执行和工具使用，在RoboLab-120上取得了83.3%的成功率，比最强基线高出26.2个百分点，并在四个真实世界操作任务的20次零样本试验中成功了15次。"
+   "en": "Embo-Harness systematically studies frontier-model-as-policy harnesses, achieving an 83.3% success rate on RoboLab-120 and outperforming the strongest baseline by 26.2 percentage points.",
+   "zh": "Embo-Harness系统性研究了前沿多模态大模型作为具身智能策略的设计原则，通过探索提示词、规划、动作执行和工具使用四个组件提炼出六项经验法则。该方法在RoboLab-120基准测试中取得了83.3%的成功率，比最强基线提升了26.2个百分点，并在4个真实世界的操纵任务的20次零样本试验中成功了15次。"
   },
   "tags": [
    "VLM/LLM",
    "manipulation",
-   "planning"
+   "planning",
+   "perception"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.31205": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "Singapore",
+    "name": "Nanyang Technological University"
+   },
+   {
+    "country": "United Kingdom",
+    "name": "University of Oxford"
+   },
+   {
+    "country": "",
+    "name": "ACE Robotics"
+   }
+  ],
   "summary": {
-   "en": "ACAP introduces an asynchronous framework organizing a robot as a team of agents with a hyper-agent for coordination, reducing task-balanced time cost by 28.2% compared to a single-agent Direct Policy across real-world tests.",
-   "zh": "ACAP 引入了一个异步编码智能体框架，通过将机器人组织为团队并由超智能体协调依赖关系，实现了独立组件的并发执行与紧密协作。在 72 次真实世界测试中，该方法相比单智能体 Direct Policy 将任务平衡时间成本降低了 28.2%。"
+   "en": "We introduce Asynchronous Coding Agents as Policy (ACAP), an asynchronous framework that organizes a robot as a team of persistent agents, reducing task-balanced time cost by 28.2% compared to Direct Policy.",
+   "zh": "引入了一种异步编码智能体策略（ACAP）框架，将机器人组织为多个持久智能体团队，通过超智能体协调物理依赖并动态分配控制权；在72次真实世界测试中，相较于单智能体Direct Policy，任务平衡时间成本降低了28.2%。"
   },
   "tags": [
    "control",
    "mobile manipulation",
    "planning"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.31240": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "South Korea",
+    "name": "LG Innotek"
+   },
+   {
+    "country": "South Korea",
+    "name": "KAIST"
+   }
+  ],
   "summary": {
-   "en": "To address the computational costs of autonomous driving VLAs, MoOP combines objective-aware pruning to achieve a 1.37x speedup and 24.0% parameter reduction while retaining 94.0% of the dense model's LingoQA score.",
-   "zh": "针对自动驾驶推理VLA模型的显存与计算开销问题，提出MoOP结构化剪枝方法，在24.0%的总参数压缩率下保持了94.0%的LingoQA得分，并在更高压缩率下避免了推理崩溃，实现了1.37倍的端到端推理加速。"
+   "en": "MoOP is proposed for structured pruning of autonomous driving VLAs, combining reasoning and trajectory objectives to prune VLM structures and select expert MLP channels, achieving a 1.37x speedup and 36.6% lower peak memory at a 24.0% parameter reduction without fine-tuning.",
+   "zh": "针对自动驾驶VLA模型提出了一种名为MoOP的结构化剪枝方法，通过结合场景理解和轨迹预测的目标进行VLM剪枝并选择专家MLP通道。在减少24.0%的参数量时，该方法保留了密集模型94.0%的LingoQA得分，并在无后微调的情况下实现了1.37倍的端到端推理加速和36.6%的峰值内存降低。"
   },
   "tags": [
-   "driving",
    "VLA",
-   "VLM/LLM",
-   "planning"
+   "driving",
+   "perception",
+   "control"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.31535": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "France",
+    "name": "Inria"
+   },
+   {
+    "country": "France",
+    "name": "École normale supérieure"
+   },
+   {
+    "country": "France",
+    "name": "CNRS"
+   },
+   {
+    "country": "France",
+    "name": "PSL Research University"
+   }
+  ],
   "summary": {
-   "en": "Hi3R-VLA is a 3D policy that grounds heterogeneous modalities in explicit 3D geometry for robotic manipulation, achieving state-of-the-art performance across diverse manipulation benchmarks with fewer than 250M parameters.",
-   "zh": "Hi3R-VLA是一种基于显式3D几何的机器人操作策略，通过在点云中融合视觉特征和语言条件，并利用3D-RoPE增强的动作到点注意力机制进行粗到精的动作预测。该模型参数量小于2.5亿，在RoboCasa、RLBench等多个模拟及真实机器人基准测试中取得了最先进的性能。"
+   "en": "Hi3R-VLA is a 3D policy that grounds heterogeneous modalities in explicit 3D geometry using semantic fusion and 3D-RoPE action attention, achieving state-of-the-art performance across diverse manipulation benchmarks with under 250M parameters.",
+   "zh": "Hi3R-VLA是一个将视觉、语言和动作基于3D几何进行落地的具身策略模型，通过将空间对齐的视觉特征和语言条件注入点云并利用3D-RoPE增强的动作到点注意力机制进行精准控制；在少于2.5亿可训练参数下，在RoboCasa、RLBench、RoboTwin2、DexJoCo和DexSuite等多个模拟与真实机器人任务中取得了最先进的性能。"
   },
   "tags": [
    "VLA",
@@ -647,33 +1106,55 @@
    "dexterous",
    "bimanual"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.31588": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Massachusetts Institute of Technology"
+   }
+  ],
   "summary": {
-   "en": "DRIFT uses frozen pretrained vision encoders for efficient one-phase visual RL, outperforming two-phase distillation with a 58.8% higher real-world success rate across three manipulation tasks.",
-   "zh": "DRIFT采用冻结的预训练视觉基础编码器，实现了高效的一阶段视觉强化学习，无需模仿学习蒸馏。在三项操作任务中，其实际平均成功率比两阶段蒸馏高出58.8%，在分布外偏移下优势超61%。"
+   "en": "We propose DRIFT for efficient one-phase visual RL using frozen pretrained vision encoders, achieving a 58.8% relative improvement in real-world success rate over two-phase distillation across three manipulation tasks.",
+   "zh": "DRIFT通过冻结预训练视觉编码器实现高效的单阶段视觉强化学习，在三个操作任务中，其实际平均成功率比两阶段蒸馏法相对提升了58.8%。"
   },
   "tags": [
-   "RL",
    "sim2real",
-   "manipulation"
+   "RL",
+   "manipulation",
+   "control"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.31705": {
   "model": "gemini-3.5-flash-lite",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Beijing Zhongguancun Academy"
+   },
+   {
+    "country": "China",
+    "name": "Peking University"
+   },
+   {
+    "country": "China",
+    "name": "Beijing Academy of Artificial Intelligence"
+   }
+  ],
   "summary": {
-   "en": "FoveaWAM introduces role-aware 4D world-action modeling for dynamic manipulation, achieving an 82.1% success rate on OnTimeBench with a fast inference time of 15.1 ms.",
-   "zh": "FoveaWAM通过角色感知的4D世界-动作建模实现动态操作，将目标位姿建模为SE(3)轨迹、周围环境建模为稀疏3D流。在OnTimeBench上取得82.1%的成功率，比最强基线高20.8个百分点，推理速度达15.1毫秒。"
+   "en": "FoveaWAM uses a role-aware 4D world-action model to achieve dynamic manipulation, reaching an 82.1% success rate on OnTimeBench, which is 20.8 points above the strongest baseline.",
+   "zh": "FoveaWAM通过根据角色分配精度的原生4D世界-动作模型来处理动态操作，将目标位姿建模为公制SE(3)轨迹，将周围环境建模为稀疏3D流。在OnTimeBench上达到82.1%的成功率，比最强基线高20.8个百分点，且推理速度比视频世界-动作基线快约10倍。"
   },
   "tags": [
    "world model",
    "manipulation",
-   "benchmark"
+   "benchmark",
+   "control"
   ],
-  "v": "f0e3093ef551"
+  "v": "3ace8e6b90c6"
  },
  "2611.31740": {
   "model": "gemini-3.5-flash-lite",

@@ -78,8 +78,8 @@
    "ax_visits": 14,
    "heat": 1.4,
    "summary": {
-    "zh": "开发了一个3D模拟流水线用于生成逼真的单光子雪崩二极管（SPAD）图像及语义标签，通过耦合场景几何与光子噪声模型，实现了在低于2勒克斯的极低光照环境下无需真实数据微调的零样本迁移，在分类、旋转估计和语义分割任务中均表现出高准确率。",
-    "en": "We present a 3D simulation pipeline for passive SPAD imaging that generates realistic photon detections and semantic labels, enabling high-accuracy zero-shot sim-to-real transfer for low-light perception tasks under sub-2 lux illumination."
+    "en": "We present a 3D simulation pipeline for passive SPAD imaging that generates realistic photon detections and semantic labels, enabling high-accuracy zero-shot sim-to-real transfer for low-light perception tasks under sub-2 lux illumination.",
+    "zh": "开发了一个3D模拟流水线用于生成逼真的单光子雪崩二极管（SPAD）图像及语义标签，通过耦合场景几何与光子噪声模型，实现了在低于2勒克斯的极低光照环境下无需真实数据微调的零样本迁移，在分类、旋转估计和语义分割任务中均表现出高准确率。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -301,8 +301,8 @@
    "ax_visits": 16,
    "heat": 1.6,
    "summary": {
-    "zh": "针对视觉语言动作模型在部署时采用的Best-of-N测试时引导策略，研究发现当验证器不准确时增加N会导致奖励攻击并降低性能；该实验在60个LIBERO-Safety任务中使用pi_{0.5}策略进行评估，并表明校准验证器和softmax选择可以缓解该问题。",
-    "en": "Best-of-N test-time steering in VLA models can lead to reward hacking when the verifier is inaccurate, though calibration and softmax selection can mitigate this issue."
+    "en": "Best-of-N test-time steering in VLA models can lead to reward hacking when the verifier is inaccurate, though calibration and softmax selection can mitigate this issue.",
+    "zh": "针对视觉语言动作模型在部署时采用的Best-of-N测试时引导策略，研究发现当验证器不准确时增加N会导致奖励攻击并降低性能；该实验在60个LIBERO-Safety任务中使用pi_{0.5}策略进行评估，并表明校准验证器和softmax选择可以缓解该问题。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -351,8 +351,8 @@
    "ax_visits": 33,
    "heat": 5.3,
    "summary": {
-    "zh": "推出了RoboARC基准测试，包含MuJoCo中的90个空间约束操作任务，评估了七个编程智能体和四个VLA策略。最强的GPT-6 Astra在特权模式下解决了86%的任务，在标准模式下解决了43%的任务，而四个零样本VLA策略均未通过单臂谜题。",
-    "en": "RoboARC, a benchmark of 90 spatial constraint manipulation tasks in MuJoCo. Evaluating seven coding agents and four VLA policies, the best agent solves 86% in privileged mode and 43% in standard mode, while zero-shot VLAs fail all."
+    "en": "RoboARC, a benchmark of 90 spatial constraint manipulation tasks in MuJoCo. Evaluating seven coding agents and four VLA policies, the best agent solves 86% in privileged mode and 43% in standard mode, while zero-shot VLAs fail all.",
+    "zh": "推出了RoboARC基准测试，包含MuJoCo中的90个空间约束操作任务，评估了七个编程智能体和四个VLA策略。最强的GPT-6 Astra在特权模式下解决了86%的任务，在标准模式下解决了43%的任务，而四个零样本VLA策略均未通过单臂谜题。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -399,8 +399,8 @@
    "ax_visits": 14,
    "heat": 2.4,
    "summary": {
-    "zh": "FOCI的轨迹优化算法，利用3D高斯喷洒的重叠积分为多形态机器人直接在3DGS环境中规划无碰撞轨迹，实现了面向朝向的窄空间通行，并在几秒钟内完成计算。",
-    "en": "FOCI, a trajectory optimization algorithm using Gaussian overlap integrals for collision-free planning directly on 3D Gaussian Splats across various robot morphologies."
+    "en": "FOCI, a trajectory optimization algorithm using Gaussian overlap integrals for collision-free planning directly on 3D Gaussian Splats across various robot morphologies.",
+    "zh": "FOCI的轨迹优化算法，利用3D高斯喷洒的重叠积分为多形态机器人直接在3DGS环境中规划无碰撞轨迹，实现了面向朝向的窄空间通行，并在几秒钟内完成计算。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -500,8 +500,8 @@
    "ax_visits": 295,
    "heat": 51.5,
    "summary": {
-    "zh": "OmniAct是一种直接根据机器人在特定场景中的运动学进行条件化的跨具身操作策略，通过流匹配策略预测相对关节运动。在2000个具身-场景测试集上取得63.0%的成功率，优于pi0.5的17.8%和最强基线的57.9%，并在真实世界机器人上实现了接近次优方法两倍的成功率。",
-    "en": "OmniAct is a cross-embodiment manipulation policy conditioning on robot kinematics and scene geometry to predict relative joint motions using flow-matching, achieving 63.0% success on held-out evaluations and outperforming baselines."
+    "en": "OmniAct is a cross-embodiment manipulation policy conditioning on robot kinematics and scene geometry to predict relative joint motions using flow-matching, achieving 63.0% success on held-out evaluations and outperforming baselines.",
+    "zh": "OmniAct是一种直接根据机器人在特定场景中的运动学进行条件化的跨具身操作策略，通过流匹配策略预测相对关节运动。在2000个具身-场景测试集上取得63.0%的成功率，优于pi0.5的17.8%和最强基线的57.9%，并在真实世界机器人上实现了接近次优方法两倍的成功率。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -563,8 +563,8 @@
    "ax_visits": 116,
    "heat": 58.6,
    "summary": {
-    "zh": "PyRUA-Dex 框架利用编码智能体通过程序化策略实现具身双臂灵巧操作，无需高质量示范。该方法在 Bench2Dex 上取得了 72.9 的 SOTA 分数，并在 DexJoCo 全随机化下达到 81.0% 的成功率。真实世界双臂 22 自由度手部实验表明，它能高效完成弹钢琴和写书法等任务，学习新曲谱仅需 30 分钟。",
-    "en": "PyRUA-Dex enables coding agents to learn dexterous bimanual manipulation without demonstrations, achieving 72.9 on Bench2Dex and 81.0% success on DexJoCo while efficiently learning piano and calligraphy in the real world."
+    "en": "PyRUA-Dex enables coding agents to learn dexterous bimanual manipulation without demonstrations, achieving 72.9 on Bench2Dex and 81.0% success on DexJoCo while efficiently learning piano and calligraphy in the real world.",
+    "zh": "PyRUA-Dex 框架利用编码智能体通过程序化策略实现具身双臂灵巧操作，无需高质量示范。该方法在 Bench2Dex 上取得了 72.9 的 SOTA 分数，并在 DexJoCo 全随机化下达到 81.0% 的成功率。真实世界双臂 22 自由度手部实验表明，它能高效完成弹钢琴和写书法等任务，学习新曲谱仅需 30 分钟。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -616,8 +616,8 @@
    "ax_visits": 8,
    "heat": 15.8,
    "summary": {
-    "zh": "ROAM-Bench通过独立检查机制评估具身主动空间智能，包含27个室内环境中的250个任务，涵盖搜索、计数与几何判断等五大类，揭示了当前七个前沿视觉语言模型在任务需求与结果判定上的两类互补失效模式。",
-    "en": "ROAM-Bench evaluates embodied active spatial intelligence across 250 tasks in 27 environments, revealing two complementary failure modes in seven frontier vision-language models."
+    "en": "ROAM-Bench evaluates embodied active spatial intelligence across 250 tasks in 27 environments, revealing two complementary failure modes in seven frontier vision-language models.",
+    "zh": "ROAM-Bench通过独立检查机制评估具身主动空间智能，包含27个室内环境中的250个任务，涵盖搜索、计数与几何判断等五大类，揭示了当前七个前沿视觉语言模型在任务需求与结果判定上的两类互补失效模式。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -661,8 +661,8 @@
    "ax_visits": 83,
    "heat": 10.3,
    "summary": {
-    "zh": "iWAM通过学习双向流映射（bidirectional flow map），在无需显式预测高分辨率未来帧的情况下，仅通过视频模型骨干网的一次前向传播来提取中间特征以指导动作策略，从而在模拟基准和真实机器人上大幅降低了世界动作模型的推理成本，同时保留了其泛化优势。",
-    "en": "IWAM extracts intermediate features from a single video-model forward pass via a bidirectional flow map to condition action policies without explicit future frame generation, significantly reducing inference costs while retaining generalization benefits across simulations and real robots."
+    "en": "IWAM extracts intermediate features from a single video-model forward pass via a bidirectional flow map to condition action policies without explicit future frame generation, significantly reducing inference costs while retaining generalization benefits across simulations and real robots.",
+    "zh": "iWAM通过学习双向流映射（bidirectional flow map），在无需显式预测高分辨率未来帧的情况下，仅通过视频模型骨干网的一次前向传播来提取中间特征以指导动作策略，从而在模拟基准和真实机器人上大幅降低了世界动作模型的推理成本，同时保留了其泛化优势。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -727,8 +727,8 @@
    "ax_visits": 37,
    "heat": 3.7,
    "summary": {
-    "zh": "引入β-Data数据集和midtraining方法，通过对抗性遥操作和自然语言轨迹重新打标，使机器人策略在模拟器及三个真实机器人平台上展现出更好的低层行为覆盖、零样本泛化能力以及更高的在线微调成功率。",
-    "en": "We introduce beta-Data and a midtraining approach using adversarial teleoperation and relabeling, achieving better low-level behavior coverage, zero-shot generalization, and online fine-tuning success across simulation and three real-robot platforms."
+    "en": "We introduce beta-Data and a midtraining approach using adversarial teleoperation and relabeling, achieving better low-level behavior coverage, zero-shot generalization, and online fine-tuning success across simulation and three real-robot platforms.",
+    "zh": "引入β-Data数据集和midtraining方法，通过对抗性遥操作和自然语言轨迹重新打标，使机器人策略在模拟器及三个真实机器人平台上展现出更好的低层行为覆盖、零样本泛化能力以及更高的在线微调成功率。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -803,8 +803,8 @@
    "ax_visits": 112,
    "heat": 14.2,
    "summary": {
-    "zh": "EmbodiSafety基准测试包含1092个快照任务和540个轨迹任务，评估具身模型对环境风险的理解和安全响应；Claude-Opus-5.5在快照和轨迹任务上分别达到56.1%和61.5%的完整决策准确率，监督训练则提升了Qwen模型的安全性。",
-    "en": "EmbodiSafety benchmarks embodied model risk understanding across 1,632 tasks, where Claude-Opus-5.5 achieves the highest complete decision accuracy of 56.1% on snapshots and 61.5% on trajectories."
+    "en": "EmbodiSafety benchmarks embodied model risk understanding across 1,632 tasks, where Claude-Opus-5.5 achieves the highest complete decision accuracy of 56.1% on snapshots and 61.5% on trajectories.",
+    "zh": "EmbodiSafety基准测试包含1092个快照任务和540个轨迹任务，评估具身模型对环境风险的理解和安全响应；Claude-Opus-5.5在快照和轨迹任务上分别达到56.1%和61.5%的完整决策准确率，监督训练则提升了Qwen模型的安全性。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -885,9 +885,9 @@
    "hf_upvotes": 34,
    "orgs": [
     {
+     "logo": "data/logos/gouni.edu.ng.png",
      "name": "Godfrey Okoye University",
-     "ror": "04japw488",
-     "logo": "data/logos/gouni.edu.ng.png"
+     "ror": "04japw488"
     }
    ],
    "thumb": "data/thumbs/2611.33010.jpg",
@@ -897,8 +897,8 @@
    "ax_visits": 56,
    "heat": 44.6,
    "summary": {
-    "zh": "引入RoboDojo-Mirror基准测试来评估具身机器人策略在镜面环境下的表现，结果表明五种主流策略在镜面条件下的成功率显著下降，下降幅度达10.8至56.7个百分点，主要归因于空间定位错误而非物理碰撞。",
-    "en": "We introduce RoboDojo-Mirror to evaluate robot policies in mirrored environments, revealing that five mainstream policies suffer a 10.8 to 56.7 percentage point drop in success rates due to spatial mislocalization rather than collisions."
+    "en": "We introduce RoboDojo-Mirror to evaluate robot policies in mirrored environments, revealing that five mainstream policies suffer a 10.8 to 56.7 percentage point drop in success rates due to spatial mislocalization rather than collisions.",
+    "zh": "引入RoboDojo-Mirror基准测试来评估具身机器人策略在镜面环境下的表现，结果表明五种主流策略在镜面条件下的成功率显著下降，下降幅度达10.8至56.7个百分点，主要归因于空间定位错误而非物理碰撞。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -985,8 +985,8 @@
      "ror": "05a28rw58"
     },
     {
-     "name": "Microsoft",
-     "logo": "data/logos/microsoft.com.png"
+     "logo": "data/logos/microsoft.com.png",
+     "name": "Microsoft"
     }
    ],
    "thumb": "data/thumbs/2611.32967.jpg",
@@ -1087,8 +1087,8 @@
    "ax_visits": 54,
    "heat": 7.4,
    "summary": {
-    "zh": "DynaMimic 引入了一种显式结合共享物理特性的可微分世界模型，通过预测接触扳手和残余广义力来计算下一个状态。在 60 个 LAFAN1 运动中，相比 SuperMimic，该方法将平均关节位置误差（MPJPE）降低了 18.6%，并在真实 A3 人形机器人上实现了多样化技能。",
-    "en": "DynaMimic introduces a physics-informed differentiable world model for humanoid motion tracking, reducing MPJPE by 18.6% over SuperMimic across 60 motions and successfully deploying on a real A3 humanoid."
+    "en": "DynaMimic introduces a physics-informed differentiable world model for humanoid motion tracking, reducing MPJPE by 18.6% over SuperMimic across 60 motions and successfully deploying on a real A3 humanoid.",
+    "zh": "DynaMimic 引入了一种显式结合共享物理特性的可微分世界模型，通过预测接触扳手和残余广义力来计算下一个状态。在 60 个 LAFAN1 运动中，相比 SuperMimic，该方法将平均关节位置误差（MPJPE）降低了 18.6%，并在真实 A3 人形机器人上实现了多样化技能。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -1140,8 +1140,8 @@
    "ax_visits": 18,
    "heat": 1.8,
    "summary": {
-    "zh": "开发了一种自感应柔顺拟人手，利用肌腱驱动中的串联弹簧和电位计实现无外部传感器的关节状态和力估计，并构建了基于VR的接触感知共享控制框架，提高了脆弱和重型物体的抓取成功率。",
-    "en": "Developed a self-sensing compliant anthropomorphic hand for contact-aware shared-control teleoperation, which estimates joint states and forces without external sensors and improves grasp success rates for fragile and heavy objects."
+    "en": "Developed a self-sensing compliant anthropomorphic hand for contact-aware shared-control teleoperation, which estimates joint states and forces without external sensors and improves grasp success rates for fragile and heavy objects.",
+    "zh": "开发了一种自感应柔顺拟人手，利用肌腱驱动中的串联弹簧和电位计实现无外部传感器的关节状态和力估计，并构建了基于VR的接触感知共享控制框架，提高了脆弱和重型物体的抓取成功率。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -1222,8 +1222,8 @@
    "ax_visits": 25,
    "heat": 2.5,
    "summary": {
-    "zh": "DOPER是一个基于RGB的6D物体位姿估计框架，通过共享视觉主干网络联合处理检测、分割和关键点预测。该方法利用合成训练、部分真实观测监督及多视图几何约束进行适应，在HANDAL、HOPEv2、HOT3D和T-LESS数据集上取得了最先进的检测平均精度，并在单GB300上以35 Hz的实时速度运行。",
-    "en": "DOPER is an RGB-based 6D object pose estimation framework that jointly performs detection, segmentation, and keypoint prediction, achieving state-of-the-art detection AP across multiple datasets while running in real time at 35 Hz."
+    "en": "DOPER is an RGB-based 6D object pose estimation framework that jointly performs detection, segmentation, and keypoint prediction, achieving state-of-the-art detection AP across multiple datasets while running in real time at 35 Hz.",
+    "zh": "DOPER是一个基于RGB的6D物体位姿估计框架，通过共享视觉主干网络联合处理检测、分割和关键点预测。该方法利用合成训练、部分真实观测监督及多视图几何约束进行适应，在HANDAL、HOPEv2、HOT3D和T-LESS数据集上取得了最先进的检测平均精度，并在单GB300上以35 Hz的实时速度运行。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -1267,8 +1267,8 @@
    "ax_visits": 24,
    "heat": 2.4,
    "summary": {
-    "zh": "Atomic Policy框架通过视觉语言模型、PDDL求解器与智能体闭环推理，将学习到的操作技能进行组合，实现了复杂长周期任务中的精准控制、状态验证与自适应重规划。",
-    "en": "Atomic Policy combines vision-language models, PDDL planning, and agentic reasoning to compose manipulation skills, improving task execution and recovery in long-horizon scenarios."
+    "en": "Atomic Policy combines vision-language models, PDDL planning, and agentic reasoning to compose manipulation skills, improving task execution and recovery in long-horizon scenarios.",
+    "zh": "Atomic Policy框架通过视觉语言模型、PDDL求解器与智能体闭环推理，将学习到的操作技能进行组合，实现了复杂长周期任务中的精准控制、状态验证与自适应重规划。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -1310,8 +1310,8 @@
    "ax_visits": 7,
    "heat": 1.7,
    "summary": {
-    "zh": "推出了用于评估异构多机器人操作中物理必要性推理的基准测试MRBench，并提出了MRScissors方法，通过分离任务需求和物理能力来进行约束搜索。在两个模型主干下，MRScissors实现了85.4%和91.2%的团队选择准确率，比最强基线分别高出10.4和9.5个百分点。",
-    "en": "MRBench benchmarks physical necessity reasoning in multi-robot manipulation. MRScissors uses constrained search to achieve 85.4% and 91.2% team-selection accuracy, outperforming baselines by up to 10.4 points."
+    "en": "MRBench benchmarks physical necessity reasoning in multi-robot manipulation. MRScissors uses constrained search to achieve 85.4% and 91.2% team-selection accuracy, outperforming baselines by up to 10.4 points.",
+    "zh": "推出了用于评估异构多机器人操作中物理必要性推理的基准测试MRBench，并提出了MRScissors方法，通过分离任务需求和物理能力来进行约束搜索。在两个模型主干下，MRScissors实现了85.4%和91.2%的团队选择准确率，比最强基线分别高出10.4和9.5个百分点。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -1387,8 +1387,8 @@
    "ax_visits": 21,
    "heat": 3.1,
    "summary": {
-    "zh": "通过在模拟和真实机器人任务中对比稠密动作表示与关键姿态动作表示，发现关键姿态在嘈杂演示和分布偏移下表现更稳健，但在干净演示下通常逊色或接近稠密动作，且严重依赖执行器的调整。",
-    "en": "A controlled comparison between dense and keypose action representations shows keypose is robust to noisy demonstrations and shifts, while dense often succeeds more with clean demonstrations given proper tuning."
+    "en": "A controlled comparison between dense and keypose action representations shows keypose is robust to noisy demonstrations and shifts, while dense often succeeds more with clean demonstrations given proper tuning.",
+    "zh": "通过在模拟和真实机器人任务中对比稠密动作表示与关键姿态动作表示，发现关键姿态在嘈杂演示和分布偏移下表现更稳健，但在干净演示下通常逊色或接近稠密动作，且严重依赖执行器的调整。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -1444,8 +1444,8 @@
    "ax_visits": 46,
    "heat": 7.6,
    "summary": {
-    "zh": "SimPWM利用一个无需训练参数的规则模拟器作为视频世界模型的代理，从首帧渲染机器人的3D模型和物体的3D点。在DROID未见设置的数据集上，该方法使机器人的IoU达到0.75-0.78，且将物体抓取失败率从54%降至38%。",
-    "en": "SimPWM uses a parameter-free simulator as a video world model proxy, achieving a robot IoU of 0.75-0.78 and reducing missed pick-ups from 54% to 38% on unseen DROID episodes."
+    "en": "SimPWM uses a parameter-free simulator as a video world model proxy, achieving a robot IoU of 0.75-0.78 and reducing missed pick-ups from 54% to 38% on unseen DROID episodes.",
+    "zh": "SimPWM利用一个无需训练参数的规则模拟器作为视频世界模型的代理，从首帧渲染机器人的3D模型和物体的3D点。在DROID未见设置的数据集上，该方法使机器人的IoU达到0.75-0.78，且将物体抓取失败率从54%降至38%。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -1528,8 +1528,8 @@
    "ax_visits": 13,
    "heat": 1.3,
    "summary": {
-    "zh": "Support2Sim是一个从单张RGB图像重建物理仿真场景的Real2Sim系统，利用支持图、接触引导姿态初始化器和粗到细的精炼器在短时间内实现高源保真度和稳定性。在50个场景的基准测试中，其源掩码IoU比最强基线提升了21.4个百分点，支持实现率达到87.1%，并将平均物体漂移减少至45.3毫米。",
-    "en": "Support2Sim is a Real2Sim system reconstructing physics-ready scenes from a single RGB image, improving source-mask IoU by 21.4 pp and reducing mean object drift to 45.3 mm compared to baselines."
+    "en": "Support2Sim is a Real2Sim system reconstructing physics-ready scenes from a single RGB image, improving source-mask IoU by 21.4 pp and reducing mean object drift to 45.3 mm compared to baselines.",
+    "zh": "Support2Sim是一个从单张RGB图像重建物理仿真场景的Real2Sim系统，利用支持图、接触引导姿态初始化器和粗到细的精炼器在短时间内实现高源保真度和稳定性。在50个场景的基准测试中，其源掩码IoU比最强基线提升了21.4个百分点，支持实现率达到87.1%，并将平均物体漂移减少至45.3毫米。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -1722,8 +1722,8 @@
    "ax_visits": 31,
    "heat": 4.1,
    "summary": {
-    "zh": "DiffGR00T将GR00T N1.7与SONIC结合，利用学习到的动作条件世界模型替代不可微仿真器，实现了端到端的可微训练，将人形机器人在四个HumanoidArena仿真任务上的平均任务成功率从59.2%提升至71.7%。",
-    "en": "DiffGR00T introduces an end-to-end differentiable training framework using a learned world model, improving humanoid average task success from 59.2% to 71.7% across four simulation tasks."
+    "en": "DiffGR00T introduces an end-to-end differentiable training framework using a learned world model, improving humanoid average task success from 59.2% to 71.7% across four simulation tasks.",
+    "zh": "DiffGR00T将GR00T N1.7与SONIC结合，利用学习到的动作条件世界模型替代不可微仿真器，实现了端到端的可微训练，将人形机器人在四个HumanoidArena仿真任务上的平均任务成功率从59.2%提升至71.7%。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -1773,8 +1773,8 @@
    "ax_visits": 79,
    "heat": 13.9,
    "summary": {
-    "zh": "DexWAC通过将动作条件世界模型、行动者和自举评论家统一在一个预训练阶段，实现了高效的灵巧操作。它基于图像编辑骨干网络预测未来视觉表征与奖励，在两个真实世界任务上达到了75%的平均成功率，超越了45%的π₀.₅。",
-    "en": "DexWAC unifies a world model, actor, and critic in a single stage for dexterous manipulation, achieving a 75% average success rate on real tasks and outperforming baseline models."
+    "en": "DexWAC unifies a world model, actor, and critic in a single stage for dexterous manipulation, achieving a 75% average success rate on real tasks and outperforming baseline models.",
+    "zh": "DexWAC通过将动作条件世界模型、行动者和自举评论家统一在一个预训练阶段，实现了高效的灵巧操作。它基于图像编辑骨干网络预测未来视觉表征与奖励，在两个真实世界任务上达到了75%的平均成功率，超越了45%的π₀.₅。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -1863,8 +1863,8 @@
    "ax_visits": 35,
    "heat": 24.5,
    "summary": {
-    "zh": "ICLWorld是一个涵盖数字和物理世界的在线基准测试，包含30个环境和160个任务，用于评估智能体的上下文学习能力。实验表明，最强智能体Claude Opus 5.5和GPT-6 Astra在计算机使用任务上的成功率分别为82%和76%，但在机器人任务上仅为27%和26%。",
-    "en": "ICLWorld evaluates agent in-context learning across digital and physical worlds with 30 environments and 160 tasks, showing frontier models achieve up to 82% success in computer use but only 27% in robot use."
+    "en": "ICLWorld evaluates agent in-context learning across digital and physical worlds with 30 environments and 160 tasks, showing frontier models achieve up to 82% success in computer use but only 27% in robot use.",
+    "zh": "ICLWorld是一个涵盖数字和物理世界的在线基准测试，包含30个环境和160个任务，用于评估智能体的上下文学习能力。实验表明，最强智能体Claude Opus 5.5和GPT-6 Astra在计算机使用任务上的成功率分别为82%和76%，但在机器人任务上仅为27%和26%。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -1908,8 +1908,8 @@
    "ax_visits": 13,
    "heat": 1.3,
    "summary": {
-    "zh": "BARE 框架通过人体运动先验实现具身机器人的身体感知反射性规避，利用局部身体调整在维持全身稳定性的同时快速躲避动态障碍物，并在仿真和真实实验中验证了其有效性。",
-    "en": "BARE enables humanoid robots to perform rapid local evasion from dynamic obstacles while maintaining whole-body stability using human motion priors and reinforcement learning."
+    "en": "BARE enables humanoid robots to perform rapid local evasion from dynamic obstacles while maintaining whole-body stability using human motion priors and reinforcement learning.",
+    "zh": "BARE 框架通过人体运动先验实现具身机器人的身体感知反射性规避，利用局部身体调整在维持全身稳定性的同时快速躲避动态障碍物，并在仿真和真实实验中验证了其有效性。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -1957,8 +1957,8 @@
    "ax_visits": 28,
    "heat": 5.8,
    "summary": {
-    "zh": "ReFocus是一个长序列机器人操作强化学习框架，通过全局和局部强化学习的交替迭代来识别任务瓶颈并进行针对性练习。在LIBERO-Long和RoboCasa365上分别取得了97.8%和51.3%的成功率，优于基线方法的90.6%和39.3%。",
-    "en": "ReFocus is a progress-guided multi-round RL framework for long-horizon manipulation that alternates between global and local RL to identify bottlenecks and practice them, achieving 97.8% success on LIBERO-Long."
+    "en": "ReFocus is a progress-guided multi-round RL framework for long-horizon manipulation that alternates between global and local RL to identify bottlenecks and practice them, achieving 97.8% success on LIBERO-Long.",
+    "zh": "ReFocus是一个长序列机器人操作强化学习框架，通过全局和局部强化学习的交替迭代来识别任务瓶颈并进行针对性练习。在LIBERO-Long和RoboCasa365上分别取得了97.8%和51.3%的成功率，优于基线方法的90.6%和39.3%。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -2007,8 +2007,8 @@
    "ax_visits": 12,
    "heat": 2.2,
    "summary": {
-    "zh": "RoboRecast是一个基于智能体优化的演示增强框架，通过诊断仿真反馈来联合优化场景和机器人运动，在保持源任务交互意图的同时生成目标环境下的合成数据，并在真实单臂和模拟双臂任务中提升了策略成功率。",
-    "en": "RoboRecast is an agentic optimization framework that preserves task intent while augmenting demonstrations via simulation feedback, improving policy success on single-arm and bimanual tasks."
+    "en": "RoboRecast is an agentic optimization framework that preserves task intent while augmenting demonstrations via simulation feedback, improving policy success on single-arm and bimanual tasks.",
+    "zh": "RoboRecast是一个基于智能体优化的演示增强框架，通过诊断仿真反馈来联合优化场景和机器人运动，在保持源任务交互意图的同时生成目标环境下的合成数据，并在真实单臂和模拟双臂任务中提升了策略成功率。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -2090,8 +2090,8 @@
    "ax_visits": 21,
    "heat": 2.1,
    "summary": {
-    "zh": "开发了一种具有12个主动自由度的五指软刚混合灵巧手，结合了结构柔顺性与刚性骨架，利用线性控制实现了软抓握的通用性。实验表明，该手能够完成人类手部33种抓握姿态中的28种（占84.8%），并能高效执行薄形可变形物体抓取等多种远程操作任务。",
-    "en": "Developed a five-fingered soft-rigid hybrid dexterous hand with 12 active DOFs using linear control, successfully completing 84.8% of human grasp postures and demonstrating superior performance in teleoperated manipulation tasks."
+    "en": "Developed a five-fingered soft-rigid hybrid dexterous hand with 12 active DOFs using linear control, successfully completing 84.8% of human grasp postures and demonstrating superior performance in teleoperated manipulation tasks.",
+    "zh": "开发了一种具有12个主动自由度的五指软刚混合灵巧手，结合了结构柔顺性与刚性骨架，利用线性控制实现了软抓握的通用性。实验表明，该手能够完成人类手部33种抓握姿态中的28种（占84.8%），并能高效执行薄形可变形物体抓取等多种远程操作任务。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -2173,8 +2173,8 @@
    "ax_visits": 21,
    "heat": 2.1,
    "summary": {
-    "zh": "MXI-MemICL通过自检索交互记忆将具象化演示转化为可复用记忆，实现视觉-语言-动作模型的上下文操作。在RoboCasa365和RoboTwin 2.0上，该方法比基线成功率分别提升了8.2%和14.4%，真实机器人实验表明在未见任务上提升了16.7%。",
-    "en": "MXI-MemICL enables memory-guided in-context robot manipulation for VLA models by leveraging self-retrieved interaction memory, achieving significant success rate gains on RoboCasa365, RoboTwin 2.0, and real-robot tasks."
+    "en": "MXI-MemICL enables memory-guided in-context robot manipulation for VLA models by leveraging self-retrieved interaction memory, achieving significant success rate gains on RoboCasa365, RoboTwin 2.0, and real-robot tasks.",
+    "zh": "MXI-MemICL通过自检索交互记忆将具象化演示转化为可复用记忆，实现视觉-语言-动作模型的上下文操作。在RoboCasa365和RoboTwin 2.0上，该方法比基线成功率分别提升了8.2%和14.4%，真实机器人实验表明在未见任务上提升了16.7%。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -2335,8 +2335,8 @@
    "ax_visits": 19,
    "heat": 2.9,
    "summary": {
-    "zh": "ContinualDrive是一个部署锚定的多轴基准，用于评估驾驶规划器的持续学习更新。研究发现，在nuPlan上的闭环评估中，现有的持续学习策略均未能超越已部署的模型，凸显了评估方法选择对结果的关键影响。",
-    "en": "ContinualDrive is a deployment-anchored benchmark for continual updates of driving planners, showing that evaluated training regimes fail to improve closed-loop performance over deployed models on nuPlan."
+    "en": "ContinualDrive is a deployment-anchored benchmark for continual updates of driving planners, showing that evaluated training regimes fail to improve closed-loop performance over deployed models on nuPlan.",
+    "zh": "ContinualDrive是一个部署锚定的多轴基准，用于评估驾驶规划器的持续学习更新。研究发现，在nuPlan上的闭环评估中，现有的持续学习策略均未能超越已部署的模型，凸显了评估方法选择对结果的关键影响。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -2389,8 +2389,8 @@
    "ax_visits": 33,
    "heat": 3.3,
    "summary": {
-    "zh": "AirLeg是一个自监督的视觉-惯性-腿部SLAM系统，通过多传感器束差分调整实现视觉与腿部本体感觉的相互监督。在17个GrandTour序列中实现了最低的平均误差0.19米，并在低成本四足机器人上实现了0.6%的最低漂移。",
-    "en": "AirLeg is a self-supervised visual-inertial-leg SLAM system that achieves mutual supervision between vision and leg proprioception, attaining the lowest average error of 0.19 m across 17 GrandTour sequences and 0.6% drift on a quadruped."
+    "en": "AirLeg is a self-supervised visual-inertial-leg SLAM system that achieves mutual supervision between vision and leg proprioception, attaining the lowest average error of 0.19 m across 17 GrandTour sequences and 0.6% drift on a quadruped.",
+    "zh": "AirLeg是一个自监督的视觉-惯性-腿部SLAM系统，通过多传感器束差分调整实现视觉与腿部本体感觉的相互监督。在17个GrandTour序列中实现了最低的平均误差0.19米，并在低成本四足机器人上实现了0.6%的最低漂移。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -2523,8 +2523,8 @@
    "ax_visits": 13,
    "heat": 1.3,
    "summary": {
-    "zh": "CodeWAM是一种结合可执行代码与视觉模型的端到端自动驾驶世界模型，通过代码表达自车动力学，联合视觉预测场景演化结果。该模型在NAVSIM v1 navtest上取得93.6 PDMS，在v2 navtest上取得92.1 EPDMS，并在NAVHARD上达到50.6 EPDMS。",
-    "en": "CodeWAM is an end-to-end driving world model integrating executable code for ego dynamics and visual modeling for scene evolution, achieving 93.6 PDMS on NAVSIM v1 navtest, 92.1 EPDMS on v2 navtest, and 50.6 EPDMS on NAVHARD."
+    "en": "CodeWAM is an end-to-end driving world model integrating executable code for ego dynamics and visual modeling for scene evolution, achieving 93.6 PDMS on NAVSIM v1 navtest, 92.1 EPDMS on v2 navtest, and 50.6 EPDMS on NAVHARD.",
+    "zh": "CodeWAM是一种结合可执行代码与视觉模型的端到端自动驾驶世界模型，通过代码表达自车动力学，联合视觉预测场景演化结果。该模型在NAVSIM v1 navtest上取得93.6 PDMS，在v2 navtest上取得92.1 EPDMS，并在NAVHARD上达到50.6 EPDMS。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -2588,8 +2588,8 @@
    "ax_visits": 19,
    "heat": 2.9,
    "summary": {
-    "zh": "ViTacLab 框架通过 ViTacSim、ViTacBench 和 ViTacPolicy 实现了具物理一致性的视触觉仿真、基准测试与表征学习。实验表明，该方法将法向和切向力 RMSE 分别从 2.31 和 1.85 N 降至 0.42 和 0.53 N，在 256 个并行环境中吞吐量达到 2,482.9 FPS。",
-    "en": "ViTacLab provides physically consistent visuo-tactile simulation, benchmarking, and representation learning, reducing force RMSE and achieving high throughput in parallel environments."
+    "en": "ViTacLab provides physically consistent visuo-tactile simulation, benchmarking, and representation learning, reducing force RMSE and achieving high throughput in parallel environments.",
+    "zh": "ViTacLab 框架通过 ViTacSim、ViTacBench 和 ViTacPolicy 实现了具物理一致性的视触觉仿真、基准测试与表征学习。实验表明，该方法将法向和切向力 RMSE 分别从 2.31 和 1.85 N 降至 0.42 和 0.53 N，在 256 个并行环境中吞吐量达到 2,482.9 FPS。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -2792,8 +2792,8 @@
    "ax_visits": 38,
    "heat": 5.8,
    "summary": {
-    "zh": "Any2Act通过统一的具身扎根表示和源路由适配器，实现了从异构示范中扩展机器人上下文学习，在单次示范下于未见任务上取得了57.5%的成功率，超越了每项任务微调50次示范的VLA。",
-    "en": "Any2Act scales robot in-context learning from heterogeneous demonstrations using a unified embodiment-grounded representation and source-routed adapters, achieving 57.5% success on unseen tasks from a single demonstration."
+    "en": "Any2Act scales robot in-context learning from heterogeneous demonstrations using a unified embodiment-grounded representation and source-routed adapters, achieving 57.5% success on unseen tasks from a single demonstration.",
+    "zh": "Any2Act通过统一的具身扎根表示和源路由适配器，实现了从异构示范中扩展机器人上下文学习，在单次示范下于未见任务上取得了57.5%的成功率，超越了每项任务微调50次示范的VLA。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -2856,8 +2856,8 @@
    "ax_visits": 7,
    "heat": 1.7,
    "summary": {
-    "zh": "GOLD-SLAM系统结合全景高斯泼溅与全向LiDAR深度先验，在球面域进行高精度追踪与建图，平均PSNR比现有全景基线提升5.56至9.10 dB，Depth-L1降低71.9%至83.9%。",
-    "en": "GOLD-SLAM combines panoramic Gaussian splatting with omnidirectional LiDAR priors for accurate spherical SLAM, improving PSNR by 5.56-9.10 dB and reducing Depth-L1 by 71.9-83.9% over baselines."
+    "en": "GOLD-SLAM combines panoramic Gaussian splatting with omnidirectional LiDAR priors for accurate spherical SLAM, improving PSNR by 5.56-9.10 dB and reducing Depth-L1 by 71.9-83.9% over baselines.",
+    "zh": "GOLD-SLAM系统结合全景高斯泼溅与全向LiDAR深度先验，在球面域进行高精度追踪与建图，平均PSNR比现有全景基线提升5.56至9.10 dB，Depth-L1降低71.9%至83.9%。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -2945,8 +2945,8 @@
    "ax_visits": 22,
    "heat": 3.2,
    "summary": {
-    "zh": "EgoLoAF利用第一人称示范直接生成人形机器人运动操作训练数据，无需穿戴式动作追踪器或真实机器人遥操作，在四个真实任务中取得了接近遥操作的平均任务进度得分（73.1对比74.4），数据收集效率提升了4.03倍。",
-    "en": "EgoLoAF derives humanoid loco-manipulation data directly from egocentric demonstrations without wearable trackers, achieving near-teleoperation performance (73.1 vs. 74.4 Task Progress Score) and a 4.03x efficiency boost."
+    "en": "EgoLoAF derives humanoid loco-manipulation data directly from egocentric demonstrations without wearable trackers, achieving near-teleoperation performance (73.1 vs. 74.4 Task Progress Score) and a 4.03x efficiency boost.",
+    "zh": "EgoLoAF利用第一人称示范直接生成人形机器人运动操作训练数据，无需穿戴式动作追踪器或真实机器人遥操作，在四个真实任务中取得了接近遥操作的平均任务进度得分（73.1对比74.4），数据收集效率提升了4.03倍。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -2997,8 +2997,8 @@
    "ax_visits": 25,
    "heat": 2.5,
    "summary": {
-    "zh": "RoboDemo是一个通过双级联测试时训练协调示范意图与执行进度的长周期操作框架，利用持久示范意图记忆与交互进度记忆实现对执行偏差的自适应调整，在Imitator Game中取得90.7%的成功率，在三个真实世界家居任务中取得73.3%的成功率。",
-    "en": "RoboDemo reconciles demonstration intent and execution progress for long-horizon manipulation using dual-cascaded test-time-training, achieving 90.7% success on Imitator Game and 73.3% on real-world tasks."
+    "en": "RoboDemo reconciles demonstration intent and execution progress for long-horizon manipulation using dual-cascaded test-time-training, achieving 90.7% success on Imitator Game and 73.3% on real-world tasks.",
+    "zh": "RoboDemo是一个通过双级联测试时训练协调示范意图与执行进度的长周期操作框架，利用持久示范意图记忆与交互进度记忆实现对执行偏差的自适应调整，在Imitator Game中取得90.7%的成功率，在三个真实世界家居任务中取得73.3%的成功率。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -3097,8 +3097,8 @@
    "ax_visits": 27,
    "heat": 3.7,
    "summary": {
-    "zh": "PILOT的方法，通过引入运动思维链（motion CoT）将物理条件演化与低层动作轨迹生成解耦，有效提升了世界动作模型在复杂机器人操作任务中的成功率、泛化能力及数据效率。",
-    "en": "PILOT disentangles physical condition evolution from low-level action trajectory generation using motion chain-of-thought guidance, improving success rate, generalization, and data efficiency in robotic manipulation."
+    "en": "PILOT disentangles physical condition evolution from low-level action trajectory generation using motion chain-of-thought guidance, improving success rate, generalization, and data efficiency in robotic manipulation.",
+    "zh": "PILOT的方法，通过引入运动思维链（motion CoT）将物理条件演化与低层动作轨迹生成解耦，有效提升了世界动作模型在复杂机器人操作任务中的成功率、泛化能力及数据效率。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -3145,8 +3145,8 @@
    "ax_visits": 36,
    "heat": 11.6,
    "summary": {
-    "zh": "边界感知策略学习通过显式塑造和扩展视觉运动策略的交接边界，解决了多模态智能体与机器人策略协同中的交接失效问题。该方法在RoboTwin 2.0和RoboDojo基准测试中达到98.4%的成功率，较最强基线提升超过26个百分点，同时将API成本和执行时间分别降低了41.3%和37.5%。",
-    "en": "Boundary-Aware Policy Learning explicitly shapes and expands visuomotor policy handoff boundaries to improve agent-policy orchestration, achieving 98.4% success on RoboTwin 2.0 while reducing API cost and execution time by 41.3% and 37.5%."
+    "en": "Boundary-Aware Policy Learning explicitly shapes and expands visuomotor policy handoff boundaries to improve agent-policy orchestration, achieving 98.4% success on RoboTwin 2.0 while reducing API cost and execution time by 41.3% and 37.5%.",
+    "zh": "边界感知策略学习通过显式塑造和扩展视觉运动策略的交接边界，解决了多模态智能体与机器人策略协同中的交接失效问题。该方法在RoboTwin 2.0和RoboDojo基准测试中达到98.4%的成功率，较最强基线提升超过26个百分点，同时将API成本和执行时间分别降低了41.3%和37.5%。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -3193,8 +3193,8 @@
    "ax_visits": 45,
    "heat": 5.5,
    "summary": {
-    "zh": "RoboClock是一个统一的时序感知机器人操作基准，包含来自五个应用领域的60个任务，采用三种时序约束和延迟对齐评估协议。对30多种方法的评估显示，表现最好的训练后VLA在简单级别任务上也仅达到8.3%的时序成功率。",
-    "en": "RoboClock is a unified benchmark for time-aware robotic manipulation with 60 tasks. Evaluation of over 30 methods shows the best VLA achieves only 8.3% temporal success on easy tasks."
+    "en": "RoboClock is a unified benchmark for time-aware robotic manipulation with 60 tasks. Evaluation of over 30 methods shows the best VLA achieves only 8.3% temporal success on easy tasks.",
+    "zh": "RoboClock是一个统一的时序感知机器人操作基准，包含来自五个应用领域的60个任务，采用三种时序约束和延迟对齐评估协议。对30多种方法的评估显示，表现最好的训练后VLA在简单级别任务上也仅达到8.3%的时序成功率。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -3378,8 +3378,8 @@
    "ax_visits": 16,
    "heat": 1.6,
    "summary": {
-    "zh": "SkillHarness是一个执行感知的主动式协调框架，通过可插拔的运动技能库和视觉语言引导实现长视距越野导航。它利用感知强化学习减少环境波动敏感性，并通过事件触发推理和执行反馈优化技能组合，在不重新训练底层策略的情况下适应未见地形。",
-    "en": "SkillHarness is an execution-aware coordination framework integrating a plug-and-play skill library and vision-language guidance for robust long-horizon terrain traversal without retraining locomotion policies."
+    "en": "SkillHarness is an execution-aware coordination framework integrating a plug-and-play skill library and vision-language guidance for robust long-horizon terrain traversal without retraining locomotion policies.",
+    "zh": "SkillHarness是一个执行感知的主动式协调框架，通过可插拔的运动技能库和视觉语言引导实现长视距越野导航。它利用感知强化学习减少环境波动敏感性，并通过事件触发推理和执行反馈优化技能组合，在不重新训练底层策略的情况下适应未见地形。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -3594,8 +3594,8 @@
    "ax_visits": 23,
    "heat": 3.3,
    "summary": {
-    "zh": "Duo 提出了一种在双臂策略中进行时空动作协调的设计，将每个时间步的双臂分为两个动作并在流匹配期间通过跨臂注意力机制交互；在 RoboTwin 2.0 上，Duo 将 FLOWER 和 $\\pi_{0.5}$ 的整体成功率分别提升了 12.55 和 9.02 个百分点，并在真实世界任务中超越了 $\\pi_{0.5}$ 的成功率和执行速度。",
-    "en": "Duo introduces a spatiotemporal action coordination design for bimanual policies using cross-arm attention, improving success rates on RoboTwin 2.0 and outperforming baseline policies in real-world tasks."
+    "en": "Duo introduces a spatiotemporal action coordination design for bimanual policies using cross-arm attention, improving success rates on RoboTwin 2.0 and outperforming baseline policies in real-world tasks.",
+    "zh": "Duo 提出了一种在双臂策略中进行时空动作协调的设计，将每个时间步的双臂分为两个动作并在流匹配期间通过跨臂注意力机制交互；在 RoboTwin 2.0 上，Duo 将 FLOWER 和 $\\pi_{0.5}$ 的整体成功率分别提升了 12.55 和 9.02 个百分点，并在真实世界任务中超越了 $\\pi_{0.5}$ 的成功率和执行速度。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -3643,8 +3643,8 @@
    "ax_visits": 30,
    "heat": 3.0,
    "summary": {
-    "zh": "Ego2Real是一个利用第一视角视觉触觉示范学习双手灵巧操作的框架，通过触觉引导的手物交互重建和接触感知强化学习，指导拟人化机器人手模仿人类接触行为，实验表明融入触觉监督提高了操作成功率。",
-    "en": "Ego2Real learns bimanual dexterous manipulation from egocentric visuo-tactile demonstrations using tactile-guided reconstruction and contact-informed reinforcement learning, achieving higher success rates."
+    "en": "Ego2Real learns bimanual dexterous manipulation from egocentric visuo-tactile demonstrations using tactile-guided reconstruction and contact-informed reinforcement learning, achieving higher success rates.",
+    "zh": "Ego2Real是一个利用第一视角视觉触觉示范学习双手灵巧操作的框架，通过触觉引导的手物交互重建和接触感知强化学习，指导拟人化机器人手模仿人类接触行为，实验表明融入触觉监督提高了操作成功率。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -3703,8 +3703,8 @@
    "ax_visits": 11,
    "heat": 2.1,
    "summary": {
-    "zh": "ActiveBridge 框架通过自我中心感知与交互建模，将人类的主动先验迁移至机器人，利用单头载相机主动控制视角来获取操作所需视觉信息。实验表明，该方法在主动操作任务上优于基线模型。",
-    "en": "ActiveBridge transfers human active priors to robots via egocentric perception-interaction modeling, enabling active viewpoint control for manipulation and outperforming baselines."
+    "en": "ActiveBridge transfers human active priors to robots via egocentric perception-interaction modeling, enabling active viewpoint control for manipulation and outperforming baselines.",
+    "zh": "ActiveBridge 框架通过自我中心感知与交互建模，将人类的主动先验迁移至机器人，利用单头载相机主动控制视角来获取操作所需视觉信息。实验表明，该方法在主动操作任务上优于基线模型。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -3805,8 +3805,8 @@
    "ax_visits": 22,
    "heat": 4.2,
    "summary": {
-    "zh": "KeyMemVLA通过引入子任务引导的关键内存框架来解决长周期机器人操作中的内存依赖问题。该方法利用两级标注选择关键帧指导内存写入，在RMBench-$M(n)$等多个基准测试中展现出比对比基准更高的平均成功率。",
-    "en": "KeyMemVLA utilizes a subtask-guided key memory framework for long-horizon manipulation, achieving higher average success rates than baselines across multiple benchmarks."
+    "en": "KeyMemVLA utilizes a subtask-guided key memory framework for long-horizon manipulation, achieving higher average success rates than baselines across multiple benchmarks.",
+    "zh": "KeyMemVLA通过引入子任务引导的关键内存框架来解决长周期机器人操作中的内存依赖问题。该方法利用两级标注选择关键帧指导内存写入，在RMBench-$M(n)$等多个基准测试中展现出比对比基准更高的平均成功率。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -3891,8 +3891,8 @@
    "ax_visits": 47,
    "heat": 10.7,
    "summary": {
-    "zh": "RoboHarness-RL是一个基于具身强化学习的VLM机器人操作框架，利用任务结果奖励和层次化内存组件进行多轮训练。在RoboTwin 2.0上成功率从31.2%提升至44.0%，在LIBERO-Pro上从57.8%提升至73.3%，并显著降低了重复调用率。",
-    "en": "RoboHarness-RL uses agentic reinforcement learning to improve VLM-based robot manipulation via tool calls, raising success rates from 31.2% to 44.0% on RoboTwin 2.0 and 57.8% to 73.3% on LIBERO-Pro."
+    "en": "RoboHarness-RL uses agentic reinforcement learning to improve VLM-based robot manipulation via tool calls, raising success rates from 31.2% to 44.0% on RoboTwin 2.0 and 57.8% to 73.3% on LIBERO-Pro.",
+    "zh": "RoboHarness-RL是一个基于具身强化学习的VLM机器人操作框架，利用任务结果奖励和层次化内存组件进行多轮训练。在RoboTwin 2.0上成功率从31.2%提升至44.0%，在LIBERO-Pro上从57.8%提升至73.3%，并显著降低了重复调用率。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -4031,8 +4031,8 @@
    "ax_visits": 32,
    "heat": 4.2,
    "summary": {
-    "zh": "VLG-Drive通过几何锚定残差将冻结的视觉语言模型与几何基础模型特征进行逐点融合，训练轻量级规划器预测自车轨迹。该方法在NavHard扰动初始状态下取得了31.78 EPDMS的最高成绩，并在420个HUGSIM闭环驾驶场景中优于所有对比规划器。",
-    "en": "VLG-Drive fuses frozen VLM and geometric features via a geometry-anchored residual to train a lightweight driving planner, achieving top performance on NavHard with 31.78 EPDMS and outperforming baselines in closed-loop HUGSIM scenarios."
+    "en": "VLG-Drive fuses frozen VLM and geometric features via a geometry-anchored residual to train a lightweight driving planner, achieving top performance on NavHard with 31.78 EPDMS and outperforming baselines in closed-loop HUGSIM scenarios.",
+    "zh": "VLG-Drive通过几何锚定残差将冻结的视觉语言模型与几何基础模型特征进行逐点融合，训练轻量级规划器预测自车轨迹。该方法在NavHard扰动初始状态下取得了31.78 EPDMS的最高成绩，并在420个HUGSIM闭环驾驶场景中优于所有对比规划器。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -4122,8 +4122,8 @@
    "ax_visits": 29,
    "heat": 2.9,
    "summary": {
-    "zh": "推出了DUALingo这一大规模双手指令引导的3D物体可供性定位数据集，包含71K个物体上的271K个任务，通过全自动开源基础模型管道生成。基于该数据集训练的模型在aIoU上比零样本基线提升了三倍以上，从10.3提高到37.8。",
-    "en": "DUALingo introduces a large-scale dataset for bimanual 3D affordance grounding, featuring 271K tasks on 71K objects generated via automated foundation models. Models trained on it achieved a threefold aIoU improvement over the zero-shot baseline from 10.3 to 37.8."
+    "en": "DUALingo introduces a large-scale dataset for bimanual 3D affordance grounding, featuring 271K tasks on 71K objects generated via automated foundation models. Models trained on it achieved a threefold aIoU improvement over the zero-shot baseline from 10.3 to 37.8.",
+    "zh": "推出了DUALingo这一大规模双手指令引导的3D物体可供性定位数据集，包含71K个物体上的271K个任务，通过全自动开源基础模型管道生成。基于该数据集训练的模型在aIoU上比零样本基线提升了三倍以上，从10.3提高到37.8。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -4260,8 +4260,8 @@
    "ax_visits": 22,
    "heat": 4.2,
    "summary": {
-    "zh": "RESET通过单次真实演示重建可验证的物理世界并自我改进技能，在仿真中达成97%的平均成功率，并在真实机器人实验中4种机器人共280次试验中取得80%的成功率。",
-    "en": "RESET uses a single real demonstration to rebuild a verifiable world and self-improve skills, achieving a 97% average success rate in simulation and an 80% success rate across 4 real robots."
+    "en": "RESET uses a single real demonstration to rebuild a verifiable world and self-improve skills, achieving a 97% average success rate in simulation and an 80% success rate across 4 real robots.",
+    "zh": "RESET通过单次真实演示重建可验证的物理世界并自我改进技能，在仿真中达成97%的平均成功率，并在真实机器人实验中4种机器人共280次试验中取得80%的成功率。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -4360,8 +4360,8 @@
    "ax_visits": 30,
    "heat": 4.0,
    "summary": {
-    "zh": "Ada-BFM是一个用于人型机器人场景交互的后训练框架，通过在预训练的行为基础模型中加入轻量级适配器，实现了对地形和物体交互任务的高效适应，并在仿真和真实世界实验中验证了其能加速学习并保留通用控制能力。",
-    "en": "Ada-BFM is a post-training framework that adapts pretrained behavior foundation models for humanoid scene interaction using lightweight adapters, achieving efficient learning and preserving general control capabilities in simulation and real-world experiments."
+    "en": "Ada-BFM is a post-training framework that adapts pretrained behavior foundation models for humanoid scene interaction using lightweight adapters, achieving efficient learning and preserving general control capabilities in simulation and real-world experiments.",
+    "zh": "Ada-BFM是一个用于人型机器人场景交互的后训练框架，通过在预训练的行为基础模型中加入轻量级适配器，实现了对地形和物体交互任务的高效适应，并在仿真和真实世界实验中验证了其能加速学习并保留通用控制能力。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -4559,8 +4559,8 @@
    "ax_visits": 58,
    "heat": 9.8,
    "summary": {
-    "zh": "G0.7通过扩展至长达五分钟的长上下文窗口并利用大规模机器人及人类第一人称视频进行预训练，实现了高效的通用世界动作模型；在推理时直接解码动作，在RTX 5090上以60毫秒运行16步动作块，比想象-行动推理快7.6倍，并在多个仿真与真实世界任务中展现出卓越的零样本泛化能力。",
-    "en": "G0.7 scales a world action model with a five-minute context window and large-scale pretraining, enabling 7.6x faster direct action inference and strong zero-shot performance across simulation and real-world manipulation tasks."
+    "en": "G0.7 scales a world action model with a five-minute context window and large-scale pretraining, enabling 7.6x faster direct action inference and strong zero-shot performance across simulation and real-world manipulation tasks.",
+    "zh": "G0.7通过扩展至长达五分钟的长上下文窗口并利用大规模机器人及人类第一人称视频进行预训练，实现了高效的通用世界动作模型；在推理时直接解码动作，在RTX 5090上以60毫秒运行16步动作块，比想象-行动推理快7.6倍，并在多个仿真与真实世界任务中展现出卓越的零样本泛化能力。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
@@ -4681,8 +4681,8 @@
    "ax_visits": 19,
    "heat": 1.9,
    "summary": {
-    "zh": "LeanWAM通过将冻结视频生成器的视频先验通过两阶段训练蒸馏到轻量级策略中，实现了高效且鲁棒的具身控制。它将未来表征压缩为32个预测token，在LIBERO、LIBERO-Plus和RoboTwin 2.0上超越了强视觉-语言-动作和世界模型基线，动作预测速度达25.1毫秒，比代表性世界模型快12.3到41.5倍。",
-    "en": "LeanWAM transfers video priors from a frozen video generator to a lightweight policy via two-stage training, achieving robust control that outperforms strong baselines on LIBERO and RoboTwin 2.0 with a 12.3--41.5x faster action prediction speed."
+    "en": "LeanWAM transfers video priors from a frozen video generator to a lightweight policy via two-stage training, achieving robust control that outperforms strong baselines on LIBERO and RoboTwin 2.0 with a 12.3--41.5x faster action prediction speed.",
+    "zh": "LeanWAM通过将冻结视频生成器的视频先验通过两阶段训练蒸馏到轻量级策略中，实现了高效且鲁棒的具身控制。它将未来表征压缩为32个预测token，在LIBERO、LIBERO-Plus和RoboTwin 2.0上超越了强视觉-语言-动作和世界模型基线，动作预测速度达25.1毫秒，比代表性世界模型快12.3到41.5倍。"
    },
    "summary_source": "gemini-3.5-flash-lite"
   },
