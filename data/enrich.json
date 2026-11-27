@@ -518,7 +518,6 @@
  },
  "2611.34485": {
   "orgs": [
-   "the Office of Naval Research Global grant N62909-24-1-2081",
    "University of Padova",
    "Instituto de Investigacion en Ingenieria de Aragon"
   ],
@@ -883,9 +882,9 @@
  },
  "2611.34115": {
   "orgs": [
-   "Harbin Institute of Technology (hit.edu.cn)",
-   "Hong Kong Polytechnic University (polyu.edu.hk)",
-   "Southeast University (seu.edu.cn)"
+   "Harbin Institute of Technology",
+   "Hong Kong Polytechnic University",
+   "Southeast University"
   ],
   "affils": [
    "M3AIL\nA Simple Yet Effective Agent for Open-World Aerial\nObject Search\nJitai Hao1,∗Liangxing Yang1,∗Zhenyang Li2 Fan Liu3 Qiang Huang1,† Jun Yu1,†\n1Harbin Institute of Technology (hit.edu.cn)\n2Hong Kong Polytechnic University (polyu.edu.hk)\n3Southeast University (seu.edu.cn)\n∗Equal contribution.\n†Corresponding authors.\nBelief Maps (AeroBelief)\nOctree Memory (OctMem-Agent)\nWorld Model (SearchWorld)\n①Select\nFrozen VLM Agent\n③Check & Halt\nObserve Again\nPossible \nCollision!\nSimpleUAV\nUAV-ON  SR\n41.6% (+17.8%)\nHow Far Can a Minimal, Training-Free VLM Agent Go\nFigure 1 Stronger aerial search with a minimal agent. Representative prior systems (top) use semantic belief maps,\nexplicit spatial memory, or learned world models. SimpleUAV (bottom) uses a frozen VLM in a local depth-guided\nclosed loop, requiring neither persistent spatial maps nor task-specific training, yet improves success rate (SR) by 17.8%\nover the strongest prior result."
@@ -1204,7 +1203,7 @@
  "2611.33794": {
   "orgs": [
    "University of Wisconsin–Madison",
-   "UC Santa CruzProject page:"
+   "UC Santa Cruz"
   ],
   "affils": [
    "University of Wisconsin–Madison",
@@ -1231,12 +1230,12 @@
  },
  "2611.33779": {
   "orgs": [
-   "University of International Business and Economics (uibe.edu.cn)",
+   "University of International Business and Economics",
    "Tsinghua University",
    "Peking University",
    "Chinese Academy of Sciences",
-   "Beihang University (buaa.edu.cn)",
-   "Institute of AI for Industries (iaii.ac.cn)"
+   "Beihang University",
+   "Institute of AI for Industries"
   ],
   "affils": [
    "University of International Business and Economics (uibe.edu.cn)",
@@ -1472,7 +1471,7 @@
  "2611.33560": {
   "orgs": [
    "University of Amsterdam",
-   "South China Normal UniversityProject Page & Code"
+   "South China Normal University"
   ],
   "affils": [
    "University of Amsterdam",
@@ -1486,7 +1485,7 @@
  },
  "2611.33514": {
   "orgs": [
-   "thanks: Independent Researcher"
+   "Independent Researcher"
   ],
   "affils": [
    "\n\nAthanasios Zeris\n††thanks: Independent Researcher, Athens, Greece. Email: athzeris@gmail.com. ORCID: 0009-0002-6907-2400."
@@ -1753,7 +1752,7 @@
  },
  "2611.33010": {
   "orgs": [
-   "Weihao YuPeking UniversityCode:"
+   "Weihao YuPeking University"
   ],
   "affils": [
    "\n\nXuanchen Liu*, Hejun Zhang*,\nBoxuan Dong, Ying Wu\n\n  \nHeshuai Li\n\n  \nWen Gao\n\n  \nYonghong Tian\n\n  \nWeihao YuPeking UniversityCode: https://github.com/iPPLab/robodojo-mirror\n\n  \n*Equal contribution. Corresponding author:\nweihao@pku.edu.cn\n"
@@ -1782,7 +1781,7 @@
    "University of Bonn",
    "Lamarr Institute",
    "ETH Zurich",
-   "Microsoft :"
+   "Microsoft"
   ],
   "affils": [
    "University of Bonn",
@@ -1916,7 +1915,7 @@
  },
  "2611.32788": {
   "orgs": [
-   "thanks: $ˆ1$Tsinghua University. $ˆ2$DISCOVER Robotics. $ˆ $"
+   "Tsinghua University"
   ],
   "affils": [
    "\n\nHaizhou Ge\n\n  \nMengshuo Wang\n\n  \nZhixing Chen\n\n  \nLei Han\n\n  \nChen Wang\n\n  \nLu Shi\n\n  \nGuyue Zhou\n\n  \nRuqi Huang\n††thanks: $ˆ1$Tsinghua University. $ˆ2$DISCOVER Robotics. $ˆ†$Corresponding authors.\n\n{ghz23, wangms25, chenzx24}@mails.tsinghua.edu.cn,\n{wangchen, zhouguyue}@air.tsinghua.edu.cn,\nlus@nvidia.com,\nruqihuang@sz.tsinghua.edu.cn,\nleo.han@discover-robotics.com"
@@ -1959,7 +1958,7 @@
  },
  "2611.32727": {
   "orgs": [
-   "Vijay KumarUniversity of Pennsylvania"
+   "University of Pennsylvania"
   ],
   "affils": [
    "\n\nSamarth Chopra\n\n  \nAnkit Prabhu\n\n  \nAkshayan NagarajahSumer Murthy, Pratik Chaudhari, Vijay KumarUniversity of Pennsylvania\n\n{csamarth, praankit, aknag, sumerm, pratikac, kumar}@engineering.upenn.edu\n"
@@ -2053,7 +2052,7 @@
  },
  "2611.32650": {
   "orgs": [
-   "Southeast University Chery International :"
+   "Southeast University Chery International"
   ],
   "affils": [
    "Southeast University Chery International†Corresponding author: wezhuang@seu.edu.cn"
@@ -2083,7 +2082,6 @@
  },
  "2611.32642": {
   "orgs": [
-   "Shanghai Kepler Robotics",
    "ShanghaiTech University"
   ],
   "affils": [
@@ -2184,8 +2182,7 @@
  },
  "2611.32550": {
   "orgs": [
-   "Örebro University",
-   "European Union’s Horizon 2020 research and innovation programme under grant agreement No 101017274 (DARKO)"
+   "Örebro University"
   ],
   "affils": [
    "\n\nUnal Artan\n\n  \nManuel Castellano-Quero\n\n  \nJohannes A. Stork\n\n  \nMartin Magnusson\n††thanks: The authors are with the Center for Advanced Autonomous Sensor Systemes (AASS), Örebro University, Fakultetsgatan 1, Sweden.\nCorresponding author unal.artan@oru.se.\nThis work has received funding from the Swedish Knowledge Foundation (KKS) project ”NiCE” under agreement number 20200247 01 H,\nthe Knut and Alice Wallenberg Foundation through Wallenberg AI, Autonomous Systems and Software Program (WASP),\nthe Swedish Knowledge Foundation in the TeamRob Synergy under Project 20210016,\nand the European Union’s Horizon 2020 research and innovation programme under grant agreement No 101017274 (DARKO)."
@@ -4034,7 +4031,6 @@
  },
  "2611.30354": {
   "orgs": [
-   "This work was supported by the 2026 National University",
    "Kyungpook National University"
   ],
   "affils": [
@@ -4099,7 +4095,7 @@
  },
  "2611.30307": {
   "orgs": [
-   "Texas A$&$M University"
+   "Texas A&M University"
   ],
   "affils": [
    "\n\nSixu Li\n\n  \nSwaroop Darbha\n\n  \nYang Zhou\n††thanks: (Corresponding authors: Swaroop Darbha, Yang Zhou)††thanks: The authors are with Texas A$&$M University, College Station, TX 77843, USA (e-mail: sixuli@tamu.edu; dswaroop@tamu.edu; yangzhou295@tamu.edu)."
@@ -4319,7 +4315,7 @@
  },
  "2611.30111": {
   "orgs": [
-   "Tulane University NYU Northeastern University Stanford University MIT Harvard UniversityProject Page &"
+   "Tulane University NYU Northeastern University Stanford University MIT Harvard University"
   ],
   "affils": [
    "Tulane University NYU Northeastern University Stanford University MIT Harvard UniversityProject Page & Code:https://Robo-Think.github.io"
@@ -4631,7 +4627,7 @@
  },
  "2611.29884": {
   "orgs": [
-   "University of Colorado BoulderEmail:",
+   "University of Colorado BoulderEmail",
    "University of Colorado Boulder"
   ],
   "affils": [

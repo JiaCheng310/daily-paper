@@ -124,7 +124,6 @@
      "ror": "05qwgg493"
     },
     {
-     "logo": "data/logos/sjtu.edu.cn.png",
      "name": "Shanghai Jiao Tong University",
      "ror": "0220qvk04"
     },
@@ -436,7 +435,6 @@
      "ror": "02v51f717"
     },
     {
-     "logo": "data/logos/nus.edu.sg.png",
      "name": "NUS",
      "ror": "01tgyzw49"
     }
@@ -491,7 +489,6 @@
      "ror": "03taz7m60"
     },
     {
-     "logo": "data/logos/ucsb.edu.png",
      "name": "UC Santa Barbara",
      "ror": "02t274463"
     },
@@ -658,7 +655,6 @@
    "faq": false,
    "orgs": [
     {
-     "logo": "data/logos/vectorinstitute.ai.png",
      "name": "Vector Institute",
      "ror": "03kqdja62"
     },
@@ -699,7 +695,6 @@
    "faq": false,
    "orgs": [
     {
-     "logo": "data/logos/du.ac.bd.png",
      "name": "University of Dhaka",
      "ror": "05wv2vq37"
     },
@@ -835,7 +830,6 @@
      "name": "Università di Trento"
     },
     {
-     "logo": "data/logos/unige.it.png",
      "name": "University of Genoa",
      "ror": "0107c5v14"
     },
@@ -976,12 +970,10 @@
      "ror": "01yqg2h08"
     },
     {
-     "logo": "data/logos/sysu.edu.cn.png",
      "name": "Sun Yat-sen University",
      "ror": "0064kty71"
     },
     {
-     "logo": "data/logos/nus.edu.sg.png",
      "name": "NUS",
      "ror": "01tgyzw49"
     }
@@ -1099,7 +1091,6 @@
      "ror": "03cve4549"
     },
     {
-     "logo": "data/logos/nus.edu.sg.png",
      "name": "NUS",
      "ror": "01tgyzw49"
     },
@@ -1115,6 +1106,7 @@
      "name": "Magiclab Robotics Technology (Wuxi)"
     },
     {
+     "logo": "data/logos/eatechnology.com.png",
      "name": "EA Technology",
      "ror": "00qwj7906"
     },
@@ -1154,7 +1146,6 @@
    "faq": false,
    "orgs": [
     {
-     "logo": "data/logos/bracu.ac.bd.png",
      "name": "BRAC University",
      "ror": "00sge8677"
     }
@@ -1356,7 +1347,6 @@
    "faq": false,
    "orgs": [
     {
-     "logo": "data/logos/du.ac.bd.png",
      "name": "University of Dhaka",
      "ror": "05wv2vq37"
     },
@@ -1411,7 +1401,6 @@
      "ror": "05x2bcf33"
     },
     {
-     "logo": "data/logos/sjtu.edu.cn.png",
      "name": "Shanghai Jiao Tong University",
      "ror": "0220qvk04"
     }
@@ -1450,12 +1439,10 @@
    "faq": false,
    "orgs": [
     {
-     "logo": "data/logos/csu.edu.cn.png",
      "name": "Central South University",
      "ror": "00f1zfq44"
     },
     {
-     "logo": "data/logos/fudan.edu.cn.png",
      "name": "Fudan University",
      "ror": "013q1eq08"
     },
@@ -1467,7 +1454,6 @@
      "name": "Shanghai AI Lab"
     },
     {
-     "logo": "data/logos/sjtu.edu.cn.png",
      "name": "Shanghai Jiao Tong University",
      "ror": "0220qvk04"
     },
@@ -1510,12 +1496,10 @@
    "faq": false,
    "orgs": [
     {
-     "logo": "data/logos/unipd.it.png",
      "name": "University of Padua",
      "ror": "00240q980"
     },
     {
-     "logo": "data/logos/i3a.es.png",
      "name": "Instituto de Investigación en Ingeniería de Aragón",
      "ror": "04eqgej32"
     }
@@ -1553,7 +1537,6 @@
    "faq": false,
    "orgs": [
     {
-     "logo": "data/logos/universite-paris-saclay.fr.png",
      "name": "Université Paris-Saclay",
      "ror": "03xjwb503"
     },
@@ -1620,7 +1603,6 @@
    "faq": false,
    "orgs": [
     {
-     "logo": "data/logos/sjtu.edu.cn.png",
      "name": "Shanghai Jiao Tong University",
      "ror": "0220qvk04"
     }
@@ -1666,8 +1648,8 @@
    "faq": false,
    "orgs": [
     {
-     "name": "Horizon Robotics",
-     "logo": "data/logos/horizon.auto.png"
+     "logo": "data/logos/horizon.auto.png",
+     "name": "Horizon Robotics"
     }
    ],
    "thumb": "data/thumbs/2611.34449.jpg",
@@ -1703,8 +1685,7 @@
     },
     {
      "name": "Embry–Riddle Aeronautical University",
-     "ror": "010jskt71",
-     "logo": "data/logos/erau.edu.png"
+     "ror": "010jskt71"
     }
    ],
    "thumb": "data/thumbs/2611.34428.jpg",
@@ -1739,14 +1720,14 @@
    "faq": false,
    "orgs": [
     {
+     "logo": "data/logos/tum.de.png",
      "name": "TU Munich",
-     "ror": "02kkvpp62",
-     "logo": "data/logos/tum.de.png"
+     "ror": "02kkvpp62"
     },
     {
+     "logo": "data/logos/mcml.ai.png",
      "name": "Munich Center for Machine Learning",
-     "ror": "02nfy3535",
-     "logo": "data/logos/mcml.ai.png"
+     "ror": "02nfy3535"
     }
    ],
    "thumb": "data/thumbs/2611.34422.jpg",
@@ -1781,16 +1762,15 @@
    "faq": false,
    "orgs": [
     {
+     "logo": "data/logos/ualberta.ca.png",
      "name": "University of Alberta",
-     "ror": "0160cpw27",
-     "logo": "data/logos/ualberta.ca.png"
+     "ror": "0160cpw27"
     },
     {
      "name": "Harbin Institute of Technology",
      "ror": "01yqg2h08"
     },
     {
-     "logo": "data/logos/fudan.edu.cn.png",
      "name": "Fudan University",
      "ror": "013q1eq08"
     }
@@ -1888,17 +1868,16 @@
    "faq": false,
    "orgs": [
     {
+     "logo": "data/logos/nankai.edu.cn.png",
      "name": "Nankai University",
-     "ror": "01y1kjr75",
-     "logo": "data/logos/nankai.edu.cn.png"
+     "ror": "01y1kjr75"
     },
     {
      "name": "Beijing Zhongguancun Academy"
     },
     {
      "name": "University of Science and Technology of China",
-     "ror": "04c4dkn09",
-     "logo": "data/logos/ustc.edu.cn.png"
+     "ror": "04c4dkn09"
     },
     {
      "name": "Harbin Institute of Technology",
@@ -1914,9 +1893,9 @@
      "ror": "00a2xv884"
     },
     {
+     "logo": "data/logos/eit.ac.nz.png",
      "name": "Eastern Institute of Technology",
-     "ror": "00ct9cz38",
-     "logo": "data/logos/eit.ac.nz.png"
+     "ror": "00ct9cz38"
     }
    ],
    "thumb": "data/thumbs/2611.34352.jpg",
@@ -1958,9 +1937,9 @@
      "name": "KRAFTON"
     },
     {
+     "logo": "data/logos/snu.ac.kr.png",
      "name": "Seoul National University",
-     "ror": "04h9pn542",
-     "logo": "data/logos/snu.ac.kr.png"
+     "ror": "04h9pn542"
     }
    ],
    "thumb": "data/thumbs/2611.34328.jpg",
@@ -1998,9 +1977,9 @@
    "faq": false,
    "orgs": [
     {
+     "logo": "data/logos/whu.edu.cn.png",
      "name": "Wuhan University",
-     "ror": "033vjfk17",
-     "logo": "data/logos/whu.edu.cn.png"
+     "ror": "033vjfk17"
     },
     {
      "name": "713th Research Institute of China State Shipbuilding Corporation",
@@ -2081,8 +2060,8 @@
      "ror": "03rc6as71"
     },
     {
-     "name": "Huawei",
-     "logo": "data/logos/huawei.com.png"
+     "logo": "data/logos/huawei.com.png",
+     "name": "Huawei"
     },
     {
      "name": "Zhejiang University",
@@ -2124,9 +2103,9 @@
    "faq": false,
    "orgs": [
     {
+     "logo": "data/logos/skoltech.ru.png",
      "name": "Skolkovo Institute of Science and Technology",
-     "ror": "03f9nc143",
-     "logo": "data/logos/skoltech.ru.png"
+     "ror": "03f9nc143"
     },
     {
      "name": "R&D Center"
@@ -2162,9 +2141,9 @@
    "faq": false,
    "orgs": [
     {
+     "logo": "data/logos/whu.edu.cn.png",
      "name": "Wuhan University",
-     "ror": "033vjfk17",
-     "logo": "data/logos/whu.edu.cn.png"
+     "ror": "033vjfk17"
     },
     {
      "name": "Style3D Research"
@@ -2245,14 +2224,14 @@
    "faq": false,
    "orgs": [
     {
+     "logo": "data/logos/neu.edu.png",
      "name": "Northeastern University",
-     "ror": "03awzbc87",
-     "logo": "data/logos/neu.edu.png"
+     "ror": "03awzbc87"
     },
     {
+     "logo": "data/logos/ucl.ac.uk.png",
      "name": "University College London",
-     "ror": "02jx3x895",
-     "logo": "data/logos/ucl.ac.uk.png"
+     "ror": "02jx3x895"
     }
    ],
    "thumb": "data/thumbs/2611.34246.jpg",
@@ -2375,9 +2354,9 @@
    "faq": false,
    "orgs": [
     {
+     "logo": "data/logos/polyu.edu.hk.png",
      "name": "Hong Kong Polytechnic University",
-     "ror": "0030zas98",
-     "logo": "data/logos/polyu.edu.hk.png"
+     "ror": "0030zas98"
     }
    ],
    "thumb": "data/thumbs/2611.34128.jpg",
@@ -2499,12 +2478,13 @@
      "ror": "01yqg2h08"
     },
     {
+     "logo": "data/logos/polyu.edu.hk.png",
      "name": "Hong Kong Polytechnic University",
-     "ror": "0030zas98",
-     "logo": "data/logos/polyu.edu.hk.png"
+     "ror": "0030zas98"
     },
     {
-     "name": "Southeast University (seu.edu.cn)"
+     "name": "Southeast University",
+     "ror": "04ct4d772"
     }
    ],
    "thumb": "data/thumbs/2611.34115.jpg",
@@ -2606,9 +2586,9 @@
    "faq": false,
    "orgs": [
     {
+     "logo": "data/logos/uzh.ch.png",
      "name": "University of Zurich",
-     "ror": "02crff812",
-     "logo": "data/logos/uzh.ch.png"
+     "ror": "02crff812"
     }
    ],
    "thumb": "data/thumbs/2611.34046.jpg",
@@ -2694,7 +2674,6 @@
    "faq": false,
    "orgs": [
     {
-     "logo": "data/logos/sjtu.edu.cn.png",
      "name": "Shanghai Jiao Tong University",
      "ror": "0220qvk04"
     }
@@ -2729,9 +2708,9 @@
    "faq": false,
    "orgs": [
     {
+     "logo": "data/logos/tum.de.png",
      "name": "TU Munich",
-     "ror": "02kkvpp62",
-     "logo": "data/logos/tum.de.png"
+     "ror": "02kkvpp62"
     }
    ],
    "thumb": "data/thumbs/2611.34014.jpg",
@@ -2783,7 +2762,6 @@
      "name": "Yinwang Intelligent Technology"
     },
     {
-     "logo": "data/logos/nus.edu.sg.png",
      "name": "NUS",
      "ror": "01tgyzw49"
     }
@@ -2835,7 +2813,6 @@
      "name": "Yinwang Intelligent Technology"
     },
     {
-     "logo": "data/logos/nus.edu.sg.png",
      "name": "NUS",
      "ror": "01tgyzw49"
     }
@@ -2874,14 +2851,14 @@
    "faq": false,
    "orgs": [
     {
+     "logo": "data/logos/utoronto.ca.png",
      "name": "University of Toronto",
-     "ror": "03dbr7087",
-     "logo": "data/logos/utoronto.ca.png"
+     "ror": "03dbr7087"
     },
     {
+     "logo": "data/logos/mit.edu.png",
      "name": "MIT",
-     "ror": "042nb2s44",
-     "logo": "data/logos/mit.edu.png"
+     "ror": "042nb2s44"
     }
    ],
    "thumb": "data/thumbs/2611.33963.jpg",
@@ -2924,9 +2901,9 @@
    "faq": false,
    "orgs": [
     {
+     "logo": "data/logos/sii.edu.cn.png",
      "name": "Shanghai Innovation Institute",
-     "ror": "01fatbw66",
-     "logo": "data/logos/sii.edu.cn.png"
+     "ror": "01fatbw66"
     }
    ],
    "thumb": "data/thumbs/2611.33925.jpg",
@@ -3012,7 +2989,6 @@
    "faq": false,
    "orgs": [
     {
-     "logo": "data/logos/nus.edu.sg.png",
      "name": "NUS",
      "ror": "01tgyzw49"
     }
@@ -3047,7 +3023,6 @@
    "faq": false,
    "orgs": [
     {
-     "logo": "data/logos/fudan.edu.cn.png",
      "name": "Fudan University",
      "ror": "013q1eq08"
     },
@@ -3058,8 +3033,7 @@
     },
     {
      "name": "Logos Intelligence Lab",
-     "ror": "02bczqy30",
-     "logo": "data/logos/univ-cotedazur.fr.png"
+     "ror": "02bczqy30"
     }
    ],
    "thumb": "data/thumbs/2611.33914.jpg",
@@ -3252,8 +3226,7 @@
    "orgs": [
     {
      "name": "Instituto Politécnico Nacional",
-     "ror": "059sp8j34",
-     "logo": "data/logos/ipn.mx.png"
+     "ror": "059sp8j34"
     }
    ],
    "thumb": "data/thumbs/2611.33804.jpg",
@@ -3294,19 +3267,18 @@
    "faq": false,
    "orgs": [
     {
-     "logo": "data/logos/sjtu.edu.cn.png",
      "name": "Shanghai Jiao Tong University",
      "ror": "0220qvk04"
     },
     {
+     "logo": "data/logos/eit.ac.nz.png",
      "name": "Eastern Institute of Technology",
-     "ror": "00ct9cz38",
-     "logo": "data/logos/eit.ac.nz.png"
+     "ror": "00ct9cz38"
     },
     {
+     "logo": "data/logos/columbia.edu.png",
      "name": "Columbia University",
-     "ror": "00hj8s172",
-     "logo": "data/logos/columbia.edu.png"
+     "ror": "00hj8s172"
     },
     {
      "name": "Nanjing University",
@@ -3354,14 +3326,14 @@
      "ror": "00q4vv597"
     },
     {
+     "logo": "data/logos/sydney.edu.au.png",
      "name": "University of Sydney",
-     "ror": "0384j8v12",
-     "logo": "data/logos/sydney.edu.au.png"
+     "ror": "0384j8v12"
     },
     {
+     "logo": "data/logos/uwa.edu.au.png",
      "name": "University of Western Australia",
-     "ror": "047272k79",
-     "logo": "data/logos/uwa.edu.au.png"
+     "ror": "047272k79"
     }
    ],
    "thumb": "data/thumbs/2611.33797.jpg",
@@ -3400,11 +3372,10 @@
    "orgs": [
     {
      "name": "University of Wisconsin–Madison",
-     "ror": "01y2jtd41",
-     "logo": "data/logos/wisc.edu.png"
+     "ror": "01y2jtd41"
     },
     {
-     "name": "UC Santa CruzProject page:",
+     "name": "UC Santa Cruz",
      "ror": "03s65by71",
      "logo": "data/logos/ucsc.edu.png"
     }
@@ -3437,7 +3408,6 @@
    "faq": false,
    "orgs": [
     {
-     "logo": "data/logos/sjtu.edu.cn.png",
      "name": "Shanghai Jiao Tong University",
      "ror": "0220qvk04"
     }
@@ -3481,8 +3451,7 @@
    "orgs": [
     {
      "name": "University of International Business and Economics",
-     "ror": "05khqpb71",
-     "logo": "data/logos/uibe.edu.cn.png"
+     "ror": "05khqpb71"
     },
     {
      "name": "Tsinghua University",
@@ -3541,8 +3510,7 @@
    "orgs": [
     {
      "name": "University of Wisconsin–Madison",
-     "ror": "01y2jtd41",
-     "logo": "data/logos/wisc.edu.png"
+     "ror": "01y2jtd41"
     }
    ],
    "thumb": "data/thumbs/2611.33772.jpg",
@@ -3581,8 +3549,7 @@
    "orgs": [
     {
      "name": "NTU",
-     "ror": "02e7b5302",
-     "logo": "data/logos/ntu.edu.sg.png"
+     "ror": "02e7b5302"
     }
    ],
    "thumb": "data/thumbs/2611.33769.jpg",
@@ -3621,9 +3588,9 @@
    "faq": false,
    "orgs": [
     {
+     "logo": "data/logos/xmu.edu.my.png",
      "name": "Xiamen University Malaysia",
-     "ror": "0331wa828",
-     "logo": "data/logos/xmu.edu.my.png"
+     "ror": "0331wa828"
     },
     {
      "name": "Beijing Zhongke Huiling Robot Technology"
@@ -3765,13 +3732,11 @@
    "orgs": [
     {
      "name": "NTU",
-     "ror": "02e7b5302",
-     "logo": "data/logos/ntu.edu.sg.png"
+     "ror": "02e7b5302"
     },
     {
      "name": "Huazhong University of Science and Technology",
-     "ror": "00p991c53",
-     "logo": "data/logos/hust.edu.cn.png"
+     "ror": "00p991c53"
     }
    ],
    "thumb": "data/thumbs/2611.33721.jpg",
@@ -3898,9 +3863,9 @@
      "ror": "01an7q238"
     },
     {
+     "logo": "data/logos/northwestern.edu.png",
      "name": "Northwestern University",
-     "ror": "000e0be47",
-     "logo": "data/logos/northwestern.edu.png"
+     "ror": "000e0be47"
     }
    ],
    "thumb": "data/thumbs/2611.33702.jpg",
@@ -3933,9 +3898,9 @@
    "faq": false,
    "orgs": [
     {
+     "logo": "data/logos/ug.edu.ge.png",
      "name": "University of Georgia",
-     "ror": "02bjhwk41",
-     "logo": "data/logos/ug.edu.ge.png"
+     "ror": "02bjhwk41"
     }
    ],
    "thumb": "data/thumbs/2611.33654.jpg",
@@ -3980,9 +3945,9 @@
      "ror": "00q4vv597"
     },
     {
+     "logo": "data/logos/cityu.edu.hk.png",
      "name": "City University of Hong Kong",
-     "ror": "03q8dnn23",
-     "logo": "data/logos/cityu.edu.hk.png"
+     "ror": "03q8dnn23"
     }
    ],
    "thumb": "data/thumbs/2611.33635.jpg",
@@ -4018,9 +3983,9 @@
    "faq": false,
    "orgs": [
     {
+     "logo": "data/logos/ug.edu.ge.png",
      "name": "University of Georgia",
-     "ror": "02bjhwk41",
-     "logo": "data/logos/ug.edu.ge.png"
+     "ror": "02bjhwk41"
     }
    ],
    "thumb": "data/thumbs/2611.33621.jpg",
@@ -4055,19 +4020,19 @@
    "faq": false,
    "orgs": [
     {
+     "logo": "data/logos/illinois.edu.png",
      "name": "University of Illinois Urbana-Champaign",
-     "ror": "047426m28",
-     "logo": "data/logos/illinois.edu.png"
+     "ror": "047426m28"
     },
     {
+     "logo": "data/logos/umich.edu.png",
      "name": "University of Michigan",
-     "ror": "00jmfr291",
-     "logo": "data/logos/umich.edu.png"
+     "ror": "00jmfr291"
     },
     {
+     "logo": "data/logos/toyota.com.png",
      "name": "Toyota Motor North America",
-     "ror": "0076knn86",
-     "logo": "data/logos/toyota.com.png"
+     "ror": "0076knn86"
     }
    ],
    "thumb": "data/thumbs/2611.33586.jpg",
@@ -4135,13 +4100,11 @@
    "orgs": [
     {
      "name": "University of Amsterdam",
-     "ror": "04dkp9463",
-     "logo": "data/logos/uva.nl.png"
+     "ror": "04dkp9463"
     },
     {
      "name": "South China Normal University",
-     "ror": "01kq0pv72",
-     "logo": "data/logos/scnu.edu.cn.png"
+     "ror": "01kq0pv72"
     }
    ],
    "thumb": "data/thumbs/2611.33560.jpg",
