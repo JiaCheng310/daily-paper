@@ -191,6 +191,16 @@ BOILERPLATE_ZH = re.compile(r"^(本文|该论文|该研究|作者们?|研究者�
 BOILERPLATE_EN = re.compile(r"^(this (paper|work|study) )?(proposes|presents|introduces) ", re.I)
 
 
+def ask(model, paper, attempts=3):
+    """call + clean; a reply that is not valid JSON (it happens now and then) is asked again."""
+    for attempt in range(attempts):
+        try:
+            return clean(call(model, paper, key_for(model)))
+        except (ValueError, KeyError, TypeError):
+            if attempt == attempts - 1:
+                raise
+
+
 def clean(resp):
     """Validate the model's JSON; raises ValueError on anything unusable."""
     if resp["finish"] not in (None, "STOP"):
@@ -353,7 +363,7 @@ def main():
                 return
             model = state["model"]
             try:
-                result = clean(call(model, paper, key_for(model)))
+                result = ask(model, paper)
             except QuotaExhausted:
                 with lock:
                     if state["model"] == args.fallback or not args.fallback:
@@ -363,7 +373,7 @@ def main():
                         print(f"{model}: quota or balance exhausted, switching to {args.fallback}", flush=True)
                         state["model"] = args.fallback
                 model = state["model"]
-                result = clean(call(model, paper, key_for(model)))
+                result = ask(model, paper)
             usage = result.pop("usage", {})
             with lock:
                 for k in ("in", "out", "cached"):
