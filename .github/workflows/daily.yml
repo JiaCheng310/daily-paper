@@ -34,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: python -m pip install -r scripts/requirements.txt
       - name: Popular papers (Hugging Face + alphaXiv)
-        run: python -I -u scripts/fetch_hot.py --days 3
+        run: python -I -u scripts/fetch_hot.py
       - name: Upvotes
         continue-on-error: true
         run: python -I -u scripts/popularity.py --window 30 --workers 4

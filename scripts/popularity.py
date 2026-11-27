@@ -112,6 +112,8 @@ def main():
     ap.add_argument("--window", type=int, default=30, help="days back from the newest day to refresh")
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--delay", type=float, default=0.3, help="pause after each request, per worker")
+    ap.add_argument("--full-days", type=int, default=7, help="refresh every paper of the newest N days")
+    ap.add_argument("--top", type=int, default=40, help="older days: refresh only their N most popular")
     args = ap.parse_args()
     data = Path(args.data)
 
@@ -125,7 +127,11 @@ def main():
     cache = json.loads(cache_path.read_text()) if cache_path.exists() else {}
 
     days = {f: json.loads(f.read_text()) for f in in_window}
-    ids = list(dict.fromkeys(p["id"] for d in days.values() for p in d["papers"]))
+    def refreshed(f, day):
+        if (newest - dt.date.fromisoformat(f.stem)).days < args.full_days:
+            return day["papers"]
+        return sorted(day["papers"], key=lambda p: -(p.get("heat") or 0))[: args.top]
+    ids = list(dict.fromkeys(p["id"] for f, d in days.items() for p in refreshed(f, d)))
     print(f"{len(ids)} papers in {len(in_window)} days ({in_window[-1].stem} .. {in_window[0].stem})")
 
     failed = 0

@@ -66,15 +66,23 @@ def hf_candidates(dates):
     return votes
 
 
-def alphaxiv_candidates(interval, pages, page_size=100):
-    """{id: (votes, visits)} from alphaXiv's Hot feed, Computer Science only."""
+def alphaxiv_candidates(interval, pages, page_size=100, sorts=("Hot", "Views", "Likes")):
+    """{id: (votes, visits)} from alphaXiv's feeds (hot, most viewed, most liked), Computer
+    Science only. Three orderings, so a paper popular by any measure is a candidate."""
+    found = {}
+    for sort in sorts:
+        found.update(alphaxiv_feed(sort, interval, pages, page_size))
+    return found
+
+
+def alphaxiv_feed(sort, interval, pages, page_size):
     found = {}
     for page in range(pages):
-        query = urllib.parse.urlencode({"pageNum": page, "sort": "Hot", "interval": interval, "pageSize": page_size})
+        query = urllib.parse.urlencode({"pageNum": page, "sort": sort, "interval": interval, "pageSize": page_size})
         try:
             data = json.loads(get(f"https://api.alphaxiv.org/papers/v3/feed?{query}"))
         except Exception as exc:
-            print(f"alphaXiv page {page} skipped: {exc}", file=sys.stderr)
+            print(f"alphaXiv {sort} page {page} skipped: {exc}", file=sys.stderr)
             break
         papers = data.get("papers") or []
         for p in papers:
@@ -104,9 +112,10 @@ def arxiv_metadata(ids):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--days", type=int, default=3, help="arXiv submission days to (re)build, newest first")
+    # A paper often climbs for days after it appears, so a week of days is rebuilt.
+    ap.add_argument("--days", type=int, default=7, help="arXiv submission days to (re)build, newest first")
     ap.add_argument("--interval", default="7 Days", help="alphaXiv feed window: 3 Days, 7 Days, 30 Days")
-    ap.add_argument("--pages", type=int, default=4, help="alphaXiv feed pages of 100")
+    ap.add_argument("--pages", type=int, default=3, help="alphaXiv pages of 100 per feed")
     ap.add_argument("--out", default="data")
     args = ap.parse_args()
     out = Path(args.out)

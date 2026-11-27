@@ -1,7 +1,7 @@
 name: Update popularity
 
-# Refreshes Hugging Face and alphaXiv upvotes for the last 30 days of papers,
-# re-ranks the "popular" lists and commits the data back.
+# Adds papers that became popular on Hugging Face / alphaXiv since the last run, refreshes
+# upvotes (every paper of the last week, the top of older days), re-ranks, commits.
 on:
   schedule:
     - cron: "23 1,9,17 * * *"  # three times a day (UTC)
@@ -24,6 +24,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Newly popular papers (Hugging Face + alphaXiv)
+        continue-on-error: true
+        run: python -I -u scripts/fetch_hot.py
       - name: Fetch upvotes
         run: python -I -u scripts/popularity.py --window 30 --workers 4
       - name: Commit data
