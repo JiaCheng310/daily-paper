@@ -1,0 +1,1343 @@
+{
+ "date": "2026-11-22",
+ "category": "all",
+ "source": "hot",
+ "papers": [
+  {
+   "id": "2611.29338",
+   "title": "A Glimpse of Training VLMs as Foundation Models for Robotic Manipulation",
+   "authors": [
+    "Meng-Hao Guo",
+    "Yi Zhang",
+    "Zhe-Han Mo",
+    "Han-Zheng Wang",
+    "Jia-Jun Wang",
+    "Xin-Sheng Chen",
+    "Jiaxi Song",
+    "Yi-Xuan Deng",
+    "Jia-Ning Li",
+    "Xuanyu Chu",
+    "Hengrui Zhang",
+    "Huan-ang Gao",
+    "Yongming Rao",
+    "Shi-Min Hu"
+   ],
+   "abstract": "Recently, GPT-6 Astra demonstrates strong generalization in robot control, yet limited disclosure of its training leaves open how such capabilities can be reproduced. We introduce nanoAstra, an approach to training vision-language models (VLMs) for generalizable manipulation that combines semantic action modeling with capability-preserving supervised fine-tuning (CP-SFT). nanoAstra represents robot behavior as semantic steps composed of reusable, parameterized action primitives, guided by explicit progress descriptions. Meanwhile, CP-SFT uses an explicit robot-specific system prompt to constrain manipulation outputs to a structured action space, aiming to focus adaptation on robot-specific contexts and promote specialization while minimizing interference with broader pretrained capabilities. With this formulation, we train nanoAstra on more than 5,000 hours of robot data together with general VQA data. On RoboTwin 2.0's randomized benchmark, nanoAstra-9B achieves a 17.8% zero-shot success rate, substantially outperforming advanced VLA and WAM baselines as well as similarly sized VLMs. With inference faster than the corresponding motion execution on a single H20 GPU, our model supports action-chunk-like streaming execution that overlaps inference with motion, reducing the robot's idle time from 35.0% to 6.9%.",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO"
+   ],
+   "published": "2026-11-22T09:15:32Z",
+   "updated": "2026-11-22T09:15:32Z",
+   "comment": "",
+   "tags": [
+    "VLA",
+    "manipulation",
+    "VLM/LLM",
+    "benchmark"
+   ],
+   "hf_upvotes": 46,
+   "ax_votes": 9,
+   "ax_visits": 230,
+   "heat": 78.0,
+   "orgs": [
+    {
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
+    },
+    {
+     "logo": "data/logos/tencent.com.png",
+     "name": "Tencent"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29338.jpg",
+   "thumb_w": 441,
+   "thumb_h": 440
+  },
+  {
+   "id": "2611.29238",
+   "title": "GameAnything: From Any Inspirations to Playable Game Worlds",
+   "authors": [
+    "Wenyi Wu",
+    "Siqi Liu",
+    "Yuru Feng",
+    "Zixuan Song",
+    "Aayush Salvi",
+    "Sibo Zhu",
+    "Kun Zhou",
+    "Biwei Huang"
+   ],
+   "abstract": "AI-driven game development holds the potential to transform diverse human inspirations into interactive experiences. However, existing systems and benchmarks primarily focus on explicit development specifications, with limited support for adapting multimodal references and evaluating actual gameplay experiences. We introduce GameAnything, an open-source agentic platform that transforms multimodal inspirations into playable extensions of existing games through iterative development. GameAnything integrates coding agents with an independent playtesting critic, persistent development state, and reusable experience memory to support continuous refinement. We further present GameAnything-Bench, a benchmark spanning diverse reference modalities, game creation objectives, and gaming environments, with exploratory gameplay testing to assess both functional correctness and gameplay quality. Evaluations of nine coding agent configurations reveal that current agents can adapt reference content but still struggle with playable interactions and precise modifications. Moreover, multimodal references improve content fidelity, while iterative refinement yields substantial but varying improvements across agents. These findings highlight both the potential and remaining challenges of inspiration-driven game development.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+   ],
+   "published": "2026-11-22T05:17:35Z",
+   "updated": "2026-11-22T05:17:35Z",
+   "comment": "",
+   "tags": [
+    "benchmark"
+   ],
+   "hf_upvotes": 15,
+   "ax_votes": 0,
+   "ax_visits": 41,
+   "heat": 19.1,
+   "orgs": [
+    {
+     "logo": "data/logos/ucsd.edu.png",
+     "name": "UC San Diego",
+     "ror": "0168r3w48"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29238.jpg",
+   "thumb_w": 344,
+   "thumb_h": 440
+  },
+  {
+   "id": "2611.29355",
+   "title": "Polytropos: What Do Vision-Language Model Descriptions Make of a Cultural Object?",
+   "authors": [
+    "Yuechen Jiang",
+    "Enze Zhang",
+    "Yuyan Wang",
+    "Mohsinul Kabir",
+    "Chenying Lin",
+    "Sijia Li",
+    "Qianqian Xie",
+    "Stavroula Golfomitsou",
+    "Konstantinos Arvanitis",
+    "Sophia Ananiadou"
+   ],
+   "abstract": "Vision-language models have become a new kind of describer, writing about almost anything people see, and their descriptions now shape how cultures are known by people and by other models. Descriptions of cultures tend to turn particular things into types, and what a description loses shows what its describer lacks. We introduce Polytropos, a benchmark that measures what model descriptions of cultural objects keep of the particular object by turning each description back into an image and comparing it with the original photograph. On 374 objects from the Metropolitan Museum of Art and the Getty, with 1,870 descriptions from five models and 230 written by curators, reconstructions are recognised as the recorded culture more often than the photographs, at 54.55% to 59.09% against 52.14%, yet 16% to 21% of objects change outcome and only 0.49% of reconstructions are identified as the specific object. On the same objects, models lose recorded cultures at a rate similar to curators but gain more. Model descriptions give each object many faces, each typical of its culture and almost none the object itself.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-22T09:43:53Z",
+   "updated": "2026-11-22T09:43:53Z",
+   "comment": "",
+   "tags": [
+    "VLM/LLM",
+    "benchmark"
+   ],
+   "hf_upvotes": 16,
+   "ax_votes": 0,
+   "ax_visits": 15,
+   "heat": 17.5,
+   "orgs": [
+    {
+     "name": "University of Manchester",
+     "ror": "027m9bs27"
+    },
+    {
+     "logo": "data/logos/whu.edu.cn.png",
+     "name": "Wuhan University",
+     "ror": "033vjfk17"
+    },
+    {
+     "logo": "data/logos/getty.edu.png",
+     "name": "Getty Conservation Institute",
+     "ror": "019496w77"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29355.jpg",
+   "thumb_w": 514,
+   "thumb_h": 440
+  },
+  {
+   "id": "2611.29184",
+   "title": "PhyCoVE: Benchmarking Physical Counterfactual Video Editing across Diverse Material Dynamics",
+   "authors": [
+    "Conghan Yue",
+    "Yuanjie Chen",
+    "Yunyan Xiao",
+    "Zeyu Peng",
+    "Xingsong Ye",
+    "Ya Gao",
+    "Yanglin Huang",
+    "WeiYao Zhang",
+    "Yue Han",
+    "Zhineng Chen",
+    "Yu-Gang Jiang"
+   ],
+   "abstract": "Physical counterfactual video editing turns a source video and a language-specified physical edit at a given execution frame into a counterfactual video that shows how the scene would evolve after the edit. Existing evaluations with counterfactual target videos mainly cover object removal or specific rigid-body motions, although real scenes also involve elastic deformation, fluid flow, and interactions among rigid bodies, elastic solids, and fluids. We introduce PhyCoVE, a benchmark of 533 cases on 110 source videos that covers rigid, elastic, and fluid dynamics in five interaction patterns, with edits that remove an object, change a physical quantity, or insert a new object. For the simulated cases, a language model proposes scene designs, coding agents build them with solvers suited to each material and physically based rendering and then simulate each edit from the source scene state, and humans check every stage. For the real cases, we record continuously from one camera position before and after each edit. We also propose counterfactual fidelity, a metric that applies across materials and their interactions and measures how much of the physical change from the source video to the target video a generated video reproduces. We evaluate seven open-source and commercial video editing models and find that counterfactual fidelity ranks them nearly as human preference does, but even the best model reproduces only about one seventh of the physical change. The models change how a scene looks but rarely how it evolves, whereas a physical edit requires understanding the dynamics that it changes. Physical counterfactual video editing thus remains far from solved, and PhyCoVE provides a foundation for developing and evaluating methods for it.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-22T03:22:04Z",
+   "updated": "2026-11-22T03:22:04Z",
+   "comment": "",
+   "tags": [
+    "benchmark"
+   ],
+   "hf_upvotes": 15,
+   "ax_votes": 0,
+   "ax_visits": 7,
+   "heat": 15.7,
+   "orgs": [
+    {
+     "name": "Fudan University",
+     "ror": "013q1eq08"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29184.jpg",
+   "thumb_w": 640,
+   "thumb_h": 226
+  },
+  {
+   "id": "2611.29389",
+   "title": "PINE: Point, Instance and Normal Estimation in One-Step Diffusion Model",
+   "authors": [
+    "Zeyu Ren",
+    "Jie Ni",
+    "Rui Qian",
+    "Jiahao Wei",
+    "Hao Tang",
+    "Yongtai Liu",
+    "Zeyu Zhang"
+   ],
+   "abstract": "Understanding a scene requires both geometry and semantics: geometry recovers its spatial structure, and semantics separates it into objects. Current models obtain the two from separate networks or separate passes. We present PINE, a one-step Omni Diffusion Transformer that predicts the point map, the surface normals, and the instance map of an image in one forward pass. PINE treats each map as a token stream, and a stream mask decides which streams interact. A camera-aware ray encoding positions every token by its camera ray rather than its pixel. Grounding attention adds the affinity of pretrained DINOv3 features to the attention logits. Trained on only 139K synthetic images for geometry, PINE achieves state-of-the-art point maps whether or not intrinsics are given and the best average rank on surface normals. It also exceeds SAM on large objects with less than 1 percent of its training images, and it predicts all three maps 5.7x faster than MoGe-3 with SAM.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-22T11:03:20Z",
+   "updated": "2026-11-22T11:03:20Z",
+   "comment": "28 pages. Project page: https://aigeeksgroup.github.io/PINE",
+   "tags": [],
+   "hf_upvotes": 7,
+   "ax_votes": 3,
+   "ax_visits": 39,
+   "heat": 13.9,
+   "orgs": [
+    {
+     "logo": "data/logos/unimelb.edu.au.png",
+     "name": "The University of Melbourne",
+     "ror": "01ej9dk98"
+    },
+    {
+     "logo": "data/logos/pku.edu.cn.png",
+     "name": "Peking University",
+     "ror": "02v51f717"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29389.jpg",
+   "thumb_w": 640,
+   "thumb_h": 248
+  },
+  {
+   "id": "2611.29259",
+   "title": "Look Back: Reinforcement Learning with Counterfactual World Models",
+   "authors": [
+    "Jinwoo Kim",
+    "Toghrul Abbasov",
+    "Lucius E. J. Bynum",
+    "Aahlad Puli",
+    "Stephanie Milani",
+    "Hyunwoo Ryu",
+    "Seunghoon Hong",
+    "Kyunghyun Cho",
+    "Rajesh Ranganath"
+   ],
+   "abstract": "Agents in complex, stochastic environments must contend with dynamics that can exceed their world models' predictive capacity and randomness that obscure the consequences of their actions. We hypothesize that, compared to imagining entirely new trajectories in such complex environments, it can be easier to transform observed trajectories with alternative actions. Counterfactual world models condition on observations to predict alternative outcomes under the same underlying environmental randomness, using experience as a reference for predicting action-dependent changes. We present a policy gradient estimator, REINFORCE Look Back (RLB), that uses counterfactual returns as baselines to distinguish action effects from environmental luck, and prove conditions for unbiasedness and variance reduction. In settings where environmental evolution is harder to predict than action-induced changes, we show that counterfactual world models are easier to learn and support better policy learning than ordinary world models. Our findings suggest that counterfactual thinking can help agents learn effective behavior without independently reproducing the full complexity of their worlds.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-22T05:57:36Z",
+   "updated": "2026-11-22T05:57:36Z",
+   "comment": "Code available at: https://github.com/ToghrulAbbasov19/look-back",
+   "code_url": "https://github.com/ToghrulAbbasov19/look-back",
+   "tags": [
+    "world model",
+    "RL"
+   ],
+   "ax_votes": 4,
+   "ax_visits": 60,
+   "heat": 10.0,
+   "orgs": [
+    {
+     "logo": "data/logos/kaist.ac.kr.png",
+     "name": "KAIST",
+     "ror": "05apxxy63"
+    },
+    {
+     "logo": "data/logos/mit.edu.png",
+     "name": "MIT",
+     "ror": "042nb2s44"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29259.jpg",
+   "thumb_w": 489,
+   "thumb_h": 440
+  },
+  {
+   "id": "2611.29282",
+   "title": "RadioWorld: Transferring World Models to Radio-Frequency Radiance Fields",
+   "authors": [
+    "Hu Zhou",
+    "Jiazhou Zhou",
+    "Shuowen Zhang",
+    "Ying-Chang Liang",
+    "Liang Liu"
+   ],
+   "abstract": "Electromagnetic (EM) wave propagation in the physical world constitutes a Radio-Frequency (RF) radiance field, providing rich information for 6G communication and sensing. However, existing neural RF field methods suffer from three fundamental limitations: (1) they predominantly rely on per-scene optimization and cannot generalize to unseen scenes; (2) they require costly reference RF measurements in each target scene; and (3) they degrade severely when extrapolating beyond the vicinity of reference measurements. To overcome these limitations, we present RadioWorld, a general framework that adapts a world model to synthesize RF radiance fields directly from physical scene geometry and transceiver locations, without requiring any reference RF measurements at inference. Specifically, RadioWorld couples two specialized modules within a dual-stream Mixture-of-Transformers (MoT) architecture: a Scene-Understanding Transformer that encodes 3D scene geometry and transceiver locations to extract environment-aware global EM propagation features, and a Field-Generation Transformer that attends to these features to synthesize the RF radiance field with the local query conditions. We also establish UrbanRF-Bench, a large-scale ray-traced benchmark spanning 657 urban scenes and 32,850 RF radiance fields across seven global cities. Extensive experiments demonstrate that RadioWorld significantly outperforms specialized baselines and accurately synthesizes RF fields at arbitrary locations in unseen cities. Code, datasets, and checkpoints will be released upon acceptance.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.NI",
+    "eess.SP"
+   ],
+   "published": "2026-11-22T07:10:47Z",
+   "updated": "2026-11-22T07:10:47Z",
+   "comment": "",
+   "tags": [
+    "world model",
+    "benchmark"
+   ],
+   "ax_votes": 4,
+   "ax_visits": 55,
+   "heat": 9.5,
+   "orgs": [
+    {
+     "logo": "data/logos/polyu.edu.hk.png",
+     "name": "Hong Kong Polytechnic University",
+     "ror": "0030zas98"
+    },
+    {
+     "logo": "data/logos/hkust.edu.hk.png",
+     "name": "HKUST",
+     "ror": "00q4vv597"
+    },
+    {
+     "name": "University of Electronic Science and Technology of China",
+     "ror": "04qr3zq92"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29282.jpg",
+   "thumb_w": 640,
+   "thumb_h": 258
+  },
+  {
+   "id": "2611.29293",
+   "title": "GALILEO: Geometric RoPE with Galilean Key Transport for Dynamic Scenes",
+   "authors": [
+    "Youngmin Kim",
+    "Seonghyun Jin",
+    "Jong Chul Ye"
+   ],
+   "abstract": "Geometry-aware rotary positional encodings, such as RayRoPE, help attention reason about the 3D spatial relationships between tokens and the query camera. However, they implicitly assume a static scene, encoding each key at its observed position regardless of when it was captured. For dynamic scenes with temporally separated input views, this mismatch places the same moving object at a different position in each input frame, so it can be rendered at an inaccurate position. While temporal encodings inform attention when a token was observed, they do not resolve where its content should be at the query time. We introduce a simple and general approach that aligns positional encodings with dynamic scene geometry through Galilean transport. Before positional encoding, each key's 3D position is transported to the query time using its estimated velocity and the temporal offset. By modifying only key positions, our method integrates directly with existing encodings, including RayRoPE and URoPE, without altering their formulations. Velocities can be obtained from arbitrary sources. By default, we estimate them from token correspondences within the network. Integrated into LVSM, our method improves dynamic view synthesis on Syn4D, dynamic Objaverse, and real-world Stereo4D videos over baselines. Ablations show that encoding velocities as token features yields smaller gains, while attention visualizations reveal that our method attends to query-time locations of moving content, unlike RayRoPE. Beyond view synthesis, our method also reduces tracking errors on dynamic objects in a pretrained 3D point tracker and improves moving-vehicle generation in a video generator.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-22T07:30:02Z",
+   "updated": "2026-11-22T07:30:02Z",
+   "comment": "",
+   "tags": [
+    "driving"
+   ],
+   "ax_votes": 5,
+   "ax_visits": 40,
+   "heat": 9.0,
+   "orgs": [
+    {
+     "logo": "data/logos/kaist.ac.kr.png",
+     "name": "KAIST",
+     "ror": "05apxxy63"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29293.jpg",
+   "thumb_w": 640,
+   "thumb_h": 209
+  },
+  {
+   "id": "2611.29377",
+   "title": "Contact Harness: Enabling VLM Agents to Perform Contact-Rich Manipulation",
+   "authors": [
+    "Shilin Shan",
+    "Yuxuan Hu",
+    "Chuhao Zhou",
+    "Yimeng Dong",
+    "Bohan Hou",
+    "Jiaqi Bai",
+    "Boyu Ma",
+    "Jiahua Dong",
+    "Jianfei Yang"
+   ],
+   "abstract": "Agents built on pretrained VLMs have demonstrated zero-shot control of real robots, but vision alone is often insufficient for reliable contact-state assessment in contact-rich manipulation. Force and tactile feedback provide complementary information, but their semantic ambiguity makes them difficult for agents to use directly. These signals must be interpreted according to their physical meaning, together with task phase and visual evidence. We propose Contact Harness, which uses reusable, optimized skills to guide a VLM agent in assessing contact states from multimodal feedback and selecting subsequent actions. A compliant execution mechanism regulates in-contact motions using real-time force feedback. The framework requires no model fine-tuning, task demonstrations, or simulation training. We conduct zero-shot real-robot evaluations using GPT-6 Astra on Rokae and Franka robots. With a single prompt skill, Contact Harness achieves a full-insertion rate of 90.7% across 15 connector types, with further evaluations on a real PC under variations in lighting, background, and position. Across four additional contact-rich tasks, including whiteboard wiping, writing, peeling, and pivoting, Contact Harness achieves an average success rate of 100%. On six simulated tasks, Contact Harness reaches 96.7% success, compared with at most 68.3% for pretrained VLA baselines fine-tuned on task demonstrations, showing the potential of agent-based manipulation for contact-rich real-world deployment.",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "published": "2026-11-22T10:38:23Z",
+   "updated": "2026-11-22T10:38:23Z",
+   "comment": "45 pages, 21 figures",
+   "tags": [
+    "VLA",
+    "manipulation",
+    "imitation",
+    "VLM/LLM"
+   ],
+   "ax_votes": 3,
+   "ax_visits": 48,
+   "heat": 7.8,
+   "orgs": [
+    {
+     "name": "NTU",
+     "ror": "02e7b5302"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29377.jpg",
+   "thumb_w": 640,
+   "thumb_h": 381
+  },
+  {
+   "id": "2611.29547",
+   "title": "Align the Pair, Not the Sample: Representation Alignment for Faster and Better One-Step Generators",
+   "authors": [
+    "Mingxiao Li",
+    "Xuantuo Huang",
+    "Encheng Su",
+    "Aoran Wang",
+    "Han Zhang",
+    "Jinouwen Zhang",
+    "Shixiang Tang"
+   ],
+   "abstract": "Representation alignment markedly accelerates diffusion training, but one-step generators raise a question that diffusion does not: \\emph{which training path should receive the loss?} A one-step generator sees two kinds of inputs. Corrupted real images come with their clean counterpart, which provides an instance-paired target. Samples generated from pure noise have no corresponding real image, yet this is where the final model operates. We study this question on Priming, which trains one-step generators from scratch by reconstructing corrupted images and then matching feature distributions with optimal transport. Aligning the generative path, the natural choice, collapses recall ($0.45\\!\\to\\!0.15$--$0.25$) in all 17 configurations we test, including five target constructions and loss weights down to $0.05$. Aligning the paired reconstruction path with a frozen DINOv2 encoder instead helps in every setting we test. A short analysis explains this asymmetry: when the target carries no instance information about the input, the optimal aligned feature is constant within each class, so the loss pulls samples toward class prototypes. A control confirms this: aligning the paired path to a random same-class image instead of the input's own image removes most of the gain. Inside the generator, paired-path alignment creates an interface block through which post-training routes noise, and the image semantics carried through it predict sample quality across 16 models. The resulting recipe, \\method, accelerates \\emph{both} training stages on ImageNet $256\\!\\times\\!256$: it matches the 160-epoch baseline with $2\\times$ fewer priming epochs, surpasses its final quality with $4\\times$ fewer post-training updates, and lowers FID to 1.30 (B) and 1.155 (L) at the standard budget. A joint single-stage variant trains native one-step generators and reaches FID 1.22 with 115M parameters.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-22T15:18:17Z",
+   "updated": "2026-11-25T03:57:52Z",
+   "comment": "21 pages",
+   "tags": [],
+   "hf_upvotes": 3,
+   "ax_votes": 3,
+   "ax_visits": 15,
+   "heat": 7.5,
+   "orgs": [
+    {
+     "name": "Shanghai AI Lab"
+    },
+    {
+     "logo": "data/logos/pku.edu.cn.png",
+     "name": "Peking University",
+     "ror": "02v51f717"
+    },
+    {
+     "name": "University of Science and Technology of China",
+     "ror": "04c4dkn09"
+    },
+    {
+     "logo": "data/logos/ox.ac.uk.png",
+     "name": "University of Oxford",
+     "ror": "052gg0110"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29547.jpg",
+   "thumb_w": 640,
+   "thumb_h": 239
+  },
+  {
+   "id": "2611.29155",
+   "title": "ContextFact: Remembering Facts in Context for Long-Term Conversational Agents",
+   "authors": [
+    "Jiayu Huang",
+    "Yichao Cai",
+    "Xinyu Li",
+    "Zhen Zhang",
+    "Javen Qinfeng Shi"
+   ],
+   "abstract": "Agents built on large language models must maintain continuity across repeated interactions with users. However, long-term conversations scatter facts across turns and sessions, making it difficult to retrieve the right evidence with enough context. Memory for such conversations must therefore preserve facts with their context while keeping evidence selectively accessible. We first study how memory construction and retrieval-unit boundaries affect answerability and evidence access. Reading the entire memory bank reveals gaps that cannot be resolved by retrieval selection alone, showing that some context must be preserved during memory construction. Adjacent-turn grouping improves evidence access at matched unique-turn budgets, while wider windows do not consistently help. This motivates keeping fact-specific context local while organizing cross-session evidence separately. We propose ContextFact, which links context-preserving fact memories with source-grounded entity representations. Within sessions, it gathers the context needed to interpret each fact. Across sessions, it aligns recurring referents and revisits the source dialogue to reconstruct coherent entity representations linked to the supporting facts. At query time, ContextFact retrieves fact and entity views, reranks them independently, and uses entity-linked expansion to surface related facts; complete entity representations then provide organized cross-session evidence. With Qwen3.5-27B as the backbone, ContextFact achieves state-of-the-art performance while using only $21\\%$ of the evidence tokens consumed by the strongest evaluated baseline, obtaining $86.49\\%$ overall judge accuracy on LoCoMo and $91.00\\%$ on LongMemEval-S. Controlled ablations support context-preserving fact boundaries and source-grounded entity reconstruction, while entity readout improves multi-hop accuracy beyond adding more facts.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.AI"
+   ],
+   "published": "2026-11-22T02:25:07Z",
+   "updated": "2026-11-22T02:25:07Z",
+   "comment": "",
+   "tags": [],
+   "ax_votes": 4,
+   "ax_visits": 31,
+   "heat": 7.1,
+   "orgs": [
+    {
+     "logo": "data/logos/adelaide.edu.au.png",
+     "name": "Adelaide University",
+     "ror": "028g18b61"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29155.jpg",
+   "thumb_w": 502,
+   "thumb_h": 284
+  },
+  {
+   "id": "2611.29579",
+   "title": "From Learning Rates to Rotational Schedules: Finite-Horizon Theory on the Sphere",
+   "authors": [
+    "Jacopo Graldi",
+    "Antonio Orvieto",
+    "Anastasia Koloskova"
+   ],
+   "abstract": "How should step sizes be scheduled across a finite training horizon? Cosine and warmup-stable-decay (WSD) schedules are widely adopted in large-scale pretraining, yet their effect on optimization also depends on parameter norms. Normalization can make parameter groups scale invariant, so that the loss depends only on their direction, while their norms still affect how fast the parameters rotate. In this work, we formulate schedule design directly in the space of rotational motion. Working within a geodesically convex spherical setting, we derive a last-iterate convergence guarantee for arbitrary rotational schedules that separates their overall scale from their distribution over time. We derive the unique schedule that minimizes this bound and prove that it approaches linear decay as the horizon grows. Empirically, our rotational interpretation and idealized spherical analysis provide useful predictions for LLM pretraining in practice, including schedule comparisons missed by existing analyses. Our analysis predicts schedule ordering across model scales for both vanilla (Adam, Muon) and Hyperball-style (AdamH, MuonH) optimizers. Our Hyperball experiments support the predicted strong performance of linear LR decay and confirm our prediction that WSD underperforms in this setting. Accounting for parameter norm dynamics, we predict instead the strong performance of WSD for Adam and Muon shown in practice. Guided by our theoretical insights, we also derive a new LR schedule for Adam and Muon, which improves over the established cosine and WSD schedules. All in all, these results support the use of rotational dynamics to understand, predict, and ultimately guide scheduling in LLM pretraining.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI",
+    "stat.ML"
+   ],
+   "published": "2026-11-22T16:06:52Z",
+   "updated": "2026-11-22T16:06:52Z",
+   "comment": "",
+   "tags": [
+    "VLM/LLM"
+   ],
+   "ax_votes": 3,
+   "ax_visits": 26,
+   "heat": 5.6,
+   "orgs": [
+    {
+     "logo": "data/logos/uzh.ch.png",
+     "name": "University of Zurich",
+     "ror": "02crff812"
+    },
+    {
+     "logo": "data/logos/tuebingen.ai.png",
+     "name": "Tübingen AI Center",
+     "ror": "0107nyd78"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29579.jpg",
+   "thumb_w": 627,
+   "thumb_h": 440
+  },
+  {
+   "id": "2611.29618",
+   "title": "Mass Forcing: On-Policy Mass-Aware Distillation for Autoregressive Video Generation",
+   "authors": [
+    "Yiyu Li",
+    "Fei Wei",
+    "Yong Wang",
+    "Zaiquan Yang",
+    "Gerhard Petrus Hancke",
+    "Xiangxiang Chu",
+    "Rynson W. H. Lau"
+   ],
+   "abstract": "Distribution Matching Distillation (DMD) has emerged as a promising paradigm for real-time video synthesis, distilling pretrained diffusion models into few-step autoregressive generators. However, its reverse-KL objective is mode-seeking and can collapse the student's conditional video distribution onto a narrow subset of modes, leading to reduced sample diversity, diminished temporal dynamics, and color oversaturation. Existing methods mitigate this issue mainly via coverage-oriented student initialization, but we observe that such coverage is transient: across three initializations, the fraction of dynamic videos drops sharply during subsequent DMD training, indicating that the mode-seeking objective, not the initialization, drives this degradation. We propose Mass Forcing, a probability-mass-aware framework that moves on-policy DMD supervision from whole videos to individual states. Each update branches several continuations from a shared student-generated prefix, making the student's probability mass at that state measurable against the teacher. First, Mass Forcing estimates relative teacher-to-student density ratios among these continuations through latent-space score integration and uses them to rebalance conditional DMD updates, amplifying rollouts underrepresented relative to the teacher. Second, since mismatched mode probabilities do not necessarily induce strong local score corrections, it aligns generated rollout sets with a reweighted reference distribution defined by the same mass estimates, providing cross-rollout supervision. Experiments on MovieGen and VBench show that Mass Forcing improves video fidelity and sustains temporal dynamics throughout training, achieving the highest Total scores among compared methods and a Dynamic Degree of 83% after 1,000 generator updates, versus 12-32% for the baselines, with no additional inference-time overhead.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-22T17:14:59Z",
+   "updated": "2026-11-22T17:14:59Z",
+   "comment": "",
+   "tags": [],
+   "ax_votes": 2,
+   "ax_visits": 35,
+   "heat": 5.5,
+   "orgs": [
+    {
+     "logo": "data/logos/cityu.edu.hk.png",
+     "name": "City University of Hong Kong",
+     "ror": "03q8dnn23"
+    },
+    {
+     "logo": "data/logos/alibaba.com.png",
+     "name": "Alibaba"
+    },
+    {
+     "name": "City University of Hong Kong (Dongguan)",
+     "ror": "03hj2gd47"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29618.jpg",
+   "thumb_w": 640,
+   "thumb_h": 276
+  },
+  {
+   "id": "2611.29240",
+   "title": "Tacinf: A Unified Tactile Infrastructure for Robot Manipulation",
+   "authors": [
+    "Qiwei Wu",
+    "Xiangyu Chen",
+    "Xin Xiang",
+    "Rui Zhang",
+    "Yihang Kang",
+    "Weiran Chen",
+    "Zikang Xie",
+    "Yangfan Li",
+    "Tao Wang",
+    "Xiangzheng Wang",
+    "Tianyi Bi",
+    "Zhiyan Zhang",
+    "Xianpeng Wang",
+    "Mingqian Zhou",
+    "Yan Yu",
+    "Chuanyu Li",
+    "Wenjie Zhang",
+    "Tao Li",
+    "Weihua Zhang",
+    "Renjing Xu",
+    "Junjie Lai"
+   ],
+   "abstract": "Force-aware manipulation requires robots to infer appropriate interaction forces from task context and tactile feedback. We present Tacinf, a low-cost, modular infrastructure that enables policies to predict robot actions and fingertip forces from task language, vision, and touch. Task instructions can optionally specify the desired force level. Tacinf integrates simulation data synthesis and tactile benchmarking (Tabero), vision-tactile-language-action (VTLA) policy learning, handheld data collection using the same gripper as robot deployment (Tacumi), and task-aligned sim-to-real evaluation (Taco). Together, these components form an integrated workflow connecting data collection from multiple sources, foundation-model training, and hardware deployment. We validate each component, including the simulation data, benchmark, controller, and Tacumi, and are releasing the full stack as open source. A foundation model fine-tuned solely on tactile simulation data transfers zero-shot to different real-robot tasks. Across eight policy variants, mean task success rates are strongly correlated between simulation and the real robot (Pearson r=0.998, mean maximum rank violation MMRV=0.010). For the four policies with reported force measurements, mean grip force is higher under firm instructions than under gentle instructions on all three tasks in both domains. When both object positions and instances are randomized, a mixture of teleoperation, simulation, and Tacumi data raises mean real-robot task success from 20% with teleoperation alone to 60%.",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO"
+   ],
+   "published": "2026-11-22T05:17:54Z",
+   "updated": "2026-11-22T05:17:54Z",
+   "comment": "",
+   "tags": [
+    "manipulation",
+    "sim2real",
+    "VLM/LLM",
+    "teleop"
+   ],
+   "ax_votes": 1,
+   "ax_visits": 40,
+   "heat": 7.0,
+   "hf_upvotes": 2,
+   "orgs": [
+    {
+     "logo": "data/logos/nvidia.com.png",
+     "name": "NVIDIA"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29240.jpg",
+   "thumb_w": 640,
+   "thumb_h": 281
+  },
+  {
+   "id": "2611.29630",
+   "title": "SuperFine3D: Efficient Global-Local Recursive Refinement for Extremely Detailed 3D Geometry Generation",
+   "authors": [
+    "Lihan Li",
+    "Junwei Zhou",
+    "Yu-wing Tai"
+   ],
+   "abstract": "High-resolution images contain rich visual details that require fine geometric structures for faithful 3D reconstruction. However, generating extremely detailed 3D geometry from images requires substantial computational resources and training data, making high-resolution geometry generation challenging for existing state-of-the-art models. In this paper, we present SuperFine3D, an efficient framework for generating extremely detailed 3D geometry through global-local recursive refinement. SuperFine3D learns a shared refinement operator from paired coarse-to-fine representations and recursively reuses it to progressively synthesize finer geometry beyond the training resolutions, without requiring additional paired supervision at target resolutions. To make recursive refinement computationally efficient, we introduce spatial-cell attention, which restricts high-resolution interactions to local spatial neighborhoods while maintaining bounded communication across neighboring cells. We further propose spatially anchored cross-scale guidance, which leverages globally contextualized coarse geometry to guide local detail synthesis and preserve structural consistency. In addition, geometry-aware training objectives encourage the refinement process to preserve stable geometric structures while introducing fine-grained surface details. Experiments demonstrate that SuperFine3D generates geometry at a $4096^3$ decoder-grid resolution, corresponding to a sparse $256^3$ latent lattice, using a shared refinement operator trained only on $512^3$--$1024^3$ representations. Compared with a full-attention recursive baseline, SuperFine3D achieves a $9.4\\times$ speedup in end-to-end inference and reduces peak GPU memory usage by $23.0\\%$, while improving cross-scale structural consistency and producing cleaner surfaces with finer geometric details.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-22T17:28:05Z",
+   "updated": "2026-11-22T17:28:05Z",
+   "comment": "",
+   "tags": [],
+   "ax_votes": 2,
+   "ax_visits": 28,
+   "heat": 4.8,
+   "orgs": [
+    {
+     "logo": "data/logos/dartmouth.edu.png",
+     "name": "Dartmouth College",
+     "ror": "049s0rh22"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29630.jpg",
+   "thumb_w": 640,
+   "thumb_h": 314
+  },
+  {
+   "id": "2611.29205",
+   "title": "DriveTTO: Understanding Search and Selection in Test-Time Trajectory Optimization for End-to-End Driving",
+   "authors": [
+    "Xinyao Rao",
+    "Zecheng Tang",
+    "Zheyuan Lai",
+    "Liuxuan Sun",
+    "Minjun Yu",
+    "Xun Cao",
+    "Wei Li"
+   ],
+   "abstract": "In difficult driving scenes, a learned scorer can select a poor trajectory from a fixed pool even when a better candidate is available. Nearby vehicles and road boundaries can also leave only a narrow range of high-scoring maneuvers. These constraints vary with the scene and are difficult to cover exhaustively during training. We introduce DriveTTO, a training-free method that searches around native proposals and checks each proposed refinement against a retained trajectory. A frozen scorer evaluates completed paths at the endpoints they actually reach, guiding resampling in progressively smaller neighborhoods. From a shared reference, one branch draws on planner proposals and another perturbs vehicle controls. DriveTTO blends their poses at matching times and accepts a branch or fusion update only when both frozen scorers predict a gain. On Navtest, DriveTTO recovers nonzero predictive driver model scores (PDMS) in 51.35% of native zero-score cases on average. Accounting for new failures, the zero-score rate falls from 1.63% to 1.13%. Benchmark-specific configurations achieve 95.54 PDMS and 92.30 extended PDMS (EPDMS) on Navtest, 57.10 EPDMS on Navhard, and 40.1 HD-Score on HUGSIM under observed commands. With a single frozen scorer, DriveTTO-S improves all six evaluated planners on both Navtest and Navhard.",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "published": "2026-11-22T04:06:33Z",
+   "updated": "2026-11-22T04:06:33Z",
+   "comment": "20 pages, including supplementary material. Project page: https://rtwotwo.github.io/DriveTTO/ Code: https://github.com/Rtwotwo/DriveTTO",
+   "code_url": "https://github.com/Rtwotwo/DriveTTO",
+   "tags": [
+    "benchmark",
+    "driving"
+   ],
+   "ax_votes": 2,
+   "ax_visits": 27,
+   "heat": 4.7,
+   "orgs": [
+    {
+     "name": "Nanjing University",
+     "ror": "01rxvg760"
+    },
+    {
+     "logo": "data/logos/pku.edu.cn.png",
+     "name": "Peking University",
+     "ror": "02v51f717"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29205.jpg",
+   "thumb_w": 640,
+   "thumb_h": 261
+  },
+  {
+   "id": "2611.29610",
+   "title": "Dr. Grasp-RL: Diverse and Robust Dexterous Grasping via Reinforcement Learning",
+   "authors": [
+    "Kunqi Xu",
+    "Xiaokang Sun",
+    "Xueyan Zou"
+   ],
+   "abstract": "Human interaction with physical objects relies on a combination of dexterity and robustness. In robotic manipulation, dexterity requires not only flexible end effectors but also a diverse repertoire of manipulation strategies, while robustness requires closed-loop adaptation to disturbances and unexpected situations. Two prominent research directions in dexterous grasping have largely addressed these capabilities separately. Generative approaches model multimodal distributions to produce diverse grasp poses, but their reliance on open-loop execution can limit robustness. Reinforcement learning approaches learn closed-loop grasping policies, but can converge to a narrow range of successful grasping strategies, limiting behavioral diversity. We introduce a time-reversed curriculum with a coordinated reset mechanism that enables a simple MLP policy trained with PPO to capture multiple modes of the grasp-pose distribution while maintaining closed-loop control. Experiments demonstrate both diverse grasping behaviors and robust closed-loop execution. Trained on only approximately 400 objects, our policy further demonstrates strong generalization when evaluated on more than 20,000 unseen objects.",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO"
+   ],
+   "published": "2026-11-22T17:04:16Z",
+   "updated": "2026-11-22T17:04:16Z",
+   "comment": "",
+   "tags": [
+    "dexterous",
+    "manipulation",
+    "grasping",
+    "RL"
+   ],
+   "ax_votes": 1,
+   "ax_visits": 36,
+   "heat": 4.6,
+   "orgs": [
+    {
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29610.jpg",
+   "thumb_w": 640,
+   "thumb_h": 302
+  },
+  {
+   "id": "2611.29123",
+   "title": "Your Diffusion-Based Driving Planner Only Needs a Nudge",
+   "authors": [
+    "Zilin Wang",
+    "Guozheng Ma",
+    "Saeed Rahmani",
+    "Jiong Yang",
+    "Antyanta Bangunharcana",
+    "Yiluan Guo",
+    "Jakob Nicolaus Foerster",
+    "Shimon Whiteson"
+   ],
+   "abstract": "Diffusion-based planners capture the multimodality of human driving behavior well, yet covariate shift in closed-loop driving can lead them to generate trajectories that result in collisions or road departures. Reinforcement learning (RL) finetuning offers a promising way to tackle this issue, but applying it to diffusion-based planners is complicated by their iterative denoising process and receding-horizon execution. We find that small adjustments to the planned trajectories can prevent many of these unsafe outcomes. Motivated by this observation, we propose PlanNudge, which preserves the learned planning capabilities of a pretrained diffusion-based planner by freezing it and trains a lightweight policy that we call the nudge policy. At each planning step, the nudge policy outputs a nudge, a two-dimensional adjustment of the speed and curvature of the plan from the frozen planner. The nudge policy is a multilayer perceptron that predicts the nudge in a single forward pass, and both dimensions directly change the motion of the vehicle, so standard off-policy RL can train it in closed-loop simulation. We evaluate PlanNudge on nuPlan, a large-scale autonomous driving benchmark based on real-world driving data. In all six settings, PlanNudge matches or exceeds the final scores of the previous state-of-the-art RL finetuning method while using about one sixth as many environment steps and less than one fifth as much model compute. We also provide guidelines for reward shaping, value learning, and exploration when using off-policy RL to post-train autonomous driving planners. Our results are reported with means and standard deviations over six training runs. Project page: https://zerlinwang.github.io/plannudge/",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO"
+   ],
+   "published": "2026-11-22T01:08:48Z",
+   "updated": "2026-11-22T01:08:48Z",
+   "comment": "Autonomous driving, Trajectory Planning, Diffusion-based Planners, Reinforcement Learning, RL Post-training, Off-policy RL",
+   "tags": [
+    "RL",
+    "benchmark",
+    "driving"
+   ],
+   "ax_votes": 1,
+   "ax_visits": 34,
+   "heat": 4.4,
+   "orgs": [
+    {
+     "name": "NTU",
+     "ror": "02e7b5302"
+    },
+    {
+     "logo": "data/logos/tudelft.nl.png",
+     "name": "Delft University of Technology",
+     "ror": "02e2c7k09"
+    },
+    {
+     "logo": "data/logos/ox.ac.uk.png",
+     "name": "University of Oxford",
+     "ror": "052gg0110"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29123.jpg",
+   "thumb_w": 640,
+   "thumb_h": 252
+  },
+  {
+   "id": "2611.29150",
+   "title": "Can an Agent Trust Its Own Zoom? Cross-Magnification Provenance Verification for Whole-Slide Images",
+   "authors": [
+    "Yan Wang",
+    "Yiran Song",
+    "Zizhuo Gong",
+    "Jianxiang Qi",
+    "Zhongxing Xu",
+    "Lingfei Qian",
+    "Minquan Lin"
+   ],
+   "abstract": "Visual agents navigate whole-slide images through magnified observations associated with claimed locations. However, a visually plausible observation does not necessarily originate from its claimed location, particularly across magnifications and in regions with similar tissue structures. We formulate cross-magnification provenance verification (CMPV) to evaluate whether visual evidence supports a claimed spatial association, recover the source when possible, and abstain when evidence is insufficient. We introduce PyraFault, a benchmark of 3.06 million coordinate-supervised examples from 2,200 cases across five TCGA cohorts, covering within-context substitutions, absent-source faults, and geometric perturbations. We further propose ZoomTrace, a claim-independent verifier that estimates the observation's source before evaluating its agreement with the claimed location. It combines physical-scale alignment, visual retrieval, geometric refinement, and reliability estimation using spatially disjoint competing matches. On 503,320 test examples, ZoomTrace achieves 0.969 AUPRC and 0.987 AUROC, compared with 0.789 and 0.903 for Efficient LoFTR. Further evaluations reveal trade-offs in reliability estimation and limitations in vision-language models, cross-dataset retrieval, and calibration. Integrating ZoomTrace into visual agent tool paths reduces exposure to corrupted observations and silent failures, while downstream accuracy improvements depend on the agent and verification threshold.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-22T02:10:25Z",
+   "updated": "2026-11-22T02:10:25Z",
+   "comment": "",
+   "tags": [
+    "VLM/LLM",
+    "benchmark"
+   ],
+   "hf_upvotes": 4,
+   "ax_votes": 0,
+   "ax_visits": 7,
+   "heat": 4.7,
+   "orgs": [
+    {
+     "logo": "data/logos/yale.edu.png",
+     "name": "Yale University",
+     "ror": "03v76x132"
+    },
+    {
+     "name": "University of Minnesota",
+     "ror": "017zqws13"
+    },
+    {
+     "logo": "data/logos/monash.edu.png",
+     "name": "Monash University",
+     "ror": "02bfwt286"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29150.jpg",
+   "thumb_w": 640,
+   "thumb_h": 268
+  },
+  {
+   "id": "2611.29590",
+   "title": "KernelShift: Benchmarking Kernel Optimization Across Evolving Hardware",
+   "authors": [
+    "Shuaiwei Huang",
+    "Weihua Du",
+    "Allen Wu",
+    "Ivan Fox",
+    "Manupa Karunaratne",
+    "Yiming Yang",
+    "Sean Welleck"
+   ],
+   "abstract": "Efficient AI computation depends on hardware that evolves over time, shifting the strategies needed to implement performant code. For CPU kernels, a key evolving factor is the set of available architectural extensions, which expose specialized hardware instructions that change the techniques used to optimize kernels. We study how effectively coding agents use these new, potentially unfamiliar extensions to write fast code. We introduce KernelShift, a benchmarking pipeline and a set of environments for evaluating coding agents in kernel optimization across evolving CPU architectures. Its agent-assisted, human-verified pipeline turns code repositories into benchmark instances, and its environments let agents optimize code with feedback from the target hardware. Using this pipeline, we construct 99 kernels from real-world, actively developed repositories (ncnn, llama.cpp, Arm SIMD Loops, and KleidiAI), including inference workloads derived from real model executions. KernelShift supports incorporating new kernels and hardware configurations as libraries and processors evolve. We evaluate agents with proprietary and open-weight models across progressively newer architectural extensions (Arm Neon, SVE, SVE2, and SME2), examining how performance changes as hardware evolves. On established extensions, agents beat the auto-vectorized compiler everywhere (2.4-19.8x) and exceed general-purpose libraries such as ncnn (getting up to 2.74x over its Neon kernels), but fall behind Arm's hand-tuned KleidiAI kernels (0.70x). In end-to-end inference of two LLMs, agent-written kernels achieve a 1.3-1.6x prefill speedup over llama.cpp's fast path. However, current agents do not yet reliably adapt to new extensions that require unfamiliar programming models, such as SME2's matrix tiles.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG",
+    "cs.SE"
+   ],
+   "published": "2026-11-22T16:25:24Z",
+   "updated": "2026-11-22T16:25:24Z",
+   "comment": "26 pages, 9 figures, 22 tables. Project page: https://cmu-l3.github.io/kernel-shift/",
+   "tags": [
+    "VLM/LLM",
+    "benchmark"
+   ],
+   "hf_upvotes": 4,
+   "ax_votes": 0,
+   "ax_visits": 6,
+   "heat": 4.6,
+   "orgs": [
+    {
+     "logo": "data/logos/cmu.edu.png",
+     "name": "Carnegie Mellon University",
+     "ror": "05x2bcf33"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29590.jpg",
+   "thumb_w": 640,
+   "thumb_h": 150
+  },
+  {
+   "id": "2611.29619",
+   "title": "Wactorz: Self-Writing LLM Agents That Discover, Repair, and Migrate at the Edge",
+   "authors": [
+    "Panagiotis Kasnesis",
+    "Lazaros Toumanidis",
+    "Amalia Contiero Syropoulou",
+    "Christos Chatzigeorgiou"
+   ],
+   "abstract": "Most LLM agent frameworks build a crew that runs a task and exits. Physical environments (e.g., homes, labs, factory floors) need agents that stay up for months, survive their own bugs, and run on whatever hardware is already next to the sensors. We present Wactorz, an open-source runtime in which LLM-generated agents are long-lived, supervised actors: a planner turns a chat request into Python, compiles it into a new actor at runtime, and a supervisor restarts that actor alone, with its state intact, when it crashes. All coordination rides on MQTT, so agents can be spawned on, and live-migrated between, edge nodes such as a Raspberry Pi, and every internal event is a topic external systems can subscribe to. The recorded demo builds a camera-to-lamp automation from one chat request, adds a second agent that is auto-wired to the first by topic and carries a deliberate division-by-zero, watches that agent repair its own code without losing its count, then deploys a fresh Raspberry Pi node and live-migrates the agent onto it, in under four minutes of wall-clock time and \\$0.13 of model usage. This extended version adds what the two-page demonstration paper could not: the Wiring view of the topic graph, Wactorz as a library for hand-written agents, how trained models are stored, sent to nodes and replaced, the security model, and the system's limitations.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-22T17:17:07Z",
+   "updated": "2026-11-22T17:17:07Z",
+   "comment": "5 pages. 2 figues. Extended version of a paper accepted to the AAAI-27 Demonstrations Program. Code: https://github.com/waldiez/wactorz",
+   "code_url": "https://github.com/waldiez/wactorz",
+   "tags": [
+    "imitation",
+    "VLM/LLM"
+   ],
+   "hf_upvotes": 4,
+   "ax_votes": 0,
+   "ax_visits": 2,
+   "heat": 4.2,
+   "orgs": [],
+   "thumb": "data/thumbs/2611.29619.jpg",
+   "thumb_w": 640,
+   "thumb_h": 273
+  },
+  {
+   "id": "2611.29716",
+   "title": "Fin-RSI: A Unified Library of Financial Skills, Checks, and Self-Improvement for LLM Agents",
+   "authors": [
+    "Wanghao Ye",
+    "Shwai He",
+    "Sihan Chen",
+    "Yiting Wang",
+    "Bowei Tian",
+    "Guoheng Sun",
+    "Ziyi Wang",
+    "Ziyao Wang",
+    "Yexiao He",
+    "Zheyu Shen",
+    "Meng Liu",
+    "Yuning Zhang",
+    "Meng Feng",
+    "Yifei Dong",
+    "Yanhong Qian",
+    "Yang Wang",
+    "Siyuan Peng",
+    "Yilong Dai",
+    "Zhenle Duan",
+    "Joshua Liu",
+    "Lang Xiong",
+    "Aarosh Das",
+    "Zhaoyi Liu",
+    "Daeun Jung",
+    "Aditya Sarkar",
+    "Parastoo Pilevar",
+    "Xiaochuan Gong",
+    "Yancheng Zhu",
+    "Yingying Fan",
+    "Qiong Wang",
+    "Ang Li"
+   ],
+   "abstract": "As large language models (LLMs) become more capable, financial agents need tools they can readily discover and use. Yet financial software is fragmented across libraries with different interfaces and conventions, making it difficult to build reliable agent workflows. We present Fin-RSI, a unified Python library of financial skills, checks, and self-improvement designed for LLM agents. It brings together tools for market analysis, forecasting, portfolio construction, and trading research through shared interfaces across models and agent frameworks. Agents can find suitable tools from natural-language requests, reuse tested implementations, and improve generated programs through checking and feedback. Developers can extend the library with new tools without rebuilding integrations for each model. Across 20 open-weight models on six trading-position tasks, tool discovery increased the proportion of episodes producing valid programs from 9.7% to 29.2%; for models with at least 14 billion parameters, it rose from 23.6% to 64.6%. We release the library and benchmark as a shared resource for the community and plan to expand its tools and task coverage as financial agents evolve.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-22T19:28:28Z",
+   "updated": "2026-11-22T19:28:28Z",
+   "comment": "9 pages, 5 figures, 3 tables",
+   "tags": [
+    "VLM/LLM",
+    "benchmark"
+   ],
+   "ax_votes": 1,
+   "ax_visits": 28,
+   "heat": 3.8,
+   "orgs": [
+    {
+     "name": "University of Maryland"
+    },
+    {
+     "logo": "data/logos/cmu.edu.png",
+     "name": "Carnegie Mellon University",
+     "ror": "05x2bcf33"
+    },
+    {
+     "logo": "data/logos/tamu.edu.png",
+     "name": "Texas A&M University",
+     "ror": "01f5ytq51"
+    },
+    {
+     "logo": "data/logos/washington.edu.png",
+     "name": "University of Washington",
+     "ror": "00cvxb145"
+    },
+    {
+     "logo": "data/logos/neu.edu.png",
+     "name": "Northeastern University",
+     "ror": "03awzbc87"
+    },
+    {
+     "logo": "data/logos/ua.edu.png",
+     "name": "University of Alabama",
+     "ror": "03xrrjk67"
+    },
+    {
+     "logo": "data/logos/stanford.edu.png",
+     "name": "Stanford University",
+     "ror": "00f54p054"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29716.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440
+  },
+  {
+   "id": "2611.29811",
+   "title": "Notes on Generative AI for Mathematical Research",
+   "authors": [
+    "Shurui Liu"
+   ],
+   "abstract": "These notes describe how generative AI is now used to solve and to check research-level mathematics, with a focus on agents and their harnesses. For the proving agents Rethlas, Danus, and Pharos and the verification agent OSVerify, we explain the design principles, compare each with its base model, present case studies, and show how to use and contribute to them. We also briefly review the history of AI for mathematics and the community's reactions to it.",
+   "primary": "math.HO",
+   "categories": [
+    "math.HO",
+    "cs.AI",
+    "cs.MA"
+   ],
+   "published": "2026-11-22T22:35:19Z",
+   "updated": "2026-11-22T22:35:19Z",
+   "comment": "",
+   "tags": [],
+   "ax_votes": 0,
+   "ax_visits": 32,
+   "heat": 3.2,
+   "orgs": [
+    {
+     "logo": "data/logos/stanford.edu.png",
+     "name": "Stanford University",
+     "ror": "00f54p054"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29811.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440
+  },
+  {
+   "id": "2611.29588",
+   "title": "How Multi-Timescale Memory Cools Optimization: Theory and Evidence from AdEMAMix",
+   "authors": [
+    "Jacopo Graldi",
+    "Antonio Orvieto",
+    "Anastasia Koloskova"
+   ],
+   "abstract": "Augmenting AdamW with multiple momentum timescales improves large language model pretraining, yet the mechanism driving these gains remains poorly understood. We identify an interaction between multi-timescale optimizer memory and the geometry of normalized networks: memory changes parameter norms and thereby controls how fast parameters rotate. Starting from exact norm dynamics under decoupled weight decay, we show that the parameter norm depends on the temporal correlation of the updates, with weight decay controlling how long these correlations influence optimization. We show how an independently weighted slow momentum can substantially increase the norm of parameters, while contributing negligible power to the instantaneous update, therefore acting as an endogenous annealing schedule. We study this mechanism in AdEMAMix for language-model pretraining. Controlled interventions show that this scheduling mechanism has clear practical consequences and is an important factor behind AdEMAMix's advantage over AdamW.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI",
+    "stat.ML"
+   ],
+   "published": "2026-11-22T16:20:31Z",
+   "updated": "2026-11-22T16:20:31Z",
+   "comment": "",
+   "tags": [],
+   "ax_votes": 2,
+   "ax_visits": 10,
+   "heat": 3.0,
+   "orgs": [
+    {
+     "logo": "data/logos/uzh.ch.png",
+     "name": "University of Zurich",
+     "ror": "02crff812"
+    },
+    {
+     "logo": "data/logos/tuebingen.ai.png",
+     "name": "Tübingen AI Center",
+     "ror": "0107nyd78"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29588.jpg",
+   "thumb_w": 248,
+   "thumb_h": 211
+  },
+  {
+   "id": "2611.29383",
+   "title": "Self-Refining VLA Sampling",
+   "authors": [
+    "Jeff Duan",
+    "Arjun Sharma",
+    "Jennifer Cruden",
+    "Vansh Tibrewal"
+   ],
+   "abstract": "Vision-Language-Action (VLA) models typically use flow-based generative modeling to learn a rich, often multimodal, distribution of robot actions. Generating samples from flow-based methods involves iteratively updating random noise, and distinct noise samples from the same state can result in distinct trajectories and task outcomes. Existing test-time scaling methods improve action chunk generation via selection, aggregation, or correction, but commonly require the generation of large ensembles of candidates or the training of an external corrector. We adapt Predict-and-Perturb (P&P), a self-refinement procedure for flow-based models originally used for mode-seeking in video generation, to the robotics domain. We find that applying P&P to VLA models requires modifications to the refinement process used in video generation due to differences in the underlying structure of the data. Across 400 episodes of LIBERO evaluated using SmolVLA, P&P improves upon the stock baseline by 5.3 percentage points. Further, episode-level P\\&P uncertainty correlates strongly with task failure (AUC 0.851).",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO"
+   ],
+   "published": "2026-11-22T10:56:01Z",
+   "updated": "2026-11-22T10:56:01Z",
+   "comment": "Accepted to the CoRL 2026 Learn@Deploy Workshop",
+   "tags": [
+    "VLA"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 28,
+   "heat": 2.8,
+   "orgs": [],
+   "thumb": "data/thumbs/2611.29383.jpg",
+   "thumb_w": 640,
+   "thumb_h": 213
+  },
+  {
+   "id": "2611.29775",
+   "title": "ComplexIF: A Challenging Multi-Turn, Multi-Constraint Instruction-Following Benchmark",
+   "authors": [
+    "Zhichao Xu",
+    "Bingsen Chen",
+    "Yawei Wang",
+    "Tao Li",
+    "Haoyu Wang",
+    "Dan Roth",
+    "Vivek Srikumar"
+   ],
+   "abstract": "As frontier LLMs saturate existing instruction-following benchmarks, measuring further progress requires harder tests that remain faithful to real use. In practice, users often combine several constraints, add them at different turns of a conversation, and expect all of them to hold in the assistant's response. We introduce ComplexIF, a challenging benchmark for this setting, together with the automatic pipeline that generates it. The pipeline expands seed requests into multi-turn conversations, weaves constraints into their turns, and keeps only tasks that a strong model can solve, so difficulty can be raised by adding constraints or turns while every task stays solvable. ComplexIF's two splits test complementary sides of instruction following: a verifiable split of format constraints, checked by programs, and a rubric split of semantic instructions, such as a tone or an audience, checked with an LLM judge. Across 14 proprietary and open-weight models, even the strongest satisfies every constraint on fewer than half of the verifiable tasks, and no model leads on both splits.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL"
+   ],
+   "published": "2026-11-22T21:16:00Z",
+   "updated": "2026-11-22T21:16:00Z",
+   "comment": "",
+   "tags": [
+    "VLM/LLM",
+    "benchmark"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 28,
+   "heat": 2.8,
+   "orgs": [
+    {
+     "logo": "data/logos/utah.edu.png",
+     "name": "University of Utah",
+     "ror": "03r0ha626"
+    },
+    {
+     "name": "New York University",
+     "ror": "0190ak572"
+    },
+    {
+     "logo": "data/logos/gwu.edu.png",
+     "name": "George Washington University",
+     "ror": "00y4zzh67"
+    },
+    {
+     "logo": "data/logos/deepmind.google.png",
+     "name": "Google DeepMind"
+    },
+    {
+     "logo": "data/logos/upenn.edu.png",
+     "name": "University of Pennsylvania",
+     "ror": "00b30xv10"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29775.jpg",
+   "thumb_w": 72,
+   "thumb_h": 72
+  },
+  {
+   "id": "2611.29375",
+   "title": "MusicListenBench: Can Audio LLMs Hear the Difference Yet?",
+   "authors": [
+    "Abhinaba Roy",
+    "Ambuj Mehrish",
+    "Dorien Herremans"
+   ],
+   "abstract": "Audio large language models (LLMs) are typically evaluated on song genre, mood, and instrumentation. A more basic skill is telling whether two short clips play the same melody, chord or instrument. We introduce MusicListenBench, a benchmark of paired listening tests for melody, harmony, timbre, and tempo. Each test item comes with two variants. A FLIP variant changes the music, so the answer must change. A STAY variant changes only the sound, such as room echo or hiss, so the answer must stay the same. The two variants have opposite answers, so a model that ignores the audio scores 50%, whatever letter it prefers. The benchmark has a training split and two test sets, one rendered from symbolic music with exact labels and one built from real recordings. On the rendered test, seven of eight open audio LLMs score within 4 points of this floor. Of four commercial models, both GPT-Audio models are at chance, and the best, Gemini 2.5 Pro, reaches 74.2%, 12.8 points below human listeners (87.0%). Post-training with GRPO on 10k rendered clean pairs raises Qwen2.5-Omni from 61.2% to 99.0% on held-out clean pairs, and the gain transfers to a task left out of training. On FLIP/STAY, however, it only reaches the level of our listeners (86.0%). It now misses almost no change (1.9%, against 24.7% for Gemini 2.5 Pro), yet when only the sound changes, it turns a correct answer into a wrong one 25.7\\% of the time. More than half of its false flips come from a quiet background hiss. Models learn to hear a difference much faster than they learn which differences matter. On real recordings, open models again stay near chance, and the trained model calls 27 of 42 pairs of two strums of the same chord different. Adding sound-only pairs to training lowers false flips on both test sets, but no training run teaches relative pitch. We release the data, code, and an open leaderboard.",
+   "primary": "cs.SD",
+   "categories": [
+    "cs.SD",
+    "cs.AI"
+   ],
+   "published": "2026-11-22T10:31:49Z",
+   "updated": "2026-11-22T10:31:49Z",
+   "comment": "",
+   "tags": [
+    "VLM/LLM",
+    "benchmark"
+   ],
+   "ax_votes": 2,
+   "ax_visits": 3,
+   "heat": 2.3,
+   "orgs": [
+    {
+     "logo": "data/logos/sutd.edu.sg.png",
+     "name": "Singapore University of Technology and Design",
+     "ror": "05j6fvn87"
+    },
+    {
+     "name": "University of"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29375.jpg",
+   "thumb_w": 640,
+   "thumb_h": 360
+  },
+  {
+   "id": "2611.29361",
+   "title": "Beyond Attention Maps: Understanding and Improving Medical MLLMs via Visual Values",
+   "authors": [
+    "Yichen Zhao",
+    "Fenghe Tang",
+    "Wenxin Ma",
+    "Rongsheng Wang",
+    "Zihao Wan",
+    "Shaohua Kevin Zhou"
+   ],
+   "abstract": "Current MLLM methods largely focus on whether models attend to the right visual regions, implicitly treating spatial attention map as the primary key of effective visual perception. To examine this assumption, we introduce a medical VQA dataset with paired non-contrast (NC) and contrast-enhanced (CE) images that share corresponding anatomy while providing different cues. We show that this view is incomplete: across paired NC and CE medical images, MLLMs often exhibit similar attention patterns despite producing contrasting answers, while controlled bidirectional interventions induce substantially larger prediction changes on visual values than attention weights. These results identify the visual content retrieved through values as a critical factor in improving perception beyond spatial attention alone. Guided by this finding, we propose VIVID (VIsual Value Intervention Distillation), which uses enhanced visual values to identify and refine teacher corrections aligned with useful visual evidence to improve on-policy distillation from CE to NC images. Across six internal and external test sets, VIVID consistently outperforms existing on-policy distillation methods across different model scales and architectures, requires only NC images at inference, and maintains strong zero-shot performance on general-domain VQA benchmarks. The project page is available at https://qiuzyc.github.io/VIVID.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-22T09:55:46Z",
+   "updated": "2026-11-22T09:55:46Z",
+   "comment": "",
+   "tags": [
+    "benchmark"
+   ],
+   "hf_upvotes": 2,
+   "ax_votes": 1,
+   "ax_visits": 6,
+   "heat": 3.6,
+   "orgs": [
+    {
+     "name": "Suzhou Institute for Advance Research",
+     "ror": "049xpsw37"
+    },
+    {
+     "name": "Jiangsu Key Laboratory of Multimodal Digital Twin Technology"
+    },
+    {
+     "name": "University of Texas at"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29361.jpg",
+   "thumb_w": 328,
+   "thumb_h": 440
+  },
+  {
+   "id": "2611.29723",
+   "title": "ApexID: Hierarchical Learning for Multi-Species Animal Re-Identification",
+   "authors": [
+    "Seifeldin Elkerdany",
+    "Mohamed ElBassat",
+    "Gamal Abouelhamd",
+    "Assem Elkady",
+    "Jana Ghoneim",
+    "Matin Mahmood",
+    "Abigail Allen Martin",
+    "Gerard de Melo",
+    "Antonio Rueda-Toicen"
+   ],
+   "abstract": "Animal re-identification (Re-ID) must distinguish individuals across species and capture conditions. We introduce ApexID, a hierarchical SphereFace2-based loss that integrates global identity discrimination with balanced animal-category supervision. Using 132,533 images curated from 19 public datasets, we evaluate three model families and four objectives on four external datasets with observation-aware retrieval protocols. ApexID achieves a dataset-averaged Rank-1 accuracy of 64.89% with ConvNeXt-Small and an mAP of 32.54% with MIEW-ID, outperforming their pretrained reference models. On elephants, a category absent from animal Re-ID training, our ConvNeXt-Small variant achieves the highest retrieval performance among the fourteen evaluated configurations. Scores vary by backbone and dataset, and open-set evaluation reveals remaining discovery challenges. These findings support hierarchical category-identity learning to improve transfer to unseen datasets and species.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-22T19:42:33Z",
+   "updated": "2026-11-22T19:42:33Z",
+   "comment": "",
+   "tags": [],
+   "hf_upvotes": 2,
+   "ax_votes": 0,
+   "ax_visits": 3,
+   "heat": 2.3,
+   "orgs": [
+    {
+     "logo": "data/logos/alexu.edu.eg.png",
+     "name": "Alexandria University",
+     "ror": "00mzz1w90"
+    },
+    {
+     "logo": "data/logos/ufmt.br.png",
+     "name": "Universidade Federal de Mato Grosso",
+     "ror": "01mqvjv41"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29723.jpg",
+   "thumb_w": 640,
+   "thumb_h": 427
+  },
+  {
+   "id": "2611.29473",
+   "title": "The norm axiom and factor hyperfields",
+   "authors": [
+    "Alessandro Linzi"
+   ],
+   "abstract": "Touchard and the author asked whether every valued hyperfield, in Krasner's sense with the norm axiom, is of the form $\\mathcal{H}_ρ(K)$: a valued field $K$ read up to relative error $ρ$. The question turns on the norm axiom. If a valued hyperfield is a quotient $K^\\times/T\\cup\\{0\\}$ of a field, the norm axiom forces $T=1+\\mathfrak{m}_ρ$ for a valuation on $K$. This completes the proof of a published proposition, and it makes the question equivalent to asking whether every Krasner valued hyperfield is such a quotient. For value group $\\mathbb{Z}$ we prove directly that it is. Without the norm axiom the answer is negative. Layering a hyperfield over a non-trivial ordered abelian group gives a factor hyperfield exactly when the hyperfield itself is one, so Massouros's hyperfields yield hyperfields with a non-trivial valuation, satisfying all the other axioms, that are not factor hyperfields. The general question remains open.",
+   "primary": "math.RA",
+   "categories": [
+    "math.RA",
+    "math.AC"
+   ],
+   "published": "2026-11-22T13:23:15Z",
+   "updated": "2026-11-22T13:23:15Z",
+   "comment": "17 pages",
+   "tags": [],
+   "ax_votes": 0,
+   "ax_visits": 2,
+   "heat": 0.2,
+   "orgs": [
+    {
+     "name": "Independent Researcher"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29473.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440
+  },
+  {
+   "id": "2611.29829",
+   "title": "Who Makes the Decision? Auditing an Agentic LLM Pipeline for Illicit Cryptocurrency Transaction Monitoring",
+   "authors": [
+    "Vaishnavi Chaughule",
+    "Yuchen Zhang",
+    "Mohammed Ahnaf Tajwar",
+    "Sai Akshay Menta",
+    "Saanidhya Vats",
+    "Vinija Jain",
+    "Aman Chadha",
+    "Divya Chaudhary"
+   ],
+   "abstract": "Agentic pipelines that combine graph detectors, deterministic rules, retrieval-augmented generation and an LLM judge are being proposed to monitor illicit cryptocurrency flows and to write regulation-citing justifications for analysts. They are evaluated on end-to-end accuracy or on the quality of those justifications, and neither shows which component made a decision. We audit such a pipeline on the Elliptic++ Bitcoin dataset with decision-source attribution, a trace-level protocol with three layers: per-case actual causation, interventional Shapley credit, and mediation of upstream risk scores. A deterministic wallet-score override carries about 94% of the credit for flags, and a verification gate cancels most of the judge's own flags, which fall on licit transactions. Testing the judge alone over 76 evidence bundles, four backbones and two prompts, we find that it follows an injected risk score on the anonymous transaction features it is given, although stronger models decide correctly when the facts are explicit; that a context too short for the system prompt leaves it with no verdict at all; and that it cites regulatory clauses that do not apply, which a substring-based citation check accepts. Hiding the score does not fix the judge, because evidence gathered with the score visible still encodes it. For illicit-activity monitoring, an LLM's justification should therefore not be read as evidence of which component flagged a transaction.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-22T23:16:50Z",
+   "updated": "2026-11-22T23:16:50Z",
+   "comment": "10 pages, 1 figure. Accepted to the 3rd Workshop on Big Data Analysis AND Illicit Trends (BANDIT) at IEEE BigData 2026",
+   "tags": [
+    "VLM/LLM"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 20,
+   "heat": 2.0,
+   "orgs": [
+    {
+     "logo": "data/logos/neu.edu.png",
+     "name": "Northeastern University",
+     "ror": "03awzbc87"
+    },
+    {
+     "logo": "data/logos/meta.com.png",
+     "name": "Meta"
+    },
+    {
+     "logo": "data/logos/apple.com.png",
+     "name": "Apple"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29829.jpg",
+   "thumb_w": 386,
+   "thumb_h": 440
+  }
+ ]
+}

@@ -1,12 +1,12 @@
 {
  "title": "Daily Paper",
- "updated_at": "2026-11-27T03:59:37+00:00",
- "default_category": "cs.RO",
+ "updated_at": "2026-11-27T13:07:03+00:00",
+ "default_category": "all",
  "categories": [
   {
-   "id": "cs.RO",
-   "name": "Robotics",
-   "name_zh": "机器人"
+   "id": "all",
+   "name": "Popular papers",
+   "name_zh": "热门论文"
   }
  ],
  "category_names": {
@@ -26,10 +26,6 @@
    "en": "Graphics",
    "zh": "图形学"
   },
-  "cs.HC": {
-   "en": "Human-Computer Interaction",
-   "zh": "人机交互"
-  },
   "cs.LG": {
    "en": "Machine Learning",
    "zh": "机器学习"
@@ -41,6 +37,10 @@
   "cs.RO": {
    "en": "Robotics",
    "zh": "机器人"
+  },
+  "eess.IV": {
+   "en": "Image and Video Processing",
+   "zh": "图像与视频处理"
   },
   "eess.SY": {
    "en": "Systems and Control",
@@ -54,16 +54,31 @@
  "days": [
   {
    "date": "2026-11-25",
-   "count": 98
+   "count": 189
   },
   {
    "date": "2026-11-24",
-   "count": 105
+   "count": 147
   },
   {
    "date": "2026-11-23",
-   "count": 115
+   "count": 128
+  },
+  {
+   "date": "2026-11-22",
+   "count": 31
+  },
+  {
+   "date": "2026-11-21",
+   "count": 29
+  },
+  {
+   "date": "2026-11-20",
+   "count": 40
+  },
+  {
+   "date": "2026-11-19",
+   "count": 52
   }
- ],
- "demo": true
+ ]
 }

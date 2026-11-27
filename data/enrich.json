@@ -4665,5 +4665,3393 @@
   "thumb": "data/thumbs/2611.29868.jpg",
   "w": 640,
   "h": 396
+ },
+ "2611.34923": {
+  "orgs": [
+   "Huazhong University of Science & Technology"
+  ],
+  "affils": [
+   "Mixture-of-Loops Transformer\nLianghui Zhu1,2, Shijie Wang2,†, Xinggang Wang1, Jinze Bai2, Bo Wang3, Xiang Bai1\n1Huazhong University of Science & Technology, 2ByteDance Seed, 3University of Toronto\n(a) Loop Model\nloop residual\n(b) MoLT-R\nloop residual + MoLA\n(c) MoLT-KV\nloop KV + MoLA\n(d) U-MoLT\nMoLT Encoder + MoLT Decoder\n⋮\nloop residual\n⋮\nloop residual & KV: j = t\nLocal KV\n⋮\nloop KV: j < t\nLocal KV\nMoLT Encoder\nMoLT Decoder\n⋮\n⋮\nloop KV: j < t\nLocal KV\nDecoder KV\nWithin the current loop\nFeedback from loop r −1 to r\nLocal KV at t\nDecoder KV\nAttn Layer\nAttn Layer\nAttn Layer\nEmbedding\nLM head\nMoLA Layer\nMoLA Layer\nMoLA Layer\nEmbedding\nLM head\nMoLA Layer\nMoLA Layer\nMoLA Layer\nEmbedding\nLM head\nEmbedding\nLM head\nMoLA Layer\nCross Layer\nMoLA Layer\nCross Layer\nMoLA Layer\nCross Layer\nFigure 1 MoLT family. (a) A residual-loop reference carries preceding-loop computation through its recurrent state.\n(b) MoLT-R combines loop residual with direct MoLA reads of current-loop and preceding-loop local KV for expressivity.\n(c) MoLT-KV restarts from embeddings and reads preceding-loop memory KV at j < t and current-loop local KV via\nMoLA for efficiency, enabling single-traversal MoL decoding. (d) U-MoLT pairs a loop KV MoLT Encoder with a\ncausal, cross-only MoLT Decoder, separating memory construction from prediction readout for balanced efficiency and\nquality. MoLT-R, MoLT-KV, and the U-MoLT encoder show all-layer MoLA under their feedback forms. Feed-forward\nsublayers and normalization are omitted. See Section 5 for a detailed comparison."
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.34923.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.34051": {
+  "orgs": [
+   "HKUST"
+  ],
+  "affils": [
+   "Stable Gated DeltaNet-2: Understanding and Mitigating\nRecurrent State Instability\nXichong Zhang1,2*\nXixuan Hao3*\nZhichen Liu4*\nLe Zhou5*\nZeyu Zhang1\nBoyu Chen1\nMingfei Lu1\nZehao Lin1\nBo Tang1\nYonggang Zhang6†\nLinyun Liu1†\nFeiyu Xiong1\nJianlin Su7\nZhiyu Li1\n1MemTensor\n2USTC\n3HKUST(GZ)\n4SUSTech\n5SJTU\n6HKUST\n7kexue.fm\n*Equal contribution.\n†Corresponding authors."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34051.jpg",
+  "w": 640,
+  "h": 348
+ },
+ "2611.34232": {
+  "orgs": [
+   "OS-Omni Team"
+  ],
+  "affils": [
+   "OS-Omni: Benchmarking Generalist\nComputer-Using Agents on Long-Horizon\nWorkflows Across Platforms\nOS-Omni Team\n Website\nos-copilot.github.io\n§ Code\ngithub.com/OS-Copilot/OS-Omni"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34232.jpg",
+  "w": 640,
+  "h": 368
+ },
+ "2611.34575": {
+  "orgs": [
+   "Sage-Med Team",
+   "Shanghai AI Lab"
+  ],
+  "affils": [
+   "Sage-Med: Scaling Medical Multimodal Intelligence\n Website\n§ GitHub\nHuggingFace\n Leaderboard\nSage-Med Team\nShanghai Artificial Intelligence Laboratory"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34575.jpg",
+  "w": 640,
+  "h": 302
+ },
+ "2611.34466": {
+  "orgs": [
+   "Zhejiang University"
+  ],
+  "affils": [
+   "EGOUSEBENCH: Benchmarking Computer-Use\nAgents under Evolving First-Person Contexts\nYurun Chen, Biao Yi, Qihang Yu, Keting Yin, Shengyu Zhang\nZhejiang University\nProject Page\nCode\nDataset"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34466.jpg",
+  "w": 640,
+  "h": 246
+ },
+ "2611.34237": {
+  "orgs": [
+   "KlingAI Research"
+  ],
+  "affils": [
+   "KlingAI Research"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34237.jpg",
+  "w": 547,
+  "h": 440
+ },
+ "2611.34941": {
+  "orgs": [
+   "Carnegie Mellon University",
+   "NTU",
+   "University of Technology Sydney",
+   "University of Michigan"
+  ],
+  "affils": [
+   "Carnegie Mellon University",
+   "Nanyang Technological University",
+   "University of Technology Sydney",
+   "University of Michigan"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34941.jpg",
+  "w": 640,
+  "h": 237
+ },
+ "2611.34907": {
+  "orgs": [
+   "NVIDIA"
+  ],
+  "affils": [
+   "\n\n\n\nShaoteng Liu3,   Shuai Yang1,   Wei Huang1,   Luozhou Wang1,   Song Han1 2,   Yukang Chen1\n1NVIDIA  2MIT  3CUHK\n Code   Project Page\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34907.jpg",
+  "w": 567,
+  "h": 377
+ },
+ "2611.34457": {
+  "orgs": [
+   "New Laboratory of Pattern Recognition",
+   "Chinese Academy of Sciences",
+   "HKUST",
+   "Tencent 5School of Artificial Intelligence"
+  ],
+  "affils": [
+   "\n\n\n\n\n\nZhenchen Tang1,4,5,*, Haolin Lu2,4,*,\nSonglin Yang3,4, Xiaotong Zhao4, Ran Zhang4,\n\nBo Peng1,5, Shuai Li4,\nHaotian Fan4, Haobin Zhong4, Yanni Zhang4,\n\nSonglian Li4, Ning Zhang4,\nXun Gao4, Alan Zhao4, Jing Dong1,5,†\\dagger\n\n1New Laboratory of Pattern Recognition, Institute of Automation,\n\nChinese Academy of Sciences\n\n2University of California, San Diego 3The Hong Kong University of Science and Technology\n\n4Tencent 5School of Artificial Intelligence, University of Chinese Academy of Sciences\n\n*Equal contribution. †\\daggerCorresponding author.\n\nProject page: https://2kxx.github.io/ProxyGenBench/\n\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34457.jpg",
+  "w": 640,
+  "h": 351
+ },
+ "2611.34420": {
+  "orgs": [
+   "NTU"
+  ],
+  "affils": [
+   "S-Lab, Nanyang Technological University",
+   "Synvo AI https://mossbee.github.io/projects/DocSEAM"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34420.jpg",
+  "w": 640,
+  "h": 260
+ },
+ "2611.34852": {
+  "orgs": [
+   "Benchmark for Professional Deep Research",
+   "Zhejiang University",
+   "Deep research agents gather information from multiple sources and synthesize it into reports on",
+   "but lack a dedicated knowledge-centric evaluation of which research directions a report covers and how",
+   "Wikipedia and uses sampled subgraphs to generate research queries and evidence-grounded rubrics",
+   "evaluated. Agents receive only the research query. This structure allows us to measure breadth across",
+   "major research directions and depth along related knowledge chains",
+   "deep research agents reveals different strengths in breadth and depth",
+   "Deep research agents address complex",
+   "long-form synthesis. They can investigate a topic across multiple sources and produce research",
+   "this task requires an agent to decide which research directions deserve"
+  ],
+  "affils": [
+   "DRBench Pro: A Knowledge-Centric\nBenchmark for Professional Deep Research\nAgents\nHan Huang1,∗, Yuchen Yan1,∗, Xingyu Wu1,2, Yijun Li1, Chao Deng2, Jie Liu2, Jin Ma2,\nYongliang Shen1,†\n1Zhejiang University, 2Tencent\n∗Equal contribution, †Corresponding author\nDeep research agents gather information from multiple sources and synthesize it into reports on\ncomplex, open-ended questions. Existing benchmarks assess report quality along several dimensions,\nbut lack a dedicated knowledge-centric evaluation of which research directions a report covers and how\ndeeply it explores them. We introduce DRBench Pro, a benchmark that makes structured knowledge\ncoverage the primary evaluation target. Our automated pipeline builds local knowledge trees from\nWikipedia and uses sampled subgraphs to generate research queries and evidence-grounded rubrics.\nEach rubric corresponds to a relation in the tree, preserving the structure of the knowledge being\nevaluated. Agents receive only the research query. This structure allows us to measure breadth across\nmajor research directions and depth along related knowledge chains, with their geometric mean giving\noverall coverage. The benchmark includes 144 cases across 24 domains and 44,102 rubrics. Evaluating\n16 deep research agents reveals different strengths in breadth and depth, with the best-performing\nagent reaching 57.04% overall coverage. Rubric judgments agree closely with human annotations, and\nagent rankings remain stable across the tested metric configurations.\nDate: October 13, 2026\nCode: https://github.com/ZJU-REAL/DRBenchPro\nProject Page: https://zjureal.com/DRBenchPro/\nCorrespondence: {hanhuang, yanyuchen, syl}@zju.edu.cn\n1\nIntroduction\nDeep research agents address complex, open-ended information needs through iterative search, evidence\nselection, and long-form synthesis. They can investigate a topic across multiple sources and produce research\nreports that connect relevant facts, explain relationships, and organize findings into a coherent account.\nUnlike short-form question answering, this task requires an agent to decide which research directions deserve\n(a) Measuring where knowledge is covered\nSame task · Same reference tree\nReport A\nBroad, shallow\nBreadth\nDepth\nReport B\nFocused, continuous\nBreadth\nDepth\nReport C\nDistributed, uneven\nBreadth\nDepth\nSame flat coverage, different coverage patterns.\nTop Five Native Search LLMs\nBreadth\n30\n40\n50\n60\n70\nScore (%)\n40.86\nSonar\nReasoning Pro\n42.65\nGemini 3.1\nPro Preview\n43.13\nGPT-5.6\nSol\n49.06\nGrok 4.5\n53.09\nClaude\nOpus 5\nDepth\n30\n40\n50\n60\n70\nScore (%)\n49.44\nGemini 3.1\nPro Preview\n50.24\nSonar\nReasoning Pro\n53.69\nGrok 4.5\n53.96\nGPT-5.6\nSol\n61.91\nClaude\nOpus 5\n(b) Breadth and Depth Leaderboard\nFigure 1 Structured knowledge coverage in DRBench Pro. (a) Reports with the same flat coverage can exhibit\ndifferent coverage patterns over a shared reference tree. (b) Overview of five native search LLMs’ performance on\nDRBench Pro.\n1\narXiv:2611.34852v1  [cs.CL]  25 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34852.jpg",
+  "w": 640,
+  "h": 300
+ },
+ "2611.34929": {
+  "orgs": [
+   "UC San Diego",
+   "Princeton University",
+   "UC Irvine",
+   "NTU"
+  ],
+  "affils": [
+   "University of California, San Diego",
+   "Princeton University",
+   "University of California, Irvine",
+   "Nanyang Technological University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34929.jpg",
+  "w": 640,
+  "h": 276
+ },
+ "2611.34290": {
+  "orgs": [
+   "Nankai University",
+   "Joy Future Academy",
+   "ShanghaiTech University",
+   "Beihang University"
+  ],
+  "affils": [
+   "Nankai University",
+   "Joy Future Academy, JD",
+   "ShanghaiTech University",
+   "Beihang University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34290.jpg",
+  "w": 518,
+  "h": 440
+ },
+ "2611.34693": {
+  "orgs": [
+   "NUS"
+  ],
+  "affils": [
+   "Show Lab, National University of Singapore"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34693.jpg",
+  "w": 604,
+  "h": 440
+ },
+ "2611.34147": {
+  "orgs": [
+   "NVIDIA",
+   "strategies on document research and machine learning engineering across context budgets from 8K to 512K",
+   "Interest in model-driven context management has grown since. Research such as SideQuest (Kariyappa and Suh",
+   "introduced an experimental context-management mode (OpenAI Codex",
+   "We compared two context management strategies on document research and machine learning"
+  ],
+  "affils": [
+   "Technical Report\nLetting Models Manage Their Own Context:\nWhere We Stand\nAlessio Devoto\nAvinash Vem\nTara Safavi\nSanjay Kariyappa\nYu-Hsuan Tseng\nPaul Furgale\nRicardo Silveira Cabral\nAgent harnesses today manage context on the model’s behalf: when the window fills, the harness triggers\na compaction that summarizes the history. We study the alternative, model-driven context management,\nin which the model itself decides when and what to compact through a context API. We gave models\ncontrol over their own context in NOOA, NVIDIA’s open source agent harness, and compared the two\nstrategies on document research and machine learning engineering across context budgets from 8K to 512K\ntokens. Models that use the context API effectively reach higher accuracy, often with fewer input tokens,\nespecially at tight budgets: GPT 6.1 nearly triples its score at a 32K budget on OfficeQA Pro v2\n(21% →56%), and Kimi gains with up to 41% fewer input tokens. Models differ widely, however,\nin how often they use the API, how aggressively they compact, and when they start compacting, and\nprompt changes shift that timing. Finally, we show that inference engines can make model-driven\nedits cheaper: by reusing the KV cache of the unchanged suffix after an edit, we cut prefill compute\nby up to 15% per request with no measurable change in accuracy. Together, these results point\nto a new co-design frontier: models trained to manage their own context, served by inference engines that\nsupport KV cache editing.\n1. Introduction\nWhen we released NOOA (Furgale et al., 2026), NVIDIA’s open source agent harness, we built\nit around six core ideas. One was to give the model direct control over the harness through APIs,\nincluding context compaction. The motivation was simple: an agent should be able to decide\nwhich parts of its history to keep in context, which to summarize, and which to retrieve when\nneeded (Cabral and Furgale, 2026).\nInterest in model-driven context management has grown since. Research such as SideQuest (Kariyappa\nand Suh, 2026) and Context Language Models (Shao et al., 2026) explores the idea directly, and\nagent harnesses are starting to let models manage their own context too. Codex, for example, has\nintroduced an experimental context-management mode (OpenAI Codex, 2026b) that combines\nhistory and notes with a new_context tool for starting a fresh context window.\nThis raises practical questions: Can current models manage their own context effectively?\nDoes it improve task performance? And can inference engines turn model-managed\ncontext into cheaper inference?\nWe compared two context management strategies on document research and machine learning\nengineering tasks. In harness-driven context management, the default in today’s harnesses, the\nharness triggers compaction when the context window fills. In model-driven context management,\nthe model decides when and what to compact. Four takeaways stand out:\n© 2026 NVIDIA. All rights reserved.\nNVIDIA Technical Report\narXiv:2611.34147v1  [cs.AI]  25 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34147.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.34347": {
+  "orgs": [
+   "Tencent Robotics X Lab"
+  ],
+  "affils": [
+   "Tencent Robotics X Lab"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34347.jpg",
+  "w": 592,
+  "h": 440
+ },
+ "2611.33636": {
+  "orgs": [
+   "University of Seoul NAVER Cloud Kookmin University"
+  ],
+  "affils": [
+   "University of Seoul NAVER Cloud Kookmin University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33636.jpg",
+  "w": 640,
+  "h": 281
+ },
+ "2611.34821": {
+  "orgs": [
+   "Shanghai AI Lab",
+   "Singapore Management University"
+  ],
+  "affils": [
+   "LoopTitan\nLoopTitan: What Does Parameter\nRevisit Buy a Mixture-of-Experts?\nZichen Tian1,2 †, Yudong Lu1, Xuansheng Wu1, Na Zou1, Xia Hu1, Guanchu Wang1*, Qianru Sun2\n1Shanghai Artificial Intelligence Laboratory\n2Singapore Management University\nHomepage\nHugging Face\nGitHub"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34821.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.34813": {
+  "orgs": [
+   "University College London",
+   "NTU",
+   "University of Southern California",
+   "UC San Diego",
+   "Carnegie Mellon University",
+   "Johns Hopkins University",
+   "CUHK",
+   "UC Berkeley"
+  ],
+  "affils": [
+   "University College London",
+   "Nanyang Technological University",
+   "University of Southern California",
+   "University of California, San Diego",
+   "Carnegie Mellon University",
+   "Johns Hopkins University",
+   "Chinese University of Hong Kong",
+   "University of California, Berkeley"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34813.jpg",
+  "w": 640,
+  "h": 353
+ },
+ "2611.34944": {
+  "orgs": [
+   "UC Merced",
+   "Adobe Research",
+   "University of Pennsylvania"
+  ],
+  "affils": [
+   "University of California, Merced",
+   "Adobe Research",
+   "University of Pennsylvania"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34944.jpg",
+  "w": 449,
+  "h": 440
+ },
+ "2611.34079": {
+  "orgs": [
+   "NUS",
+   "CUHK"
+  ],
+  "affils": [
+   "National University of Singapore Tencent",
+   "The Chinese University of Hong Kong The University of Tokyo"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34079.jpg",
+  "w": 640,
+  "h": 312
+ },
+ "2611.33896": {
+  "orgs": [
+   "EPFL",
+   "University of Maryland",
+   "KAIST"
+  ],
+  "affils": [
+   "Looped Models are Fast Multi-Token Predictors\nAyhan Suleymanzade1,\nSean McLeish1,2,\nSehoon Kim3,\nJinwoo Kim3,\nAntoine Bosselut1\n1EPFL\n2University of Maryland\n3KAIST"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.33896.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.34601": {
+  "orgs": [
+   "Institut Polytechnique de Paris{nessim.benabbes"
+  ],
+  "affils": [
+   "Protectline",
+   "Télécom Paris, Institut Polytechnique de Paris{nessim.benabbes, sabri.mtibaa}@protectline.fr {duc-han.le, van-tam.nguyen}@telecom-paris.fr"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34601.jpg",
+  "w": 640,
+  "h": 204
+ },
+ "2611.34776": {
+  "orgs": [
+   "Tencent"
+  ],
+  "affils": [
+   "Jiebin Zhang, Saiyong Yang, Junqiang Zheng, Zhenghai Xue, Guanghua Yu *, Jianchen Zhu",
+   "Tencent Inc.",
+   "*Corresponding author"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34776.jpg",
+  "w": 433,
+  "h": 440
+ },
+ "2611.34943": {
+  "orgs": [
+   "University of Michigan",
+   "University of Virginia",
+   "Meta",
+   "Princeton University"
+  ],
+  "affils": [
+   "University of Michigan",
+   "University of Virginia",
+   "Meta",
+   "Princeton University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34943.jpg",
+  "w": 640,
+  "h": 388
+ },
+ "2611.34782": {
+  "orgs": [
+   "HKU"
+  ],
+  "affils": [
+   "University of Hong Kong Sun Yat-sen University Cardiff University University of Cambridge"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34782.jpg",
+  "w": 640,
+  "h": 232
+ },
+ "2611.34292": {
+  "orgs": [
+   "Nanjing University Fudan University City University of Hong Kong Tsinghua University",
+   "Shanghai AI Lab"
+  ],
+  "affils": [
+   "Nanjing University Fudan University City University of Hong Kong Tsinghua Universityhttps://github.com/Arsiuuu/WebVibe",
+   "University of Science and Technology of China Tencent Youtu Lab Shanghai AI Lab"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34292.jpg",
+  "w": 640,
+  "h": 288
+ },
+ "2611.34912": {
+  "orgs": [
+   "Great Bay University",
+   "University of Macau",
+   "HKUST"
+  ],
+  "affils": [
+   "GVC Lab, Great Bay University",
+   "Meituan",
+   "University of Macau",
+   "The Hong Kong University of Science and Technology"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34912.jpg",
+  "w": 640,
+  "h": 371
+ },
+ "2611.32606": {
+  "orgs": [
+   "Stanford University",
+   "UC Berkeley",
+   "NVIDIA",
+   "Northwestern University",
+   "a team is expected to solve problems beyond the",
+   "without accounting for the additional computation: a team may consume many times the tokens of one agent"
+  ],
+  "affils": [
+   "Recursive Collective Intelligence: Emergence on an\nEqual-Budget Ladder in Multi-Agent LLM Systems\nLixuan He1\nShengqu Cai1\nFang Wu1\nShikang Zheng2\nLiwei Jiang3\nManling Li4\nYi Ma2\nLi Fei-Fei1\nLeonidas Guibas1\nGordon Wetzstein1\nYejin Choi1\nYining Hong1\n1Stanford University\n2University of California, Berkeley\n3NVIDIA\n4Northwestern University\n lixuan27.github.io/RCI\n§ github.com/lixuan27/RCI-official\n{ lixuan27.github.io/RCI/blog\nW lixuan27.github.io/RCI/playground\nLarge language models increasingly work as teams of agents, and a team is expected to solve problems beyond the\nreach of any single member. Most evaluations credit a team for outperforming a single agent, without accounting\nfor the additional computation: a team may consume many times the tokens of one agent, and a plain vote over\nindependent answers already explains most of the reported gain. Two questions therefore remain open: When does\ninteraction itself make a group smarter, and can a group improve its next generation by learning from its own work?\nWe answer both with the equal-budget ladder, which grades a group against independent agents at three levels:\noutperforming a single agent, a compute-matched majority vote, and compute-matched pass@𝑛. On this ladder we\ndefine Recursive Collective Intelligence (RCI) as a group whose own output, without a teacher or external labels,\nmakes its next generation smarter at equal cost. Three findings follow. First, interaction improves collective intel-\nligence when it moves information across agents: forwarding split facts lifts groups above pass@𝑛at three model\nscales, by about a third at 27B. Second, organization emerges spontaneously: identical 27B agents form hubs and\nimprove accuracy by 18 percentage points; encoding their organization in a prompt enables them to reach level 3\nat less than half the token budget in a descriptive comparison. Third, groups recursively improve themselves: Two\nlabel-free generations progressively climb the ladder, the second 9B generation surpassing both pass@𝑛and a con-\ntrol trained on base-model turns; on PlanBench, HiddenBench and Hanabi, each generation outperforms its prede-\ncessor on unseen problems for four to six generations. A group therefore outperforms its members when it forwards\nuseful information more efficiently than it spends tokens on coordination, and learns to do so from its own work.\nG0\nG1\nG2\nG3\n0\n0.2\n0.4\n0.6\n0.8\n1\ncollective training\nstays above single-agent\nself-training in every\ngeneration\ngeneration\naccuracy (PlanBench, HiddenBench)\nPlanBench\nHiddenBench\nHanabi (right axis)\ncollective training\ncollective training\nrecursive training\nany final plan of four base agents\nsingle-agent self-training\nnon-recursive control\nvote of four base agents\nreleased generation\n0\n1\n2\n3\n4\n5\nHanabi challenge score\nFigure 1: Recursive collective intelligence. Each generation trains on its predecessor’s verified outputs, without labels;\ndiamonds mark releases, and PlanBench is drawn through G2. From G1 on, the group on PlanBench exceeds any final plan of\nthe four base agents. On HiddenBench, it rises far above the vote of four base agents and above single-agent self-training with\nthe same caps. On Hanabi (right axis), recursive training rises above a non-recursive control (Section 7.4).\narXiv:2611.32606v1  [cs.MA]  24 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32606.jpg",
+  "w": 640,
+  "h": 281
+ },
+ "2611.33102": {
+  "orgs": [
+   "Tufa Labs",
+   "Harvard University",
+   "University of Illinois Urbana-Champaign"
+  ],
+  "affils": [
+   "Tufa Labs",
+   "Harvard University {jsheng2,azanette}@andrew.cmu.edu, jgu17@illinois.edu",
+   "University of Illinois Urbana-Champaign"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.33102.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.32884": {
+  "orgs": [
+   "NTU"
+  ],
+  "affils": [
+   "DeCLaRe Lab, Nanyang Technological University, Singapore"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32884.jpg",
+  "w": 330,
+  "h": 188
+ },
+ "2611.32183": {
+  "orgs": [
+   "University of Washington",
+   "NUS",
+   "HKU",
+   "University of Rochester"
+  ],
+  "affils": [
+   "Guanzheng Chen4",
+   "Disen Lan6",
+   "Yafu Li9",
+   "Yejin Choi11†\\boldsymbol{\\dagger}",
+   "1University of Washington",
+   "4National University of Singapore",
+   "7The University of Hong Kong",
+   "10University of Rochester",
+   "∗\\boldsymbol{\\ast} Project lead"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32183.jpg",
+  "w": 640,
+  "h": 395
+ },
+ "2611.32554": {
+  "orgs": [
+   "HKUST",
+   "Tencent",
+   "Hong Kong Polytechnic University",
+   "Sun Yat-sen University yangcaoai.github.io/PartAgent_ProjectPage/"
+  ],
+  "affils": [
+   "Hong Kong University of Science and Technology",
+   "Tencent",
+   "Hong Kong Polytechnic University",
+   "Sun Yat-sen University yangcaoai.github.io/PartAgent_ProjectPage/"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32554.jpg",
+  "w": 640,
+  "h": 362
+ },
+ "2611.33148": {
+  "orgs": [
+   "University of Technology Nuremberg",
+   "NVIDIA"
+  ],
+  "affils": [
+   "University of Technology Nuremberg",
+   "NVIDIA"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.33148.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.32973": {
+  "orgs": [
+   "University of Tokyo",
+   "reports. This setting motivates our central research question"
+  ],
+  "affils": [
+   "SpecEngineeringBench: Evaluating Coding\nAgents as Autonomous Specification\nEngineers\nXingjian Wang1, Shijian Wang2, Minghao Liu3, Ji Zou2, Zetao Yang1, Xinping Lei1, Yiming\nLiang1, Shen Yan2, Enduo Zhao4, Xiaoyang Shen1, Weihao Xuan1,3, Jiaheng Liu2, Ge Zhang1\n1TokenWave AI†, 2Independent Researcher, 3The University of Tokyo, 4Monolith Management, US\nAutonomous specification engineering requires coding agents to translate functional requirements into\nexecutable tests and use the results to discover and validate defects. However, existing benchmarks\nevaluate coding agents on explicitly specified test generation tasks, commonly providing an issue\ndescription, a designated test entry point, or files to inspect, leaving the ability to determine what to\ntest and where to investigate insufficiently evaluated. Relying on such clues bypasses the challenge of\nmapping requirements to implementations and proactively uncovering unknown defects. We propose\nSpecEngineeringBench, comprising 100 instances from 78 open-source Python repositories across\n16 application categories, with multiple recorded defects in each instance. Two independent tasks\nevaluate complementary capabilities: generating test suites and discovering defects through execution\nanalysis. The evaluation combines test validity, defect detection, and coverage with localization\nprecision and recall. Across seven frontier coding agents, results reveal that test validity and coverage\ndecouple from defect exposure: agents achieve a 91.47% Head Pass Rate and 80.48% Change-focused\nCoverage alongside a 26.36% Fail-to-Pass Rate, while localization recall drops from 78.11% at the file\nlevel to 51.29% at the function level. Autonomous test generation improves file, function, and hunk\nlocalization recall by 4.99, 2.77, and 2.69 percentage points over relying solely on existing repository\ntest suites.\nCorrespondence: Themaoqiu@gmail.com\nDate: November 25, 2026\nWebsite: https://tokenwave-ai.github.io/SpecEngineeringBench-Page/\nCode: https://github.com/TokenWave-AI/SpecEngineeringBench\nDataset: https://huggingface.co/datasets/Tokenwave-AI/SpecEngineeringBench\n1\nIntroduction\nCoding agents driven by large language models (LLMs) increasingly perform complex software engineering\ntasks (Yang et al., 2024; Wang et al., 2025b; Chen et al., 2026). As agents write and modify production code,\nspecification engineering verifies whether implementations satisfy intended behavioral requirements (Liang et al.,\n2026b; Rastenis et al., 2026). In realistic software development, assessing a prerelease candidate is fundamentally\nan exploratory, multi-defect investigation: specification engineers are not handed localized bug reports or\nspecific failure traces; rather, they must independently interpret high-level product specifications (Long et al.,\n2026; Liang et al., 2026b), navigate codebases, author discriminating test cases, and write reproducible defect\nreports. This setting motivates our central research question:\nGiven only functional specifications and an uninspected repository, can coding agents autonomously\nuncover, localize, and substantiate software defects with reproducible evidence?\n†Located in Palo Alto, United States.\n1\narXiv:2611.32973v1  [cs.SE]  24 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.32973.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.32736": {
+  "orgs": [],
+  "affils": [
+   "November 24, 2026\nQwen-Image-HD: Autoregressive Diffusion\nfor High Definition Image Generation\nZihao Liu, Zekai Zhang, Shengming Yin, Zikai Zhou, Donghao Zhou,\nChenyang Zhu, Lihan Jiang, Ningyuan Tang, Bingxuan Zhao, Yanran Zhang,\nYan Shu, Zhening Liu, Jiahao Li, Jie Zhang, Kaiyuan Gao, Kun Yan,\nQihang Ai, Rui Song, Shuo Cao, Xiao Xu, Xiaoyue Chen, Yuxiang Chen,\nZhendong Wang, Zhouyang Li, Bo Zheng, Jun Zhou, Xiu Li, Chenfei Wu∗"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32736.jpg",
+  "w": 640,
+  "h": 343
+ },
+ "2611.31974": {
+  "orgs": [
+   "Tencent ARC Lab",
+   "Beijing Jiaotong University"
+  ],
+  "affils": [
+   "Coding4Games: Can Modern Coding Agents\nPlay Modern Video Games?\nShifang Zhao1,2, Haoyu Wang3, Yuyang Yin3, Dong Chen4, Xingyilang Yin1,2, Yunkang Tao2,\nHonghao Chen1, Guangzhi Wang1, Yiran Wang1, Junfu Pu1, Cheng Cheng1, Xiaodong Cun1,2,†,\nYing Shan1\n1Tencent ARC Lab, 2GVC Lab, Great Bay University\n3Beijing Jiaotong University, 4Nanjing University\n†Corresponding author\nProject Page: https://coding4game.github.io\n(b) Coding Agent Benchmark\n(a) GUI Agent Benchmark\n(c) Coding4Games   Performance\n50\n0\n52.6\n44.0\n37.7\n31.6\n30.8\n26.0\n25.8\n17.8\n17.0\n13.1\n12.5\n12.1\nGPT-6 \nAstra\nClaude \nOpus 5.5\nClaude \nOpus 5\nQwen \n3.8 Flash\nGemini \n3.8 Flash\nGPT-5.6 \nSol\nGPT-5.6 \nTerra\nClaude \nSonnet 5\nDeepSeek \nV4.1 Flash\nGLM-5.3 \nFlash\nQwen \n3.8-27B\nKimi \nK3\nGUI 26.6\nHuman 97.2\nFigure 1 From playing games directly to building standalone game-playing programs. (a) In prior computer-use benchmarks,\nagents play directly through the GUI, querying a language model to determine each action. (b) Coding4Games introduces a different\nparadigm: a coding agent interacts with the standard player interface to develop a game-playing program. Once finished, the program\nis frozen and plays autonomously without language-model inference. (c) Average normalized performance of twelve coding agents,\ncompared with human and GUI-agent baselines across 15 games."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31974.jpg",
+  "w": 640,
+  "h": 346
+ },
+ "2611.33457": {
+  "orgs": [
+   "NUS",
+   "University of Science and Technology of China"
+  ],
+  "affils": [
+   "Show Lab, National University of Singapore ;",
+   "University of Science and Technology of China ; * Corresponding author"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33457.jpg",
+  "w": 640,
+  "h": 328
+ },
+ "2611.32198": {
+  "orgs": [
+   "University of Science and Technology of China Microsoft Research",
+   "Chinese Academy of Sciences"
+  ],
+  "affils": [
+   "\n\nRuicheng Wang\n\n  \nLinlin Xin\n\n  \nSicheng Xu\n\n  \nJianfeng Xiang\n\n  \nZelong Lv\n\n  \nYu Deng\n\n  \nYue Dong\n\n  \nGuangzhong Sun\n\n  \nTong Zhang\n\n  \nJiaolong Yang\n\n  \nUniversity of Science and Technology of China  Microsoft Research\n\n  \nUniversity of Chinese Academy of Sciences  Tsinghua University\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32198.jpg",
+  "w": 640,
+  "h": 405
+ },
+ "2611.32067": {
+  "orgs": [
+   "Great Bay University 2 Intellindust AI Lab"
+  ],
+  "affils": [
+   "\n\nSirui Liang1,2   Xuanlong Yu2   Longfei Liu2   Xiaodong Cun1   Xi Shen2 \n\n\n\n1 GVC Lab, Great Bay University   2 Intellindust AI Lab \n\n\nProject Page: https://siruuui.github.io/LoopDVR/ \n\nCode: https://github.com/Intellindust-AI-Lab/LoopDVR\n††thanks: Corresponding author."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32067.jpg",
+  "w": 640,
+  "h": 292
+ },
+ "2611.32462": {
+  "orgs": [
+   "Shanghai Jiao Tong University",
+   "Peking University",
+   "Renmin University of China",
+   "KlingAI Research",
+   "HKUST",
+   "HKU"
+  ],
+  "affils": [
+   "School of Artificial Intelligence, Shanghai Jiao Tong University",
+   "Peking University",
+   "Renmin University of China",
+   "KlingAI Research",
+   "SJTU",
+   "HKUST",
+   "HKU",
+   "NJU",
+   "THU"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32462.jpg",
+  "w": 310,
+  "h": 440
+ },
+ "2611.32820": {
+  "orgs": [
+   "KAIST"
+  ],
+  "affils": [
+   "KAIST",
+   "POSTECHProject page: https://residual-guidance.github.io"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32820.jpg",
+  "w": 537,
+  "h": 440
+ },
+ "2611.31752": {
+  "orgs": [],
+  "affils": [
+   "Separating Measurement Failures from Defence Failures in Split\nLanguage-Model Privacy\nGeorgios Politis\nSetloop.io\ngeo.politis@gmail.com\nEvangelos Pappas\nSetloop.io\nevanz.pappas@gmail.com"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31752.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.32199": {
+  "orgs": [
+   "MIT",
+   "Harvard University"
+  ],
+  "affils": [
+   "Cambridge-Boston Alignment Initiative",
+   "Massachusetts Institute of Technology",
+   "Harvard University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32199.jpg",
+  "w": 320,
+  "h": 320
+ },
+ "2611.32617": {
+  "orgs": [
+   "Tencent"
+  ],
+  "affils": [
+   "VenusOCR Team, Tencent Inc."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32617.jpg",
+  "w": 640,
+  "h": 298
+ },
+ "2611.32057": {
+  "orgs": [
+   "NVIDIA"
+  ],
+  "affils": [
+   "\n\nShiqing Fan\n\n  \nDeepak Narayanan\n\n  \nJimmy Zhang\n\n  \nJiangfei Duan\n\n  \nPrajwal Singhania\n\n  \nHaoran Zhang\n\n  \nWanying Wang\n\n  \nPhilip Monk\n\n  \nXuwen Chen\n\n  \nJared Casper\n\n  \nJun Yang\n\n  \nMohammad Shoeybi\n\n  \nBryan Catanzaro\n\n  \nVijay Anand Korthikanti\nNVIDIA\n††thanks: Leads the effort."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32057.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.32816": {
+  "orgs": [
+   "MVP Lab & Imperial College London"
+  ],
+  "affils": [
+   "SpatialArena: Where Do Geometric Foundation Models Stand?\nYu Chen†\nHaosen Yang\nSu Ee Tan\nZhensong Zhang\nJifei Song\nJiankang Deng#\nMVP Lab & Imperial College London"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32816.jpg",
+  "w": 640,
+  "h": 354
+ },
+ "2611.32539": {
+  "orgs": [
+   "General Reasoning"
+  ],
+  "affils": [
+   "General Reasoning, Inc.",
+   "Correspondence to hello@gr.inc."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32539.jpg",
+  "w": 640,
+  "h": 200
+ },
+ "2611.32445": {
+  "orgs": [
+   "NVIDIA",
+   "Seoul National University",
+   "Stanford University"
+  ],
+  "affils": [
+   "NVIDIA",
+   "Seoul National University",
+   "Stanford University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32445.jpg",
+  "w": 640,
+  "h": 237
+ },
+ "2611.33137": {
+  "orgs": [
+   "TU Munich"
+  ],
+  "affils": [
+   "Technical University of Munich"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33137.jpg",
+  "w": 640,
+  "h": 273
+ },
+ "2611.31895": {
+  "orgs": [
+   "DP Technology 22PKU 33USTC 44HUST 55NTU 66SJTU 77Ant Group"
+  ],
+  "affils": [
+   "\n\nKai Zeng1,2,∗1,2,*\n\n  \nRuichuan An2,∗2,*\n\n  \nZhen Fang33\n\n  \nXi Fang1,†1,\\dagger\n\n  \nHan Lyu11\n\n  \nMoran Li44\n\nYingchen Yu55\n\n  \nYifan Dai66\n\n  \nBohan Zeng22\n\n  \nQuanqing Xu77\n\n  \nZhengzhou Zhu22\n\n  \nWentao Zhang2,‡2,\\ddagger\n\n\n11DP Technology 22PKU 33USTC 44HUST 55NTU 66SJTU 77Ant Group\n\n\n∗*Equal contribution †\\daggerProject leader ‡\\ddaggerCorresponding author\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31895.jpg",
+  "w": 640,
+  "h": 316
+ },
+ "2611.32782": {
+  "orgs": [],
+  "affils": [
+   "Measuring Layer-wise Intrinsic Dimensionality\nof FFNs in LLMs via PCA\nDaehee Kim\nNAVER Cloud\ndaehee.k@navercorp.com"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32782.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.33020": {
+  "orgs": [
+   "CMU",
+   "NUS"
+  ],
+  "affils": [
+   "CMU",
+   "Northwestern",
+   "UIUC",
+   "UCSD",
+   "WSU",
+   "ND",
+   "UR",
+   "NUS*Equal contributionProject page: https://zhangce01.github.io/grape-bench/Code: GRAPE-BenchDatasets: GRAPE-Bench-SyntheticGRAPE-Bench-Realworld"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33020.jpg",
+  "w": 394,
+  "h": 333
+ },
+ "2611.32828": {
+  "orgs": [
+   "NUS",
+   "Management University"
+  ],
+  "affils": [
+   "SAVERA: Bridging Frozen Vision and Language Models\nvia Sparse Alignment and Visual Evidence Reuse\nJiajun Shen*1, Chuancheng Shi*2, Jiayi Lyu1, Yanpeng Sun3, Fei Shen†1, Tat-Seng Chua1\n1National University of Singapore, NExT++ Research Centre, 2University of Sydney, 3Singapore\nManagement University"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32828.jpg",
+  "w": 640,
+  "h": 246
+ },
+ "2611.31977": {
+  "orgs": [],
+  "affils": [
+   "Distill to Loop: Turning Pretrained Diffusion Transformers\ninto Looped Models with Adjustable Depth\nChenru Wang\nShengwei An†\nVirginia Tech\nwinterccccc@gmail.com\nswan@vt.edu\n§ Code\nModels\nÑ Project page\nFigure 1. Samples of the Dooop student distilled from Z-Image."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31977.jpg",
+  "w": 640,
+  "h": 256
+ },
+ "2611.30325": {
+  "orgs": [
+   "Stanford University",
+   "Google DeepMind"
+  ],
+  "affils": [
+   "Stanford University",
+   "Google DeepMind"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30325.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.30634": {
+  "orgs": [
+   "Beijing University of Posts and Telecommunications",
+   "ColorfulClouds Technology"
+  ],
+  "affils": [
+   "Beijing University of Posts and Telecommunications, Beijing, China",
+   "ColorfulClouds Technology Co., Ltd., Beijing, China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30634.jpg",
+  "w": 640,
+  "h": 392
+ },
+ "2611.31154": {
+  "orgs": [
+   "HKU",
+   "Yale University"
+  ],
+  "affils": [
+   "Attention Latent Feedback\nXuyuan Xiong1,∗, Siyu Chen2,∗, Mengzhao Chen1, Yue Su1, Zhuoran Yang2, Ping Luo1,†, Xihui Liu1,†\n1MMLab, The University of Hong Kong\n2Yale University\n∗Equal contribution: xiongxuyuan@connect.hku.hk, siyu.chen.sc3226@yale.edu\n†Corresponding: pluo.lhi@gmail.com, xihuiliu@hku.hk\nA B S T R AC T\nDuring autoregressive decoding, the deeper representations of the previous token have already been\ncomputed, yet shallow layers at the current token cannot read them directly because standard\nself-attention connects positions only at the same depth. We introduce Attention Latent Feedback\n(ALF), an architecture that allows every sublayer to attend to the outputs of the deeper layers at the\nprevious position. Training unrolls this cross-position recurrence into two parallel passes, whereas\ndecoding remains single-pass using cached previous-token states. Across mixture-of-experts models\nwith up to 4.0B parameters, ALF lowers held-out loss by 0.022–0.024 nats over the standard residual\nwith about 1.1% decoding FLOP overhead, and consistently outperforms prior final-state feedback\nacross all three scales on both standard and attention residual backbones. On MoE-1.6B, ALF\nmatches a 1.38× larger baseline token budget, and on MoE-4.0B it lifts average accuracy across\nseventeen downstream benchmarks from 45.1% to 47.0%. Analysis further reveals that intermediate\nand nearby deeper layers drive most of this benefit, allowing a fixed nearest-window variant to retain\n89%–94% of the gain at linear read cost while learned attention widens its margin with scale.\nDate: November 24, 2026\nCode: https://github.com/xjxyys/ALF\n(a) Attention Latent Feedback\nEmbedding\nBlocks 1, . . . , b−1\nAttention\nFeed-forward\nBlock L\nEmbedding\nWE\nBlocks 1, . . . , b−1\nAttention\nFeed-forward\nAttention\nAttention\nBlock b\n...\nzt−1\n+\nzt−1\nBlock b\nto later sublayers\n+\n+\nposition t −1\nposition t\nStandard residual\nAttention residual\n44\n45\n46\n47\n48\nAverage accuracy (%)\n45.1\n46.3\n47.0\n45.7\n46.9\n47.4\n(b) Downstream accuracy\nBaseline\n+ FBT\n+ ALF\nFigure 1\nAttention Latent Feedback and downstream accuracy. (a) Each sublayer uses\nattention (orange) to weight previous-position outputs from its own depth upward and mix them with\nthe current stream, while the projected top state enters the embedding sum. (b) Domain-balanced\naccuracy on seventeen tasks for MoE-4.0B on a zoomed axis, comparing ALF with the Full-bandwidth\nTransformer (FBT); Tables 4 and 11 report full results.\n1\narXiv:2611.31154v1  [cs.LG]  23 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31154.jpg",
+  "w": 640,
+  "h": 246
+ },
+ "2611.31094": {
+  "orgs": [
+   "NUS",
+   "Independent Researcher"
+  ],
+  "affils": [
+   "National University of Singapore",
+   "Independent Researcher"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31094.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.30013": {
+  "orgs": [
+   "NTU",
+   "HKUST",
+   "Chinese Academy of Sciences"
+  ],
+  "affils": [
+   "Peking University Nanyang Technological University Northeastern University",
+   "Shanghai Jiao Tong University The Hong Kong University of Science and Technology",
+   "Institute of Automation, Chinese Academy of Sciences Tencent Hunyuan"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30013.jpg",
+  "w": 640,
+  "h": 221
+ },
+ "2611.31358": {
+  "orgs": [
+   "NVIDIA"
+  ],
+  "affils": [
+   "\n\nNVIDIA\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31358.jpg",
+  "w": 592,
+  "h": 440
+ },
+ "2611.30662": {
+  "orgs": [
+   "Tencent"
+  ],
+  "affils": [
+   "\n\nBinhui Xie∗, Jinmin Li∗, Haomiao Tang∗, Guangting Wang∗†\n\n\n\nSong Jin, Jianwei Zhu, Fengyun Rao‡, Jing LYU\n\n\n\n\nWeChat Vision, Tencent Inc.\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30662.jpg",
+  "w": 640,
+  "h": 301
+ },
+ "2611.30962": {
+  "orgs": [
+   "Alibaba Token Hub",
+   "Zhejiang University",
+   "Shanghai Jiao Tong University"
+  ],
+  "affils": [
+   "Alibaba Token Hub, Alibaba Group",
+   "Zhejiang University",
+   "Shanghai Jiao Tong University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30962.jpg",
+  "w": 624,
+  "h": 440
+ },
+ "2611.30965": {
+  "orgs": [
+   "Shanghai AI Lab",
+   "CUHK",
+   "Fudan University The University of Sydney"
+  ],
+  "affils": [
+   "Shanghai Jiao Tong University Shanghai Artificial Intelligence Laboratory",
+   "The Chinese University of Hong Kong The University of Science and Technology of China",
+   "Fudan University The University of Sydney *Corresponding author"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30965.jpg",
+  "w": 640,
+  "h": 387
+ },
+ "2611.30844": {
+  "orgs": [],
+  "affils": [
+   "DyLoMo-DiT: Dynamic Looped Mixture-of-Experts Diffusion Transformers\nLernie Li\nYuanliu Liu\nPengfei Xiong\nWei Zhang\nCode\ngithub.com/OneBoxCream/DyLoMo-DiT\nWeights\nhuggingface.co/OneCreamBox\nProject page\noneboxcream.github.io/DyLoMo-DiT\nFigure 1. Selected text-to-image samples from DyLoMo-DiT (15.48B total parameters, 1.05B active per image token). Prompts are listed in\nApp. A."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30844.jpg",
+  "w": 273,
+  "h": 440
+ },
+ "2611.30017": {
+  "orgs": [],
+  "affils": [
+   "November 2026\nOWEBench: A long-horizon benchmark for\nmeasuring real-world engineering\nJacob Cole • Martin Dimakis • Victor Barres • Bertie Vidgen • Edward Hu • Jason Wei\nresearch@mercor.com • Mercor\na Code\nƁ Dataset\nÔ Leaderboard"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30017.jpg",
+  "w": 640,
+  "h": 403
+ },
+ "2611.30597": {
+  "orgs": [
+   "NTU"
+  ],
+  "affils": [
+   "Nanyang Technological University Shanghai Jiao Tong University Wuhan University The Chinese University of Hong Kong*Equal contribution †Corresponding author"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30597.jpg",
+  "w": 395,
+  "h": 152
+ },
+ "2611.31619": {
+  "orgs": [],
+  "affils": [
+   "What a Forecasting Leaderboard Can Establish:\nResolution Reporting for Zero-Shot Time-Series\nModels\nArya Sikder\naryasikder17@gmail.com\nSriram Pillutla\nsriramp.iitm@gmail.com"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31619.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.30771": {
+  "orgs": [
+   "Tsinghua University",
+   "NUS"
+  ],
+  "affils": [
+   "\n\nKuan Zhang1,*, Zhihao Yang2,*, Yukun Chen2,*, Xingyiliang Yin3, Mingyu Ouyang4, Yue Su5,\n\nXiangnan Wu2, Jiaming Li2, Longze Chen2, Run Luo4, Zirong Chen1, Lu Wang1,†, Yiming Li1,†\n\n1Tsinghua University  2University of the Chinese Academy of Sciences\n\n3University of Macau  4National University of Singapore  5University of Hong Kong\n\n\n*Equal contribution.  †Co-corresponding authors\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30771.jpg",
+  "w": 640,
+  "h": 213
+ },
+ "2611.31237": {
+  "orgs": [
+   "KAIST"
+  ],
+  "affils": [
+   "1NAVER Cloud, 2Korea Advanced Institute of Science and Technology"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31237.jpg",
+  "w": 541,
+  "h": 440
+ },
+ "2611.31076": {
+  "orgs": [
+   "Université Paris-Saclay",
+   "University of New South Wales",
+   "Mohamed bin Zayed University of Artificial Intelligence",
+   "CUHK"
+  ],
+  "affils": [
+   "AgroParisTech, Université Paris-Saclay",
+   "The University of New South Wales",
+   "Mohamed bin Zayed University of Artificial Intelligence",
+   "The Chinese University of Hong Kong"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31076.jpg",
+  "w": 640,
+  "h": 360
+ },
+ "2611.30714": {
+  "orgs": [
+   "Tsinghua University",
+   "Monash University",
+   "Renmin University of China"
+  ],
+  "affils": [
+   "Tsinghua University",
+   "Monash University",
+   "Renmin University of China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30714.jpg",
+  "w": 390,
+  "h": 290
+ },
+ "2611.31118": {
+  "orgs": [],
+  "affils": [
+   "TIDESAND: PERFORMANCE-ACCURATE SANDBOX MULTIPLEXING\nFOR LLM AGENTS\nShulu Li * 1 Hanchen Li * 1 Xiaokun Chen 2 Qiuyang Mang 1 Hanfei Chen 3 Jacky Kwok 4 Hanfei Yu 1\nAlvin Cheung 1 Edward A. Lee 1 Joseph E. Gonzalez 1 Ion Stoica 1"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31118.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.30835": {
+  "orgs": [
+   "Yale University",
+   "University of Oxford",
+   "University of Cambridge",
+   "Fudan University",
+   "Wake Forest University",
+   "City University of Hong Kong (Dongguan)"
+  ],
+  "affils": [
+   "Yale University, New Haven, Connecticut, USA",
+   "University of Oxford, Oxford, United Kingdom",
+   "University of Cambridge, Cambridge, United Kingdom",
+   "Fudan University, Shanghai, China",
+   "Wake Forest University, Winston-Salem, North Carolina, USA",
+   "City University of Hong Kong (Dongguan), Dongguan, China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30835.jpg",
+  "w": 640,
+  "h": 434
+ },
+ "2611.31015": {
+  "orgs": [
+   "Technion – Israel Institute of Technology Google Research"
+  ],
+  "affils": [
+   "Technion – Israel Institute of Technology Google Research"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31015.jpg",
+  "w": 640,
+  "h": 177
+ },
+ "2611.31209": {
+  "orgs": [
+   "University of Maryland",
+   "Google"
+  ],
+  "affils": [
+   "University of Maryland, College Park",
+   "Googlehttp://WorldLatent.github.io"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31209.jpg",
+  "w": 640,
+  "h": 241
+ },
+ "2611.30207": {
+  "orgs": [
+   "University of Michigan",
+   "Tulane University",
+   "Georgia Institute of Technology",
+   "University College London",
+   "UC Los Angeles",
+   "New York University"
+  ],
+  "affils": [
+   "AMD",
+   "University of Michigan",
+   "Tulane University",
+   "Georgia Institute of Technology",
+   "University College London",
+   "University of California, Los Angeles",
+   "New York University"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30207.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.31184": {
+  "orgs": [
+   "Adobe Research University of Virginia Project Page kiteretsu77.github.io/CodecOPSD_website"
+  ],
+  "affils": [
+   "Adobe Research University of Virginia Project Page kiteretsu77.github.io/CodecOPSD_website"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31184.jpg",
+  "w": 395,
+  "h": 334
+ },
+ "2611.30986": {
+  "orgs": [
+   "HKUST"
+  ],
+  "affils": [
+   "Hong Kong University of Science and Technology"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30986.jpg",
+  "w": 367,
+  "h": 440
+ },
+ "2611.30157": {
+  "orgs": [
+   "inSIght Labs",
+   "HKUST",
+   "China University of Mining and Technology-Beijing 8Karlsruhe Institute of Technology 9Politecnico di Torino",
+   "Singapore 11The Chinese University of Hong Kong",
+   "KU Leuven 13King Abdullah University of Science and Technology 14University of Trento 15inSIght Labs",
+   "Academic Advisors. Industrial collaborators"
+  ],
+  "affils": [
+   "inSIght Labs\nUUBench Preview\nUUBench:\nUnderstanding the Unspoken toward\nFull-Duplex Multimodal Interaction\nYe Pan1,2,15,†, Chenfei Liao1,2,15,†, Bin Ren4, Hanqian Li2, Haocong He5, Jialei Chen6, Jinlin He7,15,\nKunyu Peng8, Mengyu Jin9, Shijie Li10, Wenqian Cui11,15, Yuanqi Yao12, Yuqian Fu13, Kailong Ruan15,‡,\nYuan Gao15,‡, Wei Wang15,‡, Xuming Hu2,3,§, Irwin King11,§, Nicu Sebe14,§, Xu Zheng1,15,*\n1Great Bay University 2The Hong Kong University of Science and Technology (Guangzhou)\n3The Hong Kong University of Science and Technology 4EPFL 5Shanghai Jiao Tong University 6Nagoya University\n7China University of Mining and Technology-Beijing 8Karlsruhe Institute of Technology 9Politecnico di Torino\n10Agency for Science, Technology and Research (A*STAR), Singapore 11The Chinese University of Hong Kong\n12KU Leuven 13King Abdullah University of Science and Technology 14University of Trento 15inSIght Labs\n†Core contributors. Other contributors follow the report’s A–Z order.\n§Academic Advisors. ‡Industrial collaborators.\n*Correspondence: zhengx@gbu.edu.cn\nv0.1 Preview — Work in Progress\nNovember 2026"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30157.jpg",
+  "w": 640,
+  "h": 275
+ },
+ "2611.31198": {
+  "orgs": [
+   "UC Los Angeles"
+  ],
+  "affils": [
+   "University of California, Los Angeles",
+   "AWS GenAI"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31198.jpg",
+  "w": 409,
+  "h": 440
+ },
+ "2611.29338": {
+  "orgs": [
+   "Tsinghua University",
+   "Tencent Hunyuan"
+  ],
+  "affils": [
+   "Tsinghua University",
+   "Tencent Hunyuanhttps://nanoastra.github.io/"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29338.jpg",
+  "w": 441,
+  "h": 440
+ },
+ "2611.29238": {
+  "orgs": [
+   "UC San Diego"
+  ],
+  "affils": [
+   "GameAnything: From Any Inspirations to\nPlayable Game Worlds\nWenyi Wu1,*, Siqi Liu1,*, Yuru Feng1,*, Zixuan Song1, Aayush Salvi1, Sibo Zhu1, Kun Zhou2,†,\nBiwei Huang1,2\n1 University of California, San Diego, 2 Aether AI\n*Equal contribution; †Corresponding author\nAI-driven game development holds the potential to transform diverse human inspirations into interac-\ntive experiences. However, existing systems and benchmarks primarily focus on explicit development\nspecifications, with limited support for adapting multimodal references and evaluating actual game-\nplay experiences. We introduce GameAnything, an open-source agentic platform that transforms\nmultimodal inspirations into playable extensions of existing games through iterative development.\nGameAnything integrates coding agents with an independent playtesting critic, persistent develop-\nment state, and reusable experience memory to support continuous refinement. We further present\nGameAnything-Bench, a benchmark spanning diverse reference modalities, game creation objectives,\nand gaming environments, with exploratory gameplay testing to assess both functional correctness\nand gameplay quality. Evaluations of nine coding agent configurations reveal that current agents\ncan adapt reference content but still struggle with playable interactions and precise modifications.\nMoreover, multimodal references improve content fidelity, while iterative refinement yields substantial\nbut varying improvements across agents. These findings highlight both the potential and remaining\nchallenges of inspiration-driven game development.\nKeywords: Agentic Game Development, Coding Agent, Recursive Self-Improvement\nDate: November 21, 2026\nCorrespondence: franciskunzhou@gmail.com\nProject: huggingface.co/spaces/GameAnything/GameAnything\nCode: github.com/AetherLabsAI/GameAnything\nBenchmark: github.com/AetherLabsAI/GameAnything-Bench\nEarly Access: huggingface.co/spaces/GameAnything/GameAnything-Trial\nContribute: huggingface.co/spaces/GameAnything/gameanything-submit\n1\nIntroduction\nAI-driven game generation holds the potential to make game development more accessible and effi-\ncient, enabling a broader range of creators to transform their ideas into interactive experiences. Recent\nadvances in large language models have further enabled coding agents to generate playable games\nand modify existing game projects from natural language instructions Wang et al. [2023] Sudhakaran\net al. [2023]. However, game creation often begins with inspiration from novels, photographs, films,\ngameplay videos, or personal experiences rather than explicit specifications. To this end, agents must\nidentify transferable mechanisms, visual characteristics, entities, and relationships from reference\ncontent, and integrate them into coherent game worlds, gameplay mechanics, and narratives while\n1\narXiv:2611.29238v1  [cs.AI]  22 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.29238.jpg",
+  "w": 344,
+  "h": 440
+ },
+ "2611.29355": {
+  "orgs": [
+   "University of Manchester",
+   "Wuhan University",
+   "Getty Conservation Institute",
+   "武汉大学WUHAN UNIVERSITY"
+  ],
+  "affils": [
+   "TECHNICAL REPORT\nPolytropos: What Do Vision-Language\nModel Descriptions Make of a Cultural\nObject?\nYuechen Jiang1, Enze Zhang2,3, Yuyan Wang1, Mohsinul Kabir1, Chenying Lin2,3, Sijia Li2,3,\nQianqian Xie2,3, Stavroula Golfomitsou4, Konstantinos Arvanitis1, Sophia Ananiadou1,5\n1University of Manchester\n2School of Artificial Intelligence, Wuhan University\n3Cognitive Language and Information Lab, Wuhan University\n4Getty Conservation Institute\n5ELLIS Manchester\nVision-language models have become a new kind of describer, writing about almost anything people see,\nand their descriptions now shape how cultures are known by people and by other models. Descriptions of\ncultures tend to turn particular things into types, and what a description loses shows what its describer lacks.\nWe introduce Polytropos, a benchmark that measures what model descriptions of cultural objects keep\nof the particular object by turning each description back into an image and comparing it with the original\nphotograph. On 374 objects from the Metropolitan Museum of Art and the Getty, with 1,870 descriptions\nfrom five models and 230 written by curators, reconstructions are recognised as the recorded culture more\noften than the photographs, at 54.55% to 59.09% against 52.14%, yet 16% to 21% of objects change outcome\nand only 0.49% of reconstructions are identified as the specific object. On the same objects, models lose\nrecorded cultures at a rate similar to curators but gain more. Model descriptions give each object many\nfaces, each typical of its culture and almost none the object itself.\nz Date: 22 November 2026\n# Correspondence: xqq.sincere@gmail.com\nHugging Face: huggingface.co/datasets/Carolyn-Jiang/Culture-Ground-Description\n Website: carolyn-jiang.github.io/Polytropos/\nC L A I N\n武汉大学WUHAN UNIVERSITY\n1 Introduction\nVision-language models have become a new kind of describer, writing about almost anything people see,\nincluding the objects of every cultural tradition [14, 48, 55]. Their descriptions already enter catalogues,\nsearch results, and the training data of the next models [12, 46, 51], and through them shape how present and\nfuture generations know cultures they will never see. Descriptions of cultures have long turned particular\nthings into types [1, 18]. A describer does so where it knows a thing less well than its kind and fills the\ngap with the kind [10, 28], which makes what a description loses a measure of what its describer does not\nknow [15], a measure recognition cannot give, since knowing the kind suffices to name a culture. Do the\ndescriptions of vision-language models keep the particular object, or only its kind?\n1\narXiv:2611.29355v1  [cs.CV]  22 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.29355.jpg",
+  "w": 514,
+  "h": 440
+ },
+ "2611.29184": {
+  "orgs": [
+   "Fudan University"
+  ],
+  "affils": [
+   "Institute of Trustworthy Embodied AI, Fudan University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29184.jpg",
+  "w": 640,
+  "h": 226
+ },
+ "2611.29389": {
+  "orgs": [
+   "University of Melbourne 2Southeast University 3Fudan University",
+   "Peking University"
+  ],
+  "affils": [
+   "\n\n\n\nZeyu Ren1  Jie Ni2∗  Rui Qian3∗  Jiahao Wei3  Hao Tang4  Yongtai Liu5  Zeyu Zhang4†\n1The University of Melbourne  2Southeast University  3Fudan University\n4Peking University  5Hanyang University\n*Corresponding authors: njie@seu.edu.cn, qiianruii@gmail.com.\n†Project lead.\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29389.jpg",
+  "w": 640,
+  "h": 248
+ },
+ "2611.29259": {
+  "orgs": [
+   "KAIST",
+   "MIT"
+  ],
+  "affils": [
+   "KAIST",
+   "NYU",
+   "MIT"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29259.jpg",
+  "w": 489,
+  "h": 440
+ },
+ "2611.29282": {
+  "orgs": [
+   "Hong Kong Polytechnic University",
+   "HKUST",
+   "University of Electronic Science and Technology of China"
+  ],
+  "affils": [
+   "The Hong Kong Polytechnic University",
+   "The Hong Kong University of Science and Technology (Guangzhou)",
+   "University of Electronic Science and Technology of China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29282.jpg",
+  "w": 640,
+  "h": 258
+ },
+ "2611.29293": {
+  "orgs": [
+   "KAIST"
+  ],
+  "affils": [
+   "Kim Jaechul Graduate School of Artificial Intelligence, KAIST",
+   "Seoul, Republic of Korea",
+   "*Equal contribution †Corresponding author",
+   "Project page: https://bispl-wm.github.io/GALILEO/"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29293.jpg",
+  "w": 640,
+  "h": 209
+ },
+ "2611.29377": {
+  "orgs": [
+   "NTU"
+  ],
+  "affils": [
+   "Contact Harness: Enabling VLM Agents to Perform\nContact-Rich Manipulation\nShilin Shan∗,†, Yuxuan Hu∗, Chuhao Zhou∗, Yimeng Dong, Bohan Hou, Jiaqi Bai,\nBoyu Ma, Jiahua Dong, Jianfei Yang‡\nMARS Lab, Nanyang Technological University, Singapore\n∗Equal contribution, †Project lead, ‡Corresponding author\nAgents built on pretrained VLMs have demonstrated zero-shot control of real robots, but vision\nalone is often insufficient for reliable contact-state assessment in contact-rich manipulation. Force\nand tactile feedback provide complementary information, but their semantic ambiguity makes them\ndifficult for agents to use directly. These signals must be interpreted according to their physical\nmeaning, together with task phase and visual evidence. We propose Contact Harness, which uses\nreusable, optimized skills to guide a VLM agent in assessing contact states from multimodal feedback\nand selecting subsequent actions. A compliant execution mechanism regulates in-contact motions\nusing real-time force feedback. The framework requires no model fine-tuning, task demonstrations,\nor simulation training. We conduct zero-shot real-robot evaluations using GPT-6 Astra on Rokae\nand Franka robots. With a single prompt skill, Contact Harness achieves a full-insertion rate of\n90.7% across 15 connector types, with further evaluations on a real PC under variations in lighting,\nbackground, and position. Across four additional contact-rich tasks, including whiteboard wiping,\nwriting, peeling, and pivoting, Contact Harness achieves an average success rate of 100%. On six\nsimulated tasks, Contact Harness reaches 96.7% success, compared with at most 68.3% for pretrained\nVLA baselines fine-tuned on task demonstrations, showing the potential of agent-based manipulation\nfor contact-rich real-world deployment.\nProject Page: https://ntumars.github.io/ContactHarness/\nAgent Reasoning\nPlug the USB cable into the left port.\n1\n2\n3\n4\nVisual \nalignment\nIn-contact\nSearching\nEase bending and push\nInserted\nVision\nTouch\nForce\nContact Harness\nTextual Skills\nVision\nTouch\nForce\nVLM Agent\nExecution\nfeedback\nContact Execution Strategy Comparison\nOURS \nAdaptive Compliance\nsafe contact\nPRIOR\nSmall steps\nslow\nPRIOR\nLarge steps\ndamage risk\nAdaptive compliant move\nContact-Rich Manipulation Tasks\nCable Generalization\nInsertion\nWiping\nWriting\nPeeling\nStacking\nInsertion\nPick-and-Place\nPivot\nUSB-A\nUSB-C\nUSB-B\nEthernet\nEarphone Plug\nTwo-Pin\nPower Plug\nThree-Pin\nPower Plug\nDisplayPort\nLightning\n4-Pin Connector\nIEC C13\nMini DisplayPort\nVGA\nTS Phone Plug\nMicro USB\nLighting\nBackground\nPosition\n×\nROKAE\nFranka\nStates\nMotion\ncommands\nKey\nInformation\nCross-embodiment\nReal-scene Deployment\nKey\nObservations\nAction\nOutcomes\nAgent\nAssessments\nModality\nFigure 1 Overview of Contact Harness. A frozen VLM agent uses textual skills to assess contact states from visual, force,\nand tactile evidence, while compliant execution responds to contact changes between agent decisions.\n1\narXiv:2611.29377v1  [cs.RO]  22 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.29377.jpg",
+  "w": 640,
+  "h": 381
+ },
+ "2611.29547": {
+  "orgs": [
+   "Shanghai AI Lab",
+   "Peking University",
+   "University of Science and Technology of China",
+   "University of Oxford"
+  ],
+  "affils": [
+   "Align the Pair, Not the Sample:\nRepresentation Alignment for Faster and Better One-Step Generators\nMingxiao Li1\nXuantuo Huang1,2\nEncheng Su1,3\nAoran Wang1\nHan Zhang1\nJinouwen Zhang1\nShixiang Tang1,4\n1Shanghai Artificial Intelligence Laboratory\n2Peking University\n3University of Science and Technology of China\n4University of Oxford\nhttps://mingxiao-li.github.io/RePrime/\n60\n80 100\n150 200\n1k\n3k\ntraining EFLOPs\n1.2\n1.4\n1.6\n1.8\nFID (1 NFE)↓\npMF-H (2.15)\niMF-XL/2\nDrifting-B\nDrifting-L\nWF-XL/2\nbetter at\nevery budget\n40 ep\n40 ep\n200 ep\n200 ep\n1.155\n24× less compute\n×3 stretched\nPriming-B\nRePrime-B (ours)\nPriming-L\nRePrime-L (ours)\nRePrime-J-B (ours)\nFigure 1. Left: one-step ImageNet 256×256 samples from RePrime-L (a single network evaluation, no guidance; FID 1.155). Right:\ntraining compute (teacher included) vs. FID (log axis stretched 3× below 200). RePrime improves Priming [26] at every budget and\nscale; RePrime-B beats WF-XL/2 with 24× less compute. Others from [26]."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.29547.jpg",
+  "w": 640,
+  "h": 239
+ },
+ "2611.29155": {
+  "orgs": [
+   "Adelaide University",
+   "Responsible AI Research Centre 3Oracle 4CSIRO"
+  ],
+  "affils": [
+   "\n\nJiayu Huang1 Yichao Cai1 Xinyu Li1,2,4 Zhen Zhang3 Javen Qinfeng Shi1,2\n\n1Australian Institute for Machine Learning (AIML), Adelaide University\n\n2Responsible AI Research Centre  3Oracle  4CSIRO\n††thanks: Correspondence to jiayu.huang@adelaide.edu.au."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29155.jpg",
+  "w": 502,
+  "h": 284
+ },
+ "2611.29240": {
+  "orgs": [
+   "NVIDIA"
+  ],
+  "affils": [
+   "\n\nQiwei Wu12∗‡  \nXiangyu Chen2∗  \nXin Xiang2∗  \nRui Zhang1∗  \nYihang Kang2  \nWeiran Chen2  \nZikang Xie2   \n\nYangfan Li2  \nTao Wang2  \nXiangzheng Wang2  \nTianyi Bi2  \nZhiyan Zhang2  \nXianpeng Wang2  \nMingqian Zhou3  \nYan Yu2  \nChuanyu Li2  \nWenjie Zhang2  \nTao Li1  \nWeihua Zhang1†  \nRenjing Xu2†  \nJunjie Lai1  \n\n\n1Nvidia  2HKUST(GZ)  3University of Cambridge \n\n∗Equal Contribution  ‡ Project Leader  † Corresponding Authors \n\ntacinf.github.io\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29240.jpg",
+  "w": 640,
+  "h": 281
+ },
+ "2611.29579": {
+  "orgs": [
+   "University of Zurich",
+   "Tübingen AI Center"
+  ],
+  "affils": [
+   "Department of Mathematical Modeling and Machine Learning, University of Zurich",
+   "ELLIS Institute Tübingen, MPI for Intelligent Systems, Tübingen AI Center"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29579.jpg",
+  "w": 627,
+  "h": 440
+ },
+ "2611.29618": {
+  "orgs": [
+   "City University of Hong Kong",
+   "Alibaba Group",
+   "City University of Hong Kong (Dongguan)"
+  ],
+  "affils": [
+   "City University of Hong Kong",
+   "AMAP, Alibaba Group",
+   "City University of Hong Kong (Dongguan)"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29618.jpg",
+  "w": 640,
+  "h": 276
+ },
+ "2611.29630": {
+  "orgs": [
+   "Dartmouth College"
+  ],
+  "affils": [
+   "Dartmouth College"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29630.jpg",
+  "w": 640,
+  "h": 314
+ },
+ "2611.29205": {
+  "orgs": [
+   "Nanjing University",
+   "Peking University"
+  ],
+  "affils": [
+   "November 21, 2026\nDriveTTO: Understanding Search and Selection\nin Test-Time Trajectory Optimization for End-to-End Driving\nXinyao Rao1 Zecheng Tang2 Zheyuan Lai3 Liuxuan Sun1 Minjun Yu3 Xun Cao1 Wei Li1,3,∗\n1Nanjing University\n2Peking University\n3EABOT.AI"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.29205.jpg",
+  "w": 640,
+  "h": 261
+ },
+ "2611.29150": {
+  "orgs": [
+   "Yale University",
+   "University of Minnesota – Twin Cities",
+   "Monash University"
+  ],
+  "affils": [
+   "Yale University, New Haven, CT, USA",
+   "University of Minnesota – Twin Cities, Minneapolis, MN, USA",
+   "Monash University, Melbourne, VIC, Australia*Equal contribution †Corresponding authors:lingfei.qian@yale.edu, lin01231@umn.edu"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29150.jpg",
+  "w": 640,
+  "h": 268
+ },
+ "2611.29610": {
+  "orgs": [
+   "Tsinghua University"
+  ],
+  "affils": [
+   "Tsinghua University - IEI Lab",
+   "; https://xkq1qkx.github.io/Diverse-Manip-RL-web/"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29610.jpg",
+  "w": 640,
+  "h": 302
+ },
+ "2611.29590": {
+  "orgs": [
+   "Carnegie Mellon University"
+  ],
+  "affils": [
+   "Carnegie Mellon University Arm Ltd."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29590.jpg",
+  "w": 640,
+  "h": 150
+ },
+ "2611.29123": {
+  "orgs": [
+   "NTU",
+   "Delft University of Technology",
+   "University of Oxford"
+  ],
+  "affils": [
+   "Nanyang Technological University",
+   "Delft University of Technology",
+   "Motional",
+   "BOLD, University of Oxford"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29123.jpg",
+  "w": 640,
+  "h": 252
+ },
+ "2611.29619": {
+  "orgs": [],
+  "affils": [
+   "Wactorz: Self-Writing LLM Agents That Discover, Repair, and Migrate at the Edge\n(Extended Version)\nPanagiotis Kasnesis1, Lazaros Toumanidis1, Amalia Contiero2, Christos Chatzigeorgiou1\n1Waldiez PC, Maroussi, Greece\n2ThinGenious PC, Maroussi, Greece\n{pkasnesis, laztoum, chrichatz}@waldiez.io, amaliacontiero@gmail.com"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.29619.jpg",
+  "w": 640,
+  "h": 273
+ },
+ "2611.29716": {
+  "orgs": [
+   "University of Maryland",
+   "Carnegie Mellon University",
+   "Texas A&M University",
+   "University of Washington",
+   "Northeastern University",
+   "University of Alabama",
+   "Stanford University"
+  ],
+  "affils": [
+   "Fin-RSI: A Unified Library of Financial Skills,\nChecks, and Self-Improvement for LLM Agents\nWanghao Ye1\nShwai He1\nSihan Chen2\nYiting Wang1\nBowei Tian1\nGuoheng Sun1\nZiyi Wang3\nZiyao Wang1\nYexiao He1\nZheyu Shen1\nMeng Liu1\nYuning Zhang1\nMeng Feng1\nYifei Dong4\nYanhong Qian1\nYang Wang5\nSiyuan Peng1\nYilong Dai6\nZhenle Duan1\nJoshua Liu2\nLang Xiong7\nAarosh Das1\nZhaoyi Liu1\nDaeun Jung1\nAditya Sarkar1\nParastoo Pilevar1\nXiaochuan Gong1\nYancheng Zhu1\nYingying Fan1\nQiong Wang1\nAng Li1\n1University of Maryland, College Park\n2Carnegie Mellon University\n3Texas A&M University, College Station\n4University of Washington\n5Northeastern University\n6The University of Alabama\n7Stanford University"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.29716.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.29361": {
+  "orgs": [
+   "Suzhou Institute for Advance Research",
+   "Jiangsu Key Laboratory of Multimodal Digital Twin Technology",
+   "University of Texas at"
+  ],
+  "affils": [
+   "School of Biomedical Engineering, Division of Life Sciences and Medicine, USTC",
+   "MIRACLE Lab, Suzhou Institute for Advance Research, USTC",
+   "Jiangsu Key Laboratory of Multimodal Digital Twin Technology, Suzhou, Jiangsu, China 215123",
+   "The University of Texas at Austinqiuzyc@mail.ustc.edu.cn fhtan9@mail.ustc.edu.cn skevinzhou@ustc.edu.cn"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29361.jpg",
+  "w": 328,
+  "h": 440
+ },
+ "2611.29811": {
+  "orgs": [
+   "Stanford University"
+  ],
+  "affils": [
+   "Department of Mathematics, Stanford University",
+   "November 2026"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.29811.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.29588": {
+  "orgs": [
+   "University of Zurich",
+   "Tübingen AI Center"
+  ],
+  "affils": [
+   "Department of Mathematical Modeling and Machine Learning, University of Zurich",
+   "ELLIS Institute Tübingen, MPI for Intelligent Systems, Tübingen AI Center"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29588.jpg",
+  "w": 248,
+  "h": 211
+ },
+ "2611.29383": {
+  "orgs": [],
+  "affils": [
+   "Self-Refining VLA Sampling\nJeff Duan\nCaltech\njxduan@caltech.edu\nArjun Sharma\nCaltech\narjun.sharma@caltech.edu\nJennifer Cruden\nCaltech\njcruden@caltech.edu\nVansh Tibrewal\nCaltech\nvansh@caltech.edu"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.29383.jpg",
+  "w": 640,
+  "h": 213
+ },
+ "2611.29775": {
+  "orgs": [
+   "University of Utah",
+   "New York University",
+   "George Washington University",
+   "Google DeepMind",
+   "University of Pennsylvania"
+  ],
+  "affils": [
+   "University of Utah",
+   "New York University",
+   "George Washington University",
+   "Google DeepMind",
+   "University of Pennsylvania"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29775.jpg",
+  "w": 72,
+  "h": 72
+ },
+ "2611.29375": {
+  "orgs": [
+   "Singapore University of Technology and Design",
+   "University of"
+  ],
+  "affils": [
+   "Singapore University of Technology and Design",
+   "University of Venice{abhinaba_roy,dorien_herremans}@sutd.edu.sg, ambuj.mehrish@unive.it"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29375.jpg",
+  "w": 640,
+  "h": 360
+ },
+ "2611.29723": {
+  "orgs": [
+   "Made In Alexandria AI Team (M.I.A Robotics) Alamein International University Alexandria University",
+   "hyperlabs Universidade Federal de Mato Grosso Hasso Plattner Institute"
+  ],
+  "affils": [
+   "Made In Alexandria AI Team (M.I.A Robotics) Alamein International University Alexandria University",
+   "hyperlabs Universidade Federal de Mato Grosso Hasso Plattner Institute*Equal contribution †Corresponding authors"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29723.jpg",
+  "w": 640,
+  "h": 427
+ },
+ "2611.29829": {
+  "orgs": [
+   "Northeastern University",
+   "Meta",
+   "Apple"
+  ],
+  "affils": [
+   "1Khoury College of Computer Sciences, Northeastern University, USA ; 2Meta, USA ; 3Apple, USA"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29829.jpg",
+  "w": 386,
+  "h": 440
+ },
+ "2611.29473": {
+  "orgs": [
+   "Independent researcher"
+  ],
+  "affils": [
+   "Independent researcher, Udine, Italy"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.29473.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.28947": {
+  "orgs": [
+   "NUS",
+   "SenseTime 4Hong Kong Baptist University"
+  ],
+  "affils": [
+   "\n\nJiaqi Su1\n\n  \nJie-Jing Shao2\n\n  \nYichen Liu3\n\n  \nLong-Kai Huang4\n\n  \nHaiyan Yin2\n\n\n1National University of Singapore  2A*STAR Centre for Frontier AI Research (A*STAR CFAR)\n\n3SenseTime  4Hong Kong Baptist University\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28947.jpg",
+  "w": 640,
+  "h": 427
+ },
+ "2611.28719": {
+  "orgs": [
+   "KMed Team at NAVER"
+  ],
+  "affils": [
+   "\n\nKMed Team at NAVER\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28719.jpg",
+  "w": 640,
+  "h": 376
+ },
+ "2611.28649": {
+  "orgs": [
+   "NTU",
+   "NUS"
+  ],
+  "affils": [
+   "\n\nMuxin Fu,  Peike Yu,  Guibin Zhang,  Wenrui Zhou,  Runze Liu,\n\nLang Feng,  Fuchao Yang,  Feng Chen,  Yixuan Li,  Mengao Zhang,  Shiying Zhang,\n\nWen Shen,  Ling Pan,  Shuicheng Yan,  Bo An\n\n  \nThe Hong Kong University of Science and Technology Nanyang Technological University\n\n  \nNational University of Singapore Tongji University*Equal contribution ‡Project lead †Corresponding author\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28649.jpg",
+  "w": 640,
+  "h": 350
+ },
+ "2611.28833": {
+  "orgs": [
+   "Carnegie Mellon University"
+  ],
+  "affils": [
+   "Carnegie Mellon University",
+   "MilkThink"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.28833.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.28732": {
+  "orgs": [
+   "Tsinghua University"
+  ],
+  "affils": [
+   "Entangle: Scaling Human-Video In-Context World-Action\nModels across Unseen Tasks and Contexts\nChendong Xiang∗, Chengwen Zhang∗, Ruowen Zhao, Zeyuan Wang, Shuhe Huang\nRongxu Cui, Min Zhao, Fan Bao, Hengkai Tan, Jun Zhu\nTsinghua University, GensPI Technology, Motubrain"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.28732.jpg",
+  "w": 640,
+  "h": 382
+ },
+ "2611.28943": {
+  "orgs": [
+   "NVIDIA",
+   "MIT",
+   "HKU"
+  ],
+  "affils": [
+   "\n\nYuyang Zhao\n\n  \nZekai Li\n\n  \nYicheng Pan\n\n  \nJiaming Tang\n\n  \nZhuoyang Zhang\n\n  \nJiaxu Xing\n\n  \nMoritz Reuss\n\n  \nQuanquan Peng\n\n  \nJunsong Chen\n\n  \nEnze Xie\n\n  \nZhijian Liu\n\n  \nSong Han\nNVIDIA   \nUCSD   \nTHU   \nMIT   \nHKU   \nInco AI\n\n*Equal contribution  Core contributorProject Page: https://nvlabs.github.io/Sana/Robot\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28943.jpg",
+  "w": 640,
+  "h": 205
+ },
+ "2611.28618": {
+  "orgs": [
+   "University of Technology Sydney Hong Kong Polytechnic University"
+  ],
+  "affils": [
+   "University of Technology Sydney Hong Kong Polytechnic University*Corresponding authors: Siyu.Zhou-2@student.uts.edu.au, Guodong.Long@uts.edu.auCode: https://github.com/elated-sawyer/visual-agent-distillation"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28618.jpg",
+  "w": 640,
+  "h": 363
+ },
+ "2611.29064": {
+  "orgs": [
+   "University of Illinois Urbana-Champaign"
+  ],
+  "affils": [
+   "University of Illinois Urbana-Champaign",
+   "{haoyuyh3, shenlong, aschwing}@illinois.edu",
+   "https://haoyuhsu.github.io/Unified-LDM/"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29064.jpg",
+  "w": 440,
+  "h": 440
+ },
+ "2611.28489": {
+  "orgs": [
+   "Renmin University of China",
+   "Wuhan University of Technology",
+   "Zhejiang University",
+   "China University of Mining and Technology",
+   "Chinese Academy of Sciences",
+   "ByteDance",
+   "UC Los Angeles"
+  ],
+  "affils": [
+   "Open Vision Banana: An Open Framework for Unified\nVisual Perception through Generation in RGB Space\nXu Lin1\nRuilin Yao2,9\nHaoran Xu3\nZixiang Wang4\nMing Ma5\nYu Zhao6\nPu Miao7\nChonghan Liu8,#\n1Renmin University of China\n2Wuhan University of Technology\n3Zhejiang University\n4China University of Mining and Technology\n5Institute of Neuroscience, Chinese Academy of Sciences\n6ByteDance\n7Meituan\n8University of California, Los Angeles\n9Institute of Automation, Chinese Academy of Sciences"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.28489.jpg",
+  "w": 640,
+  "h": 352
+ },
+ "2611.28621": {
+  "orgs": [
+   "Waseda University",
+   "ZOZO Research"
+  ],
+  "affils": [
+   "Waseda University, ZOZO Research",
+   "Institute of Science Tokyo, ZOZO Research",
+   "ZOZO Research"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28621.jpg",
+  "w": 640,
+  "h": 266
+ },
+ "2611.28960": {
+  "orgs": [
+   "University of Maryland",
+   "University of Illinois Chicago",
+   "University of Illinois Urbana-Champaign",
+   "Mohamed bin Zayed University of Artificial Intelligence"
+  ],
+  "affils": [
+   "University of Maryland, College Park",
+   "University of Illinois Chicago",
+   "University of Illinois Urbana-Champaign",
+   "Mohamed bin Zayed University of Artificial Intelligence"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28960.jpg",
+  "w": 443,
+  "h": 374
+ },
+ "2611.28783": {
+  "orgs": [
+   "Xiaohongshu"
+  ],
+  "affils": [
+   "3DCodeFactory: Scaling Training Data for 3D Code\nAgents\nZhaoyu Wang1, Xueru Wen1, XingYu Li1, Jie Lou1,∗,†\n1Dots Studio, Xiaohongshu Inc.\n∗Project lead, †Corresponding author.\nAs code agents evolve, their scope is expanding from generating simple static 3D meshes to constructing\nstructurally complete, complex, interactive 3D scenes. However, existing datasets mainly rely on\nconverting or captioning pre-existing 3D assets, consisting mostly of single-turn code data for static\nsingle objects and struggling to scale task diversity and scene complexity, leaving such training data\nscarce. We present 3DCodeFactory, an automated framework that directly constructs diverse, complex\n3D training data from abundant raw text (e.g., diffusion prompts and product descriptions). The\nframework first leverages an image generator to synthesize 3D reference images from raw text as\nvisual anchors, guiding the generation of concrete modeling specifications and interactive functional\nrequirements; meanwhile, it jointly constructs visual, specification, and functional rubrics from the\nreference images and requirements to automatically score and filter multi-turn agent rollouts. Based\non this framework, we release 3DCodeFactory-Data, comprising 5,045 high-quality task instances and\nmulti-turn interaction trajectories. Fine-tuning Qwen3.5-9B and Qwen3.8-27B on 3DCodeFactory-Data\nsignificantly improves performance on BlenderWorld, P3D-Bench, and 3DCodeBench, consistently\noutperforming models trained on existing open-source 3D code datasets, with our 27B model further\nsurpassing the same-series 2.4T flagship Qwen3.8-Max in overall performance.\nÑ Homepage https://3dcodefactory.github.io\n§ Code\nhttps://github.com/3DCodeFactory\nõ Dataset\nhttps://huggingface.co/datasets/3DCodeFactory\nFigure 1 Overview of 3DCodeFactory examples. Grounded in synthesized reference images as visual anchors, our\nframework drives code agents to construct 3D objects and complex interactive scenes matching visual and specification\nrequirements, curating the resulting multi-turn trajectories via multi-dimensional rubrics.\n1\nIntroduction\nCode agents powered by large language and multimodal models [31, 32, 33] have emerged as a promising\nparadigm for procedural 3D content generation [1, 2, 3, 4, 21, 24]. Unlike static meshes, executable 3D code\n1\narXiv:2611.28783v1  [cs.CV]  21 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.28783.jpg",
+  "w": 640,
+  "h": 226
+ },
+ "2611.28792": {
+  "orgs": [
+   "Tsinghua University",
+   "Harbin Institute of Technology"
+  ],
+  "affils": [
+   "Tsinghua Shenzhen International Graduate School, Tsinghua University",
+   "Harbin Institute of Technology"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28792.jpg",
+  "w": 503,
+  "h": 440
+ },
+ "2611.28445": {
+  "orgs": [
+   "UC San Diego",
+   "Google",
+   "University of Waterloo"
+  ],
+  "affils": [
+   "UC San Diego",
+   "Google",
+   "University of Waterloo"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28445.jpg",
+  "w": 640,
+  "h": 221
+ },
+ "2611.28878": {
+  "orgs": [
+   "Chinese Academy of Sciences"
+  ],
+  "affils": [
+   "School of Artificial Intelligence, University of Chinese Academy of Sciences",
+   "Institute of Automation, Chinese Academy of Sciences Homepage"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28878.jpg",
+  "w": 640,
+  "h": 327
+ },
+ "2611.28442": {
+  "orgs": [
+   "Eindhoven University of Technology",
+   "University of Luxembourg"
+  ],
+  "affils": [
+   "Eindhoven University of Technology",
+   "University of Luxembourg",
+   "Universidad de Costa Rica† Corresponding author: m.gonzalez.hernandez@tue.nl"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28442.jpg",
+  "w": 625,
+  "h": 440
+ },
+ "2611.29008": {
+  "orgs": [
+   "Purdue University"
+  ],
+  "affils": [
+   "Zichong Yang, Can Cui, Chuheng Wei, Ruqi Zhang, Ziran Wang",
+   "Purdue University",
+   "{jiaru, ruqiz, ziran}@purdue.edu"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29008.jpg",
+  "w": 391,
+  "h": 175
+ },
+ "2611.28469": {
+  "orgs": [
+   "UC San Diego",
+   "UC Los Angeles",
+   "City University of Hong Kong",
+   "UC Santa Barbara"
+  ],
+  "affils": [
+   "1University of California, San Diego, {yanju, yufeiding}@ucsd.edu",
+   "2University of California, Los Angeles, {yinglee, yuant}@ucla.edu",
+   "3City University of Hong Kong, bosi.zhang@my.cityu.edu.hk",
+   "4University of California, Santa Barbara, {hanzhi, hongbowen}@ucsb.edu, yufeng@cs.ucsb.edu"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.28469.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.28849": {
+  "orgs": [
+   "Renmin University of China"
+  ],
+  "affils": [
+   "Guarding with Judgment:\nLearning to Intervene for Multimodal Safety\nJipei He, Cheng Cheng, Liuguo Wang, Zihan Wen, Changlin Yu, Wentao Song, Suyun Zhao*\nRenmin University of China\n|\n*Corresponding author\nCode ↗\nTraining data ↗\nJudiBench ↗"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.28849.jpg",
+  "w": 394,
+  "h": 362
+ },
+ "2611.28520": {
+  "orgs": [
+   "Concordia University Mila -- Quebec AI Institute",
+   "South Dakota State University KTH Royal Institute of Technology Aalto University"
+  ],
+  "affils": [
+   "Concordia University Mila -- Quebec AI Institute†Equal contribution ‡Equal advising *Corresponding author",
+   "South Dakota State University KTH Royal Institute of Technology Aalto University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28520.jpg",
+  "w": 640,
+  "h": 216
+ },
+ "2611.28509": {
+  "orgs": [
+   "Connected and Autonomous Research Laboratory",
+   "University of Delaware"
+  ],
+  "affils": [
+   "Connected and Autonomous Research Laboratory ; University of Delaware, Newark, USA ; {qirenw, myuguo, weisong}@udel.edu"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28509.jpg",
+  "w": 640,
+  "h": 215
+ },
+ "2611.28645": {
+  "orgs": [
+   "Chinese Academy of Sciences",
+   "University of Amsterdam",
+   "Taobao & Tmall Group of Alibaba"
+  ],
+  "affils": [
+   "State Key Laboratory of AI Safety, Institute of Computing Technology, Chinese Academy of Sciences, University of Chinese Academy of Sciences, Beijing, China",
+   "University of Amsterdam, Amsterdam, The Netherlands",
+   "Taobao & Tmall Group of Alibaba, Hangzhou, China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28645.jpg",
+  "w": 640,
+  "h": 301
+ },
+ "2611.28666": {
+  "orgs": [
+   "Amazon University of California",
+   "Washington University in St. Louis Georgia Institute of Technology University of Illinois Urbana-Champaign"
+  ],
+  "affils": [
+   "\n\n\n\nSarosij Bose Gitika Karumuri Chenqi Li Allen Tu Srikumar Sastry\nMellon Zhang Avinash Ravichandran Alexander Schwing Konstantinos Karydis Amit K. Roy Chowdhury\nAmazon University of California, Riverside University of Oxford University of Maryland, College Park\n\nWashington University in St. Louis Georgia Institute of Technology University of Illinois Urbana-Champaign\n\nhttps://recallworld.github.io/\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28666.jpg",
+  "w": 640,
+  "h": 361
+ },
+ "2611.28671": {
+  "orgs": [
+   "Computer ScienceDuke University"
+  ],
+  "affils": [
+   "Department of Electrical and Computer Engineering",
+   "Department of Computer ScienceDuke UniversityDurham, NC 27708, USA"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28671.jpg",
+  "w": 640,
+  "h": 343
+ },
+ "2611.29014": {
+  "orgs": [
+   "Carnegie Mellon University",
+   "Work performed during an internship at Apple",
+   "while researchers tune hyperparameters across consecutive runs. We introduce Population-Based Post-Training (PBPT)",
+   "NVIDIA"
+  ],
+  "affils": [
+   "Population-Based Post-Training for Large\nLanguage Models\nYixuan Even Xu1,∗, Aleksei Petrenko2, Raja Giryes2, Jackson Hamburger2, Kevin Chen2, Fei Fang1,\nJ. Zico Kolter1, Philipp Krähenbühl2\n1Carnegie Mellon University, 2Apple\n∗Work performed during an internship at Apple.\nReinforcement learning with verifiable rewards (RLVR) has brought us reasoning models, coding LLMs, and embod-\nied vision-and-language agents. RLVR typically trains a single model under hyperparameters chosen ahead of training,\nwhile researchers tune hyperparameters across consecutive runs. We introduce Population-Based Post-Training (PBPT),\nwhich trains several models in parallel and lets the training process do the tuning through population-based training. PBPT\nperiodically evaluates models on a validation set. The process duplicates high performers and perturbs their hyperparam-\neters to explore new configurations. Low performers stop training in favor of high performers. On reasoning benchmarks\n(Enigmata, Nemotron) and interactive tool-use environments (Gaia2, AppWorld), PBPT produces stronger agents than\ncompute-matched groups of independent RLVR learners. Furthermore, PBPT recovers from poor initial hyperparameters,\nautomatically discovering better settings over the course of training.\nCorrespondence: Yixuan Even Xu: yixuanx@cs.cmu.edu\n1\nIntroduction\nReinforcement learning with verifiable rewards (RLVR) elicits strong reasoning behavior from a pretrained\nlarge language model (LLM) without supervised reasoning traces (Guo et al., 2025). However, RLVR training\ncan be unstable: a collapsed learner may not recover through continued training alone (Zheng et al., 2025).\nMoreover, standard RLVR fixes training configurations before training begins, even though effective hyper-\nparameters may change over time. Population-based training (PBT) (Jaderberg et al., 2017) addresses both\nproblems: it trains multiple agents concurrently, periodically copies the best-performing agents’ weights to\nweaker peers, and perturbs their hyperparameters. As a result, PBT restarts stagnating learners from peers\nthat are still improving and adapts configurations over training. Despite its success in deep reinforcement\nlearning, PBT has seen little use in LLM post-training (Castanyer et al., 2026).\nThis work provides one of the first systematic studies of PBT for a population of LLM learners trained with\nRLVR on the same task. We introduce PBPT (Population-Based Post-Training), a decentralized framework\nthat adds an outer loop for online hyperparameter optimization to parallel RLVR training. See Figure 1 for an\noverview. Concretely, PBPT uses a shared filesystem as a lightweight communication medium that exposes\nthe state of the population to all learners. Individual learners train asynchronously and periodically query\nthis shared state. When underperforming, a learner may reinitialize from a stronger peer through a selection\nmechanism. An additional mutation mechanism perturbs training configurations, allowing the population to\ncontinue exploring the hyperparameter space while successful configurations propagate through selection.\nWe evaluate PBPT on reasoning and multi-turn agentic tool-use benchmarks: Enigmata (Chen et al., 2025),\nNemotron (NVIDIA, 2025), Gaia2 (Froger et al., 2026), and AppWorld (Trivedi et al., 2024). Across all four,\nPBPT outperforms independent RLVR with the same base model, number of learners, and total compute\nbudget. Further experiments on Enigmata show that PBPT recovers and keeps improving from suboptimal\ninitial configurations where independent RLVR degrades substantially.\n1\narXiv:2611.29014v1  [cs.CL]  21 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.29014.jpg",
+  "w": 464,
+  "h": 440
+ },
+ "2611.28853": {
+  "orgs": [
+   "Harbin Institute of Technology (Weihai) 2Tongji University",
+   "City University of Hong Kong 4The University of Hong Kong"
+  ],
+  "affils": [
+   "1Harbin Institute of Technology (Weihai) 2Tongji University ; 3City University of Hong Kong 4The University of Hong Kong †Corresponding authors"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28853.jpg",
+  "w": 640,
+  "h": 394
+ },
+ "2611.28574": {
+  "orgs": [
+   "Shanghai Jiao Tong University"
+  ],
+  "affils": [
+   "Shanghai Jiao Tong University Hunan University National University of Singaporelewisxinyu@hnu.edu.cn jutianjie@nus.edu.sg zhangzs@sjtu.edu.cn"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28574.jpg",
+  "w": 640,
+  "h": 249
+ },
+ "2611.28665": {
+  "orgs": [
+   "Huazhong University of Science and Technology"
+  ],
+  "affils": [
+   "Huazhong University of Science and Technology"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28665.jpg",
+  "w": 640,
+  "h": 263
+ },
+ "2611.29006": {
+  "orgs": [],
+  "affils": [
+   "NoHairCache: Calibrate-Once KV Cache Eviction with One\nPower-Law Exponent\nShuyang Xiang"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.29006.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.28298": {
+  "orgs": [
+   "MIT CSAIL"
+  ],
+  "affils": [
+   "MIT CSAIL"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28298.jpg",
+  "w": 640,
+  "h": 346
+ },
+ "2611.27193": {
+  "orgs": [
+   "Xingchen AGI Lab",
+   "HKUST",
+   "Harbin Institute of Technology (Shenzhen)",
+   "Huawei Technologies"
+  ],
+  "affils": [
+   "Xingchen AGI Lab, China Telecom",
+   "The Hong Kong University of Science and Technology (Guangzhou)",
+   "Harbin Institute of Technology (Shenzhen)",
+   "Huawei Technologies Co., Ltd."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27193.jpg",
+  "w": 640,
+  "h": 310
+ },
+ "2611.27963": {
+  "orgs": [
+   "Hong Kong Polytechnic University"
+  ],
+  "affils": [
+   "Learning & Generation Lab, The Hong Kong Polytechnic University",
+   "Hung Hom, Kowloon, Hong Kong",
+   "{yu-hang.dai, yinwei.wu, robin.lin, jihan.ji}@connect.polyu.hk"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27963.jpg",
+  "w": 640,
+  "h": 355
+ },
+ "2611.27973": {
+  "orgs": [
+   "Nanjing University",
+   "University of Science and Technology of China"
+  ],
+  "affils": [
+   "Nanjing University",
+   "University of Science and Technology of China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27973.jpg",
+  "w": 522,
+  "h": 440
+ },
+ "2611.27376": {
+  "orgs": [
+   "UC Santa Barbara",
+   "Carnegie Mellon University",
+   "UC Santa Cruz",
+   "Northwestern University",
+   "NVIDIA",
+   "University of Illinois Urbana-Champaign",
+   "Independent Researcher",
+   "UC Los Angeles",
+   "University of Michigan",
+   "Princeton University",
+   "Mind Lab",
+   "Columbia University",
+   "Apple"
+  ],
+  "affils": [
+   "University of California, Santa Barbara",
+   "Carnegie Mellon University",
+   "University of California, Santa Cruz",
+   "Northwestern University",
+   "NVIDIA",
+   "University of Illinois Urbana-Champaign",
+   "Independent Researcher",
+   "University of California, Los Angeles",
+   "SemiAnalysis",
+   "SGLang-Omni",
+   "University of Michigan",
+   "Princeton University",
+   "LMSYS Org",
+   "Mind Lab",
+   "Columbia University",
+   "Apple"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27376.jpg",
+  "w": 640,
+  "h": 265
+ },
+ "2611.26954": {
+  "orgs": [
+   "University",
+   "Duke University University of Maryland"
+  ],
+  "affils": [
+   "University at Buffalo Stony Brook University Johns Hopkins University",
+   "Duke University University of Maryland, College Park"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26954.jpg",
+  "w": 429,
+  "h": 267
+ },
+ "2611.28202": {
+  "orgs": [
+   "University of Illinois Urbana-Champaign"
+  ],
+  "affils": [
+   "1University of Illinois Urbana-Champaign, 2Georgia Institute of Technology, 3Northwestern University ; https://autopilot-harness.github.io/"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28202.jpg",
+  "w": 397,
+  "h": 430
+ },
+ "2611.27689": {
+  "orgs": [
+   "Zhejiang University",
+   "Huazhong University of Science and Technology"
+  ],
+  "affils": [
+   "Zhejiang University",
+   "Huazhong University of Science and Technology"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27689.jpg",
+  "w": 640,
+  "h": 297
+ },
+ "2611.27962": {
+  "orgs": [
+   "Harvard University",
+   "New York University"
+  ],
+  "affils": [
+   "Model Carving ô:\nTraining Transformers That Optimize Their Own Topology\nKaden Zheng1, Pratyusha Sharma2\n1Harvard University\n2New York University"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.27962.jpg",
+  "w": 640,
+  "h": 202
+ },
+ "2611.27673": {
+  "orgs": [
+   "Tencent Hunyuan Team"
+  ],
+  "affils": [
+   "\n\nTencent Hunyuan Team\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27673.jpg",
+  "w": 440,
+  "h": 440
+ },
+ "2611.27398": {
+  "orgs": [
+   "University of Trento"
+  ],
+  "affils": [
+   "Taking Apart and Putting Together:\nTracking Objects Through Physical Transformations\nDavide Gardenal1\nMingxuan Liu1\nFlavio Vella1\nQuentin Guimard2\nElisa Ricci1,3\n1University of Trento\n2AMIAD, Pôle Recherche, Palaiseau\n3Fondazione Bruno Kessler\ndetected\nmissed\nTIPO (Ours)\ninput video + our masks\n4/4 events · 1.8 FPS\n9× faster\nTubeletGraph [29] \n1/4 events · 0.2 FPS \nno assembly support\nSAM 2.1 [26] \n0/4 events · 3.7 FPS\nInitial frame\nDisassembly\nAssembly\nUnscrew\nRemove\nInsert\nScrew\nMoka collector\nUnscrew\nRemove\nInsert\nScrew\nMoka pot\nMoka tank + filter\nMoka tank\nMoka tank + filter\nMoka pot\nMoka filter\nMoka pot\nmisses\ninitial split\nRemove\nMoka filter\nMoka pot\nignores\nstate changes\nt1\nt2\nt3\nt4\nt5\ncannot detect assemblies\nFigure 1. Transformation Tracking and Understanding. Given a video and initial object prompts, TTU requires tracking objects through\nassemblies and disassemblies while maintaining a part–whole state graph. Each row shows the masks and state graph across keyframes\n(t1–t5) for each method using the same SAM 2.1 backbone [26]. Foundation trackers (e.g., SAM 2/3 [6, 26]) maintain pixel-level tracklets\nbut ignore state changes. TubeletGraph [29] relies on reactive search after track loss, missing early splits (t2) and failing on assemblies\n(t4, t5) at 0.2 FPS. TIPO proactively detects both events (t2–t5), tracking all parts and generating complete state graphs up to 9× faster."
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.27398.jpg",
+  "w": 640,
+  "h": 360
+ },
+ "2611.27915": {
+  "orgs": [
+   "HKUST",
+   "XPENG Robotics"
+  ],
+  "affils": [
+   "The Hong Kong University of Science and Technology (HKUST)",
+   "XPENG Robotics"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27915.jpg",
+  "w": 640,
+  "h": 253
+ },
+ "2611.28244": {
+  "orgs": [
+   "HKUST",
+   "NVIDIA"
+  ],
+  "affils": [
+   "\n\nKelvin Kiu-Wai Tam\n\n  \nNewt Hue-Nam K. Nguyen\n\n  \nTianshi Zheng\n\n  \nYunxiang Mo\n\n  \nWeihan Li\n\n  \nZhongwei Xie\n\n  \nChiu Yeung Tang\n\n  \nJui-Yu Ho\n\n  \nYangqiu Song\n\n  \nGinny Y. Wong\n\n  \nSimon See\nThe Hong Kong University of Science and Technology The University of Tokyo\n\nNational Taiwan University NVIDIA AI Technology Center*Equal contribution. Corresponding author\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.28244.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.27924": {
+  "orgs": [],
+  "affils": [
+   "BioEmu2: Scalable Emulation of Biomolecular Dynamics\nMichael Gastegger†, Adam E. Foster†, José Jiménez-Luna†, Tim Hempel†, Sarah Lewis†,\nYu Xie†, Lixin Sun†, Iryna Zaporozhets†, J. Thorben Frank†, Yaoyi Chen†, Michael Plainer†,\nLudwig Winkler†, Pedro B. P. S. Reis†, Sven H. Giese†, Roberto Sordillo, Victor García\nSatorras, Eray Inanc, Kacper Kapuśniak, Soojung Yang, Rishwanth Raghu, Rachel Kim,\nGabriel Dernbach, Deniz Gunceler, Hannes Schulz, Bonnie Kruft, Marwin Segler,\nChristopher M. Bishop, Cecilia Clementi, Ryota Tomioka, Frank Noé∗\n† Equal contribution\n∗Correspondence to franknoe@microsoft.com"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.27924.jpg",
+  "w": 405,
+  "h": 440
+ },
+ "2611.28286": {
+  "orgs": [
+   "Harvard University",
+   "Imperial College London",
+   "New York University"
+  ],
+  "affils": [
+   "Scalable Beckmann Maps Improve One-step\nGeneration\nUlrik Unneberg1,⋆, Shiyi Wang1,⋆, Lee Cheuk-Kit1, Felix Berg2,\nBoris Kozinsky1, Yilun Du1, Michael S. Albergo1, Eric Vanden-Eijnden3,4\n1Harvard University\n2Imperial College London\n3New York University\n4Capital Fund Management"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.28286.jpg",
+  "w": 640,
+  "h": 239
+ },
+ "2611.27319": {
+  "orgs": [
+   "Hyperbots",
+   "Indian Institute of Technology Bombay"
+  ],
+  "affils": [
+   "SAVIOR: Sample-efficient Adaptation of Vision-Language Models for OCR \nRepresentation \nAkshata A Bhat1*, Sharath Naganna1,2, Saiful Haq1,2, Prashant Khatri1, \nKrishna Chaitanya Reddy Tamataam1, Neha Arun1, Niyati Chhaya1, Pushpak Bhattacharyya2 \n1Hyperbots Inc \n2Indian Institute of Technology Bombay "
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.27319.jpg",
+  "w": 312,
+  "h": 440
+ },
+ "2611.28227": {
+  "orgs": [
+   "CMU"
+  ],
+  "affils": [
+   "Feedback Shortcut: Speculative Decoding for Latent\nFeedback Transformers\nBenhao Huang‡∗a, Xuezhe Ma‡†, Hector Liu‡\n‡Institute of Foundation Models, †USC, ∗CMU\na Code: https://github.com/ifm-ai/LoRM\nDate: November 20, 2026\na Correspondence: huskydogewoof@gmail.com\nOverview\nFeeding each position’s top-layer hidden state back into the next position’s input improves Trans-\nformer performance.\nHowever, this feedback breaks speculative decoding, since verifying a\ndrafted token requires the top-layer state from its preceding position, which forces the draft to\nrely on an approximate stand-in. Training the model to adapt to this stand-in can lower the exact-\ndecoding performance ceiling, while using it at inference time further introduces approximation\nerror. We propose Feedback Shortcut to address both bottlenecks. First, State alignment trains\na lightweight projection from multi-token prediction head states to stand-ins, leaving base model\ntraining untouched. Second, Pipelined correction re-evaluates each draft using its predecessor’s\nnewly computed state—a much closer proxy to true feedback. Running this correction inside the\nverification pass of subsequent drafts improves accuracy with zero extra calls. Across 135M and\n780M scales, Feedback Shortcut stays within 10−4 bits per byte of the exact-decoding ceiling on\nPaloma and accelerates decoding by 2.4×–2.8× for only ∼2% extra training compute. At large\nbatch sizes, skipping correction still preserves Transformer speed and over 80% of latent feed-\nback’s gains.\nxs+1\nhs+1\nf\nˆxs+2\nhs+2\nf\nˆxs+3\nhs+3\nf\nˆxs+2 ✓\nˆxs+3 ✓\nxs+4\n(a) Transformer\nxs+1\nhs+1\n+\nf\nˆxs+2\nhs+2\n+\nf\nˆxs+3\nhs+3\n+\nf\nˆxs+2 ✓\nˆxs+3 ✓\nxs+4\nhs\n(b) Latent feedback Transformer\nxs+1\nhs+1\n+\nf\nˆxs+2\nhs+2\n+\nf\nˆxs+3\nhs+3\n+\nf\nˆxs+2 ✓\nˆxs+3 ✓\nxs+4\nhs\nas+1\nas+2\n(c) Feedback Shortcut\nFigure 1:\nDraft token verification in speculative decoding. ✓marks an accepted draft, and each dashed box\nrepresents a single forward pass. (a) Standard Transformers only condition on token embeddings, allowing a single\npass to verify all drafts in parallel. (b) With latent feedback, each position depends on the preceding position’s top-\nlayer state, requiring a separate pass per draft. (c) Feedback Shortcut supplies drafted positions with stand-ins\nas+k projected from MTP heads so one pass verifies both drafts, while subsequent passes refine them concurrently\nwith verifying incoming drafts in the way of pipelined correction (Section 3).\narXiv:2611.28227v1  [cs.LG]  20 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.28227.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.27889": {
+  "orgs": [
+   "University College London"
+  ],
+  "affils": [
+   "Gatsby Computational Neuroscience Unit",
+   "University College London"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27889.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.28167": {
+  "orgs": [
+   "University of British Columbia",
+   "National Taichung University of Education University of California"
+  ],
+  "affils": [
+   "University of British Columbia",
+   "National Taichung University of Education University of California, San Diegowg25r@student.ubc.ca richhuang@apache.org {junda, haozhang}@ucsd.edu",
+   "Work done during internships at UCSD."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28167.jpg",
+  "w": 640,
+  "h": 247
+ },
+ "2611.27601": {
+  "orgs": [
+   "Beijing University of Posts and Telecommunications",
+   "National Key Laboratory of General Artificial Intelligence"
+  ],
+  "affils": [
+   "PromptTTSD: Controllable Text to Spoken Dialogue Synthesis with Open-Ended\nText Descriptions\nSulong Yang1,2, Zhi Zeng1∗, Xiupeng Wu1, Juewen Hu2,\nPring Wong2, Shuwu Zhang1∗, Shuo Chen2∗\n1Beijing University of Posts and Telecommunications\n2National Key Laboratory of General Artificial Intelligence, BIGAI"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.27601.jpg",
+  "w": 640,
+  "h": 238
+ },
+ "2611.27967": {
+  "orgs": [
+   "Beijing University of Chemical Technology",
+   "North Carolina State University",
+   "University of Colorado Denver",
+   "Kennesaw State University"
+  ],
+  "affils": [
+   "H. Wang is with the Department of Mechanical and Electrical Engineering, Beijing University of Chemical Technology, Beijing 100029, China (e-mail: vwang6925@gmail.com).",
+   "W. Gao is with the Department of Mechanical and Aerospace Engineering, North Carolina State University, Raleigh, NC 27695, USA (e-mail: wgao22@ncsu.edu).",
+   "Z. Li is with the Department of Computer Science and Engineering, University of Colorado Denver, Denver, CO 80217, USA (e-mail: zhengxiong.li@ucdenver.edu).",
+   "L. Tao is with the Department of Robotics and Mechatronics Engineering, Kennesaw State University, Marietta, GA 30060, USA (e-mail: ltao2@kennesaw.edu). *Corresponding author."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27967.jpg",
+  "w": 640,
+  "h": 398
+ },
+ "2611.27211": {
+  "orgs": [
+   "University of Chicago",
+   "University of Massachusetts Amherst",
+   "University of Texas",
+   "Vanderbilt University",
+   "University of Southern California",
+   "Adobe Research",
+   "University of Missouri",
+   "University of Memphis",
+   "Texas A&M University",
+   "University of Georgia",
+   "University of Oregon",
+   "Dolby Laboratories",
+   "Amazon"
+  ],
+  "affils": [
+   "University of Chicago",
+   "University of Massachusetts Amherst",
+   "University of Texas at Dallas",
+   "Vanderbilt University",
+   "University of Southern California",
+   "Adobe Research",
+   "UCSD",
+   "University of Missouri",
+   "University of Memphis",
+   "Texas A&M University",
+   "University of Georgia",
+   "University of Oregon",
+   "Dolby Laboratories",
+   "Amazon",
+   "Cisco",
+   "Zillow"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27211.jpg",
+  "w": 550,
+  "h": 392
+ },
+ "2611.27797": {
+  "orgs": [
+   "Chinese Academy of Sciences"
+  ],
+  "affils": [
+   "The State Key Laboratory of Multimodal Artificial Intelligence Systems, Institute of Automation, Chinese Academy of Sciences, Beijing, China.",
+   "University of Chinese Academy of Sciences, Beijing, China."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27797.jpg",
+  "w": 640,
+  "h": 293
+ },
+ "2611.27490": {
+  "orgs": [],
+  "affils": [
+   "Which Dwarf Is This?\nDoppeldwarf-306 and Near-Identical Instance Retrieval\nTurhan Can Kargın\nturhancan.kargin@gmail.com\nProject page: https://turhancan97.github.io/doppeldwarf-306/"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.27490.jpg",
+  "w": 640,
+  "h": 301
+ },
+ "2611.27229": {
+  "orgs": [
+   "City University of Hong Kong The Chinese University of Hong Kong"
+  ],
+  "affils": [
+   "City University of Hong Kong The Chinese University of Hong Kong (Shenzhen)tianhewu-c@my.cityu.edu.hk sunqilin@cuhk.edu.cn kede.ma@cityu.edu.hk"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27229.jpg",
+  "w": 640,
+  "h": 257
+ },
+ "2611.27891": {
+  "orgs": [
+   "Carnegie Mellon University"
+  ],
+  "affils": [
+   "Carnegie Mellon University"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.27891.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.27572": {
+  "orgs": [
+   "Japan. National Institute of Informatics",
+   "Center for Advanced Intelligence Project"
+  ],
+  "affils": [
+   "\n\nShinsaku Sakaue\n††thanks: CyberAgent, Tokyo, Japan. National Institute of Informatics, Tokyo, Japan.\nCenter for Advanced Intelligence Project, RIKEN, Tokyo, Japan.\nshinsaku.sakaue@gmail.com."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.27572.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.27645": {
+  "orgs": [
+   "Nanjing University",
+   "Cirquar Technologies"
+  ],
+  "affils": [
+   "National Key Laboratory for Novel Software Technology &School of Artificial Intelligence, Nanjing University, China",
+   "Cirquar Technologies, Nanjing, China* Equal contribution",
+   "Corresponding: yuy@nju.edu.cn"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27645.jpg",
+  "w": 640,
+  "h": 349
+ },
+ "2611.27780": {
+  "orgs": [
+   "Hunan University",
+   "New York University"
+  ],
+  "affils": [
+   "Hunan University",
+   "New York University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27780.jpg",
+  "w": 437,
+  "h": 440
+ },
+ "2611.27494": {
+  "orgs": [],
+  "affils": [
+   "Typhoon OCR 2: From Thai Document Transcription to\nMultilingual, Multi-Task OCR\nSurapon Nonesung1, Natapong Nitarach1, Sittipong Sripaisarnmongkol1, Kunat Pipatanakul2\nWarit Sirichotedumrong1\n1Typhoon, SCB DataX, 2AI Singapore"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.27494.jpg",
+  "w": 640,
+  "h": 379
+ },
+ "2611.27759": {
+  "orgs": [
+   "Ikerlan Technology Research Center",
+   "University of the Basque Country UPV/EHU",
+   "University of Cambridge",
+   "Science of Fundamental AI Research Lab (SOFAIR)",
+   "HiTZ Basque Center for",
+   "Flower Labs"
+  ],
+  "affils": [
+   "DPMA: Learning to Compress\nMixture-of-Experts Models\nJon Irureta1,2,3, Jon Imaz1, Philipp Wiesner3,4, Gorka Azkune5, Javier Fernandez-\nMarques3,6, Alex Iacob3,4, Andrej Jovanovi´c3,4, Aizea Lojo1, Nicholas D. Lane3,4,6\n1Ikerlan Technology Research Center\n2University of the Basque Country UPV/EHU\n3University\nof Cambridge\n4Science of Fundamental AI Research Lab (SOFAIR)\n5HiTZ Basque Center for\nLanguage Technology - Ixa, University of the Basque Country UPV/EHU\n6Flower Labs"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.27759.jpg",
+  "w": 640,
+  "h": 213
+ },
+ "2611.27901": {
+  "orgs": [
+   "HKU",
+   "Chinese Academy of Sciences"
+  ],
+  "affils": [
+   "\n\n\n\nZunhai Su Keyu Fan Ruishan Guo Zhongzhu Zhou Jingzehua Xu Bohan Sun\nHansen Feng Ruihan Hu Yik-Chung Wu Ngai Wong\nThe University of Hong Kong Tsinghua University The University of Sydney\nUniversity of Chinese Academy of Sciences Harbin Institute of Technology\n\n††thanks: Equal contribution."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27901.jpg",
+  "w": 640,
+  "h": 254
+ },
+ "2611.28359": {
+  "orgs": [
+   "UC Merced"
+  ],
+  "affils": [
+   "University of California, Merced"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28359.jpg",
+  "w": 640,
+  "h": 266
+ },
+ "2611.27765": {
+  "orgs": [
+   "Shanghai Jiao Tong University",
+   "Fudan University"
+  ],
+  "affils": [
+   "1Shanghai Jiao Tong University, Shanghai, China 2National University of Singapore, Singapore ; 3Fudan University, Shanghai, China 4Alibaba Group, China 5Shanghai TokMach Technology Co., Ltd., Shanghai, China ; huang_ziyu@sjtu.edu.cn"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.27765.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.27701": {
+  "orgs": [
+   "Unigroup Guoxin Microelectronics",
+   "Peking University",
+   "Chinese Academy of Sciences"
+  ],
+  "affils": [
+   "Unigroup Guoxin Microelectronics Co., Ltd., China",
+   "School of Integrated Circuits, Peking University, China",
+   "National Space Science Center, Chinese Academy of Sciences, China",
+   "School of Computer Science, Peking University, China",
+   "State Key Laboratory of Fabrication Technologies for Integrated Circuits, Institute of Microelectronics of Chinese Academy of Sciences, China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27701.jpg",
+  "w": 561,
+  "h": 246
+ },
+ "2611.28231": {
+  "orgs": [
+   "University of Guelph",
+   "EdgeAI Innovations Inc.Correspondence"
+  ],
+  "affils": [
+   "University of Guelph",
+   "EdgeAI Innovations Inc.Correspondence: skhan94@uoguelph.ca, rasa@edgeaiinnovations.com, tara.khani@edgeaiinnovations.com,"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.28231.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.27905": {
+  "orgs": [
+   "CISPA Helmholtz Center for Information SecurityIndependent ResearcherHPE"
+  ],
+  "affils": [
+   "CISPA Helmholtz Center for Information SecurityIndependent ResearcherHPE"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27905.jpg",
+  "w": 420,
+  "h": 135
+ },
+ "2611.28197": {
+  "orgs": [
+   "TU Munich"
+  ],
+  "affils": [
+   "Technical University of Munich"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28197.jpg",
+  "w": 390,
+  "h": 325
+ },
+ "2611.28194": {
+  "orgs": [
+   "MIT",
+   "NSF AI Institute for Artificial Intelligence and Fundamental Interactions (IAIFI)",
+   "SLAC National Accelerator Laboratory",
+   "Harvard University",
+   "TU Munich"
+  ],
+  "affils": [
+   "Department of Physics, Massachusetts Institute of Technology, Cambridge, MA, USA",
+   "NSF AI Institute for Artificial Intelligence and Fundamental Interactions (IAIFI)",
+   "SLAC National Accelerator Laboratory, Menlo Park, CA, USA",
+   "Department of Physics, Harvard University, Cambridge, MA, USA",
+   "Department of Physics, Technical University of Munich, Garching, Germany"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.28194.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.27404": {
+  "orgs": [
+   "Independent researcher"
+  ],
+  "affils": [
+   "Independent researcher"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.27404.jpg",
+  "w": 640,
+  "h": 427
+ },
+ "2611.26450": {
+  "orgs": [
+   "Independent Researcher"
+  ],
+  "affils": [
+   "Independent Researcher"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.26450.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.26603": {
+  "orgs": [
+   "Apple"
+  ],
+  "affils": [
+   "Apple"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26603.jpg",
+  "w": 247,
+  "h": 440
+ },
+ "2611.26444": {
+  "orgs": [
+   "THU 2UCam 3Oxford 4Stanford 5CMU 6HKU 7HKUST 8CUHK",
+   "PKU 10SJTU 11FDU 12RUC 13SZU 14Velabot AI 15Simple AI 16Baidu AI Cloud"
+  ],
+  "affils": [
+   "\n\nYuzhi Huang1,14∗⁣†*\\dagger  Jie Wu1∗⁣†*\\dagger  Fanding Huang1∗*  Junchao Lin1,14∗*  Weichen Zhang1∗*  Ziyi Xiong13,14∗*  Yang Li12∗*  Zhengwei Xie12∗*  Zhimin Wang1∗*  Zhen Liu1∗*  Jiazhen Huang1∗*  Yuzheng Zhang12  Yuche Liu12  Hongyi Yang12  Chen Tang8  Shixiang Tang3  Hakan Aktas2  Adam Wu2  Duo Wu1  Kangye Ji1  Shuzhao Xie1  Huanan Liu1  Weijue Bu11  Chenxin Li8  Xinyuan Wang6  Tianyi Bai7  Yinan Mao16  Jiawei Wang15  Minglei Li15  Heng Yu4  Ehsan Adeli4‡\\ddagger  Minchen Li5‡\\ddagger  Yong-Lu Li10‡\\ddagger  Cengiz Öztireli2‡\\ddagger  Huazhe Xu1‡\\ddagger  Chao Yu1‡\\ddagger  Jing Zhang12‡\\ddagger  Shanghang Zhang9‡\\ddagger  Weitao Zhou15‡\\ddagger  Wenwu Zhu1‡\\ddagger  Cheng Chi12 \n\n  Jingyan Jiang1,14 \n\n  Zhi Wang1 \n\n\n\n\n1THU  2UCam  3Oxford  4Stanford  5CMU  6HKU  7HKUST  8CUHK\n\n9PKU  10SJTU  11FDU  12RUC  13SZU  14Velabot AI  15Simple AI  16Baidu AI Cloud\n\n∗Co-first Authors  †Project Leaders  ‡Advisors   \n\n Corresponding Authors\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26444.jpg",
+  "w": 635,
+  "h": 440
+ },
+ "2611.26629": {
+  "orgs": [
+   "NVIDIA"
+  ],
+  "affils": [
+   "Virginia Tech",
+   "NVIDIA[0.5em] https://pmd-distillation.github.io"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26629.jpg",
+  "w": 640,
+  "h": 203
+ },
+ "2611.26409": {
+  "orgs": [
+   "Tencent",
+   "Tsinghua University"
+  ],
+  "affils": [
+   "\n\nChangli Tang1,2,*, Jie Yang1,*, Tianyi Wang1,*,†, Lei Li1,*, Daoze Zhang1,*, Zijie Xin1,*,\n\n\n\nZhan Liu1,2, Li Li1, Jinchang Xu1, Fengyun Rao1,‡, Chao Zhang2, Jing LYU1\n\n\n\n\n\n1 WeChat Vision, Tencent Inc.\n2 Tsinghua University  \n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26409.jpg",
+  "w": 640,
+  "h": 287
+ },
+ "2611.26595": {
+  "orgs": [
+   "Nanjing University",
+   "KlingAI Research",
+   "Peking University",
+   "HKUST",
+   "HKU",
+   "Tsinghua University"
+  ],
+  "affils": [
+   "Nanjing University",
+   "KlingAI Research",
+   "Peking University",
+   "Hong Kong University of Science and Technology (Guangzhou)",
+   "University of Hong Kong",
+   "Hong Kong University of Science and Technology",
+   "Tsinghua University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26595.jpg",
+  "w": 532,
+  "h": 440
+ },
+ "2611.25403": {
+  "orgs": [
+   "East China Normal University",
+   "Shanghai Jiao Tong University",
+   "Tongji University"
+  ],
+  "affils": [
+   "Ant International",
+   "Ant International(intern); , East China Normal University",
+   "Ant International(intern); , Shanghai Jiao Tong University",
+   "Ant International(intern); , Tongji University",
+   "Ant International; corresponding author"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.25403.jpg",
+  "w": 640,
+  "h": 350
+ },
+ "2611.26627": {
+  "orgs": [
+   "IBM Research"
+  ],
+  "affils": [
+   "Virginia Tech",
+   "fal",
+   "Georgia Tech",
+   "IBM Research"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26627.jpg",
+  "w": 640,
+  "h": 322
+ },
+ "2611.26389": {
+  "orgs": [
+   "NTU",
+   "KlingAI Research"
+  ],
+  "affils": [
+   "S-Lab, Nanyang Technological University",
+   "KlingAI Research",
+   "CUHK"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26389.jpg",
+  "w": 640,
+  "h": 296
+ },
+ "2611.26358": {
+  "orgs": [
+   "Reflection Team"
+  ],
+  "affils": [
+   "Reflection Team"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26358.jpg",
+  "w": 544,
+  "h": 440
+ },
+ "2611.26516": {
+  "orgs": [
+   "Alibaba Group"
+  ],
+  "affils": [
+   "AMAP, Alibaba Group"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26516.jpg",
+  "w": 640,
+  "h": 423
+ },
+ "2611.26617": {
+  "orgs": [
+   "NUS",
+   "Tencent",
+   "Stanford University"
+  ],
+  "affils": [
+   "Show Lab, National University of Singapore",
+   "A*STAR, Singapore",
+   "Tencent",
+   "Stanford Universityhttps://showlab.github.io/o2laf"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26617.jpg",
+  "w": 640,
+  "h": 204
+ },
+ "2611.25773": {
+  "orgs": [
+   "Shanghai Jiao Tong University",
+   "Tencent",
+   "Shanghai University",
+   "University of Bristol{chenchiyu"
+  ],
+  "affils": [
+   "Shanghai Jiao Tong University",
+   "Tencent",
+   "Shanghai University",
+   "University of Bristol{chenchiyu, ma_yuezhao, orangeade, liucan1013, yaoyao27, yifeiyang,"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.25773.jpg",
+  "w": 640,
+  "h": 298
+ },
+ "2611.26590": {
+  "orgs": [
+   "Imperial College London",
+   "University College London"
+  ],
+  "affils": [
+   "Probing the “Conscious” Mind1:\nSelective Access and Global Workspace in Vision-Language Models\nJiahao Huang 1\nJun Wang 2†\n1 Imperial College London, UK\n2 University College London, UK\n† Corresponding author."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.26590.jpg",
+  "w": 587,
+  "h": 440
+ },
+ "2611.26380": {
+  "orgs": [
+   "HKUST",
+   "KlingAI Research",
+   "HKU"
+  ],
+  "affils": [
+   "HKUST(GZ)",
+   "KlingAI Research",
+   "PKU",
+   "NJU",
+   "HKU",
+   "THU"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26380.jpg",
+  "w": 640,
+  "h": 385
+ },
+ "2611.25509": {
+  "orgs": [
+   "LingSante MedGuard Team"
+  ],
+  "affils": [
+   "\n\nLingSante MedGuard Team\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.25509.jpg",
+  "w": 424,
+  "h": 245
+ },
+ "2611.26510": {
+  "orgs": [
+   "Renmin University of China"
+  ],
+  "affils": [
+   "Gaoling School of Artificial Intelligence, Renmin University of China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26510.jpg",
+  "w": 640,
+  "h": 228
+ },
+ "2611.26511": {
+  "orgs": [
+   "Nanjing University",
+   "HKU",
+   "University of Oxford"
+  ],
+  "affils": [
+   "Nanjing University, Nanjing, China",
+   "DreamTech, Shenzhen, China",
+   "The University of Hong Kong, Hong Kong, Hong Kong",
+   "Nanjing University, Suzhou, China",
+   "University of Oxford, Oxford, United Kingdom"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26511.jpg",
+  "w": 640,
+  "h": 360
+ },
+ "2611.25927": {
+  "orgs": [
+   "Wuhan University Zhongguancun Academy",
+   "Zhongguancun Institute of Artificial Intelligence DeepCybo",
+   "Harbin Institute of Technology Huazhong University of Science and Technology",
+   "Nanjing University East China Normal University"
+  ],
+  "affils": [
+   "Wuhan University Zhongguancun Academy",
+   "Zhongguancun Institute of Artificial Intelligence DeepCybo",
+   "Harbin Institute of Technology Huazhong University of Science and Technology",
+   "Nanjing University East China Normal University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.25927.jpg",
+  "w": 640,
+  "h": 99
+ },
+ "2611.26414": {
+  "orgs": [
+   "Beihang University"
+  ],
+  "affils": [
+   "ZeroVLN: Learning to Navigate without\nSupervised Fine-Tuning of the VLM Brain\nZixuan Huang1,2,†, Yang Zhou2,3,†, Guli Zhang2, Sunzhu Li2, Hongyan Xie1, Zehao Chen1, Fuzhen\nZhuang1, Kaixuan Wang2, Xiaozhi Chen2, Yikun Ban1,∗, Deqing Wang1,∗\n1Beihang University, 2Zhuoyu Technology, Shenzhen, China, 3Zhejiang University\n†Equal contribution, ∗Corresponding author\nRepresentative vision-language navigation (VLN) methods typically couple a vision-language model\n(VLM) brain with a learnable action head and fine-tune the VLM brain on navigation-domain data\nto predict geometric goals.\nHowever, such adaptation can substantially alter base VLM weights\nand degrade general visual capabilities. We introduce ZeroVLN, a slow–fast navigation framework\nthat achieves effective navigation with zero navigation-domain SFT of the VLM brain. Rather than\nteaching the brain to predict geometric goals, we equip it with a semantic tool-calling interface for\nconveying movement decisions to an action expert in natural language. We first adapt the action ex-\npert to carry out these movement requests, then jointly improve the brain’s movement decisions and\nthe action expert’s continuous execution through closed-loop reinforcement learning (RL). Trained\non the same navigation episodes, ZeroVLN substantially outperforms representative SFT-based hier-\narchical VLN methods on standard VLN-CE (continuous environments) benchmarks, while inducing\nonly minor changes to the brain’s weights and largely preserving its general capabilities. To our\nknowledge, ZeroVLN is the first slow–fast VLN framework with zero navigation-domain SFT of the VLM\nbrain, and the first to jointly optimize its slow and fast policies through closed-loop agentic RL in VLN-CE.\nDate: 2026.11.17\nCorrespondence: huang_zx@buaa.edu.cn\nCode: https://github.com/hzx122/ZeroVLN\nModel: https://huggingface.co/hzxllll/ZeroVLN\n1\nIntroduction\nVLN requires an embodied agent to connect movement decisions with precise movement [4, 13, 27, 28, 36, 47].\nRepresentative methods adapt a general-purpose VLM through navigation-domain supervision to predict\ngeometric goals for an action expert [20, 49] or generate numerical movement commands in a predefined for-\nmat [13]. However, we observe substantial displacement of the base VLM’s weights and degraded performance\nof general visual capability following this adaptation, as shown in Figure 1.\nInspired by DeepSeek-R1-Zero [21], which demonstrates that reasoning capabilities can emerge through RL\ndirectly from a base language model without prior SFT, we introduce ZeroVLN, the first slow–fast navigation\nframework that learns navigation through environment interaction with zero navigation-domain SFT of the\nVLM brain. Rather than adapting the brain to predict geometric goals, we introduce a semantic tool interface\nthat connects it to a trainable flow-matching action expert [54]. Through natural-language tool calls, the\nbrain conveys movement decisions to the action expert, which translates them into continuous motion.\nWithin this framework, we first construct reference trajectories from the brain’s own movement requests, col-\nlected through online rollouts with the brain frozen. To ground these requests in executable motion, we design\na privileged trajectory planner that leverages a semantic map derived from the scene mesh [35]. The resulting\nreference trajectories are paired with their originating requests to provide semantically aligned supervision\nfor the action expert.\nWe then jointly optimize the brain’s movement decisions and the action expert’s continuous execution through\nmulti-round agentic RL [18, 61]. To address sparse success signals in challenging long-horizon navigation\n1\narXiv:2611.26414v1  [cs.AI]  19 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.26414.jpg",
+  "w": 640,
+  "h": 299
+ },
+ "2611.26107": {
+  "orgs": [
+   "ERNIE Team",
+   "Baidu"
+  ],
+  "affils": [
+   "\n\nERNIE Team\n\n  \nBaidu Inc\n\n \nProject Page:\nhttps://ernie-research.github.io/HiUni\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26107.jpg",
+  "w": 640,
+  "h": 266
+ },
+ "2611.26613": {
+  "orgs": [
+   "Carnegie Mellon University",
+   "Bosch Research North America & Bosch Center for Artificial Intelligence (BCAI)"
+  ],
+  "affils": [
+   "\n\nYiyang Du1†  Yuxuan Kuang1∗  Qitao Zhao1∗  Yixuan Wang2∗  Zhanqiu Guo1\n\nYi Xu3  Xin Li3  Wenbin He3  Liu Ren3  Chenyan Xiong1†\n\n\n1Carnegie Mellon University  2University of Illinois at Urbana-Champaign\n\n3Bosch Research North America & Bosch Center for Artificial Intelligence (BCAI)\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26613.jpg",
+  "w": 640,
+  "h": 249
+ },
+ "2611.26073": {
+  "orgs": [
+   "University of Haifa",
+   "Google Research"
+  ],
+  "affils": [
+   "Faculty of Data and Decision Sciences, Technion",
+   "Faculty of Computer and Information Science, University of Haifa",
+   "Google Research"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26073.jpg",
+  "w": 440,
+  "h": 440
+ },
+ "2611.25476": {
+  "orgs": [
+   "University of Macau",
+   "NUS",
+   "CUHK",
+   "Sun Yat-sen University",
+   "Sichuan University",
+   "University of Oxford",
+   "Stanford University",
+   "Peking University"
+  ],
+  "affils": [
+   "University of Macau",
+   "National University of Singapore",
+   "The Chinese University of Hong Kong",
+   "Sun Yat-sen University",
+   "Sichuan University",
+   "University of Oxford",
+   "Stanford University",
+   "Peking University*Equal contribution. †Project lead. ‡Corresponding authors."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.25476.jpg",
+  "w": 640,
+  "h": 399
+ },
+ "2611.25387": {
+  "orgs": [
+   "University of Pennsylvania",
+   "University of Minnesota",
+   "University of Southern California",
+   "University of Wisconsin–Madison"
+  ],
+  "affils": [
+   "University of Pennsylvania",
+   "University of Minnesota",
+   "University of Southern California",
+   "MBZUAI",
+   "University of Wisconsin–Madison"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.25387.jpg",
+  "w": 640,
+  "h": 287
+ },
+ "2611.25980": {
+  "orgs": [
+   "KAIST"
+  ],
+  "affils": [
+   "KAIST",
+   "RLWRLD"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.25980.jpg",
+  "w": 640,
+  "h": 287
+ },
+ "2611.26408": {
+  "orgs": [
+   "Ulm University"
+  ],
+  "affils": [
+   "Ulm University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26408.jpg",
+  "w": 640,
+  "h": 224
+ },
+ "2611.25419": {
+  "orgs": [
+   "Dalian University of Technology",
+   "Peking University",
+   "Xiaomi",
+   "City University of Hong Kong"
+  ],
+  "affils": [
+   "Dalian University of Technology",
+   "Peking University",
+   "Xiaomi Inc",
+   "City University of Hong Kong"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.25419.jpg",
+  "w": 640,
+  "h": 267
+ },
+ "2611.25946": {
+  "orgs": [
+   "Mohamed bin Zayed University of Artificial Intelligence"
+  ],
+  "affils": [
+   "Point Dynamics as Proxy for Robotic World Models\nDong An1, Tianyu Liu1,2, Haoran Ding1,2, Wen Yang1,2, Anqing Duan2\nZhengzhong Liu1, Eric P. Xing1,2, Guangyi Liu1\n1Institute of Foundation Models, 2Mohamed bin Zayed University of Artificial Intelligence\nProject Page: https://marsaki.github.io/point-dynamics-proxy/\nDate: November 19, 2026\nOverview\nRobotic world models predict future video frames from the current observation and a sequence\nof robot actions. While recent models follow the given actions closely, manipulated objects often\ncollapse or move inconsistently with the action. We attribute this to the conditioning: an action,\nor a rendering of the robot, specifies where the robot goes but not how the scene responds, leaving\na single video model to infer the interaction dynamics implicitly while also rendering appearance.\nWe therefore separate dynamics prediction from visual rendering, with 3D point dynamics as the\nproxy between them. Specifically, we lift the first frame into 3D points, simulate how they respond\nto the robot’s motion with a learned point dynamics model, and render the simulated points back\ninto pixel-aligned videos that any video model can read. In controlled experiments on the DROID\ndataset with two video renderers of different architectures, this point dynamics proxy reduces object\nmotion error by 8.6% and 6.2% without degrading image quality, and by 8.1% on a real bimanual\nrobot. Moreover, the video follows the simulation: more accurate dynamics yield more accurate\nobject motion, and editing the points steers the video. This suggests that advances in dynamics\nmodeling can translate into more faithful robotic world models.\n1\nIntroduction\nGiven the current observation and a sequence of robot actions, a robotic world model predicts the future\nvideo frames. Such models serve as learned surrogates of the real world in robot manipulation, where they\nare used to evaluate policies, to plan actions and to synthesize training data [22, 41, 84, 96]. These uses\nimpose two requirements on the predicted video. The first is action following: the robot must execute the\ngiven actions. The second is interaction fidelity: the objects in contact with the robot must respond as\nthey would in reality, whether they are carried, pushed, dragged, deformed or released, while preserving\ntheir shape and identity.\nEarly robotic world models encode the action as a numeric vector, such as end-effector poses or joint\nangles [22, 84, 96], and leave the video model to infer from pixels both how the robot appears and how\nthe scene responds. Recent work instead renders the robot into pixel-aligned conditions, such as masks,\nURDF renders or surface tracks [1, 2, 6, 35, 39]. This specifies the robot’s appearance in every frame and\nmakes action following far more reliable, but interaction fidelity improves much less. As shown in Fig. 1b,\nobjects may collapse during contact, as when a slice of bread and the spatula dragging it come apart, or\nrespond inconsistently with the action, as when a released cup rises with the open gripper. We attribute\nthese failures to the conditioning (Fig. 1a): an action, numeric or rendered, specifies where the robot goes\nbut not how the scene responds, so a single video model must infer the interaction dynamics implicitly\narXiv:2611.25946v1  [cs.CV]  19 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.25946.jpg",
+  "w": 640,
+  "h": 243
+ },
+ "2611.26268": {
+  "orgs": [
+   "Tencent Youtu Lab"
+  ],
+  "affils": [
+   "LightningMoBA\nAccelerating Mixture of Block Attention via Dynamic Routing,\nKV-Centric Execution and Runtime Pipelining\nYingqi Shi, Junru Lu, Yun Liu, Di Yin, Xing Sun\nTencent Youtu Lab\nMixture of Block Attention (MoBA) reduces long-context computation by selecting key-value (KV)\nblocks for each query. FlashMoBA implements MoBA efficiently but retains a fixed Top-k budget\nand query-centric schedule. Fixed Top-k applies one budget across different score distributions and\ncouples routing to task granularity; query-range ownership fragments K/V reuse when several\nranges select the same column. We present LightningMoBA, which co-designs selection and\nexecution through dynamic routing, KV-centric ownership, and runtime pipelining. Dynamic routing\nthresholds MoBA’s per-query block scores and directly emits variable-cardinality sparse metadata.\nKV-centric ownership groups selected rows by (query head, KV block) column, splits high-fanout\ncolumns into bounded tasks, and reuses each task’s loaded KV tile. On Hopper, pipelining overlaps\nregular K/V transfers and irregular query gathers with Tensor Core computation. Together, these\nmechanisms decouple retention from GPU scheduling granularity. At matched Top-16 retention\nacross five checkpoints, LightningMoBA accelerates end-to-end generation by 1.20 to 1.60× while\nraising mean RULER score from 74.42 to 75.28.\nDate: November 15, 2026\nCorrespondence: junrulu@tencent.com\nCode: https://github.com/Tencent/LightningMoBA\n1\nIntroduction\nDense self-attention evaluates all pairwise query-key interactions in a sequence, whereas sparse attention\nreduces this work by routing each query to only a subset of keys. On GPUs, however, fewer interactions do\nnot automatically yield proportionally lower latency: score selection, sparse-index construction, irregular\ndata movement, and load imbalance can offset the savings in arithmetic. An efficient sparse attention method\nmust therefore jointly optimize the routing decision and the GPU workload that follows from it.\nMixture of Block Attention (MoBA) [1] routes at block granularity: it scores each KV block against the\nquery, retains a fixed number k of blocks, and computes softmax attention over their tokens. FlashMoBA [2]\nimplements this efficiently, maintaining an ordered Top-k candidate set per query and assigning each CTA a\nlogical query range whose selected rows are gathered into dense Tensor Core tiles.\nNevertheless, two limitations remain. Fixed Top-k routing assigns the same block budget to queries with\ndifferent score distributions, retaining weakly related blocks for concentrated scores while discarding\nrelevant blocks for diffuse ones. Maintaining the ordered candidate set also adds routing latency. FlashMoBA\norganizes metadata by KV block but assigns CTA ownership by logical query range, so several CTAs may\nclaim one (query head, KV block) column and leave cross-CTA reuse to the cache hierarchy. Coupling\nquery-group size to k also makes a routing parameter determine scheduling granularity.\nWe present LightningMoBA, which preserves MoBA’s parameter-free query-block scoring rule and computes\nstandard softmax attention over the retained tokens, but reorganizes routing and execution along three axes\n(Fig. 1). Our contributions are as follows:\n1\narXiv:2611.26268v1  [cs.DC]  19 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.26268.jpg",
+  "w": 440,
+  "h": 440
+ },
+ "2611.26211": {
+  "orgs": [
+   "Huazhong University of Science and Technology",
+   "Tencent",
+   "Peking University",
+   "HKUST"
+  ],
+  "affils": [
+   "Huazhong University of Science and Technology",
+   "Tencent",
+   "Peking University",
+   "The Hong Kong University of Science and Technology*Equal contribution. Corresponding author."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26211.jpg",
+  "w": 640,
+  "h": 316
+ },
+ "2611.26239": {
+  "orgs": [
+   "University of Notre Dame",
+   "MIT"
+  ],
+  "affils": [
+   "University of Notre Dame",
+   "Georgia Tech",
+   "MIT"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26239.jpg",
+  "w": 286,
+  "h": 440
+ },
+ "2611.26216": {
+  "orgs": [
+   "University of Maryland",
+   "Simon Fraser University",
+   "Pangram Labs",
+   "University of British Columbia and Canada CIFAR AI Chair",
+   "Google DeepMind"
+  ],
+  "affils": [
+   "University of Maryland",
+   "Simon Fraser University",
+   "Pangram Labs",
+   "University of British Columbia and Canada CIFAR AI Chair, Amii",
+   "Google DeepMind"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26216.jpg",
+  "w": 640,
+  "h": 270
+ },
+ "2611.25595": {
+  "orgs": [
+   "University of Central Florida"
+  ],
+  "affils": [
+   "LoopedWAM: Looped World Action Models\nfor Elastic Inference\nAnh Dao #\nXinxin Liu\nHang Yu\nJeffrey A Chan Santiago\nYuzhang Shang\nUniversity of Central Florida"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.25595.jpg",
+  "w": 640,
+  "h": 214
+ },
+ "2611.26103": {
+  "orgs": [
+   "HKUST",
+   "Beijing Jiaotong University 3Shenzhen University"
+  ],
+  "affils": [
+   "1The Hong Kong University of Science and Technology (Guangzhou) ; 2Beijing Jiaotong University 3Shenzhen University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26103.jpg",
+  "w": 640,
+  "h": 206
+ },
+ "2611.26286": {
+  "orgs": [],
+  "affils": [
+   "Twice-Told Critiques: Claim-Level Homogenization of Peer Review in the\nLLM Era\nIlya Gusev\nKeenable / Amsterdam\nphoenixilya@gmail.com"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.26286.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.26809": {
+  "orgs": [
+   "EPFL University of Toronto"
+  ],
+  "affils": [
+   "\n\n\n\nKaustubh Ponkshe*  \nGyung Hyun Je*  Stefan Taga\n\nColin Raffel   Martin Jaggi\n\n EPFL   University of Toronto\n*Equal contribution.\n\n††thanks: Corresponding authors:\nkaustubh.ponkshe@epfl.ch and jayje@cs.toronto.edu."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26809.jpg",
+  "w": 640,
+  "h": 137
+ },
+ "2611.26540": {
+  "orgs": [
+   "Sorbonne Université",
+   "Google DeepMind"
+  ],
+  "affils": [
+   "††affiliation: Kyutai ; Paris, France",
+   "††affiliation: ISIR, Sorbonne Université ; Paris, France",
+   "††affiliation: Google DeepMind ; (work done while at Kyutai)"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26540.jpg",
+  "w": 640,
+  "h": 237
+ },
+ "2611.25567": {
+  "orgs": [
+   "University of Haifa"
+  ],
+  "affils": [
+   "Faculty of computer and Information Science, University of Haifa"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.25567.jpg",
+  "w": 640,
+  "h": 271
+ },
+ "2611.26248": {
+  "orgs": [
+   "in Agentic Twins of Real Labs",
+   "Zhejiang University"
+  ],
+  "affils": [
+   "TwinLab-Bench: Evaluating AI Scientists\nin Agentic Twins of Real Labs\nYang Wan1, Linchao Zhu∗1\n1Zhejiang University\n∗Corresponding author\n Project: https://twinlab-bench.github.io/"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.26248.jpg",
+  "w": 640,
+  "h": 206
  }
 }
