@@ -1,0 +1,69 @@
+{
+ "title": "Daily Paper",
+ "updated_at": "2026-11-27T03:59:37+00:00",
+ "default_category": "cs.RO",
+ "categories": [
+  {
+   "id": "cs.RO",
+   "name": "Robotics",
+   "name_zh": "机器人"
+  }
+ ],
+ "category_names": {
+  "cs.AI": {
+   "en": "Artificial Intelligence",
+   "zh": "人工智能"
+  },
+  "cs.CL": {
+   "en": "Computation and Language",
+   "zh": "计算语言学"
+  },
+  "cs.CV": {
+   "en": "Computer Vision and Pattern Recognition",
+   "zh": "计算机视觉"
+  },
+  "cs.GR": {
+   "en": "Graphics",
+   "zh": "图形学"
+  },
+  "cs.HC": {
+   "en": "Human-Computer Interaction",
+   "zh": "人机交互"
+  },
+  "cs.LG": {
+   "en": "Machine Learning",
+   "zh": "机器学习"
+  },
+  "cs.MA": {
+   "en": "Multiagent Systems",
+   "zh": "多智能体系统"
+  },
+  "cs.RO": {
+   "en": "Robotics",
+   "zh": "机器人"
+  },
+  "eess.SY": {
+   "en": "Systems and Control",
+   "zh": "系统与控制"
+  },
+  "math.OC": {
+   "en": "Optimization and Control",
+   "zh": "优化与控制"
+  }
+ },
+ "days": [
+  {
+   "date": "2026-11-25",
+   "count": 98
+  },
+  {
+   "date": "2026-11-24",
+   "count": 105
+  },
+  {
+   "date": "2026-11-23",
+   "count": 115
+  }
+ ],
+ "demo": true
+}
