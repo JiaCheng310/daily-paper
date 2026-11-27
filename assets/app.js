@@ -259,7 +259,7 @@
     nav.innerHTML = state.index.categories.map((c) => {
       const name = state.lang === 'zh' ? (c.name_zh || c.name) : c.name;
       const cur = c.id === state.cat ? ' aria-current="page"' : '';
-      return `<a href="?date=${encodeURIComponent(state.date)}&cat=${encodeURIComponent(c.id)}" data-cat="${escapeHtml(c.id)}"${cur}>${escapeHtml(c.id)} · ${escapeHtml(name)}</a>`;
+      return `<a href="?date=${encodeURIComponent(state.date)}&cat=${encodeURIComponent(c.id)}" data-cat="${escapeHtml(c.id)}"${cur}>${c.id === 'all' ? '' : `${escapeHtml(c.id)} · `}${escapeHtml(name)}</a>`;
     }).join('');
 
     const cat = state.index.categories.find((c) => c.id === state.cat);
@@ -358,6 +358,7 @@
     <div class="paper-foot">
       <div class="paper-tags">
         <span class="date" title="${escapeHtml(subjects)}">${date}</span>
+        <span class="date" title="${escapeHtml(subjects)}">${escapeHtml(paper.primary || '')}</span>
         ${tags}${hf}
       </div>
       <div class="paper-actions">
