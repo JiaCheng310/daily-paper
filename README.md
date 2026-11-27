@@ -24,9 +24,13 @@ Paper fields: `id, title, authors[], abstract, primary, categories[], published,
 
 FAQ file: `{id, model, generated_at, qa: {zh: [{q, a(markdown)}], en: [...]}}`.
 
+## Preview images and organizations
+
+`scripts/enrich.py` adds a preview image (first well-shaped figure of the arXiv HTML version, PDF fallback) and the authors' organizations to every paper. Organizations are parsed from the author block, matched to [ROR](https://ror.org) (or a small company table) and shown with the organization's site icon (`data/logos/`). It runs in GitHub Actions (`Enrich papers` workflow); caches: `data/enrich.json`, `data/orgs.json`.
+
 ## Demo data
 
-`scripts/fetch_demo.py` builds the current demo from the arXiv API (metadata) and the Hugging Face Daily Papers API (upvotes). Its relevance score is a keyword rule and the summaries / FAQ in `data/demo_notes.json` and `data/faq/` are hand-written samples; the production pipeline will generate them with an LLM.
+`scripts/fetch_demo.py` builds the current demo from the arXiv API (metadata) and the Hugging Face Daily Papers API (upvotes). Its relevance score is a keyword rule and the FAQ in `data/faq/` is a hand-written sample; the production pipeline will generate scores, one-line summaries and FAQs with an LLM.
 
 ```bash
 python3 -I scripts/fetch_demo.py --cat cs.RO --days 3

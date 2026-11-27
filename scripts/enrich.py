@@ -54,7 +54,12 @@ SUBUNIT = re.compile(
 )
 EMBEDDED = re.compile(
     r"((?:[A-Z][\w'’.&-]*\s+){0,4}(?:University|Universit[éàaäi]\w*|Institute of Technology|Polytechnic\w*)"
-    r"(?:\s+(?:of|de|di|del|degli|für|for)\s+(?:the\s+)?(?:[A-Z][\w'’.&-]*(?:\s+|$)){1,4})?)"
+    r"(?:\s+(?:of|de|di|del|degli|für|for)\s+(?:the\s+)?(?:(?:[A-Z][\w'’.&-]*|and|of)(?:\s+|$)){1,7})?)"
+)
+NOTE_PHRASES = re.compile(
+    r"\b(equal (contribution|supervision|advising|advice)s?|co-?first authors?|corresponding authors?|"
+    r"project lead(er)?s?|these authors contributed equally( to this work)?|work (was )?done (during|while)[^,;]*)",
+    re.I,
 )
 COMPANY_SUFFIX = re.compile(r"(Co\.?,?\s*)?(Ltd|Inc|LLC|GmbH|Corp|S\.?A)\.?", re.I)
 NOT_ORG = re.compile(r"@|https?://|www\.|\b\d{5,6}\b|^\W*$")
@@ -167,6 +172,8 @@ def clean_affil(text):
     text = re.sub(r"^\s*Affiliations?\s*:\s*", "", text, flags=re.I)
     text = re.sub(r"\\[A-Za-z]+(?=\s|$)", " ", text)  # LaTeX macros LaTeXML could not expand
     text = re.sub(r"[†‡§¶∗*#♯♮♭⋆★☆✉]", " ", text)
+    text = NOTE_PHRASES.sub(" ", text)
+    text = re.sub(r"\b(project page|homepage|website|code)\s*:.*$", "", text, flags=re.I)
     text = re.sub(r"\S+@\S+|https?://\S+", " ", text)
     m = re.search(r"\b(?:are|is) (?:with|at|from) (?:the )?(.*)", text, re.I)
     if m:
@@ -197,14 +204,15 @@ def pick_org(affil):
     plain = [s for s in cands if not SUBUNIT.search(s)]
     choice = top[0] if top else (plain or cands)[-1]
     # "Department of X (DEI) at the University of Padova" -> "University of Padova"
-    if SUBUNIT.search(choice) or len(choice) > 48 or " at " in choice:
+    if SUBUNIT.search(choice) or " at " in choice:
         m = EMBEDDED.search(choice)
         if m:
-            choice = m.group(1).strip()
+            choice = re.sub(r"\s+(and|of)$", "", m.group(1).strip())
     return choice
 
 
 def canonical(org):
+    org = re.sub(r"\s+", " ", org)
     org = re.sub(r"^The\s+", "", org).strip()
     org = re.sub(r",?\s*(Co\.?,?\s*)?(Ltd|Inc|LLC|GmbH|Corp)\.?$", "", org).strip(" ,.")
     for rx, name in CANONICAL:
@@ -230,12 +238,176 @@ def orgs_from_affils(affils):
 
 def orgs_from_text(text):
     """Fallback for free text (author block without tags, PDF first page)."""
-    lines = [ln.strip() for ln in re.split(r"\n|;", text)]
+    raw = [ln.strip() for ln in text.split("\n")]
+    lines = []  # rejoin names broken across PDF lines ("... University of Science" + "and Technology")
+    for ln in raw:
+        if lines and lines[-1] and re.match(r"(and|of|for|de|di|the|&)\b", ln):
+            lines[-1] = f"{lines[-1]} {ln}"
+        else:
+            lines.append(ln)
+    lines = [part.strip() for ln in lines for part in ln.split(";")]
     return orgs_from_affils([ln for ln in lines if ln and ORG_KW.search(ln) and len(ln) <= 600])
 
 
 def compute_orgs(kind, affils):
     return orgs_from_affils(affils) if kind == "tagged" else orgs_from_text("\n".join(affils))
+
+
+# --------------------------------------------------- ROR names and logos
+ROR_API = "https://api.ror.org/v2/organizations"
+# Companies are poorly covered by ROR's affiliation matcher; map them directly.
+COMPANY_DOMAINS = [
+    (r"^Google DeepMind$|^DeepMind$", "Google DeepMind", "deepmind.google"),
+    (r"^Google( Research)?$", "Google", "google.com"),
+    (r"^NVIDIA", "NVIDIA", "nvidia.com"),
+    (r"^Meta( AI| FAIR| Reality Labs)?$|^FAIR$", "Meta", "meta.com"),
+    (r"^Microsoft", "Microsoft", "microsoft.com"),
+    (r"^Amazon", "Amazon", "amazon.com"),
+    (r"^Apple$", "Apple", "apple.com"),
+    (r"^OpenAI$", "OpenAI", "openai.com"),
+    (r"^Anthropic$", "Anthropic", "anthropic.com"),
+    (r"^Disney Research", "Disney Research", "disneyresearch.com"),
+    (r"^Toyota Research Institute", "Toyota Research Institute", "tri.global"),
+    (r"^Boston Dynamics", "Boston Dynamics", "bostondynamics.com"),
+    (r"^Physical Intelligence", "Physical Intelligence", "physicalintelligence.company"),
+    (r"^Tesla", "Tesla", "tesla.com"),
+    (r"^Huawei", "Huawei", "huawei.com"),
+    (r"^Alibaba|^DAMO Academy", "Alibaba", "alibaba.com"),
+    (r"^Tencent", "Tencent", "tencent.com"),
+    (r"^ByteDance", "ByteDance", "bytedance.com"),
+    (r"^Baidu", "Baidu", "baidu.com"),
+    (r"^Samsung", "Samsung", "samsung.com"),
+    (r"^Intel( Labs)?$", "Intel", "intel.com"),
+    (r"^Sony", "Sony", "sony.com"),
+    (r"^Qualcomm", "Qualcomm", "qualcomm.com"),
+    (r"^Bosch", "Bosch", "bosch.com"),
+    (r"^Unitree", "Unitree", "unitree.com"),
+    (r"^AgiBot", "AgiBot", "agibot.com"),
+    (r"^Galbot", "Galbot", "galbot.com"),
+    (r"^Horizon Robotics", "Horizon Robotics", "horizon.auto"),
+    (r"^Shanghai AI Lab$", "Shanghai AI Lab", "shlab.org.cn"),
+    (r"^Skild", "Skild AI", "skild.ai"),
+    (r"^Figure AI", "Figure AI", "figure.ai"),
+]
+COMPANY_DOMAINS += [
+    (r"^NEC Lab", "NEC Labs", "nec-labs.com"),
+    (r"^Mitsubishi Electric Research|^MERL$", "MERL", "merl.com"),
+    (r"^Honda Research Institute", "Honda Research Institute", "honda-ri.com"),
+    (r"^Naver Labs", "NAVER LABS", "naverlabs.com"),
+    (r"^Adobe", "Adobe", "adobe.com"),
+    (r"^IBM", "IBM", "ibm.com"),
+    (r"^Siemens", "Siemens", "siemens.com"),
+    (r"^Hyundai", "Hyundai", "hyundai.com"),
+    (r"^Agility Robotics", "Agility Robotics", "agilityrobotics.com"),
+]
+COMPANY_DOMAINS = [(re.compile(p, re.I), name, dom) for p, name, dom in COMPANY_DOMAINS]
+# Short display names produced by CANONICAL, looked up in ROR by their full names.
+LOOKUP_NAMES = {
+    "MIT": "Massachusetts Institute of Technology",
+    "NUS": "National University of Singapore",
+    "NTU": "Nanyang Technological University",
+    "HKU": "University of Hong Kong",
+    "HKUST": "Hong Kong University of Science and Technology",
+    "KAIST": "Korea Advanced Institute of Science and Technology",
+    "CUHK": "Chinese University of Hong Kong",
+    "EPFL": "École Polytechnique Fédérale de Lausanne",
+    "TU Munich": "Technical University of Munich",
+    "ETH Zurich": "ETH Zurich",
+}
+
+
+def _host(url):
+    host = urllib.parse.urlparse(url if "://" in url else f"https://{url}").hostname or ""
+    return host.removeprefix("www.")
+
+
+def ror_lookup(name):
+    """Return (display_name, ror_id, domain) or None. Accepts only confident matches."""
+    q = urllib.parse.urlencode({"affiliation": name})
+    items = json.loads(fetch(f"{ROR_API}?{q}", timeout=30)[0]).get("items", [])
+    org = next((it["organization"] for it in items if it.get("chosen")), None)
+    if org is None:  # exact match on an official name (not alias / acronym) via search
+        q = urllib.parse.urlencode({"query": name})
+        for cand in json.loads(fetch(f"{ROR_API}?{q}", timeout=30)[0]).get("items", [])[:10]:
+            official = {n["value"].lower() for n in cand.get("names", [])
+                        if {"ror_display", "label"} & set(n.get("types", []))}
+            if name.lower() in official:
+                org = cand
+                break
+    if org is None:
+        return None
+    display = next((n["value"] for n in org.get("names", []) if "ror_display" in n.get("types", [])), name)
+    countries = {loc.get("geonames_details", {}).get("country_name", "") for loc in org.get("locations", [])}
+    m = re.fullmatch(r"(.*?)\s*\(([^()]+)\)", display)
+    if m and m.group(2) in countries:  # "Horizon Robotics (China)" -> "Horizon Robotics"
+        display = m.group(1)
+    domain = (org.get("domains") or [""])[0]
+    if not domain:
+        site = next((l["value"] for l in org.get("links", []) if l.get("type") == "website"), "")
+        domain = _host(site) if site else ""
+    return display, org["id"].rsplit("/", 1)[-1], domain
+
+
+def fetch_logo(domain, logos_dir):
+    slug = re.sub(r"[^a-z0-9.-]", "", domain.lower())
+    if not slug:
+        return None
+    path = logos_dir / f"{slug}.png"
+    if path.exists():
+        return path
+    for url in (f"https://icons.duckduckgo.com/ip3/{slug}.ico",
+                f"https://www.google.com/s2/favicons?domain={slug}&sz=64"):
+        try:
+            data, _ = fetch(url, timeout=20)
+            img = Image.open(io.BytesIO(data))
+            img.load()
+        except Exception:
+            continue
+        if min(img.size) < 16:
+            continue
+        img = img.convert("RGBA")
+        img.thumbnail((64, 64), Image.LANCZOS)
+        img.save(path, "PNG", optimize=True)
+        return path
+    return None
+
+
+def resolve_org(name, org_cache, logos_dir, online=True):
+    """Map an extracted organization name to {name, logo?, ror?}, cached by name."""
+    key = name.lower()
+    if key in org_cache:
+        return org_cache[key]
+    display, ror_id, domain = canonical(name), None, ""
+    for rx, cname, cdomain in COMPANY_DOMAINS:
+        if rx.search(display):
+            display, domain = cname, cdomain
+            break
+    else:
+        if online:
+            short = display in LOOKUP_NAMES
+            try:
+                hit = ror_lookup(LOOKUP_NAMES.get(display, display))
+                time.sleep(0.3)
+            except Exception as exc:
+                print(f"  ROR failed for {name!r}: {exc}", file=sys.stderr)
+                return {"name": display}
+            if hit:
+                ror_name, ror_id, domain = hit
+                # ROR's name cleans up noisy extractions ("Horizon Robotics HoloBrain Team"),
+                # but keep established short forms ("UC Berkeley", "NUS").
+                if not short and len(ror_name) <= len(display):
+                    display = ror_name
+    record = {"name": display}
+    if ror_id:
+        record["ror"] = ror_id
+    if domain:
+        record["domain"] = domain
+        logo = fetch_logo(domain, logos_dir) if online else None
+        if logo:
+            record["logo"] = f"data/logos/{logo.name}"
+    if online:
+        org_cache[key] = record
+    return record
 
 
 # ----------------------------------------------------------------- previews
@@ -319,20 +491,50 @@ def from_pdf(pid):
 
 
 # --------------------------------------------------------------------- main
-def merge(data_dir, cache):
+ORG_WORDS = re.compile(r"Universit|Institut|College|Laborator|Academy|Polytechn|Hospital", re.I)
+
+
+def plausible_org(rec, kind):
+    """Drop fragments: verified orgs always pass; free-text ones need an org word."""
+    if rec.get("ror") or rec.get("domain"):
+        return True
+    name = rec["name"]
+    if not name or name[0].islower() or SUBUNIT.search(name):
+        return False
+    return kind == "tagged" or bool(ORG_WORDS.search(name))
+
+
+def merge(data_dir, cache, online=True):
+    logos_dir = data_dir / "logos"
+    logos_dir.mkdir(parents=True, exist_ok=True)
+    org_path = data_dir / "orgs.json"
+    org_cache = json.loads(org_path.read_text()) if org_path.exists() else {}
     for path in sorted((data_dir / "days").glob("*.json")):
         day = json.loads(path.read_text())
         for paper in day["papers"]:
             info = cache.get(paper["id"])
             if not info:
                 continue
-            paper["orgs"] = info.get("orgs", [])
+            orgs, seen = [], set()
+            for name in info.get("orgs", []):
+                rec = resolve_org(name, org_cache, logos_dir, online)
+                if not plausible_org(rec, info.get("kind", "tagged")):
+                    continue
+                if rec["name"].lower() not in seen:
+                    seen.add(rec["name"].lower())
+                    orgs.append({k: v for k, v in rec.items() if k in ("name", "logo", "ror")})
+            paper["orgs"] = orgs
             if info.get("thumb"):
                 paper["thumb"], paper["thumb_w"], paper["thumb_h"] = info["thumb"], info["w"], info["h"]
             else:
                 for key in ("thumb", "thumb_w", "thumb_h"):
                     paper.pop(key, None)
         path.write_text(json.dumps(day, ensure_ascii=False, indent=1))
+        org_path.write_text(json.dumps(org_cache, ensure_ascii=False, indent=1, sort_keys=True))
+    used = {Path(rec["logo"]).name for rec in org_cache.values() if rec.get("logo")}
+    for f in logos_dir.glob("*.png"):  # logos of organizations no longer referenced
+        if f.name not in used:
+            f.unlink()
 
 
 def main():
@@ -341,7 +543,8 @@ def main():
     ap.add_argument("--limit", type=int, default=0, help="process at most N new papers (0 = all)")
     ap.add_argument("--delay", type=float, default=1.0, help="seconds between papers")
     ap.add_argument("--refresh", action="store_true", help="ignore the cache")
-    ap.add_argument("--renorm", action="store_true", help="recompute orgs from cached affiliations, no network")
+    ap.add_argument("--renorm", action="store_true", help="recompute orgs from cached affiliations (no arXiv requests)")
+    ap.add_argument("--offline", action="store_true", help="skip ROR and logo lookups")
     args = ap.parse_args()
     data_dir = Path(args.data)
     thumbs = data_dir / "thumbs"
@@ -354,7 +557,7 @@ def main():
             if "affils" in entry:
                 entry["orgs"] = compute_orgs(entry.get("kind", "tagged"), entry["affils"])
         cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=1))
-        merge(data_dir, cache)
+        merge(data_dir, cache, online=not args.offline)
         print("renormalized and merged", flush=True)
         return
 
@@ -394,7 +597,7 @@ def main():
         print(f"[{n}/{len(todo)}] {pid} {info['source']} orgs={entry['orgs'][:4]}", flush=True)
         time.sleep(args.delay)
 
-    merge(data_dir, cache)
+    merge(data_dir, cache, online=not args.offline)
     print("merged into day files", flush=True)
 
 

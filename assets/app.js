@@ -30,7 +30,7 @@
       faqDemo: '示例', openNew: '新标签打开 ↗', close: '收起', copied: '已复制到剪贴板',
       copyFail: '复制失败', relDone: (n) => `已按 ${n} 个标签筛选相关论文`, relNone: '这篇没有标签可用于相关推荐',
       starred: '星标', search: '搜索', settings: '设置', top: '顶部',
-      include: '包含', exclude: '排除', apply: '搜索', clear: '清空', filter: '只显示匹配', highlight: '高亮',
+      include: '包含', exclude: '排除', apply: '搜索', clear: '清空', filter: '只显示匹配',
       noStars: '还没有星标论文。点标题右边的 ☆ 收藏。', exportMd: '复制 Markdown', exportDl: '下载 .md',
       showAbstract: '显示摘要', onlyFaq: '只看有解读的', onlySummary: '只看有一句话总结的',
       star: '星标', unstar: '取消星标', moreAuthors: (n) => `+${n} 人`,
@@ -49,7 +49,7 @@
       faqDemo: 'demo', openNew: 'Open in new tab ↗', close: 'Close', copied: 'Copied to clipboard',
       copyFail: 'Copy failed', relDone: (n) => `Filtered by ${n} tag(s)`, relNone: 'No tags to find related papers',
       starred: 'Starred', search: 'Search', settings: 'Settings', top: 'Top',
-      include: 'Include', exclude: 'Exclude', apply: 'Search', clear: 'Clear', filter: 'Filter', highlight: 'Highlight',
+      include: 'Include', exclude: 'Exclude', apply: 'Search', clear: 'Clear', filter: 'Filter',
       noStars: 'No starred papers yet. Click ☆ next to a title.', exportMd: 'Copy Markdown', exportDl: 'Download .md',
       showAbstract: 'Show abstracts', onlyFaq: 'Only papers with AI reading', onlySummary: 'Only papers with a summary',
       star: 'Star', unstar: 'Unstar', moreAuthors: (n) => `+${n} more`,
@@ -60,9 +60,9 @@
   };
 
   const STAR_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>';
-  const AUTHOR_LIMIT = 12;
-  const ABS_CLAMP_CHARS = 420; // shorter abstracts are shown in full
-  const ORG_LIMIT = 5;
+  const AUTHOR_LIMIT = 6; // names shown inline next to the organizations
+  const ABS_CLAMP_CHARS = 330; // shorter abstracts are shown in full
+  const ORG_LIMIT = 4;
 
   const params = new URLSearchParams(location.search);
   const state = {
@@ -81,7 +81,7 @@
     fullAbstract: store.get('dp-fullabs', false),
     showThumbs: store.get('dp-thumbs', true),
     expandedAbs: new Set(),
-    search: Object.assign({ inc: '', exc: '', logic: 'OR', filter: true, highlight: true }, store.get('dp-search', {})),
+    search: { inc: '', exc: '', logic: 'OR', filter: true },
     stars: store.get('dp-stars', {}),
     visited: new Set(store.get('dp-visited', [])),
     openPdf: new Set(),
@@ -108,27 +108,15 @@
   }
 
   function matches(paper, terms) {
-    const hay = `${paper.title} ${paper.abstract} ${paper.authors.join(' ')} ${(paper.orgs || []).join(' ')} ${(paper.tags || []).join(' ')} ${summaryText(paper)}`.toLowerCase();
+    const hay = `${paper.title} ${paper.abstract} ${paper.authors.join(' ')} ${(paper.orgs || []).map((o) => (typeof o === 'string' ? o : o.name)).join(' ')} ${(paper.tags || []).join(' ')} ${summaryText(paper)}`.toLowerCase();
     if (terms.exc.some((k) => hay.includes(k.toLowerCase()))) return false;
     if (!terms.inc.length) return true;
     const hit = (k) => hay.includes(k.toLowerCase());
     return state.search.logic === 'AND' ? terms.inc.every(hit) : terms.inc.some(hit);
   }
 
-  let highlightRe = null;
-  function updateHighlightRe() {
-    const inc = searchTerms().inc;
-    highlightRe = state.search.highlight && inc.length
-      ? new RegExp(`(${inc.map(escapeRe).join('|')})`, 'gi')
-      : null;
-  }
-
-  function hl(text) {
-    if (!highlightRe) return escapeHtml(text);
-    return String(text).split(highlightRe)
-      .map((part, i) => (i % 2 ? `<mark>${escapeHtml(part)}</mark>` : escapeHtml(part)))
-      .join('');
-  }
+  // Search filters the list; matches are not marked in the text (that made the list noisy).
+  const hl = (text) => escapeHtml(text);
 
   // ---------- helpers ----------
   function summaryText(paper) {
@@ -295,13 +283,22 @@
 
   function authorsHtml(paper) {
     const names = paper.authors || [];
-    const full = state.expandedAuthors.has(paper.id) || names.length <= AUTHOR_LIMIT;
-    const shown = full ? names : names.slice(0, AUTHOR_LIMIT - 2);
-    let html = shown.map(hl).join(', ');
+    const full = state.expandedAuthors.has(paper.id) || names.length <= AUTHOR_LIMIT + 1;
+    const shown = full ? names : names.slice(0, AUTHOR_LIMIT);
+    let html = shown.map((name) => `<span class="author">${escapeHtml(name)}</span>`).join('');
     if (!full) {
-      html += ` <button type="button" class="link" data-act="authors">${escapeHtml(t('moreAuthors', names.length - shown.length))}</button>`;
+      html += `<button type="button" class="author more" data-act="authors">${escapeHtml(t('moreAuthors', names.length - shown.length))}</button>`;
     }
     return html;
+  }
+
+  function orgChip(org) {
+    const o = typeof org === 'string' ? { name: org } : org;
+    const initial = (o.name || '?').replace(/^(The|University of|Universit\S* de)\s+/i, '').charAt(0).toUpperCase();
+    const icon = o.logo
+      ? `<img class="org-logo" src="${escapeHtml(o.logo)}" alt="" width="16" height="16" loading="lazy" decoding="async">`
+      : `<span class="org-logo mono" aria-hidden="true">${escapeHtml(initial)}</span>`;
+    return `<span class="org" title="${escapeHtml(o.name)}">${icon}<span class="org-name">${escapeHtml(o.name)}</span></span>`;
   }
 
   function cardHtml(paper, n) {
@@ -310,74 +307,61 @@
     const score = paper.score ?? null;
     const scoreCls = score === null ? '' : score >= 7 ? ' high' : score < 4 ? ' low' : '';
     const summary = summaryText(paper);
+    const orgs = paper.orgs || [];
+    const orgHtml = orgs.slice(0, ORG_LIMIT).map(orgChip).join('')
+      + (orgs.length > ORG_LIMIT ? `<span class="org more">+${orgs.length - ORG_LIMIT}</span>` : '');
+    const date = escapeHtml((paper.published || '').slice(0, 10));
     const tags = (paper.tags || [])
-      .map((tag) => `<button type="button" class="tag" data-tag="${escapeHtml(tag)}">${hl(tag)}</button>`)
-      .join('');
+      .map((tag) => `<button type="button" class="tag" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`)
+      .join('<span class="dot">·</span>');
     const hf = paper.hf_upvotes
-      ? `<a class="hf" href="https://huggingface.co/papers/${id}" target="_blank" rel="noopener">HF ▲ ${paper.hf_upvotes}</a>`
+      ? `<a class="hf" href="https://huggingface.co/papers/${id}" target="_blank" rel="noopener" title="Hugging Face upvotes">▲ ${paper.hf_upvotes}</a>`
       : '';
-    const subjects = (paper.categories || [paper.primary]).map((c) => escapeHtml(catName(c))).join('; ');
     const code = paper.code_url
       ? `<a class="act" href="${escapeHtml(paper.code_url)}" target="_blank" rel="noopener">[Code]</a>`
       : '';
     const faqCls = paper.faq ? 'act' : 'act unavailable';
-    const orgs = paper.orgs || [];
-    const orgHtml = orgs.length
-      ? `<div class="orgs" title="${escapeHtml(t('orgs'))}">${orgs.slice(0, ORG_LIMIT).map((o) => `<span class="org">${hl(o)}</span>`).join('')}${orgs.length > ORG_LIMIT ? `<span class="org more">+${orgs.length - ORG_LIMIT}</span>` : ''}</div>`
-      : '';
     const thumb = state.showThumbs && paper.thumb
       ? `<button type="button" class="thumb" data-act="thumb" title="${escapeHtml(t('preview'))}"><img src="${escapeHtml(paper.thumb)}" width="${paper.thumb_w || ''}" height="${paper.thumb_h || ''}" loading="lazy" decoding="async" alt="${escapeHtml(t('preview'))}: ${escapeHtml(paper.title)}"></button>`
       : '';
     const longAbs = (paper.abstract || '').length > ABS_CLAMP_CHARS;
     const clamp = longAbs && !state.fullAbstract && !state.expandedAbs.has(paper.id);
     const absToggle = longAbs && !state.fullAbstract
-      ? ` <button type="button" class="link abs-toggle" data-act="abs">${escapeHtml(t(clamp ? 'expandAbs' : 'collapseAbs'))}</button>`
+      ? `<button type="button" class="link abs-toggle" data-act="abs">${escapeHtml(t(clamp ? 'expandAbs' : 'collapseAbs'))}</button>`
       : '';
-    const abstract = state.showAbstract
-      ? `<div class="abstract-wrap"><p class="abstract${clamp ? ' clamp' : ''}">${hl(paper.abstract)}</p>${absToggle}</div>`
-      : '';
+    const subjects = (paper.categories || [paper.primary]).map((c) => catName(c)).join('; ');
     return `
-<li class="paper${state.visited.has(paper.id) ? ' visited' : ''}" id="${id}" data-id="${id}">
-  <div class="paper-head">
-    <a class="paper-index" href="https://arxiv.org/abs/${id}" target="_blank" rel="noopener" title="arXiv:${id}">#${n}</a>
-    <h2 class="paper-title">${hl(paper.title)}</h2>
-    <button type="button" class="star" data-act="star" aria-pressed="${starred}" title="${escapeHtml(t(starred ? 'unstar' : 'star'))}">${STAR_SVG}</button>
-  </div>
-  <div class="paper-body">
-    <div class="paper-grid${thumb ? ' has-thumb' : ''}">
-      <div class="paper-main">
-        <div class="paper-actions">
-          <button type="button" class="act" data-act="pdf" aria-expanded="${state.openPdf.has(paper.id)}">[PDF]</button>
-          <button type="button" class="act" data-act="copy">[Copy]</button>
-          <button type="button" class="${faqCls}" data-act="faq" aria-expanded="${state.openFaq.has(paper.id)}">[FAQ]</button>
-          <button type="button" class="act" data-act="rel">[REL]</button>
-          ${code}
-        </div>
-        ${orgHtml}
-        <p class="authors"><span class="label">${escapeHtml(t('authors'))}:</span> ${authorsHtml(paper)}</p>
-        <div class="badges">
-          ${score === null ? '' : `<span class="score${scoreCls}" title="${escapeHtml(t('relevance'))}">${fmtScore(score)}</span>`}
-          ${tags}${hf}
-        </div>
-        ${summary ? `<p class="summary">${hl(summary)}</p>` : ''}
-        ${abstract}
-        <p class="paper-meta">
-          <span class="label">${escapeHtml(t('subject'))}:</span> ${subjects}<span class="sep">|</span><span class="label">${escapeHtml(t('submitted'))}:</span> ${escapeHtml(fmtTime(paper.published))}
-          ${paper.comment ? `<br><span class="label">${escapeHtml(t('comment'))}:</span> ${hl(paper.comment)}` : ''}
-        </p>
+<li class="paper${state.visited.has(paper.id) ? ' visited' : ''}${thumb ? ' has-thumb' : ''}" id="${id}" data-id="${id}">
+  <a class="paper-index" href="https://arxiv.org/abs/${id}" target="_blank" rel="noopener" title="arXiv:${id}">#${n}</a>
+  <div class="paper-main">
+    <h2 class="paper-title">${escapeHtml(paper.title)}</h2>
+    <div class="paper-sub">${orgHtml}${orgHtml ? '<span class="sub-sep" aria-hidden="true"></span>' : ''}<span class="authors">${authorsHtml(paper)}</span></div>
+    ${summary ? `<p class="summary">${escapeHtml(summary)}</p>` : ''}
+    ${state.showAbstract ? `<p class="abstract${clamp ? ' clamp' : ''}">${escapeHtml(paper.abstract)}</p>${absToggle}` : ''}
+    <div class="paper-foot">
+      <div class="paper-tags">
+        <span class="date" title="${escapeHtml(subjects)}">${date}</span>
+        ${score === null ? '' : `<span class="score${scoreCls}" title="${escapeHtml(t('relevance'))}">${fmtScore(score)}</span>`}
+        ${tags}${hf}
       </div>
-      ${thumb}
+      <div class="paper-actions">
+        <button type="button" class="act" data-act="pdf" aria-expanded="${state.openPdf.has(paper.id)}">[PDF]</button>
+        <button type="button" class="act" data-act="copy">[Copy]</button>
+        <button type="button" class="${faqCls}" data-act="faq" aria-expanded="${state.openFaq.has(paper.id)}">[FAQ]</button>
+        <button type="button" class="act" data-act="rel">[REL]</button>
+        ${code}
+        <button type="button" class="star" data-act="star" aria-pressed="${starred}" title="${escapeHtml(t(starred ? 'unstar' : 'star'))}">${STAR_SVG}</button>
+      </div>
     </div>
-    <div class="slot-pdf"></div>
-    <div class="slot-faq"></div>
   </div>
+  ${thumb}
+  <div class="paper-panels"><div class="slot-pdf"></div><div class="slot-faq"></div></div>
 </li>`;
   }
 
   function render() {
     if (!state.day) return;
     renderChrome();
-    updateHighlightRe();
     const { list, total } = visiblePapers();
     $('#total').textContent = t('total', list.length, total);
     const container = $('#papers');
@@ -550,15 +534,12 @@
     $('#kw-exclude').value = state.search.exc;
     $('#logic-btn').textContent = state.search.logic;
     $('#search-filter').checked = state.search.filter;
-    $('#search-highlight').checked = state.search.highlight;
   }
 
   function applySearch() {
     state.search.inc = $('#kw-include').value;
     state.search.exc = $('#kw-exclude').value;
     state.search.filter = $('#search-filter').checked;
-    state.search.highlight = $('#search-highlight').checked;
-    store.set('dp-search', state.search);
     render();
   }
 
@@ -595,7 +576,6 @@
       if (tagBtn) {
         state.search.inc = tagBtn.dataset.tag;
         state.search.filter = true;
-        store.set('dp-search', state.search);
         loadSearchForm();
         render();
         return;
@@ -616,7 +596,7 @@
         case 'thumb': openLightbox(paper); break;
         case 'authors':
           state.expandedAuthors.add(id);
-          $('.authors', card).innerHTML = `<span class="label">${escapeHtml(t('authors'))}:</span> ${authorsHtml(paper)}`;
+          $('.authors', card).innerHTML = authorsHtml(paper);
           break;
         case 'copy':
           try {
@@ -632,8 +612,7 @@
           state.search.inc = tags.join('\n');
           state.search.logic = 'OR';
           state.search.filter = true;
-          store.set('dp-search', state.search);
-          loadSearchForm();
+            loadSearchForm();
           render();
           toast(t('relDone', tags.length));
           break;

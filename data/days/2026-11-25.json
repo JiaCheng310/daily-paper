@@ -28,14 +28,16 @@
     "imitation"
    ],
    "score_source": "keyword-demo",
-   "summary": {
-    "zh": "DexLink 把稀疏、可复用的手-物交互模板重定向到目标物体上，串成近似参考轨迹，再用残差 RL 在仿真里细化成闭环灵巧策略；无需物体专属的人类演示，即可控制时机与抓取类型，效果与稠密参考跟踪方法相当。",
-    "en": "DexLink retargets sparse, reusable hand-object templates to new objects, chains them into a rough reference, and refines it with residual RL into a closed-loop dexterous policy; it controls timing and grasp type without object-specific human demos and matches dense reference-tracking methods."
-   },
    "faq": true,
    "orgs": [
-    "Princeton University",
-    "NEC Laboratories America"
+    {
+     "logo": "data/logos/princeton.edu.png",
+     "name": "Princeton University",
+     "ror": "00hx57361"
+    },
+    {
+     "name": "NEC Labs"
+    }
    ],
    "thumb": "data/thumbs/2611.34936.jpg",
    "thumb_w": 640,
@@ -66,8 +68,15 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "ETH Zurich",
-    "Disney Research"
+    {
+     "logo": "data/logos/ethz.ch.png",
+     "name": "ETH Zurich",
+     "ror": "05a28rw58"
+    },
+    {
+     "logo": "data/logos/disneyresearch.com.png",
+     "name": "Disney Research"
+    }
    ],
    "thumb": "data/thumbs/2611.34932.jpg",
    "thumb_w": 640,
@@ -104,13 +113,25 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "Simulation Suite and Benchmark for Marine Robotics",
-    "Hong Kong University of Science",
-    "Boston University",
-    "Shanghai Jiao Tong University",
-    "Tencent",
-    "aligned meta data",
-    "pollution-related marine-robotics tasks"
+    {
+     "logo": "data/logos/hkust.edu.hk.png",
+     "name": "HKUST",
+     "ror": "00q4vv597"
+    },
+    {
+     "logo": "data/logos/bu.edu.png",
+     "name": "Boston University",
+     "ror": "05qwgg493"
+    },
+    {
+     "logo": "data/logos/sjtu.edu.cn.png",
+     "name": "Shanghai Jiao Tong University",
+     "ror": "0220qvk04"
+    },
+    {
+     "logo": "data/logos/tencent.com.png",
+     "name": "Tencent"
+    }
    ],
    "thumb": "data/thumbs/2611.34925.jpg",
    "thumb_w": 640,
@@ -141,8 +162,15 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "GRASP Laboratory",
-    "University of Pennsylvania"
+    {
+     "name": "GRASP Laboratory",
+     "ror": "054kayq05"
+    },
+    {
+     "logo": "data/logos/upenn.edu.png",
+     "name": "University of Pennsylvania",
+     "ror": "00b30xv10"
+    }
    ],
    "thumb": "data/thumbs/2611.34915.jpg",
    "thumb_w": 640,
@@ -174,7 +202,11 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "University of Pennsylvania"
+    {
+     "logo": "data/logos/upenn.edu.png",
+     "name": "University of Pennsylvania",
+     "ror": "00b30xv10"
+    }
    ],
    "thumb": "data/thumbs/2611.34914.jpg",
    "thumb_w": 390,
@@ -213,8 +245,16 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "UC Berkeley",
-    "Harvard University"
+    {
+     "logo": "data/logos/berkeley.edu.png",
+     "name": "UC Berkeley",
+     "ror": "01an7q238"
+    },
+    {
+     "logo": "data/logos/harvard.edu.png",
+     "name": "Harvard University",
+     "ror": "03vek6s52"
+    }
    ],
    "thumb": "data/thumbs/2611.34884.jpg",
    "thumb_w": 640,
@@ -249,8 +289,15 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "KAIST",
-    "Korea University"
+    {
+     "logo": "data/logos/kaist.ac.kr.png",
+     "name": "KAIST",
+     "ror": "05apxxy63"
+    },
+    {
+     "name": "Korea University",
+     "ror": "05m1gnk07"
+    }
    ],
    "thumb": "data/thumbs/2611.34864.jpg",
    "thumb_w": 640,
@@ -294,7 +341,10 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "NVIDIA"
+    {
+     "logo": "data/logos/nvidia.com.png",
+     "name": "NVIDIA"
+    }
    ],
    "thumb": "data/thumbs/2611.34862.jpg",
    "thumb_w": 587,
@@ -335,9 +385,14 @@
    "hf_upvotes": 107,
    "faq": false,
    "orgs": [
-    "School of Intelligence Science and Technology",
-    "HKU",
-    "Ngoro Robotics"
+    {
+     "logo": "data/logos/hku.hk.png",
+     "name": "HKU",
+     "ror": "02zhqgq86"
+    },
+    {
+     "name": "Ngoro Robotics"
+    }
    ],
    "thumb": "data/thumbs/2611.34849.jpg",
    "thumb_w": 640,
@@ -375,8 +430,16 @@
    "hf_upvotes": 22,
    "faq": false,
    "orgs": [
-    "Peking University",
-    "NUS"
+    {
+     "logo": "data/logos/pku.edu.cn.png",
+     "name": "Peking University",
+     "ror": "02v51f717"
+    },
+    {
+     "logo": "data/logos/nus.edu.sg.png",
+     "name": "NUS",
+     "ror": "01tgyzw49"
+    }
    ],
    "thumb": "data/thumbs/2611.34811.jpg",
    "thumb_w": 640,
@@ -417,13 +480,39 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "Emory University",
-    "University of Southern California",
-    "UC Santa Barbara",
-    "University of Florida",
-    "University of Alabama",
-    "University of Chicago",
-    "Ohio State University"
+    {
+     "logo": "data/logos/emory.edu.png",
+     "name": "Emory University",
+     "ror": "03czfpz43"
+    },
+    {
+     "logo": "data/logos/usc.edu.png",
+     "name": "University of Southern California",
+     "ror": "03taz7m60"
+    },
+    {
+     "logo": "data/logos/ucsb.edu.png",
+     "name": "UC Santa Barbara",
+     "ror": "02t274463"
+    },
+    {
+     "logo": "data/logos/ufl.edu.png",
+     "name": "University of Florida",
+     "ror": "02y3ad647"
+    },
+    {
+     "logo": "data/logos/ua.edu.png",
+     "name": "University of Alabama",
+     "ror": "03xrrjk67"
+    },
+    {
+     "logo": "data/logos/uchicago.edu.png",
+     "name": "University of Chicago",
+     "ror": "024mw5h28"
+    },
+    {
+     "name": "Ohio State University"
+    }
    ],
    "thumb": "data/thumbs/2611.34778.jpg",
    "thumb_w": 393,
@@ -451,7 +540,9 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "Euromed University of Fez"
+    {
+     "name": "Euromed University of Fez"
+    }
    ],
    "thumb": "data/thumbs/2611.34764.jpg",
    "thumb_w": 640,
@@ -490,8 +581,14 @@
    "hf_upvotes": 0,
    "faq": false,
    "orgs": [
-    "Tsinghua University",
-    "NVIDIA"
+    {
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
+    },
+    {
+     "logo": "data/logos/nvidia.com.png",
+     "name": "NVIDIA"
+    }
    ],
    "thumb": "data/thumbs/2611.34750.jpg",
    "thumb_w": 640,
@@ -523,7 +620,11 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "Gujarat AI Institute"
+    {
+     "logo": "data/logos/rai-inst.com.png",
+     "name": "Gujarat AI Institute",
+     "ror": "00kqcs728"
+    }
    ],
    "thumb": "data/thumbs/2611.34745.jpg",
    "thumb_w": 640,
@@ -556,8 +657,16 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "Vector Institute Equal contribution Equal supervision",
-    "University of Toronto"
+    {
+     "logo": "data/logos/vectorinstitute.ai.png",
+     "name": "Vector Institute",
+     "ror": "03kqdja62"
+    },
+    {
+     "logo": "data/logos/utoronto.ca.png",
+     "name": "University of Toronto",
+     "ror": "03dbr7087"
+    }
    ],
    "thumb": "data/thumbs/2611.34741.jpg",
    "thumb_w": 640,
@@ -589,8 +698,16 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "University of Dhaka",
-    "New Uzbekistan University"
+    {
+     "logo": "data/logos/du.ac.bd.png",
+     "name": "University of Dhaka",
+     "ror": "05wv2vq37"
+    },
+    {
+     "logo": "data/logos/newuu.uz.png",
+     "name": "New Uzbekistan University",
+     "ror": "035v3tr79"
+    }
    ],
    "thumb": "data/thumbs/2611.34739.jpg",
    "thumb_w": 640,
@@ -632,8 +749,16 @@
    "hf_upvotes": 9,
    "faq": false,
    "orgs": [
-    "HKU",
-    "CUHK"
+    {
+     "logo": "data/logos/hku.hk.png",
+     "name": "HKU",
+     "ror": "02zhqgq86"
+    },
+    {
+     "logo": "data/logos/cuhk.edu.hk.png",
+     "name": "CUHK",
+     "ror": "00t33hh48"
+    }
    ],
    "thumb": "data/thumbs/2611.34675.jpg",
    "thumb_w": 640,
@@ -667,8 +792,15 @@
    "hf_upvotes": 2,
    "faq": false,
    "orgs": [
-    "CUHK",
-    "Foshan University"
+    {
+     "logo": "data/logos/cuhk.edu.hk.png",
+     "name": "CUHK",
+     "ror": "00t33hh48"
+    },
+    {
+     "name": "Foshan University",
+     "ror": "02xvvvp28"
+    }
    ],
    "thumb": "data/thumbs/2611.34671.jpg",
    "thumb_w": 640,
@@ -699,10 +831,24 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "Università di Trento",
-    "University of Genoa",
-    "Idiap Research Institute",
-    "EPFL"
+    {
+     "name": "Università di Trento"
+    },
+    {
+     "logo": "data/logos/unige.it.png",
+     "name": "University of Genoa",
+     "ror": "0107c5v14"
+    },
+    {
+     "logo": "data/logos/idiap.ch.png",
+     "name": "Idiap Research Institute",
+     "ror": "05932h694"
+    },
+    {
+     "logo": "data/logos/epfl.ch.png",
+     "name": "EPFL",
+     "ror": "02s376052"
+    }
    ],
    "thumb": "data/thumbs/2611.34670.jpg",
    "thumb_w": 603,
@@ -776,8 +922,15 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "Peking University",
-    "Galbot"
+    {
+     "logo": "data/logos/pku.edu.cn.png",
+     "name": "Peking University",
+     "ror": "02v51f717"
+    },
+    {
+     "logo": "data/logos/galbot.com.png",
+     "name": "Galbot"
+    }
    ],
    "thumb": "data/thumbs/2611.34655.jpg",
    "thumb_w": 640,
@@ -818,9 +971,20 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "Harbin Institute of Technology",
-    "Sun Yat-sen University",
-    "NUS"
+    {
+     "name": "Harbin Institute of Technology",
+     "ror": "01yqg2h08"
+    },
+    {
+     "logo": "data/logos/sysu.edu.cn.png",
+     "name": "Sun Yat-sen University",
+     "ror": "0064kty71"
+    },
+    {
+     "logo": "data/logos/nus.edu.sg.png",
+     "name": "NUS",
+     "ror": "01tgyzw49"
+    }
    ],
    "thumb": "data/thumbs/2611.34644.jpg",
    "thumb_w": 640,
@@ -855,7 +1019,11 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "Georgia Institute of Technology"
+    {
+     "logo": "data/logos/gatech.edu.png",
+     "name": "Georgia Institute of Technology",
+     "ror": "01zkghx44"
+    }
    ],
    "thumb": "data/thumbs/2611.34597.jpg",
    "thumb_w": 640,
@@ -926,13 +1094,35 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "Tsinghua University",
-    "NUS",
-    "East China University of Science and Technology",
-    "Nanjing University",
-    "Magiclab Robotics Technology (Wuxi)",
-    "Dreame Technology",
-    "University of Oxford"
+    {
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
+    },
+    {
+     "logo": "data/logos/nus.edu.sg.png",
+     "name": "NUS",
+     "ror": "01tgyzw49"
+    },
+    {
+     "name": "East China University of Science and Technology",
+     "ror": "01vyrm377"
+    },
+    {
+     "name": "Nanjing University",
+     "ror": "01rxvg760"
+    },
+    {
+     "name": "Magiclab Robotics Technology (Wuxi)"
+    },
+    {
+     "name": "EA Technology",
+     "ror": "00qwj7906"
+    },
+    {
+     "logo": "data/logos/ox.ac.uk.png",
+     "name": "University of Oxford",
+     "ror": "052gg0110"
+    }
    ],
    "thumb": "data/thumbs/2611.34569.jpg",
    "thumb_w": 408,
@@ -963,7 +1153,11 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "BRAC University"
+    {
+     "logo": "data/logos/bracu.ac.bd.png",
+     "name": "BRAC University",
+     "ror": "00sge8677"
+    }
    ],
    "thumb": "data/thumbs/2611.34561.jpg",
    "thumb_w": 336,
@@ -1035,8 +1229,14 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "Harbin Institute of Technology (Shenzhen)",
-    "Xidian University"
+    {
+     "name": "Harbin Institute of Technology",
+     "ror": "01yqg2h08"
+    },
+    {
+     "name": "Xidian University",
+     "ror": "05s92vm98"
+    }
    ],
    "thumb": "data/thumbs/2611.34540.jpg",
    "thumb_w": 340,
@@ -1069,8 +1269,14 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "CSIRO Technology",
-    "Monash University"
+    {
+     "name": "CSIRO Technology"
+    },
+    {
+     "logo": "data/logos/monash.edu.png",
+     "name": "Monash University",
+     "ror": "02bfwt286"
+    }
    ],
    "thumb": "data/thumbs/2611.34538.jpg",
    "thumb_w": 640,
@@ -1104,8 +1310,14 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "Chinese Academy of Sciences",
-    "Noetix Robotics Corresponding authorsProject Page:"
+    {
+     "logo": "data/logos/cas.cn.png",
+     "name": "Chinese Academy of Sciences",
+     "ror": "034t30j35"
+    },
+    {
+     "name": "Noetix Robotics"
+    }
    ],
    "thumb": "data/thumbs/2611.34519.jpg",
    "thumb_w": 640,
@@ -1143,9 +1355,21 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "University of Dhaka",
-    "Adelaide University",
-    "University of Oxford"
+    {
+     "logo": "data/logos/du.ac.bd.png",
+     "name": "University of Dhaka",
+     "ror": "05wv2vq37"
+    },
+    {
+     "logo": "data/logos/adelaide.edu.au.png",
+     "name": "Adelaide University",
+     "ror": "028g18b61"
+    },
+    {
+     "logo": "data/logos/ox.ac.uk.png",
+     "name": "University of Oxford",
+     "ror": "052gg0110"
+    }
    ],
    "thumb": "data/thumbs/2611.34509.jpg",
    "thumb_w": 640,
@@ -1176,9 +1400,21 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "Warsaw University of Technology",
-    "Carnegie Mellon University",
-    "Shanghai Jiao Tong University"
+    {
+     "logo": "data/logos/pw.edu.pl.png",
+     "name": "Warsaw University of Technology",
+     "ror": "00y0xnp53"
+    },
+    {
+     "logo": "data/logos/cmu.edu.png",
+     "name": "Carnegie Mellon University",
+     "ror": "05x2bcf33"
+    },
+    {
+     "logo": "data/logos/sjtu.edu.cn.png",
+     "name": "Shanghai Jiao Tong University",
+     "ror": "0220qvk04"
+    }
    ],
    "thumb": "data/thumbs/2611.34490.jpg",
    "thumb_w": 618,
@@ -1213,12 +1449,33 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "Central South University",
-    "Fudan University",
-    "East China Normal University",
-    "Shanghai AI Lab",
-    "Shanghai Jiao Tong University",
-    "Shanghai Innovation Institute"
+    {
+     "logo": "data/logos/csu.edu.cn.png",
+     "name": "Central South University",
+     "ror": "00f1zfq44"
+    },
+    {
+     "logo": "data/logos/fudan.edu.cn.png",
+     "name": "Fudan University",
+     "ror": "013q1eq08"
+    },
+    {
+     "name": "East China Normal University",
+     "ror": "02n96ep67"
+    },
+    {
+     "name": "Shanghai AI Lab"
+    },
+    {
+     "logo": "data/logos/sjtu.edu.cn.png",
+     "name": "Shanghai Jiao Tong University",
+     "ror": "0220qvk04"
+    },
+    {
+     "logo": "data/logos/sii.edu.cn.png",
+     "name": "Shanghai Innovation Institute",
+     "ror": "01fatbw66"
+    }
    ],
    "thumb": "data/thumbs/2611.34489.jpg",
    "thumb_w": 398,
@@ -1252,9 +1509,16 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "the Office of Naval Research Global grant N62909-24-1-2081",
-    "University of Padova",
-    "Instituto de Investigacion en Ingenieria de Aragon"
+    {
+     "logo": "data/logos/unipd.it.png",
+     "name": "University of Padua",
+     "ror": "00240q980"
+    },
+    {
+     "logo": "data/logos/i3a.es.png",
+     "name": "Instituto de Investigación en Ingeniería de Aragón",
+     "ror": "04eqgej32"
+    }
    ],
    "thumb": "data/thumbs/2611.34485.jpg",
    "thumb_w": 421,
@@ -1288,8 +1552,16 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "Université Paris-Saclay",
-    "American University of the Middle East"
+    {
+     "logo": "data/logos/universite-paris-saclay.fr.png",
+     "name": "Université Paris-Saclay",
+     "ror": "03xjwb503"
+    },
+    {
+     "logo": "data/logos/aum.edu.kw.png",
+     "name": "American University of the Middle East",
+     "ror": "02gqgne03"
+    }
    ],
    "thumb": "data/thumbs/2611.34480.jpg",
    "thumb_w": 640,
@@ -1315,7 +1587,11 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "Royal Institute of Technology (KTH)"
+    {
+     "logo": "data/logos/kth.se.png",
+     "name": "KTH Royal Institute of Technology",
+     "ror": "026vcq606"
+    }
    ],
    "thumb": "data/thumbs/2611.34463.jpg",
    "thumb_w": 640,
@@ -1343,7 +1619,11 @@
    "score_source": "keyword-demo",
    "faq": false,
    "orgs": [
-    "Shanghai Jiao Tong University"
+    {
+     "logo": "data/logos/sjtu.edu.cn.png",
+     "name": "Shanghai Jiao Tong University",
+     "ror": "0220qvk04"
+    }
    ],
    "thumb": "data/thumbs/2611.34453.jpg",
    "thumb_w": 640,
@@ -1383,10 +1663,6 @@
     "imitation"
    ],
    "score_source": "keyword-demo",
-   "summary": {
-    "zh": "HoloBrain-0.5 把不同机器人的 URDF 统一成共享的 3D 运动学表示，在 1 万小时、15 类本体的数据上预训练扩散版与 FSQ 离散版两种 VLA；后训练后在 7 任务基准上 94.52% 对 π0.5 的 86.25%，且仅用少量 G1 演示就在人形任务上达到 70.24%。",
-    "en": "HoloBrain-0.5 encodes heterogeneous robot URDFs in one shared 3D kinematic representation and pretrains diffusion and FSQ-discrete VLAs on 10k hours across 15 embodiment types; after post-training it beats π0.5 on a 7-task benchmark (94.52% vs 86.25%) and reaches 70.24% on G1 humanoid tasks from few demos."
-   },
    "faq": false
   },
   {
@@ -2135,10 +2411,6 @@
     "imitation"
    ],
    "score_source": "keyword-demo",
-   "summary": {
-    "zh": "Aegis-VLA 用轨迹世界模型预测运动物体并给出不确定度，再由“可靠性门”决定是否、以多大幅度采纳动作修正；仅增加约 2.45M 参数，在 DOM 动态操作基准上成功率 56.72%，比复现的 DynamicVLA 高 11.28 个百分点。",
-    "en": "Aegis-VLA predicts moving-object trajectories with uncertainty using a trajectory world model, and a reliability gate decides whether and how much to apply action corrections; with ~2.45M extra parameters it reaches 56.72% on the DOM benchmark, +11.28 pp over DynamicVLA."
-   },
    "faq": false
   },
   {
@@ -2233,10 +2505,6 @@
    ],
    "score_source": "keyword-demo",
    "hf_upvotes": 13,
-   "summary": {
-    "zh": "WorldReforge 用 6.2 万条扰动抓取的仿真失败轨迹（推、滑、抓空）训练机器人世界模型，加入交互区域对齐与表面点对应两个训练信号；在 Cosmos3 Nano 上物体轨迹误差降低 28.2%，对未见物体降低 35.0%。",
-    "en": "WorldReforge trains robot world models on 62k simulated failure trajectories (pushes, slips, missed grasps) with interaction-alignment and surface-correspondence losses, cutting object-trajectory error on Cosmos3 Nano by 28.2% overall and 35.0% on unseen objects."
-   },
    "faq": false
   },
   {
