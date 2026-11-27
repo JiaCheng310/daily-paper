@@ -85,7 +85,15 @@ class AuthFailed(Exception):
     pass
 
 
-def call(model, paper, key, retries=4):
+def retry_delay(detail):
+    """Seconds Google asks us to wait (RetryInfo.retryDelay, e.g. "34s"), or None."""
+    m = re.search(r'"retryDelay"\s*:\s*"(\d+(?:\.\d+)?)s"', detail)
+    return float(m.group(1)) if m else None
+
+
+def call(model, paper, key, retries=8):
+    """One request. Per-minute 429s wait as long as Google says and retry; a daily-quota
+    429 raises QuotaExhausted at once."""
     data = json.dumps(body(paper), ensure_ascii=False).encode()
     for attempt in range(retries + 1):
         req = urllib.request.Request(API.format(model=model), data=data, method="POST",
@@ -94,26 +102,25 @@ def call(model, paper, key, retries=4):
             with urllib.request.urlopen(req, timeout=120) as resp:
                 return json.load(resp)
         except urllib.error.HTTPError as exc:
-            detail = exc.read().decode(errors="replace")[:500]
+            detail = exc.read().decode(errors="replace")
+            short = re.sub(r"\s+", " ", detail)[:300]
             if exc.code in (401, 403):
-                raise AuthFailed(detail)
+                raise AuthFailed(short)
             if exc.code == 429:
                 if "PerDay" in detail or "per day" in detail.lower():
-                    raise QuotaExhausted(detail)
-                wait = 20 * (attempt + 1)  # per-minute limit: back off and retry
+                    raise QuotaExhausted(short)
+                wait = (retry_delay(detail) or 10 * (attempt + 1)) + 1
             elif exc.code in (500, 502, 503, 504):
-                wait = 5 * (attempt + 1)
+                wait = 3 * (attempt + 1)
             else:
-                raise RuntimeError(f"HTTP {exc.code}: {detail}")
+                raise RuntimeError(f"HTTP {exc.code}: {short}")
             if attempt == retries:
-                if exc.code == 429:
-                    raise QuotaExhausted(detail)
-                raise RuntimeError(f"HTTP {exc.code}: {detail}")
-            time.sleep(wait)
+                raise RuntimeError(f"HTTP {exc.code} after {retries} retries: {short}")
+            time.sleep(min(wait, 90))
         except (urllib.error.URLError, TimeoutError) as exc:
             if attempt == retries:
                 raise RuntimeError(str(exc))
-            time.sleep(5 * (attempt + 1))
+            time.sleep(3 * (attempt + 1))
 
 
 # Openers the prompt forbids but the model still writes now and then.
@@ -207,9 +214,9 @@ def main():
     ap.add_argument("--model", default=MODEL)
     ap.add_argument("--fallback", default=FALLBACK)
     ap.add_argument("--limit", type=int, default=0, help="process at most N papers (0 = all)")
-    ap.add_argument("--workers", type=int, default=1)
+    ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--top", type=int, default=50, help="per day, only the N most popular papers (0 = all)")
-    ap.add_argument("--delay", type=float, default=4.0, help="seconds between requests (free-tier rate limits)")
+    ap.add_argument("--delay", type=float, default=0.0, help="seconds between requests per worker (429s are handled anyway)")
     ap.add_argument("--compare", default="", help="comma-separated models: write compare.json/.md, change no data")
     ap.add_argument("--out", default="compare.json")
     ap.add_argument("--dry-run", action="store_true")
