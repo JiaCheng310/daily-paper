@@ -304,6 +304,7 @@ def main():
     ap.add_argument("--limit", type=int, default=0, help="process at most N papers (0 = all)")
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--top", type=int, default=30, help="per day, only the N most popular papers (0 = all)")
+    ap.add_argument("--section-top", type=int, default=10, help="per day, the N most popular of each section (RL)")
     ap.add_argument("--delay", type=float, default=0.0, help="seconds between requests per worker (429s are handled anyway)")
     ap.add_argument("--compare", default="", help="comma-separated models: write compare.json/.md, change no data")
     ap.add_argument("--out", default="compare.json")
@@ -346,7 +347,7 @@ def main():
                 ranked = [p for _, p in sorted(enumerate(day["papers"]), key=lambda x: (-(x[1].get("heat") or 0), x[0]))]
                 wanted.update(p["id"] for p in ranked[: args.top])
                 for section in {s for p in ranked for s in p.get("sections") or []}:  # e.g. the RL list
-                    wanted.update([p["id"] for p in ranked if section in p.get("sections", [])][: args.top])
+                    wanted.update([p["id"] for p in ranked if section in p.get("sections", [])][: args.section_top])
             papers = [p for p in papers if p["id"] in wanted]
         todo = [p for p in papers if cache.get(p["id"], {}).get("v") not in
                 {prompt_version(args.model), prompt_version(args.fallback)}]

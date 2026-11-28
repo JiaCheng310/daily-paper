@@ -298,8 +298,9 @@
     }[state.sort] || ((a, b) => a.order - b.order);
     list.sort(by);
     const searching = terms.inc.length > 0 || terms.exc.length > 0;
-    const rest = state.day?.popular || searching || state.showAll ? 0 : Math.max(0, list.length - DAY_LIMIT);
-    if (rest) list = list.slice(0, DAY_LIMIT);
+    const limit = state.index.categories.find((c) => c.id === state.cat)?.limit || DAY_LIMIT;
+    const rest = state.day?.popular || searching || state.showAll ? 0 : Math.max(0, list.length - limit);
+    if (rest) list = list.slice(0, limit);
     return { list: list.map((x) => x.p), total: all.length, rest };
   }
 

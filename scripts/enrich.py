@@ -671,7 +671,7 @@ def main():
             ranked = sorted(papers, key=lambda p: -(p.get("heat") or 0))
             papers = ranked[: args.top]
             for section in {s for p in ranked for s in p.get("sections") or []}:  # e.g. the RL list
-                papers += [p for p in ranked if section in p.get("sections", [])][: args.top]
+                papers += [p for p in ranked if section in p.get("sections", [])][:10]  # a section shows 10
         ids += [p["id"] for p in papers]
     todo = [pid for pid in dict.fromkeys(ids) if pid not in cache]
     if args.limit:

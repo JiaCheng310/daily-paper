@@ -37,6 +37,7 @@ VISIT_WEIGHT = 0.1  # same as popularity.py
 SOURCE = "hot"  # day files written by this script (older ones held one arXiv category)
 EASTERN = ZoneInfo("America/New_York")
 CUTOFF = dt.time(14, 0)  # arXiv's daily submission deadline, US Eastern
+SECTION_TOP = 10  # a section shows (and gets summaries for) its 10 most popular papers a day
 # Sections besides the main list: id -> (alphaXiv topics, title/abstract pattern).
 SECTIONS = {
     "rl": (("reinforcement-learning", "deep-reinforcement-learning"),
@@ -248,7 +249,7 @@ def main():
         "updated_at": now,
         "default_category": "all",
         "categories": [{"id": "all", "name": "Popular papers", "name_zh": "热门论文"},
-                       {"id": "rl", "name": "Reinforcement learning", "name_zh": "强化学习"}],
+                       {"id": "rl", "name": "Reinforcement learning", "name_zh": "强化学习", "limit": SECTION_TOP}],
         "category_names": {c: {"en": CATEGORY_NAMES[c][0], "zh": CATEGORY_NAMES[c][1]} for c in cats if c in CATEGORY_NAMES},
         "days": index_days,
     }
