@@ -349,7 +349,7 @@ def main():
         todo = [p for p in papers if cache.get(p["id"], {}).get("v") not in
                 {prompt_version(args.model), prompt_version(args.fallback)}]
         # Newest days first: when the daily free quota runs out, today's list is done.
-        todo.sort(key=lambda p: (p.get("published", "")[:10], p.get("heat") or 0), reverse=True)
+        todo.sort(key=lambda p: (p.get("listed") or p.get("published", "")[:10], p.get("heat") or 0), reverse=True)
         if args.limit:
             todo = todo[: args.limit]
         print(f"{len(todo)} papers to summarize with {args.model} ({len(papers) - len(todo)} cached), "

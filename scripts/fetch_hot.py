@@ -5,8 +5,10 @@ Candidates:
   - Hugging Face Daily Papers, every listing date in the window (upvotes)
   - alphaXiv's "Hot" feed (visits, upvotes); only Computer Science papers
 Metadata (title, authors, abstract, categories, date) comes from the arXiv API.
-Papers are grouped by their arXiv submission date (UTC), like arXiv itself; a day's
-list only ever grows, so a paper that was popular once stays on its day.
+Papers are grouped by the Beijing date on which they were first listed: the Hugging Face
+Daily Papers date when HF lists the paper, otherwise the morning after arXiv announces it
+(arXiv announces Sunday-Thursday 20:00 US Eastern = Monday-Friday morning in Beijing).
+A paper keeps the day it was first given, and a day's list only ever grows.
 
 Writes data/days/<date>.json and data/index.json, merging the caches written by
 popularity.py (upvotes), enrich.py (previews, organizations) and summarize_gemini.py.
@@ -23,6 +25,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))  # -I leaves the script dir out
 from fetch_demo import CATEGORY_NAMES, demo_score, parse_arxiv  # noqa: E402
@@ -31,6 +34,8 @@ UA = "daily-paper/0.1 (+https://github.com/JiaCheng310/daily-paper)"
 ARXIV_ID = re.compile(r"^\d{4}\.\d{4,5}$")
 VISIT_WEIGHT = 0.1  # same as popularity.py
 SOURCE = "hot"  # day files written by this script (older ones held one arXiv category)
+EASTERN = ZoneInfo("America/New_York")
+CUTOFF = dt.time(14, 0)  # arXiv's daily submission deadline, US Eastern
 
 
 def get(url, retries=3, timeout=60):
@@ -48,9 +53,22 @@ def get(url, retries=3, timeout=60):
         time.sleep(3 * (attempt + 1))
 
 
+def listing_date(published):
+    """Beijing date of the morning after arXiv announces a paper submitted at `published`.
+    Submissions up to 14:00 Eastern on Monday-Thursday are announced at 20:00 that day;
+    Friday's go out on Sunday. 20:00 Eastern is the next morning in Beijing. arXiv holidays
+    are not known here; Hugging Face's dates cover most papers anyway."""
+    t = dt.datetime.fromisoformat(published.replace("Z", "+00:00")).astimezone(EASTERN)
+    deadline = t.date() + dt.timedelta(days=t.time() >= CUTOFF)
+    while deadline.weekday() >= 5:  # Saturday, Sunday: next Monday's deadline
+        deadline += dt.timedelta(days=1)
+    announce = deadline + dt.timedelta(days=2 if deadline.weekday() == 4 else 0)
+    return (announce + dt.timedelta(days=1)).isoformat()
+
+
 def hf_candidates(dates):
-    """{id: upvotes} from HF Daily Papers listings."""
-    votes = {}
+    """{id: upvotes}, {id: first listing date} from HF Daily Papers listings."""
+    votes, listed = {}, {}
     for date in dates:
         try:
             items = json.loads(get(f"https://huggingface.co/api/daily_papers?date={date}&limit=100"))
@@ -62,8 +80,9 @@ def hf_candidates(dates):
             pid, up = paper.get("id"), paper.get("upvotes")
             if pid and ARXIV_ID.match(pid):
                 votes[pid] = max(votes.get(pid, 0), up if isinstance(up, int) else 0)
+                listed[pid] = min(listed.get(pid, date), date)
         time.sleep(0.5)
-    return votes
+    return votes, listed
 
 
 def alphaxiv_candidates(interval, pages, page_size=100, sorts=("Hot", "Views", "Likes")):
@@ -113,25 +132,38 @@ def arxiv_metadata(ids):
 def main():
     ap = argparse.ArgumentParser()
     # A paper often climbs for days after it appears, so a week of days is rebuilt.
-    ap.add_argument("--days", type=int, default=7, help="arXiv submission days to (re)build, newest first")
+    ap.add_argument("--days", type=int, default=7, help="newest listing days that take new papers")
     ap.add_argument("--interval", default="7 Days", help="alphaXiv feed window: 3 Days, 7 Days, 30 Days")
     ap.add_argument("--pages", type=int, default=3, help="alphaXiv pages of 100 per feed")
     ap.add_argument("--out", default="data")
     args = ap.parse_args()
     out = Path(args.out)
 
-    today = dt.datetime.now(dt.timezone.utc).date()
-    hf = hf_candidates([(today - dt.timedelta(days=d)).isoformat() for d in range(args.days + 4)])
+    beijing = dt.datetime.now(ZoneInfo("Asia/Shanghai")).date()
+    hf, hf_listed = hf_candidates([(beijing - dt.timedelta(days=d)).isoformat() for d in range(args.days + 4)])
     ax = alphaxiv_candidates(args.interval, args.pages)
     print(f"candidates: {len(hf)} from Hugging Face, {len(ax)} from alphaXiv, {len(set(hf) | set(ax))} together")
     meta = arxiv_metadata(set(hf) | set(ax))
     if not meta:
         sys.exit("arXiv returned no metadata")
 
+    # Everything already on the site keeps its day; new candidates join the newest days.
+    old = {}
+    for path in (out / "days").glob("*.json"):
+        day = json.loads(path.read_text())
+        if day.get("source") == SOURCE:
+            for p in day["papers"]:
+                old.setdefault(p["id"], p).setdefault("listed", hf_listed.get(p["id"]) or listing_date(p["published"]))
+    for pid, paper in meta.items():
+        paper["listed"] = old[pid]["listed"] if pid in old else hf_listed.get(pid) or listing_date(paper["published"])
+    newest = sorted({p["listed"] for p in meta.values()}, reverse=True)[: args.days]
     by_day = {}
-    for paper in meta.values():
-        by_day.setdefault(paper["published"][:10], {})[paper["id"]] = paper
-    days = sorted(by_day, reverse=True)[: args.days]
+    for p in old.values():
+        by_day.setdefault(p["listed"], {})[p["id"]] = p
+    for pid, paper in meta.items():
+        if pid in old or paper["listed"] in newest:
+            by_day.setdefault(paper["listed"], {})[pid] = {**old.get(pid, {}), **paper}
+    days = sorted(by_day, reverse=True)
 
     def cache(name):
         path = out / name
@@ -152,11 +184,7 @@ def main():
     (out / "days").mkdir(parents=True, exist_ok=True)
     for date in days:
         path = out / "days" / f"{date}.json"
-        old = json.loads(path.read_text()) if path.exists() else {}
-        papers = dict(by_day[date])
-        if old.get("source") == SOURCE:  # keep everything that was on this day before
-            for p in old["papers"]:
-                papers.setdefault(p["id"], p)
+        papers = by_day[date]
         rows = []
         for paper in papers.values():
             entry = llm.get(paper["id"])
@@ -181,10 +209,10 @@ def main():
                                    ensure_ascii=False, indent=1))
         print(f"{date}: {len(rows)} papers")
 
-    # Day files from before the switch (one arXiv category, hundreds of papers) are dropped
-    # when they are not rebuilt, so the archive holds one kind of list.
+    # Files for dates that no longer hold any paper (older layouts: one arXiv category, or
+    # days by submission date) are dropped, so the archive holds one kind of list.
     for path in (out / "days").glob("*.json"):
-        if json.loads(path.read_text()).get("source") != SOURCE:
+        if path.stem not in by_day:
             path.unlink()
             print(f"removed old-style {path.name}")
 
