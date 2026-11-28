@@ -36,9 +36,9 @@
    },
    "summary_source": "deepseek-flash",
    "hf_upvotes": 76,
-   "ax_votes": 100,
+   "ax_votes": 108,
    "ax_visits": 1311,
-   "heat": 307.1,
+   "heat": 315.1,
    "orgs": [
     {
      "name": "Huazhong University of Science & Technology",
@@ -241,10 +241,10 @@
     "zh": "Agentic LongLive 用独立 GPU 上的记忆 agent 以文本状态和实体图像维护人物、物体、场景一致性，并通过辅助 GPU 预填充注意力 sink，使 LongLive-2.0 在 LongStory-Online 上持久状态准确率提升 26.3 点、主角身份提升 44.9 点、重访地点一致性提升 40.4 点，额外耗时约 1%。"
    },
    "summary_source": "deepseek-flash",
-   "hf_upvotes": 24,
-   "ax_votes": 22,
+   "hf_upvotes": 25,
+   "ax_votes": 23,
    "ax_visits": 370,
-   "heat": 83.0,
+   "heat": 85.0,
    "orgs": [
     {
      "logo": "data/logos/nvidia.com.png",
@@ -514,10 +514,10 @@
     "zh": "TT-RSI 是一个无需标签的测试时框架，通过 In-Context RSI 反复参考先前完整解答重解问题、In-Weight RSI 将逐步改进蒸馏进模型权重，实现推理计算累积与纠错；平均准确率较基座模型提升 +13.89%，在同等测试时算力预算下比最强自一致性方法高 +4.79%。"
    },
    "summary_source": "deepseek-flash",
-   "hf_upvotes": 15,
+   "hf_upvotes": 16,
    "ax_votes": 14,
    "ax_visits": 244,
-   "heat": 53.4,
+   "heat": 54.4,
    "orgs": [
     {
      "name": "Shanghai Jiao Tong University",
@@ -584,10 +584,10 @@
     "zh": "I2VT 让视频编辑器在训练时以单帧图像扮演图像编辑器，由图像编辑器逐去噪步引导预测，无需配对视频即可把图像编辑能力迁移并扩展到动作、表情、肢体运动和场景重打光等任务，在 OpenVE-Bench 与 OpenVE++ 上取得 SOTA。"
    },
    "summary_source": "deepseek-flash",
-   "hf_upvotes": 46,
+   "hf_upvotes": 47,
    "ax_votes": 2,
    "ax_visits": 42,
-   "heat": 52.2,
+   "heat": 53.2,
    "orgs": [
     {
      "logo": "data/logos/cmu.edu.png",
@@ -982,10 +982,10 @@
     "zh": "PixelMatte 把预训练的像素空间扩散 Transformer 用于高保真抠图，复用原生 patch embedding 将图像、trimap 和噪声 alpha 作为空间对齐 token 联合处理，单次前向即可预测 alpha，并用 LayerShift 与 High-Pass Refiner 提升区域不透明度与边界精度；在 P3M-500-NP 与 AM-2K 上相比 RenderMatte 降低 SAD 与梯度误差 24-44%。"
    },
    "summary_source": "deepseek-flash",
-   "hf_upvotes": 20,
+   "hf_upvotes": 21,
    "ax_votes": 2,
    "ax_visits": 63,
-   "heat": 28.3,
+   "heat": 29.3,
    "orgs": [
     {
      "logo": "data/logos/ucsd.edu.png",
@@ -1143,6 +1143,58 @@
    "sections": []
   },
   {
+   "id": "2611.34821",
+   "title": "LoopTitan: What Does Parameter Revisit Buy a Mixture-of-Experts?",
+   "authors": [
+    "Zichen Tian",
+    "Yudong Lu",
+    "Xuansheng Wu",
+    "Na Zou",
+    "Xia Hu",
+    "Guanchu Wang",
+    "Qianru Sun"
+   ],
+   "abstract": "Looped Mixture-of-Experts (MoE) architectures revisit layer parameters across depths. This design increases effective depth without adding parameters. Recent looped MoE studies report substantial gains over the standard MoE at matched budgets (parameters, FLOPs and KV cache). However, the reported gains still confound parameter revisit with other design choices, e.g., network shape and residual scale. We ask, what does parameter revisit itself buy? Using matched non-revisit controls, we find that parameter revisit itself buys almost nothing. We argue that revisit only offers a freedom an MoE already has, i.e., trading experts for depth (more layers, fewer experts each) at fixed parameters. First, at matched budgets, we decompose the state-of-the-art looped recipe, with revisit last. A non-revisit control retains all the gain. Most comes from network shape, and the rest from residual scale. We prove this scale acts as a lower learning rate on revisited layers. This helps under AdamW's uneven layer step sizes, but disappears under Muon, which keeps them nearly equal. Second, beyond matched budgets, we evaluate revisit by adding compute at fixed parameters. One extra visit gains more than doubling the experts. Yet without revisit, a deeper standard MoE at equal parameters and compute obtains 90.2% of that gain under Muon. Overall, gains come from network shape, the optimizer and added compute, which a standard MoE can adopt. Accordingly, we propose LoopTitan-Base as a stronger MoE baseline. Under Muon, it matches the strongest looped recipe without revisit or residual scale. We open-source LoopTitan and release 17 pretrained models (including LoopTitan-Base and the control). Our experiment record is public as GitHub issues, with predictions pre-registered and the full exploration history kept. This is our Phase 1 technical report, laying the foundation for follow-up studies.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-25T18:04:31Z",
+   "updated": "2026-11-25T18:04:31Z",
+   "comment": "45 pages. Phase 1 technical report. Project page: https://datamllab.github.io/LoopTitan/ ; code: https://github.com/datamllab/LoopTitan ; models: https://huggingface.co/NaturalScale",
+   "code_url": "https://github.com/datamllab/LoopTitan",
+   "tags": [
+    "LLM",
+    "pretraining",
+    "efficiency",
+    "interpretability"
+   ],
+   "summary": {
+    "en": "Matched non-revisit controls show parameter revisit in looped MoE buys almost nothing; gains come from network shape and residual scale (a lower learning rate on revisited layers under AdamW). LoopTitan-Base, a non-revisit baseline under Muon, matches the strongest looped recipe, with 17 pretrained models released.",
+    "zh": "用匹配预算的非重访对照组拆解 looped MoE，发现参数重访本身几乎没有收益，增益主要来自网络形状与残差缩放（相当于对重访层降低学习率），在 Muon 下残差缩放收益消失；据此提出无重访的 LoopTitan-Base，在 Muon 下匹配最强循环方案，并开源 17 个预训练模型。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 10,
+   "ax_votes": 3,
+   "ax_visits": 118,
+   "heat": 24.8,
+   "orgs": [
+    {
+     "name": "Shanghai AI Lab"
+    },
+    {
+     "logo": "data/logos/smu.edu.sg.png",
+     "name": "Singapore Management University",
+     "ror": "050qmg959"
+    }
+   ],
+   "thumb": "data/thumbs/2611.34821.jpg",
+   "thumb_w": 566,
+   "thumb_h": 440,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
    "id": "2611.34849",
    "title": "Real2SimLab: A Unified Platform for Real-to-Simulation Transfer",
    "authors": [
@@ -1256,58 +1308,6 @@
    "sections": []
   },
   {
-   "id": "2611.34821",
-   "title": "LoopTitan: What Does Parameter Revisit Buy a Mixture-of-Experts?",
-   "authors": [
-    "Zichen Tian",
-    "Yudong Lu",
-    "Xuansheng Wu",
-    "Na Zou",
-    "Xia Hu",
-    "Guanchu Wang",
-    "Qianru Sun"
-   ],
-   "abstract": "Looped Mixture-of-Experts (MoE) architectures revisit layer parameters across depths. This design increases effective depth without adding parameters. Recent looped MoE studies report substantial gains over the standard MoE at matched budgets (parameters, FLOPs and KV cache). However, the reported gains still confound parameter revisit with other design choices, e.g., network shape and residual scale. We ask, what does parameter revisit itself buy? Using matched non-revisit controls, we find that parameter revisit itself buys almost nothing. We argue that revisit only offers a freedom an MoE already has, i.e., trading experts for depth (more layers, fewer experts each) at fixed parameters. First, at matched budgets, we decompose the state-of-the-art looped recipe, with revisit last. A non-revisit control retains all the gain. Most comes from network shape, and the rest from residual scale. We prove this scale acts as a lower learning rate on revisited layers. This helps under AdamW's uneven layer step sizes, but disappears under Muon, which keeps them nearly equal. Second, beyond matched budgets, we evaluate revisit by adding compute at fixed parameters. One extra visit gains more than doubling the experts. Yet without revisit, a deeper standard MoE at equal parameters and compute obtains 90.2% of that gain under Muon. Overall, gains come from network shape, the optimizer and added compute, which a standard MoE can adopt. Accordingly, we propose LoopTitan-Base as a stronger MoE baseline. Under Muon, it matches the strongest looped recipe without revisit or residual scale. We open-source LoopTitan and release 17 pretrained models (including LoopTitan-Base and the control). Our experiment record is public as GitHub issues, with predictions pre-registered and the full exploration history kept. This is our Phase 1 technical report, laying the foundation for follow-up studies.",
-   "primary": "cs.LG",
-   "categories": [
-    "cs.LG"
-   ],
-   "published": "2026-11-25T18:04:31Z",
-   "updated": "2026-11-25T18:04:31Z",
-   "comment": "45 pages. Phase 1 technical report. Project page: https://datamllab.github.io/LoopTitan/ ; code: https://github.com/datamllab/LoopTitan ; models: https://huggingface.co/NaturalScale",
-   "code_url": "https://github.com/datamllab/LoopTitan",
-   "tags": [
-    "LLM",
-    "pretraining",
-    "efficiency",
-    "interpretability"
-   ],
-   "summary": {
-    "en": "Matched non-revisit controls show parameter revisit in looped MoE buys almost nothing; gains come from network shape and residual scale (a lower learning rate on revisited layers under AdamW). LoopTitan-Base, a non-revisit baseline under Muon, matches the strongest looped recipe, with 17 pretrained models released.",
-    "zh": "用匹配预算的非重访对照组拆解 looped MoE，发现参数重访本身几乎没有收益，增益主要来自网络形状与残差缩放（相当于对重访层降低学习率），在 Muon 下残差缩放收益消失；据此提出无重访的 LoopTitan-Base，在 Muon 下匹配最强循环方案，并开源 17 个预训练模型。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 10,
-   "ax_votes": 3,
-   "ax_visits": 118,
-   "heat": 24.8,
-   "orgs": [
-    {
-     "name": "Shanghai AI Lab"
-    },
-    {
-     "logo": "data/logos/smu.edu.sg.png",
-     "name": "Singapore Management University",
-     "ror": "050qmg959"
-    }
-   ],
-   "thumb": "data/thumbs/2611.34821.jpg",
-   "thumb_w": 566,
-   "thumb_h": 440,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
    "id": "2611.33896",
    "title": "Looped Models are Fast Multi-Token Predictors",
    "authors": [
@@ -1359,6 +1359,59 @@
     "zh": "Floodgates 是面向循环语言模型的自投机解码方法：在序列尾部附加掩码 token 块，用低秩适配让浅层循环并行草拟多个未来 token、深层循环验证，在七个模型、五个基准上多数情况取得无损解码最快速度，最高加速 7.5 倍。"
    },
    "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.34128",
+   "title": "FoundSurface: Feedforward Ray-Based 3D Scene Surface Reconstruction from Unposed Images",
+   "authors": [
+    "Shenxing Wei",
+    "Jinxi Li",
+    "Zihui Zhang",
+    "Ajay Kumar",
+    "Wei Wang",
+    "Bo Yang"
+   ],
+   "abstract": "Accurate 3D surface reconstruction from unposed images remains a fundamental challenge in computer vision. Recent feed-forward pointmap methods eliminate the need for camera poses but inherently produce discrete, sparse representations. In this paper, we present a generalizable pipeline that directly recovers continuous, high-fidelity 3D surfaces from unposed images by seamlessly integrating pointmap- and ray-based representations. Our approach first extracts explicit geometric priors using a pre-trained pointmap model. A query-view-centric selection module then identifies geometrically relevant reference views via a robust surfel voting mechanism. Next, a cross-attention regressor bridges target query rays with reference features to estimate a continuous coarse surface. Lastly, a raylet-based module aggregates local 3D features to carve out high-frequency details and analytical normals. Trained as a single foundation model on 9 diverse datasets, our method demonstrates exceptional zero-shot generalization on 6 unseen datasets, clearly surpassing state-of-the-art baselines in geometric accuracy and detail preservation.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.CG",
+    "cs.GR",
+    "cs.RO"
+   ],
+   "published": "2026-11-25T10:30:24Z",
+   "updated": "2026-11-25T10:30:24Z",
+   "comment": "NeurIPS 2026. Project page: https://vlar-group.github.io/FoundSurface.html",
+   "tags": [
+    "3D",
+    "image generation",
+    "efficiency"
+   ],
+   "summary": {
+    "en": "FoundSurface combines pointmap and ray representations to reconstruct continuous, high-fidelity 3D surfaces from unposed images, using a pointmap prior, cross-attention coarse regression, and raylet refinement, outperforming baselines in zero-shot generalization on 6 unseen datasets.",
+    "zh": "FoundSurface 将 pointmap 与 ray 表示结合，从无位姿图像直接重建连续高保真三维表面：先用 pointmap 模型提取几何先验，再经查询视角选择与 cross-attention 回归粗表面，最后用 raylet 模块恢复高频细节与解析法线，在 6 个未见数据集上零样本泛化优于现有方法。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 18,
+   "ax_votes": 0,
+   "ax_visits": 54,
+   "heat": 23.4,
+   "orgs": [
+    {
+     "logo": "data/logos/polyu.edu.hk.png",
+     "name": "Hong Kong Polytechnic University",
+     "ror": "0030zas98"
+    },
+    {
+     "name": "Regressor"
+    }
+   ],
+   "thumb": "data/thumbs/2611.34128.jpg",
+   "thumb_w": 640,
+   "thumb_h": 331,
+   "listed": "2026-11-26",
    "sections": []
   },
   {
@@ -1446,10 +1499,10 @@
     "zh": "DexEngine 用仿真流水线把人类手物操作数据转成整臂-手可执行轨迹：先定位到可达位置、拟合手臂运动，再用残差强化学习在物理仿真中校正。从九个数据集为四种灵巧手各生成约 5,200 条片段，扩充为 65,000 条轨迹（116 小时）和 325,000 个 episode（578 小时），物体跟踪精度优于浮动手方法且比 RL 方法快 10 倍以上，训练的策略在仿真与真机上均优于未做物理校正的数据。"
    },
    "summary_source": "deepseek-flash",
-   "hf_upvotes": 19,
+   "hf_upvotes": 20,
    "ax_votes": 1,
    "ax_visits": 30,
-   "heat": 23.0,
+   "heat": 24.0,
    "orgs": [
     {
      "name": "POSTECH"
@@ -1465,59 +1518,6 @@
    "sections": [
     "rl"
    ]
-  },
-  {
-   "id": "2611.34128",
-   "title": "FoundSurface: Feedforward Ray-Based 3D Scene Surface Reconstruction from Unposed Images",
-   "authors": [
-    "Shenxing Wei",
-    "Jinxi Li",
-    "Zihui Zhang",
-    "Ajay Kumar",
-    "Wei Wang",
-    "Bo Yang"
-   ],
-   "abstract": "Accurate 3D surface reconstruction from unposed images remains a fundamental challenge in computer vision. Recent feed-forward pointmap methods eliminate the need for camera poses but inherently produce discrete, sparse representations. In this paper, we present a generalizable pipeline that directly recovers continuous, high-fidelity 3D surfaces from unposed images by seamlessly integrating pointmap- and ray-based representations. Our approach first extracts explicit geometric priors using a pre-trained pointmap model. A query-view-centric selection module then identifies geometrically relevant reference views via a robust surfel voting mechanism. Next, a cross-attention regressor bridges target query rays with reference features to estimate a continuous coarse surface. Lastly, a raylet-based module aggregates local 3D features to carve out high-frequency details and analytical normals. Trained as a single foundation model on 9 diverse datasets, our method demonstrates exceptional zero-shot generalization on 6 unseen datasets, clearly surpassing state-of-the-art baselines in geometric accuracy and detail preservation.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.AI",
-    "cs.CG",
-    "cs.GR",
-    "cs.RO"
-   ],
-   "published": "2026-11-25T10:30:24Z",
-   "updated": "2026-11-25T10:30:24Z",
-   "comment": "NeurIPS 2026. Project page: https://vlar-group.github.io/FoundSurface.html",
-   "tags": [
-    "3D",
-    "image generation",
-    "efficiency"
-   ],
-   "summary": {
-    "en": "FoundSurface combines pointmap and ray representations to reconstruct continuous, high-fidelity 3D surfaces from unposed images, using a pointmap prior, cross-attention coarse regression, and raylet refinement, outperforming baselines in zero-shot generalization on 6 unseen datasets.",
-    "zh": "FoundSurface 将 pointmap 与 ray 表示结合，从无位姿图像直接重建连续高保真三维表面：先用 pointmap 模型提取几何先验，再经查询视角选择与 cross-attention 回归粗表面，最后用 raylet 模块恢复高频细节与解析法线，在 6 个未见数据集上零样本泛化优于现有方法。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 17,
-   "ax_votes": 0,
-   "ax_visits": 54,
-   "heat": 22.4,
-   "orgs": [
-    {
-     "logo": "data/logos/polyu.edu.hk.png",
-     "name": "Hong Kong Polytechnic University",
-     "ror": "0030zas98"
-    },
-    {
-     "name": "Regressor"
-    }
-   ],
-   "thumb": "data/thumbs/2611.34128.jpg",
-   "thumb_w": 640,
-   "thumb_h": 331,
-   "listed": "2026-11-26",
-   "sections": []
   },
   {
    "id": "2611.33915",
@@ -1873,6 +1873,52 @@
    "sections": []
   },
   {
+   "id": "2611.34935",
+   "title": "Can image generation help visual reasoning? An empirical study",
+   "authors": [
+    "Xueyang Yu",
+    "Yifan Jing",
+    "Taiming Lu",
+    "Linrong Cai",
+    "Zhipeng Cai",
+    "Yunyang Xiong",
+    "Gabriel Sarch",
+    "Zhuang Liu"
+   ],
+   "abstract": "Language models think in words; then multimodal models might think in images. We test whether a generated helper improves the answer to a visual question. A model describes the helper it needs and then answers using the original and generated images together. Across 13 vision-language model and generator pairs, generation lowers mean accuracy by 3.7 percentage points, with declines on nine of ten tasks. Two unified models, BAGEL and Janus-Pro-7B, each lose accuracy on eight tasks. On VSTAR, adding a generated image to the same planning hint lowers accuracy by 10.47 points. Repeated image edits yield different outcomes across tasks. ChartQAPro and MathVista stay below their no-generation baselines, while ERQA gains three points after ten edits.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "published": "2026-11-25T18:59:31Z",
+   "updated": "2026-11-25T18:59:31Z",
+   "comment": "",
+   "tags": [
+    "VLM/LLM"
+   ],
+   "ax_votes": 5,
+   "ax_visits": 100,
+   "heat": 15.0,
+   "listed": "2026-11-26",
+   "orgs": [
+    {
+     "logo": "data/logos/princeton.edu.png",
+     "name": "Princeton University",
+     "ror": "00hx57361"
+    },
+    {
+     "logo": "data/logos/meta.com.png",
+     "name": "Meta"
+    }
+   ],
+   "thumb": "data/thumbs/2611.34935.jpg",
+   "thumb_w": 640,
+   "thumb_h": 210,
+   "sections": []
+  },
+  {
    "id": "2611.34776",
    "title": "DFly2: Turbocharging Long-Context Speculative Decoding by Sharing the Target's Sparsity",
    "authors": [
@@ -1967,52 +2013,6 @@
     "zh": "Negative-Only Policy Optimization (NOPO) 将已验证的正样本视为无标签，仅通过抑制可信的负样本来更新策略，结合参考相对负抑制损失与组级适配器；在代码、逻辑和数学基准上，pass@k 优于标准 RLVR 基线。"
    },
    "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.34935",
-   "title": "Can image generation help visual reasoning? An empirical study",
-   "authors": [
-    "Xueyang Yu",
-    "Yifan Jing",
-    "Taiming Lu",
-    "Linrong Cai",
-    "Zhipeng Cai",
-    "Yunyang Xiong",
-    "Gabriel Sarch",
-    "Zhuang Liu"
-   ],
-   "abstract": "Language models think in words; then multimodal models might think in images. We test whether a generated helper improves the answer to a visual question. A model describes the helper it needs and then answers using the original and generated images together. Across 13 vision-language model and generator pairs, generation lowers mean accuracy by 3.7 percentage points, with declines on nine of ten tasks. Two unified models, BAGEL and Janus-Pro-7B, each lose accuracy on eight tasks. On VSTAR, adding a generated image to the same planning hint lowers accuracy by 10.47 points. Repeated image edits yield different outcomes across tasks. ChartQAPro and MathVista stay below their no-generation baselines, while ERQA gains three points after ten edits.",
-   "primary": "cs.LG",
-   "categories": [
-    "cs.LG",
-    "cs.CL",
-    "cs.CV"
-   ],
-   "published": "2026-11-25T18:59:31Z",
-   "updated": "2026-11-25T18:59:31Z",
-   "comment": "",
-   "tags": [
-    "VLM/LLM"
-   ],
-   "ax_votes": 4,
-   "ax_visits": 100,
-   "heat": 14.0,
-   "listed": "2026-11-26",
-   "orgs": [
-    {
-     "logo": "data/logos/princeton.edu.png",
-     "name": "Princeton University",
-     "ror": "00hx57361"
-    },
-    {
-     "logo": "data/logos/meta.com.png",
-     "name": "Meta"
-    }
-   ],
-   "thumb": "data/thumbs/2611.34935.jpg",
-   "thumb_w": 640,
-   "thumb_h": 210,
-   "sections": []
   },
   {
    "id": "2611.34079",
@@ -2710,6 +2710,31 @@
    "sections": []
   },
   {
+   "id": "2611.30895",
+   "title": "Speak When You See It: Proactive Task Assistants Should Wait for Evidence, Not the Clock",
+   "authors": [
+    "Bohe Chen"
+   ],
+   "abstract": "Proactive assistants that guide people through physical tasks must decide, every few seconds, whether a step is complete and whether a mistake has occurred. We find that two benchmarks for this task largely reward knowing when rather than seeing what: a timer that never looks at the video, raising an alarm at 25 s and confirming each step at 30 s, reaches a mistake F1 of 0.373 on Ego-MC-Bench, above every published result (at most 0.27). We formalize this as the video-blind frontier, the best trade-off between completion accuracy and mistake F1 that policies reach from the elapsed time, the instruction and training statistics alone: every published per-step result on Ego-MC-Bench lies inside it, and so do all twelve zero-shot models we run on QICD. To move beyond it, we introduce Evidence-Contrastive Training (ECT): fine-tune on the benchmark's own questions, and pair its positives with negatives from the same recording at the same elapsed time, so that elapsed time cannot separate the two sides of a pair. Trained on 209 QICD videos in about 15 GPU-hours, a 2B model with ECT crosses the frontier on both benchmarks in all four seeds; transferred to Ego-MC-Bench without adaptation, it confirms 59% of mistake-free steps in time, against 30% for a published model with the same backbone trained on about 25k synthetic counterfactuals and real recordings. Its decisions follow the video beyond what timing explains: at equal elapsed time it tells a finished step from an unfinished one in 90-92% of test pairs, where the instruction's typical duration reaches 65%, rescaling the time stamps between the frames leaves it essentially unchanged, and swapping in another recording, of the same recipe where one exists, cuts its completion accuracy by two thirds. The code and model weights will be publicly released.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-23T15:57:25Z",
+   "updated": "2026-11-23T15:57:25Z",
+   "comment": "31 pages, 10 figures, 27 tables",
+   "tags": [
+    "benchmark"
+   ],
+   "hf_upvotes": 5,
+   "ax_votes": 1,
+   "ax_visits": 25,
+   "heat": 8.5,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
    "id": "2611.34292",
    "title": "WebVibe: Multimodal Interactive Website Generation via Reverse Synthesis and Visual Self-Distillation",
    "authors": [
@@ -2835,31 +2860,6 @@
    "thumb": "data/thumbs/2611.33390.jpg",
    "thumb_w": 640,
    "thumb_h": 391,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
-   "id": "2611.30895",
-   "title": "Speak When You See It: Proactive Task Assistants Should Wait for Evidence, Not the Clock",
-   "authors": [
-    "Bohe Chen"
-   ],
-   "abstract": "Proactive assistants that guide people through physical tasks must decide, every few seconds, whether a step is complete and whether a mistake has occurred. We find that two benchmarks for this task largely reward knowing when rather than seeing what: a timer that never looks at the video, raising an alarm at 25 s and confirming each step at 30 s, reaches a mistake F1 of 0.373 on Ego-MC-Bench, above every published result (at most 0.27). We formalize this as the video-blind frontier, the best trade-off between completion accuracy and mistake F1 that policies reach from the elapsed time, the instruction and training statistics alone: every published per-step result on Ego-MC-Bench lies inside it, and so do all twelve zero-shot models we run on QICD. To move beyond it, we introduce Evidence-Contrastive Training (ECT): fine-tune on the benchmark's own questions, and pair its positives with negatives from the same recording at the same elapsed time, so that elapsed time cannot separate the two sides of a pair. Trained on 209 QICD videos in about 15 GPU-hours, a 2B model with ECT crosses the frontier on both benchmarks in all four seeds; transferred to Ego-MC-Bench without adaptation, it confirms 59% of mistake-free steps in time, against 30% for a published model with the same backbone trained on about 25k synthetic counterfactuals and real recordings. Its decisions follow the video beyond what timing explains: at equal elapsed time it tells a finished step from an unfinished one in 90-92% of test pairs, where the instruction's typical duration reaches 65%, rescaling the time stamps between the frames leaves it essentially unchanged, and swapping in another recording, of the same recipe where one exists, cuts its completion accuracy by two thirds. The code and model weights will be publicly released.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.AI"
-   ],
-   "published": "2026-11-23T15:57:25Z",
-   "updated": "2026-11-23T15:57:25Z",
-   "comment": "31 pages, 10 figures, 27 tables",
-   "tags": [
-    "benchmark"
-   ],
-   "hf_upvotes": 5,
-   "ax_votes": 1,
-   "ax_visits": 25,
-   "heat": 8.5,
    "listed": "2026-11-26",
    "sections": []
   },
@@ -3213,6 +3213,35 @@
    "sections": []
   },
   {
+   "id": "2611.33307",
+   "title": "Lost in Translation, Not in Confidence: Benchmarking and Calibrating Multilingual Decision Models",
+   "authors": [
+    "Mingzhe Du",
+    "Thong Thanh Nguyen",
+    "Nguyen Tran Cong Duy",
+    "See-Kiong Ng",
+    "Luu Anh Tuan"
+   ],
+   "abstract": "Decision models are language models fine-tuned to return a probability for each option of a typed query, which routers and guardrails threshold directly. They are built on multilingual bases but ranked almost entirely in English. We evaluate 25 top-ranked open-weight decision models on 17 tasks in 14 languages, comparing each language with English on parallel items. Every model loses accuracy in every language, from about 2 points in high-resource languages to 8 in Tamil, while confidence falls only half as much: a threshold set for 95\\% accuracy in English yields 90% in Tamil. The size of the loss is set by the language and the base model rather than by leaderboard rank. In 81 controlled fine-tuning runs, task skill learned in English transfers to other languages and a few thousand target-language items narrow large losses, but neither more data nor full-parameter tuning closes them. Finally, the same test items are answered more accurately in all 23 benchmark--language pairs we compare when an LLM rather than a person translated them, so LLM-translated test sets understate the gap.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL"
+   ],
+   "published": "2026-11-24T19:01:47Z",
+   "updated": "2026-11-24T19:01:47Z",
+   "comment": "",
+   "tags": [
+    "VLM/LLM",
+    "benchmark"
+   ],
+   "hf_upvotes": 5,
+   "ax_votes": 0,
+   "ax_visits": 13,
+   "heat": 6.3,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
    "id": "2611.34785",
    "title": "PersonaFactory: Stylistic User Prompt Augmentation with Synthetic Persona Bank",
    "authors": [
@@ -3333,35 +3362,6 @@
    "summary_source": "deepseek-flash"
   },
   {
-   "id": "2611.33307",
-   "title": "Lost in Translation, Not in Confidence: Benchmarking and Calibrating Multilingual Decision Models",
-   "authors": [
-    "Mingzhe Du",
-    "Thong Thanh Nguyen",
-    "Nguyen Tran Cong Duy",
-    "See-Kiong Ng",
-    "Luu Anh Tuan"
-   ],
-   "abstract": "Decision models are language models fine-tuned to return a probability for each option of a typed query, which routers and guardrails threshold directly. They are built on multilingual bases but ranked almost entirely in English. We evaluate 25 top-ranked open-weight decision models on 17 tasks in 14 languages, comparing each language with English on parallel items. Every model loses accuracy in every language, from about 2 points in high-resource languages to 8 in Tamil, while confidence falls only half as much: a threshold set for 95\\% accuracy in English yields 90% in Tamil. The size of the loss is set by the language and the base model rather than by leaderboard rank. In 81 controlled fine-tuning runs, task skill learned in English transfers to other languages and a few thousand target-language items narrow large losses, but neither more data nor full-parameter tuning closes them. Finally, the same test items are answered more accurately in all 23 benchmark--language pairs we compare when an LLM rather than a person translated them, so LLM-translated test sets understate the gap.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL"
-   ],
-   "published": "2026-11-24T19:01:47Z",
-   "updated": "2026-11-24T19:01:47Z",
-   "comment": "",
-   "tags": [
-    "VLM/LLM",
-    "benchmark"
-   ],
-   "hf_upvotes": 5,
-   "ax_votes": 0,
-   "ax_visits": 13,
-   "heat": 6.3,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
    "id": "2611.34839",
    "title": "Diffusion Steering via Adaptive Reward Estimation and Resampling",
    "authors": [
@@ -3384,6 +3384,48 @@
    "ax_votes": 2,
    "ax_visits": 36,
    "heat": 5.6,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
+   "id": "2611.28231",
+   "title": "Evaluating Memanto on DolphinBench for AI Agents",
+   "authors": [
+    "Suleman Khan",
+    "Rasa Rahnema",
+    "Tara Khani",
+    "Majid Fekri",
+    "Fattane Zarrinkalam"
+   ],
+   "abstract": "Memory benchmarks built on question answering tell an agent which fact to recall. Workplace requests often leave that need implicit: to post an update in the team's channel, an agent must work out which channel from earlier interactions and use it in a tool call. We evaluate Memanto, a memory agent that ranks memories with an information-theoretic relevance score, on DolphinBench, which tests memory through 600 simulated workplace tasks, each validated as requiring memory. Running in the Hermes agent harness with GPT-6-Luna and at most 6 iterations per conversation, Memanto completes 503 tasks (83.83%). The strongest configuration reported by the benchmark's authors, Mem0 with GPT-5.6-Luna and up to 60 iterations, completes 424 (70.67%). Memanto's run also has the lowest total cost ($10.86, against $61.48 for the cheapest reported run) and the shortest median task latency (15.32s). Grading uses the benchmark's own judge, but the agent model differs, so these results compare complete systems. The memory system affects both whether an agent completes such tasks and what completion costs.",
+   "primary": "cs.IR",
+   "categories": [
+    "cs.IR",
+    "cs.AI"
+   ],
+   "published": "2026-11-20T19:06:26Z",
+   "updated": "2026-11-20T19:06:26Z",
+   "comment": "Future version will submit to ACL",
+   "tags": [
+    "benchmark"
+   ],
+   "hf_upvotes": 4,
+   "ax_votes": 0,
+   "ax_visits": 15,
+   "heat": 5.5,
+   "orgs": [
+    {
+     "logo": "data/logos/uoguelph.ca.png",
+     "name": "University of Guelph",
+     "ror": "01r7awg59"
+    },
+    {
+     "name": "EdgeAI Innovations Inc.Correspondence"
+    }
+   ],
+   "thumb": "data/thumbs/2611.28231.jpg",
+   "thumb_w": 566,
+   "thumb_h": 440,
    "listed": "2026-11-26",
    "sections": []
   },
@@ -3580,6 +3622,34 @@
    "ax_votes": 0,
    "ax_visits": 53,
    "heat": 5.3,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
+   "id": "2611.30460",
+   "title": "CONCOR: Benchmarking Contrastive Decoding for Visual Hallucination Mitigation Beyond Final-Output Performance",
+   "authors": [
+    "Ting Chen",
+    "Geng Li",
+    "Guohao Chen",
+    "Hanjia Lyu"
+   ],
+   "abstract": "Contrastive decoding (CD) mitigates object hallucination in multimodal large language models (MLLMs) by contrasting token distributions under different conditions to adjust token scores. However, existing generative and discriminative benchmarks primarily measure final task scores, which can be confounded by candidate filtering, changes in generation trajectories, and response biases, making it difficult to isolate the effects of the underlying contrastive adjustments. To address these limitations while complementing existing evaluations, we introduce CONCOR (Contrastive Correction Evaluation), a controlled benchmark that directly evaluates the competition between ground-truth and different types of hallucinated candidates using the Contrastive Grounding Margin (CGM). CGM also enables analysis of directional consistency, composition, and reliability of contrastive corrections. Our evaluation reveals that existing CD methods exhibit distinct correction behaviors: some consistently favor ground-truth candidates, whereas others produce strong corrections but also introduce more errors. Crucially, these differences help explain their contrasting responses to increased contrast strength, which improves some methods while degrading others. These findings highlight the importance of evaluating the contrastive correction itself, rather than relying solely on final-output performance, and CONCOR provides a controlled and interpretable framework for understanding and improving CD methods for hallucination mitigation.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.CV"
+   ],
+   "published": "2026-11-23T10:51:35Z",
+   "updated": "2026-11-25T15:11:19Z",
+   "comment": "",
+   "tags": [
+    "benchmark"
+   ],
+   "hf_upvotes": 4,
+   "ax_votes": 0,
+   "ax_visits": 12,
+   "heat": 5.2,
    "listed": "2026-11-26",
    "sections": []
   },
@@ -3913,48 +3983,6 @@
    "sections": []
   },
   {
-   "id": "2611.28231",
-   "title": "Evaluating Memanto on DolphinBench for AI Agents",
-   "authors": [
-    "Suleman Khan",
-    "Rasa Rahnema",
-    "Tara Khani",
-    "Majid Fekri",
-    "Fattane Zarrinkalam"
-   ],
-   "abstract": "Memory benchmarks built on question answering tell an agent which fact to recall. Workplace requests often leave that need implicit: to post an update in the team's channel, an agent must work out which channel from earlier interactions and use it in a tool call. We evaluate Memanto, a memory agent that ranks memories with an information-theoretic relevance score, on DolphinBench, which tests memory through 600 simulated workplace tasks, each validated as requiring memory. Running in the Hermes agent harness with GPT-6-Luna and at most 6 iterations per conversation, Memanto completes 503 tasks (83.83%). The strongest configuration reported by the benchmark's authors, Mem0 with GPT-5.6-Luna and up to 60 iterations, completes 424 (70.67%). Memanto's run also has the lowest total cost ($10.86, against $61.48 for the cheapest reported run) and the shortest median task latency (15.32s). Grading uses the benchmark's own judge, but the agent model differs, so these results compare complete systems. The memory system affects both whether an agent completes such tasks and what completion costs.",
-   "primary": "cs.IR",
-   "categories": [
-    "cs.IR",
-    "cs.AI"
-   ],
-   "published": "2026-11-20T19:06:26Z",
-   "updated": "2026-11-20T19:06:26Z",
-   "comment": "Future version will submit to ACL",
-   "tags": [
-    "benchmark"
-   ],
-   "hf_upvotes": 4,
-   "ax_votes": 0,
-   "ax_visits": 15,
-   "heat": 5.5,
-   "orgs": [
-    {
-     "logo": "data/logos/uoguelph.ca.png",
-     "name": "University of Guelph",
-     "ror": "01r7awg59"
-    },
-    {
-     "name": "EdgeAI Innovations Inc.Correspondence"
-    }
-   ],
-   "thumb": "data/thumbs/2611.28231.jpg",
-   "thumb_w": 566,
-   "thumb_h": 440,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
    "id": "2611.33380",
    "title": "FOCI: Trajectory Optimization on Gaussian Splats for Gaussian Robots",
    "authors": [
@@ -4050,34 +4078,6 @@
    "ax_votes": 2,
    "ax_visits": 29,
    "heat": 4.9,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
-   "id": "2611.30460",
-   "title": "CONCOR: Benchmarking Contrastive Decoding for Visual Hallucination Mitigation Beyond Final-Output Performance",
-   "authors": [
-    "Ting Chen",
-    "Geng Li",
-    "Guohao Chen",
-    "Hanjia Lyu"
-   ],
-   "abstract": "Contrastive decoding (CD) mitigates object hallucination in multimodal large language models (MLLMs) by contrasting token distributions under different conditions to adjust token scores. However, existing generative and discriminative benchmarks primarily measure final task scores, which can be confounded by candidate filtering, changes in generation trajectories, and response biases, making it difficult to isolate the effects of the underlying contrastive adjustments. To address these limitations while complementing existing evaluations, we introduce CONCOR (Contrastive Correction Evaluation), a controlled benchmark that directly evaluates the competition between ground-truth and different types of hallucinated candidates using the Contrastive Grounding Margin (CGM). CGM also enables analysis of directional consistency, composition, and reliability of contrastive corrections. Our evaluation reveals that existing CD methods exhibit distinct correction behaviors: some consistently favor ground-truth candidates, whereas others produce strong corrections but also introduce more errors. Crucially, these differences help explain their contrasting responses to increased contrast strength, which improves some methods while degrading others. These findings highlight the importance of evaluating the contrastive correction itself, rather than relying solely on final-output performance, and CONCOR provides a controlled and interpretable framework for understanding and improving CD methods for hallucination mitigation.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL",
-    "cs.CV"
-   ],
-   "published": "2026-11-23T10:51:35Z",
-   "updated": "2026-11-25T15:11:19Z",
-   "comment": "",
-   "tags": [
-    "benchmark"
-   ],
-   "hf_upvotes": 4,
-   "ax_votes": 0,
-   "ax_visits": 12,
-   "heat": 5.2,
    "listed": "2026-11-26",
    "sections": []
   },
@@ -4720,6 +4720,127 @@
    "summary_source": "deepseek-flash"
   },
   {
+   "id": "2611.29829",
+   "title": "Who Makes the Decision? Auditing an Agentic LLM Pipeline for Illicit Cryptocurrency Transaction Monitoring",
+   "authors": [
+    "Vaishnavi Chaughule",
+    "Yuchen Zhang",
+    "Mohammed Ahnaf Tajwar",
+    "Sai Akshay Menta",
+    "Saanidhya Vats",
+    "Vinija Jain",
+    "Aman Chadha",
+    "Divya Chaudhary"
+   ],
+   "abstract": "Agentic pipelines that combine graph detectors, deterministic rules, retrieval-augmented generation and an LLM judge are being proposed to monitor illicit cryptocurrency flows and to write regulation-citing justifications for analysts. They are evaluated on end-to-end accuracy or on the quality of those justifications, and neither shows which component made a decision. We audit such a pipeline on the Elliptic++ Bitcoin dataset with decision-source attribution, a trace-level protocol with three layers: per-case actual causation, interventional Shapley credit, and mediation of upstream risk scores. A deterministic wallet-score override carries about 94% of the credit for flags, and a verification gate cancels most of the judge's own flags, which fall on licit transactions. Testing the judge alone over 76 evidence bundles, four backbones and two prompts, we find that it follows an injected risk score on the anonymous transaction features it is given, although stronger models decide correctly when the facts are explicit; that a context too short for the system prompt leaves it with no verdict at all; and that it cites regulatory clauses that do not apply, which a substring-based citation check accepts. Hiding the score does not fix the judge, because evidence gathered with the score visible still encodes it. For illicit-activity monitoring, an LLM's justification should therefore not be read as evidence of which component flagged a transaction.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-22T23:16:50Z",
+   "updated": "2026-11-22T23:16:50Z",
+   "comment": "10 pages, 1 figure. Accepted to the 3rd Workshop on Big Data Analysis AND Illicit Trends (BANDIT) at IEEE BigData 2026",
+   "tags": [
+    "LLM",
+    "agents",
+    "interpretability",
+    "safety"
+   ],
+   "summary": {
+    "en": "Auditing an agentic anti-money-laundering LLM pipeline on Elliptic++ Bitcoin data, decision-source attribution shows a deterministic wallet-score override carries ~94% of flagging credit and the LLM judge's citations pass checks despite being inapplicable.",
+    "zh": "在 Elliptic++ Bitcoin 数据集上审计由规则、检索和 LLM 判官组成的反洗钱 agentic pipeline，用决策来源归因发现确定性钱包分数覆盖贡献约 94% 的标记信用，且 LLM 判官的引证检查会放过不适用的监管条款。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 1,
+   "ax_votes": 0,
+   "ax_visits": 29,
+   "heat": 3.9,
+   "orgs": [
+    {
+     "name": "Northeastern University"
+    },
+    {
+     "logo": "data/logos/meta.com.png",
+     "name": "Meta"
+    },
+    {
+     "logo": "data/logos/apple.com.png",
+     "name": "Apple"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29829.jpg",
+   "thumb_w": 386,
+   "thumb_h": 440,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
+   "id": "2611.32335",
+   "title": "GOLD-SLAM: Gaussian-splatting Omnidirectional LiDAR-Depth SLAM",
+   "authors": [
+    "Weicong Zhang",
+    "Yuan Huang",
+    "Yu Zheng",
+    "Lin Chenxiao",
+    "Yingying Li",
+    "Lilong Fan",
+    "Liangdong Zhuang",
+    "Yufan Chen",
+    "Ruiping Liu",
+    "Junwei Zheng",
+    "Jiaming Zhang"
+   ],
+   "abstract": "Panoramic cameras capture nearly the entire spherical field of view in a single frame. However, the mismatch between this panoramic coverage and the field of view of LiDAR poses a substantial challenge for panoramic Gaussian splatting SLAM that relies on LiDAR depth priors. We introduce GOLD-SLAM, a Gaussian-splatting Omnidirectional LiDAR-Depth SLAM system that combines high-quality rendering with accurate geometric reconstruction. It performs tracking and mapping in the spherical domain and uses tracked visual features in regions without LiDAR coverage to improve pose estimation. To address insufficient coverage of newly observed surfaces and floating artifacts during incremental mapping, we introduce Depth-Aware Map Extension and Pruning (DAEP). To enable broader evaluation, we collect a new dataset, WHOLE, using a UAV platform across Weak-geometry, High-dynamic, Omnidirectional, Low-light, and Easy scenarios. Extensive experiments on public benchmarks and WHOLE demonstrate competitive rendering quality and improved geometric accuracy relative to perspective systems. Compared with existing panoramic baselines, GOLD-SLAM improves mean PSNR by 5.56-9.10 dB and reduces mean Depth-L1 by 71.9-83.9%. To assess deployment feasibility on resource-constrained platforms such as UAVs, we evaluate an embedded configuration of GOLD-SLAM on a Jetson Orin NX (16 GB), demonstrating online operation at the cost of reconstruction quality.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.RO"
+   ],
+   "published": "2026-11-24T10:20:41Z",
+   "updated": "2026-11-25T13:50:27Z",
+   "comment": "The project repository is available at https://github.com/InSAI-Lab/GOLD-SLAM",
+   "code_url": "https://github.com/InSAI-Lab/GOLD-SLAM",
+   "tags": [
+    "perception",
+    "aerial",
+    "dataset"
+   ],
+   "summary": {
+    "en": "GOLD-SLAM combines panoramic Gaussian splatting with omnidirectional LiDAR priors for accurate spherical SLAM, improving PSNR by 5.56-9.10 dB and reducing Depth-L1 by 71.9-83.9% over baselines.",
+    "zh": "GOLD-SLAM系统结合全景高斯泼溅与全向LiDAR深度先验，在球面域进行高精度追踪与建图，平均PSNR比现有全景基线提升5.56至9.10 dB，Depth-L1降低71.9%至83.9%。"
+   },
+   "summary_source": "gemini-3.5-flash-lite",
+   "hf_upvotes": 1,
+   "ax_votes": 0,
+   "ax_visits": 29,
+   "heat": 3.9,
+   "orgs": [
+    {
+     "name": "Hunan University",
+     "ror": "05htk5m33"
+    },
+    {
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
+    },
+    {
+     "logo": "data/logos/kit.edu.png",
+     "name": "Karlsruhe Institute of Technology",
+     "ror": "04t3en479"
+    },
+    {
+     "logo": "data/logos/ox.ac.uk.png",
+     "name": "University of Oxford",
+     "ror": "052gg0110"
+    }
+   ],
+   "thumb": "data/thumbs/2611.32335.jpg",
+   "thumb_w": 640,
+   "thumb_h": 213,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
    "id": "2611.33398",
    "title": "Best-of-$N$ Test-Time Steering Can Lead to Reward Hacking in Vision-Language-Action Models",
    "authors": [
@@ -5174,61 +5295,6 @@
    "sections": []
   },
   {
-   "id": "2611.29829",
-   "title": "Who Makes the Decision? Auditing an Agentic LLM Pipeline for Illicit Cryptocurrency Transaction Monitoring",
-   "authors": [
-    "Vaishnavi Chaughule",
-    "Yuchen Zhang",
-    "Mohammed Ahnaf Tajwar",
-    "Sai Akshay Menta",
-    "Saanidhya Vats",
-    "Vinija Jain",
-    "Aman Chadha",
-    "Divya Chaudhary"
-   ],
-   "abstract": "Agentic pipelines that combine graph detectors, deterministic rules, retrieval-augmented generation and an LLM judge are being proposed to monitor illicit cryptocurrency flows and to write regulation-citing justifications for analysts. They are evaluated on end-to-end accuracy or on the quality of those justifications, and neither shows which component made a decision. We audit such a pipeline on the Elliptic++ Bitcoin dataset with decision-source attribution, a trace-level protocol with three layers: per-case actual causation, interventional Shapley credit, and mediation of upstream risk scores. A deterministic wallet-score override carries about 94% of the credit for flags, and a verification gate cancels most of the judge's own flags, which fall on licit transactions. Testing the judge alone over 76 evidence bundles, four backbones and two prompts, we find that it follows an injected risk score on the anonymous transaction features it is given, although stronger models decide correctly when the facts are explicit; that a context too short for the system prompt leaves it with no verdict at all; and that it cites regulatory clauses that do not apply, which a substring-based citation check accepts. Hiding the score does not fix the judge, because evidence gathered with the score visible still encodes it. For illicit-activity monitoring, an LLM's justification should therefore not be read as evidence of which component flagged a transaction.",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI"
-   ],
-   "published": "2026-11-22T23:16:50Z",
-   "updated": "2026-11-22T23:16:50Z",
-   "comment": "10 pages, 1 figure. Accepted to the 3rd Workshop on Big Data Analysis AND Illicit Trends (BANDIT) at IEEE BigData 2026",
-   "tags": [
-    "LLM",
-    "agents",
-    "interpretability",
-    "safety"
-   ],
-   "summary": {
-    "en": "Auditing an agentic anti-money-laundering LLM pipeline on Elliptic++ Bitcoin data, decision-source attribution shows a deterministic wallet-score override carries ~94% of flagging credit and the LLM judge's citations pass checks despite being inapplicable.",
-    "zh": "在 Elliptic++ Bitcoin 数据集上审计由规则、检索和 LLM 判官组成的反洗钱 agentic pipeline，用决策来源归因发现确定性钱包分数覆盖贡献约 94% 的标记信用，且 LLM 判官的引证检查会放过不适用的监管条款。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 1,
-   "ax_votes": 0,
-   "ax_visits": 29,
-   "heat": 3.9,
-   "orgs": [
-    {
-     "name": "Northeastern University"
-    },
-    {
-     "logo": "data/logos/meta.com.png",
-     "name": "Meta"
-    },
-    {
-     "logo": "data/logos/apple.com.png",
-     "name": "Apple"
-    }
-   ],
-   "thumb": "data/thumbs/2611.29829.jpg",
-   "thumb_w": 386,
-   "thumb_h": 440,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
    "id": "2611.33531",
    "title": "Adversarial Bandit Convex Optimization with $d^{3/2}\\sqrt{n}$ Regret",
    "authors": [
@@ -5336,6 +5402,60 @@
    "sections": []
   },
   {
+   "id": "2611.32002",
+   "title": "Change the Base, Change the Game: Rethinking Pan-sharpening",
+   "authors": [
+    "Jeonghyeok Do",
+    "Geunhyuk Youk",
+    "Munchurl Kim"
+   ],
+   "abstract": "Many pan-sharpening (PS) networks reconstruct high-resolution multispectral (HRMS) images by adding learned residuals to 4$\\times$-interpolated low-resolution multispectral (LRMS) inputs, incorporating panchromatic (PAN) detail only through these residual corrections. This raises a simple question: Why start with a blurry base when sharp spatial detail is already available? We propose PanBase, a sharper multispectral starting point designed for more effective residual learning. Guided by physical sensor characteristics, PanBase combines PAN spatial detail with LRMS spectral information while enforcing consistency with the LRMS observations under sensor-specific blur. We construct this base without neural network training, estimating only nine coefficients per spectral band through closed-form calibration. Our PanBase can be easily integrated into existing backbones with a global residual skip through two simple changes: (i) replacing the skip base with PanBase and (ii) concatenating it as an additional input. Using each backbone's original training recipe and matched training budgets, PanBase improves most reduced- and full-resolution metrics on WorldView-3, QuickBird, and GaoFen-2, while achieving 4.4$\\times$ faster training convergence on average. In zero-shot evaluation on WorldView-2, standalone PanBase achieves competitive reconstruction without target-sensor fitting or neural refinement.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-24T05:52:05Z",
+   "updated": "2026-11-24T05:52:05Z",
+   "comment": "The first two authors contributed equally to this work (equal contribution). Please visit our project page at this https://kaist-viclab.github.io/PanBase_site/",
+   "tags": [],
+   "hf_upvotes": 2,
+   "ax_votes": 0,
+   "ax_visits": 14,
+   "heat": 3.4,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
+   "id": "2611.33894",
+   "title": "SIA: Selective Image Analogy",
+   "authors": [
+    "Amirhossein Alimohammadi",
+    "Kian Izadpanah",
+    "Bardiya Kariminia",
+    "Yiorgos Chrysanthou",
+    "Ali Mahdavi-Amiri"
+   ],
+   "abstract": "Image analogy transfers a demonstrated transformation from a before/after pair (A, A') to a new query image B. Existing methods assume all changes in (A, A') should be fully transferred, limiting flexibility when users want only a subset of the demonstrated edits. We introduce Selective Image Analogy (SIA), a new setting where a single demonstration pair encodes multiple edits, and the user selects at inference time which edits to apply to B. To support this, we curate a multi-edit analogy dataset with full-edit and partial-edit targets. We then train a model that first learns to transfer the complete demonstrated transformation, and then gains selective control through a mask-aligned suppression mechanism: a token-gated LoRA that restricts adapter updates to suppressed edit tokens during denoising, paired with a concept suppression vector that weakens the selected tokens in the text embeddings before denoising. Together, these components allow SIA to suppress unwanted edits that remain visible in A', while preserving the user-selected ones, all without requiring a new demonstration pair for each edit combination. We perform extensive quantitative and qualitative evaluations along with user studies to demonstrate the efficacy of our approach.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.GR"
+   ],
+   "published": "2026-11-25T07:14:14Z",
+   "updated": "2026-11-25T07:14:14Z",
+   "comment": "SIGGRAPH Asia 2026 (Conference Papers). 28 pages including supplementary material. Project page: https://selective-image-analogy.github.io/ Code: https://github.com/alimohammadiamirhossein/selective-image-analogy Dataset: https://huggingface.co/datasets/selective-image-analogy/SIA-Multi-Edit-Analogy",
+   "code_url": "https://github.com/alimohammadiamirhossein/selective-image-analogy",
+   "tags": [
+    "imitation"
+   ],
+   "hf_upvotes": 2,
+   "ax_votes": 0,
+   "ax_visits": 14,
+   "heat": 3.4,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
    "id": "2611.33963",
    "title": "Targeted Adaptation of World-Action Models via Interaction and Motion Heads",
    "authors": [
@@ -5384,72 +5504,6 @@
    "thumb": "data/thumbs/2611.33963.jpg",
    "thumb_w": 640,
    "thumb_h": 400,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
-   "id": "2611.32335",
-   "title": "GOLD-SLAM: Gaussian-splatting Omnidirectional LiDAR-Depth SLAM",
-   "authors": [
-    "Weicong Zhang",
-    "Yuan Huang",
-    "Yu Zheng",
-    "Lin Chenxiao",
-    "Yingying Li",
-    "Lilong Fan",
-    "Liangdong Zhuang",
-    "Yufan Chen",
-    "Ruiping Liu",
-    "Junwei Zheng",
-    "Jiaming Zhang"
-   ],
-   "abstract": "Panoramic cameras capture nearly the entire spherical field of view in a single frame. However, the mismatch between this panoramic coverage and the field of view of LiDAR poses a substantial challenge for panoramic Gaussian splatting SLAM that relies on LiDAR depth priors. We introduce GOLD-SLAM, a Gaussian-splatting Omnidirectional LiDAR-Depth SLAM system that combines high-quality rendering with accurate geometric reconstruction. It performs tracking and mapping in the spherical domain and uses tracked visual features in regions without LiDAR coverage to improve pose estimation. To address insufficient coverage of newly observed surfaces and floating artifacts during incremental mapping, we introduce Depth-Aware Map Extension and Pruning (DAEP). To enable broader evaluation, we collect a new dataset, WHOLE, using a UAV platform across Weak-geometry, High-dynamic, Omnidirectional, Low-light, and Easy scenarios. Extensive experiments on public benchmarks and WHOLE demonstrate competitive rendering quality and improved geometric accuracy relative to perspective systems. Compared with existing panoramic baselines, GOLD-SLAM improves mean PSNR by 5.56-9.10 dB and reduces mean Depth-L1 by 71.9-83.9%. To assess deployment feasibility on resource-constrained platforms such as UAVs, we evaluate an embedded configuration of GOLD-SLAM on a Jetson Orin NX (16 GB), demonstrating online operation at the cost of reconstruction quality.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.RO"
-   ],
-   "published": "2026-11-24T10:20:41Z",
-   "updated": "2026-11-25T13:50:27Z",
-   "comment": "The project repository is available at https://github.com/InSAI-Lab/GOLD-SLAM",
-   "code_url": "https://github.com/InSAI-Lab/GOLD-SLAM",
-   "tags": [
-    "perception",
-    "aerial",
-    "dataset"
-   ],
-   "summary": {
-    "en": "GOLD-SLAM combines panoramic Gaussian splatting with omnidirectional LiDAR priors for accurate spherical SLAM, improving PSNR by 5.56-9.10 dB and reducing Depth-L1 by 71.9-83.9% over baselines.",
-    "zh": "GOLD-SLAM系统结合全景高斯泼溅与全向LiDAR深度先验，在球面域进行高精度追踪与建图，平均PSNR比现有全景基线提升5.56至9.10 dB，Depth-L1降低71.9%至83.9%。"
-   },
-   "summary_source": "gemini-3.5-flash-lite",
-   "hf_upvotes": 1,
-   "ax_votes": 0,
-   "ax_visits": 29,
-   "heat": 3.9,
-   "orgs": [
-    {
-     "name": "Hunan University",
-     "ror": "05htk5m33"
-    },
-    {
-     "name": "Tsinghua University",
-     "ror": "03cve4549"
-    },
-    {
-     "logo": "data/logos/kit.edu.png",
-     "name": "Karlsruhe Institute of Technology",
-     "ror": "04t3en479"
-    },
-    {
-     "logo": "data/logos/ox.ac.uk.png",
-     "name": "University of Oxford",
-     "ror": "052gg0110"
-    }
-   ],
-   "thumb": "data/thumbs/2611.32335.jpg",
-   "thumb_w": 640,
-   "thumb_h": 213,
    "listed": "2026-11-26",
    "sections": []
   },
@@ -5927,6 +5981,39 @@
    "sections": []
   },
   {
+   "id": "2611.34624",
+   "title": "HoMe: Toward Practical Harness Optimization of Memory Systems for AI Assistants",
+   "authors": [
+    "Yifei Xu",
+    "Li Yu",
+    "Zhaoyang Liu",
+    "Ce Wang",
+    "Sen Huang",
+    "Yanyan Shen",
+    "Yun Lin",
+    "Linpeng Huang",
+    "Hong Mei"
+   ],
+   "abstract": "The behavior of memory systems for long-running AI assistants is governed by a harness, which consists of the code, prompts, and configurations for memory construction, maintenance, retrieval, and answer generation. However, optimizing the harness of a memory system remains largely manual, and unrestricted editing alone does not ensure structural improvements. In this paper, we introduce HoMe, an evaluation-driven framework that iteratively evaluates candidate harnesses and derives each new candidate from any previously evaluated harness by editing any part of it. HoMe combines session-level memory versioning with execution traces to identify shared failure mechanisms across cases and localize them to the responsible sessions and harness components. It encourages early structural exploration through candidate gating and reduces evaluation cost through smoke tests, adaptive sampling, and the reuse of constructed memory. We validate HoMe with the open-source memory system ReMe on two large-scale long-horizon memory benchmarks, LongMemEval-S and BEAM. With six formal candidate evaluations per benchmark, after a full initial evaluation, HoMe discovers harnesses that improve end-task performance over the originally strong harness while consuming far fewer query-time tokens. The code is available at https://github.com/agentscope-ai/ReMe.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-25T16:11:53Z",
+   "updated": "2026-11-25T16:11:53Z",
+   "comment": "25 pages, 4 figures, including appendices",
+   "code_url": "https://github.com/agentscope-ai/ReMe",
+   "tags": [
+    "benchmark"
+   ],
+   "ax_votes": 1,
+   "ax_visits": 21,
+   "heat": 3.1,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
    "id": "2611.34925",
    "title": "One Ocean, Many Tasks: A Data-Grounded Simulation Suite and Benchmark for Marine Robotics",
    "authors": [
@@ -6049,6 +6136,33 @@
    "summary_source": "deepseek-flash"
   },
   {
+   "id": "2611.33824",
+   "title": "Revisiting Monocular In-Hand Object Scanning: Dataset, Pose Estimation, and Surface Reconstruction",
+   "authors": [
+    "Di Wu",
+    "Jeeeun Kim",
+    "Shu Kong"
+   ],
+   "abstract": "In-Hand Object Scanning (IHOS) from monocular video captured by a commodity smartphone holds immense potential to democratize 3D digitization for non-expert users, facilitating applications in digital archiving, augmented reality, and custom fabrication. Yet, IHOS remains largely understudied due to a lack of realistic datasets and systematic benchmarks. To bridge this gap, we introduce ToysRUs, a high-quality dataset featuring diverse figurines captured by 4K Ultra High-Definition (UHD) monocular videos. Studying IHOS from first principles, we examine structure-from-motion (SfM) for camera pose estimation, which is key to IHOS. We identify two key challenges: small baselines between consecutive frames, and sparse feature matches across large-view, long-range frames, further exacerbated by dynamic hand occlusions. Guided by these insights, we propose performing SfM on video sub-sequences sampled at sufficient angular intervals, and iteratively stitches the corresponding sub-trajectories into a unified global trajectory. Furthermore, for high-fidelity surface reconstruction, we introduce occlusion-aware 2D Gaussian Splatting, which incorporates opacity rendering and omits the opacity loss on hand regions. Quantitative and qualitative evaluations demonstrate that our framework significantly outperforms existing approaches, including neural implicit representations and 3D foundation models, in both geometric accuracy and photometric fidelity.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.GR"
+   ],
+   "published": "2026-11-25T05:54:14Z",
+   "updated": "2026-11-25T05:54:14Z",
+   "comment": "",
+   "tags": [
+    "VLM/LLM",
+    "benchmark"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 30,
+   "heat": 3.0,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
    "id": "2611.33893",
    "title": "When Are Parallel Subagents Effective for Coding? An Empirical Study on Repository Construction",
    "authors": [
@@ -6072,36 +6186,6 @@
    "ax_votes": 1,
    "ax_visits": 20,
    "heat": 3.0,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
-   "id": "2611.33894",
-   "title": "SIA: Selective Image Analogy",
-   "authors": [
-    "Amirhossein Alimohammadi",
-    "Kian Izadpanah",
-    "Bardiya Kariminia",
-    "Yiorgos Chrysanthou",
-    "Ali Mahdavi-Amiri"
-   ],
-   "abstract": "Image analogy transfers a demonstrated transformation from a before/after pair (A, A') to a new query image B. Existing methods assume all changes in (A, A') should be fully transferred, limiting flexibility when users want only a subset of the demonstrated edits. We introduce Selective Image Analogy (SIA), a new setting where a single demonstration pair encodes multiple edits, and the user selects at inference time which edits to apply to B. To support this, we curate a multi-edit analogy dataset with full-edit and partial-edit targets. We then train a model that first learns to transfer the complete demonstrated transformation, and then gains selective control through a mask-aligned suppression mechanism: a token-gated LoRA that restricts adapter updates to suppressed edit tokens during denoising, paired with a concept suppression vector that weakens the selected tokens in the text embeddings before denoising. Together, these components allow SIA to suppress unwanted edits that remain visible in A', while preserving the user-selected ones, all without requiring a new demonstration pair for each edit combination. We perform extensive quantitative and qualitative evaluations along with user studies to demonstrate the efficacy of our approach.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.GR"
-   ],
-   "published": "2026-11-25T07:14:14Z",
-   "updated": "2026-11-25T07:14:14Z",
-   "comment": "SIGGRAPH Asia 2026 (Conference Papers). 28 pages including supplementary material. Project page: https://selective-image-analogy.github.io/ Code: https://github.com/alimohammadiamirhossein/selective-image-analogy Dataset: https://huggingface.co/datasets/selective-image-analogy/SIA-Multi-Edit-Analogy",
-   "code_url": "https://github.com/alimohammadiamirhossein/selective-image-analogy",
-   "tags": [
-    "imitation"
-   ],
-   "hf_upvotes": 2,
-   "ax_votes": 0,
-   "ax_visits": 14,
-   "heat": 3.4,
    "listed": "2026-11-26",
    "sections": []
   },
@@ -6451,30 +6535,6 @@
    "summary_source": "deepseek-flash"
   },
   {
-   "id": "2611.32002",
-   "title": "Change the Base, Change the Game: Rethinking Pan-sharpening",
-   "authors": [
-    "Jeonghyeok Do",
-    "Geunhyuk Youk",
-    "Munchurl Kim"
-   ],
-   "abstract": "Many pan-sharpening (PS) networks reconstruct high-resolution multispectral (HRMS) images by adding learned residuals to 4$\\times$-interpolated low-resolution multispectral (LRMS) inputs, incorporating panchromatic (PAN) detail only through these residual corrections. This raises a simple question: Why start with a blurry base when sharp spatial detail is already available? We propose PanBase, a sharper multispectral starting point designed for more effective residual learning. Guided by physical sensor characteristics, PanBase combines PAN spatial detail with LRMS spectral information while enforcing consistency with the LRMS observations under sensor-specific blur. We construct this base without neural network training, estimating only nine coefficients per spectral band through closed-form calibration. Our PanBase can be easily integrated into existing backbones with a global residual skip through two simple changes: (i) replacing the skip base with PanBase and (ii) concatenating it as an additional input. Using each backbone's original training recipe and matched training budgets, PanBase improves most reduced- and full-resolution metrics on WorldView-3, QuickBird, and GaoFen-2, while achieving 4.4$\\times$ faster training convergence on average. In zero-shot evaluation on WorldView-2, standalone PanBase achieves competitive reconstruction without target-sensor fitting or neural refinement.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-24T05:52:05Z",
-   "updated": "2026-11-24T05:52:05Z",
-   "comment": "The first two authors contributed equally to this work (equal contribution). Please visit our project page at this https://kaist-viclab.github.io/PanBase_site/",
-   "tags": [],
-   "hf_upvotes": 2,
-   "ax_votes": 0,
-   "ax_visits": 14,
-   "heat": 3.4,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
    "id": "2611.33468",
    "title": "Learning from Recurrence: Internalizing Depth-Induced Preferences in Looped Language Models",
    "authors": [
@@ -6684,6 +6744,62 @@
    "sections": []
   },
   {
+   "id": "2611.33378",
+   "title": "DreamTour: Layout Steering for Training-Free World Exploration",
+   "authors": [
+    "Srikumar Sastry",
+    "Meher Gitika Karumuri",
+    "Chenqi Li",
+    "Sarosij Bose",
+    "Mellon Zhang",
+    "Allen Tu",
+    "Ziyang Long",
+    "Yen-Liang Lin",
+    "Alexander Schwing",
+    "Nathan Jacobs"
+   ],
+   "abstract": "Video diffusion and world models generate plausible videos but do not reliably match the requested camera direction and travel distance. We present DreamTour, a training-free framework that generates camera tours from a single image with more accurate control over camera motion. DreamTour first uses a frozen image inpainting prior to extend the photograph beyond its original field of view while preserving the input pixels. Depth-based rendering of this extended scene along the requested camera path produces approximate target views that serve as spatial guidance. We introduce Layout Steering, which aligns early video latents with these views through decaying low-frequency corrections, leaving later denoising to refine appearance and dynamics. For longer tours, we autoregressively generate the video segments, repeating guidance construction from each segment's final frame to maintain camera control across the full trajectory. DreamTour improves directional accuracy and travel calibration on VBench while maintaining competitive video quality. On WorldScore, it strengthens camera control and scene consistency across chained movements. Together, these results demonstrate that training-free spatial guidance enables more accurate and consistent camera control in pretrained video diffusion and world models.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-24T20:05:52Z",
+   "updated": "2026-11-24T20:05:52Z",
+   "comment": "20 pages, 12 figures",
+   "tags": [
+    "world model"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 27,
+   "heat": 2.7,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
+   "id": "2611.33546",
+   "title": "Community Notes Across Platforms: Evaluating the Feasibility of Re-using Crowd-sourced Context Notes",
+   "authors": [
+    "Nishka Arora",
+    "Yann Issam Aouidef",
+    "Ashish Goel"
+   ],
+   "abstract": "Crowdsourced fact-checking systems such as Community Notes can provide useful context for misleading content. Producing and rating new notes on such systems requires substantial contributor effort. However, the resulting context is typically confined to the post and platform for which it was created. We ask whether already-vetted notes can be reused when the same claims recur across posts and platforms. To investigate this question, we construct a human-labelled dataset using Community Notes attached to X posts created during a one-week period and candidate posts retrieved from Bluesky. Within our observation window, 140 of 340 claims had at least one confirmed recurrence on Bluesky, showing that cross-platform note reuse is a substantial opportunity. Recurrence alone, however, does not establish whether reuse would provide timely context. A timing analysis shows that many relevant notes were already Helpful when matching Bluesky posts appeared. Even when a Bluesky post appeared first, reuse could often still provide context sooner after publication than the original X post received its Helpful note. To automate the discovery of these opportunities, we evaluate a three-stage pipeline that searches the Bluesky stream for potential recurrences and determines whether an existing note applies. The pipeline achieves 72.6% precision in a held-out stream evaluation and 70.1% end-to-end recall on our known-positive set. We further characterize the pipeline's costs and principal failure modes. Crossnote, our prototype Bluesky labeler, implements this approach by applying existing Community Notes to matching posts. Our findings suggest that reusing vetted crowdsourced context is a compelling way to scale the reach and impact of Community Notes. Note reuse can complement the production of new notes by reducing duplicated effort and shortening time to context when misleading claims recur.",
+   "primary": "cs.SI",
+   "categories": [
+    "cs.SI",
+    "cs.IR"
+   ],
+   "published": "2026-11-24T23:44:37Z",
+   "updated": "2026-11-24T23:44:37Z",
+   "comment": "",
+   "tags": [],
+   "ax_votes": 0,
+   "ax_visits": 27,
+   "heat": 2.7,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
    "id": "2611.33719",
    "title": "Understanding Mode Collapse in Diffusion Models under Classifier-Free Guidance",
    "authors": [
@@ -6860,6 +6976,30 @@
    "sections": []
   },
   {
+   "id": "2611.33557",
+   "title": "DiffER$^2$: Diffusion Ensembles for Retrosynthesis Prediction with SMILES Adapted Particle Guidance",
+   "authors": [
+    "Sean Current",
+    "Daniel Adu-Ampratwum",
+    "Xia Ning",
+    "Srinivasan Parthasarathy"
+   ],
+   "abstract": "Computational retrosynthesis prediction has the potential to reduce development time for newly discovered drugs by automatically generating potential reactions for a target product. Data-driven approaches commonly treat this as a sequence-to-sequence generation task on SMILES strings. In this work, we construct ensembles of discrete-time and continuous-time diffusion models for molecular generation and incorporate guidance mechanisms for improved output diversity. We propose an adaptation of particle guidance to SMILES sequence generation which significantly improves the number of unique molecules generated by diffusion ensembles while increasing top-k accuracy. These results further expand the efficacy of discrete diffusion for SMILES generation, and our empirical analyses offer new insights into the capabilities of diffusion models for chemical retrosynthesis.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-25T00:07:10Z",
+   "updated": "2026-11-25T00:07:10Z",
+   "comment": "27 pages, 9 figures, 6 tables",
+   "tags": [],
+   "ax_votes": 0,
+   "ax_visits": 26,
+   "heat": 2.6,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
    "id": "2611.33779",
    "title": "DuoWM:Integrating Dual 6-DoF Visual Flows into Action-Conditioned Drone World Model",
    "authors": [
@@ -6974,6 +7114,81 @@
    "code_url": "https://github.com/torchgeo/geo-eval-harness",
    "tags": [
     "VLM/LLM"
+   ],
+   "ax_votes": 1,
+   "ax_visits": 16,
+   "heat": 2.6,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
+   "id": "2611.34078",
+   "title": "Projector Subspace Optimization for Multimodal Continual Instruction Tuning",
+   "authors": [
+    "Hao Yu",
+    "Quan Cheng",
+    "Lijun Zhang"
+   ],
+   "abstract": "Multimodal Large Language Models (MLLMs) achieve strong performance through instruction tuning, yet adapting them to sequential tasks requires Multimodal Continual Instruction Tuning (MCIT). Existing replay-free methods expand prompts or routed LoRA experts across multi-layer decoders, incurring heavy parameter and routing overhead while shifting internal feature distributions. Instead, we identify the final linear layer of the vision-language projector as a high-capacity, coordinate-stationary bridge, where sequential updates easily induce interface drift by displacing historical visual tokens. While low-rank subspace adaptation offers a compact remedy, selecting directions solely from historical statistics or task gradients sacrifices plasticity or stability, and unconstrained multi-step updates still accumulate large drift. To resolve both issues, we propose Projector Refinement through Optimized Update Directions (PROUD), a continual subspace optimization framework for the terminal projector layer. At task onset, PROUD combines retained input statistics with initial gradients to analytically extract a metric-orthonormal subspace maximizing first-order task gain under a drift budget. During training, it regularizes updates within this fixed subspace via an exact Frobenius penalty before losslessly merging them with zero inference or routing overhead. Experiments on UCIT and CoIN across MLLM backbones show that PROUD outperforms recent replay-free baselines in continual accuracy while curbing forgetting with a fraction of trainable parameters.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-25T09:48:43Z",
+   "updated": "2026-11-25T09:48:43Z",
+   "comment": "29 pages, 12 figures, including supplementary material",
+   "tags": [],
+   "ax_votes": 1,
+   "ax_visits": 16,
+   "heat": 2.6,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
+   "id": "2611.34155",
+   "title": "OceanFix: Reference-Guided Diffusion for Sparse-View Underwater 3D Reconstruction",
+   "authors": [
+    "Gen Li",
+    "Maoxin Chen",
+    "Yao Xiao",
+    "Xinyang Li",
+    "Yu Pan"
+   ],
+   "abstract": "Recent advances in Gaussian splatting have enabled efficient underwater reconstruction, but sparse observations, light attenuation, and backscatter still leave scene regions underconstrained and cause novel-view artifacts. We present OceanFix, a reference-guided framework for sparse-view underwater 3D reconstruction that combines diffusion-based view repair with Gaussian scene refinement. Our repair model follows a two-stage training strategy that separates underwater appearance adaptation from geometric refinement. The first stage learns underwater appearance from reference observations and estimated medium features. The second uses camera poses and reference depth to align reference features, with relative-depth supervision guiding structural repair without requiring target-view depth at inference. We further propose medium-aware distillation that transfers repaired views into the 3D scene according to geometric repair demand and channel-specific optical observability. Through iterative rendering, repair, and distillation, OceanFix refines underconstrained regions while retaining supervision from the observed views. Experiments on underwater datasets demonstrate that OceanFix improves rendering quality in sparse-view 3D reconstruction, reducing visible artifacts and recovering finer scene details.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-25T10:49:40Z",
+   "updated": "2026-11-25T10:49:40Z",
+   "comment": "",
+   "tags": [],
+   "ax_votes": 0,
+   "ax_visits": 26,
+   "heat": 2.6,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
+   "id": "2611.34163",
+   "title": "Admoab-DETR: Resolution-Tiered Fusion for Infrared-Visible Object Detection with Missing Modalities",
+   "authors": [
+    "Wenchao Li",
+    "Haoran Jia",
+    "Shuyuan Wen",
+    "Keyan Chen"
+   ],
+   "abstract": "Infrared and visible images offer complementary cues for all-weather object detection, yet real-world sensor dropouts can leave one stream unavailable and degrade paired-input detectors. Meanwhile, existing modality-adaptive methods apply heavy cross-modal attention uniformly across scales, incurring prohibitive token overhead on high-resolution maps. We propose Admoab-DETR, a unified real-time detector supporting infrared-only, visible-only, and paired inputs with a single set of weights. Specifically, \\emph{Resolution-Tiered Fusion} (RTF) allocates fusion capacity by spatial token density and feature granularity: a lightweight Spatial Modality Gate governs fine local fusion at the highest-resolution scale with zero-cost single-view pass-through, while channel-compressed deformable Admoab necks capture cross-modal correspondence at coarser semantic scales. Furthermore, \\emph{Mode-Matched Feature Distillation} (MMFD) aligns multi-scale encoder features with an availability-synchronized full-fusion teacher, avoiding ill-posed cross-modal hallucination while cutting parameters by 18.1\\% and paired latency by 39.6\\% at zero inference overhead. We also construct Admoab, a strictly registered 20,000-pair infrared--visible benchmark across diverse scenes. Experiments show Admoab-DETR achieves state-of-the-art accuracy--efficiency trade-offs across missing-modality and paired benchmarks. Our code will be available at https://github.com/liwenchao0615/Admoab-DETR.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-25T10:56:33Z",
+   "updated": "2026-11-25T10:56:33Z",
+   "comment": "Submitted to CVPR 2027",
+   "code_url": "https://github.com/liwenchao0615/Admoab-DETR",
+   "tags": [
+    "benchmark"
    ],
    "ax_votes": 1,
    "ax_visits": 16,
@@ -7106,29 +7321,28 @@
    "sections": []
   },
   {
-   "id": "2611.33824",
-   "title": "Revisiting Monocular In-Hand Object Scanning: Dataset, Pose Estimation, and Surface Reconstruction",
+   "id": "2611.33763",
+   "title": "Data Agents Need a Map: Evolving, Demand-Driven Knowledge of Large Collections",
    "authors": [
-    "Di Wu",
-    "Jeeeun Kim",
-    "Shu Kong"
+    "Christos Koutras",
+    "Yurong Liu",
+    "Laura Haas",
+    "Juliana Freire"
    ],
-   "abstract": "In-Hand Object Scanning (IHOS) from monocular video captured by a commodity smartphone holds immense potential to democratize 3D digitization for non-expert users, facilitating applications in digital archiving, augmented reality, and custom fabrication. Yet, IHOS remains largely understudied due to a lack of realistic datasets and systematic benchmarks. To bridge this gap, we introduce ToysRUs, a high-quality dataset featuring diverse figurines captured by 4K Ultra High-Definition (UHD) monocular videos. Studying IHOS from first principles, we examine structure-from-motion (SfM) for camera pose estimation, which is key to IHOS. We identify two key challenges: small baselines between consecutive frames, and sparse feature matches across large-view, long-range frames, further exacerbated by dynamic hand occlusions. Guided by these insights, we propose performing SfM on video sub-sequences sampled at sufficient angular intervals, and iteratively stitches the corresponding sub-trajectories into a unified global trajectory. Furthermore, for high-fidelity surface reconstruction, we introduce occlusion-aware 2D Gaussian Splatting, which incorporates opacity rendering and omits the opacity loss on hand regions. Quantitative and qualitative evaluations demonstrate that our framework significantly outperforms existing approaches, including neural implicit representations and 3D foundation models, in both geometric accuracy and photometric fidelity.",
-   "primary": "cs.CV",
+   "abstract": "Most data that could power rich analysis sits unintegrated and uncataloged in open data portals, data lakes, and collections of independently published tables. Data agents now answer analytical questions over such collections with a full workflow per question, including dataset retrieval, join discovery and evaluation, and tailored program synthesis, most of which are discarded when a new task arrives. The knowledge these workflows depend on, such as what each column means, which context a dataset leaves implicit, and how datasets combine, is therefore perpetually rederived and never persisted. We argue for persisting this knowledge in an evolving semantic atlas that users and agents can navigate and extend. The atlas describes every dataset offline, through topics, semantic types, and profiles, so that agents can find the datasets that a task requires. Relationships between datasets and integrated views, which require comparing datasets, are instead built on demand for the areas of analysis that users declare. Every item is stored with its provenance and the confidence of the methods that produced it, so that agents can decide how far to trust it or whether to abstain. As datasets change, inconsistencies are detected and corrected automatically, while human users settle what the data leaves inconclusive. We present this vision and its challenges, namely building the atlas over large, multi-domain collections, keeping it correct and up to date, serving it to users and agents, and evaluating whether it improves their answers. A proof of concept on DAB, a benchmark for data agents, shows that with only part of the atlas a coding agent can already read a fifth to a third fewer tokens while achieving the same accuracy as without it.",
+   "primary": "cs.DB",
    "categories": [
-    "cs.CV",
-    "cs.GR"
+    "cs.DB"
    ],
-   "published": "2026-11-25T05:54:14Z",
-   "updated": "2026-11-25T05:54:14Z",
+   "published": "2026-11-25T04:23:58Z",
+   "updated": "2026-11-25T04:23:58Z",
    "comment": "",
    "tags": [
-    "VLM/LLM",
     "benchmark"
    ],
    "ax_votes": 0,
-   "ax_visits": 30,
-   "heat": 3.0,
+   "ax_visits": 25,
+   "heat": 2.5,
    "listed": "2026-11-26",
    "sections": []
   },
@@ -7199,6 +7413,28 @@
     "zh": "针对 Instruct-TTS 多目标 GRPO 训练不稳定、三者相互掣肘的问题，改用 on-policy distillation 融合三个单目标教师，并引入 conflict-aware velocity fusion 把质量目标中与主目标冲突的方向投影剔除，使指令遵循、可懂度与音质同时优于 scalar-reward GRPO。"
    },
    "summary_source": "deepseek-flash"
+  },
+  {
+   "id": "2611.33984",
+   "title": "Universal Work Extraction from Individual Sequences by Finite--State Information Engines",
+   "authors": [
+    "Neri Merhav"
+   ],
+   "abstract": "We consider information engines that interact with a heat bath at temperature $T$, a work reservoir, and a tape carrying an individual (deterministic) sequence $x$ over a finite alphabet $\\X$. An engine is a cascade of autonomous ratchets with fixed energy levels and detailed--balance dynamics, each processing segments of $m$ tape cells and having finitely many internal states. We prove a converse bound on the extractable work in terms of the empirical block entropies of $x$,and show that it is achievable \\emph{universally}, by engines whose energy levels do not depend on $x$. The maximal work per symbol is $kT[\\ln|\\X|-\\bar H(x)]$, where $k$ is Boltzmann's constant and $\\bar H(x)$ is the asymptotic normalized aligned block entropy of $x$, which equals its block Lempel--Ziv complexity, and the minimal work needed to erase $x$ is $kT\\bar H(x)$ per symbol. Underlying these results is a two--way correspondence with universal coding: energy levels define a code, and a suitably operated cascade extracts $kT$ times $\\ln|\\X|$ per symbol minus the code length; conversely, a fluctuation identity shows that every engine fixed in advance defines a code. Hence, converses of universal coding apply verbatim to engines; e.g., the optimal redundancy of memoryless universal engines is given by the Shtarkov sum.",
+   "primary": "cond-mat.stat-mech",
+   "categories": [
+    "cond-mat.stat-mech",
+    "cs.IT"
+   ],
+   "published": "2026-11-25T08:41:13Z",
+   "updated": "2026-11-25T08:41:13Z",
+   "comment": "27 pages, 1 figure, submitted for publication",
+   "tags": [],
+   "ax_votes": 0,
+   "ax_visits": 25,
+   "heat": 2.5,
+   "listed": "2026-11-26",
+   "sections": []
   },
   {
    "id": "2611.33993",
@@ -7362,6 +7598,29 @@
    "thumb": "data/thumbs/2611.34741.jpg",
    "thumb_w": 640,
    "thumb_h": 269,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
+   "id": "2611.33392",
+   "title": "BreathSplat: Grounding One Smooth Motion in the Breathing Phase for 4D Cone-Beam CT",
+   "authors": [
+    "Sujong Shin",
+    "Sang-Il Choi",
+    "Kwang Moo Yi"
+   ],
+   "abstract": "Four-dimensional cone-beam computed tomography (4D-CBCT) images the anatomy of a breathing patient, but sees each breathing phase from only a few angles. Breathing, however, is a smooth motion that repeats; it has a phase. Existing methods exploit this either by reconstructing the anatomy as a function of the breathing phase, often through bins, or by estimating smooth dynamic motions in time. Yet none of these grounds one smooth motion in the phase. We thus propose to share projections across breathing phases with splines. Specifically, we represent the 4D volume with dynamic Gaussians whose motion uses B-splines in space and time. We ground the motion state in the respiratory phase, which we read from well-studied conventional surrogates. Projections at the same phase in different breathing cycles then constrain the same anatomy and motion. On simulated lung scans, our method, BreathSplat, outperforms recent dynamic methods in reconstruction and motion accuracy, including those given the ground-truth phase. We further show qualitatively, on two real patient scans, that our method provides clearer reconstructions than the state of the art.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-24T20:16:51Z",
+   "updated": "2026-11-24T20:16:51Z",
+   "comment": "15 pages, 7 figures",
+   "tags": [],
+   "ax_votes": 0,
+   "ax_visits": 24,
+   "heat": 2.4,
    "listed": "2026-11-26",
    "sections": []
   },
@@ -7531,62 +7790,6 @@
    "sections": []
   },
   {
-   "id": "2611.33378",
-   "title": "DreamTour: Layout Steering for Training-Free World Exploration",
-   "authors": [
-    "Srikumar Sastry",
-    "Meher Gitika Karumuri",
-    "Chenqi Li",
-    "Sarosij Bose",
-    "Mellon Zhang",
-    "Allen Tu",
-    "Ziyang Long",
-    "Yen-Liang Lin",
-    "Alexander Schwing",
-    "Nathan Jacobs"
-   ],
-   "abstract": "Video diffusion and world models generate plausible videos but do not reliably match the requested camera direction and travel distance. We present DreamTour, a training-free framework that generates camera tours from a single image with more accurate control over camera motion. DreamTour first uses a frozen image inpainting prior to extend the photograph beyond its original field of view while preserving the input pixels. Depth-based rendering of this extended scene along the requested camera path produces approximate target views that serve as spatial guidance. We introduce Layout Steering, which aligns early video latents with these views through decaying low-frequency corrections, leaving later denoising to refine appearance and dynamics. For longer tours, we autoregressively generate the video segments, repeating guidance construction from each segment's final frame to maintain camera control across the full trajectory. DreamTour improves directional accuracy and travel calibration on VBench while maintaining competitive video quality. On WorldScore, it strengthens camera control and scene consistency across chained movements. Together, these results demonstrate that training-free spatial guidance enables more accurate and consistent camera control in pretrained video diffusion and world models.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-24T20:05:52Z",
-   "updated": "2026-11-24T20:05:52Z",
-   "comment": "20 pages, 12 figures",
-   "tags": [
-    "world model"
-   ],
-   "ax_votes": 0,
-   "ax_visits": 27,
-   "heat": 2.7,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
-   "id": "2611.33546",
-   "title": "Community Notes Across Platforms: Evaluating the Feasibility of Re-using Crowd-sourced Context Notes",
-   "authors": [
-    "Nishka Arora",
-    "Yann Issam Aouidef",
-    "Ashish Goel"
-   ],
-   "abstract": "Crowdsourced fact-checking systems such as Community Notes can provide useful context for misleading content. Producing and rating new notes on such systems requires substantial contributor effort. However, the resulting context is typically confined to the post and platform for which it was created. We ask whether already-vetted notes can be reused when the same claims recur across posts and platforms. To investigate this question, we construct a human-labelled dataset using Community Notes attached to X posts created during a one-week period and candidate posts retrieved from Bluesky. Within our observation window, 140 of 340 claims had at least one confirmed recurrence on Bluesky, showing that cross-platform note reuse is a substantial opportunity. Recurrence alone, however, does not establish whether reuse would provide timely context. A timing analysis shows that many relevant notes were already Helpful when matching Bluesky posts appeared. Even when a Bluesky post appeared first, reuse could often still provide context sooner after publication than the original X post received its Helpful note. To automate the discovery of these opportunities, we evaluate a three-stage pipeline that searches the Bluesky stream for potential recurrences and determines whether an existing note applies. The pipeline achieves 72.6% precision in a held-out stream evaluation and 70.1% end-to-end recall on our known-positive set. We further characterize the pipeline's costs and principal failure modes. Crossnote, our prototype Bluesky labeler, implements this approach by applying existing Community Notes to matching posts. Our findings suggest that reusing vetted crowdsourced context is a compelling way to scale the reach and impact of Community Notes. Note reuse can complement the production of new notes by reducing duplicated effort and shortening time to context when misleading claims recur.",
-   "primary": "cs.SI",
-   "categories": [
-    "cs.SI",
-    "cs.IR"
-   ],
-   "published": "2026-11-24T23:44:37Z",
-   "updated": "2026-11-24T23:44:37Z",
-   "comment": "",
-   "tags": [],
-   "ax_votes": 0,
-   "ax_visits": 27,
-   "heat": 2.7,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
    "id": "2611.33799",
    "title": "Dynamic Forcing: Learning Action-Grounded Sparse Dynamic Representations with Dense Future Guidance for World Action Models",
    "authors": [
@@ -7691,6 +7894,53 @@
    "sections": [
     "rl"
    ]
+  },
+  {
+   "id": "2611.33947",
+   "title": "A Computational Model of Continuous Recognition Memory for Natural Images",
+   "authors": [
+    "Sheng Zhao",
+    "Yijin Wang",
+    "Bei Xiao",
+    "Yuhao Zhu"
+   ],
+   "abstract": "Recognizing an image we have seen before is a basic function of human visual memory. Understanding human continuous recognition memory (CRM) can help machine vision systems predict which images people are likely to remember and generate more memorable images. It can also inform the diagnosis of memory impairments and the development of interventions to improve memory. This paper proposes the first computational model for CRM. The model captures three key components of continuous recognition memory (CRM): image encoding, memory decay, and decision making. It encodes each image as a distinct random variable in a perceptual space. As the memory of an image fades, the distribution of its random variable drifts within that space. To decide whether the current image has been seen before, the observer retrieves samples from the distributions associated with previously encoded images and compares them with the current image. Our model predicts human observers' trial-by-trial responses in CRM tasks within the variability observed across human participants. Our model is parameter efficient, requiring only four shared parameters and two parameters per observer. It can accurately predict the memorability of an image no worse than prior methods that require millions of parameters.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-25T08:08:37Z",
+   "updated": "2026-11-25T08:08:37Z",
+   "comment": "18 pages",
+   "tags": [],
+   "ax_votes": 0,
+   "ax_visits": 23,
+   "heat": 2.3,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
+   "id": "2611.34185",
+   "title": "A Local-Counting Approach for Distributed Induced Path Detection",
+   "authors": [
+    "Keren Censor-Hillel",
+    "Julian Ewaied"
+   ],
+   "abstract": "A well-known application of the celebrated color-coding technique is fast detection of paths in a distributed setting with limited bandwidth, by propagating a signal along colorful paths [Even et al., DISC 2017]. However, since vertices of the same color are indistinguishable by this procedure, it cannot detect induced paths, as they appear the same as cycles. We make the following observation. If, for a given edge, we \\emph{count} the number of such signals over all permutations of the random coloring that terminate at that edge, then we can separate an induced path from a cycle: an induced path contributes one to that count, while a cycle contributes two. Refining and generalizing this observation gives our \\emph{local-counting approach}, which allows us to separate induced paths from any other subgraph. We establish the following end results, all improving upon the state of the art in their round complexities and refined detection variants. * An $O(1)$-round algorithm for induced $P_4$ detection. * $O(Δ)$-round algorithms for detection of induced $P_5$ and $P_6$. * An $\\tilde{O}(n^{1/3})$-round algorithm for detection of induced $P_5$ in induced-$C_4$ free graphs.",
+   "primary": "cs.DC",
+   "categories": [
+    "cs.DC",
+    "cs.DS"
+   ],
+   "published": "2026-11-25T11:14:44Z",
+   "updated": "2026-11-25T11:14:44Z",
+   "comment": "",
+   "tags": [],
+   "ax_votes": 0,
+   "ax_visits": 23,
+   "heat": 2.3,
+   "listed": "2026-11-26",
+   "sections": []
   },
   {
    "id": "2611.34224",
@@ -7831,25 +8081,28 @@
    "thumb_h": 251
   },
   {
-   "id": "2611.34078",
-   "title": "Projector Subspace Optimization for Multimodal Continual Instruction Tuning",
+   "id": "2611.33591",
+   "title": "VivaWorld: Long-Horizon Video World Model With Compositional 3D Priors",
    "authors": [
-    "Hao Yu",
-    "Quan Cheng",
-    "Lijun Zhang"
+    "Ying Jiang",
+    "Donglai Xiang",
+    "Anita Hu",
+    "Masha Shugrina"
    ],
-   "abstract": "Multimodal Large Language Models (MLLMs) achieve strong performance through instruction tuning, yet adapting them to sequential tasks requires Multimodal Continual Instruction Tuning (MCIT). Existing replay-free methods expand prompts or routed LoRA experts across multi-layer decoders, incurring heavy parameter and routing overhead while shifting internal feature distributions. Instead, we identify the final linear layer of the vision-language projector as a high-capacity, coordinate-stationary bridge, where sequential updates easily induce interface drift by displacing historical visual tokens. While low-rank subspace adaptation offers a compact remedy, selecting directions solely from historical statistics or task gradients sacrifices plasticity or stability, and unconstrained multi-step updates still accumulate large drift. To resolve both issues, we propose Projector Refinement through Optimized Update Directions (PROUD), a continual subspace optimization framework for the terminal projector layer. At task onset, PROUD combines retained input statistics with initial gradients to analytically extract a metric-orthonormal subspace maximizing first-order task gain under a drift budget. During training, it regularizes updates within this fixed subspace via an exact Frobenius penalty before losslessly merging them with zero inference or routing overhead. Experiments on UCIT and CoIN across MLLM backbones show that PROUD outperforms recent replay-free baselines in continual accuracy while curbing forgetting with a fraction of trainable parameters.",
+   "abstract": "Long-horizon video generation is key to interactive world modeling, physical intelligence, and spatial reasoning, yet maintaining geometric consistency and accurate camera control remains challenging without 3D grounding. We introduce \\textbf{VivaWorld}, a framework for generating geometry- and view-consistent long videos from an image. We first construct a compositional hybrid 3D representation that combines reconstructed point clouds, which preserve observed scene geometry and appearance, with generated textured meshes, which provide complete object geometry across $360^\\circ$ novel views. We also introduce a connected-region filter removing inconsistent floating components for robust cross-view reconstruction and propose a hybrid camera embedding that combines global and object-anchored Plücker rays to capture both scene-level camera motion and camera-object relationships, and inject it together with the visual guidance into a video generation model via a control adapter. Extensive experiments show VivaWorld achieves state-of-the-art visual quality and camera control, while supporting controllable novel-view synthesis, long-horizon scene exploration, and physical AI. Project page is available at: https://research.nvidia.com/labs/sil/projects/vivaworld/",
    "primary": "cs.CV",
    "categories": [
     "cs.CV"
    ],
-   "published": "2026-11-25T09:48:43Z",
-   "updated": "2026-11-25T09:48:43Z",
-   "comment": "29 pages, 12 figures, including supplementary material",
-   "tags": [],
-   "ax_votes": 1,
-   "ax_visits": 16,
-   "heat": 2.6,
+   "published": "2026-11-25T01:00:43Z",
+   "updated": "2026-11-25T01:00:43Z",
+   "comment": "17 figures, 10 tables, 26 pages",
+   "tags": [
+    "world model"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 22,
+   "heat": 2.2,
    "listed": "2026-11-26",
    "sections": []
   },
@@ -7903,58 +8156,6 @@
    "sections": [
     "rl"
    ]
-  },
-  {
-   "id": "2611.34155",
-   "title": "OceanFix: Reference-Guided Diffusion for Sparse-View Underwater 3D Reconstruction",
-   "authors": [
-    "Gen Li",
-    "Maoxin Chen",
-    "Yao Xiao",
-    "Xinyang Li",
-    "Yu Pan"
-   ],
-   "abstract": "Recent advances in Gaussian splatting have enabled efficient underwater reconstruction, but sparse observations, light attenuation, and backscatter still leave scene regions underconstrained and cause novel-view artifacts. We present OceanFix, a reference-guided framework for sparse-view underwater 3D reconstruction that combines diffusion-based view repair with Gaussian scene refinement. Our repair model follows a two-stage training strategy that separates underwater appearance adaptation from geometric refinement. The first stage learns underwater appearance from reference observations and estimated medium features. The second uses camera poses and reference depth to align reference features, with relative-depth supervision guiding structural repair without requiring target-view depth at inference. We further propose medium-aware distillation that transfers repaired views into the 3D scene according to geometric repair demand and channel-specific optical observability. Through iterative rendering, repair, and distillation, OceanFix refines underconstrained regions while retaining supervision from the observed views. Experiments on underwater datasets demonstrate that OceanFix improves rendering quality in sparse-view 3D reconstruction, reducing visible artifacts and recovering finer scene details.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-25T10:49:40Z",
-   "updated": "2026-11-25T10:49:40Z",
-   "comment": "",
-   "tags": [],
-   "ax_votes": 0,
-   "ax_visits": 26,
-   "heat": 2.6,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
-   "id": "2611.34163",
-   "title": "Admoab-DETR: Resolution-Tiered Fusion for Infrared-Visible Object Detection with Missing Modalities",
-   "authors": [
-    "Wenchao Li",
-    "Haoran Jia",
-    "Shuyuan Wen",
-    "Keyan Chen"
-   ],
-   "abstract": "Infrared and visible images offer complementary cues for all-weather object detection, yet real-world sensor dropouts can leave one stream unavailable and degrade paired-input detectors. Meanwhile, existing modality-adaptive methods apply heavy cross-modal attention uniformly across scales, incurring prohibitive token overhead on high-resolution maps. We propose Admoab-DETR, a unified real-time detector supporting infrared-only, visible-only, and paired inputs with a single set of weights. Specifically, \\emph{Resolution-Tiered Fusion} (RTF) allocates fusion capacity by spatial token density and feature granularity: a lightweight Spatial Modality Gate governs fine local fusion at the highest-resolution scale with zero-cost single-view pass-through, while channel-compressed deformable Admoab necks capture cross-modal correspondence at coarser semantic scales. Furthermore, \\emph{Mode-Matched Feature Distillation} (MMFD) aligns multi-scale encoder features with an availability-synchronized full-fusion teacher, avoiding ill-posed cross-modal hallucination while cutting parameters by 18.1\\% and paired latency by 39.6\\% at zero inference overhead. We also construct Admoab, a strictly registered 20,000-pair infrared--visible benchmark across diverse scenes. Experiments show Admoab-DETR achieves state-of-the-art accuracy--efficiency trade-offs across missing-modality and paired benchmarks. Our code will be available at https://github.com/liwenchao0615/Admoab-DETR.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-25T10:56:33Z",
-   "updated": "2026-11-25T10:56:33Z",
-   "comment": "Submitted to CVPR 2027",
-   "code_url": "https://github.com/liwenchao0615/Admoab-DETR",
-   "tags": [
-    "benchmark"
-   ],
-   "ax_votes": 1,
-   "ax_visits": 16,
-   "heat": 2.6,
-   "listed": "2026-11-26",
-   "sections": []
   },
   {
    "id": "2611.34284",
@@ -8066,78 +8267,6 @@
    "thumb": "data/thumbs/2611.34416.jpg",
    "thumb_w": 409,
    "thumb_h": 345,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
-   "id": "2611.33557",
-   "title": "DiffER$^2$: Diffusion Ensembles for Retrosynthesis Prediction with SMILES Adapted Particle Guidance",
-   "authors": [
-    "Sean Current",
-    "Daniel Adu-Ampratwum",
-    "Xia Ning",
-    "Srinivasan Parthasarathy"
-   ],
-   "abstract": "Computational retrosynthesis prediction has the potential to reduce development time for newly discovered drugs by automatically generating potential reactions for a target product. Data-driven approaches commonly treat this as a sequence-to-sequence generation task on SMILES strings. In this work, we construct ensembles of discrete-time and continuous-time diffusion models for molecular generation and incorporate guidance mechanisms for improved output diversity. We propose an adaptation of particle guidance to SMILES sequence generation which significantly improves the number of unique molecules generated by diffusion ensembles while increasing top-k accuracy. These results further expand the efficacy of discrete diffusion for SMILES generation, and our empirical analyses offer new insights into the capabilities of diffusion models for chemical retrosynthesis.",
-   "primary": "cs.LG",
-   "categories": [
-    "cs.LG"
-   ],
-   "published": "2026-11-25T00:07:10Z",
-   "updated": "2026-11-25T00:07:10Z",
-   "comment": "27 pages, 9 figures, 6 tables",
-   "tags": [],
-   "ax_votes": 0,
-   "ax_visits": 26,
-   "heat": 2.6,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
-   "id": "2611.33763",
-   "title": "Data Agents Need a Map: Evolving, Demand-Driven Knowledge of Large Collections",
-   "authors": [
-    "Christos Koutras",
-    "Yurong Liu",
-    "Laura Haas",
-    "Juliana Freire"
-   ],
-   "abstract": "Most data that could power rich analysis sits unintegrated and uncataloged in open data portals, data lakes, and collections of independently published tables. Data agents now answer analytical questions over such collections with a full workflow per question, including dataset retrieval, join discovery and evaluation, and tailored program synthesis, most of which are discarded when a new task arrives. The knowledge these workflows depend on, such as what each column means, which context a dataset leaves implicit, and how datasets combine, is therefore perpetually rederived and never persisted. We argue for persisting this knowledge in an evolving semantic atlas that users and agents can navigate and extend. The atlas describes every dataset offline, through topics, semantic types, and profiles, so that agents can find the datasets that a task requires. Relationships between datasets and integrated views, which require comparing datasets, are instead built on demand for the areas of analysis that users declare. Every item is stored with its provenance and the confidence of the methods that produced it, so that agents can decide how far to trust it or whether to abstain. As datasets change, inconsistencies are detected and corrected automatically, while human users settle what the data leaves inconclusive. We present this vision and its challenges, namely building the atlas over large, multi-domain collections, keeping it correct and up to date, serving it to users and agents, and evaluating whether it improves their answers. A proof of concept on DAB, a benchmark for data agents, shows that with only part of the atlas a coding agent can already read a fifth to a third fewer tokens while achieving the same accuracy as without it.",
-   "primary": "cs.DB",
-   "categories": [
-    "cs.DB"
-   ],
-   "published": "2026-11-25T04:23:58Z",
-   "updated": "2026-11-25T04:23:58Z",
-   "comment": "",
-   "tags": [
-    "benchmark"
-   ],
-   "ax_votes": 0,
-   "ax_visits": 25,
-   "heat": 2.5,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
-   "id": "2611.33984",
-   "title": "Universal Work Extraction from Individual Sequences by Finite--State Information Engines",
-   "authors": [
-    "Neri Merhav"
-   ],
-   "abstract": "We consider information engines that interact with a heat bath at temperature $T$, a work reservoir, and a tape carrying an individual (deterministic) sequence $x$ over a finite alphabet $\\X$. An engine is a cascade of autonomous ratchets with fixed energy levels and detailed--balance dynamics, each processing segments of $m$ tape cells and having finitely many internal states. We prove a converse bound on the extractable work in terms of the empirical block entropies of $x$,and show that it is achievable \\emph{universally}, by engines whose energy levels do not depend on $x$. The maximal work per symbol is $kT[\\ln|\\X|-\\bar H(x)]$, where $k$ is Boltzmann's constant and $\\bar H(x)$ is the asymptotic normalized aligned block entropy of $x$, which equals its block Lempel--Ziv complexity, and the minimal work needed to erase $x$ is $kT\\bar H(x)$ per symbol. Underlying these results is a two--way correspondence with universal coding: energy levels define a code, and a suitably operated cascade extracts $kT$ times $\\ln|\\X|$ per symbol minus the code length; conversely, a fluctuation identity shows that every engine fixed in advance defines a code. Hence, converses of universal coding apply verbatim to engines; e.g., the optimal redundancy of memoryless universal engines is given by the Shtarkov sum.",
-   "primary": "cond-mat.stat-mech",
-   "categories": [
-    "cond-mat.stat-mech",
-    "cs.IT"
-   ],
-   "published": "2026-11-25T08:41:13Z",
-   "updated": "2026-11-25T08:41:13Z",
-   "comment": "27 pages, 1 figure, submitted for publication",
-   "tags": [],
-   "ax_votes": 0,
-   "ax_visits": 25,
-   "heat": 2.5,
    "listed": "2026-11-26",
    "sections": []
   },
@@ -8274,39 +8403,6 @@
    "sections": []
   },
   {
-   "id": "2611.34624",
-   "title": "HoMe: Toward Practical Harness Optimization of Memory Systems for AI Assistants",
-   "authors": [
-    "Yifei Xu",
-    "Li Yu",
-    "Zhaoyang Liu",
-    "Ce Wang",
-    "Sen Huang",
-    "Yanyan Shen",
-    "Yun Lin",
-    "Linpeng Huang",
-    "Hong Mei"
-   ],
-   "abstract": "The behavior of memory systems for long-running AI assistants is governed by a harness, which consists of the code, prompts, and configurations for memory construction, maintenance, retrieval, and answer generation. However, optimizing the harness of a memory system remains largely manual, and unrestricted editing alone does not ensure structural improvements. In this paper, we introduce HoMe, an evaluation-driven framework that iteratively evaluates candidate harnesses and derives each new candidate from any previously evaluated harness by editing any part of it. HoMe combines session-level memory versioning with execution traces to identify shared failure mechanisms across cases and localize them to the responsible sessions and harness components. It encourages early structural exploration through candidate gating and reduces evaluation cost through smoke tests, adaptive sampling, and the reuse of constructed memory. We validate HoMe with the open-source memory system ReMe on two large-scale long-horizon memory benchmarks, LongMemEval-S and BEAM. With six formal candidate evaluations per benchmark, after a full initial evaluation, HoMe discovers harnesses that improve end-task performance over the originally strong harness while consuming far fewer query-time tokens. The code is available at https://github.com/agentscope-ai/ReMe.",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI",
-    "cs.LG"
-   ],
-   "published": "2026-11-25T16:11:53Z",
-   "updated": "2026-11-25T16:11:53Z",
-   "comment": "25 pages, 4 figures, including appendices",
-   "code_url": "https://github.com/agentscope-ai/ReMe",
-   "tags": [
-    "benchmark"
-   ],
-   "ax_votes": 0,
-   "ax_visits": 21,
-   "heat": 2.1,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
    "id": "2611.34779",
    "title": "Adaptive Reliability Reserves for Residential Battery Fleets",
    "authors": [
@@ -8347,29 +8443,6 @@
    "thumb_h": 440
   },
   {
-   "id": "2611.33392",
-   "title": "BreathSplat: Grounding One Smooth Motion in the Breathing Phase for 4D Cone-Beam CT",
-   "authors": [
-    "Sujong Shin",
-    "Sang-Il Choi",
-    "Kwang Moo Yi"
-   ],
-   "abstract": "Four-dimensional cone-beam computed tomography (4D-CBCT) images the anatomy of a breathing patient, but sees each breathing phase from only a few angles. Breathing, however, is a smooth motion that repeats; it has a phase. Existing methods exploit this either by reconstructing the anatomy as a function of the breathing phase, often through bins, or by estimating smooth dynamic motions in time. Yet none of these grounds one smooth motion in the phase. We thus propose to share projections across breathing phases with splines. Specifically, we represent the 4D volume with dynamic Gaussians whose motion uses B-splines in space and time. We ground the motion state in the respiratory phase, which we read from well-studied conventional surrogates. Projections at the same phase in different breathing cycles then constrain the same anatomy and motion. On simulated lung scans, our method, BreathSplat, outperforms recent dynamic methods in reconstruction and motion accuracy, including those given the ground-truth phase. We further show qualitatively, on two real patient scans, that our method provides clearer reconstructions than the state of the art.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-24T20:16:51Z",
-   "updated": "2026-11-24T20:16:51Z",
-   "comment": "15 pages, 7 figures",
-   "tags": [],
-   "ax_votes": 0,
-   "ax_visits": 24,
-   "heat": 2.4,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
    "id": "2611.33716",
    "title": "Flipping the Coins: Training Physical Simulators through Hard Switches",
    "authors": [
@@ -8391,6 +8464,57 @@
    "comment": "47 pages (13 main + appendix), 4 figures, 15 tables",
    "tags": [
     "benchmark"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 20,
+   "heat": 2.0,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
+   "id": "2611.33792",
+   "title": "Spatial Transcriptomics Prediction from Histology via Topology-Informed Graph Attention and Gene-Semantics Conditioning",
+   "authors": [
+    "Yuqi Cheng",
+    "Boshuai Zhang",
+    "Ziqi Zhang",
+    "Xiuwei Zhang"
+   ],
+   "abstract": "Spatial transcriptomics (ST) profiles gene expression with spatial context but remains costly, motivating models that infer expression from H&E images. Existing approaches face three key limitations: (i) a single patch embedding is often insufficient: morphologically similar regions can exhibit distinct expression due to spatial context, while naive neighborhood aggregation can over-smooth boundaries; (ii) conventional fixed, gene-indexed output heads treat genes independently and cannot directly support strict zero-shot prediction for unseen genes; and (iii) common metrics under-measure spatial pattern fidelity and boundary resolution. To address these challenges, we propose TIGEM, a topology-informed, gene-conditioned framework for histology-to-ST inference. TIGEM learns topology-aware spot representations by regularizing graph attention with tissue-level topology and morphology cues to avoid cross-compartment smoothing, and uses gene semantic modulation to replace gene-indexed heads, enabling zero-shot prediction for unseen genes. We also introduce Graph Spectral Correlation (GSC) to evaluate spatial pattern fidelity and boundary resolution complement to PCC/MSE. Across three large-scale ST datasets, TIGEM achieves overall state-of-the-art performance and significantly improved boundary prediction resolution, and further demonstrates the ability to predict expression patterns for genes unseen during training, extending prior zero-shot histology-to-ST efforts with topology-aware spatial propagation and PLM-based gene conditioning.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-25T05:16:03Z",
+   "updated": "2026-11-25T05:16:03Z",
+   "comment": "Accepted by WACV2027: https://wacv.thecvf.com/virtual/2027/poster/2019",
+   "tags": [],
+   "ax_votes": 0,
+   "ax_visits": 20,
+   "heat": 2.0,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
+   "id": "2611.33961",
+   "title": "AI Buckingham: Agentic Discovery of Dimensionless Scaling Laws Across Physical Regimes",
+   "authors": [
+    "Ao Cheng",
+    "Lei Zhang",
+    "Guowei He"
+   ],
+   "abstract": "Classical dimensional analysis defines admissible dimensionless representations but does not determine which combinations capture the dominant physical dependence, whether it changes across physical regimes, or when dependent-variable rescaling is required. We present AI Buckingham, an agentic framework for autonomous dimensionless discovery from natural-language descriptions of physical problems and observational data. It couples reasoning and planning by a large language model (LLM) with predefined symbolic and numerical tools. Literature-based knowledge retrieval supports dimensional checking, gradient-based clustering identifies physical regimes, and mutual information provides an objective, reparameterization-invariant criterion for identifying dominant dimensionless groups. Explicit numerical criteria determine the group count and assess simplification. Across ten physical systems spanning fluid dynamics, magnetohydrodynamics, thermal convection and additive manufacturing, AI Buckingham recovers established similarity representations and resolves regime-dependent scalings. For the longstanding challenge of predicting turbulent drag on rough surfaces, it identifies informative reparameterizations of surface statistics that improve equivalent sand-grain roughness estimates for engineering-oriented drag modelling.",
+   "primary": "physics.comp-ph",
+   "categories": [
+    "physics.comp-ph",
+    "cs.AI",
+    "physics.flu-dyn"
+   ],
+   "published": "2026-11-25T08:24:47Z",
+   "updated": "2026-11-25T08:24:47Z",
+   "comment": "7 main figures; Supplementary Information included (7 figures and 30 tables)",
+   "tags": [
+    "VLM/LLM"
    ],
    "ax_votes": 0,
    "ax_visits": 20,
@@ -8649,49 +8773,29 @@
    ]
   },
   {
-   "id": "2611.33947",
-   "title": "A Computational Model of Continuous Recognition Memory for Natural Images",
+   "id": "2611.33948",
+   "title": "Where to Approximate: Understanding and Accelerating Looped Multi-View Reconstruction",
    "authors": [
-    "Sheng Zhao",
-    "Yijin Wang",
-    "Bei Xiao",
-    "Yuhao Zhu"
+    "Siyuan Zhang",
+    "Yuhan Chen",
+    "Yangyang Ning",
+    "Nan Wang",
+    "Jun Yan"
    ],
-   "abstract": "Recognizing an image we have seen before is a basic function of human visual memory. Understanding human continuous recognition memory (CRM) can help machine vision systems predict which images people are likely to remember and generate more memorable images. It can also inform the diagnosis of memory impairments and the development of interventions to improve memory. This paper proposes the first computational model for CRM. The model captures three key components of continuous recognition memory (CRM): image encoding, memory decay, and decision making. It encodes each image as a distinct random variable in a perceptual space. As the memory of an image fades, the distribution of its random variable drifts within that space. To decide whether the current image has been seen before, the observer retrieves samples from the distributions associated with previously encoded images and compares them with the current image. Our model predicts human observers' trial-by-trial responses in CRM tasks within the variability observed across human participants. Our model is parameter efficient, requiring only four shared parameters and two parameters per observer. It can accurately predict the memorability of an image no worse than prior methods that require millions of parameters.",
+   "abstract": "Looped multi-view reconstruction refines scene features by repeatedly applying a shared transformer block. Making these updates cheaper requires knowing how an approximation at one step affects the rest of the refinement. We study this with paired interventions in Déjà View and stacked reconstruction transformers, separating the error an approximation injects, how that error propagates, and how it affects the output. In Déjà View, approximation errors are attenuated more strongly than matched random perturbations under a scale-adjusted state-error measure, and a local Jacobian decomposition separates the contribution of channel gating from the response to spatial error structure. Spatial approximations made early benefit from subsequent refinement, whereas cross-step reuse depends on which quantity is cached and how reuse steps are spaced. At equal final norm, approximation errors change the predicted rotations 1.55 times as much as random errors. These findings guide our proposed method, which reduces spatial resolution and pools keys and values early in refinement, then interleaves attention-output reuse with full attention, and is adapted through lightweight self-distillation. Across five reconstruction benchmarks, the balanced configuration runs $1.63\\times$ faster than the official 16-step Déjà View model with a 1.86-point reduction in average pose AUC@$3^\\circ$. At matched latency, it exceeds the interpolated curve of a trained baseline using full refinement blocks by 4.73 points in AUC@$3^\\circ$ and improves the corresponding geometry metrics.",
    "primary": "cs.CV",
    "categories": [
     "cs.CV"
    ],
-   "published": "2026-11-25T08:08:37Z",
-   "updated": "2026-11-25T08:08:37Z",
-   "comment": "18 pages",
-   "tags": [],
-   "ax_votes": 0,
-   "ax_visits": 23,
-   "heat": 2.3,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
-   "id": "2611.34185",
-   "title": "A Local-Counting Approach for Distributed Induced Path Detection",
-   "authors": [
-    "Keren Censor-Hillel",
-    "Julian Ewaied"
-   ],
-   "abstract": "A well-known application of the celebrated color-coding technique is fast detection of paths in a distributed setting with limited bandwidth, by propagating a signal along colorful paths [Even et al., DISC 2017]. However, since vertices of the same color are indistinguishable by this procedure, it cannot detect induced paths, as they appear the same as cycles. We make the following observation. If, for a given edge, we \\emph{count} the number of such signals over all permutations of the random coloring that terminate at that edge, then we can separate an induced path from a cycle: an induced path contributes one to that count, while a cycle contributes two. Refining and generalizing this observation gives our \\emph{local-counting approach}, which allows us to separate induced paths from any other subgraph. We establish the following end results, all improving upon the state of the art in their round complexities and refined detection variants. * An $O(1)$-round algorithm for induced $P_4$ detection. * $O(Δ)$-round algorithms for detection of induced $P_5$ and $P_6$. * An $\\tilde{O}(n^{1/3})$-round algorithm for detection of induced $P_5$ in induced-$C_4$ free graphs.",
-   "primary": "cs.DC",
-   "categories": [
-    "cs.DC",
-    "cs.DS"
-   ],
-   "published": "2026-11-25T11:14:44Z",
-   "updated": "2026-11-25T11:14:44Z",
+   "published": "2026-11-25T08:09:12Z",
+   "updated": "2026-11-25T08:09:12Z",
    "comment": "",
-   "tags": [],
+   "tags": [
+    "benchmark"
+   ],
    "ax_votes": 0,
-   "ax_visits": 23,
-   "heat": 2.3,
+   "ax_visits": 19,
+   "heat": 1.9,
    "listed": "2026-11-26",
    "sections": []
   },
@@ -8992,28 +9096,29 @@
    "sections": []
   },
   {
-   "id": "2611.33591",
-   "title": "VivaWorld: Long-Horizon Video World Model With Compositional 3D Priors",
+   "id": "2611.33875",
+   "title": "Random Voronoi Networks",
    "authors": [
-    "Ying Jiang",
-    "Donglai Xiang",
-    "Anita Hu",
-    "Masha Shugrina"
+    "Ray Verma",
+    "Pau Mateo-Bernardó",
+    "Daniel Mas Montserrat",
+    "David Bonet",
+    "Marçal Comajoan Cara",
+    "Alexander G. Ioannidis"
    ],
-   "abstract": "Long-horizon video generation is key to interactive world modeling, physical intelligence, and spatial reasoning, yet maintaining geometric consistency and accurate camera control remains challenging without 3D grounding. We introduce \\textbf{VivaWorld}, a framework for generating geometry- and view-consistent long videos from an image. We first construct a compositional hybrid 3D representation that combines reconstructed point clouds, which preserve observed scene geometry and appearance, with generated textured meshes, which provide complete object geometry across $360^\\circ$ novel views. We also introduce a connected-region filter removing inconsistent floating components for robust cross-view reconstruction and propose a hybrid camera embedding that combines global and object-anchored Plücker rays to capture both scene-level camera motion and camera-object relationships, and inject it together with the visual guidance into a video generation model via a control adapter. Extensive experiments show VivaWorld achieves state-of-the-art visual quality and camera control, while supporting controllable novel-view synthesis, long-horizon scene exploration, and physical AI. Project page is available at: https://research.nvidia.com/labs/sil/projects/vivaworld/",
-   "primary": "cs.CV",
+   "abstract": "Nearest-neighbor methods are local, simple, and interpretable, but their non-parametric form makes them memory-intensive, expensive at inference, and difficult to integrate into differentiable neural architectures. We introduce Random Voronoi Networks (RVNs), a family of structured three-layer MLPs that express nearest-neighbor geometry through sampled Voronoi comparisons. The first layer computes Random Voronoi Features (RVF) from affine pairwise separators between selected training samples, the second layer aggregates these comparisons into Voronoi cells or top-k neighborhood scores, and the readout layer produces classification or regression predictions. We show that, when all samples and pairwise comparisons are included, step RVNs recover exact Euclidean k-NN, while ReLU RVNs provide a violation-score realization for 1-NN that can be relaxed into a differentiable soft weighting. Subsampling yields approximate RVNs with explicit control over the number of cells and features. We study several unsupervised sampling methods that trade off random coverage, directional diversity, coordinate sparsity, and empirical feature variance. Empirically, RVFs produce a highly effective data encoding strategy, providing performance boosts to downstream methods ranging from linear to modern tabular deep learning models. Finally, we showcase that RVF provides an interpretable feature map due to its k-NN based construction and ties to pairwise local directions. These results position our Random Voronoi formulation as a bridge between nearest-neighbor rules, random features, and modern tabular models.",
+   "primary": "cs.LG",
    "categories": [
-    "cs.CV"
+    "cs.LG",
+    "cs.AI"
    ],
-   "published": "2026-11-25T01:00:43Z",
-   "updated": "2026-11-25T01:00:43Z",
-   "comment": "17 figures, 10 tables, 26 pages",
-   "tags": [
-    "world model"
-   ],
+   "published": "2026-11-25T06:54:50Z",
+   "updated": "2026-11-25T06:54:50Z",
+   "comment": "",
+   "tags": [],
    "ax_votes": 0,
-   "ax_visits": 22,
-   "heat": 2.2,
+   "ax_visits": 18,
+   "heat": 1.8,
    "listed": "2026-11-26",
    "sections": []
   },
@@ -9253,6 +9358,36 @@
    "updated": "2026-11-25T06:53:33Z",
    "comment": "",
    "tags": [
+    "benchmark"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 17,
+   "heat": 1.7,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
+   "id": "2611.33917",
+   "title": "Event-WAM: Learning to Act with Event-Derived Futures",
+   "authors": [
+    "Jongseong Bae",
+    "Hyunwoo Kim",
+    "Yeongin Lee",
+    "Eubin So",
+    "Ha Young Kim"
+   ],
+   "abstract": "World Action Models (WAMs) leverage future visual modeling for robotic action learning, with recent studies exploring alternative or complementary objectives beyond conventional RGB prediction. We introduce Event-WAM, which incorporates event-derived visual changes as auxiliary future supervision alongside RGB. Event-WAM constructs temporally structured event representations from RGB demonstrations and encodes them using a frozen pretrained RGB video VAE, without training an event-specific VAE. Joint RGB--Event latent flow matching provides appearance- and change-oriented supervision without requiring event observations or explicit future generation at inference. Across simulated benchmarks, Event-WAM maintains comparable performance under standard conditions, while robustness gains under perturbations are benchmark-dependent, including improvements on LIBERO-Plus. Real-world evaluations further demonstrate improved manipulation success under both standard and unseen perturbation conditions. Further analyses show that policy improvements are not consistently accompanied by higher future prediction fidelity, suggesting the potential of change-oriented supervision for action learning.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-25T07:37:08Z",
+   "updated": "2026-11-25T07:37:08Z",
+   "comment": "",
+   "tags": [
+    "world model",
+    "manipulation",
+    "imitation",
     "benchmark"
    ],
    "ax_votes": 0,
@@ -9520,6 +9655,49 @@
    "thumb_h": 191
   },
   {
+   "id": "2611.33722",
+   "title": "Practice Makes Fluent: Learning to Use Earlier Predictions in Looped Models",
+   "authors": [
+    "Minseok seo",
+    "Hee-Seon Kim",
+    "Changick Kim"
+   ],
+   "abstract": "People become faster at a task through practice, but models that improve with experience do not necessarily learn to use less computation. We train looped models, whose intermediate predictions allow earlier exits, to perform tasks with fewer iterations through practice. This is difficult because shared-weight updates can degrade the final-loop prediction while improving early ones, and the exit gate must track early predictions as their quality changes. We propose FLUENT, which requires no additional task labels or rewards: it distills the initial model's final-loop prediction into early predictions, anchors the current final-loop prediction to the same frozen teacher, and trains the exit gate to balance disagreement with the current final-loop prediction against computation cost. FLUENT improves performance at shallower depth in new Crafter worlds, raises LIBERO success with fewer action-head iterations, and maintains language-model accuracy at lower selected depth. On a real robot, success rises from 62.3\\% to 74.6\\% while mean time over successful episodes falls from 69\\,s to 31\\,s. The project page is available at https://msseok96-cpu.github.io/FLUENT/.",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO",
+    "cs.AI"
+   ],
+   "published": "2026-11-25T03:36:01Z",
+   "updated": "2026-11-25T03:36:01Z",
+   "comment": "11pages, 4 figures",
+   "tags": [
+    "manipulation",
+    "control",
+    "imitation"
+   ],
+   "summary": {
+    "en": "FLUENT trains looped models to use fewer computation steps through practice, improving real-robot success from 62.3% to 74.6% and reducing mean time from 69s to 31s.",
+    "zh": "FLUENT方法训练循环模型，通过蒸馏早期预测并利用冻结教师模型锚定最终预测，使模型在实践中学会使用更少计算步骤。在真实机器人实验中，成功率从62.3%提升至74.6%，成功任务的平均时间从69秒降至31秒。"
+   },
+   "summary_source": "gemini-3.5-flash-lite",
+   "ax_votes": 0,
+   "ax_visits": 16,
+   "heat": 1.6,
+   "orgs": [
+    {
+     "logo": "data/logos/kaist.ac.kr.png",
+     "name": "KAIST",
+     "ror": "05apxxy63"
+    }
+   ],
+   "thumb": "data/thumbs/2611.33722.jpg",
+   "thumb_w": 640,
+   "thumb_h": 130,
+   "listed": "2026-11-26",
+   "sections": []
+  },
+  {
    "id": "2611.33733",
    "title": "PROVE: Predict-to-Specify and Observe-to-Verify for Human-Aligned Evaluation of Mobile Manipulation",
    "authors": [
@@ -9554,30 +9732,6 @@
    "sections": [
     "rl"
    ]
-  },
-  {
-   "id": "2611.33792",
-   "title": "Spatial Transcriptomics Prediction from Histology via Topology-Informed Graph Attention and Gene-Semantics Conditioning",
-   "authors": [
-    "Yuqi Cheng",
-    "Boshuai Zhang",
-    "Ziqi Zhang",
-    "Xiuwei Zhang"
-   ],
-   "abstract": "Spatial transcriptomics (ST) profiles gene expression with spatial context but remains costly, motivating models that infer expression from H&E images. Existing approaches face three key limitations: (i) a single patch embedding is often insufficient: morphologically similar regions can exhibit distinct expression due to spatial context, while naive neighborhood aggregation can over-smooth boundaries; (ii) conventional fixed, gene-indexed output heads treat genes independently and cannot directly support strict zero-shot prediction for unseen genes; and (iii) common metrics under-measure spatial pattern fidelity and boundary resolution. To address these challenges, we propose TIGEM, a topology-informed, gene-conditioned framework for histology-to-ST inference. TIGEM learns topology-aware spot representations by regularizing graph attention with tissue-level topology and morphology cues to avoid cross-compartment smoothing, and uses gene semantic modulation to replace gene-indexed heads, enabling zero-shot prediction for unseen genes. We also introduce Graph Spectral Correlation (GSC) to evaluate spatial pattern fidelity and boundary resolution complement to PCC/MSE. Across three large-scale ST datasets, TIGEM achieves overall state-of-the-art performance and significantly improved boundary prediction resolution, and further demonstrates the ability to predict expression patterns for genes unseen during training, extending prior zero-shot histology-to-ST efforts with topology-aware spatial propagation and PLM-based gene conditioning.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-25T05:16:03Z",
-   "updated": "2026-11-25T05:16:03Z",
-   "comment": "Accepted by WACV2027: https://wacv.thecvf.com/virtual/2027/poster/2019",
-   "tags": [],
-   "ax_votes": 0,
-   "ax_visits": 20,
-   "heat": 2.0,
-   "listed": "2026-11-26",
-   "sections": []
   },
   {
    "id": "2611.33794",
@@ -9657,29 +9811,78 @@
    "sections": []
   },
   {
-   "id": "2611.33961",
-   "title": "AI Buckingham: Agentic Discovery of Dimensionless Scaling Laws Across Physical Regimes",
+   "id": "2611.34046",
+   "title": "End-to-End Image-Goal Navigation for Agile Quadrotors via Recurrent State Distillation",
    "authors": [
-    "Ao Cheng",
-    "Lei Zhang",
-    "Guowei He"
+    "Simone Nascivera",
+    "Ismail Geles",
+    "Davide Scaramuzza"
    ],
-   "abstract": "Classical dimensional analysis defines admissible dimensionless representations but does not determine which combinations capture the dominant physical dependence, whether it changes across physical regimes, or when dependent-variable rescaling is required. We present AI Buckingham, an agentic framework for autonomous dimensionless discovery from natural-language descriptions of physical problems and observational data. It couples reasoning and planning by a large language model (LLM) with predefined symbolic and numerical tools. Literature-based knowledge retrieval supports dimensional checking, gradient-based clustering identifies physical regimes, and mutual information provides an objective, reparameterization-invariant criterion for identifying dominant dimensionless groups. Explicit numerical criteria determine the group count and assess simplification. Across ten physical systems spanning fluid dynamics, magnetohydrodynamics, thermal convection and additive manufacturing, AI Buckingham recovers established similarity representations and resolves regime-dependent scalings. For the longstanding challenge of predicting turbulent drag on rough surfaces, it identifies informative reparameterizations of surface statistics that improve equivalent sand-grain roughness estimates for engineering-oriented drag modelling.",
-   "primary": "physics.comp-ph",
+   "abstract": "Image-goal navigation asks a robot to reach the viewpoint of a target photograph without a map or goal pose. In three dimensions, this requires not only recognizing the goal but also estimating 3D displacement and generating continuous control actions to approach and settle at the target view. This is difficult because the same visual difference between current and goal image can require very different actions depending on the robot's velocity, yet monocular images alone reveal neither metric scale nor body motion. As a result, existing image-goal policies are limited to planar action spaces and rely on a state estimator for flight control. Policies that map directly from images to low-level control commands have been demonstrated for agile flight, but not toward goal images in unseen environments. We present the first image-goal navigation policy that directly commands thrust and angular rates for agile quadrotor flight in unseen 3D environments, without relying on state estimation (e.g., SLAM, VO, or SfM) or a separate velocity controller. We train a recurrent vision-based policy through a four-stage pipeline that combines geometric and motion supervision with privileged-teacher distillation and end-to-end reinforcement learning fine-tuning. On 1000 held-out flights in unseen environments, the policy achieves an 82.3% success rate with a mean terminal position error of 0.10m across successful flights. Deployed zero-shot on a real quadrotor, the policy reaches an 84% success rate over 25 trials in an unseen indoor environment.",
+   "primary": "cs.RO",
    "categories": [
-    "physics.comp-ph",
-    "cs.AI",
-    "physics.flu-dyn"
+    "cs.RO",
+    "cs.CV"
    ],
-   "published": "2026-11-25T08:24:47Z",
-   "updated": "2026-11-25T08:24:47Z",
-   "comment": "7 main figures; Supplementary Information included (7 figures and 30 tables)",
+   "published": "2026-11-25T09:23:33Z",
+   "updated": "2026-11-25T09:23:33Z",
+   "comment": "",
    "tags": [
-    "VLM/LLM"
+    "navigation",
+    "aerial",
+    "RL",
+    "perception"
+   ],
+   "summary": {
+    "en": "An end-to-end image-goal navigation policy for agile quadrotors directly commands thrust and angular rates without state estimation, achieving an 82.3% success rate in unseen environments and an 84% zero-shot success rate on a real drone.",
+    "zh": "针对敏捷四旋翼无人机提出了一种端到端图像目标导航策略，通过四阶段训练流水线直接输出推力和角速度控制指令，无需状态估计器或SLAM。在未见过的环境中实现了82.3%的成功率，平均终端位置误差为0.10米，并在真实四旋翼上取得了84%的零样本成功率。"
+   },
+   "summary_source": "gemini-3.5-flash-lite",
+   "ax_votes": 0,
+   "ax_visits": 16,
+   "heat": 1.6,
+   "orgs": [
+    {
+     "logo": "data/logos/uzh.ch.png",
+     "name": "University of Zurich",
+     "ror": "02crff812"
+    }
+   ],
+   "thumb": "data/thumbs/2611.34046.jpg",
+   "thumb_w": 390,
+   "thumb_h": 349,
+   "listed": "2026-11-26",
+   "sections": [
+    "rl"
+   ]
+  },
+  {
+   "id": "2611.34067",
+   "title": "When to Respond, Where to Ground: Streaming 3D Affordance Grounding",
+   "authors": [
+    "Wenting Luan",
+    "Weilong Yan",
+    "Siqi Lu",
+    "Ming Li",
+    "Beibei Lin",
+    "Yongbin Zheng",
+    "Robby T. Tan"
+   ],
+   "abstract": "Given a continuous RGB-D stream and a language request, streaming 3D affordance grounding requires an agent to decide when to respond and where to locate the requested functional part using only observations available so far. Existing 3D affordance grounding methods typically assume complete scene observations, while streaming vision-language models lack fine-grained 3D functional grounding. Our goal is to jointly determine response timing and functional-part localization during continuous scene observation. We propose StreamAff, an evidence-guided response strategy that makes both decisions from the grounding model's own visual evidence. The model scores the visual patches of the frames it reads: their combined support, weighed against a wait option, decides when to respond, and the highest-scoring patch selects the frame to ground in. A conditional look-back policy lets the model answer from an earlier observation at the moment of the request or wait for new evidence, and zoom-and-refine grounding segments the part named in the answer on the 3D points of the selected frame. We further introduce StreamFun3D, a benchmark derived from real-world 3D scenes that evaluates response timing and grounding across four evidence settings: Current, History, Future, and Unobserved, together with StreamIoU, a metric that credits a mask only when the response is timely and grounded in a valid source frame. We adapt offline 3D affordance grounding methods and build external-decider baselines that pair vision-language models with our mask decoder. StreamAff achieves 30.14% StreamIoU on 15-second streams, a 40.6% relative improvement over the strongest of these baselines.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-25T09:39:19Z",
+   "updated": "2026-11-25T09:39:19Z",
+   "comment": "19 pages, 6 figures",
+   "tags": [
+    "VLM/LLM",
+    "benchmark"
    ],
    "ax_votes": 0,
-   "ax_visits": 20,
-   "heat": 2.0,
+   "ax_visits": 16,
+   "heat": 1.6,
    "listed": "2026-11-26",
    "sections": []
   },
@@ -9988,60 +10191,6 @@
    "sections": []
   },
   {
-   "id": "2611.33875",
-   "title": "Random Voronoi Networks",
-   "authors": [
-    "Ray Verma",
-    "Pau Mateo-Bernardó",
-    "Daniel Mas Montserrat",
-    "David Bonet",
-    "Marçal Comajoan Cara",
-    "Alexander G. Ioannidis"
-   ],
-   "abstract": "Nearest-neighbor methods are local, simple, and interpretable, but their non-parametric form makes them memory-intensive, expensive at inference, and difficult to integrate into differentiable neural architectures. We introduce Random Voronoi Networks (RVNs), a family of structured three-layer MLPs that express nearest-neighbor geometry through sampled Voronoi comparisons. The first layer computes Random Voronoi Features (RVF) from affine pairwise separators between selected training samples, the second layer aggregates these comparisons into Voronoi cells or top-k neighborhood scores, and the readout layer produces classification or regression predictions. We show that, when all samples and pairwise comparisons are included, step RVNs recover exact Euclidean k-NN, while ReLU RVNs provide a violation-score realization for 1-NN that can be relaxed into a differentiable soft weighting. Subsampling yields approximate RVNs with explicit control over the number of cells and features. We study several unsupervised sampling methods that trade off random coverage, directional diversity, coordinate sparsity, and empirical feature variance. Empirically, RVFs produce a highly effective data encoding strategy, providing performance boosts to downstream methods ranging from linear to modern tabular deep learning models. Finally, we showcase that RVF provides an interpretable feature map due to its k-NN based construction and ties to pairwise local directions. These results position our Random Voronoi formulation as a bridge between nearest-neighbor rules, random features, and modern tabular models.",
-   "primary": "cs.LG",
-   "categories": [
-    "cs.LG",
-    "cs.AI"
-   ],
-   "published": "2026-11-25T06:54:50Z",
-   "updated": "2026-11-25T06:54:50Z",
-   "comment": "",
-   "tags": [],
-   "ax_votes": 0,
-   "ax_visits": 18,
-   "heat": 1.8,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
-   "id": "2611.33948",
-   "title": "Where to Approximate: Understanding and Accelerating Looped Multi-View Reconstruction",
-   "authors": [
-    "Siyuan Zhang",
-    "Yuhan Chen",
-    "Yangyang Ning",
-    "Nan Wang",
-    "Jun Yan"
-   ],
-   "abstract": "Looped multi-view reconstruction refines scene features by repeatedly applying a shared transformer block. Making these updates cheaper requires knowing how an approximation at one step affects the rest of the refinement. We study this with paired interventions in Déjà View and stacked reconstruction transformers, separating the error an approximation injects, how that error propagates, and how it affects the output. In Déjà View, approximation errors are attenuated more strongly than matched random perturbations under a scale-adjusted state-error measure, and a local Jacobian decomposition separates the contribution of channel gating from the response to spatial error structure. Spatial approximations made early benefit from subsequent refinement, whereas cross-step reuse depends on which quantity is cached and how reuse steps are spaced. At equal final norm, approximation errors change the predicted rotations 1.55 times as much as random errors. These findings guide our proposed method, which reduces spatial resolution and pools keys and values early in refinement, then interleaves attention-output reuse with full attention, and is adapted through lightweight self-distillation. Across five reconstruction benchmarks, the balanced configuration runs $1.63\\times$ faster than the official 16-step Déjà View model with a 1.86-point reduction in average pose AUC@$3^\\circ$. At matched latency, it exceeds the interpolated curve of a trained baseline using full refinement blocks by 4.73 points in AUC@$3^\\circ$ and improves the corresponding geometry metrics.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-25T08:09:12Z",
-   "updated": "2026-11-25T08:09:12Z",
-   "comment": "",
-   "tags": [
-    "benchmark"
-   ],
-   "ax_votes": 0,
-   "ax_visits": 19,
-   "heat": 1.9,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
    "id": "2611.34006",
    "title": "Manga Page Parser: Comprehensive Visual Parsing through Local Story Understanding",
    "authors": [
@@ -10347,36 +10496,6 @@
    ]
   },
   {
-   "id": "2611.33917",
-   "title": "Event-WAM: Learning to Act with Event-Derived Futures",
-   "authors": [
-    "Jongseong Bae",
-    "Hyunwoo Kim",
-    "Yeongin Lee",
-    "Eubin So",
-    "Ha Young Kim"
-   ],
-   "abstract": "World Action Models (WAMs) leverage future visual modeling for robotic action learning, with recent studies exploring alternative or complementary objectives beyond conventional RGB prediction. We introduce Event-WAM, which incorporates event-derived visual changes as auxiliary future supervision alongside RGB. Event-WAM constructs temporally structured event representations from RGB demonstrations and encodes them using a frozen pretrained RGB video VAE, without training an event-specific VAE. Joint RGB--Event latent flow matching provides appearance- and change-oriented supervision without requiring event observations or explicit future generation at inference. Across simulated benchmarks, Event-WAM maintains comparable performance under standard conditions, while robustness gains under perturbations are benchmark-dependent, including improvements on LIBERO-Plus. Real-world evaluations further demonstrate improved manipulation success under both standard and unseen perturbation conditions. Further analyses show that policy improvements are not consistently accompanied by higher future prediction fidelity, suggesting the potential of change-oriented supervision for action learning.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-25T07:37:08Z",
-   "updated": "2026-11-25T07:37:08Z",
-   "comment": "",
-   "tags": [
-    "world model",
-    "manipulation",
-    "imitation",
-    "benchmark"
-   ],
-   "ax_votes": 0,
-   "ax_visits": 17,
-   "heat": 1.7,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
    "id": "2611.34092",
    "title": "Improving Tail-Augmented Speculative Drafting with Hidden State Mixing and Gradient Detach",
    "authors": [
@@ -10670,125 +10789,6 @@
    "ax_votes": 0,
    "ax_visits": 12,
    "heat": 1.2,
-   "sections": []
-  },
-  {
-   "id": "2611.33722",
-   "title": "Practice Makes Fluent: Learning to Use Earlier Predictions in Looped Models",
-   "authors": [
-    "Minseok seo",
-    "Hee-Seon Kim",
-    "Changick Kim"
-   ],
-   "abstract": "People become faster at a task through practice, but models that improve with experience do not necessarily learn to use less computation. We train looped models, whose intermediate predictions allow earlier exits, to perform tasks with fewer iterations through practice. This is difficult because shared-weight updates can degrade the final-loop prediction while improving early ones, and the exit gate must track early predictions as their quality changes. We propose FLUENT, which requires no additional task labels or rewards: it distills the initial model's final-loop prediction into early predictions, anchors the current final-loop prediction to the same frozen teacher, and trains the exit gate to balance disagreement with the current final-loop prediction against computation cost. FLUENT improves performance at shallower depth in new Crafter worlds, raises LIBERO success with fewer action-head iterations, and maintains language-model accuracy at lower selected depth. On a real robot, success rises from 62.3\\% to 74.6\\% while mean time over successful episodes falls from 69\\,s to 31\\,s. The project page is available at https://msseok96-cpu.github.io/FLUENT/.",
-   "primary": "cs.RO",
-   "categories": [
-    "cs.RO",
-    "cs.AI"
-   ],
-   "published": "2026-11-25T03:36:01Z",
-   "updated": "2026-11-25T03:36:01Z",
-   "comment": "11pages, 4 figures",
-   "tags": [
-    "manipulation",
-    "control",
-    "imitation"
-   ],
-   "summary": {
-    "en": "FLUENT trains looped models to use fewer computation steps through practice, improving real-robot success from 62.3% to 74.6% and reducing mean time from 69s to 31s.",
-    "zh": "FLUENT方法训练循环模型，通过蒸馏早期预测并利用冻结教师模型锚定最终预测，使模型在实践中学会使用更少计算步骤。在真实机器人实验中，成功率从62.3%提升至74.6%，成功任务的平均时间从69秒降至31秒。"
-   },
-   "summary_source": "gemini-3.5-flash-lite",
-   "ax_votes": 0,
-   "ax_visits": 16,
-   "heat": 1.6,
-   "orgs": [
-    {
-     "logo": "data/logos/kaist.ac.kr.png",
-     "name": "KAIST",
-     "ror": "05apxxy63"
-    }
-   ],
-   "thumb": "data/thumbs/2611.33722.jpg",
-   "thumb_w": 640,
-   "thumb_h": 130,
-   "listed": "2026-11-26",
-   "sections": []
-  },
-  {
-   "id": "2611.34046",
-   "title": "End-to-End Image-Goal Navigation for Agile Quadrotors via Recurrent State Distillation",
-   "authors": [
-    "Simone Nascivera",
-    "Ismail Geles",
-    "Davide Scaramuzza"
-   ],
-   "abstract": "Image-goal navigation asks a robot to reach the viewpoint of a target photograph without a map or goal pose. In three dimensions, this requires not only recognizing the goal but also estimating 3D displacement and generating continuous control actions to approach and settle at the target view. This is difficult because the same visual difference between current and goal image can require very different actions depending on the robot's velocity, yet monocular images alone reveal neither metric scale nor body motion. As a result, existing image-goal policies are limited to planar action spaces and rely on a state estimator for flight control. Policies that map directly from images to low-level control commands have been demonstrated for agile flight, but not toward goal images in unseen environments. We present the first image-goal navigation policy that directly commands thrust and angular rates for agile quadrotor flight in unseen 3D environments, without relying on state estimation (e.g., SLAM, VO, or SfM) or a separate velocity controller. We train a recurrent vision-based policy through a four-stage pipeline that combines geometric and motion supervision with privileged-teacher distillation and end-to-end reinforcement learning fine-tuning. On 1000 held-out flights in unseen environments, the policy achieves an 82.3% success rate with a mean terminal position error of 0.10m across successful flights. Deployed zero-shot on a real quadrotor, the policy reaches an 84% success rate over 25 trials in an unseen indoor environment.",
-   "primary": "cs.RO",
-   "categories": [
-    "cs.RO",
-    "cs.CV"
-   ],
-   "published": "2026-11-25T09:23:33Z",
-   "updated": "2026-11-25T09:23:33Z",
-   "comment": "",
-   "tags": [
-    "navigation",
-    "aerial",
-    "RL",
-    "perception"
-   ],
-   "summary": {
-    "en": "An end-to-end image-goal navigation policy for agile quadrotors directly commands thrust and angular rates without state estimation, achieving an 82.3% success rate in unseen environments and an 84% zero-shot success rate on a real drone.",
-    "zh": "针对敏捷四旋翼无人机提出了一种端到端图像目标导航策略，通过四阶段训练流水线直接输出推力和角速度控制指令，无需状态估计器或SLAM。在未见过的环境中实现了82.3%的成功率，平均终端位置误差为0.10米，并在真实四旋翼上取得了84%的零样本成功率。"
-   },
-   "summary_source": "gemini-3.5-flash-lite",
-   "ax_votes": 0,
-   "ax_visits": 16,
-   "heat": 1.6,
-   "orgs": [
-    {
-     "logo": "data/logos/uzh.ch.png",
-     "name": "University of Zurich",
-     "ror": "02crff812"
-    }
-   ],
-   "thumb": "data/thumbs/2611.34046.jpg",
-   "thumb_w": 390,
-   "thumb_h": 349,
-   "listed": "2026-11-26",
-   "sections": [
-    "rl"
-   ]
-  },
-  {
-   "id": "2611.34067",
-   "title": "When to Respond, Where to Ground: Streaming 3D Affordance Grounding",
-   "authors": [
-    "Wenting Luan",
-    "Weilong Yan",
-    "Siqi Lu",
-    "Ming Li",
-    "Beibei Lin",
-    "Yongbin Zheng",
-    "Robby T. Tan"
-   ],
-   "abstract": "Given a continuous RGB-D stream and a language request, streaming 3D affordance grounding requires an agent to decide when to respond and where to locate the requested functional part using only observations available so far. Existing 3D affordance grounding methods typically assume complete scene observations, while streaming vision-language models lack fine-grained 3D functional grounding. Our goal is to jointly determine response timing and functional-part localization during continuous scene observation. We propose StreamAff, an evidence-guided response strategy that makes both decisions from the grounding model's own visual evidence. The model scores the visual patches of the frames it reads: their combined support, weighed against a wait option, decides when to respond, and the highest-scoring patch selects the frame to ground in. A conditional look-back policy lets the model answer from an earlier observation at the moment of the request or wait for new evidence, and zoom-and-refine grounding segments the part named in the answer on the 3D points of the selected frame. We further introduce StreamFun3D, a benchmark derived from real-world 3D scenes that evaluates response timing and grounding across four evidence settings: Current, History, Future, and Unobserved, together with StreamIoU, a metric that credits a mask only when the response is timely and grounded in a valid source frame. We adapt offline 3D affordance grounding methods and build external-decider baselines that pair vision-language models with our mask decoder. StreamAff achieves 30.14% StreamIoU on 15-second streams, a 40.6% relative improvement over the strongest of these baselines.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-25T09:39:19Z",
-   "updated": "2026-11-25T09:39:19Z",
-   "comment": "19 pages, 6 figures",
-   "tags": [
-    "VLM/LLM",
-    "benchmark"
-   ],
-   "ax_votes": 0,
-   "ax_visits": 16,
-   "heat": 1.6,
-   "listed": "2026-11-26",
    "sections": []
   },
   {

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-28T09:02:36+00:00",
+ "updated_at": "2026-11-28T13:28:35+00:00",
  "newest": "2026-11-27",
  "periods": {
   "7": {
@@ -36,9 +36,9 @@
       "zh": "VOPD 将稀疏的验证器奖励投影到教师的隐式奖励方向上，并在整个词表上做 Rao-Blackwell 化，得到稠密的、基于验证器的监督信号，在八项数学推理基准上相比 vanilla OPD 与其他 on-policy distillation 基线同时提升最终性能与学习效率。"
      },
      "summary_source": "deepseek-flash",
-     "ax_votes": 234,
+     "ax_votes": 235,
      "ax_visits": 2488,
-     "heat": 482.8,
+     "heat": 483.8,
      "orgs": [
       {
        "logo": "data/logos/stanford.edu.png",
@@ -125,6 +125,63 @@
      "sections": []
     },
     {
+     "id": "2611.34923",
+     "title": "Mixture-of-Loops Transformer",
+     "authors": [
+      "Lianghui Zhu",
+      "Shijie Wang",
+      "Xinggang Wang",
+      "Jinze Bai",
+      "Bo Wang",
+      "Xiang Bai"
+     ],
+     "abstract": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops: What should be passed as a Transformer loops? We introduce Mixture-of-Loops Transformer (MoLT), whose Mixture-of-Loops Attention (MoLA) uses keys and values (KV) as memory for selective reuse across depths and loops. Under loop residual, MoLT-R retains the residual stream and reads local KV across loops for expressivity. Under loop KV, MoLT-KV instead restarts from embeddings and reads current-loop local KV with preceding-loop memory KV at earlier positions for efficiency. MoLT-KV eliminates same-position cross-loop dependence and, paired with loop forcing for parallel training, unlocks single-traversal Mixture-of-Loops (MoL) decoding beyond the training loop horizon. To balance efficiency and quality, we introduce U-shaped MoLT (U-MoLT), which separates memory construction from prediction readout and skips unused decoder traversals without changing predictions. In 400B-token pretraining, U-MoLT outperforms OLMo3 across 700M/1.5B dense and 3B MoE models, achieving 1.7x validation cross-entropy (CE) token efficiency at 700M while improving 3B MoE 10-domain perplexity by 0.75 and 10-task accuracy by 2.1 percentage points. In 100B-token continued pretraining of Qwen3.5-0.8B-Base, our U-MoLT adaptation lowers CE on all 11 domains over the matched baseline with 1.4x mean token efficiency. At inference, U-MoLT with MoL-Hybrid-2 matches non-looped OLMo3 latency at 996.6 vs. 1,000.6 ms on S-size (~113M) models. Code is available at https://github.com/hustvl/MoLT",
+     "primary": "cs.LG",
+     "categories": [
+      "cs.LG",
+      "cs.CL"
+     ],
+     "published": "2026-11-25T18:58:53Z",
+     "updated": "2026-11-25T18:58:53Z",
+     "comment": "Code is available at https://github.com/hustvl/MoLT",
+     "code_url": "https://github.com/hustvl/MoLT",
+     "tags": [
+      "LLM",
+      "efficiency",
+      "pretraining",
+      "interpretability"
+     ],
+     "summary": {
+      "en": "Mixture-of-Loops Transformer reuses keys and values as memory across depths and loops; U-MoLT beats OLMo3 with 1.7x CE token efficiency at 700M and +2.1 points on 10-task accuracy at 3B MoE.",
+      "zh": "Mixture-of-Loops Transformer 用 Mixture-of-Loops Attention 把 KV 当作跨深度和循环复用记忆，其 U-MoLT 变体在 400B token 预训练中于 700M 模型上比 OLMo3 达到 1.7 倍的验证交叉熵 token 效率，3B MoE 困惑度降低 0.75、10 项任务准确率提升 2.1 个百分点。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 76,
+     "ax_votes": 108,
+     "ax_visits": 1311,
+     "heat": 315.1,
+     "orgs": [
+      {
+       "name": "Huazhong University of Science & Technology",
+       "ror": "00p991c53"
+      },
+      {
+       "logo": "data/logos/bytedance.com.png",
+       "name": "ByteDance"
+      },
+      {
+       "logo": "data/logos/utoronto.ca.png",
+       "name": "University of Toronto",
+       "ror": "03dbr7087"
+      }
+     ],
+     "thumb": "data/thumbs/2611.34923.jpg",
+     "thumb_w": 618,
+     "thumb_h": 440,
+     "listed": "2026-11-26",
+     "sections": []
+    },
+    {
      "id": "2611.28298",
      "title": "Language Model Harnesses can be Compositional Generalizers",
      "authors": [
@@ -168,63 +225,6 @@
      "sections": [
       "rl"
      ]
-    },
-    {
-     "id": "2611.34923",
-     "title": "Mixture-of-Loops Transformer",
-     "authors": [
-      "Lianghui Zhu",
-      "Shijie Wang",
-      "Xinggang Wang",
-      "Jinze Bai",
-      "Bo Wang",
-      "Xiang Bai"
-     ],
-     "abstract": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops: What should be passed as a Transformer loops? We introduce Mixture-of-Loops Transformer (MoLT), whose Mixture-of-Loops Attention (MoLA) uses keys and values (KV) as memory for selective reuse across depths and loops. Under loop residual, MoLT-R retains the residual stream and reads local KV across loops for expressivity. Under loop KV, MoLT-KV instead restarts from embeddings and reads current-loop local KV with preceding-loop memory KV at earlier positions for efficiency. MoLT-KV eliminates same-position cross-loop dependence and, paired with loop forcing for parallel training, unlocks single-traversal Mixture-of-Loops (MoL) decoding beyond the training loop horizon. To balance efficiency and quality, we introduce U-shaped MoLT (U-MoLT), which separates memory construction from prediction readout and skips unused decoder traversals without changing predictions. In 400B-token pretraining, U-MoLT outperforms OLMo3 across 700M/1.5B dense and 3B MoE models, achieving 1.7x validation cross-entropy (CE) token efficiency at 700M while improving 3B MoE 10-domain perplexity by 0.75 and 10-task accuracy by 2.1 percentage points. In 100B-token continued pretraining of Qwen3.5-0.8B-Base, our U-MoLT adaptation lowers CE on all 11 domains over the matched baseline with 1.4x mean token efficiency. At inference, U-MoLT with MoL-Hybrid-2 matches non-looped OLMo3 latency at 996.6 vs. 1,000.6 ms on S-size (~113M) models. Code is available at https://github.com/hustvl/MoLT",
-     "primary": "cs.LG",
-     "categories": [
-      "cs.LG",
-      "cs.CL"
-     ],
-     "published": "2026-11-25T18:58:53Z",
-     "updated": "2026-11-25T18:58:53Z",
-     "comment": "Code is available at https://github.com/hustvl/MoLT",
-     "code_url": "https://github.com/hustvl/MoLT",
-     "tags": [
-      "LLM",
-      "efficiency",
-      "pretraining",
-      "interpretability"
-     ],
-     "summary": {
-      "en": "Mixture-of-Loops Transformer reuses keys and values as memory across depths and loops; U-MoLT beats OLMo3 with 1.7x CE token efficiency at 700M and +2.1 points on 10-task accuracy at 3B MoE.",
-      "zh": "Mixture-of-Loops Transformer 用 Mixture-of-Loops Attention 把 KV 当作跨深度和循环复用记忆，其 U-MoLT 变体在 400B token 预训练中于 700M 模型上比 OLMo3 达到 1.7 倍的验证交叉熵 token 效率，3B MoE 困惑度降低 0.75、10 项任务准确率提升 2.1 个百分点。"
-     },
-     "summary_source": "deepseek-flash",
-     "hf_upvotes": 76,
-     "ax_votes": 100,
-     "ax_visits": 1311,
-     "heat": 307.1,
-     "orgs": [
-      {
-       "name": "Huazhong University of Science & Technology",
-       "ror": "00p991c53"
-      },
-      {
-       "logo": "data/logos/bytedance.com.png",
-       "name": "ByteDance"
-      },
-      {
-       "logo": "data/logos/utoronto.ca.png",
-       "name": "University of Toronto",
-       "ror": "03dbr7087"
-      }
-     ],
-     "thumb": "data/thumbs/2611.34923.jpg",
-     "thumb_w": 618,
-     "thumb_h": 440,
-     "listed": "2026-11-26",
-     "sections": []
     },
     {
      "id": "2611.29897",
@@ -320,9 +320,9 @@
       "zh": "研究RL后训练产生的rollout中保留多少知识，发现直接用最大似然拟合归档rollout（maximum likelihood replay），不区分对错、按生成顺序回放，即可复现在线RL的性能，单次更新即可追踪完整学习曲线。"
      },
      "summary_source": "deepseek-flash",
-     "ax_votes": 73,
+     "ax_votes": 75,
      "ax_visits": 1082,
-     "heat": 181.2,
+     "heat": 183.2,
      "orgs": [
       {
        "name": "Tufa Labs"
@@ -454,10 +454,10 @@
       "zh": "针对 Gated DeltaNet-2 长上下文训练中擦除方向不对称导致循环状态指数增长的问题，提出 Stable Gated DeltaNet-2，用对称擦除保证非扩张状态传播，并配合衰减调节的残差写入，理论上给出 O(√T) 状态增长上界且保留分块并行。1.6B 参数模型上训练稳定，128K 平均 RULER 分数提升 6.80 分，九个下游任务平均准确率提升 0.62 分。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 130,
-     "ax_votes": 8,
+     "hf_upvotes": 134,
+     "ax_votes": 9,
      "ax_visits": 187,
-     "heat": 156.7,
+     "heat": 161.7,
      "orgs": [
       {
        "name": "MemTensor"
@@ -753,10 +753,10 @@
       "zh": "OS-Omni 是覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的跨平台计算机代理实时基准，v1 每平台 48 个任务、另含 12 个跨平台工作流，任务平均需 67.54 步；最强代理 Claude Opus 5.5 平均成功率 68.5%，低于人类 77.3%，在 iOS 和 macOS 上差距超过 25 点。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 109,
+     "hf_upvotes": 113,
      "ax_votes": 1,
      "ax_visits": 43,
-     "heat": 114.3,
+     "heat": 118.3,
      "orgs": [],
      "thumb": "data/thumbs/2611.34232.jpg",
      "thumb_w": 640,
@@ -1255,10 +1255,10 @@
       "zh": "Agentic LongLive 用独立 GPU 上的记忆 agent 以文本状态和实体图像维护人物、物体、场景一致性，并通过辅助 GPU 预填充注意力 sink，使 LongLive-2.0 在 LongStory-Online 上持久状态准确率提升 26.3 点、主角身份提升 44.9 点、重访地点一致性提升 40.4 点，额外耗时约 1%。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 24,
-     "ax_votes": 22,
+     "hf_upvotes": 25,
+     "ax_votes": 23,
      "ax_visits": 370,
-     "heat": 83.0,
+     "heat": 85.0,
      "orgs": [
       {
        "logo": "data/logos/nvidia.com.png",
@@ -1377,9 +1377,9 @@
       "zh": "VOPD 将稀疏的验证器奖励投影到教师的隐式奖励方向上，并在整个词表上做 Rao-Blackwell 化，得到稠密的、基于验证器的监督信号，在八项数学推理基准上相比 vanilla OPD 与其他 on-policy distillation 基线同时提升最终性能与学习效率。"
      },
      "summary_source": "deepseek-flash",
-     "ax_votes": 234,
+     "ax_votes": 235,
      "ax_visits": 2488,
-     "heat": 482.8,
+     "heat": 483.8,
      "orgs": [
       {
        "logo": "data/logos/stanford.edu.png",
@@ -1466,6 +1466,63 @@
      "sections": []
     },
     {
+     "id": "2611.34923",
+     "title": "Mixture-of-Loops Transformer",
+     "authors": [
+      "Lianghui Zhu",
+      "Shijie Wang",
+      "Xinggang Wang",
+      "Jinze Bai",
+      "Bo Wang",
+      "Xiang Bai"
+     ],
+     "abstract": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops: What should be passed as a Transformer loops? We introduce Mixture-of-Loops Transformer (MoLT), whose Mixture-of-Loops Attention (MoLA) uses keys and values (KV) as memory for selective reuse across depths and loops. Under loop residual, MoLT-R retains the residual stream and reads local KV across loops for expressivity. Under loop KV, MoLT-KV instead restarts from embeddings and reads current-loop local KV with preceding-loop memory KV at earlier positions for efficiency. MoLT-KV eliminates same-position cross-loop dependence and, paired with loop forcing for parallel training, unlocks single-traversal Mixture-of-Loops (MoL) decoding beyond the training loop horizon. To balance efficiency and quality, we introduce U-shaped MoLT (U-MoLT), which separates memory construction from prediction readout and skips unused decoder traversals without changing predictions. In 400B-token pretraining, U-MoLT outperforms OLMo3 across 700M/1.5B dense and 3B MoE models, achieving 1.7x validation cross-entropy (CE) token efficiency at 700M while improving 3B MoE 10-domain perplexity by 0.75 and 10-task accuracy by 2.1 percentage points. In 100B-token continued pretraining of Qwen3.5-0.8B-Base, our U-MoLT adaptation lowers CE on all 11 domains over the matched baseline with 1.4x mean token efficiency. At inference, U-MoLT with MoL-Hybrid-2 matches non-looped OLMo3 latency at 996.6 vs. 1,000.6 ms on S-size (~113M) models. Code is available at https://github.com/hustvl/MoLT",
+     "primary": "cs.LG",
+     "categories": [
+      "cs.LG",
+      "cs.CL"
+     ],
+     "published": "2026-11-25T18:58:53Z",
+     "updated": "2026-11-25T18:58:53Z",
+     "comment": "Code is available at https://github.com/hustvl/MoLT",
+     "code_url": "https://github.com/hustvl/MoLT",
+     "tags": [
+      "LLM",
+      "efficiency",
+      "pretraining",
+      "interpretability"
+     ],
+     "summary": {
+      "en": "Mixture-of-Loops Transformer reuses keys and values as memory across depths and loops; U-MoLT beats OLMo3 with 1.7x CE token efficiency at 700M and +2.1 points on 10-task accuracy at 3B MoE.",
+      "zh": "Mixture-of-Loops Transformer 用 Mixture-of-Loops Attention 把 KV 当作跨深度和循环复用记忆，其 U-MoLT 变体在 400B token 预训练中于 700M 模型上比 OLMo3 达到 1.7 倍的验证交叉熵 token 效率，3B MoE 困惑度降低 0.75、10 项任务准确率提升 2.1 个百分点。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 76,
+     "ax_votes": 108,
+     "ax_visits": 1311,
+     "heat": 315.1,
+     "orgs": [
+      {
+       "name": "Huazhong University of Science & Technology",
+       "ror": "00p991c53"
+      },
+      {
+       "logo": "data/logos/bytedance.com.png",
+       "name": "ByteDance"
+      },
+      {
+       "logo": "data/logos/utoronto.ca.png",
+       "name": "University of Toronto",
+       "ror": "03dbr7087"
+      }
+     ],
+     "thumb": "data/thumbs/2611.34923.jpg",
+     "thumb_w": 618,
+     "thumb_h": 440,
+     "listed": "2026-11-26",
+     "sections": []
+    },
+    {
      "id": "2611.28298",
      "title": "Language Model Harnesses can be Compositional Generalizers",
      "authors": [
@@ -1509,63 +1566,6 @@
      "sections": [
       "rl"
      ]
-    },
-    {
-     "id": "2611.34923",
-     "title": "Mixture-of-Loops Transformer",
-     "authors": [
-      "Lianghui Zhu",
-      "Shijie Wang",
-      "Xinggang Wang",
-      "Jinze Bai",
-      "Bo Wang",
-      "Xiang Bai"
-     ],
-     "abstract": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops: What should be passed as a Transformer loops? We introduce Mixture-of-Loops Transformer (MoLT), whose Mixture-of-Loops Attention (MoLA) uses keys and values (KV) as memory for selective reuse across depths and loops. Under loop residual, MoLT-R retains the residual stream and reads local KV across loops for expressivity. Under loop KV, MoLT-KV instead restarts from embeddings and reads current-loop local KV with preceding-loop memory KV at earlier positions for efficiency. MoLT-KV eliminates same-position cross-loop dependence and, paired with loop forcing for parallel training, unlocks single-traversal Mixture-of-Loops (MoL) decoding beyond the training loop horizon. To balance efficiency and quality, we introduce U-shaped MoLT (U-MoLT), which separates memory construction from prediction readout and skips unused decoder traversals without changing predictions. In 400B-token pretraining, U-MoLT outperforms OLMo3 across 700M/1.5B dense and 3B MoE models, achieving 1.7x validation cross-entropy (CE) token efficiency at 700M while improving 3B MoE 10-domain perplexity by 0.75 and 10-task accuracy by 2.1 percentage points. In 100B-token continued pretraining of Qwen3.5-0.8B-Base, our U-MoLT adaptation lowers CE on all 11 domains over the matched baseline with 1.4x mean token efficiency. At inference, U-MoLT with MoL-Hybrid-2 matches non-looped OLMo3 latency at 996.6 vs. 1,000.6 ms on S-size (~113M) models. Code is available at https://github.com/hustvl/MoLT",
-     "primary": "cs.LG",
-     "categories": [
-      "cs.LG",
-      "cs.CL"
-     ],
-     "published": "2026-11-25T18:58:53Z",
-     "updated": "2026-11-25T18:58:53Z",
-     "comment": "Code is available at https://github.com/hustvl/MoLT",
-     "code_url": "https://github.com/hustvl/MoLT",
-     "tags": [
-      "LLM",
-      "efficiency",
-      "pretraining",
-      "interpretability"
-     ],
-     "summary": {
-      "en": "Mixture-of-Loops Transformer reuses keys and values as memory across depths and loops; U-MoLT beats OLMo3 with 1.7x CE token efficiency at 700M and +2.1 points on 10-task accuracy at 3B MoE.",
-      "zh": "Mixture-of-Loops Transformer 用 Mixture-of-Loops Attention 把 KV 当作跨深度和循环复用记忆，其 U-MoLT 变体在 400B token 预训练中于 700M 模型上比 OLMo3 达到 1.7 倍的验证交叉熵 token 效率，3B MoE 困惑度降低 0.75、10 项任务准确率提升 2.1 个百分点。"
-     },
-     "summary_source": "deepseek-flash",
-     "hf_upvotes": 76,
-     "ax_votes": 100,
-     "ax_visits": 1311,
-     "heat": 307.1,
-     "orgs": [
-      {
-       "name": "Huazhong University of Science & Technology",
-       "ror": "00p991c53"
-      },
-      {
-       "logo": "data/logos/bytedance.com.png",
-       "name": "ByteDance"
-      },
-      {
-       "logo": "data/logos/utoronto.ca.png",
-       "name": "University of Toronto",
-       "ror": "03dbr7087"
-      }
-     ],
-     "thumb": "data/thumbs/2611.34923.jpg",
-     "thumb_w": 618,
-     "thumb_h": 440,
-     "listed": "2026-11-26",
-     "sections": []
     },
     {
      "id": "2611.26450",
@@ -1806,9 +1806,9 @@
       "zh": "研究RL后训练产生的rollout中保留多少知识，发现直接用最大似然拟合归档rollout（maximum likelihood replay），不区分对错、按生成顺序回放，即可复现在线RL的性能，单次更新即可追踪完整学习曲线。"
      },
      "summary_source": "deepseek-flash",
-     "ax_votes": 73,
+     "ax_votes": 75,
      "ax_visits": 1082,
-     "heat": 181.2,
+     "heat": 183.2,
      "orgs": [
       {
        "name": "Tufa Labs"
@@ -2106,10 +2106,10 @@
       "zh": "针对 Gated DeltaNet-2 长上下文训练中擦除方向不对称导致循环状态指数增长的问题，提出 Stable Gated DeltaNet-2，用对称擦除保证非扩张状态传播，并配合衰减调节的残差写入，理论上给出 O(√T) 状态增长上界且保留分块并行。1.6B 参数模型上训练稳定，128K 平均 RULER 分数提升 6.80 分，九个下游任务平均准确率提升 0.62 分。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 130,
-     "ax_votes": 8,
+     "hf_upvotes": 134,
+     "ax_votes": 9,
      "ax_visits": 187,
-     "heat": 156.7,
+     "heat": 161.7,
      "orgs": [
       {
        "name": "MemTensor"
@@ -2630,10 +2630,10 @@
       "zh": "OS-Omni 是覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的跨平台计算机代理实时基准，v1 每平台 48 个任务、另含 12 个跨平台工作流，任务平均需 67.54 步；最强代理 Claude Opus 5.5 平均成功率 68.5%，低于人类 77.3%，在 iOS 和 macOS 上差距超过 25 点。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 109,
+     "hf_upvotes": 113,
      "ax_votes": 1,
      "ax_visits": 43,
-     "heat": 114.3,
+     "heat": 118.3,
      "orgs": [],
      "thumb": "data/thumbs/2611.34232.jpg",
      "thumb_w": 640,

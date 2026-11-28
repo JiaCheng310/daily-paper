@@ -847,6 +847,63 @@
    ]
   },
   {
+   "id": "2611.24362",
+   "title": "PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents",
+   "authors": [
+    "Lipeng He",
+    "Yihan Wang",
+    "Jiawen Zhang",
+    "N. Asokan"
+   ],
+   "abstract": "Large language model (LLM) agents routinely interact with untrusted external data, exposing them to indirect prompt injection (IPI) attacks that hijack agents into executing attacker-chosen tasks. To uncover these vulnerabilities at scale, automated red-teaming methods often leverage reinforcement learning (RL) to generate attacks that achieve high attack success rates (ASR). Model developers use the attacks discovered during internal red-teaming to harden agents through adversarial training before deployment, a collaborative offensive-defensive process known in cybersecurity as purple-teaming. However, we show that achieving high ASR during red-teaming does not guarantee robustness gains from subsequent adversarial training. Specifically, we find that two state-of-the-art RL-based red-teaming methods, RL-Hammer and PISmith, suffer from mode collapse, repeatedly discovering similar attack strategies whose additional successes add no additional robustness improvements to adversarial training. To address this gap, we introduce PIPETTE, a unified prompt injection purple-teaming framework that effectively converts red-teaming discoveries into defender robustness improvements. PIPETTE employs a dictionary learning-based reward that encourages broader coverage of attack strategies during red-teaming. It also integrates an on-policy adversarial training pipeline tailored to IPI defense, enabling agents to resist attacks while completing legitimate user tasks. Extensive evaluations across agentic benchmarks (AgentDojo and ASB) demonstrate that PIPETTE produces defenders that achieve near-zero attack success rates on static attacks and can withstand strong adaptive attacks, while maintaining benign task utility close to that of the undefended baseline.",
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI"
+   ],
+   "published": "2026-11-18T12:56:06Z",
+   "updated": "2026-11-20T22:23:16Z",
+   "comment": "18 pages, 6 figures",
+   "listed": "2026-11-19",
+   "tags": [
+    "safety",
+    "agents",
+    "RL",
+    "alignment"
+   ],
+   "hf_upvotes": 8,
+   "ax_votes": 7,
+   "ax_visits": 84,
+   "heat": 23.4,
+   "orgs": [
+    {
+     "logo": "data/logos/uwaterloo.ca.png",
+     "name": "University of Waterloo",
+     "ror": "01aff2v68"
+    },
+    {
+     "name": "Zhejiang University",
+     "ror": "00a2xv884"
+    },
+    {
+     "logo": "data/logos/kth.se.png",
+     "name": "KTH Royal Institute of Technology",
+     "ror": "026vcq606"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24362.jpg",
+   "thumb_w": 640,
+   "thumb_h": 392,
+   "summary": {
+    "en": "PIPETTE is a unified prompt-injection purple-teaming framework combining a dictionary-learning reward for broader attack-strategy coverage with on-policy adversarial training; on AgentDojo and ASB it yields near-zero static attack success and strong adaptive-attack robustness while preserving benign utility.",
+    "zh": "PIPETTE 是一个统一的提示注入红蓝对抗框架，用基于字典学习的奖励鼓励红队覆盖更多攻击策略，并结合面向 IPI 防御的 on-policy 对抗训练；在 AgentDojo 和 ASB 上，防御器面对静态攻击成功率接近零，能抵御强自适应攻击，正常任务效用接近未防御基线。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": [
+    "rl"
+   ]
+  },
+  {
    "id": "2611.08136",
    "title": "How Far Can Untrained Neural Networks Go in Anomaly Detection? From Tables to Pixels",
    "authors": [
@@ -945,61 +1002,52 @@
    "sections": []
   },
   {
-   "id": "2611.24362",
-   "title": "PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents",
+   "id": "2611.24830",
+   "title": "A Foundation Model to Measure and Predict Human Behaviour",
    "authors": [
-    "Lipeng He",
-    "Yihan Wang",
-    "Jiawen Zhang",
-    "N. Asokan"
+    "Haoran Ye",
+    "Tianrui Huo",
+    "Hangzhen Li",
+    "Xin Zhang",
+    "Guojie Song"
    ],
-   "abstract": "Large language model (LLM) agents routinely interact with untrusted external data, exposing them to indirect prompt injection (IPI) attacks that hijack agents into executing attacker-chosen tasks. To uncover these vulnerabilities at scale, automated red-teaming methods often leverage reinforcement learning (RL) to generate attacks that achieve high attack success rates (ASR). Model developers use the attacks discovered during internal red-teaming to harden agents through adversarial training before deployment, a collaborative offensive-defensive process known in cybersecurity as purple-teaming. However, we show that achieving high ASR during red-teaming does not guarantee robustness gains from subsequent adversarial training. Specifically, we find that two state-of-the-art RL-based red-teaming methods, RL-Hammer and PISmith, suffer from mode collapse, repeatedly discovering similar attack strategies whose additional successes add no additional robustness improvements to adversarial training. To address this gap, we introduce PIPETTE, a unified prompt injection purple-teaming framework that effectively converts red-teaming discoveries into defender robustness improvements. PIPETTE employs a dictionary learning-based reward that encourages broader coverage of attack strategies during red-teaming. It also integrates an on-policy adversarial training pipeline tailored to IPI defense, enabling agents to resist attacks while completing legitimate user tasks. Extensive evaluations across agentic benchmarks (AgentDojo and ASB) demonstrate that PIPETTE produces defenders that achieve near-zero attack success rates on static attacks and can withstand strong adaptive attacks, while maintaining benign task utility close to that of the undefended baseline.",
-   "primary": "cs.CR",
+   "abstract": "Large language models (LLMs) are increasingly used to infer psychological attributes, predict individual behaviour, and simulate human populations. However, despite generating plausible responses, they often misrepresent individuals and distort population statistics. Here we introduce Chiron, a foundation model to measure and predict human behaviour. We jointly fine-tune an LLM to represent psychological constructs, predict individual behaviour, and align population response distributions with human statistics. The training and evaluation data span 36 behavioural domains and 78 social science experiments, comprising 288,307 person records, 1,411,750 atomic behavioural decisions, and 99,953 psychometric assessments over 109 psychological constructs. In our evaluations, Chiron's psychological measurements agree more closely with human self-reports and exhibit fewer biases that undermine psychometric validity. It predicts individual behaviour more accurately than frontier LLMs (up to 28.4% relative improvement). In simulations of social science experiments, it more accurately captures the direction and magnitude of human experimental effects (82.2--94.3% lower effect-size estimation error). Together, these results establish Chiron as a unified computational instrument for measuring and predicting human behaviour.",
+   "primary": "cs.CL",
    "categories": [
-    "cs.CR",
-    "cs.AI"
+    "cs.CL",
+    "cs.AI",
+    "cs.HC"
    ],
-   "published": "2026-11-18T12:56:06Z",
-   "updated": "2026-11-20T22:23:16Z",
-   "comment": "18 pages, 6 figures",
+   "published": "2026-11-18T17:59:08Z",
+   "updated": "2026-11-18T17:59:08Z",
+   "comment": "48 pages, 6 figures",
    "listed": "2026-11-19",
    "tags": [
-    "safety",
-    "agents",
-    "RL",
-    "alignment"
+    "LLM",
+    "alignment",
+    "benchmark",
+    "dataset"
    ],
-   "hf_upvotes": 8,
+   "hf_upvotes": 5,
    "ax_votes": 7,
-   "ax_visits": 84,
-   "heat": 23.4,
+   "ax_visits": 102,
+   "heat": 22.2,
    "orgs": [
     {
-     "logo": "data/logos/uwaterloo.ca.png",
-     "name": "University of Waterloo",
-     "ror": "01aff2v68"
-    },
-    {
-     "name": "Zhejiang University",
-     "ror": "00a2xv884"
-    },
-    {
-     "logo": "data/logos/kth.se.png",
-     "name": "KTH Royal Institute of Technology",
-     "ror": "026vcq606"
+     "logo": "data/logos/pku.edu.cn.png",
+     "name": "Peking University",
+     "ror": "02v51f717"
     }
    ],
-   "thumb": "data/thumbs/2611.24362.jpg",
+   "thumb": "data/thumbs/2611.24830.jpg",
    "thumb_w": 640,
-   "thumb_h": 392,
+   "thumb_h": 368,
    "summary": {
-    "en": "PIPETTE is a unified prompt-injection purple-teaming framework combining a dictionary-learning reward for broader attack-strategy coverage with on-policy adversarial training; on AgentDojo and ASB it yields near-zero static attack success and strong adaptive-attack robustness while preserving benign utility.",
-    "zh": "PIPETTE 是一个统一的提示注入红蓝对抗框架，用基于字典学习的奖励鼓励红队覆盖更多攻击策略，并结合面向 IPI 防御的 on-policy 对抗训练；在 AgentDojo 和 ASB 上，防御器面对静态攻击成功率接近零，能抵御强自适应攻击，正常任务效用接近未防御基线。"
+    "en": "Chiron jointly fine-tunes an LLM to represent psychological constructs, predict individual behaviour, and align population distributions, improving individual prediction by up to 28.4% over frontier LLMs and cutting effect-size estimation error by 82.2–94.3%.",
+    "zh": "Chiron 通过联合微调 LLM 来表征心理构念、预测个体行为并对齐群体响应分布，训练与评估覆盖 36 个行为域、78 个社会科学实验和 288,307 条个体记录；其心理测量与人类自报更一致，个体行为预测相对前沿 LLM 最高提升 28.4%，实验效应量估计误差降低 82.2–94.3%。"
    },
    "summary_source": "deepseek-flash",
-   "sections": [
-    "rl"
-   ]
+   "sections": []
   },
   {
    "id": "2611.21553",
@@ -1118,54 +1166,6 @@
    "sections": []
   },
   {
-   "id": "2611.24830",
-   "title": "A Foundation Model to Measure and Predict Human Behaviour",
-   "authors": [
-    "Haoran Ye",
-    "Tianrui Huo",
-    "Hangzhen Li",
-    "Xin Zhang",
-    "Guojie Song"
-   ],
-   "abstract": "Large language models (LLMs) are increasingly used to infer psychological attributes, predict individual behaviour, and simulate human populations. However, despite generating plausible responses, they often misrepresent individuals and distort population statistics. Here we introduce Chiron, a foundation model to measure and predict human behaviour. We jointly fine-tune an LLM to represent psychological constructs, predict individual behaviour, and align population response distributions with human statistics. The training and evaluation data span 36 behavioural domains and 78 social science experiments, comprising 288,307 person records, 1,411,750 atomic behavioural decisions, and 99,953 psychometric assessments over 109 psychological constructs. In our evaluations, Chiron's psychological measurements agree more closely with human self-reports and exhibit fewer biases that undermine psychometric validity. It predicts individual behaviour more accurately than frontier LLMs (up to 28.4% relative improvement). In simulations of social science experiments, it more accurately captures the direction and magnitude of human experimental effects (82.2--94.3% lower effect-size estimation error). Together, these results establish Chiron as a unified computational instrument for measuring and predicting human behaviour.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL",
-    "cs.AI",
-    "cs.HC"
-   ],
-   "published": "2026-11-18T17:59:08Z",
-   "updated": "2026-11-18T17:59:08Z",
-   "comment": "48 pages, 6 figures",
-   "listed": "2026-11-19",
-   "tags": [
-    "LLM",
-    "alignment",
-    "benchmark",
-    "dataset"
-   ],
-   "hf_upvotes": 5,
-   "ax_votes": 7,
-   "ax_visits": 102,
-   "heat": 22.2,
-   "orgs": [
-    {
-     "logo": "data/logos/pku.edu.cn.png",
-     "name": "Peking University",
-     "ror": "02v51f717"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24830.jpg",
-   "thumb_w": 640,
-   "thumb_h": 368,
-   "summary": {
-    "en": "Chiron jointly fine-tunes an LLM to represent psychological constructs, predict individual behaviour, and align population distributions, improving individual prediction by up to 28.4% over frontier LLMs and cutting effect-size estimation error by 82.2–94.3%.",
-    "zh": "Chiron 通过联合微调 LLM 来表征心理构念、预测个体行为并对齐群体响应分布，训练与评估覆盖 36 个行为域、78 个社会科学实验和 288,307 条个体记录；其心理测量与人类自报更一致，个体行为预测相对前沿 LLM 最高提升 28.4%，实验效应量估计误差降低 82.2–94.3%。"
-   },
-   "summary_source": "deepseek-flash",
-   "sections": []
-  },
-  {
    "id": "2611.24941",
    "title": "UltraTex: Aligning Physical Knowledge for High-Fidelity PBR Texture Generation",
    "authors": [
@@ -1271,6 +1271,49 @@
    "sections": []
   },
   {
+   "id": "2611.24576",
+   "title": "Late Entry in Looped Language Models",
+   "authors": [
+    "Ziqi Jin",
+    "Jiaxi Li",
+    "Weiwen Xu",
+    "Aixin Sun"
+   ],
+   "abstract": "Looped language models deepen reasoning at a compact parameter count by iterating a shared layer stack T times per token, turning recurrence depth directly into sequential decoding latency. Conventional early-exit decoding halts after initial passes without cache completion, truncating cached key-value states of past tokens to shallow depth. We study the opposite strategy, late entry, where new tokens skip initial passes and enter directly into the final K < T passes over a deep context cache. Once lightweight fine-tuning resolves hidden-state norm mismatch at the entry boundary, deep cached context substitutes for skipped token-local passes, allowing late entry to outperform matched early exit across model families and pass budgets. To turn this asymmetry into wall-clock speedups without stalling to build deep caches, candidate blocks verify through only the final K passes on the critical path while previously committed tokens complete passes 1 -> T alongside subsequent steps at zero extra serial calls. Projecting these finished T-pass wake states inside the existing output GEMM (Wake verification, governed by logit-margin tolerance tau in [0, inf]) unifies greedy-exact T-pass decoding (tau = 0, matching K = T block decoding within bf16 reduction order), margin-gated verification (tau > 0), and non-rollback lossy late entry (tau = inf) inside a single static CUDA graph. On Ouro-2.6B (T = 4), K = 2 Wake reaches 5.2x greedy-exact speedup at tau = 0 (+26% over K = 4 block decoding on GSM8K) and 6.8x at tau = inf (+16.9 points over trained early exit at matched speed). Scaling test-time recurrence across T in {8, 16, 32, 64} on Huginn-3.5B cuts K = T/4 rollbacks 21.5x with depth, driving greedy-exact (tau = 0) speedups to 6.1x (T = 32) and 8.4x (T = 64, +153% over K = 64 block) and tau = inf speedups to 10.6 to 12.5x.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL"
+   ],
+   "published": "2026-11-18T15:09:01Z",
+   "updated": "2026-11-18T15:09:01Z",
+   "comment": "25 pages, 9 figures",
+   "listed": "2026-11-19",
+   "tags": [
+    "LLM",
+    "efficiency",
+    "reasoning"
+   ],
+   "hf_upvotes": 9,
+   "ax_votes": 4,
+   "ax_visits": 54,
+   "heat": 18.4,
+   "orgs": [
+    {
+     "name": "NTU",
+     "ror": "02e7b5302"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24576.jpg",
+   "thumb_w": 640,
+   "thumb_h": 296,
+   "summary": {
+    "en": "Late entry decoding lets new tokens skip early loop passes and enter the final K passes on a deep KV cache; Wake verification in the output GEMM yields 5.2x greedy-exact speedup on Ouro-2.6B.",
+    "zh": " late entry 解码策略：新 token 跳过前几轮迭代，直接进入深层 KV cache 的最后 K 轮，并借 Wake verification 复用已完成的 T 轮状态；在 Ouro-2.6B 上 tau=0 时比贪心精确解码快 5.2 倍，tau=inf 时比早退基线高 16.9 分。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
    "id": "2611.19200",
    "title": "LogT: Logically Think with Images for Visual Search",
    "authors": [
@@ -1323,49 +1366,6 @@
    "sections": [
     "rl"
    ]
-  },
-  {
-   "id": "2611.24576",
-   "title": "Late Entry in Looped Language Models",
-   "authors": [
-    "Ziqi Jin",
-    "Jiaxi Li",
-    "Weiwen Xu",
-    "Aixin Sun"
-   ],
-   "abstract": "Looped language models deepen reasoning at a compact parameter count by iterating a shared layer stack T times per token, turning recurrence depth directly into sequential decoding latency. Conventional early-exit decoding halts after initial passes without cache completion, truncating cached key-value states of past tokens to shallow depth. We study the opposite strategy, late entry, where new tokens skip initial passes and enter directly into the final K < T passes over a deep context cache. Once lightweight fine-tuning resolves hidden-state norm mismatch at the entry boundary, deep cached context substitutes for skipped token-local passes, allowing late entry to outperform matched early exit across model families and pass budgets. To turn this asymmetry into wall-clock speedups without stalling to build deep caches, candidate blocks verify through only the final K passes on the critical path while previously committed tokens complete passes 1 -> T alongside subsequent steps at zero extra serial calls. Projecting these finished T-pass wake states inside the existing output GEMM (Wake verification, governed by logit-margin tolerance tau in [0, inf]) unifies greedy-exact T-pass decoding (tau = 0, matching K = T block decoding within bf16 reduction order), margin-gated verification (tau > 0), and non-rollback lossy late entry (tau = inf) inside a single static CUDA graph. On Ouro-2.6B (T = 4), K = 2 Wake reaches 5.2x greedy-exact speedup at tau = 0 (+26% over K = 4 block decoding on GSM8K) and 6.8x at tau = inf (+16.9 points over trained early exit at matched speed). Scaling test-time recurrence across T in {8, 16, 32, 64} on Huginn-3.5B cuts K = T/4 rollbacks 21.5x with depth, driving greedy-exact (tau = 0) speedups to 6.1x (T = 32) and 8.4x (T = 64, +153% over K = 64 block) and tau = inf speedups to 10.6 to 12.5x.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL"
-   ],
-   "published": "2026-11-18T15:09:01Z",
-   "updated": "2026-11-18T15:09:01Z",
-   "comment": "25 pages, 9 figures",
-   "listed": "2026-11-19",
-   "tags": [
-    "LLM",
-    "efficiency",
-    "reasoning"
-   ],
-   "hf_upvotes": 9,
-   "ax_votes": 4,
-   "ax_visits": 54,
-   "heat": 18.4,
-   "orgs": [
-    {
-     "name": "NTU",
-     "ror": "02e7b5302"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24576.jpg",
-   "thumb_w": 640,
-   "thumb_h": 296,
-   "summary": {
-    "en": "Late entry decoding lets new tokens skip early loop passes and enter the final K passes on a deep KV cache; Wake verification in the output GEMM yields 5.2x greedy-exact speedup on Ouro-2.6B.",
-    "zh": " late entry 解码策略：新 token 跳过前几轮迭代，直接进入深层 KV cache 的最后 K 轮，并借 Wake verification 复用已完成的 T 轮状态；在 Ouro-2.6B 上 tau=0 时比贪心精确解码快 5.2 倍，tau=inf 时比早退基线高 16.9 分。"
-   },
-   "summary_source": "deepseek-flash",
-   "sections": []
   },
   {
    "id": "2611.14848",
