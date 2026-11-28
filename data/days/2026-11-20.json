@@ -978,60 +978,6 @@
    "sections": []
   },
   {
-   "id": "2611.26107",
-   "title": "HiUni: Harmonizing Understanding and Generation in Shared Visual Space",
-   "authors": [
-    "Jiahao Hu",
-    "Jingdong Du",
-    "Yichen Zhang",
-    "Yi Song",
-    "Zhenyu Zhang",
-    "Jiaxin Niu",
-    "Ruihang Li",
-    "Xiangzhao Hao",
-    "Yiqian Zhang",
-    "Yong Huang",
-    "Zefeng Zhang",
-    "Zheyuan Gu",
-    "Shuohuan Wang"
-   ],
-   "abstract": "Unified multimodal models aim to support visual understanding and generation within a single framework. However, prevailing approaches often separate their visual representations or backbone computation to accommodate the different requirements of these two tasks, which limits the degree of unification. In this paper, we present HiUni, which revisits this design choice and explores whether a pretrained vision language model can be directly extended into a unified model with extensive parameter sharing. Specifically, HiUni reuses the same language-aligned ViT and dense Transformer backbone for both capabilities, while confining task-specific computation to the output side. Yet such a design introduces two key challenges. Generation in pixel space is difficult to optimize, and semantic abstraction in pretrained ViT discards fine spatial details required for synthesis. To address these challenges, HiUni introduces a \\emph{Pixel Diffusion Head} tailored to direct pixel-space optimization and a lightweight \\emph{HiGate} pathway that provides fine-grained spatial details near the output stage. Extensive experiments show that HiUni achieves a similar average understanding score to the pretrained VLM while attaining competitive performance on image generation and editing. Controlled comparisons and analyses further demonstrate that a single dense backbone can effectively support both capabilities without task-specific backbone computation, highlighting a simpler path toward unified multimodal modeling.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.AI"
-   ],
-   "published": "2026-11-19T13:37:47Z",
-   "updated": "2026-11-19T13:37:47Z",
-   "comment": "",
-   "tags": [
-    "multimodal",
-    "image generation",
-    "VLM",
-    "diffusion"
-   ],
-   "summary": {
-    "en": "HiUni reuses one language-aligned ViT and dense Transformer backbone for both visual understanding and generation, adding a Pixel Diffusion Head and lightweight HiGate at the output; it matches the pretrained VLM's average understanding score while remaining competitive on generation and editing.",
-    "zh": "HiUni 复用同一个与语言对齐的 ViT 和稠密 Transformer 骨干同时做视觉理解与生成，只在输出端加 Pixel Diffusion Head 直接优化像素空间，并用轻量 HiGate 补充细粒度空间细节；理解均分与预训练 VLM 接近，生成和编辑也具竞争力。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 26,
-   "ax_votes": 1,
-   "ax_visits": 69,
-   "heat": 33.9,
-   "orgs": [
-    {
-     "logo": "data/logos/baidu.com.png",
-     "name": "Baidu"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26107.jpg",
-   "thumb_w": 640,
-   "thumb_h": 266,
-   "listed": "2026-11-20",
-   "sections": []
-  },
-  {
    "id": "2611.24193",
    "title": "WM^MLLM: Turning MLLMs into World Models",
    "authors": [
@@ -1085,6 +1031,60 @@
     "zh": "WM^MLLM 用 MLLM 把世界状态存为带修订历史的全景图并执行编辑操作，图像与视频生成器只负责渲染视图，在 MBench-A 上 Epipolar 达 91.5（基线 0.1–74.0），相机往返完成率 85.3%（基线最高 50.9%），15 项 CompBench 指标全部最优。"
    },
    "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.26107",
+   "title": "HiUni: Harmonizing Understanding and Generation in Shared Visual Space",
+   "authors": [
+    "Jiahao Hu",
+    "Jingdong Du",
+    "Yichen Zhang",
+    "Yi Song",
+    "Zhenyu Zhang",
+    "Jiaxin Niu",
+    "Ruihang Li",
+    "Xiangzhao Hao",
+    "Yiqian Zhang",
+    "Yong Huang",
+    "Zefeng Zhang",
+    "Zheyuan Gu",
+    "Shuohuan Wang"
+   ],
+   "abstract": "Unified multimodal models aim to support visual understanding and generation within a single framework. However, prevailing approaches often separate their visual representations or backbone computation to accommodate the different requirements of these two tasks, which limits the degree of unification. In this paper, we present HiUni, which revisits this design choice and explores whether a pretrained vision language model can be directly extended into a unified model with extensive parameter sharing. Specifically, HiUni reuses the same language-aligned ViT and dense Transformer backbone for both capabilities, while confining task-specific computation to the output side. Yet such a design introduces two key challenges. Generation in pixel space is difficult to optimize, and semantic abstraction in pretrained ViT discards fine spatial details required for synthesis. To address these challenges, HiUni introduces a \\emph{Pixel Diffusion Head} tailored to direct pixel-space optimization and a lightweight \\emph{HiGate} pathway that provides fine-grained spatial details near the output stage. Extensive experiments show that HiUni achieves a similar average understanding score to the pretrained VLM while attaining competitive performance on image generation and editing. Controlled comparisons and analyses further demonstrate that a single dense backbone can effectively support both capabilities without task-specific backbone computation, highlighting a simpler path toward unified multimodal modeling.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-19T13:37:47Z",
+   "updated": "2026-11-19T13:37:47Z",
+   "comment": "",
+   "tags": [
+    "multimodal",
+    "image generation",
+    "VLM",
+    "diffusion"
+   ],
+   "summary": {
+    "en": "HiUni reuses one language-aligned ViT and dense Transformer backbone for both visual understanding and generation, adding a Pixel Diffusion Head and lightweight HiGate at the output; it matches the pretrained VLM's average understanding score while remaining competitive on generation and editing.",
+    "zh": "HiUni 复用同一个与语言对齐的 ViT 和稠密 Transformer 骨干同时做视觉理解与生成，只在输出端加 Pixel Diffusion Head 直接优化像素空间，并用轻量 HiGate 补充细粒度空间细节；理解均分与预训练 VLM 接近，生成和编辑也具竞争力。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 26,
+   "ax_votes": 1,
+   "ax_visits": 69,
+   "heat": 33.9,
+   "orgs": [
+    {
+     "logo": "data/logos/baidu.com.png",
+     "name": "Baidu"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26107.jpg",
+   "thumb_w": 640,
+   "thumb_h": 266,
+   "listed": "2026-11-20",
    "sections": []
   },
   {
@@ -1851,36 +1851,6 @@
    "sections": []
   },
   {
-   "id": "2611.21053",
-   "title": "System 1 agents: a method for local, reliable and fast agentic AI",
-   "authors": [
-    "Eleftherios Tzanis",
-    "Michail E. Klontzas"
-   ],
-   "abstract": "Agentic artificial intelligence could automate analyses of sensitive clinical data, but current agents depend on large language models (LLMs). Cloud LLMs expose patient data. Local LLMs hallucinate, and an invented value in a tool call propagates through every later step. Here we present a method to build System 1 agents: local agents that call tools without generating text. A deterministic compiler turns each tool's schema and the request into multiple-choice questions whose options come from the request and the schema, then a one-pass decision model answers them. On 1,952 requests to 157 biomedical tools, the best System 1 agent chose the right tool, or correctly declined, for 97.0% of requests, significantly ahead of all 18 local LLM-agent settings (best 95.2%). The System 1 agent filled 97.0% of 6,056 stated argument values. No System 1 call contained invented content, against 5.5-19.7% of LLM calls. The System 1 Agents framework is freely available as open-source software at https://github.com/eltzanis/SystemOneAgents.",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI"
-   ],
-   "published": "2026-11-16T13:05:32Z",
-   "updated": "2026-11-16T13:05:32Z",
-   "comment": "18 pages, 5 figures, 9 tables. Code and data: https://github.com/eltzanis/SystemOneAgents",
-   "code_url": "https://github.com/eltzanis/SystemOneAgents",
-   "listed": "2026-11-20",
-   "tags": [
-    "VLM/LLM"
-   ],
-   "hf_upvotes": 10,
-   "ax_votes": 1,
-   "ax_visits": 19,
-   "heat": 12.9,
-   "orgs": [],
-   "thumb": "data/thumbs/2611.21053.jpg",
-   "thumb_w": 529,
-   "thumb_h": 440,
-   "sections": []
-  },
-  {
    "id": "2611.25935",
    "title": "TwinD: Generalizing Deepfake Detection from Blending to Entire Face Synthesis",
    "authors": [
@@ -1922,6 +1892,36 @@
    "thumb": "data/thumbs/2611.25935.jpg",
    "thumb_w": 640,
    "thumb_h": 232,
+   "sections": []
+  },
+  {
+   "id": "2611.21053",
+   "title": "System 1 agents: a method for local, reliable and fast agentic AI",
+   "authors": [
+    "Eleftherios Tzanis",
+    "Michail E. Klontzas"
+   ],
+   "abstract": "Agentic artificial intelligence could automate analyses of sensitive clinical data, but current agents depend on large language models (LLMs). Cloud LLMs expose patient data. Local LLMs hallucinate, and an invented value in a tool call propagates through every later step. Here we present a method to build System 1 agents: local agents that call tools without generating text. A deterministic compiler turns each tool's schema and the request into multiple-choice questions whose options come from the request and the schema, then a one-pass decision model answers them. On 1,952 requests to 157 biomedical tools, the best System 1 agent chose the right tool, or correctly declined, for 97.0% of requests, significantly ahead of all 18 local LLM-agent settings (best 95.2%). The System 1 agent filled 97.0% of 6,056 stated argument values. No System 1 call contained invented content, against 5.5-19.7% of LLM calls. The System 1 Agents framework is freely available as open-source software at https://github.com/eltzanis/SystemOneAgents.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-16T13:05:32Z",
+   "updated": "2026-11-16T13:05:32Z",
+   "comment": "18 pages, 5 figures, 9 tables. Code and data: https://github.com/eltzanis/SystemOneAgents",
+   "code_url": "https://github.com/eltzanis/SystemOneAgents",
+   "listed": "2026-11-20",
+   "tags": [
+    "VLM/LLM"
+   ],
+   "hf_upvotes": 10,
+   "ax_votes": 1,
+   "ax_visits": 19,
+   "heat": 12.9,
+   "orgs": [],
+   "thumb": "data/thumbs/2611.21053.jpg",
+   "thumb_w": 529,
+   "thumb_h": 440,
    "sections": []
   },
   {
@@ -2035,8 +2035,8 @@
     "rl"
    ],
    "summary": {
-    "zh": "PAD 为每个候选驾驶演示按目标策略分配特定效用值，结合场景级校准反馈、投影策略梯度与局部训练几何的正则近似计算可扩展的影响值；在 DiffusionDrive 上，NavTest 的 EPDMS 比仅用真实数据提升 3.5 分、NavHard 提升 5.0 分，并显著减少场景级性能回退。",
-    "en": "PAD assigns each driving demonstration a policy-specific utility via scene-level calibration feedback, projected policy gradients, and regularized local training geometry; on DiffusionDrive it lifts EPDMS by 3.5 (NavTest) and 5.0 (NavHard) over real-only training."
+    "en": "PAD assigns each driving demonstration a policy-specific utility via scene-level calibration feedback, projected policy gradients, and regularized local training geometry; on DiffusionDrive it lifts EPDMS by 3.5 (NavTest) and 5.0 (NavHard) over real-only training.",
+    "zh": "PAD 为每个候选驾驶演示按目标策略分配特定效用值，结合场景级校准反馈、投影策略梯度与局部训练几何的正则近似计算可扩展的影响值；在 DiffusionDrive 上，NavTest 的 EPDMS 比仅用真实数据提升 3.5 分、NavHard 提升 5.0 分，并显著减少场景级性能回退。"
    },
    "summary_source": "deepseek-flash"
   },

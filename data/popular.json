@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-28T02:44:54+00:00",
+ "updated_at": "2026-11-28T03:15:19+00:00",
  "newest": "2026-11-27",
  "periods": {
   "7": {
@@ -94,9 +94,9 @@
       "zh": "等算力阶梯（equal-budget ladder），在单智能体、算力对齐多数投票与算力对齐 pass@n 三级上衡量多智能体团队，并定义 Recursive Collective Intelligence（RCI）：无教师、无外部标签，团队用自身输出让下一代同等成本更聪明；转发拆分事实可在 27B 上超 pass@n 约三分之一，同质 27B 智能体自发形成枢纽使准确率提升 18 个百分点，两代无标签训练在 PlanBench、HiddenBench、Hanabi 上连续 4–6 代优于前代。"
      },
      "summary_source": "deepseek-flash",
-     "ax_votes": 159,
+     "ax_votes": 160,
      "ax_visits": 1937,
-     "heat": 352.7,
+     "heat": 353.7,
      "orgs": [
       {
        "logo": "data/logos/stanford.edu.png",
@@ -609,9 +609,9 @@
      },
      "summary_source": "deepseek-flash",
      "hf_upvotes": 1,
-     "ax_votes": 56,
+     "ax_votes": 57,
      "ax_visits": 714,
-     "heat": 128.4,
+     "heat": 129.4,
      "orgs": [
       {
        "name": "Tsinghua University",
@@ -1432,9 +1432,9 @@
       "zh": "等算力阶梯（equal-budget ladder），在单智能体、算力对齐多数投票与算力对齐 pass@n 三级上衡量多智能体团队，并定义 Recursive Collective Intelligence（RCI）：无教师、无外部标签，团队用自身输出让下一代同等成本更聪明；转发拆分事实可在 27B 上超 pass@n 约三分之一，同质 27B 智能体自发形成枢纽使准确率提升 18 个百分点，两代无标签训练在 PlanBench、HiddenBench、Hanabi 上连续 4–6 代优于前代。"
      },
      "summary_source": "deepseek-flash",
-     "ax_votes": 159,
+     "ax_votes": 160,
      "ax_visits": 1937,
-     "heat": 352.7,
+     "heat": 353.7,
      "orgs": [
       {
        "logo": "data/logos/stanford.edu.png",
@@ -2258,9 +2258,9 @@
      },
      "summary_source": "deepseek-flash",
      "hf_upvotes": 1,
-     "ax_votes": 56,
+     "ax_votes": 57,
      "ax_visits": 714,
-     "heat": 128.4,
+     "heat": 129.4,
      "orgs": [
       {
        "name": "Tsinghua University",

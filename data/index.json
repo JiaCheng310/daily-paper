@@ -1,6 +1,6 @@
 {
  "title": "Daily Paper",
- "updated_at": "2026-11-28T02:40:51+00:00",
+ "updated_at": "2026-11-28T03:11:29+00:00",
  "default_category": "all",
  "categories": [
   {
@@ -11,7 +11,8 @@
   {
    "id": "rl",
    "name": "Reinforcement learning",
-   "name_zh": "强化学习"
+   "name_zh": "强化学习",
+   "limit": 10
   }
  ],
  "category_names": {

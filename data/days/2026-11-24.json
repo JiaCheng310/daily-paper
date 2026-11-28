@@ -356,9 +356,9 @@
    },
    "summary_source": "deepseek-flash",
    "hf_upvotes": 1,
-   "ax_votes": 56,
+   "ax_votes": 57,
    "ax_visits": 714,
-   "heat": 128.4,
+   "heat": 129.4,
    "orgs": [
     {
      "name": "Tsinghua University",
@@ -2373,80 +2373,6 @@
    "sections": []
   },
   {
-   "id": "2611.28943",
-   "title": "SANA-Robot: Efficient World Action Model with Hybrid Memory",
-   "authors": [
-    "Yuyang Zhao",
-    "Zekai Li",
-    "Yicheng Pan",
-    "Jiaming Tang",
-    "Zhuoyang Zhang",
-    "Jiaxu Xing",
-    "Moritz Reuss",
-    "Quanquan Peng",
-    "Junsong Chen",
-    "Enze Xie",
-    "Zhijian Liu",
-    "Song Han"
-   ],
-   "abstract": "World action models (WAMs) leverage the world knowledge of video generation models to improve action generation by aligning visual prediction with action prediction. However, their prediction overhead prevents real-time deployment on edge devices, and they usually lack an effective long-term memory. We introduce SANA-Robot, a 4.5B WAM with minute-level memory that runs in real time on edge devices, built on the following core designs: (1) hybrid memory at constant cost: our WAM relies on linear attention to maintain a global memory with a fixed-size state, and on sliding window softmax attention layers that propagate previous information, enabling high success rates on tasks requiring whole-episode memory while keeping an efficient and constant inference speed; (2) a unified model: by dynamically applying different noise levels to action and video tokens, SANA-Robot can serve not only as a policy but also as a world simulator; (3) a full-stack infrastructure for both memory training and inference, including efficient data packing and shuffling as well as memory-phase-based asynchronous execution. SANA-Robot achieves the best performance on the memory dimension of RoboDojo among models of medium size (about 5B) and the highest success rates on LIBERO-Plus, LIBERO-Pro and LIBERO-Max. In real-world deployment, SANA-Robot takes 135 ms per action chunk on an RTX 5090 with FP8 GEMMs and 115 ms with NVFP4 GEMMs, and achieves closed-loop, real-time asynchronous robot control at 30 Hz on edge devices, demonstrating both the efficiency and the effectiveness of SANA-Robot. Project page: https://nvlabs.github.io/Sana/Robot/",
-   "primary": "cs.RO",
-   "categories": [
-    "cs.RO",
-    "cs.CV"
-   ],
-   "published": "2026-11-21T17:23:39Z",
-   "updated": "2026-11-21T17:23:39Z",
-   "comment": "",
-   "tags": [
-    "robotics",
-    "world model",
-    "efficiency",
-    "VLA"
-   ],
-   "summary": {
-    "en": "SANA-Robot is a 4.5B world action model combining linear-attention global memory with sliding-window softmax attention for minute-level hybrid memory at constant cost, achieving top RoboDojo memory results and LIBERO-Plus/Pro/Max success rates, running 30 Hz closed-loop on edge devices.",
-    "zh": "SANA-Robot 是一个 4.5B 的世界动作模型，通过线性注意力维持固定大小的全局记忆、滑动窗口 softmax 注意力传递历史信息，实现分钟级混合记忆与恒定开销推理；在 RoboDojo 记忆维度上取得中等规模模型最佳表现，并在 LIBERO-Plus、LIBERO-Pro、LIBERO-Max 上取得最高成功率，RTX 5090 上单动作块推理耗时 135 ms（FP8）/115 ms（NVFP4），边缘设备实现 30 Hz 闭环实时控制。"
-   },
-   "summary_source": "deepseek-flash",
-   "ax_votes": 10,
-   "ax_visits": 188,
-   "heat": 28.8,
-   "orgs": [
-    {
-     "logo": "data/logos/nvidia.com.png",
-     "name": "NVIDIA"
-    },
-    {
-     "logo": "data/logos/ucsd.edu.png",
-     "name": "UC San Diego",
-     "ror": "0168r3w48"
-    },
-    {
-     "name": "Tsinghua University",
-     "ror": "03cve4549"
-    },
-    {
-     "logo": "data/logos/mit.edu.png",
-     "name": "MIT",
-     "ror": "042nb2s44"
-    },
-    {
-     "logo": "data/logos/hku.hk.png",
-     "name": "HKU",
-     "ror": "02zhqgq86"
-    },
-    {
-     "name": "Inco AI"
-    }
-   ],
-   "thumb": "data/thumbs/2611.28943.jpg",
-   "thumb_w": 640,
-   "thumb_h": 205,
-   "listed": "2026-11-24",
-   "sections": []
-  },
-  {
    "id": "2611.25476",
    "title": "WeightCode: Installing New Capabilities into Neural Networks via Weight-Space Programming",
    "authors": [
@@ -2530,6 +2456,80 @@
    "thumb": "data/thumbs/2611.25476.jpg",
    "thumb_w": 640,
    "thumb_h": 399,
+   "listed": "2026-11-24",
+   "sections": []
+  },
+  {
+   "id": "2611.28943",
+   "title": "SANA-Robot: Efficient World Action Model with Hybrid Memory",
+   "authors": [
+    "Yuyang Zhao",
+    "Zekai Li",
+    "Yicheng Pan",
+    "Jiaming Tang",
+    "Zhuoyang Zhang",
+    "Jiaxu Xing",
+    "Moritz Reuss",
+    "Quanquan Peng",
+    "Junsong Chen",
+    "Enze Xie",
+    "Zhijian Liu",
+    "Song Han"
+   ],
+   "abstract": "World action models (WAMs) leverage the world knowledge of video generation models to improve action generation by aligning visual prediction with action prediction. However, their prediction overhead prevents real-time deployment on edge devices, and they usually lack an effective long-term memory. We introduce SANA-Robot, a 4.5B WAM with minute-level memory that runs in real time on edge devices, built on the following core designs: (1) hybrid memory at constant cost: our WAM relies on linear attention to maintain a global memory with a fixed-size state, and on sliding window softmax attention layers that propagate previous information, enabling high success rates on tasks requiring whole-episode memory while keeping an efficient and constant inference speed; (2) a unified model: by dynamically applying different noise levels to action and video tokens, SANA-Robot can serve not only as a policy but also as a world simulator; (3) a full-stack infrastructure for both memory training and inference, including efficient data packing and shuffling as well as memory-phase-based asynchronous execution. SANA-Robot achieves the best performance on the memory dimension of RoboDojo among models of medium size (about 5B) and the highest success rates on LIBERO-Plus, LIBERO-Pro and LIBERO-Max. In real-world deployment, SANA-Robot takes 135 ms per action chunk on an RTX 5090 with FP8 GEMMs and 115 ms with NVFP4 GEMMs, and achieves closed-loop, real-time asynchronous robot control at 30 Hz on edge devices, demonstrating both the efficiency and the effectiveness of SANA-Robot. Project page: https://nvlabs.github.io/Sana/Robot/",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "published": "2026-11-21T17:23:39Z",
+   "updated": "2026-11-21T17:23:39Z",
+   "comment": "",
+   "tags": [
+    "robotics",
+    "world model",
+    "efficiency",
+    "VLA"
+   ],
+   "summary": {
+    "en": "SANA-Robot is a 4.5B world action model combining linear-attention global memory with sliding-window softmax attention for minute-level hybrid memory at constant cost, achieving top RoboDojo memory results and LIBERO-Plus/Pro/Max success rates, running 30 Hz closed-loop on edge devices.",
+    "zh": "SANA-Robot 是一个 4.5B 的世界动作模型，通过线性注意力维持固定大小的全局记忆、滑动窗口 softmax 注意力传递历史信息，实现分钟级混合记忆与恒定开销推理；在 RoboDojo 记忆维度上取得中等规模模型最佳表现，并在 LIBERO-Plus、LIBERO-Pro、LIBERO-Max 上取得最高成功率，RTX 5090 上单动作块推理耗时 135 ms（FP8）/115 ms（NVFP4），边缘设备实现 30 Hz 闭环实时控制。"
+   },
+   "summary_source": "deepseek-flash",
+   "ax_votes": 10,
+   "ax_visits": 188,
+   "heat": 28.8,
+   "orgs": [
+    {
+     "logo": "data/logos/nvidia.com.png",
+     "name": "NVIDIA"
+    },
+    {
+     "logo": "data/logos/ucsd.edu.png",
+     "name": "UC San Diego",
+     "ror": "0168r3w48"
+    },
+    {
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
+    },
+    {
+     "logo": "data/logos/mit.edu.png",
+     "name": "MIT",
+     "ror": "042nb2s44"
+    },
+    {
+     "logo": "data/logos/hku.hk.png",
+     "name": "HKU",
+     "ror": "02zhqgq86"
+    },
+    {
+     "name": "Inco AI"
+    }
+   ],
+   "thumb": "data/thumbs/2611.28943.jpg",
+   "thumb_w": 640,
+   "thumb_h": 205,
    "listed": "2026-11-24",
    "sections": []
   },
@@ -2663,8 +2663,8 @@
     "rl"
    ],
    "summary": {
-    "zh": "审计 SWE-Gym 奖励标签发现，9B 基座模型从未解出的任务中 74% 存在拒绝正确修复的假阴性测试（对比可解任务的 20%），修复或剔除后同规模同难度下模型在 SWE-bench Verified/Pro 上分别高出 2.4 和 2.7 分，并发布含 1,087 个审计任务的 SWE-Gym-Verified。",
-    "en": "Auditing SWE-Gym reward labels reveals 74% of never-solved tasks have false-negative tests versus 20% of solvable ones; repairing them yields +2.4 and +2.7 points on SWE-bench Verified and Pro at equal size, releasing SWE-Gym-Verified with 1,087 audited tasks."
+    "en": "Auditing SWE-Gym reward labels reveals 74% of never-solved tasks have false-negative tests versus 20% of solvable ones; repairing them yields +2.4 and +2.7 points on SWE-bench Verified and Pro at equal size, releasing SWE-Gym-Verified with 1,087 audited tasks.",
+    "zh": "审计 SWE-Gym 奖励标签发现，9B 基座模型从未解出的任务中 74% 存在拒绝正确修复的假阴性测试（对比可解任务的 20%），修复或剔除后同规模同难度下模型在 SWE-bench Verified/Pro 上分别高出 2.4 和 2.7 分，并发布含 1,087 个审计任务的 SWE-Gym-Verified。"
    },
    "summary_source": "deepseek-flash"
   },
@@ -2879,6 +2879,64 @@
    "sections": []
   },
   {
+   "id": "2611.26216",
+   "title": "Frontier models need only one text to unmask its human or AI author",
+   "authors": [
+    "Atrey Desai",
+    "Deniz Bölöni-Turgut",
+    "Ty Brassington",
+    "Minjoon Choi",
+    "Jenna Russell",
+    "Rishanth Rajendhran",
+    "Bradley Emi",
+    "Hila Gonen",
+    "Hal Daumé",
+    "John Wieting",
+    "Marzena Karpinska",
+    "Mohit Iyyer"
+   ],
+   "abstract": "Given a single text and a simple zero-shot prompt (no web access, tools, candidate lists, or writing samples), frontier models can answer \"who wrote this?\" at three increasingly specific levels: (1) whether an AI or human wrote it, (2) if an AI, which lab, and (3) if a human, often exactly who. The latest models (Claude Fable 5.2, GPT-6.1 Sol, Gemini 4 Carbon) match trained detectors like Pangram while also explaining their predictions in natural language, and Opus 5.5 names the correct lab for 98% of texts generated by models from Anthropic, OpenAI, and Google. Most strikingly, Fable 5.2 correctly names the author of 55% of 15K anonymous ICML 2020 reviews that were never made public, and identifies the username behind 69% of comments from active Redditors (with >500 posts over the last year). Accuracy depends on exposure to an author's writing in pretraining data and on reasoning effort, and simply asking a model how familiar it is with someone predicts whether it can identify their writing. For anyone who has published enough writing online, frontier models present a greater threat to anonymity than commonly assumed, and defenses are limited.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL"
+   ],
+   "published": "2026-11-19T14:56:21Z",
+   "updated": "2026-11-23T17:57:30Z",
+   "comment": "",
+   "tags": [],
+   "hf_upvotes": 1,
+   "ax_votes": 5,
+   "ax_visits": 140,
+   "heat": 20.0,
+   "orgs": [
+    {
+     "name": "University of Maryland"
+    },
+    {
+     "logo": "data/logos/sfu.ca.png",
+     "name": "Simon Fraser University",
+     "ror": "0213rcc28"
+    },
+    {
+     "name": "Pangram Labs"
+    },
+    {
+     "logo": "data/logos/ubc.ca.png",
+     "name": "University of British Columbia",
+     "ror": "03rmrcq20"
+    },
+    {
+     "logo": "data/logos/deepmind.google.png",
+     "name": "Google DeepMind"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26216.jpg",
+   "thumb_w": 640,
+   "thumb_h": 270,
+   "listed": "2026-11-24",
+   "sections": []
+  },
+  {
    "id": "2611.30157",
    "title": "UUBench: Understanding the Unspoken toward Full-Duplex Multimodal Interaction",
    "authors": [
@@ -2946,64 +3004,6 @@
    "thumb": "data/thumbs/2611.30157.jpg",
    "thumb_w": 640,
    "thumb_h": 275,
-   "listed": "2026-11-24",
-   "sections": []
-  },
-  {
-   "id": "2611.26216",
-   "title": "Frontier models need only one text to unmask its human or AI author",
-   "authors": [
-    "Atrey Desai",
-    "Deniz Bölöni-Turgut",
-    "Ty Brassington",
-    "Minjoon Choi",
-    "Jenna Russell",
-    "Rishanth Rajendhran",
-    "Bradley Emi",
-    "Hila Gonen",
-    "Hal Daumé",
-    "John Wieting",
-    "Marzena Karpinska",
-    "Mohit Iyyer"
-   ],
-   "abstract": "Given a single text and a simple zero-shot prompt (no web access, tools, candidate lists, or writing samples), frontier models can answer \"who wrote this?\" at three increasingly specific levels: (1) whether an AI or human wrote it, (2) if an AI, which lab, and (3) if a human, often exactly who. The latest models (Claude Fable 5.2, GPT-6.1 Sol, Gemini 4 Carbon) match trained detectors like Pangram while also explaining their predictions in natural language, and Opus 5.5 names the correct lab for 98% of texts generated by models from Anthropic, OpenAI, and Google. Most strikingly, Fable 5.2 correctly names the author of 55% of 15K anonymous ICML 2020 reviews that were never made public, and identifies the username behind 69% of comments from active Redditors (with >500 posts over the last year). Accuracy depends on exposure to an author's writing in pretraining data and on reasoning effort, and simply asking a model how familiar it is with someone predicts whether it can identify their writing. For anyone who has published enough writing online, frontier models present a greater threat to anonymity than commonly assumed, and defenses are limited.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL"
-   ],
-   "published": "2026-11-19T14:56:21Z",
-   "updated": "2026-11-23T17:57:30Z",
-   "comment": "",
-   "tags": [],
-   "hf_upvotes": 1,
-   "ax_votes": 5,
-   "ax_visits": 140,
-   "heat": 20.0,
-   "orgs": [
-    {
-     "name": "University of Maryland"
-    },
-    {
-     "logo": "data/logos/sfu.ca.png",
-     "name": "Simon Fraser University",
-     "ror": "0213rcc28"
-    },
-    {
-     "name": "Pangram Labs"
-    },
-    {
-     "logo": "data/logos/ubc.ca.png",
-     "name": "University of British Columbia",
-     "ror": "03rmrcq20"
-    },
-    {
-     "logo": "data/logos/deepmind.google.png",
-     "name": "Google DeepMind"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26216.jpg",
-   "thumb_w": 640,
-   "thumb_h": 270,
    "listed": "2026-11-24",
    "sections": []
   },
@@ -3398,8 +3398,8 @@
     "manipulation"
    ],
    "summary": {
-    "zh": "ABI 从无标签轨迹中学习无奖励、无 actor 训练的多步动作块表征，测试时仅配轻量任务读出构成 chunk critic 来引导冻结策略；在 65 个任务上引导弱模仿策略匹配或超越零样本 RL 基线，并跨策略迁移。",
-    "en": "ABI learns reward-free, actor-free multi-horizon action-chunk representations from unlabeled trajectories; a lightweight task readout forms a chunk critic that guides frozen policies, matching or surpassing zero-shot RL baselines across 65 tasks."
+    "en": "ABI learns reward-free, actor-free multi-horizon action-chunk representations from unlabeled trajectories; a lightweight task readout forms a chunk critic that guides frozen policies, matching or surpassing zero-shot RL baselines across 65 tasks.",
+    "zh": "ABI 从无标签轨迹中学习无奖励、无 actor 训练的多步动作块表征，测试时仅配轻量任务读出构成 chunk critic 来引导冻结策略；在 65 个任务上引导弱模仿策略匹配或超越零样本 RL 基线，并跨策略迁移。"
    },
    "summary_source": "deepseek-flash",
    "ax_votes": 7,
@@ -3803,17 +3803,17 @@
    ],
    "orgs": [
     {
+     "logo": "data/logos/cornell.edu.png",
      "name": "Cornell University",
-     "ror": "05bnh6r87",
-     "logo": "data/logos/cornell.edu.png"
+     "ror": "05bnh6r87"
     }
    ],
    "thumb": "data/thumbs/2611.26863.jpg",
    "thumb_w": 640,
    "thumb_h": 360,
    "summary": {
-    "zh": "在6个开源模型上发现，推理导向的后训练（outcome-based RL奖励、假设回溯等）会让模型在知识任务中记住自己生成的长链幻觉，被强化过的幻觉召回率平均提升4.83%，而无训练信号的仅0.17%；对幻觉的奖励还使模型后续拒绝该幻觉的概率降低7.23%。",
-    "en": "Across six open models, reasoning-centric post-training (outcome-based RL rewards, backtracking) makes models memorize self-generated hallucinations on knowledge tasks: recall of reinforced hallucinations rises 4.83% versus 0.17%, and rewarding a hallucination lowers later abstention by 7.23%."
+    "en": "Across six open models, reasoning-centric post-training (outcome-based RL rewards, backtracking) makes models memorize self-generated hallucinations on knowledge tasks: recall of reinforced hallucinations rises 4.83% versus 0.17%, and rewarding a hallucination lowers later abstention by 7.23%.",
+    "zh": "在6个开源模型上发现，推理导向的后训练（outcome-based RL奖励、假设回溯等）会让模型在知识任务中记住自己生成的长链幻觉，被强化过的幻觉召回率平均提升4.83%，而无训练信号的仅0.17%；对幻觉的奖励还使模型后续拒绝该幻觉的概率降低7.23%。"
    },
    "summary_source": "deepseek-flash"
   },
@@ -3896,16 +3896,16 @@
      "ror": "00a2xv884"
     },
     {
-     "name": "Huawei",
-     "logo": "data/logos/huawei.com.png"
+     "logo": "data/logos/huawei.com.png",
+     "name": "Huawei"
     }
    ],
    "thumb": "data/thumbs/2611.30627.jpg",
    "thumb_w": 640,
    "thumb_h": 355,
    "summary": {
-    "zh": "针对文本奖励别名问题，Attention Process Reward Model (APRM) 用隐藏状态和注意力图分配内部过程奖励，仅约46M参数，经排序与反事实目标训练并周期性更新，结合代表性RL方法平均提升pass@8 2.88%。",
-    "en": "APRM rewards internal reasoning via hidden states and attention maps, using only ~46M parameters with ranking and counterfactual objectives, and boosts pass@8 by an average 2.88% when integrated with representative RL methods."
+    "en": "APRM rewards internal reasoning via hidden states and attention maps, using only ~46M parameters with ranking and counterfactual objectives, and boosts pass@8 by an average 2.88% when integrated with representative RL methods.",
+    "zh": "针对文本奖励别名问题，Attention Process Reward Model (APRM) 用隐藏状态和注意力图分配内部过程奖励，仅约46M参数，经排序与反事实目标训练并周期性更新，结合代表性RL方法平均提升pass@8 2.88%。"
    },
    "summary_source": "deepseek-flash"
   },
@@ -4753,8 +4753,8 @@
     "RL"
    ],
    "summary": {
-    "zh": "GlanceNav 通过混合 MLLM 实现流式视觉语言导航：Gated DeltaNet 层维护循环状态，注意力层保留近期帧和关键帧库，使每步计算恒定且训练与推理记忆一致；配合 Counterfactual Rewind 强化学习，4B 模型在 R2R-CE 和 RxR-CE val-unseen 上分别达到 71.9% 和 73.6% 成功率，R2R-CE 上比最强单 RGB 无外部数据方法高 9.1 分，每步 104 ms。",
-    "en": "GlanceNav, a hybrid-MLLM streaming navigator, keeps constant-size memory via Gated DeltaNet state and keyframe banks, and uses Counterfactual Rewind RL; a 4B model reaches 71.9% and 73.6% success on R2R-CE and RxR-CE val-unseen at 104 ms per step."
+    "en": "GlanceNav, a hybrid-MLLM streaming navigator, keeps constant-size memory via Gated DeltaNet state and keyframe banks, and uses Counterfactual Rewind RL; a 4B model reaches 71.9% and 73.6% success on R2R-CE and RxR-CE val-unseen at 104 ms per step.",
+    "zh": "GlanceNav 通过混合 MLLM 实现流式视觉语言导航：Gated DeltaNet 层维护循环状态，注意力层保留近期帧和关键帧库，使每步计算恒定且训练与推理记忆一致；配合 Counterfactual Rewind 强化学习，4B 模型在 R2R-CE 和 RxR-CE val-unseen 上分别达到 71.9% 和 73.6% 成功率，R2R-CE 上比最强单 RGB 无外部数据方法高 9.1 分，每步 104 ms。"
    },
    "summary_source": "deepseek-flash",
    "hf_upvotes": 5,
@@ -5155,45 +5155,6 @@
    "sections": []
   },
   {
-   "id": "2611.31195",
-   "title": "VITA-WAM: Manifold-Aligned World-Action Modeling for Real-Time Robot Control",
-   "authors": [
-    "Boqi Zhao",
-    "Dechen Gao",
-    "Hanchu Zhou",
-    "Hang Wang",
-    "Junshan Zhang"
-   ],
-   "abstract": "World action model (WAM) is a promising paradigm for visuomotor control by jointly modeling world dynamics and actions. Notably, existing WAMs often rely on large generative models and iterative sampling which incur substantial latency for action generation, limiting real-time deployment. In particular, there are two root causes of inefficiency in conventional flow matching or diffusion based action models in WAMs: 1) transporting uninformative Gaussian noise into precise actions necessitating multiple ODE steps, and 2) repeatedly injecting task context through expensive cross-attention modules. Our key insight is that jointly learning and aligning the source and action manifolds streamlines the transport between them, substantially accelerating action generation. Building on this insight, we introduce VITA-WAM, a WAM architecture with manifold-aligned flow-matching (VITA flow matching) that directly transports latent observation representations containing visual, language, and proprioceptive information into latent actions. More specifically, a flow latent alignment (FLA) mechanism is employed to facilitate manifold alignment between latent observation and action representations, enabling accurate generation with few ODE steps. The resulting architecture also eliminates costly attention for observation conditioning during repeated denoising steps. Notably, with a single ODE step, VITA-WAM outperforms 10-step FastWAM by 21.47 pp on LIBERO-Plus and by 1.65 pp on LIBERO, achieving these gains through the FLA objective without distillation, while inferring at 55.67~ms latency, a $2.10\\times$ speedup compared to FastWAM.",
-   "primary": "cs.RO",
-   "categories": [
-    "cs.RO"
-   ],
-   "published": "2026-11-23T18:46:15Z",
-   "updated": "2026-11-23T18:46:15Z",
-   "comment": "Project page. http://ucd-dare.github.io/VITA-WAM. Equal Contributors: Boqi Zhao, Dechen Gao. Corresponding Author: Junshan Zhang",
-   "tags": [
-    "world model",
-    "control",
-    "diffusion policy",
-    "manipulation"
-   ],
-   "summary": {
-    "en": "VITA-WAM achieves real-time robot control via manifold-aligned world-action modeling, outperforming FastWAM by 21.47 pp on LIBERO-Plus with a single ODE step while achieving a 2.10x speedup.",
-    "zh": "VITA-WAM通过流形对齐的世界-动作建模方法实现了实时机器人控制，采用VITA流匹配直接将潜空间观测表征转换为潜空间动作。在LIBERO-Plus和LIBERO任务中，该方法仅需单步ODE即可分别超越10步的FastWAM达21.47个百分点和1.65个百分点，同时推理延迟降低至55.67毫秒，实现了2.10倍的加速。"
-   },
-   "summary_source": "gemini-3.5-flash-lite",
-   "ax_votes": 3,
-   "ax_visits": 34,
-   "heat": 6.4,
-   "orgs": [],
-   "thumb": "data/thumbs/2611.31195.jpg",
-   "thumb_w": 640,
-   "thumb_h": 401,
-   "listed": "2026-11-24",
-   "sections": []
-  },
-  {
    "id": "2611.26254",
    "title": "Prism: Hierarchical Text Detection with Minimalist Design",
    "authors": [
@@ -5275,6 +5236,45 @@
    "thumb": "data/thumbs/2611.28445.jpg",
    "thumb_w": 640,
    "thumb_h": 221,
+   "listed": "2026-11-24",
+   "sections": []
+  },
+  {
+   "id": "2611.31195",
+   "title": "VITA-WAM: Manifold-Aligned World-Action Modeling for Real-Time Robot Control",
+   "authors": [
+    "Boqi Zhao",
+    "Dechen Gao",
+    "Hanchu Zhou",
+    "Hang Wang",
+    "Junshan Zhang"
+   ],
+   "abstract": "World action model (WAM) is a promising paradigm for visuomotor control by jointly modeling world dynamics and actions. Notably, existing WAMs often rely on large generative models and iterative sampling which incur substantial latency for action generation, limiting real-time deployment. In particular, there are two root causes of inefficiency in conventional flow matching or diffusion based action models in WAMs: 1) transporting uninformative Gaussian noise into precise actions necessitating multiple ODE steps, and 2) repeatedly injecting task context through expensive cross-attention modules. Our key insight is that jointly learning and aligning the source and action manifolds streamlines the transport between them, substantially accelerating action generation. Building on this insight, we introduce VITA-WAM, a WAM architecture with manifold-aligned flow-matching (VITA flow matching) that directly transports latent observation representations containing visual, language, and proprioceptive information into latent actions. More specifically, a flow latent alignment (FLA) mechanism is employed to facilitate manifold alignment between latent observation and action representations, enabling accurate generation with few ODE steps. The resulting architecture also eliminates costly attention for observation conditioning during repeated denoising steps. Notably, with a single ODE step, VITA-WAM outperforms 10-step FastWAM by 21.47 pp on LIBERO-Plus and by 1.65 pp on LIBERO, achieving these gains through the FLA objective without distillation, while inferring at 55.67~ms latency, a $2.10\\times$ speedup compared to FastWAM.",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO"
+   ],
+   "published": "2026-11-23T18:46:15Z",
+   "updated": "2026-11-23T18:46:15Z",
+   "comment": "Project page. http://ucd-dare.github.io/VITA-WAM. Equal Contributors: Boqi Zhao, Dechen Gao. Corresponding Author: Junshan Zhang",
+   "tags": [
+    "world model",
+    "control",
+    "diffusion policy",
+    "manipulation"
+   ],
+   "summary": {
+    "en": "VITA-WAM achieves real-time robot control via manifold-aligned world-action modeling, outperforming FastWAM by 21.47 pp on LIBERO-Plus with a single ODE step while achieving a 2.10x speedup.",
+    "zh": "VITA-WAM通过流形对齐的世界-动作建模方法实现了实时机器人控制，采用VITA流匹配直接将潜空间观测表征转换为潜空间动作。在LIBERO-Plus和LIBERO任务中，该方法仅需单步ODE即可分别超越10步的FastWAM达21.47个百分点和1.65个百分点，同时推理延迟降低至55.67毫秒，实现了2.10倍的加速。"
+   },
+   "summary_source": "gemini-3.5-flash-lite",
+   "ax_votes": 3,
+   "ax_visits": 34,
+   "heat": 6.4,
+   "orgs": [],
+   "thumb": "data/thumbs/2611.31195.jpg",
+   "thumb_w": 640,
+   "thumb_h": 401,
    "listed": "2026-11-24",
    "sections": []
   },
@@ -5430,8 +5430,8 @@
    "thumb_w": 369,
    "thumb_h": 440,
    "summary": {
-    "zh": "针对技能移除微调中模型仍引用已移除技能的情境错位（CoMi）问题，CGSI用句子检测器识别并掩码或重写无依据引用再微调，在ALFWorld、WebShop、ARC-AGI-1上将测试时CoMi降低72.5-94.6%且保持任务成功率。",
-    "en": "CGSI detects and masks or rewrites unsupported skill references before fine-tuning, cutting context misalignment by 72.5-94.6% on ALFWorld, WebShop, and ARC-AGI-1 while preserving task success."
+    "en": "CGSI detects and masks or rewrites unsupported skill references before fine-tuning, cutting context misalignment by 72.5-94.6% on ALFWorld, WebShop, and ARC-AGI-1 while preserving task success.",
+    "zh": "针对技能移除微调中模型仍引用已移除技能的情境错位（CoMi）问题，CGSI用句子检测器识别并掩码或重写无依据引用再微调，在ALFWorld、WebShop、ARC-AGI-1上将测试时CoMi降低72.5-94.6%且保持任务成功率。"
    },
    "summary_source": "deepseek-flash"
   },
@@ -5680,9 +5680,9 @@
      "name": "CMU"
     },
     {
+     "logo": "data/logos/brown.edu.png",
      "name": "Brown University",
-     "ror": "05gq02987",
-     "logo": "data/logos/brown.edu.png"
+     "ror": "05gq02987"
     },
     {
      "logo": "data/logos/stanford.edu.png",
@@ -5703,17 +5703,17 @@
      "ror": "00cvxb145"
     },
     {
+     "logo": "data/logos/rutgers.edu.png",
      "name": "Rutgers University",
-     "ror": "05vt9qd57",
-     "logo": "data/logos/rutgers.edu.png"
+     "ror": "05vt9qd57"
     }
    ],
    "thumb": "data/thumbs/2611.31117.jpg",
    "thumb_w": 483,
    "thumb_h": 440,
    "summary": {
-    "zh": "让27B具身智能体在任务间隙通过推理直接改写自身权重：夜间回放记录，定位导致回复触及token上限却无动作的隐藏状态方向，只保留在练习任务上验证有效的单张量修改；在数千held-out回合、每任务48个新种子上显著提升任务完成率、减少步数与token，且多轮稳定不崩溃。",
-    "en": "A 27B embodied agent rewrites one of its own weight tensors between tasks by tracing wasted token-limit replies to a hidden-state direction, validating each edit on practice tasks; over thousands of held-out episodes it completes more tasks in fewer steps and tokens, stably across rounds."
+    "en": "A 27B embodied agent rewrites one of its own weight tensors between tasks by tracing wasted token-limit replies to a hidden-state direction, validating each edit on practice tasks; over thousands of held-out episodes it completes more tasks in fewer steps and tokens, stably across rounds.",
+    "zh": "让27B具身智能体在任务间隙通过推理直接改写自身权重：夜间回放记录，定位导致回复触及token上限却无动作的隐藏状态方向，只保留在练习任务上验证有效的单张量修改；在数千held-out回合、每任务48个新种子上显著提升任务完成率、减少步数与token，且多轮稳定不崩溃。"
    },
    "summary_source": "deepseek-flash"
   },
@@ -5742,6 +5742,33 @@
    ],
    "ax_votes": 1,
    "ax_visits": 46,
+   "heat": 5.6,
+   "listed": "2026-11-24",
+   "sections": []
+  },
+  {
+   "id": "2611.30422",
+   "title": "HWRE-Bench: Can LLM Agents Understand Hardware They Did Not Design?",
+   "authors": [
+    "Peilong Zhou",
+    "Cangyuan Li",
+    "Kaiyan Chang",
+    "Ying Wang"
+   ],
+   "abstract": "Hardware benchmarks for LLM agents all run the design flow forward, from a specification to RTL, a layout or a bug fix. We ask the reverse question: given an implemented artifact, such as a layout, a gate-level netlist or a protected simulation model, can an agent work out what it does well enough to act on that knowledge? We introduce HWRE-Bench, a benchmark for agentic hardware reverse engineering built on one observation. Each step of the forward flow discards information (names, hierarchy, word-level structure, generator parameters, the programming model), and a reverse-engineering task asks the agent to recover what was lost and to prove it with an executable deliverable that the artifact alone cannot supply. Since layout extraction is now mechanical and a correct netlist is already a cycle-exact model, every task carries a mandatory copy-the-netlist control that must score zero. HWRE-Bench spans five tracks (Extract, Abstract, Audit, Interoperate, Modify), four information-loss levels and white- versus black-box access, all on original designs. We report a pilot of 148 rollouts from two agents on four seed tasks under 16 conditions, with stage-annotated trajectories. Agents built their own layout extractors and audited a sanitized layout as reliably as a netlist, at about 27% more turns. Keyless, equivalence-preserving obfuscation changed neither pass rates nor defect-repair scores. Whether agents read the structure at all depended on task framing rather than on necessity, so pass rate alone does not show understanding. Provider safety filters stopped 16% of one agent's runs on the audit tasks. These results argue for deliverables beyond equivalence and for reporting run validity explicitly.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-23T10:18:07Z",
+   "updated": "2026-11-23T10:18:07Z",
+   "comment": "10 pages, 6 figures, 4 tables. Work in progress",
+   "tags": [
+    "VLM/LLM",
+    "benchmark"
+   ],
+   "ax_votes": 3,
+   "ax_visits": 26,
    "heat": 5.6,
    "listed": "2026-11-24",
    "sections": []
@@ -5796,33 +5823,6 @@
    "sections": []
   },
   {
-   "id": "2611.30422",
-   "title": "HWRE-Bench: Can LLM Agents Understand Hardware They Did Not Design?",
-   "authors": [
-    "Peilong Zhou",
-    "Cangyuan Li",
-    "Kaiyan Chang",
-    "Ying Wang"
-   ],
-   "abstract": "Hardware benchmarks for LLM agents all run the design flow forward, from a specification to RTL, a layout or a bug fix. We ask the reverse question: given an implemented artifact, such as a layout, a gate-level netlist or a protected simulation model, can an agent work out what it does well enough to act on that knowledge? We introduce HWRE-Bench, a benchmark for agentic hardware reverse engineering built on one observation. Each step of the forward flow discards information (names, hierarchy, word-level structure, generator parameters, the programming model), and a reverse-engineering task asks the agent to recover what was lost and to prove it with an executable deliverable that the artifact alone cannot supply. Since layout extraction is now mechanical and a correct netlist is already a cycle-exact model, every task carries a mandatory copy-the-netlist control that must score zero. HWRE-Bench spans five tracks (Extract, Abstract, Audit, Interoperate, Modify), four information-loss levels and white- versus black-box access, all on original designs. We report a pilot of 148 rollouts from two agents on four seed tasks under 16 conditions, with stage-annotated trajectories. Agents built their own layout extractors and audited a sanitized layout as reliably as a netlist, at about 27% more turns. Keyless, equivalence-preserving obfuscation changed neither pass rates nor defect-repair scores. Whether agents read the structure at all depended on task framing rather than on necessity, so pass rate alone does not show understanding. Provider safety filters stopped 16% of one agent's runs on the audit tasks. These results argue for deliverables beyond equivalence and for reporting run validity explicitly.",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI"
-   ],
-   "published": "2026-11-23T10:18:07Z",
-   "updated": "2026-11-23T10:18:07Z",
-   "comment": "10 pages, 6 figures, 4 tables. Work in progress",
-   "tags": [
-    "VLM/LLM",
-    "benchmark"
-   ],
-   "ax_votes": 3,
-   "ax_visits": 26,
-   "heat": 5.6,
-   "listed": "2026-11-24",
-   "sections": []
-  },
-  {
    "id": "2611.30983",
    "title": "MedUIGym: Evaluating and Training GUI Agents for Clinical Workflows",
    "authors": [
@@ -5869,8 +5869,8 @@
    "thumb_w": 285,
    "thumb_h": 440,
    "summary": {
-    "zh": "MedUIGym 构建了含 17 个基准源、6 类临床任务共 15,739 个任务的交互式 EHR 图形界面环境，供视觉语言代理从截图执行鼠标键盘操作；测试 12 个 VLM 均表现欠佳，经 GUI 轨迹离线学习与任务奖励在线 RL 训练后 Qwen3.5 系列在域内提升并能泛化到外部任务。",
-    "en": "MedUIGym offers 15,739 EHR GUI tasks from 17 sources for training and evaluating vision-language clinical agents; twelve VLMs struggle, but offline GUI-trajectory learning and online RL improve Qwen3.5 models and generalize."
+    "en": "MedUIGym offers 15,739 EHR GUI tasks from 17 sources for training and evaluating vision-language clinical agents; twelve VLMs struggle, but offline GUI-trajectory learning and online RL improve Qwen3.5 models and generalize.",
+    "zh": "MedUIGym 构建了含 17 个基准源、6 类临床任务共 15,739 个任务的交互式 EHR 图形界面环境，供视觉语言代理从截图执行鼠标键盘操作；测试 12 个 VLM 均表现欠佳，经 GUI 轨迹离线学习与任务奖励在线 RL 训练后 Qwen3.5 系列在域内提升并能泛化到外部任务。"
    },
    "summary_source": "deepseek-flash"
   },
@@ -5953,72 +5953,6 @@
    "heat": 5.3,
    "listed": "2026-11-24",
    "sections": []
-  },
-  {
-   "id": "2611.30511",
-   "title": "AXE: AlpaSim E2E Closed Loop Challenge Technical Report",
-   "authors": [
-    "Joonhee Lim",
-    "Seonmyeong Lee",
-    "Sihwan Hwang",
-    "Hanbin Jang",
-    "Hiwon Shin",
-    "Dogun Kim",
-    "Hyelin Jo",
-    "Hyeonjun Jeong",
-    "Yongjae Lee",
-    "Junseong Kwak",
-    "Junhyeok Park",
-    "Satyam Mishra",
-    "Juyeb Shin",
-    "Uisung Kim",
-    "Hyeonseo Kim",
-    "Saparkhan Kassymbekov",
-    "Hailemichael Molla Gashaw",
-    "Abi Rahman Syamil",
-    "Mingyu Kim",
-    "Hyeongjun Kim",
-    "Yeina Lee",
-    "Moogeun Park",
-    "Dongsuk Kum"
-   ],
-   "abstract": "This report presents a comprehensive pipeline for developing an end-to-end (E2E) autonomous driving model for the Physical AI AV Track. The framework consists of data curation, HD map auto-labelling, data-driven imitation learning, and simulator-based reinforcement learning. To ensure safety in the closed-loop setting, we introduce a selection-based E2E planning approach that leverages object detection and BEV segmentation to filter out trajectory candidates likely to cause collisions or off-road driving. Trained on NVIDIA NuRec and the NVIDIA PAI-AV dataset, our method scores a fixed vocabulary of trajectory candidates for collision, drivable-area compliance, and progress learned from simulated rollouts, and selects the best candidate that passes the filter. This design highlights the effectiveness of combining E2E planning with perception-based trajectory filtering for safe and reliable closed-loop autonomous driving.",
-   "primary": "cs.RO",
-   "categories": [
-    "cs.RO",
-    "cs.AI"
-   ],
-   "published": "2026-11-23T11:30:01Z",
-   "updated": "2026-11-23T11:30:01Z",
-   "comment": "Innovation Award winner, Physical AI AV Track (PAI-AV), AlpaSim E2E Closed Loop Challenge 2026, with results shared at the NeurIPS 2026 World Models in Physical AI Workshop. 15 pages, 10 figures, 4 tables",
-   "tags": [
-    "driving",
-    "RL",
-    "agents",
-    "benchmark"
-   ],
-   "summary": {
-    "zh": "面向 Physical AI AV Track 的端到端自动驾驶流水线，涵盖数据整理、HD 地图自动标注、模仿学习与仿真强化学习，并引入结合目标检测与 BEV 分割的轨迹过滤来选择安全轨迹；基于 NVIDIA NuRec 和 PAI-AV 数据训练，闭环评测中有效剔除碰撞与越界候选。",
-    "en": "An end-to-end autonomous driving pipeline with data curation, HD map auto-labelling, imitation learning and simulator RL; detection- and BEV-segmentation-based trajectory filtering selects safe trajectories, evaluated on NVIDIA NuRec and PAI-AV data."
-   },
-   "summary_source": "deepseek-flash",
-   "ax_votes": 1,
-   "ax_visits": 42,
-   "heat": 5.2,
-   "orgs": [
-    {
-     "logo": "data/logos/kaist.ac.kr.png",
-     "name": "KAIST",
-     "ror": "05apxxy63"
-    }
-   ],
-   "thumb": "data/thumbs/2611.30511.jpg",
-   "thumb_w": 640,
-   "thumb_h": 234,
-   "listed": "2026-11-24",
-   "sections": [
-    "rl"
-   ]
   },
   {
    "id": "2611.30573",
@@ -6106,6 +6040,102 @@
    ]
   },
   {
+   "id": "2611.30511",
+   "title": "AXE: AlpaSim E2E Closed Loop Challenge Technical Report",
+   "authors": [
+    "Joonhee Lim",
+    "Seonmyeong Lee",
+    "Sihwan Hwang",
+    "Hanbin Jang",
+    "Hiwon Shin",
+    "Dogun Kim",
+    "Hyelin Jo",
+    "Hyeonjun Jeong",
+    "Yongjae Lee",
+    "Junseong Kwak",
+    "Junhyeok Park",
+    "Satyam Mishra",
+    "Juyeb Shin",
+    "Uisung Kim",
+    "Hyeonseo Kim",
+    "Saparkhan Kassymbekov",
+    "Hailemichael Molla Gashaw",
+    "Abi Rahman Syamil",
+    "Mingyu Kim",
+    "Hyeongjun Kim",
+    "Yeina Lee",
+    "Moogeun Park",
+    "Dongsuk Kum"
+   ],
+   "abstract": "This report presents a comprehensive pipeline for developing an end-to-end (E2E) autonomous driving model for the Physical AI AV Track. The framework consists of data curation, HD map auto-labelling, data-driven imitation learning, and simulator-based reinforcement learning. To ensure safety in the closed-loop setting, we introduce a selection-based E2E planning approach that leverages object detection and BEV segmentation to filter out trajectory candidates likely to cause collisions or off-road driving. Trained on NVIDIA NuRec and the NVIDIA PAI-AV dataset, our method scores a fixed vocabulary of trajectory candidates for collision, drivable-area compliance, and progress learned from simulated rollouts, and selects the best candidate that passes the filter. This design highlights the effectiveness of combining E2E planning with perception-based trajectory filtering for safe and reliable closed-loop autonomous driving.",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO",
+    "cs.AI"
+   ],
+   "published": "2026-11-23T11:30:01Z",
+   "updated": "2026-11-23T11:30:01Z",
+   "comment": "Innovation Award winner, Physical AI AV Track (PAI-AV), AlpaSim E2E Closed Loop Challenge 2026, with results shared at the NeurIPS 2026 World Models in Physical AI Workshop. 15 pages, 10 figures, 4 tables",
+   "tags": [
+    "driving",
+    "RL",
+    "agents",
+    "benchmark"
+   ],
+   "summary": {
+    "en": "An end-to-end autonomous driving pipeline with data curation, HD map auto-labelling, imitation learning and simulator RL; detection- and BEV-segmentation-based trajectory filtering selects safe trajectories, evaluated on NVIDIA NuRec and PAI-AV data.",
+    "zh": "面向 Physical AI AV Track 的端到端自动驾驶流水线，涵盖数据整理、HD 地图自动标注、模仿学习与仿真强化学习，并引入结合目标检测与 BEV 分割的轨迹过滤来选择安全轨迹；基于 NVIDIA NuRec 和 PAI-AV 数据训练，闭环评测中有效剔除碰撞与越界候选。"
+   },
+   "summary_source": "deepseek-flash",
+   "ax_votes": 1,
+   "ax_visits": 42,
+   "heat": 5.2,
+   "orgs": [
+    {
+     "logo": "data/logos/kaist.ac.kr.png",
+     "name": "KAIST",
+     "ror": "05apxxy63"
+    }
+   ],
+   "thumb": "data/thumbs/2611.30511.jpg",
+   "thumb_w": 640,
+   "thumb_h": 234,
+   "listed": "2026-11-24",
+   "sections": [
+    "rl"
+   ]
+  },
+  {
+   "id": "2611.31225",
+   "title": "Self-Supervised Dataset Distillation via Mutual Information Maximization",
+   "authors": [
+    "Mohammad Hossein Moslemi",
+    "Mahdi Beitollahi",
+    "Zhimin Mei",
+    "Jiale Cai",
+    "Bissan Ghaddar",
+    "Boyu Wang"
+   ],
+   "abstract": "Dataset distillation (DD) aims to compress a large dataset into a small synthetic one that remains effective for training neural networks. Despite its success in supervised learning, DD remains underexplored in self-supervised learning (SSL), where distilled data must preserve the information needed to learn representations that remain consistent across augmentations. To bridge this gap, we introduce Mutual Information Prototype Alignment (MIPA), an efficient SSL dataset distillation approach that optimizes synthetic images to preserve augmentation-invariant information. Specifically, MIPA treats synthetic images as learnable prototypes and uses a frozen encoder to assign real samples to them based on feature similarity. A synthetic dataset that preserves such augmentation invariance should yield stable prototype assignments across multiple augmented views of the same real image. MIPA encourages this by maximizing mutual information between cross-view assignments while avoiding trivial solutions in which all real samples are assigned to only a few synthetic prototypes. Evaluations on image classification benchmarks show that synthetic data generated by MIPA yield higher-quality representations than existing distillation approaches while reducing time and storage demands during distillation.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-23T18:58:27Z",
+   "updated": "2026-11-23T18:58:27Z",
+   "comment": "",
+   "tags": [
+    "benchmark"
+   ],
+   "hf_upvotes": 3,
+   "ax_votes": 1,
+   "ax_visits": 12,
+   "heat": 5.2,
+   "listed": "2026-11-24",
+   "sections": []
+  },
+  {
    "id": "2611.29630",
    "title": "SuperFine3D: Efficient Global-Local Recursive Refinement for Extremely Detailed 3D Geometry Generation",
    "authors": [
@@ -6186,40 +6216,10 @@
    "thumb_w": 613,
    "thumb_h": 440,
    "summary": {
-    "zh": "JKO-GRPO 在 Flow-GRPO 基础上引入 Wasserstein 近端步，把每个状态下采样的动作组视为经验分布，用软离散 c-transform 由组相对优势构造传输目标，并进行共享噪声回归；在序列 VLA 控制中采用随机时间分支，无需 KL 正则化即可改进流匹配 VLA 策略。",
-    "en": "JKO-GRPO augments Flow-GRPO with Wasserstein proximal JKO steps: sampled action groups form empirical distributions, soft discrete c-transforms build transport targets from group-relative advantages, and shared-noise regression updates flow-matching VLA policies without KL regularization."
+    "en": "JKO-GRPO augments Flow-GRPO with Wasserstein proximal JKO steps: sampled action groups form empirical distributions, soft discrete c-transforms build transport targets from group-relative advantages, and shared-noise regression updates flow-matching VLA policies without KL regularization.",
+    "zh": "JKO-GRPO 在 Flow-GRPO 基础上引入 Wasserstein 近端步，把每个状态下采样的动作组视为经验分布，用软离散 c-transform 由组相对优势构造传输目标，并进行共享噪声回归；在序列 VLA 控制中采用随机时间分支，无需 KL 正则化即可改进流匹配 VLA 策略。"
    },
    "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.31225",
-   "title": "Self-Supervised Dataset Distillation via Mutual Information Maximization",
-   "authors": [
-    "Mohammad Hossein Moslemi",
-    "Mahdi Beitollahi",
-    "Zhimin Mei",
-    "Jiale Cai",
-    "Bissan Ghaddar",
-    "Boyu Wang"
-   ],
-   "abstract": "Dataset distillation (DD) aims to compress a large dataset into a small synthetic one that remains effective for training neural networks. Despite its success in supervised learning, DD remains underexplored in self-supervised learning (SSL), where distilled data must preserve the information needed to learn representations that remain consistent across augmentations. To bridge this gap, we introduce Mutual Information Prototype Alignment (MIPA), an efficient SSL dataset distillation approach that optimizes synthetic images to preserve augmentation-invariant information. Specifically, MIPA treats synthetic images as learnable prototypes and uses a frozen encoder to assign real samples to them based on feature similarity. A synthetic dataset that preserves such augmentation invariance should yield stable prototype assignments across multiple augmented views of the same real image. MIPA encourages this by maximizing mutual information between cross-view assignments while avoiding trivial solutions in which all real samples are assigned to only a few synthetic prototypes. Evaluations on image classification benchmarks show that synthetic data generated by MIPA yield higher-quality representations than existing distillation approaches while reducing time and storage demands during distillation.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.LG"
-   ],
-   "published": "2026-11-23T18:58:27Z",
-   "updated": "2026-11-23T18:58:27Z",
-   "comment": "",
-   "tags": [
-    "benchmark"
-   ],
-   "hf_upvotes": 3,
-   "ax_votes": 1,
-   "ax_visits": 12,
-   "heat": 5.2,
-   "listed": "2026-11-24",
-   "sections": []
   },
   {
    "id": "2611.29123",
@@ -6276,50 +6276,6 @@
    "thumb": "data/thumbs/2611.29123.jpg",
    "thumb_w": 640,
    "thumb_h": 252,
-   "listed": "2026-11-24",
-   "sections": [
-    "rl"
-   ]
-  },
-  {
-   "id": "2611.29610",
-   "title": "Dr. Grasp-RL: Diverse and Robust Dexterous Grasping via Reinforcement Learning",
-   "authors": [
-    "Kunqi Xu",
-    "Xiaokang Sun",
-    "Xueyan Zou"
-   ],
-   "abstract": "Human interaction with physical objects relies on a combination of dexterity and robustness. In robotic manipulation, dexterity requires not only flexible end effectors but also a diverse repertoire of manipulation strategies, while robustness requires closed-loop adaptation to disturbances and unexpected situations. Two prominent research directions in dexterous grasping have largely addressed these capabilities separately. Generative approaches model multimodal distributions to produce diverse grasp poses, but their reliance on open-loop execution can limit robustness. Reinforcement learning approaches learn closed-loop grasping policies, but can converge to a narrow range of successful grasping strategies, limiting behavioral diversity. We introduce a time-reversed curriculum with a coordinated reset mechanism that enables a simple MLP policy trained with PPO to capture multiple modes of the grasp-pose distribution while maintaining closed-loop control. Experiments demonstrate both diverse grasping behaviors and robust closed-loop execution. Trained on only approximately 400 objects, our policy further demonstrates strong generalization when evaluated on more than 20,000 unseen objects.",
-   "primary": "cs.RO",
-   "categories": [
-    "cs.RO"
-   ],
-   "published": "2026-11-22T17:04:16Z",
-   "updated": "2026-11-22T17:04:16Z",
-   "comment": "",
-   "tags": [
-    "robotics",
-    "manipulation",
-    "RL",
-    "agents"
-   ],
-   "summary": {
-    "en": "Dr. Grasp-RL trains a simple PPO MLP policy with a time-reversed curriculum and coordinated reset to learn diverse, closed-loop dexterous grasps from ~400 objects, generalizing to 20,000+ unseen objects.",
-    "zh": "Dr. Grasp-RL 用时间反转课程与协调重置机制训练 PPO 下的简单 MLP 策略，在约 400 个物体上学习多样且闭环的灵巧抓取，并在 20,000 多个未见物体上展现强泛化。"
-   },
-   "summary_source": "deepseek-flash",
-   "ax_votes": 1,
-   "ax_visits": 40,
-   "heat": 5.0,
-   "orgs": [
-    {
-     "name": "Tsinghua University",
-     "ror": "03cve4549"
-    }
-   ],
-   "thumb": "data/thumbs/2611.29610.jpg",
-   "thumb_w": 640,
-   "thumb_h": 302,
    "listed": "2026-11-24",
    "sections": [
     "rl"
@@ -6435,51 +6391,48 @@
    "sections": []
   },
   {
-   "id": "2611.30209",
-   "title": "RoboAda: Adapting Frozen Robot Policies at Test Time to Physics They Cannot See",
+   "id": "2611.29610",
+   "title": "Dr. Grasp-RL: Diverse and Robust Dexterous Grasping via Reinforcement Learning",
    "authors": [
-    "Yunbei Zhang",
-    "Zijian Jin",
-    "Shuaicheng Niu",
-    "Baian Chen",
-    "Weirui Ye",
-    "Jihun Hamm",
-    "Yilun Du"
+    "Kunqi Xu",
+    "Xiaokang Sun",
+    "Xueyan Zou"
    ],
-   "abstract": "Pretrained robot policies decide what to do from camera images, yet some of the physics that decides whether their plans succeed is not visible. An object may look light but be 100 times heavier, and a weakened joint or a lagging controller leaves no trace in the image. When the physics at deployment differs from training, the plan is often still right but is executed as if nothing had changed. Training on such variations in advance cannot handle unseen changes, while adapting once deployed either changes the plan, leaving the miscalibrated commands in place, or updates a robot model by gradient steps that do not know how reliable they are and can make the robot worse even when nothing has changed. We propose RoboAda, which keeps the policy and its plan unchanged and corrects the commands that carry it out by inferring at test time how the robot turns commands into motion. The key observation is that the robot's own motion reveals the change: after each action chunk, an inverse-dynamics model of the original robot converts the observed motion into the commands it would have needed, yielding free labels at every step. Competing hypotheses of how the robot responds, including that nothing has changed, are weighted by how well they predict these labels, and the next chunk is sent with the commands that best realize the plan under them. RoboAda needs no reward, no gradient step and no data from the changed robot. We evaluate RoboAda with five frozen policies on LIBERO, two world action models and three vision-language-action models. Under eleven physical shifts, it more than doubles their average success, from 27.8% to 62.9%. It beats the best of seven test-time adaptation methods by 17.3 points on Cosmos Policy, and largely preserves the policies' success when nothing has changed. On bimanual RoboTwin 2.0 in joint space, it raises success under joint-target offsets from 24.9% to 78.8%.",
+   "abstract": "Human interaction with physical objects relies on a combination of dexterity and robustness. In robotic manipulation, dexterity requires not only flexible end effectors but also a diverse repertoire of manipulation strategies, while robustness requires closed-loop adaptation to disturbances and unexpected situations. Two prominent research directions in dexterous grasping have largely addressed these capabilities separately. Generative approaches model multimodal distributions to produce diverse grasp poses, but their reliance on open-loop execution can limit robustness. Reinforcement learning approaches learn closed-loop grasping policies, but can converge to a narrow range of successful grasping strategies, limiting behavioral diversity. We introduce a time-reversed curriculum with a coordinated reset mechanism that enables a simple MLP policy trained with PPO to capture multiple modes of the grasp-pose distribution while maintaining closed-loop control. Experiments demonstrate both diverse grasping behaviors and robust closed-loop execution. Trained on only approximately 400 objects, our policy further demonstrates strong generalization when evaluated on more than 20,000 unseen objects.",
    "primary": "cs.RO",
    "categories": [
-    "cs.RO",
-    "cs.AI"
+    "cs.RO"
    ],
-   "published": "2026-11-23T07:47:08Z",
-   "updated": "2026-11-24T17:50:36Z",
-   "comment": "This version was posted before the coauthors completed their review of the paper",
+   "published": "2026-11-22T17:04:16Z",
+   "updated": "2026-11-22T17:04:16Z",
+   "comment": "",
    "tags": [
+    "robotics",
     "manipulation",
-    "control",
-    "VLA",
-    "sim2real"
+    "RL",
+    "agents"
    ],
    "summary": {
-    "en": "RoboAda adapts frozen robot policies to unseen physical shifts at test time by inferring motion dynamics and correcting execution commands without changing the original plan, more than doubling average success from 27.8% to 62.9% on LIBERO.",
-    "zh": "RoboAda通过在测试时推断机器人的动力学变化来修正执行指令，从而在不改变原有策略和计划的前提下适应不可见的物理变化。在LIBERO和RoboTwin 2.0的测试中，它将平均成功率从27.8%提升至62.9%，并在无变化时保持了原有性能。"
+    "en": "Dr. Grasp-RL trains a simple PPO MLP policy with a time-reversed curriculum and coordinated reset to learn diverse, closed-loop dexterous grasps from ~400 objects, generalizing to 20,000+ unseen objects.",
+    "zh": "Dr. Grasp-RL 用时间反转课程与协调重置机制训练 PPO 下的简单 MLP 策略，在约 400 个物体上学习多样且闭环的灵巧抓取，并在 20,000 多个未见物体上展现强泛化。"
    },
-   "summary_source": "gemini-3.5-flash-lite",
+   "summary_source": "deepseek-flash",
    "ax_votes": 1,
-   "ax_visits": 39,
-   "heat": 4.9,
+   "ax_visits": 40,
+   "heat": 5.0,
    "orgs": [
     {
-     "name": "NTU",
-     "ror": "02e7b5302"
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
     }
    ],
-   "thumb": "data/thumbs/2611.30209.jpg",
+   "thumb": "data/thumbs/2611.29610.jpg",
    "thumb_w": 640,
-   "thumb_h": 158,
+   "thumb_h": 302,
    "listed": "2026-11-24",
-   "sections": []
+   "sections": [
+    "rl"
+   ]
   },
   {
    "id": "2611.28469",
@@ -6540,6 +6493,53 @@
    "thumb": "data/thumbs/2611.28469.jpg",
    "thumb_w": 618,
    "thumb_h": 440,
+   "listed": "2026-11-24",
+   "sections": []
+  },
+  {
+   "id": "2611.30209",
+   "title": "RoboAda: Adapting Frozen Robot Policies at Test Time to Physics They Cannot See",
+   "authors": [
+    "Yunbei Zhang",
+    "Zijian Jin",
+    "Shuaicheng Niu",
+    "Baian Chen",
+    "Weirui Ye",
+    "Jihun Hamm",
+    "Yilun Du"
+   ],
+   "abstract": "Pretrained robot policies decide what to do from camera images, yet some of the physics that decides whether their plans succeed is not visible. An object may look light but be 100 times heavier, and a weakened joint or a lagging controller leaves no trace in the image. When the physics at deployment differs from training, the plan is often still right but is executed as if nothing had changed. Training on such variations in advance cannot handle unseen changes, while adapting once deployed either changes the plan, leaving the miscalibrated commands in place, or updates a robot model by gradient steps that do not know how reliable they are and can make the robot worse even when nothing has changed. We propose RoboAda, which keeps the policy and its plan unchanged and corrects the commands that carry it out by inferring at test time how the robot turns commands into motion. The key observation is that the robot's own motion reveals the change: after each action chunk, an inverse-dynamics model of the original robot converts the observed motion into the commands it would have needed, yielding free labels at every step. Competing hypotheses of how the robot responds, including that nothing has changed, are weighted by how well they predict these labels, and the next chunk is sent with the commands that best realize the plan under them. RoboAda needs no reward, no gradient step and no data from the changed robot. We evaluate RoboAda with five frozen policies on LIBERO, two world action models and three vision-language-action models. Under eleven physical shifts, it more than doubles their average success, from 27.8% to 62.9%. It beats the best of seven test-time adaptation methods by 17.3 points on Cosmos Policy, and largely preserves the policies' success when nothing has changed. On bimanual RoboTwin 2.0 in joint space, it raises success under joint-target offsets from 24.9% to 78.8%.",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO",
+    "cs.AI"
+   ],
+   "published": "2026-11-23T07:47:08Z",
+   "updated": "2026-11-24T17:50:36Z",
+   "comment": "This version was posted before the coauthors completed their review of the paper",
+   "tags": [
+    "manipulation",
+    "control",
+    "VLA",
+    "sim2real"
+   ],
+   "summary": {
+    "en": "RoboAda adapts frozen robot policies to unseen physical shifts at test time by inferring motion dynamics and correcting execution commands without changing the original plan, more than doubling average success from 27.8% to 62.9% on LIBERO.",
+    "zh": "RoboAda通过在测试时推断机器人的动力学变化来修正执行指令，从而在不改变原有策略和计划的前提下适应不可见的物理变化。在LIBERO和RoboTwin 2.0的测试中，它将平均成功率从27.8%提升至62.9%，并在无变化时保持了原有性能。"
+   },
+   "summary_source": "gemini-3.5-flash-lite",
+   "ax_votes": 1,
+   "ax_visits": 39,
+   "heat": 4.9,
+   "orgs": [
+    {
+     "name": "NTU",
+     "ror": "02e7b5302"
+    }
+   ],
+   "thumb": "data/thumbs/2611.30209.jpg",
+   "thumb_w": 640,
+   "thumb_h": 158,
    "listed": "2026-11-24",
    "sections": []
   },
@@ -6613,6 +6613,62 @@
    "sections": []
   },
   {
+   "id": "2611.28671",
+   "title": "The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Substrates",
+   "authors": [
+    "Haoyuan Zheng",
+    "Dongting Li",
+    "Hancheng Ye",
+    "Qinsi Wang",
+    "Mingyuan Ma",
+    "Yuncheng Yao",
+    "Yifei Wang",
+    "Baijun Zhou",
+    "Zishan Shao",
+    "Tingjun Chen",
+    "Hai Helen Li",
+    "Danyang Zhuo",
+    "Yiran Chen"
+   ],
+   "abstract": "Multi-agent systems (MAS) usually coordinate heterogeneous models and tools to solve complex tasks, creating a growing need for reliable evaluation. However, a multi-agent workflow that is fastest in one serving environment can lose its advantage in another, even when its models, prompts, and task remain fixed. This makes a benchmark result conditional on how the workflow is executed. We introduce MASSys, a benchmark for measuring this dependence in multi-agent large language model (LLM) systems. MASSys executes the same candidate-task pairs across serving substrates and load regimes, using five workload families spanning software repair, research synthesis, financial analysis, interactive control, and diagram generation. It records task quality alongside delivery, latency, cost, resource pressure, and failure evidence. In a controlled motivation diagnostic, the Star workflow falls from first to fourth in mean-latency rank under KV-cache pressure, while Chain rises from fourth to first. The substrate sweeps further show that increasing load creates long runtime tails and timeout pressure. In several task families, quality among evaluated outputs changes less than effective quality over submitted jobs: the system delivers fewer usable results even when the surviving outputs remain competitive. Tool and runtime traces reveal that these outcomes involve both model serving and non-model execution. Together, the results motivate evaluating MAS designs over explicit operating conditions and reporting which tasks are delivered, how well they are solved, and where execution breaks down.",
+   "primary": "cs.MA",
+   "categories": [
+    "cs.MA",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-21T08:50:10Z",
+   "updated": "2026-11-21T08:50:10Z",
+   "comment": "Code: https://github.com/MAS-Sys-Bench/MAS-Sys ; Project page: https://mas-sys-bench.github.io/MAS-Sys-Page/ ; Trace dataset: https://huggingface.co/datasets/MAS-Sys/MAS-Sys-Traces",
+   "code_url": "https://github.com/MAS-Sys-Bench/MAS-Sys",
+   "tags": [
+    "agents",
+    "benchmark",
+    "efficiency",
+    "LLM"
+   ],
+   "ax_votes": 2,
+   "ax_visits": 27,
+   "heat": 4.7,
+   "orgs": [
+    {
+     "logo": "data/logos/duke.edu.png",
+     "name": "Duke University",
+     "ror": "00py81415"
+    }
+   ],
+   "thumb": "data/thumbs/2611.28671.jpg",
+   "thumb_w": 640,
+   "thumb_h": 343,
+   "summary": {
+    "en": "MASSys benchmarks multi-agent LLM workflows across serving substrates and load regimes on five task families, tracking quality, latency, cost, and failures; under KV-cache pressure, Star drops from first to fourth in latency rank while Chain rises from fourth to first.",
+    "zh": "MASSys 在多种 serving substrate 与负载条件下对同一批多智能体 LLM 工作流运行五类任务，记录质量、时延、成本与失败证据；在 KV-cache 压力下 Star 的平均延迟排名从第一跌至第四，Chain 则从第四升至第一。"
+   },
+   "summary_source": "deepseek-flash",
+   "listed": "2026-11-24",
+   "sections": []
+  },
+  {
    "id": "2611.31079",
    "title": "Wrist-Camera Video Diffusion as Generalizable Robot Policies",
    "authors": [
@@ -6666,6 +6722,53 @@
    "thumb": "data/thumbs/2611.31079.jpg",
    "thumb_w": 526,
    "thumb_h": 303,
+   "listed": "2026-11-24",
+   "sections": []
+  },
+  {
+   "id": "2611.29619",
+   "title": "Wactorz: Self-Writing LLM Agents That Discover, Repair, and Migrate at the Edge",
+   "authors": [
+    "Panagiotis Kasnesis",
+    "Lazaros Toumanidis",
+    "Amalia Contiero Syropoulou",
+    "Christos Chatzigeorgiou"
+   ],
+   "abstract": "Most LLM agent frameworks build a crew that runs a task and exits. Physical environments (e.g., homes, labs, factory floors) need agents that stay up for months, survive their own bugs, and run on whatever hardware is already next to the sensors. We present Wactorz, an open-source runtime in which LLM-generated agents are long-lived, supervised actors: a planner turns a chat request into Python, compiles it into a new actor at runtime, and a supervisor restarts that actor alone, with its state intact, when it crashes. All coordination rides on MQTT, so agents can be spawned on, and live-migrated between, edge nodes such as a Raspberry Pi, and every internal event is a topic external systems can subscribe to. The recorded demo builds a camera-to-lamp automation from one chat request, adds a second agent that is auto-wired to the first by topic and carries a deliberate division-by-zero, watches that agent repair its own code without losing its count, then deploys a fresh Raspberry Pi node and live-migrates the agent onto it, in under four minutes of wall-clock time and \\$0.13 of model usage. This extended version adds what the two-page demonstration paper could not: the Wiring view of the topic graph, Wactorz as a library for hand-written agents, how trained models are stored, sent to nodes and replaced, the security model, and the system's limitations.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-22T17:17:07Z",
+   "updated": "2026-11-22T17:17:07Z",
+   "comment": "5 pages. 2 figues. Extended version of a paper accepted to the AAAI-27 Demonstrations Program. Code: https://github.com/waldiez/wactorz",
+   "code_url": "https://github.com/waldiez/wactorz",
+   "tags": [
+    "LLM",
+    "agents",
+    "code",
+    "efficiency"
+   ],
+   "summary": {
+    "en": "Wactorz is an open-source runtime making LLM-generated agents long-lived supervised actors: a planner compiles chat requests into Python actors, a supervisor restarts crashed ones state intact, and MQTT coordination enables spawning and live migration across edge nodes like Raspberry Pi, demonstrated in under four minutes for $0.13.",
+    "zh": "Wactorz 是一个开源运行时，把 LLM 生成的 agent 变成长期存活的受监督 actor：planner 将聊天请求转成 Python 并在运行时编译为新 actor，supervisor 在崩溃时单独重启并保留状态；协调全部基于 MQTT，支持在 Raspberry Pi 等边缘节点上生成与实时迁移 agent，演示中四分钟内完成从单条请求搭建摄像头到灯的自动化、自动布线并自主修复除零 bug、以及迁移到新节点，模型花费 0.13 美元。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 4,
+   "ax_votes": 0,
+   "ax_visits": 6,
+   "heat": 4.6,
+   "orgs": [
+    {
+     "name": "Waldiez PC"
+    },
+    {
+     "name": "ThinGenious PC"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29619.jpg",
+   "thumb_w": 640,
+   "thumb_h": 273,
    "listed": "2026-11-24",
    "sections": []
   },
@@ -6740,6 +6843,41 @@
    "ax_votes": 2,
    "ax_visits": 26,
    "heat": 4.6,
+   "listed": "2026-11-24",
+   "sections": []
+  },
+  {
+   "id": "2611.28359",
+   "title": "Contrastive On-Policy Distillation via Dual-Branch Supervision",
+   "authors": [
+    "Zhibo Hou",
+    "Fan Zhao",
+    "Yiping Li",
+    "Zhiyu An",
+    "Wan Du"
+   ],
+   "abstract": "For on-policy distillation (OPD), more capable models are a natural choice as teachers. However, higher task performance does not necessarily imply greater teachability. A controlled token intervention study suggests that even a model weaker than the student can serve as an informative contrastive reference. Building on this observation, we propose Contrastive On-Policy Distillation (cOPD), which provides dual branch supervision by contrasting strong teacher, weak teacher, and student predictions at student generated prefixes. Our analysis explains how this three way comparison helps select token candidates associated with better or worse reasoning outcomes under an idealized model. We evaluate cOPD across diverse teacher student configurations spanning different training stages, parameter scales, and model families, on tasks including mathematical reasoning, instruction following, and question answering with abstention. cOPD achieves the best or top-tier performance among the evaluated baselines across all three tasks, improving overall Pass@16 on mathematical reasoning by up to 7.51\\% over the strongest baseline. Further analyses show that cOPD suppresses undesirable response patterns and suggest that it facilitates exploration.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL"
+   ],
+   "published": "2026-11-20T22:16:32Z",
+   "updated": "2026-11-20T22:16:32Z",
+   "comment": "",
+   "tags": [],
+   "ax_votes": 2,
+   "ax_visits": 25,
+   "heat": 4.5,
+   "orgs": [
+    {
+     "logo": "data/logos/ucmerced.edu.png",
+     "name": "UC Merced",
+     "ror": "00d9ah105"
+    }
+   ],
+   "thumb": "data/thumbs/2611.28359.jpg",
+   "thumb_w": 640,
+   "thumb_h": 266,
    "listed": "2026-11-24",
    "sections": []
   },
@@ -6859,53 +6997,6 @@
    "sections": []
   },
   {
-   "id": "2611.29619",
-   "title": "Wactorz: Self-Writing LLM Agents That Discover, Repair, and Migrate at the Edge",
-   "authors": [
-    "Panagiotis Kasnesis",
-    "Lazaros Toumanidis",
-    "Amalia Contiero Syropoulou",
-    "Christos Chatzigeorgiou"
-   ],
-   "abstract": "Most LLM agent frameworks build a crew that runs a task and exits. Physical environments (e.g., homes, labs, factory floors) need agents that stay up for months, survive their own bugs, and run on whatever hardware is already next to the sensors. We present Wactorz, an open-source runtime in which LLM-generated agents are long-lived, supervised actors: a planner turns a chat request into Python, compiles it into a new actor at runtime, and a supervisor restarts that actor alone, with its state intact, when it crashes. All coordination rides on MQTT, so agents can be spawned on, and live-migrated between, edge nodes such as a Raspberry Pi, and every internal event is a topic external systems can subscribe to. The recorded demo builds a camera-to-lamp automation from one chat request, adds a second agent that is auto-wired to the first by topic and carries a deliberate division-by-zero, watches that agent repair its own code without losing its count, then deploys a fresh Raspberry Pi node and live-migrates the agent onto it, in under four minutes of wall-clock time and \\$0.13 of model usage. This extended version adds what the two-page demonstration paper could not: the Wiring view of the topic graph, Wactorz as a library for hand-written agents, how trained models are stored, sent to nodes and replaced, the security model, and the system's limitations.",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI"
-   ],
-   "published": "2026-11-22T17:17:07Z",
-   "updated": "2026-11-22T17:17:07Z",
-   "comment": "5 pages. 2 figues. Extended version of a paper accepted to the AAAI-27 Demonstrations Program. Code: https://github.com/waldiez/wactorz",
-   "code_url": "https://github.com/waldiez/wactorz",
-   "tags": [
-    "LLM",
-    "agents",
-    "code",
-    "efficiency"
-   ],
-   "summary": {
-    "en": "Wactorz is an open-source runtime making LLM-generated agents long-lived supervised actors: a planner compiles chat requests into Python actors, a supervisor restarts crashed ones state intact, and MQTT coordination enables spawning and live migration across edge nodes like Raspberry Pi, demonstrated in under four minutes for $0.13.",
-    "zh": "Wactorz 是一个开源运行时，把 LLM 生成的 agent 变成长期存活的受监督 actor：planner 将聊天请求转成 Python 并在运行时编译为新 actor，supervisor 在崩溃时单独重启并保留状态；协调全部基于 MQTT，支持在 Raspberry Pi 等边缘节点上生成与实时迁移 agent，演示中四分钟内完成从单条请求搭建摄像头到灯的自动化、自动布线并自主修复除零 bug、以及迁移到新节点，模型花费 0.13 美元。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 4,
-   "ax_votes": 0,
-   "ax_visits": 6,
-   "heat": 4.6,
-   "orgs": [
-    {
-     "name": "Waldiez PC"
-    },
-    {
-     "name": "ThinGenious PC"
-    }
-   ],
-   "thumb": "data/thumbs/2611.29619.jpg",
-   "thumb_w": 640,
-   "thumb_h": 273,
-   "listed": "2026-11-24",
-   "sections": []
-  },
-  {
    "id": "2611.29868",
    "title": "Arcadian: Open-Source Humanoid Ecosystem for Accessible and Customizable Research and Education",
    "authors": [
@@ -6931,8 +7022,8 @@
     "dataset"
    ],
    "summary": {
-    "zh": "Arcadian 是一套开源米级人形机器人生态，硬件用金属嵌入 3D 打印实现高性价比，无需 CNC 加工，整机约 1 米高、造价约 6800 美元；仿真训练的 RL 行走策略成功迁移到实机，VR 遥操作可驱动双臂完成简单操作，CAD、物料清单与训练部署代码全部公开。",
-    "en": "Arcadian is an open-source meter-scale humanoid ecosystem using metal-embedded 3D printing to cut costs to about $6,800; an RL locomotion policy transfers from simulation to hardware, and VR teleoperation drives both arms for simple manipulation."
+    "en": "Arcadian is an open-source meter-scale humanoid ecosystem using metal-embedded 3D printing to cut costs to about $6,800; an RL locomotion policy transfers from simulation to hardware, and VR teleoperation drives both arms for simple manipulation.",
+    "zh": "Arcadian 是一套开源米级人形机器人生态，硬件用金属嵌入 3D 打印实现高性价比，无需 CNC 加工，整机约 1 米高、造价约 6800 美元；仿真训练的 RL 行走策略成功迁移到实机，VR 遥操作可驱动双臂完成简单操作，CAD、物料清单与训练部署代码全部公开。"
    },
    "summary_source": "deepseek-flash",
    "ax_votes": 0,
@@ -6952,41 +7043,6 @@
    "sections": [
     "rl"
    ]
-  },
-  {
-   "id": "2611.28359",
-   "title": "Contrastive On-Policy Distillation via Dual-Branch Supervision",
-   "authors": [
-    "Zhibo Hou",
-    "Fan Zhao",
-    "Yiping Li",
-    "Zhiyu An",
-    "Wan Du"
-   ],
-   "abstract": "For on-policy distillation (OPD), more capable models are a natural choice as teachers. However, higher task performance does not necessarily imply greater teachability. A controlled token intervention study suggests that even a model weaker than the student can serve as an informative contrastive reference. Building on this observation, we propose Contrastive On-Policy Distillation (cOPD), which provides dual branch supervision by contrasting strong teacher, weak teacher, and student predictions at student generated prefixes. Our analysis explains how this three way comparison helps select token candidates associated with better or worse reasoning outcomes under an idealized model. We evaluate cOPD across diverse teacher student configurations spanning different training stages, parameter scales, and model families, on tasks including mathematical reasoning, instruction following, and question answering with abstention. cOPD achieves the best or top-tier performance among the evaluated baselines across all three tasks, improving overall Pass@16 on mathematical reasoning by up to 7.51\\% over the strongest baseline. Further analyses show that cOPD suppresses undesirable response patterns and suggest that it facilitates exploration.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL"
-   ],
-   "published": "2026-11-20T22:16:32Z",
-   "updated": "2026-11-20T22:16:32Z",
-   "comment": "",
-   "tags": [],
-   "ax_votes": 2,
-   "ax_visits": 25,
-   "heat": 4.5,
-   "orgs": [
-    {
-     "logo": "data/logos/ucmerced.edu.png",
-     "name": "UC Merced",
-     "ror": "00d9ah105"
-    }
-   ],
-   "thumb": "data/thumbs/2611.28359.jpg",
-   "thumb_w": 640,
-   "thumb_h": 266,
-   "listed": "2026-11-24",
-   "sections": []
   },
   {
    "id": "2611.28666",
@@ -7332,62 +7388,6 @@
    "sections": []
   },
   {
-   "id": "2611.28671",
-   "title": "The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Substrates",
-   "authors": [
-    "Haoyuan Zheng",
-    "Dongting Li",
-    "Hancheng Ye",
-    "Qinsi Wang",
-    "Mingyuan Ma",
-    "Yuncheng Yao",
-    "Yifei Wang",
-    "Baijun Zhou",
-    "Zishan Shao",
-    "Tingjun Chen",
-    "Hai Helen Li",
-    "Danyang Zhuo",
-    "Yiran Chen"
-   ],
-   "abstract": "Multi-agent systems (MAS) usually coordinate heterogeneous models and tools to solve complex tasks, creating a growing need for reliable evaluation. However, a multi-agent workflow that is fastest in one serving environment can lose its advantage in another, even when its models, prompts, and task remain fixed. This makes a benchmark result conditional on how the workflow is executed. We introduce MASSys, a benchmark for measuring this dependence in multi-agent large language model (LLM) systems. MASSys executes the same candidate-task pairs across serving substrates and load regimes, using five workload families spanning software repair, research synthesis, financial analysis, interactive control, and diagram generation. It records task quality alongside delivery, latency, cost, resource pressure, and failure evidence. In a controlled motivation diagnostic, the Star workflow falls from first to fourth in mean-latency rank under KV-cache pressure, while Chain rises from fourth to first. The substrate sweeps further show that increasing load creates long runtime tails and timeout pressure. In several task families, quality among evaluated outputs changes less than effective quality over submitted jobs: the system delivers fewer usable results even when the surviving outputs remain competitive. Tool and runtime traces reveal that these outcomes involve both model serving and non-model execution. Together, the results motivate evaluating MAS designs over explicit operating conditions and reporting which tasks are delivered, how well they are solved, and where execution breaks down.",
-   "primary": "cs.MA",
-   "categories": [
-    "cs.MA",
-    "cs.AI",
-    "cs.LG"
-   ],
-   "published": "2026-11-21T08:50:10Z",
-   "updated": "2026-11-21T08:50:10Z",
-   "comment": "Code: https://github.com/MAS-Sys-Bench/MAS-Sys ; Project page: https://mas-sys-bench.github.io/MAS-Sys-Page/ ; Trace dataset: https://huggingface.co/datasets/MAS-Sys/MAS-Sys-Traces",
-   "code_url": "https://github.com/MAS-Sys-Bench/MAS-Sys",
-   "tags": [
-    "agents",
-    "benchmark",
-    "efficiency",
-    "LLM"
-   ],
-   "ax_votes": 2,
-   "ax_visits": 27,
-   "heat": 4.7,
-   "orgs": [
-    {
-     "logo": "data/logos/duke.edu.png",
-     "name": "Duke University",
-     "ror": "00py81415"
-    }
-   ],
-   "thumb": "data/thumbs/2611.28671.jpg",
-   "thumb_w": 640,
-   "thumb_h": 343,
-   "summary": {
-    "en": "MASSys benchmarks multi-agent LLM workflows across serving substrates and load regimes on five task families, tracking quality, latency, cost, and failures; under KV-cache pressure, Star drops from first to fourth in latency rank while Chain rises from fourth to first.",
-    "zh": "MASSys 在多种 serving substrate 与负载条件下对同一批多智能体 LLM 工作流运行五类任务，记录质量、时延、成本与失败证据；在 KV-cache 压力下 Star 的平均延迟排名从第一跌至第四，Chain 则从第四升至第一。"
-   },
-   "summary_source": "deepseek-flash",
-   "listed": "2026-11-24",
-   "sections": []
-  },
-  {
    "id": "2611.28158",
    "title": "Measuring and Teaching Language Model Agents to Act on Delayed Consequences",
    "authors": [
@@ -7414,31 +7414,50 @@
    "sections": []
   },
   {
-   "id": "2611.30042",
-   "title": "SWAM: State-aware World Action Model for Multi-Agent 3D Environments",
+   "id": "2611.29361",
+   "title": "Beyond Attention Maps: Understanding and Improving Medical MLLMs via Visual Values",
    "authors": [
-    "Jenna Kang",
-    "Bingxuan Li",
-    "Colin Groth",
-    "Anatolii Evdokimov",
-    "Sai Zhang",
-    "Qi Sun"
+    "Yichen Zhao",
+    "Fenghe Tang",
+    "Wenxin Ma",
+    "Rongsheng Wang",
+    "Zihao Wan",
+    "Shaohua Kevin Zhou"
    ],
-   "abstract": "Interactive world models generate virtual environments autoregressively from player actions and visual history. However, visual history alone cannot reliably capture the evolving states of independently acting non-player characters (NPCs) in real games, particularly when they are outside the camera view. Recent multi-agent world models address this challenge through joint multi-view generation or persistent shared state, but often rely on external observations, like maps or scene geometry, or predefined state transitions. We present SWAM, a State-aware World Action Model that separates agent-state evolution from autoregressive visual generation in interactive 3D environments. A lightweight state model propagates character dynamics from actions without consuming generated frames, combining motion priors with learned scene-dependent corrections. The predicted states then guide an autoregressive diffusion transformer alongside visual history through a novel conditioning scheme. Rather than requiring an explicit scene geometry map or visibility tests, the conditioning indicates where characters may appear, allowing the diffusion model to learn their appearance and occlusion. This design enables NPCs to evolve independently of visual generation while maintaining consistent observations across visibility changes, interactions, and respawns. Evaluations in a custom Godot-based first-person shooter game demonstrate improvements in visual fidelity, NPC consistency, and long-horizon stability over existing approaches.",
-   "primary": "cs.AI",
+   "abstract": "Current MLLM methods largely focus on whether models attend to the right visual regions, implicitly treating spatial attention map as the primary key of effective visual perception. To examine this assumption, we introduce a medical VQA dataset with paired non-contrast (NC) and contrast-enhanced (CE) images that share corresponding anatomy while providing different cues. We show that this view is incomplete: across paired NC and CE medical images, MLLMs often exhibit similar attention patterns despite producing contrasting answers, while controlled bidirectional interventions induce substantially larger prediction changes on visual values than attention weights. These results identify the visual content retrieved through values as a critical factor in improving perception beyond spatial attention alone. Guided by this finding, we propose VIVID (VIsual Value Intervention Distillation), which uses enhanced visual values to identify and refine teacher corrections aligned with useful visual evidence to improve on-policy distillation from CE to NC images. Across six internal and external test sets, VIVID consistently outperforms existing on-policy distillation methods across different model scales and architectures, requires only NC images at inference, and maintains strong zero-shot performance on general-domain VQA benchmarks. The project page is available at https://qiuzyc.github.io/VIVID.",
+   "primary": "cs.CV",
    "categories": [
-    "cs.AI",
     "cs.CV"
    ],
-   "published": "2026-11-23T04:49:25Z",
-   "updated": "2026-11-23T04:49:25Z",
+   "published": "2026-11-22T09:55:46Z",
+   "updated": "2026-11-22T09:55:46Z",
    "comment": "",
    "tags": [
-    "world model"
+    "multimodal",
+    "LLM",
+    "alignment",
+    "interpretability"
    ],
-   "ax_votes": 0,
-   "ax_visits": 40,
-   "heat": 4.0,
+   "summary": {
+    "en": "Paired non-contrast and contrast-enhanced medical images show MLLM attention maps can match while answers differ, making value-retrieved visual content key; VIVID distills teacher corrections via enhanced visual values, beating prior on-policy distillation across six test sets with non-contrast-only inference.",
+    "zh": "利用配对平扫与增强医学图像的对比表明，MLLM 的注意力图相同答案却不同，通过视觉 value 检索的内容关键；VIVID 用增强视觉 value 筛选教师修正做 on-policy 蒸馏，六个测试集上优于现有方法且推理只需平扫图像。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 2,
+   "ax_votes": 1,
+   "ax_visits": 11,
+   "heat": 4.1,
+   "orgs": [
+    {
+     "name": "USTC"
+    },
+    {
+     "name": "University of Texas at Austin"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29361.jpg",
+   "thumb_w": 328,
+   "thumb_h": 440,
    "listed": "2026-11-24",
    "sections": []
   },
@@ -7491,56 +7510,37 @@
    "thumb_w": 640,
    "thumb_h": 227,
    "summary": {
-    "zh": "VTLA-RL 让视觉编码器同时处理触觉图像序列与 RGB 输入，在统一动作空间中输出运动与双侧力目标，经混合真实与仿真演示预训练、两阶段多任务 RL 后直接部署真机，抓取成功率高于监督初始化，且在不同负载与位置扰动下表现更稳。",
-    "en": "VTLA-RL shares a visual encoder between tactile-image histories and RGB to output motion and bilateral force targets, then applies two-stage multi-task RL in simulation and deploys directly to real robots, outperforming supervised initialization in grasping success."
+    "en": "VTLA-RL shares a visual encoder between tactile-image histories and RGB to output motion and bilateral force targets, then applies two-stage multi-task RL in simulation and deploys directly to real robots, outperforming supervised initialization in grasping success.",
+    "zh": "VTLA-RL 让视觉编码器同时处理触觉图像序列与 RGB 输入，在统一动作空间中输出运动与双侧力目标，经混合真实与仿真演示预训练、两阶段多任务 RL 后直接部署真机，抓取成功率高于监督初始化，且在不同负载与位置扰动下表现更稳。"
    },
    "summary_source": "deepseek-flash"
   },
   {
-   "id": "2611.29361",
-   "title": "Beyond Attention Maps: Understanding and Improving Medical MLLMs via Visual Values",
+   "id": "2611.30042",
+   "title": "SWAM: State-aware World Action Model for Multi-Agent 3D Environments",
    "authors": [
-    "Yichen Zhao",
-    "Fenghe Tang",
-    "Wenxin Ma",
-    "Rongsheng Wang",
-    "Zihao Wan",
-    "Shaohua Kevin Zhou"
+    "Jenna Kang",
+    "Bingxuan Li",
+    "Colin Groth",
+    "Anatolii Evdokimov",
+    "Sai Zhang",
+    "Qi Sun"
    ],
-   "abstract": "Current MLLM methods largely focus on whether models attend to the right visual regions, implicitly treating spatial attention map as the primary key of effective visual perception. To examine this assumption, we introduce a medical VQA dataset with paired non-contrast (NC) and contrast-enhanced (CE) images that share corresponding anatomy while providing different cues. We show that this view is incomplete: across paired NC and CE medical images, MLLMs often exhibit similar attention patterns despite producing contrasting answers, while controlled bidirectional interventions induce substantially larger prediction changes on visual values than attention weights. These results identify the visual content retrieved through values as a critical factor in improving perception beyond spatial attention alone. Guided by this finding, we propose VIVID (VIsual Value Intervention Distillation), which uses enhanced visual values to identify and refine teacher corrections aligned with useful visual evidence to improve on-policy distillation from CE to NC images. Across six internal and external test sets, VIVID consistently outperforms existing on-policy distillation methods across different model scales and architectures, requires only NC images at inference, and maintains strong zero-shot performance on general-domain VQA benchmarks. The project page is available at https://qiuzyc.github.io/VIVID.",
-   "primary": "cs.CV",
+   "abstract": "Interactive world models generate virtual environments autoregressively from player actions and visual history. However, visual history alone cannot reliably capture the evolving states of independently acting non-player characters (NPCs) in real games, particularly when they are outside the camera view. Recent multi-agent world models address this challenge through joint multi-view generation or persistent shared state, but often rely on external observations, like maps or scene geometry, or predefined state transitions. We present SWAM, a State-aware World Action Model that separates agent-state evolution from autoregressive visual generation in interactive 3D environments. A lightweight state model propagates character dynamics from actions without consuming generated frames, combining motion priors with learned scene-dependent corrections. The predicted states then guide an autoregressive diffusion transformer alongside visual history through a novel conditioning scheme. Rather than requiring an explicit scene geometry map or visibility tests, the conditioning indicates where characters may appear, allowing the diffusion model to learn their appearance and occlusion. This design enables NPCs to evolve independently of visual generation while maintaining consistent observations across visibility changes, interactions, and respawns. Evaluations in a custom Godot-based first-person shooter game demonstrate improvements in visual fidelity, NPC consistency, and long-horizon stability over existing approaches.",
+   "primary": "cs.AI",
    "categories": [
+    "cs.AI",
     "cs.CV"
    ],
-   "published": "2026-11-22T09:55:46Z",
-   "updated": "2026-11-22T09:55:46Z",
+   "published": "2026-11-23T04:49:25Z",
+   "updated": "2026-11-23T04:49:25Z",
    "comment": "",
    "tags": [
-    "multimodal",
-    "LLM",
-    "alignment",
-    "interpretability"
+    "world model"
    ],
-   "summary": {
-    "en": "Paired non-contrast and contrast-enhanced medical images show MLLM attention maps can match while answers differ, making value-retrieved visual content key; VIVID distills teacher corrections via enhanced visual values, beating prior on-policy distillation across six test sets with non-contrast-only inference.",
-    "zh": "利用配对平扫与增强医学图像的对比表明，MLLM 的注意力图相同答案却不同，通过视觉 value 检索的内容关键；VIVID 用增强视觉 value 筛选教师修正做 on-policy 蒸馏，六个测试集上优于现有方法且推理只需平扫图像。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 2,
-   "ax_votes": 1,
-   "ax_visits": 11,
-   "heat": 4.1,
-   "orgs": [
-    {
-     "name": "USTC"
-    },
-    {
-     "name": "University of Texas at Austin"
-    }
-   ],
-   "thumb": "data/thumbs/2611.29361.jpg",
-   "thumb_w": 328,
-   "thumb_h": 440,
+   "ax_votes": 0,
+   "ax_visits": 40,
+   "heat": 4.0,
    "listed": "2026-11-24",
    "sections": []
   },
@@ -7576,8 +7576,8 @@
     "reasoning"
    ],
    "summary": {
-    "zh": "Agent on Guard 让冻结的机器人基础策略与编程智能体分层协作，依据观测新鲜度、剩余恢复窗口和推理耗时动态分配控制权，并用下游任务进度和资源消耗迭代改进恢复与调度；在 RoboDojo-Sim 上成功率 50.57%、任务分 57.26，较最强基线分别高 11.22 个百分点和 10.68 分，端到端延迟与在线 token 消耗较 GPT-6 Astra 分别降低 80.4% 和 85.1%。",
-    "en": "Agent on Guard hierarchically couples a frozen robot policy with a programming agent, allocating control by observation freshness and recovery windows and refining interventions from downstream outcomes; on RoboDojo-Sim it reaches 50.57% success, beating the best baseline by 11.22 points while cutting latency 80.4% and tokens 85.1% versus GPT-6 Astra."
+    "en": "Agent on Guard hierarchically couples a frozen robot policy with a programming agent, allocating control by observation freshness and recovery windows and refining interventions from downstream outcomes; on RoboDojo-Sim it reaches 50.57% success, beating the best baseline by 11.22 points while cutting latency 80.4% and tokens 85.1% versus GPT-6 Astra.",
+    "zh": "Agent on Guard 让冻结的机器人基础策略与编程智能体分层协作，依据观测新鲜度、剩余恢复窗口和推理耗时动态分配控制权，并用下游任务进度和资源消耗迭代改进恢复与调度；在 RoboDojo-Sim 上成功率 50.57%、任务分 57.26，较最强基线分别高 11.22 个百分点和 10.68 分，端到端延迟与在线 token 消耗较 GPT-6 Astra 分别降低 80.4% 和 85.1%。"
    },
    "summary_source": "deepseek-flash",
    "ax_votes": 1,
@@ -7606,6 +7606,48 @@
    "thumb": "data/thumbs/2611.30101.jpg",
    "thumb_w": 640,
    "thumb_h": 339
+  },
+  {
+   "id": "2611.28665",
+   "title": "Seeing Right, Writing Wrong: Where Short Chain-of-Thought Breaks Spatial VQA",
+   "authors": [
+    "Chenhao Zhang"
+   ],
+   "abstract": "Asking a vision-language model (VLM) to think step by step often makes it worse at spatial questions, even though the image stays in context. We show that short chain-of-thought (CoT) turns a perception problem into a transcription problem. Once a VLM writes a spatial relation, its answer follows that sentence instead of the image, so whether CoT helps or hurts depends largely on whether the written relation is more accurate than answering directly. Studying 15 open VLMs (2B-38B) and six frontier closed models, we rule out token count, turn format, and visual forgetting in open models and trace the failure through three stages. First, writing re-weights visual cues, weakening a \"lower is closer\" shortcut in all 13 open models tested but also discarding valid cues, which produces false relations. Second, the written text takes over. With the model's own conclusion-removed rationale held fixed, swapping in an opposite-depth image moves the answer by 2-9 points on rendered twins (vs. up to 77 for direct answers) and by 3.0-3.4 points on average on natural photographs (vs. 20.5-69.6). Third, the concluding sentence can invert even a true relation, mainly on converse questions. Together, false relations and conclusion mis-mapping account for four in five CoT losses. Scale does not remove this bottleneck: Qwen3-VL-32B shows the same pattern. Frontier closed models are not hurt: they write relations as accurately as they answer, and three of six re-check the image after writing. The three queried with reasoning off lock in like open models, so re-grounding co-occurs with answer-turn reasoning; we identify answer-step re-grounding as the step open VLMs lack. In a single-model pilot, fine-tuning on fixed rationales with image-determined labels restores it on natural photographs. We open-sourced all our datasets and code at https://ming-zch.github.io/seeing-right-writing-wrong.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.CL"
+   ],
+   "published": "2026-11-21T08:45:39Z",
+   "updated": "2026-11-21T08:45:39Z",
+   "comment": "46 pages, 7 figures, 46 tables; Project page: https://ming-zch.github.io/seeing-right-writing-wrong/",
+   "tags": [
+    "VLM",
+    "reasoning",
+    "interpretability",
+    "benchmark"
+   ],
+   "summary": {
+    "en": "Short chain-of-thought turns spatial VQA into transcription: once a VLM writes a spatial relation, answers follow that sentence over the image. Across 15 open and 6 closed models, false relations and conclusion mis-mapping cause four in five CoT losses; frontier models re-ground after writing.",
+    "zh": "研究发现短链式思维把空间VQA变成转写问题：VLM一旦写出空间关系便依从该句而非图像。在15个开源模型与6个闭源前沿模型上，写作会削弱“越低越近”启发式并丢弃有效线索，结论句还可能反转正确关系，错误关系与结论映射占CoT损失的八成；Qwen3-VL-32B同样如此，闭源模型则无此损，且六分之三在写作后会重新检查图像。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 3,
+   "ax_votes": 0,
+   "ax_visits": 8,
+   "heat": 3.8,
+   "orgs": [
+    {
+     "name": "Huazhong University of Science and Technology",
+     "ror": "00p991c53"
+    }
+   ],
+   "thumb": "data/thumbs/2611.28665.jpg",
+   "thumb_w": 640,
+   "thumb_h": 263,
+   "listed": "2026-11-24",
+   "sections": []
   },
   {
    "id": "2611.30310",
@@ -7657,48 +7699,6 @@
    "thumb": "data/thumbs/2611.30310.jpg",
    "thumb_w": 640,
    "thumb_h": 276,
-   "listed": "2026-11-24",
-   "sections": []
-  },
-  {
-   "id": "2611.28665",
-   "title": "Seeing Right, Writing Wrong: Where Short Chain-of-Thought Breaks Spatial VQA",
-   "authors": [
-    "Chenhao Zhang"
-   ],
-   "abstract": "Asking a vision-language model (VLM) to think step by step often makes it worse at spatial questions, even though the image stays in context. We show that short chain-of-thought (CoT) turns a perception problem into a transcription problem. Once a VLM writes a spatial relation, its answer follows that sentence instead of the image, so whether CoT helps or hurts depends largely on whether the written relation is more accurate than answering directly. Studying 15 open VLMs (2B-38B) and six frontier closed models, we rule out token count, turn format, and visual forgetting in open models and trace the failure through three stages. First, writing re-weights visual cues, weakening a \"lower is closer\" shortcut in all 13 open models tested but also discarding valid cues, which produces false relations. Second, the written text takes over. With the model's own conclusion-removed rationale held fixed, swapping in an opposite-depth image moves the answer by 2-9 points on rendered twins (vs. up to 77 for direct answers) and by 3.0-3.4 points on average on natural photographs (vs. 20.5-69.6). Third, the concluding sentence can invert even a true relation, mainly on converse questions. Together, false relations and conclusion mis-mapping account for four in five CoT losses. Scale does not remove this bottleneck: Qwen3-VL-32B shows the same pattern. Frontier closed models are not hurt: they write relations as accurately as they answer, and three of six re-check the image after writing. The three queried with reasoning off lock in like open models, so re-grounding co-occurs with answer-turn reasoning; we identify answer-step re-grounding as the step open VLMs lack. In a single-model pilot, fine-tuning on fixed rationales with image-determined labels restores it on natural photographs. We open-sourced all our datasets and code at https://ming-zch.github.io/seeing-right-writing-wrong.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.CL"
-   ],
-   "published": "2026-11-21T08:45:39Z",
-   "updated": "2026-11-21T08:45:39Z",
-   "comment": "46 pages, 7 figures, 46 tables; Project page: https://ming-zch.github.io/seeing-right-writing-wrong/",
-   "tags": [
-    "VLM",
-    "reasoning",
-    "interpretability",
-    "benchmark"
-   ],
-   "summary": {
-    "en": "Short chain-of-thought turns spatial VQA into transcription: once a VLM writes a spatial relation, answers follow that sentence over the image. Across 15 open and 6 closed models, false relations and conclusion mis-mapping cause four in five CoT losses; frontier models re-ground after writing.",
-    "zh": "研究发现短链式思维把空间VQA变成转写问题：VLM一旦写出空间关系便依从该句而非图像。在15个开源模型与6个闭源前沿模型上，写作会削弱“越低越近”启发式并丢弃有效线索，结论句还可能反转正确关系，错误关系与结论映射占CoT损失的八成；Qwen3-VL-32B同样如此，闭源模型则无此损，且六分之三在写作后会重新检查图像。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 3,
-   "ax_votes": 0,
-   "ax_visits": 8,
-   "heat": 3.8,
-   "orgs": [
-    {
-     "name": "Huazhong University of Science and Technology",
-     "ror": "00p991c53"
-    }
-   ],
-   "thumb": "data/thumbs/2611.28665.jpg",
-   "thumb_w": 640,
-   "thumb_h": 263,
    "listed": "2026-11-24",
    "sections": []
   },
@@ -7906,28 +7906,31 @@
    "sections": []
   },
   {
-   "id": "2611.30273",
-   "title": "DUET: Dual-MDL Unsupervised Entropy-Trie Segmentation for Low-Resource Languages",
+   "id": "2611.31595",
+   "title": "LUCID: Statistically Grounded Self-Correction for LLM Reasoning Evaluation",
    "authors": [
-    "Xiaotian Wang",
-    "Youyuan Lin",
-    "Zhan Shen",
-    "Hitomi Yanaka"
+    "Satiyabooshan Murugaboopathy",
+    "Adel Daoud",
+    "Connor T. Jerzak"
    ],
-   "abstract": "Morphological segmentation, the task of decomposing words into constituent morphemes, becomes particularly challenging under extreme data scarcity, a regime that can arise in language documentation and linguistic reasoning. This difficulty stems from existing approaches' reliance on annotated data, external resources, or recurring patterns that emerge only in larger corpora. To address this limitation, we propose Dual-MDL Unsupervised Entropy-Trie Segmentation (DUET), a deterministic unsupervised algorithm that decouples structural candidate generation from statistical candidate ranking. DUET combines branching entropy with recursive paradigm discovery to generate linguistically plausible candidate segmentations, then ranks them using a dual minimum description length (MDL) criterion: a corpus-level objective rewards morpheme reuse, while a construction-tree objective guards against over-segmentation. On the SIGMORPHON 2023 interlinear glossing shared task, DUET outperforms unsupervised baselines in Morpheme F1 under both the standard and simulated extremely low-resource settings, while providing broader candidate coverage. Augmenting prompts with DUET segmentations improves performance on a linguistic reasoning benchmark, yielding the best overall results among the evaluated segmentation methods.",
+   "abstract": "Cheap language-model raters grade chain-of-thought reasoning at scale, yet systematic step-rating errors can skew reasoning audits and solution rankings. We introduce LUCID (Loop for Unbiased Calibration via Inference-time Diagnosis), which pairs prompt self-correction with Design-based Supervised Learning (DSL). Without retraining or weight access, LUCID calibrates binary step ratings by aligning predicted and expert soundness rates. From a small expert-labeled set, LUCID summarizes rater bias in plain text and prompts the rater to re-grade unseen steps. For example, on PRM800K, GPT-5-mini grades too strictly, under-rating computation, verification, and late-trace steps most acutely. In one pass, LUCID shrinks GPT-5-mini's calibration gap from 7.8 to 0.9 percentage points in absolute predicted-expert rate difference. LUCID also halves false alarms (sound steps rated unsound) and lifts error-detection F1 on unsound steps by 32%. LUCID retains these gains with 1,000 diagnostic steps or overall-gap feedback alone. The loop also transfers across models and domains: it applies GPT-5-mini's bias profile to lift GLM-5.2's PRM800K accuracy, and it narrows calibration gaps for overly strict but capable raters across math, science, web, and logic benchmarks. Because prompt feedback shifts thresholds without improving class-balanced sound/unsound discrimination, LUCID filters re-grading with pre-/post-checks that skip already calibrated raters and roll back ineffective passes. Finally, we reuse that expert set with raw corpus ratings in DSL for calibration and regression debiasing, and apply DSL to pair-labeled steps for sound-step transitions. DSL's out-of-fold soundness probabilities lift best-of-K selection to match expert labels, while its doubly-robust estimators beat expert-only regression fits at small budgets and cut sound-step transition error by nearly two-thirds.",
    "primary": "cs.CL",
    "categories": [
-    "cs.CL"
+    "cs.CL",
+    "cs.LG",
+    "stat.ME"
    ],
-   "published": "2026-11-23T08:30:47Z",
-   "updated": "2026-11-23T08:30:47Z",
-   "comment": "To appear in the Proceedings of the 20th Conference of the European Chapter of the Association for Computational Linguistics (EACL2027 main)",
+   "published": "2026-11-23T21:40:54Z",
+   "updated": "2026-11-23T21:40:54Z",
+   "comment": "Findings of EACL 2027",
    "tags": [
+    "VLM/LLM",
     "benchmark"
    ],
-   "ax_votes": 2,
-   "ax_visits": 15,
-   "heat": 3.5,
+   "hf_upvotes": 3,
+   "ax_votes": 0,
+   "ax_visits": 6,
+   "heat": 3.6,
    "listed": "2026-11-24",
    "sections": []
   },
@@ -7991,6 +7994,55 @@
    "sections": []
   },
   {
+   "id": "2611.30273",
+   "title": "DUET: Dual-MDL Unsupervised Entropy-Trie Segmentation for Low-Resource Languages",
+   "authors": [
+    "Xiaotian Wang",
+    "Youyuan Lin",
+    "Zhan Shen",
+    "Hitomi Yanaka"
+   ],
+   "abstract": "Morphological segmentation, the task of decomposing words into constituent morphemes, becomes particularly challenging under extreme data scarcity, a regime that can arise in language documentation and linguistic reasoning. This difficulty stems from existing approaches' reliance on annotated data, external resources, or recurring patterns that emerge only in larger corpora. To address this limitation, we propose Dual-MDL Unsupervised Entropy-Trie Segmentation (DUET), a deterministic unsupervised algorithm that decouples structural candidate generation from statistical candidate ranking. DUET combines branching entropy with recursive paradigm discovery to generate linguistically plausible candidate segmentations, then ranks them using a dual minimum description length (MDL) criterion: a corpus-level objective rewards morpheme reuse, while a construction-tree objective guards against over-segmentation. On the SIGMORPHON 2023 interlinear glossing shared task, DUET outperforms unsupervised baselines in Morpheme F1 under both the standard and simulated extremely low-resource settings, while providing broader candidate coverage. Augmenting prompts with DUET segmentations improves performance on a linguistic reasoning benchmark, yielding the best overall results among the evaluated segmentation methods.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL"
+   ],
+   "published": "2026-11-23T08:30:47Z",
+   "updated": "2026-11-23T08:30:47Z",
+   "comment": "To appear in the Proceedings of the 20th Conference of the European Chapter of the Association for Computational Linguistics (EACL2027 main)",
+   "tags": [
+    "benchmark"
+   ],
+   "ax_votes": 2,
+   "ax_visits": 15,
+   "heat": 3.5,
+   "listed": "2026-11-24",
+   "sections": []
+  },
+  {
+   "id": "2611.31160",
+   "title": "Habitats: A Framework for Open-Ended Evolution of Agent Objectives",
+   "authors": [
+    "Nicolas Bolouri",
+    "Gaya Mehenni",
+    "Daniel Toyama"
+   ],
+   "abstract": "Designing what an agent should optimize can be as difficult as optimizing the agent itself. Existing language-model-based reward-generation methods typically refine objectives for predefined tasks and couple the decision of what to explore with the synthesis of how to implement it, potentially narrowing the resulting behavioral repertoire. We introduce Habitats, a framework for open-ended evolution of executable agent objectives. Habitats maintains a population of reward-policy pairs and evaluates every policy under every population reward, producing a cross-fitness matrix that exposes self-mastery, transfer, and functional diversity. A population-level Planner uses this information to select parent rewards and issue targeted mutation directives, while a separate Mutator translates those directives into validated reward programs. We evaluate Habitats in a discrete Card Sandbox and three continuous-control environments (Cart-Pole, Hopper, and Cheetah) against Independent Generation and Direct Mutation baselines. Across four environments and three random seeds, Habitats achieves the highest macro-averaged final Specialist Quality and Behavioral Diversity, with final diversity reaching 1.8x that of Direct Mutation and 2.5x that of Independent Generation. Finally, across ten downstream objectives unseen during evolution, frozen Habitats policy libraries achieve higher paired win rates than size-matched Direct Mutation and Independent Generation libraries at 10,000 adaptation episodes, while also surpassing task-specific policies trained from scratch for 20,000 episodes. These results suggest that separating population-level planning from reward synthesis enables the discovery of diverse, learnable, and reusable behaviors.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-23T18:23:16Z",
+   "updated": "2026-11-23T18:23:16Z",
+   "comment": "To be published in the Managing Agents that Manage Agents Workshop on Responsible Use of Meta-Agents at the Fortieth Annual Conference on Neural Information Processing Systems (2026)",
+   "tags": [],
+   "ax_votes": 1,
+   "ax_visits": 25,
+   "heat": 3.5,
+   "listed": "2026-11-24",
+   "sections": []
+  },
+  {
    "id": "2611.30477",
    "title": "OVOGO: Offline Value-Guided On-Policy Generative Optimization for Flow-Based Vision-Language-Action Models",
    "authors": [
@@ -8023,8 +8075,8 @@
     "manipulation"
    ],
    "summary": {
-    "zh": "OVOGO 将离线价值学习与策略生成过程的在线优化分离，用 Return-Anchored Ranking Critic 结合样本内分布价值学习与受约束局部排序，为当前 flow 策略新采样的动作提供分组相对价值信号；在 RoboTwin 2.0、DexJoCo、LIBERO 及真实机器人灵巧操作任务上均提升初始 VLA，成功率高于所对比的离线适应与价值引导基线。",
-    "en": "OVOGO separates offline value learning from on-policy optimization of flow-based VLA generation, using a Return-Anchored Ranking Critic to score freshly sampled actions. It improves the initial VLA on RoboTwin 2.0, DexJoCo, LIBERO, and a real dexterous manipulation task."
+    "en": "OVOGO separates offline value learning from on-policy optimization of flow-based VLA generation, using a Return-Anchored Ranking Critic to score freshly sampled actions. It improves the initial VLA on RoboTwin 2.0, DexJoCo, LIBERO, and a real dexterous manipulation task.",
+    "zh": "OVOGO 将离线价值学习与策略生成过程的在线优化分离，用 Return-Anchored Ranking Critic 结合样本内分布价值学习与受约束局部排序，为当前 flow 策略新采样的动作提供分组相对价值信号；在 RoboTwin 2.0、DexJoCo、LIBERO 及真实机器人灵巧操作任务上均提升初始 VLA，成功率高于所对比的离线适应与价值引导基线。"
    },
    "summary_source": "deepseek-flash",
    "ax_votes": 1,
@@ -8047,58 +8099,6 @@
    "thumb": "data/thumbs/2611.30477.jpg",
    "thumb_w": 640,
    "thumb_h": 265
-  },
-  {
-   "id": "2611.31160",
-   "title": "Habitats: A Framework for Open-Ended Evolution of Agent Objectives",
-   "authors": [
-    "Nicolas Bolouri",
-    "Gaya Mehenni",
-    "Daniel Toyama"
-   ],
-   "abstract": "Designing what an agent should optimize can be as difficult as optimizing the agent itself. Existing language-model-based reward-generation methods typically refine objectives for predefined tasks and couple the decision of what to explore with the synthesis of how to implement it, potentially narrowing the resulting behavioral repertoire. We introduce Habitats, a framework for open-ended evolution of executable agent objectives. Habitats maintains a population of reward-policy pairs and evaluates every policy under every population reward, producing a cross-fitness matrix that exposes self-mastery, transfer, and functional diversity. A population-level Planner uses this information to select parent rewards and issue targeted mutation directives, while a separate Mutator translates those directives into validated reward programs. We evaluate Habitats in a discrete Card Sandbox and three continuous-control environments (Cart-Pole, Hopper, and Cheetah) against Independent Generation and Direct Mutation baselines. Across four environments and three random seeds, Habitats achieves the highest macro-averaged final Specialist Quality and Behavioral Diversity, with final diversity reaching 1.8x that of Direct Mutation and 2.5x that of Independent Generation. Finally, across ten downstream objectives unseen during evolution, frozen Habitats policy libraries achieve higher paired win rates than size-matched Direct Mutation and Independent Generation libraries at 10,000 adaptation episodes, while also surpassing task-specific policies trained from scratch for 20,000 episodes. These results suggest that separating population-level planning from reward synthesis enables the discovery of diverse, learnable, and reusable behaviors.",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI"
-   ],
-   "published": "2026-11-23T18:23:16Z",
-   "updated": "2026-11-23T18:23:16Z",
-   "comment": "To be published in the Managing Agents that Manage Agents Workshop on Responsible Use of Meta-Agents at the Fortieth Annual Conference on Neural Information Processing Systems (2026)",
-   "tags": [],
-   "ax_votes": 1,
-   "ax_visits": 25,
-   "heat": 3.5,
-   "listed": "2026-11-24",
-   "sections": []
-  },
-  {
-   "id": "2611.31595",
-   "title": "LUCID: Statistically Grounded Self-Correction for LLM Reasoning Evaluation",
-   "authors": [
-    "Satiyabooshan Murugaboopathy",
-    "Adel Daoud",
-    "Connor T. Jerzak"
-   ],
-   "abstract": "Cheap language-model raters grade chain-of-thought reasoning at scale, yet systematic step-rating errors can skew reasoning audits and solution rankings. We introduce LUCID (Loop for Unbiased Calibration via Inference-time Diagnosis), which pairs prompt self-correction with Design-based Supervised Learning (DSL). Without retraining or weight access, LUCID calibrates binary step ratings by aligning predicted and expert soundness rates. From a small expert-labeled set, LUCID summarizes rater bias in plain text and prompts the rater to re-grade unseen steps. For example, on PRM800K, GPT-5-mini grades too strictly, under-rating computation, verification, and late-trace steps most acutely. In one pass, LUCID shrinks GPT-5-mini's calibration gap from 7.8 to 0.9 percentage points in absolute predicted-expert rate difference. LUCID also halves false alarms (sound steps rated unsound) and lifts error-detection F1 on unsound steps by 32%. LUCID retains these gains with 1,000 diagnostic steps or overall-gap feedback alone. The loop also transfers across models and domains: it applies GPT-5-mini's bias profile to lift GLM-5.2's PRM800K accuracy, and it narrows calibration gaps for overly strict but capable raters across math, science, web, and logic benchmarks. Because prompt feedback shifts thresholds without improving class-balanced sound/unsound discrimination, LUCID filters re-grading with pre-/post-checks that skip already calibrated raters and roll back ineffective passes. Finally, we reuse that expert set with raw corpus ratings in DSL for calibration and regression debiasing, and apply DSL to pair-labeled steps for sound-step transitions. DSL's out-of-fold soundness probabilities lift best-of-K selection to match expert labels, while its doubly-robust estimators beat expert-only regression fits at small budgets and cut sound-step transition error by nearly two-thirds.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL",
-    "cs.LG",
-    "stat.ME"
-   ],
-   "published": "2026-11-23T21:40:54Z",
-   "updated": "2026-11-23T21:40:54Z",
-   "comment": "Findings of EACL 2027",
-   "tags": [
-    "VLM/LLM",
-    "benchmark"
-   ],
-   "hf_upvotes": 3,
-   "ax_votes": 0,
-   "ax_visits": 6,
-   "heat": 3.6,
-   "listed": "2026-11-24",
-   "sections": []
   },
   {
    "id": "2611.29936",
@@ -8336,6 +8336,57 @@
    "sections": []
   },
   {
+   "id": "2611.28574",
+   "title": "EvoViM: Recursively Self-Evolving Visual Agents for Exploration with Deferred Queries",
+   "authors": [
+    "Xinyu Cao",
+    "Tianjie Ju",
+    "Zhuosheng Zhang"
+   ],
+   "abstract": "Multimodal large language model (MLLM) agents have shown promising capabilities in task-oriented environments. However, they still struggle when queries are deferred until after exploration, requiring them to retain visual evidence before knowing which details will matter. We introduce EvoViM, a recursively self-evolving framework in which a frozen multimodal model turns its own interaction experience into one visual program for memory and skills. The program retains images and computes directly on pixels, and its operations decide how this evidence is used in each task. During memory evolution, the same model traces failures in its visual trajectories to the operations that lost or misused evidence and revises them. It also rewrites the notes and analysis tools that guide later revisions, which then build on earlier findings and skip changes that have already failed. We evaluate EvoViM with three multimodal models on six tasks covering visual matching, spatial recall, and sequential decision-making, including three tasks with deferred queries. Across the six tasks, EvoViM improves the average score over AutoMem, the strongest baseline in the main comparison, by 31.3-47.6 points on held-out episodes. Programs written once from the initial environment instructions perform substantially worse, highlighting the value of interaction experience in shaping how visual evidence is retained and used. Code and dataset are available at https://evovim.github.io/.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-21T05:14:15Z",
+   "updated": "2026-11-24T04:04:21Z",
+   "comment": "28 pages, 26 figures. Project page: https://evovim.github.io/",
+   "tags": [
+    "multimodal",
+    "agents",
+    "VLM",
+    "reasoning"
+   ],
+   "summary": {
+    "en": "EvoViM lets a frozen multimodal model recursively rewrite its interaction experience into a visual program that keeps and uses pixel evidence; it beats AutoMem by 31.3-47.6 points on six held-out tasks.",
+    "zh": "EvoViM 让冻结的多模态模型把自身交互经验递归改写为一份视觉程序，直接在像素上保留并调用视觉证据；在六项视觉匹配、空间回忆与序列决策任务上，其留出回合平均分比最强基线 AutoMem 高 31.3–47.6 分。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 1,
+   "ax_votes": 1,
+   "ax_visits": 11,
+   "heat": 3.1,
+   "orgs": [
+    {
+     "name": "Shanghai Jiao Tong University",
+     "ror": "0220qvk04"
+    },
+    {
+     "name": "Hunan University",
+     "ror": "05htk5m33"
+    },
+    {
+     "name": "NUS",
+     "ror": "01tgyzw49"
+    }
+   ],
+   "thumb": "data/thumbs/2611.28574.jpg",
+   "thumb_w": 640,
+   "thumb_h": 249,
+   "listed": "2026-11-24",
+   "sections": []
+  },
+  {
    "id": "2611.29947",
    "title": "SAGE-Drive: Benefit-Aware Adaptive Reasoning for Autonomous Driving Planning",
    "authors": [
@@ -8439,59 +8490,6 @@
    "thumb_h": 440
   },
   {
-   "id": "2611.30145",
-   "title": "RMR-VLA: Recurrent Memory Reasoning for Vision-Language-Action Models",
-   "authors": [
-    "Yiheng Du",
-    "Jingqi Tian",
-    "Xu Jiang",
-    "Jiexuan Zhang",
-    "Shuyu Wang",
-    "Zecheng Tang",
-    "Jian Zhang"
-   ],
-   "abstract": "Long-horizon, history-dependent robotic manipulation often requires acting on visual cues that have disappeared, such as an object indicated earlier or a target hidden under a moving cup. The key challenge is to maintain what past evidence means for the next action as the scene changes. We introduce Recurrent Memory Reasoning (RMR), an explicit reasoning step that connects memory to action inside a vision-language-action model (VLA), with no external reasoning model. At each update, the VLA first infers an event from visual evidence, then revises the task state and grounds a subgoal in the current scene to guide action generation. Carrying the state and subgoal across updates lets remembered identities and task progress determine the current target, doubling RoboMME success over an otherwise identical model without recurrence. Joint training lets one VLA both reason and act; because its memory decisions are text tokens with exact likelihoods, GRPO refines them from rollout rewards without making action generation stochastic. Among the compared methods, RMR-VLA achieves the best results on RoboMME (66.46% overall, 79.83% on the Reference category) and LIBERO-Mem (90.08%).",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.RO"
-   ],
-   "published": "2026-11-23T06:49:35Z",
-   "updated": "2026-11-23T06:49:35Z",
-   "comment": "",
-   "listed": "2026-11-24",
-   "tags": [
-    "VLA",
-    "manipulation",
-    "imitation"
-   ],
-   "summary": {
-    "en": "RMR-VLA introduces Recurrent Memory Reasoning to connect memory and action, achieving 66.46% on RoboMME and 90.08% on LIBERO-Mem, doubling success over baselines.",
-    "zh": "RMR-VLA引入了循环记忆推理机制，通过显式推理步骤连接记忆与动作，在RoboMME上取得了66.46%的总体成功率，相比没有循环机制的同类模型成功率翻倍，并在LIBERO-Mem上达到了90.08%。"
-   },
-   "summary_source": "gemini-3.5-flash-lite",
-   "ax_votes": 1,
-   "ax_visits": 19,
-   "heat": 2.9,
-   "sections": [
-    "rl"
-   ],
-   "orgs": [
-    {
-     "logo": "data/logos/pku.edu.cn.png",
-     "name": "Peking University",
-     "ror": "02v51f717"
-    },
-    {
-     "name": "Tsinghua University",
-     "ror": "03cve4549"
-    }
-   ],
-   "thumb": "data/thumbs/2611.30145.jpg",
-   "thumb_w": 640,
-   "thumb_h": 302
-  },
-  {
    "id": "2611.28194",
    "title": "HEP-Ex-Bench: Evaluating Agentic Performance in High Energy Physics Experiment Data Analyses with Sealed Worlds",
    "authors": [
@@ -8559,55 +8557,57 @@
    "sections": []
   },
   {
-   "id": "2611.28574",
-   "title": "EvoViM: Recursively Self-Evolving Visual Agents for Exploration with Deferred Queries",
+   "id": "2611.30145",
+   "title": "RMR-VLA: Recurrent Memory Reasoning for Vision-Language-Action Models",
    "authors": [
-    "Xinyu Cao",
-    "Tianjie Ju",
-    "Zhuosheng Zhang"
+    "Yiheng Du",
+    "Jingqi Tian",
+    "Xu Jiang",
+    "Jiexuan Zhang",
+    "Shuyu Wang",
+    "Zecheng Tang",
+    "Jian Zhang"
    ],
-   "abstract": "Multimodal large language model (MLLM) agents have shown promising capabilities in task-oriented environments. However, they still struggle when queries are deferred until after exploration, requiring them to retain visual evidence before knowing which details will matter. We introduce EvoViM, a recursively self-evolving framework in which a frozen multimodal model turns its own interaction experience into one visual program for memory and skills. The program retains images and computes directly on pixels, and its operations decide how this evidence is used in each task. During memory evolution, the same model traces failures in its visual trajectories to the operations that lost or misused evidence and revises them. It also rewrites the notes and analysis tools that guide later revisions, which then build on earlier findings and skip changes that have already failed. We evaluate EvoViM with three multimodal models on six tasks covering visual matching, spatial recall, and sequential decision-making, including three tasks with deferred queries. Across the six tasks, EvoViM improves the average score over AutoMem, the strongest baseline in the main comparison, by 31.3-47.6 points on held-out episodes. Programs written once from the initial environment instructions perform substantially worse, highlighting the value of interaction experience in shaping how visual evidence is retained and used. Code and dataset are available at https://evovim.github.io/.",
-   "primary": "cs.AI",
+   "abstract": "Long-horizon, history-dependent robotic manipulation often requires acting on visual cues that have disappeared, such as an object indicated earlier or a target hidden under a moving cup. The key challenge is to maintain what past evidence means for the next action as the scene changes. We introduce Recurrent Memory Reasoning (RMR), an explicit reasoning step that connects memory to action inside a vision-language-action model (VLA), with no external reasoning model. At each update, the VLA first infers an event from visual evidence, then revises the task state and grounds a subgoal in the current scene to guide action generation. Carrying the state and subgoal across updates lets remembered identities and task progress determine the current target, doubling RoboMME success over an otherwise identical model without recurrence. Joint training lets one VLA both reason and act; because its memory decisions are text tokens with exact likelihoods, GRPO refines them from rollout rewards without making action generation stochastic. Among the compared methods, RMR-VLA achieves the best results on RoboMME (66.46% overall, 79.83% on the Reference category) and LIBERO-Mem (90.08%).",
+   "primary": "cs.CV",
    "categories": [
-    "cs.AI"
+    "cs.CV",
+    "cs.RO"
    ],
-   "published": "2026-11-21T05:14:15Z",
-   "updated": "2026-11-24T04:04:21Z",
-   "comment": "28 pages, 26 figures. Project page: https://evovim.github.io/",
+   "published": "2026-11-23T06:49:35Z",
+   "updated": "2026-11-23T06:49:35Z",
+   "comment": "",
+   "listed": "2026-11-24",
    "tags": [
-    "multimodal",
-    "agents",
-    "VLM",
-    "reasoning"
+    "VLA",
+    "manipulation",
+    "imitation"
    ],
    "summary": {
-    "en": "EvoViM lets a frozen multimodal model recursively rewrite its interaction experience into a visual program that keeps and uses pixel evidence; it beats AutoMem by 31.3-47.6 points on six held-out tasks.",
-    "zh": "EvoViM 让冻结的多模态模型把自身交互经验递归改写为一份视觉程序，直接在像素上保留并调用视觉证据；在六项视觉匹配、空间回忆与序列决策任务上，其留出回合平均分比最强基线 AutoMem 高 31.3–47.6 分。"
+    "en": "RMR-VLA introduces Recurrent Memory Reasoning to connect memory and action, achieving 66.46% on RoboMME and 90.08% on LIBERO-Mem, doubling success over baselines.",
+    "zh": "RMR-VLA引入了循环记忆推理机制，通过显式推理步骤连接记忆与动作，在RoboMME上取得了66.46%的总体成功率，相比没有循环机制的同类模型成功率翻倍，并在LIBERO-Mem上达到了90.08%。"
    },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 1,
+   "summary_source": "gemini-3.5-flash-lite",
    "ax_votes": 1,
-   "ax_visits": 11,
-   "heat": 3.1,
+   "ax_visits": 19,
+   "heat": 2.9,
+   "sections": [
+    "rl"
+   ],
    "orgs": [
     {
-     "name": "Shanghai Jiao Tong University",
-     "ror": "0220qvk04"
+     "logo": "data/logos/pku.edu.cn.png",
+     "name": "Peking University",
+     "ror": "02v51f717"
     },
     {
-     "name": "Hunan University",
-     "ror": "05htk5m33"
-    },
-    {
-     "name": "NUS",
-     "ror": "01tgyzw49"
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
     }
    ],
-   "thumb": "data/thumbs/2611.28574.jpg",
+   "thumb": "data/thumbs/2611.30145.jpg",
    "thumb_w": 640,
-   "thumb_h": 249,
-   "listed": "2026-11-24",
-   "sections": []
+   "thumb_h": 302
   },
   {
    "id": "2611.29375",
@@ -8657,43 +8657,6 @@
    "sections": [
     "rl"
    ]
-  },
-  {
-   "id": "2611.29975",
-   "title": "Aligning Judge Models to Be Logically Consistent Multi-Rule Interpreters",
-   "authors": [
-    "Michel Liao",
-    "Nimra Nadeem",
-    "Luxi He",
-    "Peter Henderson"
-   ],
-   "abstract": "Technical governance of AI models will soon require them to reason over and follow thousands of rules from different jurisdictions. However, as we show in this work, presenting an entire ruleset to a judge model---rather than asking it to judge one rule at a time---changes the way the model interprets the requirements, making it reach conclusions that conflict with its rule-by-rule judgments. We call this challenge multi-rule inconsistency and find that models are more lenient when judging rules embedded within the full ruleset than when judging rules separately. For example, we find that when a safety-critical rule prohibiting a model from pursuing objectives other than those it was given appears in a larger ruleset, all tested judge models are less likely to deem it violated. We examine several methods for reducing inconsistency, including prompting, consistency training using GRPO, and iterative rule refinement. As in human statutory interpretation, surrounding rules shape how a rule is interpreted. Unlike the legal setting, however, these interactions are currently happening implicitly inside the judge model's reasoning. We argue that multi-rule interactions must be measured and handled explicitly by ruleset designers to prevent undetected shifts in interpretation from causing downstream alignment failures.",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI",
-    "cs.CY"
-   ],
-   "published": "2026-11-23T03:41:03Z",
-   "updated": "2026-11-23T03:41:03Z",
-   "comment": "",
-   "listed": "2026-11-24",
-   "tags": [],
-   "ax_votes": 1,
-   "ax_visits": 17,
-   "heat": 2.7,
-   "sections": [
-    "rl"
-   ],
-   "orgs": [
-    {
-     "logo": "data/logos/princeton.edu.png",
-     "name": "Princeton University",
-     "ror": "00hx57361"
-    }
-   ],
-   "thumb": "data/thumbs/2611.29975.jpg",
-   "thumb_w": 640,
-   "thumb_h": 256
   },
   {
    "id": "2611.31171",
@@ -8823,6 +8786,43 @@
    "thumb_h": 427,
    "listed": "2026-11-24",
    "sections": []
+  },
+  {
+   "id": "2611.29975",
+   "title": "Aligning Judge Models to Be Logically Consistent Multi-Rule Interpreters",
+   "authors": [
+    "Michel Liao",
+    "Nimra Nadeem",
+    "Luxi He",
+    "Peter Henderson"
+   ],
+   "abstract": "Technical governance of AI models will soon require them to reason over and follow thousands of rules from different jurisdictions. However, as we show in this work, presenting an entire ruleset to a judge model---rather than asking it to judge one rule at a time---changes the way the model interprets the requirements, making it reach conclusions that conflict with its rule-by-rule judgments. We call this challenge multi-rule inconsistency and find that models are more lenient when judging rules embedded within the full ruleset than when judging rules separately. For example, we find that when a safety-critical rule prohibiting a model from pursuing objectives other than those it was given appears in a larger ruleset, all tested judge models are less likely to deem it violated. We examine several methods for reducing inconsistency, including prompting, consistency training using GRPO, and iterative rule refinement. As in human statutory interpretation, surrounding rules shape how a rule is interpreted. Unlike the legal setting, however, these interactions are currently happening implicitly inside the judge model's reasoning. We argue that multi-rule interactions must be measured and handled explicitly by ruleset designers to prevent undetected shifts in interpretation from causing downstream alignment failures.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.CY"
+   ],
+   "published": "2026-11-23T03:41:03Z",
+   "updated": "2026-11-23T03:41:03Z",
+   "comment": "",
+   "listed": "2026-11-24",
+   "tags": [],
+   "ax_votes": 1,
+   "ax_visits": 17,
+   "heat": 2.7,
+   "sections": [
+    "rl"
+   ],
+   "orgs": [
+    {
+     "logo": "data/logos/princeton.edu.png",
+     "name": "Princeton University",
+     "ror": "00hx57361"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29975.jpg",
+   "thumb_w": 640,
+   "thumb_h": 256
   },
   {
    "id": "2611.29142",
@@ -9215,6 +9215,33 @@
    ]
   },
   {
+   "id": "2611.31163",
+   "title": "SPROUT: Predicting Objective-Grounded Prompt Utility for Efficient Text-to-Image Preference Tuning",
+   "authors": [
+    "Kangping Hu",
+    "Akshay Mehra",
+    "Stephen Mussmann"
+   ],
+   "abstract": "Preference tuning of text-to-image diffusion models spends most of its compute generating candidate images, yet training prompts are typically sampled uniformly at random, wasting compute generating images that provide too little signal for model alignment. To best utilize the available compute, we study prompt selection, where at each iteration we identify the most useful prompts for preference tuning. We separate prompt selection into a utility score, an estimator of that utility score, and batch selection. Within this framework, we propose Selection by PRedicting Objective-grounded UTility (SPROUT). The utility score is predicted on every prompt in the pool, including unseen prompts, by a text-only model, refit after every iteration on all utilities observed so far. A randomized acceptance rule then turns these predictions into a batch, so no images are generated beyond those used for training. For direct group preference optimization (DGPO), the objective-grounded utility is the norm of the gradient that the objective produces from a prompt's group of images. Fine-tuning Stable Diffusion 1.5 with DGPO on GenEval, SPROUT matches the final score of uniform sampling in about 44% of the iterations and improves the area under the learning curve with respect to both uniform sampling and CGPO, a recent variance-based prompt sampler. The efficiency gains hold under four held-out reward models never used in training, and the ranking of methods carries over to DPG-Bench and T2I-CompBench++. Our code is available at https://github.com/ADDAPT-ML/SPROUT.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-23T18:24:33Z",
+   "updated": "2026-11-23T18:24:33Z",
+   "comment": "",
+   "code_url": "https://github.com/ADDAPT-ML/SPROUT",
+   "tags": [],
+   "ax_votes": 1,
+   "ax_visits": 8,
+   "heat": 1.8,
+   "listed": "2026-11-24",
+   "sections": [
+    "rl"
+   ]
+  },
+  {
    "id": "2611.30162",
    "title": "AdaptRouter: Adaptive Routing across Evolving Tasks and Models",
    "authors": [
@@ -9242,33 +9269,6 @@
    "ax_votes": 0,
    "ax_visits": 16,
    "heat": 1.6,
-   "sections": [
-    "rl"
-   ]
-  },
-  {
-   "id": "2611.31163",
-   "title": "SPROUT: Predicting Objective-Grounded Prompt Utility for Efficient Text-to-Image Preference Tuning",
-   "authors": [
-    "Kangping Hu",
-    "Akshay Mehra",
-    "Stephen Mussmann"
-   ],
-   "abstract": "Preference tuning of text-to-image diffusion models spends most of its compute generating candidate images, yet training prompts are typically sampled uniformly at random, wasting compute generating images that provide too little signal for model alignment. To best utilize the available compute, we study prompt selection, where at each iteration we identify the most useful prompts for preference tuning. We separate prompt selection into a utility score, an estimator of that utility score, and batch selection. Within this framework, we propose Selection by PRedicting Objective-grounded UTility (SPROUT). The utility score is predicted on every prompt in the pool, including unseen prompts, by a text-only model, refit after every iteration on all utilities observed so far. A randomized acceptance rule then turns these predictions into a batch, so no images are generated beyond those used for training. For direct group preference optimization (DGPO), the objective-grounded utility is the norm of the gradient that the objective produces from a prompt's group of images. Fine-tuning Stable Diffusion 1.5 with DGPO on GenEval, SPROUT matches the final score of uniform sampling in about 44% of the iterations and improves the area under the learning curve with respect to both uniform sampling and CGPO, a recent variance-based prompt sampler. The efficiency gains hold under four held-out reward models never used in training, and the ranking of methods carries over to DPG-Bench and T2I-CompBench++. Our code is available at https://github.com/ADDAPT-ML/SPROUT.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.LG"
-   ],
-   "published": "2026-11-23T18:24:33Z",
-   "updated": "2026-11-23T18:24:33Z",
-   "comment": "",
-   "code_url": "https://github.com/ADDAPT-ML/SPROUT",
-   "tags": [],
-   "ax_votes": 1,
-   "ax_visits": 8,
-   "heat": 1.8,
-   "listed": "2026-11-24",
    "sections": [
     "rl"
    ]
@@ -10106,6 +10106,36 @@
    ]
   },
   {
+   "id": "2611.29473",
+   "title": "The norm axiom and factor hyperfields",
+   "authors": [
+    "Alessandro Linzi"
+   ],
+   "abstract": "Touchard and the author asked whether every valued hyperfield, in Krasner's sense with the norm axiom, is of the form $\\mathcal{H}_ρ(K)$: a valued field $K$ read up to relative error $ρ$. The question turns on the norm axiom. If a valued hyperfield is a quotient $K^\\times/T\\cup\\{0\\}$ of a field, the norm axiom forces $T=1+\\mathfrak{m}_ρ$ for a valuation on $K$. This completes the proof of a published proposition, and it makes the question equivalent to asking whether every Krasner valued hyperfield is such a quotient. For value group $\\mathbb{Z}$ we prove directly that it is. Without the norm axiom the answer is negative. Layering a hyperfield over a non-trivial ordered abelian group gives a factor hyperfield exactly when the hyperfield itself is one, so Massouros's hyperfields yield hyperfields with a non-trivial valuation, satisfying all the other axioms, that are not factor hyperfields. The general question remains open.",
+   "primary": "math.RA",
+   "categories": [
+    "math.RA",
+    "math.AC"
+   ],
+   "published": "2026-11-22T13:23:15Z",
+   "updated": "2026-11-22T13:23:15Z",
+   "comment": "17 pages",
+   "tags": [],
+   "ax_votes": 0,
+   "ax_visits": 5,
+   "heat": 0.5,
+   "orgs": [
+    {
+     "name": "Independent Researcher"
+    }
+   ],
+   "thumb": "data/thumbs/2611.29473.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440,
+   "listed": "2026-11-24",
+   "sections": []
+  },
+  {
    "id": "2611.29725",
    "title": "Continuous-Time LQR from a Single Discrete-Time Off-Policy Batch",
    "authors": [
@@ -10284,36 +10314,6 @@
    ]
   },
   {
-   "id": "2611.29473",
-   "title": "The norm axiom and factor hyperfields",
-   "authors": [
-    "Alessandro Linzi"
-   ],
-   "abstract": "Touchard and the author asked whether every valued hyperfield, in Krasner's sense with the norm axiom, is of the form $\\mathcal{H}_ρ(K)$: a valued field $K$ read up to relative error $ρ$. The question turns on the norm axiom. If a valued hyperfield is a quotient $K^\\times/T\\cup\\{0\\}$ of a field, the norm axiom forces $T=1+\\mathfrak{m}_ρ$ for a valuation on $K$. This completes the proof of a published proposition, and it makes the question equivalent to asking whether every Krasner valued hyperfield is such a quotient. For value group $\\mathbb{Z}$ we prove directly that it is. Without the norm axiom the answer is negative. Layering a hyperfield over a non-trivial ordered abelian group gives a factor hyperfield exactly when the hyperfield itself is one, so Massouros's hyperfields yield hyperfields with a non-trivial valuation, satisfying all the other axioms, that are not factor hyperfields. The general question remains open.",
-   "primary": "math.RA",
-   "categories": [
-    "math.RA",
-    "math.AC"
-   ],
-   "published": "2026-11-22T13:23:15Z",
-   "updated": "2026-11-22T13:23:15Z",
-   "comment": "17 pages",
-   "tags": [],
-   "ax_votes": 0,
-   "ax_visits": 5,
-   "heat": 0.5,
-   "orgs": [
-    {
-     "name": "Independent Researcher"
-    }
-   ],
-   "thumb": "data/thumbs/2611.29473.jpg",
-   "thumb_w": 618,
-   "thumb_h": 440,
-   "listed": "2026-11-24",
-   "sections": []
-  },
-  {
    "id": "2611.29518",
    "title": "Reset Dependence Is Embodied: Training Protocol Changes Which Morphologies Appear Optimal",
    "authors": [
@@ -10406,6 +10406,27 @@
    ]
   },
   {
+   "id": "2611.30737",
+   "title": "CCFinance: Reconstructing Financial News Samples from Web Archives",
+   "authors": [
+    "Marcus Gawronsky"
+   ],
+   "abstract": "Proprietary news archives assign stories to firms, so reproducing a financial study often requires access to both the articles and the vendor's assignments. CCFinance lets researchers reconstruct firm coverage under different selection rules by recording which version of a story was captured, which issuers it names and how often each appears. From 14.8 million English-language records in Fine News, derived from public Common Crawl News, we identify 5.22 million distinct, consistently dated articles with issuer links. Exact reconstruction requires the restricted snapshot and derived artifacts. We compare GLiNER and Stanza on 250 model-labeled article leads and assess issuer links and story focus against blinded model judgments. Estimated precision among 475 accepted links is 96.8%. Among held-out articles with a detected company, requiring three mentions raises subject precision from 31.9% to 66.1%. Across the 2017-2025 panel, the same rule reduces the number of issuer-years with at least 50 qualifying stories from 13,918 to 8,641. Three reimplementations examine volatility tracking, bank networks and overnight returns. In the network study, bank pairs appearing together rose from 177 to 242 across publishers between January and April 2020, but fell from 50 to 35 within Reuters.",
+   "primary": "q-fin.CP",
+   "categories": [
+    "q-fin.CP"
+   ],
+   "published": "2026-11-23T14:13:33Z",
+   "updated": "2026-11-23T14:13:33Z",
+   "comment": "",
+   "tags": [],
+   "ax_votes": 0,
+   "ax_visits": 4,
+   "heat": 0.4,
+   "listed": "2026-11-24",
+   "sections": []
+  },
+  {
    "id": "2611.28559",
    "title": "From atomic events to material degradation across metre and year scales",
    "authors": [
@@ -10489,27 +10510,6 @@
    "sections": [
     "rl"
    ]
-  },
-  {
-   "id": "2611.30737",
-   "title": "CCFinance: Reconstructing Financial News Samples from Web Archives",
-   "authors": [
-    "Marcus Gawronsky"
-   ],
-   "abstract": "Proprietary news archives assign stories to firms, so reproducing a financial study often requires access to both the articles and the vendor's assignments. CCFinance lets researchers reconstruct firm coverage under different selection rules by recording which version of a story was captured, which issuers it names and how often each appears. From 14.8 million English-language records in Fine News, derived from public Common Crawl News, we identify 5.22 million distinct, consistently dated articles with issuer links. Exact reconstruction requires the restricted snapshot and derived artifacts. We compare GLiNER and Stanza on 250 model-labeled article leads and assess issuer links and story focus against blinded model judgments. Estimated precision among 475 accepted links is 96.8%. Among held-out articles with a detected company, requiring three mentions raises subject precision from 31.9% to 66.1%. Across the 2017-2025 panel, the same rule reduces the number of issuer-years with at least 50 qualifying stories from 13,918 to 8,641. Three reimplementations examine volatility tracking, bank networks and overnight returns. In the network study, bank pairs appearing together rose from 177 to 242 across publishers between January and April 2020, but fell from 50 to 35 within Reuters.",
-   "primary": "q-fin.CP",
-   "categories": [
-    "q-fin.CP"
-   ],
-   "published": "2026-11-23T14:13:33Z",
-   "updated": "2026-11-23T14:13:33Z",
-   "comment": "",
-   "tags": [],
-   "ax_votes": 0,
-   "ax_visits": 4,
-   "heat": 0.4,
-   "listed": "2026-11-24",
-   "sections": []
   },
   {
    "id": "2611.28844",

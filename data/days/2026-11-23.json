@@ -1105,6 +1105,49 @@
    "sections": []
   },
   {
+   "id": "2611.27889",
+   "title": "Renormalized Entropy from Symmetries: Simplicity Bias and Neural Heat Death",
+   "authors": [
+    "Vasco Portilheiro",
+    "Samuel Liebana",
+    "Andrew Saxe",
+    "Peter Orbanz"
+   ],
+   "abstract": "Neural networks have parameter symmetries: parameter transformations that do not affect the represented function. How do these symmetries affect the functions that neural networks ultimately learn? We study the implicit bias arising from these symmetries by calculating the equilibrium distribution over represented functions under Langevin dynamics with Gaussian regularization. To isolate the effect of symmetries on this distribution, we study the limit in which the strength of the regularization is taken to zero. In certain cases, we show that the zero-regularization and infinite-time limits commute. In the low temperature limit, we recover known effective regularizations. At positive temperature, a renormalization procedure allows us to derive a novel entropy which predicts symmetry-induced preference for certain functions. For linear networks, we obtain explicit entropy terms that favor singular and low-rank functions. For networks with homogeneous activations, we find entropy terms that favor inactive neurons, which can lead to neural \"heat death\" in which equilibrium mass concentrates on networks with vanishing output. We interpret these results through the neural tangent kernel, as a simplicity bias selecting for functions that vary slowly under variations in the parameters.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-20T17:28:34Z",
+   "updated": "2026-11-20T17:28:34Z",
+   "comment": "35 pages, 14 figures (including appendices)",
+   "tags": [
+    "theory",
+    "interpretability",
+    "alignment"
+   ],
+   "ax_votes": 2,
+   "ax_visits": 90,
+   "heat": 11.0,
+   "orgs": [
+    {
+     "logo": "data/logos/ucl.ac.uk.png",
+     "name": "University College London",
+     "ror": "02jx3x895"
+    }
+   ],
+   "thumb": "data/thumbs/2611.27889.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440,
+   "summary": {
+    "en": "A renormalized entropy from parameter symmetries predicts equilibrium preference for singular, low-rank functions and inactive neurons, yielding neural 'heat death'; interpreted via the neural tangent kernel as slow-variation simplicity bias.",
+    "zh": "通过在高斯正则化 Langevin 动力学的零正则化极限下计算函数空间平衡分布，推导出源自参数对称性的重整化熵；对线性网络得到偏好奇异、低秩函数的显式熵项，对齐次激活网络发现偏好失活神经元的熵项，可能导致输出趋于零的 neural heat death，并用 neural tangent kernel 解释为慢变函数的 simplicity bias。"
+   },
+   "summary_source": "deepseek-flash",
+   "listed": "2026-11-23",
+   "sections": []
+  },
+  {
    "id": "2611.22343",
    "title": "PURE: A Diagnostic Benchmark for Multi-Granularity Multimodal Identity Matching",
    "authors": [
@@ -1146,49 +1189,6 @@
     "zh": "PURE 是面向多粒度多模态身份匹配的诊断基准，从电商真实匹配对构建 1457 道多选题、覆盖 14 个任务和 Perception/Understanding/Reasoning/Judgment 四个维度；十款 MLLM 总分 47.1%–86.0%，Understanding 均分最高、Judgment 最低，暴露出视觉差异定位与变体级规则判断的短板。"
    },
    "summary_source": "deepseek-flash",
-   "sections": []
-  },
-  {
-   "id": "2611.27889",
-   "title": "Renormalized Entropy from Symmetries: Simplicity Bias and Neural Heat Death",
-   "authors": [
-    "Vasco Portilheiro",
-    "Samuel Liebana",
-    "Andrew Saxe",
-    "Peter Orbanz"
-   ],
-   "abstract": "Neural networks have parameter symmetries: parameter transformations that do not affect the represented function. How do these symmetries affect the functions that neural networks ultimately learn? We study the implicit bias arising from these symmetries by calculating the equilibrium distribution over represented functions under Langevin dynamics with Gaussian regularization. To isolate the effect of symmetries on this distribution, we study the limit in which the strength of the regularization is taken to zero. In certain cases, we show that the zero-regularization and infinite-time limits commute. In the low temperature limit, we recover known effective regularizations. At positive temperature, a renormalization procedure allows us to derive a novel entropy which predicts symmetry-induced preference for certain functions. For linear networks, we obtain explicit entropy terms that favor singular and low-rank functions. For networks with homogeneous activations, we find entropy terms that favor inactive neurons, which can lead to neural \"heat death\" in which equilibrium mass concentrates on networks with vanishing output. We interpret these results through the neural tangent kernel, as a simplicity bias selecting for functions that vary slowly under variations in the parameters.",
-   "primary": "cs.LG",
-   "categories": [
-    "cs.LG"
-   ],
-   "published": "2026-11-20T17:28:34Z",
-   "updated": "2026-11-20T17:28:34Z",
-   "comment": "35 pages, 14 figures (including appendices)",
-   "tags": [
-    "theory",
-    "interpretability",
-    "alignment"
-   ],
-   "ax_votes": 2,
-   "ax_visits": 90,
-   "heat": 11.0,
-   "orgs": [
-    {
-     "logo": "data/logos/ucl.ac.uk.png",
-     "name": "University College London",
-     "ror": "02jx3x895"
-    }
-   ],
-   "thumb": "data/thumbs/2611.27889.jpg",
-   "thumb_w": 618,
-   "thumb_h": 440,
-   "summary": {
-    "en": "A renormalized entropy from parameter symmetries predicts equilibrium preference for singular, low-rank functions and inactive neurons, yielding neural 'heat death'; interpreted via the neural tangent kernel as slow-variation simplicity bias.",
-    "zh": "通过在高斯正则化 Langevin 动力学的零正则化极限下计算函数空间平衡分布，推导出源自参数对称性的重整化熵；对线性网络得到偏好奇异、低秩函数的显式熵项，对齐次激活网络发现偏好失活神经元的熵项，可能导致输出趋于零的 neural heat death，并用 neural tangent kernel 解释为慢变函数的 simplicity bias。"
-   },
-   "summary_source": "deepseek-flash",
-   "listed": "2026-11-23",
    "sections": []
   },
   {
@@ -1774,6 +1774,51 @@
    ]
   },
   {
+   "id": "2611.27759",
+   "title": "DPMA: Learning to Compress Mixture-of-Experts Models",
+   "authors": [
+    "Jon Irureta",
+    "Jon Imaz",
+    "Philipp Wiesner",
+    "Gorka Azkune",
+    "Javier Fernandez-Marques",
+    "Alex Iacob",
+    "Andrej Jovanović",
+    "Aizea Lojo",
+    "Nicholas D. Lane"
+   ],
+   "abstract": "Mixture-of-Experts (MoE) architectures offer high computational efficiency, but storing all experts requires substantial memory and limits deployment on resource-constrained hardware. Most retraining-free MoE compression methods commit to either pruning or merging experts, often with a uniform compression ratio across layers. We introduce DPMA (Differentiable Prune Merge Absorb), which jointly learns compression operations and layer-wise expert allocation through gradient descent under a global expert budget. Separate learnable coefficients allow DPMA to prune experts, merge their parameters, and absorb their routing contributions by forwarding routing weights to retained experts. These coefficients and expert assignments are optimised to match the original model's outputs on calibration data while its weights remain frozen. Across four MoE models, eight multiple-choice benchmarks, and five compression ratios, DPMA achieves the highest accuracy averaged over benchmarks and compression ratios on each model among the evaluated methods. At $75\\%$ expert reduction, it outperforms the strongest baseline on every model, with gains of up to $6.7$ percentage points.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-20T15:46:35Z",
+   "updated": "2026-11-20T15:46:35Z",
+   "comment": "",
+   "tags": [
+    "benchmark"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 57,
+   "heat": 5.7,
+   "orgs": [
+    {
+     "logo": "data/logos/ehu.eus.png",
+     "name": "University of the Basque Country",
+     "ror": "000xsnr85"
+    },
+    {
+     "name": "University of Cambridge",
+     "ror": "013meh722"
+    }
+   ],
+   "thumb": "data/thumbs/2611.27759.jpg",
+   "thumb_w": 640,
+   "thumb_h": 213,
+   "listed": "2026-11-23",
+   "sections": []
+  },
+  {
    "id": "2611.22479",
    "title": "Exploited Before It Was Fixed? Vulnerability Timelines from Open, Machine-Readable Evidence",
    "authors": [
@@ -1849,17 +1894,17 @@
      "ror": "03taz7m60"
     },
     {
+     "logo": "data/logos/tamu.edu.png",
      "name": "Texas A&M University",
-     "ror": "01f5ytq51",
-     "logo": "data/logos/tamu.edu.png"
+     "ror": "01f5ytq51"
     },
     {
      "name": "Vanderbilt University",
      "ror": "02vm5rt34"
     },
     {
-     "name": "Adobe",
-     "logo": "data/logos/adobe.com.png"
+     "logo": "data/logos/adobe.com.png",
+     "name": "Adobe"
     },
     {
      "name": "University of Georgia"
@@ -1876,55 +1921,10 @@
     "rl"
    ],
    "summary": {
-    "zh": "针对指令引导视频编辑奖励模型忽视运动、偏好静态画面的“运动坍缩”问题，提出运动感知奖励模型，将RGB帧差流与针对运动抑制及伪造运动负样本的偏好训练结合，并以蒸馏锚点保持与人类判断对齐；在VE-Bench运动阶梯上将选择运动抑制候选的比例从97%降至0%，与人类评分的Spearman相关系数达0.57。",
-    "en": "A motion-aware reward model for instruction-guided video editing combines an RGB frame-difference stream with preference training on motion-suppressed and fabricated-motion negatives; it cuts motion-suppressed selections on VE-Bench from 97% to 0% at 0.57 Spearman correlation with human ratings."
+    "en": "A motion-aware reward model for instruction-guided video editing combines an RGB frame-difference stream with preference training on motion-suppressed and fabricated-motion negatives; it cuts motion-suppressed selections on VE-Bench from 97% to 0% at 0.57 Spearman correlation with human ratings.",
+    "zh": "针对指令引导视频编辑奖励模型忽视运动、偏好静态画面的“运动坍缩”问题，提出运动感知奖励模型，将RGB帧差流与针对运动抑制及伪造运动负样本的偏好训练结合，并以蒸馏锚点保持与人类判断对齐；在VE-Bench运动阶梯上将选择运动抑制候选的比例从97%降至0%，与人类评分的Spearman相关系数达0.57。"
    },
    "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.27759",
-   "title": "DPMA: Learning to Compress Mixture-of-Experts Models",
-   "authors": [
-    "Jon Irureta",
-    "Jon Imaz",
-    "Philipp Wiesner",
-    "Gorka Azkune",
-    "Javier Fernandez-Marques",
-    "Alex Iacob",
-    "Andrej Jovanović",
-    "Aizea Lojo",
-    "Nicholas D. Lane"
-   ],
-   "abstract": "Mixture-of-Experts (MoE) architectures offer high computational efficiency, but storing all experts requires substantial memory and limits deployment on resource-constrained hardware. Most retraining-free MoE compression methods commit to either pruning or merging experts, often with a uniform compression ratio across layers. We introduce DPMA (Differentiable Prune Merge Absorb), which jointly learns compression operations and layer-wise expert allocation through gradient descent under a global expert budget. Separate learnable coefficients allow DPMA to prune experts, merge their parameters, and absorb their routing contributions by forwarding routing weights to retained experts. These coefficients and expert assignments are optimised to match the original model's outputs on calibration data while its weights remain frozen. Across four MoE models, eight multiple-choice benchmarks, and five compression ratios, DPMA achieves the highest accuracy averaged over benchmarks and compression ratios on each model among the evaluated methods. At $75\\%$ expert reduction, it outperforms the strongest baseline on every model, with gains of up to $6.7$ percentage points.",
-   "primary": "cs.LG",
-   "categories": [
-    "cs.LG"
-   ],
-   "published": "2026-11-20T15:46:35Z",
-   "updated": "2026-11-20T15:46:35Z",
-   "comment": "",
-   "tags": [
-    "benchmark"
-   ],
-   "ax_votes": 0,
-   "ax_visits": 57,
-   "heat": 5.7,
-   "orgs": [
-    {
-     "logo": "data/logos/ehu.eus.png",
-     "name": "University of the Basque Country",
-     "ror": "000xsnr85"
-    },
-    {
-     "name": "University of Cambridge",
-     "ror": "013meh722"
-    }
-   ],
-   "thumb": "data/thumbs/2611.27759.jpg",
-   "thumb_w": 640,
-   "thumb_h": 213,
-   "listed": "2026-11-23",
-   "sections": []
   },
   {
    "id": "2611.25252",

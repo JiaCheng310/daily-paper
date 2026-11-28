@@ -518,60 +518,6 @@
    "sections": []
   },
   {
-   "id": "2611.24654",
-   "title": "CurvDelta: Low-Curvature Delta Modeling For Surgical Learning and Unlearning",
-   "authors": [
-    "Zeguan Xiao",
-    "Zhuocheng Liang",
-    "Yun Chen",
-    "Yong Wang",
-    "Guanhua Chen",
-    "Pinyan Lu"
-   ],
-   "abstract": "A central challenge in adapting large language models (LLMs) is capability preservation: an adaptation can achieve its target while degrading general capabilities. We introduce CurvDelta, a scalable framework that incorporates the preservation constraint into the parameterization of the model update. By analyzing the local geometry of the preservation constraint around the pre-adaptation model, CurvDelta constructs a low-curvature space in which parameter updates leave the preservation loss nearly invariant. We make its construction practical for LLMs through Kronecker-factored approximate curvature (K-FAC) and a factorized projection. We also introduce CurvLoRA, a low-rank variant within the same preservation geometry, designed for more efficient adaptation. Both methods apply to preservation-constrained adaptation tasks such as capability learning and selective unlearning. We evaluate our methods on mathematical reasoning, code generation, and knowledge unlearning. For mathematical reasoning and code generation, our approaches achieve competitive downstream performance while better preserving general capabilities, offering a favorable acquisition--retention trade-off relative to the baselines. For knowledge unlearning, our main results on TOFU and MUSE show a better balance between targeted forgetting and knowledge retention than the baselines, with retention performance close to the from-scratch retraining reference.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL"
-   ],
-   "published": "2026-11-18T15:56:20Z",
-   "updated": "2026-11-18T15:56:20Z",
-   "comment": "",
-   "listed": "2026-11-19",
-   "tags": [
-    "LLM",
-    "efficiency",
-    "alignment",
-    "safety"
-   ],
-   "hf_upvotes": 24,
-   "ax_votes": 2,
-   "ax_visits": 51,
-   "heat": 31.1,
-   "orgs": [
-    {
-     "name": "Shanghai University of Finance and Economics",
-     "ror": "00wtvfq62"
-    },
-    {
-     "logo": "data/logos/alibaba.com.png",
-     "name": "Alibaba"
-    },
-    {
-     "name": "Southern University of Science and Technology",
-     "ror": "049tv2d57"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24654.jpg",
-   "thumb_w": 550,
-   "thumb_h": 440,
-   "summary": {
-    "en": "CurvDelta embeds a capability-preservation constraint into parameter updates via a K-FAC-built low-curvature subspace, with a low-rank CurvLoRA variant; it yields a better acquisition-retention trade-off on math, code, and TOFU/MUSE unlearning than baselines.",
-    "zh": "CurvDelta 将能力保持约束直接嵌入参数更新，用 K-FAC 构建低曲率子空间使保持损失近似不变，并推出低秩版本 CurvLoRA；在数学推理、代码生成与 TOFU/MUSE 知识遗忘上比基线取得更好的获得—保持权衡。"
-   },
-   "summary_source": "deepseek-flash",
-   "sections": []
-  },
-  {
    "id": "2611.24869",
    "title": "WorldRuler: Interactive World Modeling under Configurable Rules",
    "authors": [
@@ -631,6 +577,60 @@
    "summary": {
     "en": "WorldRuler organizes rule definitions and object states into an executable 3D rule graph, closing the loop between rule execution, video generation, and perceptual feedback; it also builds the RuleVerse dataset from GTA-V and Habitat, achieving consistent rule-state persistence and accurate rule effects on designated objects.",
     "zh": "WorldRuler 将规则定义、依赖与物体状态组织为可执行 3D 规则图，并闭环连接规则执行、视频生成与感知反馈，支持规则与世界状态的联合保存恢复；结合 GTA-V 与 Habitat 构建 RuleVerse 数据集，实验显示其能保持规则-状态一致性并准确实现指定物体与属性的规则效果。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.24654",
+   "title": "CurvDelta: Low-Curvature Delta Modeling For Surgical Learning and Unlearning",
+   "authors": [
+    "Zeguan Xiao",
+    "Zhuocheng Liang",
+    "Yun Chen",
+    "Yong Wang",
+    "Guanhua Chen",
+    "Pinyan Lu"
+   ],
+   "abstract": "A central challenge in adapting large language models (LLMs) is capability preservation: an adaptation can achieve its target while degrading general capabilities. We introduce CurvDelta, a scalable framework that incorporates the preservation constraint into the parameterization of the model update. By analyzing the local geometry of the preservation constraint around the pre-adaptation model, CurvDelta constructs a low-curvature space in which parameter updates leave the preservation loss nearly invariant. We make its construction practical for LLMs through Kronecker-factored approximate curvature (K-FAC) and a factorized projection. We also introduce CurvLoRA, a low-rank variant within the same preservation geometry, designed for more efficient adaptation. Both methods apply to preservation-constrained adaptation tasks such as capability learning and selective unlearning. We evaluate our methods on mathematical reasoning, code generation, and knowledge unlearning. For mathematical reasoning and code generation, our approaches achieve competitive downstream performance while better preserving general capabilities, offering a favorable acquisition--retention trade-off relative to the baselines. For knowledge unlearning, our main results on TOFU and MUSE show a better balance between targeted forgetting and knowledge retention than the baselines, with retention performance close to the from-scratch retraining reference.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL"
+   ],
+   "published": "2026-11-18T15:56:20Z",
+   "updated": "2026-11-18T15:56:20Z",
+   "comment": "",
+   "listed": "2026-11-19",
+   "tags": [
+    "LLM",
+    "efficiency",
+    "alignment",
+    "safety"
+   ],
+   "hf_upvotes": 24,
+   "ax_votes": 2,
+   "ax_visits": 51,
+   "heat": 31.1,
+   "orgs": [
+    {
+     "name": "Shanghai University of Finance and Economics",
+     "ror": "00wtvfq62"
+    },
+    {
+     "logo": "data/logos/alibaba.com.png",
+     "name": "Alibaba"
+    },
+    {
+     "name": "Southern University of Science and Technology",
+     "ror": "049tv2d57"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24654.jpg",
+   "thumb_w": 550,
+   "thumb_h": 440,
+   "summary": {
+    "en": "CurvDelta embeds a capability-preservation constraint into parameter updates via a K-FAC-built low-curvature subspace, with a low-rank CurvLoRA variant; it yields a better acquisition-retention trade-off on math, code, and TOFU/MUSE unlearning than baselines.",
+    "zh": "CurvDelta 将能力保持约束直接嵌入参数更新，用 K-FAC 构建低曲率子空间使保持损失近似不变，并推出低秩版本 CurvLoRA；在数学推理、代码生成与 TOFU/MUSE 知识遗忘上比基线取得更好的获得—保持权衡。"
    },
    "summary_source": "deepseek-flash",
    "sections": []
@@ -1879,8 +1879,69 @@
     "rl"
    ],
    "summary": {
-    "zh": "针对 IoU、Chamfer Distance 和 surface F-score 几乎不惩罚错位孔、错面槽等局部错误的问题，DrawScore 将模型投影为带虚实线的三视图工程图，并沿投影曲线施加饱和惩罚使局部错误权重仅线性衰减，能识别 IoU 近满分输出中的错误，并可作为 RL 奖励和测试时验证器。",
-    "en": "DrawScore projects CAD models into three orthographic engineering-drawing views with visible and hidden lines and applies a saturating penalty along projected curves, reducing local-error weight decay to linear; it exposes errors that IoU barely penalizes and serves as an RL reward and test-time verifier."
+    "en": "DrawScore projects CAD models into three orthographic engineering-drawing views with visible and hidden lines and applies a saturating penalty along projected curves, reducing local-error weight decay to linear; it exposes errors that IoU barely penalizes and serves as an RL reward and test-time verifier.",
+    "zh": "针对 IoU、Chamfer Distance 和 surface F-score 几乎不惩罚错位孔、错面槽等局部错误的问题，DrawScore 将模型投影为带虚实线的三视图工程图，并沿投影曲线施加饱和惩罚使局部错误权重仅线性衰减，能识别 IoU 近满分输出中的错误，并可作为 RL 奖励和测试时验证器。"
+   },
+   "summary_source": "deepseek-flash"
+  },
+  {
+   "id": "2611.24059",
+   "title": "Replay, Don't Resample: Off-Policy Consolidation of Long-Horizon RL Experts",
+   "authors": [
+    "Zhenrui Yue",
+    "Gongxiaohui Chen",
+    "Huimin Zeng",
+    "Honglei Zhuang",
+    "Jiashuo Sun",
+    "Zhen Han",
+    "Dong Wang"
+   ],
+   "abstract": "Frontier post-training follows a common recipe: train one expert per domain with reinforcement learning (RL), then consolidate the experts into one model via multi-teacher on-policy distillation (MOPD). Such consolidation is expensive: the student samples in every environment again, an expert scores every sampled token, and the student inherits the drift of the final experts. Yet we argue that the experts' RL runs have already produced what consolidation needs: rollouts with their sampling probabilities and rewards, in the order the experts learned from them. We propose multi-expert replay policy distillation (MRPD), which replays these training logs through the student in the experts' order. At each step, the policy gradient is recomputed on these scored trajectories, and the final experts' distributions are distilled at the logged prefixes. Following the experts' own trajectory reduces the training-inference mismatch and keeps the student within the clip range, so the replay is off-policy in origin but quasi-on-policy throughout consolidation. MRPD samples nothing and calls no environment or reward model: the trainer is the sole process, and consolidating the experts costs only about a seventh of the compute used to train them. On three long-horizon agentic domains (reasoning, search and SQL), MRPD yields the best student model, substantially outperforming online RL baselines, and surpassing MOPD from the same experts at a fraction of MOPD's cost. Our analysis on the same logs shows that the replayed trajectories carry most of the gain, and that both the policy gradient and the distillation term add to it. Most interestingly, the order of the logs matters more than their amount or rewards, suggesting that expert training logs are a curriculum, not a data mixture.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-18T08:51:39Z",
+   "updated": "2026-11-25T10:31:41Z",
+   "comment": "",
+   "listed": "2026-11-19",
+   "tags": [
+    "RL",
+    "LLM",
+    "efficiency",
+    "agents"
+   ],
+   "hf_upvotes": 4,
+   "ax_votes": 1,
+   "ax_visits": 42,
+   "heat": 9.2,
+   "sections": [
+    "rl"
+   ],
+   "orgs": [
+    {
+     "logo": "data/logos/illinois.edu.png",
+     "name": "University of Illinois Urbana-Champaign",
+     "ror": "047426m28"
+    },
+    {
+     "name": "Argonne National Laboratory",
+     "ror": "05gvnxz63"
+    },
+    {
+     "name": "Independent Researcher"
+    },
+    {
+     "name": "LMU"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24059.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440,
+   "summary": {
+    "en": "MRPD consolidates RL experts by replaying their training logs in expert order, recomputing policy gradients and distilling final expert distributions at logged prefixes without environment or reward calls, beating online RL and MOPD at ~1/7 the training compute on reasoning, search, and SQL.",
+    "zh": "MRPD 将专家 RL 训练日志按专家学习顺序重放给学生模型，在记录的 token 前缀上重新计算策略梯度并蒸馏最终专家分布，无需环境交互或奖励模型；在 reasoning、search、SQL 三个长时程智能体任务上优于在线 RL 基线和同源专家的 MOPD，合并成本仅为训练专家的约 1/7。"
    },
    "summary_source": "deepseek-flash"
   },
@@ -2045,6 +2106,62 @@
    "sections": []
   },
   {
+   "id": "2611.23236",
+   "title": "PGPO: Prototype-Guided Progressive Obfuscation for Privacy-Preserving LLM-Enhanced Recommendation",
+   "authors": [
+    "Shengxiang Lin",
+    "Jiajie Su",
+    "Pengyang Zhou",
+    "Xiang Chen",
+    "Xiaolin Zheng",
+    "Feng Tian",
+    "Chaochao Chen"
+   ],
+   "abstract": "LLM-enhanced recommender systems encode item side information into semantic embeddings, but these embeddings may leak sensitive textual attributes through inversion attacks. Existing input-side defenses rely on trusted collection or local token perturbation, often disrupting the inter-item semantic topology needed for recommendation. To address it, we introduce relational fidelity as the key objective, requiring semantic shift for privacy while preserving relative item relations for utility. Based on this principle, we propose prototype-guided progressive obfuscation (PGPO), which learns topology-aware obfuscation anchors for high-influence prototype words and propagates them through a static semantic graph. PGPO is optimized with GRPO using individual dissimilarity, structural consistency, and semantic constraint rewards. Experiments on two benchmarks show strong inversion defense with near-upper-bound recommendation performance. The code is available at https://github.com/Shengxiang-Lin/PGPO.",
+   "primary": "cs.IR",
+   "categories": [
+    "cs.IR",
+    "cs.CL",
+    "cs.CR"
+   ],
+   "published": "2026-08-26T18:00:11Z",
+   "updated": "2026-08-26T18:00:11Z",
+   "comment": "Accepted to EMNLP 2026",
+   "code_url": "https://github.com/Shengxiang-Lin/PGPO",
+   "listed": "2026-11-19",
+   "tags": [
+    "LLM",
+    "retrieval",
+    "safety",
+    "alignment"
+   ],
+   "hf_upvotes": 4,
+   "ax_votes": 0,
+   "ax_visits": 5,
+   "heat": 4.5,
+   "sections": [
+    "rl"
+   ],
+   "orgs": [
+    {
+     "name": "Zhejiang University",
+     "ror": "00a2xv884"
+    },
+    {
+     "name": "Xi'an Jiaotong University",
+     "ror": "017zhmm22"
+    }
+   ],
+   "thumb": "data/thumbs/2611.23236.jpg",
+   "thumb_w": 640,
+   "thumb_h": 233,
+   "summary": {
+    "en": "PGPO learns topology-aware obfuscation anchors for high-influence prototype words and propagates them over a static semantic graph, optimized with GRPO rewards, achieving strong inversion defense with near-upper-bound recommendation on two benchmarks.",
+    "zh": "PGPO 面向 LLM 增强推荐中的嵌入反演隐私风险，学习面向高影响原型词的拓扑感知混淆锚点，并沿静态语义图传播，以 GRPO 配合个体差异、结构一致性与语义约束奖励优化；两个基准上实现强反演防御且推荐性能接近上界。"
+   },
+   "summary_source": "deepseek-flash"
+  },
+  {
    "id": "2607.21179",
    "title": "Out of Sight, Still in Mind: Token Compression for Omni-LLMs",
    "authors": [
@@ -2150,123 +2267,6 @@
    "ax_visits": 0,
    "heat": 4.0,
    "sections": []
-  },
-  {
-   "id": "2611.23236",
-   "title": "PGPO: Prototype-Guided Progressive Obfuscation for Privacy-Preserving LLM-Enhanced Recommendation",
-   "authors": [
-    "Shengxiang Lin",
-    "Jiajie Su",
-    "Pengyang Zhou",
-    "Xiang Chen",
-    "Xiaolin Zheng",
-    "Feng Tian",
-    "Chaochao Chen"
-   ],
-   "abstract": "LLM-enhanced recommender systems encode item side information into semantic embeddings, but these embeddings may leak sensitive textual attributes through inversion attacks. Existing input-side defenses rely on trusted collection or local token perturbation, often disrupting the inter-item semantic topology needed for recommendation. To address it, we introduce relational fidelity as the key objective, requiring semantic shift for privacy while preserving relative item relations for utility. Based on this principle, we propose prototype-guided progressive obfuscation (PGPO), which learns topology-aware obfuscation anchors for high-influence prototype words and propagates them through a static semantic graph. PGPO is optimized with GRPO using individual dissimilarity, structural consistency, and semantic constraint rewards. Experiments on two benchmarks show strong inversion defense with near-upper-bound recommendation performance. The code is available at https://github.com/Shengxiang-Lin/PGPO.",
-   "primary": "cs.IR",
-   "categories": [
-    "cs.IR",
-    "cs.CL",
-    "cs.CR"
-   ],
-   "published": "2026-08-26T18:00:11Z",
-   "updated": "2026-08-26T18:00:11Z",
-   "comment": "Accepted to EMNLP 2026",
-   "code_url": "https://github.com/Shengxiang-Lin/PGPO",
-   "listed": "2026-11-19",
-   "tags": [
-    "LLM",
-    "retrieval",
-    "safety",
-    "alignment"
-   ],
-   "hf_upvotes": 4,
-   "ax_votes": 0,
-   "ax_visits": 5,
-   "heat": 4.5,
-   "sections": [
-    "rl"
-   ],
-   "orgs": [
-    {
-     "name": "Zhejiang University",
-     "ror": "00a2xv884"
-    },
-    {
-     "name": "Xi'an Jiaotong University",
-     "ror": "017zhmm22"
-    }
-   ],
-   "thumb": "data/thumbs/2611.23236.jpg",
-   "thumb_w": 640,
-   "thumb_h": 233,
-   "summary": {
-    "zh": "PGPO 面向 LLM 增强推荐中的嵌入反演隐私风险，学习面向高影响原型词的拓扑感知混淆锚点，并沿静态语义图传播，以 GRPO 配合个体差异、结构一致性与语义约束奖励优化；两个基准上实现强反演防御且推荐性能接近上界。",
-    "en": "PGPO learns topology-aware obfuscation anchors for high-influence prototype words and propagates them over a static semantic graph, optimized with GRPO rewards, achieving strong inversion defense with near-upper-bound recommendation on two benchmarks."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.24059",
-   "title": "Replay, Don't Resample: Off-Policy Consolidation of Long-Horizon RL Experts",
-   "authors": [
-    "Zhenrui Yue",
-    "Gongxiaohui Chen",
-    "Huimin Zeng",
-    "Honglei Zhuang",
-    "Jiashuo Sun",
-    "Zhen Han",
-    "Dong Wang"
-   ],
-   "abstract": "Frontier post-training follows a common recipe: train one expert per domain with reinforcement learning (RL), then consolidate the experts into one model via multi-teacher on-policy distillation (MOPD). Such consolidation is expensive: the student samples in every environment again, an expert scores every sampled token, and the student inherits the drift of the final experts. Yet we argue that the experts' RL runs have already produced what consolidation needs: rollouts with their sampling probabilities and rewards, in the order the experts learned from them. We propose multi-expert replay policy distillation (MRPD), which replays these training logs through the student in the experts' order. At each step, the policy gradient is recomputed on these scored trajectories, and the final experts' distributions are distilled at the logged prefixes. Following the experts' own trajectory reduces the training-inference mismatch and keeps the student within the clip range, so the replay is off-policy in origin but quasi-on-policy throughout consolidation. MRPD samples nothing and calls no environment or reward model: the trainer is the sole process, and consolidating the experts costs only about a seventh of the compute used to train them. On three long-horizon agentic domains (reasoning, search and SQL), MRPD yields the best student model, substantially outperforming online RL baselines, and surpassing MOPD from the same experts at a fraction of MOPD's cost. Our analysis on the same logs shows that the replayed trajectories carry most of the gain, and that both the policy gradient and the distillation term add to it. Most interestingly, the order of the logs matters more than their amount or rewards, suggesting that expert training logs are a curriculum, not a data mixture.",
-   "primary": "cs.LG",
-   "categories": [
-    "cs.LG",
-    "cs.AI"
-   ],
-   "published": "2026-11-18T08:51:39Z",
-   "updated": "2026-11-25T10:31:41Z",
-   "comment": "",
-   "listed": "2026-11-19",
-   "tags": [
-    "RL",
-    "LLM",
-    "efficiency",
-    "agents"
-   ],
-   "hf_upvotes": 4,
-   "ax_votes": 1,
-   "ax_visits": 42,
-   "heat": 9.2,
-   "sections": [
-    "rl"
-   ],
-   "orgs": [
-    {
-     "logo": "data/logos/illinois.edu.png",
-     "name": "University of Illinois Urbana-Champaign",
-     "ror": "047426m28"
-    },
-    {
-     "name": "Argonne National Laboratory",
-     "ror": "05gvnxz63"
-    },
-    {
-     "name": "Independent Researcher"
-    },
-    {
-     "name": "LMU"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24059.jpg",
-   "thumb_w": 618,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "MRPD 将专家 RL 训练日志按专家学习顺序重放给学生模型，在记录的 token 前缀上重新计算策略梯度并蒸馏最终专家分布，无需环境交互或奖励模型；在 reasoning、search、SQL 三个长时程智能体任务上优于在线 RL 基线和同源专家的 MOPD，合并成本仅为训练专家的约 1/7。",
-    "en": "MRPD consolidates RL experts by replaying their training logs in expert order, recomputing policy gradients and distilling final expert distributions at logged prefixes without environment or reward calls, beating online RL and MOPD at ~1/7 the training compute on reasoning, search, and SQL."
-   },
-   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.24844",
