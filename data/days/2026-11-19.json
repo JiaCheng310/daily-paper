@@ -29,8 +29,8 @@
    ],
    "hf_upvotes": 127,
    "ax_votes": 44,
-   "ax_visits": 518,
-   "heat": 222.8,
+   "ax_visits": 521,
+   "heat": 223.1,
    "orgs": [
     {
      "name": "NUS",
@@ -41,10 +41,182 @@
    "thumb_w": 640,
    "thumb_h": 417,
    "summary": {
-    "zh": "Jeveration 在冻结的视觉语言模型上做单次前向的图像生成，用共享随机状态协调并行预测保持全局一致，先学离散图像码分布引导生成，512x512 图像仅需 78 ms，比现有统一模型快至多 122 倍。",
-    "en": "Jeveration repurposes a frozen VLM for single-pass image generation, coordinating parallel predictions via a shared random state and learning discrete image-code distributions; it generates 512x512 images in 78 ms, up to 122x faster than unified models."
+    "en": "Jeveration repurposes a frozen VLM for single-pass image generation, coordinating parallel predictions via a shared random state and learning discrete image-code distributions; it generates 512x512 images in 78 ms, up to 122x faster than unified models.",
+    "zh": "Jeveration 在冻结的视觉语言模型上做单次前向的图像生成，用共享随机状态协调并行预测保持全局一致，先学离散图像码分布引导生成，512x512 图像仅需 78 ms，比现有统一模型快至多 122 倍。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.23068",
+   "title": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
+   "authors": [
+    "Yuanhao Zeng",
+    "Shaocheng Lan",
+    "Ao Lu",
+    "Kuang Yan",
+    "Heng Lin",
+    "Xinang Xu",
+    "Yuan Luo",
+    "Yueting Wang",
+    "Yexin Li",
+    "Ruo Shan",
+    "Kan Ren"
+   ],
+   "abstract": "Agent evolution follows a simple loop: a proposer writes candidate artifacts (prompts, skills, memories) and selection accepts those that score higher. This loop has shown promise, yet practitioners face a puzzle: methods trade wins across papers, and evolution often fails to bootstrap on certain tasks. We trace this puzzle to the Resolution Hypothesis: agent evolution stalls not because methods fail to propose better artifacts, but because noisy evaluations cannot reliably identify them. Across seven evolution methods and six models (over 10M LLM calls), we find support for the hypothesis at both levels where evaluation scores are used. At the candidate level (choosing artifacts), helpful candidate artifacts exist, but selection is no better than random at telling them from harmful ones, so errors accumulate across rounds. At the method level (ranking methods), typical margins of a few percentage points are smaller than the difference between two independent runs of the same method, so published rankings often rest on luck. Together, these findings indicate that agent evolution is often bottlenecked by reliably identifying improvements. This calls for a shift in how we develop and evaluate self-improving agents, from designing ever more candidate improvement systems to making true improvements detectable and accumulable.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.CL"
+   ],
+   "published": "2026-11-17T16:57:03Z",
+   "updated": "2026-11-17T16:57:03Z",
+   "comment": "38 pages, 12 figures, 13 tables. Project page: https://lineshogan.github.io/resolution-hypothesis/",
+   "listed": "2026-11-19",
+   "tags": [
+    "agents",
+    "benchmark",
+    "LLM"
+   ],
+   "hf_upvotes": 40,
+   "ax_votes": 84,
+   "ax_visits": 912,
+   "heat": 215.2,
+   "orgs": [
+    {
+     "name": "ShanghaiTech University",
+     "ror": "030bhh786"
+    },
+    {
+     "logo": "data/logos/bytedance.com.png",
+     "name": "ByteDance"
+    },
+    {
+     "name": "BIGAI"
+    },
+    {
+     "name": "SUSTech"
+    }
+   ],
+   "thumb": "data/thumbs/2611.23068.jpg",
+   "thumb_w": 507,
+   "thumb_h": 440,
+   "summary": {
+    "en": "Testing 7 evolution methods and 6 models over 10M LLM calls, the Resolution Hypothesis shows noisy evaluation cannot distinguish helpful from harmful artifacts, and method-level margins fall below run-to-run variance.",
+    "zh": "在7种进化方法和6个模型、超1000万次LLM调用上验证Resolution Hypothesis：候选层面噪声评估无法区分优劣artifact导致误差累积，方法层面几个百分点的差距小于同一方法两次独立运行的差异，说明agent进化的瓶颈在于可靠识别改进。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.22925",
+   "title": "Code World Model 2.0: Towards Infinite Controllable Video Generation",
+   "authors": [
+    "Ruoyu Wang",
+    "Hao Zhong",
+    "Yanming Yang",
+    "Jiahao Tian",
+    "Lin Liu",
+    "Biao Gong",
+    "Guoshan Lu",
+    "Yiding Tian",
+    "Chunhua Shen",
+    "Zhenzhong Lan",
+    "Chi Zhang"
+   ],
+   "abstract": "Visual proxies decouple explicit world-state simulation from photorealistic video synthesis, offering a controllable interface for both offline clip creation and real-time interactive streaming. Yet a practical renderer must address two challenges. Upstream proxies vary from coarse layouts to fine articulated geometry depending on the interaction, and streaming inference must operate in a few causal steps without accumulating drift across self-generated history. We present Invoker-Render, pairing a bidirectional creation model with a causal four-step streaming model under a shared conditioning interface over structural proxies, an appearance reference, and language. Trained on an aligned approximately 200-hour multi-granularity corpus, Invoker-Render honors fine geometric constraints when supplied while synthesizing plausible local motion under coarse proxies, enabling runtime selection of input detail. To bridge bidirectional creation and real-time streaming without compounding step compression and rollout drift, we introduce Progressive Forcing (ProForcing). ProForcing first trains a causal predictor and distills it into a four-step renderer using histories derived from training videos. Training then shifts to continuous self-generated rollouts. A pipelined serving stack supports efficient streaming inference. Experiments show versatile control across proxy families, granularities, and camera paths, consistent gains over recent streaming baselines, and stable 30-minute racing rollouts that preserve scene and subject appearance.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-17T15:23:57Z",
+   "updated": "2026-11-18T05:27:57Z",
+   "comment": "Project Page: https://www.inclusion-ai.org/CodeWorldModel/",
+   "listed": "2026-11-19",
+   "tags": [
+    "video generation",
+    "world model",
+    "diffusion",
+    "efficiency"
+   ],
+   "hf_upvotes": 21,
+   "ax_votes": 37,
+   "ax_visits": 657,
+   "heat": 123.7,
+   "orgs": [
+    {
+     "name": "Ant Group",
+     "ror": "00g5w7n47"
+    },
+    {
+     "name": "Westlake University",
+     "ror": "05hfa4n20"
+    },
+    {
+     "name": "Zhejiang University",
+     "ror": "00a2xv884"
+    }
+   ],
+   "thumb": "data/thumbs/2611.22925.jpg",
+   "thumb_w": 580,
+   "thumb_h": 440,
+   "summary": {
+    "en": "Invoker-Render couples a bidirectional creation model with a causal four-step streaming model sharing a structural-proxy, appearance-reference and language interface; Progressive Forcing distills video-history training into self-generated rollouts, yielding stable 30-minute racing streams over streaming baselines.",
+    "zh": "Invoker-Render 结合双向创作模型与因果四步流式模型，统一以结构代理、外观参考和语言为条件，并用 Progressive Forcing 从视频历史蒸馏到自生成 rollout；实验在代理类型、粒度、相机路径上控制灵活，较流式基线稳定提升，支持 30 分钟赛车生成不漂移。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.22287",
+   "title": "Decoding Without a Decoder: Direct Pixel Prediction from Diffusion Transformers",
+   "authors": [
+    "Hansheng Chen",
+    "Shengqu Cai",
+    "Jan Ackermann",
+    "Rayhan Zirvi",
+    "Gordon Wetzstein",
+    "Xinchen Yan",
+    "Leonidas Guibas"
+   ],
+   "abstract": "Latent diffusion models rely on a decoder to map denoised latents to pixels, adding complexity and inference cost. We introduce Decoding Without a Decoder (DWD), which lets a finetuned diffusion transformer produce final pixels directly through a linear head. Unlike previous methods, where the denoising output leads to final pixels, DWD separates the two roles: the original denoising head continues to drive sampling, then the new DWD head predicts the pixels at the final step. We extend pretrained latent models with DWD efficiently by finetuning only the last few transformer blocks, training the DWD head with pixel quality losses while anchoring the denoising head to the pretrained model to preserve the sample trajectory. Across latent image and video generators, DWD removes the decoder while maintaining or even improving pixel quality. On Wan video generation, it visibly reduces detail distortion and flickering, lowering warping error by 23%. Remarkably, the same separation also improves pixel diffusion models that do not even use a decoder: a final-step DWD head produces substantially better texture detail in text-to-image generation, and improves ImageNet FID from 1.55 to 1.43, a new state of the art among pixel flow models.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-17T06:40:08Z",
+   "updated": "2026-11-18T12:13:48Z",
+   "comment": "Project page: https://hanshengchen.com/dwd",
+   "listed": "2026-11-19",
+   "tags": [
+    "diffusion",
+    "image generation",
+    "video generation",
+    "efficiency"
+   ],
+   "hf_upvotes": 15,
+   "ax_votes": 54,
+   "ax_visits": 530,
+   "heat": 122.0,
+   "orgs": [
+    {
+     "name": "Luma AI"
+    },
+    {
+     "logo": "data/logos/caltech.edu.png",
+     "name": "California Institute of Technology",
+     "ror": "05dxps055"
+    }
+   ],
+   "thumb": "data/thumbs/2611.22287.jpg",
+   "thumb_w": 640,
+   "thumb_h": 323,
+   "summary": {
+    "en": "DWD lets a finetuned diffusion transformer predict final pixels via a linear head at the last sampling step, removing the decoder; it cuts Wan video warping error by 23% and improves pixel-flow ImageNet FID from 1.55 to 1.43.",
+    "zh": "DWD 让微调后的扩散 transformer 通过线性头在最后一步直接预测像素，替代解码器；仅微调末几个 block 并锚定去噪头，在 Wan 视频生成上降低 23% warping error，并将像素流模型的 ImageNet FID 从 1.55 降至 1.43。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.21366",
@@ -113,406 +285,13 @@
    "thumb_w": 608,
    "thumb_h": 440,
    "summary": {
-    "zh": "ALIVE 是支持主动监控、流式任务协调与追问反馈的交互式流式视频模型，先用 ALIVE-SFT-288K 对比监督微调教会何时及如何响应，再用带上行为对齐信用分配（BACA）的强化学习优化多轮交互中的决策与沉默，并在四个公开基准和新建 FSI-Bench 上取得最高总分。",
-    "en": "ALIVE is an interactive streaming video model for proactive monitoring, streaming task coordination, and feedback seeking, trained via contrastive SFT on ALIVE-SFT-288K and RL with Behavior-Aligned Credit Assignment; it scores highest overall on four public benchmarks and the new FSI-Bench."
+    "en": "ALIVE is an interactive streaming video model for proactive monitoring, streaming task coordination, and feedback seeking, trained via contrastive SFT on ALIVE-SFT-288K and RL with Behavior-Aligned Credit Assignment; it scores highest overall on four public benchmarks and the new FSI-Bench.",
+    "zh": "ALIVE 是支持主动监控、流式任务协调与追问反馈的交互式流式视频模型，先用 ALIVE-SFT-288K 对比监督微调教会何时及如何响应，再用带上行为对齐信用分配（BACA）的强化学习优化多轮交互中的决策与沉默，并在四个公开基准和新建 FSI-Bench 上取得最高总分。"
    },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.23068",
-   "title": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
-   "authors": [
-    "Yuanhao Zeng",
-    "Shaocheng Lan",
-    "Ao Lu",
-    "Kuang Yan",
-    "Heng Lin",
-    "Xinang Xu",
-    "Yuan Luo",
-    "Yueting Wang",
-    "Yexin Li",
-    "Ruo Shan",
-    "Kan Ren"
-   ],
-   "abstract": "Agent evolution follows a simple loop: a proposer writes candidate artifacts (prompts, skills, memories) and selection accepts those that score higher. This loop has shown promise, yet practitioners face a puzzle: methods trade wins across papers, and evolution often fails to bootstrap on certain tasks. We trace this puzzle to the Resolution Hypothesis: agent evolution stalls not because methods fail to propose better artifacts, but because noisy evaluations cannot reliably identify them. Across seven evolution methods and six models (over 10M LLM calls), we find support for the hypothesis at both levels where evaluation scores are used. At the candidate level (choosing artifacts), helpful candidate artifacts exist, but selection is no better than random at telling them from harmful ones, so errors accumulate across rounds. At the method level (ranking methods), typical margins of a few percentage points are smaller than the difference between two independent runs of the same method, so published rankings often rest on luck. Together, these findings indicate that agent evolution is often bottlenecked by reliably identifying improvements. This calls for a shift in how we develop and evaluate self-improving agents, from designing ever more candidate improvement systems to making true improvements detectable and accumulable.",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI",
-    "cs.CL"
-   ],
-   "published": "2026-11-17T16:57:03Z",
-   "updated": "2026-11-17T16:57:03Z",
-   "comment": "38 pages, 12 figures, 13 tables. Project page: https://lineshogan.github.io/resolution-hypothesis/",
-   "listed": "2026-11-19",
-   "tags": [
-    "agents",
-    "benchmark",
-    "LLM"
-   ],
-   "hf_upvotes": 40,
-   "ax_votes": 84,
-   "ax_visits": 912,
-   "heat": 215.2,
-   "orgs": [
-    {
-     "name": "ShanghaiTech University",
-     "ror": "030bhh786"
-    },
-    {
-     "logo": "data/logos/bytedance.com.png",
-     "name": "ByteDance"
-    },
-    {
-     "name": "BIGAI"
-    },
-    {
-     "name": "SUSTech"
-    }
-   ],
-   "thumb": "data/thumbs/2611.23068.jpg",
-   "thumb_w": 507,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "在7种进化方法和6个模型、超1000万次LLM调用上验证Resolution Hypothesis：候选层面噪声评估无法区分优劣artifact导致误差累积，方法层面几个百分点的差距小于同一方法两次独立运行的差异，说明agent进化的瓶颈在于可靠识别改进。",
-    "en": "Testing 7 evolution methods and 6 models over 10M LLM calls, the Resolution Hypothesis shows noisy evaluation cannot distinguish helpful from harmful artifacts, and method-level margins fall below run-to-run variance."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.24154",
-   "title": "Game2Player: Scaling Gameplay Experience for Visual Agents through Environment-Player Co-Development",
-   "authors": [
-    "Xirui Jiang",
-    "Yuxi Chen",
-    "Rui Yang",
-    "Feng Luo",
-    "Pengcheng Wang",
-    "Bingxuan Li",
-    "Zihao Zhao",
-    "Yushan Li",
-    "Han Wang",
-    "Manling Li",
-    "Yang Zhang",
-    "Shiyu Chang",
-    "Tong Zhang",
-    "Huan Zhang"
-   ],
-   "abstract": "Games are a rich testbed for visual agents, demanding perception, long-horizon planning, and precise control. However, collecting human gameplay is costly, and learning from gameplay videos requires inferring missing actions. Existing datasets also cover a limited range of games, often without explicit tasks or verifiable outcomes. To address these gaps, we introduce Game2Player, a framework that co-develops game environments and players to collect diverse and verifiable gameplay experience at scale. In the Game2Player loop, a Builder agent adapts existing web games, exposes their internal state, and defines tasks with state-based progress measures and success checks. A Coding Player and a VLM Player then attempt the tasks and report problems to the Builder for repair, so that play serves as both environment validation and training data collection. With Game2Player, we build 568 verified web games with 3,436 tasks, collect 15.7K trajectories (307 hours of gameplay), and hold out 50 games as the benchmark PlayerBench. To evaluate the collected experience as training data, we train VLM agents with progress-weighted SFT, assigning greater weight to steps that advance task progress. Game2Player-9B improves progress from 14.3% to 31.2% on PlayerBench and from 30.0% to 53.1% on the external GameWorld benchmark. More broadly, our work suggests a path for visual agents to scale their gameplay experience by building, verifying, and learning from existing game worlds.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-18T09:58:53Z",
-   "updated": "2026-11-18T09:58:53Z",
-   "comment": "Project page: https://game2player.github.io",
-   "listed": "2026-11-19",
-   "tags": [
-    "agents",
-    "VLM",
-    "benchmark",
-    "dataset"
-   ],
-   "hf_upvotes": 29,
-   "ax_votes": 7,
-   "ax_visits": 90,
-   "heat": 45.0,
-   "orgs": [
-    {
-     "logo": "data/logos/illinois.edu.png",
-     "name": "University of Illinois Urbana-Champaign",
-     "ror": "047426m28"
-    },
-    {
-     "name": "University of California, Santa Barbara",
-     "ror": "02t274463"
-    },
-    {
-     "logo": "data/logos/gatech.edu.png",
-     "name": "Georgia Institute of Technology",
-     "ror": "01zkghx44"
-    },
-    {
-     "logo": "data/logos/northwestern.edu.png",
-     "name": "Northwestern University",
-     "ror": "000e0be47"
-    },
-    {
-     "name": "IBM",
-     "logo": "data/logos/ibm.com.png"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24154.jpg",
-   "thumb_w": 494,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "Game2Player 框架让 Builder agent 改造网页游戏并定义可验证任务，Coding Player 与 VLM Player 试玩并反馈修复，构建 568 款游戏、3,436 个任务和 15.7K 条轨迹，用进度加权 SFT 训练的 9B 模型在 PlayerBench 上进度从 14.3% 提升到 31.2%。",
-    "en": "Game2Player co-develops web games and players: a Builder agent adapts games and defines verifiable tasks, Coding and VLM Players collect 15.7K trajectories; progress-weighted SFT lifts a 9B VLM's PlayerBench progress from 14.3% to 31.2%."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.11318",
-   "title": "PROLA: Principal-Orthogonal Low-rank Adaptation for Predictive Spatiotemporal Weather Downscaling",
-   "authors": [
-    "Minseo Yoon",
-    "Minseong Bae",
-    "Sojin Lee",
-    "Hyunwoo J. Kim"
-   ],
-   "abstract": "High-resolution weather prediction is important for resolving local atmospheric patterns missed by coarse global forecasts. Large pretrained weather backbones have improved global forecasting, but adapting them to produce future high-resolution fields from recent coarse states remains challenging and costly. We formulate this setting as Predictive Spatiotemporal Weather Downscaling (PSWD), a task that jointly refines spatial and temporal resolution while predicting future high-resolution trajectories. To this end, we propose a framework that decomposes prediction into spatial and temporal stages using a shared pretrained backbone, fixed numerical scaffolds, and lightweight residual heads. For backbone adaptation, we introduce PROLA (PRincipal-Orthogonal Low-rank Adaptation), which allocates a fixed low-rank budget between pretrained weights' principal directions and their orthogonal complement. PROLA further rescales rank-1 optimizer updates using gradient signals, improving adaptation without increasing trainable rank. Experiments in the PSWD setting show that PROLA outperforms representative low-rank adaptation baselines. Further experiments across diverse datasets and tasks support the broader applicability of PROLA, showing that its benefits extend beyond the primary weather downscaling setting.",
-   "primary": "cs.LG",
-   "categories": [
-    "cs.LG",
-    "cs.AI"
-   ],
-   "published": "2026-11-08T11:42:31Z",
-   "updated": "2026-11-08T11:42:31Z",
-   "comment": "Accepted to NeurIPS 2026",
-   "listed": "2026-11-19",
-   "tags": [
-    "efficiency",
-    "pretraining",
-    "theory"
-   ],
-   "hf_upvotes": 28,
-   "ax_votes": 2,
-   "ax_visits": 22,
-   "heat": 32.2,
-   "orgs": [
-    {
-     "logo": "data/logos/kaist.ac.kr.png",
-     "name": "KAIST",
-     "ror": "05apxxy63"
-    }
-   ],
-   "thumb": "data/thumbs/2611.11318.jpg",
-   "thumb_w": 640,
-   "thumb_h": 220,
-   "summary": {
-    "zh": "PROLA 将低秩适配预算分配到预训练权重的主方向与正交补之间，并按梯度信号重缩放 rank-1 优化器更新，在 Predictive Spatiotemporal Weather Downscaling 上优于代表性低秩适配基线。",
-    "en": "PROLA splits a fixed low-rank budget between pretrained weights' principal directions and their orthogonal complement, rescaling rank-1 optimizer updates with gradient signals to beat low-rank adaptation baselines on predictive spatiotemporal weather downscaling."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.24654",
-   "title": "CurvDelta: Low-Curvature Delta Modeling For Surgical Learning and Unlearning",
-   "authors": [
-    "Zeguan Xiao",
-    "Zhuocheng Liang",
-    "Yun Chen",
-    "Yong Wang",
-    "Guanhua Chen",
-    "Pinyan Lu"
-   ],
-   "abstract": "A central challenge in adapting large language models (LLMs) is capability preservation: an adaptation can achieve its target while degrading general capabilities. We introduce CurvDelta, a scalable framework that incorporates the preservation constraint into the parameterization of the model update. By analyzing the local geometry of the preservation constraint around the pre-adaptation model, CurvDelta constructs a low-curvature space in which parameter updates leave the preservation loss nearly invariant. We make its construction practical for LLMs through Kronecker-factored approximate curvature (K-FAC) and a factorized projection. We also introduce CurvLoRA, a low-rank variant within the same preservation geometry, designed for more efficient adaptation. Both methods apply to preservation-constrained adaptation tasks such as capability learning and selective unlearning. We evaluate our methods on mathematical reasoning, code generation, and knowledge unlearning. For mathematical reasoning and code generation, our approaches achieve competitive downstream performance while better preserving general capabilities, offering a favorable acquisition--retention trade-off relative to the baselines. For knowledge unlearning, our main results on TOFU and MUSE show a better balance between targeted forgetting and knowledge retention than the baselines, with retention performance close to the from-scratch retraining reference.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL"
-   ],
-   "published": "2026-11-18T15:56:20Z",
-   "updated": "2026-11-18T15:56:20Z",
-   "comment": "",
-   "listed": "2026-11-19",
-   "tags": [
-    "LLM",
-    "efficiency",
-    "alignment",
-    "safety"
-   ],
-   "hf_upvotes": 24,
-   "ax_votes": 2,
-   "ax_visits": 49,
-   "heat": 30.9,
-   "orgs": [
-    {
-     "name": "Shanghai University of Finance and Economics",
-     "ror": "00wtvfq62"
-    },
-    {
-     "logo": "data/logos/alibaba.com.png",
-     "name": "Alibaba"
-    },
-    {
-     "name": "Southern University of Science and Technology",
-     "ror": "049tv2d57"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24654.jpg",
-   "thumb_w": 550,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "CurvDelta 将能力保持约束直接嵌入参数更新，用 K-FAC 构建低曲率子空间使保持损失近似不变，并推出低秩版本 CurvLoRA；在数学推理、代码生成与 TOFU/MUSE 知识遗忘上比基线取得更好的获得—保持权衡。",
-    "en": "CurvDelta embeds a capability-preservation constraint into parameter updates via a K-FAC-built low-curvature subspace, with a low-rank CurvLoRA variant; it yields a better acquisition-retention trade-off on math, code, and TOFU/MUSE unlearning than baselines."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.17600",
-   "title": "LightTAR: Light and Fast Target-Aware Representations for Multimodal Tabular Learning",
-   "authors": [
-    "Eilam Shapira",
-    "Alan Arazi",
-    "Shoham Grunblat",
-    "Roi Reichart"
-   ],
-   "abstract": "Multimodal tabular learning involves classification and regression on tables combining structured numerical and categorical features with unstructured text and images. These unstructured fields are commonly represented by pretrained encoder embeddings reduced with principal component analysis (PCA). This reduction prioritizes input variance but may overlook information relevant to predicting the target. We introduce LightTAR, a simple, inexpensive method that adapts dimensionality reduction to the prediction task. LightTAR augments the standard PCA representation with a few target-aware features extracted jointly from the final and an intermediate encoder layer using regularized partial least squares (PLS). We evaluate LightTAR with 21 tabular models, including tree ensembles, neural networks, and tabular foundation models. LightTAR improves average predictive performance for all models and, averaged across models, improves prediction on almost every MulTaBench dataset. These gains come with a small increase in total runtime relative to PCA representations. LightTAR integrates directly into existing encoding pipelines, improving tabular learners' predictive performance without modifying the encoder or the learner.",
-   "primary": "cs.LG",
-   "categories": [
-    "cs.LG",
-    "cs.CL",
-    "cs.CV"
-   ],
-   "published": "2026-11-12T23:45:58Z",
-   "updated": "2026-11-12T23:45:58Z",
-   "comment": "21 pages, 3 figures. Code: https://github.com/eilamshapira/LightTAR",
-   "code_url": "https://github.com/eilamshapira/LightTAR",
-   "listed": "2026-11-19",
-   "tags": [
-    "multimodal",
-    "efficiency",
-    "dataset"
-   ],
-   "hf_upvotes": 22,
-   "ax_votes": 0,
-   "ax_visits": 31,
-   "heat": 25.1,
-   "orgs": [
-    {
-     "name": "Technion – Israel Institute of Technology",
-     "ror": "03qryx823",
-     "logo": "data/logos/technion.ac.il.png"
-    }
-   ],
-   "thumb": "data/thumbs/2611.17600.jpg",
-   "thumb_w": 618,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "LightTAR用正则化偏最小二乘从编码器末层与中间层联合提取少量目标感知特征，增强PCA表示，在21种表格模型和MulTaBench全部数据集上平均提升预测性能，运行时仅小幅增加。",
-    "en": "LightTAR augments PCA embeddings with target-aware features via regularized PLS from final and intermediate encoder layers, improving prediction across 21 tabular models on nearly all MulTaBench datasets at small extra runtime."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.22925",
-   "title": "Code World Model 2.0: Towards Infinite Controllable Video Generation",
-   "authors": [
-    "Ruoyu Wang",
-    "Hao Zhong",
-    "Yanming Yang",
-    "Jiahao Tian",
-    "Lin Liu",
-    "Biao Gong",
-    "Guoshan Lu",
-    "Yiding Tian",
-    "Chunhua Shen",
-    "Zhenzhong Lan",
-    "Chi Zhang"
-   ],
-   "abstract": "Visual proxies decouple explicit world-state simulation from photorealistic video synthesis, offering a controllable interface for both offline clip creation and real-time interactive streaming. Yet a practical renderer must address two challenges. Upstream proxies vary from coarse layouts to fine articulated geometry depending on the interaction, and streaming inference must operate in a few causal steps without accumulating drift across self-generated history. We present Invoker-Render, pairing a bidirectional creation model with a causal four-step streaming model under a shared conditioning interface over structural proxies, an appearance reference, and language. Trained on an aligned approximately 200-hour multi-granularity corpus, Invoker-Render honors fine geometric constraints when supplied while synthesizing plausible local motion under coarse proxies, enabling runtime selection of input detail. To bridge bidirectional creation and real-time streaming without compounding step compression and rollout drift, we introduce Progressive Forcing (ProForcing). ProForcing first trains a causal predictor and distills it into a four-step renderer using histories derived from training videos. Training then shifts to continuous self-generated rollouts. A pipelined serving stack supports efficient streaming inference. Experiments show versatile control across proxy families, granularities, and camera paths, consistent gains over recent streaming baselines, and stable 30-minute racing rollouts that preserve scene and subject appearance.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-17T15:23:57Z",
-   "updated": "2026-11-18T05:27:57Z",
-   "comment": "Project Page: https://www.inclusion-ai.org/CodeWorldModel/",
-   "listed": "2026-11-19",
-   "tags": [
-    "video generation",
-    "world model",
-    "diffusion",
-    "efficiency"
-   ],
-   "hf_upvotes": 21,
-   "ax_votes": 37,
-   "ax_visits": 657,
-   "heat": 123.7,
-   "orgs": [
-    {
-     "name": "Ant Group",
-     "ror": "00g5w7n47"
-    },
-    {
-     "name": "Westlake University",
-     "ror": "05hfa4n20"
-    },
-    {
-     "name": "Zhejiang University",
-     "ror": "00a2xv884"
-    }
-   ],
-   "thumb": "data/thumbs/2611.22925.jpg",
-   "thumb_w": 580,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "Invoker-Render 结合双向创作模型与因果四步流式模型，统一以结构代理、外观参考和语言为条件，并用 Progressive Forcing 从视频历史蒸馏到自生成 rollout；实验在代理类型、粒度、相机路径上控制灵活，较流式基线稳定提升，支持 30 分钟赛车生成不漂移。",
-    "en": "Invoker-Render couples a bidirectional creation model with a causal four-step streaming model sharing a structural-proxy, appearance-reference and language interface; Progressive Forcing distills video-history training into self-generated rollouts, yielding stable 30-minute racing streams over streaming baselines."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.24869",
-   "title": "WorldRuler: Interactive World Modeling under Configurable Rules",
-   "authors": [
-    "Mingliang Zhai",
-    "Chuanhao Li",
-    "Jiaming Tan",
-    "Zhen Li",
-    "Yuwei Wu",
-    "Yunde Jia",
-    "Zian Meng",
-    "Yuanyang Yin",
-    "Kaipeng Zhang"
-   ],
-   "abstract": "Rules govern how player actions change interactive worlds. Different rules create distinct gameplay experiences within similar scenes and action spaces. For customizable gameplay, generative world models must follow user-defined rules beyond real-world behaviors. However, realizing user-defined rules presents two challenges: Rule-State Persistence and Rule-to-Visual Realization. The former requires preserving rule definitions, dependencies, and world states across saving and loading, so that restored worlds follow the established rules. The latter requires accurately realizing rule-induced changes on designated objects and attributes, particularly when affected objects are unseen. In this paper, we propose WorldRuler, which organizes rule definitions, dependencies, and object states in an executable 3D rule graph and connects rule execution, video generation, and perceptual feedback in a closed loop. The graph supports joint saving and restoration of rules and world states, while dynamic object binding grounds rule-specified entities in visual instances and uses stored states to constrain generation from their first appearance. We further introduce object attribute state replacement and counterfactual reconstruction training, enabling accurate attribute control and compatible appearance and motion changes while limiting interference with unrelated content. We develop an automated data collection and annotation pipeline using GTA-V and Habitat to construct RuleVerse, a dataset of rule-driven interactions with detailed state and event annotations, including cases where rules take effect before affected objects become visible. Extensive experiments demonstrate the effectiveness of WorldRuler in preserving rule-state consistency across saving and loading and accurately realizing rule outcomes on designated objects and attributes.",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI"
-   ],
-   "published": "2026-11-18T18:20:39Z",
-   "updated": "2026-11-19T05:36:20Z",
-   "comment": "V2 corrects errors in the author list and institutional affiliations. Homepage: https://alaya-lab.github.io/WorldRuler/",
-   "listed": "2026-11-19",
-   "tags": [
-    "world model",
-    "video generation",
-    "dataset",
-    "agents"
-   ],
-   "hf_upvotes": 20,
-   "ax_votes": 2,
-   "ax_visits": 89,
-   "heat": 30.9,
-   "orgs": [
-    {
-     "name": "Alaya Lab"
-    },
-    {
-     "name": "Beijing Institute of Technology",
-     "ror": "01skt4w74"
-    },
-    {
-     "name": "University of Tokyo"
-    },
-    {
-     "name": "Shenzhen MSU-BIT University",
-     "ror": "02q963474"
-    },
-    {
-     "logo": "data/logos/sii.edu.cn.png",
-     "name": "Shanghai Innovation Institute",
-     "ror": "01fatbw66"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24869.jpg",
-   "thumb_w": 640,
-   "thumb_h": 246,
-   "summary": {
-    "zh": "WorldRuler 将规则定义、依赖与物体状态组织为可执行 3D 规则图，并闭环连接规则执行、视频生成与感知反馈，支持规则与世界状态的联合保存恢复；结合 GTA-V 与 Habitat 构建 RuleVerse 数据集，实验显示其能保持规则-状态一致性并准确实现指定物体与属性的规则效果。",
-    "en": "WorldRuler organizes rule definitions and object states into an executable 3D rule graph, closing the loop between rule execution, video generation, and perceptual feedback; it also builds the RuleVerse dataset from GTA-V and Habitat, achieving consistent rule-state persistence and accurate rule effects on designated objects."
-   },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": [
+    "rl"
+   ]
   },
   {
    "id": "2611.23388",
@@ -558,10 +337,303 @@
    "thumb_w": 618,
    "thumb_h": 440,
    "summary": {
-    "zh": "QDA 用 LLM 智能体为每个模型和精度自动搜索后训练量化配方，以未见的推理轨迹上的输出 KL 散度在数分钟内打分，并用长文本生成复查隐患；在四个推理模型上，W4A16、W4A8、W3A16 平均准确率比最强公开配方分别高 0.9、1.4、2.2 个百分点。",
-    "en": "QDA uses an LLM agent to search post-training quantization recipes per model and precision, scoring candidates in minutes via output KL divergence on unseen reasoning traces and verifying with long generations; it beats the best public recipe by 0.9, 1.4 and 2.2 points on W4A16, W4A8 and W3A16."
+    "en": "QDA uses an LLM agent to search post-training quantization recipes per model and precision, scoring candidates in minutes via output KL divergence on unseen reasoning traces and verifying with long generations; it beats the best public recipe by 0.9, 1.4 and 2.2 points on W4A16, W4A8 and W3A16.",
+    "zh": "QDA 用 LLM 智能体为每个模型和精度自动搜索后训练量化配方，以未见的推理轨迹上的输出 KL 散度在数分钟内打分，并用长文本生成复查隐患；在四个推理模型上，W4A16、W4A8、W3A16 平均准确率比最强公开配方分别高 0.9、1.4、2.2 个百分点。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.24154",
+   "title": "Game2Player: Scaling Gameplay Experience for Visual Agents through Environment-Player Co-Development",
+   "authors": [
+    "Xirui Jiang",
+    "Yuxi Chen",
+    "Rui Yang",
+    "Feng Luo",
+    "Pengcheng Wang",
+    "Bingxuan Li",
+    "Zihao Zhao",
+    "Yushan Li",
+    "Han Wang",
+    "Manling Li",
+    "Yang Zhang",
+    "Shiyu Chang",
+    "Tong Zhang",
+    "Huan Zhang"
+   ],
+   "abstract": "Games are a rich testbed for visual agents, demanding perception, long-horizon planning, and precise control. However, collecting human gameplay is costly, and learning from gameplay videos requires inferring missing actions. Existing datasets also cover a limited range of games, often without explicit tasks or verifiable outcomes. To address these gaps, we introduce Game2Player, a framework that co-develops game environments and players to collect diverse and verifiable gameplay experience at scale. In the Game2Player loop, a Builder agent adapts existing web games, exposes their internal state, and defines tasks with state-based progress measures and success checks. A Coding Player and a VLM Player then attempt the tasks and report problems to the Builder for repair, so that play serves as both environment validation and training data collection. With Game2Player, we build 568 verified web games with 3,436 tasks, collect 15.7K trajectories (307 hours of gameplay), and hold out 50 games as the benchmark PlayerBench. To evaluate the collected experience as training data, we train VLM agents with progress-weighted SFT, assigning greater weight to steps that advance task progress. Game2Player-9B improves progress from 14.3% to 31.2% on PlayerBench and from 30.0% to 53.1% on the external GameWorld benchmark. More broadly, our work suggests a path for visual agents to scale their gameplay experience by building, verifying, and learning from existing game worlds.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-18T09:58:53Z",
+   "updated": "2026-11-18T09:58:53Z",
+   "comment": "Project page: https://game2player.github.io",
+   "listed": "2026-11-19",
+   "tags": [
+    "agents",
+    "VLM",
+    "benchmark",
+    "dataset"
+   ],
+   "hf_upvotes": 29,
+   "ax_votes": 7,
+   "ax_visits": 93,
+   "heat": 45.3,
+   "orgs": [
+    {
+     "logo": "data/logos/illinois.edu.png",
+     "name": "University of Illinois Urbana-Champaign",
+     "ror": "047426m28"
+    },
+    {
+     "name": "University of California, Santa Barbara",
+     "ror": "02t274463"
+    },
+    {
+     "logo": "data/logos/gatech.edu.png",
+     "name": "Georgia Institute of Technology",
+     "ror": "01zkghx44"
+    },
+    {
+     "logo": "data/logos/northwestern.edu.png",
+     "name": "Northwestern University",
+     "ror": "000e0be47"
+    },
+    {
+     "logo": "data/logos/ibm.com.png",
+     "name": "IBM"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24154.jpg",
+   "thumb_w": 494,
+   "thumb_h": 440,
+   "summary": {
+    "en": "Game2Player co-develops web games and players: a Builder agent adapts games and defines verifiable tasks, Coding and VLM Players collect 15.7K trajectories; progress-weighted SFT lifts a 9B VLM's PlayerBench progress from 14.3% to 31.2%.",
+    "zh": "Game2Player 框架让 Builder agent 改造网页游戏并定义可验证任务，Coding Player 与 VLM Player 试玩并反馈修复，构建 568 款游戏、3,436 个任务和 15.7K 条轨迹，用进度加权 SFT 训练的 9B 模型在 PlayerBench 上进度从 14.3% 提升到 31.2%。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.24651",
+   "title": "Piccolo: Co-Evolving Decision Models and Data through Recursive Self-Improvement",
+   "authors": [
+    "Zhenqing Ling",
+    "Qirui Jiao",
+    "Daoyuan Chen",
+    "Cheng Chen",
+    "Xinji Mai",
+    "Haowen Gao",
+    "Zhuo Zhang",
+    "Xuchen Pan",
+    "Mengsu Ding",
+    "Jiaji Deng",
+    "Yuexiang Xie",
+    "Xiaoming Qin",
+    "Weirui Kuang",
+    "Zhaoyang Liu",
+    "Yaliang Li",
+    "Bolin Ding",
+    "Jingren Zhou"
+   ],
+   "abstract": "We present Piccolo, a family of multimodal decision models (0.8B to 27B) that coevolves model capabilities and training data via Agentic Data Engineering and recursive self-improvement (RSI). The models predict probabilities over candidate answers for general-purpose text and visual judgments, agent harnesses, data workflows, and interactive games. Piccolo-27B tops the Decision Index Vision Full leaderboard with a score of 75.59, while Piccolo-9B and Piccolo-4B achieve 68.35 and 67.46, respectively. All three rank first on the Private benchmark in their respective model-size categories. Research agents analyze model behavior, construct training data, conduct experiments, and use the results to refine subsequent proposals. Semantic slices and a shared research memory connect these actions across the model family's development. With training recipes comprising hundreds of thousands of examples, data selection and feedback-driven refinement are central to the self-improvement process. Our large-scale RSI exploration yields three counter-intuitive insights for decision-model development: (1) Backbone-recipe co-adaptation outweighs raw model recency: earlier backbones can surpass newer generations on visual tasks under identical recipes; (2) Targeted data curation enables 4B-9B models to rival 27B baselines on specialized workflows; and (3) Continuous loss reduction can decouple from and even degrade discrete decision accuracy. Together with the released weights and tools from the Data-Juicer and AgentScope ecosystems, Piccolo provides an actionable blueprint for building frontier decision models and scaling data-driven RSI.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.CV"
+   ],
+   "published": "2026-11-18T15:53:39Z",
+   "updated": "2026-11-18T15:53:39Z",
+   "comment": "22 pages, 13 figures, 11 tables. Project page and blog: https://decisionplayground.agentscope.io/piccolo.html",
+   "listed": "2026-11-19",
+   "tags": [
+    "multimodal",
+    "agents",
+    "dataset",
+    "RL"
+   ],
+   "hf_upvotes": 15,
+   "ax_votes": 9,
+   "ax_visits": 159,
+   "heat": 39.9,
+   "orgs": [],
+   "thumb": "data/thumbs/2611.24651.jpg",
+   "thumb_w": 640,
+   "thumb_h": 275,
+   "summary": {
+    "en": "Piccolo co-evolves 0.8B–27B multimodal decision models with training data via agentic data engineering and recursive self-improvement, with Piccolo-27B scoring 75.59 to top the Decision Index Vision Full leaderboard.",
+    "zh": "Piccolo 通过 Agentic Data Engineering 与递归自我改进（RSI）让 0.8B–27B 多模态决策模型与训练数据共同进化，其中 Piccolo-27B 以 75.59 分登顶 Decision Index Vision Full 榜首，9B 和 4B 版本分别得 68.35 和 67.46。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": [
+    "rl"
+   ]
+  },
+  {
+   "id": "2611.11318",
+   "title": "PROLA: Principal-Orthogonal Low-rank Adaptation for Predictive Spatiotemporal Weather Downscaling",
+   "authors": [
+    "Minseo Yoon",
+    "Minseong Bae",
+    "Sojin Lee",
+    "Hyunwoo J. Kim"
+   ],
+   "abstract": "High-resolution weather prediction is important for resolving local atmospheric patterns missed by coarse global forecasts. Large pretrained weather backbones have improved global forecasting, but adapting them to produce future high-resolution fields from recent coarse states remains challenging and costly. We formulate this setting as Predictive Spatiotemporal Weather Downscaling (PSWD), a task that jointly refines spatial and temporal resolution while predicting future high-resolution trajectories. To this end, we propose a framework that decomposes prediction into spatial and temporal stages using a shared pretrained backbone, fixed numerical scaffolds, and lightweight residual heads. For backbone adaptation, we introduce PROLA (PRincipal-Orthogonal Low-rank Adaptation), which allocates a fixed low-rank budget between pretrained weights' principal directions and their orthogonal complement. PROLA further rescales rank-1 optimizer updates using gradient signals, improving adaptation without increasing trainable rank. Experiments in the PSWD setting show that PROLA outperforms representative low-rank adaptation baselines. Further experiments across diverse datasets and tasks support the broader applicability of PROLA, showing that its benefits extend beyond the primary weather downscaling setting.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.AI"
+   ],
+   "published": "2026-11-08T11:42:31Z",
+   "updated": "2026-11-08T11:42:31Z",
+   "comment": "Accepted to NeurIPS 2026",
+   "listed": "2026-11-19",
+   "tags": [
+    "efficiency",
+    "pretraining",
+    "theory"
+   ],
+   "hf_upvotes": 28,
+   "ax_votes": 2,
+   "ax_visits": 22,
+   "heat": 32.2,
+   "orgs": [
+    {
+     "logo": "data/logos/kaist.ac.kr.png",
+     "name": "KAIST",
+     "ror": "05apxxy63"
+    }
+   ],
+   "thumb": "data/thumbs/2611.11318.jpg",
+   "thumb_w": 640,
+   "thumb_h": 220,
+   "summary": {
+    "en": "PROLA splits a fixed low-rank budget between pretrained weights' principal directions and their orthogonal complement, rescaling rank-1 optimizer updates with gradient signals to beat low-rank adaptation baselines on predictive spatiotemporal weather downscaling.",
+    "zh": "PROLA 将低秩适配预算分配到预训练权重的主方向与正交补之间，并按梯度信号重缩放 rank-1 优化器更新，在 Predictive Spatiotemporal Weather Downscaling 上优于代表性低秩适配基线。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.24654",
+   "title": "CurvDelta: Low-Curvature Delta Modeling For Surgical Learning and Unlearning",
+   "authors": [
+    "Zeguan Xiao",
+    "Zhuocheng Liang",
+    "Yun Chen",
+    "Yong Wang",
+    "Guanhua Chen",
+    "Pinyan Lu"
+   ],
+   "abstract": "A central challenge in adapting large language models (LLMs) is capability preservation: an adaptation can achieve its target while degrading general capabilities. We introduce CurvDelta, a scalable framework that incorporates the preservation constraint into the parameterization of the model update. By analyzing the local geometry of the preservation constraint around the pre-adaptation model, CurvDelta constructs a low-curvature space in which parameter updates leave the preservation loss nearly invariant. We make its construction practical for LLMs through Kronecker-factored approximate curvature (K-FAC) and a factorized projection. We also introduce CurvLoRA, a low-rank variant within the same preservation geometry, designed for more efficient adaptation. Both methods apply to preservation-constrained adaptation tasks such as capability learning and selective unlearning. We evaluate our methods on mathematical reasoning, code generation, and knowledge unlearning. For mathematical reasoning and code generation, our approaches achieve competitive downstream performance while better preserving general capabilities, offering a favorable acquisition--retention trade-off relative to the baselines. For knowledge unlearning, our main results on TOFU and MUSE show a better balance between targeted forgetting and knowledge retention than the baselines, with retention performance close to the from-scratch retraining reference.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL"
+   ],
+   "published": "2026-11-18T15:56:20Z",
+   "updated": "2026-11-18T15:56:20Z",
+   "comment": "",
+   "listed": "2026-11-19",
+   "tags": [
+    "LLM",
+    "efficiency",
+    "alignment",
+    "safety"
+   ],
+   "hf_upvotes": 24,
+   "ax_votes": 2,
+   "ax_visits": 51,
+   "heat": 31.1,
+   "orgs": [
+    {
+     "name": "Shanghai University of Finance and Economics",
+     "ror": "00wtvfq62"
+    },
+    {
+     "logo": "data/logos/alibaba.com.png",
+     "name": "Alibaba"
+    },
+    {
+     "name": "Southern University of Science and Technology",
+     "ror": "049tv2d57"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24654.jpg",
+   "thumb_w": 550,
+   "thumb_h": 440,
+   "summary": {
+    "en": "CurvDelta embeds a capability-preservation constraint into parameter updates via a K-FAC-built low-curvature subspace, with a low-rank CurvLoRA variant; it yields a better acquisition-retention trade-off on math, code, and TOFU/MUSE unlearning than baselines.",
+    "zh": "CurvDelta 将能力保持约束直接嵌入参数更新，用 K-FAC 构建低曲率子空间使保持损失近似不变，并推出低秩版本 CurvLoRA；在数学推理、代码生成与 TOFU/MUSE 知识遗忘上比基线取得更好的获得—保持权衡。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.24869",
+   "title": "WorldRuler: Interactive World Modeling under Configurable Rules",
+   "authors": [
+    "Mingliang Zhai",
+    "Chuanhao Li",
+    "Jiaming Tan",
+    "Zhen Li",
+    "Yuwei Wu",
+    "Yunde Jia",
+    "Zian Meng",
+    "Yuanyang Yin",
+    "Kaipeng Zhang"
+   ],
+   "abstract": "Rules govern how player actions change interactive worlds. Different rules create distinct gameplay experiences within similar scenes and action spaces. For customizable gameplay, generative world models must follow user-defined rules beyond real-world behaviors. However, realizing user-defined rules presents two challenges: Rule-State Persistence and Rule-to-Visual Realization. The former requires preserving rule definitions, dependencies, and world states across saving and loading, so that restored worlds follow the established rules. The latter requires accurately realizing rule-induced changes on designated objects and attributes, particularly when affected objects are unseen. In this paper, we propose WorldRuler, which organizes rule definitions, dependencies, and object states in an executable 3D rule graph and connects rule execution, video generation, and perceptual feedback in a closed loop. The graph supports joint saving and restoration of rules and world states, while dynamic object binding grounds rule-specified entities in visual instances and uses stored states to constrain generation from their first appearance. We further introduce object attribute state replacement and counterfactual reconstruction training, enabling accurate attribute control and compatible appearance and motion changes while limiting interference with unrelated content. We develop an automated data collection and annotation pipeline using GTA-V and Habitat to construct RuleVerse, a dataset of rule-driven interactions with detailed state and event annotations, including cases where rules take effect before affected objects become visible. Extensive experiments demonstrate the effectiveness of WorldRuler in preserving rule-state consistency across saving and loading and accurately realizing rule outcomes on designated objects and attributes.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-18T18:20:39Z",
+   "updated": "2026-11-19T05:36:20Z",
+   "comment": "V2 corrects errors in the author list and institutional affiliations. Homepage: https://alaya-lab.github.io/WorldRuler/",
+   "listed": "2026-11-19",
+   "tags": [
+    "world model",
+    "video generation",
+    "dataset",
+    "agents"
+   ],
+   "hf_upvotes": 20,
+   "ax_votes": 2,
+   "ax_visits": 92,
+   "heat": 31.2,
+   "orgs": [
+    {
+     "name": "Alaya Lab"
+    },
+    {
+     "name": "Beijing Institute of Technology",
+     "ror": "01skt4w74"
+    },
+    {
+     "name": "University of Tokyo"
+    },
+    {
+     "name": "Shenzhen MSU-BIT University",
+     "ror": "02q963474"
+    },
+    {
+     "logo": "data/logos/sii.edu.cn.png",
+     "name": "Shanghai Innovation Institute",
+     "ror": "01fatbw66"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24869.jpg",
+   "thumb_w": 640,
+   "thumb_h": 246,
+   "summary": {
+    "en": "WorldRuler organizes rule definitions and object states into an executable 3D rule graph, closing the loop between rule execution, video generation, and perceptual feedback; it also builds the RuleVerse dataset from GTA-V and Habitat, achieving consistent rule-state persistence and accurate rule effects on designated objects.",
+    "zh": "WorldRuler 将规则定义、依赖与物体状态组织为可执行 3D 规则图，并闭环连接规则执行、视频生成与感知反馈，支持规则与世界状态的联合保存恢复；结合 GTA-V 与 Habitat 构建 RuleVerse 数据集，实验显示其能保持规则-状态一致性并准确实现指定物体与属性的规则效果。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.23751",
@@ -592,8 +664,8 @@
    ],
    "hf_upvotes": 17,
    "ax_votes": 2,
-   "ax_visits": 71,
-   "heat": 26.1,
+   "ax_visits": 72,
+   "heat": 26.2,
    "orgs": [
     {
      "name": "University of Science and Technology of China",
@@ -608,10 +680,595 @@
    "thumb_w": 566,
    "thumb_h": 440,
    "summary": {
-    "zh": "AnyS1 将人类编写的流程技能转为通用决策点：离线挖掘超 1000 个技能中可枚举的选择，在隔离容器内采集轨迹状态构建 Any-DP，训练单个 4B 指针式 System-1，并在运行时低置信度回退 System-2。在三个未见基准上，相比未编译的 System-2 agent，任务可靠性保持不变，episode 成本降低 75–91%，模型调用时间减少 63–92%。",
-    "en": "AnyS1 mines enumerable decision points from over 1,000 procedural skills and trains a 4B pointer System-1 that resolves routine choices in one pass, falling back to System-2 when confidence is low. It matches System-2 reliability while cutting episode cost by 75-91% and model-call time by 63-92% on three unseen benchmarks."
+    "en": "AnyS1 mines enumerable decision points from over 1,000 procedural skills and trains a 4B pointer System-1 that resolves routine choices in one pass, falling back to System-2 when confidence is low. It matches System-2 reliability while cutting episode cost by 75-91% and model-call time by 63-92% on three unseen benchmarks.",
+    "zh": "AnyS1 将人类编写的流程技能转为通用决策点：离线挖掘超 1000 个技能中可枚举的选择，在隔离容器内采集轨迹状态构建 Any-DP，训练单个 4B 指针式 System-1，并在运行时低置信度回退 System-2。在三个未见基准上，相比未编译的 System-2 agent，任务可靠性保持不变，episode 成本降低 75–91%，模型调用时间减少 63–92%。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.17600",
+   "title": "LightTAR: Light and Fast Target-Aware Representations for Multimodal Tabular Learning",
+   "authors": [
+    "Eilam Shapira",
+    "Alan Arazi",
+    "Shoham Grunblat",
+    "Roi Reichart"
+   ],
+   "abstract": "Multimodal tabular learning involves classification and regression on tables combining structured numerical and categorical features with unstructured text and images. These unstructured fields are commonly represented by pretrained encoder embeddings reduced with principal component analysis (PCA). This reduction prioritizes input variance but may overlook information relevant to predicting the target. We introduce LightTAR, a simple, inexpensive method that adapts dimensionality reduction to the prediction task. LightTAR augments the standard PCA representation with a few target-aware features extracted jointly from the final and an intermediate encoder layer using regularized partial least squares (PLS). We evaluate LightTAR with 21 tabular models, including tree ensembles, neural networks, and tabular foundation models. LightTAR improves average predictive performance for all models and, averaged across models, improves prediction on almost every MulTaBench dataset. These gains come with a small increase in total runtime relative to PCA representations. LightTAR integrates directly into existing encoding pipelines, improving tabular learners' predictive performance without modifying the encoder or the learner.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "published": "2026-11-12T23:45:58Z",
+   "updated": "2026-11-12T23:45:58Z",
+   "comment": "21 pages, 3 figures. Code: https://github.com/eilamshapira/LightTAR",
+   "code_url": "https://github.com/eilamshapira/LightTAR",
+   "listed": "2026-11-19",
+   "tags": [
+    "multimodal",
+    "efficiency",
+    "dataset"
+   ],
+   "hf_upvotes": 22,
+   "ax_votes": 0,
+   "ax_visits": 31,
+   "heat": 25.1,
+   "orgs": [
+    {
+     "logo": "data/logos/technion.ac.il.png",
+     "name": "Technion – Israel Institute of Technology",
+     "ror": "03qryx823"
+    }
+   ],
+   "thumb": "data/thumbs/2611.17600.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440,
+   "summary": {
+    "en": "LightTAR augments PCA embeddings with target-aware features via regularized PLS from final and intermediate encoder layers, improving prediction across 21 tabular models on nearly all MulTaBench datasets at small extra runtime.",
+    "zh": "LightTAR用正则化偏最小二乘从编码器末层与中间层联合提取少量目标感知特征，增强PCA表示，在21种表格模型和MulTaBench全部数据集上平均提升预测性能，运行时仅小幅增加。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.24161",
+   "title": "AVTR: Adaptive Multimodal Reasoning with Visual Imagination",
+   "authors": [
+    "Xiaoqian Shen",
+    "Yunyang Xiong",
+    "Changsheng Zhao",
+    "Saksham Suri",
+    "Chong Zhou",
+    "Zechun Liu",
+    "Zhipeng Cai",
+    "Zhuang Liu",
+    "Qi Qian",
+    "Wei Wen",
+    "Hongyu Xu",
+    "Hanxian Huang",
+    "Ernie Chang",
+    "Yanbei Chen",
+    "Vikas Chandra",
+    "Raghuraman Krishnamoorthi",
+    "Mohamed Elhoseiny",
+    "Lemeng Wu"
+   ],
+   "abstract": "Vision-Language Models increasingly rely on textual reasoning to solve advanced multimodal tasks. Despite its effectiveness, this paradigm faces two fundamental limitations. First, relying on textual reasoning alone can limit perceptual ability in vision-centric questions, where accurate answers depend on interpreting task-relevant visual evidence. Second, applying textual reasoning uniformly across inputs overlooks question-dependent variation in both reasoning modality and depth, often producing verbose and unnecessary traces when little logical inference is required. To this end, we propose Adaptive Visual-Textual Reasoning (AVTR), which introduces visual imagination as a complementary reasoning modality to textual thinking, enabling the model to revisit its visual observations and distill the salient evidence through generative visual reflection. Furthermore, we formulate reasoning-modality selection as a learned routing problem, allowing a single policy to adaptively harness the complementary strengths of visual reflection and textual reasoning in response to the perceptual and inferential demands of the input. Across 16 benchmarks, AVTR improves the average score by 4.5 points over Qwen3.5 baseline, while reducing inference latency by 33\\%. It also scales effectively into a smaller size backbone, outperforming the evaluated 2B-scale baselines.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-18T10:05:18Z",
+   "updated": "2026-11-18T10:05:18Z",
+   "comment": "Project page: https://xiaoqian-shen.github.io/AVTR",
+   "listed": "2026-11-19",
+   "tags": [
+    "VLM",
+    "multimodal",
+    "reasoning",
+    "efficiency"
+   ],
+   "hf_upvotes": 10,
+   "ax_votes": 4,
+   "ax_visits": 97,
+   "heat": 23.7,
+   "orgs": [
+    {
+     "logo": "data/logos/meta.com.png",
+     "name": "Meta"
+    },
+    {
+     "logo": "data/logos/kaust.edu.sa.png",
+     "name": "King Abdullah University of Science and Technology",
+     "ror": "01q3tbs38"
+    },
+    {
+     "logo": "data/logos/princeton.edu.png",
+     "name": "Princeton University",
+     "ror": "00hx57361"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24161.jpg",
+   "thumb_w": 640,
+   "thumb_h": 236,
+   "summary": {
+    "en": "AVTR adds generative visual imagination as a complementary reasoning modality and learns to route between visual reflection and textual reasoning, beating Qwen3.5 by 4.5 points on 16 benchmarks with 33% lower latency.",
+    "zh": "AVTR 将视觉想象作为文本推理的补充模态，让模型通过生成式视觉反思重新审视视觉观察、提炼关键证据，并把推理模态选择建模为可学习路由问题，在 16 个基准上平均比 Qwen3.5 基线高 4.5 分，推理延迟降低 33%。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.24789",
+   "title": "HINT-WAM: Hindsight-Informed Training for World Action Models",
+   "authors": [
+    "Phuong Tuan Dat",
+    "Qi Li",
+    "Xinchao Wang"
+   ],
+   "abstract": "World action models (WAMs) have shown promising generalization and data efficiency in robot manipulation by coupling action generation with predictions of future visual dynamics. Translating these capabilities into reliable task execution, however, remains a challenge for existing post-training methods. Offline supervised fine-tuning provides dense supervision on expert trajectories, but its flow-matching action expert is trained only on noised demonstration actions and never on the intermediate states produced by its own sampler; task-specific adaptation can also compromise pretrained capabilities. On-policy reinforcement learning trains on the policy's own behavior, yet sparse task rewards make exploration and credit assignment difficult, while dense reward shaping still provides scalar evaluations rather than direct action targets. We introduce \\textbf{HINT-WAM}, the first on-policy self-distillation framework that supervises the action expert on its own sampling trajectories using hindsight, the future video of the demonstration, as privileged information available to the WAM itself. For each demonstration observation, the student generates its action through its own denoising trajectory, and at the states along this trajectory the same model acts as a teacher conditioned additionally on this hindsight, providing a conditional action distribution as a dense training target, while the student sees only deployment-time inputs and needs no environmental rewards or simulator interaction. To transfer this supervision to a flow-matching action expert, HINT-WAM distills the teacher into the student with an energy score, a distribution-level objective that matches the teacher's action distribution from the student's own samples rather than regressing its velocity field. The project web is available in https://tuandattt.github.io/hintwam/.",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO"
+   ],
+   "published": "2026-11-18T17:36:15Z",
+   "updated": "2026-11-18T17:36:15Z",
+   "comment": "",
+   "listed": "2026-11-19",
+   "tags": [
+    "robotics",
+    "VLA",
+    "RL",
+    "world model"
+   ],
+   "hf_upvotes": 14,
+   "ax_votes": 4,
+   "ax_visits": 54,
+   "heat": 23.4,
+   "orgs": [
+    {
+     "name": "NUS",
+     "ror": "01tgyzw49"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24789.jpg",
+   "thumb_w": 616,
+   "thumb_h": 440,
+   "summary": {
+    "en": "HINT-WAM is an on-policy self-distillation framework that uses future demonstration video as privileged hindsight to supervise a flow-matching action expert via energy-score distillation, improving task execution without rewards or simulator interaction.",
+    "zh": "HINT-WAM 是首个在策略自蒸馏框架，以演示的未来视频作为后见特权信息，让教师模型在学生自身去噪轨迹的状态上给出条件动作分布，并用 energy score 做分布级蒸馏，使流匹配动作专家无需环境奖励或仿真交互即可提升任务执行。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": [
+    "rl"
+   ]
+  },
+  {
+   "id": "2611.08136",
+   "title": "How Far Can Untrained Neural Networks Go in Anomaly Detection? From Tables to Pixels",
+   "authors": [
+    "Hyojun Yi",
+    "Geunyoung Kim",
+    "Hogeon Seo",
+    "Seunghyoung Ryu"
+   ],
+   "abstract": "Anomaly detection (AD) is often framed as a representation-learning problem, where strong performance is expected to require learned features or AD-specific optimization. However, this view can overlook the intrinsic separability of anomalies from normal references, even in the absence of learned representations. We therefore investigate how far untrained neural networks can go in anomaly detection. To this end, we propose PRISM, a framework combining fixed random nonlinear features with normal-reference Mahalanobis scoring for tabular detection and dense visual localization. Across 47 tabular datasets in ADBench, PRISM-T achieves the highest mean AUROC (86.4%) and the second-highest mean AUPRC (65.9%) among the compared methods. On MVTec AD and VisA, covering 27 visual categories, PRISM-V achieves mean image-level and pixel-level AUROCs of 90.4% and 96.4%, respectively. Notably, both models achieve these results without neural weight optimization or pretrained representations. A theoretical analysis further characterizes how nonlinear transformations affect the mean and covariance contributions to the Mahalanobis score gap, while empirical analyses examine the resulting score separability. These findings establish PRISM as both a competitive anomaly detector and a prior-to-learning baseline for assessing the added value of learned representations in anomaly detection.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.CV"
+   ],
+   "published": "2026-11-05T15:01:17Z",
+   "updated": "2026-11-09T06:21:36Z",
+   "comment": "16 pages, 13 figures. Code available at PRISM-T (https://github.com/ideal-lab-sejong/PRISM_T) and PRISM-V (https://github.com/ideal-lab-sejong/PRISM_V)",
+   "code_url": "https://github.com/ideal-lab-sejong/PRISM_T",
+   "listed": "2026-11-19",
+   "tags": [
+    "detection",
+    "interpretability",
+    "efficiency",
+    "benchmark"
+   ],
+   "hf_upvotes": 7,
+   "ax_votes": 10,
+   "ax_visits": 62,
+   "heat": 23.2,
+   "orgs": [
+    {
+     "logo": "data/logos/sejong.ac.kr.png",
+     "name": "Sejong University",
+     "ror": "00aft1q37"
+    },
+    {
+     "logo": "data/logos/kaeri.re.kr.png",
+     "name": "Korea Atomic Energy Research Institute",
+     "ror": "01xb4fs50"
+    }
+   ],
+   "thumb": "data/thumbs/2611.08136.jpg",
+   "thumb_w": 308,
+   "thumb_h": 440,
+   "summary": {
+    "en": "PRISM combines fixed random nonlinear features with normal-reference Mahalanobis scoring, requiring no weight training or pretrained representations; it reaches 86.4% mean AUROC on 47 ADBench tabular datasets and 90.4%/96.4% image-/pixel-level AUROC on 27 MVTec AD and VisA categories.",
+    "zh": "PRISM 用固定随机非线性特征加正常参考的 Mahalanobis 打分做异常检测，无需训练权重或预训练表示；在 ADBench 47 个表格数据集上，PRISM-T 平均 AUROC 达 86.4%，为对比方法中最高；在 MVTec AD 与 VisA 共 27 个视觉类别上，PRISM-V 图像级与像素级平均 AUROC 分别为 90.4% 和 96.4%。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.17460",
+   "title": "Unfinished-Bench: Measuring Rule Violations by Persistent Agents in Realistic Work Environments",
+   "authors": [
+    "Seunghyun Lee",
+    "Jaehui Hwang",
+    "Dongyoon Han",
+    "Sangdoo Yun"
+   ],
+   "abstract": "AI agents are increasingly equipped with persistence toward task completion to run delegated work autonomously for long periods, under many unstated constraints from internal documents and other people's authority. When completion requires violating a rule, the agent must decide alone, yet benchmarks of instruction-rule conflicts state the rule in the prompt or keep it hidden and do not evaluate persistence. We present Unfinished-Bench, a benchmark that gives models persistence in autonomous runs without a user, in realistic work environments with embedded rules. In each of its 97 scenarios across 7 organizations and 7 risk categories, the goal and the rule cannot both hold. We find that persistence raised violations of a rule in an internal document from 32.2% to 43.6%, five times the 8.5% for the same rule stated by the user. Of the document-rule violations, 98.3% occurred after the rule was displayed, and in 89% of a judged sample the agent first wrote down the rule. Violations of rules placed in the environment without user oversight can lead to serious incidents, so persistence-driven risks need to be evaluated. Benchmark documentation: https://francis21c.github.io/unfinished-bench/",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.CL"
+   ],
+   "published": "2026-11-12T19:36:57Z",
+   "updated": "2026-11-12T19:36:57Z",
+   "comment": "21 pages, 3 figures",
+   "listed": "2026-11-19",
+   "tags": [
+    "agents",
+    "benchmark",
+    "safety",
+    "reasoning"
+   ],
+   "hf_upvotes": 9,
+   "ax_votes": 7,
+   "ax_visits": 70,
+   "heat": 23.0,
+   "orgs": [
+    {
+     "logo": "data/logos/navercloudcorp.com.png",
+     "name": "NAVER Cloud",
+     "ror": "041051y78"
+    }
+   ],
+   "thumb": "data/thumbs/2611.17460.jpg",
+   "thumb_w": 640,
+   "thumb_h": 313,
+   "summary": {
+    "en": "Unfinished-Bench tests persistent unsupervised agents across 97 scenarios in 7 organizations; persistence raised rule violations from 32.2% to 43.6%, five times the 8.5% when rules were user-stated.",
+    "zh": "Unfinished-Bench 在 7 个组织、7 类风险的 97 个场景中让模型无用户持续自主运行，发现持续性使内部文档规则违规率从 32.2% 升至 43.6%，是用户明示规则时 8.5% 的五倍。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.24362",
+   "title": "PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents",
+   "authors": [
+    "Lipeng He",
+    "Yihan Wang",
+    "Jiawen Zhang",
+    "N. Asokan"
+   ],
+   "abstract": "Large language model (LLM) agents routinely interact with untrusted external data, exposing them to indirect prompt injection (IPI) attacks that hijack agents into executing attacker-chosen tasks. To uncover these vulnerabilities at scale, automated red-teaming methods often leverage reinforcement learning (RL) to generate attacks that achieve high attack success rates (ASR). Model developers use the attacks discovered during internal red-teaming to harden agents through adversarial training before deployment, a collaborative offensive-defensive process known in cybersecurity as purple-teaming. However, we show that achieving high ASR during red-teaming does not guarantee robustness gains from subsequent adversarial training. Specifically, we find that two state-of-the-art RL-based red-teaming methods, RL-Hammer and PISmith, suffer from mode collapse, repeatedly discovering similar attack strategies whose additional successes add no additional robustness improvements to adversarial training. To address this gap, we introduce PIPETTE, a unified prompt injection purple-teaming framework that effectively converts red-teaming discoveries into defender robustness improvements. PIPETTE employs a dictionary learning-based reward that encourages broader coverage of attack strategies during red-teaming. It also integrates an on-policy adversarial training pipeline tailored to IPI defense, enabling agents to resist attacks while completing legitimate user tasks. Extensive evaluations across agentic benchmarks (AgentDojo and ASB) demonstrate that PIPETTE produces defenders that achieve near-zero attack success rates on static attacks and can withstand strong adaptive attacks, while maintaining benign task utility close to that of the undefended baseline.",
+   "primary": "cs.CR",
+   "categories": [
+    "cs.CR",
+    "cs.AI"
+   ],
+   "published": "2026-11-18T12:56:06Z",
+   "updated": "2026-11-20T22:23:16Z",
+   "comment": "18 pages, 6 figures",
+   "listed": "2026-11-19",
+   "tags": [
+    "safety",
+    "agents",
+    "RL",
+    "alignment"
+   ],
+   "hf_upvotes": 8,
+   "ax_votes": 7,
+   "ax_visits": 79,
+   "heat": 22.9,
+   "orgs": [
+    {
+     "logo": "data/logos/uwaterloo.ca.png",
+     "name": "University of Waterloo",
+     "ror": "01aff2v68"
+    },
+    {
+     "name": "Zhejiang University",
+     "ror": "00a2xv884"
+    },
+    {
+     "logo": "data/logos/kth.se.png",
+     "name": "KTH Royal Institute of Technology",
+     "ror": "026vcq606"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24362.jpg",
+   "thumb_w": 640,
+   "thumb_h": 392,
+   "summary": {
+    "en": "PIPETTE is a unified prompt-injection purple-teaming framework combining a dictionary-learning reward for broader attack-strategy coverage with on-policy adversarial training; on AgentDojo and ASB it yields near-zero static attack success and strong adaptive-attack robustness while preserving benign utility.",
+    "zh": "PIPETTE 是一个统一的提示注入红蓝对抗框架，用基于字典学习的奖励鼓励红队覆盖更多攻击策略，并结合面向 IPI 防御的 on-policy 对抗训练；在 AgentDojo 和 ASB 上，防御器面对静态攻击成功率接近零，能抵御强自适应攻击，正常任务效用接近未防御基线。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": [
+    "rl"
+   ]
+  },
+  {
+   "id": "2611.21553",
+   "title": "BLIP-Live: Balancing Timeliness & Firing Precision in Proactive Streaming Video Agents",
+   "authors": [
+    "Kanchana Ranasinghe",
+    "Honglu Zhou",
+    "Dominick Reilly",
+    "Le Xue",
+    "Shusheng Yang",
+    "Juan Carlos Niebles",
+    "Silvio Savarese",
+    "Ran Xu"
+   ],
+   "abstract": "Streaming video understanding is becoming increasingly important for real-world interactive systems. Such systems must be proactive for natural and useful human interaction: they should respond as soon as sufficient evidence becomes available while avoiding premature, redundant, or incorrect responses. We present BLIP-Live, a framework unifying data, metrics, harness, and training around a shared formulation of proactivity as effective causal response decisions balancing the two competing objectives of responding vs silence. First, we construct BLIP-Live-780K dataset containing human annotations of proactive response content and timing, which defines this desired behavior. We then propose PAUC-F, a metric to effectively measure our desired proactive behavior. PAUC-F combines existing response timeliness metrics with firing precision to reward early useful responses without rewarding excessive firing. With our desired behavior defined and measurable, we finally investigate model-agnostic inference harnesses that draw out proactive streaming capabilities of offline vision language models (VLMs), together with training pipelines that learn to further improve their proactive responsiveness. Across both settings, we find that combinations of sliding visual windows, online interaction memory, and structured response outputs consistently yield strongest proactive performance. Our experiments result in two models, with our BLIP-Live-Qwen model achieving state-of-the-art performance across four proactive streaming benchmarks, with gains up to 44% over baselines and outperforming multiple closed API models. Our code and data will be released publicly.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-16T18:33:47Z",
+   "updated": "2026-11-16T18:33:47Z",
+   "comment": "",
+   "listed": "2026-11-19",
+   "tags": [
+    "multimodal",
+    "VLM",
+    "agents",
+    "benchmark"
+   ],
+   "hf_upvotes": 11,
+   "ax_votes": 5,
+   "ax_visits": 61,
+   "heat": 22.1,
+   "orgs": [
+    {
+     "name": "Salesforce AI Research"
+    }
+   ],
+   "thumb": "data/thumbs/2611.21553.jpg",
+   "thumb_w": 640,
+   "thumb_h": 235,
+   "summary": {
+    "en": "BLIP-Live builds the BLIP-Live-780K dataset and PAUC-F metric to balance proactive responding against silence, combining sliding visual windows, online memory, and structured outputs; BLIP-Live-Qwen improves proactive streaming benchmarks by up to 44%.",
+    "zh": "BLIP-Live 围绕主动响应与静默的权衡构建 BLIP-Live-780K 标注数据集与 PAUC-F 指标，结合滑动视觉窗口、在线交互记忆和结构化输出改进离线 VLM 的流式主动响应，BLIP-Live-Qwen 在四个基准上平均超越基线最多 44%。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.24408",
+   "title": "StrideWorld: Benchmarking Scene Rigidity and Action Consistency in Interactive Video World Model",
+   "authors": [
+    "Chuang Wang",
+    "Rui Nie",
+    "Jie Song",
+    "Junyuan Gao",
+    "Jiahe Song",
+    "Haitao Zhou",
+    "Boyu Zhu",
+    "Xing Li",
+    "Jiang Wu",
+    "Conghui He",
+    "Qian Yu",
+    "Weijia Li"
+   ],
+   "abstract": "Interactive video world models turn user commands into the exploration of a generated scene, which requires the scene to keep its 3D structure as the camera moves and each action to keep a stable effect. Existing benchmarks mostly evaluate these properties against references fitted to the video under test, either a scene reconstructed from its own frames or a camera trajectory aligned to the command path with a free scale. Such references can absorb gradual scene deformation and changes in pace and route length, so these errors can pass undetected. We therefore introduce StrideWorld, a benchmark whose references are fixed before the motion they judge. It evaluates scene rigidity against the ground-truth geometry of the start view, and action consistency against the stride of each action, the camera motion of one command. The stride is measured on the model's first steps and then used to test the steps that follow, so each model is judged only against its own steps. Its measurements are validated on rendered videos with known camera motion, and its scores agree with human judgments. Across \\nvideos{} videos generated by \\nmodels{} open models from $140$ start views, all models but one deform their scenes as the camera moves, with offsets up to $7.3$ times those of a rigid rendering along the same camera path. Most models keep a steady pace when a single action is held. Along composed routes, several models often stall, and most completed routes end away from the positions predicted by each model's own strides. Only the two models that scale commands by the estimated scene depth bring most routes close to these positions. Fine-tuning two models on a few rendered clips removes most of their mid-route stalls. Code, data, and a leaderboard are publicly available at https://github.com/chuangwang123/strideworld.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-18T13:37:51Z",
+   "updated": "2026-11-18T13:37:51Z",
+   "comment": "",
+   "code_url": "https://github.com/chuangwang123/strideworld",
+   "listed": "2026-11-19",
+   "tags": [
+    "video generation",
+    "world model",
+    "benchmark",
+    "3D"
+   ],
+   "hf_upvotes": 14,
+   "ax_votes": 1,
+   "ax_visits": 60,
+   "heat": 21.0,
+   "orgs": [
+    {
+     "name": "Shanghai Jiao Tong University",
+     "ror": "0220qvk04"
+    },
+    {
+     "name": "Shanghai AI Lab"
+    },
+    {
+     "name": "Beihang University",
+     "ror": "00wk2mp56"
+    },
+    {
+     "logo": "data/logos/tju.edu.cn.png",
+     "name": "Tianjin University",
+     "ror": "012tb2g32"
+    },
+    {
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24408.jpg",
+   "thumb_w": 390,
+   "thumb_h": 439,
+   "summary": {
+    "en": "StrideWorld benchmarks interactive video world models, fixing references before motion: scene rigidity against start-view ground-truth geometry and action consistency against each action's own initial stride. Across 140 start views, most models deform scenes up to 7.3x rigid rendering.",
+    "zh": "StrideWorld 是一个交互式视频世界模型基准，以起始视图的真实几何检验场景刚性、以每条动作前几步测得的 stride 检验后续动作一致性；在 140 个起始视图生成的视频上，多数模型相机移动时场景形变偏移最高达刚性渲染的 7.3 倍，且仅两个按估计深度缩放指令的模型能让多数路线接近预测位置。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.24830",
+   "title": "A Foundation Model to Measure and Predict Human Behaviour",
+   "authors": [
+    "Haoran Ye",
+    "Tianrui Huo",
+    "Hangzhen Li",
+    "Xin Zhang",
+    "Guojie Song"
+   ],
+   "abstract": "Large language models (LLMs) are increasingly used to infer psychological attributes, predict individual behaviour, and simulate human populations. However, despite generating plausible responses, they often misrepresent individuals and distort population statistics. Here we introduce Chiron, a foundation model to measure and predict human behaviour. We jointly fine-tune an LLM to represent psychological constructs, predict individual behaviour, and align population response distributions with human statistics. The training and evaluation data span 36 behavioural domains and 78 social science experiments, comprising 288,307 person records, 1,411,750 atomic behavioural decisions, and 99,953 psychometric assessments over 109 psychological constructs. In our evaluations, Chiron's psychological measurements agree more closely with human self-reports and exhibit fewer biases that undermine psychometric validity. It predicts individual behaviour more accurately than frontier LLMs (up to 28.4% relative improvement). In simulations of social science experiments, it more accurately captures the direction and magnitude of human experimental effects (82.2--94.3% lower effect-size estimation error). Together, these results establish Chiron as a unified computational instrument for measuring and predicting human behaviour.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.HC"
+   ],
+   "published": "2026-11-18T17:59:08Z",
+   "updated": "2026-11-18T17:59:08Z",
+   "comment": "48 pages, 6 figures",
+   "listed": "2026-11-19",
+   "tags": [
+    "LLM",
+    "alignment",
+    "benchmark",
+    "dataset"
+   ],
+   "hf_upvotes": 5,
+   "ax_votes": 6,
+   "ax_visits": 97,
+   "heat": 20.7,
+   "orgs": [
+    {
+     "logo": "data/logos/pku.edu.cn.png",
+     "name": "Peking University",
+     "ror": "02v51f717"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24830.jpg",
+   "thumb_w": 640,
+   "thumb_h": 368,
+   "summary": {
+    "en": "Chiron jointly fine-tunes an LLM to represent psychological constructs, predict individual behaviour, and align population distributions, improving individual prediction by up to 28.4% over frontier LLMs and cutting effect-size estimation error by 82.2–94.3%.",
+    "zh": "Chiron 通过联合微调 LLM 来表征心理构念、预测个体行为并对齐群体响应分布，训练与评估覆盖 36 个行为域、78 个社会科学实验和 288,307 条个体记录；其心理测量与人类自报更一致，个体行为预测相对前沿 LLM 最高提升 28.4%，实验效应量估计误差降低 82.2–94.3%。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.24941",
+   "title": "UltraTex: Aligning Physical Knowledge for High-Fidelity PBR Texture Generation",
+   "authors": [
+    "Jingzhi Bao",
+    "Xiaohe Ma",
+    "Hong Li",
+    "Yuanming Hu",
+    "Xiaoguang Han"
+   ],
+   "abstract": "Generating physically based rendering (PBR) texture maps for a 3D mesh from a single reference image is highly ambiguous, as the observed appearance entangles material identity, surface reflectance, and illumination. While current generative methods produce realistic albedo maps, they still struggle to infer accurate metallic and roughness attributes for relighting. We present UltraTex, a cascaded multi-view framework that moves beyond appearance matching by integrating physical knowledge into multi-view diffusion-based PBR generation. UltraTex first jointly predicts albedo and world-space shading normals to generate more detailed albedo maps, and then predicts metallic-roughness (MR) maps conditioned on the generated albedo, reference image, and material semantic priors. To inject material semantics, a lightweight adapter transforms hidden-layer features of a vision-language model (VLM) into intrinsic material representation tokens, providing part-level knowledge anchors for MR estimation. To model material-light interaction, photometric representation alignment guides intermediate diffusion features toward ground-truth material renderings under controlled lighting. This makes metallic and roughness variations observable through highlight intensity, specular sharpness, and local reflectance contrast, providing stronger guidance for fine-grained material prediction without explicit lighting supervision. Extensive experiments show that UltraTex generates high-quality textures and outperforms existing open-source and commercial methods in visual fidelity, material accuracy, and physical plausibility.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-18T18:59:57Z",
+   "updated": "2026-11-18T18:59:57Z",
+   "comment": "Accepted to ACM Transactions on Graphics (SIGGRAPH Asia 2026). Project page: https://ultratex.vercel.app/",
+   "listed": "2026-11-19",
+   "tags": [
+    "image generation",
+    "3D",
+    "diffusion",
+    "multimodal"
+   ],
+   "hf_upvotes": 6,
+   "ax_votes": 1,
+   "ax_visits": 120,
+   "heat": 19.0,
+   "orgs": [
+    {
+     "logo": "data/logos/cuhk.edu.hk.png",
+     "name": "CUHK",
+     "ror": "00t33hh48"
+    },
+    {
+     "name": "Meshy AI"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24941.jpg",
+   "thumb_w": 625,
+   "thumb_h": 440,
+   "summary": {
+    "en": "UltraTex is a cascaded multi-view diffusion framework that jointly predicts albedo and shading normals, then estimates metallic-roughness maps using VLM-derived material semantic tokens and photometric representation alignment, outperforming open-source and commercial PBR texture methods.",
+    "zh": "UltraTex 用级联多视角扩散框架从单张参考图生成 PBR 纹理：先联合预测 albedo 与世界空间着色法线，再结合 VLM 特征适配器提供的材质语义先验估计 metallic-roughness 图，并通过光度表征对齐注入材质-光照交互知识，在视觉保真度、材质准确性与物理合理性上优于现有开源与商业方法。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.23779",
+   "title": "TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning",
+   "authors": [
+    "Pau Mateo-Bernadó",
+    "Saivenkata Nagavyjayanthi Polapragada",
+    "David Bonet",
+    "Pol Arbiol Rakuljic",
+    "Laia Mogas Pladevall",
+    "Marçal Comajoan Cara",
+    "Jesus Gonzalez-Ferrer",
+    "Jordi Abante",
+    "Daniel Mas Montserrat",
+    "David Haussler",
+    "Alexander G. Ioannidis"
+   ],
+   "abstract": "Recent advances in machine learning have accelerated biomedical prediction, but evaluation on structured biomedical data remains fragmented, especially for datasets with high dimensionality, large sample size, missingness, and class imbalance. We introduce TabBioMed, a large-scale benchmark of 94 curated public biomedical tabular datasets spanning electronic health records, drug discovery, genomics, transcriptomics, proteomics, metabolomics, single-cell omics, and systems biology. TabBioMed unifies these datasets through a standardized, dataset-aware preprocessing and evaluation framework, enabling reproducible comparison across classification, regression, and multi-target tasks. We benchmark 23 models across classical baselines, gradient-boosted trees, neural tabular architectures, and tabular foundation models. Foundation models deliver the strongest family-level predictive performance. However, their gains are regime-dependent: tree-based models and tuned multilayer perceptrons remain highly competitive, often dominating under inference-time or training-cost constraints. Overall, TabBioMed shows that biomedical tabular learning is strongly context-dependent, with optimal model choice depending on data regime, task type, and computational budget. We release TabBioMed with curated datasets and splits, preprocessing code, baselines, and results, providing a reproducible benchmark for practical model selection and future methods development in biomedical machine learning, available at https://github.com/AI-sandbox/TabBioMed.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-18T03:35:35Z",
+   "updated": "2026-11-18T03:35:35Z",
+   "comment": "87 pages, 43 figures, including appendices and the NeurIPS paper checklist",
+   "code_url": "https://github.com/AI-sandbox/TabBioMed",
+   "listed": "2026-11-19",
+   "tags": [
+    "benchmark",
+    "dataset",
+    "LLM"
+   ],
+   "hf_upvotes": 12,
+   "ax_votes": 1,
+   "ax_visits": 55,
+   "heat": 18.5,
+   "orgs": [
+    {
+     "logo": "data/logos/upc.edu.png",
+     "name": "Universitat Politècnica de Catalunya",
+     "ror": "03mb6wj31"
+    },
+    {
+     "name": "Universitat de Barcelona",
+     "ror": "021018s57"
+    }
+   ],
+   "thumb": "data/thumbs/2611.23779.jpg",
+   "thumb_w": 504,
+   "thumb_h": 440,
+   "summary": {
+    "en": "TabBioMed benchmarks 94 biomedical tabular datasets with unified preprocessing; across 23 models, tabular foundation models lead overall, but tree models and tuned MLPs often win under cost constraints.",
+    "zh": "TabBioMed 汇集 94 个生物医学表格数据集，统一预处理与评测流程，覆盖分类、回归和多目标任务；在 23 个模型对比中，表格基础模型整体预测最强，但树模型和调优 MLP 在成本受限时常胜出。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.19200",
@@ -659,278 +1316,56 @@
    "thumb_w": 640,
    "thumb_h": 362,
    "summary": {
-    "zh": "LogT 是一个全自动 SFT 数据引擎，通过逻辑链引导生成视觉搜索训练数据；用 3.1 倍更少数据和 120 倍以上更少 GPU 小时微调 Qwen2.5-VL-7B，性能超过同时使用 SFT 和 RL 的 SOTA，再叠加简单 RL 后领先复杂 RL 方法 9.59 分。",
-    "en": "LogT is an automated SFT data engine that generates logic-chain-guided visual search traces; Qwen2.5-VL-7B fine-tuned on it beats SFT+RL SOTA with 3.1x less data and >120x fewer GPU hours, and simple RL adds a 9.59-point margin."
+    "en": "LogT is an automated SFT data engine that generates logic-chain-guided visual search traces; Qwen2.5-VL-7B fine-tuned on it beats SFT+RL SOTA with 3.1x less data and >120x fewer GPU hours, and simple RL adds a 9.59-point margin.",
+    "zh": "LogT 是一个全自动 SFT 数据引擎，通过逻辑链引导生成视觉搜索训练数据；用 3.1 倍更少数据和 120 倍以上更少 GPU 小时微调 Qwen2.5-VL-7B，性能超过同时使用 SFT 和 RL 的 SOTA，再叠加简单 RL 后领先复杂 RL 方法 9.59 分。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": [
+    "rl"
+   ]
   },
   {
-   "id": "2611.24651",
-   "title": "Piccolo: Co-Evolving Decision Models and Data through Recursive Self-Improvement",
+   "id": "2611.24576",
+   "title": "Late Entry in Looped Language Models",
    "authors": [
-    "Zhenqing Ling",
-    "Qirui Jiao",
-    "Daoyuan Chen",
-    "Cheng Chen",
-    "Xinji Mai",
-    "Haowen Gao",
-    "Zhuo Zhang",
-    "Xuchen Pan",
-    "Mengsu Ding",
-    "Jiaji Deng",
-    "Yuexiang Xie",
-    "Xiaoming Qin",
-    "Weirui Kuang",
-    "Zhaoyang Liu",
-    "Yaliang Li",
-    "Bolin Ding",
-    "Jingren Zhou"
+    "Ziqi Jin",
+    "Jiaxi Li",
+    "Weiwen Xu",
+    "Aixin Sun"
    ],
-   "abstract": "We present Piccolo, a family of multimodal decision models (0.8B to 27B) that coevolves model capabilities and training data via Agentic Data Engineering and recursive self-improvement (RSI). The models predict probabilities over candidate answers for general-purpose text and visual judgments, agent harnesses, data workflows, and interactive games. Piccolo-27B tops the Decision Index Vision Full leaderboard with a score of 75.59, while Piccolo-9B and Piccolo-4B achieve 68.35 and 67.46, respectively. All three rank first on the Private benchmark in their respective model-size categories. Research agents analyze model behavior, construct training data, conduct experiments, and use the results to refine subsequent proposals. Semantic slices and a shared research memory connect these actions across the model family's development. With training recipes comprising hundreds of thousands of examples, data selection and feedback-driven refinement are central to the self-improvement process. Our large-scale RSI exploration yields three counter-intuitive insights for decision-model development: (1) Backbone-recipe co-adaptation outweighs raw model recency: earlier backbones can surpass newer generations on visual tasks under identical recipes; (2) Targeted data curation enables 4B-9B models to rival 27B baselines on specialized workflows; and (3) Continuous loss reduction can decouple from and even degrade discrete decision accuracy. Together with the released weights and tools from the Data-Juicer and AgentScope ecosystems, Piccolo provides an actionable blueprint for building frontier decision models and scaling data-driven RSI.",
+   "abstract": "Looped language models deepen reasoning at a compact parameter count by iterating a shared layer stack T times per token, turning recurrence depth directly into sequential decoding latency. Conventional early-exit decoding halts after initial passes without cache completion, truncating cached key-value states of past tokens to shallow depth. We study the opposite strategy, late entry, where new tokens skip initial passes and enter directly into the final K < T passes over a deep context cache. Once lightweight fine-tuning resolves hidden-state norm mismatch at the entry boundary, deep cached context substitutes for skipped token-local passes, allowing late entry to outperform matched early exit across model families and pass budgets. To turn this asymmetry into wall-clock speedups without stalling to build deep caches, candidate blocks verify through only the final K passes on the critical path while previously committed tokens complete passes 1 -> T alongside subsequent steps at zero extra serial calls. Projecting these finished T-pass wake states inside the existing output GEMM (Wake verification, governed by logit-margin tolerance tau in [0, inf]) unifies greedy-exact T-pass decoding (tau = 0, matching K = T block decoding within bf16 reduction order), margin-gated verification (tau > 0), and non-rollback lossy late entry (tau = inf) inside a single static CUDA graph. On Ouro-2.6B (T = 4), K = 2 Wake reaches 5.2x greedy-exact speedup at tau = 0 (+26% over K = 4 block decoding on GSM8K) and 6.8x at tau = inf (+16.9 points over trained early exit at matched speed). Scaling test-time recurrence across T in {8, 16, 32, 64} on Huginn-3.5B cuts K = T/4 rollbacks 21.5x with depth, driving greedy-exact (tau = 0) speedups to 6.1x (T = 32) and 8.4x (T = 64, +153% over K = 64 block) and tau = inf speedups to 10.6 to 12.5x.",
    "primary": "cs.CL",
    "categories": [
-    "cs.CL",
-    "cs.AI",
-    "cs.CV"
+    "cs.CL"
    ],
-   "published": "2026-11-18T15:53:39Z",
-   "updated": "2026-11-18T15:53:39Z",
-   "comment": "22 pages, 13 figures, 11 tables. Project page and blog: https://decisionplayground.agentscope.io/piccolo.html",
+   "published": "2026-11-18T15:09:01Z",
+   "updated": "2026-11-18T15:09:01Z",
+   "comment": "25 pages, 9 figures",
    "listed": "2026-11-19",
    "tags": [
-    "multimodal",
-    "agents",
-    "dataset",
-    "RL"
+    "LLM",
+    "efficiency",
+    "reasoning"
    ],
-   "hf_upvotes": 15,
-   "ax_votes": 9,
-   "ax_visits": 157,
-   "heat": 39.7,
-   "orgs": [],
-   "thumb": "data/thumbs/2611.24651.jpg",
-   "thumb_w": 640,
-   "thumb_h": 275,
-   "summary": {
-    "zh": "Piccolo 通过 Agentic Data Engineering 与递归自我改进（RSI）让 0.8B–27B 多模态决策模型与训练数据共同进化，其中 Piccolo-27B 以 75.59 分登顶 Decision Index Vision Full 榜首，9B 和 4B 版本分别得 68.35 和 67.46。",
-    "en": "Piccolo co-evolves 0.8B–27B multimodal decision models with training data via agentic data engineering and recursive self-improvement, with Piccolo-27B scoring 75.59 to top the Decision Index Vision Full leaderboard."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.24789",
-   "title": "HINT-WAM: Hindsight-Informed Training for World Action Models",
-   "authors": [
-    "Phuong Tuan Dat",
-    "Qi Li",
-    "Xinchao Wang"
-   ],
-   "abstract": "World action models (WAMs) have shown promising generalization and data efficiency in robot manipulation by coupling action generation with predictions of future visual dynamics. Translating these capabilities into reliable task execution, however, remains a challenge for existing post-training methods. Offline supervised fine-tuning provides dense supervision on expert trajectories, but its flow-matching action expert is trained only on noised demonstration actions and never on the intermediate states produced by its own sampler; task-specific adaptation can also compromise pretrained capabilities. On-policy reinforcement learning trains on the policy's own behavior, yet sparse task rewards make exploration and credit assignment difficult, while dense reward shaping still provides scalar evaluations rather than direct action targets. We introduce \\textbf{HINT-WAM}, the first on-policy self-distillation framework that supervises the action expert on its own sampling trajectories using hindsight, the future video of the demonstration, as privileged information available to the WAM itself. For each demonstration observation, the student generates its action through its own denoising trajectory, and at the states along this trajectory the same model acts as a teacher conditioned additionally on this hindsight, providing a conditional action distribution as a dense training target, while the student sees only deployment-time inputs and needs no environmental rewards or simulator interaction. To transfer this supervision to a flow-matching action expert, HINT-WAM distills the teacher into the student with an energy score, a distribution-level objective that matches the teacher's action distribution from the student's own samples rather than regressing its velocity field. The project web is available in https://tuandattt.github.io/hintwam/.",
-   "primary": "cs.RO",
-   "categories": [
-    "cs.RO"
-   ],
-   "published": "2026-11-18T17:36:15Z",
-   "updated": "2026-11-18T17:36:15Z",
-   "comment": "",
-   "listed": "2026-11-19",
-   "tags": [
-    "robotics",
-    "VLA",
-    "RL",
-    "world model"
-   ],
-   "hf_upvotes": 14,
+   "hf_upvotes": 9,
    "ax_votes": 4,
-   "ax_visits": 53,
-   "heat": 23.3,
+   "ax_visits": 50,
+   "heat": 18.0,
    "orgs": [
     {
-     "name": "NUS",
-     "ror": "01tgyzw49"
+     "name": "NTU",
+     "ror": "02e7b5302"
     }
    ],
-   "thumb": "data/thumbs/2611.24789.jpg",
-   "thumb_w": 616,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "HINT-WAM 是首个在策略自蒸馏框架，以演示的未来视频作为后见特权信息，让教师模型在学生自身去噪轨迹的状态上给出条件动作分布，并用 energy score 做分布级蒸馏，使流匹配动作专家无需环境奖励或仿真交互即可提升任务执行。",
-    "en": "HINT-WAM is an on-policy self-distillation framework that uses future demonstration video as privileged hindsight to supervise a flow-matching action expert via energy-score distillation, improving task execution without rewards or simulator interaction."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.24408",
-   "title": "StrideWorld: Benchmarking Scene Rigidity and Action Consistency in Interactive Video World Model",
-   "authors": [
-    "Chuang Wang",
-    "Rui Nie",
-    "Jie Song",
-    "Junyuan Gao",
-    "Jiahe Song",
-    "Haitao Zhou",
-    "Boyu Zhu",
-    "Xing Li",
-    "Jiang Wu",
-    "Conghui He",
-    "Qian Yu",
-    "Weijia Li"
-   ],
-   "abstract": "Interactive video world models turn user commands into the exploration of a generated scene, which requires the scene to keep its 3D structure as the camera moves and each action to keep a stable effect. Existing benchmarks mostly evaluate these properties against references fitted to the video under test, either a scene reconstructed from its own frames or a camera trajectory aligned to the command path with a free scale. Such references can absorb gradual scene deformation and changes in pace and route length, so these errors can pass undetected. We therefore introduce StrideWorld, a benchmark whose references are fixed before the motion they judge. It evaluates scene rigidity against the ground-truth geometry of the start view, and action consistency against the stride of each action, the camera motion of one command. The stride is measured on the model's first steps and then used to test the steps that follow, so each model is judged only against its own steps. Its measurements are validated on rendered videos with known camera motion, and its scores agree with human judgments. Across \\nvideos{} videos generated by \\nmodels{} open models from $140$ start views, all models but one deform their scenes as the camera moves, with offsets up to $7.3$ times those of a rigid rendering along the same camera path. Most models keep a steady pace when a single action is held. Along composed routes, several models often stall, and most completed routes end away from the positions predicted by each model's own strides. Only the two models that scale commands by the estimated scene depth bring most routes close to these positions. Fine-tuning two models on a few rendered clips removes most of their mid-route stalls. Code, data, and a leaderboard are publicly available at https://github.com/chuangwang123/strideworld.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-18T13:37:51Z",
-   "updated": "2026-11-18T13:37:51Z",
-   "comment": "",
-   "code_url": "https://github.com/chuangwang123/strideworld",
-   "listed": "2026-11-19",
-   "tags": [
-    "video generation",
-    "world model",
-    "benchmark",
-    "3D"
-   ],
-   "hf_upvotes": 14,
-   "ax_votes": 1,
-   "ax_visits": 58,
-   "heat": 20.8,
-   "orgs": [
-    {
-     "name": "Shanghai Jiao Tong University",
-     "ror": "0220qvk04"
-    },
-    {
-     "name": "Shanghai AI Lab"
-    },
-    {
-     "name": "Beihang University",
-     "ror": "00wk2mp56"
-    },
-    {
-     "name": "Tianjin University",
-     "ror": "012tb2g32",
-     "logo": "data/logos/tju.edu.cn.png"
-    },
-    {
-     "name": "Tsinghua University",
-     "ror": "03cve4549"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24408.jpg",
-   "thumb_w": 390,
-   "thumb_h": 439,
-   "summary": {
-    "zh": "StrideWorld 是一个交互式视频世界模型基准，以起始视图的真实几何检验场景刚性、以每条动作前几步测得的 stride 检验后续动作一致性；在 140 个起始视图生成的视频上，多数模型相机移动时场景形变偏移最高达刚性渲染的 7.3 倍，且仅两个按估计深度缩放指令的模型能让多数路线接近预测位置。",
-    "en": "StrideWorld benchmarks interactive video world models, fixing references before motion: scene rigidity against start-view ground-truth geometry and action consistency against each action's own initial stride. Across 140 start views, most models deform scenes up to 7.3x rigid rendering."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.22287",
-   "title": "Decoding Without a Decoder: Direct Pixel Prediction from Diffusion Transformers",
-   "authors": [
-    "Hansheng Chen",
-    "Shengqu Cai",
-    "Jan Ackermann",
-    "Rayhan Zirvi",
-    "Gordon Wetzstein",
-    "Xinchen Yan",
-    "Leonidas Guibas"
-   ],
-   "abstract": "Latent diffusion models rely on a decoder to map denoised latents to pixels, adding complexity and inference cost. We introduce Decoding Without a Decoder (DWD), which lets a finetuned diffusion transformer produce final pixels directly through a linear head. Unlike previous methods, where the denoising output leads to final pixels, DWD separates the two roles: the original denoising head continues to drive sampling, then the new DWD head predicts the pixels at the final step. We extend pretrained latent models with DWD efficiently by finetuning only the last few transformer blocks, training the DWD head with pixel quality losses while anchoring the denoising head to the pretrained model to preserve the sample trajectory. Across latent image and video generators, DWD removes the decoder while maintaining or even improving pixel quality. On Wan video generation, it visibly reduces detail distortion and flickering, lowering warping error by 23%. Remarkably, the same separation also improves pixel diffusion models that do not even use a decoder: a final-step DWD head produces substantially better texture detail in text-to-image generation, and improves ImageNet FID from 1.55 to 1.43, a new state of the art among pixel flow models.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-17T06:40:08Z",
-   "updated": "2026-11-18T12:13:48Z",
-   "comment": "Project page: https://hanshengchen.com/dwd",
-   "listed": "2026-11-19",
-   "tags": [
-    "diffusion",
-    "image generation",
-    "video generation",
-    "efficiency"
-   ],
-   "hf_upvotes": 15,
-   "ax_votes": 54,
-   "ax_visits": 530,
-   "heat": 122.0,
-   "orgs": [
-    {
-     "name": "Luma AI"
-    },
-    {
-     "name": "California Institute of Technology",
-     "ror": "05dxps055",
-     "logo": "data/logos/caltech.edu.png"
-    }
-   ],
-   "thumb": "data/thumbs/2611.22287.jpg",
+   "thumb": "data/thumbs/2611.24576.jpg",
    "thumb_w": 640,
-   "thumb_h": 323,
+   "thumb_h": 296,
    "summary": {
-    "zh": "DWD 让微调后的扩散 transformer 通过线性头在最后一步直接预测像素，替代解码器；仅微调末几个 block 并锚定去噪头，在 Wan 视频生成上降低 23% warping error，并将像素流模型的 ImageNet FID 从 1.55 降至 1.43。",
-    "en": "DWD lets a finetuned diffusion transformer predict final pixels via a linear head at the last sampling step, removing the decoder; it cuts Wan video warping error by 23% and improves pixel-flow ImageNet FID from 1.55 to 1.43."
+    "en": "Late entry decoding lets new tokens skip early loop passes and enter the final K passes on a deep KV cache; Wake verification in the output GEMM yields 5.2x greedy-exact speedup on Ouro-2.6B.",
+    "zh": " late entry 解码策略：新 token 跳过前几轮迭代，直接进入深层 KV cache 的最后 K 轮，并借 Wake verification 复用已完成的 T 轮状态；在 Ouro-2.6B 上 tau=0 时比贪心精确解码快 5.2 倍，tau=inf 时比早退基线高 16.9 分。"
    },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.23779",
-   "title": "TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning",
-   "authors": [
-    "Pau Mateo-Bernadó",
-    "Saivenkata Nagavyjayanthi Polapragada",
-    "David Bonet",
-    "Pol Arbiol Rakuljic",
-    "Laia Mogas Pladevall",
-    "Marçal Comajoan Cara",
-    "Jesus Gonzalez-Ferrer",
-    "Jordi Abante",
-    "Daniel Mas Montserrat",
-    "David Haussler",
-    "Alexander G. Ioannidis"
-   ],
-   "abstract": "Recent advances in machine learning have accelerated biomedical prediction, but evaluation on structured biomedical data remains fragmented, especially for datasets with high dimensionality, large sample size, missingness, and class imbalance. We introduce TabBioMed, a large-scale benchmark of 94 curated public biomedical tabular datasets spanning electronic health records, drug discovery, genomics, transcriptomics, proteomics, metabolomics, single-cell omics, and systems biology. TabBioMed unifies these datasets through a standardized, dataset-aware preprocessing and evaluation framework, enabling reproducible comparison across classification, regression, and multi-target tasks. We benchmark 23 models across classical baselines, gradient-boosted trees, neural tabular architectures, and tabular foundation models. Foundation models deliver the strongest family-level predictive performance. However, their gains are regime-dependent: tree-based models and tuned multilayer perceptrons remain highly competitive, often dominating under inference-time or training-cost constraints. Overall, TabBioMed shows that biomedical tabular learning is strongly context-dependent, with optimal model choice depending on data regime, task type, and computational budget. We release TabBioMed with curated datasets and splits, preprocessing code, baselines, and results, providing a reproducible benchmark for practical model selection and future methods development in biomedical machine learning, available at https://github.com/AI-sandbox/TabBioMed.",
-   "primary": "cs.LG",
-   "categories": [
-    "cs.LG"
-   ],
-   "published": "2026-11-18T03:35:35Z",
-   "updated": "2026-11-18T03:35:35Z",
-   "comment": "87 pages, 43 figures, including appendices and the NeurIPS paper checklist",
-   "code_url": "https://github.com/AI-sandbox/TabBioMed",
-   "listed": "2026-11-19",
-   "tags": [
-    "benchmark",
-    "dataset",
-    "LLM"
-   ],
-   "hf_upvotes": 12,
-   "ax_votes": 1,
-   "ax_visits": 53,
-   "heat": 18.3,
-   "orgs": [
-    {
-     "name": "Universitat Politècnica de Catalunya",
-     "ror": "03mb6wj31",
-     "logo": "data/logos/upc.edu.png"
-    },
-    {
-     "name": "Universitat de Barcelona",
-     "ror": "021018s57"
-    }
-   ],
-   "thumb": "data/thumbs/2611.23779.jpg",
-   "thumb_w": 504,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "TabBioMed 汇集 94 个生物医学表格数据集，统一预处理与评测流程，覆盖分类、回归和多目标任务；在 23 个模型对比中，表格基础模型整体预测最强，但树模型和调优 MLP 在成本受限时常胜出。",
-    "en": "TabBioMed benchmarks 94 biomedical tabular datasets with unified preprocessing; across 23 models, tabular foundation models lead overall, but tree models and tuned MLPs often win under cost constraints."
-   },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.14848",
@@ -976,168 +1411,351 @@
    "thumb_w": 400,
    "thumb_h": 180,
    "summary": {
-    "zh": "TIDEWAY 将 host RAM 与 GPU VRAM 作为统一内存池，结合适配 prefill 与 decode 访问模式的阶段感知布局，以及支持 expert paging 的 CUDA Graph 执行引擎，在消费级设备上运行大型 MoE 模型；端到端延迟平均加速 1.97x，TTFT 加速 2.40x，decode 吞吐比最快基线高 1.61x。",
-    "en": "TIDEWAY manages host RAM and GPU VRAM as a unified pool, coupling phase-aware layouts for prefill and decode with a CUDA Graph engine under expert paging, delivering 1.97x lower latency, 2.40x faster TTFT, and 1.61x higher decode throughput than the fastest baseline."
+    "en": "TIDEWAY manages host RAM and GPU VRAM as a unified pool, coupling phase-aware layouts for prefill and decode with a CUDA Graph engine under expert paging, delivering 1.97x lower latency, 2.40x faster TTFT, and 1.61x higher decode throughput than the fastest baseline.",
+    "zh": "TIDEWAY 将 host RAM 与 GPU VRAM 作为统一内存池，结合适配 prefill 与 decode 访问模式的阶段感知布局，以及支持 expert paging 的 CUDA Graph 执行引擎，在消费级设备上运行大型 MoE 模型；端到端延迟平均加速 1.97x，TTFT 加速 2.40x，decode 吞吐比最快基线高 1.61x。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
-   "id": "2611.21553",
-   "title": "BLIP-Live: Balancing Timeliness & Firing Precision in Proactive Streaming Video Agents",
+   "id": "2611.23499",
+   "title": "BiCAT: Bimanual Coordination Action Tokenization",
    "authors": [
-    "Kanchana Ranasinghe",
-    "Honglu Zhou",
-    "Dominick Reilly",
-    "Le Xue",
-    "Shusheng Yang",
-    "Juan Carlos Niebles",
-    "Silvio Savarese",
-    "Ran Xu"
+    "Xuanwei Liu",
+    "Guipu Cao",
+    "Zhongyi Luo",
+    "Jiafei Duan"
    ],
-   "abstract": "Streaming video understanding is becoming increasingly important for real-world interactive systems. Such systems must be proactive for natural and useful human interaction: they should respond as soon as sufficient evidence becomes available while avoiding premature, redundant, or incorrect responses. We present BLIP-Live, a framework unifying data, metrics, harness, and training around a shared formulation of proactivity as effective causal response decisions balancing the two competing objectives of responding vs silence. First, we construct BLIP-Live-780K dataset containing human annotations of proactive response content and timing, which defines this desired behavior. We then propose PAUC-F, a metric to effectively measure our desired proactive behavior. PAUC-F combines existing response timeliness metrics with firing precision to reward early useful responses without rewarding excessive firing. With our desired behavior defined and measurable, we finally investigate model-agnostic inference harnesses that draw out proactive streaming capabilities of offline vision language models (VLMs), together with training pipelines that learn to further improve their proactive responsiveness. Across both settings, we find that combinations of sliding visual windows, online interaction memory, and structured response outputs consistently yield strongest proactive performance. Our experiments result in two models, with our BLIP-Live-Qwen model achieving state-of-the-art performance across four proactive streaming benchmarks, with gains up to 44% over baselines and outperforming multiple closed API models. Our code and data will be released publicly.",
-   "primary": "cs.CV",
+   "abstract": "Autoregressive vision-language-action (VLA) models predict discrete action tokens with the next-token objective of their vision-language backbone, so the action tokenizer defines the interface between the policy and the robot. In bimanual manipulation, the two arms share a repertoire of movements yet coordinate through complementary roles, and an action representation should capture both. However, most existing tokenizers encode both arms as a single concatenated action vector, in which motion patterns common to the two arms are not shared and cross-arm dependencies remain entangled within each token. The policy must therefore learn both aspects implicitly. We propose Bimanual Coordination Action Tokenization (BiCAT), which shares one motion representation across arms while conditioning each arm's tokens on its partner through symmetric cross-arm attention and a joint decoder. The policy then predicts all tokens of each arm in parallel, generating the left arm first and the right arm conditioned on it. Across ten RoboTwin 2.0 tasks and six real-world tasks on three embodiments, BiCAT achieves the highest success among the compared tokenizers. In simulation, it improves mean success by 17.6 percentage points over the strongest of eight baselines, with the largest gains on tasks that require close coordination between the arms, while requiring only 40.5 ms per action chunk. These results suggest that the action tokenizer is a natural place to model bimanual coordination.",
+   "primary": "cs.RO",
    "categories": [
-    "cs.CV"
+    "cs.RO"
    ],
-   "published": "2026-11-16T18:33:47Z",
-   "updated": "2026-11-16T18:33:47Z",
+   "published": "2026-11-17T20:50:13Z",
+   "updated": "2026-11-17T20:50:13Z",
    "comment": "",
    "listed": "2026-11-19",
    "tags": [
-    "multimodal",
-    "VLM",
-    "agents",
-    "benchmark"
+    "VLA",
+    "robotics",
+    "manipulation",
+    "multimodal"
    ],
-   "hf_upvotes": 11,
-   "ax_votes": 5,
-   "ax_visits": 61,
-   "heat": 22.1,
+   "hf_upvotes": 6,
+   "ax_votes": 2,
+   "ax_visits": 66,
+   "heat": 14.6,
    "orgs": [
     {
-     "name": "Salesforce AI Research"
+     "name": "NUS",
+     "ror": "01tgyzw49"
     }
    ],
-   "thumb": "data/thumbs/2611.21553.jpg",
+   "thumb": "data/thumbs/2611.23499.jpg",
    "thumb_w": 640,
-   "thumb_h": 235,
+   "thumb_h": 230,
    "summary": {
-    "zh": "BLIP-Live 围绕主动响应与静默的权衡构建 BLIP-Live-780K 标注数据集与 PAUC-F 指标，结合滑动视觉窗口、在线交互记忆和结构化输出改进离线 VLM 的流式主动响应，BLIP-Live-Qwen 在四个基准上平均超越基线最多 44%。",
-    "en": "BLIP-Live builds the BLIP-Live-780K dataset and PAUC-F metric to balance proactive responding against silence, combining sliding visual windows, online memory, and structured outputs; BLIP-Live-Qwen improves proactive streaming benchmarks by up to 44%."
+    "en": "BiCAT shares one motion representation across arms and conditions each arm's tokens on its partner via symmetric cross-arm attention and a joint decoder; it beats the strongest of eight baselines by 17.6 points mean success on RoboTwin 2.0 at 40.5 ms per action chunk.",
+    "zh": "BiCAT 让双臂共享同一套运动表示，并通过对称跨臂注意力和联合解码器让每条手臂的 token 以另一条手臂为条件，策略并行预测左右臂 token 并先生成左臂；在 RoboTwin 2.0 十个任务和三种真实本体六个任务上成功率最高，仿真平均成功率比八个基线中最强者高 17.6 个百分点，每段动作块耗时 40.5 ms。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
-   "id": "2611.24161",
-   "title": "AVTR: Adaptive Multimodal Reasoning with Visual Imagination",
+   "id": "2611.23808",
+   "title": "PReMind: When Personal Memory Meets Visual Hazards",
    "authors": [
-    "Xiaoqian Shen",
-    "Yunyang Xiong",
-    "Changsheng Zhao",
-    "Saksham Suri",
-    "Chong Zhou",
-    "Zechun Liu",
-    "Zhipeng Cai",
-    "Zhuang Liu",
-    "Qi Qian",
-    "Wei Wen",
-    "Hongyu Xu",
-    "Hanxian Huang",
-    "Ernie Chang",
-    "Yanbei Chen",
-    "Vikas Chandra",
-    "Raghuraman Krishnamoorthi",
-    "Mohamed Elhoseiny",
-    "Lemeng Wu"
+    "Yeongtak Oh",
+    "Donghyeok Lee",
+    "Joonhee Oh",
+    "Jaewon Jeong",
+    "Sungroh Yoon"
    ],
-   "abstract": "Vision-Language Models increasingly rely on textual reasoning to solve advanced multimodal tasks. Despite its effectiveness, this paradigm faces two fundamental limitations. First, relying on textual reasoning alone can limit perceptual ability in vision-centric questions, where accurate answers depend on interpreting task-relevant visual evidence. Second, applying textual reasoning uniformly across inputs overlooks question-dependent variation in both reasoning modality and depth, often producing verbose and unnecessary traces when little logical inference is required. To this end, we propose Adaptive Visual-Textual Reasoning (AVTR), which introduces visual imagination as a complementary reasoning modality to textual thinking, enabling the model to revisit its visual observations and distill the salient evidence through generative visual reflection. Furthermore, we formulate reasoning-modality selection as a learned routing problem, allowing a single policy to adaptively harness the complementary strengths of visual reflection and textual reasoning in response to the perceptual and inferential demands of the input. Across 16 benchmarks, AVTR improves the average score by 4.5 points over Qwen3.5 baseline, while reducing inference latency by 33\\%. It also scales effectively into a smaller size backbone, outperforming the evaluated 2B-scale baselines.",
+   "abstract": "Personalized vision-language assistants use visual observations and personal memories to provide advice tailored to the user. When the observed scene contains a physical hazard, personal context, such as allergies, medical conditions, or mobility constraints, can change what help is appropriate. Responding appropriately therefore requires recognizing the visible hazard and applying the relevant person's information. We introduce PReMind-Bench, a diagnostic benchmark that evaluates this combination across diverse hazards and personal-memory conditions. It separately measures memory access, grounding, abstention, and hazard response, and assesses joint success on interdependency cases. Existing models often satisfy one requirement while failing the other, and training only for safety or personalization leaves a gap in joint success. We therefore propose PReMind, a two-phase reinforcement learning framework that combines on-demand and forced-call interactions (memory always retrieved) to jointly train grounded memory use and hazard response. At 4B, PReMind raises joint success from 12.9% to 28.6% over its base on the interdependency set and improves hazard adequacy and correct abstention on the main test. Joint-success gains persist under forced-call evaluation and under a second LLM judge across three Phase II seeds; averaged over these seeds, joint success also improves on unseen hazard groups. These findings highlight the need to evaluate and train personal assistants to connect visual evidence with the relevant person's context.",
    "primary": "cs.CV",
    "categories": [
     "cs.CV"
    ],
-   "published": "2026-11-18T10:05:18Z",
-   "updated": "2026-11-18T10:05:18Z",
-   "comment": "Project page: https://xiaoqian-shen.github.io/AVTR",
+   "published": "2026-11-18T04:13:29Z",
+   "updated": "2026-11-18T04:13:29Z",
+   "comment": "Project page: https://github.com/oyt9306/PReMind",
+   "code_url": "https://github.com/oyt9306/PReMind",
    "listed": "2026-11-19",
    "tags": [
-    "VLM",
     "multimodal",
-    "reasoning",
-    "efficiency"
+    "safety",
+    "benchmark",
+    "agents"
    ],
-   "hf_upvotes": 10,
-   "ax_votes": 4,
-   "ax_visits": 95,
-   "heat": 23.5,
+   "hf_upvotes": 8,
+   "ax_votes": 2,
+   "ax_visits": 46,
+   "heat": 14.6,
    "orgs": [
     {
-     "name": "Meta",
-     "logo": "data/logos/meta.com.png"
-    },
-    {
-     "name": "King Abdullah University of Science and Technology",
-     "ror": "01q3tbs38",
-     "logo": "data/logos/kaust.edu.sa.png"
-    },
-    {
-     "logo": "data/logos/princeton.edu.png",
-     "name": "Princeton University",
-     "ror": "00hx57361"
+     "logo": "data/logos/snu.ac.kr.png",
+     "name": "Seoul National University",
+     "ror": "04h9pn542"
     }
    ],
-   "thumb": "data/thumbs/2611.24161.jpg",
-   "thumb_w": 640,
-   "thumb_h": 236,
+   "thumb": "data/thumbs/2611.23808.jpg",
+   "thumb_w": 485,
+   "thumb_h": 440,
    "summary": {
-    "zh": "AVTR 将视觉想象作为文本推理的补充模态，让模型通过生成式视觉反思重新审视视觉观察、提炼关键证据，并把推理模态选择建模为可学习路由问题，在 16 个基准上平均比 Qwen3.5 基线高 4.5 分，推理延迟降低 33%。",
-    "en": "AVTR adds generative visual imagination as a complementary reasoning modality and learns to route between visual reflection and textual reasoning, beating Qwen3.5 by 4.5 points on 16 benchmarks with 33% lower latency."
+    "en": "PReMind-Bench separately evaluates memory access, grounding, abstention, and hazard response; PReMind, a two-phase RL framework mixing on-demand and forced-call interactions, raises 4B joint success from 12.9% to 28.6%.",
+    "zh": "PReMind-Bench 诊断基准分别评估记忆访问、定位、弃答与危险响应及联合成功率，配套两阶段强化学习框架 PReMind 结合按需与强制调用交互训练，4B 模型在 interdependency 集合上联合成功率从 12.9% 升至 28.6%。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": [
+    "rl"
+   ]
   },
   {
-   "id": "2611.17460",
-   "title": "Unfinished-Bench: Measuring Rule Violations by Persistent Agents in Realistic Work Environments",
+   "id": "2611.23824",
+   "title": "Evidence-Based Credit Assignment for Search-Augmented Language Models",
    "authors": [
-    "Seunghyun Lee",
-    "Jaehui Hwang",
-    "Dongyoon Han",
-    "Sangdoo Yun"
+    "Wen Wang",
+    "Jindong Wang",
+    "Jiahua Bao",
+    "Tu Yongsiqi",
+    "Yihao Liu",
+    "Junwei He",
+    "Wenkui Fan"
    ],
-   "abstract": "AI agents are increasingly equipped with persistence toward task completion to run delegated work autonomously for long periods, under many unstated constraints from internal documents and other people's authority. When completion requires violating a rule, the agent must decide alone, yet benchmarks of instruction-rule conflicts state the rule in the prompt or keep it hidden and do not evaluate persistence. We present Unfinished-Bench, a benchmark that gives models persistence in autonomous runs without a user, in realistic work environments with embedded rules. In each of its 97 scenarios across 7 organizations and 7 risk categories, the goal and the rule cannot both hold. We find that persistence raised violations of a rule in an internal document from 32.2% to 43.6%, five times the 8.5% for the same rule stated by the user. Of the document-rule violations, 98.3% occurred after the rule was displayed, and in 89% of a judged sample the agent first wrote down the rule. Violations of rules placed in the environment without user oversight can lead to serious incidents, so persistence-driven risks need to be evaluated. Benchmark documentation: https://francis21c.github.io/unfinished-bench/",
-   "primary": "cs.LG",
+   "abstract": "Reinforcement learning from terminal answer rewards enables search-augmented language models to interleave reasoning and retrieval without step-level annotations, yet outcome supervision assigns identical credit to every search in a trajectory regardless of whether it retrieved useful information. This limitation is especially severe when all sampled rollouts for a question fail, collapsing group-centered outcome advantages to zero even when trajectories gather markedly different evidence. We present Evidence-based Credit Assignment (ECA), which augments terminal outcome rewards with a training-only auxiliary signal measuring how retrieved documents improve the likelihood of a reference answer. Rather than scoring the full dialogue prefix, ECA queries a frozen snapshot of the current policy under an evidence-only prompt containing solely the question and the deduplicated documents observed so far, isolating the utility of retrieved passages from surface variations in generated thoughts or search queries. Within this framework, we compare two return formulations, ECA-Step (which accumulates step-clipped potential increments) and ECA-Horizon (which preserves the telescoping horizon gain in potential), paired with cross-fold group normalization, novelty gating, and search-local token assignment. Across seven Search QA benchmarks, ECA-Horizon improves strict macro exact match over an outcome-only GRPO baseline by 1.03 and 4.80 percentage points on Qwen2.5-3B- and 7B-Instruct, respectively, outperforming both RLOO and GiGPO. Zero-shot evaluation on MultiHop-RAG further demonstrates strong transfer to multi-hop inference queries.",
+   "primary": "cs.AI",
    "categories": [
-    "cs.LG",
-    "cs.CL"
+    "cs.AI"
    ],
-   "published": "2026-11-12T19:36:57Z",
-   "updated": "2026-11-12T19:36:57Z",
-   "comment": "21 pages, 3 figures",
+   "published": "2026-11-18T04:24:51Z",
+   "updated": "2026-11-18T04:24:51Z",
+   "comment": "16 pages, 4 figures. Includes supplementary material",
    "listed": "2026-11-19",
    "tags": [
-    "agents",
-    "benchmark",
-    "safety",
+    "LLM",
+    "RL",
+    "retrieval",
     "reasoning"
    ],
    "hf_upvotes": 9,
-   "ax_votes": 7,
-   "ax_visits": 70,
-   "heat": 23.0,
+   "ax_votes": 0,
+   "ax_visits": 51,
+   "heat": 14.1,
    "orgs": [
     {
-     "name": "NAVER Cloud",
-     "ror": "041051y78",
-     "logo": "data/logos/navercloudcorp.com.png"
+     "logo": "data/logos/cas.cn.png",
+     "name": "Chinese Academy of Sciences",
+     "ror": "034t30j35"
+    },
+    {
+     "logo": "data/logos/tencent.com.png",
+     "name": "Tencent"
+    },
+    {
+     "name": "Harbin Institute of Technology",
+     "ror": "01yqg2h08"
+    },
+    {
+     "name": "Renmin University of China",
+     "ror": "041pakw92"
+    },
+    {
+     "logo": "data/logos/pku.edu.cn.png",
+     "name": "Peking University",
+     "ror": "02v51f717"
+    },
+    {
+     "name": "Beijing Institute of Technology",
+     "ror": "01skt4w74"
     }
    ],
-   "thumb": "data/thumbs/2611.17460.jpg",
-   "thumb_w": 640,
-   "thumb_h": 313,
+   "thumb": "data/thumbs/2611.23824.jpg",
+   "thumb_w": 550,
+   "thumb_h": 440,
    "summary": {
-    "zh": "Unfinished-Bench 在 7 个组织、7 类风险的 97 个场景中让模型无用户持续自主运行，发现持续性使内部文档规则违规率从 32.2% 升至 43.6%，是用户明示规则时 8.5% 的五倍。",
-    "en": "Unfinished-Bench tests persistent unsupervised agents across 97 scenarios in 7 organizations; persistence raised rule violations from 32.2% to 43.6%, five times the 8.5% when rules were user-stated."
+    "en": "ECA adds a training-only credit signal by querying a frozen policy snapshot on evidence-only prompts to score how retrieved documents raise reference-answer likelihood; on seven Search QA benchmarks, ECA-Horizon beats outcome-only GRPO by 1.03 and 4.80 strict macro exact-match points on Qwen2.5-3B and 7B-Instruct, also outperforming RLOO and GiGPO.",
+    "zh": "ECA 在终端答案奖励之外，基于冻结策略在仅含问题和去重文档的证据提示下评估检索文档对参考答案似然的提升，构造训练专用的辅助信用信号；七个 Search QA 基准上，ECA-Horizon 相比 outcome-only GRPO 在 Qwen2.5-3B/7B-Instruct 上严格宏平均精确匹配分别提升 1.03 和 4.80 个百分点，并优于 RLOO 与 GiGPO。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": [
+    "rl"
+   ]
+  },
+  {
+   "id": "2611.21114",
+   "title": "VAE Rhythm: Temporal Decoding Traces for AI-Generated Video Detection",
+   "authors": [
+    "Ke Sun",
+    "Shuwei Li",
+    "Haiyang Mei",
+    "Mike Zheng Shou"
+   ],
+   "abstract": "Visible artifacts are an unreliable cue for detecting generated videos, because newer generators learn to remove them. We instead detect a trace left by the generation pipeline itself. Most video generators decode latents with a 3D causal VAE that groups consecutive frames in time, so the fidelity of generated frames rises and falls periodically with their position in a group. We call this periodic trace VAE Rhythm. Real videos are captured frame by frame and do not have it. To reveal it without training, we propose a phase scan. The scan reconstructs a clip with an off-the-shelf VAE from successive start offsets and measures the periodicity of the reconstruction error across these offsets. We find VAE Rhythm in most of the 39 variants of 31 generators we test, including the closed-source Sora, Kling 3.0 and Seedance 2.0. We use the rhythm as a zero-shot score, as a plug-in for existing detectors and as a data engine that pairs real videos with their VAE reconstructions to train our detector CaDet. On DF26, the training-free rhythm score outperforms all 15 retrained baselines, and as a plug-in it improves all 19 tested detectors by 6.7% to 23.7% AUROC. CaDet achieves the best AUROC on AIGVDBench, DF26 and three 2026 closed-source models, and its variant trained without any generated video still exceeds 90% on AIGVDBench.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-16T13:59:03Z",
+   "updated": "2026-11-16T13:59:03Z",
+   "comment": "24 pages, 7 figures. Project page: https://showlab.github.io/vae-rhythm",
+   "listed": "2026-11-19",
+   "tags": [
+    "video generation",
+    "detection",
+    "dataset"
+   ],
+   "hf_upvotes": 5,
+   "ax_votes": 3,
+   "ax_visits": 57,
+   "heat": 13.7,
+   "orgs": [
+    {
+     "name": "NUS",
+     "ror": "01tgyzw49"
+    }
+   ],
+   "thumb": "data/thumbs/2611.21114.jpg",
+   "thumb_w": 402,
+   "thumb_h": 320,
+   "summary": {
+    "en": "Generated videos show a periodic VAE Rhythm from 3D causal VAE decoding; a training-free phase scan detects it, beating 15 baselines on DF26 and improving 19 detectors by 6.7%-23.7% AUROC, with CaDet achieving best AUROC on AIGVDBench and DF26.",
+    "zh": "发现3D因果VAE解码使生成帧的保真度随其组内位置周期性波动，称为VAE Rhythm；无需训练的phase scan通过重建误差周期性检测该痕迹，在39个生成器变体（包括Sora、Kling 3.0）中发现该痕迹，在DF26上优于全部15个重训练基线，作为插件将19个检测器AUROC提升6.7%–23.7%，CaDet在AIGVDBench、DF26及三个2026闭源模型上取得最佳AUROC。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.23994",
+   "title": "WaveView: The Novel View Is in the Noise",
+   "authors": [
+    "Kaiwen Wang",
+    "Jan-Hendrik Pauls",
+    "Yinzhe Shen",
+    "Frank Bieder",
+    "Christoph Stiller"
+   ],
+   "abstract": "Generative novel view synthesis (NVS) employs a diffusion model to render a static or dynamic scene from a target camera view. Explicit warp methods complete a reprojection of the source with video diffusion models, and implicit methods encode the camera parameters or 3D cues. Both add inference overhead, and the generated layout often drifts from the ground truth. We present WaveView, which injects the warped source into the phase of the initial noise of a pretrained generator. The Dual-Tree Complex Wavelet Packet Transform (DT-CWPT) allows local and anisotropic phase injection. The generator is thus constrained less in disoccluded regions and along the epipolar line. WaveView keeps the architecture and adds negligible overhead. On the DL3DV benchmark, it outperforms all baselines in every overlap bin. In the hardest bin, it gains 0.84 dB PSNR on the covisible region over MetaView, which shares its generator, while running 2.1 times faster. For dynamic NVS, fine-tuning AnyView with the same noise raises its zero-shot PSNR on AnyViewBench from 11.58 to 12.35 dB.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-18T07:37:46Z",
+   "updated": "2026-11-18T07:37:46Z",
+   "comment": "",
+   "listed": "2026-11-19",
+   "tags": [
+    "benchmark"
+   ],
+   "hf_upvotes": 9,
+   "ax_votes": 1,
+   "ax_visits": 34,
+   "heat": 13.4,
+   "orgs": [
+    {
+     "logo": "data/logos/kit.edu.png",
+     "name": "Karlsruhe Institute of Technology",
+     "ror": "04t3en479"
+    },
+    {
+     "name": "FZI Research Center for Information Technology",
+     "ror": "04kdh6x72"
+    }
+   ],
+   "thumb": "data/thumbs/2611.23994.jpg",
+   "thumb_w": 640,
+   "thumb_h": 238,
+   "sections": []
+  },
+  {
+   "id": "2611.24098",
+   "title": "RoughCut-Bench: A Benchmark for Automatic Video Rough-Cut with Large Vision-Language Models",
+   "authors": [
+    "Ruisi Zhao",
+    "You Li",
+    "Sihan Chen",
+    "Aosong Cheng",
+    "Chixiang Ma",
+    "Sen Pei",
+    "Zhen Yang",
+    "Hehe Fan",
+    "Dongliang He",
+    "Yi Yang"
+   ],
+   "abstract": "Video rough-cut is a core stage in media production workflows, organizing raw media materials into an initial video cut. Despite recent advances in large vision-language models (LVLMs) for video-related tasks, automatic rough-cut remains underexplored, without a comprehensive benchmark for evaluation or mature workflows for producing executable cut plans. To address the evaluation gap, we introduce RoughCut-Bench, which covers two practical settings: (1) a visually driven setting over video cases, covering highlight detection and selection, source-video ordering, and adherence to user requirements when provided; and (2) a speech-driven setting over automatic speech recognition (ASR) transcripts, covering filler removal, expression deduplication, and low-value content trimming. Across these settings, the benchmark contains 101 visually driven cases, including 831 raw videos with 1,476 highlight annotations. It also includes 84 speech-driven cases, each consisting of an ASR transcript with annotated cleanup spans. The evaluation compares cut plans with these annotations in both settings and additionally uses a human-aligned agentic evaluator to assess rendered-cut quality in the visual setting. To apply LVLMs to automatic rough-cut, we further propose agentic workflows that guide them to produce structured cut plans from input materials. Experiments show that current LVLMs remain limited in producing expert-aligned cut plans. Our benchmark, code, and prompts are released at https://whalesong-zrs.github.io/RoughCut-Bench-Project-Page.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-18T09:21:18Z",
+   "updated": "2026-11-20T06:46:34Z",
+   "comment": "Accepted to KDD 2027. Project page is at https://whalesong-zrs.github.io/RoughCut-Bench-Project-Page. This revision clarifies the speech-driven evaluation protocol, including count aggregation across ten runs, and corrects numerical errors in the result tables",
+   "listed": "2026-11-19",
+   "tags": [
+    "VLM/LLM",
+    "benchmark"
+   ],
+   "hf_upvotes": 9,
+   "ax_votes": 1,
+   "ax_visits": 18,
+   "heat": 11.8,
+   "orgs": [
+    {
+     "name": "Zhejiang University",
+     "ror": "00a2xv884"
+    },
+    {
+     "logo": "data/logos/bytedance.com.png",
+     "name": "ByteDance"
+    },
+    {
+     "logo": "data/logos/pku.edu.cn.png",
+     "name": "Peking University",
+     "ror": "02v51f717"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24098.jpg",
+   "thumb_w": 640,
+   "thumb_h": 240,
+   "sections": []
+  },
+  {
+   "id": "2611.24733",
+   "title": "Mechanistic Critics for Sample-Efficient NPU Design-Space Exploration",
+   "authors": [
+    "Yicheng He",
+    "Yuqi Xue",
+    "Tianyang Wu",
+    "Jian Huang",
+    "Bin Hu"
+   ],
+   "abstract": "NPU design-space exploration for LLM inference mainly relies on an expensive simulator that often returns only scalar feedback such as latency and power. Such feedback can rank evaluated configurations, but gives little information for deciding why a configuration is slow or which architecture parameter should be changed next. This limitation is especially severe because prefill and decode workloads can be limited by different resources, including compute throughput and HBM bandwidth. We propose CriticNPU, a sample-efficient DSE framework built around an online-calibrated mechanistic critic for NPU architecture design. The critic uses explicit hardware limits to evaluate NPU configurations: before simulation, it estimates whether a proposed configuration is likely to improve over the current best and filters weak candidates; after simulation, it aggregates operator-level runtimes into prefill/decode bottleneck summaries and predicts the effect of candidate parameter changes. We instantiate the critic with a Roofline-style model that derives compute and memory limits from architecture parameters and calibrates per-operator-type effective limits using simulator observations. And CriticNPU combines this critic with a workload extractor and an architecture planner to propose configurations. Across six LLM workloads and 16 deployment configurations per model, CriticNPU achieves best-or-tied-best latency in 74% of prefill and 87.5% of decode settings while using roughly half the simulator calls of competitive DSE baselines. We conduct extensive ablation studies and detailed analyses to validate the effectiveness of our method from multiple perspectives. Our code is available at https://github.com/bruno686/CriticNPU.",
+   "primary": "cs.AR",
+   "categories": [
+    "cs.AR"
+   ],
+   "published": "2026-11-18T16:48:43Z",
+   "updated": "2026-11-18T16:48:43Z",
+   "comment": "Accepted by NeurIPS 2026",
+   "code_url": "https://github.com/bruno686/CriticNPU",
+   "listed": "2026-11-19",
+   "tags": [
+    "VLM/LLM"
+   ],
+   "hf_upvotes": 9,
+   "ax_votes": 1,
+   "ax_visits": 17,
+   "heat": 11.7,
+   "orgs": [
+    {
+     "logo": "data/logos/illinois.edu.png",
+     "name": "University of Illinois Urbana-Champaign",
+     "ror": "047426m28"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24733.jpg",
+   "thumb_w": 640,
+   "thumb_h": 264,
+   "sections": []
   },
   {
    "id": "2611.23257",
@@ -1175,396 +1793,94 @@
    ],
    "thumb": "data/thumbs/2611.23257.jpg",
    "thumb_w": 640,
-   "thumb_h": 294
+   "thumb_h": 294,
+   "sections": []
   },
   {
-   "id": "2611.23824",
-   "title": "Evidence-Based Credit Assignment for Search-Augmented Language Models",
+   "id": "2611.23386",
+   "title": "Chorus: Shared N-gram Embeddings with Layer-wise Adaptation",
    "authors": [
-    "Wen Wang",
-    "Jindong Wang",
-    "Jiahua Bao",
-    "Tu Yongsiqi",
-    "Yihao Liu",
-    "Junwei He",
-    "Wenkui Fan"
+    "Stephen Chung",
+    "Wenyu Du"
    ],
-   "abstract": "Reinforcement learning from terminal answer rewards enables search-augmented language models to interleave reasoning and retrieval without step-level annotations, yet outcome supervision assigns identical credit to every search in a trajectory regardless of whether it retrieved useful information. This limitation is especially severe when all sampled rollouts for a question fail, collapsing group-centered outcome advantages to zero even when trajectories gather markedly different evidence. We present Evidence-based Credit Assignment (ECA), which augments terminal outcome rewards with a training-only auxiliary signal measuring how retrieved documents improve the likelihood of a reference answer. Rather than scoring the full dialogue prefix, ECA queries a frozen snapshot of the current policy under an evidence-only prompt containing solely the question and the deduplicated documents observed so far, isolating the utility of retrieved passages from surface variations in generated thoughts or search queries. Within this framework, we compare two return formulations, ECA-Step (which accumulates step-clipped potential increments) and ECA-Horizon (which preserves the telescoping horizon gain in potential), paired with cross-fold group normalization, novelty gating, and search-local token assignment. Across seven Search QA benchmarks, ECA-Horizon improves strict macro exact match over an outcome-only GRPO baseline by 1.03 and 4.80 percentage points on Qwen2.5-3B- and 7B-Instruct, respectively, outperforming both RLOO and GiGPO. Zero-shot evaluation on MultiHop-RAG further demonstrates strong transfer to multi-hop inference queries.",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI"
-   ],
-   "published": "2026-11-18T04:24:51Z",
-   "updated": "2026-11-18T04:24:51Z",
-   "comment": "16 pages, 4 figures. Includes supplementary material",
-   "listed": "2026-11-19",
-   "tags": [
-    "LLM",
-    "RL",
-    "retrieval",
-    "reasoning"
-   ],
-   "hf_upvotes": 9,
-   "ax_votes": 0,
-   "ax_visits": 50,
-   "heat": 14.0,
-   "orgs": [
-    {
-     "logo": "data/logos/cas.cn.png",
-     "name": "Chinese Academy of Sciences",
-     "ror": "034t30j35"
-    },
-    {
-     "logo": "data/logos/tencent.com.png",
-     "name": "Tencent"
-    },
-    {
-     "name": "Harbin Institute of Technology",
-     "ror": "01yqg2h08"
-    },
-    {
-     "name": "Renmin University of China",
-     "ror": "041pakw92"
-    },
-    {
-     "logo": "data/logos/pku.edu.cn.png",
-     "name": "Peking University",
-     "ror": "02v51f717"
-    },
-    {
-     "name": "Beijing Institute of Technology",
-     "ror": "01skt4w74"
-    }
-   ],
-   "thumb": "data/thumbs/2611.23824.jpg",
-   "thumb_w": 550,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "ECA 在终端答案奖励之外，基于冻结策略在仅含问题和去重文档的证据提示下评估检索文档对参考答案似然的提升，构造训练专用的辅助信用信号；七个 Search QA 基准上，ECA-Horizon 相比 outcome-only GRPO 在 Qwen2.5-3B/7B-Instruct 上严格宏平均精确匹配分别提升 1.03 和 4.80 个百分点，并优于 RLOO 与 GiGPO。",
-    "en": "ECA adds a training-only credit signal by querying a frozen policy snapshot on evidence-only prompts to score how retrieved documents raise reference-answer likelihood; on seven Search QA benchmarks, ECA-Horizon beats outcome-only GRPO by 1.03 and 4.80 strict macro exact-match points on Qwen2.5-3B and 7B-Instruct, also outperforming RLOO and GiGPO."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.23994",
-   "title": "WaveView: The Novel View Is in the Noise",
-   "authors": [
-    "Kaiwen Wang",
-    "Jan-Hendrik Pauls",
-    "Yinzhe Shen",
-    "Frank Bieder",
-    "Christoph Stiller"
-   ],
-   "abstract": "Generative novel view synthesis (NVS) employs a diffusion model to render a static or dynamic scene from a target camera view. Explicit warp methods complete a reprojection of the source with video diffusion models, and implicit methods encode the camera parameters or 3D cues. Both add inference overhead, and the generated layout often drifts from the ground truth. We present WaveView, which injects the warped source into the phase of the initial noise of a pretrained generator. The Dual-Tree Complex Wavelet Packet Transform (DT-CWPT) allows local and anisotropic phase injection. The generator is thus constrained less in disoccluded regions and along the epipolar line. WaveView keeps the architecture and adds negligible overhead. On the DL3DV benchmark, it outperforms all baselines in every overlap bin. In the hardest bin, it gains 0.84 dB PSNR on the covisible region over MetaView, which shares its generator, while running 2.1 times faster. For dynamic NVS, fine-tuning AnyView with the same noise raises its zero-shot PSNR on AnyViewBench from 11.58 to 12.35 dB.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-18T07:37:46Z",
-   "updated": "2026-11-18T07:37:46Z",
-   "comment": "",
-   "listed": "2026-11-19",
-   "tags": [
-    "benchmark"
-   ],
-   "hf_upvotes": 9,
-   "ax_votes": 1,
-   "ax_visits": 33,
-   "heat": 13.3,
-   "orgs": [
-    {
-     "logo": "data/logos/kit.edu.png",
-     "name": "Karlsruhe Institute of Technology",
-     "ror": "04t3en479"
-    },
-    {
-     "name": "FZI Research Center for Information Technology",
-     "ror": "04kdh6x72"
-    }
-   ],
-   "thumb": "data/thumbs/2611.23994.jpg",
-   "thumb_w": 640,
-   "thumb_h": 238
-  },
-  {
-   "id": "2611.24098",
-   "title": "RoughCut-Bench: A Benchmark for Automatic Video Rough-Cut with Large Vision-Language Models",
-   "authors": [
-    "Ruisi Zhao",
-    "You Li",
-    "Sihan Chen",
-    "Aosong Cheng",
-    "Chixiang Ma",
-    "Sen Pei",
-    "Zhen Yang",
-    "Hehe Fan",
-    "Dongliang He",
-    "Yi Yang"
-   ],
-   "abstract": "Video rough-cut is a core stage in media production workflows, organizing raw media materials into an initial video cut. Despite recent advances in large vision-language models (LVLMs) for video-related tasks, automatic rough-cut remains underexplored, without a comprehensive benchmark for evaluation or mature workflows for producing executable cut plans. To address the evaluation gap, we introduce RoughCut-Bench, which covers two practical settings: (1) a visually driven setting over video cases, covering highlight detection and selection, source-video ordering, and adherence to user requirements when provided; and (2) a speech-driven setting over automatic speech recognition (ASR) transcripts, covering filler removal, expression deduplication, and low-value content trimming. Across these settings, the benchmark contains 101 visually driven cases, including 831 raw videos with 1,476 highlight annotations. It also includes 84 speech-driven cases, each consisting of an ASR transcript with annotated cleanup spans. The evaluation compares cut plans with these annotations in both settings and additionally uses a human-aligned agentic evaluator to assess rendered-cut quality in the visual setting. To apply LVLMs to automatic rough-cut, we further propose agentic workflows that guide them to produce structured cut plans from input materials. Experiments show that current LVLMs remain limited in producing expert-aligned cut plans. Our benchmark, code, and prompts are released at https://whalesong-zrs.github.io/RoughCut-Bench-Project-Page.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-18T09:21:18Z",
-   "updated": "2026-11-20T06:46:34Z",
-   "comment": "Accepted to KDD 2027. Project page is at https://whalesong-zrs.github.io/RoughCut-Bench-Project-Page. This revision clarifies the speech-driven evaluation protocol, including count aggregation across ten runs, and corrects numerical errors in the result tables",
-   "listed": "2026-11-19",
-   "tags": [
-    "VLM/LLM",
-    "benchmark"
-   ],
-   "hf_upvotes": 9,
-   "ax_votes": 1,
-   "ax_visits": 17,
-   "heat": 11.7,
-   "orgs": [
-    {
-     "name": "Zhejiang University",
-     "ror": "00a2xv884"
-    },
-    {
-     "logo": "data/logos/bytedance.com.png",
-     "name": "ByteDance"
-    },
-    {
-     "logo": "data/logos/pku.edu.cn.png",
-     "name": "Peking University",
-     "ror": "02v51f717"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24098.jpg",
-   "thumb_w": 640,
-   "thumb_h": 240
-  },
-  {
-   "id": "2611.24576",
-   "title": "Late Entry in Looped Language Models",
-   "authors": [
-    "Ziqi Jin",
-    "Jiaxi Li",
-    "Weiwen Xu",
-    "Aixin Sun"
-   ],
-   "abstract": "Looped language models deepen reasoning at a compact parameter count by iterating a shared layer stack T times per token, turning recurrence depth directly into sequential decoding latency. Conventional early-exit decoding halts after initial passes without cache completion, truncating cached key-value states of past tokens to shallow depth. We study the opposite strategy, late entry, where new tokens skip initial passes and enter directly into the final K < T passes over a deep context cache. Once lightweight fine-tuning resolves hidden-state norm mismatch at the entry boundary, deep cached context substitutes for skipped token-local passes, allowing late entry to outperform matched early exit across model families and pass budgets. To turn this asymmetry into wall-clock speedups without stalling to build deep caches, candidate blocks verify through only the final K passes on the critical path while previously committed tokens complete passes 1 -> T alongside subsequent steps at zero extra serial calls. Projecting these finished T-pass wake states inside the existing output GEMM (Wake verification, governed by logit-margin tolerance tau in [0, inf]) unifies greedy-exact T-pass decoding (tau = 0, matching K = T block decoding within bf16 reduction order), margin-gated verification (tau > 0), and non-rollback lossy late entry (tau = inf) inside a single static CUDA graph. On Ouro-2.6B (T = 4), K = 2 Wake reaches 5.2x greedy-exact speedup at tau = 0 (+26% over K = 4 block decoding on GSM8K) and 6.8x at tau = inf (+16.9 points over trained early exit at matched speed). Scaling test-time recurrence across T in {8, 16, 32, 64} on Huginn-3.5B cuts K = T/4 rollbacks 21.5x with depth, driving greedy-exact (tau = 0) speedups to 6.1x (T = 32) and 8.4x (T = 64, +153% over K = 64 block) and tau = inf speedups to 10.6 to 12.5x.",
+   "abstract": "Language models can gain capacity at little computational cost from n-gram embedding tables: large tables of learned vectors for short sequences of consecutive tokens, which are looked up and added to the model's input or to its intermediate layers. Recent designs commonly use a separate n-gram embedding table for each layer, which makes the tables costly in memory and prevents layers from sharing what they learn. However, a single shared table gives every layer the same embedding, leaves no room for layer-wise preferences, and performs poorly in practice. We propose Chorus, in which one set of n-gram embedding tables serves the whole network and every layer reads it in its own way. Each layer maps the refined embedding through its own projection layer, after rescaling its components by factors computed from its current hidden state. Chorus matches the quality of existing n-gram methods with 87% smaller tables: with 1.2B table parameters it predicts text better than FactorEngram and DeepSeek's Engram do with 9.6B. It outperforms Engram, TN-gram and FactorEngram in every setting where we compared them, across table sizes from 20M to 9.6B parameters. We also show that the recently proposed memory-efficient optimizer Ember works well with Chorus, saving 99.2% of table-optimizer memory compared with AdamW without degrading training performance. These results enable further scaling of n-gram embedding tables along the table-size axis by reducing memory use and allowing shared knowledge to be reused across layers.",
    "primary": "cs.CL",
    "categories": [
     "cs.CL"
    ],
-   "published": "2026-11-18T15:09:01Z",
-   "updated": "2026-11-18T15:09:01Z",
-   "comment": "25 pages, 9 figures",
+   "published": "2026-11-17T19:00:05Z",
+   "updated": "2026-11-19T12:49:23Z",
+   "comment": "18 pages. Code: https://github.com/dualverse-ai/chorus. Part of the Autonomous Research Program: https://dualverse.ai/auto_research",
+   "code_url": "https://github.com/dualverse-ai/chorus",
    "listed": "2026-11-19",
-   "tags": [
-    "LLM",
-    "efficiency",
-    "reasoning"
-   ],
-   "hf_upvotes": 9,
-   "ax_votes": 4,
-   "ax_visits": 49,
-   "heat": 17.9,
-   "orgs": [
-    {
-     "name": "NTU",
-     "ror": "02e7b5302"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24576.jpg",
-   "thumb_w": 640,
-   "thumb_h": 296,
-   "summary": {
-    "zh": " late entry 解码策略：新 token 跳过前几轮迭代，直接进入深层 KV cache 的最后 K 轮，并借 Wake verification 复用已完成的 T 轮状态；在 Ouro-2.6B 上 tau=0 时比贪心精确解码快 5.2 倍，tau=inf 时比早退基线高 16.9 分。",
-    "en": "Late entry decoding lets new tokens skip early loop passes and enter the final K passes on a deep KV cache; Wake verification in the output GEMM yields 5.2x greedy-exact speedup on Ouro-2.6B."
-   },
-   "summary_source": "deepseek-flash"
+   "tags": [],
+   "hf_upvotes": 6,
+   "ax_votes": 0,
+   "ax_visits": 45,
+   "heat": 10.5,
+   "orgs": [],
+   "thumb": "data/thumbs/2611.23386.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440,
+   "sections": []
   },
   {
-   "id": "2611.24733",
-   "title": "Mechanistic Critics for Sample-Efficient NPU Design-Space Exploration",
+   "id": "2611.24681",
+   "title": "DrawScore: Evaluating Generated CAD Models against Engineering Drawings",
    "authors": [
-    "Yicheng He",
-    "Yuqi Xue",
-    "Tianyang Wu",
-    "Jian Huang",
-    "Bin Hu"
+    "Haorui Chen",
+    "Shiteng Lu",
+    "Zhanyu Guo",
+    "Zaixi Li",
+    "Yunhe Ni",
+    "Yaosong Du",
+    "Yichen Xiang",
+    "Xiande Huang",
+    "Rui Huang"
    ],
-   "abstract": "NPU design-space exploration for LLM inference mainly relies on an expensive simulator that often returns only scalar feedback such as latency and power. Such feedback can rank evaluated configurations, but gives little information for deciding why a configuration is slow or which architecture parameter should be changed next. This limitation is especially severe because prefill and decode workloads can be limited by different resources, including compute throughput and HBM bandwidth. We propose CriticNPU, a sample-efficient DSE framework built around an online-calibrated mechanistic critic for NPU architecture design. The critic uses explicit hardware limits to evaluate NPU configurations: before simulation, it estimates whether a proposed configuration is likely to improve over the current best and filters weak candidates; after simulation, it aggregates operator-level runtimes into prefill/decode bottleneck summaries and predicts the effect of candidate parameter changes. We instantiate the critic with a Roofline-style model that derives compute and memory limits from architecture parameters and calibrates per-operator-type effective limits using simulator observations. And CriticNPU combines this critic with a workload extractor and an architecture planner to propose configurations. Across six LLM workloads and 16 deployment configurations per model, CriticNPU achieves best-or-tied-best latency in 74% of prefill and 87.5% of decode settings while using roughly half the simulator calls of competitive DSE baselines. We conduct extensive ablation studies and detailed analyses to validate the effectiveness of our method from multiple perspectives. Our code is available at https://github.com/bruno686/CriticNPU.",
-   "primary": "cs.AR",
-   "categories": [
-    "cs.AR"
-   ],
-   "published": "2026-11-18T16:48:43Z",
-   "updated": "2026-11-18T16:48:43Z",
-   "comment": "Accepted by NeurIPS 2026",
-   "code_url": "https://github.com/bruno686/CriticNPU",
-   "listed": "2026-11-19",
-   "tags": [
-    "VLM/LLM"
-   ],
-   "hf_upvotes": 9,
-   "ax_votes": 1,
-   "ax_visits": 16,
-   "heat": 11.6,
-   "orgs": [
-    {
-     "logo": "data/logos/illinois.edu.png",
-     "name": "University of Illinois Urbana-Champaign",
-     "ror": "047426m28"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24733.jpg",
-   "thumb_w": 640,
-   "thumb_h": 264
-  },
-  {
-   "id": "2611.23808",
-   "title": "PReMind: When Personal Memory Meets Visual Hazards",
-   "authors": [
-    "Yeongtak Oh",
-    "Donghyeok Lee",
-    "Joonhee Oh",
-    "Jaewon Jeong",
-    "Sungroh Yoon"
-   ],
-   "abstract": "Personalized vision-language assistants use visual observations and personal memories to provide advice tailored to the user. When the observed scene contains a physical hazard, personal context, such as allergies, medical conditions, or mobility constraints, can change what help is appropriate. Responding appropriately therefore requires recognizing the visible hazard and applying the relevant person's information. We introduce PReMind-Bench, a diagnostic benchmark that evaluates this combination across diverse hazards and personal-memory conditions. It separately measures memory access, grounding, abstention, and hazard response, and assesses joint success on interdependency cases. Existing models often satisfy one requirement while failing the other, and training only for safety or personalization leaves a gap in joint success. We therefore propose PReMind, a two-phase reinforcement learning framework that combines on-demand and forced-call interactions (memory always retrieved) to jointly train grounded memory use and hazard response. At 4B, PReMind raises joint success from 12.9% to 28.6% over its base on the interdependency set and improves hazard adequacy and correct abstention on the main test. Joint-success gains persist under forced-call evaluation and under a second LLM judge across three Phase II seeds; averaged over these seeds, joint success also improves on unseen hazard groups. These findings highlight the need to evaluate and train personal assistants to connect visual evidence with the relevant person's context.",
+   "abstract": "Automatic CAD generation is commonly evaluated with volumetric IoU, Chamfer Distance, and surface F-score, which barely penalize local errors that occupy only a small fraction of a part's volume or surface area, such as a misplaced hole or a slot on the wrong face, even though such errors are critical to manufacturing. We formalize these metrics in a unified integral form and show that the weight of a local error decays as the $(k+q)$-th power of its size, where $k$ is the dimension of the integration domain and $q$ is determined by the penalty function. Guided by this analysis, we propose DrawScore, which projects both models into three orthographic views with visible and hidden lines, as in engineering drawings, and applies a saturating penalty along the projected curves, so that the weight of a local error decays only linearly. Controlled experiments confirm the predicted decay orders, and on outputs of existing CAD generation agents, DrawScore exposes errors in outputs that IoU rates as nearly perfect. DrawScore further improves generation as a reinforcement learning reward and, for CAD generation from engineering drawings, serves as a test-time verifier without 3D ground truth or an additional reward model. Our code is available at https://github.com/UESTC-Simon/DrawScore.",
    "primary": "cs.CV",
    "categories": [
-    "cs.CV"
+    "cs.CV",
+    "cs.SE"
    ],
-   "published": "2026-11-18T04:13:29Z",
-   "updated": "2026-11-18T04:13:29Z",
-   "comment": "Project page: https://github.com/oyt9306/PReMind",
-   "code_url": "https://github.com/oyt9306/PReMind",
+   "published": "2026-11-18T16:14:30Z",
+   "updated": "2026-11-18T16:14:30Z",
+   "comment": "",
+   "code_url": "https://github.com/UESTC-Simon/DrawScore",
    "listed": "2026-11-19",
    "tags": [
-    "multimodal",
-    "safety",
+    "3D",
     "benchmark",
-    "agents"
+    "image generation"
    ],
-   "hf_upvotes": 8,
-   "ax_votes": 2,
-   "ax_visits": 44,
-   "heat": 14.4,
+   "hf_upvotes": 6,
+   "ax_votes": 0,
+   "ax_visits": 34,
+   "heat": 9.4,
    "orgs": [
     {
-     "name": "Seoul National University",
-     "ror": "04h9pn542",
-     "logo": "data/logos/snu.ac.kr.png"
-    }
-   ],
-   "thumb": "data/thumbs/2611.23808.jpg",
-   "thumb_w": 485,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "PReMind-Bench 诊断基准分别评估记忆访问、定位、弃答与危险响应及联合成功率，配套两阶段强化学习框架 PReMind 结合按需与强制调用交互训练，4B 模型在 interdependency 集合上联合成功率从 12.9% 升至 28.6%。",
-    "en": "PReMind-Bench separately evaluates memory access, grounding, abstention, and hazard response; PReMind, a two-phase RL framework mixing on-demand and forced-call interactions, raises 4B joint success from 12.9% to 28.6%."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.24362",
-   "title": "PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents",
-   "authors": [
-    "Lipeng He",
-    "Yihan Wang",
-    "Jiawen Zhang",
-    "N. Asokan"
-   ],
-   "abstract": "Large language model (LLM) agents routinely interact with untrusted external data, exposing them to indirect prompt injection (IPI) attacks that hijack agents into executing attacker-chosen tasks. To uncover these vulnerabilities at scale, automated red-teaming methods often leverage reinforcement learning (RL) to generate attacks that achieve high attack success rates (ASR). Model developers use the attacks discovered during internal red-teaming to harden agents through adversarial training before deployment, a collaborative offensive-defensive process known in cybersecurity as purple-teaming. However, we show that achieving high ASR during red-teaming does not guarantee robustness gains from subsequent adversarial training. Specifically, we find that two state-of-the-art RL-based red-teaming methods, RL-Hammer and PISmith, suffer from mode collapse, repeatedly discovering similar attack strategies whose additional successes add no additional robustness improvements to adversarial training. To address this gap, we introduce PIPETTE, a unified prompt injection purple-teaming framework that effectively converts red-teaming discoveries into defender robustness improvements. PIPETTE employs a dictionary learning-based reward that encourages broader coverage of attack strategies during red-teaming. It also integrates an on-policy adversarial training pipeline tailored to IPI defense, enabling agents to resist attacks while completing legitimate user tasks. Extensive evaluations across agentic benchmarks (AgentDojo and ASB) demonstrate that PIPETTE produces defenders that achieve near-zero attack success rates on static attacks and can withstand strong adaptive attacks, while maintaining benign task utility close to that of the undefended baseline.",
-   "primary": "cs.CR",
-   "categories": [
-    "cs.CR",
-    "cs.AI"
-   ],
-   "published": "2026-11-18T12:56:06Z",
-   "updated": "2026-11-20T22:23:16Z",
-   "comment": "18 pages, 6 figures",
-   "listed": "2026-11-19",
-   "tags": [
-    "safety",
-    "agents",
-    "RL",
-    "alignment"
-   ],
-   "hf_upvotes": 8,
-   "ax_votes": 7,
-   "ax_visits": 77,
-   "heat": 22.7,
-   "orgs": [
-    {
-     "logo": "data/logos/uwaterloo.ca.png",
-     "name": "University of Waterloo",
-     "ror": "01aff2v68"
+     "name": "University of Electronic Science and Technology of China",
+     "ror": "04qr3zq92"
     },
     {
-     "name": "Zhejiang University",
-     "ror": "00a2xv884"
+     "name": "De Artificial Intelligence Technology"
     },
     {
-     "logo": "data/logos/kth.se.png",
-     "name": "KTH Royal Institute of Technology",
-     "ror": "026vcq606"
+     "logo": "data/logos/hku.hk.png",
+     "name": "HKU",
+     "ror": "02zhqgq86"
     }
    ],
-   "thumb": "data/thumbs/2611.24362.jpg",
+   "thumb": "data/thumbs/2611.24681.jpg",
    "thumb_w": 640,
-   "thumb_h": 392,
+   "thumb_h": 427,
+   "sections": [
+    "rl"
+   ],
    "summary": {
-    "zh": "PIPETTE 是一个统一的提示注入红蓝对抗框架，用基于字典学习的奖励鼓励红队覆盖更多攻击策略，并结合面向 IPI 防御的 on-policy 对抗训练；在 AgentDojo 和 ASB 上，防御器面对静态攻击成功率接近零，能抵御强自适应攻击，正常任务效用接近未防御基线。",
-    "en": "PIPETTE is a unified prompt-injection purple-teaming framework combining a dictionary-learning reward for broader attack-strategy coverage with on-policy adversarial training; on AgentDojo and ASB it yields near-zero static attack success and strong adaptive-attack robustness while preserving benign utility."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.08136",
-   "title": "How Far Can Untrained Neural Networks Go in Anomaly Detection? From Tables to Pixels",
-   "authors": [
-    "Hyojun Yi",
-    "Geunyoung Kim",
-    "Hogeon Seo",
-    "Seunghyoung Ryu"
-   ],
-   "abstract": "Anomaly detection (AD) is often framed as a representation-learning problem, where strong performance is expected to require learned features or AD-specific optimization. However, this view can overlook the intrinsic separability of anomalies from normal references, even in the absence of learned representations. We therefore investigate how far untrained neural networks can go in anomaly detection. To this end, we propose PRISM, a framework combining fixed random nonlinear features with normal-reference Mahalanobis scoring for tabular detection and dense visual localization. Across 47 tabular datasets in ADBench, PRISM-T achieves the highest mean AUROC (86.4%) and the second-highest mean AUPRC (65.9%) among the compared methods. On MVTec AD and VisA, covering 27 visual categories, PRISM-V achieves mean image-level and pixel-level AUROCs of 90.4% and 96.4%, respectively. Notably, both models achieve these results without neural weight optimization or pretrained representations. A theoretical analysis further characterizes how nonlinear transformations affect the mean and covariance contributions to the Mahalanobis score gap, while empirical analyses examine the resulting score separability. These findings establish PRISM as both a competitive anomaly detector and a prior-to-learning baseline for assessing the added value of learned representations in anomaly detection.",
-   "primary": "cs.LG",
-   "categories": [
-    "cs.LG",
-    "cs.CV"
-   ],
-   "published": "2026-11-05T15:01:17Z",
-   "updated": "2026-11-09T06:21:36Z",
-   "comment": "16 pages, 13 figures. Code available at PRISM-T (https://github.com/ideal-lab-sejong/PRISM_T) and PRISM-V (https://github.com/ideal-lab-sejong/PRISM_V)",
-   "code_url": "https://github.com/ideal-lab-sejong/PRISM_T",
-   "listed": "2026-11-19",
-   "tags": [
-    "detection",
-    "interpretability",
-    "efficiency",
-    "benchmark"
-   ],
-   "hf_upvotes": 7,
-   "ax_votes": 10,
-   "ax_visits": 62,
-   "heat": 23.2,
-   "orgs": [
-    {
-     "name": "Sejong University",
-     "ror": "00aft1q37",
-     "logo": "data/logos/sejong.ac.kr.png"
-    },
-    {
-     "name": "Korea Atomic Energy Research Institute",
-     "ror": "01xb4fs50",
-     "logo": "data/logos/kaeri.re.kr.png"
-    }
-   ],
-   "thumb": "data/thumbs/2611.08136.jpg",
-   "thumb_w": 308,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "PRISM 用固定随机非线性特征加正常参考的 Mahalanobis 打分做异常检测，无需训练权重或预训练表示；在 ADBench 47 个表格数据集上，PRISM-T 平均 AUROC 达 86.4%，为对比方法中最高；在 MVTec AD 与 VisA 共 27 个视觉类别上，PRISM-V 图像级与像素级平均 AUROC 分别为 90.4% 和 96.4%。",
-    "en": "PRISM combines fixed random nonlinear features with normal-reference Mahalanobis scoring, requiring no weight training or pretrained representations; it reaches 86.4% mean AUROC on 47 ADBench tabular datasets and 90.4%/96.4% image-/pixel-level AUROC on 27 MVTec AD and VisA categories."
+    "zh": "针对 IoU、Chamfer Distance 和 surface F-score 几乎不惩罚错位孔、错面槽等局部错误的问题，DrawScore 将模型投影为带虚实线的三视图工程图，并沿投影曲线施加饱和惩罚使局部错误权重仅线性衰减，能识别 IoU 近满分输出中的错误，并可作为 RL 奖励和测试时验证器。",
+    "en": "DrawScore projects CAD models into three orthographic engineering-drawing views with visible and hidden lines and applies a saturating penalty along projected curves, reducing local-error weight decay to linear; it exposes errors that IoU barely penalizes and serves as an RL reward and test-time verifier."
    },
    "summary_source": "deepseek-flash"
   },
@@ -1605,252 +1921,8 @@
    ],
    "thumb": "data/thumbs/2611.22033.jpg",
    "thumb_w": 618,
-   "thumb_h": 440
-  },
-  {
-   "id": "2611.22382",
-   "title": "RICoT: Recurrent Interleaved Chain-of-Thought for Page Stream Segmentation",
-   "authors": [
-    "Prashant Khatri",
-    "Bhavana Malagavalli",
-    "Saiful Haq",
-    "Niyati Chhaya"
-   ],
-   "abstract": "Large language models (LLMs) have renewed interest in Page Stream Segmentation (PSS), splitting a multi-page file into its constituent documents. Yet published LLM methods still frame the task as boundary classification over one or a few neighboring pages, and commercial document-splitting APIs do not disclose their methods. We reimagine PSS for LLMs as a sequential process over the whole stream and propose RICoT (Recurrent Interleaved Chain-of-Thought), a prompting framework that works through the pages as a reader would: within a sliding window it reasons about each page and commits its boundary decision before moving on, and across windows it carries forward a compact record of what it has read, keeping per-call cost bounded. We also introduce FinancePSS-205, a benchmark of 205 real-world, de-identified financial page streams, to be released publicly. On FinancePSS-205, RICoT matches or outperforms pairwise and windowed prompting with the same backbone for each of three open-weight LLMs; on a TABME test subset, RICoT with GLM-5 reaches document F1 0.847 and boundary F1 0.915, above published zero-shot results. A 2B-parameter student, trained on a larger teacher's decisions with and without the page-level reasoning, performs comparably in both modes and comes within 0.05 document F1 of the strongest prompted model on FinancePSS-205.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL",
-    "cs.AI",
-    "cs.IR"
-   ],
-   "published": "2026-11-17T08:33:25Z",
-   "updated": "2026-11-17T08:33:25Z",
-   "comment": "18 pages, 3 figures, 19 tables. Dataset and code to be released",
-   "listed": "2026-11-19",
-   "tags": [
-    "VLM/LLM",
-    "benchmark"
-   ],
-   "hf_upvotes": 6,
-   "ax_votes": 0,
-   "ax_visits": 9,
-   "heat": 6.9,
-   "orgs": [
-    {
-     "name": "Indian Institute of Technology Bombay",
-     "ror": "02qyf5152"
-    }
-   ],
-   "thumb": "data/thumbs/2611.22382.jpg",
-   "thumb_w": 640,
-   "thumb_h": 417
-  },
-  {
-   "id": "2611.23386",
-   "title": "Chorus: Shared N-gram Embeddings with Layer-wise Adaptation",
-   "authors": [
-    "Stephen Chung",
-    "Wenyu Du"
-   ],
-   "abstract": "Language models can gain capacity at little computational cost from n-gram embedding tables: large tables of learned vectors for short sequences of consecutive tokens, which are looked up and added to the model's input or to its intermediate layers. Recent designs commonly use a separate n-gram embedding table for each layer, which makes the tables costly in memory and prevents layers from sharing what they learn. However, a single shared table gives every layer the same embedding, leaves no room for layer-wise preferences, and performs poorly in practice. We propose Chorus, in which one set of n-gram embedding tables serves the whole network and every layer reads it in its own way. Each layer maps the refined embedding through its own projection layer, after rescaling its components by factors computed from its current hidden state. Chorus matches the quality of existing n-gram methods with 87% smaller tables: with 1.2B table parameters it predicts text better than FactorEngram and DeepSeek's Engram do with 9.6B. It outperforms Engram, TN-gram and FactorEngram in every setting where we compared them, across table sizes from 20M to 9.6B parameters. We also show that the recently proposed memory-efficient optimizer Ember works well with Chorus, saving 99.2% of table-optimizer memory compared with AdamW without degrading training performance. These results enable further scaling of n-gram embedding tables along the table-size axis by reducing memory use and allowing shared knowledge to be reused across layers.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL"
-   ],
-   "published": "2026-11-17T19:00:05Z",
-   "updated": "2026-11-19T12:49:23Z",
-   "comment": "18 pages. Code: https://github.com/dualverse-ai/chorus. Part of the Autonomous Research Program: https://dualverse.ai/auto_research",
-   "code_url": "https://github.com/dualverse-ai/chorus",
-   "listed": "2026-11-19",
-   "tags": [],
-   "hf_upvotes": 6,
-   "ax_votes": 0,
-   "ax_visits": 45,
-   "heat": 10.5,
-   "orgs": [],
-   "thumb": "data/thumbs/2611.23386.jpg",
-   "thumb_w": 618,
-   "thumb_h": 440
-  },
-  {
-   "id": "2611.23499",
-   "title": "BiCAT: Bimanual Coordination Action Tokenization",
-   "authors": [
-    "Xuanwei Liu",
-    "Guipu Cao",
-    "Zhongyi Luo",
-    "Jiafei Duan"
-   ],
-   "abstract": "Autoregressive vision-language-action (VLA) models predict discrete action tokens with the next-token objective of their vision-language backbone, so the action tokenizer defines the interface between the policy and the robot. In bimanual manipulation, the two arms share a repertoire of movements yet coordinate through complementary roles, and an action representation should capture both. However, most existing tokenizers encode both arms as a single concatenated action vector, in which motion patterns common to the two arms are not shared and cross-arm dependencies remain entangled within each token. The policy must therefore learn both aspects implicitly. We propose Bimanual Coordination Action Tokenization (BiCAT), which shares one motion representation across arms while conditioning each arm's tokens on its partner through symmetric cross-arm attention and a joint decoder. The policy then predicts all tokens of each arm in parallel, generating the left arm first and the right arm conditioned on it. Across ten RoboTwin 2.0 tasks and six real-world tasks on three embodiments, BiCAT achieves the highest success among the compared tokenizers. In simulation, it improves mean success by 17.6 percentage points over the strongest of eight baselines, with the largest gains on tasks that require close coordination between the arms, while requiring only 40.5 ms per action chunk. These results suggest that the action tokenizer is a natural place to model bimanual coordination.",
-   "primary": "cs.RO",
-   "categories": [
-    "cs.RO"
-   ],
-   "published": "2026-11-17T20:50:13Z",
-   "updated": "2026-11-17T20:50:13Z",
-   "comment": "",
-   "listed": "2026-11-19",
-   "tags": [
-    "VLA",
-    "robotics",
-    "manipulation",
-    "multimodal"
-   ],
-   "hf_upvotes": 6,
-   "ax_votes": 2,
-   "ax_visits": 66,
-   "heat": 14.6,
-   "orgs": [
-    {
-     "name": "NUS",
-     "ror": "01tgyzw49"
-    }
-   ],
-   "thumb": "data/thumbs/2611.23499.jpg",
-   "thumb_w": 640,
-   "thumb_h": 230,
-   "summary": {
-    "zh": "BiCAT 让双臂共享同一套运动表示，并通过对称跨臂注意力和联合解码器让每条手臂的 token 以另一条手臂为条件，策略并行预测左右臂 token 并先生成左臂；在 RoboTwin 2.0 十个任务和三种真实本体六个任务上成功率最高，仿真平均成功率比八个基线中最强者高 17.6 个百分点，每段动作块耗时 40.5 ms。",
-    "en": "BiCAT shares one motion representation across arms and conditions each arm's tokens on its partner via symmetric cross-arm attention and a joint decoder; it beats the strongest of eight baselines by 17.6 points mean success on RoboTwin 2.0 at 40.5 ms per action chunk."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.24681",
-   "title": "DrawScore: Evaluating Generated CAD Models against Engineering Drawings",
-   "authors": [
-    "Haorui Chen",
-    "Shiteng Lu",
-    "Zhanyu Guo",
-    "Zaixi Li",
-    "Yunhe Ni",
-    "Yaosong Du",
-    "Yichen Xiang",
-    "Xiande Huang",
-    "Rui Huang"
-   ],
-   "abstract": "Automatic CAD generation is commonly evaluated with volumetric IoU, Chamfer Distance, and surface F-score, which barely penalize local errors that occupy only a small fraction of a part's volume or surface area, such as a misplaced hole or a slot on the wrong face, even though such errors are critical to manufacturing. We formalize these metrics in a unified integral form and show that the weight of a local error decays as the $(k+q)$-th power of its size, where $k$ is the dimension of the integration domain and $q$ is determined by the penalty function. Guided by this analysis, we propose DrawScore, which projects both models into three orthographic views with visible and hidden lines, as in engineering drawings, and applies a saturating penalty along the projected curves, so that the weight of a local error decays only linearly. Controlled experiments confirm the predicted decay orders, and on outputs of existing CAD generation agents, DrawScore exposes errors in outputs that IoU rates as nearly perfect. DrawScore further improves generation as a reinforcement learning reward and, for CAD generation from engineering drawings, serves as a test-time verifier without 3D ground truth or an additional reward model. Our code is available at https://github.com/UESTC-Simon/DrawScore.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.SE"
-   ],
-   "published": "2026-11-18T16:14:30Z",
-   "updated": "2026-11-18T16:14:30Z",
-   "comment": "",
-   "code_url": "https://github.com/UESTC-Simon/DrawScore",
-   "listed": "2026-11-19",
-   "tags": [
-    "RL"
-   ],
-   "hf_upvotes": 6,
-   "ax_votes": 0,
-   "ax_visits": 33,
-   "heat": 9.3,
-   "orgs": [
-    {
-     "name": "University of Electronic Science and Technology of China",
-     "ror": "04qr3zq92"
-    },
-    {
-     "logo": "data/logos/hku.hk.png",
-     "name": "HKU",
-     "ror": "02zhqgq86"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24681.jpg",
-   "thumb_w": 640,
-   "thumb_h": 427
-  },
-  {
-   "id": "2611.24941",
-   "title": "UltraTex: Aligning Physical Knowledge for High-Fidelity PBR Texture Generation",
-   "authors": [
-    "Jingzhi Bao",
-    "Xiaohe Ma",
-    "Hong Li",
-    "Yuanming Hu",
-    "Xiaoguang Han"
-   ],
-   "abstract": "Generating physically based rendering (PBR) texture maps for a 3D mesh from a single reference image is highly ambiguous, as the observed appearance entangles material identity, surface reflectance, and illumination. While current generative methods produce realistic albedo maps, they still struggle to infer accurate metallic and roughness attributes for relighting. We present UltraTex, a cascaded multi-view framework that moves beyond appearance matching by integrating physical knowledge into multi-view diffusion-based PBR generation. UltraTex first jointly predicts albedo and world-space shading normals to generate more detailed albedo maps, and then predicts metallic-roughness (MR) maps conditioned on the generated albedo, reference image, and material semantic priors. To inject material semantics, a lightweight adapter transforms hidden-layer features of a vision-language model (VLM) into intrinsic material representation tokens, providing part-level knowledge anchors for MR estimation. To model material-light interaction, photometric representation alignment guides intermediate diffusion features toward ground-truth material renderings under controlled lighting. This makes metallic and roughness variations observable through highlight intensity, specular sharpness, and local reflectance contrast, providing stronger guidance for fine-grained material prediction without explicit lighting supervision. Extensive experiments show that UltraTex generates high-quality textures and outperforms existing open-source and commercial methods in visual fidelity, material accuracy, and physical plausibility.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-18T18:59:57Z",
-   "updated": "2026-11-18T18:59:57Z",
-   "comment": "Accepted to ACM Transactions on Graphics (SIGGRAPH Asia 2026). Project page: https://ultratex.vercel.app/",
-   "listed": "2026-11-19",
-   "tags": [
-    "image generation",
-    "3D",
-    "diffusion",
-    "multimodal"
-   ],
-   "hf_upvotes": 6,
-   "ax_votes": 1,
-   "ax_visits": 119,
-   "heat": 18.9,
-   "orgs": [
-    {
-     "logo": "data/logos/cuhk.edu.hk.png",
-     "name": "CUHK",
-     "ror": "00t33hh48"
-    },
-    {
-     "name": "Meshy AI"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24941.jpg",
-   "thumb_w": 625,
    "thumb_h": 440,
-   "summary": {
-    "zh": "UltraTex 用级联多视角扩散框架从单张参考图生成 PBR 纹理：先联合预测 albedo 与世界空间着色法线，再结合 VLM 特征适配器提供的材质语义先验估计 metallic-roughness 图，并通过光度表征对齐注入材质-光照交互知识，在视觉保真度、材质准确性与物理合理性上优于现有开源与商业方法。",
-    "en": "UltraTex is a cascaded multi-view diffusion framework that jointly predicts albedo and shading normals, then estimates metallic-roughness maps using VLM-derived material semantic tokens and photometric representation alignment, outperforming open-source and commercial PBR texture methods."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.21114",
-   "title": "VAE Rhythm: Temporal Decoding Traces for AI-Generated Video Detection",
-   "authors": [
-    "Ke Sun",
-    "Shuwei Li",
-    "Haiyang Mei",
-    "Mike Zheng Shou"
-   ],
-   "abstract": "Visible artifacts are an unreliable cue for detecting generated videos, because newer generators learn to remove them. We instead detect a trace left by the generation pipeline itself. Most video generators decode latents with a 3D causal VAE that groups consecutive frames in time, so the fidelity of generated frames rises and falls periodically with their position in a group. We call this periodic trace VAE Rhythm. Real videos are captured frame by frame and do not have it. To reveal it without training, we propose a phase scan. The scan reconstructs a clip with an off-the-shelf VAE from successive start offsets and measures the periodicity of the reconstruction error across these offsets. We find VAE Rhythm in most of the 39 variants of 31 generators we test, including the closed-source Sora, Kling 3.0 and Seedance 2.0. We use the rhythm as a zero-shot score, as a plug-in for existing detectors and as a data engine that pairs real videos with their VAE reconstructions to train our detector CaDet. On DF26, the training-free rhythm score outperforms all 15 retrained baselines, and as a plug-in it improves all 19 tested detectors by 6.7% to 23.7% AUROC. CaDet achieves the best AUROC on AIGVDBench, DF26 and three 2026 closed-source models, and its variant trained without any generated video still exceeds 90% on AIGVDBench.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-16T13:59:03Z",
-   "updated": "2026-11-16T13:59:03Z",
-   "comment": "24 pages, 7 figures. Project page: https://showlab.github.io/vae-rhythm",
-   "listed": "2026-11-19",
-   "tags": [
-    "video generation",
-    "detection",
-    "dataset"
-   ],
-   "hf_upvotes": 5,
-   "ax_votes": 3,
-   "ax_visits": 57,
-   "heat": 13.7,
-   "orgs": [
-    {
-     "name": "NUS",
-     "ror": "01tgyzw49"
-    }
-   ],
-   "thumb": "data/thumbs/2611.21114.jpg",
-   "thumb_w": 402,
-   "thumb_h": 320,
-   "summary": {
-    "zh": "发现3D因果VAE解码使生成帧的保真度随其组内位置周期性波动，称为VAE Rhythm；无需训练的phase scan通过重建误差周期性检测该痕迹，在39个生成器变体（包括Sora、Kling 3.0）中发现该痕迹，在DF26上优于全部15个重训练基线，作为插件将19个检测器AUROC提升6.7%–23.7%，CaDet在AIGVDBench、DF26及三个2026闭源模型上取得最佳AUROC。",
-    "en": "Generated videos show a periodic VAE Rhythm from 3D causal VAE decoding; a training-free phase scan detects it, beating 15 baselines on DF26 and improving 19 detectors by 6.7%-23.7% AUROC, with CaDet achieving best AUROC on AIGVDBench and DF26."
-   },
-   "summary_source": "deepseek-flash"
+   "sections": []
   },
   {
    "id": "2611.22673",
@@ -1891,7 +1963,47 @@
    ],
    "thumb": "data/thumbs/2611.22673.jpg",
    "thumb_w": 474,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "sections": []
+  },
+  {
+   "id": "2611.22382",
+   "title": "RICoT: Recurrent Interleaved Chain-of-Thought for Page Stream Segmentation",
+   "authors": [
+    "Prashant Khatri",
+    "Bhavana Malagavalli",
+    "Saiful Haq",
+    "Niyati Chhaya"
+   ],
+   "abstract": "Large language models (LLMs) have renewed interest in Page Stream Segmentation (PSS), splitting a multi-page file into its constituent documents. Yet published LLM methods still frame the task as boundary classification over one or a few neighboring pages, and commercial document-splitting APIs do not disclose their methods. We reimagine PSS for LLMs as a sequential process over the whole stream and propose RICoT (Recurrent Interleaved Chain-of-Thought), a prompting framework that works through the pages as a reader would: within a sliding window it reasons about each page and commits its boundary decision before moving on, and across windows it carries forward a compact record of what it has read, keeping per-call cost bounded. We also introduce FinancePSS-205, a benchmark of 205 real-world, de-identified financial page streams, to be released publicly. On FinancePSS-205, RICoT matches or outperforms pairwise and windowed prompting with the same backbone for each of three open-weight LLMs; on a TABME test subset, RICoT with GLM-5 reaches document F1 0.847 and boundary F1 0.915, above published zero-shot results. A 2B-parameter student, trained on a larger teacher's decisions with and without the page-level reasoning, performs comparably in both modes and comes within 0.05 document F1 of the strongest prompted model on FinancePSS-205.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.IR"
+   ],
+   "published": "2026-11-17T08:33:25Z",
+   "updated": "2026-11-17T08:33:25Z",
+   "comment": "18 pages, 3 figures, 19 tables. Dataset and code to be released",
+   "listed": "2026-11-19",
+   "tags": [
+    "VLM/LLM",
+    "benchmark"
+   ],
+   "hf_upvotes": 6,
+   "ax_votes": 0,
+   "ax_visits": 9,
+   "heat": 6.9,
+   "orgs": [
+    {
+     "name": "Indian Institute of Technology Bombay",
+     "ror": "02qyf5152"
+    }
+   ],
+   "thumb": "data/thumbs/2611.22382.jpg",
+   "thumb_w": 640,
+   "thumb_h": 417,
+   "sections": []
   },
   {
    "id": "2611.24102",
@@ -1918,8 +2030,8 @@
    "tags": [],
    "hf_upvotes": 5,
    "ax_votes": 0,
-   "ax_visits": 18,
-   "heat": 6.8,
+   "ax_visits": 19,
+   "heat": 6.9,
    "orgs": [
     {
      "logo": "data/logos/hkust.edu.hk.png",
@@ -1929,54 +2041,8 @@
    ],
    "thumb": "data/thumbs/2611.24102.jpg",
    "thumb_w": 640,
-   "thumb_h": 419
-  },
-  {
-   "id": "2611.24830",
-   "title": "A Foundation Model to Measure and Predict Human Behaviour",
-   "authors": [
-    "Haoran Ye",
-    "Tianrui Huo",
-    "Hangzhen Li",
-    "Xin Zhang",
-    "Guojie Song"
-   ],
-   "abstract": "Large language models (LLMs) are increasingly used to infer psychological attributes, predict individual behaviour, and simulate human populations. However, despite generating plausible responses, they often misrepresent individuals and distort population statistics. Here we introduce Chiron, a foundation model to measure and predict human behaviour. We jointly fine-tune an LLM to represent psychological constructs, predict individual behaviour, and align population response distributions with human statistics. The training and evaluation data span 36 behavioural domains and 78 social science experiments, comprising 288,307 person records, 1,411,750 atomic behavioural decisions, and 99,953 psychometric assessments over 109 psychological constructs. In our evaluations, Chiron's psychological measurements agree more closely with human self-reports and exhibit fewer biases that undermine psychometric validity. It predicts individual behaviour more accurately than frontier LLMs (up to 28.4% relative improvement). In simulations of social science experiments, it more accurately captures the direction and magnitude of human experimental effects (82.2--94.3% lower effect-size estimation error). Together, these results establish Chiron as a unified computational instrument for measuring and predicting human behaviour.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL",
-    "cs.AI",
-    "cs.HC"
-   ],
-   "published": "2026-11-18T17:59:08Z",
-   "updated": "2026-11-18T17:59:08Z",
-   "comment": "48 pages, 6 figures",
-   "listed": "2026-11-19",
-   "tags": [
-    "LLM",
-    "alignment",
-    "benchmark",
-    "dataset"
-   ],
-   "hf_upvotes": 5,
-   "ax_votes": 6,
-   "ax_visits": 91,
-   "heat": 20.1,
-   "orgs": [
-    {
-     "logo": "data/logos/pku.edu.cn.png",
-     "name": "Peking University",
-     "ror": "02v51f717"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24830.jpg",
-   "thumb_w": 640,
-   "thumb_h": 368,
-   "summary": {
-    "zh": "Chiron 通过联合微调 LLM 来表征心理构念、预测个体行为并对齐群体响应分布，训练与评估覆盖 36 个行为域、78 个社会科学实验和 288,307 条个体记录；其心理测量与人类自报更一致，个体行为预测相对前沿 LLM 最高提升 28.4%，实验效应量估计误差降低 82.2–94.3%。",
-    "en": "Chiron jointly fine-tunes an LLM to represent psychological constructs, predict individual behaviour, and align population distributions, improving individual prediction by up to 28.4% over frontier LLMs and cutting effect-size estimation error by 82.2–94.3%."
-   },
-   "summary_source": "deepseek-flash"
+   "thumb_h": 419,
+   "sections": []
   },
   {
    "id": "2607.21179",
@@ -2003,7 +2069,8 @@
    "hf_upvotes": 4,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 4.0
+   "heat": 4.0,
+   "sections": []
   },
   {
    "id": "2611.16933",
@@ -2027,7 +2094,8 @@
    "hf_upvotes": 4,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 4.0
+   "heat": 4.0,
+   "sections": []
   },
   {
    "id": "2611.17767",
@@ -2052,7 +2120,8 @@
    "hf_upvotes": 4,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 4.0
+   "heat": 4.0,
+   "sections": []
   },
   {
    "id": "2611.22790",
@@ -2079,7 +2148,8 @@
    "hf_upvotes": 4,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 4.0
+   "heat": 4.0,
+   "sections": []
   },
   {
    "id": "2611.23236",
@@ -2106,13 +2176,36 @@
    "code_url": "https://github.com/Shengxiang-Lin/PGPO",
    "listed": "2026-11-19",
    "tags": [
-    "VLM/LLM",
-    "benchmark"
+    "LLM",
+    "retrieval",
+    "safety",
+    "alignment"
    ],
    "hf_upvotes": 4,
    "ax_votes": 0,
-   "ax_visits": 0,
-   "heat": 4.0
+   "ax_visits": 5,
+   "heat": 4.5,
+   "sections": [
+    "rl"
+   ],
+   "orgs": [
+    {
+     "name": "Zhejiang University",
+     "ror": "00a2xv884"
+    },
+    {
+     "name": "Xi'an Jiaotong University",
+     "ror": "017zhmm22"
+    }
+   ],
+   "thumb": "data/thumbs/2611.23236.jpg",
+   "thumb_w": 640,
+   "thumb_h": 233,
+   "summary": {
+    "zh": "PGPO 面向 LLM 增强推荐中的嵌入反演隐私风险，学习面向高影响原型词的拓扑感知混淆锚点，并沿静态语义图传播，以 GRPO 配合个体差异、结构一致性与语义约束奖励优化；两个基准上实现强反演防御且推荐性能接近上界。",
+    "en": "PGPO learns topology-aware obfuscation anchors for high-influence prototype words and propagates them over a static semantic graph, optimized with GRPO rewards, achieving strong inversion defense with near-upper-bound recommendation on two benchmarks."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.24059",
@@ -2137,12 +2230,43 @@
    "comment": "",
    "listed": "2026-11-19",
    "tags": [
-    "RL"
+    "RL",
+    "LLM",
+    "efficiency",
+    "agents"
    ],
    "hf_upvotes": 4,
-   "ax_votes": 0,
-   "ax_visits": 0,
-   "heat": 4.0
+   "ax_votes": 1,
+   "ax_visits": 42,
+   "heat": 9.2,
+   "sections": [
+    "rl"
+   ],
+   "orgs": [
+    {
+     "logo": "data/logos/illinois.edu.png",
+     "name": "University of Illinois Urbana-Champaign",
+     "ror": "047426m28"
+    },
+    {
+     "name": "Argonne National Laboratory",
+     "ror": "05gvnxz63"
+    },
+    {
+     "name": "Independent Researcher"
+    },
+    {
+     "name": "LMU"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24059.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440,
+   "summary": {
+    "zh": "MRPD 将专家 RL 训练日志按专家学习顺序重放给学生模型，在记录的 token 前缀上重新计算策略梯度并蒸馏最终专家分布，无需环境交互或奖励模型；在 reasoning、search、SQL 三个长时程智能体任务上优于在线 RL 基线和同源专家的 MOPD，合并成本仅为训练专家的约 1/7。",
+    "en": "MRPD consolidates RL experts by replaying their training logs in expert order, recomputing policy gradients and distilling final expert distributions at logged prefixes without environment or reward calls, beating online RL and MOPD at ~1/7 the training compute on reasoning, search, and SQL."
+   },
+   "summary_source": "deepseek-flash"
   },
   {
    "id": "2611.24844",
@@ -2166,7 +2290,8 @@
    "hf_upvotes": 4,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 4.0
+   "heat": 4.0,
+   "sections": []
   },
   {
    "id": "2611.24917",
@@ -2196,7 +2321,8 @@
    "hf_upvotes": 4,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 4.0
+   "heat": 4.0,
+   "sections": []
   },
   {
    "id": "2611.17605",
@@ -2220,7 +2346,8 @@
    "hf_upvotes": 3,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 3.0
+   "heat": 3.0,
+   "sections": []
   },
   {
    "id": "2611.22668",
@@ -2249,7 +2376,8 @@
    "hf_upvotes": 3,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 3.0
+   "heat": 3.0,
+   "sections": []
   },
   {
    "id": "2611.24075",
@@ -2280,7 +2408,8 @@
    "hf_upvotes": 3,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 3.0
+   "heat": 3.0,
+   "sections": []
   },
   {
    "id": "2611.24669",
@@ -2307,7 +2436,8 @@
    "hf_upvotes": 3,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 3.0
+   "heat": 3.0,
+   "sections": []
   }
  ]
 }

@@ -1,12 +1,17 @@
 {
  "title": "Daily Paper",
- "updated_at": "2026-11-28T01:52:45+00:00",
+ "updated_at": "2026-11-28T02:40:51+00:00",
  "default_category": "all",
  "categories": [
   {
    "id": "all",
    "name": "Popular papers",
    "name_zh": "热门论文"
+  },
+  {
+   "id": "rl",
+   "name": "Reinforcement learning",
+   "name_zh": "强化学习"
   }
  ],
  "category_names": {
@@ -62,15 +67,15 @@
   },
   {
    "date": "2026-11-26",
-   "count": 262
+   "count": 296
   },
   {
    "date": "2026-11-25",
-   "count": 207
+   "count": 247
   },
   {
    "date": "2026-11-24",
-   "count": 168
+   "count": 231
   },
   {
    "date": "2026-11-23",

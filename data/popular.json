@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-28T01:55:18+00:00",
+ "updated_at": "2026-11-28T02:44:54+00:00",
  "newest": "2026-11-27",
  "periods": {
   "7": {
@@ -37,8 +37,8 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 234,
-     "ax_visits": 2409,
-     "heat": 474.9,
+     "ax_visits": 2454,
+     "heat": 479.4,
      "orgs": [
       {
        "logo": "data/logos/stanford.edu.png",
@@ -53,7 +53,10 @@
      "thumb": "data/thumbs/2611.30325.jpg",
      "thumb_w": 618,
      "thumb_h": 440,
-     "listed": "2026-11-24"
+     "listed": "2026-11-24",
+     "sections": [
+      "rl"
+     ]
     },
     {
      "id": "2611.32606",
@@ -92,8 +95,8 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 159,
-     "ax_visits": 1869,
-     "heat": 345.9,
+     "ax_visits": 1937,
+     "heat": 352.7,
      "orgs": [
       {
        "logo": "data/logos/stanford.edu.png",
@@ -118,7 +121,8 @@
      "thumb": "data/thumbs/2611.32606.jpg",
      "thumb_w": 640,
      "thumb_h": 281,
-     "listed": "2026-11-25"
+     "listed": "2026-11-25",
+     "sections": []
     },
     {
      "id": "2611.28298",
@@ -149,8 +153,8 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 101,
-     "ax_visits": 2025,
-     "heat": 303.5,
+     "ax_visits": 2075,
+     "heat": 308.5,
      "orgs": [
       {
        "name": "MIT CSAIL",
@@ -160,7 +164,10 @@
      "thumb": "data/thumbs/2611.28298.jpg",
      "thumb_w": 640,
      "thumb_h": 346,
-     "listed": "2026-11-24"
+     "listed": "2026-11-24",
+     "sections": [
+      "rl"
+     ]
     },
     {
      "id": "2611.34923",
@@ -195,9 +202,9 @@
      },
      "summary_source": "deepseek-flash",
      "hf_upvotes": 74,
-     "ax_votes": 92,
-     "ax_visits": 963,
-     "heat": 262.3,
+     "ax_votes": 95,
+     "ax_visits": 1047,
+     "heat": 273.7,
      "orgs": [
       {
        "name": "Huazhong University of Science & Technology",
@@ -216,7 +223,8 @@
      "thumb": "data/thumbs/2611.34923.jpg",
      "thumb_w": 618,
      "thumb_h": 440,
-     "listed": "2026-11-26"
+     "listed": "2026-11-26",
+     "sections": []
     },
     {
      "id": "2611.29897",
@@ -254,8 +262,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 228,
      "ax_votes": 1,
-     "ax_visits": 73,
-     "heat": 236.3,
+     "ax_visits": 74,
+     "heat": 236.4,
      "orgs": [
       {
        "logo": "data/logos/pku.edu.cn.png",
@@ -278,7 +286,8 @@
      "thumb": "data/thumbs/2611.29897.jpg",
      "thumb_w": 640,
      "thumb_h": 272,
-     "listed": "2026-11-24"
+     "listed": "2026-11-24",
+     "sections": []
     },
     {
      "id": "2611.33102",
@@ -312,8 +321,8 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 73,
-     "ax_visits": 970,
-     "heat": 170.0,
+     "ax_visits": 1022,
+     "heat": 175.2,
      "orgs": [
       {
        "name": "Tufa Labs"
@@ -332,7 +341,10 @@
      "thumb": "data/thumbs/2611.33102.jpg",
      "thumb_w": 566,
      "thumb_h": 440,
-     "listed": "2026-11-25"
+     "listed": "2026-11-25",
+     "sections": [
+      "rl"
+     ]
     },
     {
      "id": "2611.30111",
@@ -367,8 +379,8 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 79,
-     "ax_visits": 839,
-     "heat": 162.9,
+     "ax_visits": 846,
+     "heat": 163.6,
      "orgs": [
       {
        "logo": "data/logos/tulane.edu.png",
@@ -401,7 +413,8 @@
      "thumb": "data/thumbs/2611.30111.jpg",
      "thumb_w": 640,
      "thumb_h": 320,
-     "listed": "2026-11-24"
+     "listed": "2026-11-24",
+     "sections": []
     },
     {
      "id": "2611.34051",
@@ -443,8 +456,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 128,
      "ax_votes": 8,
-     "ax_visits": 133,
-     "heat": 149.3,
+     "ax_visits": 153,
+     "heat": 151.3,
      "orgs": [
       {
        "name": "MemTensor"
@@ -470,7 +483,8 @@
      "thumb": "data/thumbs/2611.34051.jpg",
      "thumb_w": 640,
      "thumb_h": 348,
-     "listed": "2026-11-27"
+     "listed": "2026-11-27",
+     "sections": []
     },
     {
      "id": "2611.31201",
@@ -513,8 +527,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 106,
      "ax_votes": 16,
-     "ax_visits": 169,
-     "heat": 138.9,
+     "ax_visits": 173,
+     "heat": 139.3,
      "orgs": [
       {
        "name": "NTU",
@@ -542,7 +556,8 @@
      "thumb": "data/thumbs/2611.31201.jpg",
      "thumb_w": 547,
      "thumb_h": 440,
-     "listed": "2026-11-24"
+     "listed": "2026-11-24",
+     "sections": []
     },
     {
      "id": "2611.31002",
@@ -595,8 +610,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 1,
      "ax_votes": 56,
-     "ax_visits": 701,
-     "heat": 127.1,
+     "ax_visits": 714,
+     "heat": 128.4,
      "orgs": [
       {
        "name": "Tsinghua University",
@@ -634,71 +649,62 @@
      "thumb": "data/thumbs/2611.31002.jpg",
      "thumb_w": 640,
      "thumb_h": 372,
-     "listed": "2026-11-24"
+     "listed": "2026-11-24",
+     "sections": [
+      "rl"
+     ]
     },
     {
-     "id": "2611.27193",
-     "title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
+     "id": "2611.31154",
+     "title": "Attention Latent Feedback",
      "authors": [
-      "Haowei He",
-      "Ziwen Zhao",
-      "Chenshuo Pan",
-      "Gang Lin",
-      "Zhihao Yang",
-      "Chao Wang",
-      "Xinzhang Liu",
-      "Kaidong Yu",
-      "Han Gao",
-      "Dongfang Li",
-      "Menglin Yang",
-      "Shuangyong Song",
-      "Yongxiang Li"
+      "Xuyuan Xiong",
+      "Siyu Chen",
+      "Mengzhao Chen",
+      "Yue Su",
+      "Zhuoran Yang",
+      "Ping Luo",
+      "Xihui Liu"
      ],
-     "abstract": "Manifold-constrained Hyper-Connections (mHC) extends residual connections to multiple streams and stabilizes residual propagation by constraining stream-mixing residual matrices to the Birkhoff polytope, the set of doubly stochastic matrices. In this work, we investigate how to effectively mix residual streams within the Birkhoff polytope. We reveal a mixing trade-off: when under-mixed residual matrices stay close to the vertices of the Birkhoff polytope, hyper-connections will degenerate into a set of nearly independent streams; when over-mixed residual matrices are concentrated around the uniform barycenter of the polytope, streams will become less distinguishable from each other. We theoretically validate our findings by bounding the cumulative residual mixing, stream difference and gradient difference of mixing coefficients across layers. Motivated by these findings, we propose Contraction for Manifold-Constrained Hyper-Connections (cmHC), an exact doubly stochastic method which geometrically contracts the Birkhoff polytope toward its interior. This contraction mitigates under-mixing by forcing the residual matrices to explore deeper into the polytope, with a provable stream mixing bound and no new parameterization. Moreover, we apply a moderate contraction at the shallow layers to prevent over-mixing, enabling stable gradient propagation on extremely large-scale model pretraining. Extensive experiments across dense and mixture-of-experts models at various parameter scales demonstrate the effectiveness and scalability of cmHC. We also develop fused operators for cmHC on Ascend NPUs, reducing hyper-connection execution latency by up to 44.8%.",
+     "abstract": "During autoregressive decoding, the deeper representations of the previous token have already been computed, yet shallow layers at the current token cannot read them directly because standard self-attention connects positions only at the same depth. We introduce Attention Latent Feedback (ALF), an architecture that allows every sublayer to attend to the outputs of the deeper layers at the previous position. Training unrolls this cross-position recurrence into two parallel passes, whereas decoding remains single-pass using cached previous-token states. Across mixture-of-experts models with up to 4.0B parameters, ALF lowers held-out loss by 0.022-0.024 nats over the standard residual with about 1.1% decoding FLOP overhead, and consistently outperforms prior final-state feedback across all three scales on both standard and attention residual backbones. On MoE-1.6B, ALF matches a $1.38\\times$ larger baseline token budget, and on MoE-4.0B it lifts average accuracy across seventeen downstream benchmarks from 45.1% to 47.0%. Analysis further reveals that intermediate and nearby deeper layers drive most of this benefit, allowing a fixed nearest-window variant to retain 89%-94% of the gain at linear read cost while learned attention widens its margin with scale.",
      "primary": "cs.LG",
      "categories": [
       "cs.LG"
      ],
-     "published": "2026-11-20T06:26:11Z",
-     "updated": "2026-11-20T06:26:11Z",
+     "published": "2026-11-23T18:21:05Z",
+     "updated": "2026-11-23T18:21:05Z",
      "comment": "",
      "tags": [
       "LLM",
-      "pretraining",
       "efficiency",
-      "theory"
+      "pretraining"
      ],
      "summary": {
-      "en": "CmHC geometrically contracts the Birkhoff polytope inward to mix residual streams, mitigating under- and over-mixing; it stabilizes pretraining of dense and MoE models and cuts hyper-connection latency by up to 44.8% on Ascend NPUs.",
-      "zh": "cmHC 通过将 Birkhoff 多面体几何收缩到内部来混合残差流，缓解 under-mixing 与 over-mixing 的权衡，在稠密和 MoE 模型预训练中稳定梯度传播，并在 Ascend NPU 上将超连接执行延迟降低最多 44.8%。"
+      "en": "Attention Latent Feedback lets each sublayer attend to deeper layers' outputs at the previous position, lowering held-out loss by 0.022-0.024 nats at ~1.1% decoding FLOP overhead and lifting MoE-4.0B average accuracy from 45.1% to 47.0%.",
+      "zh": "Attention Latent Feedback (ALF) 让每个子层关注前一个位置更深层的输出，训练时展开为两遍并行计算、解码仍为单遍；在最多 4.0B 参数的 MoE 模型上使 held-out loss 比标准残差降低 0.022–0.024 nats，解码 FLOP 开销约 1.1%，MoE-4.0B 在十七个下游基准上平均准确率从 45.1% 提升到 47.0%。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 94,
-     "ax_votes": 6,
-     "ax_visits": 84,
-     "heat": 108.4,
+     "hf_upvotes": 10,
+     "ax_votes": 42,
+     "ax_visits": 575,
+     "heat": 109.5,
      "orgs": [
       {
-       "name": "China Telecom"
+       "logo": "data/logos/hku.hk.png",
+       "name": "HKU",
+       "ror": "02zhqgq86"
       },
       {
-       "logo": "data/logos/hkust.edu.hk.png",
-       "name": "HKUST",
-       "ror": "00q4vv597"
-      },
-      {
-       "name": "Harbin Institute of Technology",
-       "ror": "01yqg2h08"
-      },
-      {
-       "logo": "data/logos/huawei.com.png",
-       "name": "Huawei"
+       "logo": "data/logos/yale.edu.png",
+       "name": "Yale University",
+       "ror": "03v76x132"
       }
      ],
-     "thumb": "data/thumbs/2611.27193.jpg",
+     "thumb": "data/thumbs/2611.31154.jpg",
      "thumb_w": 640,
-     "thumb_h": 310,
-     "listed": "2026-11-23"
+     "thumb_h": 246,
+     "listed": "2026-11-24",
+     "sections": []
     },
     {
      "id": "2611.34575",
@@ -836,8 +842,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 81,
      "ax_votes": 12,
-     "ax_visits": 147,
-     "heat": 107.7,
+     "ax_visits": 159,
+     "heat": 108.9,
      "orgs": [
       {
        "name": "Shanghai AI Lab"
@@ -846,58 +852,75 @@
      "thumb": "data/thumbs/2611.34575.jpg",
      "thumb_w": 640,
      "thumb_h": 302,
-     "listed": "2026-11-26"
+     "listed": "2026-11-26",
+     "sections": [
+      "rl"
+     ]
     },
     {
-     "id": "2611.31154",
-     "title": "Attention Latent Feedback",
+     "id": "2611.27193",
+     "title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
      "authors": [
-      "Xuyuan Xiong",
-      "Siyu Chen",
-      "Mengzhao Chen",
-      "Yue Su",
-      "Zhuoran Yang",
-      "Ping Luo",
-      "Xihui Liu"
+      "Haowei He",
+      "Ziwen Zhao",
+      "Chenshuo Pan",
+      "Gang Lin",
+      "Zhihao Yang",
+      "Chao Wang",
+      "Xinzhang Liu",
+      "Kaidong Yu",
+      "Han Gao",
+      "Dongfang Li",
+      "Menglin Yang",
+      "Shuangyong Song",
+      "Yongxiang Li"
      ],
-     "abstract": "During autoregressive decoding, the deeper representations of the previous token have already been computed, yet shallow layers at the current token cannot read them directly because standard self-attention connects positions only at the same depth. We introduce Attention Latent Feedback (ALF), an architecture that allows every sublayer to attend to the outputs of the deeper layers at the previous position. Training unrolls this cross-position recurrence into two parallel passes, whereas decoding remains single-pass using cached previous-token states. Across mixture-of-experts models with up to 4.0B parameters, ALF lowers held-out loss by 0.022-0.024 nats over the standard residual with about 1.1% decoding FLOP overhead, and consistently outperforms prior final-state feedback across all three scales on both standard and attention residual backbones. On MoE-1.6B, ALF matches a $1.38\\times$ larger baseline token budget, and on MoE-4.0B it lifts average accuracy across seventeen downstream benchmarks from 45.1% to 47.0%. Analysis further reveals that intermediate and nearby deeper layers drive most of this benefit, allowing a fixed nearest-window variant to retain 89%-94% of the gain at linear read cost while learned attention widens its margin with scale.",
+     "abstract": "Manifold-constrained Hyper-Connections (mHC) extends residual connections to multiple streams and stabilizes residual propagation by constraining stream-mixing residual matrices to the Birkhoff polytope, the set of doubly stochastic matrices. In this work, we investigate how to effectively mix residual streams within the Birkhoff polytope. We reveal a mixing trade-off: when under-mixed residual matrices stay close to the vertices of the Birkhoff polytope, hyper-connections will degenerate into a set of nearly independent streams; when over-mixed residual matrices are concentrated around the uniform barycenter of the polytope, streams will become less distinguishable from each other. We theoretically validate our findings by bounding the cumulative residual mixing, stream difference and gradient difference of mixing coefficients across layers. Motivated by these findings, we propose Contraction for Manifold-Constrained Hyper-Connections (cmHC), an exact doubly stochastic method which geometrically contracts the Birkhoff polytope toward its interior. This contraction mitigates under-mixing by forcing the residual matrices to explore deeper into the polytope, with a provable stream mixing bound and no new parameterization. Moreover, we apply a moderate contraction at the shallow layers to prevent over-mixing, enabling stable gradient propagation on extremely large-scale model pretraining. Extensive experiments across dense and mixture-of-experts models at various parameter scales demonstrate the effectiveness and scalability of cmHC. We also develop fused operators for cmHC on Ascend NPUs, reducing hyper-connection execution latency by up to 44.8%.",
      "primary": "cs.LG",
      "categories": [
       "cs.LG"
      ],
-     "published": "2026-11-23T18:21:05Z",
-     "updated": "2026-11-23T18:21:05Z",
+     "published": "2026-11-20T06:26:11Z",
+     "updated": "2026-11-20T06:26:11Z",
      "comment": "",
      "tags": [
       "LLM",
+      "pretraining",
       "efficiency",
-      "pretraining"
+      "theory"
      ],
      "summary": {
-      "en": "Attention Latent Feedback lets each sublayer attend to deeper layers' outputs at the previous position, lowering held-out loss by 0.022-0.024 nats at ~1.1% decoding FLOP overhead and lifting MoE-4.0B average accuracy from 45.1% to 47.0%.",
-      "zh": "Attention Latent Feedback (ALF) 让每个子层关注前一个位置更深层的输出，训练时展开为两遍并行计算、解码仍为单遍；在最多 4.0B 参数的 MoE 模型上使 held-out loss 比标准残差降低 0.022–0.024 nats，解码 FLOP 开销约 1.1%，MoE-4.0B 在十七个下游基准上平均准确率从 45.1% 提升到 47.0%。"
+      "en": "CmHC geometrically contracts the Birkhoff polytope inward to mix residual streams, mitigating under- and over-mixing; it stabilizes pretraining of dense and MoE models and cuts hyper-connection latency by up to 44.8% on Ascend NPUs.",
+      "zh": "cmHC 通过将 Birkhoff 多面体几何收缩到内部来混合残差流，缓解 under-mixing 与 over-mixing 的权衡，在稠密和 MoE 模型预训练中稳定梯度传播，并在 Ascend NPU 上将超连接执行延迟降低最多 44.8%。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 10,
-     "ax_votes": 42,
-     "ax_visits": 552,
-     "heat": 107.2,
+     "hf_upvotes": 94,
+     "ax_votes": 6,
+     "ax_visits": 86,
+     "heat": 108.6,
      "orgs": [
       {
-       "logo": "data/logos/hku.hk.png",
-       "name": "HKU",
-       "ror": "02zhqgq86"
+       "name": "China Telecom"
       },
       {
-       "logo": "data/logos/yale.edu.png",
-       "name": "Yale University",
-       "ror": "03v76x132"
+       "logo": "data/logos/hkust.edu.hk.png",
+       "name": "HKUST",
+       "ror": "00q4vv597"
+      },
+      {
+       "name": "Harbin Institute of Technology",
+       "ror": "01yqg2h08"
+      },
+      {
+       "logo": "data/logos/huawei.com.png",
+       "name": "Huawei"
       }
      ],
-     "thumb": "data/thumbs/2611.31154.jpg",
+     "thumb": "data/thumbs/2611.27193.jpg",
      "thumb_w": 640,
-     "thumb_h": 246,
-     "listed": "2026-11-24"
+     "thumb_h": 310,
+     "listed": "2026-11-23",
+     "sections": []
     },
     {
      "id": "2611.34232",
@@ -998,15 +1021,16 @@
       "zh": "OS-Omni 是覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的跨平台计算机代理实时基准，v1 每平台 48 个任务、另含 12 个跨平台工作流，任务平均需 67.54 步；最强代理 Claude Opus 5.5 平均成功率 68.5%，低于人类 77.3%，在 iOS 和 macOS 上差距超过 25 点。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 103,
+     "hf_upvotes": 104,
      "ax_votes": 1,
-     "ax_visits": 23,
-     "heat": 106.3,
+     "ax_visits": 32,
+     "heat": 108.2,
      "orgs": [],
      "thumb": "data/thumbs/2611.34232.jpg",
      "thumb_w": 640,
      "thumb_h": 368,
-     "listed": "2026-11-27"
+     "listed": "2026-11-27",
+     "sections": []
     },
     {
      "id": "2611.30634",
@@ -1039,8 +1063,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 95,
      "ax_votes": 2,
-     "ax_visits": 79,
-     "heat": 104.9,
+     "ax_visits": 82,
+     "heat": 105.2,
      "orgs": [
       {
        "name": "Beijing University of Posts and Telecommunications",
@@ -1053,7 +1077,8 @@
      "thumb": "data/thumbs/2611.30634.jpg",
      "thumb_w": 640,
      "thumb_h": 392,
-     "listed": "2026-11-25"
+     "listed": "2026-11-25",
+     "sections": []
     },
     {
      "id": "2611.31094",
@@ -1092,8 +1117,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 25,
      "ax_votes": 34,
-     "ax_visits": 365,
-     "heat": 95.5,
+     "ax_visits": 371,
+     "heat": 96.1,
      "orgs": [
       {
        "name": "NUS",
@@ -1106,7 +1131,8 @@
      "thumb": "data/thumbs/2611.31094.jpg",
      "thumb_w": 618,
      "thumb_h": 440,
-     "listed": "2026-11-24"
+     "listed": "2026-11-24",
+     "sections": []
     },
     {
      "id": "2611.30989",
@@ -1137,8 +1163,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 87,
      "ax_votes": 2,
-     "ax_visits": 47,
-     "heat": 93.7,
+     "ax_visits": 49,
+     "heat": 93.9,
      "orgs": [
       {
        "name": "NUS",
@@ -1148,7 +1174,8 @@
      "thumb": "data/thumbs/2611.30989.jpg",
      "thumb_w": 640,
      "thumb_h": 246,
-     "listed": "2026-11-24"
+     "listed": "2026-11-24",
+     "sections": []
     },
     {
      "id": "2611.27963",
@@ -1183,8 +1210,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 63,
      "ax_votes": 10,
-     "ax_visits": 205,
-     "heat": 93.5,
+     "ax_visits": 206,
+     "heat": 93.6,
      "orgs": [
       {
        "logo": "data/logos/polyu.edu.hk.png",
@@ -1195,7 +1222,8 @@
      "thumb": "data/thumbs/2611.27963.jpg",
      "thumb_w": 640,
      "thumb_h": 355,
-     "listed": "2026-11-23"
+     "listed": "2026-11-23",
+     "sections": []
     },
     {
      "id": "2611.29338",
@@ -1237,8 +1265,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 46,
      "ax_votes": 10,
-     "ax_visits": 242,
-     "heat": 80.2,
+     "ax_visits": 245,
+     "heat": 80.5,
      "orgs": [
       {
        "name": "Tsinghua University",
@@ -1252,7 +1280,8 @@
      "thumb": "data/thumbs/2611.29338.jpg",
      "thumb_w": 441,
      "thumb_h": 440,
-     "listed": "2026-11-24"
+     "listed": "2026-11-24",
+     "sections": []
     },
     {
      "id": "2611.31205",
@@ -1287,8 +1316,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 67,
      "ax_votes": 6,
-     "ax_visits": 69,
-     "heat": 79.9,
+     "ax_visits": 70,
+     "heat": 80.0,
      "orgs": [
       {
        "name": "NTU",
@@ -1306,7 +1335,8 @@
      "thumb": "data/thumbs/2611.31205.jpg",
      "thumb_w": 640,
      "thumb_h": 300,
-     "listed": "2026-11-25"
+     "listed": "2026-11-25",
+     "sections": []
     }
    ]
   },
@@ -1345,8 +1375,8 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 234,
-     "ax_visits": 2409,
-     "heat": 474.9,
+     "ax_visits": 2454,
+     "heat": 479.4,
      "orgs": [
       {
        "logo": "data/logos/stanford.edu.png",
@@ -1361,7 +1391,10 @@
      "thumb": "data/thumbs/2611.30325.jpg",
      "thumb_w": 618,
      "thumb_h": 440,
-     "listed": "2026-11-24"
+     "listed": "2026-11-24",
+     "sections": [
+      "rl"
+     ]
     },
     {
      "id": "2611.32606",
@@ -1400,8 +1433,8 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 159,
-     "ax_visits": 1869,
-     "heat": 345.9,
+     "ax_visits": 1937,
+     "heat": 352.7,
      "orgs": [
       {
        "logo": "data/logos/stanford.edu.png",
@@ -1426,7 +1459,8 @@
      "thumb": "data/thumbs/2611.32606.jpg",
      "thumb_w": 640,
      "thumb_h": 281,
-     "listed": "2026-11-25"
+     "listed": "2026-11-25",
+     "sections": []
     },
     {
      "id": "2611.28298",
@@ -1457,8 +1491,8 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 101,
-     "ax_visits": 2025,
-     "heat": 303.5,
+     "ax_visits": 2075,
+     "heat": 308.5,
      "orgs": [
       {
        "name": "MIT CSAIL",
@@ -1468,46 +1502,10 @@
      "thumb": "data/thumbs/2611.28298.jpg",
      "thumb_w": 640,
      "thumb_h": 346,
-     "listed": "2026-11-24"
-    },
-    {
-     "id": "2611.26450",
-     "title": "A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights",
-     "authors": [
-      "Tanmay Sah"
-     ],
-     "abstract": "Pretrained language models (LMs) remain unreliable on exact multi-digit arithmetic without gradient fine-tuning or external tool interpreters. We introduce closed-form, zero-gradient circuit-grafting primitives that compile deterministic computation directly into pretrained LM weights using zero training examples and zero runtime hooks, while bounding per-layer normalization drift and preserving natural-language (NL) competence. Our construction combines three analytical mechanisms: (1) two-layer Mellin-GLU quadrature over bias-free SwiGLU/GeGLU layers, turning unknown per-token RMSNorm scaling into translation along a log-spaced gate grid ($>250\\times$ dynamic range) with IEEE 754 error bounds; (2) cross-token scale cancellation via signed Chebyshev Indefinite-RoPE self-sink attention and memoryless SiLU-antisymmetric GatedDeltaNet shifts; and (3) axis-aligned width extension ($d \\to d+K$) with $\\sqrt{d/(d+K)}$ norm compensation, Base-1000 canonical BPE emission, and differential $(+254,-256)$ tied unembeddings. An automated 5-stage compiler synthesizes 4-8 digit signed $\\{+,-,\\times\\}$ circuits in constant $\\mathsf{TC}^0$ depth alongside 3-literal Boolean (100%, $N=1{,}728$; plus 42-layer Gemma 4 E4B audits) and 5-bit Majority/Parity (100%) circuits. On 6-digit arithmetic ($N=1{,}200$, BF16), IBM Granite 4.2 3B (1.07M-1.33M active non-zeros, $\\le 0.036\\%$) and Alibaba Qwen 3.5 4B (2.25M-2.39M non-zeros, $\\le 0.057\\%$) reach 99.17% and 100.00% ALU-prefix accuracy (100% with an FP32 sidecar) and 98%-100% mid-sentence resumption, outperforming 12.8K-sample LoRA (42.2% / 61.7%, 0% inline continuation). A factorized block-sparse sidecar holds A100 memory at 7.89 / 10.65 GiB (4.60 / 8.14 GiB under INT8/INT4 + FP32 sidecar) while passing all 14/14 pre-registered $>2$K-token Tango splits ($N=4{,}392$; 0/11,134 OOD triggers).",
-     "primary": "cs.AI",
-     "categories": [
-      "cs.AI"
-     ],
-     "published": "2026-11-19T17:18:38Z",
-     "updated": "2026-11-19T17:18:38Z",
-     "comment": "27 pages, 3 figures, 24 tables",
-     "tags": [
-      "LLM",
-      "reasoning",
-      "math",
-      "efficiency"
-     ],
-     "summary": {
-      "en": "Closed-form zero-gradient circuit-grafting compiles exact multi-digit arithmetic and Boolean/majority circuits into pretrained LM weights without training data or runtime hooks; Granite 4.2 3B and Qwen 3.5 4B reach 99.17%/100.00% ALU-prefix accuracy versus 42.2%/61.7% for 12.8K-sample LoRA.",
-      "zh": "闭式零梯度电路嫁接原语将精确多位数算术与布尔/多数/奇偶电路直接编译进预训练权重，无需训练样本或运行时钩子；IBM Granite 4.2 3B 与 Qwen 3.5 4B 在 6 位数算术上达 99.17%/100.00% ALU 前缀准确率，远超 12.8K 样本 LoRA 的 42.2%/61.7%。"
-     },
-     "summary_source": "deepseek-flash",
-     "hf_upvotes": 7,
-     "ax_votes": 74,
-     "ax_visits": 1894,
-     "heat": 270.4,
-     "orgs": [
-      {
-       "name": "Independent Researcher"
-      }
-     ],
-     "thumb": "data/thumbs/2611.26450.jpg",
-     "thumb_w": 618,
-     "thumb_h": 440,
-     "listed": "2026-11-20"
+     "listed": "2026-11-24",
+     "sections": [
+      "rl"
+     ]
     },
     {
      "id": "2611.34923",
@@ -1542,9 +1540,9 @@
      },
      "summary_source": "deepseek-flash",
      "hf_upvotes": 74,
-     "ax_votes": 92,
-     "ax_visits": 963,
-     "heat": 262.3,
+     "ax_votes": 95,
+     "ax_visits": 1047,
+     "heat": 273.7,
      "orgs": [
       {
        "name": "Huazhong University of Science & Technology",
@@ -1563,7 +1561,48 @@
      "thumb": "data/thumbs/2611.34923.jpg",
      "thumb_w": 618,
      "thumb_h": 440,
-     "listed": "2026-11-26"
+     "listed": "2026-11-26",
+     "sections": []
+    },
+    {
+     "id": "2611.26450",
+     "title": "A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights",
+     "authors": [
+      "Tanmay Sah"
+     ],
+     "abstract": "Pretrained language models (LMs) remain unreliable on exact multi-digit arithmetic without gradient fine-tuning or external tool interpreters. We introduce closed-form, zero-gradient circuit-grafting primitives that compile deterministic computation directly into pretrained LM weights using zero training examples and zero runtime hooks, while bounding per-layer normalization drift and preserving natural-language (NL) competence. Our construction combines three analytical mechanisms: (1) two-layer Mellin-GLU quadrature over bias-free SwiGLU/GeGLU layers, turning unknown per-token RMSNorm scaling into translation along a log-spaced gate grid ($>250\\times$ dynamic range) with IEEE 754 error bounds; (2) cross-token scale cancellation via signed Chebyshev Indefinite-RoPE self-sink attention and memoryless SiLU-antisymmetric GatedDeltaNet shifts; and (3) axis-aligned width extension ($d \\to d+K$) with $\\sqrt{d/(d+K)}$ norm compensation, Base-1000 canonical BPE emission, and differential $(+254,-256)$ tied unembeddings. An automated 5-stage compiler synthesizes 4-8 digit signed $\\{+,-,\\times\\}$ circuits in constant $\\mathsf{TC}^0$ depth alongside 3-literal Boolean (100%, $N=1{,}728$; plus 42-layer Gemma 4 E4B audits) and 5-bit Majority/Parity (100%) circuits. On 6-digit arithmetic ($N=1{,}200$, BF16), IBM Granite 4.2 3B (1.07M-1.33M active non-zeros, $\\le 0.036\\%$) and Alibaba Qwen 3.5 4B (2.25M-2.39M non-zeros, $\\le 0.057\\%$) reach 99.17% and 100.00% ALU-prefix accuracy (100% with an FP32 sidecar) and 98%-100% mid-sentence resumption, outperforming 12.8K-sample LoRA (42.2% / 61.7%, 0% inline continuation). A factorized block-sparse sidecar holds A100 memory at 7.89 / 10.65 GiB (4.60 / 8.14 GiB under INT8/INT4 + FP32 sidecar) while passing all 14/14 pre-registered $>2$K-token Tango splits ($N=4{,}392$; 0/11,134 OOD triggers).",
+     "primary": "cs.AI",
+     "categories": [
+      "cs.AI"
+     ],
+     "published": "2026-11-19T17:18:38Z",
+     "updated": "2026-11-19T17:18:38Z",
+     "comment": "27 pages, 3 figures, 24 tables",
+     "tags": [
+      "LLM",
+      "reasoning",
+      "math",
+      "efficiency"
+     ],
+     "summary": {
+      "en": "Closed-form zero-gradient circuit-grafting compiles exact multi-digit arithmetic and Boolean/majority circuits into pretrained LM weights without training data or runtime hooks; Granite 4.2 3B and Qwen 3.5 4B reach 99.17%/100.00% ALU-prefix accuracy versus 42.2%/61.7% for 12.8K-sample LoRA.",
+      "zh": "闭式零梯度电路嫁接原语将精确多位数算术与布尔/多数/奇偶电路直接编译进预训练权重，无需训练样本或运行时钩子；IBM Granite 4.2 3B 与 Qwen 3.5 4B 在 6 位数算术上达 99.17%/100.00% ALU 前缀准确率，远超 12.8K 样本 LoRA 的 42.2%/61.7%。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 7,
+     "ax_votes": 74,
+     "ax_visits": 1906,
+     "heat": 271.6,
+     "orgs": [
+      {
+       "name": "Independent Researcher"
+      }
+     ],
+     "thumb": "data/thumbs/2611.26450.jpg",
+     "thumb_w": 618,
+     "thumb_h": 440,
+     "listed": "2026-11-20",
+     "sections": []
     },
     {
      "id": "2611.29897",
@@ -1601,8 +1640,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 228,
      "ax_votes": 1,
-     "ax_visits": 73,
-     "heat": 236.3,
+     "ax_visits": 74,
+     "heat": 236.4,
      "orgs": [
       {
        "logo": "data/logos/pku.edu.cn.png",
@@ -1625,7 +1664,8 @@
      "thumb": "data/thumbs/2611.29897.jpg",
      "thumb_w": 640,
      "thumb_h": 272,
-     "listed": "2026-11-24"
+     "listed": "2026-11-24",
+     "sections": []
     },
     {
      "id": "2611.24738",
@@ -1653,8 +1693,8 @@
      ],
      "hf_upvotes": 127,
      "ax_votes": 44,
-     "ax_visits": 518,
-     "heat": 222.8,
+     "ax_visits": 521,
+     "heat": 223.1,
      "orgs": [
       {
        "name": "NUS",
@@ -1665,10 +1705,11 @@
      "thumb_w": 640,
      "thumb_h": 417,
      "summary": {
-      "zh": "Jeveration 在冻结的视觉语言模型上做单次前向的图像生成，用共享随机状态协调并行预测保持全局一致，先学离散图像码分布引导生成，512x512 图像仅需 78 ms，比现有统一模型快至多 122 倍。",
-      "en": "Jeveration repurposes a frozen VLM for single-pass image generation, coordinating parallel predictions via a shared random state and learning discrete image-code distributions; it generates 512x512 images in 78 ms, up to 122x faster than unified models."
+      "en": "Jeveration repurposes a frozen VLM for single-pass image generation, coordinating parallel predictions via a shared random state and learning discrete image-code distributions; it generates 512x512 images in 78 ms, up to 122x faster than unified models.",
+      "zh": "Jeveration 在冻结的视觉语言模型上做单次前向的图像生成，用共享随机状态协调并行预测保持全局一致，先学离散图像码分布引导生成，512x512 图像仅需 78 ms，比现有统一模型快至多 122 倍。"
      },
-     "summary_source": "deepseek-flash"
+     "summary_source": "deepseek-flash",
+     "sections": []
     },
     {
      "id": "2611.23068",
@@ -1725,10 +1766,68 @@
      "thumb_w": 507,
      "thumb_h": 440,
      "summary": {
-      "zh": "在7种进化方法和6个模型、超1000万次LLM调用上验证Resolution Hypothesis：候选层面噪声评估无法区分优劣artifact导致误差累积，方法层面几个百分点的差距小于同一方法两次独立运行的差异，说明agent进化的瓶颈在于可靠识别改进。",
-      "en": "Testing 7 evolution methods and 6 models over 10M LLM calls, the Resolution Hypothesis shows noisy evaluation cannot distinguish helpful from harmful artifacts, and method-level margins fall below run-to-run variance."
+      "en": "Testing 7 evolution methods and 6 models over 10M LLM calls, the Resolution Hypothesis shows noisy evaluation cannot distinguish helpful from harmful artifacts, and method-level margins fall below run-to-run variance.",
+      "zh": "在7种进化方法和6个模型、超1000万次LLM调用上验证Resolution Hypothesis：候选层面噪声评估无法区分优劣artifact导致误差累积，方法层面几个百分点的差距小于同一方法两次独立运行的差异，说明agent进化的瓶颈在于可靠识别改进。"
      },
-     "summary_source": "deepseek-flash"
+     "summary_source": "deepseek-flash",
+     "sections": []
+    },
+    {
+     "id": "2611.33102",
+     "title": "Reinforcement Learning Can Be Recovered From Its Own Rollouts",
+     "authors": [
+      "Jiayi Sheng",
+      "Jingwen Gu",
+      "Guanning Zeng",
+      "Zhaoyi Zhou",
+      "Stefano Viel",
+      "Qianqian Wang",
+      "Fahim Tajwar",
+      "Andrea Zanette"
+     ],
+     "abstract": "Broadly speaking, reinforcement learning (RL) post-training converts compute into model capabilities by training on model-generated data. Typically, the rollouts are discarded after each update, and the knowledge acquired during RL resides in the model weights. In this work, we investigate how much of this knowledge is retained in the rollouts themselves. A natural first attempt is to replay the original RL algorithm on archived (rather than freshly generated) rollouts, but this generally leads to catastrophic collapse. We provide a simple explanation for this phenomenon, which in turn suggests a remedy we call maximum likelihood replay: fitting the model to its archived rollouts. Surprisingly, starting from the same base model and replaying the rollouts in the order in which they were generated, without any distinction between correct and incorrect responses, is sufficient to recover the performance of online RL. In fact, a single maximum likelihood update per rollout batch closely tracks the entire learning curve of online RL. Furthermore, maximum likelihood replay on the rollouts of the last few RL steps often suffices to recover the final model's performance. This suggests that much of the compute invested in RL goes into discovering an improved sampling distribution rather than learning it from samples.",
+     "primary": "cs.LG",
+     "categories": [
+      "cs.LG"
+     ],
+     "published": "2026-11-24T18:38:06Z",
+     "updated": "2026-11-25T18:46:02Z",
+     "comment": "Preprint. 23 pages, 20 figures, 7 tables",
+     "tags": [
+      "RL",
+      "LLM",
+      "efficiency"
+     ],
+     "summary": {
+      "en": "Investigating how much RL-acquired knowledge persists in rollouts, maximum likelihood replay that fits archived rollouts in generation order without distinguishing correct responses matches online RL performance.",
+      "zh": "研究RL后训练产生的rollout中保留多少知识，发现直接用最大似然拟合归档rollout（maximum likelihood replay），不区分对错、按生成顺序回放，即可复现在线RL的性能，单次更新即可追踪完整学习曲线。"
+     },
+     "summary_source": "deepseek-flash",
+     "ax_votes": 73,
+     "ax_visits": 1022,
+     "heat": 175.2,
+     "orgs": [
+      {
+       "name": "Tufa Labs"
+      },
+      {
+       "logo": "data/logos/harvard.edu.png",
+       "name": "Harvard University",
+       "ror": "03vek6s52"
+      },
+      {
+       "logo": "data/logos/illinois.edu.png",
+       "name": "University of Illinois Urbana-Champaign",
+       "ror": "047426m28"
+      }
+     ],
+     "thumb": "data/thumbs/2611.33102.jpg",
+     "thumb_w": 566,
+     "thumb_h": 440,
+     "listed": "2026-11-25",
+     "sections": [
+      "rl"
+     ]
     },
     {
      "id": "2611.26603",
@@ -1763,8 +1862,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 41,
      "ax_votes": 66,
-     "ax_visits": 655,
-     "heat": 172.5,
+     "ax_visits": 664,
+     "heat": 173.4,
      "orgs": [
       {
        "logo": "data/logos/apple.com.png",
@@ -1774,61 +1873,8 @@
      "thumb": "data/thumbs/2611.26603.jpg",
      "thumb_w": 247,
      "thumb_h": 440,
-     "listed": "2026-11-20"
-    },
-    {
-     "id": "2611.33102",
-     "title": "Reinforcement Learning Can Be Recovered From Its Own Rollouts",
-     "authors": [
-      "Jiayi Sheng",
-      "Jingwen Gu",
-      "Guanning Zeng",
-      "Zhaoyi Zhou",
-      "Stefano Viel",
-      "Qianqian Wang",
-      "Fahim Tajwar",
-      "Andrea Zanette"
-     ],
-     "abstract": "Broadly speaking, reinforcement learning (RL) post-training converts compute into model capabilities by training on model-generated data. Typically, the rollouts are discarded after each update, and the knowledge acquired during RL resides in the model weights. In this work, we investigate how much of this knowledge is retained in the rollouts themselves. A natural first attempt is to replay the original RL algorithm on archived (rather than freshly generated) rollouts, but this generally leads to catastrophic collapse. We provide a simple explanation for this phenomenon, which in turn suggests a remedy we call maximum likelihood replay: fitting the model to its archived rollouts. Surprisingly, starting from the same base model and replaying the rollouts in the order in which they were generated, without any distinction between correct and incorrect responses, is sufficient to recover the performance of online RL. In fact, a single maximum likelihood update per rollout batch closely tracks the entire learning curve of online RL. Furthermore, maximum likelihood replay on the rollouts of the last few RL steps often suffices to recover the final model's performance. This suggests that much of the compute invested in RL goes into discovering an improved sampling distribution rather than learning it from samples.",
-     "primary": "cs.LG",
-     "categories": [
-      "cs.LG"
-     ],
-     "published": "2026-11-24T18:38:06Z",
-     "updated": "2026-11-25T18:46:02Z",
-     "comment": "Preprint. 23 pages, 20 figures, 7 tables",
-     "tags": [
-      "RL",
-      "LLM",
-      "efficiency"
-     ],
-     "summary": {
-      "en": "Investigating how much RL-acquired knowledge persists in rollouts, maximum likelihood replay that fits archived rollouts in generation order without distinguishing correct responses matches online RL performance.",
-      "zh": "研究RL后训练产生的rollout中保留多少知识，发现直接用最大似然拟合归档rollout（maximum likelihood replay），不区分对错、按生成顺序回放，即可复现在线RL的性能，单次更新即可追踪完整学习曲线。"
-     },
-     "summary_source": "deepseek-flash",
-     "ax_votes": 73,
-     "ax_visits": 970,
-     "heat": 170.0,
-     "orgs": [
-      {
-       "name": "Tufa Labs"
-      },
-      {
-       "logo": "data/logos/harvard.edu.png",
-       "name": "Harvard University",
-       "ror": "03vek6s52"
-      },
-      {
-       "logo": "data/logos/illinois.edu.png",
-       "name": "University of Illinois Urbana-Champaign",
-       "ror": "047426m28"
-      }
-     ],
-     "thumb": "data/thumbs/2611.33102.jpg",
-     "thumb_w": 566,
-     "thumb_h": 440,
-     "listed": "2026-11-25"
+     "listed": "2026-11-20",
+     "sections": []
     },
     {
      "id": "2611.26444",
@@ -1901,8 +1947,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 57,
      "ax_votes": 56,
-     "ax_visits": 570,
-     "heat": 170.0,
+     "ax_visits": 571,
+     "heat": 170.1,
      "orgs": [
       {
        "name": "Tsinghua University",
@@ -1946,7 +1992,8 @@
      "thumb": "data/thumbs/2611.26444.jpg",
      "thumb_w": 635,
      "thumb_h": 440,
-     "listed": "2026-11-20"
+     "listed": "2026-11-20",
+     "sections": []
     },
     {
      "id": "2611.30111",
@@ -1981,8 +2028,8 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 79,
-     "ax_visits": 839,
-     "heat": 162.9,
+     "ax_visits": 846,
+     "heat": 163.6,
      "orgs": [
       {
        "logo": "data/logos/tulane.edu.png",
@@ -2015,7 +2062,8 @@
      "thumb": "data/thumbs/2611.30111.jpg",
      "thumb_w": 640,
      "thumb_h": 320,
-     "listed": "2026-11-24"
+     "listed": "2026-11-24",
+     "sections": []
     },
     {
      "id": "2611.34051",
@@ -2057,8 +2105,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 128,
      "ax_votes": 8,
-     "ax_visits": 133,
-     "heat": 149.3,
+     "ax_visits": 153,
+     "heat": 151.3,
      "orgs": [
       {
        "name": "MemTensor"
@@ -2084,7 +2132,8 @@
      "thumb": "data/thumbs/2611.34051.jpg",
      "thumb_w": 640,
      "thumb_h": 348,
-     "listed": "2026-11-27"
+     "listed": "2026-11-27",
+     "sections": []
     },
     {
      "id": "2611.31201",
@@ -2127,8 +2176,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 106,
      "ax_votes": 16,
-     "ax_visits": 169,
-     "heat": 138.9,
+     "ax_visits": 173,
+     "heat": 139.3,
      "orgs": [
       {
        "name": "NTU",
@@ -2156,73 +2205,8 @@
      "thumb": "data/thumbs/2611.31201.jpg",
      "thumb_w": 547,
      "thumb_h": 440,
-     "listed": "2026-11-24"
-    },
-    {
-     "id": "2611.21885",
-     "title": "Language Models Can Rewrite Their Own Weights",
-     "authors": [
-      "Jiajun Fan",
-      "Neil He",
-      "Changyi Yang",
-      "Andy Mao",
-      "Xi Zhu",
-      "Chaoran Cheng",
-      "Kaiqu Liang",
-      "Shuaike Shen",
-      "Zetian Li",
-      "Ruihan Guo",
-      "Ge Liu"
-     ],
-     "abstract": "A language model is trained once and frozen. Making it better takes another training run, or a prompt, a harness or extra computation at inference that is gone once the task ends. We show a third way: to our knowledge for the first time, a language model rewrites its own weights by its own reasoning and becomes better, with no gradients and no training. We call this self-rewriting: the model is its own optimizer. In earlier work, a frontier model edited a much smaller one; here an open 27B model, given its weights, its graded answers and the ability to run itself, diagnoses its own failure and rewrites the weights behind it. It surpasses itself: its own edit makes it 6.6 points more accurate on problems it never saw. It keeps getting better: it tests its edits on practice problems and submits only what works, each edit improving on the last, and over eight consecutive sessions its accuracy only rises. It repairs a damaged copy of itself, like a broken robot that fixes itself without being rebuilt: the copy solves almost nothing, yet with no retraining and without ever reading the original weights, the model brings it back to over 80% of the original accuracy on image tasks it never saw. And the ability emerges with scale: in one model family, the smaller models make no edit or break themselves, and only the largest improves and repairs itself. Unlike test-time scaling, self-rewriting writes its gain into the weights, at no cost per answer; unlike training, it runs only forward passes, as serving does. The wall between training and inference is a limit of our tools, not a property of intelligence. We believe self-rewriting is a necessary step toward recursive self-improvement: a model that, like a human, does not separate training from inference could keep upgrading itself for life, with no larger model, no harness or prompt engineering, and no pre- or post-training.",
-     "primary": "cs.AI",
-     "categories": [
-      "cs.AI"
-     ],
-     "published": "2026-11-16T20:55:08Z",
-     "updated": "2026-11-18T08:57:59Z",
-     "comment": "",
-     "listed": "2026-11-20",
-     "tags": [
-      "LLM",
-      "reasoning",
-      "efficiency",
-      "interpretability"
-     ],
-     "hf_upvotes": 24,
-     "ax_votes": 38,
-     "ax_visits": 664,
-     "heat": 128.4,
-     "orgs": [
-      {
-       "name": "UIUC"
-      },
-      {
-       "name": "CMU"
-      },
-      {
-       "name": "Rutgers"
-      },
-      {
-       "name": "Princeton"
-      },
-      {
-       "name": "Stanford University",
-       "ror": "00f54p054",
-       "logo": "data/logos/stanford.edu.png"
-      },
-      {
-       "name": "Yale"
-      }
-     ],
-     "thumb": "data/thumbs/2611.21885.jpg",
-     "thumb_w": 640,
-     "thumb_h": 308,
-     "summary": {
-      "zh": "自改写方法让开放 27B 模型仅凭前向推理、无梯度无训练地诊断自身失败并重写自身权重，在未见问题上准确率提升 6.6 个百分点，连续八轮编辑精度持续上升，还能把近乎失效的受损副本恢复到原精度 80% 以上，且该能力仅在最大模型中涌现。",
-      "en": "Self-rewriting lets an open 27B model diagnose its failures and rewrite its own weights via forward-only reasoning, no gradients or training, gaining 6.6 points on unseen problems and restoring a damaged copy to over 80% of original accuracy."
-     },
-     "summary_source": "deepseek-flash"
+     "listed": "2026-11-24",
+     "sections": []
     },
     {
      "id": "2611.31002",
@@ -2275,8 +2259,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 1,
      "ax_votes": 56,
-     "ax_visits": 701,
-     "heat": 127.1,
+     "ax_visits": 714,
+     "heat": 128.4,
      "orgs": [
       {
        "name": "Tsinghua University",
@@ -2314,7 +2298,77 @@
      "thumb": "data/thumbs/2611.31002.jpg",
      "thumb_w": 640,
      "thumb_h": 372,
-     "listed": "2026-11-24"
+     "listed": "2026-11-24",
+     "sections": [
+      "rl"
+     ]
+    },
+    {
+     "id": "2611.21885",
+     "title": "Language Models Can Rewrite Their Own Weights",
+     "authors": [
+      "Jiajun Fan",
+      "Neil He",
+      "Changyi Yang",
+      "Andy Mao",
+      "Xi Zhu",
+      "Chaoran Cheng",
+      "Kaiqu Liang",
+      "Shuaike Shen",
+      "Zetian Li",
+      "Ruihan Guo",
+      "Ge Liu"
+     ],
+     "abstract": "A language model is trained once and frozen. Making it better takes another training run, or a prompt, a harness or extra computation at inference that is gone once the task ends. We show a third way: to our knowledge for the first time, a language model rewrites its own weights by its own reasoning and becomes better, with no gradients and no training. We call this self-rewriting: the model is its own optimizer. In earlier work, a frontier model edited a much smaller one; here an open 27B model, given its weights, its graded answers and the ability to run itself, diagnoses its own failure and rewrites the weights behind it. It surpasses itself: its own edit makes it 6.6 points more accurate on problems it never saw. It keeps getting better: it tests its edits on practice problems and submits only what works, each edit improving on the last, and over eight consecutive sessions its accuracy only rises. It repairs a damaged copy of itself, like a broken robot that fixes itself without being rebuilt: the copy solves almost nothing, yet with no retraining and without ever reading the original weights, the model brings it back to over 80% of the original accuracy on image tasks it never saw. And the ability emerges with scale: in one model family, the smaller models make no edit or break themselves, and only the largest improves and repairs itself. Unlike test-time scaling, self-rewriting writes its gain into the weights, at no cost per answer; unlike training, it runs only forward passes, as serving does. The wall between training and inference is a limit of our tools, not a property of intelligence. We believe self-rewriting is a necessary step toward recursive self-improvement: a model that, like a human, does not separate training from inference could keep upgrading itself for life, with no larger model, no harness or prompt engineering, and no pre- or post-training.",
+     "primary": "cs.AI",
+     "categories": [
+      "cs.AI"
+     ],
+     "published": "2026-11-16T20:55:08Z",
+     "updated": "2026-11-18T08:57:59Z",
+     "comment": "",
+     "listed": "2026-11-20",
+     "tags": [
+      "LLM",
+      "reasoning",
+      "efficiency",
+      "interpretability"
+     ],
+     "hf_upvotes": 24,
+     "ax_votes": 38,
+     "ax_visits": 664,
+     "heat": 128.4,
+     "orgs": [
+      {
+       "name": "UIUC"
+      },
+      {
+       "name": "CMU"
+      },
+      {
+       "name": "Rutgers"
+      },
+      {
+       "name": "Princeton"
+      },
+      {
+       "logo": "data/logos/stanford.edu.png",
+       "name": "Stanford University",
+       "ror": "00f54p054"
+      },
+      {
+       "name": "Yale"
+      }
+     ],
+     "thumb": "data/thumbs/2611.21885.jpg",
+     "thumb_w": 640,
+     "thumb_h": 308,
+     "summary": {
+      "en": "Self-rewriting lets an open 27B model diagnose its failures and rewrite its own weights via forward-only reasoning, no gradients or training, gaining 6.6 points on unseen problems and restoring a damaged copy to over 80% of original accuracy.",
+      "zh": "自改写方法让开放 27B 模型仅凭前向推理、无梯度无训练地诊断自身失败并重写自身权重，在未见问题上准确率提升 6.6 个百分点，连续八轮编辑精度持续上升，还能把近乎失效的受损副本恢复到原精度 80% 以上，且该能力仅在最大模型中涌现。"
+     },
+     "summary_source": "deepseek-flash",
+     "sections": []
     },
     {
      "id": "2611.22925",
@@ -2369,10 +2423,11 @@
      "thumb_w": 580,
      "thumb_h": 440,
      "summary": {
-      "zh": "Invoker-Render 结合双向创作模型与因果四步流式模型，统一以结构代理、外观参考和语言为条件，并用 Progressive Forcing 从视频历史蒸馏到自生成 rollout；实验在代理类型、粒度、相机路径上控制灵活，较流式基线稳定提升，支持 30 分钟赛车生成不漂移。",
-      "en": "Invoker-Render couples a bidirectional creation model with a causal four-step streaming model sharing a structural-proxy, appearance-reference and language interface; Progressive Forcing distills video-history training into self-generated rollouts, yielding stable 30-minute racing streams over streaming baselines."
+      "en": "Invoker-Render couples a bidirectional creation model with a causal four-step streaming model sharing a structural-proxy, appearance-reference and language interface; Progressive Forcing distills video-history training into self-generated rollouts, yielding stable 30-minute racing streams over streaming baselines.",
+      "zh": "Invoker-Render 结合双向创作模型与因果四步流式模型，统一以结构代理、外观参考和语言为条件，并用 Progressive Forcing 从视频历史蒸馏到自生成 rollout；实验在代理类型、粒度、相机路径上控制灵活，较流式基线稳定提升，支持 30 分钟赛车生成不漂移。"
      },
-     "summary_source": "deepseek-flash"
+     "summary_source": "deepseek-flash",
+     "sections": []
     },
     {
      "id": "2611.22287",
@@ -2410,19 +2465,20 @@
        "name": "Luma AI"
       },
       {
+       "logo": "data/logos/caltech.edu.png",
        "name": "California Institute of Technology",
-       "ror": "05dxps055",
-       "logo": "data/logos/caltech.edu.png"
+       "ror": "05dxps055"
       }
      ],
      "thumb": "data/thumbs/2611.22287.jpg",
      "thumb_w": 640,
      "thumb_h": 323,
      "summary": {
-      "zh": "DWD 让微调后的扩散 transformer 通过线性头在最后一步直接预测像素，替代解码器；仅微调末几个 block 并锚定去噪头，在 Wan 视频生成上降低 23% warping error，并将像素流模型的 ImageNet FID 从 1.55 降至 1.43。",
-      "en": "DWD lets a finetuned diffusion transformer predict final pixels via a linear head at the last sampling step, removing the decoder; it cuts Wan video warping error by 23% and improves pixel-flow ImageNet FID from 1.55 to 1.43."
+      "en": "DWD lets a finetuned diffusion transformer predict final pixels via a linear head at the last sampling step, removing the decoder; it cuts Wan video warping error by 23% and improves pixel-flow ImageNet FID from 1.55 to 1.43.",
+      "zh": "DWD 让微调后的扩散 transformer 通过线性头在最后一步直接预测像素，替代解码器；仅微调末几个 block 并锚定去噪头，在 Wan 视频生成上降低 23% warping error，并将像素流模型的 ImageNet FID 从 1.55 降至 1.43。"
      },
-     "summary_source": "deepseek-flash"
+     "summary_source": "deepseek-flash",
+     "sections": []
     },
     {
      "id": "2611.26629",
@@ -2453,8 +2509,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 47,
      "ax_votes": 35,
-     "ax_visits": 361,
-     "heat": 118.1,
+     "ax_visits": 362,
+     "heat": 118.2,
      "orgs": [
       {
        "logo": "data/logos/vt.edu.png",
@@ -2469,71 +2525,60 @@
      "thumb": "data/thumbs/2611.26629.jpg",
      "thumb_w": 640,
      "thumb_h": 203,
-     "listed": "2026-11-20"
+     "listed": "2026-11-20",
+     "sections": []
     },
     {
-     "id": "2611.27193",
-     "title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
+     "id": "2611.31154",
+     "title": "Attention Latent Feedback",
      "authors": [
-      "Haowei He",
-      "Ziwen Zhao",
-      "Chenshuo Pan",
-      "Gang Lin",
-      "Zhihao Yang",
-      "Chao Wang",
-      "Xinzhang Liu",
-      "Kaidong Yu",
-      "Han Gao",
-      "Dongfang Li",
-      "Menglin Yang",
-      "Shuangyong Song",
-      "Yongxiang Li"
+      "Xuyuan Xiong",
+      "Siyu Chen",
+      "Mengzhao Chen",
+      "Yue Su",
+      "Zhuoran Yang",
+      "Ping Luo",
+      "Xihui Liu"
      ],
-     "abstract": "Manifold-constrained Hyper-Connections (mHC) extends residual connections to multiple streams and stabilizes residual propagation by constraining stream-mixing residual matrices to the Birkhoff polytope, the set of doubly stochastic matrices. In this work, we investigate how to effectively mix residual streams within the Birkhoff polytope. We reveal a mixing trade-off: when under-mixed residual matrices stay close to the vertices of the Birkhoff polytope, hyper-connections will degenerate into a set of nearly independent streams; when over-mixed residual matrices are concentrated around the uniform barycenter of the polytope, streams will become less distinguishable from each other. We theoretically validate our findings by bounding the cumulative residual mixing, stream difference and gradient difference of mixing coefficients across layers. Motivated by these findings, we propose Contraction for Manifold-Constrained Hyper-Connections (cmHC), an exact doubly stochastic method which geometrically contracts the Birkhoff polytope toward its interior. This contraction mitigates under-mixing by forcing the residual matrices to explore deeper into the polytope, with a provable stream mixing bound and no new parameterization. Moreover, we apply a moderate contraction at the shallow layers to prevent over-mixing, enabling stable gradient propagation on extremely large-scale model pretraining. Extensive experiments across dense and mixture-of-experts models at various parameter scales demonstrate the effectiveness and scalability of cmHC. We also develop fused operators for cmHC on Ascend NPUs, reducing hyper-connection execution latency by up to 44.8%.",
+     "abstract": "During autoregressive decoding, the deeper representations of the previous token have already been computed, yet shallow layers at the current token cannot read them directly because standard self-attention connects positions only at the same depth. We introduce Attention Latent Feedback (ALF), an architecture that allows every sublayer to attend to the outputs of the deeper layers at the previous position. Training unrolls this cross-position recurrence into two parallel passes, whereas decoding remains single-pass using cached previous-token states. Across mixture-of-experts models with up to 4.0B parameters, ALF lowers held-out loss by 0.022-0.024 nats over the standard residual with about 1.1% decoding FLOP overhead, and consistently outperforms prior final-state feedback across all three scales on both standard and attention residual backbones. On MoE-1.6B, ALF matches a $1.38\\times$ larger baseline token budget, and on MoE-4.0B it lifts average accuracy across seventeen downstream benchmarks from 45.1% to 47.0%. Analysis further reveals that intermediate and nearby deeper layers drive most of this benefit, allowing a fixed nearest-window variant to retain 89%-94% of the gain at linear read cost while learned attention widens its margin with scale.",
      "primary": "cs.LG",
      "categories": [
       "cs.LG"
      ],
-     "published": "2026-11-20T06:26:11Z",
-     "updated": "2026-11-20T06:26:11Z",
+     "published": "2026-11-23T18:21:05Z",
+     "updated": "2026-11-23T18:21:05Z",
      "comment": "",
      "tags": [
       "LLM",
-      "pretraining",
       "efficiency",
-      "theory"
+      "pretraining"
      ],
      "summary": {
-      "en": "CmHC geometrically contracts the Birkhoff polytope inward to mix residual streams, mitigating under- and over-mixing; it stabilizes pretraining of dense and MoE models and cuts hyper-connection latency by up to 44.8% on Ascend NPUs.",
-      "zh": "cmHC 通过将 Birkhoff 多面体几何收缩到内部来混合残差流，缓解 under-mixing 与 over-mixing 的权衡，在稠密和 MoE 模型预训练中稳定梯度传播，并在 Ascend NPU 上将超连接执行延迟降低最多 44.8%。"
+      "en": "Attention Latent Feedback lets each sublayer attend to deeper layers' outputs at the previous position, lowering held-out loss by 0.022-0.024 nats at ~1.1% decoding FLOP overhead and lifting MoE-4.0B average accuracy from 45.1% to 47.0%.",
+      "zh": "Attention Latent Feedback (ALF) 让每个子层关注前一个位置更深层的输出，训练时展开为两遍并行计算、解码仍为单遍；在最多 4.0B 参数的 MoE 模型上使 held-out loss 比标准残差降低 0.022–0.024 nats，解码 FLOP 开销约 1.1%，MoE-4.0B 在十七个下游基准上平均准确率从 45.1% 提升到 47.0%。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 94,
-     "ax_votes": 6,
-     "ax_visits": 84,
-     "heat": 108.4,
+     "hf_upvotes": 10,
+     "ax_votes": 42,
+     "ax_visits": 575,
+     "heat": 109.5,
      "orgs": [
       {
-       "name": "China Telecom"
+       "logo": "data/logos/hku.hk.png",
+       "name": "HKU",
+       "ror": "02zhqgq86"
       },
       {
-       "logo": "data/logos/hkust.edu.hk.png",
-       "name": "HKUST",
-       "ror": "00q4vv597"
-      },
-      {
-       "name": "Harbin Institute of Technology",
-       "ror": "01yqg2h08"
-      },
-      {
-       "logo": "data/logos/huawei.com.png",
-       "name": "Huawei"
+       "logo": "data/logos/yale.edu.png",
+       "name": "Yale University",
+       "ror": "03v76x132"
       }
      ],
-     "thumb": "data/thumbs/2611.27193.jpg",
+     "thumb": "data/thumbs/2611.31154.jpg",
      "thumb_w": 640,
-     "thumb_h": 310,
-     "listed": "2026-11-23"
+     "thumb_h": 246,
+     "listed": "2026-11-24",
+     "sections": []
     }
    ]
   }

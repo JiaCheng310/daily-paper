@@ -30,8 +30,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 7,
    "ax_votes": 74,
-   "ax_visits": 1894,
-   "heat": 270.4,
+   "ax_visits": 1906,
+   "heat": 271.6,
    "orgs": [
     {
      "name": "Independent Researcher"
@@ -40,7 +40,8 @@
    "thumb": "data/thumbs/2611.26450.jpg",
    "thumb_w": 618,
    "thumb_h": 440,
-   "listed": "2026-11-20"
+   "listed": "2026-11-20",
+   "sections": []
   },
   {
    "id": "2611.26603",
@@ -75,8 +76,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 41,
    "ax_votes": 66,
-   "ax_visits": 655,
-   "heat": 172.5,
+   "ax_visits": 664,
+   "heat": 173.4,
    "orgs": [
     {
      "logo": "data/logos/apple.com.png",
@@ -86,7 +87,8 @@
    "thumb": "data/thumbs/2611.26603.jpg",
    "thumb_w": 247,
    "thumb_h": 440,
-   "listed": "2026-11-20"
+   "listed": "2026-11-20",
+   "sections": []
   },
   {
    "id": "2611.26444",
@@ -159,8 +161,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 57,
    "ax_votes": 56,
-   "ax_visits": 570,
-   "heat": 170.0,
+   "ax_visits": 571,
+   "heat": 170.1,
    "orgs": [
     {
      "name": "Tsinghua University",
@@ -204,912 +206,8 @@
    "thumb": "data/thumbs/2611.26444.jpg",
    "thumb_w": 635,
    "thumb_h": 440,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.26629",
-   "title": "Posterior Matching Distillation",
-   "authors": [
-    "Hidir Yesiltepe",
-    "Julius Berner",
-    "Arash Vahdat",
-    "Pinar Yanardag"
-   ],
-   "abstract": "Diffusion distillation accelerates image and video generation by compressing a pretrained teacher's iterative sampling process into a few network evaluations. Distribution-based methods achieve this by matching the student's output distribution to the teacher's. This matching is often driven by reverse-KL objectives, whose mode-seeking bias favors dominant teacher modes at the expense of diversity across samples. We introduce Posterior Matching Distillation (PMD), a new member of the distribution-based distillation family that combines mode-covering posterior sampling with any-step generation. At zero population loss, PMD recovers the teacher's full posterior of clean images at each trained noise level. Its stochastic student supports any-step sampling budgets within the trained timestep grid without further training. To learn these posteriors, PMD matches exponentially reweighted averages of student samples conditioned on a fixed noisy state to corresponding teacher posterior means. Under Gaussian corruption, exponentially tilted posterior mean is a single teacher evaluation at a shifted input. We prove that, matching tilted means over an open neighborhood uniquely identifies the full posterior. PMD thus supervises the entire conditional distribution through a family of mean constraints, without any auxiliary student-score network. Experiments on SDXL and FLUX.2 [klein] 4B demonstrate that PMD achieves the best FID among 4-step methods on both models, while maintaining competitive or leading performance across prompt-alignment and perceptual-quality metrics.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-19T18:59:57Z",
-   "updated": "2026-11-19T18:59:57Z",
-   "comment": "Project Page: https://pmd-distillation.github.io/",
-   "tags": [
-    "diffusion",
-    "image generation",
-    "efficiency"
-   ],
-   "summary": {
-    "en": "Posterior Matching Distillation combines mode-covering posterior sampling with any-step generation by matching exponentially tilted student sample means, achieving the best 4-step FID on SDXL and FLUX.2 [klein] 4B.",
-    "zh": "PMD 将模式覆盖的后验采样与任意步数生成结合，通过匹配指数重加权学生样本均值来学习教师后验，在 SDXL 和 FLUX.2 [klein] 4B 上取得 4 步方法中最佳 FID。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 47,
-   "ax_votes": 35,
-   "ax_visits": 361,
-   "heat": 118.1,
-   "orgs": [
-    {
-     "logo": "data/logos/vt.edu.png",
-     "name": "Virginia Tech",
-     "ror": "02smfhw86"
-    },
-    {
-     "logo": "data/logos/nvidia.com.png",
-     "name": "NVIDIA"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26629.jpg",
-   "thumb_w": 640,
-   "thumb_h": 203,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.26409",
-   "title": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
-   "authors": [
-    "Changli Tang",
-    "Jie Yang",
-    "Tianyi Wang",
-    "Lei Li",
-    "Daoze Zhang",
-    "Zijie Xin",
-    "Zhan Liu",
-    "Li Li",
-    "Jinchang Xu",
-    "Fengyun Rao",
-    "Chao Zhang",
-    "Jing Lyu"
-   ],
-   "abstract": "Video understanding, particularly with accompanying audio, remains a central challenge in multimodal intelligence. In this report, we introduce \\textbf{WeMM-Video}, a family of Chinese-English bilingual omni-modal foundation models spanning 2B, 4B, 9B, and 35B-A3B variants. Centering on joint audio-visual perception and reasoning, WeMM-Video unifies text, image, audio, and video processing within a hybrid-thinking paradigm, seamlessly supporting both a non-thinking instruct mode for fast, direct responses and a thinking mode for explicit step-by-step reasoning. The models are trained on a large-scale multimodal corpus of approximately 1.2 trillion tokens through progressive pre-training and a multi-stage post-training pipeline incorporating multi-teacher OPD, anti-repetition MrDPO, and specialist RL. Evaluated across more than 120 benchmarks, WeMM-Video demonstrates superior performance in omni-modal video understanding and reasoning, while maintaining highly competitive capabilities across general audio, silent video, image, and text tasks. Specifically, in omni-modal video evaluations, our flagship WeMM-Video-35B-A3B establishes a new open-source state of the art, substantially outperforming proprietary models such as Qwen3.5-Omni-Flash and Seed2.0-Mini-0428 while narrowing the gap with the strong Gemini-3.0-Flash, and our compact WeMM-Video-9B surpasses the larger open-source Qwen3-Omni-30B-A3B-Instruct. We publicly release the WeMM-Video family along with our evaluation and reproduction pipeline to foster further research and development in the open-source community.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "eess.AS"
-   ],
-   "published": "2026-11-19T16:58:15Z",
-   "updated": "2026-11-19T16:58:15Z",
-   "comment": "",
-   "tags": [
-    "multimodal",
-    "video generation",
-    "reasoning",
-    "LLM"
-   ],
-   "summary": {
-    "en": "WeMM-Video is a bilingual omni-modal video model family (2B–35B-A3B) with thinking and non-thinking modes, trained on ~1.2T tokens; the 35B-A3B flagship outperforms Qwen3.5-Omni-Flash and Seed2.0-Mini-0428 on omni-modal video benchmarks.",
-    "zh": "WeMM-Video 是覆盖 2B/4B/9B/35B-A3B 的中英双语全模态基础模型，统一文本、图像、音频、视频并支持非思考与思考双模式，用约 1.2 万亿 token 渐进预训练与多教师 OPD、MrDPO、专家 RL 训练，旗舰 35B-A3B 在全模态视频评测中超越 Qwen3.5-Omni-Flash 与 Seed2.0-Mini-0428。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 50,
-   "ax_votes": 11,
-   "ax_visits": 292,
-   "heat": 90.2,
-   "orgs": [
-    {
-     "logo": "data/logos/tencent.com.png",
-     "name": "Tencent"
-    },
-    {
-     "name": "Tsinghua University",
-     "ror": "03cve4549"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26409.jpg",
-   "thumb_w": 640,
-   "thumb_h": 287,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.26595",
-   "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
-   "authors": [
-    "Yiyan Ji",
-    "Qixun Wang",
-    "Yang Shi",
-    "Zhuoran Zhang",
-    "Yifan Xu",
-    "Tengfei Liu",
-    "Yuqi Tang",
-    "Xiaohan Zhang",
-    "Shujie Li",
-    "Jiafu Tang",
-    "Xuanyu Zhu",
-    "Xinyu Liu",
-    "Yan He",
-    "Yushuo Guan",
-    "Zihao Wang",
-    "Xianghua Ying",
-    "Shixuan Liu",
-    "Haotian Wang",
-    "Wenjing Yang",
-    "Zhaoxiang Zhang",
-    "Yuanxing Zhang",
-    "Pengfei Wan",
-    "Jiaheng Liu"
-   ],
-   "abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-19T18:51:58Z",
-   "updated": "2026-11-25T08:18:24Z",
-   "comment": "52 pages",
-   "tags": [
-    "video generation",
-    "agents",
-    "3D"
-   ],
-   "summary": {
-    "en": "Controlled experiments and blinded human evaluation probe proxy granularity, physics simulation, and prompting in Code2Video, yielding Coda-DaVinci, a task-adaptive multi-agent framework with leading instruction following on VTR and scene consistency on R2M.",
-    "zh": "通过受控实验与盲测人类评估，系统考察 Code2Video 中代理粒度、物理模拟与提示词的影响，并据此构建任务自适应多智能体框架 Coda-DaVinci，在 VTR 与 R2M 上取得领先的指令遵循和场景一致性。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 43,
-   "ax_votes": 5,
-   "ax_visits": 365,
-   "heat": 84.5,
-   "orgs": [
-    {
-     "name": "Nanjing University",
-     "ror": "01rxvg760"
-    },
-    {
-     "name": "KlingAI Research"
-    },
-    {
-     "logo": "data/logos/pku.edu.cn.png",
-     "name": "Peking University",
-     "ror": "02v51f717"
-    },
-    {
-     "logo": "data/logos/hkust.edu.hk.png",
-     "name": "HKUST",
-     "ror": "00q4vv597"
-    },
-    {
-     "logo": "data/logos/hku.hk.png",
-     "name": "HKU",
-     "ror": "02zhqgq86"
-    },
-    {
-     "name": "Tsinghua University",
-     "ror": "03cve4549"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26595.jpg",
-   "thumb_w": 532,
-   "thumb_h": 440,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.26627",
-   "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
-   "authors": [
-    "Tuna Han Salih Meral",
-    "Kaan Oktay",
-    "Alec Helbling",
-    "Atakan Kara",
-    "Duen Horng Chau",
-    "Pinar Yanardag"
-   ],
-   "abstract": "Reinforcement learning (RL) post-training substantially improves the visual quality, text rendering, and compositional accuracy of diffusion transformers. Because capabilities such as rendering requested text or composing multiple objects are inherently prompt-dependent, a natural hypothesis is that improving them requires learning complex, input-dependent transformations. To isolate how much of these gains an input-independent shift explains, we probe each RL-tuned model with a deliberately simple parameterization: a fixed set of steering vectors added to the block outputs of the frozen base model. On SD3.5-M, these vectors hold 65x fewer parameters than the RL-tuned LoRA (0.29M against 18.8M). We fit them to match the velocity predictions of public RL-tuned checkpoints, with no reward in the objective. Although the vectors are identical for every prompt, token, and sampling seed, they recover 90.0-96.3% of the reward gains of six RL-tuned image models, and 89.8% and 111.9% on two RL-tuned video models. Initialized at zero and trained with online RL, the vectors alone exceed the reward gains of weight-based RL on text rendering (OCR) and human preference (PickScore) on SD3.5-M. A constant shift thus suffices for most of the gain of policy-gradient RL post-training: without new input-dependent transformations, it steers the pretrained generator toward what it can already compute.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.LG"
-   ],
-   "published": "2026-11-19T18:59:53Z",
-   "updated": "2026-11-19T18:59:53Z",
-   "comment": "Project page: https://rl-is-steering.github.io",
-   "tags": [
-    "diffusion",
-    "RL",
-    "interpretability",
-    "image generation"
-   ],
-   "summary": {
-    "en": "Fixed steering vectors added to frozen base-model block outputs, 65x smaller than RL-tuned LoRA, recover 90.0-96.3% of reward gains on six RL-tuned image models and 89.8%/111.9% on two video models.",
-    "zh": "用固定的一组 steering vectors 加到冻结基座模型 block 输出上，以 SD3.5-M 上 0.29M 参数（比 RL-tuned LoRA 少 65 倍）复现六个图像 RL 模型 90.0–96.3% 的奖励增益，两个视频模型达 89.8% 和 111.9%。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 22,
-   "ax_votes": 17,
-   "ax_visits": 196,
-   "heat": 58.6,
-   "orgs": [
-    {
-     "logo": "data/logos/vt.edu.png",
-     "name": "Virginia Tech",
-     "ror": "02smfhw86"
-    },
-    {
-     "name": "Georgia Tech"
-    },
-    {
-     "logo": "data/logos/ibm.com.png",
-     "name": "IBM"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26627.jpg",
-   "thumb_w": 640,
-   "thumb_h": 322,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.21373",
-   "title": "WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection",
-   "authors": [
-    "Yipeng Du",
-    "Yuxi Li",
-    "Ying Zhang",
-    "Chong Sun",
-    "Chen Li",
-    "Jing Lyu",
-    "Ying Tai"
-   ],
-   "abstract": "Recent advances in video generation call for reliable detection grounded in explicit forensic evidence. However, current methods primarily depend on single-pass chain-of-thought reasoning that overlooks brief or localized artifacts, or on predefined multi-agent workflows that offer limited flexibility in selecting relevant inspections. Even with adaptive investigation, optimizing the investigation policy alone does not directly improve the forensic capabilities of fixed experts. We introduce WeVisForensics, an agentic framework in which a main investigator agent coordinates a self-evolving library of forensic inspector sub-agents spanning visual and audio cues. The investigator learns which artifact type to examine, over which window, and when to conclude, and these interactions provide shared feedback for both levels of agents. Our dual-timescale policy optimization strategy, DTPO, closes this loop through fast reinforcement learning of the investigator and slower refinement of the inspectors, guided by annotated artifact intervals, to report subtle artifacts they once dismissed. Furthermore, we curate ForenCue-30K, combining role-specific forensic annotations and interaction trajectories to supervise individual inspections and their coordination, with an accompanying reinforcement-learning pool. Experiments show that WeVisForensics averages 95.2% detection accuracy across in-domain, out-of-domain and agentic benchmarks, 9.0% above the strongest prior detector, while grounding its verdicts in localized evidence.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.AI"
-   ],
-   "published": "2026-11-16T16:36:14Z",
-   "updated": "2026-11-16T16:36:14Z",
-   "comment": "",
    "listed": "2026-11-20",
-   "tags": [
-    "agents",
-    "video generation",
-    "detection",
-    "multimodal"
-   ],
-   "hf_upvotes": 57,
-   "ax_votes": 8,
-   "ax_visits": 103,
-   "heat": 75.3,
-   "orgs": [
-    {
-     "name": "Nanjing University",
-     "ror": "01rxvg760"
-    },
-    {
-     "logo": "data/logos/tencent.com.png",
-     "name": "Tencent"
-    }
-   ],
-   "thumb": "data/thumbs/2611.21373.jpg",
-   "thumb_w": 640,
-   "thumb_h": 291,
-   "summary": {
-    "zh": "WeVisForensics 用一个主调查 agent 调度可自我进化的视觉与音频取证子 agent，配合双时间尺度策略优化 DTPO 和 ForenCue-30K 数据，在域内、域外与 agentic 基准上平均检测准确率达 95.2%，比最强基线高 9.0%。",
-    "en": "WeVisForensics coordinates a self-evolving library of visual and audio forensic inspector agents via a main investigator and dual-timescale policy optimization DTPO, reaching 95.2% average detection accuracy across benchmarks, 9.0% above the strongest prior detector."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.26617",
-   "title": "One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning",
-   "authors": [
-    "Yuxin Jiang",
-    "Wenqiang Sun",
-    "Jiaqi Li",
-    "Yuchao Gu",
-    "Lvmin Zhang",
-    "Ivor Tsang",
-    "Mike Zheng Shou"
-   ],
-   "abstract": "Videos reveal how the world changes, but rarely the actions that cause those changes. Latent action learning recovers such supervision from visual transitions, yet often learns the underlying dynamics largely from scratch. We ask whether a pretrained video generator can instead provide the prior for both inverse and forward dynamics. We introduce O$^{2}$LaF, built on a simple principle: one prior, two dynamics. We initialize both models from the same pretrained video DiT and adapt them to their distinct roles: a feed-forward transition encoder with learnable action queries for inverse dynamics, and a causal, action-conditioned video generator for forward dynamics. By controlling information access and optimizing both dynamics end-to-end through a compact bottleneck, O$^{2}$LaF learns transferable actions from unlabeled videos. Across navigation and robotic manipulation, O$^{2}$LaF sets a new state of the art in few-shot action probing and enables stronger zero-shot action transfer across visual contexts and embodiments. Beyond generative video priors, we further extend our framework to predictive representation priors such as V-JEPA2, achieving competitive performance. Our findings suggest a broader paradigm for latent-action learning: repurposing pretrained video models to discover transferable actions and predict their consequences.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.AI",
-    "cs.LG",
-    "cs.RO"
-   ],
-   "published": "2026-11-19T18:58:14Z",
-   "updated": "2026-11-19T18:58:14Z",
-   "comment": "Project page: https://showlab.github.io/o2laf Code: https://github.com/showlab/O2LaF",
-   "code_url": "https://github.com/showlab/O2LaF",
-   "tags": [
-    "video generation",
-    "world model",
-    "agents",
-    "robotics"
-   ],
-   "summary": {
-    "en": "O²LaF repurposes one pretrained video DiT as both inverse and forward dynamics, trained end-to-end through a compact bottleneck, achieving state-of-the-art few-shot action probing and stronger zero-shot action transfer in navigation and manipulation.",
-    "zh": "O²LaF 将同一个预训练视频 DiT 复用作逆动力学与正动力学两个模型，通过控制信息通路与紧凑瓶颈端到端训练，在导航和机器人操作中刷新 few-shot 动作探测最优结果，并实现更强的零样本动作迁移。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 19,
-   "ax_votes": 12,
-   "ax_visits": 220,
-   "heat": 53.0,
-   "orgs": [
-    {
-     "name": "NUS",
-     "ror": "01tgyzw49"
-    },
-    {
-     "name": "A*STAR"
-    },
-    {
-     "logo": "data/logos/tencent.com.png",
-     "name": "Tencent"
-    },
-    {
-     "logo": "data/logos/stanford.edu.png",
-     "name": "Stanford University",
-     "ror": "00f54p054"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26617.jpg",
-   "thumb_w": 640,
-   "thumb_h": 204,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.26590",
-   "title": "Probing the \"Conscious\" Mind: Selective Access and Global Workspace in Vision-Language Models",
-   "authors": [
-    "Jiahao Huang",
-    "Jun Wang"
-   ],
-   "abstract": "Vision-language models (VLMs) integrate visual and textual information, but their outputs do not reveal internal concept representations. Global workspace theory (GWT) proposes that information is selected from parallel brain processes, integrated in a shared workspace, and made available to specialised processes. We introduce the Multimodal Concept Lens (MC-Lens), a multimodal Jacobian lens, to study these functions in VLM concept processing. Its vision encoder and language decoder lenses map intermediate states to a shared semantic space defined by the decoder's output vocabulary to compare concept accessibility across modalities. MC-Lens supports internal concept interventions to examine the role of accessed concepts in downstream computation. (i) Accessibility and selective access. Multimodal concept information is readable in intermediate states and selectively accessible as tasks require. We extend \"readout carriers\" from one name token to a token set to better capture and express concept information and support counterfactual experiments. (ii) Concepts in downstream computation. Counterfactual experiments show that accessed concept information participates in downstream computation and reasoning. (iii) Development of cross-modal alignment and selective access. We develop two J-space metrics tracking the development of cross-modal concept alignment more clearly than hidden state cosine in controlled VLM training. The experiment also shows that reliable selective access develops later than concept accessibility. (iv) Shared functions across models. Across VLM families and sizes, we find shared patterns of concept accessibility, query-dependent selectivity and cross-task intervention effects despite differences in internal organisation. These findings offer an experimental basis to study GWT in multimodal artificial systems and how it can guide cross-modal alignment improvements.",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI",
-    "cs.CV",
-    "cs.LG"
-   ],
-   "published": "2026-11-19T18:46:50Z",
-   "updated": "2026-11-19T18:46:50Z",
-   "comment": "",
-   "tags": [
-    "VLM",
-    "interpretability",
-    "multimodal",
-    "reasoning"
-   ],
-   "summary": {
-    "en": "Multimodal Concept Lens (MC-Lens), a multimodal Jacobian lens, maps VLM intermediate states into a shared semantic space and uses concept interventions to show accessed concepts feed downstream reasoning; selective access develops later than concept accessibility across VLM families.",
-    "zh": "Multimodal Concept Lens (MC-Lens) 用多模态 Jacobian lens 把 VLM 中间状态映射到解码器词表构成的共享语义空间，并通过概念干预验证概念信息参与下游推理；实验发现选择性访问比概念可读性更晚发展，且跨模型家族存在共享模式。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 32,
-   "ax_votes": 1,
-   "ax_visits": 83,
-   "heat": 41.3,
-   "orgs": [
-    {
-     "logo": "data/logos/imperial.ac.uk.png",
-     "name": "Imperial College London",
-     "ror": "041kmwe10"
-    },
-    {
-     "logo": "data/logos/ucl.ac.uk.png",
-     "name": "University College London",
-     "ror": "02jx3x895"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26590.jpg",
-   "thumb_w": 587,
-   "thumb_h": 440,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.26380",
-   "title": "EgoCaptioner: Towards Comprehensive and Fine-Grained Egocentric Video Captioning",
-   "authors": [
-    "Yuqi Tang",
-    "Yang Shi",
-    "Yuran Wang",
-    "Tengfei Liu",
-    "Rundong Wang",
-    "Zongyang Qiu",
-    "Qixun Wang",
-    "Zhuoran Zhang",
-    "Xuanyu Zhu",
-    "Yifan Xu",
-    "Yiyan Ji",
-    "Shujie Li",
-    "Shixuan Liu",
-    "Haotian Wang",
-    "Jialu Chen",
-    "Yuanxing Zhang",
-    "Pengfei Wan",
-    "Chengwei Qin"
-   ],
-   "abstract": "Egocentric video captioning requires fine-grained detail and accurate timing, yet current multimodal large language models (MLLMs) often miss brief actions, confuse their order, or misinterpret the wearer's motion. Existing caption formats also offer limited support for combining detailed narration with precise timing. We present EgoCaptioner, which pairs a video-level overview of the setting, participants, and the wearer's overall activity with timed steps whose narration adapts to varying perceptual demands and marks key moments at specific timestamps. We develop a coarse-to-fine annotation pipeline that establishes event structure before expanding step descriptions, yielding 50,000 training examples from eight egocentric video sources. Complementary rewards assess factual accuracy and coverage, measure step-level temporal alignment, and penalize fragmented or redundant narration, guiding caption refinement through Group Relative Policy Optimization (GRPO). To improve the reliability of factual supervision, we supplement caption references with pose-derived motion facts when sensor data are available. Across five egocentric benchmarks, EgoCaptioner achieves leading performance among evaluated open-source models in caption quality, caption-conditioned question answering, and temporal alignment. It also surpasses Gemini 3.1 Pro on PhysCapBench and all evaluated proprietary baselines on Minerva-Ego under the caption-to-QA protocol. Ablations support the complementary roles of factual and temporal rewards and show that coarse-to-fine annotation provides more effective supervision than single-pass annotation.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-19T16:39:59Z",
-   "updated": "2026-11-25T11:26:05Z",
-   "comment": "44 pages",
-   "tags": [
-    "VLM",
-    "video generation",
-    "dataset",
-    "multimodal"
-   ],
-   "summary": {
-    "en": "EgoCaptioner pairs video-level overviews with timestamped step captions, built via coarse-to-fine annotation over 50K examples from eight egocentric sources and refined with GRPO rewards for factuality and temporal alignment, leading open-source models on five egocentric benchmarks.",
-    "zh": "EgoCaptioner 用视频级概览加带时间戳的分步描述，通过粗到细标注流程从八个第一视角视频源生成5万训练样本，并用GRPO结合事实与时间对齐奖励精炼字幕，在五个第一视角基准上取得开源模型领先水平，PhysicsCapBench超过Gemini 3.1 Pro。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 26,
-   "ax_votes": 2,
-   "ax_visits": 129,
-   "heat": 40.9,
-   "orgs": [
-    {
-     "logo": "data/logos/hkust.edu.hk.png",
-     "name": "HKUST",
-     "ror": "00q4vv597"
-    },
-    {
-     "name": "KlingAI Research"
-    },
-    {
-     "logo": "data/logos/pku.edu.cn.png",
-     "name": "Peking University",
-     "ror": "02v51f717"
-    },
-    {
-     "name": "Nanjing University",
-     "ror": "01rxvg760"
-    },
-    {
-     "logo": "data/logos/hku.hk.png",
-     "name": "HKU",
-     "ror": "02zhqgq86"
-    },
-    {
-     "name": "Tsinghua University",
-     "ror": "03cve4549"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26380.jpg",
-   "thumb_w": 640,
-   "thumb_h": 385,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.21383",
-   "title": "The Mask Is Not the Object: Volumetric Supervision for 3D Gaussian Segmentation",
-   "authors": [
-    "Jeonghwan Cho",
-    "Minsu Kim",
-    "Junyoung Hong",
-    "Seon Joo Kim"
-   ],
-   "abstract": "3D Gaussian Splatting enables object-level operations on Gaussian primitives, yet existing segmentation methods are largely trained and evaluated through rendered views. This mismatch can produce accurate rendered masks from incomplete 3D selections since alpha-blended feature supervision concentrates learning on dominant contributors while leaving occluded or low-contribution Gaussians weakly supervised. We propose VODA, a plug-and-play supervision objective that exploits local depth structure to group per-pixel contributors and directly supervises all Gaussians in selected depth clusters, bypassing contribution-weighted gradient delivery. To evaluate volumetric completeness, we introduce Removal-3D, a synthetic object-removal benchmark, and the Removal Depth Error (RDE), a metric comparing predicted and ground-truth depth changes. Across four rendering-based baselines, VODA consistently improves volumetric segmentation on Removal-3D while maintaining or improving performance on LERF and ScanNet. Further analysis shows that VODA recovers lower-contribution Gaussians, while simple gradient reweighting and spatial propagation fail to reproduce comparable gains.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.AI"
-   ],
-   "published": "2026-11-16T16:44:07Z",
-   "updated": "2026-11-16T16:44:07Z",
-   "comment": "Accepted at NeurIPS 2026. Project page: https://jhxcho.github.io/voda/",
-   "listed": "2026-11-20",
-   "tags": [
-    "segmentation",
-    "3D",
-    "efficiency"
-   ],
-   "hf_upvotes": 37,
-   "ax_votes": 2,
-   "ax_visits": 31,
-   "heat": 42.1,
-   "orgs": [
-    {
-     "name": "Yonsei University",
-     "ror": "01wjejq96",
-     "logo": "data/logos/yonsei.ac.kr.png"
-    }
-   ],
-   "thumb": "data/thumbs/2611.21383.jpg",
-   "thumb_w": 640,
-   "thumb_h": 273,
-   "summary": {
-    "zh": "VODA 是一种即插即用的监督目标，利用局部深度结构将逐像素贡献者分组并直接监督所选深度簇内的所有高斯，从而绕过贡献加权梯度传递；在 Removal-3D 上对四个渲染基线均提升体积分割，并在 LERF 和 ScanNet 上保持或提升性能。",
-    "en": "VODA is a plug-and-play supervision objective that groups per-pixel contributors via local depth structure and directly supervises all Gaussians in selected depth clusters, improving volumetric segmentation on Removal-3D across four rendering baselines while maintaining or improving LERF and ScanNet performance."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.26510",
-   "title": "AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher",
-   "authors": [
-    "Guoxin Chen",
-    "Shuang Sun",
-    "Fanzhe Meng",
-    "Xinyu Tang",
-    "Ruihua Song",
-    "Wayne Xin Zhao"
-   ],
-   "abstract": "Task success alone does not specify which behaviors post-training should reinforce. Even successful teacher trajectories can contain unsupported assumptions, unproductive repetition, or superficial verification. We propose Skill-FT (Skill-Guided Fine-Tuning), which uses natural-language skills to suppress undesirable habits and elicit underrepresented effective behaviors during teacher rollouts, then fine-tunes a student model on the resulting trajectories. We introduce AutoMaster, an autonomous post-training system in which an LLM agent develops these interventions through trajectory analysis, skill design, data selection, and feedback from rollouts and evaluation. Across Terminal, Search, and software engineering tasks with 4B and 9B student models, AutoMaster improves mean performance over Vanilla SFT on successful unguided teacher trajectories by 1.42-8.99 percentage points, with the teacher, task pool, training set size, and SFT recipe held fixed. Together with the ablations and trajectory analyses, these results suggest that behavioral shaping can make a fixed model a more effective teacher. We further find that retaining skill instructions during SFT yields higher mean performance than removing them across all six settings, despite their absence at evaluation and identical supervised outputs. These findings suggest that preserving skill context as part of a training demonstration can support better behavioral internalization.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL"
-   ],
-   "published": "2026-11-19T17:57:59Z",
-   "updated": "2026-11-20T11:55:50Z",
-   "comment": "Website: https://aweai-team.github.io/AutoMaster/ Code: https://github.com/RUCAIBox/AutoMaster Models: https://huggingface.co/collections/RUC-AIBOX/automaster",
-   "code_url": "https://github.com/RUCAIBox/AutoMaster",
-   "tags": [
-    "LLM",
-    "agents",
-    "reasoning",
-    "pretraining"
-   ],
-   "summary": {
-    "en": "Skill-FT uses natural-language skills to shape teacher rollouts, with AutoMaster autonomously designing interventions; it improves 4B and 9B students by 1.42–8.99 points over vanilla SFT on Terminal, Search, and software engineering tasks.",
-    "zh": "Skill-FT 利用自然语言技能干预教师 rollout 以抑制不良行为并激发有效行为，AutoMaster 让 LLM agent 自动设计这些干预；在 Terminal、Search 和软件工程任务上，4B 和 9B 学生模型相比 Vanilla SFT 平均性能提升 1.42–8.99 个百分点。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 16,
-   "ax_votes": 7,
-   "ax_visits": 122,
-   "heat": 35.2,
-   "orgs": [
-    {
-     "name": "Renmin University of China",
-     "ror": "041pakw92"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26510.jpg",
-   "thumb_w": 640,
-   "thumb_h": 228,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.26511",
-   "title": "Direct3D-V3: Latent-Free Diffusion Transformers in the Native Voxel Domain",
-   "authors": [
-    "Shuang Wu",
-    "Jiachen Qian",
-    "Youtian Lin",
-    "Feihu Zhang",
-    "Philip Torr",
-    "Yao Yao",
-    "Xun Cao"
-   ],
-   "abstract": "Native 3D generation has largely been built around latent diffusion, with recent advances concentrating on stronger variational autoencoders (VAE) and increasingly elaborate latent representations, from vecset and triplanes to structured sparse voxels. Despite their architectural differences, these methods all share the same premise: geometry is first compressed into a latent space and only then modeled by the generator. We take a different route and propose Direct3D-V3, a latent-free diffusion transformer (DiT) framework that discards the VAE altogether and operates in the native voxel domain, directly modeling raw SDF voxel grids during both training and sampling. To make this direct voxel formulation geometrically reliable, we introduce an implicit manifold regularization over neighboring voxels to suppress non-watertight surfaces, and convert predicted SDF grids into meshes via Marching Cubes so that rendered normal losses can supervise the model directly from its predicted SDF. To improve alignment between the conditioning image and generated geometry, Direct3D-V3 also predicts the camera parameters of the conditioning image as an auxiliary task, encouraging the DiT to learn the mapping from image observations to 3D shape. This latent-free design removes the reconstruction bottleneck, brings training under an objective in the native voxel domain, and yields meshes with substantially richer local detail. The predicted camera and native SDF voxel output further make Direct3D-V3 extensible to generative reconstruction, where diffusion is interleaved with normal-guided refinement to improve alignment with the observed view while the generative prior completes unseen regions. Project page: https://dreamtechai.github.io/Direct3D-V3.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-19T17:58:20Z",
-   "updated": "2026-11-19T17:58:20Z",
-   "comment": "The Project Page is: https://dreamtechai.github.io/Direct3D-V3. The Paper is published in ACM TOG (SIGGRAPH Asia 2026)",
-   "tags": [
-    "3D",
-    "diffusion",
-    "image generation"
-   ],
-   "summary": {
-    "en": "Direct3D-V3 is a latent-free diffusion transformer that models raw SDF voxel grids directly, using implicit manifold regularization and Marching Cubes normal supervision to generate meshes with richer local detail.",
-    "zh": "Direct3D-V3 提出无 latent 的扩散 Transformer 框架，直接在原生 SDF 体素域训练与采样，引入隐式流形正则抑制非水密表面，并用 Marching Cubes 转网格施加渲染法向监督，生成网格局部细节更丰富。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 7,
-   "ax_votes": 11,
-   "ax_visits": 165,
-   "heat": 34.5,
-   "orgs": [
-    {
-     "name": "Nanjing University",
-     "ror": "01rxvg760"
-    },
-    {
-     "name": "DreamTech"
-    },
-    {
-     "logo": "data/logos/hku.hk.png",
-     "name": "HKU",
-     "ror": "02zhqgq86"
-    },
-    {
-     "logo": "data/logos/ox.ac.uk.png",
-     "name": "University of Oxford",
-     "ror": "052gg0110"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26511.jpg",
-   "thumb_w": 640,
-   "thumb_h": 360,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.26107",
-   "title": "HiUni: Harmonizing Understanding and Generation in Shared Visual Space",
-   "authors": [
-    "Jiahao Hu",
-    "Jingdong Du",
-    "Yichen Zhang",
-    "Yi Song",
-    "Zhenyu Zhang",
-    "Jiaxin Niu",
-    "Ruihang Li",
-    "Xiangzhao Hao",
-    "Yiqian Zhang",
-    "Yong Huang",
-    "Zefeng Zhang",
-    "Zheyuan Gu",
-    "Shuohuan Wang"
-   ],
-   "abstract": "Unified multimodal models aim to support visual understanding and generation within a single framework. However, prevailing approaches often separate their visual representations or backbone computation to accommodate the different requirements of these two tasks, which limits the degree of unification. In this paper, we present HiUni, which revisits this design choice and explores whether a pretrained vision language model can be directly extended into a unified model with extensive parameter sharing. Specifically, HiUni reuses the same language-aligned ViT and dense Transformer backbone for both capabilities, while confining task-specific computation to the output side. Yet such a design introduces two key challenges. Generation in pixel space is difficult to optimize, and semantic abstraction in pretrained ViT discards fine spatial details required for synthesis. To address these challenges, HiUni introduces a \\emph{Pixel Diffusion Head} tailored to direct pixel-space optimization and a lightweight \\emph{HiGate} pathway that provides fine-grained spatial details near the output stage. Extensive experiments show that HiUni achieves a similar average understanding score to the pretrained VLM while attaining competitive performance on image generation and editing. Controlled comparisons and analyses further demonstrate that a single dense backbone can effectively support both capabilities without task-specific backbone computation, highlighting a simpler path toward unified multimodal modeling.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.AI"
-   ],
-   "published": "2026-11-19T13:37:47Z",
-   "updated": "2026-11-19T13:37:47Z",
-   "comment": "",
-   "tags": [
-    "multimodal",
-    "image generation",
-    "VLM",
-    "diffusion"
-   ],
-   "summary": {
-    "en": "HiUni reuses one language-aligned ViT and dense Transformer backbone for both visual understanding and generation, adding a Pixel Diffusion Head and lightweight HiGate at the output; it matches the pretrained VLM's average understanding score while remaining competitive on generation and editing.",
-    "zh": "HiUni 复用同一个与语言对齐的 ViT 和稠密 Transformer 骨干同时做视觉理解与生成，只在输出端加 Pixel Diffusion Head 直接优化像素空间，并用轻量 HiGate 补充细粒度空间细节；理解均分与预训练 VLM 接近，生成和编辑也具竞争力。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 26,
-   "ax_votes": 1,
-   "ax_visits": 68,
-   "heat": 33.8,
-   "orgs": [
-    {
-     "logo": "data/logos/baidu.com.png",
-     "name": "Baidu"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26107.jpg",
-   "thumb_w": 640,
-   "thumb_h": 266,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.26414",
-   "title": "ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain",
-   "authors": [
-    "Zixuan Huang",
-    "Yang Zhou",
-    "Guli Zhang",
-    "Sunzhu Li",
-    "Hongyan Xie",
-    "Zehao Chen",
-    "Fuzhen Zhuang",
-    "Kaixuan Wang",
-    "Xiaozhi Chen",
-    "Yikun Ban",
-    "Deqing Wang"
-   ],
-   "abstract": "Representative vision-language navigation (VLN) methods typically couple a vision-language model (VLM) brain with a learnable action head and fine-tune the VLM brain on navigation-domain data to predict geometric goals. However, such adaptation can substantially alter base VLM weights and degrade general visual capabilities. We introduce ZeroVLN, a slow-fast navigation framework that achieves effective navigation with zero navigation-domain SFT of the VLM brain. Rather than teaching the brain to predict geometric goals, we equip it with a semantic tool-calling interface for conveying movement decisions to an action expert in natural language. We first adapt the action expert to carry out these movement requests, then jointly improve the brain's movement decisions and the action expert's continuous execution through closed-loop reinforcement learning (RL). Trained on the same navigation episodes, ZeroVLN substantially outperforms representative SFT-based hierarchical VLN methods on standard VLN-CE (continuous environments) benchmarks, while inducing only minor changes to the brain's weights and largely preserving its general capabilities. To our knowledge, ZeroVLN is the first slow-fast VLN framework with zero navigation-domain SFT of the VLM brain, and the first to jointly optimize its slow and fast policies through closed-loop agentic RL in VLN-CE.",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI"
-   ],
-   "published": "2026-11-19T17:01:00Z",
-   "updated": "2026-11-19T17:01:00Z",
-   "comment": "",
-   "tags": [
-    "VLM",
-    "robotics",
-    "RL",
-    "agents"
-   ],
-   "summary": {
-    "en": "ZeroVLN couples a frozen-ish VLM brain with an action expert via semantic tool calls, jointly trained by closed-loop RL; it beats SFT-based hierarchical VLN methods on VLN-CE while barely altering the brain's weights.",
-    "zh": "ZeroVLN 采用慢-快导航框架，VLM 大脑不做导航域 SFT，改以语义工具调用接口用自然语言向动作专家下达移动指令，再通过闭环强化学习联合优化两者；在 VLN-CE 基准上显著优于代表性 SFT 分层方法，且大脑权重变化极小、通用能力基本保留。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 24,
-   "ax_votes": 1,
-   "ax_visits": 74,
-   "heat": 32.4,
-   "orgs": [
-    {
-     "name": "Beihang University",
-     "ror": "00wk2mp56"
-    },
-    {
-     "name": "Zhuoyu Technology"
-    },
-    {
-     "name": "Zhejiang University",
-     "ror": "00a2xv884"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26414.jpg",
-   "thumb_w": 640,
-   "thumb_h": 299,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.26073",
-   "title": "AltRA-Test: An Alternative Annotator Test for LLM Judges Without Shared Annotators",
-   "authors": [
-    "Nagham Omar",
-    "Rotem Dror",
-    "Almog Gueta",
-    "Avigdor Gal",
-    "Roi Reichart",
-    "Nitay Calderon"
-   ],
-   "abstract": "Large language models (LLMs) are increasingly used as judges and graders to replace human annotators, raising the question of when such replacement is statistically justified. To support such decisions, the Alternative Annotator Test (Alt-Test) was introduced for dense settings where all items are annotated by the same annotators. However, in many large-scale annotation settings, items are annotated by different subsets of annotators. We therefore propose the Alternative Annotator Test with Resampled Annotations (AltRA-Test), a statistical test that does not require that all items are annotated by the same annotators. AltRA-Test uses a bootstrap that resamples items, draws k human annotations for each item, and substitutes one of them with an LLM annotation. This produces paired all-human and mixed human-LLM panels. A replacement is supported when the inter-annotator agreement (IAA) of the mixed panel is statistically non-inferior to the IAA of the all-human panel, i.e., when the LLM preserves the signal that the human annotators share. We establish that AltRA-Test is a consistent test of asymptotic level alpha. We then evaluate it through simulations and real-world experiments in which we test 18 LLMs and 5 prompting techniques on 20 datasets across text, image, audio, and video. Across these evaluations, about 100 items often suffice for the test. In simulations, where we know whether the LLM is a better or a worse annotator than the humans, AltRA-Test makes more correct replacement decisions than existing baselines. In real-world data experiments, LLMs pass the test in about half of the setups, depending mainly on the task. Since replacement is not always justified, we encourage researchers to test it for their task.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL",
-    "cs.AI"
-   ],
-   "published": "2026-11-19T13:15:13Z",
-   "updated": "2026-11-25T18:49:16Z",
-   "comment": "",
-   "tags": [
-    "LLM",
-    "benchmark",
-    "theory",
-    "alignment"
-   ],
-   "summary": {
-    "en": "AltRA-Test is a bootstrap-based statistical test that replaces one of k human annotations per item with an LLM annotation to compare inter-annotator agreement between all-human and mixed panels, requiring no shared annotators and often only ~100 items.",
-    "zh": "AltRA-Test 是一种无需所有条目由同一批标注者标注的统计检验，通过自助重采样条目、抽取 k 个人工标注并替换其中一条为 LLM 标注，构造配对的纯人工与混合人机评审组，以组内一致性（IAA）非劣于纯人工组作为替换成立的判据；在 18 个 LLM、5 种提示技术、20 个文本/图像/音频/视频数据集上验证，约 100 条数据常已足够，模拟中比现有基线做出更多正确的替换决策，真实数据约半数设置通过。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 24,
-   "ax_votes": 2,
-   "ax_visits": 30,
-   "heat": 29.0,
-   "orgs": [
-    {
-     "logo": "data/logos/technion.ac.il.png",
-     "name": "Technion",
-     "ror": "03qryx823"
-    },
-    {
-     "logo": "data/logos/haifa.ac.il.png",
-     "name": "University of Haifa",
-     "ror": "02f009v59"
-    },
-    {
-     "logo": "data/logos/google.com.png",
-     "name": "Google"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26073.jpg",
-   "thumb_w": 440,
-   "thumb_h": 440,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.25387",
-   "title": "TuringSpace: Grounding Spatial Intelligence in Action with Interactive CAPTCHAs",
-   "authors": [
-    "Xuwei Ding",
-    "Skylar Zhai",
-    "Linxin Song",
-    "Jiarui Feng",
-    "Dongqi Fu",
-    "Huajun Xi",
-    "Junnan Li",
-    "Jingcheng Liang",
-    "Jieyu Zhao",
-    "Yinglong Xia",
-    "Hong Li",
-    "Jian Kang"
-   ],
-   "abstract": "Humans act in the visual world by inferring the 3D layout behind a 2D view, predicting how an action changes it, and correcting themselves after seeing the result. Can multimodal large language models (MLLMs) do the same? CAPTCHAs offer a natural test, since humans solve them through this very loop, clicking and dragging on the screen and adjusting after each result. Yet existing CAPTCHA benchmarks are largely solved and rarely spatial, while spatial benchmarks rarely require action. We therefore present TuringSpace, a synthetic web environment of 125 interactive CAPTCHAs that span five spatial abilities and must be solved through clicks and drags on the screen. Every task is a program that generates new instances with a checker and an oracle, so the tasks also form a scalable training gym. Humans solve 94.1% of the tasks, whereas the best model, GPT-6 Astra, still fails 25.9% of them, and the best open-weight model, Kimi K3, fails 68.0%. Our further analysis shows that most failures come from misreading the screenshot, and that model reasoning rarely corrects a wrong belief but hallucinates evidence to defend it. To test whether such spatial abilities can be learned, we fine-tune Qwen3.5-9B on this gym. Its success rate rises from 1.6% to 33.1%, above Kimi K3, and it improves on all seven out-of-distribution benchmarks, including a 9.9-point gain on the real-world indoor videos of VSI-Bench. These results show that grounding spatial intelligence in screen actions exposes what MLLMs lack and offers a scalable way to teach it, with gains that transfer to real-world scenes. We will release TuringSpace to support further study.",
-   "primary": "cs.LG",
-   "categories": [
-    "cs.LG"
-   ],
-   "published": "2026-11-19T02:32:10Z",
-   "updated": "2026-11-19T02:32:10Z",
-   "comment": "45 pages. Project page: https://xuweid.com/turingspace/",
-   "tags": [
-    "multimodal",
-    "benchmark",
-    "reasoning",
-    "agents"
-   ],
-   "summary": {
-    "en": "TuringSpace is a synthetic web environment of 125 interactive CAPTCHAs testing five spatial abilities via clicks and drags. Humans solve 94.1%, GPT-6 Astra fails 25.9%, Kimi K3 fails 68.0%; fine-tuning Qwen3.5-9B raises success from 1.6% to 33.1% and gains 9.9 points on VSI-Bench.",
-    "zh": "TuringSpace 构建了包含 125 个交互式 CAPTCHA 的合成网页环境，覆盖五项空间能力，需通过鼠标点击和拖拽求解；人类成功率为 94.1%，最佳模型 GPT-6 Astra 失败 25.9%，开源模型 Kimi K3 失败 68.0%，在 Qwen3.5-9B 上微调后成功率从 1.6% 升至 33.1%，并在 VSI-Bench 上提升 9.9 分。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 24,
-   "ax_votes": 1,
-   "ax_visits": 27,
-   "heat": 27.7,
-   "orgs": [
-    {
-     "logo": "data/logos/upenn.edu.png",
-     "name": "University of Pennsylvania",
-     "ror": "00b30xv10"
-    },
-    {
-     "name": "University of Minnesota",
-     "ror": "017zqws13"
-    },
-    {
-     "logo": "data/logos/usc.edu.png",
-     "name": "University of Southern California",
-     "ror": "03taz7m60"
-    },
-    {
-     "name": "MBZUAI"
-    },
-    {
-     "name": "University of Wisconsin–Madison",
-     "ror": "01y2jtd41"
-    }
-   ],
-   "thumb": "data/thumbs/2611.25387.jpg",
-   "thumb_w": 640,
-   "thumb_h": 287,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.26268",
-   "title": "Accelerating Mixture of Block Attention via Dynamic Routing, KV-Centric Execution and Runtime Pipelining",
-   "authors": [
-    "Yingqi Shi",
-    "Junru Lu",
-    "Yun Liu",
-    "Di Yin",
-    "Xing Sun"
-   ],
-   "abstract": "Mixture of Block Attention (MoBA) reduces long-context computation by selecting key-value (KV) blocks for each query. FlashMoBA implements MoBA efficiently but retains a fixed Top-k budget and query-centric schedule. Fixed Top-k applies one budget across different score distributions and couples routing to task granularity; query-range ownership fragments K/V reuse when several ranges select the same column. We present LightningMoBA, which co-designs selection and execution through dynamic routing, KV-centric ownership, and runtime pipelining. Dynamic routing thresholds MoBA's per-query block scores and directly emits variable-cardinality sparse metadata. KV-centric ownership groups selected rows by (query head, KV block) column, splits high-fanout columns into bounded tasks, and reuses each task's loaded KV tile. On Hopper, pipelining overlaps regular K/V transfers and irregular query gathers with Tensor Core computation. Together, these mechanisms decouple retention from GPU scheduling granularity. At matched Top-16 retention across five checkpoints, LightningMoBA accelerates end-to-end generation by 1.20 to 1.60x while raising mean RULER score from 74.42 to 75.28.",
-   "primary": "cs.DC",
-   "categories": [
-    "cs.DC"
-   ],
-   "published": "2026-11-19T15:38:08Z",
-   "updated": "2026-11-19T15:38:08Z",
-   "comment": "",
-   "tags": [
-    "efficiency",
-    "LLM"
-   ],
-   "summary": {
-    "en": "LightningMoBA co-designs dynamic routing, KV-centric ownership and runtime pipelining for Mixture of Block Attention, achieving 1.20-1.60x faster end-to-end generation at Top-16 retention while raising mean RULER score from 74.42 to 75.28.",
-    "zh": "LightningMoBA 通过动态路由、以 KV 为中心的调度和运行时流水线协同优化 MoBA 长上下文注意力，在五个 checkpoint 上 Top-16 保留率下，端到端生成提速 1.20–1.60×，RULER 均分由 74.42 升至 75.28。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 22,
-   "ax_votes": 1,
-   "ax_visits": 19,
-   "heat": 24.9,
-   "orgs": [
-    {
-     "logo": "data/logos/tencent.com.png",
-     "name": "Tencent"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26268.jpg",
-   "thumb_w": 440,
-   "thumb_h": 440,
-   "listed": "2026-11-20"
+   "sections": []
   },
   {
    "id": "2611.21885",
@@ -1160,9 +258,9 @@
      "name": "Princeton"
     },
     {
+     "logo": "data/logos/stanford.edu.png",
      "name": "Stanford University",
-     "ror": "00f54p054",
-     "logo": "data/logos/stanford.edu.png"
+     "ror": "00f54p054"
     },
     {
      "name": "Yale"
@@ -1172,142 +270,176 @@
    "thumb_w": 640,
    "thumb_h": 308,
    "summary": {
-    "zh": "自改写方法让开放 27B 模型仅凭前向推理、无梯度无训练地诊断自身失败并重写自身权重，在未见问题上准确率提升 6.6 个百分点，连续八轮编辑精度持续上升，还能把近乎失效的受损副本恢复到原精度 80% 以上，且该能力仅在最大模型中涌现。",
-    "en": "Self-rewriting lets an open 27B model diagnose its failures and rewrite its own weights via forward-only reasoning, no gradients or training, gaining 6.6 points on unseen problems and restoring a damaged copy to over 80% of original accuracy."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.25980",
-   "title": "Learning What Actions Change: Action Effect Matching for Dynamics-Faithful World Models",
-   "authors": [
-    "John Won",
-    "Yonghoon Dong",
-    "Jinwoo Shin"
-   ],
-   "abstract": "World models aim to predict environment dynamics under actions, enabling the prediction of action consequences without executing them in the real world. Yet despite producing increasingly realistic videos, current world models often fail to capture how small action changes affect future observations. This limits their use in tasks such as robotic policy evaluation and model-based planning, where nearly identical actions can lead to qualitatively different outcomes. To address this, we propose AFFECT, an auxiliary training objective for learning the distribution of visual changes induced by action perturbations. Specifically, we inject temporally correlated noise into the actions of a policy trained on task-agnostic human teleoperation. We then train the world model so that its generated videos respond to this noise as the recorded videos do, without requiring repeated executions from the same initial state. Across OGBench simulation and real-world DROID and ALOHA-2 setups, AFFECT makes world-model rollouts more faithful to real outcomes. On DROID, the Pearson correlation between policy success rates in the world model and on the real robot rises from 0.47 to 0.79, alongside up to 23% lower FVD. These gains carry over to planning, where selecting actions with AFFECT-trained world models improves task success by up to 8.3%.",
-   "primary": "cs.RO",
-   "categories": [
-    "cs.RO",
-    "cs.CV"
-   ],
-   "published": "2026-11-19T12:03:05Z",
-   "updated": "2026-11-19T12:03:05Z",
-   "comment": "27 pages, preprint",
-   "tags": [
-    "world model",
-    "robotics",
-    "VLA"
-   ],
-   "summary": {
-    "en": "AFFECT injects temporally correlated noise into policy actions and trains world models to mirror real video responses to action perturbations, raising DROID policy-success correlation from 0.47 to 0.79 and planning success by up to 8.3%.",
-    "zh": "AFFECT 通过在策略动作上注入时间相关噪声，训练世界模型生成的视频像真实视频一样响应动作扰动；在 DROID 上世界模型与真机策略成功率相关系数从 0.47 升至 0.79，FVD 最多降 23%，规划成功率最多提升 8.3%。"
+    "en": "Self-rewriting lets an open 27B model diagnose its failures and rewrite its own weights via forward-only reasoning, no gradients or training, gaining 6.6 points on unseen problems and restoring a damaged copy to over 80% of original accuracy.",
+    "zh": "自改写方法让开放 27B 模型仅凭前向推理、无梯度无训练地诊断自身失败并重写自身权重，在未见问题上准确率提升 6.6 个百分点，连续八轮编辑精度持续上升，还能把近乎失效的受损副本恢复到原精度 80% 以上，且该能力仅在最大模型中涌现。"
    },
    "summary_source": "deepseek-flash",
-   "hf_upvotes": 17,
-   "ax_votes": 1,
-   "ax_visits": 57,
-   "heat": 23.7,
-   "orgs": [
-    {
-     "logo": "data/logos/kaist.ac.kr.png",
-     "name": "KAIST",
-     "ror": "05apxxy63"
-    },
-    {
-     "name": "RLWRLD"
-    }
-   ],
-   "thumb": "data/thumbs/2611.25980.jpg",
-   "thumb_w": 640,
-   "thumb_h": 287,
-   "listed": "2026-11-20"
+   "sections": []
   },
   {
-   "id": "2611.26408",
-   "title": "Training Vision Models for LLM-Driven Weight-Space Programming",
+   "id": "2611.26629",
+   "title": "Posterior Matching Distillation",
    "authors": [
-    "Timo Ropinski",
-    "Sebastian Kranz"
+    "Hidir Yesiltepe",
+    "Julius Berner",
+    "Arash Vahdat",
+    "Pinar Yanardag"
    ],
-   "abstract": "It has been demonstrated that, in certain settings, large language models can perform weight-space programming to directly modify the weights of neural networks. However, it is unknown how dedicated training of these networks can contribute to the successes of weight-space programming. We present a benchmark of LLM-driven weight-space programming on vision models, in which five LLMs edit convolutional networks and vision transformers on relabeling and error-correction tasks on Waterbirds, CIFAR-100, PACS and Entity-30. We report more than 2,600 such edit processes, whereby each edit is scored on held-out images for success, side effects and accuracy loss. We compare standard training with label smoothing, gradient-based editable training, and our Edit-Ready Training (ERT), a novel method that rehearses the direct, closed-form weight edits LLMs perform. We show that preparing networks for editing raises the success of LLM edits substantially where standard networks are hard to edit. ERT further achieves the highest mean score for GPT-6 Astra and Claude Opus 5.5 across all evaluated baselines. We will release our LLM testing framework alongside all tasks, editing trajectories and scores. Project page: https://viscom.uni-ulm.de/wsp",
+   "abstract": "Diffusion distillation accelerates image and video generation by compressing a pretrained teacher's iterative sampling process into a few network evaluations. Distribution-based methods achieve this by matching the student's output distribution to the teacher's. This matching is often driven by reverse-KL objectives, whose mode-seeking bias favors dominant teacher modes at the expense of diversity across samples. We introduce Posterior Matching Distillation (PMD), a new member of the distribution-based distillation family that combines mode-covering posterior sampling with any-step generation. At zero population loss, PMD recovers the teacher's full posterior of clean images at each trained noise level. Its stochastic student supports any-step sampling budgets within the trained timestep grid without further training. To learn these posteriors, PMD matches exponentially reweighted averages of student samples conditioned on a fixed noisy state to corresponding teacher posterior means. Under Gaussian corruption, exponentially tilted posterior mean is a single teacher evaluation at a shifted input. We prove that, matching tilted means over an open neighborhood uniquely identifies the full posterior. PMD thus supervises the entire conditional distribution through a family of mean constraints, without any auxiliary student-score network. Experiments on SDXL and FLUX.2 [klein] 4B demonstrate that PMD achieves the best FID among 4-step methods on both models, while maintaining competitive or leading performance across prompt-alignment and perceptual-quality metrics.",
    "primary": "cs.CV",
    "categories": [
     "cs.CV"
    ],
-   "published": "2026-11-19T16:56:27Z",
-   "updated": "2026-11-19T16:56:27Z",
-   "comment": "Project page: https://viscom.uni-ulm.de/wsp",
+   "published": "2026-11-19T18:59:57Z",
+   "updated": "2026-11-19T18:59:57Z",
+   "comment": "Project Page: https://pmd-distillation.github.io/",
    "tags": [
-    "LLM",
-    "VLM",
-    "benchmark",
+    "diffusion",
+    "image generation",
     "efficiency"
    ],
    "summary": {
-    "en": "A benchmark of LLM-driven weight-space programming lets five LLMs edit CNNs and ViTs on four datasets, scoring 2,600+ edits. Edit-Ready Training rehearses closed-form weight edits, raising edit success, notably for GPT-6 Astra and Claude Opus 5.5.",
-    "zh": "构建LLM驱动权重空间编程基准，让五个LLM在Waterbirds、CIFAR-100、PACS和Entity-30上编辑卷积网络与视觉Transformer，完成重标注和纠错任务，记录超2600次编辑并评估成功率、副作用与精度损失；提出Edit-Ready Training (ERT)通过预演LLM的直接闭式权重编辑来训练网络，在标准网络难以编辑处显著提升成功率，并在所有基线中为GPT-6 Astra和Claude Opus 5.5取得最高平均分。"
+    "en": "Posterior Matching Distillation combines mode-covering posterior sampling with any-step generation by matching exponentially tilted student sample means, achieving the best 4-step FID on SDXL and FLUX.2 [klein] 4B.",
+    "zh": "PMD 将模式覆盖的后验采样与任意步数生成结合，通过匹配指数重加权学生样本均值来学习教师后验，在 SDXL 和 FLUX.2 [klein] 4B 上取得 4 步方法中最佳 FID。"
    },
    "summary_source": "deepseek-flash",
-   "hf_upvotes": 19,
-   "ax_votes": 0,
-   "ax_visits": 47,
-   "heat": 23.7,
+   "hf_upvotes": 47,
+   "ax_votes": 35,
+   "ax_visits": 362,
+   "heat": 118.2,
    "orgs": [
     {
-     "logo": "data/logos/uni-ulm.de.png",
-     "name": "Ulm University",
-     "ror": "032000t02"
+     "logo": "data/logos/vt.edu.png",
+     "name": "Virginia Tech",
+     "ror": "02smfhw86"
+    },
+    {
+     "logo": "data/logos/nvidia.com.png",
+     "name": "NVIDIA"
     }
    ],
-   "thumb": "data/thumbs/2611.26408.jpg",
+   "thumb": "data/thumbs/2611.26629.jpg",
    "thumb_w": 640,
-   "thumb_h": 224,
-   "listed": "2026-11-20"
+   "thumb_h": 203,
+   "listed": "2026-11-20",
+   "sections": []
   },
   {
-   "id": "2611.26211",
-   "title": "SpecWM: Turning Verification into Refinement for Streaming World Models",
+   "id": "2611.26409",
+   "title": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
    "authors": [
-    "Jiaming Li",
-    "Lingzhen Li",
-    "Xiaze Yang",
-    "Chenyu Zhu",
-    "Kaiqi Liu",
-    "Xiaotong Zhao",
-    "Songlian Li",
-    "Toyota Li",
-    "Alan Zhao",
-    "Haobin Zhong",
-    "Yue Ma",
-    "Zhiyuan Ma"
+    "Changli Tang",
+    "Jie Yang",
+    "Tianyi Wang",
+    "Lei Li",
+    "Daoze Zhang",
+    "Zijie Xin",
+    "Zhan Liu",
+    "Li Li",
+    "Jinchang Xu",
+    "Fengyun Rao",
+    "Chao Zhang",
+    "Jing Lyu"
    ],
-   "abstract": "Recently, video world models have advanced interactive generation, with large models offering higher quality and smaller models enabling faster inference. Existing speculative methods combine their strengths through fast draft generation and selective target regeneration guided by rewards on decoded frames. However, verification covers only the external scorer's evaluation dimensions and adds decoding and scoring costs. Moreover, these scores provide no correction, requiring costly target regeneration for rejected drafts. To address these limitations, we propose Speculative World Model (SpecWM), a unified, training-free inference framework for streaming world models. It verifies draft chunks using the target's latent velocity field. Verification also yields a reusable correction; two thresholds select Accept, Refine, or Reject. Specifically, one-step refinement reuses it to improve perceptual quality, while three-step refinement strengthens camera following and trajectory consistency. These findings motivate transition-aware refinement. On WBench Navigation, SpecWM improves visual quality at 1.63$\\times$ speedup over the target and raises NavScore from the draft's 75.99 to 85.63, achieving the best quality-speed-control trade-off. Additionally, our LongSpecBench shows sustained quality and control over long, multi-turn rollouts, while experiments on Hy-Nomas validate SpecWM across backbones and denoising budgets.",
+   "abstract": "Video understanding, particularly with accompanying audio, remains a central challenge in multimodal intelligence. In this report, we introduce \\textbf{WeMM-Video}, a family of Chinese-English bilingual omni-modal foundation models spanning 2B, 4B, 9B, and 35B-A3B variants. Centering on joint audio-visual perception and reasoning, WeMM-Video unifies text, image, audio, and video processing within a hybrid-thinking paradigm, seamlessly supporting both a non-thinking instruct mode for fast, direct responses and a thinking mode for explicit step-by-step reasoning. The models are trained on a large-scale multimodal corpus of approximately 1.2 trillion tokens through progressive pre-training and a multi-stage post-training pipeline incorporating multi-teacher OPD, anti-repetition MrDPO, and specialist RL. Evaluated across more than 120 benchmarks, WeMM-Video demonstrates superior performance in omni-modal video understanding and reasoning, while maintaining highly competitive capabilities across general audio, silent video, image, and text tasks. Specifically, in omni-modal video evaluations, our flagship WeMM-Video-35B-A3B establishes a new open-source state of the art, substantially outperforming proprietary models such as Qwen3.5-Omni-Flash and Seed2.0-Mini-0428 while narrowing the gap with the strong Gemini-3.0-Flash, and our compact WeMM-Video-9B surpasses the larger open-source Qwen3-Omni-30B-A3B-Instruct. We publicly release the WeMM-Video family along with our evaluation and reproduction pipeline to foster further research and development in the open-source community.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "eess.AS"
+   ],
+   "published": "2026-11-19T16:58:15Z",
+   "updated": "2026-11-19T16:58:15Z",
+   "comment": "",
+   "tags": [
+    "multimodal",
+    "video generation",
+    "reasoning",
+    "LLM"
+   ],
+   "summary": {
+    "en": "WeMM-Video is a bilingual omni-modal video model family (2B–35B-A3B) with thinking and non-thinking modes, trained on ~1.2T tokens; the 35B-A3B flagship outperforms Qwen3.5-Omni-Flash and Seed2.0-Mini-0428 on omni-modal video benchmarks.",
+    "zh": "WeMM-Video 是覆盖 2B/4B/9B/35B-A3B 的中英双语全模态基础模型，统一文本、图像、音频、视频并支持非思考与思考双模式，用约 1.2 万亿 token 渐进预训练与多教师 OPD、MrDPO、专家 RL 训练，旗舰 35B-A3B 在全模态视频评测中超越 Qwen3.5-Omni-Flash 与 Seed2.0-Mini-0428。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 50,
+   "ax_votes": 11,
+   "ax_visits": 294,
+   "heat": 90.4,
+   "orgs": [
+    {
+     "logo": "data/logos/tencent.com.png",
+     "name": "Tencent"
+    },
+    {
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26409.jpg",
+   "thumb_w": 640,
+   "thumb_h": 287,
+   "listed": "2026-11-20",
+   "sections": [
+    "rl"
+   ]
+  },
+  {
+   "id": "2611.26595",
+   "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+   "authors": [
+    "Yiyan Ji",
+    "Qixun Wang",
+    "Yang Shi",
+    "Zhuoran Zhang",
+    "Yifan Xu",
+    "Tengfei Liu",
+    "Yuqi Tang",
+    "Xiaohan Zhang",
+    "Shujie Li",
+    "Jiafu Tang",
+    "Xuanyu Zhu",
+    "Xinyu Liu",
+    "Yan He",
+    "Yushuo Guan",
+    "Zihao Wang",
+    "Xianghua Ying",
+    "Shixuan Liu",
+    "Haotian Wang",
+    "Wenjing Yang",
+    "Zhaoxiang Zhang",
+    "Yuanxing Zhang",
+    "Pengfei Wan",
+    "Jiaheng Liu"
+   ],
+   "abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings.",
    "primary": "cs.CV",
    "categories": [
     "cs.CV"
    ],
-   "published": "2026-11-19T14:50:59Z",
-   "updated": "2026-11-19T14:50:59Z",
-   "comment": "",
+   "published": "2026-11-19T18:51:58Z",
+   "updated": "2026-11-25T08:18:24Z",
+   "comment": "52 pages",
    "tags": [
-    "world model",
     "video generation",
-    "efficiency",
-    "diffusion"
+    "agents",
+    "3D"
    ],
-   "hf_upvotes": 7,
-   "ax_votes": 4,
-   "ax_visits": 94,
-   "heat": 20.4,
+   "summary": {
+    "en": "Controlled experiments and blinded human evaluation probe proxy granularity, physics simulation, and prompting in Code2Video, yielding Coda-DaVinci, a task-adaptive multi-agent framework with leading instruction following on VTR and scene consistency on R2M.",
+    "zh": "通过受控实验与盲测人类评估，系统考察 Code2Video 中代理粒度、物理模拟与提示词的影响，并据此构建任务自适应多智能体框架 Coda-DaVinci，在 VTR 与 R2M 上取得领先的指令遵循和场景一致性。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 43,
+   "ax_votes": 5,
+   "ax_visits": 366,
+   "heat": 84.6,
    "orgs": [
     {
-     "name": "Huazhong University of Science and Technology",
-     "ror": "00p991c53"
+     "name": "Nanjing University",
+     "ror": "01rxvg760"
     },
     {
-     "logo": "data/logos/tencent.com.png",
-     "name": "Tencent"
+     "name": "KlingAI Research"
     },
     {
      "logo": "data/logos/pku.edu.cn.png",
@@ -1318,651 +450,196 @@
      "logo": "data/logos/hkust.edu.hk.png",
      "name": "HKUST",
      "ror": "00q4vv597"
+    },
+    {
+     "logo": "data/logos/hku.hk.png",
+     "name": "HKU",
+     "ror": "02zhqgq86"
+    },
+    {
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
     }
    ],
-   "thumb": "data/thumbs/2611.26211.jpg",
-   "thumb_w": 640,
-   "thumb_h": 316,
+   "thumb": "data/thumbs/2611.26595.jpg",
+   "thumb_w": 532,
+   "thumb_h": 440,
    "listed": "2026-11-20",
-   "summary": {
-    "zh": "SpecWM 是无需训练的流式世界模型推理框架，利用目标模型的潜空间速度场验证草稿并直接得到可用于修正的信息，以双阈值分为接受、精修、拒绝三档，精修复用该信息提升画质与相机跟随；在 WBench Navigation 上取得 1.63 倍加速，NavScore 从 75.99 升至 85.63。",
-    "en": "SpecWM is a training-free streaming world-model inference framework that verifies drafts via the target's latent velocity field, yielding reusable corrections with accept/refine/reject thresholds; it achieves 1.63x speedup and lifts NavScore from 75.99 to 85.63 on WBench Navigation."
-   },
-   "summary_source": "deepseek-flash"
+   "sections": []
   },
   {
-   "id": "2611.24011",
-   "title": "WAM-Policy: World Action Models with On-Policy Distillation for Quadrupedal Loco-Manipulation",
+   "id": "2611.21373",
+   "title": "WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection",
    "authors": [
-    "Junlin Long",
-    "Xu Deng",
-    "Yiran Wang",
-    "Yue Yang",
-    "Yang Zhao",
-    "Zeyu Zhang"
+    "Yipeng Du",
+    "Yuxi Li",
+    "Ying Zhang",
+    "Chong Sun",
+    "Chen Li",
+    "Jing Lyu",
+    "Ying Tai"
    ],
-   "abstract": "Arm-free quadrupeds can perform loco-manipulation, walking on three legs while manipulating with a front leg, yet no existing policy for it follows language instructions. World action models (WAMs) have emerged as effective language-conditioned manipulation policies, but are pretrained for robot arms and sample slowly. WAM-Policy turns one WAM into a quadrupedal loco-manipulation policy via two stages. The first, Cross-Morphology Policy Adaptation and Acceleration, adapts the arm-centric WAM to quadrupeds and distills the transferred policy into a student with one video and two action steps by on-policy self-distillation (OPSD). This student, however, is bounded by its teacher, which only imitates demonstrations. The second stage, Task-Specific Improvement and Merging, therefore tunes the teacher by reinforcement learning (RL) and merges the slow specialists into one few-step student by multi-teacher on-policy distillation (M-OPD). On QLM-Bench, ten simulated tasks with 1,000 demonstrations synthesized without teleoperation, the transferred policy reaches 77.0%, and the OPSD student keeps 76.7% while sampling 14 times faster. Task-specific RL and M-OPD lift it to 85.0%. We also deploy the OPSD student on a real Unitree Go2 Air. WAM-Policy thus achieves a stronger quadrupedal policy at a fraction of the inference cost.",
-   "primary": "cs.RO",
+   "abstract": "Recent advances in video generation call for reliable detection grounded in explicit forensic evidence. However, current methods primarily depend on single-pass chain-of-thought reasoning that overlooks brief or localized artifacts, or on predefined multi-agent workflows that offer limited flexibility in selecting relevant inspections. Even with adaptive investigation, optimizing the investigation policy alone does not directly improve the forensic capabilities of fixed experts. We introduce WeVisForensics, an agentic framework in which a main investigator agent coordinates a self-evolving library of forensic inspector sub-agents spanning visual and audio cues. The investigator learns which artifact type to examine, over which window, and when to conclude, and these interactions provide shared feedback for both levels of agents. Our dual-timescale policy optimization strategy, DTPO, closes this loop through fast reinforcement learning of the investigator and slower refinement of the inspectors, guided by annotated artifact intervals, to report subtle artifacts they once dismissed. Furthermore, we curate ForenCue-30K, combining role-specific forensic annotations and interaction trajectories to supervise individual inspections and their coordination, with an accompanying reinforcement-learning pool. Experiments show that WeVisForensics averages 95.2% detection accuracy across in-domain, out-of-domain and agentic benchmarks, 9.0% above the strongest prior detector, while grounding its verdicts in localized evidence.",
+   "primary": "cs.CV",
    "categories": [
-    "cs.RO",
-    "cs.CV"
+    "cs.CV",
+    "cs.AI"
    ],
-   "published": "2026-11-18T08:03:53Z",
-   "updated": "2026-11-18T08:03:53Z",
-   "comment": "Code: https://github.com/AIGeeksGroup/WAM-Policy, Website: https://aigeeksgroup.github.io/WAM-Policy/",
-   "code_url": "https://github.com/AIGeeksGroup/WAM-Policy",
+   "published": "2026-11-16T16:36:14Z",
+   "updated": "2026-11-16T16:36:14Z",
+   "comment": "",
    "listed": "2026-11-20",
    "tags": [
-    "robotics",
-    "VLA",
+    "agents",
+    "video generation",
+    "detection",
+    "multimodal"
+   ],
+   "hf_upvotes": 57,
+   "ax_votes": 8,
+   "ax_visits": 103,
+   "heat": 75.3,
+   "orgs": [
+    {
+     "name": "Nanjing University",
+     "ror": "01rxvg760"
+    },
+    {
+     "logo": "data/logos/tencent.com.png",
+     "name": "Tencent"
+    }
+   ],
+   "thumb": "data/thumbs/2611.21373.jpg",
+   "thumb_w": 640,
+   "thumb_h": 291,
+   "summary": {
+    "en": "WeVisForensics coordinates a self-evolving library of visual and audio forensic inspector agents via a main investigator and dual-timescale policy optimization DTPO, reaching 95.2% average detection accuracy across benchmarks, 9.0% above the strongest prior detector.",
+    "zh": "WeVisForensics 用一个主调查 agent 调度可自我进化的视觉与音频取证子 agent，配合双时间尺度策略优化 DTPO 和 ForenCue-30K 数据，在域内、域外与 agentic 基准上平均检测准确率达 95.2%，比最强基线高 9.0%。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": [
+    "rl"
+   ]
+  },
+  {
+   "id": "2611.26627",
+   "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
+   "authors": [
+    "Tuna Han Salih Meral",
+    "Kaan Oktay",
+    "Alec Helbling",
+    "Atakan Kara",
+    "Duen Horng Chau",
+    "Pinar Yanardag"
+   ],
+   "abstract": "Reinforcement learning (RL) post-training substantially improves the visual quality, text rendering, and compositional accuracy of diffusion transformers. Because capabilities such as rendering requested text or composing multiple objects are inherently prompt-dependent, a natural hypothesis is that improving them requires learning complex, input-dependent transformations. To isolate how much of these gains an input-independent shift explains, we probe each RL-tuned model with a deliberately simple parameterization: a fixed set of steering vectors added to the block outputs of the frozen base model. On SD3.5-M, these vectors hold 65x fewer parameters than the RL-tuned LoRA (0.29M against 18.8M). We fit them to match the velocity predictions of public RL-tuned checkpoints, with no reward in the objective. Although the vectors are identical for every prompt, token, and sampling seed, they recover 90.0-96.3% of the reward gains of six RL-tuned image models, and 89.8% and 111.9% on two RL-tuned video models. Initialized at zero and trained with online RL, the vectors alone exceed the reward gains of weight-based RL on text rendering (OCR) and human preference (PickScore) on SD3.5-M. A constant shift thus suffices for most of the gain of policy-gradient RL post-training: without new input-dependent transformations, it steers the pretrained generator toward what it can already compute.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-19T18:59:53Z",
+   "updated": "2026-11-19T18:59:53Z",
+   "comment": "Project page: https://rl-is-steering.github.io",
+   "tags": [
+    "diffusion",
     "RL",
-    "efficiency"
+    "interpretability",
+    "image generation"
    ],
-   "hf_upvotes": 20,
-   "ax_votes": 0,
-   "ax_visits": 52,
-   "heat": 25.2,
-   "orgs": [
-    {
-     "name": "University of Sydney",
-     "ror": "0384j8v12",
-     "logo": "data/logos/sydney.edu.au.png"
-    },
-    {
-     "name": "UNSW Sydney",
-     "ror": "03r8z3t63",
-     "logo": "data/logos/unsw.edu.au.png"
-    },
-    {
-     "name": "Maincode"
-    },
-    {
-     "name": "La Trobe University",
-     "ror": "01rxfrp27",
-     "logo": "data/logos/latrobe.edu.au.png"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24011.jpg",
-   "thumb_w": 640,
-   "thumb_h": 342,
    "summary": {
-    "zh": "WAM-Policy 将面向机械臂的世界动作模型经跨形态适配和在策略自蒸馏转为四足无臂移动操作策略，在 QLM-Bench 上迁移策略达 77.0%，学生模型保持 76.7% 且采样快 14 倍，再经任务 RL 与多教师蒸馏提升至 85.0%，并部署于 Unitree Go2 Air。",
-    "en": "WAM-Policy adapts an arm-centric world action model into a language-conditioned quadrupedal loco-manipulation policy via cross-morphology adaptation, on-policy self-distillation, task-specific RL and multi-teacher distillation, reaching 85.0% on QLM-Bench and deploying on a Unitree Go2 Air."
+    "en": "Fixed steering vectors added to frozen base-model block outputs, 65x smaller than RL-tuned LoRA, recover 90.0-96.3% of reward gains on six RL-tuned image models and 89.8%/111.9% on two video models.",
+    "zh": "用固定的一组 steering vectors 加到冻结基座模型 block 输出上，以 SD3.5-M 上 0.29M 参数（比 RL-tuned LoRA 少 65 倍）复现六个图像 RL 模型 90.0–96.3% 的奖励增益，两个视频模型达 89.8% 和 111.9%。"
    },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.26239",
-   "title": "Teaching Vision-Language-Action Models to Stop Safely",
-   "authors": [
-    "Zheyuan Liu",
-    "Chuhan Wang",
-    "Jinduo Guo",
-    "Yue Huang",
-    "Xiangchi Yuan",
-    "Ningshan Ma",
-    "Meng Jiang"
-   ],
-   "abstract": "Vision-language-action (VLA) models enable robots to perform diverse tasks from visual observations and language instructions. While prior work has explored task suppression and refusal, stopping prohibited behavior once execution is underway and controlling the resulting physical response remain challenging. Our evaluation reveals that policies which suppress a task from its initial state can still complete it when taking over partway through execution. Even when the task remains unfinished, the robot may drop a held object, making non-completion an incomplete measure of safety. To address these challenges, we introduce State-Aware Fallback Imitation (SAFI) for tasks where holding provides an appropriate alternative response. SAFI comprises two stages, (1) fallback target construction, which assigns stationary arm commands and consistent gripper targets throughout prohibited-task demonstrations, and (2) joint policy adaptation, which learns these targets alongside the original actions of retained tasks. This supervision teaches an explicit alternative response at intermediate execution states while maintaining the robot's other skills. Extensive experiments with OpenVLA-OFT across LIBERO and BadLIBERO tasks evaluate prohibited completion, physical incidents, and retained-task performance. On the evaluated LIBERO tasks, SAFI reduces aggregate target success after takeover to 1.3\\%, with no recorded physical incidents or action saturation, while preserving high retained-task success.",
-   "primary": "cs.RO",
-   "categories": [
-    "cs.RO"
-   ],
-   "published": "2026-11-19T15:14:55Z",
-   "updated": "2026-11-19T15:14:55Z",
-   "comment": "A two-stage pipeline that teaches VLAs to stop prohibited tasks safely while preserving permitted skills",
-   "tags": [
-    "VLA",
-    "robotics",
-    "safety",
-    "manipulation"
-   ],
-   "hf_upvotes": 9,
-   "ax_votes": 3,
-   "ax_visits": 67,
-   "heat": 18.7,
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 22,
+   "ax_votes": 17,
+   "ax_visits": 197,
+   "heat": 58.7,
    "orgs": [
     {
-     "name": "University of Notre Dame",
-     "ror": "00mkhxb43",
-     "logo": "data/logos/nd.edu.png"
+     "logo": "data/logos/vt.edu.png",
+     "name": "Virginia Tech",
+     "ror": "02smfhw86"
     },
     {
      "name": "Georgia Tech"
     },
     {
-     "logo": "data/logos/mit.edu.png",
-     "name": "MIT",
-     "ror": "042nb2s44"
+     "logo": "data/logos/ibm.com.png",
+     "name": "IBM"
     }
    ],
-   "thumb": "data/thumbs/2611.26239.jpg",
-   "thumb_w": 286,
-   "thumb_h": 440,
-   "listed": "2026-11-20",
-   "summary": {
-    "zh": "SAFI 通过两阶段训练让 VLA 策略在执行途中停止被禁止的任务：先构造回退目标并在禁止任务演示中统一冻结机械臂指令和夹爪目标，再与保留任务动作联合学习；在 LIBERO 与 BadLIBERO 上，OpenVLA-OFT 接管后的目标成功率降至 1.3%，且无物理事故，保留任务性能较高。",
-    "en": "SAFI teaches VLA policies an explicit fallback response at intermediate execution states via fallback target construction and joint policy adaptation; with OpenVLA-OFT on LIBERO and BadLIBERO, post-takeover target success drops to 1.3% with no physical incidents while retained-task performance stays high."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.24193",
-   "title": "WM^MLLM: Turning MLLMs into World Models",
-   "authors": [
-    "Baiang Li",
-    "Enze Xie",
-    "Jincheng Yu",
-    "Jin Wang",
-    "Haozhe Liu",
-    "Yitong Li",
-    "Juanxi Tian",
-    "Felix Heide"
-   ],
-   "abstract": "Video world models keep the world in the context of a generator, so a revisit is synthesized again and earlier edits can drift or disappear. We present WM^MLLM, the first interactive world model built on multimodal large language models (MLLMs), for persistent, editable world generation from a single image. WM^MLLM keeps the world state outside every generator, as a panorama with a revision history, and lets the MLLMs write it: they turn each request into operations on this state, select where a local edit is written, and check every candidate before it becomes the next state. Image generators only propose views, and video only presents them. Users can walk to new places and return, edit objects through text or a box, place subjects, and change lighting, weather or season. By construction, a revisit at the same revision reproduces the earlier view exactly, a local edit leaves every panorama pixel outside its region unchanged, and each request starts from the result of the previous one. Against six world model baselines on MBench-A, WM^MLLM has the highest mean on all four environment-recovery metrics (Epipolar 91.5 versus 0.1 to 74.0) and completes the most camera round trips (85.3% versus at most 50.9%). It has the best value in all 15 CompBench columns against 15 baselines. On 112 local edits judged blind, selecting the region to write after generation raises completion from 34.8% to 83.0%. On 258 WBench and MBench-A items, all 46 revisits recover their earlier views, and all 97 local edits that pass the check leave panorama pixels outside their region unchanged.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-18T10:29:16Z",
-   "updated": "2026-11-18T10:29:16Z",
-   "comment": "25 pages, 14 figures, 8 tables; project page: https://ztmotalee.github.io/wmmllm/",
-   "listed": "2026-11-20",
-   "tags": [
-    "multimodal",
-    "world model",
-    "image generation",
-    "LLM"
-   ],
-   "hf_upvotes": 17,
-   "ax_votes": 6,
-   "ax_visits": 107,
-   "heat": 33.7,
-   "orgs": [
-    {
-     "logo": "data/logos/princeton.edu.png",
-     "name": "Princeton University",
-     "ror": "00hx57361"
-    },
-    {
-     "logo": "data/logos/nvidia.com.png",
-     "name": "NVIDIA"
-    },
-    {
-     "name": "OpenEnvision"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24193.jpg",
+   "thumb": "data/thumbs/2611.26627.jpg",
    "thumb_w": 640,
-   "thumb_h": 405,
-   "summary": {
-    "zh": "WM^MLLM 用 MLLM 把世界状态存为带修订历史的全景图并执行编辑操作，图像与视频生成器只负责渲染视图，在 MBench-A 上 Epipolar 达 91.5（基线 0.1–74.0），相机往返完成率 85.3%（基线最高 50.9%），15 项 CompBench 指标全部最优。",
-    "en": "WM^MLLM uses MLLMs to maintain world state as a panorama with revision history and perform edits, with generators only rendering views; it achieves Epipolar 91.5 on MBench-A (baselines 0.1–74.0) and 85.3% camera round trips."
-   },
-   "summary_source": "deepseek-flash"
+   "thumb_h": 322,
+   "listed": "2026-11-20",
+   "sections": [
+    "rl"
+   ]
   },
   {
-   "id": "2611.26286",
-   "title": "Twice-Told Critiques: Claim-Level Homogenization of Peer Review in the LLM Era",
+   "id": "2611.26617",
+   "title": "One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning",
    "authors": [
-    "Ilya Gusev"
+    "Yuxin Jiang",
+    "Wenqiang Sun",
+    "Jiaqi Li",
+    "Yuchao Gu",
+    "Lvmin Zhang",
+    "Ivor Tsang",
+    "Mike Zheng Shou"
    ],
-   "abstract": "Peer review relies on several readers finding different problems. We measure critique overlap in conference and journal reviews. At ICLR, measured overlap rose from 12.0% in 2026 to 21.3% in 2027, in reviews from the same stage of the review process, with year-on-year rises at NeurIPS, ICML and the F1000 and PLOS journals. A third ICLR review of a paper added 5.46 new problems to the other two in 2027, against 6.12 in 2026. We apply MELD, a detector of LLM-generated text, to all reviews. Within a paper, two reviews that MELD flags overlap more than two unflagged reviews: by 3.0 points at ICLR in 2024-2025, by 4.5 points in 2026-2027, and by 5.4 points across five journal sources. These results provide evidence that LLM-flagged reviews of one paper are less distinct from each other than unflagged reviews, and suggest that the diversity of critiques among reviews of a single paper is falling.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL",
-    "cs.AI",
-    "cs.DL"
-   ],
-   "published": "2026-11-19T15:45:51Z",
-   "updated": "2026-11-19T15:45:51Z",
-   "comment": "",
-   "tags": [
-    "VLM/LLM"
-   ],
-   "hf_upvotes": 10,
-   "ax_votes": 2,
-   "ax_visits": 45,
-   "heat": 16.5,
-   "orgs": [],
-   "thumb": "data/thumbs/2611.26286.jpg",
-   "thumb_w": 566,
-   "thumb_h": 440,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.26540",
-   "title": "AURA: AUdio-dRiven streaming Avatar",
-   "authors": [
-    "Nathaniel Cohen",
-    "Nicolas Dufour",
-    "Amélie Royer",
-    "Alasdair Newson",
-    "Patrick Pérez"
-   ],
-   "abstract": "Current audio-driven video diffusion models can synthesize realistic talking-head videos but generally require dozens of diffusion denoising steps over multi-second video chunks, making them unsuitable for streaming applications such as voice assistants and virtual avatars, where low-latency and online causal generation are required properties. AURA generates video chunk by chunk with a rolling KV cache, requiring only the audio of the current chunk to start generating, rather than a multi-second audio look-ahead like bidirectional models. It comes in two sizes: AURA 1.3B streams 576p video in real time on a single GPU (20.7 fps for a 16 Hz playback rate), making it suited to interactive avatar applications, and AURA 5B streams 720p video at 9.7 fps. Our two-stage distillation pipeline first aligns the causal student with the teacher, by training it to match the teacher's trajectories with fewer diffusion steps and a chunk-wise sliding window causal attention mask, then applies Distribution Matching Distillation (DMD) with backward simulation to close the remaining quality gap. On standard talking-head benchmarks, AURA 1.3B runs 23x faster than its own bidirectional teacher and reaches a quality comparable to TalkVerse at a lower resolution, and AURA 5B matches its TalkVerse teacher at 720p while running 17x faster. To support reproducibility and further research on streaming avatar generation, we release the weights of both models along with a dataset of 30K synthetic videos and their precomputed teacher trajectories.",
+   "abstract": "Videos reveal how the world changes, but rarely the actions that cause those changes. Latent action learning recovers such supervision from visual transitions, yet often learns the underlying dynamics largely from scratch. We ask whether a pretrained video generator can instead provide the prior for both inverse and forward dynamics. We introduce O$^{2}$LaF, built on a simple principle: one prior, two dynamics. We initialize both models from the same pretrained video DiT and adapt them to their distinct roles: a feed-forward transition encoder with learnable action queries for inverse dynamics, and a causal, action-conditioned video generator for forward dynamics. By controlling information access and optimizing both dynamics end-to-end through a compact bottleneck, O$^{2}$LaF learns transferable actions from unlabeled videos. Across navigation and robotic manipulation, O$^{2}$LaF sets a new state of the art in few-shot action probing and enables stronger zero-shot action transfer across visual contexts and embodiments. Beyond generative video priors, we further extend our framework to predictive representation priors such as V-JEPA2, achieving competitive performance. Our findings suggest a broader paradigm for latent-action learning: repurposing pretrained video models to discover transferable actions and predict their consequences.",
    "primary": "cs.CV",
    "categories": [
     "cs.CV",
-    "cs.AI"
-   ],
-   "published": "2026-11-19T18:17:38Z",
-   "updated": "2026-11-19T18:17:38Z",
-   "comment": "BMVC 2026. Project page: https://kyutai.org/aura",
-   "tags": [
-    "benchmark"
-   ],
-   "hf_upvotes": 4,
-   "ax_votes": 3,
-   "ax_visits": 86,
-   "heat": 15.6,
-   "orgs": [
-    {
-     "name": "Sorbonne Université",
-     "ror": "02en5vm52"
-    },
-    {
-     "logo": "data/logos/deepmind.google.png",
-     "name": "Google DeepMind"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26540.jpg",
-   "thumb_w": 640,
-   "thumb_h": 237,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.24809",
-   "title": "On-Policy Morphing into Hybrid Attention Models",
-   "authors": [
-    "Disen Lan",
-    "Xuanda Wang",
-    "Jianbin Zheng",
-    "Huafeng Kuang",
-    "Wei Tang",
-    "Yu Cheng"
-   ],
-   "abstract": "Hybrid attention models combine full and linear attention to achieve a better quality--efficiency trade-off. Converting pretrained Transformers into such models requires identifying which layers should retain full attention under a prescribed budget. We identify two off-policy mismatches in FlashMorph's layer selection: (i) continuous branch interpolation and teacher-forced hidden states differ from discrete hybrid computation; and (ii) frozen model weights fail to account for parameter adaptation during subsequent recovery. We introduce FlashMorph2, an on-policy layer-selection method that (I) evaluates sampled discrete hybrid architectures end to end using their own hidden states, and (II) jointly optimizes layer-selection scores and model weights under the recovery objective to reflect post-adaptation performance. Experiments across Qwen3 model scales and linear-attention variants show that FlashMorph2 consistently outperforms existing layer-selection methods, improving average scores over FlashMorph by $+2.42$ points on RULER, $+1.08$ on LongBench, and $+0.76$ on recall-intensive tasks, while completing layer selection in only $0.72$--$3.57$ GPU hours across 0.6B--8B models, demonstrating high efficiency and scalability.",
-   "primary": "cs.CL",
-   "categories": [
-    "cs.CL"
-   ],
-   "published": "2026-11-18T17:45:51Z",
-   "updated": "2026-11-18T17:45:51Z",
-   "comment": "",
-   "listed": "2026-11-20",
-   "tags": [
-    "LLM",
-    "efficiency",
-    "pretraining"
-   ],
-   "hf_upvotes": 14,
-   "ax_votes": 1,
-   "ax_visits": 47,
-   "heat": 19.7,
-   "orgs": [
-    {
-     "name": "Fudan University",
-     "ror": "013q1eq08"
-    },
-    {
-     "logo": "data/logos/bytedance.com.png",
-     "name": "ByteDance"
-    },
-    {
-     "name": "NTU",
-     "ror": "02e7b5302"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24809.jpg",
-   "thumb_w": 640,
-   "thumb_h": 265,
-   "summary": {
-    "zh": "FlashMorph2 将预训练 Transformer 转为混合注意力模型，采用 on-policy 层选择：以采样出的离散混合结构自身的隐藏状态做端到端评估，并联合优化层选择分数与模型权重，在 Qwen3 各规模上 RULER 平均得分比 FlashMorph 提升2.42分、LongBench 提升1.08分、recall-intensive 任务提升0.76分，层选择仅需0.72–3.57 GPU小时。",
-    "en": "FlashMorph2 converts pretrained Transformers into hybrid attention models via on-policy layer selection, evaluating sampled discrete architectures end to end and jointly optimizing selection scores with weights, outperforming FlashMorph by +2.42 RULER and +1.08 LongBench points."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.25567",
-   "title": "Online Mistake Detection in Instruction-Conditioned Procedural Video",
-   "authors": [
-    "Amit Feldman",
-    "Ilan Shimshoni",
-    "Rotem Dror"
-   ],
-   "abstract": "An assistant monitoring a person performing a procedure is most useful when it can detect mistakes while there is still time to recover. This requires judging actions against task instructions as the video unfolds, identifying the attempted step, locating it in time, and assessing its execution. Existing online detectors do not use the instruction text, while instruction-conditioned methods operate offline. In this paper, we study online, instruction-conditioned mistake detection in egocentric videos. Using only observed video, task instructions, and prior predictions, our model identifies and localizes completed action attempts and classifies them as correct, modified, slip, corrections, or additions; omitted steps are determined after the video ends. We compare a modular pipeline, with separate step identification, temporal localization, and execution verification, to a joint model that predicts all outputs in a single step. To support supervised learning from mistakes, we repartition EgoPER to include erroneous videos in all splits. The approaches achieve similar step-segmentation F1@0.5 (93.6% and 92.1%), while the joint model achieves higher binary mistake-detection F1@0.5 (84.1% vs. 80.7%), with its largest gain on slips (56.4% vs. 37.5%). Component-level analysis suggests that error propagation between stages contributes to the modular approach's lower detection score. On test videos containing mistakes, both designs outperform released AEM and ESTANet checkpoints under our evaluation protocol.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.AI"
-   ],
-   "published": "2026-11-19T06:09:24Z",
-   "updated": "2026-11-19T06:09:24Z",
-   "comment": "",
-   "tags": [],
-   "hf_upvotes": 12,
-   "ax_votes": 0,
-   "ax_visits": 20,
-   "heat": 14.0,
-   "orgs": [
-    {
-     "logo": "data/logos/haifa.ac.il.png",
-     "name": "University of Haifa",
-     "ror": "02f009v59"
-    }
-   ],
-   "thumb": "data/thumbs/2611.25567.jpg",
-   "thumb_w": 640,
-   "thumb_h": 271,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.26248",
-   "title": "TwinLab-Bench: Evaluating AI Scientists in Agentic Twins of Real Labs",
-   "authors": [
-    "Yang Wan",
-    "Linchao Zhu"
-   ],
-   "abstract": "AI agents are increasingly expected to act as AI scientists, which requires three increasingly open abilities: carrying out a given computational workflow correctly, choosing the next measurements from a given design space, and designing their own experiments. Existing benchmarks mainly evaluate the first two abilities, in a terminal or in a closed loop that selects from predefined candidates. Evaluating the third ability requires reliably executing an experiment that an agent designs, with readings grounded in a real laboratory. We introduce TwinLab-Bench, which evaluates AI scientists on self-designed experiments in 52 tasks from laboratories in the physical sciences, the life sciences, and engineering. The benchmark supports more than 100 experimental action types, and the agent's report is scored by comparison with a hidden answer taken from real laboratory records. Each task has its own TwinLab agent, an agent that serves as the environment and executes the experiments that the tested agent designs, reading the raw materials of the laboratory and calling calculators that are built from its records. Compared with a language model that sees only the task description, the TwinLab agent almost eliminates readings that deviate from the real records and inconsistent answers to a repeated request, and closed-book probes control for answers recalled from memory. We find that these tasks remain hard for frontier models: the strongest, Claude Fable 5.2, averages a score of only 45.0, and we conduct an empirical study of where it fails.",
-   "primary": "cs.AI",
-   "categories": [
     "cs.AI",
-    "cs.CL",
-    "cs.LG"
-   ],
-   "published": "2026-11-19T15:25:34Z",
-   "updated": "2026-11-19T15:25:34Z",
-   "comment": "https://twinlab-bench.github.io/ contains tasks and code. 33 pages, 6 figures, 14 tables. LLM-agent benchmark for autonomous experimental design in digital twins of real labs (physics, chemistry, wet-lab biology, materials, engineering). 13 agents evaluated: Claude Fable 5.2 45.0, Opus 5.5 40.2, GPT-6.1-sol 31.7, plus DeepSeek, Qwen, Kimi, GLM and others",
-   "tags": [
-    "benchmark"
-   ],
-   "hf_upvotes": 7,
-   "ax_votes": 1,
-   "ax_visits": 46,
-   "heat": 12.6,
-   "orgs": [
-    {
-     "name": "Zhejiang University",
-     "ror": "00a2xv884"
-    }
-   ],
-   "thumb": "data/thumbs/2611.26248.jpg",
-   "thumb_w": 640,
-   "thumb_h": 206,
-   "listed": "2026-11-20"
-  },
-  {
-   "id": "2611.25935",
-   "title": "TwinD: Generalizing Deepfake Detection from Blending to Entire Face Synthesis",
-   "authors": [
-    "Andrii Yermakov",
-    "Jan Cech",
-    "Mario Fritz",
-    "Jiri Matas"
-   ],
-   "abstract": "Facial deepfake detectors are usually trained on blending fakes, where a generated face is pasted back into a real frame. Recent generators synthesize the entire face and leave no traces of blending. On a benchmark of 19 datasets released from 2019 to 2026, the best prior facial deepfake detector reaches a mean AUROC of 96.2% on ten blending datasets, but none exceeds 78.1% on five datasets of entire face synthesis (EFS). AI-generated content (AIGC) detectors do not close this gap. We propose TwinD, a detector trained on FaceForensics++ fakes and two kinds of twins: fakes made from a real frame. A reconstruction twin is a real frame reconstructed by an autoencoder, with the real pixels put back in a random region. It targets the neural traces of a decoder. A blob twin blends an altered copy of a real frame with the frame itself, targeting blending artifacts. It needs no generator and no face-shaped mask. Together, these twins provide two complementary forensic cues that generalize to unseen manipulations. TwinDreaches a mean AUROC of 96.3%, 8.9 points above the prior state-of-the-art, with 98.1% on the blending datasets and 95.6% on the EFS datasets. Trained on twins alone, without a deepfake dataset, single models still reach 94.3% on average over three seeds. For reproducibility, the code, trained model, and training data are at: https://github.com/yermandy/TwinD",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-19T11:20:39Z",
-   "updated": "2026-11-19T11:20:39Z",
-   "comment": "",
-   "code_url": "https://github.com/yermandy/TwinD",
-   "tags": [
-    "manipulation",
-    "benchmark"
-   ],
-   "hf_upvotes": 1,
-   "ax_votes": 1,
-   "ax_visits": 107,
-   "heat": 12.7,
-   "listed": "2026-11-20",
-   "orgs": [
-    {
-     "logo": "data/logos/cvut.cz.png",
-     "name": "Czech Technical University in Prague",
-     "ror": "03kqpb082"
-    },
-    {
-     "logo": "data/logos/cispa.de.png",
-     "name": "Helmholtz Center for Information Security",
-     "ror": "02njgxr09"
-    }
-   ],
-   "thumb": "data/thumbs/2611.25935.jpg",
-   "thumb_w": 640,
-   "thumb_h": 232
-  },
-  {
-   "id": "2611.26624",
-   "title": "PlayCraft: Designing Engaging Games from Agent Play Experience",
-   "authors": [
-    "Weihao Cheng"
-   ],
-   "abstract": "Recent AI agents can generate playable games, but these games are not necessarily engaging. Mastery is a key source of engagement, yet designing for it requires extensive human play and tuning. We propose PlayCraft, an automated framework that uses a vision-based agent to play games and draws on its detailed play experience to revise them for mastery. Starting from an initial game, PlayCraft alternates between playing and crafting. In the playing stage, a player agent watches the game screen, uses the controls, and pursues the game objective over repeated episodes while retaining memory. After each episode, it reports its progress, outcomes, decisions, and reflections. In the crafting stage, a crafter agent uses these reports to revise the game. It estimates player abilities, predicts performance at different proficiency levels, and compares those predictions with a target learning progression. It diagnoses the game and addresses the gaps by giving players meaningful opportunities to improve through better decisions and execution. We evaluate games in fresh runs with player agents across three intelligence settings, measuring learning gain and learning slope. Compared with the initial games, PlayCraft yields larger learning gains and steeper learning slopes in most games. It also outperforms the baselines on the macro-average of each metric at every intelligence setting.",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI",
-    "cs.CV"
-   ],
-   "published": "2026-11-19T18:59:34Z",
-   "updated": "2026-11-19T18:59:34Z",
-   "comment": "",
-   "tags": [],
-   "hf_upvotes": 5,
-   "ax_votes": 0,
-   "ax_visits": 74,
-   "heat": 12.4,
-   "listed": "2026-11-20",
-   "orgs": [],
-   "thumb": "data/thumbs/2611.26624.jpg",
-   "thumb_w": 587,
-   "thumb_h": 440
-  },
-  {
-   "id": "2611.20455",
-   "title": "Embeddings vs. Grep: Rethinking the Dense Advantage in Code Search",
-   "authors": [
-    "Siqiao Xue",
-    "Ziyin Zhang",
-    "Zihan Liao",
-    "Jin Qin",
-    "Yixiang Mu",
-    "Hang Yu"
-   ],
-   "abstract": "Code-search benchmarks show dense encoders well ahead of BM25, yet coding agents do well with \\texttt{grep}. What does this dense advantage measure? Existing benchmarks cannot tell: they use curated queries, old code and a handicapped BM25. To find out, we build Repo-Premium, a realistic repository-level code-search benchmark. It ranks files in real repositories, with curated and raw queries in Python, JavaScript, TypeScript, Go, Rust and Java, pull requests from 2022 to 2026, and a preregistered test pool over $91$ repositories. Our experiments trace the advantage to two sources: evaluation choices that favor dense retrieval, such as splitting files into chunks for BM25 and counting edited tests as relevant, and queries that lack the code's rare identifiers. Expanding the query with LLM-written identifiers (generate-then-grep) helps BM25 far more than dense retrieval, letting it match dense retrieval in every Python pool, even on pull requests opened after the LLM was released. No method we tried predicts which retriever will win on a given query. From these results we derive three guidelines: measure dense gains against a fair lexical baseline, fuse dense retrieval with BM25, and add the code's words to queries that lack them.",
-   "primary": "cs.SE",
-   "categories": [
-    "cs.SE"
-   ],
-   "published": "2026-11-16T03:24:04Z",
-   "updated": "2026-11-16T03:24:04Z",
-   "comment": "hf: https://huggingface.co/datasets/hq-bench/repo-premium",
-   "listed": "2026-11-20",
-   "tags": [
-    "code",
-    "retrieval",
-    "benchmark",
-    "LLM"
-   ],
-   "hf_upvotes": 14,
-   "ax_votes": 4,
-   "ax_visits": 56,
-   "heat": 23.6,
-   "orgs": [
-    {
-     "name": "Ant Group",
-     "ror": "00g5w7n47"
-    }
-   ],
-   "thumb": "data/thumbs/2611.20455.jpg",
-   "thumb_w": 566,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "构建 Repo-Premium 仓库级代码搜索基准，覆盖 6 种语言、2022–2026 年 PR 与 91 个仓库，发现稠密检索的优势主要来自分块 BM25、把改动的测试算作相关等评测偏向以及查询缺少稀有标识符；用 LLM 生成标识符扩展查询的 generate-then-grep 使 BM25 在所有 Python 测试池上追平稠密检索。",
-    "en": "Repo-Premium, a repository-level code-search benchmark across six languages and 91 repos, shows dense retrieval's edge stems from evaluation artifacts and identifier-poor queries; LLM-written identifier expansion lets BM25 match dense retrieval on all Python pools."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.21053",
-   "title": "System 1 agents: a method for local, reliable and fast agentic AI",
-   "authors": [
-    "Eleftherios Tzanis",
-    "Michail E. Klontzas"
-   ],
-   "abstract": "Agentic artificial intelligence could automate analyses of sensitive clinical data, but current agents depend on large language models (LLMs). Cloud LLMs expose patient data. Local LLMs hallucinate, and an invented value in a tool call propagates through every later step. Here we present a method to build System 1 agents: local agents that call tools without generating text. A deterministic compiler turns each tool's schema and the request into multiple-choice questions whose options come from the request and the schema, then a one-pass decision model answers them. On 1,952 requests to 157 biomedical tools, the best System 1 agent chose the right tool, or correctly declined, for 97.0% of requests, significantly ahead of all 18 local LLM-agent settings (best 95.2%). The System 1 agent filled 97.0% of 6,056 stated argument values. No System 1 call contained invented content, against 5.5-19.7% of LLM calls. The System 1 Agents framework is freely available as open-source software at https://github.com/eltzanis/SystemOneAgents.",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI"
-   ],
-   "published": "2026-11-16T13:05:32Z",
-   "updated": "2026-11-16T13:05:32Z",
-   "comment": "18 pages, 5 figures, 9 tables. Code and data: https://github.com/eltzanis/SystemOneAgents",
-   "code_url": "https://github.com/eltzanis/SystemOneAgents",
-   "listed": "2026-11-20",
-   "tags": [
-    "VLM/LLM"
-   ],
-   "hf_upvotes": 10,
-   "ax_votes": 1,
-   "ax_visits": 19,
-   "heat": 12.9,
-   "orgs": [],
-   "thumb": "data/thumbs/2611.21053.jpg",
-   "thumb_w": 529,
-   "thumb_h": 440
-  },
-  {
-   "id": "2611.25604",
-   "title": "PAD: Policy-Aware Data Valuation for Autonomous Driving",
-   "authors": [
-    "Chengkai Xu",
-    "Yicheng Guo",
-    "Jiaqi Liu",
-    "Yiming Cui",
-    "Shiyu Fang",
-    "Peng Hang",
-    "Hao Zhang",
-    "Jian Sun"
-   ],
-   "abstract": "End-to-end autonomous driving increasingly depends on scaling training demonstrations, yet data growth does not guarantee proportional gains. However, additional data do not guarantee better policies: a demonstration that benefits one planner may be redundant or harmful to another. Existing curation methods typically infer data value from intrinsic sample properties or training-dependent proxies that do not measure downstream policy utility. To address this, we introduce \\textbf{Policy-Aware Data Valuation (PAD)}, a framework that assigns each candidate demonstration a utility specific to the target driving policy. PAD combines scene-level calibration feedback with projected policy gradients and a regularized approximation of local training geometry, producing scalable influence-based values for the policy. A controlled group-removal study establishes the directional fidelity of these values, while cross-planner analysis shows that the same candidate pool induces markedly different rankings across planner families. On DiffusionDrive, PAD improves EPDMS over real-only training by $3.5$ points on NavTest and $5.0$ points on NavHard. Policy-specific curation consistently outperforms real-only and full-pool training across diffusion-, regression-, and flow-matching-based planners while substantially reducing scene-level regressions. These results establish policy-aware data valuation as a basis for replacing indiscriminate data accumulation with targeted policy improvement, enabling more efficient and reliable scaling of autonomous-driving systems.",
-   "primary": "cs.RO",
-   "categories": [
+    "cs.LG",
     "cs.RO"
    ],
-   "published": "2026-11-19T06:53:22Z",
-   "updated": "2026-11-19T06:53:22Z",
-   "comment": "",
+   "published": "2026-11-19T18:58:14Z",
+   "updated": "2026-11-19T18:58:14Z",
+   "comment": "Project page: https://showlab.github.io/o2laf Code: https://github.com/showlab/O2LaF",
+   "code_url": "https://github.com/showlab/O2LaF",
    "tags": [
-    "imitation",
-    "driving"
-   ],
-   "hf_upvotes": 4,
-   "ax_votes": 2,
-   "ax_visits": 40,
-   "heat": 10.0,
-   "listed": "2026-11-20",
-   "orgs": [
-    {
-     "name": "Tongji University",
-     "ror": "03rc6as71"
-    }
-   ],
-   "thumb": "data/thumbs/2611.25604.jpg",
-   "thumb_w": 640,
-   "thumb_h": 231
-  },
-  {
-   "id": "2611.19230",
-   "title": "CompoundingKernel: Self-Improving from Zero to First",
-   "authors": [
-    "Qian Qu",
-    "Hongyang Wang",
-    "Wenbo Chen",
-    "Yichuan Li",
-    "Jingguo Liu",
-    "Xian Li",
-    "Xuan Wang",
-    "Ruochen Wen",
-    "Leo Fan",
-    "Yiming Yan",
-    "Yutong Chen",
-    "Zheshen Wang",
-    "Benoit Dumoulin"
-   ],
-   "abstract": "We present CompoundingKernel, a self-improving agent system that writes GPU kernels by search. As of 2026-11-11, its generated kernels rank #1 on the public L1, L2 and Quantization boards of SOL-ExecBench (NVIDIA B200). They have held #1 on L1 since 2026-10-27, albeit a short loss on 2026-11-07. All 235 problems have a site-verified correct kernel; on the 209 public-board problems they are 4.40x faster than the benchmark's reference baseline. The search starts from zero: agents get each problem's PyTorch definition but no reference kernels or official scores. A per-problem archive outside the model holds every correct kernel and its lineage. An LLM controller reads it, picks a parent or a new design, and gives each parallel child agent one direction. Checks outside the model decide correctness. At equal wall time, it beat a coded UCB style tree on 35 of 38 problems by making 2.4x as many correct attempts. Over a thousand agents ran at once, and one warm restart fix raised their evaluation rate 3.6x. We find that the rate of reliable measurements, not the number of agents, limits how far such a search scales. Our code and kernels are available on https://huggingface.co/spaces/QianQu/CompoundingKernel-Explorer .",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI"
-   ],
-   "published": "2026-11-14T07:46:00Z",
-   "updated": "2026-11-20T23:17:46Z",
-   "comment": "47 pages, 23 figures, 6 tables. URL: https://huggingface.co/spaces/QianQu/CompoundingKernel-Explorer",
-   "listed": "2026-11-20",
-   "tags": [
+    "video generation",
+    "world model",
     "agents",
-    "code",
-    "efficiency"
+    "robotics"
    ],
-   "hf_upvotes": 12,
-   "ax_votes": 7,
-   "ax_visits": 97,
-   "heat": 28.7,
-   "orgs": [
-    {
-     "logo": "data/logos/amazon.com.png",
-     "name": "Amazon"
-    }
-   ],
-   "thumb": "data/thumbs/2611.19230.jpg",
-   "thumb_w": 640,
-   "thumb_h": 405,
    "summary": {
-    "zh": "CompoundingKernel 让 LLM 控制器读取模型外的逐问题存档，选择父代或新设计并指挥并行子智能体搜索 GPU kernel；在 SOL-ExecBench（NVIDIA B200）的 L1、L2 与量化榜上位列第一，209 道公开题上比参考基线快 4.40x。",
-    "en": "CompoundingKernel uses an LLM controller that reads a per-problem kernel archive to direct parallel child agents in searching GPU kernels; it ranks #1 on SOL-ExecBench L1, L2 and Quantization boards and is 4.40x faster than the reference baseline on 209 public problems."
+    "en": "O²LaF repurposes one pretrained video DiT as both inverse and forward dynamics, trained end-to-end through a compact bottleneck, achieving state-of-the-art few-shot action probing and stronger zero-shot action transfer in navigation and manipulation.",
+    "zh": "O²LaF 将同一个预训练视频 DiT 复用作逆动力学与正动力学两个模型，通过控制信息通路与紧凑瓶颈端到端训练，在导航和机器人操作中刷新 few-shot 动作探测最优结果，并实现更强的零样本动作迁移。"
    },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.26232",
-   "title": "Time Series Structure Learning with Local Causal Parent Discovery",
-   "authors": [
-    "Jacqueline Maasch",
-    "Shu Wan",
-    "Hank Zhu",
-    "Huan Liu",
-    "Zhiguang Wang"
-   ],
-   "abstract": "Learning and inference on time series can pose significant statistical challenges, including autocorrelated observations, distribution shift over time, and the curse of dimensionality. These challenges complicate the practical application of causal discovery algorithms, which already suffer from high computational and sample complexity in the general case. To mitigate these issues, this work introduces Iterative Temporal Parent Discovery (ITPD): a sound and complete constraint-based procedure for causal structure learning on multivariate time series with causal nonstationarity. ITPD takes a local-to-global learning approach that discovers the global graph by sequentially discovering the parent set for each variable. ITPD exploits temporal structural priors, graph partitioning, and the local Markov condition to swap higher-order conditional independence tests for lower-order alternatives. With an exact oracle, ITPD performed the least number of tests and used the smallest average conditioning set sizes relative to baselines. In benchmarking simulations, ITPD sat on the Pareto frontier with respect to F1 and wall-clock time and was faster than baselines on large graphs ($\\geq$ 1000 nodes). For graphs with 2000 nodes, ITPD ran $2.3\\times$, $9.1\\times$, and $40.9\\times$ faster than iterative IAMB, DF-PC, and PCMCI, respectively.",
-   "primary": "cs.LG",
-   "categories": [
-    "cs.LG",
-    "stat.ML"
-   ],
-   "published": "2026-11-19T15:06:06Z",
-   "updated": "2026-11-19T15:06:06Z",
-   "comment": "",
-   "tags": [
-    "benchmark"
-   ],
-   "hf_upvotes": 2,
-   "ax_votes": 2,
-   "ax_visits": 44,
-   "heat": 8.4,
-   "listed": "2026-11-20",
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 19,
+   "ax_votes": 12,
+   "ax_visits": 225,
+   "heat": 53.5,
    "orgs": [
     {
-     "logo": "data/logos/asu.edu.png",
-     "name": "Arizona State University",
-     "ror": "03efmqc40"
+     "name": "NUS",
+     "ror": "01tgyzw49"
+    },
+    {
+     "name": "A*STAR"
+    },
+    {
+     "logo": "data/logos/tencent.com.png",
+     "name": "Tencent"
+    },
+    {
+     "logo": "data/logos/stanford.edu.png",
+     "name": "Stanford University",
+     "ror": "00f54p054"
     }
    ],
-   "thumb": "data/thumbs/2611.26232.jpg",
+   "thumb": "data/thumbs/2611.26617.jpg",
    "thumb_w": 640,
-   "thumb_h": 224
+   "thumb_h": 204,
+   "listed": "2026-11-20",
+   "sections": []
   },
   {
    "id": "2611.22666",
@@ -2011,10 +688,1396 @@
    "thumb_w": 529,
    "thumb_h": 440,
    "summary": {
-    "zh": "VSpark 针对自回归 VLA 模型逐 token 生成机器人动作的特点，用带标定动作噪声的 rollout 训练草稿模型、对齐 VLA 隐特征并复用被拒草稿的后续预测，在 4 个 VLA 与 4 个操作基准上实现 1.28x–2.10x 无损加速。",
-    "en": "VSpark accelerates autoregressive VLA models via speculative decoding with calibrated-noise rollouts, hidden-feature alignment, and reuse of continuations from rejected drafts, achieving 1.28x-2.10x lossless speedup across four VLAs and four manipulation benchmarks."
+    "en": "VSpark accelerates autoregressive VLA models via speculative decoding with calibrated-noise rollouts, hidden-feature alignment, and reuse of continuations from rejected drafts, achieving 1.28x-2.10x lossless speedup across four VLAs and four manipulation benchmarks.",
+    "zh": "VSpark 针对自回归 VLA 模型逐 token 生成机器人动作的特点，用带标定动作噪声的 rollout 训练草稿模型、对齐 VLA 隐特征并复用被拒草稿的后续预测，在 4 个 VLA 与 4 个操作基准上实现 1.28x–2.10x 无损加速。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.21383",
+   "title": "The Mask Is Not the Object: Volumetric Supervision for 3D Gaussian Segmentation",
+   "authors": [
+    "Jeonghwan Cho",
+    "Minsu Kim",
+    "Junyoung Hong",
+    "Seon Joo Kim"
+   ],
+   "abstract": "3D Gaussian Splatting enables object-level operations on Gaussian primitives, yet existing segmentation methods are largely trained and evaluated through rendered views. This mismatch can produce accurate rendered masks from incomplete 3D selections since alpha-blended feature supervision concentrates learning on dominant contributors while leaving occluded or low-contribution Gaussians weakly supervised. We propose VODA, a plug-and-play supervision objective that exploits local depth structure to group per-pixel contributors and directly supervises all Gaussians in selected depth clusters, bypassing contribution-weighted gradient delivery. To evaluate volumetric completeness, we introduce Removal-3D, a synthetic object-removal benchmark, and the Removal Depth Error (RDE), a metric comparing predicted and ground-truth depth changes. Across four rendering-based baselines, VODA consistently improves volumetric segmentation on Removal-3D while maintaining or improving performance on LERF and ScanNet. Further analysis shows that VODA recovers lower-contribution Gaussians, while simple gradient reweighting and spatial propagation fail to reproduce comparable gains.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-16T16:44:07Z",
+   "updated": "2026-11-16T16:44:07Z",
+   "comment": "Accepted at NeurIPS 2026. Project page: https://jhxcho.github.io/voda/",
+   "listed": "2026-11-20",
+   "tags": [
+    "segmentation",
+    "3D",
+    "efficiency"
+   ],
+   "hf_upvotes": 37,
+   "ax_votes": 2,
+   "ax_visits": 31,
+   "heat": 42.1,
+   "orgs": [
+    {
+     "logo": "data/logos/yonsei.ac.kr.png",
+     "name": "Yonsei University",
+     "ror": "01wjejq96"
+    }
+   ],
+   "thumb": "data/thumbs/2611.21383.jpg",
+   "thumb_w": 640,
+   "thumb_h": 273,
+   "summary": {
+    "en": "VODA is a plug-and-play supervision objective that groups per-pixel contributors via local depth structure and directly supervises all Gaussians in selected depth clusters, improving volumetric segmentation on Removal-3D across four rendering baselines while maintaining or improving LERF and ScanNet performance.",
+    "zh": "VODA 是一种即插即用的监督目标，利用局部深度结构将逐像素贡献者分组并直接监督所选深度簇内的所有高斯，从而绕过贡献加权梯度传递；在 Removal-3D 上对四个渲染基线均提升体积分割，并在 LERF 和 ScanNet 上保持或提升性能。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.26590",
+   "title": "Probing the \"Conscious\" Mind: Selective Access and Global Workspace in Vision-Language Models",
+   "authors": [
+    "Jiahao Huang",
+    "Jun Wang"
+   ],
+   "abstract": "Vision-language models (VLMs) integrate visual and textual information, but their outputs do not reveal internal concept representations. Global workspace theory (GWT) proposes that information is selected from parallel brain processes, integrated in a shared workspace, and made available to specialised processes. We introduce the Multimodal Concept Lens (MC-Lens), a multimodal Jacobian lens, to study these functions in VLM concept processing. Its vision encoder and language decoder lenses map intermediate states to a shared semantic space defined by the decoder's output vocabulary to compare concept accessibility across modalities. MC-Lens supports internal concept interventions to examine the role of accessed concepts in downstream computation. (i) Accessibility and selective access. Multimodal concept information is readable in intermediate states and selectively accessible as tasks require. We extend \"readout carriers\" from one name token to a token set to better capture and express concept information and support counterfactual experiments. (ii) Concepts in downstream computation. Counterfactual experiments show that accessed concept information participates in downstream computation and reasoning. (iii) Development of cross-modal alignment and selective access. We develop two J-space metrics tracking the development of cross-modal concept alignment more clearly than hidden state cosine in controlled VLM training. The experiment also shows that reliable selective access develops later than concept accessibility. (iv) Shared functions across models. Across VLM families and sizes, we find shared patterns of concept accessibility, query-dependent selectivity and cross-task intervention effects despite differences in internal organisation. These findings offer an experimental basis to study GWT in multimodal artificial systems and how it can guide cross-modal alignment improvements.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+   ],
+   "published": "2026-11-19T18:46:50Z",
+   "updated": "2026-11-19T18:46:50Z",
+   "comment": "",
+   "tags": [
+    "VLM",
+    "interpretability",
+    "multimodal",
+    "reasoning"
+   ],
+   "summary": {
+    "en": "Multimodal Concept Lens (MC-Lens), a multimodal Jacobian lens, maps VLM intermediate states into a shared semantic space and uses concept interventions to show accessed concepts feed downstream reasoning; selective access develops later than concept accessibility across VLM families.",
+    "zh": "Multimodal Concept Lens (MC-Lens) 用多模态 Jacobian lens 把 VLM 中间状态映射到解码器词表构成的共享语义空间，并通过概念干预验证概念信息参与下游推理；实验发现选择性访问比概念可读性更晚发展，且跨模型家族存在共享模式。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 32,
+   "ax_votes": 1,
+   "ax_visits": 85,
+   "heat": 41.5,
+   "orgs": [
+    {
+     "logo": "data/logos/imperial.ac.uk.png",
+     "name": "Imperial College London",
+     "ror": "041kmwe10"
+    },
+    {
+     "logo": "data/logos/ucl.ac.uk.png",
+     "name": "University College London",
+     "ror": "02jx3x895"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26590.jpg",
+   "thumb_w": 587,
+   "thumb_h": 440,
+   "listed": "2026-11-20",
+   "sections": []
+  },
+  {
+   "id": "2611.26380",
+   "title": "EgoCaptioner: Towards Comprehensive and Fine-Grained Egocentric Video Captioning",
+   "authors": [
+    "Yuqi Tang",
+    "Yang Shi",
+    "Yuran Wang",
+    "Tengfei Liu",
+    "Rundong Wang",
+    "Zongyang Qiu",
+    "Qixun Wang",
+    "Zhuoran Zhang",
+    "Xuanyu Zhu",
+    "Yifan Xu",
+    "Yiyan Ji",
+    "Shujie Li",
+    "Shixuan Liu",
+    "Haotian Wang",
+    "Jialu Chen",
+    "Yuanxing Zhang",
+    "Pengfei Wan",
+    "Chengwei Qin"
+   ],
+   "abstract": "Egocentric video captioning requires fine-grained detail and accurate timing, yet current multimodal large language models (MLLMs) often miss brief actions, confuse their order, or misinterpret the wearer's motion. Existing caption formats also offer limited support for combining detailed narration with precise timing. We present EgoCaptioner, which pairs a video-level overview of the setting, participants, and the wearer's overall activity with timed steps whose narration adapts to varying perceptual demands and marks key moments at specific timestamps. We develop a coarse-to-fine annotation pipeline that establishes event structure before expanding step descriptions, yielding 50,000 training examples from eight egocentric video sources. Complementary rewards assess factual accuracy and coverage, measure step-level temporal alignment, and penalize fragmented or redundant narration, guiding caption refinement through Group Relative Policy Optimization (GRPO). To improve the reliability of factual supervision, we supplement caption references with pose-derived motion facts when sensor data are available. Across five egocentric benchmarks, EgoCaptioner achieves leading performance among evaluated open-source models in caption quality, caption-conditioned question answering, and temporal alignment. It also surpasses Gemini 3.1 Pro on PhysCapBench and all evaluated proprietary baselines on Minerva-Ego under the caption-to-QA protocol. Ablations support the complementary roles of factual and temporal rewards and show that coarse-to-fine annotation provides more effective supervision than single-pass annotation.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-19T16:39:59Z",
+   "updated": "2026-11-25T11:26:05Z",
+   "comment": "44 pages",
+   "tags": [
+    "VLM",
+    "video generation",
+    "dataset",
+    "multimodal"
+   ],
+   "summary": {
+    "en": "EgoCaptioner pairs video-level overviews with timestamped step captions, built via coarse-to-fine annotation over 50K examples from eight egocentric sources and refined with GRPO rewards for factuality and temporal alignment, leading open-source models on five egocentric benchmarks.",
+    "zh": "EgoCaptioner 用视频级概览加带时间戳的分步描述，通过粗到细标注流程从八个第一视角视频源生成5万训练样本，并用GRPO结合事实与时间对齐奖励精炼字幕，在五个第一视角基准上取得开源模型领先水平，PhysicsCapBench超过Gemini 3.1 Pro。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 26,
+   "ax_votes": 2,
+   "ax_visits": 131,
+   "heat": 41.1,
+   "orgs": [
+    {
+     "logo": "data/logos/hkust.edu.hk.png",
+     "name": "HKUST",
+     "ror": "00q4vv597"
+    },
+    {
+     "name": "KlingAI Research"
+    },
+    {
+     "logo": "data/logos/pku.edu.cn.png",
+     "name": "Peking University",
+     "ror": "02v51f717"
+    },
+    {
+     "name": "Nanjing University",
+     "ror": "01rxvg760"
+    },
+    {
+     "logo": "data/logos/hku.hk.png",
+     "name": "HKU",
+     "ror": "02zhqgq86"
+    },
+    {
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26380.jpg",
+   "thumb_w": 640,
+   "thumb_h": 385,
+   "listed": "2026-11-20",
+   "sections": [
+    "rl"
+   ]
+  },
+  {
+   "id": "2611.26510",
+   "title": "AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher",
+   "authors": [
+    "Guoxin Chen",
+    "Shuang Sun",
+    "Fanzhe Meng",
+    "Xinyu Tang",
+    "Ruihua Song",
+    "Wayne Xin Zhao"
+   ],
+   "abstract": "Task success alone does not specify which behaviors post-training should reinforce. Even successful teacher trajectories can contain unsupported assumptions, unproductive repetition, or superficial verification. We propose Skill-FT (Skill-Guided Fine-Tuning), which uses natural-language skills to suppress undesirable habits and elicit underrepresented effective behaviors during teacher rollouts, then fine-tunes a student model on the resulting trajectories. We introduce AutoMaster, an autonomous post-training system in which an LLM agent develops these interventions through trajectory analysis, skill design, data selection, and feedback from rollouts and evaluation. Across Terminal, Search, and software engineering tasks with 4B and 9B student models, AutoMaster improves mean performance over Vanilla SFT on successful unguided teacher trajectories by 1.42-8.99 percentage points, with the teacher, task pool, training set size, and SFT recipe held fixed. Together with the ablations and trajectory analyses, these results suggest that behavioral shaping can make a fixed model a more effective teacher. We further find that retaining skill instructions during SFT yields higher mean performance than removing them across all six settings, despite their absence at evaluation and identical supervised outputs. These findings suggest that preserving skill context as part of a training demonstration can support better behavioral internalization.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL"
+   ],
+   "published": "2026-11-19T17:57:59Z",
+   "updated": "2026-11-20T11:55:50Z",
+   "comment": "Website: https://aweai-team.github.io/AutoMaster/ Code: https://github.com/RUCAIBox/AutoMaster Models: https://huggingface.co/collections/RUC-AIBOX/automaster",
+   "code_url": "https://github.com/RUCAIBox/AutoMaster",
+   "tags": [
+    "LLM",
+    "agents",
+    "reasoning",
+    "pretraining"
+   ],
+   "summary": {
+    "en": "Skill-FT uses natural-language skills to shape teacher rollouts, with AutoMaster autonomously designing interventions; it improves 4B and 9B students by 1.42–8.99 points over vanilla SFT on Terminal, Search, and software engineering tasks.",
+    "zh": "Skill-FT 利用自然语言技能干预教师 rollout 以抑制不良行为并激发有效行为，AutoMaster 让 LLM agent 自动设计这些干预；在 Terminal、Search 和软件工程任务上，4B 和 9B 学生模型相比 Vanilla SFT 平均性能提升 1.42–8.99 个百分点。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 16,
+   "ax_votes": 7,
+   "ax_visits": 129,
+   "heat": 35.9,
+   "orgs": [
+    {
+     "name": "Renmin University of China",
+     "ror": "041pakw92"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26510.jpg",
+   "thumb_w": 640,
+   "thumb_h": 228,
+   "listed": "2026-11-20",
+   "sections": []
+  },
+  {
+   "id": "2611.26511",
+   "title": "Direct3D-V3: Latent-Free Diffusion Transformers in the Native Voxel Domain",
+   "authors": [
+    "Shuang Wu",
+    "Jiachen Qian",
+    "Youtian Lin",
+    "Feihu Zhang",
+    "Philip Torr",
+    "Yao Yao",
+    "Xun Cao"
+   ],
+   "abstract": "Native 3D generation has largely been built around latent diffusion, with recent advances concentrating on stronger variational autoencoders (VAE) and increasingly elaborate latent representations, from vecset and triplanes to structured sparse voxels. Despite their architectural differences, these methods all share the same premise: geometry is first compressed into a latent space and only then modeled by the generator. We take a different route and propose Direct3D-V3, a latent-free diffusion transformer (DiT) framework that discards the VAE altogether and operates in the native voxel domain, directly modeling raw SDF voxel grids during both training and sampling. To make this direct voxel formulation geometrically reliable, we introduce an implicit manifold regularization over neighboring voxels to suppress non-watertight surfaces, and convert predicted SDF grids into meshes via Marching Cubes so that rendered normal losses can supervise the model directly from its predicted SDF. To improve alignment between the conditioning image and generated geometry, Direct3D-V3 also predicts the camera parameters of the conditioning image as an auxiliary task, encouraging the DiT to learn the mapping from image observations to 3D shape. This latent-free design removes the reconstruction bottleneck, brings training under an objective in the native voxel domain, and yields meshes with substantially richer local detail. The predicted camera and native SDF voxel output further make Direct3D-V3 extensible to generative reconstruction, where diffusion is interleaved with normal-guided refinement to improve alignment with the observed view while the generative prior completes unseen regions. Project page: https://dreamtechai.github.io/Direct3D-V3.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-19T17:58:20Z",
+   "updated": "2026-11-19T17:58:20Z",
+   "comment": "The Project Page is: https://dreamtechai.github.io/Direct3D-V3. The Paper is published in ACM TOG (SIGGRAPH Asia 2026)",
+   "tags": [
+    "3D",
+    "diffusion",
+    "image generation"
+   ],
+   "summary": {
+    "en": "Direct3D-V3 is a latent-free diffusion transformer that models raw SDF voxel grids directly, using implicit manifold regularization and Marching Cubes normal supervision to generate meshes with richer local detail.",
+    "zh": "Direct3D-V3 提出无 latent 的扩散 Transformer 框架，直接在原生 SDF 体素域训练与采样，引入隐式流形正则抑制非水密表面，并用 Marching Cubes 转网格施加渲染法向监督，生成网格局部细节更丰富。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 7,
+   "ax_votes": 11,
+   "ax_visits": 168,
+   "heat": 34.8,
+   "orgs": [
+    {
+     "name": "Nanjing University",
+     "ror": "01rxvg760"
+    },
+    {
+     "name": "DreamTech"
+    },
+    {
+     "logo": "data/logos/hku.hk.png",
+     "name": "HKU",
+     "ror": "02zhqgq86"
+    },
+    {
+     "logo": "data/logos/ox.ac.uk.png",
+     "name": "University of Oxford",
+     "ror": "052gg0110"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26511.jpg",
+   "thumb_w": 640,
+   "thumb_h": 360,
+   "listed": "2026-11-20",
+   "sections": []
+  },
+  {
+   "id": "2611.26107",
+   "title": "HiUni: Harmonizing Understanding and Generation in Shared Visual Space",
+   "authors": [
+    "Jiahao Hu",
+    "Jingdong Du",
+    "Yichen Zhang",
+    "Yi Song",
+    "Zhenyu Zhang",
+    "Jiaxin Niu",
+    "Ruihang Li",
+    "Xiangzhao Hao",
+    "Yiqian Zhang",
+    "Yong Huang",
+    "Zefeng Zhang",
+    "Zheyuan Gu",
+    "Shuohuan Wang"
+   ],
+   "abstract": "Unified multimodal models aim to support visual understanding and generation within a single framework. However, prevailing approaches often separate their visual representations or backbone computation to accommodate the different requirements of these two tasks, which limits the degree of unification. In this paper, we present HiUni, which revisits this design choice and explores whether a pretrained vision language model can be directly extended into a unified model with extensive parameter sharing. Specifically, HiUni reuses the same language-aligned ViT and dense Transformer backbone for both capabilities, while confining task-specific computation to the output side. Yet such a design introduces two key challenges. Generation in pixel space is difficult to optimize, and semantic abstraction in pretrained ViT discards fine spatial details required for synthesis. To address these challenges, HiUni introduces a \\emph{Pixel Diffusion Head} tailored to direct pixel-space optimization and a lightweight \\emph{HiGate} pathway that provides fine-grained spatial details near the output stage. Extensive experiments show that HiUni achieves a similar average understanding score to the pretrained VLM while attaining competitive performance on image generation and editing. Controlled comparisons and analyses further demonstrate that a single dense backbone can effectively support both capabilities without task-specific backbone computation, highlighting a simpler path toward unified multimodal modeling.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-19T13:37:47Z",
+   "updated": "2026-11-19T13:37:47Z",
+   "comment": "",
+   "tags": [
+    "multimodal",
+    "image generation",
+    "VLM",
+    "diffusion"
+   ],
+   "summary": {
+    "en": "HiUni reuses one language-aligned ViT and dense Transformer backbone for both visual understanding and generation, adding a Pixel Diffusion Head and lightweight HiGate at the output; it matches the pretrained VLM's average understanding score while remaining competitive on generation and editing.",
+    "zh": "HiUni 复用同一个与语言对齐的 ViT 和稠密 Transformer 骨干同时做视觉理解与生成，只在输出端加 Pixel Diffusion Head 直接优化像素空间，并用轻量 HiGate 补充细粒度空间细节；理解均分与预训练 VLM 接近，生成和编辑也具竞争力。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 26,
+   "ax_votes": 1,
+   "ax_visits": 69,
+   "heat": 33.9,
+   "orgs": [
+    {
+     "logo": "data/logos/baidu.com.png",
+     "name": "Baidu"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26107.jpg",
+   "thumb_w": 640,
+   "thumb_h": 266,
+   "listed": "2026-11-20",
+   "sections": []
+  },
+  {
+   "id": "2611.24193",
+   "title": "WM^MLLM: Turning MLLMs into World Models",
+   "authors": [
+    "Baiang Li",
+    "Enze Xie",
+    "Jincheng Yu",
+    "Jin Wang",
+    "Haozhe Liu",
+    "Yitong Li",
+    "Juanxi Tian",
+    "Felix Heide"
+   ],
+   "abstract": "Video world models keep the world in the context of a generator, so a revisit is synthesized again and earlier edits can drift or disappear. We present WM^MLLM, the first interactive world model built on multimodal large language models (MLLMs), for persistent, editable world generation from a single image. WM^MLLM keeps the world state outside every generator, as a panorama with a revision history, and lets the MLLMs write it: they turn each request into operations on this state, select where a local edit is written, and check every candidate before it becomes the next state. Image generators only propose views, and video only presents them. Users can walk to new places and return, edit objects through text or a box, place subjects, and change lighting, weather or season. By construction, a revisit at the same revision reproduces the earlier view exactly, a local edit leaves every panorama pixel outside its region unchanged, and each request starts from the result of the previous one. Against six world model baselines on MBench-A, WM^MLLM has the highest mean on all four environment-recovery metrics (Epipolar 91.5 versus 0.1 to 74.0) and completes the most camera round trips (85.3% versus at most 50.9%). It has the best value in all 15 CompBench columns against 15 baselines. On 112 local edits judged blind, selecting the region to write after generation raises completion from 34.8% to 83.0%. On 258 WBench and MBench-A items, all 46 revisits recover their earlier views, and all 97 local edits that pass the check leave panorama pixels outside their region unchanged.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-18T10:29:16Z",
+   "updated": "2026-11-18T10:29:16Z",
+   "comment": "25 pages, 14 figures, 8 tables; project page: https://ztmotalee.github.io/wmmllm/",
+   "listed": "2026-11-20",
+   "tags": [
+    "multimodal",
+    "world model",
+    "image generation",
+    "LLM"
+   ],
+   "hf_upvotes": 17,
+   "ax_votes": 6,
+   "ax_visits": 109,
+   "heat": 33.9,
+   "orgs": [
+    {
+     "logo": "data/logos/princeton.edu.png",
+     "name": "Princeton University",
+     "ror": "00hx57361"
+    },
+    {
+     "logo": "data/logos/nvidia.com.png",
+     "name": "NVIDIA"
+    },
+    {
+     "name": "OpenEnvision"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24193.jpg",
+   "thumb_w": 640,
+   "thumb_h": 405,
+   "summary": {
+    "en": "WM^MLLM uses MLLMs to maintain world state as a panorama with revision history and perform edits, with generators only rendering views; it achieves Epipolar 91.5 on MBench-A (baselines 0.1–74.0) and 85.3% camera round trips.",
+    "zh": "WM^MLLM 用 MLLM 把世界状态存为带修订历史的全景图并执行编辑操作，图像与视频生成器只负责渲染视图，在 MBench-A 上 Epipolar 达 91.5（基线 0.1–74.0），相机往返完成率 85.3%（基线最高 50.9%），15 项 CompBench 指标全部最优。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.26414",
+   "title": "ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain",
+   "authors": [
+    "Zixuan Huang",
+    "Yang Zhou",
+    "Guli Zhang",
+    "Sunzhu Li",
+    "Hongyan Xie",
+    "Zehao Chen",
+    "Fuzhen Zhuang",
+    "Kaixuan Wang",
+    "Xiaozhi Chen",
+    "Yikun Ban",
+    "Deqing Wang"
+   ],
+   "abstract": "Representative vision-language navigation (VLN) methods typically couple a vision-language model (VLM) brain with a learnable action head and fine-tune the VLM brain on navigation-domain data to predict geometric goals. However, such adaptation can substantially alter base VLM weights and degrade general visual capabilities. We introduce ZeroVLN, a slow-fast navigation framework that achieves effective navigation with zero navigation-domain SFT of the VLM brain. Rather than teaching the brain to predict geometric goals, we equip it with a semantic tool-calling interface for conveying movement decisions to an action expert in natural language. We first adapt the action expert to carry out these movement requests, then jointly improve the brain's movement decisions and the action expert's continuous execution through closed-loop reinforcement learning (RL). Trained on the same navigation episodes, ZeroVLN substantially outperforms representative SFT-based hierarchical VLN methods on standard VLN-CE (continuous environments) benchmarks, while inducing only minor changes to the brain's weights and largely preserving its general capabilities. To our knowledge, ZeroVLN is the first slow-fast VLN framework with zero navigation-domain SFT of the VLM brain, and the first to jointly optimize its slow and fast policies through closed-loop agentic RL in VLN-CE.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-19T17:01:00Z",
+   "updated": "2026-11-19T17:01:00Z",
+   "comment": "",
+   "tags": [
+    "VLM",
+    "robotics",
+    "RL",
+    "agents"
+   ],
+   "summary": {
+    "en": "ZeroVLN couples a frozen-ish VLM brain with an action expert via semantic tool calls, jointly trained by closed-loop RL; it beats SFT-based hierarchical VLN methods on VLN-CE while barely altering the brain's weights.",
+    "zh": "ZeroVLN 采用慢-快导航框架，VLM 大脑不做导航域 SFT，改以语义工具调用接口用自然语言向动作专家下达移动指令，再通过闭环强化学习联合优化两者；在 VLN-CE 基准上显著优于代表性 SFT 分层方法，且大脑权重变化极小、通用能力基本保留。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 24,
+   "ax_votes": 1,
+   "ax_visits": 75,
+   "heat": 32.5,
+   "orgs": [
+    {
+     "name": "Beihang University",
+     "ror": "00wk2mp56"
+    },
+    {
+     "name": "Zhuoyu Technology"
+    },
+    {
+     "name": "Zhejiang University",
+     "ror": "00a2xv884"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26414.jpg",
+   "thumb_w": 640,
+   "thumb_h": 299,
+   "listed": "2026-11-20",
+   "sections": [
+    "rl"
+   ]
+  },
+  {
+   "id": "2611.26073",
+   "title": "AltRA-Test: An Alternative Annotator Test for LLM Judges Without Shared Annotators",
+   "authors": [
+    "Nagham Omar",
+    "Rotem Dror",
+    "Almog Gueta",
+    "Avigdor Gal",
+    "Roi Reichart",
+    "Nitay Calderon"
+   ],
+   "abstract": "Large language models (LLMs) are increasingly used as judges and graders to replace human annotators, raising the question of when such replacement is statistically justified. To support such decisions, the Alternative Annotator Test (Alt-Test) was introduced for dense settings where all items are annotated by the same annotators. However, in many large-scale annotation settings, items are annotated by different subsets of annotators. We therefore propose the Alternative Annotator Test with Resampled Annotations (AltRA-Test), a statistical test that does not require that all items are annotated by the same annotators. AltRA-Test uses a bootstrap that resamples items, draws k human annotations for each item, and substitutes one of them with an LLM annotation. This produces paired all-human and mixed human-LLM panels. A replacement is supported when the inter-annotator agreement (IAA) of the mixed panel is statistically non-inferior to the IAA of the all-human panel, i.e., when the LLM preserves the signal that the human annotators share. We establish that AltRA-Test is a consistent test of asymptotic level alpha. We then evaluate it through simulations and real-world experiments in which we test 18 LLMs and 5 prompting techniques on 20 datasets across text, image, audio, and video. Across these evaluations, about 100 items often suffice for the test. In simulations, where we know whether the LLM is a better or a worse annotator than the humans, AltRA-Test makes more correct replacement decisions than existing baselines. In real-world data experiments, LLMs pass the test in about half of the setups, depending mainly on the task. Since replacement is not always justified, we encourage researchers to test it for their task.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.AI"
+   ],
+   "published": "2026-11-19T13:15:13Z",
+   "updated": "2026-11-25T18:49:16Z",
+   "comment": "",
+   "tags": [
+    "LLM",
+    "benchmark",
+    "theory",
+    "alignment"
+   ],
+   "summary": {
+    "en": "AltRA-Test is a bootstrap-based statistical test that replaces one of k human annotations per item with an LLM annotation to compare inter-annotator agreement between all-human and mixed panels, requiring no shared annotators and often only ~100 items.",
+    "zh": "AltRA-Test 是一种无需所有条目由同一批标注者标注的统计检验，通过自助重采样条目、抽取 k 个人工标注并替换其中一条为 LLM 标注，构造配对的纯人工与混合人机评审组，以组内一致性（IAA）非劣于纯人工组作为替换成立的判据；在 18 个 LLM、5 种提示技术、20 个文本/图像/音频/视频数据集上验证，约 100 条数据常已足够，模拟中比现有基线做出更多正确的替换决策，真实数据约半数设置通过。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 24,
+   "ax_votes": 2,
+   "ax_visits": 32,
+   "heat": 29.2,
+   "orgs": [
+    {
+     "logo": "data/logos/technion.ac.il.png",
+     "name": "Technion",
+     "ror": "03qryx823"
+    },
+    {
+     "logo": "data/logos/haifa.ac.il.png",
+     "name": "University of Haifa",
+     "ror": "02f009v59"
+    },
+    {
+     "logo": "data/logos/google.com.png",
+     "name": "Google"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26073.jpg",
+   "thumb_w": 440,
+   "thumb_h": 440,
+   "listed": "2026-11-20",
+   "sections": []
+  },
+  {
+   "id": "2611.19230",
+   "title": "CompoundingKernel: Self-Improving from Zero to First",
+   "authors": [
+    "Qian Qu",
+    "Hongyang Wang",
+    "Wenbo Chen",
+    "Yichuan Li",
+    "Jingguo Liu",
+    "Xian Li",
+    "Xuan Wang",
+    "Ruochen Wen",
+    "Leo Fan",
+    "Yiming Yan",
+    "Yutong Chen",
+    "Zheshen Wang",
+    "Benoit Dumoulin"
+   ],
+   "abstract": "We present CompoundingKernel, a self-improving agent system that writes GPU kernels by search. As of 2026-11-11, its generated kernels rank #1 on the public L1, L2 and Quantization boards of SOL-ExecBench (NVIDIA B200). They have held #1 on L1 since 2026-10-27, albeit a short loss on 2026-11-07. All 235 problems have a site-verified correct kernel; on the 209 public-board problems they are 4.40x faster than the benchmark's reference baseline. The search starts from zero: agents get each problem's PyTorch definition but no reference kernels or official scores. A per-problem archive outside the model holds every correct kernel and its lineage. An LLM controller reads it, picks a parent or a new design, and gives each parallel child agent one direction. Checks outside the model decide correctness. At equal wall time, it beat a coded UCB style tree on 35 of 38 problems by making 2.4x as many correct attempts. Over a thousand agents ran at once, and one warm restart fix raised their evaluation rate 3.6x. We find that the rate of reliable measurements, not the number of agents, limits how far such a search scales. Our code and kernels are available on https://huggingface.co/spaces/QianQu/CompoundingKernel-Explorer .",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-14T07:46:00Z",
+   "updated": "2026-11-20T23:17:46Z",
+   "comment": "47 pages, 23 figures, 6 tables. URL: https://huggingface.co/spaces/QianQu/CompoundingKernel-Explorer",
+   "listed": "2026-11-20",
+   "tags": [
+    "agents",
+    "code",
+    "efficiency"
+   ],
+   "hf_upvotes": 12,
+   "ax_votes": 7,
+   "ax_visits": 97,
+   "heat": 28.7,
+   "orgs": [
+    {
+     "logo": "data/logos/amazon.com.png",
+     "name": "Amazon"
+    }
+   ],
+   "thumb": "data/thumbs/2611.19230.jpg",
+   "thumb_w": 640,
+   "thumb_h": 405,
+   "summary": {
+    "en": "CompoundingKernel uses an LLM controller that reads a per-problem kernel archive to direct parallel child agents in searching GPU kernels; it ranks #1 on SOL-ExecBench L1, L2 and Quantization boards and is 4.40x faster than the reference baseline on 209 public problems.",
+    "zh": "CompoundingKernel 让 LLM 控制器读取模型外的逐问题存档，选择父代或新设计并指挥并行子智能体搜索 GPU kernel；在 SOL-ExecBench（NVIDIA B200）的 L1、L2 与量化榜上位列第一，209 道公开题上比参考基线快 4.40x。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.25387",
+   "title": "TuringSpace: Grounding Spatial Intelligence in Action with Interactive CAPTCHAs",
+   "authors": [
+    "Xuwei Ding",
+    "Skylar Zhai",
+    "Linxin Song",
+    "Jiarui Feng",
+    "Dongqi Fu",
+    "Huajun Xi",
+    "Junnan Li",
+    "Jingcheng Liang",
+    "Jieyu Zhao",
+    "Yinglong Xia",
+    "Hong Li",
+    "Jian Kang"
+   ],
+   "abstract": "Humans act in the visual world by inferring the 3D layout behind a 2D view, predicting how an action changes it, and correcting themselves after seeing the result. Can multimodal large language models (MLLMs) do the same? CAPTCHAs offer a natural test, since humans solve them through this very loop, clicking and dragging on the screen and adjusting after each result. Yet existing CAPTCHA benchmarks are largely solved and rarely spatial, while spatial benchmarks rarely require action. We therefore present TuringSpace, a synthetic web environment of 125 interactive CAPTCHAs that span five spatial abilities and must be solved through clicks and drags on the screen. Every task is a program that generates new instances with a checker and an oracle, so the tasks also form a scalable training gym. Humans solve 94.1% of the tasks, whereas the best model, GPT-6 Astra, still fails 25.9% of them, and the best open-weight model, Kimi K3, fails 68.0%. Our further analysis shows that most failures come from misreading the screenshot, and that model reasoning rarely corrects a wrong belief but hallucinates evidence to defend it. To test whether such spatial abilities can be learned, we fine-tune Qwen3.5-9B on this gym. Its success rate rises from 1.6% to 33.1%, above Kimi K3, and it improves on all seven out-of-distribution benchmarks, including a 9.9-point gain on the real-world indoor videos of VSI-Bench. These results show that grounding spatial intelligence in screen actions exposes what MLLMs lack and offers a scalable way to teach it, with gains that transfer to real-world scenes. We will release TuringSpace to support further study.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-19T02:32:10Z",
+   "updated": "2026-11-19T02:32:10Z",
+   "comment": "45 pages. Project page: https://xuweid.com/turingspace/",
+   "tags": [
+    "multimodal",
+    "benchmark",
+    "reasoning",
+    "agents"
+   ],
+   "summary": {
+    "en": "TuringSpace is a synthetic web environment of 125 interactive CAPTCHAs testing five spatial abilities via clicks and drags. Humans solve 94.1%, GPT-6 Astra fails 25.9%, Kimi K3 fails 68.0%; fine-tuning Qwen3.5-9B raises success from 1.6% to 33.1% and gains 9.9 points on VSI-Bench.",
+    "zh": "TuringSpace 构建了包含 125 个交互式 CAPTCHA 的合成网页环境，覆盖五项空间能力，需通过鼠标点击和拖拽求解；人类成功率为 94.1%，最佳模型 GPT-6 Astra 失败 25.9%，开源模型 Kimi K3 失败 68.0%，在 Qwen3.5-9B 上微调后成功率从 1.6% 升至 33.1%，并在 VSI-Bench 上提升 9.9 分。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 24,
+   "ax_votes": 1,
+   "ax_visits": 28,
+   "heat": 27.8,
+   "orgs": [
+    {
+     "logo": "data/logos/upenn.edu.png",
+     "name": "University of Pennsylvania",
+     "ror": "00b30xv10"
+    },
+    {
+     "name": "University of Minnesota",
+     "ror": "017zqws13"
+    },
+    {
+     "logo": "data/logos/usc.edu.png",
+     "name": "University of Southern California",
+     "ror": "03taz7m60"
+    },
+    {
+     "name": "MBZUAI"
+    },
+    {
+     "name": "University of Wisconsin–Madison",
+     "ror": "01y2jtd41"
+    }
+   ],
+   "thumb": "data/thumbs/2611.25387.jpg",
+   "thumb_w": 640,
+   "thumb_h": 287,
+   "listed": "2026-11-20",
+   "sections": []
+  },
+  {
+   "id": "2611.24011",
+   "title": "WAM-Policy: World Action Models with On-Policy Distillation for Quadrupedal Loco-Manipulation",
+   "authors": [
+    "Junlin Long",
+    "Xu Deng",
+    "Yiran Wang",
+    "Yue Yang",
+    "Yang Zhao",
+    "Zeyu Zhang"
+   ],
+   "abstract": "Arm-free quadrupeds can perform loco-manipulation, walking on three legs while manipulating with a front leg, yet no existing policy for it follows language instructions. World action models (WAMs) have emerged as effective language-conditioned manipulation policies, but are pretrained for robot arms and sample slowly. WAM-Policy turns one WAM into a quadrupedal loco-manipulation policy via two stages. The first, Cross-Morphology Policy Adaptation and Acceleration, adapts the arm-centric WAM to quadrupeds and distills the transferred policy into a student with one video and two action steps by on-policy self-distillation (OPSD). This student, however, is bounded by its teacher, which only imitates demonstrations. The second stage, Task-Specific Improvement and Merging, therefore tunes the teacher by reinforcement learning (RL) and merges the slow specialists into one few-step student by multi-teacher on-policy distillation (M-OPD). On QLM-Bench, ten simulated tasks with 1,000 demonstrations synthesized without teleoperation, the transferred policy reaches 77.0%, and the OPSD student keeps 76.7% while sampling 14 times faster. Task-specific RL and M-OPD lift it to 85.0%. We also deploy the OPSD student on a real Unitree Go2 Air. WAM-Policy thus achieves a stronger quadrupedal policy at a fraction of the inference cost.",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "published": "2026-11-18T08:03:53Z",
+   "updated": "2026-11-18T08:03:53Z",
+   "comment": "Code: https://github.com/AIGeeksGroup/WAM-Policy, Website: https://aigeeksgroup.github.io/WAM-Policy/",
+   "code_url": "https://github.com/AIGeeksGroup/WAM-Policy",
+   "listed": "2026-11-20",
+   "tags": [
+    "robotics",
+    "VLA",
+    "RL",
+    "efficiency"
+   ],
+   "hf_upvotes": 20,
+   "ax_votes": 0,
+   "ax_visits": 54,
+   "heat": 25.4,
+   "orgs": [
+    {
+     "logo": "data/logos/sydney.edu.au.png",
+     "name": "University of Sydney",
+     "ror": "0384j8v12"
+    },
+    {
+     "logo": "data/logos/unsw.edu.au.png",
+     "name": "UNSW Sydney",
+     "ror": "03r8z3t63"
+    },
+    {
+     "name": "Maincode"
+    },
+    {
+     "logo": "data/logos/latrobe.edu.au.png",
+     "name": "La Trobe University",
+     "ror": "01rxfrp27"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24011.jpg",
+   "thumb_w": 640,
+   "thumb_h": 342,
+   "summary": {
+    "en": "WAM-Policy adapts an arm-centric world action model into a language-conditioned quadrupedal loco-manipulation policy via cross-morphology adaptation, on-policy self-distillation, task-specific RL and multi-teacher distillation, reaching 85.0% on QLM-Bench and deploying on a Unitree Go2 Air.",
+    "zh": "WAM-Policy 将面向机械臂的世界动作模型经跨形态适配和在策略自蒸馏转为四足无臂移动操作策略，在 QLM-Bench 上迁移策略达 77.0%，学生模型保持 76.7% 且采样快 14 倍，再经任务 RL 与多教师蒸馏提升至 85.0%，并部署于 Unitree Go2 Air。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": [
+    "rl"
+   ]
+  },
+  {
+   "id": "2611.26268",
+   "title": "Accelerating Mixture of Block Attention via Dynamic Routing, KV-Centric Execution and Runtime Pipelining",
+   "authors": [
+    "Yingqi Shi",
+    "Junru Lu",
+    "Yun Liu",
+    "Di Yin",
+    "Xing Sun"
+   ],
+   "abstract": "Mixture of Block Attention (MoBA) reduces long-context computation by selecting key-value (KV) blocks for each query. FlashMoBA implements MoBA efficiently but retains a fixed Top-k budget and query-centric schedule. Fixed Top-k applies one budget across different score distributions and couples routing to task granularity; query-range ownership fragments K/V reuse when several ranges select the same column. We present LightningMoBA, which co-designs selection and execution through dynamic routing, KV-centric ownership, and runtime pipelining. Dynamic routing thresholds MoBA's per-query block scores and directly emits variable-cardinality sparse metadata. KV-centric ownership groups selected rows by (query head, KV block) column, splits high-fanout columns into bounded tasks, and reuses each task's loaded KV tile. On Hopper, pipelining overlaps regular K/V transfers and irregular query gathers with Tensor Core computation. Together, these mechanisms decouple retention from GPU scheduling granularity. At matched Top-16 retention across five checkpoints, LightningMoBA accelerates end-to-end generation by 1.20 to 1.60x while raising mean RULER score from 74.42 to 75.28.",
+   "primary": "cs.DC",
+   "categories": [
+    "cs.DC"
+   ],
+   "published": "2026-11-19T15:38:08Z",
+   "updated": "2026-11-19T15:38:08Z",
+   "comment": "",
+   "tags": [
+    "efficiency",
+    "LLM"
+   ],
+   "summary": {
+    "en": "LightningMoBA co-designs dynamic routing, KV-centric ownership and runtime pipelining for Mixture of Block Attention, achieving 1.20-1.60x faster end-to-end generation at Top-16 retention while raising mean RULER score from 74.42 to 75.28.",
+    "zh": "LightningMoBA 通过动态路由、以 KV 为中心的调度和运行时流水线协同优化 MoBA 长上下文注意力，在五个 checkpoint 上 Top-16 保留率下，端到端生成提速 1.20–1.60×，RULER 均分由 74.42 升至 75.28。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 22,
+   "ax_votes": 1,
+   "ax_visits": 20,
+   "heat": 25.0,
+   "orgs": [
+    {
+     "logo": "data/logos/tencent.com.png",
+     "name": "Tencent"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26268.jpg",
+   "thumb_w": 440,
+   "thumb_h": 440,
+   "listed": "2026-11-20",
+   "sections": []
+  },
+  {
+   "id": "2611.25980",
+   "title": "Learning What Actions Change: Action Effect Matching for Dynamics-Faithful World Models",
+   "authors": [
+    "John Won",
+    "Yonghoon Dong",
+    "Jinwoo Shin"
+   ],
+   "abstract": "World models aim to predict environment dynamics under actions, enabling the prediction of action consequences without executing them in the real world. Yet despite producing increasingly realistic videos, current world models often fail to capture how small action changes affect future observations. This limits their use in tasks such as robotic policy evaluation and model-based planning, where nearly identical actions can lead to qualitatively different outcomes. To address this, we propose AFFECT, an auxiliary training objective for learning the distribution of visual changes induced by action perturbations. Specifically, we inject temporally correlated noise into the actions of a policy trained on task-agnostic human teleoperation. We then train the world model so that its generated videos respond to this noise as the recorded videos do, without requiring repeated executions from the same initial state. Across OGBench simulation and real-world DROID and ALOHA-2 setups, AFFECT makes world-model rollouts more faithful to real outcomes. On DROID, the Pearson correlation between policy success rates in the world model and on the real robot rises from 0.47 to 0.79, alongside up to 23% lower FVD. These gains carry over to planning, where selecting actions with AFFECT-trained world models improves task success by up to 8.3%.",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "published": "2026-11-19T12:03:05Z",
+   "updated": "2026-11-19T12:03:05Z",
+   "comment": "27 pages, preprint",
+   "tags": [
+    "world model",
+    "robotics",
+    "VLA"
+   ],
+   "summary": {
+    "en": "AFFECT injects temporally correlated noise into policy actions and trains world models to mirror real video responses to action perturbations, raising DROID policy-success correlation from 0.47 to 0.79 and planning success by up to 8.3%.",
+    "zh": "AFFECT 通过在策略动作上注入时间相关噪声，训练世界模型生成的视频像真实视频一样响应动作扰动；在 DROID 上世界模型与真机策略成功率相关系数从 0.47 升至 0.79，FVD 最多降 23%，规划成功率最多提升 8.3%。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 17,
+   "ax_votes": 1,
+   "ax_visits": 59,
+   "heat": 23.9,
+   "orgs": [
+    {
+     "logo": "data/logos/kaist.ac.kr.png",
+     "name": "KAIST",
+     "ror": "05apxxy63"
+    },
+    {
+     "name": "RLWRLD"
+    }
+   ],
+   "thumb": "data/thumbs/2611.25980.jpg",
+   "thumb_w": 640,
+   "thumb_h": 287,
+   "listed": "2026-11-20",
+   "sections": []
+  },
+  {
+   "id": "2611.26408",
+   "title": "Training Vision Models for LLM-Driven Weight-Space Programming",
+   "authors": [
+    "Timo Ropinski",
+    "Sebastian Kranz"
+   ],
+   "abstract": "It has been demonstrated that, in certain settings, large language models can perform weight-space programming to directly modify the weights of neural networks. However, it is unknown how dedicated training of these networks can contribute to the successes of weight-space programming. We present a benchmark of LLM-driven weight-space programming on vision models, in which five LLMs edit convolutional networks and vision transformers on relabeling and error-correction tasks on Waterbirds, CIFAR-100, PACS and Entity-30. We report more than 2,600 such edit processes, whereby each edit is scored on held-out images for success, side effects and accuracy loss. We compare standard training with label smoothing, gradient-based editable training, and our Edit-Ready Training (ERT), a novel method that rehearses the direct, closed-form weight edits LLMs perform. We show that preparing networks for editing raises the success of LLM edits substantially where standard networks are hard to edit. ERT further achieves the highest mean score for GPT-6 Astra and Claude Opus 5.5 across all evaluated baselines. We will release our LLM testing framework alongside all tasks, editing trajectories and scores. Project page: https://viscom.uni-ulm.de/wsp",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-19T16:56:27Z",
+   "updated": "2026-11-19T16:56:27Z",
+   "comment": "Project page: https://viscom.uni-ulm.de/wsp",
+   "tags": [
+    "LLM",
+    "VLM",
+    "benchmark",
+    "efficiency"
+   ],
+   "summary": {
+    "en": "A benchmark of LLM-driven weight-space programming lets five LLMs edit CNNs and ViTs on four datasets, scoring 2,600+ edits. Edit-Ready Training rehearses closed-form weight edits, raising edit success, notably for GPT-6 Astra and Claude Opus 5.5.",
+    "zh": "构建LLM驱动权重空间编程基准，让五个LLM在Waterbirds、CIFAR-100、PACS和Entity-30上编辑卷积网络与视觉Transformer，完成重标注和纠错任务，记录超2600次编辑并评估成功率、副作用与精度损失；提出Edit-Ready Training (ERT)通过预演LLM的直接闭式权重编辑来训练网络，在标准网络难以编辑处显著提升成功率，并在所有基线中为GPT-6 Astra和Claude Opus 5.5取得最高平均分。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 19,
+   "ax_votes": 0,
+   "ax_visits": 49,
+   "heat": 23.9,
+   "orgs": [
+    {
+     "logo": "data/logos/uni-ulm.de.png",
+     "name": "Ulm University",
+     "ror": "032000t02"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26408.jpg",
+   "thumb_w": 640,
+   "thumb_h": 224,
+   "listed": "2026-11-20",
+   "sections": []
+  },
+  {
+   "id": "2611.20455",
+   "title": "Embeddings vs. Grep: Rethinking the Dense Advantage in Code Search",
+   "authors": [
+    "Siqiao Xue",
+    "Ziyin Zhang",
+    "Zihan Liao",
+    "Jin Qin",
+    "Yixiang Mu",
+    "Hang Yu"
+   ],
+   "abstract": "Code-search benchmarks show dense encoders well ahead of BM25, yet coding agents do well with \\texttt{grep}. What does this dense advantage measure? Existing benchmarks cannot tell: they use curated queries, old code and a handicapped BM25. To find out, we build Repo-Premium, a realistic repository-level code-search benchmark. It ranks files in real repositories, with curated and raw queries in Python, JavaScript, TypeScript, Go, Rust and Java, pull requests from 2022 to 2026, and a preregistered test pool over $91$ repositories. Our experiments trace the advantage to two sources: evaluation choices that favor dense retrieval, such as splitting files into chunks for BM25 and counting edited tests as relevant, and queries that lack the code's rare identifiers. Expanding the query with LLM-written identifiers (generate-then-grep) helps BM25 far more than dense retrieval, letting it match dense retrieval in every Python pool, even on pull requests opened after the LLM was released. No method we tried predicts which retriever will win on a given query. From these results we derive three guidelines: measure dense gains against a fair lexical baseline, fuse dense retrieval with BM25, and add the code's words to queries that lack them.",
+   "primary": "cs.SE",
+   "categories": [
+    "cs.SE"
+   ],
+   "published": "2026-11-16T03:24:04Z",
+   "updated": "2026-11-16T03:24:04Z",
+   "comment": "hf: https://huggingface.co/datasets/hq-bench/repo-premium",
+   "listed": "2026-11-20",
+   "tags": [
+    "code",
+    "retrieval",
+    "benchmark",
+    "LLM"
+   ],
+   "hf_upvotes": 14,
+   "ax_votes": 4,
+   "ax_visits": 56,
+   "heat": 23.6,
+   "orgs": [
+    {
+     "name": "Ant Group",
+     "ror": "00g5w7n47"
+    }
+   ],
+   "thumb": "data/thumbs/2611.20455.jpg",
+   "thumb_w": 566,
+   "thumb_h": 440,
+   "summary": {
+    "en": "Repo-Premium, a repository-level code-search benchmark across six languages and 91 repos, shows dense retrieval's edge stems from evaluation artifacts and identifier-poor queries; LLM-written identifier expansion lets BM25 match dense retrieval on all Python pools.",
+    "zh": "构建 Repo-Premium 仓库级代码搜索基准，覆盖 6 种语言、2022–2026 年 PR 与 91 个仓库，发现稠密检索的优势主要来自分块 BM25、把改动的测试算作相关等评测偏向以及查询缺少稀有标识符；用 LLM 生成标识符扩展查询的 generate-then-grep 使 BM25 在所有 Python 测试池上追平稠密检索。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.26211",
+   "title": "SpecWM: Turning Verification into Refinement for Streaming World Models",
+   "authors": [
+    "Jiaming Li",
+    "Lingzhen Li",
+    "Xiaze Yang",
+    "Chenyu Zhu",
+    "Kaiqi Liu",
+    "Xiaotong Zhao",
+    "Songlian Li",
+    "Toyota Li",
+    "Alan Zhao",
+    "Haobin Zhong",
+    "Yue Ma",
+    "Zhiyuan Ma"
+   ],
+   "abstract": "Recently, video world models have advanced interactive generation, with large models offering higher quality and smaller models enabling faster inference. Existing speculative methods combine their strengths through fast draft generation and selective target regeneration guided by rewards on decoded frames. However, verification covers only the external scorer's evaluation dimensions and adds decoding and scoring costs. Moreover, these scores provide no correction, requiring costly target regeneration for rejected drafts. To address these limitations, we propose Speculative World Model (SpecWM), a unified, training-free inference framework for streaming world models. It verifies draft chunks using the target's latent velocity field. Verification also yields a reusable correction; two thresholds select Accept, Refine, or Reject. Specifically, one-step refinement reuses it to improve perceptual quality, while three-step refinement strengthens camera following and trajectory consistency. These findings motivate transition-aware refinement. On WBench Navigation, SpecWM improves visual quality at 1.63$\\times$ speedup over the target and raises NavScore from the draft's 75.99 to 85.63, achieving the best quality-speed-control trade-off. Additionally, our LongSpecBench shows sustained quality and control over long, multi-turn rollouts, while experiments on Hy-Nomas validate SpecWM across backbones and denoising budgets.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-19T14:50:59Z",
+   "updated": "2026-11-19T14:50:59Z",
+   "comment": "",
+   "tags": [
+    "world model",
+    "video generation",
+    "efficiency",
+    "diffusion"
+   ],
+   "hf_upvotes": 7,
+   "ax_votes": 4,
+   "ax_visits": 96,
+   "heat": 20.6,
+   "orgs": [
+    {
+     "name": "Huazhong University of Science and Technology",
+     "ror": "00p991c53"
+    },
+    {
+     "logo": "data/logos/tencent.com.png",
+     "name": "Tencent"
+    },
+    {
+     "logo": "data/logos/pku.edu.cn.png",
+     "name": "Peking University",
+     "ror": "02v51f717"
+    },
+    {
+     "logo": "data/logos/hkust.edu.hk.png",
+     "name": "HKUST",
+     "ror": "00q4vv597"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26211.jpg",
+   "thumb_w": 640,
+   "thumb_h": 316,
+   "listed": "2026-11-20",
+   "summary": {
+    "en": "SpecWM is a training-free streaming world-model inference framework that verifies drafts via the target's latent velocity field, yielding reusable corrections with accept/refine/reject thresholds; it achieves 1.63x speedup and lifts NavScore from 75.99 to 85.63 on WBench Navigation.",
+    "zh": "SpecWM 是无需训练的流式世界模型推理框架，利用目标模型的潜空间速度场验证草稿并直接得到可用于修正的信息，以双阈值分为接受、精修、拒绝三档，精修复用该信息提升画质与相机跟随；在 WBench Navigation 上取得 1.63 倍加速，NavScore 从 75.99 升至 85.63。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.24809",
+   "title": "On-Policy Morphing into Hybrid Attention Models",
+   "authors": [
+    "Disen Lan",
+    "Xuanda Wang",
+    "Jianbin Zheng",
+    "Huafeng Kuang",
+    "Wei Tang",
+    "Yu Cheng"
+   ],
+   "abstract": "Hybrid attention models combine full and linear attention to achieve a better quality--efficiency trade-off. Converting pretrained Transformers into such models requires identifying which layers should retain full attention under a prescribed budget. We identify two off-policy mismatches in FlashMorph's layer selection: (i) continuous branch interpolation and teacher-forced hidden states differ from discrete hybrid computation; and (ii) frozen model weights fail to account for parameter adaptation during subsequent recovery. We introduce FlashMorph2, an on-policy layer-selection method that (I) evaluates sampled discrete hybrid architectures end to end using their own hidden states, and (II) jointly optimizes layer-selection scores and model weights under the recovery objective to reflect post-adaptation performance. Experiments across Qwen3 model scales and linear-attention variants show that FlashMorph2 consistently outperforms existing layer-selection methods, improving average scores over FlashMorph by $+2.42$ points on RULER, $+1.08$ on LongBench, and $+0.76$ on recall-intensive tasks, while completing layer selection in only $0.72$--$3.57$ GPU hours across 0.6B--8B models, demonstrating high efficiency and scalability.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL"
+   ],
+   "published": "2026-11-18T17:45:51Z",
+   "updated": "2026-11-18T17:45:51Z",
+   "comment": "",
+   "listed": "2026-11-20",
+   "tags": [
+    "LLM",
+    "efficiency",
+    "pretraining"
+   ],
+   "hf_upvotes": 14,
+   "ax_votes": 1,
+   "ax_visits": 49,
+   "heat": 19.9,
+   "orgs": [
+    {
+     "name": "Fudan University",
+     "ror": "013q1eq08"
+    },
+    {
+     "logo": "data/logos/bytedance.com.png",
+     "name": "ByteDance"
+    },
+    {
+     "name": "NTU",
+     "ror": "02e7b5302"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24809.jpg",
+   "thumb_w": 640,
+   "thumb_h": 265,
+   "summary": {
+    "en": "FlashMorph2 converts pretrained Transformers into hybrid attention models via on-policy layer selection, evaluating sampled discrete architectures end to end and jointly optimizing selection scores with weights, outperforming FlashMorph by +2.42 RULER and +1.08 LongBench points.",
+    "zh": "FlashMorph2 将预训练 Transformer 转为混合注意力模型，采用 on-policy 层选择：以采样出的离散混合结构自身的隐藏状态做端到端评估，并联合优化层选择分数与模型权重，在 Qwen3 各规模上 RULER 平均得分比 FlashMorph 提升2.42分、LongBench 提升1.08分、recall-intensive 任务提升0.76分，层选择仅需0.72–3.57 GPU小时。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.26239",
+   "title": "Teaching Vision-Language-Action Models to Stop Safely",
+   "authors": [
+    "Zheyuan Liu",
+    "Chuhan Wang",
+    "Jinduo Guo",
+    "Yue Huang",
+    "Xiangchi Yuan",
+    "Ningshan Ma",
+    "Meng Jiang"
+   ],
+   "abstract": "Vision-language-action (VLA) models enable robots to perform diverse tasks from visual observations and language instructions. While prior work has explored task suppression and refusal, stopping prohibited behavior once execution is underway and controlling the resulting physical response remain challenging. Our evaluation reveals that policies which suppress a task from its initial state can still complete it when taking over partway through execution. Even when the task remains unfinished, the robot may drop a held object, making non-completion an incomplete measure of safety. To address these challenges, we introduce State-Aware Fallback Imitation (SAFI) for tasks where holding provides an appropriate alternative response. SAFI comprises two stages, (1) fallback target construction, which assigns stationary arm commands and consistent gripper targets throughout prohibited-task demonstrations, and (2) joint policy adaptation, which learns these targets alongside the original actions of retained tasks. This supervision teaches an explicit alternative response at intermediate execution states while maintaining the robot's other skills. Extensive experiments with OpenVLA-OFT across LIBERO and BadLIBERO tasks evaluate prohibited completion, physical incidents, and retained-task performance. On the evaluated LIBERO tasks, SAFI reduces aggregate target success after takeover to 1.3\\%, with no recorded physical incidents or action saturation, while preserving high retained-task success.",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO"
+   ],
+   "published": "2026-11-19T15:14:55Z",
+   "updated": "2026-11-19T15:14:55Z",
+   "comment": "A two-stage pipeline that teaches VLAs to stop prohibited tasks safely while preserving permitted skills",
+   "tags": [
+    "VLA",
+    "robotics",
+    "safety",
+    "manipulation"
+   ],
+   "hf_upvotes": 9,
+   "ax_votes": 3,
+   "ax_visits": 68,
+   "heat": 18.8,
+   "orgs": [
+    {
+     "logo": "data/logos/nd.edu.png",
+     "name": "University of Notre Dame",
+     "ror": "00mkhxb43"
+    },
+    {
+     "name": "Georgia Tech"
+    },
+    {
+     "logo": "data/logos/mit.edu.png",
+     "name": "MIT",
+     "ror": "042nb2s44"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26239.jpg",
+   "thumb_w": 286,
+   "thumb_h": 440,
+   "listed": "2026-11-20",
+   "summary": {
+    "en": "SAFI teaches VLA policies an explicit fallback response at intermediate execution states via fallback target construction and joint policy adaptation; with OpenVLA-OFT on LIBERO and BadLIBERO, post-takeover target success drops to 1.3% with no physical incidents while retained-task performance stays high.",
+    "zh": "SAFI 通过两阶段训练让 VLA 策略在执行途中停止被禁止的任务：先构造回退目标并在禁止任务演示中统一冻结机械臂指令和夹爪目标，再与保留任务动作联合学习；在 LIBERO 与 BadLIBERO 上，OpenVLA-OFT 接管后的目标成功率降至 1.3%，且无物理事故，保留任务性能较高。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.26286",
+   "title": "Twice-Told Critiques: Claim-Level Homogenization of Peer Review in the LLM Era",
+   "authors": [
+    "Ilya Gusev"
+   ],
+   "abstract": "Peer review relies on several readers finding different problems. We measure critique overlap in conference and journal reviews. At ICLR, measured overlap rose from 12.0% in 2026 to 21.3% in 2027, in reviews from the same stage of the review process, with year-on-year rises at NeurIPS, ICML and the F1000 and PLOS journals. A third ICLR review of a paper added 5.46 new problems to the other two in 2027, against 6.12 in 2026. We apply MELD, a detector of LLM-generated text, to all reviews. Within a paper, two reviews that MELD flags overlap more than two unflagged reviews: by 3.0 points at ICLR in 2024-2025, by 4.5 points in 2026-2027, and by 5.4 points across five journal sources. These results provide evidence that LLM-flagged reviews of one paper are less distinct from each other than unflagged reviews, and suggest that the diversity of critiques among reviews of a single paper is falling.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.DL"
+   ],
+   "published": "2026-11-19T15:45:51Z",
+   "updated": "2026-11-19T15:45:51Z",
+   "comment": "",
+   "tags": [
+    "VLM/LLM"
+   ],
+   "hf_upvotes": 10,
+   "ax_votes": 2,
+   "ax_visits": 47,
+   "heat": 16.7,
+   "orgs": [],
+   "thumb": "data/thumbs/2611.26286.jpg",
+   "thumb_w": 566,
+   "thumb_h": 440,
+   "listed": "2026-11-20",
+   "sections": []
+  },
+  {
+   "id": "2611.26540",
+   "title": "AURA: AUdio-dRiven streaming Avatar",
+   "authors": [
+    "Nathaniel Cohen",
+    "Nicolas Dufour",
+    "Amélie Royer",
+    "Alasdair Newson",
+    "Patrick Pérez"
+   ],
+   "abstract": "Current audio-driven video diffusion models can synthesize realistic talking-head videos but generally require dozens of diffusion denoising steps over multi-second video chunks, making them unsuitable for streaming applications such as voice assistants and virtual avatars, where low-latency and online causal generation are required properties. AURA generates video chunk by chunk with a rolling KV cache, requiring only the audio of the current chunk to start generating, rather than a multi-second audio look-ahead like bidirectional models. It comes in two sizes: AURA 1.3B streams 576p video in real time on a single GPU (20.7 fps for a 16 Hz playback rate), making it suited to interactive avatar applications, and AURA 5B streams 720p video at 9.7 fps. Our two-stage distillation pipeline first aligns the causal student with the teacher, by training it to match the teacher's trajectories with fewer diffusion steps and a chunk-wise sliding window causal attention mask, then applies Distribution Matching Distillation (DMD) with backward simulation to close the remaining quality gap. On standard talking-head benchmarks, AURA 1.3B runs 23x faster than its own bidirectional teacher and reaches a quality comparable to TalkVerse at a lower resolution, and AURA 5B matches its TalkVerse teacher at 720p while running 17x faster. To support reproducibility and further research on streaming avatar generation, we release the weights of both models along with a dataset of 30K synthetic videos and their precomputed teacher trajectories.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-19T18:17:38Z",
+   "updated": "2026-11-19T18:17:38Z",
+   "comment": "BMVC 2026. Project page: https://kyutai.org/aura",
+   "tags": [
+    "benchmark"
+   ],
+   "hf_upvotes": 4,
+   "ax_votes": 3,
+   "ax_visits": 88,
+   "heat": 15.8,
+   "orgs": [
+    {
+     "name": "Sorbonne Université",
+     "ror": "02en5vm52"
+    },
+    {
+     "logo": "data/logos/deepmind.google.png",
+     "name": "Google DeepMind"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26540.jpg",
+   "thumb_w": 640,
+   "thumb_h": 237,
+   "listed": "2026-11-20",
+   "sections": []
+  },
+  {
+   "id": "2611.25567",
+   "title": "Online Mistake Detection in Instruction-Conditioned Procedural Video",
+   "authors": [
+    "Amit Feldman",
+    "Ilan Shimshoni",
+    "Rotem Dror"
+   ],
+   "abstract": "An assistant monitoring a person performing a procedure is most useful when it can detect mistakes while there is still time to recover. This requires judging actions against task instructions as the video unfolds, identifying the attempted step, locating it in time, and assessing its execution. Existing online detectors do not use the instruction text, while instruction-conditioned methods operate offline. In this paper, we study online, instruction-conditioned mistake detection in egocentric videos. Using only observed video, task instructions, and prior predictions, our model identifies and localizes completed action attempts and classifies them as correct, modified, slip, corrections, or additions; omitted steps are determined after the video ends. We compare a modular pipeline, with separate step identification, temporal localization, and execution verification, to a joint model that predicts all outputs in a single step. To support supervised learning from mistakes, we repartition EgoPER to include erroneous videos in all splits. The approaches achieve similar step-segmentation F1@0.5 (93.6% and 92.1%), while the joint model achieves higher binary mistake-detection F1@0.5 (84.1% vs. 80.7%), with its largest gain on slips (56.4% vs. 37.5%). Component-level analysis suggests that error propagation between stages contributes to the modular approach's lower detection score. On test videos containing mistakes, both designs outperform released AEM and ESTANet checkpoints under our evaluation protocol.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-19T06:09:24Z",
+   "updated": "2026-11-19T06:09:24Z",
+   "comment": "",
+   "tags": [],
+   "hf_upvotes": 12,
+   "ax_votes": 0,
+   "ax_visits": 21,
+   "heat": 14.1,
+   "orgs": [
+    {
+     "logo": "data/logos/haifa.ac.il.png",
+     "name": "University of Haifa",
+     "ror": "02f009v59"
+    }
+   ],
+   "thumb": "data/thumbs/2611.25567.jpg",
+   "thumb_w": 640,
+   "thumb_h": 271,
+   "listed": "2026-11-20",
+   "sections": []
+  },
+  {
+   "id": "2611.21053",
+   "title": "System 1 agents: a method for local, reliable and fast agentic AI",
+   "authors": [
+    "Eleftherios Tzanis",
+    "Michail E. Klontzas"
+   ],
+   "abstract": "Agentic artificial intelligence could automate analyses of sensitive clinical data, but current agents depend on large language models (LLMs). Cloud LLMs expose patient data. Local LLMs hallucinate, and an invented value in a tool call propagates through every later step. Here we present a method to build System 1 agents: local agents that call tools without generating text. A deterministic compiler turns each tool's schema and the request into multiple-choice questions whose options come from the request and the schema, then a one-pass decision model answers them. On 1,952 requests to 157 biomedical tools, the best System 1 agent chose the right tool, or correctly declined, for 97.0% of requests, significantly ahead of all 18 local LLM-agent settings (best 95.2%). The System 1 agent filled 97.0% of 6,056 stated argument values. No System 1 call contained invented content, against 5.5-19.7% of LLM calls. The System 1 Agents framework is freely available as open-source software at https://github.com/eltzanis/SystemOneAgents.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-16T13:05:32Z",
+   "updated": "2026-11-16T13:05:32Z",
+   "comment": "18 pages, 5 figures, 9 tables. Code and data: https://github.com/eltzanis/SystemOneAgents",
+   "code_url": "https://github.com/eltzanis/SystemOneAgents",
+   "listed": "2026-11-20",
+   "tags": [
+    "VLM/LLM"
+   ],
+   "hf_upvotes": 10,
+   "ax_votes": 1,
+   "ax_visits": 19,
+   "heat": 12.9,
+   "orgs": [],
+   "thumb": "data/thumbs/2611.21053.jpg",
+   "thumb_w": 529,
+   "thumb_h": 440,
+   "sections": []
+  },
+  {
+   "id": "2611.25935",
+   "title": "TwinD: Generalizing Deepfake Detection from Blending to Entire Face Synthesis",
+   "authors": [
+    "Andrii Yermakov",
+    "Jan Cech",
+    "Mario Fritz",
+    "Jiri Matas"
+   ],
+   "abstract": "Facial deepfake detectors are usually trained on blending fakes, where a generated face is pasted back into a real frame. Recent generators synthesize the entire face and leave no traces of blending. On a benchmark of 19 datasets released from 2019 to 2026, the best prior facial deepfake detector reaches a mean AUROC of 96.2% on ten blending datasets, but none exceeds 78.1% on five datasets of entire face synthesis (EFS). AI-generated content (AIGC) detectors do not close this gap. We propose TwinD, a detector trained on FaceForensics++ fakes and two kinds of twins: fakes made from a real frame. A reconstruction twin is a real frame reconstructed by an autoencoder, with the real pixels put back in a random region. It targets the neural traces of a decoder. A blob twin blends an altered copy of a real frame with the frame itself, targeting blending artifacts. It needs no generator and no face-shaped mask. Together, these twins provide two complementary forensic cues that generalize to unseen manipulations. TwinDreaches a mean AUROC of 96.3%, 8.9 points above the prior state-of-the-art, with 98.1% on the blending datasets and 95.6% on the EFS datasets. Trained on twins alone, without a deepfake dataset, single models still reach 94.3% on average over three seeds. For reproducibility, the code, trained model, and training data are at: https://github.com/yermandy/TwinD",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-19T11:20:39Z",
+   "updated": "2026-11-19T11:20:39Z",
+   "comment": "",
+   "code_url": "https://github.com/yermandy/TwinD",
+   "tags": [
+    "manipulation",
+    "benchmark"
+   ],
+   "hf_upvotes": 1,
+   "ax_votes": 1,
+   "ax_visits": 112,
+   "heat": 13.2,
+   "listed": "2026-11-20",
+   "orgs": [
+    {
+     "logo": "data/logos/cvut.cz.png",
+     "name": "Czech Technical University in Prague",
+     "ror": "03kqpb082"
+    },
+    {
+     "logo": "data/logos/cispa.de.png",
+     "name": "Helmholtz Center for Information Security",
+     "ror": "02njgxr09"
+    }
+   ],
+   "thumb": "data/thumbs/2611.25935.jpg",
+   "thumb_w": 640,
+   "thumb_h": 232,
+   "sections": []
+  },
+  {
+   "id": "2611.26248",
+   "title": "TwinLab-Bench: Evaluating AI Scientists in Agentic Twins of Real Labs",
+   "authors": [
+    "Yang Wan",
+    "Linchao Zhu"
+   ],
+   "abstract": "AI agents are increasingly expected to act as AI scientists, which requires three increasingly open abilities: carrying out a given computational workflow correctly, choosing the next measurements from a given design space, and designing their own experiments. Existing benchmarks mainly evaluate the first two abilities, in a terminal or in a closed loop that selects from predefined candidates. Evaluating the third ability requires reliably executing an experiment that an agent designs, with readings grounded in a real laboratory. We introduce TwinLab-Bench, which evaluates AI scientists on self-designed experiments in 52 tasks from laboratories in the physical sciences, the life sciences, and engineering. The benchmark supports more than 100 experimental action types, and the agent's report is scored by comparison with a hidden answer taken from real laboratory records. Each task has its own TwinLab agent, an agent that serves as the environment and executes the experiments that the tested agent designs, reading the raw materials of the laboratory and calling calculators that are built from its records. Compared with a language model that sees only the task description, the TwinLab agent almost eliminates readings that deviate from the real records and inconsistent answers to a repeated request, and closed-book probes control for answers recalled from memory. We find that these tasks remain hard for frontier models: the strongest, Claude Fable 5.2, averages a score of only 45.0, and we conduct an empirical study of where it fails.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+   ],
+   "published": "2026-11-19T15:25:34Z",
+   "updated": "2026-11-19T15:25:34Z",
+   "comment": "https://twinlab-bench.github.io/ contains tasks and code. 33 pages, 6 figures, 14 tables. LLM-agent benchmark for autonomous experimental design in digital twins of real labs (physics, chemistry, wet-lab biology, materials, engineering). 13 agents evaluated: Claude Fable 5.2 45.0, Opus 5.5 40.2, GPT-6.1-sol 31.7, plus DeepSeek, Qwen, Kimi, GLM and others",
+   "tags": [
+    "benchmark"
+   ],
+   "hf_upvotes": 7,
+   "ax_votes": 1,
+   "ax_visits": 47,
+   "heat": 12.7,
+   "orgs": [
+    {
+     "name": "Zhejiang University",
+     "ror": "00a2xv884"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26248.jpg",
+   "thumb_w": 640,
+   "thumb_h": 206,
+   "listed": "2026-11-20",
+   "sections": []
+  },
+  {
+   "id": "2611.26624",
+   "title": "PlayCraft: Designing Engaging Games from Agent Play Experience",
+   "authors": [
+    "Weihao Cheng"
+   ],
+   "abstract": "Recent AI agents can generate playable games, but these games are not necessarily engaging. Mastery is a key source of engagement, yet designing for it requires extensive human play and tuning. We propose PlayCraft, an automated framework that uses a vision-based agent to play games and draws on its detailed play experience to revise them for mastery. Starting from an initial game, PlayCraft alternates between playing and crafting. In the playing stage, a player agent watches the game screen, uses the controls, and pursues the game objective over repeated episodes while retaining memory. After each episode, it reports its progress, outcomes, decisions, and reflections. In the crafting stage, a crafter agent uses these reports to revise the game. It estimates player abilities, predicts performance at different proficiency levels, and compares those predictions with a target learning progression. It diagnoses the game and addresses the gaps by giving players meaningful opportunities to improve through better decisions and execution. We evaluate games in fresh runs with player agents across three intelligence settings, measuring learning gain and learning slope. Compared with the initial games, PlayCraft yields larger learning gains and steeper learning slopes in most games. It also outperforms the baselines on the macro-average of each metric at every intelligence setting.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "cs.CV"
+   ],
+   "published": "2026-11-19T18:59:34Z",
+   "updated": "2026-11-19T18:59:34Z",
+   "comment": "",
+   "tags": [],
+   "hf_upvotes": 5,
+   "ax_votes": 0,
+   "ax_visits": 75,
+   "heat": 12.5,
+   "listed": "2026-11-20",
+   "orgs": [],
+   "thumb": "data/thumbs/2611.26624.jpg",
+   "thumb_w": 587,
+   "thumb_h": 440,
+   "sections": []
+  },
+  {
+   "id": "2611.25604",
+   "title": "PAD: Policy-Aware Data Valuation for Autonomous Driving",
+   "authors": [
+    "Chengkai Xu",
+    "Yicheng Guo",
+    "Jiaqi Liu",
+    "Yiming Cui",
+    "Shiyu Fang",
+    "Peng Hang",
+    "Hao Zhang",
+    "Jian Sun"
+   ],
+   "abstract": "End-to-end autonomous driving increasingly depends on scaling training demonstrations, yet data growth does not guarantee proportional gains. However, additional data do not guarantee better policies: a demonstration that benefits one planner may be redundant or harmful to another. Existing curation methods typically infer data value from intrinsic sample properties or training-dependent proxies that do not measure downstream policy utility. To address this, we introduce \\textbf{Policy-Aware Data Valuation (PAD)}, a framework that assigns each candidate demonstration a utility specific to the target driving policy. PAD combines scene-level calibration feedback with projected policy gradients and a regularized approximation of local training geometry, producing scalable influence-based values for the policy. A controlled group-removal study establishes the directional fidelity of these values, while cross-planner analysis shows that the same candidate pool induces markedly different rankings across planner families. On DiffusionDrive, PAD improves EPDMS over real-only training by $3.5$ points on NavTest and $5.0$ points on NavHard. Policy-specific curation consistently outperforms real-only and full-pool training across diffusion-, regression-, and flow-matching-based planners while substantially reducing scene-level regressions. These results establish policy-aware data valuation as a basis for replacing indiscriminate data accumulation with targeted policy improvement, enabling more efficient and reliable scaling of autonomous-driving systems.",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO"
+   ],
+   "published": "2026-11-19T06:53:22Z",
+   "updated": "2026-11-19T06:53:22Z",
+   "comment": "",
+   "tags": [
+    "driving",
+    "dataset",
+    "efficiency",
+    "agents"
+   ],
+   "hf_upvotes": 4,
+   "ax_votes": 2,
+   "ax_visits": 41,
+   "heat": 10.1,
+   "listed": "2026-11-20",
+   "orgs": [
+    {
+     "name": "Tongji University",
+     "ror": "03rc6as71"
+    },
+    {
+     "name": "UNC Chapel Hill"
+    }
+   ],
+   "thumb": "data/thumbs/2611.25604.jpg",
+   "thumb_w": 640,
+   "thumb_h": 231,
+   "sections": [
+    "rl"
+   ],
+   "summary": {
+    "zh": "PAD 为每个候选驾驶演示按目标策略分配特定效用值，结合场景级校准反馈、投影策略梯度与局部训练几何的正则近似计算可扩展的影响值；在 DiffusionDrive 上，NavTest 的 EPDMS 比仅用真实数据提升 3.5 分、NavHard 提升 5.0 分，并显著减少场景级性能回退。",
+    "en": "PAD assigns each driving demonstration a policy-specific utility via scene-level calibration feedback, projected policy gradients, and regularized local training geometry; on DiffusionDrive it lifts EPDMS by 3.5 (NavTest) and 5.0 (NavHard) over real-only training."
    },
    "summary_source": "deepseek-flash"
+  },
+  {
+   "id": "2611.26232",
+   "title": "Time Series Structure Learning with Local Causal Parent Discovery",
+   "authors": [
+    "Jacqueline Maasch",
+    "Shu Wan",
+    "Hank Zhu",
+    "Huan Liu",
+    "Zhiguang Wang"
+   ],
+   "abstract": "Learning and inference on time series can pose significant statistical challenges, including autocorrelated observations, distribution shift over time, and the curse of dimensionality. These challenges complicate the practical application of causal discovery algorithms, which already suffer from high computational and sample complexity in the general case. To mitigate these issues, this work introduces Iterative Temporal Parent Discovery (ITPD): a sound and complete constraint-based procedure for causal structure learning on multivariate time series with causal nonstationarity. ITPD takes a local-to-global learning approach that discovers the global graph by sequentially discovering the parent set for each variable. ITPD exploits temporal structural priors, graph partitioning, and the local Markov condition to swap higher-order conditional independence tests for lower-order alternatives. With an exact oracle, ITPD performed the least number of tests and used the smallest average conditioning set sizes relative to baselines. In benchmarking simulations, ITPD sat on the Pareto frontier with respect to F1 and wall-clock time and was faster than baselines on large graphs ($\\geq$ 1000 nodes). For graphs with 2000 nodes, ITPD ran $2.3\\times$, $9.1\\times$, and $40.9\\times$ faster than iterative IAMB, DF-PC, and PCMCI, respectively.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "stat.ML"
+   ],
+   "published": "2026-11-19T15:06:06Z",
+   "updated": "2026-11-19T15:06:06Z",
+   "comment": "",
+   "tags": [
+    "benchmark"
+   ],
+   "hf_upvotes": 2,
+   "ax_votes": 2,
+   "ax_visits": 45,
+   "heat": 8.5,
+   "listed": "2026-11-20",
+   "orgs": [
+    {
+     "logo": "data/logos/asu.edu.png",
+     "name": "Arizona State University",
+     "ror": "03efmqc40"
+    }
+   ],
+   "thumb": "data/thumbs/2611.26232.jpg",
+   "thumb_w": 640,
+   "thumb_h": 224,
+   "sections": []
   },
   {
    "id": "2611.26298",
@@ -2043,8 +2106,8 @@
    ],
    "hf_upvotes": 4,
    "ax_votes": 1,
-   "ax_visits": 25,
-   "heat": 7.5,
+   "ax_visits": 27,
+   "heat": 7.7,
    "listed": "2026-11-20",
    "orgs": [
     {
@@ -2067,7 +2130,8 @@
    ],
    "thumb": "data/thumbs/2611.26298.jpg",
    "thumb_w": 484,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "sections": []
   },
   {
    "id": "2611.25279",
@@ -2095,7 +2159,8 @@
    "hf_upvotes": 7,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 7.0
+   "heat": 7.0,
+   "sections": []
   },
   {
    "id": "2611.23835",
@@ -2123,7 +2188,8 @@
    "hf_upvotes": 6,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 6.0
+   "heat": 6.0,
+   "sections": []
   },
   {
    "id": "2611.25776",
@@ -2149,7 +2215,8 @@
    "ax_votes": 0,
    "ax_visits": 21,
    "heat": 5.1,
-   "listed": "2026-11-20"
+   "listed": "2026-11-20",
+   "sections": []
   },
   {
    "id": "2611.19499",
@@ -2173,7 +2240,8 @@
    "hf_upvotes": 5,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 5.0
+   "heat": 5.0,
+   "sections": []
   },
   {
    "id": "2611.25179",
@@ -2205,7 +2273,8 @@
    "hf_upvotes": 5,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 5.0
+   "heat": 5.0,
+   "sections": []
   },
   {
    "id": "2611.00911",
@@ -2233,7 +2302,8 @@
    "hf_upvotes": 4,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 4.0
+   "heat": 4.0,
+   "sections": []
   },
   {
    "id": "2611.15941",
@@ -2262,7 +2332,8 @@
    "hf_upvotes": 3,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 3.0
+   "heat": 3.0,
+   "sections": []
   },
   {
    "id": "2611.23875",
@@ -2289,7 +2360,8 @@
    "hf_upvotes": 3,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 3.0
+   "heat": 3.0,
+   "sections": []
   },
   {
    "id": "2611.25200",
@@ -2314,7 +2386,8 @@
    "hf_upvotes": 3,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 3.0
+   "heat": 3.0,
+   "sections": []
   },
   {
    "id": "2611.25005",
@@ -2340,7 +2413,8 @@
    "hf_upvotes": 2,
    "ax_votes": 0,
    "ax_visits": 0,
-   "heat": 2.0
+   "heat": 2.0,
+   "sections": []
   }
  ]
 }

@@ -9335,5 +9335,940 @@
   "thumb": "data/thumbs/2611.24102.jpg",
   "w": 640,
   "h": 419
+ },
+ "2611.30334": {
+  "orgs": [
+   "Institut Polytechnique de Paris"
+  ],
+  "affils": [
+   "When Does Reasoning Help Entity Disambiguation?\nSmall LLMs In-Domain and Under Shift\nSamy Haffoudhi, Fabian M. Suchanek, and Nils Holzenberger\nTélécom Paris, Institut Polytechnique de Paris\n{samy.haffoudhi, fabian.suchanek, nils.holzenberger}@telecom-paris.fr"
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.30334.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.34777": {
+  "orgs": [
+   "Shanghai Jiao Tong University"
+  ],
+  "affils": [
+   "When Every Rollout Fails:\nSplicing Learner-Conditioned Options into\nLong-Horizon Agent RL\nHaowen Hou1,2,3,*, Yicheng Liu2,*, Zhen Huang2, Jiaqi Wang3,2,†\n1Shanghai Jiao Tong University, 2Shanghai Innovation Institute, 3JD.com\n∗Equal contribution, †Corresponding author"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34777.jpg",
+  "w": 640,
+  "h": 302
+ },
+ "2611.33687": {
+  "orgs": [
+   "Seoul National University"
+  ],
+  "affils": [
+   "IPAI, Seoul National University",
+   "Dept. of ECE, Seoul National UniversityProject Page: https://memru-proj.github.io"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33687.jpg",
+  "w": 622,
+  "h": 440
+ },
+ "2611.34363": {
+  "orgs": [
+   "Delhi Technological University"
+  ],
+  "affils": [
+   "Artificial Intelligence and Machine Learning Society (AIMS-DTU)",
+   "Delhi Technological University, New Delhi, India",
+   "{shreshthrai_mc24b06_039, rishiikumarsingh_ene_25b18073,"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34363.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.34327": {
+  "orgs": [
+   "University of Minnesota",
+   "Mila – Quebec Artificial Intelligence Institute",
+   "University of Montreal"
+  ],
+  "affils": [
+   "Department of Applied Economics, University of Minnesota",
+   "Department of Computer Science and Engineering, University of Minnesota",
+   "School of Statistics, University of Minnesota",
+   "Databricks",
+   "Mila – Quebec Artificial Intelligence Institute",
+   "University of Montreal"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34327.jpg",
+  "w": 640,
+  "h": 360
+ },
+ "2611.34934": {
+  "orgs": [
+   "We evaluate an ex-production OpenAI monitor as a case study (Section 1) and find that"
+  ],
+  "affils": [
+   "Attack Policy Selection can Mislead Monitor Evaluators\nCharlie Griffin, Oliver Makins, Asa Cooper Stickland\nAlessandro Abate, Yarin Gal, Abby D’Cruz, Xander Davies\nAI companies rely on monitoring systems to flag dangerous behaviour by AI agents, and report monitor\nevasion evaluations [3, 2, 16] that try to assess whether agents can cause harm without being flagged.\nControl-style evaluations [8] measure a monitor’s false negative rate (FNR, also known as “miss rate”) on\ntranscripts depicting attempts at harmful behaviour. These evaluations have two components: a control\ntask specifies a user-requested main task and a harmful side task in an evaluation environment; an attack\npolicy generates side-task attempts as proxies for dangerous agent behaviour.\nWe evaluate an ex-production OpenAI monitor as a case study (Section 1) and find that\nmeasured FNR is highly sensitive to both the method used to generate attack policies and the\nlevel of optimisation applied within that method (Section 2).\nWe hold the deployment scenario\nand control tasks fixed and vary only the attack policy. FNR ranged from 0.5% to 20.8% across optimisation\nlevels of a single method (reinforcement learning), and from 6.4% to 23.0% across methods at their best\nobserved optimisation level (optimised prompting vs. transcript editing). Every attack policy was developed\nagainst proxy monitors only: all reported FNRs show attacks transferring to the held-out GPT-5.4 target\nmonitor. Our results suggest that monitor evasion evaluations can easily mislead: an evaluation\nusing only basic attack methods may give false confidence that a monitor is strong (Fig. 1).\nNarrow evaluation\nTask\n>\n30 tasks\n×\nAttack\nPolicy\nbasic\nprompt\noptimised\nprompt\nreinforcement\nlearning\ntranscript\nediting\n0%\n10%\n20%\n30%\n40%\nmonitor FNR\n0.2% 1.3%\n5.1%\nnot\ntested\n+4.9 pp\nFNR\nat most\n5.1%\nMonitor\nlooks\nrobust ✓\nBroad evaluation\nTask\n>\n30 tasks\n×\nAttack\nPolicy\nbasic\nprompt\noptimised\nprompt\nreinforcement\nlearning\ntranscript\nediting\n0%\n10%\n20%\n30%\n40%\nmonitor FNR\n0.2%\n6.4%\n20.8%\n23.0%\n+22.8 pp\nweaker optimisation levels\nstrongest level of each method\nFNR\nup to\n23.0%\nRobustness\nunclear\n?\n?\nbasic\nprompt\noptimised\nprompt\nreinforcement\nlearning\ntranscript\nediting\nlight optimisation\nbasic\nprompt\noptimised\nprompt\nreinforcement\nlearning\ntranscript\nediting\nincreased optimisation\nFigure 1: A narrowly optimised evaluation can make the monitor look robust. Left: running only\nthe lightest optimisation level of three methods (the basic prompt, the first round of prompt optimisation\nand the first reinforcement learning (RL) checkpoint) finds FNRs of at most 5.1%. Right: running every\noptimisation level of all four methods finds FNRs up to 23.0%. All attacks were developed against proxy\nmonitors; GPT-5.4 was held out. Bars: 95% bootstrap intervals. Both evaluations use the same 30 control\ntasks.\nThe sensitivity to attack-policy choice raises a problem: interpreting any particular result as\nevidence about deployment performance requires justification. The transcripts produced by attack\npolicies are proxies for the dangerous behaviour a monitor must flag in deployment (Section 3.1). These\nproxies can introduce visible artefacts, such as reasoning about a “side task” absent from the instructions\nshown to the monitor, that affect monitor judgements (Section 3.2). Given the sensitivity above, the choice of\nproxy can change an evaluation’s conclusion. Reading measured FNR as evidence about deployment therefore\nrequires a separate legitimacy argument for why the proxies are informative, including any justification of\nconservativeness. Making convincing arguments remains an open problem (Section 3.3).\narXiv:2611.34934v1  [cs.LG]  25 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34934.jpg",
+  "w": 640,
+  "h": 326
+ },
+ "2611.34366": {
+  "orgs": [],
+  "affils": [
+   "ConTra: A Training Framework for Effective Contextual Retrieval\nvia Prefix Generation\nJiajun Hou\nCUHK-Shenzhen\nShenzhen, China\njiajunhou@link.cuhk.edu.cn\nJingbang Chen∗\nCUHK-Shenzhen & SLAI\nShenzhen, China\nchenjb@cuhk.edu.cn"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34366.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.33531": {
+  "orgs": [
+   "University of Washington and",
+   "Google DeepMind",
+   "University of Washington"
+  ],
+  "affils": [
+   "Paul G. Allen School of Computer Science & Engineering, University of Washington and ; Paul G. Allen School of Computer Science & Engineering, University of Washington and ; Google DeepMind and ; Department of Electrical & Computer Engineering, University of Washington"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.33531.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.33648": {
+  "orgs": [
+   "UC Berkeley",
+   "Meta"
+  ],
+  "affils": [
+   "University of California, Berkeley",
+   "Meta"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33648.jpg",
+  "w": 640,
+  "h": 360
+ },
+ "2611.34132": {
+  "orgs": [
+   "Imperial College London",
+   "Microsoft Research"
+  ],
+  "affils": [
+   "Imperial College London",
+   "Microsoft Research"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34132.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.34446": {
+  "orgs": [
+   "University of Science and Technology of China",
+   "South China University of Technology Nanjing University"
+  ],
+  "affils": [
+   "JD.com",
+   "University of Science and Technology of China",
+   "South China University of Technology Nanjing University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34446.jpg",
+  "w": 438,
+  "h": 440
+ },
+ "2611.33652": {
+  "orgs": [
+   "Southwest Securities"
+  ],
+  "affils": [
+   "Self-supervised Clipped-objective Reinforcement Leaning Framework for\nRisk-aware Portfolio Management\nZongshen Mu1\n1Southwest Securities Co., Ltd., Chongqing, China\ndrzsmu@163.com"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.33652.jpg",
+  "w": 544,
+  "h": 430
+ },
+ "2611.29969": {
+  "orgs": [
+   "University of Queensland"
+  ],
+  "affils": [
+   "School of Electrical Engineering and Computer Science",
+   "The University of Queensland",
+   "Brisbane, Queensland, Australia",
+   "{xiaoqian.hu, r.qiu, yanran.tang, sen.wang}@uq.edu.au"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29969.jpg",
+  "w": 640,
+  "h": 240
+ },
+ "2611.34730": {
+  "orgs": [
+   "University of British Columbia",
+   "ETH Zurich"
+  ],
+  "affils": [
+   "\n\n\n\nAhmed Hatem Caoliwen Wang Robert Hoang Siyuan Chen\nSpencer Szabados Zike Wu Xiyang Tan Shenyifan Lu\nRafael Bischof Bernd Bickel Renjie Liao Peter Yichen Chen\nUniversity of British Columbia\nGeorgia Institute of Technology  ETH Zurich\n*Equal contribution.  †Corresponding authors.\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34730.jpg",
+  "w": 640,
+  "h": 210
+ },
+ "2611.33937": {
+  "orgs": [
+   "Zhejiang University",
+   "Shanghai Innovation Institute",
+   "Shanghai Jiao Tong University",
+   "Tencent Hunyuan",
+   "Xiamen University"
+  ],
+  "affils": [
+   "Zhejiang University",
+   "Shanghai Innovation Institute",
+   "Shanghai Jiao Tong University",
+   "Tencent Hunyuan",
+   "Xiamen University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33937.jpg",
+  "w": 640,
+  "h": 190
+ },
+ "2611.34656": {
+  "orgs": [
+   "Shandong University",
+   "Chinese Academy of Sciences",
+   "Li Auto",
+   "Tsinghua University",
+   "NTU"
+  ],
+  "affils": [
+   "Shandong University",
+   "Institute of Automation, Chinese Academy of Sciences",
+   "Li Auto Inc.",
+   "Tsinghua University",
+   "Nanyang Technological University",
+   "Institute of Microelectronics, Chinese Academy of Sciences* Equal contribution.† Corresponding author: zhiwei_xu@sdu.edu.cn"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34656.jpg",
+  "w": 640,
+  "h": 278
+ },
+ "2611.33316": {
+  "orgs": [
+   "North Carolina State University",
+   "Purdue University"
+  ],
+  "affils": [
+   "North Carolina State University",
+   "Purdue University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33316.jpg",
+  "w": 640,
+  "h": 251
+ },
+ "2611.34779": {
+  "orgs": [
+   "University of North Carolina",
+   "New York University"
+  ],
+  "affils": [
+   "University of North Carolina at Chapel Hill",
+   "New York University"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.34779.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.34799": {
+  "orgs": [
+   "NVIDIA"
+  ],
+  "affils": [
+   "NVIDIA",
+   "NVIDIA Research"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34799.jpg",
+  "w": 440,
+  "h": 440
+ },
+ "2611.34635": {
+  "orgs": [
+   "Cognitive AI Systems Lab",
+   "Moscow Independent Research Institute of Artificial Intelligence"
+  ],
+  "affils": [
+   "Cognitive AI Systems Lab (cogailab.com)",
+   "Moscow Independent Research Institute of Artificial Intelligence (miriai.org)"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34635.jpg",
+  "w": 640,
+  "h": 228
+ },
+ "2611.32013": {
+  "orgs": [
+   "Carnegie Mellon University"
+  ],
+  "affils": [
+   "Scale AI",
+   "Carnegie Mellon University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32013.jpg",
+  "w": 636,
+  "h": 440
+ },
+ "2611.32660": {
+  "orgs": [
+   "HKU",
+   "Shanghai Jiao Tong University",
+   "Harbin Institute of Technology",
+   "Peking University",
+   "SenseTime Research",
+   "University of Electronic Science and Technology of China",
+   "NUS",
+   "Zhejiang University",
+   "ShanghaiTech University"
+  ],
+  "affils": [
+   "Bathys: Advancing Deep Search Agents\nZixuan Chen1, Shengyou Yuan1, Nang Yuan2, Ming Ma3, Zelin Xiao4, Lin Zhou5,\nSiyuan Luo6, Jiaqi Su7, Chengrui Wu8, Tiankuo Yao5, Nairong Zheng5, Cong Pang5,9,\nJiapeng Luo5\n1The University of Hong Kong\n2Shanghai Jiao Tong University\n3Harbin Institute of Technology\n4Peking University\n5SenseTime Research\n6University of Electronic Science and Technology of China\n7National University of Singapore\n8Zhejiang University\n9ShanghaiTech University"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32660.jpg",
+  "w": 640,
+  "h": 338
+ },
+ "2611.31427": {
+  "orgs": [
+   "University of Edinburgh",
+   "University of Oxford"
+  ],
+  "affils": [
+   "Emine Yilmaz2 Pasquale Minervini1,5 T. Ian Simpson1",
+   "Chen Jin4 Amrutha Saseendran4",
+   "1School of Informatics, University of Edinburgh",
+   "3Weatherall Institute of Molecular Medicine, University of Oxford",
+   "4AI for Science & Innovation, Enterprise AI, AstraZeneca"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31427.jpg",
+  "w": 440,
+  "h": 440
+ },
+ "2611.31466": {
+  "orgs": [
+   "University of Central Florida"
+  ],
+  "affils": [
+   "Institute of Artificial Intelligence, University of Central Florida",
+   "Code Models & Benchmark Project Page"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31466.jpg",
+  "w": 392,
+  "h": 214
+ },
+ "2611.32131": {
+  "orgs": [
+   "Baidu"
+  ],
+  "affils": [
+   "\n\n\n\n\n\nTianliang Lv*, Hao Li*, Xinchao Xu, Zhengkun Zhang, Ju Huo†\n\nERNIE Team, Baidu\n\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32131.jpg",
+  "w": 640,
+  "h": 214
+ },
+ "2611.31969": {
+  "orgs": [
+   "Shanghai Jiao Tong University"
+  ],
+  "affils": [
+   "DexOPD: Dual-Extrapolation On-Policy\nDistillation for Diffusion Models\nYunchao Ke1,2,∗,‡, Yanzhe Hu1,∗, Yi Yang1, Jiachun Jin1, Zhihong Liu1, Zhijie Deng1,†\n1Shanghai Jiao Tong University, 2Nankai University\n∗Equal contribution, ‡Work done during an internship at Shanghai Jiao Tong University, †Corresponding author\nFlow-based diffusion models have become a mainstream paradigm for text-to-image generation, where task-specific\npost-training produces specialist models with complementary strengths. Multi-teacher on-policy distillation (OPD) offers\nan efficient way to consolidate these specialists into a single unified student. Recent methods strengthen supervision\nthrough teacher extrapolation, constructing stronger proxy teachers that allow distilled students to surpass the original\nspecialists. However, their extrapolation directions remain defined solely by frozen teacher and reference models, leaving\nthe student’s own training progress unexploited. To address this limitation, we introduce DexOPD, a dual-extrapolation\non-policy distillation method for diffusion models. DexOPD retains extrapolated teacher supervision while leveraging\na lagging historical student as the reference for student self-extrapolation. Sampling across multiple self-extrapolation\ngains from shared initial noise broadens exploration along the student’s evolving trajectory, and task rewards convert pair-\nwise differences in candidate quality into a normalized auxiliary regression direction. Empirically, we evaluate DexOPD\non GenEval, OCR, and DrawBench. The resulting unified SD3.5-Medium student achieves a GenEval reward of 0.9736,\nan OCR score of 0.9515, and a DrawBench Aesthetic score of 6.4875, surpassing the corresponding specialist teach-\ners as well as all evaluated OPD and multi-task reinforcement learning baselines across these three benchmarks while\npreserving standard single-model inference.\nCode: https://github.com/SJTU-DENG-Lab/DexOPD\nCorrespondence: Zhijie Deng†: zhijied@sjtu.edu.cn\nDate: November 24, 2026\nFigure 1 Qualitative highlights and multi-task benchmark performance. Top: representative images generated\nby our unified DexOPD student across compositional, text-rendering, and aesthetic prompts. Bottom: OCR and\nDrawBench Aesthetic (AES) scores are shown as horizontal bar charts; the radar chart reports six GenEval metrics\nnormalized by each metric’s maximum across the compared models, with raw DexOPD scores annotated.\n1\narXiv:2611.31969v1  [cs.AI]  24 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31969.jpg",
+  "w": 640,
+  "h": 360
+ },
+ "2611.32400": {
+  "orgs": [
+   "Chinese Academy of Sciences"
+  ],
+  "affils": [
+   "Institute of Computing Technology, Chinese Academy of Sciences",
+   "University of Chinese Academy of Sciences"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32400.jpg",
+  "w": 640,
+  "h": 231
+ },
+ "2611.33011": {
+  "orgs": [
+   "University of Edinburgh",
+   "University of Illinois",
+   "Northeastern University",
+   "Duke University"
+  ],
+  "affils": [
+   "University of Edinburgh",
+   "University of Illinois at Urbana-Champaign",
+   "Northeastern University",
+   "Duke University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33011.jpg",
+  "w": 640,
+  "h": 391
+ },
+ "2611.32037": {
+  "orgs": [
+   "Tencent"
+  ],
+  "affils": [
+   "\n\nSheng Lu\n\n  \nRui Mao\n\n  \nZewei Chen\n\n  \nChihua Ying\n\n  \nBeiduo Chen\n\n  \nDingxin Hu\n\n  \nTinghao Yu\nHunyuan Team, Tencent\n{jonathanslu, dingxinhu, maxwellyu}@tencent.com\n\n=\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.32037.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.33153": {
+  "orgs": [
+   "Adobe Research"
+  ],
+  "affils": [
+   "Georgia Tech",
+   "Adobe Research"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33153.jpg",
+  "w": 392,
+  "h": 249
+ },
+ "2611.32687": {
+  "orgs": [
+   "Yonsei University"
+  ],
+  "affils": [
+   "Yonsei University, Seoul, Korea",
+   "2026311565@yonsei.ac.kr pjk000011@naver.com yurangpark@yuhs.ac"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32687.jpg",
+  "w": 460,
+  "h": 440
+ },
+ "2611.32148": {
+  "orgs": [
+   "Stanford University",
+   "AGIBOT Innovation (Shanghai) Technology",
+   "CUHK",
+   "Southeast University"
+  ],
+  "affils": [
+   "\n\n\n\nXuanzhuo Liu, Wu Chen, Ruixiang Wu, Shuai Yuan\n\nChuankang Li, Tongxin Li, Maoqing Yao, Guanghui Ren\n\nStanford University\nAGIBOT Innovation (Shanghai) Technology Co., Ltd.\nThe Chinese University of Hong Kong, Shenzhen\nSoutheast University\n\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32148.jpg",
+  "w": 640,
+  "h": 270
+ },
+ "2611.31964": {
+  "orgs": [
+   "Tsinghua University",
+   "HKU",
+   "Shanghai Innovation Institute"
+  ],
+  "affils": [
+   "Forge\nSounding the Black Box\nOnline Training of Embedded Neural Networks in\nForward-Only Physical Simulators\nRuiqi Shu1,*\nTianrun Gao2,*\nHaomin Wen3,†\nXiaomeng Huang1,†\n1 Department of Earth System Science, Tsinghua University, Beijing, China\n2 School of Computing and Data Science, The University of Hong Kong, Hong Kong, China\n3 Shanghai Innovation Institute, Shanghai, China\n* Equal contribution.\n† Corresponding authors:\nHaomin Wen (wenhaomin.whm@gmail.com),\nXiaomeng Huang (hxm@tsinghua.edu.cn).\n−90.9% MSE\n-1\n1\n0\n0.12\n−95.9% MSE\n0\n0.42\n0\n0.15\n−74.5% MSE\n-30\n30\n0\n3.62\n−50.4% MSE\n-22\n22\n0\n6.84\n−70.1% · 4 h\n0\n1.1\n0\n0.075\nReference\nqref\nT\nCoarse |err|\n|qcoarse\nT\n−qref\nT |\nFORGE |err|\n|qFORGE\nT\n−qref\nT |\na 2D Cahn–Hilliard\n384² → 96² · 3,920 win. · Conc. \nb 2D Gray–Scott\n768² → 96² · 7,920 win. · Species v\nc 2D Kolmogorov NS\n256² → 64² · 600 win. · Vort. \nd 2D Guide-Field MHD\n256² → 64² · 600 win. · , m\ne 3D Ocean · POM\n90×82×16  · 8×9,000 d · |uh| (m s−1)\nFigure 1. Closed-loop multi-physics benchmark and rollout error reductions. Top row: reference fields 𝑞ref\n𝑇\nat the\nfinal step 𝑇of a validation window across all five PDE regimes (a–e: concentration 𝜙, reactant 𝑣, vorticity 𝜔, 𝜔with\nmagnetic potential 𝜓𝑚contours, and ocean surface speed). Middle and bottom rows: pointwise absolute errors (|err|)\nfor the unparameterized coarse solver (𝐺𝜃≡0) and Forge under a shared error scale per column."
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.31964.jpg",
+  "w": 396,
+  "h": 440
+ },
+ "2611.32948": {
+  "orgs": [
+   "University College London",
+   "ETH / CAPTAIN"
+  ],
+  "affils": [
+   "University College London",
+   "ETH / CAPTAIN"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32948.jpg",
+  "w": 640,
+  "h": 285
+ },
+ "2611.31258": {
+  "orgs": [
+   "ETH Zurich"
+  ],
+  "affils": [
+   "\n\n\n\n\n\nYulun Jiang1,2  Maria Brbic1,†  Michael Moor2,†\n\n1EPFL  2ETH Zurich\n\n\n\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31258.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.31891": {
+  "orgs": [
+   "ByteDance OmniCoach Team"
+  ],
+  "affils": [
+   "Open-OmniCoach: Evidence-Enhanced\nTrajectory Learning for Omni Video Agents\nByteDance OmniCoach Team\nFull author list in Contributions"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31891.jpg",
+  "w": 640,
+  "h": 327
+ },
+ "2611.31451": {
+  "orgs": [
+   "EPFL",
+   "University Hospital Zurich",
+   "University of Zurich",
+   "University of Bern",
+   "Geneva University Hospitals"
+  ],
+  "affils": [
+   "A multimodal foundation model\nfor tissue proteomics and morphology in cancer\nBenedikt von Querfurth\n1∗, Lukas Klein\n1,2,3∗, Cédric Vincent-Cuaz\n4,5 ,\nEeshaan Jain\n1 , Yexiang Cheng\n1 , Johann Wenckstern\n1 , Phil F. Cheng\n6 , Petros Liakopoulos\n6 ,\nOlivier Michielin\n6 , Martina Haberecker\n7 , Andreas Wicki\n2,3 , Pascal Frossard\n1,4 , Charlotte Bunne\n1,8‡\n∗These authors contributed equally.\n‡ Correspondence to: Charlotte Bunne (charlotte.bunne@epfl.ch).\n1 School of Computer and Communication Sciences, EPFL, Lausanne, Switzerland,\n2 Department of Medical Oncology and Hematology, University Hospital Zurich, Zurich, Switzerland,\n3 Faculty of Medicine, University of Zurich, Zurich, Switzerland,\n4 School of Engineering, EPFL, Lausanne, Switzerland,\n5 Department for BioMedical Research, University of Bern, Bern, Switzerland,\n6 Department of Oncology, Geneva University Hospitals, Geneva, Switzerland\n7 Department of Pathology and Molecular Pathology, University Hospital Zurich, Zurich, Switzerland,\n8 School of Life Sciences, EPFL, Lausanne, Switzerland."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31451.jpg",
+  "w": 311,
+  "h": 440
+ },
+ "2611.33024": {
+  "orgs": [
+   "EPFL and",
+   "EPFL"
+  ],
+  "affils": [
+   "EPFL and ; EPFL and ; EPFL and ; EPFL"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.33024.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.31902": {
+  "orgs": [
+   "Xiamen University"
+  ],
+  "affils": [
+   "1Institute of Artificial Intelligence, Xiamen University, Xiamen, China",
+   "2Xiamen University, Xiamen, China",
+   "chenhao@stu.xmu.edu.cn; mhn_xmu@163.com; zhangwenjie23@xmu.edu.cn; yifan@xmu.edu.cn ; mbgao@xmu.edu.cn; zhangyuanye@xmu.edu.cn; whong@xmu.edu.cn",
+   "*Corresponding authors: Mingbin Gao, Yuan-Ye Zhang, and Wenjing Hong"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31902.jpg",
+  "w": 455,
+  "h": 422
+ },
+ "2611.31821": {
+  "orgs": [
+   "Carnegie Mellon University",
+   "♢ Research of America"
+  ],
+  "affils": [
+   "Koichi Onoue♢\\diamondsuit",
+   "♥Carnegie Mellon University, Pittsburgh, USA",
+   "♢\\diamondsuitFujitsu Research of America, Pittsburgh, USA",
+   "{keyuh, ml7, msap2}@andrew.cmu.edu"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31821.jpg",
+  "w": 640,
+  "h": 224
+ },
+ "2611.33035": {
+  "orgs": [
+   "Ericsson Research",
+   "Université Lumière Lyon 2"
+  ],
+  "affils": [
+   "1 Ericsson Research, France ; Email: {sabrine.aroua, osama.arouk}@ericsson.com ; 2 Université Lumière Lyon 2, Université Claude Bernard Lyon 1, ERIC, 69007, Lyon, France ; Email: pegah.alizadeh@univ-lyon2.fr"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.33035.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.32810": {
+  "orgs": [
+   "Northwestern University",
+   "Carnegie Mellon University"
+  ],
+  "affils": [
+   "Northwestern University",
+   "Carnegie Mellon University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32810.jpg",
+  "w": 421,
+  "h": 335
+ },
+ "2611.32996": {
+  "orgs": [
+   "HKUST",
+   "Ltd. 3Institute of Deep Perception Technology (JITRI) contribution"
+  ],
+  "affils": [
+   "1The Hong Kong University of Science and Technology (Guangzhou) ; 2EigenAct Technology Co., Ltd. 3Institute of Deep Perception Technology (JITRI)⋆\\starEqual contribution, ♣\\clubsuitProject Lead, Corresponding Author , ,"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32996.jpg",
+  "w": 640,
+  "h": 344
+ },
+ "2611.32776": {
+  "orgs": [
+   "Korea University"
+  ],
+  "affils": [
+   "Korea University",
+   "Seoul, Republic of Korea",
+   "Korea University, Gauss Labs Inc."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32776.jpg",
+  "w": 640,
+  "h": 218
+ },
+ "2611.26863": {
+  "orgs": [
+   "Cornell University"
+  ],
+  "affils": [
+   "\n\n \n\n\nAnirudh Atmakuru\n\nCornell University\n\naatmakuru6@cs.cornell.edu\n \n\n\nTanya Goyal\n\nCornell University\n\ntanyagoyal@cornell.edu\n \n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26863.jpg",
+  "w": 640,
+  "h": 360
+ },
+ "2611.30627": {
+  "orgs": [
+   "Zhejiang University",
+   "Huawei Technologies"
+  ],
+  "affils": [
+   "Zhejiang University",
+   "Noah’s Ark Lab, Huawei Technologies"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30627.jpg",
+  "w": 640,
+  "h": 355
+ },
+ "2611.30075": {
+  "orgs": [
+   "Shanghai Jiao Tong University"
+  ],
+  "affils": [
+   "Ant Group The University of Hong Kong Shanghai Jiao Tong University University of Oxford*Project lead. †Corresponding authors."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30075.jpg",
+  "w": 369,
+  "h": 440
+ },
+ "2611.31117": {
+  "orgs": [
+   "CMU",
+   "UC Berkeley"
+  ],
+  "affils": [
+   "Self-Upgrading Embodied Agents\nJiajun Fan1, Neil He1,14, Qinglong Zheng1, Changyi Yang2, Tong Wei3, Andy Mao1, Zetian Li4,\nChaoran Cheng1, Hui Ren1, Ruihan Guo1, Xianrui Zhong5, Xizheng Yu6, Jingyuan Li7, Xi Zhu8,\nKaiqu Liang9, Chang Xu10, Zun Qian11, Zidi Xiong6, Yuezhu Zhao12, Xu Huang13, Ge Liu1\n1\nUIUC\n2\nCMU\n3\nBrown\n4\nStanford\n5\nNortheastern\n6\nHarvard\n7\nUW\n8\nRutgers\n9\nPrinceton\n10\nUMich\n11\nColumbia\n12\nNYU\n13\nUC Berkeley\n14\nYale"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31117.jpg",
+  "w": 483,
+  "h": 440
+ },
+ "2611.30983": {
+  "orgs": [
+   "Zhejiang University"
+  ],
+  "affils": [
+   "The State Key Laboratory of Blockchain and Data Security, Zhejiang University",
+   "Ant Healthcare, Ant Group Corresponding author: zhixuanchu@zju.edu.cn"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30983.jpg",
+  "w": 285,
+  "h": 440
+ },
+ "2611.29646": {
+  "orgs": [
+   "MathematicsPurdue University"
+  ],
+  "affils": [
+   "School of Mechanical Engineering Department of MathematicsPurdue University, West Lafayette, IN 47907, USA"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29646.jpg",
+  "w": 613,
+  "h": 440
+ },
+ "2611.28752": {
+  "orgs": [
+   "NVIDIA"
+  ],
+  "affils": [
+   "The Hong Kong University of Science and Technology (Guangzhou) NVIDIA",
+   "Equal contribution. Corresponding authors."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28752.jpg",
+  "w": 640,
+  "h": 227
+ },
+ "2611.29936": {
+  "orgs": [
+   "University of Illinois Urbana-Champaign"
+  ],
+  "affils": [
+   "SAEPO: Sparse-Autoencoder-Guided\nCredit Assignment for Policy Optimization\nYusong Zhao1, Zihao Zhao1, Zirui Zhang2, Tunyu Zhang2,\nZiyan Wang3, Yi Wang1, Chengzhi Mao2, Hao Wang1,2\n1University of Illinois Urbana-Champaign, 2Rutgers University, 3Georgia Institute of Technology"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.29936.jpg",
+  "w": 640,
+  "h": 243
+ },
+ "2611.30405": {
+  "orgs": [
+   "NUS"
+  ],
+  "affils": [
+   "School of Computing, National University of Singapore, Singapore 117417",
+   "Institute of Data Science, National University of Singapore, Singapore 117602"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30405.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.29975": {
+  "orgs": [
+   "Princeton University"
+  ],
+  "affils": [
+   "\n\n\n\n\n\nMichel Liao1,2\nNimra Nadeem2\nLuxi He2\nPeter Henderson1,2,\n\n\n\n1  MATS  2  Polaris Lab, Princeton University\n\n\n††thanks: Corresponding authors: {michel.liao, peter.henderson}@princeton.edu\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29975.jpg",
+  "w": 640,
+  "h": 256
+ },
+ "2611.29142": {
+  "orgs": [
+   "University of Maryland",
+   "City University of Hong Kong",
+   "HKUST",
+   "CUHK",
+   "Johns Hopkins University",
+   "Shanghai Innovation Institute",
+   "Fudan University",
+   "Chinese Academy of Sciences",
+   "Macao Polytechnic University",
+   "Xiangtan University",
+   "Shenzhen Research Institute of Big Data"
+  ],
+  "affils": [
+   "University of Maryland, College Park",
+   "City University of Hong Kong",
+   "The Hong Kong University of Science and Technology Guangzhou",
+   "The Chinese University of Hong Kong Shenzhen",
+   "Johns Hopkins University",
+   "Shanghai Innovation Institute",
+   "Fudan University",
+   "University of the Chinese Academy of Sciences",
+   "Macao Polytechnic University",
+   "Xiangtan University",
+   "Shenzhen Research Institute of Big Data"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29142.jpg",
+  "w": 471,
+  "h": 199
+ },
+ "2611.29856": {
+  "orgs": [
+   "UC Santa Cruz"
+  ],
+  "affils": [
+   "Department of Computer Science and Engineering",
+   "University of California, Santa Cruz",
+   "ssudars1@ucsc.edu, aknagara@ucsc.edu, ramarine@ucsc.edu"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29856.jpg",
+  "w": 374,
+  "h": 440
+ },
+ "2611.30659": {
+  "orgs": [
+   "Hong Kong Polytechnic University",
+   "NTU",
+   "Chinese Academy of Sciences",
+   "Zhejiang Lab"
+  ],
+  "affils": [
+   "Hong Kong Polytechnic University",
+   "Nanyang Technological University",
+   "University of the Chinese Academy of Sciences",
+   "Zhejiang Lab*Equal contribution."
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30659.jpg",
+  "w": 560,
+  "h": 440
+ },
+ "2611.29156": {
+  "orgs": [
+   "Beihang University 4University of Leeds"
+  ],
+  "affils": [
+   "1Beihang University 4University of Leeds"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.29156.jpg",
+  "w": 640,
+  "h": 405
+ },
+ "2611.29453": {
+  "orgs": [
+   "NTU",
+   "University of British Columbia",
+   "Tulane University",
+   "Shanghai Jiao Tong University"
+  ],
+  "affils": [
+   "Nanyang Technological University",
+   "University of British Columbia",
+   "Tulane University",
+   "Shanghai Jiao Tong University"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.29453.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.24059": {
+  "orgs": [
+   "University of Illinois Urbana-Champaign",
+   "Independent Researcher"
+  ],
+  "affils": [
+   "University of Illinois Urbana-Champaign",
+   "ANL",
+   "Independent Researcher",
+   "LMU"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.24059.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.23236": {
+  "orgs": [
+   "Zhejiang University",
+   "Xi’an Jiaotong University"
+  ],
+  "affils": [
+   "Zhejiang University",
+   "Hangzhou, China",
+   "Xi’an Jiaotong University",
+   "Xi’an, China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.23236.jpg",
+  "w": 640,
+  "h": 233
  }
 }

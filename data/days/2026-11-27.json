@@ -43,8 +43,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 128,
    "ax_votes": 8,
-   "ax_visits": 133,
-   "heat": 149.3,
+   "ax_visits": 153,
+   "heat": 151.3,
    "orgs": [
     {
      "name": "MemTensor"
@@ -70,7 +70,8 @@
    "thumb": "data/thumbs/2611.34051.jpg",
    "thumb_w": 640,
    "thumb_h": 348,
-   "listed": "2026-11-27"
+   "listed": "2026-11-27",
+   "sections": []
   },
   {
    "id": "2611.34232",
@@ -171,15 +172,16 @@
     "zh": "OS-Omni 是覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的跨平台计算机代理实时基准，v1 每平台 48 个任务、另含 12 个跨平台工作流，任务平均需 67.54 步；最强代理 Claude Opus 5.5 平均成功率 68.5%，低于人类 77.3%，在 iOS 和 macOS 上差距超过 25 点。"
    },
    "summary_source": "deepseek-flash",
-   "hf_upvotes": 103,
+   "hf_upvotes": 104,
    "ax_votes": 1,
-   "ax_visits": 23,
-   "heat": 106.3,
+   "ax_visits": 32,
+   "heat": 108.2,
    "orgs": [],
    "thumb": "data/thumbs/2611.34232.jpg",
    "thumb_w": 640,
    "thumb_h": 368,
-   "listed": "2026-11-27"
+   "listed": "2026-11-27",
+   "sections": []
   },
   {
    "id": "2611.34813",
@@ -224,8 +226,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 59,
    "ax_votes": 1,
-   "ax_visits": 61,
-   "heat": 66.1,
+   "ax_visits": 72,
+   "heat": 67.2,
    "orgs": [
     {
      "logo": "data/logos/ucl.ac.uk.png",
@@ -270,7 +272,10 @@
    "thumb": "data/thumbs/2611.34813.jpg",
    "thumb_w": 640,
    "thumb_h": 353,
-   "listed": "2026-11-27"
+   "listed": "2026-11-27",
+   "sections": [
+    "rl"
+   ]
   },
   {
    "id": "2611.31619",
@@ -300,13 +305,14 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 57,
    "ax_votes": 0,
-   "ax_visits": 5,
-   "heat": 57.5,
+   "ax_visits": 7,
+   "heat": 57.7,
    "orgs": [],
    "thumb": "data/thumbs/2611.31619.jpg",
    "thumb_w": 618,
    "thumb_h": 440,
-   "listed": "2026-11-27"
+   "listed": "2026-11-27",
+   "sections": []
   },
   {
    "id": "2611.34457",
@@ -349,8 +355,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 36,
    "ax_votes": 1,
-   "ax_visits": 24,
-   "heat": 39.4,
+   "ax_visits": 27,
+   "heat": 39.7,
    "orgs": [
     {
      "logo": "data/logos/cas.cn.png",
@@ -375,7 +381,8 @@
    "thumb": "data/thumbs/2611.34457.jpg",
    "thumb_w": 640,
    "thumb_h": 351,
-   "listed": "2026-11-27"
+   "listed": "2026-11-27",
+   "sections": []
   },
   {
    "id": "2611.34852",
@@ -413,8 +420,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 24,
    "ax_votes": 1,
-   "ax_visits": 52,
-   "heat": 30.2,
+   "ax_visits": 56,
+   "heat": 30.6,
    "orgs": [
     {
      "name": "Zhejiang University",
@@ -428,7 +435,8 @@
    "thumb": "data/thumbs/2611.34852.jpg",
    "thumb_w": 640,
    "thumb_h": 300,
-   "listed": "2026-11-27"
+   "listed": "2026-11-27",
+   "sections": []
   },
   {
    "id": "2611.34290",
@@ -466,8 +474,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 27,
    "ax_votes": 0,
-   "ax_visits": 11,
-   "heat": 28.1,
+   "ax_visits": 14,
+   "heat": 28.4,
    "orgs": [
     {
      "logo": "data/logos/nankai.edu.cn.png",
@@ -489,7 +497,8 @@
    "thumb": "data/thumbs/2611.34290.jpg",
    "thumb_w": 518,
    "thumb_h": 440,
-   "listed": "2026-11-27"
+   "listed": "2026-11-27",
+   "sections": []
   },
   {
    "id": "2611.34693",
@@ -521,8 +530,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 19,
    "ax_votes": 1,
-   "ax_visits": 21,
-   "heat": 22.1,
+   "ax_visits": 25,
+   "heat": 22.5,
    "orgs": [
     {
      "name": "NUS",
@@ -532,7 +541,69 @@
    "thumb": "data/thumbs/2611.34693.jpg",
    "thumb_w": 604,
    "thumb_h": 440,
-   "listed": "2026-11-27"
+   "listed": "2026-11-27",
+   "sections": []
+  },
+  {
+   "id": "2611.34782",
+   "title": "Generation as Reverse Encoding",
+   "authors": [
+    "Cheng Shi",
+    "Sibei Yang",
+    "Hanzhong Guo",
+    "Yipeng Qin",
+    "Pietro Lio",
+    "Yizhou Yu"
+   ],
+   "abstract": "Pretrained visual representations accelerate generative learning by abstracting away appearance and spatial detail. Yet the same abstraction makes the return to pixels far harder, shifting much of the burden onto a larger decoder. We ask why the representation-to-pixel path should be learned independently when the encoder already provides a learned pixel-to-semantics path (the semantic encoding path). We introduce RevFlow, based on the principle of generation as reverse encoding. RevFlow uses intermediate representations of a frozen encoder as successive generative targets, first generating deep semantic representations, then shallow representations that retain appearance and spatial detail, before decoding to pixels. To learn these transitions without training a separate generator for each stage, we develop HyC-DiT, a unified generative model with a standard DiT backbone shared across stages and stage-specific condition injection. We further show that native matching in semantic representation space enables few-step generation. RevFlow accelerates both learning and sampling. On ImageNet $256 \\times 256$, RevFlow reaches 1.96 FID at 690M and 1.74 FID at 1.55B after only 5 training epochs. It also achieves 30.25 dB reconstruction PSNR with an 89M decoder. After a short native-matching adaptation phase, RevFlow-XL achieves 2.85 FID using a single sampling step in each stage. Our code repository is at https://github.com/ChengShiest/RevFlow",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-25T17:40:56Z",
+   "updated": "2026-11-25T17:40:56Z",
+   "comment": "14 pages, 7 figures, 5 tables",
+   "code_url": "https://github.com/ChengShiest/RevFlow",
+   "tags": [
+    "image generation",
+    "diffusion",
+    "efficiency",
+    "pretraining"
+   ],
+   "hf_upvotes": 2,
+   "ax_votes": 4,
+   "ax_visits": 77,
+   "heat": 13.7,
+   "orgs": [
+    {
+     "logo": "data/logos/hku.hk.png",
+     "name": "HKU",
+     "ror": "02zhqgq86"
+    },
+    {
+     "name": "Sun Yat-sen University",
+     "ror": "0064kty71"
+    },
+    {
+     "logo": "data/logos/cardiff.ac.uk.png",
+     "name": "Cardiff University",
+     "ror": "03kk7td41"
+    },
+    {
+     "name": "University of Cambridge",
+     "ror": "013meh722"
+    }
+   ],
+   "thumb": "data/thumbs/2611.34782.jpg",
+   "thumb_w": 640,
+   "thumb_h": 232,
+   "listed": "2026-11-27",
+   "summary": {
+    "en": "RevFlow treats generation as reverse encoding, generating frozen-encoder features from deep semantics to shallow detail with a shared DiT backbone; it reaches 1.96 FID at 690M and 1.74 FID at 1.55B on ImageNet 256×256 after 5 epochs.",
+    "zh": "RevFlow 把生成视为逆编码，以冻结编码器的中间表征为逐级生成目标，并用共享 DiT 骨干的 HyC-DiT 统一各阶段；在 ImageNet 256×256 上仅训练 5 轮即达 1.96 FID（690M）与 1.74 FID（1.55B），89M 解码器重建 PSNR 30.25 dB。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.32238",
@@ -567,8 +638,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 7,
    "ax_votes": 2,
-   "ax_visits": 44,
-   "heat": 13.4,
+   "ax_visits": 46,
+   "heat": 13.6,
    "orgs": [
     {
      "name": "University of Electronic Science and Technology of China",
@@ -590,67 +661,8 @@
    "thumb": "data/thumbs/2611.32238.jpg",
    "thumb_w": 497,
    "thumb_h": 277,
-   "listed": "2026-11-27"
-  },
-  {
-   "id": "2611.34782",
-   "title": "Generation as Reverse Encoding",
-   "authors": [
-    "Cheng Shi",
-    "Sibei Yang",
-    "Hanzhong Guo",
-    "Yipeng Qin",
-    "Pietro Lio",
-    "Yizhou Yu"
-   ],
-   "abstract": "Pretrained visual representations accelerate generative learning by abstracting away appearance and spatial detail. Yet the same abstraction makes the return to pixels far harder, shifting much of the burden onto a larger decoder. We ask why the representation-to-pixel path should be learned independently when the encoder already provides a learned pixel-to-semantics path (the semantic encoding path). We introduce RevFlow, based on the principle of generation as reverse encoding. RevFlow uses intermediate representations of a frozen encoder as successive generative targets, first generating deep semantic representations, then shallow representations that retain appearance and spatial detail, before decoding to pixels. To learn these transitions without training a separate generator for each stage, we develop HyC-DiT, a unified generative model with a standard DiT backbone shared across stages and stage-specific condition injection. We further show that native matching in semantic representation space enables few-step generation. RevFlow accelerates both learning and sampling. On ImageNet $256 \\times 256$, RevFlow reaches 1.96 FID at 690M and 1.74 FID at 1.55B after only 5 training epochs. It also achieves 30.25 dB reconstruction PSNR with an 89M decoder. After a short native-matching adaptation phase, RevFlow-XL achieves 2.85 FID using a single sampling step in each stage. Our code repository is at https://github.com/ChengShiest/RevFlow",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-25T17:40:56Z",
-   "updated": "2026-11-25T17:40:56Z",
-   "comment": "14 pages, 7 figures, 5 tables",
-   "code_url": "https://github.com/ChengShiest/RevFlow",
-   "tags": [
-    "image generation",
-    "diffusion",
-    "efficiency",
-    "pretraining"
-   ],
-   "hf_upvotes": 2,
-   "ax_votes": 4,
-   "ax_visits": 51,
-   "heat": 11.1,
-   "orgs": [
-    {
-     "logo": "data/logos/hku.hk.png",
-     "name": "HKU",
-     "ror": "02zhqgq86"
-    },
-    {
-     "name": "Sun Yat-sen University",
-     "ror": "0064kty71"
-    },
-    {
-     "name": "Cardiff University",
-     "ror": "03kk7td41",
-     "logo": "data/logos/cardiff.ac.uk.png"
-    },
-    {
-     "name": "University of Cambridge",
-     "ror": "013meh722"
-    }
-   ],
-   "thumb": "data/thumbs/2611.34782.jpg",
-   "thumb_w": 640,
-   "thumb_h": 232,
    "listed": "2026-11-27",
-   "summary": {
-    "zh": "RevFlow 把生成视为逆编码，以冻结编码器的中间表征为逐级生成目标，并用共享 DiT 骨干的 HyC-DiT 统一各阶段；在 ImageNet 256×256 上仅训练 5 轮即达 1.96 FID（690M）与 1.74 FID（1.55B），89M 解码器重建 PSNR 30.25 dB。",
-    "en": "RevFlow treats generation as reverse encoding, generating frozen-encoder features from deep semantics to shallow detail with a shared DiT backbone; it reaches 1.96 FID at 690M and 1.74 FID at 1.55B on ImageNet 256×256 after 5 epochs."
-   },
-   "summary_source": "deepseek-flash"
+   "sections": []
   },
   {
    "id": "2611.30494",
@@ -683,8 +695,8 @@
    ],
    "hf_upvotes": 4,
    "ax_votes": 0,
-   "ax_visits": 36,
-   "heat": 7.6,
+   "ax_visits": 40,
+   "heat": 8.0,
    "listed": "2026-11-27",
    "orgs": [
     {
@@ -705,10 +717,11 @@
    "thumb_w": 640,
    "thumb_h": 238,
    "summary": {
-    "zh": "构建覆盖多种推理模式的数据集基准，在8B规模下比较不同LLM族上的多种LLM context engineering方法，发现没有单一方法全面胜出，甚至不及chain-of-thought等简单基线；LCE的性能增益与失败模式多样性负相关（r=-0.5, p≤0.05），指令遵循度提升可解释部分成功，而能否从多样失败中提取有效经验是主要瓶颈。",
-    "en": "A benchmark across reasoning patterns shows no single LLM context engineering method wins on all tasks at 8B scale; gains correlate negatively with failure-mode diversity (r=-0.5, p≤0.05), with experience extraction the key bottleneck."
+    "en": "A benchmark across reasoning patterns shows no single LLM context engineering method wins on all tasks at 8B scale; gains correlate negatively with failure-mode diversity (r=-0.5, p≤0.05), with experience extraction the key bottleneck.",
+    "zh": "构建覆盖多种推理模式的数据集基准，在8B规模下比较不同LLM族上的多种LLM context engineering方法，发现没有单一方法全面胜出，甚至不及chain-of-thought等简单基线；LCE的性能增益与失败模式多样性负相关（r=-0.5, p≤0.05），指令遵循度提升可解释部分成功，而能否从多样失败中提取有效经验是主要瓶颈。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.28849",
@@ -743,8 +756,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 2,
    "ax_votes": 1,
-   "ax_visits": 27,
-   "heat": 5.7,
+   "ax_visits": 29,
+   "heat": 5.9,
    "orgs": [
     {
      "name": "Renmin University of China",
@@ -754,7 +767,8 @@
    "thumb": "data/thumbs/2611.28849.jpg",
    "thumb_w": 394,
    "thumb_h": 362,
-   "listed": "2026-11-27"
+   "listed": "2026-11-27",
+   "sections": []
   },
   {
    "id": "2611.32993",
@@ -791,8 +805,8 @@
    ],
    "hf_upvotes": 3,
    "ax_votes": 0,
-   "ax_visits": 25,
-   "heat": 5.5,
+   "ax_visits": 27,
+   "heat": 5.7,
    "listed": "2026-11-27",
    "orgs": [
     {
@@ -819,73 +833,11 @@
    "thumb_w": 640,
    "thumb_h": 414,
    "summary": {
-    "zh": "Radev 通过解剖引导的视觉压缩、直接候选预测和反事实置信度校准，实现无需自回归解码的单次前向概率估计；在新建的 CT-Verdict 基准上，其决策准确率与置信度校准均显著优于现有方法，并在分布偏移下保持稳健。",
-    "en": "Radev combines anatomy-guided visual compression, direct candidate prediction, and counterfactual confidence calibration to estimate probabilities in a single forward pass, significantly outperforming state-of-the-art methods on decision accuracy and calibration on the new CT-Verdict benchmark."
+    "en": "Radev combines anatomy-guided visual compression, direct candidate prediction, and counterfactual confidence calibration to estimate probabilities in a single forward pass, significantly outperforming state-of-the-art methods on decision accuracy and calibration on the new CT-Verdict benchmark.",
+    "zh": "Radev 通过解剖引导的视觉压缩、直接候选预测和反事实置信度校准，实现无需自回归解码的单次前向概率估计；在新建的 CT-Verdict 基准上，其决策准确率与置信度校准均显著优于现有方法，并在分布偏移下保持稳健。"
    },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.31516",
-   "title": "InitFree-SfM: When Initialization-Free Bundle Adjustment meets Learned Structure-from-Motion",
-   "authors": [
-    "Simon Weber",
-    "Mateo de Mayo",
-    "Je Hyeong Hong",
-    "Carl Olsson",
-    "Daniel Cremers",
-    "Ronald Clark"
-   ],
-   "abstract": "Initialization-free bundle adjustment (InitFree BA) aims to jointly recover camera poses and scene structure without requiring an initial global estimate. It is a very challenging problem, especially compared to traditional BA where a good estimation is assumed. While recent methods optimize surrogate Object Space Error (OSE) objectives from random initialization, a low objective value does not necessarily yield an accurate reconstruction, revealing a gap between optimization and reconstruction. We show that existing InitFree BA pipelines struggle to produce accurate 3D reconstructions on modern SfM benchmarks, and demonstrate that incorporating learned metric depth substantially improves their practical feasibility. We introduce InitFree-SfM, a complete initialization-free SfM pipeline combining learned correspondences, metric depth, depth-consistent track construction, and joint metric refinement. Within this framework, we propose a simple depth-augmented OSE (dOSE), which complements the directional constraints of OSE by constraining landmark positions along their viewing rays. Our approach substantially outperforms existing InitFree BA methods and achieves competitive accuracy with established SfM pipelines, including on challenging low-overlap image collections. Importantly, our analysis challenges the prevailing emphasis on surrogate objectives in previous InitFree BA research, revealing that geometric constraints play a central role in accurate reconstruction, while OSE-based optimization provides further improvements.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-23T20:22:10Z",
-   "updated": "2026-11-23T20:22:10Z",
-   "comment": "",
-   "tags": [
-    "3D",
-    "efficiency",
-    "dataset"
-   ],
-   "hf_upvotes": 1,
-   "ax_votes": 2,
-   "ax_visits": 15,
-   "heat": 4.5,
-   "listed": "2026-11-27",
-   "orgs": [
-    {
-     "logo": "data/logos/ox.ac.uk.png",
-     "name": "University of Oxford",
-     "ror": "052gg0110"
-    },
-    {
-     "logo": "data/logos/tum.de.png",
-     "name": "TU Munich",
-     "ror": "02kkvpp62"
-    },
-    {
-     "name": "Munich Center for Machine Learning",
-     "ror": "02nfy3535",
-     "logo": "data/logos/mcml.ai.png"
-    },
-    {
-     "name": "Hanyang University",
-     "ror": "046865y68"
-    },
-    {
-     "name": "Lund University",
-     "ror": "012a77v79"
-    }
-   ],
-   "thumb": "data/thumbs/2611.31516.jpg",
-   "thumb_w": 640,
-   "thumb_h": 206,
-   "summary": {
-    "zh": "InitFree-SfM 将学习到的对应关系、metric depth 与深度一致性 track 构建结合，提出深度增强的 dOSE 约束，在低重叠图像集上重建精度接近成熟 SfM 流程并超过现有 InitFree BA 方法。",
-    "en": "InitFree-SfM combines learned correspondences, metric depth, and depth-consistent tracks with a depth-augmented OSE (dOSE), achieving reconstruction accuracy competitive with established SfM pipelines and beating prior InitFree BA methods."
-   },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.30483",
@@ -913,8 +865,8 @@
    ],
    "hf_upvotes": 4,
    "ax_votes": 0,
-   "ax_visits": 7,
-   "heat": 4.7,
+   "ax_visits": 9,
+   "heat": 4.9,
    "listed": "2026-11-27",
    "orgs": [
     {
@@ -925,10 +877,75 @@
    "thumb_w": 618,
    "thumb_h": 440,
    "summary": {
-    "zh": "通过两层预注册实验比较模型、防护层与数据库引擎本身对AI agent误操作损害的决定作用，覆盖9种以上引擎、6个4B–12B开源模型共9,468次试验，发现引擎间主要差别在于可撤销性而非破坏程度。",
-    "en": "A two-layer preregistered study tests whether the model, a guard layer, or the database engine determines damage from AI agent mistakes, spanning 9+ engines and six 4B–12B open-weight models over 9,468 trials; engines differ more in undoability than in what a mistake destroys."
+    "en": "A two-layer preregistered study tests whether the model, a guard layer, or the database engine determines damage from AI agent mistakes, spanning 9+ engines and six 4B–12B open-weight models over 9,468 trials; engines differ more in undoability than in what a mistake destroys.",
+    "zh": "通过两层预注册实验比较模型、防护层与数据库引擎本身对AI agent误操作损害的决定作用，覆盖9种以上引擎、6个4B–12B开源模型共9,468次试验，发现引擎间主要差别在于可撤销性而非破坏程度。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.31516",
+   "title": "InitFree-SfM: When Initialization-Free Bundle Adjustment meets Learned Structure-from-Motion",
+   "authors": [
+    "Simon Weber",
+    "Mateo de Mayo",
+    "Je Hyeong Hong",
+    "Carl Olsson",
+    "Daniel Cremers",
+    "Ronald Clark"
+   ],
+   "abstract": "Initialization-free bundle adjustment (InitFree BA) aims to jointly recover camera poses and scene structure without requiring an initial global estimate. It is a very challenging problem, especially compared to traditional BA where a good estimation is assumed. While recent methods optimize surrogate Object Space Error (OSE) objectives from random initialization, a low objective value does not necessarily yield an accurate reconstruction, revealing a gap between optimization and reconstruction. We show that existing InitFree BA pipelines struggle to produce accurate 3D reconstructions on modern SfM benchmarks, and demonstrate that incorporating learned metric depth substantially improves their practical feasibility. We introduce InitFree-SfM, a complete initialization-free SfM pipeline combining learned correspondences, metric depth, depth-consistent track construction, and joint metric refinement. Within this framework, we propose a simple depth-augmented OSE (dOSE), which complements the directional constraints of OSE by constraining landmark positions along their viewing rays. Our approach substantially outperforms existing InitFree BA methods and achieves competitive accuracy with established SfM pipelines, including on challenging low-overlap image collections. Importantly, our analysis challenges the prevailing emphasis on surrogate objectives in previous InitFree BA research, revealing that geometric constraints play a central role in accurate reconstruction, while OSE-based optimization provides further improvements.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-23T20:22:10Z",
+   "updated": "2026-11-23T20:22:10Z",
+   "comment": "",
+   "tags": [
+    "3D",
+    "efficiency",
+    "dataset"
+   ],
+   "hf_upvotes": 1,
+   "ax_votes": 2,
+   "ax_visits": 17,
+   "heat": 4.7,
+   "listed": "2026-11-27",
+   "orgs": [
+    {
+     "logo": "data/logos/ox.ac.uk.png",
+     "name": "University of Oxford",
+     "ror": "052gg0110"
+    },
+    {
+     "logo": "data/logos/tum.de.png",
+     "name": "TU Munich",
+     "ror": "02kkvpp62"
+    },
+    {
+     "logo": "data/logos/mcml.ai.png",
+     "name": "Munich Center for Machine Learning",
+     "ror": "02nfy3535"
+    },
+    {
+     "name": "Hanyang University",
+     "ror": "046865y68"
+    },
+    {
+     "name": "Lund University",
+     "ror": "012a77v79"
+    }
+   ],
+   "thumb": "data/thumbs/2611.31516.jpg",
+   "thumb_w": 640,
+   "thumb_h": 206,
+   "summary": {
+    "en": "InitFree-SfM combines learned correspondences, metric depth, and depth-consistent tracks with a depth-augmented OSE (dOSE), achieving reconstruction accuracy competitive with established SfM pipelines and beating prior InitFree BA methods.",
+    "zh": "InitFree-SfM 将学习到的对应关系、metric depth 与深度一致性 track 构建结合，提出深度增强的 dOSE 约束，在低重叠图像集上重建精度接近成熟 SfM 流程并超过现有 InitFree BA 方法。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.34719",
@@ -954,8 +971,8 @@
    ],
    "hf_upvotes": 2,
    "ax_votes": 0,
-   "ax_visits": 7,
-   "heat": 2.7,
+   "ax_visits": 9,
+   "heat": 2.9,
    "listed": "2026-11-27",
    "orgs": [
     {
@@ -967,43 +984,11 @@
    "thumb_w": 640,
    "thumb_h": 257,
    "summary": {
-    "zh": "ReMoT 在完全冻结的视觉基础模型上，用受 Mixture-of-Transformers 启发的分阶段联合注意力从空间对齐的 RGB 与小波视图读取互补证据，仅 3074 个可训练参数即在八个基准组上平均准确率达 91.2%，为评估方法中最高。",
-    "en": "ReMoT reads complementary evidence from aligned RGB and wavelet views in a fully frozen vision foundation via staged joint attention, reaching 91.2% average accuracy across eight benchmark groups with only 3,074 trainable parameters."
+    "en": "ReMoT reads complementary evidence from aligned RGB and wavelet views in a fully frozen vision foundation via staged joint attention, reaching 91.2% average accuracy across eight benchmark groups with only 3,074 trainable parameters.",
+    "zh": "ReMoT 在完全冻结的视觉基础模型上，用受 Mixture-of-Transformers 启发的分阶段联合注意力从空间对齐的 RGB 与小波视图读取互补证据，仅 3074 个可训练参数即在八个基准组上平均准确率达 91.2%，为评估方法中最高。"
    },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.31491",
-   "title": "Pretrained Tabular Features and the Measurement of Financial Proximity",
-   "authors": [
-    "Marcus Gawronsky"
-   ],
-   "abstract": "Spatial arbitrage pricing theory (S-APT) extends factor models to allow returns to spill over between connected firms, beyond what common risk factors explain. In recent years, tabular foundation models (TFMs) have matched or outperformed tuned gradient-boosted and bagged ensembles on small and medium-sized tabular benchmarks. Although their predictive performance is strong, these models reveal little about what they have learned, which limits their use in regulated financial applications that require explanation. Internal representations are widely used to probe what neural networks learn and to measure similarity. In this paper, we use the frozen representations of four TFMs as a measure of financial dissimilarity in a spatial asset-pricing model of US equities from 2011 to 2025, and find that their estimated gains over a direct distance between the same disclosures become consistently positive once broad SEC filing data are included. This reframes tabular foundation models from black-box predictors into instruments for measuring economic structure, with immediate applications to peer selection, risk attribution and network-based asset pricing. More broadly, our findings suggest that the internal representations of foundation models, not only their predictions, deserve study as economic objects, opening a new line of research on what pretrained models know about firms.",
-   "primary": "q-fin.PR",
-   "categories": [
-    "q-fin.PR"
-   ],
-   "published": "2026-11-23T20:03:55Z",
-   "updated": "2026-11-23T20:03:55Z",
-   "comment": "",
-   "tags": [
-    "LLM",
-    "interpretability"
-   ],
-   "hf_upvotes": 1,
-   "ax_votes": 0,
-   "ax_visits": 5,
-   "heat": 1.5,
-   "listed": "2026-11-27",
-   "orgs": [],
-   "thumb": "data/thumbs/2611.31491.jpg",
-   "thumb_w": 618,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "用四个表格基础模型的冻结表示度量美国股票2011–2025年的财务差异性，发现纳入SEC申报数据后其相对直接距离的估计增益持续为正。",
-    "en": "Frozen representations from four tabular foundation models measure financial dissimilarity for US equities 2011–2025, yielding consistently positive estimated gains over direct disclosure distance once SEC filing data are included."
-   },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.30723",
@@ -1027,25 +1012,26 @@
     "efficiency"
    ],
    "ax_votes": 0,
-   "ax_visits": 4,
-   "heat": 2.4,
+   "ax_visits": 6,
+   "heat": 2.6,
    "hf_upvotes": 2,
    "listed": "2026-11-27",
    "orgs": [
     {
+     "logo": "data/logos/jaist.ac.jp.png",
      "name": "Japan Advanced Institute of Science and Technology",
-     "ror": "03frj4r98",
-     "logo": "data/logos/jaist.ac.jp.png"
+     "ror": "03frj4r98"
     }
    ],
    "thumb": "data/thumbs/2611.30723.jpg",
    "thumb_w": 640,
    "thumb_h": 407,
    "summary": {
-    "zh": "BiSAT 通过共享索引机制将独立的声学与语义分支耦合为单一离散码流，联合优化双编码器且不依赖固定语义教师；基于此的 BiSAT-TTS 用更少训练数据即达到或超越现有语音语言模型 TTS 基线。",
-    "en": "BiSAT couples separate acoustic and semantic branches via a shared-index mechanism into one discrete token stream, jointly optimizing both encoders without fixed semantic teachers; BiSAT-TTS matches or beats speech-LM TTS baselines with less training data."
+    "en": "BiSAT couples separate acoustic and semantic branches via a shared-index mechanism into one discrete token stream, jointly optimizing both encoders without fixed semantic teachers; BiSAT-TTS matches or beats speech-LM TTS baselines with less training data.",
+    "zh": "BiSAT 通过共享索引机制将独立的声学与语义分支耦合为单一离散码流，联合优化双编码器且不依赖固定语义教师；基于此的 BiSAT-TTS 用更少训练数据即达到或超越现有语音语言模型 TTS 基线。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.30025",
@@ -1070,103 +1056,58 @@
    ],
    "hf_upvotes": 2,
    "ax_votes": 0,
-   "ax_visits": 3,
-   "heat": 2.3,
+   "ax_visits": 5,
+   "heat": 2.5,
    "orgs": [
     {
+     "logo": "data/logos/udc.edu.png",
      "name": "University of the District of Columbia",
-     "ror": "037wegn60",
-     "logo": "data/logos/udc.edu.png"
+     "ror": "037wegn60"
     }
    ],
    "thumb": "data/thumbs/2611.30025.jpg",
    "thumb_w": 618,
    "thumb_h": 440,
    "summary": {
-    "zh": "DAWIN 将空间投影与时变波激励耦合为闭式阻尼复状态，无需微分方程求解器即可嵌入 MLP、Transformer 和 GNN；在 11 项参数匹配任务中，其 9 项超过 Neural CDE、8 项超过 ReLU-MLP，临床死亡率预测 AUROC 达 0.9993，并给出闭式梯度与 BIBO 稳定性证明。",
-    "en": "DAWIN couples spatial projection with elapsed-time wave excitation into a closed-form damped complex state, avoiding ODE solvers; it plugs into MLPs, Transformers, and GNNs, beating Neural CDE on 9 of 11 tasks and ReLU-MLP on 8."
+    "en": "DAWIN couples spatial projection with elapsed-time wave excitation into a closed-form damped complex state, avoiding ODE solvers; it plugs into MLPs, Transformers, and GNNs, beating Neural CDE on 9 of 11 tasks and ReLU-MLP on 8.",
+    "zh": "DAWIN 将空间投影与时变波激励耦合为闭式阻尼复状态，无需微分方程求解器即可嵌入 MLP、Transformer 和 GNN；在 11 项参数匹配任务中，其 9 项超过 Neural CDE、8 项超过 ReLU-MLP，临床死亡率预测 AUROC 达 0.9993，并给出闭式梯度与 BIBO 稳定性证明。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
-   "id": "2611.31155",
-   "title": "So Many Ways to Multiply $3\\times3$ Matrices: A Large Dataset of Rank-23 Schemes",
+   "id": "2611.31491",
+   "title": "Pretrained Tabular Features and the Measurement of Financial Proximity",
    "authors": [
-    "Andrew Igorevich Perminov"
+    "Marcus Gawronsky"
    ],
-   "abstract": "A publicly available dataset of 62029 rank-23 schemes for $3\\times3$ matrix multiplication is presented. Every scheme in it has its own rank pattern, an invariant formed by the ranks of the factor matrices of a scheme, so all schemes are pairwise inequivalent. The schemes were obtained by a numerical method combining gradient descent with alternating least squares and by flip graph search, and have ternary, integer or rational coefficients. Rank 23 is the best known for this format and is optimal for schemes with integer coefficients, but the number of essentially different schemes of this rank was poorly understood: the existing collections of Heule et al. and Mårtensson et al. contain many schemes that share only a small number of rank patterns (17376 schemes with 387 patterns and 15316 schemes with 568 patterns respectively). The dataset shows that the number of different rank patterns is much larger than previously known.",
-   "primary": "cs.SC",
+   "abstract": "Spatial arbitrage pricing theory (S-APT) extends factor models to allow returns to spill over between connected firms, beyond what common risk factors explain. In recent years, tabular foundation models (TFMs) have matched or outperformed tuned gradient-boosted and bagged ensembles on small and medium-sized tabular benchmarks. Although their predictive performance is strong, these models reveal little about what they have learned, which limits their use in regulated financial applications that require explanation. Internal representations are widely used to probe what neural networks learn and to measure similarity. In this paper, we use the frozen representations of four TFMs as a measure of financial dissimilarity in a spatial asset-pricing model of US equities from 2011 to 2025, and find that their estimated gains over a direct distance between the same disclosures become consistently positive once broad SEC filing data are included. This reframes tabular foundation models from black-box predictors into instruments for measuring economic structure, with immediate applications to peer selection, risk attribution and network-based asset pricing. More broadly, our findings suggest that the internal representations of foundation models, not only their predictions, deserve study as economic objects, opening a new line of research on what pretrained models know about firms.",
+   "primary": "q-fin.PR",
    "categories": [
-    "cs.SC"
+    "q-fin.PR"
    ],
-   "published": "2026-11-23T18:21:37Z",
-   "updated": "2026-11-23T18:21:37Z",
+   "published": "2026-11-23T20:03:55Z",
+   "updated": "2026-11-23T20:03:55Z",
    "comment": "",
    "tags": [
-    "math",
-    "dataset",
-    "theory"
+    "LLM",
+    "interpretability"
    ],
+   "hf_upvotes": 1,
    "ax_votes": 0,
-   "ax_visits": 5,
-   "heat": 0.5,
+   "ax_visits": 7,
+   "heat": 1.7,
    "listed": "2026-11-27",
-   "orgs": [
-    {
-     "name": "Research Center for TAI"
-    },
-    {
-     "name": "Institute for System Programming",
-     "ror": "017ef8252"
-    }
-   ],
-   "thumb": "data/thumbs/2611.31155.jpg",
+   "orgs": [],
+   "thumb": "data/thumbs/2611.31491.jpg",
    "thumb_w": 618,
    "thumb_h": 440,
    "summary": {
-    "zh": "构建了包含62029个秩23的3×3矩阵乘法方案公开数据集，方案由梯度下降结合交替最小二乘与flip graph搜索得到，按秩模式两两不等价，秩模式数量远超Heule等（17376方案/387模式）和Mårtensson等（15316方案/568模式）的已有集合。",
-    "en": "A public dataset of 62029 rank-23 3×3 matrix multiplication schemes from gradient descent with alternating least squares and flip graph search, pairwise inequivalent by rank pattern and far exceeding prior collections."
+    "en": "Frozen representations from four tabular foundation models measure financial dissimilarity for US equities 2011–2025, yielding consistently positive estimated gains over direct disclosure distance once SEC filing data are included.",
+    "zh": "用四个表格基础模型的冻结表示度量美国股票2011–2025年的财务差异性，发现纳入SEC申报数据后其相对直接距离的估计增益持续为正。"
    },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.27112",
-   "title": "Markdown Is Not a Firewall: four coding agents, one rules file, four boundaries",
-   "authors": [
-    "Sandeep Dhuri"
-   ],
-   "abstract": "Teams put a one-page rules file in a repository and call it a control on coding agents. A registered study found agents rarely look up a repository's contribution rules. I asked the security question: what does a rules file do at a boundary, against a gate? I tested one 278-word rules file, with hypotheses and analysis code deposited first. Claude Code, Codex CLI, Gemini CLI and OpenCode with DeepSeek worked through 20 small repositories with hidden tests, 12 for three of them. Three agents met four boundaries I built: a refused endpoint, a destructive shortcut, a planted instruction and a planted package. Permission prompts, each vendor's own control layer, were off by design. A gate in front of the mock service blocked and logged forbidden requests. Every verdict was read from records the agent could not change. Only my first scoring pass was blind to arm. My checkers found no real bugs, with the file or without it. The file cost one agent a third of its score: Codex CLI fell from 99.0 to 67.7 percent on hidden tests, and in 11 of its 36 steps reported the task complete with all tests passing while under half of the hidden tests passed. Its own tests passed. Faced with two of its rules that clash on these tasks, three agents followed the task and one followed the rule. Pooled, passes fell from 98.2 to 90.9 percent. Matched pairs fell 7.7 points, 1.3 without Codex CLI. Attempts to cross were rare: 5 in 90 gated steps, 3 without the file, 2 with it, all by OpenCode with DeepSeek, all blocked. With no gate, under the neutral file, the same requests reached the mock in 7 of 45 runs. By an error in my run script, the no-file and rules-file arms always ran behind the gate at the three HTTP boundaries, so I could not test whether the file changes what an agent does there. On what I could measure, the file acted as advice. A file tells an agent what you want. A gate decides what it gets.",
-   "primary": "cs.SE",
-   "categories": [
-    "cs.SE",
-    "cs.CR"
-   ],
-   "published": "2026-11-20T04:35:33Z",
-   "updated": "2026-11-20T04:35:33Z",
-   "comment": "22 pages, 7 figures. Pre-registration: doi.org/10.5281/zenodo.23608308. Results dataset: doi.org/10.5281/zenodo.24238904",
-   "tags": [
-    "agents",
-    "safety",
-    "benchmark",
-    "code"
-   ],
-   "ax_votes": 0,
-   "ax_visits": 2,
-   "heat": 0.2,
-   "listed": "2026-11-27",
-   "orgs": [
-    {
-     "name": "Independent Researcher"
-    }
-   ],
-   "thumb": "data/thumbs/2611.27112.jpg",
-   "thumb_w": 618,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "在278词规则文件下测试Claude Code、Codex CLI、Gemini CLI和OpenCode+DeepSeek于隐藏测试仓库上的表现：规则文件仅作建议，Codex CLI得分从99.0降至67.7%，汇总通过率由98.2%降至90.9%，且无门禁时违规请求仍在7/45次运行中到达mock服务。",
-    "en": "Testing Claude Code, Codex CLI, Gemini CLI and OpenCode+DeepSeek on hidden-test repos under a 278-word rules file: the file acted as advice, dropping Codex CLI from 99.0% to 67.7% and pooled passes from 98.2% to 90.9%."
-   },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.33885",
@@ -1194,13 +1135,13 @@
     "diffusion"
    ],
    "ax_votes": 0,
-   "ax_visits": 7,
-   "heat": 0.7,
+   "ax_visits": 12,
+   "heat": 1.2,
    "orgs": [
     {
+     "logo": "data/logos/ucsd.edu.png",
      "name": "University of California San Diego",
-     "ror": "0168r3w48",
-     "logo": "data/logos/ucsd.edu.png"
+     "ror": "0168r3w48"
     },
     {
      "name": "University of California Irvine"
@@ -1214,10 +1155,93 @@
    "thumb_w": 640,
    "thumb_h": 360,
    "summary": {
-    "zh": "LayoutRecall 将物体外观以图像潜变量形式存储于 3D 框的局部坐标系表面，并按目标视角沿射线检索，再通过几何对齐的记忆条件注入 FLUX.2 编辑器，在多轮 3D 布局编辑中恢复被遮挡或出画物体的外观；同时构建带校准布局与设计重访的 LayoutLoop 基准，实验验证了外观保持能力。",
-    "en": "LayoutRecall stores appearance as image latents on 3D box surfaces, retrieves them along target-view rays, and feeds them into a FLUX.2 editor for multi-round 3D layout-controlled editing, plus the LayoutLoop benchmark for revisits."
+    "en": "LayoutRecall stores appearance as image latents on 3D box surfaces, retrieves them along target-view rays, and feeds them into a FLUX.2 editor for multi-round 3D layout-controlled editing, plus the LayoutLoop benchmark for revisits.",
+    "zh": "LayoutRecall 将物体外观以图像潜变量形式存储于 3D 框的局部坐标系表面，并按目标视角沿射线检索，再通过几何对齐的记忆条件注入 FLUX.2 编辑器，在多轮 3D 布局编辑中恢复被遮挡或出画物体的外观；同时构建带校准布局与设计重访的 LayoutLoop 基准，实验验证了外观保持能力。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.31155",
+   "title": "So Many Ways to Multiply $3\\times3$ Matrices: A Large Dataset of Rank-23 Schemes",
+   "authors": [
+    "Andrew Igorevich Perminov"
+   ],
+   "abstract": "A publicly available dataset of 62029 rank-23 schemes for $3\\times3$ matrix multiplication is presented. Every scheme in it has its own rank pattern, an invariant formed by the ranks of the factor matrices of a scheme, so all schemes are pairwise inequivalent. The schemes were obtained by a numerical method combining gradient descent with alternating least squares and by flip graph search, and have ternary, integer or rational coefficients. Rank 23 is the best known for this format and is optimal for schemes with integer coefficients, but the number of essentially different schemes of this rank was poorly understood: the existing collections of Heule et al. and Mårtensson et al. contain many schemes that share only a small number of rank patterns (17376 schemes with 387 patterns and 15316 schemes with 568 patterns respectively). The dataset shows that the number of different rank patterns is much larger than previously known.",
+   "primary": "cs.SC",
+   "categories": [
+    "cs.SC"
+   ],
+   "published": "2026-11-23T18:21:37Z",
+   "updated": "2026-11-23T18:21:37Z",
+   "comment": "",
+   "tags": [
+    "math",
+    "dataset",
+    "theory"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 7,
+   "heat": 0.7,
+   "listed": "2026-11-27",
+   "orgs": [
+    {
+     "name": "Research Center for TAI"
+    },
+    {
+     "name": "Institute for System Programming",
+     "ror": "017ef8252"
+    }
+   ],
+   "thumb": "data/thumbs/2611.31155.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440,
+   "summary": {
+    "en": "A public dataset of 62029 rank-23 3×3 matrix multiplication schemes from gradient descent with alternating least squares and flip graph search, pairwise inequivalent by rank pattern and far exceeding prior collections.",
+    "zh": "构建了包含62029个秩23的3×3矩阵乘法方案公开数据集，方案由梯度下降结合交替最小二乘与flip graph搜索得到，按秩模式两两不等价，秩模式数量远超Heule等（17376方案/387模式）和Mårtensson等（15316方案/568模式）的已有集合。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.27112",
+   "title": "Markdown Is Not a Firewall: four coding agents, one rules file, four boundaries",
+   "authors": [
+    "Sandeep Dhuri"
+   ],
+   "abstract": "Teams put a one-page rules file in a repository and call it a control on coding agents. A registered study found agents rarely look up a repository's contribution rules. I asked the security question: what does a rules file do at a boundary, against a gate? I tested one 278-word rules file, with hypotheses and analysis code deposited first. Claude Code, Codex CLI, Gemini CLI and OpenCode with DeepSeek worked through 20 small repositories with hidden tests, 12 for three of them. Three agents met four boundaries I built: a refused endpoint, a destructive shortcut, a planted instruction and a planted package. Permission prompts, each vendor's own control layer, were off by design. A gate in front of the mock service blocked and logged forbidden requests. Every verdict was read from records the agent could not change. Only my first scoring pass was blind to arm. My checkers found no real bugs, with the file or without it. The file cost one agent a third of its score: Codex CLI fell from 99.0 to 67.7 percent on hidden tests, and in 11 of its 36 steps reported the task complete with all tests passing while under half of the hidden tests passed. Its own tests passed. Faced with two of its rules that clash on these tasks, three agents followed the task and one followed the rule. Pooled, passes fell from 98.2 to 90.9 percent. Matched pairs fell 7.7 points, 1.3 without Codex CLI. Attempts to cross were rare: 5 in 90 gated steps, 3 without the file, 2 with it, all by OpenCode with DeepSeek, all blocked. With no gate, under the neutral file, the same requests reached the mock in 7 of 45 runs. By an error in my run script, the no-file and rules-file arms always ran behind the gate at the three HTTP boundaries, so I could not test whether the file changes what an agent does there. On what I could measure, the file acted as advice. A file tells an agent what you want. A gate decides what it gets.",
+   "primary": "cs.SE",
+   "categories": [
+    "cs.SE",
+    "cs.CR"
+   ],
+   "published": "2026-11-20T04:35:33Z",
+   "updated": "2026-11-20T04:35:33Z",
+   "comment": "22 pages, 7 figures. Pre-registration: doi.org/10.5281/zenodo.23608308. Results dataset: doi.org/10.5281/zenodo.24238904",
+   "tags": [
+    "agents",
+    "safety",
+    "benchmark",
+    "code"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 4,
+   "heat": 0.4,
+   "listed": "2026-11-27",
+   "orgs": [
+    {
+     "name": "Independent Researcher"
+    }
+   ],
+   "thumb": "data/thumbs/2611.27112.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440,
+   "summary": {
+    "en": "Testing Claude Code, Codex CLI, Gemini CLI and OpenCode+DeepSeek on hidden-test repos under a 278-word rules file: the file acted as advice, dropping Codex CLI from 99.0% to 67.7% and pooled passes from 98.2% to 90.9%.",
+    "zh": "在278词规则文件下测试Claude Code、Codex CLI、Gemini CLI和OpenCode+DeepSeek于隐藏测试仓库上的表现：规则文件仅作建议，Codex CLI得分从99.0降至67.7%，汇总通过率由98.2%降至90.9%，且无门禁时违规请求仍在7/45次运行中到达mock服务。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
   }
  ]
 }

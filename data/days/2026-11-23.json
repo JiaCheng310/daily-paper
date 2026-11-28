@@ -42,8 +42,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 94,
    "ax_votes": 6,
-   "ax_visits": 84,
-   "heat": 108.4,
+   "ax_visits": 86,
+   "heat": 108.6,
    "orgs": [
     {
      "name": "China Telecom"
@@ -65,7 +65,8 @@
    "thumb": "data/thumbs/2611.27193.jpg",
    "thumb_w": 640,
    "thumb_h": 310,
-   "listed": "2026-11-23"
+   "listed": "2026-11-23",
+   "sections": []
   },
   {
    "id": "2611.27963",
@@ -100,8 +101,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 63,
    "ax_votes": 10,
-   "ax_visits": 205,
-   "heat": 93.5,
+   "ax_visits": 206,
+   "heat": 93.6,
    "orgs": [
     {
      "logo": "data/logos/polyu.edu.hk.png",
@@ -112,7 +113,51 @@
    "thumb": "data/thumbs/2611.27963.jpg",
    "thumb_w": 640,
    "thumb_h": 355,
-   "listed": "2026-11-23"
+   "listed": "2026-11-23",
+   "sections": []
+  },
+  {
+   "id": "2611.24636",
+   "title": "Clover-35B-A3B-Preview Technical Report",
+   "authors": [
+    "DiffuSpace Technical Team"
+   ],
+   "abstract": "We introduce Clover-35B-A3B-Preview (Clover), a mixture-of-experts diffusion language model with 35 billion total parameters and 3 billion activated parameters, supporting thinking-mode generation. Clover adapts Gated Delta Networks to block diffusion by combining recurrent memory of previously generated context with bidirectional softmax attention inside the current block. Historical memory readout competes with current-block tokens in a shared softmax, with learnable block-size calibration and a separate, zero-initialized right-context convolution branch. Clover leads the seven evaluated agent metrics, including 73.6 on SWE-bench Verified and 51.7 on Terminal-Bench 2.1. On internal agent workloads, it reaches a reported generation speed of 680 tokens/s using one NVIDIA GB300 GPU at BF16 precision and batch size one. We organize the evaluation around model quality, drafting and verification costs, and deployment under constrained memory. We also describe a decision-model variant that generates answers to related questions in one denoising pass. On an internal set of 500 groups, joint prediction raises question accuracy from 90.37% to 93.88% and all-correct group accuracy from 65.4% to 77.0%.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "published": "2026-11-18T15:46:14Z",
+   "updated": "2026-11-18T15:46:14Z",
+   "comment": "Technical Report. Code: https://github.com/DiffuSpace/Clover-35B-A3B-Preview; Weights: https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview",
+   "code_url": "https://github.com/DiffuSpace/Clover-35B-A3B-Preview",
+   "listed": "2026-11-23",
+   "tags": [
+    "LLM",
+    "diffusion",
+    "efficiency",
+    "agents"
+   ],
+   "hf_upvotes": 45,
+   "ax_votes": 13,
+   "ax_visits": 156,
+   "heat": 73.6,
+   "orgs": [
+    {
+     "name": "DiffuSpace"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24636.jpg",
+   "thumb_w": 566,
+   "thumb_h": 440,
+   "summary": {
+    "en": "Clover-35B-A3B-Preview is a 35B-total, 3B-active MoE diffusion language model combining Gated Delta Network memory with in-block bidirectional attention, scoring 73.6 on SWE-bench Verified and 51.7 on Terminal-Bench 2.1 at 680 tokens/s on one GB300 GPU.",
+    "zh": "Clover-35B-A3B-Preview 是 35B 总参数、3B 激活参数的 MoE 扩散语言模型，把 Gated Delta Networks 的循环记忆与块内双向注意力结合，在 SWE-bench Verified 得 73.6、Terminal-Bench 2.1 得 51.7，单张 GB300 上 BF16 解码达 680 tokens/s。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.27973",
@@ -144,8 +189,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 30,
    "ax_votes": 18,
-   "ax_visits": 225,
-   "heat": 70.5,
+   "ax_visits": 232,
+   "heat": 71.2,
    "orgs": [
     {
      "name": "Nanjing University",
@@ -159,7 +204,8 @@
    "thumb": "data/thumbs/2611.27973.jpg",
    "thumb_w": 522,
    "thumb_h": 440,
-   "listed": "2026-11-23"
+   "listed": "2026-11-23",
+   "sections": []
   },
   {
    "id": "2611.25773",
@@ -202,8 +248,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 26,
    "ax_votes": 13,
-   "ax_visits": 207,
-   "heat": 59.7,
+   "ax_visits": 209,
+   "heat": 59.9,
    "orgs": [
     {
      "name": "Shanghai Jiao Tong University",
@@ -226,7 +272,10 @@
    "thumb": "data/thumbs/2611.25773.jpg",
    "thumb_w": 640,
    "thumb_h": 298,
-   "listed": "2026-11-23"
+   "listed": "2026-11-23",
+   "sections": [
+    "rl"
+   ]
   },
   {
    "id": "2611.26954",
@@ -264,8 +313,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 43,
    "ax_votes": 3,
-   "ax_visits": 44,
-   "heat": 50.4,
+   "ax_visits": 47,
+   "heat": 50.7,
    "orgs": [
     {
      "name": "University at Buffalo",
@@ -295,49 +344,64 @@
    "thumb": "data/thumbs/2611.26954.jpg",
    "thumb_w": 429,
    "thumb_h": 267,
-   "listed": "2026-11-23"
+   "listed": "2026-11-23",
+   "sections": []
   },
   {
-   "id": "2611.24636",
-   "title": "Clover-35B-A3B-Preview Technical Report",
+   "id": "2611.23417",
+   "title": "Autoregressive View Model",
    "authors": [
-    "DiffuSpace Technical Team"
+    "Jensen",
+    "Zhou",
+    "Samuel Rota Bulo",
+    "Denis Rozumny",
+    "Duncan Zauss",
+    "Peter Hedman",
+    "Nikhil Keetha",
+    "Philip Torr",
+    "Christian Rupprecht",
+    "Andrea Vedaldi",
+    "Peter Kontschieder"
    ],
-   "abstract": "We introduce Clover-35B-A3B-Preview (Clover), a mixture-of-experts diffusion language model with 35 billion total parameters and 3 billion activated parameters, supporting thinking-mode generation. Clover adapts Gated Delta Networks to block diffusion by combining recurrent memory of previously generated context with bidirectional softmax attention inside the current block. Historical memory readout competes with current-block tokens in a shared softmax, with learnable block-size calibration and a separate, zero-initialized right-context convolution branch. Clover leads the seven evaluated agent metrics, including 73.6 on SWE-bench Verified and 51.7 on Terminal-Bench 2.1. On internal agent workloads, it reaches a reported generation speed of 680 tokens/s using one NVIDIA GB300 GPU at BF16 precision and batch size one. We organize the evaluation around model quality, drafting and verification costs, and deployment under constrained memory. We also describe a decision-model variant that generates answers to related questions in one denoising pass. On an internal set of 500 groups, joint prediction raises question accuracy from 90.37% to 93.88% and all-correct group accuracy from 65.4% to 77.0%.",
-   "primary": "cs.CL",
+   "abstract": "We present the Autoregressive View Model (AVM), which generates a scene as a stream of views without constructing an explicit 3D representation. Through a unified in-context interface, AVM conditions on images or videos to generate short clips along a requested camera path. Visual context grounds reconstruction and interpolation, while a learned prior enables extrapolation into unseen regions. AVM retrieves relevant views from inputs and generated history to form a bounded active context. We fine-tune a pretrained bidirectional video diffusion transformer with flow matching in an N-in-1-out formulation. We then tune a causal model on its own rollouts to improve photorealism, reduce denoising steps, and limit long-horizon drift. We scale training to approximately 8M scenes and video clips. We evaluate generation capacity and scene persistence across benchmarks for camera control, text control, visual quality, dynamics, sparse and 4D reconstruction, and long-horizon consistency. The results demonstrate that AVM adapts to diverse input and output settings through one in-context interface.",
+   "primary": "cs.CV",
    "categories": [
-    "cs.CL",
-    "cs.AI",
-    "cs.LG"
+    "cs.CV"
    ],
-   "published": "2026-11-18T15:46:14Z",
-   "updated": "2026-11-18T15:46:14Z",
-   "comment": "Technical Report. Code: https://github.com/DiffuSpace/Clover-35B-A3B-Preview; Weights: https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview",
-   "code_url": "https://github.com/DiffuSpace/Clover-35B-A3B-Preview",
+   "published": "2026-11-17T19:20:06Z",
+   "updated": "2026-11-20T17:27:55Z",
+   "comment": "Project Page: https://autoregressive-view-model.github.io/",
    "listed": "2026-11-23",
    "tags": [
-    "LLM",
+    "video generation",
     "diffusion",
-    "efficiency",
-    "agents"
+    "3D",
+    "world model"
    ],
-   "hf_upvotes": 45,
-   "ax_votes": 13,
-   "ax_visits": 155,
-   "heat": 73.5,
+   "hf_upvotes": 3,
+   "ax_votes": 17,
+   "ax_visits": 208,
+   "heat": 40.8,
    "orgs": [
     {
-     "name": "DiffuSpace"
+     "logo": "data/logos/meta.com.png",
+     "name": "Meta"
+    },
+    {
+     "logo": "data/logos/ox.ac.uk.png",
+     "name": "University of Oxford",
+     "ror": "052gg0110"
     }
    ],
-   "thumb": "data/thumbs/2611.24636.jpg",
-   "thumb_w": 566,
-   "thumb_h": 440,
+   "thumb": "data/thumbs/2611.23417.jpg",
+   "thumb_w": 640,
+   "thumb_h": 140,
    "summary": {
-    "zh": "Clover-35B-A3B-Preview 是 35B 总参数、3B 激活参数的 MoE 扩散语言模型，把 Gated Delta Networks 的循环记忆与块内双向注意力结合，在 SWE-bench Verified 得 73.6、Terminal-Bench 2.1 得 51.7，单张 GB300 上 BF16 解码达 680 tokens/s。",
-    "en": "Clover-35B-A3B-Preview is a 35B-total, 3B-active MoE diffusion language model combining Gated Delta Network memory with in-block bidirectional attention, scoring 73.6 on SWE-bench Verified and 51.7 on Terminal-Bench 2.1 at 680 tokens/s on one GB300 GPU."
+    "en": "Autoregressive View Model (AVM) generates a stream of views along a requested camera path without explicit 3D reconstruction, using a unified in-context interface and a fine-tuned video diffusion transformer trained on about 8M scenes and clips.",
+    "zh": "Autoregressive View Model (AVM) 以自回归方式沿指定相机路径逐段生成视图流，不显式重建3D场景，通过上下文接口统一处理图像或视频输入，并用约800万场景与视频片段微调视频扩散Transformer；在相机控制、稀疏与4D重建及长时程一致性等基准上展现出广泛适应性。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.26613",
@@ -377,8 +441,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 8,
    "ax_votes": 9,
-   "ax_visits": 144,
-   "heat": 31.4,
+   "ax_visits": 149,
+   "heat": 31.9,
    "orgs": [
     {
      "logo": "data/logos/cmu.edu.png",
@@ -398,7 +462,8 @@
    "thumb": "data/thumbs/2611.26613.jpg",
    "thumb_w": 640,
    "thumb_h": 249,
-   "listed": "2026-11-23"
+   "listed": "2026-11-23",
+   "sections": []
   },
   {
    "id": "2611.15449",
@@ -431,19 +496,66 @@
    "heat": 30.2,
    "orgs": [
     {
+     "logo": "data/logos/yonsei.ac.kr.png",
      "name": "Yonsei University",
-     "ror": "01wjejq96",
-     "logo": "data/logos/yonsei.ac.kr.png"
+     "ror": "01wjejq96"
     }
    ],
    "thumb": "data/thumbs/2611.15449.jpg",
    "thumb_w": 640,
    "thumb_h": 208,
    "summary": {
-    "zh": "构建 ReasonText 基准和 GTTCA 指标，发现十二个超分模型在需推理的退化文本上性能明显下降；提出免训练插件 RTC，用外部 MLLM 推断文本并作为 caption 输入文本条件超分模型，在六个模型上均稳定提升，真实场景超分模型加 RTC 甚至超过 TAISR 模型加 RTC。",
-    "en": "ReasonText benchmark and GTTCA metric reveal all 12 SR models drop on reasoning-required text; training-free RTC lets an MLLM caption degraded text for text-conditioned SR, consistently improving six models."
+    "en": "ReasonText benchmark and GTTCA metric reveal all 12 SR models drop on reasoning-required text; training-free RTC lets an MLLM caption degraded text for text-conditioned SR, consistently improving six models.",
+    "zh": "构建 ReasonText 基准和 GTTCA 指标，发现十二个超分模型在需推理的退化文本上性能明显下降；提出免训练插件 RTC，用外部 MLLM 推断文本并作为 caption 输入文本条件超分模型，在六个模型上均稳定提升，真实场景超分模型加 RTC 甚至超过 TAISR 模型加 RTC。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.19247",
+   "title": "GameWM: Toward Next-Generation Video Games with Interaction-Centric World Models",
+   "authors": [
+    "Bing He",
+    "Runze Wang",
+    "Fei Zha",
+    "Zhongyuan Wu",
+    "Ke Xu",
+    "Tao Zhuang",
+    "Yuxuan Xie",
+    "Zhongyuan Liu"
+   ],
+   "abstract": "For more than half a century, video games have pursued better graphics, more natural interaction, and more engaging gameplay. Generative video models (VMs) now bear on all three. Neural networks already draw most of the pixels in shipped games, and recent world models let a lightweight game engine keep the world state while a VM turns the engine's coarse proxy video into final frames. These systems, however, treat the VM as a renderer that only restyles motion the engine has already authored, which leaves most of its generative capacity unused and limits the diversity a game can offer. We present GameWM, a design for next-generation games built on a clear division of labor. The GameWM-engine keeps what must be exact: rules, state, camera, and the layout of the world, which also spares the video model from having to remember it. The GameWM-VM generates what is expensive to author by hand: the look of the world and the detail of the player's interactions. One game mechanic can then be realized in many visually and physically distinct ways, while its outcome stays exactly as the engine computed it. To realize this division of labor, we build GameWM as a complete system: a data engine centered on interactions rather than exploration, an interface through which authored character sheets, scene art, and skill descriptions enter the model, and a model family from 5B to 33B parameters with a real-time causal variant for play. Together they give every player a fresh version of the same game: each player's own character, world, and skills turn the same engine mechanics into a new experience, while every event keeps the timing and outcome the GameWM-engine computed.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-14T08:22:46Z",
+   "updated": "2026-11-19T08:28:17Z",
+   "comment": "35 pages, technical report",
+   "listed": "2026-11-23",
+   "tags": [
+    "video generation",
+    "world model",
+    "image generation"
+   ],
+   "hf_upvotes": 9,
+   "ax_votes": 8,
+   "ax_visits": 116,
+   "heat": 28.6,
+   "orgs": [
+    {
+     "name": "Lightspeed Studios, Tencent"
+    }
+   ],
+   "thumb": "data/thumbs/2611.19247.jpg",
+   "thumb_w": 571,
+   "thumb_h": 440,
+   "summary": {
+    "en": "GameWM splits games into an engine that keeps rules, state, camera, and layout exact, plus a video model generating look and interaction detail, with an interaction-centric data engine, art/skill interface, and 5B-33B models including a real-time causal variant.",
+    "zh": "GameWM 将游戏拆成两部分：GameWM-engine 精确维护规则、状态、相机与世界布局，GameWM-VM 生成世界的视觉外观与交互细节；配套以交互为中心的数据引擎、素材接口，以及 5B 到 33B 的模型族（含实时因果变体），使同一机制能呈现为视觉与物理各异、结果由引擎确定的体验。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.27673",
@@ -478,8 +590,8 @@
     "dataset"
    ],
    "ax_votes": 7,
-   "ax_visits": 119,
-   "heat": 20.9,
+   "ax_visits": 121,
+   "heat": 21.1,
    "orgs": [
     {
      "logo": "data/logos/tencent.com.png",
@@ -495,7 +607,8 @@
    },
    "summary_source": "deepseek-flash",
    "hf_upvotes": 2,
-   "listed": "2026-11-23"
+   "listed": "2026-11-23",
+   "sections": []
   },
   {
    "id": "2611.26809",
@@ -525,13 +638,13 @@
    ],
    "hf_upvotes": 6,
    "ax_votes": 4,
-   "ax_visits": 83,
-   "heat": 18.3,
+   "ax_visits": 89,
+   "heat": 18.9,
    "orgs": [
     {
+     "logo": "data/logos/epfl.ch.png",
      "name": "EPFL",
-     "ror": "02s376052",
-     "logo": "data/logos/epfl.ch.png"
+     "ror": "02s376052"
     },
     {
      "logo": "data/logos/utoronto.ca.png",
@@ -544,10 +657,11 @@
    "thumb_h": 137,
    "listed": "2026-11-23",
    "summary": {
-    "zh": " Search-Native Pretraining：在预训练语料中大规模加入网络搜索查询，并用本地索引检索回应，训练 QueryLM 学会生成搜索调用并整合检索证据；在 360M–3.3B 参数上，知识密集任务性能提升，1.4B 模型可匹敌 FLOP 匹配的 3.3B 基线，优势在 SFT 后仍保持。",
-    "en": "Search-Native Pretraining augments pretraining corpora with web-search queries and locally indexed retrieved responses, teaching QueryLM to emit search calls and use evidence; on 360M-3.3B scales it improves knowledge-intensive tasks, with a 1.4B model matching a FLOP-matched 3.3B baseline and gains persisting after SFT."
+    "en": "Search-Native Pretraining augments pretraining corpora with web-search queries and locally indexed retrieved responses, teaching QueryLM to emit search calls and use evidence; on 360M-3.3B scales it improves knowledge-intensive tasks, with a 1.4B model matching a FLOP-matched 3.3B baseline and gains persisting after SFT.",
+    "zh": " Search-Native Pretraining：在预训练语料中大规模加入网络搜索查询，并用本地索引检索回应，训练 QueryLM 学会生成搜索调用并整合检索证据；在 360M–3.3B 参数上，知识密集任务性能提升，1.4B 模型可匹敌 FLOP 匹配的 3.3B 基线，优势在 SFT 后仍保持。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.27398",
@@ -581,8 +695,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 14,
    "ax_votes": 1,
-   "ax_visits": 29,
-   "heat": 17.9,
+   "ax_visits": 34,
+   "heat": 18.4,
    "orgs": [
     {
      "logo": "data/logos/unitn.it.png",
@@ -600,7 +714,58 @@
    "thumb": "data/thumbs/2611.27398.jpg",
    "thumb_w": 640,
    "thumb_h": 360,
-   "listed": "2026-11-23"
+   "listed": "2026-11-23",
+   "sections": []
+  },
+  {
+   "id": "2611.24249",
+   "title": "From Points to Trajectories: Rethinking Multimodal Alignment for Physical Events",
+   "authors": [
+    "Yiyang Zhu",
+    "Guangyuan Liu",
+    "Jingdi Lei",
+    "Li Wei",
+    "Chau Yuen"
+   ],
+   "abstract": "Advancing physical artificial intelligence (Physical AI) requires moving beyond static object recognition to ground how real-world mechanics (e.g., impact, friction, and force transfer) unfold over time. While multimodal aligners seek to capture these interactions by matching multi-sensor streams, prevailing architectures compress each temporal sequence into a single pooled embedding. We show that this paradigm fails on twin events: distinct physical executions recorded under identical task conditions. Collapsing the temporal dimension averages out transient cross-modal dynamics, effectively reducing physical event alignment to static scene recognition. Formally, we prove that as sequence length increases, any temporally pooled representation converges to the stationary recording condition. Consequently, as windows grow, no choice of loss function or embedding geometry can disambiguate twin events from pooled features alone. Instead, we show that physical events are uniquely identified by the event gap, namely the instantaneous, synchronous co-fluctuations across modalities that are erased by pooling and accumulate only along unpooled trajectories. To recover this signal, we introduce CounterPoint, a lightweight plug-in module that strips out each modality's temporal mean to score frame-level cross-modal agreement. Integrated across four state-of-the-art (SOTA) multimodal aligners, CounterPoint shifts representations from coarse condition matching to fine-grained physical event alignment, consistently outperforming existing temporal alignment methods.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI",
+    "eess.SP"
+   ],
+   "published": "2026-11-18T11:26:08Z",
+   "updated": "2026-11-23T15:51:03Z",
+   "comment": "",
+   "listed": "2026-11-23",
+   "tags": [
+    "multimodal",
+    "alignment",
+    "theory",
+    "interpretability"
+   ],
+   "hf_upvotes": 11,
+   "ax_votes": 2,
+   "ax_visits": 50,
+   "heat": 18.0,
+   "orgs": [
+    {
+     "name": "NTU",
+     "ror": "02e7b5302"
+    },
+    {
+     "name": "Zhejiang University",
+     "ror": "00a2xv884"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24249.jpg",
+   "thumb_w": 362,
+   "thumb_h": 440,
+   "summary": {
+    "en": "Shows temporally pooled multimodal representations converge to stationary recording conditions and cannot separate twin physical events; CounterPoint removes each modality's temporal mean to score frame-level cross-modal agreement, consistently outperforming existing temporal alignment methods on four SOTA aligners.",
+    "zh": "证明时间池化表示随序列增长收敛到静止录制条件，无法区分孪生物理事件；提出 CounterPoint 去掉各模态时间均值以在帧级评分跨模态一致性，在四个 SOTA 对齐器上持续优于现有时序对齐方法。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.27915",
@@ -636,8 +801,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 10,
    "ax_votes": 1,
-   "ax_visits": 65,
-   "heat": 17.5,
+   "ax_visits": 66,
+   "heat": 17.6,
    "orgs": [
     {
      "logo": "data/logos/hkust.edu.hk.png",
@@ -653,7 +818,8 @@
    "thumb": "data/thumbs/2611.27915.jpg",
    "thumb_w": 640,
    "thumb_h": 253,
-   "listed": "2026-11-23"
+   "listed": "2026-11-23",
+   "sections": []
   },
   {
    "id": "2611.27924",
@@ -706,8 +872,8 @@
     "benchmark"
    ],
    "ax_votes": 7,
-   "ax_visits": 102,
-   "heat": 17.2,
+   "ax_visits": 106,
+   "heat": 17.6,
    "orgs": [
     {
      "logo": "data/logos/microsoft.com.png",
@@ -722,155 +888,8 @@
     "zh": "BioEmu2 是一个生成式模型，将静态结构预测、平衡采样与时间演化统一到同一框架，速度比分子动力学（MD）快数个数量级；自由能误差约为 1 kcal/mol，可达到 MD 参考水平；结构预测精度与顶级开源折叠模型相当；支持兆道尔顿级复合物与蛋白、核酸、配体和离子的多组分体系。"
    },
    "summary_source": "deepseek-flash",
-   "listed": "2026-11-23"
-  },
-  {
-   "id": "2611.24249",
-   "title": "From Points to Trajectories: Rethinking Multimodal Alignment for Physical Events",
-   "authors": [
-    "Yiyang Zhu",
-    "Guangyuan Liu",
-    "Jingdi Lei",
-    "Li Wei",
-    "Chau Yuen"
-   ],
-   "abstract": "Advancing physical artificial intelligence (Physical AI) requires moving beyond static object recognition to ground how real-world mechanics (e.g., impact, friction, and force transfer) unfold over time. While multimodal aligners seek to capture these interactions by matching multi-sensor streams, prevailing architectures compress each temporal sequence into a single pooled embedding. We show that this paradigm fails on twin events: distinct physical executions recorded under identical task conditions. Collapsing the temporal dimension averages out transient cross-modal dynamics, effectively reducing physical event alignment to static scene recognition. Formally, we prove that as sequence length increases, any temporally pooled representation converges to the stationary recording condition. Consequently, as windows grow, no choice of loss function or embedding geometry can disambiguate twin events from pooled features alone. Instead, we show that physical events are uniquely identified by the event gap, namely the instantaneous, synchronous co-fluctuations across modalities that are erased by pooling and accumulate only along unpooled trajectories. To recover this signal, we introduce CounterPoint, a lightweight plug-in module that strips out each modality's temporal mean to score frame-level cross-modal agreement. Integrated across four state-of-the-art (SOTA) multimodal aligners, CounterPoint shifts representations from coarse condition matching to fine-grained physical event alignment, consistently outperforming existing temporal alignment methods.",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI",
-    "eess.SP"
-   ],
-   "published": "2026-11-18T11:26:08Z",
-   "updated": "2026-11-23T15:51:03Z",
-   "comment": "",
    "listed": "2026-11-23",
-   "tags": [
-    "multimodal",
-    "alignment",
-    "theory",
-    "interpretability"
-   ],
-   "hf_upvotes": 11,
-   "ax_votes": 2,
-   "ax_visits": 48,
-   "heat": 17.8,
-   "orgs": [
-    {
-     "name": "NTU",
-     "ror": "02e7b5302"
-    },
-    {
-     "name": "Zhejiang University",
-     "ror": "00a2xv884"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24249.jpg",
-   "thumb_w": 362,
-   "thumb_h": 440,
-   "summary": {
-    "zh": "证明时间池化表示随序列增长收敛到静止录制条件，无法区分孪生物理事件；提出 CounterPoint 去掉各模态时间均值以在帧级评分跨模态一致性，在四个 SOTA 对齐器上持续优于现有时序对齐方法。",
-    "en": "Shows temporally pooled multimodal representations converge to stationary recording conditions and cannot separate twin physical events; CounterPoint removes each modality's temporal mean to score frame-level cross-modal agreement, consistently outperforming existing temporal alignment methods on four SOTA aligners."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.25534",
-   "title": "How Feedback-Free Self-Evolution Reshapes Agent Skills: A Systematic Study",
-   "authors": [
-    "Litao Guo",
-    "Man Chen",
-    "Xinli Xu",
-    "Jinsong Zhou",
-    "Zixin Zhang",
-    "Ying-Cong Chen"
-   ],
-   "abstract": "Agent skills are documents in which experts write down procedural knowledge, and models increasingly maintain them by rewriting them without feedback. Such rewriting could adapt a skill to the model that uses it or erode the expert knowledge that makes it useful, yet how skills evolve under this feedback-free self-evolution has not been studied. We let models rewrite expert skills round after round without any task, run or judgment and run agents built on the same models with the rewritten skills. Our experiments show that the skills lose value rather than improve, as every model we test performs worse with them on every benchmark, by 15 points on average on SkillsBench after thirty rounds. Sampling each model's prior with skills it writes from the topic alone, we find that rewriting pulls skills toward this prior and gives up first the knowledge outside it. Putting this knowledge back recovers much of the lost pass rate, so an expert's skill is valuable largely for what the model does not write on its own. Building on this insight, SkillDiff marks this knowledge in place and raises the pass rate on SkillsBench by 4.8 points on average without feedback or any change to the skill's text. Project repository: https://github.com/LitaoGuo/How-Self-Evolution-Reshapes-Skills.",
-   "primary": "cs.AI",
-   "categories": [
-    "cs.AI"
-   ],
-   "published": "2026-11-19T05:32:18Z",
-   "updated": "2026-11-19T05:32:18Z",
-   "comment": "",
-   "code_url": "https://github.com/LitaoGuo/How-Self-Evolution-Reshapes-Skills",
-   "tags": [
-    "agents",
-    "LLM",
-    "benchmark"
-   ],
-   "hf_upvotes": 4,
-   "ax_votes": 0,
-   "ax_visits": 74,
-   "heat": 11.4,
-   "listed": "2026-11-23",
-   "orgs": [
-    {
-     "logo": "data/logos/hkust.edu.hk.png",
-     "name": "HKUST",
-     "ror": "00q4vv597"
-    },
-    {
-     "name": "Knowin"
-    }
-   ],
-   "thumb": "data/thumbs/2611.25534.jpg",
-   "thumb_w": 640,
-   "thumb_h": 370,
-   "summary": {
-    "zh": "让同一批模型在没有任务、运行或判断反馈的情况下反复重写专家 skill 文档，随后用重写后的 skill 驱动 agent；三十轮后 SkillsBench 平均下降 15 分，说明重写会让 skill 向模型自身的先验漂移，并先丢掉先验之外的知识。SkillDiff 在原位标记这部分知识，无需反馈、不改动 skill 文本，使 SkillsBench 通过率平均提升 4.8 分。",
-    "en": "Models rewriting expert agent skills without any feedback degrade performance by 15 points on SkillsBench after 30 rounds, as rewriting pulls skills toward the model's prior. SkillDiff marks the missing knowledge in place, raising pass rates by 4.8 points on average without feedback or text changes."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.28123",
-   "title": "Seeing the Invisible: How Vision-Language Models Read, Predict and Trace Radio Fields",
-   "authors": [
-    "Yiyang Zhu",
-    "Xin Li",
-    "Guangyuan Liu",
-    "Ziheng Liu",
-    "Jiayi Zhang",
-    "Chau Yuen"
-   ],
-   "abstract": "Operating in the physical world requires reasoning beyond what cameras directly capture. In a city, radio signals are invisible to the lens, yet their strength is governed by the buildings and streets an image does show. Given only these visible structures, can vision-language models (VLMs) infer the invisible radio field they shape? Probing true physical reasoning requires exact fields in real cities, alongside controlled interventions where a single physical factor changes. We build a label-free engine that turns any coordinate on Earth into a ray-traceable city, simulates matched single-factor counterfactuals, and computes every answer exactly. This yields RadioVISTA, a benchmark and training dataset for visual reasoning about invisible fields. Physically, a radio field is the sum of its propagation paths, yet across six continents we uncover a striking field-path dissociation: frontier VLMs accurately judge where a field is strong, but fail to tell whether a single direct or one-wall path exists. Open models fail even earlier at reading the field itself, and are systematically wrong, scoring below random guessing even when credited for any of four attempts. On unseen cities, fine-tuning brings a 9B open model close to frontier proprietary models on fields, yet neither supervised nor reinforcement fine-tuning improves path tracing. Supervising only final answers teaches models to approximate the field, yet leaves single-path geometry out of reach.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.AI"
-   ],
-   "published": "2026-11-18T11:52:11Z",
-   "updated": "2026-11-18T11:52:11Z",
-   "comment": "",
-   "listed": "2026-11-23",
-   "tags": [
-    "VLM",
-    "benchmark",
-    "reasoning",
-    "dataset"
-   ],
-   "hf_upvotes": 11,
-   "ax_votes": 0,
-   "ax_visits": 4,
-   "heat": 11.4,
-   "orgs": [
-    {
-     "name": "NTU",
-     "ror": "02e7b5302"
-    },
-    {
-     "name": "Beijing Jiaotong University",
-     "ror": "01yj56c84"
-    }
-   ],
-   "thumb": "data/thumbs/2611.28123.jpg",
-   "thumb_w": 640,
-   "thumb_h": 275,
-   "summary": {
-    "zh": "构建无需标注的引擎，将地球任意坐标转为可光线追踪的城市并模拟单因素反事实，生成RadioVISTA基准；前沿VLM能判断场强却无法识别单路径，9B模型微调后在未见城市接近闭源模型，但路径追踪仍无提升。",
-    "en": "A label-free engine turns any Earth coordinate into a ray-traceable city with single-factor counterfactuals, yielding RadioVISTA; frontier VLMs judge field strength but fail path tracing, and fine-tuning a 9B model nears proprietary models on fields only."
-   },
-   "summary_source": "deepseek-flash"
+   "sections": []
   },
   {
    "id": "2611.21485",
@@ -919,10 +938,215 @@
    "thumb_w": 603,
    "thumb_h": 440,
    "summary": {
-    "zh": "ReSpaceBench 用 590 个合成与真实家居场景的 3,244 道题评测跨访问持久空间记忆，最强零样本模型仅 50.5% 总体准确率，远低于人类的 90.1%；用无重叠的 RS-30K 微调 Qwen3-VL-8B 后从 35.5% 升至 60.4%。",
-    "en": "ReSpaceBench benchmarks persistent spatial memory across revisits with 3,244 questions over 590 scenes: the best zero-shot model scores 50.5% versus 90.1% for humans, while fine-tuning Qwen3-VL-8B on RS-30K lifts accuracy from 35.5% to 60.4%."
+    "en": "ReSpaceBench benchmarks persistent spatial memory across revisits with 3,244 questions over 590 scenes: the best zero-shot model scores 50.5% versus 90.1% for humans, while fine-tuning Qwen3-VL-8B on RS-30K lifts accuracy from 35.5% to 60.4%.",
+    "zh": "ReSpaceBench 用 590 个合成与真实家居场景的 3,244 道题评测跨访问持久空间记忆，最强零样本模型仅 50.5% 总体准确率，远低于人类的 90.1%；用无重叠的 RS-30K 微调 Qwen3-VL-8B 后从 35.5% 升至 60.4%。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.24077",
+   "title": "AeroRSI: Recursive Self-Improvement for Aerial Vision-Language Navigation",
+   "authors": [
+    "Shiwei Wu",
+    "Yuwen Pan",
+    "Zhi Li",
+    "Yaowen Li",
+    "Yan Zhou",
+    "Xuemiao Xu",
+    "Yu Liu"
+   ],
+   "abstract": "Vision-language-action (VLA) models enable unmanned aerial vehicles (UAVs) to follow natural-language instructions, yet still fail frequently in closed-loop flight. Correcting these failures requires repairs, i.e., actions that avoid them at the states the policy itself reaches, which human pilots cannot label at scale and rule-based planners cannot supply reliably. In this paper, we present AeroRSI, a recursive self-improvement framework in which an aerial navigation policy iteratively learns from its own failures. Our key insight is that a failing policy should judge its own repairs by flying on from them. Judged in this way, its sampled actions and even rule-based proposals that hurt it when imitated directly become reliable supervision. Moreover, an episode terminates at its first failure, concealing subsequent failures until the earlier ones are repaired. AeroRSI thus renews its supervision in every round, anchoring the failures of the current policy, verifying repairs by its continuation, and distilling them while keeping its behavior elsewhere. On TravelUAV, three rounds raise the success rate of a supervised 2B-parameter policy from 46.4% to 67.5% and reduce collisions by half, surpassing the previous state of the art by 10.6 points from the same initialization without extra human labels or inference cost. Code and models are available at https://github.com/starsholic/AeroRSI.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.RO"
+   ],
+   "published": "2026-11-18T09:07:04Z",
+   "updated": "2026-11-18T09:07:04Z",
+   "comment": "8-page main paper with references and supplementary material (15 pages); 5 figures, 13 tables. Code: https://github.com/starsholic/AeroRSI Project page: https://starsholic.github.io/AeroRSI/",
+   "code_url": "https://github.com/starsholic/AeroRSI",
+   "listed": "2026-11-23",
+   "tags": [
+    "VLA",
+    "agents",
+    "robotics",
+    "multimodal"
+   ],
+   "hf_upvotes": 8,
+   "ax_votes": 0,
+   "ax_visits": 44,
+   "heat": 12.4,
+   "orgs": [
+    {
+     "name": "Tsinghua University",
+     "ror": "03cve4549"
+    },
+    {
+     "name": "Foshan University",
+     "ror": "02xvvvp28"
+    },
+    {
+     "logo": "data/logos/scut.edu.cn.png",
+     "name": "South China University of Technology",
+     "ror": "0530pts50"
+    }
+   ],
+   "thumb": "data/thumbs/2611.24077.jpg",
+   "thumb_w": 640,
+   "thumb_h": 270,
+   "summary": {
+    "en": "AeroRSI recursively improves aerial navigation policies by learning from their own failures: each round anchors current failures, verifies repairs via continued flight, and distills them. On TravelUAV, three rounds lift a 2B policy from 46.4% to 67.5% success, halve collisions, and beat prior SOTA by 10.6 points.",
+    "zh": "AeroRSI 让空中视觉语言导航策略递归地从自身失败中学习：每一轮定位当前策略的失败状态，并通过继续飞行来验证修复动作，再将其蒸馏为监督信号。在 TravelUAV 上，三轮迭代将 2B 参数策略的成功率从 46.4% 提升到 67.5%，碰撞减少一半，比同初始化的先前最优方法高 10.6 个点。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.25534",
+   "title": "How Feedback-Free Self-Evolution Reshapes Agent Skills: A Systematic Study",
+   "authors": [
+    "Litao Guo",
+    "Man Chen",
+    "Xinli Xu",
+    "Jinsong Zhou",
+    "Zixin Zhang",
+    "Ying-Cong Chen"
+   ],
+   "abstract": "Agent skills are documents in which experts write down procedural knowledge, and models increasingly maintain them by rewriting them without feedback. Such rewriting could adapt a skill to the model that uses it or erode the expert knowledge that makes it useful, yet how skills evolve under this feedback-free self-evolution has not been studied. We let models rewrite expert skills round after round without any task, run or judgment and run agents built on the same models with the rewritten skills. Our experiments show that the skills lose value rather than improve, as every model we test performs worse with them on every benchmark, by 15 points on average on SkillsBench after thirty rounds. Sampling each model's prior with skills it writes from the topic alone, we find that rewriting pulls skills toward this prior and gives up first the knowledge outside it. Putting this knowledge back recovers much of the lost pass rate, so an expert's skill is valuable largely for what the model does not write on its own. Building on this insight, SkillDiff marks this knowledge in place and raises the pass rate on SkillsBench by 4.8 points on average without feedback or any change to the skill's text. Project repository: https://github.com/LitaoGuo/How-Self-Evolution-Reshapes-Skills.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-19T05:32:18Z",
+   "updated": "2026-11-19T05:32:18Z",
+   "comment": "",
+   "code_url": "https://github.com/LitaoGuo/How-Self-Evolution-Reshapes-Skills",
+   "tags": [
+    "agents",
+    "LLM",
+    "benchmark"
+   ],
+   "hf_upvotes": 4,
+   "ax_votes": 0,
+   "ax_visits": 78,
+   "heat": 11.8,
+   "listed": "2026-11-23",
+   "orgs": [
+    {
+     "logo": "data/logos/hkust.edu.hk.png",
+     "name": "HKUST",
+     "ror": "00q4vv597"
+    },
+    {
+     "name": "Knowin"
+    }
+   ],
+   "thumb": "data/thumbs/2611.25534.jpg",
+   "thumb_w": 640,
+   "thumb_h": 370,
+   "summary": {
+    "en": "Models rewriting expert agent skills without any feedback degrade performance by 15 points on SkillsBench after 30 rounds, as rewriting pulls skills toward the model's prior. SkillDiff marks the missing knowledge in place, raising pass rates by 4.8 points on average without feedback or text changes.",
+    "zh": "让同一批模型在没有任务、运行或判断反馈的情况下反复重写专家 skill 文档，随后用重写后的 skill 驱动 agent；三十轮后 SkillsBench 平均下降 15 分，说明重写会让 skill 向模型自身的先验漂移，并先丢掉先验之外的知识。SkillDiff 在原位标记这部分知识，无需反馈、不改动 skill 文本，使 SkillsBench 通过率平均提升 4.8 分。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.28123",
+   "title": "Seeing the Invisible: How Vision-Language Models Read, Predict and Trace Radio Fields",
+   "authors": [
+    "Yiyang Zhu",
+    "Xin Li",
+    "Guangyuan Liu",
+    "Ziheng Liu",
+    "Jiayi Zhang",
+    "Chau Yuen"
+   ],
+   "abstract": "Operating in the physical world requires reasoning beyond what cameras directly capture. In a city, radio signals are invisible to the lens, yet their strength is governed by the buildings and streets an image does show. Given only these visible structures, can vision-language models (VLMs) infer the invisible radio field they shape? Probing true physical reasoning requires exact fields in real cities, alongside controlled interventions where a single physical factor changes. We build a label-free engine that turns any coordinate on Earth into a ray-traceable city, simulates matched single-factor counterfactuals, and computes every answer exactly. This yields RadioVISTA, a benchmark and training dataset for visual reasoning about invisible fields. Physically, a radio field is the sum of its propagation paths, yet across six continents we uncover a striking field-path dissociation: frontier VLMs accurately judge where a field is strong, but fail to tell whether a single direct or one-wall path exists. Open models fail even earlier at reading the field itself, and are systematically wrong, scoring below random guessing even when credited for any of four attempts. On unseen cities, fine-tuning brings a 9B open model close to frontier proprietary models on fields, yet neither supervised nor reinforcement fine-tuning improves path tracing. Supervising only final answers teaches models to approximate the field, yet leaves single-path geometry out of reach.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-18T11:52:11Z",
+   "updated": "2026-11-18T11:52:11Z",
+   "comment": "",
+   "listed": "2026-11-23",
+   "tags": [
+    "VLM",
+    "benchmark",
+    "reasoning",
+    "dataset"
+   ],
+   "hf_upvotes": 11,
+   "ax_votes": 0,
+   "ax_visits": 5,
+   "heat": 11.5,
+   "orgs": [
+    {
+     "name": "NTU",
+     "ror": "02e7b5302"
+    },
+    {
+     "name": "Beijing Jiaotong University",
+     "ror": "01yj56c84"
+    }
+   ],
+   "thumb": "data/thumbs/2611.28123.jpg",
+   "thumb_w": 640,
+   "thumb_h": 275,
+   "summary": {
+    "en": "A label-free engine turns any Earth coordinate into a ray-traceable city with single-factor counterfactuals, yielding RadioVISTA; frontier VLMs judge field strength but fail path tracing, and fine-tuning a 9B model nears proprietary models on fields only.",
+    "zh": "构建无需标注的引擎，将地球任意坐标转为可光线追踪的城市并模拟单因素反事实，生成RadioVISTA基准；前沿VLM能判断场强却无法识别单路径，9B模型微调后在未见城市接近闭源模型，但路径追踪仍无提升。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
+  },
+  {
+   "id": "2611.22343",
+   "title": "PURE: A Diagnostic Benchmark for Multi-Granularity Multimodal Identity Matching",
+   "authors": [
+    "Hengyu You",
+    "Xintong Wang",
+    "Jin Cao",
+    "Liang Ding"
+   ],
+   "abstract": "Identity matching asks whether two records denote the same identity, yet the answer depends on the target granularity. Two records may match at the base level but not at the variant level: they share an underlying design while differing in attributes such as color or size. Final matching accuracy does not separately characterize the capabilities involved. To study this problem, we use e-commerce as a challenging real-world domain. We introduce PURE, a diagnostic benchmark for multi-granularity multimodal identity matching covering four capability dimensions: Perception, Understanding, Reasoning, and Evidence-grounded Judgment. The benchmark comprises 1,457 multiple-choice questions across 14 tasks, derived from real-world matching pairs and verified by two domain experts. Across ten recent MLLMs, overall scores range from 47.1% to 86.0%. Understanding receives the highest mean score and Judgment the lowest, with weaknesses in visual difference localization and variant-level rule judgment. Modality ablations show that models benefit from multimodal evidence but can incorrectly identify conflicts between matching records. In direct matching, most models recognize matching pairs more reliably than non-matching pairs at the base level, whereas the reverse holds at the variant level. PURE therefore reveals what aggregate matching accuracy hides: not only whether models judge a pair correctly, but where they struggle to interpret evidence and apply matching criteria.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-17T07:52:22Z",
+   "updated": "2026-11-17T07:52:22Z",
+   "comment": "",
+   "listed": "2026-11-23",
+   "tags": [
+    "multimodal",
+    "benchmark",
+    "VLM",
+    "reasoning"
+   ],
+   "hf_upvotes": 9,
+   "ax_votes": 0,
+   "ax_visits": 17,
+   "heat": 10.7,
+   "orgs": [
+    {
+     "logo": "data/logos/alibaba.com.png",
+     "name": "Alibaba"
+    }
+   ],
+   "thumb": "data/thumbs/2611.22343.jpg",
+   "thumb_w": 640,
+   "thumb_h": 284,
+   "summary": {
+    "en": "PURE is a diagnostic benchmark for multi-granularity multimodal identity matching: 1,457 multiple-choice questions over 14 tasks across Perception, Understanding, Reasoning and Judgment. Ten MLLMs score 47.1%–86.0%, with Judgment weakest and variant-level reasoning exposed.",
+    "zh": "PURE 是面向多粒度多模态身份匹配的诊断基准，从电商真实匹配对构建 1457 道多选题、覆盖 14 个任务和 Perception/Understanding/Reasoning/Judgment 四个维度；十款 MLLM 总分 47.1%–86.0%，Understanding 均分最高、Judgment 最低，暴露出视觉差异定位与变体级规则判断的短板。"
+   },
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.27889",
@@ -947,8 +1171,8 @@
     "alignment"
    ],
    "ax_votes": 2,
-   "ax_visits": 87,
-   "heat": 10.7,
+   "ax_visits": 90,
+   "heat": 11.0,
    "orgs": [
     {
      "logo": "data/logos/ucl.ac.uk.png",
@@ -964,52 +1188,68 @@
     "zh": "通过在高斯正则化 Langevin 动力学的零正则化极限下计算函数空间平衡分布，推导出源自参数对称性的重整化熵；对线性网络得到偏好奇异、低秩函数的显式熵项，对齐次激活网络发现偏好失活神经元的熵项，可能导致输出趋于零的 neural heat death，并用 neural tangent kernel 解释为慢变函数的 simplicity bias。"
    },
    "summary_source": "deepseek-flash",
-   "listed": "2026-11-23"
+   "listed": "2026-11-23",
+   "sections": []
   },
   {
-   "id": "2611.19247",
-   "title": "GameWM: Toward Next-Generation Video Games with Interaction-Centric World Models",
+   "id": "2611.24025",
+   "title": "Intent Contracts: Taking Tools Away from Agents",
    "authors": [
-    "Bing He",
-    "Runze Wang",
-    "Fei Zha",
-    "Zhongyuan Wu",
-    "Ke Xu",
-    "Tao Zhuang",
-    "Yuxuan Xie",
-    "Zhongyuan Liu"
+    "Ziyuan Wang",
+    "Genliang Zhu",
+    "Xiaobo Chen",
+    "Chu Wang"
    ],
-   "abstract": "For more than half a century, video games have pursued better graphics, more natural interaction, and more engaging gameplay. Generative video models (VMs) now bear on all three. Neural networks already draw most of the pixels in shipped games, and recent world models let a lightweight game engine keep the world state while a VM turns the engine's coarse proxy video into final frames. These systems, however, treat the VM as a renderer that only restyles motion the engine has already authored, which leaves most of its generative capacity unused and limits the diversity a game can offer. We present GameWM, a design for next-generation games built on a clear division of labor. The GameWM-engine keeps what must be exact: rules, state, camera, and the layout of the world, which also spares the video model from having to remember it. The GameWM-VM generates what is expensive to author by hand: the look of the world and the detail of the player's interactions. One game mechanic can then be realized in many visually and physically distinct ways, while its outcome stays exactly as the engine computed it. To realize this division of labor, we build GameWM as a complete system: a data engine centered on interactions rather than exploration, an interface through which authored character sheets, scene art, and skill descriptions enter the model, and a model family from 5B to 33B parameters with a real-time causal variant for play. Together they give every player a fresh version of the same game: each player's own character, world, and skills turn the same engine mechanics into a new experience, while every event keeps the timing and outcome the GameWM-engine computed.",
-   "primary": "cs.CV",
+   "abstract": "Intent contracts are an authorization interface for tool-using LLM agents in which the planning model holds no tools. For each step it submits a short logged contract: a goal, a verbatim quotation of the user, and scope fields. Code validates the contract, and a small trusted model checks it against the user's words and writes the tool call itself. Provided the validation and dispatch code is correct, every executed call is written by the trusted model, the planner's influence on a call is confined to a contract logged before it, and the trusted side decides how much of a request to carry out. We compare contracts with two reviewers of planner-written commands: one sees only the user's words and the command, the information boundary of a reasoning-blind permission classifier, and one also sees the planner's goal and a checked quotation. With gpt-6.1-terra as planner and GLM-5.3-Flash as the trusted model on three AmPermBench task families, every object changed under contracts is named in the goal of the contract that produced the change; under review the planner names objects in its commands and rarely in its goals. When the planner adds work the user never asked for, contracts complete the user's task in 27/30 runs and the intent-visible reviewer in 16/30, because a reviewer can only refuse a whole command. Contracts do not reduce unauthorized actions. They are indistinguishable from blind review, and once the benchmark's environment terms are clarified, every condition that changes state hits a wrong target in 40-49% of those runs. That error is the planner's choice of objects for an ambiguous reference, which no trusted model here can see the environment to check; telling the executor to decline when unsure does not change it. We evaluate benign over-reach with one pair of models, not adversarial planners. We release the plugin and run records.",
+   "primary": "cs.CR",
    "categories": [
-    "cs.CV"
+    "cs.CR",
+    "cs.AI"
    ],
-   "published": "2026-11-14T08:22:46Z",
-   "updated": "2026-11-19T08:28:17Z",
-   "comment": "35 pages, technical report",
+   "published": "2026-11-18T08:14:22Z",
+   "updated": "2026-11-18T08:14:22Z",
+   "comment": "10 pages, 1 figure, 7 tables. Code and data: https://github.com/zwang-devv/intent-contracts",
+   "code_url": "https://github.com/zwang-devv/intent-contracts",
    "listed": "2026-11-23",
    "tags": [
-    "video generation",
-    "world model",
-    "image generation"
+    "agents",
+    "safety",
+    "alignment",
+    "LLM"
    ],
-   "hf_upvotes": 9,
-   "ax_votes": 8,
-   "ax_visits": 116,
-   "heat": 28.6,
+   "hf_upvotes": 4,
+   "ax_votes": 1,
+   "ax_visits": 51,
+   "heat": 10.1,
    "orgs": [
     {
-     "name": "Lightspeed Studios, Tencent"
+     "name": "Independent Researcher"
+    },
+    {
+     "logo": "data/logos/gatech.edu.png",
+     "name": "Georgia Institute of Technology",
+     "ror": "01zkghx44"
+    },
+    {
+     "logo": "data/logos/umass.edu.png",
+     "name": "University of Massachusetts Amherst",
+     "ror": "0072zz521"
+    },
+    {
+     "logo": "data/logos/illinois.edu.png",
+     "name": "University of Illinois Urbana-Champaign",
+     "ror": "047426m28"
     }
    ],
-   "thumb": "data/thumbs/2611.19247.jpg",
-   "thumb_w": 571,
+   "thumb": "data/thumbs/2611.24025.jpg",
+   "thumb_w": 618,
    "thumb_h": 440,
    "summary": {
-    "zh": "GameWM 将游戏拆成两部分：GameWM-engine 精确维护规则、状态、相机与世界布局，GameWM-VM 生成世界的视觉外观与交互细节；配套以交互为中心的数据引擎、素材接口，以及 5B 到 33B 的模型族（含实时因果变体），使同一机制能呈现为视觉与物理各异、结果由引擎确定的体验。",
-    "en": "GameWM splits games into an engine that keeps rules, state, camera, and layout exact, plus a video model generating look and interaction detail, with an interaction-centric data engine, art/skill interface, and 5B-33B models including a real-time causal variant."
+    "en": "Intent contracts keep tools away from planner LLM agents: each step submits a logged goal, user quotation, and scope, validated by code and a trusted model that writes the call; on three AmPermBench families contracts complete 27/30 runs versus 16/30 for intent-visible review, without reducing unauthorized actions.",
+    "zh": "Intent contracts 让规划模型不直接持有工具，每步提交含目标、用户原话引用和作用域字段的契约，由验证代码与可信小模型校验并代写工具调用；在三个 AmPermBench 任务族上，任务被规划器额外加需求时契约 30 次中完成 27 次，可见意图的审查器仅 16 次，但未授权操作并未减少。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "sections": []
   },
   {
    "id": "2611.27797",
@@ -1036,8 +1276,8 @@
     "efficiency"
    ],
    "ax_votes": 3,
-   "ax_visits": 62,
-   "heat": 9.2,
+   "ax_visits": 63,
+   "heat": 9.3,
    "orgs": [
     {
      "logo": "data/logos/cas.cn.png",
@@ -1050,59 +1290,11 @@
    "thumb_h": 293,
    "listed": "2026-11-23",
    "summary": {
-    "zh": "EvoTER 通过 Explorer、Diagnoser、Validator 三角色演化循环，让具身智能体在不更新模型参数的情况下自演化工具使用技能并沉淀经验，仿真任务成功率从 53.60% 提升到 80.40%，真实世界长程任务成功率从 20% 提升到 80%-100%。",
-    "en": "EvoTER evolves embodied agents' tool-use skills without parameter updates via an Explorer-Diagnoser-Validator loop, lifting simulated task success from 53.60% to 80.40% and real-world long-horizon success from 20% to 80%-100%."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.27601",
-   "title": "PromptTTSD: Controllable Text to Spoken Dialogue Synthesis with Open-Ended Text Descriptions",
-   "authors": [
-    "Sulong Yang",
-    "Zhi Zeng",
-    "Xiupeng Wu",
-    "Juewen Hu",
-    "Pring Wong",
-    "Shuwu Zhang",
-    "Shuo Chen"
-   ],
-   "abstract": "Spoken dialogue synthesis aims to generate multi-turn conversational speech from dialogue scripts while maintaining speaker consistency and contextual appropriateness. However, existing models largely lack fine-grained controllability, which is critical for capturing the dynamic, context-dependent style shifts in natural conversations. While prompt-based TTS has enabled such control for single-speaker speech, existing datasets heavily rely on predefined tags, which fundamentally limits their capacity to capture open-ended styles. To address this gap, we propose a scalable pipeline for extracting conversational speech from multi-narrator audiobooks, featuring an improved two-stage alignment algorithm to preserve dialogue continuity, paired with LLM-based extraction of style descriptions directly from narrative text. We release PromptDialog, a large-scale multi-speaker conversational speech dataset comprising 8,383 hours of Chinese speech and 120 hours of English speech, with open-ended style descriptions for 79% of utterances. We further introduce PromptTTSD, a spoken dialogue synthesis model built via a prompt-aware fine-tuning strategy that integrates style prompts into text-speech interleaved sequences. PromptTTSD is an open-source spoken dialogue synthesis model that supports both zero-shot voice cloning and natural language style control. Experiments demonstrate that PromptTTSD not only maintains strong fundamental synthesis capabilities but also achieves competitive open-ended style control compared with proprietary models, and substantially improves contextual appropriateness in multi-turn dialogues.",
-   "primary": "cs.SD",
-   "categories": [
-    "cs.SD",
-    "cs.AI"
-   ],
-   "published": "2026-11-20T13:29:30Z",
-   "updated": "2026-11-20T13:29:30Z",
-   "comment": "16 pages, 5 figures, 12 tables. Corresponding authors: Zhi Zeng, Shuwu Zhang, and Shuo Chen",
-   "tags": [
-    "speech",
-    "LLM",
-    "dataset",
-    "multimodal"
-   ],
-   "ax_votes": 3,
-   "ax_visits": 54,
-   "heat": 8.4,
-   "orgs": [
-    {
-     "name": "Beijing University of Posts and Telecommunications",
-     "ror": "04w9fbh59"
-    },
-    {
-     "name": "BIGAI"
-    }
-   ],
-   "thumb": "data/thumbs/2611.27601.jpg",
-   "thumb_w": 640,
-   "thumb_h": 238,
-   "summary": {
-    "en": "PromptTTSD builds a scalable audiobook-based pipeline with improved two-stage alignment and LLM-extracted style descriptions to release PromptDialog (8,383h Chinese, 120h English); prompt-aware fine-tuning enables zero-shot voice cloning and natural-language style control with better multi-turn contextual appropriateness.",
-    "zh": "PromptTTSD 构建多旁白有声书语音提取流水线，结合改进的两阶段对齐算法与 LLM 风格描述抽取，发布含 8,383 小时中文、120 小时英文对话语音及开放风格描述的 PromptDialog；其提示感知微调支持零样本音色克隆与自然语言风格控制，多轮语境适切性显著提升。"
+    "en": "EvoTER evolves embodied agents' tool-use skills without parameter updates via an Explorer-Diagnoser-Validator loop, lifting simulated task success from 53.60% to 80.40% and real-world long-horizon success from 20% to 80%-100%.",
+    "zh": "EvoTER 通过 Explorer、Diagnoser、Validator 三角色演化循环，让具身智能体在不更新模型参数的情况下自演化工具使用技能并沉淀经验，仿真任务成功率从 53.60% 提升到 80.40%，真实世界长程任务成功率从 20% 提升到 80%-100%。"
    },
    "summary_source": "deepseek-flash",
-   "listed": "2026-11-23"
+   "sections": []
   },
   {
    "id": "2611.27211",
@@ -1152,8 +1344,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 4,
    "ax_votes": 1,
-   "ax_visits": 34,
-   "heat": 8.4,
+   "ax_visits": 36,
+   "heat": 8.6,
    "orgs": [
     {
      "logo": "data/logos/uchicago.edu.png",
@@ -1194,7 +1386,58 @@
    "thumb": "data/thumbs/2611.27211.jpg",
    "thumb_w": 550,
    "thumb_h": 392,
-   "listed": "2026-11-23"
+   "listed": "2026-11-23",
+   "sections": []
+  },
+  {
+   "id": "2611.27601",
+   "title": "PromptTTSD: Controllable Text to Spoken Dialogue Synthesis with Open-Ended Text Descriptions",
+   "authors": [
+    "Sulong Yang",
+    "Zhi Zeng",
+    "Xiupeng Wu",
+    "Juewen Hu",
+    "Pring Wong",
+    "Shuwu Zhang",
+    "Shuo Chen"
+   ],
+   "abstract": "Spoken dialogue synthesis aims to generate multi-turn conversational speech from dialogue scripts while maintaining speaker consistency and contextual appropriateness. However, existing models largely lack fine-grained controllability, which is critical for capturing the dynamic, context-dependent style shifts in natural conversations. While prompt-based TTS has enabled such control for single-speaker speech, existing datasets heavily rely on predefined tags, which fundamentally limits their capacity to capture open-ended styles. To address this gap, we propose a scalable pipeline for extracting conversational speech from multi-narrator audiobooks, featuring an improved two-stage alignment algorithm to preserve dialogue continuity, paired with LLM-based extraction of style descriptions directly from narrative text. We release PromptDialog, a large-scale multi-speaker conversational speech dataset comprising 8,383 hours of Chinese speech and 120 hours of English speech, with open-ended style descriptions for 79% of utterances. We further introduce PromptTTSD, a spoken dialogue synthesis model built via a prompt-aware fine-tuning strategy that integrates style prompts into text-speech interleaved sequences. PromptTTSD is an open-source spoken dialogue synthesis model that supports both zero-shot voice cloning and natural language style control. Experiments demonstrate that PromptTTSD not only maintains strong fundamental synthesis capabilities but also achieves competitive open-ended style control compared with proprietary models, and substantially improves contextual appropriateness in multi-turn dialogues.",
+   "primary": "cs.SD",
+   "categories": [
+    "cs.SD",
+    "cs.AI"
+   ],
+   "published": "2026-11-20T13:29:30Z",
+   "updated": "2026-11-20T13:29:30Z",
+   "comment": "16 pages, 5 figures, 12 tables. Corresponding authors: Zhi Zeng, Shuwu Zhang, and Shuo Chen",
+   "tags": [
+    "speech",
+    "LLM",
+    "dataset",
+    "multimodal"
+   ],
+   "ax_votes": 3,
+   "ax_visits": 56,
+   "heat": 8.6,
+   "orgs": [
+    {
+     "name": "Beijing University of Posts and Telecommunications",
+     "ror": "04w9fbh59"
+    },
+    {
+     "name": "BIGAI"
+    }
+   ],
+   "thumb": "data/thumbs/2611.27601.jpg",
+   "thumb_w": 640,
+   "thumb_h": 238,
+   "summary": {
+    "en": "PromptTTSD builds a scalable audiobook-based pipeline with improved two-stage alignment and LLM-extracted style descriptions to release PromptDialog (8,383h Chinese, 120h English); prompt-aware fine-tuning enables zero-shot voice cloning and natural-language style control with better multi-turn contextual appropriateness.",
+    "zh": "PromptTTSD 构建多旁白有声书语音提取流水线，结合改进的两阶段对齐算法与 LLM 风格描述抽取，发布含 8,383 小时中文、120 小时英文对话语音及开放风格描述的 PromptDialog；其提示感知微调支持零样本音色克隆与自然语言风格控制，多轮语境适切性显著提升。"
+   },
+   "summary_source": "deepseek-flash",
+   "listed": "2026-11-23",
+   "sections": []
   },
   {
    "id": "2611.27967",
@@ -1220,8 +1463,8 @@
     "VLA"
    ],
    "ax_votes": 2,
-   "ax_visits": 62,
-   "heat": 8.2,
+   "ax_visits": 63,
+   "heat": 8.3,
    "orgs": [
     {
      "name": "Beijing University of Chemical Technology",
@@ -1250,112 +1493,8 @@
     "zh": "Task2Hand 技能将功能操作需求转为参数化灵巧手模型，按成本排序依次通过接触、动力学与学习闸门生成 SAGE Hand（四指 16 驱动自由度），在六棱柱与双色圆柱任务上成功率 45.6%/70.8%，超过 LEAP 的 37.3%/51.6%。"
    },
    "summary_source": "deepseek-flash",
-   "listed": "2026-11-23"
-  },
-  {
-   "id": "2611.24077",
-   "title": "AeroRSI: Recursive Self-Improvement for Aerial Vision-Language Navigation",
-   "authors": [
-    "Shiwei Wu",
-    "Yuwen Pan",
-    "Zhi Li",
-    "Yaowen Li",
-    "Yan Zhou",
-    "Xuemiao Xu",
-    "Yu Liu"
-   ],
-   "abstract": "Vision-language-action (VLA) models enable unmanned aerial vehicles (UAVs) to follow natural-language instructions, yet still fail frequently in closed-loop flight. Correcting these failures requires repairs, i.e., actions that avoid them at the states the policy itself reaches, which human pilots cannot label at scale and rule-based planners cannot supply reliably. In this paper, we present AeroRSI, a recursive self-improvement framework in which an aerial navigation policy iteratively learns from its own failures. Our key insight is that a failing policy should judge its own repairs by flying on from them. Judged in this way, its sampled actions and even rule-based proposals that hurt it when imitated directly become reliable supervision. Moreover, an episode terminates at its first failure, concealing subsequent failures until the earlier ones are repaired. AeroRSI thus renews its supervision in every round, anchoring the failures of the current policy, verifying repairs by its continuation, and distilling them while keeping its behavior elsewhere. On TravelUAV, three rounds raise the success rate of a supervised 2B-parameter policy from 46.4% to 67.5% and reduce collisions by half, surpassing the previous state of the art by 10.6 points from the same initialization without extra human labels or inference cost. Code and models are available at https://github.com/starsholic/AeroRSI.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.AI",
-    "cs.RO"
-   ],
-   "published": "2026-11-18T09:07:04Z",
-   "updated": "2026-11-18T09:07:04Z",
-   "comment": "8-page main paper with references and supplementary material (15 pages); 5 figures, 13 tables. Code: https://github.com/starsholic/AeroRSI Project page: https://starsholic.github.io/AeroRSI/",
-   "code_url": "https://github.com/starsholic/AeroRSI",
    "listed": "2026-11-23",
-   "tags": [
-    "VLA",
-    "agents",
-    "robotics",
-    "multimodal"
-   ],
-   "hf_upvotes": 8,
-   "ax_votes": 0,
-   "ax_visits": 43,
-   "heat": 12.3,
-   "orgs": [
-    {
-     "name": "Tsinghua University",
-     "ror": "03cve4549"
-    },
-    {
-     "name": "Foshan University",
-     "ror": "02xvvvp28"
-    },
-    {
-     "name": "South China University of Technology",
-     "ror": "0530pts50",
-     "logo": "data/logos/scut.edu.cn.png"
-    }
-   ],
-   "thumb": "data/thumbs/2611.24077.jpg",
-   "thumb_w": 640,
-   "thumb_h": 270,
-   "summary": {
-    "zh": "AeroRSI 让空中视觉语言导航策略递归地从自身失败中学习：每一轮定位当前策略的失败状态，并通过继续飞行来验证修复动作，再将其蒸馏为监督信号。在 TravelUAV 上，三轮迭代将 2B 参数策略的成功率从 46.4% 提升到 67.5%，碰撞减少一半，比同初始化的先前最优方法高 10.6 个点。",
-    "en": "AeroRSI recursively improves aerial navigation policies by learning from their own failures: each round anchors current failures, verifies repairs via continued flight, and distills them. On TravelUAV, three rounds lift a 2B policy from 46.4% to 67.5% success, halve collisions, and beat prior SOTA by 10.6 points."
-   },
-   "summary_source": "deepseek-flash"
-  },
-  {
-   "id": "2611.27229",
-   "title": "Prune to Expand: Training Prompt Enhancers with Less to Imitate",
-   "authors": [
-    "Tianhe Wu",
-    "Qilin Sun",
-    "Kede Ma"
-   ],
-   "abstract": "Prompt enhancement (PE) refines concise user prompts into detailed descriptions to improve the compositional aesthetics of generated images while preserving user intent. A common practice constructs supervised fine-tuning (SFT) pairs by deriving short, user-like prompts from dense captions, implicitly assuming that captions that improve image generation also provide effective supervision. In this paper, however, we uncover a counterintuitive finding: PE models trained on caption pairs with substantial generation gains perform comparably to those trained on pairs with only marginal gains. We argue that dense captions can impose redundant supervision by requiring PE models to reproduce image-specific details weakly related to user intent. Motivated by this discrepancy, we introduce Prune to Expand (P2E), a simple text-only method that refines dense-caption supervision by selectively removing redundant sentences under a per-example deletion bound while preserving explicit user requirements and informative visual structure. Extensive experiments under identical training configurations demonstrate that P2E improves alignment with human preferences and visual quality over conventional dense-caption SFT across diverse image categories and visual generators.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-20T07:28:45Z",
-   "updated": "2026-11-20T07:28:45Z",
-   "comment": "",
-   "tags": [
-    "image generation",
-    "LLM",
-    "efficiency"
-   ],
-   "summary": {
-    "en": "Prune to Expand (P2E), a text-only method that prunes redundant sentences from dense-caption supervision under a per-example deletion bound, improves prompt-enhancer alignment with human preferences and image quality over dense-caption SFT.",
-    "zh": "Prune to Expand (P2E) 是一种纯文本方法，通过按样本删除上限选择性移除密集描述中的冗余句子来精炼监督信号，在相同训练配置下相比常规密集描述 SFT 提升了生成图像与人类偏好的一致性和视觉质量。"
-   },
-   "summary_source": "deepseek-flash",
-   "hf_upvotes": 4,
-   "ax_votes": 0,
-   "ax_visits": 33,
-   "heat": 7.3,
-   "orgs": [
-    {
-     "logo": "data/logos/cityu.edu.hk.png",
-     "name": "City University of Hong Kong",
-     "ror": "03q8dnn23"
-    },
-    {
-     "logo": "data/logos/cuhk.edu.hk.png",
-     "name": "CUHK",
-     "ror": "00t33hh48"
-    }
-   ],
-   "thumb": "data/thumbs/2611.27229.jpg",
-   "thumb_w": 640,
-   "thumb_h": 257,
-   "listed": "2026-11-23"
+   "sections": []
   },
   {
    "id": "2611.27490",
@@ -1385,56 +1524,108 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 2,
    "ax_votes": 2,
-   "ax_visits": 34,
-   "heat": 7.4,
+   "ax_visits": 35,
+   "heat": 7.5,
    "orgs": [],
    "thumb": "data/thumbs/2611.27490.jpg",
    "thumb_w": 640,
    "thumb_h": 301,
-   "listed": "2026-11-23"
+   "listed": "2026-11-23",
+   "sections": []
   },
   {
-   "id": "2611.22343",
-   "title": "PURE: A Diagnostic Benchmark for Multi-Granularity Multimodal Identity Matching",
+   "id": "2611.27229",
+   "title": "Prune to Expand: Training Prompt Enhancers with Less to Imitate",
    "authors": [
-    "Hengyu You",
-    "Xintong Wang",
-    "Jin Cao",
-    "Liang Ding"
+    "Tianhe Wu",
+    "Qilin Sun",
+    "Kede Ma"
    ],
-   "abstract": "Identity matching asks whether two records denote the same identity, yet the answer depends on the target granularity. Two records may match at the base level but not at the variant level: they share an underlying design while differing in attributes such as color or size. Final matching accuracy does not separately characterize the capabilities involved. To study this problem, we use e-commerce as a challenging real-world domain. We introduce PURE, a diagnostic benchmark for multi-granularity multimodal identity matching covering four capability dimensions: Perception, Understanding, Reasoning, and Evidence-grounded Judgment. The benchmark comprises 1,457 multiple-choice questions across 14 tasks, derived from real-world matching pairs and verified by two domain experts. Across ten recent MLLMs, overall scores range from 47.1% to 86.0%. Understanding receives the highest mean score and Judgment the lowest, with weaknesses in visual difference localization and variant-level rule judgment. Modality ablations show that models benefit from multimodal evidence but can incorrectly identify conflicts between matching records. In direct matching, most models recognize matching pairs more reliably than non-matching pairs at the base level, whereas the reverse holds at the variant level. PURE therefore reveals what aggregate matching accuracy hides: not only whether models judge a pair correctly, but where they struggle to interpret evidence and apply matching criteria.",
+   "abstract": "Prompt enhancement (PE) refines concise user prompts into detailed descriptions to improve the compositional aesthetics of generated images while preserving user intent. A common practice constructs supervised fine-tuning (SFT) pairs by deriving short, user-like prompts from dense captions, implicitly assuming that captions that improve image generation also provide effective supervision. In this paper, however, we uncover a counterintuitive finding: PE models trained on caption pairs with substantial generation gains perform comparably to those trained on pairs with only marginal gains. We argue that dense captions can impose redundant supervision by requiring PE models to reproduce image-specific details weakly related to user intent. Motivated by this discrepancy, we introduce Prune to Expand (P2E), a simple text-only method that refines dense-caption supervision by selectively removing redundant sentences under a per-example deletion bound while preserving explicit user requirements and informative visual structure. Extensive experiments under identical training configurations demonstrate that P2E improves alignment with human preferences and visual quality over conventional dense-caption SFT across diverse image categories and visual generators.",
    "primary": "cs.CV",
    "categories": [
     "cs.CV"
    ],
-   "published": "2026-11-17T07:52:22Z",
-   "updated": "2026-11-17T07:52:22Z",
+   "published": "2026-11-20T07:28:45Z",
+   "updated": "2026-11-20T07:28:45Z",
    "comment": "",
-   "listed": "2026-11-23",
    "tags": [
-    "multimodal",
-    "benchmark",
-    "VLM",
-    "reasoning"
+    "image generation",
+    "LLM",
+    "efficiency"
    ],
-   "hf_upvotes": 9,
+   "summary": {
+    "en": "Prune to Expand (P2E), a text-only method that prunes redundant sentences from dense-caption supervision under a per-example deletion bound, improves prompt-enhancer alignment with human preferences and image quality over dense-caption SFT.",
+    "zh": "Prune to Expand (P2E) 是一种纯文本方法，通过按样本删除上限选择性移除密集描述中的冗余句子来精炼监督信号，在相同训练配置下相比常规密集描述 SFT 提升了生成图像与人类偏好的一致性和视觉质量。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 4,
    "ax_votes": 0,
-   "ax_visits": 17,
-   "heat": 10.7,
+   "ax_visits": 34,
+   "heat": 7.4,
    "orgs": [
     {
-     "logo": "data/logos/alibaba.com.png",
-     "name": "Alibaba"
+     "logo": "data/logos/cityu.edu.hk.png",
+     "name": "City University of Hong Kong",
+     "ror": "03q8dnn23"
+    },
+    {
+     "logo": "data/logos/cuhk.edu.hk.png",
+     "name": "CUHK",
+     "ror": "00t33hh48"
     }
    ],
-   "thumb": "data/thumbs/2611.22343.jpg",
+   "thumb": "data/thumbs/2611.27229.jpg",
    "thumb_w": 640,
-   "thumb_h": 284,
+   "thumb_h": 257,
+   "listed": "2026-11-23",
+   "sections": []
+  },
+  {
+   "id": "2611.27572",
+   "title": "Minimax-Optimal Small-Loss Regret in Online Convex Optimization and Applications to Contextual Search and Online Inverse Optimization",
+   "authors": [
+    "Shinsaku Sakaue"
+   ],
+   "abstract": "We give small-loss regret bounds for online convex optimization (OCO), using one subgradient per round. Let $Δ_T^\\star$ denote the cumulative loss of the best fixed decision in hindsight, measured relative to the per-round minima. Our algorithm achieves the regret bound $O(1+\\sqrt{Δ_T^\\star})$ without knowing $Δ_T^\\star$, up to domain and gradient-scale factors. The bound is minimax optimal, including its domain dependence, on $\\ell_p$ balls for every $1\\le p\\le\\infty$. No smoothness or condition bounding gradient norms by loss values is assumed, and neither loss values nor the time horizon are needed. Algorithmically, we extend the metric-update revocation of Gupta et al. (2026), originally developed for online inverse optimization, to general OCO using the follow-the-regularized-leader framework and a mixture of multiple base learners. We also apply our algorithm to contextual search and online inverse optimization. In $d$-dimensional contextual search with comparison flips of unknown bias $κ>0$, we obtain minimax expected cumulative absolute error $Θ(\\sqrt{d}/κ^2)$ under Euclidean normalization using polynomially many arithmetic operations, resolving an open question of Liu et al. (2021). For online inverse optimization with the Euclidean unit-ball utility domain, our algorithm bounds the regret relative to observed actions by $O(\\sqrt{d}+d^{1/4}\\sqrt{D_T})$, where $D_T$ is their cumulative suboptimality; this matches the regret rate of Gupta et al. (2026) when $D_T=0$. Our guarantee extends to other utility domains; for example, on the probability simplex, the bound improves to $O(\\log(d+1)+\\sqrt{D_T\\log(d+1)})$.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "cs.DS"
+   ],
+   "published": "2026-11-20T13:08:41Z",
+   "updated": "2026-11-20T13:08:41Z",
+   "comment": "",
+   "tags": [
+    "theory",
+    "efficiency"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 70,
+   "heat": 7.0,
+   "orgs": [
+    {
+     "name": "CyberAgent"
+    },
+    {
+     "name": "National Institute of Informatics",
+     "ror": "04ksd4g47"
+    },
+    {
+     "name": "RIKEN",
+     "ror": "01sjwvz98"
+    }
+   ],
+   "thumb": "data/thumbs/2611.27572.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440,
    "summary": {
-    "zh": "PURE 是面向多粒度多模态身份匹配的诊断基准，从电商真实匹配对构建 1457 道多选题、覆盖 14 个任务和 Perception/Understanding/Reasoning/Judgment 四个维度；十款 MLLM 总分 47.1%–86.0%，Understanding 均分最高、Judgment 最低，暴露出视觉差异定位与变体级规则判断的短板。",
-    "en": "PURE is a diagnostic benchmark for multi-granularity multimodal identity matching: 1,457 multiple-choice questions over 14 tasks across Perception, Understanding, Reasoning and Judgment. Ten MLLMs score 47.1%–86.0%, with Judgment weakest and variant-level reasoning exposed."
+    "en": "Extending metric-update revocation within follow-the-regularized-leader and a mixture of base learners, the algorithm achieves minimax-optimal small-loss regret O(1+sqrt(Delta_T^*)) on l_p balls without knowing Delta_T^*, yielding Theta(sqrt(d)/kappa^2) contextual-search error and resolving an open question.",
+    "zh": "基于follow-the-regularized-leader框架与多基学习器混合、扩展Gupta等(2026)的度量更新撤销机制，在只需每轮一个次梯度、无需知道Δ_T^⋆的条件下取得小损失遗憾O(1+√Δ_T^⋆)，在ℓ_p球上具minimax最优性；用于上下文搜索时达到Θ(√d/κ²)期望累积绝对误差，解决Liu等(2021)的开放问题。"
    },
-   "summary_source": "deepseek-flash"
+   "summary_source": "deepseek-flash",
+   "listed": "2026-11-23",
+   "sections": []
   },
   {
    "id": "2611.27891",
@@ -1457,8 +1648,8 @@
     "reasoning"
    ],
    "ax_votes": 4,
-   "ax_visits": 26,
-   "heat": 6.6,
+   "ax_visits": 29,
+   "heat": 6.9,
    "orgs": [
     {
      "logo": "data/logos/cmu.edu.png",
@@ -1474,52 +1665,8 @@
     "zh": "DICE 通过在起草与验证之间预采样并同步随机数，将已知采样随机性与现有 drafter 预测结合，把计算分配给本次采样更可能用到的续写，并扩展到异步预取；无需额外训练或改变目标采样分布，吞吐量在多种设置下达到 SOTA，相较强基线最高提升 24.6pp。"
    },
    "summary_source": "deepseek-flash",
-   "listed": "2026-11-23"
-  },
-  {
-   "id": "2611.27572",
-   "title": "Minimax-Optimal Small-Loss Regret in Online Convex Optimization and Applications to Contextual Search and Online Inverse Optimization",
-   "authors": [
-    "Shinsaku Sakaue"
-   ],
-   "abstract": "We give small-loss regret bounds for online convex optimization (OCO), using one subgradient per round. Let $Δ_T^\\star$ denote the cumulative loss of the best fixed decision in hindsight, measured relative to the per-round minima. Our algorithm achieves the regret bound $O(1+\\sqrt{Δ_T^\\star})$ without knowing $Δ_T^\\star$, up to domain and gradient-scale factors. The bound is minimax optimal, including its domain dependence, on $\\ell_p$ balls for every $1\\le p\\le\\infty$. No smoothness or condition bounding gradient norms by loss values is assumed, and neither loss values nor the time horizon are needed. Algorithmically, we extend the metric-update revocation of Gupta et al. (2026), originally developed for online inverse optimization, to general OCO using the follow-the-regularized-leader framework and a mixture of multiple base learners. We also apply our algorithm to contextual search and online inverse optimization. In $d$-dimensional contextual search with comparison flips of unknown bias $κ>0$, we obtain minimax expected cumulative absolute error $Θ(\\sqrt{d}/κ^2)$ under Euclidean normalization using polynomially many arithmetic operations, resolving an open question of Liu et al. (2021). For online inverse optimization with the Euclidean unit-ball utility domain, our algorithm bounds the regret relative to observed actions by $O(\\sqrt{d}+d^{1/4}\\sqrt{D_T})$, where $D_T$ is their cumulative suboptimality; this matches the regret rate of Gupta et al. (2026) when $D_T=0$. Our guarantee extends to other utility domains; for example, on the probability simplex, the bound improves to $O(\\log(d+1)+\\sqrt{D_T\\log(d+1)})$.",
-   "primary": "cs.LG",
-   "categories": [
-    "cs.LG",
-    "cs.DS"
-   ],
-   "published": "2026-11-20T13:08:41Z",
-   "updated": "2026-11-20T13:08:41Z",
-   "comment": "",
-   "tags": [
-    "theory",
-    "efficiency"
-   ],
-   "ax_votes": 0,
-   "ax_visits": 66,
-   "heat": 6.6,
-   "orgs": [
-    {
-     "name": "CyberAgent"
-    },
-    {
-     "name": "National Institute of Informatics",
-     "ror": "04ksd4g47"
-    },
-    {
-     "name": "RIKEN",
-     "ror": "01sjwvz98"
-    }
-   ],
-   "thumb": "data/thumbs/2611.27572.jpg",
-   "thumb_w": 618,
-   "thumb_h": 440,
-   "summary": {
-    "en": "Extending metric-update revocation within follow-the-regularized-leader and a mixture of base learners, the algorithm achieves minimax-optimal small-loss regret O(1+sqrt(Delta_T^*)) on l_p balls without knowing Delta_T^*, yielding Theta(sqrt(d)/kappa^2) contextual-search error and resolving an open question.",
-    "zh": "基于follow-the-regularized-leader框架与多基学习器混合、扩展Gupta等(2026)的度量更新撤销机制，在只需每轮一个次梯度、无需知道Δ_T^⋆的条件下取得小损失遗憾O(1+√Δ_T^⋆)，在ℓ_p球上具minimax最优性；用于上下文搜索时达到Θ(√d/κ²)期望累积绝对误差，解决Liu等(2021)的开放问题。"
-   },
-   "summary_source": "deepseek-flash",
-   "listed": "2026-11-23"
+   "listed": "2026-11-23",
+   "sections": []
   },
   {
    "id": "2611.27780",
@@ -1546,8 +1693,8 @@
     "RL"
    ],
    "ax_votes": 1,
-   "ax_visits": 55,
-   "heat": 6.5,
+   "ax_visits": 57,
+   "heat": 6.7,
    "orgs": [
     {
      "name": "Hunan University",
@@ -1566,7 +1713,10 @@
     "zh": "Search-RSI 让多模态搜索智能体沿能力边界递归扩展搜索世界：每轮按跳数、关系稀有度和干扰密度诊断半掌握区域，并同步生成任务与证据，对策略探测有分歧的样本做强化学习、超出能力的转为提示示范；在九个多模态搜索基准上，9B 和 27B 模型平均准确率分别较基线提升 9.8 和 9.5 点，算力为静态增长的 1.27 倍。"
    },
    "summary_source": "deepseek-flash",
-   "listed": "2026-11-23"
+   "listed": "2026-11-23",
+   "sections": [
+    "rl"
+   ]
   },
   {
    "id": "2611.27645",
@@ -1599,8 +1749,8 @@
     "robotics"
    ],
    "ax_votes": 2,
-   "ax_visits": 41,
-   "heat": 6.1,
+   "ax_visits": 44,
+   "heat": 6.4,
    "orgs": [
     {
      "name": "Nanjing University",
@@ -1618,147 +1768,10 @@
     "zh": "LS-MBPO 用轻量潜在世界模型对预训练 VLA 做残差强化学习，结合 Hierarchical Forcing 与 Latent Subchunk Rollouts 缓解递归预测误差并衔接潜在想象与动作执行，在 LIBERO、RoboTwin 和真实 ALOHA 机器人上任务表现与训练效率优于现有方法。"
    },
    "summary_source": "deepseek-flash",
-   "listed": "2026-11-23"
-  },
-  {
-   "id": "2611.27759",
-   "title": "DPMA: Learning to Compress Mixture-of-Experts Models",
-   "authors": [
-    "Jon Irureta",
-    "Jon Imaz",
-    "Philipp Wiesner",
-    "Gorka Azkune",
-    "Javier Fernandez-Marques",
-    "Alex Iacob",
-    "Andrej Jovanović",
-    "Aizea Lojo",
-    "Nicholas D. Lane"
-   ],
-   "abstract": "Mixture-of-Experts (MoE) architectures offer high computational efficiency, but storing all experts requires substantial memory and limits deployment on resource-constrained hardware. Most retraining-free MoE compression methods commit to either pruning or merging experts, often with a uniform compression ratio across layers. We introduce DPMA (Differentiable Prune Merge Absorb), which jointly learns compression operations and layer-wise expert allocation through gradient descent under a global expert budget. Separate learnable coefficients allow DPMA to prune experts, merge their parameters, and absorb their routing contributions by forwarding routing weights to retained experts. These coefficients and expert assignments are optimised to match the original model's outputs on calibration data while its weights remain frozen. Across four MoE models, eight multiple-choice benchmarks, and five compression ratios, DPMA achieves the highest accuracy averaged over benchmarks and compression ratios on each model among the evaluated methods. At $75\\%$ expert reduction, it outperforms the strongest baseline on every model, with gains of up to $6.7$ percentage points.",
-   "primary": "cs.LG",
-   "categories": [
-    "cs.LG"
-   ],
-   "published": "2026-11-20T15:46:35Z",
-   "updated": "2026-11-20T15:46:35Z",
-   "comment": "",
-   "tags": [
-    "benchmark"
-   ],
-   "ax_votes": 0,
-   "ax_visits": 52,
-   "heat": 5.2,
-   "orgs": [
-    {
-     "logo": "data/logos/ehu.eus.png",
-     "name": "University of the Basque Country",
-     "ror": "000xsnr85"
-    },
-    {
-     "name": "University of Cambridge",
-     "ror": "013meh722"
-    }
-   ],
-   "thumb": "data/thumbs/2611.27759.jpg",
-   "thumb_w": 640,
-   "thumb_h": 213,
-   "listed": "2026-11-23"
-  },
-  {
-   "id": "2611.27901",
-   "title": "QuantStream3D: Geometry-Aligned Low-Bit KV Cache Quantization for Streaming Visual Geometry Transformers",
-   "authors": [
-    "Zunhai Su",
-    "Keyu Fan",
-    "Ruishan Guo",
-    "Zhongzhu Zhou",
-    "Jingzehua Xu",
-    "Bohan Sun",
-    "Hansen Feng",
-    "Ruihan Hu",
-    "Yik-Chung Wu",
-    "Ngai Wong"
-   ],
-   "abstract": "Streaming visual geometry transformers retain historical key-value (KV) states as cross-view geometric memory, but growing caches constrain long-sequence inference. We systematically characterize KV quantization in streaming geometry and uncover two linked challenges: Nonuniform Geometric Sensitivity and Cache-Geometry Mismatch. Quantization sensitivity varies across precision choices and cache locations, while perturbed retrieval changes geometry-head inputs and propagates through subsequent predictions and KV writes. Guided by these findings, we propose QuantStream3D, to our knowledge the first dedicated KV quantization framework for streaming visual geometry transformers. Geometry-Guided Mixed-Precision KV Quantization protects sensitive cross-view evidence, while Geometry-Aligned Quantization-Aware Distillation jointly adapts transformer blocks and geometry heads on student-generated quantized history. Across five benchmarks and two backbones, QuantStream3D achieves near-lossless geometric accuracy in most settings with predominantly 2-bit KV caches, and many configurations surpass unquantized inference. Compared with LLM-oriented KV quantizers, it reduces TUM absolute trajectory error and NeuralRGBD completeness error by up to 57.4% and 69.7%, respectively. Integration with existing native cache-pruning methods further pushes compression while improving reconstruction quality on NeuralRGBD. Our optimized StreamVGGT backend achieves $5.05\\times$ physical KV compression and 23.1% lower latency at batch size one. Under a fixed memory budget on the same GPU, it supports $5.4\\times$ the maximum batch size and up to $1.67\\times$ the peak throughput of unquantized inference. Code and pretrained checkpoints will be made publicly available.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-20T17:38:48Z",
-   "updated": "2026-11-20T17:38:48Z",
-   "comment": "19 pages, 5 figures. Includes appendix",
-   "tags": [
-    "VLM/LLM",
-    "benchmark"
-   ],
-   "ax_votes": 1,
-   "ax_visits": 37,
-   "heat": 4.7,
-   "orgs": [
-    {
-     "logo": "data/logos/hku.hk.png",
-     "name": "HKU",
-     "ror": "02zhqgq86"
-    },
-    {
-     "logo": "data/logos/cas.cn.png",
-     "name": "Chinese Academy of Sciences",
-     "ror": "034t30j35"
-    }
-   ],
-   "thumb": "data/thumbs/2611.27901.jpg",
-   "thumb_w": 640,
-   "thumb_h": 254,
-   "listed": "2026-11-23"
-  },
-  {
-   "id": "2611.27701",
-   "title": "FOREST: Coordinating Tree-based HBF, RRAM, and HBM for Efficient Speculative LLM Inference",
-   "authors": [
-    "Hao Ding",
-    "Zheng Shi",
-    "Dongxue Zhao",
-    "Huiying Bian",
-    "Meng Li",
-    "Xu Zheng",
-    "Kun Wang",
-    "Nanjian Wu",
-    "Jie Chen",
-    "Yimao Cai"
-   ],
-   "abstract": "Speculative decoding (SD) accelerates large language model (LLM) inference by combining lightweight drafting with parallel target-model verification. However, its stages impose distinct resource demands: target verification requires high-throughput access to large weight sets, sequential drafting executes a compact model under tight latency constraints, and long-context attention processes growing key-value (KV) caches. Conventional GPU-centric SD systems serve these workloads through shared HBM-centric memory and general-purpose compute, creating mismatches in capacity, bandwidth, and computation. These mismatches constrain deployable model-context configurations and limit the efficiency of bandwidth-bound and latency-sensitive operations. We propose FOREST, a heterogeneous memory-centric architecture coordinating HBF, 3D-stacked RRAM, and HBM memory-compute trees for efficient SD. It features: (1) compute-aligned 3D RRAM, combining ultra-wide, low-frequency reads with clock-decoupled interfaces and overlapped SRAM-DCIM weight refills for latency-sensitive drafting; (2) cross-tree numerical co-design, moving block-scaled Q/K/V preprocessing to HBF and RRAM root plates and enabling block-floating-point (BFP) attention with pipelined softmax reduction in the HBM tree; and (3) HBF-aware SD design-space exploration, revealing how bandwidth-compute provisioning and model scale determine performance, energy, and cost trade-offs. Evaluated across six SD configurations spanning 32B-405B target models, FOREST achieves up to 5.5x end-to-end speedup, 11.46x higher decode throughput, and 16.5x higher decode energy efficiency over NVIDIA A800 GPU-based SD baselines. Under a modeled total cost of ownership, FOREST delivers up to 6.73x higher token-generation cost efficiency.",
-   "primary": "cs.AR",
-   "categories": [
-    "cs.AR"
-   ],
-   "published": "2026-11-20T15:07:53Z",
-   "updated": "2026-11-20T15:07:53Z",
-   "comment": "",
-   "tags": [
-    "VLM/LLM"
-   ],
-   "ax_votes": 0,
-   "ax_visits": 45,
-   "heat": 4.5,
-   "orgs": [
-    {
-     "name": "Unigroup Guoxin Microelectronics"
-    },
-    {
-     "logo": "data/logos/pku.edu.cn.png",
-     "name": "Peking University",
-     "ror": "02v51f717"
-    },
-    {
-     "logo": "data/logos/cas.cn.png",
-     "name": "Chinese Academy of Sciences",
-     "ror": "034t30j35"
-    }
-   ],
-   "thumb": "data/thumbs/2611.27701.jpg",
-   "thumb_w": 561,
-   "thumb_h": 246,
-   "listed": "2026-11-23"
+   "listed": "2026-11-23",
+   "sections": [
+    "rl"
+   ]
   },
   {
    "id": "2611.22479",
@@ -1788,66 +1801,130 @@
    ],
    "thumb": "data/thumbs/2611.22479.jpg",
    "thumb_w": 618,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "sections": []
   },
   {
-   "id": "2611.24025",
-   "title": "Intent Contracts: Taking Tools Away from Agents",
+   "id": "2611.22495",
+   "title": "Motion-Aware Reward Modeling for Instruction-Guided Video Editing",
    "authors": [
-    "Ziyuan Wang",
-    "Genliang Zhu",
-    "Xiaobo Chen",
-    "Chu Wang"
+    "Li Li",
+    "Xiangbo Gao",
+    "Bo Ni",
+    "Samyadeep Basu",
+    "Viet Dac Lai",
+    "Jing Shi",
+    "Seunghyun Yoon",
+    "Gang Wu",
+    "Yu Wang",
+    "Thien Huu Nguyen",
+    "Tyler Derr",
+    "Franck Dernoncourt",
+    "Zhengzhong Tu",
+    "Yue Zhao"
    ],
-   "abstract": "Intent contracts are an authorization interface for tool-using LLM agents in which the planning model holds no tools. For each step it submits a short logged contract: a goal, a verbatim quotation of the user, and scope fields. Code validates the contract, and a small trusted model checks it against the user's words and writes the tool call itself. Provided the validation and dispatch code is correct, every executed call is written by the trusted model, the planner's influence on a call is confined to a contract logged before it, and the trusted side decides how much of a request to carry out. We compare contracts with two reviewers of planner-written commands: one sees only the user's words and the command, the information boundary of a reasoning-blind permission classifier, and one also sees the planner's goal and a checked quotation. With gpt-6.1-terra as planner and GLM-5.3-Flash as the trusted model on three AmPermBench task families, every object changed under contracts is named in the goal of the contract that produced the change; under review the planner names objects in its commands and rarely in its goals. When the planner adds work the user never asked for, contracts complete the user's task in 27/30 runs and the intent-visible reviewer in 16/30, because a reviewer can only refuse a whole command. Contracts do not reduce unauthorized actions. They are indistinguishable from blind review, and once the benchmark's environment terms are clarified, every condition that changes state hits a wrong target in 40-49% of those runs. That error is the planner's choice of objects for an ambiguous reference, which no trusted model here can see the environment to check; telling the executor to decline when unsure does not change it. We evaluate benign over-reach with one pair of models, not adversarial planners. We release the plugin and run records.",
-   "primary": "cs.CR",
+   "abstract": "Reward models for instruction-guided video editing can favor temporal consistency at the expense of motion. We study this failure, termed \\emph{motion collapse}, using controlled motion-suppression variants of real edits. On VE-Bench, the evaluated composite reward prefers a motion-suppressed candidate in $97\\%$ of cases. Learned video rewards and a VLM judge also struggle with mild suppression, while latent optimization and reward-guided fine-tuning exploit this weakness to increase reward as motion declines. A linear probe of our base reward backbone performs near chance on mild suppression, motivating an explicit inter-frame dynamics input. We propose a motion-aware reward model that combines an RGB frame-difference stream with preference training against motion-suppressed and fabricated-motion negatives. A distillation anchor preserves alignment with human quality judgments. On the VE-Bench motion ladder, our model reduces the rate of selecting motion-suppressed candidates to $0\\%$ while achieving a Spearman correlation of $0.57$ with human quality ratings. It also detects unseen suppression variants and preserves motion during reward-guided fine-tuning on two editing pipelines. These results support explicitly modeling motion in rewards for video editing.",
+   "primary": "cs.CV",
    "categories": [
-    "cs.CR",
+    "cs.CV",
     "cs.AI"
    ],
-   "published": "2026-11-18T08:14:22Z",
-   "updated": "2026-11-18T08:14:22Z",
-   "comment": "10 pages, 1 figure, 7 tables. Code and data: https://github.com/zwang-devv/intent-contracts",
-   "code_url": "https://github.com/zwang-devv/intent-contracts",
+   "published": "2026-11-17T09:51:25Z",
+   "updated": "2026-11-17T09:51:25Z",
+   "comment": "",
    "listed": "2026-11-23",
    "tags": [
-    "agents",
-    "safety",
-    "alignment",
-    "LLM"
+    "video generation",
+    "multimodal",
+    "alignment"
    ],
-   "hf_upvotes": 4,
-   "ax_votes": 1,
-   "ax_visits": 50,
-   "heat": 10.0,
+   "hf_upvotes": 2,
+   "ax_votes": 0,
+   "ax_visits": 32,
+   "heat": 5.2,
    "orgs": [
     {
-     "name": "Independent Researcher"
+     "logo": "data/logos/usc.edu.png",
+     "name": "University of Southern California",
+     "ror": "03taz7m60"
     },
     {
-     "logo": "data/logos/gatech.edu.png",
-     "name": "Georgia Institute of Technology",
-     "ror": "01zkghx44"
+     "name": "Texas A&M University",
+     "ror": "01f5ytq51",
+     "logo": "data/logos/tamu.edu.png"
     },
     {
-     "logo": "data/logos/umass.edu.png",
-     "name": "University of Massachusetts Amherst",
-     "ror": "0072zz521"
+     "name": "Vanderbilt University",
+     "ror": "02vm5rt34"
     },
     {
-     "logo": "data/logos/illinois.edu.png",
-     "name": "University of Illinois Urbana-Champaign",
-     "ror": "047426m28"
+     "name": "Adobe",
+     "logo": "data/logos/adobe.com.png"
+    },
+    {
+     "name": "University of Georgia"
+    },
+    {
+     "logo": "data/logos/amazon.com.png",
+     "name": "Amazon"
     }
    ],
-   "thumb": "data/thumbs/2611.24025.jpg",
-   "thumb_w": 618,
-   "thumb_h": 440,
+   "thumb": "data/thumbs/2611.22495.jpg",
+   "thumb_w": 640,
+   "thumb_h": 427,
+   "sections": [
+    "rl"
+   ],
    "summary": {
-    "zh": "Intent contracts 让规划模型不直接持有工具，每步提交含目标、用户原话引用和作用域字段的契约，由验证代码与可信小模型校验并代写工具调用；在三个 AmPermBench 任务族上，任务被规划器额外加需求时契约 30 次中完成 27 次，可见意图的审查器仅 16 次，但未授权操作并未减少。",
-    "en": "Intent contracts keep tools away from planner LLM agents: each step submits a logged goal, user quotation, and scope, validated by code and a trusted model that writes the call; on three AmPermBench families contracts complete 27/30 runs versus 16/30 for intent-visible review, without reducing unauthorized actions."
+    "zh": "针对指令引导视频编辑奖励模型忽视运动、偏好静态画面的“运动坍缩”问题，提出运动感知奖励模型，将RGB帧差流与针对运动抑制及伪造运动负样本的偏好训练结合，并以蒸馏锚点保持与人类判断对齐；在VE-Bench运动阶梯上将选择运动抑制候选的比例从97%降至0%，与人类评分的Spearman相关系数达0.57。",
+    "en": "A motion-aware reward model for instruction-guided video editing combines an RGB frame-difference stream with preference training on motion-suppressed and fabricated-motion negatives; it cuts motion-suppressed selections on VE-Bench from 97% to 0% at 0.57 Spearman correlation with human ratings."
    },
    "summary_source": "deepseek-flash"
+  },
+  {
+   "id": "2611.27759",
+   "title": "DPMA: Learning to Compress Mixture-of-Experts Models",
+   "authors": [
+    "Jon Irureta",
+    "Jon Imaz",
+    "Philipp Wiesner",
+    "Gorka Azkune",
+    "Javier Fernandez-Marques",
+    "Alex Iacob",
+    "Andrej Jovanović",
+    "Aizea Lojo",
+    "Nicholas D. Lane"
+   ],
+   "abstract": "Mixture-of-Experts (MoE) architectures offer high computational efficiency, but storing all experts requires substantial memory and limits deployment on resource-constrained hardware. Most retraining-free MoE compression methods commit to either pruning or merging experts, often with a uniform compression ratio across layers. We introduce DPMA (Differentiable Prune Merge Absorb), which jointly learns compression operations and layer-wise expert allocation through gradient descent under a global expert budget. Separate learnable coefficients allow DPMA to prune experts, merge their parameters, and absorb their routing contributions by forwarding routing weights to retained experts. These coefficients and expert assignments are optimised to match the original model's outputs on calibration data while its weights remain frozen. Across four MoE models, eight multiple-choice benchmarks, and five compression ratios, DPMA achieves the highest accuracy averaged over benchmarks and compression ratios on each model among the evaluated methods. At $75\\%$ expert reduction, it outperforms the strongest baseline on every model, with gains of up to $6.7$ percentage points.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-20T15:46:35Z",
+   "updated": "2026-11-20T15:46:35Z",
+   "comment": "",
+   "tags": [
+    "benchmark"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 57,
+   "heat": 5.7,
+   "orgs": [
+    {
+     "logo": "data/logos/ehu.eus.png",
+     "name": "University of the Basque Country",
+     "ror": "000xsnr85"
+    },
+    {
+     "name": "University of Cambridge",
+     "ror": "013meh722"
+    }
+   ],
+   "thumb": "data/thumbs/2611.27759.jpg",
+   "thumb_w": 640,
+   "thumb_h": 213,
+   "listed": "2026-11-23",
+   "sections": []
   },
   {
    "id": "2611.25252",
@@ -1872,8 +1949,8 @@
    ],
    "hf_upvotes": 4,
    "ax_votes": 0,
-   "ax_visits": 11,
-   "heat": 5.1,
+   "ax_visits": 12,
+   "heat": 5.2,
    "orgs": [
     {
      "name": "Université Paris-Saclay",
@@ -1882,7 +1959,106 @@
    ],
    "thumb": "data/thumbs/2611.25252.jpg",
    "thumb_w": 618,
-   "thumb_h": 440
+   "thumb_h": 440,
+   "sections": []
+  },
+  {
+   "id": "2611.27901",
+   "title": "QuantStream3D: Geometry-Aligned Low-Bit KV Cache Quantization for Streaming Visual Geometry Transformers",
+   "authors": [
+    "Zunhai Su",
+    "Keyu Fan",
+    "Ruishan Guo",
+    "Zhongzhu Zhou",
+    "Jingzehua Xu",
+    "Bohan Sun",
+    "Hansen Feng",
+    "Ruihan Hu",
+    "Yik-Chung Wu",
+    "Ngai Wong"
+   ],
+   "abstract": "Streaming visual geometry transformers retain historical key-value (KV) states as cross-view geometric memory, but growing caches constrain long-sequence inference. We systematically characterize KV quantization in streaming geometry and uncover two linked challenges: Nonuniform Geometric Sensitivity and Cache-Geometry Mismatch. Quantization sensitivity varies across precision choices and cache locations, while perturbed retrieval changes geometry-head inputs and propagates through subsequent predictions and KV writes. Guided by these findings, we propose QuantStream3D, to our knowledge the first dedicated KV quantization framework for streaming visual geometry transformers. Geometry-Guided Mixed-Precision KV Quantization protects sensitive cross-view evidence, while Geometry-Aligned Quantization-Aware Distillation jointly adapts transformer blocks and geometry heads on student-generated quantized history. Across five benchmarks and two backbones, QuantStream3D achieves near-lossless geometric accuracy in most settings with predominantly 2-bit KV caches, and many configurations surpass unquantized inference. Compared with LLM-oriented KV quantizers, it reduces TUM absolute trajectory error and NeuralRGBD completeness error by up to 57.4% and 69.7%, respectively. Integration with existing native cache-pruning methods further pushes compression while improving reconstruction quality on NeuralRGBD. Our optimized StreamVGGT backend achieves $5.05\\times$ physical KV compression and 23.1% lower latency at batch size one. Under a fixed memory budget on the same GPU, it supports $5.4\\times$ the maximum batch size and up to $1.67\\times$ the peak throughput of unquantized inference. Code and pretrained checkpoints will be made publicly available.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-20T17:38:48Z",
+   "updated": "2026-11-20T17:38:48Z",
+   "comment": "19 pages, 5 figures. Includes appendix",
+   "tags": [
+    "VLM/LLM",
+    "benchmark"
+   ],
+   "ax_votes": 1,
+   "ax_visits": 38,
+   "heat": 4.8,
+   "orgs": [
+    {
+     "logo": "data/logos/hku.hk.png",
+     "name": "HKU",
+     "ror": "02zhqgq86"
+    },
+    {
+     "logo": "data/logos/cas.cn.png",
+     "name": "Chinese Academy of Sciences",
+     "ror": "034t30j35"
+    }
+   ],
+   "thumb": "data/thumbs/2611.27901.jpg",
+   "thumb_w": 640,
+   "thumb_h": 254,
+   "listed": "2026-11-23",
+   "sections": []
+  },
+  {
+   "id": "2611.27701",
+   "title": "FOREST: Coordinating Tree-based HBF, RRAM, and HBM for Efficient Speculative LLM Inference",
+   "authors": [
+    "Hao Ding",
+    "Zheng Shi",
+    "Dongxue Zhao",
+    "Huiying Bian",
+    "Meng Li",
+    "Xu Zheng",
+    "Kun Wang",
+    "Nanjian Wu",
+    "Jie Chen",
+    "Yimao Cai"
+   ],
+   "abstract": "Speculative decoding (SD) accelerates large language model (LLM) inference by combining lightweight drafting with parallel target-model verification. However, its stages impose distinct resource demands: target verification requires high-throughput access to large weight sets, sequential drafting executes a compact model under tight latency constraints, and long-context attention processes growing key-value (KV) caches. Conventional GPU-centric SD systems serve these workloads through shared HBM-centric memory and general-purpose compute, creating mismatches in capacity, bandwidth, and computation. These mismatches constrain deployable model-context configurations and limit the efficiency of bandwidth-bound and latency-sensitive operations. We propose FOREST, a heterogeneous memory-centric architecture coordinating HBF, 3D-stacked RRAM, and HBM memory-compute trees for efficient SD. It features: (1) compute-aligned 3D RRAM, combining ultra-wide, low-frequency reads with clock-decoupled interfaces and overlapped SRAM-DCIM weight refills for latency-sensitive drafting; (2) cross-tree numerical co-design, moving block-scaled Q/K/V preprocessing to HBF and RRAM root plates and enabling block-floating-point (BFP) attention with pipelined softmax reduction in the HBM tree; and (3) HBF-aware SD design-space exploration, revealing how bandwidth-compute provisioning and model scale determine performance, energy, and cost trade-offs. Evaluated across six SD configurations spanning 32B-405B target models, FOREST achieves up to 5.5x end-to-end speedup, 11.46x higher decode throughput, and 16.5x higher decode energy efficiency over NVIDIA A800 GPU-based SD baselines. Under a modeled total cost of ownership, FOREST delivers up to 6.73x higher token-generation cost efficiency.",
+   "primary": "cs.AR",
+   "categories": [
+    "cs.AR"
+   ],
+   "published": "2026-11-20T15:07:53Z",
+   "updated": "2026-11-20T15:07:53Z",
+   "comment": "",
+   "tags": [
+    "VLM/LLM"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 47,
+   "heat": 4.7,
+   "orgs": [
+    {
+     "name": "Unigroup Guoxin Microelectronics"
+    },
+    {
+     "logo": "data/logos/pku.edu.cn.png",
+     "name": "Peking University",
+     "ror": "02v51f717"
+    },
+    {
+     "logo": "data/logos/cas.cn.png",
+     "name": "Chinese Academy of Sciences",
+     "ror": "034t30j35"
+    }
+   ],
+   "thumb": "data/thumbs/2611.27701.jpg",
+   "thumb_w": 561,
+   "thumb_h": 246,
+   "listed": "2026-11-23",
+   "sections": []
   },
   {
    "id": "2611.27765",
@@ -1918,8 +2094,8 @@
    "comment": "",
    "tags": [],
    "ax_votes": 0,
-   "ax_visits": 42,
-   "heat": 4.2,
+   "ax_visits": 44,
+   "heat": 4.4,
    "orgs": [
     {
      "name": "Shanghai Jiao Tong University",
@@ -1933,7 +2109,8 @@
    "thumb": "data/thumbs/2611.27765.jpg",
    "thumb_w": 618,
    "thumb_h": 440,
-   "listed": "2026-11-23"
+   "listed": "2026-11-23",
+   "sections": []
   },
   {
    "id": "2611.27905",
@@ -1960,8 +2137,8 @@
     "benchmark"
    ],
    "ax_votes": 0,
-   "ax_visits": 36,
-   "heat": 3.6,
+   "ax_visits": 39,
+   "heat": 3.9,
    "orgs": [
     {
      "logo": "data/logos/cispa.de.png",
@@ -1972,62 +2149,8 @@
    "thumb": "data/thumbs/2611.27905.jpg",
    "thumb_w": 420,
    "thumb_h": 135,
-   "listed": "2026-11-23"
-  },
-  {
-   "id": "2611.23417",
-   "title": "Autoregressive View Model",
-   "authors": [
-    "Jensen",
-    "Zhou",
-    "Samuel Rota Bulo",
-    "Denis Rozumny",
-    "Duncan Zauss",
-    "Peter Hedman",
-    "Nikhil Keetha",
-    "Philip Torr",
-    "Christian Rupprecht",
-    "Andrea Vedaldi",
-    "Peter Kontschieder"
-   ],
-   "abstract": "We present the Autoregressive View Model (AVM), which generates a scene as a stream of views without constructing an explicit 3D representation. Through a unified in-context interface, AVM conditions on images or videos to generate short clips along a requested camera path. Visual context grounds reconstruction and interpolation, while a learned prior enables extrapolation into unseen regions. AVM retrieves relevant views from inputs and generated history to form a bounded active context. We fine-tune a pretrained bidirectional video diffusion transformer with flow matching in an N-in-1-out formulation. We then tune a causal model on its own rollouts to improve photorealism, reduce denoising steps, and limit long-horizon drift. We scale training to approximately 8M scenes and video clips. We evaluate generation capacity and scene persistence across benchmarks for camera control, text control, visual quality, dynamics, sparse and 4D reconstruction, and long-horizon consistency. The results demonstrate that AVM adapts to diverse input and output settings through one in-context interface.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV"
-   ],
-   "published": "2026-11-17T19:20:06Z",
-   "updated": "2026-11-20T17:27:55Z",
-   "comment": "Project Page: https://autoregressive-view-model.github.io/",
    "listed": "2026-11-23",
-   "tags": [
-    "video generation",
-    "diffusion",
-    "3D",
-    "world model"
-   ],
-   "hf_upvotes": 3,
-   "ax_votes": 17,
-   "ax_visits": 208,
-   "heat": 40.8,
-   "orgs": [
-    {
-     "logo": "data/logos/meta.com.png",
-     "name": "Meta"
-    },
-    {
-     "logo": "data/logos/ox.ac.uk.png",
-     "name": "University of Oxford",
-     "ror": "052gg0110"
-    }
-   ],
-   "thumb": "data/thumbs/2611.23417.jpg",
-   "thumb_w": 640,
-   "thumb_h": 140,
-   "summary": {
-    "zh": "Autoregressive View Model (AVM) 以自回归方式沿指定相机路径逐段生成视图流，不显式重建3D场景，通过上下文接口统一处理图像或视频输入，并用约800万场景与视频片段微调视频扩散Transformer；在相机控制、稀疏与4D重建及长时程一致性等基准上展现出广泛适应性。",
-    "en": "Autoregressive View Model (AVM) generates a stream of views along a requested camera path without explicit 3D reconstruction, using a unified in-context interface and a fine-tuned video diffusion transformer trained on about 8M scenes and clips."
-   },
-   "summary_source": "deepseek-flash"
+   "sections": []
   },
   {
    "id": "2611.28197",
@@ -2054,8 +2177,8 @@
     "benchmark"
    ],
    "ax_votes": 0,
-   "ax_visits": 31,
-   "heat": 3.1,
+   "ax_visits": 34,
+   "heat": 3.4,
    "orgs": [
     {
      "logo": "data/logos/tum.de.png",
@@ -2066,72 +2189,8 @@
    "thumb": "data/thumbs/2611.28197.jpg",
    "thumb_w": 390,
    "thumb_h": 325,
-   "listed": "2026-11-23"
-  },
-  {
-   "id": "2611.22495",
-   "title": "Motion-Aware Reward Modeling for Instruction-Guided Video Editing",
-   "authors": [
-    "Li Li",
-    "Xiangbo Gao",
-    "Bo Ni",
-    "Samyadeep Basu",
-    "Viet Dac Lai",
-    "Jing Shi",
-    "Seunghyun Yoon",
-    "Gang Wu",
-    "Yu Wang",
-    "Thien Huu Nguyen",
-    "Tyler Derr",
-    "Franck Dernoncourt",
-    "Zhengzhong Tu",
-    "Yue Zhao"
-   ],
-   "abstract": "Reward models for instruction-guided video editing can favor temporal consistency at the expense of motion. We study this failure, termed \\emph{motion collapse}, using controlled motion-suppression variants of real edits. On VE-Bench, the evaluated composite reward prefers a motion-suppressed candidate in $97\\%$ of cases. Learned video rewards and a VLM judge also struggle with mild suppression, while latent optimization and reward-guided fine-tuning exploit this weakness to increase reward as motion declines. A linear probe of our base reward backbone performs near chance on mild suppression, motivating an explicit inter-frame dynamics input. We propose a motion-aware reward model that combines an RGB frame-difference stream with preference training against motion-suppressed and fabricated-motion negatives. A distillation anchor preserves alignment with human quality judgments. On the VE-Bench motion ladder, our model reduces the rate of selecting motion-suppressed candidates to $0\\%$ while achieving a Spearman correlation of $0.57$ with human quality ratings. It also detects unseen suppression variants and preserves motion during reward-guided fine-tuning on two editing pipelines. These results support explicitly modeling motion in rewards for video editing.",
-   "primary": "cs.CV",
-   "categories": [
-    "cs.CV",
-    "cs.AI"
-   ],
-   "published": "2026-11-17T09:51:25Z",
-   "updated": "2026-11-17T09:51:25Z",
-   "comment": "",
    "listed": "2026-11-23",
-   "tags": [
-    "VLM/LLM"
-   ],
-   "hf_upvotes": 2,
-   "ax_votes": 0,
-   "ax_visits": 32,
-   "heat": 5.2,
-   "orgs": [
-    {
-     "logo": "data/logos/usc.edu.png",
-     "name": "University of Southern California",
-     "ror": "03taz7m60"
-    },
-    {
-     "logo": "data/logos/tamu.edu.png",
-     "name": "Texas A&M University",
-     "ror": "01f5ytq51"
-    },
-    {
-     "name": "Vanderbilt University",
-     "ror": "02vm5rt34"
-    },
-    {
-     "logo": "data/logos/ug.edu.ge.png",
-     "name": "University of Georgia",
-     "ror": "02bjhwk41"
-    },
-    {
-     "logo": "data/logos/amazon.com.png",
-     "name": "Amazon"
-    }
-   ],
-   "thumb": "data/thumbs/2611.22495.jpg",
-   "thumb_w": 640,
-   "thumb_h": 427
+   "sections": []
   }
  ]
 }

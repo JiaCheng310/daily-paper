@@ -131,6 +131,30 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.17287": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Singapore",
+    "name": "Nanyang Technological University"
+   },
+   {
+    "country": "China",
+    "name": "Skywork AI"
+   }
+  ],
+  "summary": {
+   "en": "NOPO treats verified positives as unlabeled and updates the policy only by suppressing trusted negatives, using a reference-relative suppression loss and group-level adapter; it improves pass@k over RLVR baselines on code, logic, and math benchmarks.",
+   "zh": "Negative-Only Policy Optimization (NOPO) 将已验证的正样本视为无标签，仅通过抑制可信的负样本来更新策略，结合参考相对负抑制损失与组级适配器；在代码、逻辑和数学基准上，pass@k 优于标准 RLVR 基线。"
+  },
+  "tags": [
+   "RL",
+   "reasoning",
+   "LLM",
+   "alignment"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.17460": {
   "model": "deepseek-flash",
   "orgs": [
@@ -482,6 +506,45 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.22495": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "University of Southern California"
+   },
+   {
+    "country": "United States",
+    "name": "Texas A&M University"
+   },
+   {
+    "country": "United States",
+    "name": "Vanderbilt University"
+   },
+   {
+    "country": "United States",
+    "name": "Adobe"
+   },
+   {
+    "country": "United States",
+    "name": "University of Georgia"
+   },
+   {
+    "country": "United States",
+    "name": "Amazon"
+   }
+  ],
+  "summary": {
+   "en": "A motion-aware reward model for instruction-guided video editing combines an RGB frame-difference stream with preference training on motion-suppressed and fabricated-motion negatives; it cuts motion-suppressed selections on VE-Bench from 97% to 0% at 0.57 Spearman correlation with human ratings.",
+   "zh": "针对指令引导视频编辑奖励模型忽视运动、偏好静态画面的“运动坍缩”问题，提出运动感知奖励模型，将RGB帧差流与针对运动抑制及伪造运动负样本的偏好训练结合，并以蒸馏锚点保持与人类判断对齐；在VE-Bench运动阶梯上将选择运动抑制候选的比例从97%降至0%，与人类评分的Spearman相关系数达0.57。"
+  },
+  "tags": [
+   "video generation",
+   "multimodal",
+   "alignment"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.22666": {
   "model": "deepseek-flash",
   "orgs": [
@@ -562,6 +625,30 @@
    "agents",
    "benchmark",
    "LLM"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.23236": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Zhejiang University"
+   },
+   {
+    "country": "China",
+    "name": "Xi'an Jiaotong University"
+   }
+  ],
+  "summary": {
+   "en": "PGPO learns topology-aware obfuscation anchors for high-influence prototype words and propagates them over a static semantic graph, optimized with GRPO rewards, achieving strong inversion defense with near-upper-bound recommendation on two benchmarks.",
+   "zh": "PGPO 面向 LLM 增强推荐中的嵌入反演隐私风险，学习面向高影响原型词的拓扑感知混淆锚点，并沿静态语义图传播，以 GRPO 配合个体差异、结构一致性与语义约束奖励优化；两个基准上实现强反演防御且推荐性能接近上界。"
+  },
+  "tags": [
+   "LLM",
+   "retrieval",
+   "safety",
+   "alignment"
   ],
   "v": "0c11df7a6ae8"
  },
@@ -800,6 +887,38 @@
    "safety",
    "alignment",
    "LLM"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24059": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "University of Illinois Urbana-Champaign"
+   },
+   {
+    "country": "United States",
+    "name": "Argonne National Laboratory"
+   },
+   {
+    "country": "",
+    "name": "Independent Researcher"
+   },
+   {
+    "country": "Germany",
+    "name": "LMU"
+   }
+  ],
+  "summary": {
+   "en": "MRPD consolidates RL experts by replaying their training logs in expert order, recomputing policy gradients and distilling final expert distributions at logged prefixes without environment or reward calls, beating online RL and MOPD at ~1/7 the training compute on reasoning, search, and SQL.",
+   "zh": "MRPD 将专家 RL 训练日志按专家学习顺序重放给学生模型，在记录的 token 前缀上重新计算策略梯度并蒸馏最终专家分布，无需环境交互或奖励模型；在 reasoning、search、SQL 三个长时程智能体任务上优于在线 RL 基线和同源专家的 MOPD，合并成本仅为训练专家的约 1/7。"
+  },
+  "tags": [
+   "RL",
+   "LLM",
+   "efficiency",
+   "agents"
   ],
   "v": "0c11df7a6ae8"
  },
@@ -1090,6 +1209,33 @@
    "efficiency",
    "alignment",
    "safety"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24681": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "University of Electronic Science and Technology of China"
+   },
+   {
+    "country": "China",
+    "name": "De Artificial Intelligence Technology Co., Ltd"
+   },
+   {
+    "country": "Hong Kong",
+    "name": "University of Hong Kong"
+   }
+  ],
+  "summary": {
+   "en": "DrawScore projects CAD models into three orthographic engineering-drawing views with visible and hidden lines and applies a saturating penalty along projected curves, reducing local-error weight decay to linear; it exposes errors that IoU barely penalizes and serves as an RL reward and test-time verifier.",
+   "zh": "针对 IoU、Chamfer Distance 和 surface F-score 几乎不惩罚错位孔、错面槽等局部错误的问题，DrawScore 将模型投影为带虚实线的三视图工程图，并沿投影曲线施加饱和惩罚使局部错误权重仅线性衰减，能识别 IoU 近满分输出中的错误，并可作为 RL 奖励和测试时验证器。"
+  },
+  "tags": [
+   "3D",
+   "benchmark",
+   "image generation"
   ],
   "v": "0c11df7a6ae8"
  },
@@ -1425,6 +1571,30 @@
    "agents",
    "LLM",
    "benchmark"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.25604": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Tongji University"
+   },
+   {
+    "country": "United States",
+    "name": "UNC Chapel Hill"
+   }
+  ],
+  "summary": {
+   "en": "PAD assigns each driving demonstration a policy-specific utility via scene-level calibration feedback, projected policy gradients, and regularized local training geometry; on DiffusionDrive it lifts EPDMS by 3.5 (NavTest) and 5.0 (NavHard) over real-only training.",
+   "zh": "PAD 为每个候选驾驶演示按目标策略分配特定效用值，结合场景级校准反馈、投影策略梯度与局部训练几何的正则近似计算可扩展的影响值；在 DiffusionDrive 上，NavTest 的 EPDMS 比仅用真实数据提升 3.5 分、NavHard 提升 5.0 分，并显著减少场景级性能回退。"
+  },
+  "tags": [
+   "driving",
+   "dataset",
+   "efficiency",
+   "agents"
   ],
   "v": "0c11df7a6ae8"
  },
@@ -2221,6 +2391,26 @@
    "LLM",
    "pretraining",
    "retrieval",
+   "reasoning"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.26863": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Cornell University"
+   }
+  ],
+  "summary": {
+   "en": "Across six open models, reasoning-centric post-training (outcome-based RL rewards, backtracking) makes models memorize self-generated hallucinations on knowledge tasks: recall of reinforced hallucinations rises 4.83% versus 0.17%, and rewarding a hallucination lowers later abstention by 7.23%.",
+   "zh": "在6个开源模型上发现，推理导向的后训练（outcome-based RL奖励、假设回溯等）会让模型在知识任务中记住自己生成的长链幻觉，被强化过的幻觉召回率平均提升4.83%，而无训练信号的仅0.17%；对幻觉的奖励还使模型后续拒绝该幻觉的概率降低7.23%。"
+  },
+  "tags": [
+   "LLM",
+   "alignment",
+   "safety",
    "reasoning"
   ],
   "v": "0c11df7a6ae8"
@@ -3522,6 +3712,30 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.28752": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "The Hong Kong University of Science and Technology (Guangzhou)"
+   },
+   {
+    "country": "United States",
+    "name": "NVIDIA"
+   }
+  ],
+  "summary": {
+   "en": "VTLA-RL shares a visual encoder between tactile-image histories and RGB to output motion and bilateral force targets, then applies two-stage multi-task RL in simulation and deploys directly to real robots, outperforming supervised initialization in grasping success.",
+   "zh": "VTLA-RL 让视觉编码器同时处理触觉图像序列与 RGB 输入，在统一动作空间中输出运动与双侧力目标，经混合真实与仿真演示预训练、两阶段多任务 RL 后直接部署真机，抓取成功率高于监督初始化，且在不同负载与位置扰动下表现更稳。"
+  },
+  "tags": [
+   "VLA",
+   "robotics",
+   "RL",
+   "manipulation"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.28783": {
   "model": "deepseek-flash",
   "orgs": [
@@ -4488,6 +4702,25 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.29646": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Purdue University"
+   }
+  ],
+  "summary": {
+   "en": "JKO-GRPO augments Flow-GRPO with Wasserstein proximal JKO steps: sampled action groups form empirical distributions, soft discrete c-transforms build transport targets from group-relative advantages, and shared-noise regression updates flow-matching VLA policies without KL regularization.",
+   "zh": "JKO-GRPO 在 Flow-GRPO 基础上引入 Wasserstein 近端步，把每个状态下采样的动作组视为经验分布，用软离散 c-transform 由组相对优势构造传输目标，并进行共享噪声回归；在序列 VLA 控制中采用随机时间分支，无需 KL 正则化即可改进流匹配 VLA 策略。"
+  },
+  "tags": [
+   "VLA",
+   "RL",
+   "robotics"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.29716": {
   "model": "deepseek-flash",
   "orgs": [
@@ -4656,18 +4889,24 @@
   "v": "0c11df7a6ae8"
  },
  "2611.29868": {
-  "model": "gemini-3.5-flash-lite",
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "University of Michigan"
+   }
+  ],
   "summary": {
-   "en": "Arcadian is an open-source humanoid ecosystem featuring metal-embedded 3D printing, costing around $6,800. It demonstrates successful sim2real transfer of an RL locomotion policy and supports VR teleoperation.",
-   "zh": "Arcadian是一个开源的人形机器人生态系统，采用金属嵌入式3D打印技术实现了高强度与低成本的平衡，总造价约6800美元。通过仿真训练的强化学习 locomotion 策略成功迁移至硬件，并支持通过VR进行双臂操作。"
+   "en": "Arcadian is an open-source meter-scale humanoid ecosystem using metal-embedded 3D printing to cut costs to about $6,800; an RL locomotion policy transfers from simulation to hardware, and VR teleoperation drives both arms for simple manipulation.",
+   "zh": "Arcadian 是一套开源米级人形机器人生态，硬件用金属嵌入 3D 打印实现高性价比，无需 CNC 加工，整机约 1 米高、造价约 6800 美元；仿真训练的 RL 行走策略成功迁移到实机，VR 遥操作可驱动双臂完成简单操作，CAD、物料清单与训练部署代码全部公开。"
   },
   "tags": [
    "humanoid",
-   "locomotion",
-   "sim2real",
-   "RL"
+   "robotics",
+   "RL",
+   "dataset"
   ],
-  "v": "f0e3093ef551"
+  "v": "0c11df7a6ae8"
  },
  "2611.29897": {
   "model": "deepseek-flash",
@@ -4727,6 +4966,26 @@
    "perception"
   ],
   "v": "f0e3093ef551"
+ },
+ "2611.29969": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Australia",
+    "name": "The University of Queensland"
+   }
+  ],
+  "summary": {
+   "en": "CARE-3D combines SFT on grounding instructions with GRPO, counterfactual attribution of returned evidence, and group coverage sampling; it consistently outperforms answer-and-format-reward SFT and GRPO on MSQA and Beacon3D, especially in spatial reasoning and grounding coherence.",
+   "zh": "CARE-3D 先用 SFT 建立有效的 3D grounding 交互，再用 GRPO 微调 agent 并冻结 3D grounding 模块，结合返回证据的反事实归因与分组覆盖采样；在 MSQA 和 Beacon3D 上相比仅使用答案与格式奖励的 SFT 和 GRPO 稳定提升，尤其改善空间推理和 grounding 答案一致性。"
+  },
+  "tags": [
+   "reasoning",
+   "RL",
+   "3D",
+   "multimodal"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.29980": {
   "model": "gemini-3.5-flash-lite",
@@ -4849,18 +5108,68 @@
   ],
   "v": "f0e3093ef551"
  },
- "2611.30101": {
-  "model": "gemini-3.5-flash-lite",
+ "2611.30075": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Ant Group"
+   },
+   {
+    "country": "Hong Kong",
+    "name": "The University of Hong Kong"
+   },
+   {
+    "country": "China",
+    "name": "Shanghai Jiao Tong University"
+   },
+   {
+    "country": "United Kingdom",
+    "name": "University of Oxford"
+   }
+  ],
   "summary": {
-   "en": "Agent on Guard (AoG) is a hierarchical framework that improves collaboration between base policies and programming agents, achieving a 50.57% success rate and reducing latency by 80.4% on RoboDojo-Sim.",
-   "zh": "Agent on Guard (AoG) 是一个分层框架，通过物理经验改进基础策略与编程智能体之间的协作，在 RoboDojo-Sim 上实现了 50.57% 的成功率和 57.26 的任务得分，比最强基线分别高出 11.22 个百分点和 10.68 分，同时将端到端延迟降低了 80.4%。"
+   "en": "CGSI detects and masks or rewrites unsupported skill references before fine-tuning, cutting context misalignment by 72.5-94.6% on ALFWorld, WebShop, and ARC-AGI-1 while preserving task success.",
+   "zh": "针对技能移除微调中模型仍引用已移除技能的情境错位（CoMi）问题，CGSI用句子检测器识别并掩码或重写无依据引用再微调，在ALFWorld、WebShop、ARC-AGI-1上将测试时CoMi降低72.5-94.6%且保持任务成功率。"
   },
   "tags": [
-   "manipulation",
-   "planning",
-   "control"
+   "agents",
+   "LLM",
+   "reasoning"
   ],
-  "v": "f0e3093ef551"
+  "v": "0c11df7a6ae8"
+ },
+ "2611.30101": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "University of Science and Technology of China"
+   },
+   {
+    "country": "China",
+    "name": "LeapWing AI"
+   },
+   {
+    "country": "United Arab Emirates",
+    "name": "MBZUAI"
+   },
+   {
+    "country": "China",
+    "name": "Institute of Automation, Chinese Academy of Sciences"
+   }
+  ],
+  "summary": {
+   "en": "Agent on Guard hierarchically couples a frozen robot policy with a programming agent, allocating control by observation freshness and recovery windows and refining interventions from downstream outcomes; on RoboDojo-Sim it reaches 50.57% success, beating the best baseline by 11.22 points while cutting latency 80.4% and tokens 85.1% versus GPT-6 Astra.",
+   "zh": "Agent on Guard 让冻结的机器人基础策略与编程智能体分层协作，依据观测新鲜度、剩余恢复窗口和推理耗时动态分配控制权，并用下游任务进度和资源消耗迭代改进恢复与调度；在 RoboDojo-Sim 上成功率 50.57%、任务分 57.26，较最强基线分别高 11.22 个百分点和 10.68 分，端到端延迟与在线 token 消耗较 GPT-6 Astra 分别降低 80.4% 和 85.1%。"
+  },
+  "tags": [
+   "robotics",
+   "agents",
+   "manipulation",
+   "reasoning"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.30111": {
   "model": "deepseek-flash",
@@ -4928,6 +5237,50 @@
    "benchmark"
   ],
   "v": "f0e3093ef551"
+ },
+ "2611.30207": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "AMD"
+   },
+   {
+    "country": "United States",
+    "name": "University of Michigan"
+   },
+   {
+    "country": "United States",
+    "name": "Tulane University"
+   },
+   {
+    "country": "United States",
+    "name": "Georgia Institute of Technology"
+   },
+   {
+    "country": "United Kingdom",
+    "name": "University College London"
+   },
+   {
+    "country": "United States",
+    "name": "University of California, Los Angeles"
+   },
+   {
+    "country": "United States",
+    "name": "New York University"
+   }
+  ],
+  "summary": {
+   "en": "Auditing SWE-Gym reward labels reveals 74% of never-solved tasks have false-negative tests versus 20% of solvable ones; repairing them yields +2.4 and +2.7 points on SWE-bench Verified and Pro at equal size, releasing SWE-Gym-Verified with 1,087 audited tasks.",
+   "zh": "审计 SWE-Gym 奖励标签发现，9B 基座模型从未解出的任务中 74% 存在拒绝正确修复的假阴性测试（对比可解任务的 20%），修复或剔除后同规模同难度下模型在 SWE-bench Verified/Pro 上分别高出 2.4 和 2.7 分，并发布含 1,087 个审计任务的 SWE-Gym-Verified。"
+  },
+  "tags": [
+   "code",
+   "agents",
+   "RL",
+   "dataset"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.30209": {
   "model": "gemini-3.5-flash-lite",
@@ -5026,6 +5379,26 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.30334": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "France",
+    "name": "Télécom Paris, Institut Polytechnique de Paris"
+   }
+  ],
+  "summary": {
+   "en": "Comparing pointwise, listwise and reasoning-based candidate selection in a coarse-to-fine entity disambiguation pipeline, reasoning trained via distillation and RL helps negligibly in-domain but decisively under true zero-shot shift.",
+   "zh": "在经典粗到细实体消歧流程中比较 pointwise、listwise 与基于推理的候选选择组件，推理模型经蒸馏与强化学习训练；推理带来的增益随领域偏移增大，域内可忽略，在 true zero-shot 设置下具有决定性，其中重排器对候选的不确定度与领域偏移分别决定两种范式的分歧位置与正确性。"
+  },
+  "tags": [
+   "LLM",
+   "reasoning",
+   "retrieval",
+   "benchmark"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.30472": {
   "model": "deepseek-flash",
   "orgs": [
@@ -5054,18 +5427,32 @@
   "v": "0c11df7a6ae8"
  },
  "2611.30477": {
-  "model": "gemini-3.5-flash-lite",
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Chinese Academy of Sciences"
+   },
+   {
+    "country": "China",
+    "name": "University of Chinese Academy of Sciences"
+   },
+   {
+    "country": "China",
+    "name": "University of Science and Technology of China"
+   }
+  ],
   "summary": {
-   "en": "OVOGO decouples offline value learning from on-policy optimization for flow-based VLAs using a Return-Anchored Ranking Critic, achieving higher success rates than baselines across multiple simulation and real-robot benchmarks.",
-   "zh": "OVOGO通过将离线价值学习与生成过程的策略上优化分离，实现了基于流匹配的视觉-语言-动作模型的离线强化学习优化。该方法引入了Return-Anchored Ranking Critic，在RoboTwin 2.0、DexJoCo、LIBERO及真实机器人灵巧操作任务中取得了比对比基线更高的成功率。"
+   "en": "OVOGO separates offline value learning from on-policy optimization of flow-based VLA generation, using a Return-Anchored Ranking Critic to score freshly sampled actions. It improves the initial VLA on RoboTwin 2.0, DexJoCo, LIBERO, and a real dexterous manipulation task.",
+   "zh": "OVOGO 将离线价值学习与策略生成过程的在线优化分离，用 Return-Anchored Ranking Critic 结合样本内分布价值学习与受约束局部排序，为当前 flow 策略新采样的动作提供分组相对价值信号；在 RoboTwin 2.0、DexJoCo、LIBERO 及真实机器人灵巧操作任务上均提升初始 VLA，成功率高于所对比的离线适应与价值引导基线。"
   },
   "tags": [
    "VLA",
    "RL",
-   "manipulation",
-   "simulation"
+   "robotics",
+   "manipulation"
   ],
-  "v": "f0e3093ef551"
+  "v": "0c11df7a6ae8"
  },
  "2611.30483": {
   "model": "deepseek-flash",
@@ -5143,18 +5530,24 @@
   "v": "f0e3093ef551"
  },
  "2611.30511": {
-  "model": "gemini-3.5-flash-lite",
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "South Korea",
+    "name": "KAIST"
+   }
+  ],
   "summary": {
-   "en": "An end-to-end autonomous driving framework combining data curation, imitation learning, and RL, using perception-guided trajectory filtering for safe closed-loop performance.",
-   "zh": "开发了一个端到端自动驾驶模型框架，结合了数据筛选、高清地图自动标注、模仿学习和基于模拟的强化学习，并通过感知引导的轨迹筛选方法确保了闭环安全性。"
+   "en": "An end-to-end autonomous driving pipeline with data curation, HD map auto-labelling, imitation learning and simulator RL; detection- and BEV-segmentation-based trajectory filtering selects safe trajectories, evaluated on NVIDIA NuRec and PAI-AV data.",
+   "zh": "面向 Physical AI AV Track 的端到端自动驾驶流水线，涵盖数据整理、HD 地图自动标注、模仿学习与仿真强化学习，并引入结合目标检测与 BEV 分割的轨迹过滤来选择安全轨迹；基于 NVIDIA NuRec 和 PAI-AV 数据训练，闭环评测中有效剔除碰撞与越界候选。"
   },
   "tags": [
    "driving",
-   "imitation",
    "RL",
-   "planning"
+   "agents",
+   "benchmark"
   ],
-  "v": "f0e3093ef551"
+  "v": "0c11df7a6ae8"
  },
  "2611.30534": {
   "model": "gemini-3.5-flash-lite",
@@ -5280,6 +5673,29 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.30627": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Zhejiang University"
+   },
+   {
+    "country": "China",
+    "name": "Huawei Technologies"
+   }
+  ],
+  "summary": {
+   "en": "APRM rewards internal reasoning via hidden states and attention maps, using only ~46M parameters with ranking and counterfactual objectives, and boosts pass@8 by an average 2.88% when integrated with representative RL methods.",
+   "zh": "针对文本奖励别名问题，Attention Process Reward Model (APRM) 用隐藏状态和注意力图分配内部过程奖励，仅约46M参数，经排序与反事实目标训练并周期性更新，结合代表性RL方法平均提升pass@8 2.88%。"
+  },
+  "tags": [
+   "LLM",
+   "RL",
+   "reasoning"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.30632": {
   "model": "gemini-3.5-flash-lite",
   "orgs": [
@@ -5333,7 +5749,7 @@
   "v": "0c11df7a6ae8"
  },
  "2611.30636": {
-  "model": "gemini-3.5-flash-lite",
+  "model": "deepseek-flash",
   "orgs": [
    {
     "country": "China",
@@ -5353,16 +5769,16 @@
    }
   ],
   "summary": {
-   "en": "ABI to learn multi-horizon action-chunk representations without rewards, guiding target policies at test time to surpass zero-shot RL baselines across 65 tasks.",
-   "zh": "Actor-Free Behavior-Induced Representations（ABI）方法，通过无奖励的后继预测学习多视界动作块表示，在测试时引导目标策略提升零样本泛化能力，在65个运动、导航和操作任务中超越了现有的零样本RL基线。"
+   "en": "ABI learns reward-free, actor-free multi-horizon action-chunk representations from unlabeled trajectories; a lightweight task readout forms a chunk critic that guides frozen policies, matching or surpassing zero-shot RL baselines across 65 tasks.",
+   "zh": "ABI 从无标签轨迹中学习无奖励、无 actor 训练的多步动作块表征，测试时仅配轻量任务读出构成 chunk critic 来引导冻结策略；在 65 个任务上引导弱模仿策略匹配或超越零样本 RL 基线，并跨策略迁移。"
   },
   "tags": [
-   "imitation",
    "RL",
-   "locomotion",
+   "robotics",
+   "efficiency",
    "manipulation"
   ],
-  "v": "3ace8e6b90c6"
+  "v": "0c11df7a6ae8"
  },
  "2611.30637": {
   "model": "gemini-3.5-flash-lite",
@@ -5664,14 +6080,14 @@
   "v": "0c11df7a6ae8"
  },
  "2611.30900": {
-  "model": "gemini-3.5-flash-lite",
+  "model": "deepseek-flash",
   "orgs": [
    {
     "country": "United States",
     "name": "University of Central Florida"
    },
    {
-    "country": "",
+    "country": "Vietnam",
     "name": "VinMotion"
    },
    {
@@ -5680,15 +6096,16 @@
    }
   ],
   "summary": {
-   "en": "GlanceNav achieves efficient vision-and-language navigation with constant per-step cost using streaming memory and counterfactual rewind, reaching 71.9% and 73.6% success rates on R2R-CE and RxR-CE val-unseen.",
-   "zh": "GlanceNav通过流式混合MLLM架构与反事实回溯强化学习，实现恒定单步计算开销的视觉语言导航。该4B模型在R2R-CE和RxR-CE验证集上分别达到71.9%和73.6%的成功率，其中在R2R-CE上比最强先前单RGB方法提升9.1个百分点，单步耗时104毫秒。"
+   "en": "GlanceNav, a hybrid-MLLM streaming navigator, keeps constant-size memory via Gated DeltaNet state and keyframe banks, and uses Counterfactual Rewind RL; a 4B model reaches 71.9% and 73.6% success on R2R-CE and RxR-CE val-unseen at 104 ms per step.",
+   "zh": "GlanceNav 通过混合 MLLM 实现流式视觉语言导航：Gated DeltaNet 层维护循环状态，注意力层保留近期帧和关键帧库，使每步计算恒定且训练与推理记忆一致；配合 Counterfactual Rewind 强化学习，4B 模型在 R2R-CE 和 RxR-CE val-unseen 上分别达到 71.9% 和 73.6% 成功率，R2R-CE 上比最强单 RGB 无外部数据方法高 9.1 分，每步 104 ms。"
   },
   "tags": [
-   "navigation",
-   "VLM/LLM",
+   "VLM",
+   "agents",
+   "efficiency",
    "RL"
   ],
-  "v": "3ace8e6b90c6"
+  "v": "0c11df7a6ae8"
  },
  "2611.30907": {
   "model": "gemini-3.5-flash-lite",
@@ -5816,6 +6233,30 @@
    "LLM",
    "reasoning",
    "RL"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.30983": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Zhejiang University"
+   },
+   {
+    "country": "China",
+    "name": "Ant Group"
+   }
+  ],
+  "summary": {
+   "en": "MedUIGym offers 15,739 EHR GUI tasks from 17 sources for training and evaluating vision-language clinical agents; twelve VLMs struggle, but offline GUI-trajectory learning and online RL improve Qwen3.5 models and generalize.",
+   "zh": "MedUIGym 构建了含 17 个基准源、6 类临床任务共 15,739 个任务的交互式 EHR 图形界面环境，供视觉语言代理从截图执行鼠标键盘操作；测试 12 个 VLM 均表现欠佳，经 GUI 轨迹离线学习与任务奖励在线 RL 训练后 Qwen3.5 系列在域内提升并能泛化到外部任务。"
+  },
+  "tags": [
+   "agents",
+   "VLM",
+   "benchmark",
+   "dataset"
   ],
   "v": "0c11df7a6ae8"
  },
@@ -6098,6 +6539,54 @@
    "simulation"
   ],
   "v": "3ace8e6b90c6"
+ },
+ "2611.31117": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "UIUC"
+   },
+   {
+    "country": "United States",
+    "name": "CMU"
+   },
+   {
+    "country": "United States",
+    "name": "Brown University"
+   },
+   {
+    "country": "United States",
+    "name": "Stanford University"
+   },
+   {
+    "country": "United States",
+    "name": "Northeastern University"
+   },
+   {
+    "country": "United States",
+    "name": "Harvard University"
+   },
+   {
+    "country": "United States",
+    "name": "University of Washington"
+   },
+   {
+    "country": "United States",
+    "name": "Rutgers University"
+   }
+  ],
+  "summary": {
+   "en": "A 27B embodied agent rewrites one of its own weight tensors between tasks by tracing wasted token-limit replies to a hidden-state direction, validating each edit on practice tasks; over thousands of held-out episodes it completes more tasks in fewer steps and tokens, stably across rounds.",
+   "zh": "让27B具身智能体在任务间隙通过推理直接改写自身权重：夜间回放记录，定位导致回复触及token上限却无动作的隐藏状态方向，只保留在练习任务上验证有效的单张量修改；在数千held-out回合、每任务48个新种子上显著提升任务完成率、减少步数与token，且多轮稳定不崩溃。"
+  },
+  "tags": [
+   "agents",
+   "LLM",
+   "robotics",
+   "efficiency"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.31118": {
   "model": "deepseek-flash",
@@ -6418,6 +6907,74 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.31427": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United Kingdom",
+    "name": "University of Edinburgh"
+   },
+   {
+    "country": "United Kingdom",
+    "name": "University of Oxford"
+   },
+   {
+    "country": "United Kingdom",
+    "name": "AstraZeneca"
+   }
+  ],
+  "summary": {
+   "en": "Decomposes agentic competence into task and interface knowledge, introduces harness rehearsal to train the target interface with minimal task content; combined with cross-harness distillation it hits 58.8% on BFCL V3 multi-turn with Qwen3-4B versus 8.5% and 32.5%.",
+   "zh": "将agentic能力拆解为任务能力与界面能力，提出harness rehearsal——用几乎不含任务知识的轨迹专门训练目标harness接口，并与跨harness任务蒸馏结合：在BFCL V3多轮任务上Qwen3-4B分别取得8.5%和32.5%，两者结合达58.8%；on-policy RL对单harness训练更鲁棒。"
+  },
+  "tags": [
+   "LLM",
+   "agents",
+   "reasoning",
+   "alignment"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.31446": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Yale University"
+   }
+  ],
+  "summary": {
+   "en": "Post- and pre-intervention behaviors are turned into preference pairs to learn value functions approximating human reward; post-intervention preferences aid goal inference, pre-intervention ones aid correction forecasting, and combining both performs strongly.",
+   "zh": "将人类纠正机器人时干预前与干预后的行为分别构造成偏好对，用于学习近似人类潜在奖励的价值函数；干预后偏好更利于目标推断，干预前偏好更利于纠正预测，二者结合在两项任务上均表现强劲。"
+  },
+  "tags": [
+   "robotics",
+   "RL",
+   "alignment",
+   "reasoning"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.31466": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "University of Central Florida"
+   }
+  ],
+  "summary": {
+   "en": "AdProducer is an end-to-end agentic framework that researches products via web and image search, turns selling points into storyboards driving a frozen video generator, and boosts MiniMax H3's PG-Score from 17.3 to 51.3 on AdCreation-Bench.",
+   "zh": "AdProducer 是端到端智能体广告视频生成框架，多模态智能体通过网页与图像搜索调研产品，将卖点转成故事板驱动冻结视频生成器，经 SFT 与强化学习优化，在自建 AdCreation-Bench 上把 MiniMax H3 的 PG-Score 从 17.3 提升到 51.3。"
+  },
+  "tags": [
+   "video generation",
+   "agents",
+   "multimodal",
+   "benchmark"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.31491": {
   "model": "deepseek-flash",
   "orgs": [],
@@ -6499,7 +7056,7 @@
   "v": "3ace8e6b90c6"
  },
  "2611.31588": {
-  "model": "gemini-3.5-flash-lite",
+  "model": "deepseek-flash",
   "orgs": [
    {
     "country": "United States",
@@ -6507,16 +7064,16 @@
    }
   ],
   "summary": {
-   "en": "We propose DRIFT for efficient one-phase visual RL using frozen pretrained vision encoders, achieving a 58.8% relative improvement in real-world success rate over two-phase distillation across three manipulation tasks.",
-   "zh": "DRIFT通过冻结预训练视觉编码器实现高效的单阶段视觉强化学习，在三个操作任务中，其实际平均成功率比两阶段蒸馏法相对提升了58.8%。"
+   "en": "DRIFT uses frozen pretrained vision encoders for one-phase visual RL, learning only control; it beats two-phase distillation by 58.8% relative real-world success across three manipulation tasks.",
+   "zh": "DRIFT 用冻结的预训练视觉编码器做单阶段视觉强化学习，让 RL 只学习控制部分，在三个操作任务上真实世界平均成功率比两阶段蒸馏高 58.8%，分布外场景优势从约 9% 扩大到 61%。"
   },
   "tags": [
-   "sim2real",
    "RL",
+   "robotics",
    "manipulation",
-   "control"
+   "VLM"
   ],
-  "v": "3ace8e6b90c6"
+  "v": "0c11df7a6ae8"
  },
  "2611.31619": {
   "model": "deepseek-flash",
@@ -6621,6 +7178,50 @@
   ],
   "v": "f0e3093ef551"
  },
+ "2611.31895": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "DP Technology"
+   },
+   {
+    "country": "China",
+    "name": "Peking University"
+   },
+   {
+    "country": "China",
+    "name": "University of Science and Technology of China"
+   },
+   {
+    "country": "China",
+    "name": "Huazhong University of Science and Technology"
+   },
+   {
+    "country": "Singapore",
+    "name": "Nanyang Technological University"
+   },
+   {
+    "country": "China",
+    "name": "Shanghai Jiao Tong University"
+   },
+   {
+    "country": "China",
+    "name": "Ant Group"
+   }
+  ],
+  "summary": {
+   "en": "Loupe is a video generation agent that retrieves and verifies textual and visual evidence to build evidence-grounded temporal prompts with reference images. Rubric-Based Credit scores intermediate search and planning steps, enabling RBC-SFT and render-free RBC-GRPO; it raises MiniMax-H3's overall score from 32.80 to 70.67.",
+   "zh": "Loupe 是一个知识密集型视频生成 agent，通过检索并核验文本与视觉证据来构建带参考图、基于证据的时序提示词；其 Rubric-Based Credit 按提示词的事实、视觉和时序要求为中间搜索与规划步骤打分，RBC-SFT 与 RBC-GRPO 据此训练且 RL 阶段无需渲染视频，使 MiniMax-H3 总体得分从 32.80 提升至 70.67。"
+  },
+  "tags": [
+   "video generation",
+   "agents",
+   "retrieval",
+   "RL"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.31919": {
   "model": "gemini-3.5-flash-lite",
   "summary": {
@@ -6648,6 +7249,58 @@
    "planning"
   ],
   "v": "f0e3093ef551"
+ },
+ "2611.31964": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Tsinghua University"
+   },
+   {
+    "country": "Hong Kong",
+    "name": "The University of Hong Kong"
+   },
+   {
+    "country": "China",
+    "name": "Shanghai Innovation Institute"
+   }
+  ],
+  "summary": {
+   "en": "FORGE trains embedded networks in forward-only PDE simulators via Gauss-Newton warm-up and a gain-bounded causal linear response operator, cutting coarse-solver MSE by 50%-96% in 2D and 70% in 3D and recovering 88%-98% of Solver BPTT's gains.",
+   "zh": "FORGE 仅用前向运行训练嵌入 PDE 求解器的神经网络：阶段 I 沿输出正交权重方向做低维 Gauss-Newton 预热，阶段 II 拟合增益有界的因果线性响应算子并回传更新全部权重；在五个 2D/3D 基准上将粗求解器 MSE 降低 50%–96%（2D）和 70%（3D），超过最强纯前向基线 16%–69%，恢复 Solver BPTT 收益的 88%–98%。"
+  },
+  "tags": [
+   "LLM",
+   "RL",
+   "reasoning",
+   "efficiency"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.31969": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Shanghai Jiao Tong University"
+   },
+   {
+    "country": "China",
+    "name": "Nankai University"
+   }
+  ],
+  "summary": {
+   "en": "DexOPD adds student self-extrapolation against a lagging historical student to multi-teacher on-policy distillation for diffusion models, using task rewards as a normalized auxiliary regression direction. Its unified SD3.5-Medium student scores 0.9736 on GenEval, 0.9515 on OCR, and 6.4875 on DrawBench, beating specialist teachers and OPD and multi-task RL baselines.",
+   "zh": "DexOPD 在扩散模型的多教师在线策略蒸馏中引入双重外推：保留教师外推监督，并以滞后的历史学生模型作为参考进行学生自外推，通过共享初始噪声采样多个自外推增益，将任务奖励转化为归一化辅助回归方向。蒸馏得到的统一 SD3.5-Medium 学生在 GenEval、OCR 和 DrawBench 上分别取得 0.9736、0.9515 和 6.4875 的分数，超过对应的专家教师及所有对比的 OPD 与多任务强化学习基线。"
+  },
+  "tags": [
+   "diffusion",
+   "image generation",
+   "efficiency",
+   "RL"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.31974": {
   "model": "deepseek-flash",
@@ -6681,6 +7334,30 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.32013": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Scale AI"
+   },
+   {
+    "country": "United States",
+    "name": "Carnegie Mellon University"
+   }
+  ],
+  "summary": {
+   "en": "Comparing PPO with critic and critic-free GRPO under a shared actor objective across control, short-horizon math, and long-horizon agent tasks; over 1,200 runs show PPO leads at small batch sizes while GRPO catches up at larger batches, with critic returns diminishing at larger budgets.",
+   "zh": "在共享actor目标下，比较PPO（带critic）与GRPO（不带critic）在控制任务、短程数学和长程终端智能体上的梯度偏差-方差权衡；1200余次训练（含96次LLM）显示小batch时PPO领先，大batch时GRPO常超过重度bootstrapping的PPO并与轻度bootstrapping的PPO持平。"
+  },
+  "tags": [
+   "RL",
+   "LLM",
+   "reasoning",
+   "efficiency"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.32016": {
   "model": "deepseek-flash",
   "orgs": [
@@ -6698,6 +7375,26 @@
    "VLM",
    "robotics",
    "agents"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.32037": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Tencent"
+   }
+  ],
+  "summary": {
+   "en": "Online environment repair asynchronously patches exploited coding environments during RL training, keeping triggering rewards unchanged and gating fuzzing-derived patches; it cuts reward hacking from 36.9% to 0.06% and lifts held-out Pass@8 from 21.7% to 46.7%.",
+   "zh": "Online environment repair 在训练中异步修补被利用的编程环境，保持触发奖励不变并按执行不变量或差分模糊测试生成补丁，经三道自动验证门后部署，在20个 GRPO 实验中把 reward hacking 从36.9%降到0.06%，held-out Pass@8 从21.7%升到46.7%。"
+  },
+  "tags": [
+   "code",
+   "RL",
+   "agents",
+   "alignment"
   ],
   "v": "0c11df7a6ae8"
  },
@@ -6771,18 +7468,32 @@
   "v": "f0e3093ef551"
  },
  "2611.32101": {
-  "model": "gemini-3.5-flash-lite",
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Zhejiang University"
+   },
+   {
+    "country": "Hong Kong",
+    "name": "The Hong Kong University of Science and Technology"
+   },
+   {
+    "country": "China",
+    "name": "AGILINK"
+   }
+  ],
   "summary": {
-   "en": "Ego2Real learns bimanual dexterous manipulation from egocentric visuo-tactile demonstrations using tactile-guided reconstruction and contact-informed reinforcement learning, achieving higher success rates.",
-   "zh": "Ego2Real是一个利用第一视角视觉触觉示范学习双手灵巧操作的框架，通过触觉引导的手物交互重建和接触感知强化学习，指导拟人化机器人手模仿人类接触行为，实验表明融入触觉监督提高了操作成功率。"
+   "en": "Ego2Real transfers bimanual dexterous manipulation from egocentric demos and tactile gloves: tactile-guided refinement of hand poses and contacts plus contact-informed RL rewards raise manipulation success rates.",
+   "zh": "Ego2Real 用第一视角演示和触觉手套把双手灵巧操作技能迁移到机器人手：先用触觉信号精修人手的位姿与接触几何，再将人类接触模式转化为强化学习的接触奖励，从而提高操作成功率。"
   },
   "tags": [
-   "bimanual",
-   "dexterous",
+   "robotics",
    "manipulation",
-   "tactile"
+   "multimodal",
+   "RL"
   ],
-  "v": "f0e3093ef551"
+  "v": "0c11df7a6ae8"
  },
  "2611.32108": {
   "model": "gemini-3.5-flash-lite",
@@ -6797,6 +7508,58 @@
    "diffusion policy"
   ],
   "v": "f0e3093ef551"
+ },
+ "2611.32131": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Baidu"
+   }
+  ],
+  "summary": {
+   "en": "Compares RL and on-policy distillation for reasoning-effort training: length-penalized RL cuts AIME25 thinking by 70% without accuracy loss, while multi-teacher OPD separates effort tiers across 33 benchmarks, with high tier gaining 3.1 points.",
+   "zh": "系统对比强化学习与on-policy distillation在推理努力训练上的差异：长度惩罚RL使AIME25思考量减少70%且不掉点，多教师OPD在33个基准上让低/中档分别少用58%和43%思考token，且高档比参考策略高3.1分。"
+  },
+  "tags": [
+   "LLM",
+   "reasoning",
+   "RL",
+   "efficiency"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.32148": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Stanford University"
+   },
+   {
+    "country": "China",
+    "name": "AGIBOT Innovation (Shanghai) Technology Co., Ltd"
+   },
+   {
+    "country": "China",
+    "name": "The Chinese University of Hong Kong, Shenzhen"
+   },
+   {
+    "country": "China",
+    "name": "Southeast University"
+   }
+  ],
+  "summary": {
+   "en": "RetraQ constrains critic-guidance direction and destination using the pretrained flow's geometry, filtering gradients with the denoising map's Jacobian and retracting actions onto the behavior manifold; it beats critic-guidance baselines on LIBERO and OGBench and lifts a real plug-insertion π0.5 policy from 55.0% to 76.7%.",
+   "zh": "RetraQ 用预训练 flow 编码的几何结构约束 critic 引导的方向与落点，以单次速度评估构造去噪映射并用其 Jacobian 过滤梯度、再映射回行为流形；在 LIBERO、OGBench 上平均最终成功率高于对比的 critic 引导基线，真机插销任务将 π0.5 策略成功率从 55.0% 提升到 76.7%。"
+  },
+  "tags": [
+   "RL",
+   "robotics",
+   "manipulation",
+   "efficiency"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.32183": {
   "model": "deepseek-flash",
@@ -7017,6 +7780,29 @@
   ],
   "v": "f0e3093ef551"
  },
+ "2611.32400": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Institute of Computing Technology, Chinese Academy of Sciences"
+   },
+   {
+    "country": "China",
+    "name": "University of Chinese Academy of Sciences"
+   }
+  ],
+  "summary": {
+   "en": "PHAR is a verify-then-steer test-time recovery framework that detects cross-modal evidence mismatch from VLM residual streams with split conformal calibration and uses a contextual bandit to rewind instruction progress, improving multiple state-of-the-art VLN methods on R2R-CE and RxR-CE.",
+   "zh": "PHAR 采用“先验证后引导”范式的测试时恢复框架：用 VLM 残差流表示检测跨模态证据不匹配，并以 split conformal 校准控制误报，报警时用上下文赌博机自适应选择指令进度回退幅度；在 R2R-CE 与 RxR-CE 上提升了多种 SOTA VLN 方法的可靠性。"
+  },
+  "tags": [
+   "VLM",
+   "agents",
+   "interpretability"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.32462": {
   "model": "deepseek-flash",
   "orgs": [
@@ -7118,6 +7904,26 @@
    "planning"
   ],
   "v": "f0e3093ef551"
+ },
+ "2611.32539": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "General Reasoning, Inc"
+   }
+  ],
+  "summary": {
+   "en": "RLCR jointly trains a shared-policy CEO and up to eight specialists via a message board and workspaces with a collective outcome advantage; Avalon-M1-Mini (120B) raises IMO-ProofBench-Advanced from 23.8% to 39.0% with eight-hire execution at about one-third the latency.",
+   "zh": "RLCR 让共享同一策略的 CEO 与最多八名专家通过留言板和共享工作区协作，以共同结果优势联合训练 Avalon-M1-Mini（120B），覆盖 147 个环境；八人组织执行将 IMO-ProofBench-Advanced 从 23.8% 提升至 39.0%，在 12 个基准上以约三分之一延迟达到相近均分。"
+  },
+  "tags": [
+   "LLM",
+   "agents",
+   "RL",
+   "alignment"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.32554": {
   "model": "deepseek-flash",
@@ -7244,17 +8050,28 @@
   "v": "f0e3093ef551"
  },
  "2611.32639": {
-  "model": "gemini-3.5-flash-lite",
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Zhejiang University"
+   },
+   {
+    "country": "Hong Kong",
+    "name": "The University of Hong Kong"
+   }
+  ],
   "summary": {
-   "en": "ReFocus is a progress-guided multi-round RL framework for long-horizon manipulation that alternates between global and local RL to identify bottlenecks and practice them, achieving 97.8% success on LIBERO-Long.",
-   "zh": "ReFocus是一个长序列机器人操作强化学习框架，通过全局和局部强化学习的交替迭代来识别任务瓶颈并进行针对性练习。在LIBERO-Long和RoboCasa365上分别取得了97.8%和51.3%的成功率，优于基线方法的90.6%和39.3%。"
+   "en": "ReFocus alternates Global and Local RL: it decomposes tasks into a subtask DAG, uses progress rewards to diagnose bottlenecks, and practices bottleneck windows locally, reaching 97.8% and 51.3% on LIBERO-Long and RoboCasa365.",
+   "zh": "ReFocus 用进度引导的多轮强化学习框架，在 Global RL 中将任务分解为子任务 DAG 并用进度奖励诊断瓶颈，再在 Local RL 中对瓶颈片段分配额外交互练习，在 LIBERO-Long 和 RoboCasa365 上成功率分别达 97.8% 和 51.3%，超过 π0.5 的 90.6% 和 39.3%。"
   },
   "tags": [
-   "manipulation",
+   "robotics",
    "RL",
-   "imitation"
+   "manipulation",
+   "VLA"
   ],
-  "v": "f0e3093ef551"
+  "v": "0c11df7a6ae8"
  },
  "2611.32642": {
   "model": "gemini-3.5-flash-lite",
@@ -7330,6 +8147,54 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.32660": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Hong Kong",
+    "name": "The University of Hong Kong"
+   },
+   {
+    "country": "China",
+    "name": "Shanghai Jiao Tong University"
+   },
+   {
+    "country": "China",
+    "name": "Harbin Institute of Technology"
+   },
+   {
+    "country": "China",
+    "name": "Peking University"
+   },
+   {
+    "country": "China",
+    "name": "SenseTime Research"
+   },
+   {
+    "country": "China",
+    "name": "University of Electronic Science and Technology of China"
+   },
+   {
+    "country": "Singapore",
+    "name": "National University of Singapore"
+   },
+   {
+    "country": "China",
+    "name": "Zhejiang University"
+   }
+  ],
+  "summary": {
+   "en": "Bathys 9B and 27B deep search agents train via verifiable question synthesis, SFT, KTO, and CM-GSPO under context compression, reaching 66.51% and 80.49% on BrowseComp with self-verification and conditional retries.",
+   "zh": "Bathys 9B 与 27B 深度搜索智能体基于可验证问题合成、轨迹构建与上下文压缩下的在线 RL 训练，采用 SFT、KTO 与 CM-GSPO 三阶段流程，在带轨迹自验证和条件重试的评测下于 BrowseComp 分别取得 66.51% 与 80.49%。"
+  },
+  "tags": [
+   "agents",
+   "retrieval",
+   "reasoning",
+   "RL"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.32665": {
   "model": "gemini-3.5-flash-lite",
   "summary": {
@@ -7343,6 +8208,26 @@
    "control"
   ],
   "v": "f0e3093ef551"
+ },
+ "2611.32687": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "South Korea",
+    "name": "Yonsei University"
+   }
+  ],
+  "summary": {
+   "en": "MSPO separates perception and outcome credit: a Confidence-aware Perception Reward from checklist responses updates the vision encoder while projector and LLM keep GRPO, outperforming RL-tuned baselines on seven reasoning benchmarks at 3B and 7B.",
+   "zh": " Module-Specific Policy Optimization (MSPO)，用感知检查表回答计算 Confidence-aware Perception Reward (CaPR)，单独更新视觉编码器的优势信号，而 projector 与 LLM 保留 GRPO 结果奖励，在 7 个数学与通用推理基准上 3B 和 7B 规模平均优于现有 RL 调优模型。"
+  },
+  "tags": [
+   "multimodal",
+   "RL",
+   "VLM",
+   "reasoning"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.32727": {
   "model": "gemini-3.5-flash-lite",
@@ -7403,17 +8288,24 @@
   "v": "f0e3093ef551"
  },
  "2611.32803": {
-  "model": "gemini-3.5-flash-lite",
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Singapore",
+    "name": "National University of Singapore"
+   }
+  ],
   "summary": {
-   "en": "MRBench benchmarks physical necessity reasoning in multi-robot manipulation. MRScissors uses constrained search to achieve 85.4% and 91.2% team-selection accuracy, outperforming baselines by up to 10.4 points.",
-   "zh": "推出了用于评估异构多机器人操作中物理必要性推理的基准测试MRBench，并提出了MRScissors方法，通过分离任务需求和物理能力来进行约束搜索。在两个模型主干下，MRScissors实现了85.4%和91.2%的团队选择准确率，比最强基线分别高出10.4和9.5个百分点。"
+   "en": "MRBench benchmarks physical necessity reasoning in heterogeneous multi-robot manipulation across eight tasks and five resource configurations; MRScissors selects minimal feasible teams via constrained search, reaching 85.4% and 91.2% selection accuracy, beating the best baselines by 10.4 and 9.5 points.",
+   "zh": "MRBench 基准包含八项任务、每项五种资源约束配置，用于评测异构多机器人操作中的物理必要性推理；MRScissors 通过分离任务需求与实测能力并做约束搜索选出最小可行团队，在两个骨干模型上团队选择准确率达 85.4% 与 91.2%，分别超过最强基线 10.4 与 9.5 个百分点。"
   },
   "tags": [
-   "manipulation",
+   "robotics",
    "benchmark",
-   "planning"
+   "manipulation",
+   "reasoning"
   ],
-  "v": "f0e3093ef551"
+  "v": "0c11df7a6ae8"
  },
  "2611.32813": {
   "model": "gemini-3.5-flash-lite",
@@ -7520,18 +8412,59 @@
   "v": "f0e3093ef551"
  },
  "2611.32944": {
-  "model": "gemini-3.5-flash-lite",
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Australia",
+    "name": "The Australian National University"
+   },
+   {
+    "country": "China",
+    "name": "AgiBot"
+   },
+   {
+    "country": "China",
+    "name": "The Hong Kong University of Science and Technology (Guangzhou)"
+   },
+   {
+    "country": "China",
+    "name": "Beijing Institute of Technology"
+   }
+  ],
   "summary": {
-   "en": "DynaMimic introduces a physics-informed differentiable world model for humanoid motion tracking, reducing MPJPE by 18.6% over SuperMimic across 60 motions and successfully deploying on a real A3 humanoid.",
-   "zh": "DynaMimic 引入了一种显式结合共享物理特性的可微分世界模型，通过预测接触扳手和残余广义力来计算下一个状态。在 60 个 LAFAN1 运动中，相比 SuperMimic，该方法将平均关节位置误差（MPJPE）降低了 18.6%，并在真实 A3 人形机器人上实现了多样化技能。"
+   "en": "DynaMimic is a differentiable world model that predicts contact wrenches and residual generalized forces, then computes next states via closed-form Lagrangian forward dynamics for humanoid motion tracking; it cuts MPJPE by 18.6% over SuperMimic on 60 LAFAN1 motions and transfers to a real A3.",
+   "zh": "DynaMimic 是可微世界模型，显式引入共享物理：网络预测每个候选支撑连杆的接触力旋量与残差广义力，再经闭式拉格朗日正动力学算出下一状态，用于人形机器人全身运动跟踪。在 60 个 LAFAN1 动作上较 SuperMimic 降低 MPJPE 18.6%，A3 Parkour 地形误差从 66.15 降至 56.28 mm，真机 A3 完成倒地起身、侧手翻与跳箱。"
   },
   "tags": [
-   "humanoid",
    "world model",
-   "locomotion",
-   "sim2real"
+   "humanoid",
+   "robotics",
+   "RL"
   ],
-  "v": "f0e3093ef551"
+  "v": "0c11df7a6ae8"
+ },
+ "2611.32948": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United Kingdom",
+    "name": "University College London"
+   },
+   {
+    "country": "Switzerland",
+    "name": "ETH Zurich"
+   }
+  ],
+  "summary": {
+   "en": "Replacing CAPTAIN's gradient-free ES with PPO via Plackett-Luce for non-differentiable actions and an IQN distributional critic, matching or beating ES's ecological outcomes at far lower training cost on a New Zealand marine dataset.",
+   "zh": "将 CAPTAIN 的无梯度 ES 优化器替换为 PPO，并用 Plackett-Luce 处理不可微动作空间，同时以 IQN 建模完整回报分布；在新西兰海洋数据集上以远低于 ES 的训练成本达到或超过其生态收益。"
+  },
+  "tags": [
+   "RL",
+   "reasoning",
+   "efficiency"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.32973": {
   "model": "deepseek-flash",
@@ -7620,6 +8553,37 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.33011": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United Kingdom",
+    "name": "University of Edinburgh"
+   },
+   {
+    "country": "United States",
+    "name": "University of Illinois at Urbana-Champaign"
+   },
+   {
+    "country": "United States",
+    "name": "Northeastern University"
+   },
+   {
+    "country": "United States",
+    "name": "Duke University"
+   }
+  ],
+  "summary": {
+   "en": "MESSI distills eight soccer-skill experts into a skill-conditioned Transformer and trains a shared context-conditioned low-rank adapter via online RL for transitions, raising dribbling-to-shooting success from 19.8% to 61.8%.",
+   "zh": "MESSI 先用动作先验和任务奖励训练八个足球技能专家，再蒸馏为统一的技能条件 Transformer，并用在线强化学习训练共享上下文低秩适配器处理技能切换，使带球到射门成功率从 19.8% 升至 61.8%。"
+  },
+  "tags": [
+   "robotics",
+   "RL",
+   "agents"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.33054": {
   "model": "deepseek-flash",
   "orgs": [
@@ -7680,18 +8644,36 @@
   "v": "0c11df7a6ae8"
  },
  "2611.33130": {
-  "model": "gemini-3.5-flash-lite",
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Carnegie Mellon University"
+   },
+   {
+    "country": "United States",
+    "name": "University of Washington"
+   },
+   {
+    "country": "United States",
+    "name": "Toyota Research Institute"
+   },
+   {
+    "country": "United States",
+    "name": "Princeton University"
+   }
+  ],
   "summary": {
-   "en": "We introduce beta-Data and a midtraining approach using adversarial teleoperation and relabeling, achieving better low-level behavior coverage, zero-shot generalization, and online fine-tuning success across simulation and three real-robot platforms.",
-   "zh": "引入β-Data数据集和midtraining方法，通过对抗性遥操作和自然语言轨迹重新打标，使机器人策略在模拟器及三个真实机器人平台上展现出更好的低层行为覆盖、零样本泛化能力以及更高的在线微调成功率。"
+   "en": "Β-Data, collected via adversarial teleoperation with local-outcome language relabeling, midtrains robot policies to cover low-level behaviors, improving data scaling, zero-shot generalization, and online finetuning sample efficiency on simulation and three real robots.",
+   "zh": "通过对抗遥操作收集 β-Data 数据集，用自然语言标注局部结果并微调预训练策略，在仿真与三个真实机器人平台上取得更好的数据缩放律与零样本泛化，在线微调所需 rollout 更少。"
   },
   "tags": [
-   "imitation",
+   "robotics",
    "RL",
-   "manipulation",
+   "VLA",
    "dataset"
   ],
-  "v": "f0e3093ef551"
+  "v": "0c11df7a6ae8"
  },
  "2611.33141": {
   "model": "deepseek-flash",
@@ -7804,6 +8786,30 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.33153": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Georgia Tech"
+   },
+   {
+    "country": "United States",
+    "name": "Adobe Research"
+   }
+  ],
+  "summary": {
+   "en": "DiaCap is an audiovisual LLM that unifies transcription, timestamps, and speaker visual description, trained on 225K clips plus RL on 2.9K human-corrected clips; it hits 76.59 vs. 42.76 TIME over Gemini 4 Argon on DiaDemBench.",
+   "zh": "DiaCap 是音视频对话描述 LLM，用 22.5 万片段监督训练加 2.9 千人工校正片段强化学习，统一转写、时间戳与说话人视觉描述；在 DiaDemBench 上时间戳准确率 76.59 TIME，远超 Gemini 4 Argon 的 42.76。"
+  },
+  "tags": [
+   "multimodal",
+   "LLM",
+   "dataset",
+   "speech"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.33158": {
   "model": "deepseek-flash",
   "orgs": [
@@ -7863,17 +8869,28 @@
   "v": "f0e3093ef551"
  },
  "2611.33398": {
-  "model": "gemini-3.5-flash-lite",
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Virginia Tech"
+   },
+   {
+    "country": "United States",
+    "name": "Mitsubishi Electric Research Laboratories"
+   }
+  ],
   "summary": {
-   "en": "Best-of-N test-time steering in VLA models can lead to reward hacking when the verifier is inaccurate, though calibration and softmax selection can mitigate this issue.",
-   "zh": "针对视觉语言动作模型在部署时采用的Best-of-N测试时引导策略，研究发现当验证器不准确时增加N会导致奖励攻击并降低性能；该实验在60个LIBERO-Safety任务中使用pi_{0.5}策略进行评估，并表明校准验证器和softmax选择可以缓解该问题。"
+   "en": "Studies best-of-N test-time steering for VLA models on 60 LIBERO-Safety cases with a π0.5 policy, showing that larger N causes reward hacking under an inaccurate verifier, partly mitigated by calibration and softmax selection.",
+   "zh": "研究 VLA 模型的 best-of-N 测试时引导：在 π0.5 策略与 60 个 LIBERO-Safety 任务上重复 10 次实验，发现 N 增大时 MuJoCo 验证器误差被利用，出现 reward hacking；验证器校准与 softmax 选择可部分缓解。"
   },
   "tags": [
    "VLA",
-   "manipulation",
-   "planning"
+   "robotics",
+   "reasoning",
+   "safety"
   ],
-  "v": "f0e3093ef551"
+  "v": "0c11df7a6ae8"
  },
  "2611.33457": {
   "model": "deepseek-flash",
@@ -7912,6 +8929,27 @@
    "sim2real"
   ],
   "v": "f0e3093ef551"
+ },
+ "2611.33531": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "University of Washington"
+   },
+   {
+    "country": "United States",
+    "name": "Google DeepMind"
+   }
+  ],
+  "summary": {
+   "en": "Online Newton step with Gaussian exploration and unbiased gradient/Hessian estimates of Gaussian-smoothed losses improves the adversarial bandit convex optimization regret from O~(d^{5/2}√n) to O~(d^{3/2}√n).",
+   "zh": "针对对抗性bandit凸优化，采用带高斯探索的在线牛顿法，利用高斯平滑损失梯度和Hessian的无偏估计，将遗憾上界从O~(d^{5/2}√n)改进至O~(d^{3/2}√n)。"
+  },
+  "tags": [
+   "theory"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.33560": {
   "model": "deepseek-flash",
@@ -7998,6 +9036,69 @@
    "image generation",
    "efficiency",
    "multimodal"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.33648": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "University of California, Berkeley"
+   },
+   {
+    "country": "United States",
+    "name": "Meta"
+   }
+  ],
+  "summary": {
+   "en": "Building Low/Medium/High SFT datasets with matched token budgets but different tool-call depths, it finds High has less pre-call reasoning and tool initiation collapses under RL; filtering High by pre-call reasoning length improves post-RL accuracy and tool-conditioned success.",
+   "zh": "构建约等 token 预算但工具调用深度不同的 Low/Medium/High SFT 数据集，发现 High 的调用前推理更少、RL 后工具发起率崩塌；按调用前推理长度筛掉高分轨迹后，RL 后准确率与工具条件下最终答案成功率提升。"
+  },
+  "tags": [
+   "LLM",
+   "RL",
+   "agents",
+   "reasoning"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.33652": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Southwest Securities Co., Ltd"
+   }
+  ],
+  "summary": {
+   "en": "SCP combines microstructure and macro indicators and uses a self-supervised clipped-objective policy learner to allocate portfolios, outperforming state-of-the-art baselines on three China A-share index datasets.",
+   "zh": "SCP 采用两阶段架构：先融合微观市场结构与宏观金融指标，再用自监督裁剪目标策略学习器生成组合配置；在中国 A 股三大指数数据集上，其风险收益权衡优于现有最优基线。"
+  },
+  "tags": [
+   "RL",
+   "efficiency",
+   "benchmark"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.33687": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "South Korea",
+    "name": "Seoul National University"
+   }
+  ],
+  "summary": {
+   "en": "MemRU uses Read SFT for evidence reading and Use GRPO for downstream evidence utilization, letting an 8B VLM outperform Qwen3-VL-32B and approach GPT-5-mini on three unseen multimodal memory systems.",
+   "zh": "针对VLM即使有多模态记忆证据仍答不对的问题，MemRU用Read SFT教模型读证据、Use GRPO教下游利用，8B模型在三个未见记忆系统上超过Qwen3-VL-32B、接近GPT-5-mini。"
+  },
+  "tags": [
+   "VLM",
+   "multimodal",
+   "RL",
+   "efficiency"
   ],
   "v": "0c11df7a6ae8"
  },
@@ -8180,18 +9281,23 @@
   "v": "0c11df7a6ae8"
  },
  "2611.33922": {
-  "model": "gemini-3.5-flash-lite",
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Peking University"
+   }
+  ],
   "summary": {
-   "en": "IMFPO achieves efficient one-step generative policy optimization for embodied control via decoupled velocity learning and drift-aware velocity alignment, reducing action-generation latency on Go2 from 15.57 ms to 0.41 ms compared to 64-step RFPO.",
-   "zh": "iMFPO通过解耦速度学习和漂移感知速度对齐，实现了具身控制的高效一步生成策略优化。在Go2、G1、H1和Spot上评估取得了显著回报，在Go2上动作生成延迟相比64步RFPO从15.57毫秒降至0.41毫秒。"
+   "en": "IMFPO decouples instantaneous-velocity learning from interval-averaged action generation, jointly optimizing JVP-corrected velocity regression with reward-driven objectives for one-step control; it reaches mean returns of 35.69/34.44/416.23/29.86 on Go2/G1/H1/Spot and cuts Go2 latency from 15.57 ms to 0.41 ms versus 64-step RFPO.",
+   "zh": "iMFPO 将瞬时速度学习与区间平均动作生成解耦，用 JVP 校正的速度回归联合奖励驱动目标训练，并在推理时一步生成动作；在 Go2、G1、H1、Spot 上零潜变量评估的平均回报分别为 35.69、34.44、416.23、29.86，Go2 上动作生成延迟从 RFPO 的 15.57 ms 降至 0.41 ms。"
   },
   "tags": [
+   "robotics",
    "RL",
-   "control",
-   "locomotion",
-   "simulation"
+   "efficiency"
   ],
-  "v": "f0e3093ef551"
+  "v": "0c11df7a6ae8"
  },
  "2611.33925": {
   "model": "deepseek-flash",
@@ -8214,6 +9320,42 @@
    "robotics",
    "manipulation",
    "dataset"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.33937": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Zhejiang University"
+   },
+   {
+    "country": "China",
+    "name": "Shanghai Innovation Institute"
+   },
+   {
+    "country": "China",
+    "name": "Shanghai Jiao Tong University"
+   },
+   {
+    "country": "China",
+    "name": "Tencent Hunyuan"
+   },
+   {
+    "country": "China",
+    "name": "Xiamen University"
+   }
+  ],
+  "summary": {
+   "en": "InstructTTS-OPD replaces scalar-reward GRPO with on-policy distillation over three single-objective teachers, adding conflict-aware velocity fusion to project out the quality direction that opposes instruction following, improving instruction following, intelligibility, and naturalness over GRPO.",
+   "zh": "针对 Instruct-TTS 多目标 GRPO 训练不稳定、三者相互掣肘的问题，改用 on-policy distillation 融合三个单目标教师，并引入 conflict-aware velocity fusion 把质量目标中与主目标冲突的方向投影剔除，使指令遵循、可懂度与音质同时优于 scalar-reward GRPO。"
+  },
+  "tags": [
+   "speech",
+   "RL",
+   "alignment",
+   "efficiency"
   ],
   "v": "0c11df7a6ae8"
  },
@@ -8308,6 +9450,29 @@
    "LLM",
    "efficiency",
    "pretraining"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.34054": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "University of Southern California"
+   },
+   {
+    "country": "China",
+    "name": "Shanghai University"
+   }
+  ],
+  "summary": {
+   "en": "CARE-WM trains the predictor on its own predictions with adaptively calibrated latent regularization, requiring no extra supervision or cost model, and improves mean planning success over LeWM on all continuous-control tasks.",
+   "zh": "CARE-WM 让预测器在自生成预测上训练，并自适应校准隐空间正则强度，无需额外监督或代价模型，即在全部连续控制任务上提升 LeWM 平均规划成功率，并降低开环预测误差。"
+  },
+  "tags": [
+   "world model",
+   "reasoning",
+   "robotics"
   ],
   "v": "0c11df7a6ae8"
  },
@@ -8421,6 +9586,30 @@
    "perception"
   ],
   "v": "f0e3093ef551"
+ },
+ "2611.34132": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United Kingdom",
+    "name": "Imperial College London"
+   },
+   {
+    "country": "United States",
+    "name": "Microsoft Research"
+   }
+  ],
+  "summary": {
+   "en": "Agent-as-a-Verifier embeds role-separated LLM agents in a claim-obligation-certificate protocol to produce auditable certificates; it beats the state of the art on Terminal-Bench 2.1, outperforms plain agents on FrontierMath and CyberGym, and detects reward hacking.",
+   "zh": "Agent-as-a-Verifier 将角色分离的 LLM 智能体嵌入受形式化方法启发的 claim-obligation-certificate 协议，为生成候选产出可审计证书；在 Terminal-Bench 2.1 上准确率超过 SOTA，在 FrontierMath 和 CyberGym 上优于普通智能体，并能识别欺骗评测器的 reward hacking 方案。"
+  },
+  "tags": [
+   "agents",
+   "reasoning",
+   "LLM",
+   "benchmark"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.34147": {
   "model": "deepseek-flash",
@@ -8547,6 +9736,82 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.34292": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Nanjing University"
+   },
+   {
+    "country": "China",
+    "name": "Fudan University"
+   },
+   {
+    "country": "Hong Kong",
+    "name": "City University of Hong Kong"
+   },
+   {
+    "country": "China",
+    "name": "Tsinghua University"
+   },
+   {
+    "country": "China",
+    "name": "University of Science and Technology of China"
+   },
+   {
+    "country": "China",
+    "name": "Tencent Youtu Lab"
+   },
+   {
+    "country": "China",
+    "name": "Shanghai AI Lab"
+   }
+  ],
+  "summary": {
+   "en": "WebVibe reverses synthesis to Y→X, verifying browser interactions before deriving multimodal inputs, building a 31,542-site corpus; Interactive-SDPO adds token-level self-distillation from replay traces, lifting InteractiveCoder-9B's Vision2Web L2 functional score from 20.2 to 55.2 and matching a 1T-parameter coding agent in one pass.",
+   "zh": "WebVibe 将合成方向反转为 Y→X，先在浏览器内验证跨页与页内交互，再从回放确认的状态生成多模态输入，构建含 31,542 个站点的 WebVibe-32K 语料；Interactive-SDPO 结合回放轨迹与状态转移拼图进行 token 级自蒸馏，训练出的 InteractiveCoder-9B 在 Vision2Web L2 上功能分数从 20.2 提升至 55.2，单次即可匹敌 1T 参数编程智能体。"
+  },
+  "tags": [
+   "LLM",
+   "code",
+   "multimodal",
+   "agents"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.34327": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "University of Minnesota"
+   },
+   {
+    "country": "United States",
+    "name": "Databricks"
+   },
+   {
+    "country": "Canada",
+    "name": "Mila – Quebec Artificial Intelligence Institute"
+   },
+   {
+    "country": "Canada",
+    "name": "University of Montreal"
+   }
+  ],
+  "summary": {
+   "en": "MeterRouter incrementally synthesizes collaboration graphs under per-query monetary budgets, selecting each agent's role, LLM, and connections, and refining with a GRPO variant; it matches the strongest multi-agent systems at 82% lower cost.",
+   "zh": "MeterRouter 根据每个查询的金额预算，逐步合成协作图，为每个 agent 选择角色、LLM 和连接，并用 GRPO 变体联合优化；在五个基准上达到与最强多智能体系统相当的性能，成本比最强路由器低 82%，且能适应预算很少超支。"
+  },
+  "tags": [
+   "agents",
+   "LLM",
+   "efficiency",
+   "RL"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.34347": {
   "model": "deepseek-flash",
   "orgs": [
@@ -8580,6 +9845,49 @@
    "perception"
   ],
   "v": "f0e3093ef551"
+ },
+ "2611.34363": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "India",
+    "name": "Delhi Technological University"
+   },
+   {
+    "country": "India",
+    "name": "Artificial Intelligence and Machine Learning Society (AIMS-DTU)"
+   }
+  ],
+  "summary": {
+   "en": "A counterfactual-database reward re-runs text-to-SQL outputs on hidden code-generated database copies, cutting fully-paid buggy queries from 29.5% to 16.8% and reward hacks from 54.1% to 1.9% without rejecting 2,847 correct queries.",
+   "zh": "针对 text-to-SQL 的 RL 奖励在单库上易被投机匹配，提出反事实数据库奖励：在代码生成的隐藏库副本上再执行查询，严格形式把全对的错误查询占比从 29.5% 降到 16.8%、奖励 hack 从 54.1% 降到 1.9%，且不误拒 2,847 条正确查询。"
+  },
+  "tags": [
+   "LLM",
+   "RL",
+   "code",
+   "benchmark"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.34366": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "CUHK-Shenzhen"
+   }
+  ],
+  "summary": {
+   "en": "ConTra trains lightweight prefix generators with RL, rewarding frozen embedding and reranking feedback plus factual verification and length control; ConTra-2B beats prompted 9B and PPLX-4B baselines by up to 3.15 points while indexing 7.74x and 2.15x faster.",
+   "zh": "ConTra 用强化学习训练轻量前缀生成器，奖励融合冻结的嵌入与重排模型反馈、事实校验和长度控制，索引时为每个 chunk 生成一个前缀；ConTra-2B 在 ConTEB 和 RealContextBench 上最多超过 Anthropic 提示式 9B 基线及 PPLX-4B 上下文编码器 3.15 分，短文档索引分别快 7.74 倍和 2.15 倍。"
+  },
+  "tags": [
+   "retrieval",
+   "RL",
+   "efficiency"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.34408": {
   "model": "gemini-3.5-flash-lite",
@@ -8628,6 +9936,38 @@
    "perception"
   ],
   "v": "f0e3093ef551"
+ },
+ "2611.34446": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "JD.com"
+   },
+   {
+    "country": "China",
+    "name": "University of Science and Technology of China"
+   },
+   {
+    "country": "China",
+    "name": "South China University of Technology"
+   },
+   {
+    "country": "China",
+    "name": "Nanjing University"
+   }
+  ],
+  "summary": {
+   "en": "PreserveReward is a consistency reward model for image editing that uses dual-teacher on-policy self-distillation, with a local teacher detecting subtle changes and a joint teacher judging edit intent, plus calibrated teacher scores, aligning well with human preference across benchmarks.",
+   "zh": "PreserveReward 是用于图像编辑的一致性奖励模型，通过双教师视角的 On-Policy Self-Distillation 增强细粒度视觉感知：局部教师识别细微变化，联合教师结合全局上下文判断改动是否符合编辑意图，并用最小 KL 投影校准教师评分、按梯度对齐自适应选择过程监督，在多个 benchmark 上对未编辑内容保持与人类偏好高度对齐。"
+  },
+  "tags": [
+   "image generation",
+   "RL",
+   "alignment",
+   "multimodal"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.34449": {
   "model": "gemini-3.5-flash-lite",
@@ -8698,18 +10038,31 @@
   "v": "0c11df7a6ae8"
  },
  "2611.34509": {
-  "model": "gemini-3.5-flash-lite",
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Bangladesh",
+    "name": "University of Dhaka"
+   },
+   {
+    "country": "Australia",
+    "name": "Adelaide University"
+   },
+   {
+    "country": "United Kingdom",
+    "name": "University of Oxford"
+   }
+  ],
   "summary": {
-   "en": "Graph Anchors improves long-horizon planning in latent world models by replacing distant goals with intermediate graph nodes, raising success rates from low single digits to over 70% across multiple tasks.",
-   "zh": "Graph Anchors通过在潜在世界模型的训练帧上构建稀疏图，将长视距规划转化为一系列短视距导航，从而解决了潜在世界模型在远距离和接触阶段的规划失效问题。在多个任务中，该方法将LeWM的成功率从5%-13%大幅提升至71%-87%。"
+   "en": "Graph Anchors is a training-free planner for frozen latent world models that builds a sparse graph over training frames and targets nearby nodes along shortest paths, raising LeWM success from 13% to 85%, 8% to 87%, and 5% to 71% on PointMaze-Medium, PointMaze-Large, and Push-T at up to 400-step goals.",
+   "zh": "Graph Anchors 是一种免训练规划器，在冻结的隐世界模型上一次性构建稀疏轨迹图，每步将目标替换为沿最短路径前移数跳的近邻节点；在 400 步远目标下，PointMaze-Medium 成功率从 13% 升至 85%，PointMaze-Large 从 8% 升至 87%，Push-T 从 5% 升至 71%。"
   },
   "tags": [
    "world model",
-   "planning",
-   "manipulation",
-   "simulation"
+   "robotics",
+   "efficiency"
   ],
-  "v": "f0e3093ef551"
+  "v": "0c11df7a6ae8"
  },
  "2611.34519": {
   "model": "gemini-3.5-flash-lite",
@@ -8786,6 +10139,30 @@
   ],
   "v": "f0e3093ef551"
  },
+ "2611.34601": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "France",
+    "name": "Protectline"
+   },
+   {
+    "country": "France",
+    "name": "Télécom Paris, Institut Polytechnique de Paris"
+   }
+  ],
+  "summary": {
+   "en": "YoloMT, a 449.8M-parameter streaming captioner, encodes each frame once into 16 cached tokens, distilling a 27B teacher via SFT and GRPO; it leads all sub-1B models on OVO-Bench, MVBench, StreamingBench and Video-MME.",
+   "zh": "YoloMT 是 449.8M 参数的实时流式描述模型，将每帧一次编码并缓存为 16 个 token 以低成本读取更多帧，由 27B 教师经 SFT 与 GRPO 蒸馏而来，在 OVO-Bench、MVBench、StreamingBench 和 Video-MME 上领先所有 1B 以下模型，并超过 LFM2.5-VL-1.6B 与 SmolVLM2-2.2B。"
+  },
+  "tags": [
+   "LLM",
+   "multimodal",
+   "efficiency",
+   "video generation"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.34644": {
   "model": "gemini-3.5-flash-lite",
   "summary": {
@@ -8801,18 +10178,32 @@
   "v": "f0e3093ef551"
  },
  "2611.34655": {
-  "model": "gemini-3.5-flash-lite",
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Peking University"
+   },
+   {
+    "country": "China",
+    "name": "Galbot"
+   },
+   {
+    "country": "China",
+    "name": "Qwen"
+   }
+  ],
   "summary": {
-   "en": "Nav4Manip is a bidirectionally coupled co-evolution system for long-horizon dexterous mobile manipulation, integrating navigation and manipulation feedback to achieve state-of-the-art performance on benchmarks and real-world tasks.",
-   "zh": "Nav4Manip是一个双向耦合的共进系统，用于长视野灵巧移动操作。它通过Nav4Manip-N学习导航并利用操作反馈进行优化，同时通过Nav4Manip-M训练世界动作模型（WAM）处理下游操作，在公共VLN和Nav-N-Manip基准测试中展现出最先进的性能。"
+   "en": "Nav4Manip bidirectionally couples navigation and manipulation: Nav4Manip-N trains via multi-task co-tuning, RFT, and RLAIF, paired with a world-action model Nav4Manip-M; it builds the Nav-N-Manip benchmark and achieves state-of-the-art VLN results and real-world dexterous mobile manipulation.",
+   "zh": "Nav4Manip 将导航与操作双向耦合协同进化：Nav4Manip-N 经多任务共调、RFT 与 RLAIF 三阶段训练，结合 Nav4Manip-M 的世界-动作模型，并构建 Nav-N-Manip 基准与 Nav4Manip-Pairs 数据，在 VLN 基准取得最优并完成真实灵巧移动操作任务。"
   },
   "tags": [
-   "mobile manipulation",
-   "dexterous",
-   "navigation",
+   "robotics",
+   "manipulation",
+   "VLA",
    "world model"
   ],
-  "v": "f0e3093ef551"
+  "v": "0c11df7a6ae8"
  },
  "2611.34671": {
   "model": "gemini-3.5-flash-lite",
@@ -8902,6 +10293,33 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.34730": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Canada",
+    "name": "University of British Columbia"
+   },
+   {
+    "country": "United States",
+    "name": "Georgia Institute of Technology"
+   },
+   {
+    "country": "Switzerland",
+    "name": "ETH Zurich"
+   }
+  ],
+  "summary": {
+   "en": "WorldInteract splits cross-material interaction into material-dependent behavior generation and contact-response computation via a shared velocity-increment interface, beating state-of-the-art methods on Physics-IQ and enabling more reliable push control on real images.",
+   "zh": "WorldInteract 将跨材质交互拆为由无交互视频学到的材质相关行为生成与接触响应计算，经共享速度增量接口结合物理控制器与因果生成器，无需监督接触数据即可实现多材质交互，在 Physics-IQ 上大幅领先现有方法并在真实图像上实现更可靠的推动控制。"
+  },
+  "tags": [
+   "video generation",
+   "world model",
+   "RL"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.34739": {
   "model": "gemini-3.5-flash-lite",
   "summary": {
@@ -8940,6 +10358,34 @@
    "planning"
   ],
   "v": "f0e3093ef551"
+ },
+ "2611.34777": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Shanghai Jiao Tong University"
+   },
+   {
+    "country": "China",
+    "name": "Shanghai Innovation Institute"
+   },
+   {
+    "country": "China",
+    "name": "JD.com"
+   }
+  ],
+  "summary": {
+   "en": "SPLICE builds local targets from failed current-policy trajectories by splicing bounded options selected by a proposal model, estimating option values via repeated continuations; it beats GRPO by 2.8-9.8 points on SWE-bench Verified and BrowseComp-Plus and raises failed-task graduation by 10.8 points.",
+   "zh": "SPLICE 针对长程 agent 任务中组内全部失败、无奖励梯度的问题，在线在失败轨迹上选拼接点并由提议模型生成有界选项，用重复续采样估计选项价值并构造局部回报加权目标更新当前策略；在 SWE-bench Verified 和 BrowseComp-Plus 上比 GRPO 提升 2.8–9.8 个百分点，初始失败 SWE 任务毕业率提升 10.8 个百分点。"
+  },
+  "tags": [
+   "RL",
+   "agents",
+   "LLM",
+   "reasoning"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.34778": {
   "model": "deepseek-flash",
@@ -9319,19 +10765,48 @@
   ],
   "v": "f0e3093ef551"
  },
- "2611.34936": {
-  "model": "gemini-3.5-flash-lite",
+ "2611.34934": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "OpenAI"
+   }
+  ],
   "summary": {
-   "en": "DexLink synthesizes diverse dexterous manipulation policies from sparse interaction templates combined with residual reinforcement learning, achieving performance comparable to dense tracking methods without requiring object-specific human demonstrations.",
-   "zh": "DexLink通过稀疏的可复用手物交互模板来合成多样化的灵巧操作行为。该方法利用优化将静态模板重定向至目标对象并连成参考轨迹，再通过残差强化学习在仿真中精炼为闭环策略，实验表明其无需特定物体的示范便可匹配密集参考追踪方法的效果，并具备零样本部署潜力。"
+   "en": "Holding the deployment scenario and control tasks fixed, an ex-production OpenAI monitor's measured false-negative rate ranged from 0.5% to 20.8% across RL optimisation levels and 6.4% to 23.0% across attack methods, showing evasion evals are highly sensitive to attack-policy choice.",
+   "zh": "以一个已下线生产环境的 OpenAI 监视器为例，固定部署场景与控制任务，仅改变攻击策略生成方法与优化程度，测得漏报率在单一强化学习方法的各优化级别间从 0.5% 升至 20.8%，各方法最优级别间从 6.4% 到 23.0%，说明监视器规避评估对攻击策略选择高度敏感，仅用基础攻击方法易过早得出监视器可靠的结论。"
   },
   "tags": [
-   "manipulation",
-   "dexterous",
-   "RL",
-   "simulation"
+   "safety",
+   "alignment",
+   "agents"
   ],
-  "v": "f0e3093ef551"
+  "v": "0c11df7a6ae8"
+ },
+ "2611.34936": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Princeton University"
+   },
+   {
+    "country": "United States",
+    "name": "NEC Laboratories America"
+   }
+  ],
+  "summary": {
+   "en": "DexLink retargets sparse hand-object templates to target objects, chains them into an approximate reference trajectory, and refines it via residual RL into closed-loop policies, matching dense reference-tracking methods without object-specific human demos.",
+   "zh": "DexLink 将稀疏的手-物交互模板重定向到目标物体，并串成近似参考轨迹，再用残差强化学习在仿真中优化为闭环策略，在单手、双手、关节和动态任务上实现细粒度控制，且无需物体专属人类演示即可匹配密集参考跟踪方法。"
+  },
+  "tags": [
+   "robotics",
+   "manipulation",
+   "RL",
+   "humanoid"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.34941": {
   "model": "deepseek-flash",
