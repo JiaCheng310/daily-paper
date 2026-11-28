@@ -29,8 +29,8 @@
    ],
    "hf_upvotes": 127,
    "ax_votes": 44,
-   "ax_visits": 521,
-   "heat": 223.1,
+   "ax_visits": 540,
+   "heat": 225.0,
    "orgs": [
     {
      "name": "NUS",
@@ -379,8 +379,8 @@
    ],
    "hf_upvotes": 29,
    "ax_votes": 7,
-   "ax_visits": 93,
-   "heat": 45.3,
+   "ax_visits": 104,
+   "heat": 46.4,
    "orgs": [
     {
      "logo": "data/logos/illinois.edu.png",
@@ -457,8 +457,8 @@
    ],
    "hf_upvotes": 15,
    "ax_votes": 9,
-   "ax_visits": 159,
-   "heat": 39.9,
+   "ax_visits": 165,
+   "heat": 40.5,
    "orgs": [],
    "thumb": "data/thumbs/2611.24651.jpg",
    "thumb_w": 640,
@@ -548,8 +548,8 @@
    ],
    "hf_upvotes": 20,
    "ax_votes": 2,
-   "ax_visits": 92,
-   "heat": 31.2,
+   "ax_visits": 96,
+   "heat": 31.6,
    "orgs": [
     {
      "name": "Alaya Lab"
@@ -609,8 +609,8 @@
    ],
    "hf_upvotes": 24,
    "ax_votes": 2,
-   "ax_visits": 51,
-   "heat": 31.1,
+   "ax_visits": 55,
+   "heat": 31.5,
    "orgs": [
     {
      "name": "Shanghai University of Finance and Economics",
@@ -773,8 +773,8 @@
    ],
    "hf_upvotes": 10,
    "ax_votes": 4,
-   "ax_visits": 97,
-   "heat": 23.7,
+   "ax_visits": 101,
+   "heat": 24.1,
    "orgs": [
     {
      "logo": "data/logos/meta.com.png",
@@ -826,8 +826,8 @@
    ],
    "hf_upvotes": 14,
    "ax_votes": 4,
-   "ax_visits": 54,
-   "heat": 23.4,
+   "ax_visits": 59,
+   "heat": 23.9,
    "orgs": [
     {
      "name": "NUS",
@@ -971,8 +971,8 @@
    ],
    "hf_upvotes": 8,
    "ax_votes": 7,
-   "ax_visits": 79,
-   "heat": 22.9,
+   "ax_visits": 84,
+   "heat": 23.4,
    "orgs": [
     {
      "logo": "data/logos/uwaterloo.ca.png",
@@ -1083,8 +1083,8 @@
    ],
    "hf_upvotes": 14,
    "ax_votes": 1,
-   "ax_visits": 60,
-   "heat": 21.0,
+   "ax_visits": 64,
+   "heat": 21.4,
    "orgs": [
     {
      "name": "Shanghai Jiao Tong University",
@@ -1145,9 +1145,9 @@
     "dataset"
    ],
    "hf_upvotes": 5,
-   "ax_votes": 6,
-   "ax_visits": 97,
-   "heat": 20.7,
+   "ax_votes": 7,
+   "ax_visits": 102,
+   "heat": 22.2,
    "orgs": [
     {
      "logo": "data/logos/pku.edu.cn.png",
@@ -1192,8 +1192,8 @@
    ],
    "hf_upvotes": 6,
    "ax_votes": 1,
-   "ax_visits": 120,
-   "heat": 19.0,
+   "ax_visits": 126,
+   "heat": 19.6,
    "orgs": [
     {
      "logo": "data/logos/cuhk.edu.hk.png",
@@ -1349,8 +1349,8 @@
    ],
    "hf_upvotes": 9,
    "ax_votes": 4,
-   "ax_visits": 50,
-   "heat": 18.0,
+   "ax_visits": 54,
+   "heat": 18.4,
    "orgs": [
     {
      "name": "NTU",
@@ -1696,8 +1696,8 @@
    ],
    "hf_upvotes": 9,
    "ax_votes": 1,
-   "ax_visits": 18,
-   "heat": 11.8,
+   "ax_visits": 22,
+   "heat": 12.2,
    "orgs": [
     {
      "name": "Zhejiang University",
@@ -1743,8 +1743,8 @@
    ],
    "hf_upvotes": 9,
    "ax_votes": 1,
-   "ax_visits": 17,
-   "heat": 11.7,
+   "ax_visits": 21,
+   "heat": 12.1,
    "orgs": [
     {
      "logo": "data/logos/illinois.edu.png",
@@ -1856,8 +1856,8 @@
    ],
    "hf_upvotes": 6,
    "ax_votes": 0,
-   "ax_visits": 34,
-   "heat": 9.4,
+   "ax_visits": 38,
+   "heat": 9.8,
    "orgs": [
     {
      "name": "University of Electronic Science and Technology of China",
@@ -1914,8 +1914,8 @@
    ],
    "hf_upvotes": 4,
    "ax_votes": 1,
-   "ax_visits": 42,
-   "heat": 9.2,
+   "ax_visits": 46,
+   "heat": 9.6,
    "sections": [
     "rl"
    ],

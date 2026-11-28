@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-28T03:21:24+00:00",
+ "updated_at": "2026-11-28T09:02:36+00:00",
  "newest": "2026-11-27",
  "periods": {
   "7": {
@@ -37,8 +37,8 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 234,
-     "ax_visits": 2454,
-     "heat": 479.4,
+     "ax_visits": 2488,
+     "heat": 482.8,
      "orgs": [
       {
        "logo": "data/logos/stanford.edu.png",
@@ -94,9 +94,9 @@
       "zh": "等算力阶梯（equal-budget ladder），在单智能体、算力对齐多数投票与算力对齐 pass@n 三级上衡量多智能体团队，并定义 Recursive Collective Intelligence（RCI）：无教师、无外部标签，团队用自身输出让下一代同等成本更聪明；转发拆分事实可在 27B 上超 pass@n 约三分之一，同质 27B 智能体自发形成枢纽使准确率提升 18 个百分点，两代无标签训练在 PlanBench、HiddenBench、Hanabi 上连续 4–6 代优于前代。"
      },
      "summary_source": "deepseek-flash",
-     "ax_votes": 160,
-     "ax_visits": 1937,
-     "heat": 353.7,
+     "ax_votes": 161,
+     "ax_visits": 2030,
+     "heat": 364.0,
      "orgs": [
       {
        "logo": "data/logos/stanford.edu.png",
@@ -153,8 +153,8 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 101,
-     "ax_visits": 2075,
-     "heat": 308.5,
+     "ax_visits": 2132,
+     "heat": 314.2,
      "orgs": [
       {
        "name": "MIT CSAIL",
@@ -201,10 +201,10 @@
       "zh": "Mixture-of-Loops Transformer 用 Mixture-of-Loops Attention 把 KV 当作跨深度和循环复用记忆，其 U-MoLT 变体在 400B token 预训练中于 700M 模型上比 OLMo3 达到 1.7 倍的验证交叉熵 token 效率，3B MoE 困惑度降低 0.75、10 项任务准确率提升 2.1 个百分点。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 74,
-     "ax_votes": 95,
-     "ax_visits": 1047,
-     "heat": 273.7,
+     "hf_upvotes": 76,
+     "ax_votes": 100,
+     "ax_visits": 1311,
+     "heat": 307.1,
      "orgs": [
       {
        "name": "Huazhong University of Science & Technology",
@@ -260,10 +260,10 @@
       "zh": "Motion Mamba 2.0 用 Mamba 循环状态加持久内容记忆 PCM 做根-身体扩散式自回归动作生成，支持最长 39.52 s 的长程末端控制；配合 CUDA Graph 等优化，RTX 4090 上完整窗口延迟从 1685.35 ms 降到 276.14 ms，中位加速 6.138 倍，并在 Unitree G1 上验证了文本引导动作组合与交互式行走。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 228,
+     "hf_upvotes": 229,
      "ax_votes": 1,
-     "ax_visits": 74,
-     "heat": 236.4,
+     "ax_visits": 80,
+     "heat": 238.0,
      "orgs": [
       {
        "logo": "data/logos/pku.edu.cn.png",
@@ -321,8 +321,8 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 73,
-     "ax_visits": 1022,
-     "heat": 175.2,
+     "ax_visits": 1082,
+     "heat": 181.2,
      "orgs": [
       {
        "name": "Tufa Labs"
@@ -379,8 +379,8 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 79,
-     "ax_visits": 846,
-     "heat": 163.6,
+     "ax_visits": 862,
+     "heat": 165.2,
      "orgs": [
       {
        "logo": "data/logos/tulane.edu.png",
@@ -454,10 +454,10 @@
       "zh": "针对 Gated DeltaNet-2 长上下文训练中擦除方向不对称导致循环状态指数增长的问题，提出 Stable Gated DeltaNet-2，用对称擦除保证非扩张状态传播，并配合衰减调节的残差写入，理论上给出 O(√T) 状态增长上界且保留分块并行。1.6B 参数模型上训练稳定，128K 平均 RULER 分数提升 6.80 分，九个下游任务平均准确率提升 0.62 分。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 128,
+     "hf_upvotes": 130,
      "ax_votes": 8,
-     "ax_visits": 153,
-     "heat": 151.3,
+     "ax_visits": 187,
+     "heat": 156.7,
      "orgs": [
       {
        "name": "MemTensor"
@@ -525,10 +525,10 @@
       "zh": "Embo-Harness 系统研究前沿多模态模型直接作为机器人策略的闭环框架，梳理提示、规划、动作执行与工具使用四个环节并总结六条经验，在 RoboLab-120 上取得 83.3% 成功率，超最强基线 26.2 个百分点，真实世界四项操作任务零样本 20 次试验成功 15 次。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 106,
+     "hf_upvotes": 107,
      "ax_votes": 16,
-     "ax_visits": 173,
-     "heat": 139.3,
+     "ax_visits": 181,
+     "heat": 141.1,
      "orgs": [
       {
        "name": "NTU",
@@ -610,8 +610,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 1,
      "ax_votes": 57,
-     "ax_visits": 714,
-     "heat": 129.4,
+     "ax_visits": 727,
+     "heat": 130.7,
      "orgs": [
       {
        "name": "Tsinghua University",
@@ -655,55 +655,113 @@
      ]
     },
     {
-     "id": "2611.31154",
-     "title": "Attention Latent Feedback",
+     "id": "2611.34232",
+     "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
      "authors": [
-      "Xuyuan Xiong",
-      "Siyu Chen",
-      "Mengzhao Chen",
-      "Yue Su",
-      "Zhuoran Yang",
+      "Hui Shen",
+      "Yunta Hsieh",
+      "Jianing Ma",
+      "Zhuoran Yin",
+      "Zhuhan Bao",
+      "Ziyuan Liu",
+      "Qi Han",
+      "Xiuqi Xu",
+      "Xianbang Wang",
+      "Wenhao Chai",
+      "Sihan Xu",
+      "Chenyang Zhao",
+      "Yanheng Shang",
+      "Dongfu Jiang",
+      "Rui Sun",
+      "Xingzhi Li",
+      "Chenqi Yin",
+      "Zesen Zhao",
+      "Boyuan Zheng",
+      "Jisen Li",
+      "Xiaoxia Wu",
+      "Ruoyan Zhang",
+      "Ruiyao Liu",
+      "Jing Xiong",
+      "He Xiao",
+      "Nan Zheng",
+      "Hangxiang Chen",
+      "Shengyang Tao",
+      "Deyang Luorong",
+      "Yifeng Liu",
+      "Jingxuan Zhang",
+      "Chaofan Tao",
+      "Yuren Wang",
+      "Jiaqi Mo",
+      "Rui Hu",
+      "Xing Wei",
+      "Xiaofeng Liu",
+      "Xin Xu",
+      "Han Wu",
+      "Mengyao Wen",
+      "Guobin Zhang",
+      "Shatong Zhu",
+      "Hei Ting Una Chan",
+      "Sicheng Chen",
+      "Kai Zhang",
+      "Mengkang Hu",
+      "Zhongwei Wan",
+      "Xin Wang",
+      "Chuanyang Zheng",
+      "Ziheng Zhang",
+      "Hengyuan Zhang",
+      "Zunhai Su",
+      "Kanzhi Cheng",
+      "Dehan Kong",
+      "Yian Wang",
+      "Hanrong Zhang",
+      "Jiawei Lu",
+      "Yifan Zhang",
+      "Junnan Li",
+      "Changyi Yang",
+      "Jintao Qu",
+      "Wenyao Gao",
+      "Jiaxuan Luo",
+      "Jiaxin Deng",
+      "Yuhao Chen",
+      "Xuesong Ye",
+      "Jingwen Gu",
+      "Yichi Zhang",
+      "Qun Lou",
+      "Shen Yan",
+      "Ben Athiwaratkun",
+      "Qiushi Sun",
+      "Mi Zhang",
       "Ping Luo",
-      "Xihui Liu"
+      "Wenhu Chen",
+      "Ngai Wong"
      ],
-     "abstract": "During autoregressive decoding, the deeper representations of the previous token have already been computed, yet shallow layers at the current token cannot read them directly because standard self-attention connects positions only at the same depth. We introduce Attention Latent Feedback (ALF), an architecture that allows every sublayer to attend to the outputs of the deeper layers at the previous position. Training unrolls this cross-position recurrence into two parallel passes, whereas decoding remains single-pass using cached previous-token states. Across mixture-of-experts models with up to 4.0B parameters, ALF lowers held-out loss by 0.022-0.024 nats over the standard residual with about 1.1% decoding FLOP overhead, and consistently outperforms prior final-state feedback across all three scales on both standard and attention residual backbones. On MoE-1.6B, ALF matches a $1.38\\times$ larger baseline token budget, and on MoE-4.0B it lifts average accuracy across seventeen downstream benchmarks from 45.1% to 47.0%. Analysis further reveals that intermediate and nearby deeper layers drive most of this benefit, allowing a fixed nearest-window variant to retain 89%-94% of the gain at linear read cost while learned attention widens its margin with scale.",
-     "primary": "cs.LG",
+     "abstract": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes.",
+     "primary": "cs.CV",
      "categories": [
-      "cs.LG"
+      "cs.CV"
      ],
-     "published": "2026-11-23T18:21:05Z",
-     "updated": "2026-11-23T18:21:05Z",
-     "comment": "",
+     "published": "2026-11-25T11:55:12Z",
+     "updated": "2026-11-25T11:55:12Z",
+     "comment": "NeurIPS 2026",
      "tags": [
-      "LLM",
-      "efficiency",
-      "pretraining"
+      "agents",
+      "benchmark",
+      "multimodal"
      ],
      "summary": {
-      "en": "Attention Latent Feedback lets each sublayer attend to deeper layers' outputs at the previous position, lowering held-out loss by 0.022-0.024 nats at ~1.1% decoding FLOP overhead and lifting MoE-4.0B average accuracy from 45.1% to 47.0%.",
-      "zh": "Attention Latent Feedback (ALF) 让每个子层关注前一个位置更深层的输出，训练时展开为两遍并行计算、解码仍为单遍；在最多 4.0B 参数的 MoE 模型上使 held-out loss 比标准残差降低 0.022–0.024 nats，解码 FLOP 开销约 1.1%，MoE-4.0B 在十七个下游基准上平均准确率从 45.1% 提升到 47.0%。"
+      "en": "OS-Omni is a live cross-platform benchmark for computer-using agents spanning Windows, Ubuntu, macOS, iOS, Android, and Web; its v1 has 48 tasks per platform plus 12 cross-platform workflows averaging 67.54 steps. Claude Opus 5.5 scores 68.5% versus 77.3% human, trailing by over 25 points on iOS and macOS.",
+      "zh": "OS-Omni 是覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的跨平台计算机代理实时基准，v1 每平台 48 个任务、另含 12 个跨平台工作流，任务平均需 67.54 步；最强代理 Claude Opus 5.5 平均成功率 68.5%，低于人类 77.3%，在 iOS 和 macOS 上差距超过 25 点。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 10,
-     "ax_votes": 42,
-     "ax_visits": 575,
-     "heat": 109.5,
-     "orgs": [
-      {
-       "logo": "data/logos/hku.hk.png",
-       "name": "HKU",
-       "ror": "02zhqgq86"
-      },
-      {
-       "logo": "data/logos/yale.edu.png",
-       "name": "Yale University",
-       "ror": "03v76x132"
-      }
-     ],
-     "thumb": "data/thumbs/2611.31154.jpg",
+     "hf_upvotes": 109,
+     "ax_votes": 1,
+     "ax_visits": 43,
+     "heat": 114.3,
+     "orgs": [],
+     "thumb": "data/thumbs/2611.34232.jpg",
      "thumb_w": 640,
-     "thumb_h": 246,
-     "listed": "2026-11-24",
+     "thumb_h": 368,
+     "listed": "2026-11-27",
      "sections": []
     },
     {
@@ -840,10 +898,10 @@
       "zh": "Sage-Med-Preview 是 35B 参数（激活 3B）的医学多模态模型，用 3.227 亿条候选数据分阶段筛选结合医学预训练、分阶段监督微调与自适应强化学习的渐进课程训练，在 31 个公开多模态基准上均分 58.26%，超过 Hulu-Med-235B-A22B 的 50.99% 和 Intern-S2-Preview 的 52.24%。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 81,
+     "hf_upvotes": 82,
      "ax_votes": 12,
-     "ax_visits": 159,
-     "heat": 108.9,
+     "ax_visits": 181,
+     "heat": 112.1,
      "orgs": [
       {
        "name": "Shanghai AI Lab"
@@ -856,6 +914,58 @@
      "sections": [
       "rl"
      ]
+    },
+    {
+     "id": "2611.31154",
+     "title": "Attention Latent Feedback",
+     "authors": [
+      "Xuyuan Xiong",
+      "Siyu Chen",
+      "Mengzhao Chen",
+      "Yue Su",
+      "Zhuoran Yang",
+      "Ping Luo",
+      "Xihui Liu"
+     ],
+     "abstract": "During autoregressive decoding, the deeper representations of the previous token have already been computed, yet shallow layers at the current token cannot read them directly because standard self-attention connects positions only at the same depth. We introduce Attention Latent Feedback (ALF), an architecture that allows every sublayer to attend to the outputs of the deeper layers at the previous position. Training unrolls this cross-position recurrence into two parallel passes, whereas decoding remains single-pass using cached previous-token states. Across mixture-of-experts models with up to 4.0B parameters, ALF lowers held-out loss by 0.022-0.024 nats over the standard residual with about 1.1% decoding FLOP overhead, and consistently outperforms prior final-state feedback across all three scales on both standard and attention residual backbones. On MoE-1.6B, ALF matches a $1.38\\times$ larger baseline token budget, and on MoE-4.0B it lifts average accuracy across seventeen downstream benchmarks from 45.1% to 47.0%. Analysis further reveals that intermediate and nearby deeper layers drive most of this benefit, allowing a fixed nearest-window variant to retain 89%-94% of the gain at linear read cost while learned attention widens its margin with scale.",
+     "primary": "cs.LG",
+     "categories": [
+      "cs.LG"
+     ],
+     "published": "2026-11-23T18:21:05Z",
+     "updated": "2026-11-23T18:21:05Z",
+     "comment": "",
+     "tags": [
+      "LLM",
+      "efficiency",
+      "pretraining"
+     ],
+     "summary": {
+      "en": "Attention Latent Feedback lets each sublayer attend to deeper layers' outputs at the previous position, lowering held-out loss by 0.022-0.024 nats at ~1.1% decoding FLOP overhead and lifting MoE-4.0B average accuracy from 45.1% to 47.0%.",
+      "zh": "Attention Latent Feedback (ALF) 让每个子层关注前一个位置更深层的输出，训练时展开为两遍并行计算、解码仍为单遍；在最多 4.0B 参数的 MoE 模型上使 held-out loss 比标准残差降低 0.022–0.024 nats，解码 FLOP 开销约 1.1%，MoE-4.0B 在十七个下游基准上平均准确率从 45.1% 提升到 47.0%。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 10,
+     "ax_votes": 42,
+     "ax_visits": 599,
+     "heat": 111.9,
+     "orgs": [
+      {
+       "logo": "data/logos/hku.hk.png",
+       "name": "HKU",
+       "ror": "02zhqgq86"
+      },
+      {
+       "logo": "data/logos/yale.edu.png",
+       "name": "Yale University",
+       "ror": "03v76x132"
+      }
+     ],
+     "thumb": "data/thumbs/2611.31154.jpg",
+     "thumb_w": 640,
+     "thumb_h": 246,
+     "listed": "2026-11-24",
+     "sections": []
     },
     {
      "id": "2611.27193",
@@ -896,8 +1006,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 94,
      "ax_votes": 6,
-     "ax_visits": 86,
-     "heat": 108.6,
+     "ax_visits": 90,
+     "heat": 109.0,
      "orgs": [
       {
        "name": "China Telecom"
@@ -920,116 +1030,6 @@
      "thumb_w": 640,
      "thumb_h": 310,
      "listed": "2026-11-23",
-     "sections": []
-    },
-    {
-     "id": "2611.34232",
-     "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
-     "authors": [
-      "Hui Shen",
-      "Yunta Hsieh",
-      "Jianing Ma",
-      "Zhuoran Yin",
-      "Zhuhan Bao",
-      "Ziyuan Liu",
-      "Qi Han",
-      "Xiuqi Xu",
-      "Xianbang Wang",
-      "Wenhao Chai",
-      "Sihan Xu",
-      "Chenyang Zhao",
-      "Yanheng Shang",
-      "Dongfu Jiang",
-      "Rui Sun",
-      "Xingzhi Li",
-      "Chenqi Yin",
-      "Zesen Zhao",
-      "Boyuan Zheng",
-      "Jisen Li",
-      "Xiaoxia Wu",
-      "Ruoyan Zhang",
-      "Ruiyao Liu",
-      "Jing Xiong",
-      "He Xiao",
-      "Nan Zheng",
-      "Hangxiang Chen",
-      "Shengyang Tao",
-      "Deyang Luorong",
-      "Yifeng Liu",
-      "Jingxuan Zhang",
-      "Chaofan Tao",
-      "Yuren Wang",
-      "Jiaqi Mo",
-      "Rui Hu",
-      "Xing Wei",
-      "Xiaofeng Liu",
-      "Xin Xu",
-      "Han Wu",
-      "Mengyao Wen",
-      "Guobin Zhang",
-      "Shatong Zhu",
-      "Hei Ting Una Chan",
-      "Sicheng Chen",
-      "Kai Zhang",
-      "Mengkang Hu",
-      "Zhongwei Wan",
-      "Xin Wang",
-      "Chuanyang Zheng",
-      "Ziheng Zhang",
-      "Hengyuan Zhang",
-      "Zunhai Su",
-      "Kanzhi Cheng",
-      "Dehan Kong",
-      "Yian Wang",
-      "Hanrong Zhang",
-      "Jiawei Lu",
-      "Yifan Zhang",
-      "Junnan Li",
-      "Changyi Yang",
-      "Jintao Qu",
-      "Wenyao Gao",
-      "Jiaxuan Luo",
-      "Jiaxin Deng",
-      "Yuhao Chen",
-      "Xuesong Ye",
-      "Jingwen Gu",
-      "Yichi Zhang",
-      "Qun Lou",
-      "Shen Yan",
-      "Ben Athiwaratkun",
-      "Qiushi Sun",
-      "Mi Zhang",
-      "Ping Luo",
-      "Wenhu Chen",
-      "Ngai Wong"
-     ],
-     "abstract": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes.",
-     "primary": "cs.CV",
-     "categories": [
-      "cs.CV"
-     ],
-     "published": "2026-11-25T11:55:12Z",
-     "updated": "2026-11-25T11:55:12Z",
-     "comment": "NeurIPS 2026",
-     "tags": [
-      "agents",
-      "benchmark",
-      "multimodal"
-     ],
-     "summary": {
-      "en": "OS-Omni is a live cross-platform benchmark for computer-using agents spanning Windows, Ubuntu, macOS, iOS, Android, and Web; its v1 has 48 tasks per platform plus 12 cross-platform workflows averaging 67.54 steps. Claude Opus 5.5 scores 68.5% versus 77.3% human, trailing by over 25 points on iOS and macOS.",
-      "zh": "OS-Omni 是覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的跨平台计算机代理实时基准，v1 每平台 48 个任务、另含 12 个跨平台工作流，任务平均需 67.54 步；最强代理 Claude Opus 5.5 平均成功率 68.5%，低于人类 77.3%，在 iOS 和 macOS 上差距超过 25 点。"
-     },
-     "summary_source": "deepseek-flash",
-     "hf_upvotes": 104,
-     "ax_votes": 1,
-     "ax_visits": 32,
-     "heat": 108.2,
-     "orgs": [],
-     "thumb": "data/thumbs/2611.34232.jpg",
-     "thumb_w": 640,
-     "thumb_h": 368,
-     "listed": "2026-11-27",
      "sections": []
     },
     {
@@ -1063,8 +1063,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 95,
      "ax_votes": 2,
-     "ax_visits": 82,
-     "heat": 105.2,
+     "ax_visits": 90,
+     "heat": 106.0,
      "orgs": [
       {
        "name": "Beijing University of Posts and Telecommunications",
@@ -1117,8 +1117,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 25,
      "ax_votes": 34,
-     "ax_visits": 371,
-     "heat": 96.1,
+     "ax_visits": 388,
+     "heat": 97.8,
      "orgs": [
       {
        "name": "NUS",
@@ -1163,8 +1163,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 87,
      "ax_votes": 2,
-     "ax_visits": 49,
-     "heat": 93.9,
+     "ax_visits": 64,
+     "heat": 95.4,
      "orgs": [
       {
        "name": "NUS",
@@ -1210,8 +1210,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 63,
      "ax_votes": 10,
-     "ax_visits": 206,
-     "heat": 93.6,
+     "ax_visits": 211,
+     "heat": 94.1,
      "orgs": [
       {
        "logo": "data/logos/polyu.edu.hk.png",
@@ -1224,6 +1224,64 @@
      "thumb_h": 355,
      "listed": "2026-11-23",
      "sections": []
+    },
+    {
+     "id": "2611.34907",
+     "title": "Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation",
+     "authors": [
+      "Shaoteng Liu",
+      "Shuai Yang",
+      "Wei Huang",
+      "Luozhou Wang",
+      "Song Han",
+      "Yukang Chen"
+     ],
+     "abstract": "Real-time autoregressive video generators stream minutes of video and accept new prompts on the fly, but struggle to keep people, objects, and places consistent over a long interactive story. Agent systems provide such memory for offline multi-shot generation, yet they read the whole script in advance, plan each shot before generating it, and regenerate failed shots, which a live stream does not allow. We present Agentic LongLive, an asynchronous agentic memory for long video generation. A memory agent on separate GPUs reads only the prompts revealed so far, never the generated video, and keeps a text state and evolving images for every person, object, and scene. From this entity memory it composes a global image and a per-shot memory image, which an auxiliary GPU prefills into the generator's attention sink before the next shot starts, and writes entity cards for the prompts that name them, so the video never waits for memory and video errors are not written back. A small language model, trained with reinforcement learning and an image reward calibrated using downstream video outcomes, decides what to remember before the next prompt is known. On LongStory-Online, a new benchmark of 25 stories (857 shots) revealed one shot at a time, Agentic LongLive improves persistent-state accuracy of LongLive-2.0, its base generator, by 26.3 points, protagonist identity by 44.9, and revisited-place consistency by 40.4, at about 1% extra generation time on H100. The full system streams faster than real time on one 8xB200 node with the generator in BF16 (34.3 FPS), keeps image quality stable over 14-minute stories, and improves identity on two MiniMax-H3 generators, one of which, LongLive-H3, also runs in real time with it. To our knowledge, it is the first real-time video generator with text and image memory kept by an LLM agent.",
+     "primary": "cs.CV",
+     "categories": [
+      "cs.CV"
+     ],
+     "published": "2026-11-25T18:54:03Z",
+     "updated": "2026-11-25T18:54:03Z",
+     "comment": "28 pages, 12 figures. Project page: https://nvlabs.github.io/LongLive/Agentic-LongLive/",
+     "tags": [
+      "video generation",
+      "agents",
+      "efficiency",
+      "multimodal"
+     ],
+     "summary": {
+      "en": "Agentic LongLive keeps entity memory on separate GPUs and prefills it into the generator's attention sink, raising LongLive-2.0 persistent-state accuracy by 26.3 points with about 1% extra generation time.",
+      "zh": "Agentic LongLive 用独立 GPU 上的记忆 agent 以文本状态和实体图像维护人物、物体、场景一致性，并通过辅助 GPU 预填充注意力 sink，使 LongLive-2.0 在 LongStory-Online 上持久状态准确率提升 26.3 点、主角身份提升 44.9 点、重访地点一致性提升 40.4 点，额外耗时约 1%。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 24,
+     "ax_votes": 22,
+     "ax_visits": 370,
+     "heat": 83.0,
+     "orgs": [
+      {
+       "logo": "data/logos/nvidia.com.png",
+       "name": "NVIDIA"
+      },
+      {
+       "logo": "data/logos/mit.edu.png",
+       "name": "MIT",
+       "ror": "042nb2s44"
+      },
+      {
+       "logo": "data/logos/cuhk.edu.hk.png",
+       "name": "CUHK",
+       "ror": "00t33hh48"
+      }
+     ],
+     "thumb": "data/thumbs/2611.34907.jpg",
+     "thumb_w": 567,
+     "thumb_h": 377,
+     "listed": "2026-11-26",
+     "sections": [
+      "rl"
+     ]
     },
     {
      "id": "2611.29338",
@@ -1265,8 +1323,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 46,
      "ax_votes": 10,
-     "ax_visits": 245,
-     "heat": 80.5,
+     "ax_visits": 252,
+     "heat": 81.2,
      "orgs": [
       {
        "name": "Tsinghua University",
@@ -1281,61 +1339,6 @@
      "thumb_w": 441,
      "thumb_h": 440,
      "listed": "2026-11-24",
-     "sections": []
-    },
-    {
-     "id": "2611.31205",
-     "title": "ACAP: Asynchronous Coding Agents for Efficient Robot Control",
-     "authors": [
-      "Zexin He",
-      "Rui Li",
-      "Yushi Lan",
-      "Chengkai Jin",
-      "Zhi Hou",
-      "Xingang Pan"
-     ],
-     "abstract": "Coding agents can construct and revise robot behavior during execution, but using one agent for the whole robot can delay otherwise independent work. We introduce Asynchronous Coding Agents as Policy (ACAP), an asynchronous framework that organizes one robot as a team of persistent agents. Each member reasons and acts for a configurable control group, such as an arm with its gripper or the torso and chassis, enabling asynchronous reasoning and execution. However, different robot components often have physical dependencies that require coordination. To address this challenge, ACAP introduces a hyper-agent that assigns tasks, coordinates dependencies, and dynamically allocates control between the lead and member agents. This allows independent work to progress concurrently while supporting tightly coupled manipulation when necessary. Across 72 real-world rollouts covering 25 task/platform settings, ACAP reduces task-balanced time cost by 28.2% compared with a single-agent Direct Policy, with improvements across Fully Parallel, Parallel-Sequential, and Collaborative tasks. Across all eight Collaborative settings, ACAP also achieves lower mean time cost than Fixed Delegation, where only member agents can control their assigned groups. An additional 90-rollout study shows lower mean 30-minute-capped time cost than Direct on all six tasks. We further demonstrate mobile manipulation using the same member interface for chassis and torso control. We present the framework and a real-world rollout dataset containing observations, generated programs, actions, and feedback to support research on how coding agents reason and act in the physical world.",
-     "primary": "cs.RO",
-     "categories": [
-      "cs.RO",
-      "cs.MA"
-     ],
-     "published": "2026-11-23T18:52:19Z",
-     "updated": "2026-11-23T18:52:19Z",
-     "comment": "Project page: https://projects.zxhezexin.com/acap",
-     "tags": [
-      "robotics",
-      "agents",
-      "code",
-      "manipulation"
-     ],
-     "summary": {
-      "en": "ACAP organizes one robot as a team of persistent coding agents with a hyper-agent coordinating tasks and dependencies, cutting task-balanced time cost by 28.2% versus a single-agent Direct Policy across 72 real-world rollouts.",
-      "zh": "ACAP 将单台机器人组织为多个持久编码智能体组成的小队，用 hyper-agent 分配任务并协调依赖，实现异步推理与执行；在 25 种任务/平台设置的 72 次真实 rollout 中，任务均衡时间成本比单智能体 Direct Policy 降低 28.2%。"
-     },
-     "summary_source": "deepseek-flash",
-     "hf_upvotes": 67,
-     "ax_votes": 6,
-     "ax_visits": 70,
-     "heat": 80.0,
-     "orgs": [
-      {
-       "name": "NTU",
-       "ror": "02e7b5302"
-      },
-      {
-       "logo": "data/logos/ox.ac.uk.png",
-       "name": "University of Oxford",
-       "ror": "052gg0110"
-      },
-      {
-       "name": "ACE Robotics"
-      }
-     ],
-     "thumb": "data/thumbs/2611.31205.jpg",
-     "thumb_w": 640,
-     "thumb_h": 300,
-     "listed": "2026-11-25",
      "sections": []
     }
    ]
@@ -1375,8 +1378,8 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 234,
-     "ax_visits": 2454,
-     "heat": 479.4,
+     "ax_visits": 2488,
+     "heat": 482.8,
      "orgs": [
       {
        "logo": "data/logos/stanford.edu.png",
@@ -1432,9 +1435,9 @@
       "zh": "等算力阶梯（equal-budget ladder），在单智能体、算力对齐多数投票与算力对齐 pass@n 三级上衡量多智能体团队，并定义 Recursive Collective Intelligence（RCI）：无教师、无外部标签，团队用自身输出让下一代同等成本更聪明；转发拆分事实可在 27B 上超 pass@n 约三分之一，同质 27B 智能体自发形成枢纽使准确率提升 18 个百分点，两代无标签训练在 PlanBench、HiddenBench、Hanabi 上连续 4–6 代优于前代。"
      },
      "summary_source": "deepseek-flash",
-     "ax_votes": 160,
-     "ax_visits": 1937,
-     "heat": 353.7,
+     "ax_votes": 161,
+     "ax_visits": 2030,
+     "heat": 364.0,
      "orgs": [
       {
        "logo": "data/logos/stanford.edu.png",
@@ -1491,8 +1494,8 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 101,
-     "ax_visits": 2075,
-     "heat": 308.5,
+     "ax_visits": 2132,
+     "heat": 314.2,
      "orgs": [
       {
        "name": "MIT CSAIL",
@@ -1539,10 +1542,10 @@
       "zh": "Mixture-of-Loops Transformer 用 Mixture-of-Loops Attention 把 KV 当作跨深度和循环复用记忆，其 U-MoLT 变体在 400B token 预训练中于 700M 模型上比 OLMo3 达到 1.7 倍的验证交叉熵 token 效率，3B MoE 困惑度降低 0.75、10 项任务准确率提升 2.1 个百分点。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 74,
-     "ax_votes": 95,
-     "ax_visits": 1047,
-     "heat": 273.7,
+     "hf_upvotes": 76,
+     "ax_votes": 100,
+     "ax_visits": 1311,
+     "heat": 307.1,
      "orgs": [
       {
        "name": "Huazhong University of Science & Technology",
@@ -1591,8 +1594,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 7,
      "ax_votes": 74,
-     "ax_visits": 1906,
-     "heat": 271.6,
+     "ax_visits": 1924,
+     "heat": 273.4,
      "orgs": [
       {
        "name": "Independent Researcher"
@@ -1638,10 +1641,10 @@
       "zh": "Motion Mamba 2.0 用 Mamba 循环状态加持久内容记忆 PCM 做根-身体扩散式自回归动作生成，支持最长 39.52 s 的长程末端控制；配合 CUDA Graph 等优化，RTX 4090 上完整窗口延迟从 1685.35 ms 降到 276.14 ms，中位加速 6.138 倍，并在 Unitree G1 上验证了文本引导动作组合与交互式行走。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 228,
+     "hf_upvotes": 229,
      "ax_votes": 1,
-     "ax_visits": 74,
-     "heat": 236.4,
+     "ax_visits": 80,
+     "heat": 238.0,
      "orgs": [
       {
        "logo": "data/logos/pku.edu.cn.png",
@@ -1693,8 +1696,8 @@
      ],
      "hf_upvotes": 127,
      "ax_votes": 44,
-     "ax_visits": 521,
-     "heat": 223.1,
+     "ax_visits": 540,
+     "heat": 225.0,
      "orgs": [
       {
        "name": "NUS",
@@ -1804,8 +1807,8 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 73,
-     "ax_visits": 1022,
-     "heat": 175.2,
+     "ax_visits": 1082,
+     "heat": 181.2,
      "orgs": [
       {
        "name": "Tufa Labs"
@@ -1862,8 +1865,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 41,
      "ax_votes": 66,
-     "ax_visits": 664,
-     "heat": 173.4,
+     "ax_visits": 675,
+     "heat": 174.5,
      "orgs": [
       {
        "logo": "data/logos/apple.com.png",
@@ -1947,8 +1950,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 57,
      "ax_votes": 56,
-     "ax_visits": 571,
-     "heat": 170.1,
+     "ax_visits": 578,
+     "heat": 170.8,
      "orgs": [
       {
        "name": "Tsinghua University",
@@ -2028,8 +2031,8 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 79,
-     "ax_visits": 846,
-     "heat": 163.6,
+     "ax_visits": 862,
+     "heat": 165.2,
      "orgs": [
       {
        "logo": "data/logos/tulane.edu.png",
@@ -2103,10 +2106,10 @@
       "zh": "针对 Gated DeltaNet-2 长上下文训练中擦除方向不对称导致循环状态指数增长的问题，提出 Stable Gated DeltaNet-2，用对称擦除保证非扩张状态传播，并配合衰减调节的残差写入，理论上给出 O(√T) 状态增长上界且保留分块并行。1.6B 参数模型上训练稳定，128K 平均 RULER 分数提升 6.80 分，九个下游任务平均准确率提升 0.62 分。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 128,
+     "hf_upvotes": 130,
      "ax_votes": 8,
-     "ax_visits": 153,
-     "heat": 151.3,
+     "ax_visits": 187,
+     "heat": 156.7,
      "orgs": [
       {
        "name": "MemTensor"
@@ -2174,10 +2177,10 @@
       "zh": "Embo-Harness 系统研究前沿多模态模型直接作为机器人策略的闭环框架，梳理提示、规划、动作执行与工具使用四个环节并总结六条经验，在 RoboLab-120 上取得 83.3% 成功率，超最强基线 26.2 个百分点，真实世界四项操作任务零样本 20 次试验成功 15 次。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 106,
+     "hf_upvotes": 107,
      "ax_votes": 16,
-     "ax_visits": 173,
-     "heat": 139.3,
+     "ax_visits": 181,
+     "heat": 141.1,
      "orgs": [
       {
        "name": "NTU",
@@ -2259,8 +2262,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 1,
      "ax_votes": 57,
-     "ax_visits": 714,
-     "heat": 129.4,
+     "ax_visits": 727,
+     "heat": 130.7,
      "orgs": [
       {
        "name": "Tsinghua University",
@@ -2509,8 +2512,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 47,
      "ax_votes": 35,
-     "ax_visits": 362,
-     "heat": 118.2,
+     "ax_visits": 369,
+     "heat": 118.9,
      "orgs": [
       {
        "logo": "data/logos/vt.edu.png",
@@ -2529,55 +2532,113 @@
      "sections": []
     },
     {
-     "id": "2611.31154",
-     "title": "Attention Latent Feedback",
+     "id": "2611.34232",
+     "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
      "authors": [
-      "Xuyuan Xiong",
-      "Siyu Chen",
-      "Mengzhao Chen",
-      "Yue Su",
-      "Zhuoran Yang",
+      "Hui Shen",
+      "Yunta Hsieh",
+      "Jianing Ma",
+      "Zhuoran Yin",
+      "Zhuhan Bao",
+      "Ziyuan Liu",
+      "Qi Han",
+      "Xiuqi Xu",
+      "Xianbang Wang",
+      "Wenhao Chai",
+      "Sihan Xu",
+      "Chenyang Zhao",
+      "Yanheng Shang",
+      "Dongfu Jiang",
+      "Rui Sun",
+      "Xingzhi Li",
+      "Chenqi Yin",
+      "Zesen Zhao",
+      "Boyuan Zheng",
+      "Jisen Li",
+      "Xiaoxia Wu",
+      "Ruoyan Zhang",
+      "Ruiyao Liu",
+      "Jing Xiong",
+      "He Xiao",
+      "Nan Zheng",
+      "Hangxiang Chen",
+      "Shengyang Tao",
+      "Deyang Luorong",
+      "Yifeng Liu",
+      "Jingxuan Zhang",
+      "Chaofan Tao",
+      "Yuren Wang",
+      "Jiaqi Mo",
+      "Rui Hu",
+      "Xing Wei",
+      "Xiaofeng Liu",
+      "Xin Xu",
+      "Han Wu",
+      "Mengyao Wen",
+      "Guobin Zhang",
+      "Shatong Zhu",
+      "Hei Ting Una Chan",
+      "Sicheng Chen",
+      "Kai Zhang",
+      "Mengkang Hu",
+      "Zhongwei Wan",
+      "Xin Wang",
+      "Chuanyang Zheng",
+      "Ziheng Zhang",
+      "Hengyuan Zhang",
+      "Zunhai Su",
+      "Kanzhi Cheng",
+      "Dehan Kong",
+      "Yian Wang",
+      "Hanrong Zhang",
+      "Jiawei Lu",
+      "Yifan Zhang",
+      "Junnan Li",
+      "Changyi Yang",
+      "Jintao Qu",
+      "Wenyao Gao",
+      "Jiaxuan Luo",
+      "Jiaxin Deng",
+      "Yuhao Chen",
+      "Xuesong Ye",
+      "Jingwen Gu",
+      "Yichi Zhang",
+      "Qun Lou",
+      "Shen Yan",
+      "Ben Athiwaratkun",
+      "Qiushi Sun",
+      "Mi Zhang",
       "Ping Luo",
-      "Xihui Liu"
+      "Wenhu Chen",
+      "Ngai Wong"
      ],
-     "abstract": "During autoregressive decoding, the deeper representations of the previous token have already been computed, yet shallow layers at the current token cannot read them directly because standard self-attention connects positions only at the same depth. We introduce Attention Latent Feedback (ALF), an architecture that allows every sublayer to attend to the outputs of the deeper layers at the previous position. Training unrolls this cross-position recurrence into two parallel passes, whereas decoding remains single-pass using cached previous-token states. Across mixture-of-experts models with up to 4.0B parameters, ALF lowers held-out loss by 0.022-0.024 nats over the standard residual with about 1.1% decoding FLOP overhead, and consistently outperforms prior final-state feedback across all three scales on both standard and attention residual backbones. On MoE-1.6B, ALF matches a $1.38\\times$ larger baseline token budget, and on MoE-4.0B it lifts average accuracy across seventeen downstream benchmarks from 45.1% to 47.0%. Analysis further reveals that intermediate and nearby deeper layers drive most of this benefit, allowing a fixed nearest-window variant to retain 89%-94% of the gain at linear read cost while learned attention widens its margin with scale.",
-     "primary": "cs.LG",
+     "abstract": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes.",
+     "primary": "cs.CV",
      "categories": [
-      "cs.LG"
+      "cs.CV"
      ],
-     "published": "2026-11-23T18:21:05Z",
-     "updated": "2026-11-23T18:21:05Z",
-     "comment": "",
+     "published": "2026-11-25T11:55:12Z",
+     "updated": "2026-11-25T11:55:12Z",
+     "comment": "NeurIPS 2026",
      "tags": [
-      "LLM",
-      "efficiency",
-      "pretraining"
+      "agents",
+      "benchmark",
+      "multimodal"
      ],
      "summary": {
-      "en": "Attention Latent Feedback lets each sublayer attend to deeper layers' outputs at the previous position, lowering held-out loss by 0.022-0.024 nats at ~1.1% decoding FLOP overhead and lifting MoE-4.0B average accuracy from 45.1% to 47.0%.",
-      "zh": "Attention Latent Feedback (ALF) 让每个子层关注前一个位置更深层的输出，训练时展开为两遍并行计算、解码仍为单遍；在最多 4.0B 参数的 MoE 模型上使 held-out loss 比标准残差降低 0.022–0.024 nats，解码 FLOP 开销约 1.1%，MoE-4.0B 在十七个下游基准上平均准确率从 45.1% 提升到 47.0%。"
+      "en": "OS-Omni is a live cross-platform benchmark for computer-using agents spanning Windows, Ubuntu, macOS, iOS, Android, and Web; its v1 has 48 tasks per platform plus 12 cross-platform workflows averaging 67.54 steps. Claude Opus 5.5 scores 68.5% versus 77.3% human, trailing by over 25 points on iOS and macOS.",
+      "zh": "OS-Omni 是覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的跨平台计算机代理实时基准，v1 每平台 48 个任务、另含 12 个跨平台工作流，任务平均需 67.54 步；最强代理 Claude Opus 5.5 平均成功率 68.5%，低于人类 77.3%，在 iOS 和 macOS 上差距超过 25 点。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 10,
-     "ax_votes": 42,
-     "ax_visits": 575,
-     "heat": 109.5,
-     "orgs": [
-      {
-       "logo": "data/logos/hku.hk.png",
-       "name": "HKU",
-       "ror": "02zhqgq86"
-      },
-      {
-       "logo": "data/logos/yale.edu.png",
-       "name": "Yale University",
-       "ror": "03v76x132"
-      }
-     ],
-     "thumb": "data/thumbs/2611.31154.jpg",
+     "hf_upvotes": 109,
+     "ax_votes": 1,
+     "ax_visits": 43,
+     "heat": 114.3,
+     "orgs": [],
+     "thumb": "data/thumbs/2611.34232.jpg",
      "thumb_w": 640,
-     "thumb_h": 246,
-     "listed": "2026-11-24",
+     "thumb_h": 368,
+     "listed": "2026-11-27",
      "sections": []
     }
    ]

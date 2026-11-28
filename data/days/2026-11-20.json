@@ -30,8 +30,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 7,
    "ax_votes": 74,
-   "ax_visits": 1906,
-   "heat": 271.6,
+   "ax_visits": 1924,
+   "heat": 273.4,
    "orgs": [
     {
      "name": "Independent Researcher"
@@ -76,8 +76,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 41,
    "ax_votes": 66,
-   "ax_visits": 664,
-   "heat": 173.4,
+   "ax_visits": 675,
+   "heat": 174.5,
    "orgs": [
     {
      "logo": "data/logos/apple.com.png",
@@ -161,8 +161,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 57,
    "ax_votes": 56,
-   "ax_visits": 571,
-   "heat": 170.1,
+   "ax_visits": 578,
+   "heat": 170.8,
    "orgs": [
     {
      "name": "Tsinghua University",
@@ -305,8 +305,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 47,
    "ax_votes": 35,
-   "ax_visits": 362,
-   "heat": 118.2,
+   "ax_visits": 369,
+   "heat": 118.9,
    "orgs": [
     {
      "logo": "data/logos/vt.edu.png",
@@ -363,8 +363,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 50,
    "ax_votes": 11,
-   "ax_visits": 294,
-   "heat": 90.4,
+   "ax_visits": 299,
+   "heat": 90.9,
    "orgs": [
     {
      "logo": "data/logos/tencent.com.png",
@@ -431,8 +431,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 43,
    "ax_votes": 5,
-   "ax_visits": 366,
-   "heat": 84.6,
+   "ax_visits": 376,
+   "heat": 85.6,
    "orgs": [
     {
      "name": "Nanjing University",
@@ -554,8 +554,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 22,
    "ax_votes": 17,
-   "ax_visits": 197,
-   "heat": 58.7,
+   "ax_visits": 205,
+   "heat": 59.5,
    "orgs": [
     {
      "logo": "data/logos/vt.edu.png",
@@ -615,8 +615,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 19,
    "ax_votes": 12,
-   "ax_visits": 225,
-   "heat": 53.5,
+   "ax_visits": 231,
+   "heat": 54.1,
    "orgs": [
     {
      "name": "NUS",
@@ -769,8 +769,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 32,
    "ax_votes": 1,
-   "ax_visits": 85,
-   "heat": 41.5,
+   "ax_visits": 90,
+   "heat": 42.0,
    "orgs": [
     {
      "logo": "data/logos/imperial.ac.uk.png",
@@ -833,8 +833,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 26,
    "ax_votes": 2,
-   "ax_visits": 131,
-   "heat": 41.1,
+   "ax_visits": 135,
+   "heat": 41.5,
    "orgs": [
     {
      "logo": "data/logos/hkust.edu.hk.png",
@@ -904,8 +904,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 16,
    "ax_votes": 7,
-   "ax_visits": 129,
-   "heat": 35.9,
+   "ax_visits": 134,
+   "heat": 36.4,
    "orgs": [
     {
      "name": "Renmin University of China",
@@ -950,8 +950,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 7,
    "ax_votes": 11,
-   "ax_visits": 168,
-   "heat": 34.8,
+   "ax_visits": 174,
+   "heat": 35.4,
    "orgs": [
     {
      "name": "Nanjing University",
@@ -1007,8 +1007,8 @@
    ],
    "hf_upvotes": 17,
    "ax_votes": 6,
-   "ax_visits": 109,
-   "heat": 33.9,
+   "ax_visits": 113,
+   "heat": 34.3,
    "orgs": [
     {
      "logo": "data/logos/princeton.edu.png",
@@ -1073,8 +1073,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 26,
    "ax_votes": 1,
-   "ax_visits": 69,
-   "heat": 33.9,
+   "ax_visits": 73,
+   "heat": 34.3,
    "orgs": [
     {
      "logo": "data/logos/baidu.com.png",
@@ -1124,8 +1124,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 24,
    "ax_votes": 1,
-   "ax_visits": 75,
-   "heat": 32.5,
+   "ax_visits": 81,
+   "heat": 33.1,
    "orgs": [
     {
      "name": "Beihang University",
@@ -1180,8 +1180,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 24,
    "ax_votes": 2,
-   "ax_visits": 32,
-   "heat": 29.2,
+   "ax_visits": 36,
+   "heat": 29.6,
    "orgs": [
     {
      "logo": "data/logos/technion.ac.il.png",
@@ -1294,8 +1294,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 24,
    "ax_votes": 1,
-   "ax_visits": 28,
-   "heat": 27.8,
+   "ax_visits": 34,
+   "heat": 28.4,
    "orgs": [
     {
      "logo": "data/logos/upenn.edu.png",
@@ -1355,8 +1355,8 @@
    ],
    "hf_upvotes": 20,
    "ax_votes": 0,
-   "ax_visits": 54,
-   "heat": 25.4,
+   "ax_visits": 59,
+   "heat": 25.9,
    "orgs": [
     {
      "logo": "data/logos/sydney.edu.au.png",
@@ -1418,8 +1418,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 22,
    "ax_votes": 1,
-   "ax_visits": 20,
-   "heat": 25.0,
+   "ax_visits": 26,
+   "heat": 25.6,
    "orgs": [
     {
      "logo": "data/logos/tencent.com.png",
@@ -1461,8 +1461,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 17,
    "ax_votes": 1,
-   "ax_visits": 59,
-   "heat": 23.9,
+   "ax_visits": 68,
+   "heat": 24.8,
    "orgs": [
     {
      "logo": "data/logos/kaist.ac.kr.png",
@@ -1507,8 +1507,8 @@
    "summary_source": "deepseek-flash",
    "hf_upvotes": 19,
    "ax_votes": 0,
-   "ax_visits": 49,
-   "heat": 23.9,
+   "ax_visits": 53,
+   "heat": 24.3,
    "orgs": [
     {
      "logo": "data/logos/uni-ulm.de.png",
@@ -1601,8 +1601,8 @@
    ],
    "hf_upvotes": 7,
    "ax_votes": 4,
-   "ax_visits": 96,
-   "heat": 20.6,
+   "ax_visits": 102,
+   "heat": 21.2,
    "orgs": [
     {
      "name": "Huazhong University of Science and Technology",
@@ -1661,8 +1661,8 @@
    ],
    "hf_upvotes": 14,
    "ax_votes": 1,
-   "ax_visits": 49,
-   "heat": 19.9,
+   "ax_visits": 56,
+   "heat": 20.6,
    "orgs": [
     {
      "name": "Fudan University",
@@ -1715,8 +1715,8 @@
    ],
    "hf_upvotes": 9,
    "ax_votes": 3,
-   "ax_visits": 68,
-   "heat": 18.8,
+   "ax_visits": 72,
+   "heat": 19.2,
    "orgs": [
     {
      "logo": "data/logos/nd.edu.png",
@@ -1764,8 +1764,8 @@
    ],
    "hf_upvotes": 10,
    "ax_votes": 2,
-   "ax_visits": 47,
-   "heat": 16.7,
+   "ax_visits": 53,
+   "heat": 17.3,
    "orgs": [],
    "thumb": "data/thumbs/2611.26286.jpg",
    "thumb_w": 566,
@@ -1797,8 +1797,8 @@
    ],
    "hf_upvotes": 4,
    "ax_votes": 3,
-   "ax_visits": 88,
-   "heat": 15.8,
+   "ax_visits": 94,
+   "heat": 16.4,
    "orgs": [
     {
      "name": "Sorbonne Université",
@@ -1835,8 +1835,8 @@
    "tags": [],
    "hf_upvotes": 12,
    "ax_votes": 0,
-   "ax_visits": 21,
-   "heat": 14.1,
+   "ax_visits": 25,
+   "heat": 14.5,
    "orgs": [
     {
      "logo": "data/logos/haifa.ac.il.png",
@@ -1874,8 +1874,8 @@
    ],
    "hf_upvotes": 1,
    "ax_votes": 1,
-   "ax_visits": 112,
-   "heat": 13.2,
+   "ax_visits": 121,
+   "heat": 14.1,
    "listed": "2026-11-20",
    "orgs": [
     {
@@ -1946,8 +1946,8 @@
    ],
    "hf_upvotes": 7,
    "ax_votes": 1,
-   "ax_visits": 47,
-   "heat": 12.7,
+   "ax_visits": 51,
+   "heat": 13.1,
    "orgs": [
     {
      "name": "Zhejiang University",
@@ -1978,8 +1978,8 @@
    "tags": [],
    "hf_upvotes": 5,
    "ax_votes": 0,
-   "ax_visits": 75,
-   "heat": 12.5,
+   "ax_visits": 81,
+   "heat": 13.1,
    "listed": "2026-11-20",
    "orgs": [],
    "thumb": "data/thumbs/2611.26624.jpg",
@@ -2016,8 +2016,8 @@
    ],
    "hf_upvotes": 4,
    "ax_votes": 2,
-   "ax_visits": 41,
-   "heat": 10.1,
+   "ax_visits": 45,
+   "heat": 10.5,
    "listed": "2026-11-20",
    "orgs": [
     {
@@ -2064,8 +2064,8 @@
    ],
    "hf_upvotes": 2,
    "ax_votes": 2,
-   "ax_visits": 45,
-   "heat": 8.5,
+   "ax_visits": 49,
+   "heat": 8.9,
    "listed": "2026-11-20",
    "orgs": [
     {
@@ -2106,8 +2106,8 @@
    ],
    "hf_upvotes": 4,
    "ax_votes": 1,
-   "ax_visits": 27,
-   "heat": 7.7,
+   "ax_visits": 31,
+   "heat": 8.1,
    "listed": "2026-11-20",
    "orgs": [
     {

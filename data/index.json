@@ -1,6 +1,6 @@
 {
  "title": "Daily Paper",
- "updated_at": "2026-11-28T03:17:19+00:00",
+ "updated_at": "2026-11-28T08:59:23+00:00",
  "default_category": "all",
  "categories": [
   {
@@ -68,11 +68,11 @@
   },
   {
    "date": "2026-11-26",
-   "count": 296
+   "count": 299
   },
   {
    "date": "2026-11-25",
-   "count": 247
+   "count": 248
   },
   {
    "date": "2026-11-24",
