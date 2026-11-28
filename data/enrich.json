@@ -8053,5 +8053,1287 @@
   "thumb": "data/thumbs/2611.26248.jpg",
   "w": 640,
   "h": 206
+ },
+ "2611.30494": {
+  "orgs": [
+   "NUS",
+   "University of Chicago"
+  ],
+  "affils": [
+   "CoSTA@NUS Preprint\nCoSTA@NUS\nRevisiting LLMs as Context Engineers\nJunrui Zhang1, Zeyu Xu2, Runchuan Zhu1, Jie Peng2, Long Zhang2, Zixin Ding3,\nJiaxin Lin4, Kai Wang1, Jianmin Ji2, Junyuan Hong1\n1National University of Singapore, 2University of Science and Technology of China,\n3University of Chicago, 4Independent Researcher\nAs large language models (LLMs) are used in more and more new tasks, context engineering becomes\na fundamental method to efficiently steer LLMs by constructing instruction prompts or metadata\nwithout intensive training. A growing number of LLM context engineering (LCE) approaches automate\nthe task by casting the LLM itself as the engineer that draws generalizable instructions or experiences\nfrom offline trials as context. Although these methods resemble how humans learn from experiences,\nit remains unclear when and how LLMs can engineer effective context from data. To answer the\nquestion, we first establish a benchmark composed of datasets with different reasoning patterns. We\ncompared different LCE methods with different LLM families in 8B size, showing that there is no single\nwinner for all tasks, even compared with simple baselines like chain-of-thought. Even when scaling\nmodel capabilities via more parameters or generation iterations, LCEs do not consistently boost\nexisting performance. Across all datasets and models, the performance gains of LCEs are negatively\ncorrelated (r = −0.5, p ≤0.05) with the diversity of the failure modes of reasoning trajectories.\nInvestigating how LCEs work, we find that (1) the improvement in instruction adherence can explain\nsome success of LCEs; (2) one major bottleneck is whether LLMs can extract effective experiences\nout of natively diverse failures. Through this study, we uncover the limited capabilities of LCEs in\nabstracting principled contexts from diverse failure modes and understand how LCEs work, providing\nguidelines for future work.\nCorrespondence: Junyuan Hong at jyhong@nus.edu.sg\nCode: https://github.com/costa-nus/LCEBench\n1\nIntroduction\nRecent advances in LLMs have demonstrated strong generalization ability across a wide range of real-world\napplications. In parallel with these developments, one line of work adapts LLMs to downstream tasks through\ntraining-based methods such as Reinforcement Learning from Human Feedback (RLHF) (Ouyang et al.,\n2022), Direct Preference Optimization (DPO) (Rafailov et al., 2023), and Group Relative Policy Optimization\n(GRPO) (Shao et al., 2024), which update the model parameters to align with task-specific objectives.\nHowever, these training-based methods often demand large amounts of preference data (Ouyang et al., 2022)\nor hundreds of thousands of rollouts (Shao et al., 2024). The inefficiency of these methods motivated a\ncomplementary line of work that seeks to adapt LLMs in a training-free manner by engineering the prompt\nor context of LLMs rather than altering their intrinsic capabilities.\nEarly efforts in this direction mainly rely on human heuristics to engineer the instructions (Agrawal et al.,\n2026; Cai et al., 2025a; Khattab et al., 2024; Opsahl-Ong et al., 2024; Yuksekgonul et al., 2025; Zhang et al.,\n2026) that elicit LLM reasoning capabilities (Wang et al., 2023; Wei et al., 2022; Yao et al., 2023a) or execute\na better workflow (Hu et al., 2025; Li et al., 2026; Shinn et al., 2023; Xu et al., 2025a; Yao et al., 2023b; Zhang\net al., 2025a; Zhu et al., 2025). In-Context Learning (ICL) (Brown et al., 2020) enables few-shot learning via\nin-context examples. Chain-of-Thought (CoT) prompting and its variants (Wei et al., 2022; Yao et al., 2023a)\ninstruct LLMs to generate intermediate reasoning steps. Later, agent frameworks (Yao et al., 2023b) rely on\nthe reasoning to take actions, allowing LLMs to interact with external tools and environments. However,\nsuch methods are designed to accomplish tasks in a single attempt but cannot learn from accumulated human\ntrials recorded in offline datasets. For example, CoT may avoid a mistake in one attempt through reasoning,\nbut the same error may recur in subsequent trials.\n1\narXiv:2611.30494v1  [cs.AI]  23 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30494.jpg",
+  "w": 640,
+  "h": 238
+ },
+ "2611.32993": {
+  "orgs": [
+   "Zhejiang University",
+   "Alibaba Group",
+   "Hupan Lab",
+   "East China Normal University",
+   "Shanghai Jiao Tong University"
+  ],
+  "affils": [
+   "Zhejiang University",
+   "DAMO Academy, Alibaba Group",
+   "Hupan Lab",
+   "East China Normal University",
+   "Shanghai Jiao Tong University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.32993.jpg",
+  "w": 640,
+  "h": 414
+ },
+ "2611.30483": {
+  "orgs": [],
+  "affils": [
+   "When an AI agent makes a mistake in a database, what decides the\ndamage?\nNumbers come from the deterministic scorer and, where marked post hoc, from recounts of the raw records.\nAuthors: Abdullah Kaya, Cevheri Bozoğlan, Yusuf Gündoğdu (LibreDB Studio project, github.com/libredb/libredb-\nstudio) · Correspondence: info@libredb.org · Preregistration: https://osf.io/ms7ef · Harness, records and\nanalysis scripts: https://doi.org/10.5281/zenodo.24445015"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30483.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.31516": {
+  "orgs": [
+   "University of Oxford",
+   "TU Munich",
+   "Munich Center for Machine Learning",
+   "Hanyang University",
+   "Lund University"
+  ],
+  "affils": [
+   "University of Oxford",
+   "Technical University of Munich",
+   "Munich Center for Machine Learning",
+   "Hanyang University",
+   "Lund University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.31516.jpg",
+  "w": 640,
+  "h": 206
+ },
+ "2611.34719": {
+  "orgs": [
+   "Fudan University"
+  ],
+  "affils": [
+   "\n\nYuncheng Guo\n\n  \nYing Dong\n\n  \nXiaodong GuDepartment of Electronic Engineering, Fudan University\n\n https://github.com/yunncheng/ReMoT\n††thanks: Corresponding author\nguoyc19@fudan.edu.cn, xdgu@fudan.edu.cn\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34719.jpg",
+  "w": 640,
+  "h": 257
+ },
+ "2611.30723": {
+  "orgs": [
+   "Japan Advanced Institute of Science and Technology"
+  ],
+  "affils": [
+   "\n\nYixian Lu*\n\n  \nLijun Wang*\n\n  \nand Shogo Okada\n††thanks: The authors are with the Japan Advanced Institute of Science and Technology, Nomi, Ishikawa 923-1292, Japan (e-mail: yixian.lu@jaist.ac.jp; lijun.wang@jaist.ac.jp; okada-s@jaist.ac.jp). This work was partially supported by JSPS KAKENHI (No. 26K03016), JST CREST (No. JPMJCR2563), JST CRONOS (No. JPMJCS24K7), and AMED under Grant Number JP256f0137001.††thanks: * Equal contribution; author order was randomly determined by tossing a coin. $†$ Corresponding author."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30723.jpg",
+  "w": 640,
+  "h": 407
+ },
+ "2611.30025": {
+  "orgs": [
+   "Department of Computer Science and Information Technology",
+   "University of the District of Columbia"
+  ],
+  "affils": [
+   "Department of Computer Science and Information Technology",
+   "University of the District of Columbia",
+   "Washington, DC, USA",
+   "{byu, junwhan.kim}@udc.edu",
+   "Code & Benchmarks:https://github.com/yumakemore/DAWIN"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30025.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.31491": {
+  "orgs": [],
+  "affils": [
+   "Pretrained Tabular Features and the Measurement of Financial\nProximity\nMarcus Gawronsky\n23 November 2026"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31491.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.33885": {
+  "orgs": [
+   "University of California San Diego",
+   "University of California Irvine",
+   "NTU"
+  ],
+  "affils": [
+   "University of California San Diego",
+   "University of California Irvine",
+   "Nanyang Technological University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.33885.jpg",
+  "w": 640,
+  "h": 360
+ },
+ "2611.31155": {
+  "orgs": [
+   "Research Center for TAI",
+   "Institute for System Programming"
+  ],
+  "affils": [
+   "Research Center for TAI",
+   "Institute for System Programming",
+   "Moscow"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.31155.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.27112": {
+  "orgs": [
+   "Independent Researcher"
+  ],
+  "affils": [
+   "Independent Researcher, New Jersey, USA",
+   "ORCID 0009-0008-1829-2431"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.27112.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.30472": {
+  "orgs": [],
+  "affils": [
+   "Target-Part Preference Optimization for Part-Aware 3D Generation\nZishan Qin1,2\nRui Li3\nZeyu Zhang1\nSevvandi Kandanaarachchi2\nLina Yao1\nDong Gong1,∗\n1UNSW Sydney\n2CSIRO\n3NTU\n∗Corresponding author\nzishan.qin@unsw.edu.au\nedgong01@gmail.com"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.30472.jpg",
+  "w": 640,
+  "h": 291
+ },
+ "2611.17287": {
+  "orgs": [
+   "NTU"
+  ],
+  "affils": [
+   "Negative-Only Policy Optimization for\nOne-Sided Verifiable Rewards\nJiacheng Xu1,2\nShuo He1\nFuxiang Zhang1,2\nChaojie Wang2\nBo An1\n1Nanyang Technological University, Singapore\n2Skywork AI\njiacheng005@e.ntu.edu.sg, boan@ntu.edu.sg"
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.17287.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.34935": {
+  "orgs": [
+   "Princeton University",
+   "Meta"
+  ],
+  "affils": [
+   "Princeton University",
+   "Meta*Equal contribution"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.34935.jpg",
+  "w": 640,
+  "h": 210
+ },
+ "2611.25848": {
+  "orgs": [
+   "NTU",
+   "Nanjing University of Information Science and Technology"
+  ],
+  "affils": [
+   "Nanyang Technological University, Singapore",
+   "Nanjing University of Information Science and Technology, China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.25848.jpg",
+  "w": 640,
+  "h": 192
+ },
+ "2510.22622": {
+  "orgs": [
+   "CUHK"
+  ],
+  "affils": [
+   "\n\nKangran Zhao*\n\n  \nXiaoyu Zhang*\n\n  \nYupeng Chen*\n\n  \nYize Chen\n\n  \nWeinan Guan\n\n  \nBo Zheng\n\n  \nYufan Liao\n\n  \nChengzhe Sun\n\n  \nSoumyya Kanti Datta\n\n  \nQingshan Liu\n\n  \nSiwei Lyu\n\n  \nBaoyuan Wu\n††thanks: Kangran Zhao, Xiaoyu Zhang, Yize Chen, Weinan Guan, Bo Zheng, Yufan Liao, and Baoyuan Wu are with the School of Artificial Intelligence, The Chinese University of Hong Kong, Shenzhen (CUHK(SZ)), Shenzhen, China. Kangran Zhao, Yize Chen, and Bo Zheng are also with Shenzhen Loop Area Institute (SLAI), Shenzhen, China.††thanks: \nYupeng Chen is with the Department of Engineering Science, University of Oxford, Oxford, UK. His contribution to this work was made while he was with the School of Data Science, CUHK(SZ).††thanks: Chengzhe Sun, Soumyya Kanti Datta, and Siwei Lyu are with the Department of Computer Science and Engineering, University at Buffalo, Buffalo, NY, USA.††thanks: Qingshan Liu is with the School of Artificial Intelligence, Nanjing University of Posts and Telecommunications, Nanjing, China.††thanks: *Kangran Zhao (kangranzhao@link.cuhk.edu.cn), Xiaoyu Zhang (xiaoyuzhang2@link.cuhk.edu.cn), and Yupeng Chen (yupeng.chen@eng.ox.ac.uk) contributed equally to this work. Corresponding author: Baoyuan Wu (e-mail: wubaoyuan@cuhk.edu.cn)."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2510.22622.jpg",
+  "w": 640,
+  "h": 314
+ },
+ "2611.30219": {
+  "orgs": [
+   "Simon Fraser University",
+   "Alberta Machine Intelligence Institute (Amii)"
+  ],
+  "affils": [
+   "Simon Fraser University",
+   "Alberta Machine Intelligence Institute (Amii)https://3dlg-hcvc.github.io/RoomToken/"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.30219.jpg",
+  "w": 640,
+  "h": 277
+ },
+ "2611.12164": {
+  "orgs": [],
+  "affils": [
+   "Let the Fixer Decide: Training a Code Localizer\nfrom the Fixer’s Likelihood\nKhalil Hennara, Muhammad Hreden, Zeina Aldallal, Sara Chrouf,\nand Safwan AlModhayan\nKhobar, Saudi Arabia\n{hennara,hreden,aldallal,chrouf,safwan}@misraj.ai"
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.12164.jpg",
+  "w": 640,
+  "h": 217
+ },
+ "2611.18639": {
+  "orgs": [
+   "Shanghai Jiao Tong University",
+   "NTU",
+   "University of Wisconsin–Madison"
+  ],
+  "affils": [
+   ": World Distillation for Scalable Device Control\nBenchmarking\nZichen Zhu1,3, Dingye Liu1, Nan Jiang1, Danyang Zhang1, Hang Zheng1, Shijie Zheng1,\nSituo Zhang1, Kunyao Lan1, Yingzi Ma5, Sheng Jiang6, Lu Chen†1,2,4, Kai Yu†1,4\n1X-LANCE Lab, School of Computer Science, Shanghai Jiao Tong University, 2Shanghai\nInnovation Institution, 3Nanyang Technological University, 4Jiangsu Key Lab of Language\nComputing, 5University of Wisconsin–Madison, 6AISpeech Co., Ltd.\nScaling device-control evaluation requires scaling both interactive worlds and the tasks agents\nmust solve. We introduce SYNTHDCB, a benchmark for environment awareness and device\ncontrol built through world distillation (WD). World distillation transforms knowledge of\ndevice behaviors, constraints, and environmental effects into modular executable components.\nA unified capability representation connects tool discovery, world execution, and task synthesis.\nSYNTHDCB instantiates Home, Car, and Phone with 114 device classes, 1,166 functions, and\n95 events, supporting five task families with 32 subtypes. Explicit states and tool-call traces\nsupport task validation and agent evaluation. We evaluate 22 models on 2,560 test tasks; the\nbest achieves 88.8% mean Pass@1. Construction experiments demonstrate token efficiency and\nexpansion of task coverage. At the richest knowledge level, WD fully covers 22/23 properties,\n19/29 functionalities, and 30/39 event requirements specified in a real RobotVacuum protocol.\nFurthermore, the 1,000 sampled tasks semantically cover 81.6% of the 854 reference instructions\nin the real-world corpus. SYNTHDCB connects an expanding space of real-to-sim executable\ncapabilities to verifiable agent evaluation.\nWebsite\nDataset\nCode\nPublish Date: 2026.10.14\nRevise Date: 2026.11.19\n1\nIntroduction\nTool-using agents are advancing rapidly and integrated into voice assistants in home, car, or mobile\nphones, accompanied by a growing collection of benchmarks and executable environments for\nevaluating their capabilities (Yao et al., 2024; Lu et al., 2025; Seo et al., 2026; Li et al., 2026b). At\nthe same time, device manufacturers and system developers continually introduce new devices and\nexpand their functionality. When simulation environments do not keep pace, the capabilities covered\nduring agent training and evaluation can lag behind those required in deployment. This creates a\nneed for benchmarks that can be rapidly extended as new device capabilities emerge, both to evaluate\nagents against evolving requirements and to support iterative agent training.\nMeeting this need requires addressing two connected challenges. On the construction side, adding a\ndevice capability requires consistent tool interfaces, behavior implementations, world configurations,\n1\narXiv:2611.18639v2  [cs.LG]  19 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.18639.jpg",
+  "w": 640,
+  "h": 229
+ },
+ "2611.24636": {
+  "orgs": [
+   "DiffuSpace Technical Team"
+  ],
+  "affils": [
+   "\n\nDiffuSpace Technical Team\n\ndiffuspace.ai\n\njcye@diffuspace.ai\n\nsansa@diffuspace.ai\n\ngcqi@diffuspace.ai\n\nziruiwu@diffuspace.ai\n\nxcfeng@diffuspace.ai\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.24636.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.23417": {
+  "orgs": [
+   "Meta",
+   "University of Oxford"
+  ],
+  "affils": [
+   "Meta",
+   "University of Oxford"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.23417.jpg",
+  "w": 640,
+  "h": 140
+ },
+ "2611.15449": {
+  "orgs": [
+   "Yonsei University"
+  ],
+  "affils": [
+   "CIPLAB, Yonsei University",
+   "Project Page: https://jasonleex1995.github.io/TAISR_needs_Reasoning"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.15449.jpg",
+  "w": 640,
+  "h": 208
+ },
+ "2611.19247": {
+  "orgs": [
+   "Tencent"
+  ],
+  "affils": [
+   "\n\nBing He*\n\n  \nRunze Wang\n\n  \nFei Zha*\n\n  \nZhongyuan Wu\n\n  \nKe XuTao Zhuang, Yuxuan Xie, Zhongyuan Liu‡\n\nLightspeed Studios, Tencent\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.19247.jpg",
+  "w": 571,
+  "h": 440
+ },
+ "2611.24249": {
+  "orgs": [
+   "NTU"
+  ],
+  "affils": [
+   "1Nanyang Technological University, 2Zhejiang University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.24249.jpg",
+  "w": 362,
+  "h": 440
+ },
+ "2611.21485": {
+  "orgs": [
+   "Tsinghua University",
+   "Work done at ByteDance"
+  ],
+  "affils": [
+   "Lost in the Hallway: Benchmarking Persistent Spatial\nMemory Across Revisits\nHenry Zheng1,2,∗, Weibo Gong2, Yang Yue1, Rui Huang1, Yang Zhang2, Gao\nHuang2,†\n1Tsinghua University, 2PICO, ByteDance\n∗Work done at ByteDance, †Corresponding author"
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.21485.jpg",
+  "w": 603,
+  "h": 440
+ },
+ "2611.24077": {
+  "orgs": [
+   "Tsinghua University",
+   "Foshan University South China University of Technology Project"
+  ],
+  "affils": [
+   "SIGS, Tsinghua University Department of Electronic Engineering, Tsinghua University",
+   "Foshan University South China University of Technology †Corresponding authorProject code: https://github.com/starsholic/AeroRSI"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.24077.jpg",
+  "w": 640,
+  "h": 270
+ },
+ "2611.25534": {
+  "orgs": [
+   "HKUST"
+  ],
+  "affils": [
+   "2026-11-19\nHOW FEEDBACK-FREE SELF-EVOLUTION RESHAPES AGENT SKILLS:\nA SYSTEMATIC STUDY\nLitao Guo1*\nMan Chen1*\nXinli Xu1\nJinsong Zhou1\nZixin Zhang1,3\nYing-Cong Chen1,2†\n1The Hong Kong University of Science and Technology (Guangzhou)\n2The Hong Kong University of Science and Technology\n3Knowin\n* Equal contribution.\n† Corresponding author."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.25534.jpg",
+  "w": 640,
+  "h": 370
+ },
+ "2611.28123": {
+  "orgs": [
+   "NTU"
+  ],
+  "affils": [
+   "1Nanyang Technological University, 2Beijing Jiaotong University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.28123.jpg",
+  "w": 640,
+  "h": 275
+ },
+ "2611.22343": {
+  "orgs": [
+   "Alibaba Group"
+  ],
+  "affils": [
+   "PURE: A Diagnostic Benchmark for Multi-Granularity Multimodal\nIdentity Matching\nHengyu You,\nXintong Wang,\nJin Cao,\nLiang Ding*\nAlibaba Group\n{youhengyu.yhy, hanfeng.wxt, luyu.cj, zuorui.dl}@alibaba-inc.com"
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.22343.jpg",
+  "w": 640,
+  "h": 284
+ },
+ "2611.24025": {
+  "orgs": [
+   "Independent Researcher",
+   "Georgia Institute of Technology",
+   "University of Massachusetts Amherst",
+   "University of Illinois Urbana-Champaign"
+  ],
+  "affils": [
+   "Independent Researcher",
+   "ziyuan.wang.engineer@gmail.com",
+   "Georgia Institute of Technology",
+   "sebby@gatech.edu",
+   "University of Massachusetts Amherst",
+   "xchen@umass.edu",
+   "University of Illinois Urbana-Champaign",
+   "wallywang@ieee.org"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.24025.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.22479": {
+  "orgs": [
+   "Computer Incident Response Center Luxembourg (CIRCL)"
+  ],
+  "affils": [
+   "Computer Incident Response Center Luxembourg (CIRCL)",
+   "cedric.bonhomme@circl.lu [57B7 A70D]",
+   "alexandre.dulaunoy@circl.lu [44E6 CBCD]"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.22479.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.22495": {
+  "orgs": [
+   "University of Southern California",
+   "Texas A&M University",
+   "Vanderbilt University",
+   "University of Georgia",
+   "Amazon"
+  ],
+  "affils": [
+   "University of Southern California",
+   "Texas A&M University",
+   "Vanderbilt University",
+   "Adobe",
+   "University of Georgia",
+   "Amazon"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.22495.jpg",
+  "w": 640,
+  "h": 427
+ },
+ "2611.25252": {
+  "orgs": [
+   "Université Paris-Saclay"
+  ],
+  "affils": [
+   "\n\nZhenling Chen\n\n  \nZhiguo Zeng\n\n  \nAnne Barros\n††thanks: Z.˜Chen is with Laboratoire Génie Industriel, CentraleSupélec, Université Paris-Saclay, Gif-sur-Yvette, France (e-mail: zhenling.chen@centralesupelec.fr).††thanks: (Corresponding author: Zhiguo Zeng.)††thanks: Z.˜Zeng and A.˜Barros are with the Chair on Risk and Resilience of Complex Systems, Laboratoire Génie Industriel, CentraleSupélec, Université Paris-Saclay, Gif-sur-Yvette, France (e-mail: zhiguo.zeng@centralesupelec.fr; anne.barros@centralesupelec.fr)."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.25252.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.21885": {
+  "orgs": [
+   "CMU"
+  ],
+  "affils": [
+   "Language Models Can Rewrite Their Own Weights\nJiajun Fan1, Neil He1,6, Changyi Yang2, Andy Mao1, Xi Zhu3, Chaoran Cheng1,\nKaiqu Liang4, Shuaike Shen2, Zetian Li5, Ruihan Guo1, Ge Liu1\n1\nUIUC\n2\nCMU\n3\nRutgers\n4\nPrinceton\n5\nStanford\n6\nYale"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.21885.jpg",
+  "w": 640,
+  "h": 308
+ },
+ "2611.21373": {
+  "orgs": [
+   "Nanjing University"
+  ],
+  "affils": [
+   "WeVisForensics: Self-Evolving Agent for\nOmni AI-Generated Video Detection\nYipeng Du1,2,*,\nYuxi Li2,†,\nYing Zhang2,\nChong Sun2,\nChen Li2,‡,\nJing Lyu2,\nYing Tai1,‡\n1Nanjing University, 2WeChat Vision, Tencent Inc."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.21373.jpg",
+  "w": 640,
+  "h": 291
+ },
+ "2611.22666": {
+  "orgs": [
+   "KAIST",
+   "University of Oxford"
+  ],
+  "affils": [
+   "KAIST",
+   "VGG, University of Oxfordhttps://suho-yoo.github.io/VSpark/"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.22666.jpg",
+  "w": 529,
+  "h": 440
+ },
+ "2611.21383": {
+  "orgs": [
+   "Yonsei University"
+  ],
+  "affils": [
+   "Yonsei University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.21383.jpg",
+  "w": 640,
+  "h": 273
+ },
+ "2611.24193": {
+  "orgs": [
+   "Princeton University",
+   "NVIDIA"
+  ],
+  "affils": [
+   "WMMLLM: Turning MLLMs into World Models\nBaiang Li1,3, Enze Xie2,†, Jincheng Yu2, Jin Wang2, Haozhe Liu2, Yitong Li2,\nJuanxi Tian3, Felix Heide1\n1Princeton University\n2NVIDIA\n3OpenEnvision\n†Project Lead"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.24193.jpg",
+  "w": 640,
+  "h": 405
+ },
+ "2611.19230": {
+  "orgs": [
+   "Amazon"
+  ],
+  "affils": [
+   "CompoundingKernel: Self-Improving from Zero to First\nQian Qu, Hongyang Wang, Wenbo Chen, Yichuan Li, Jingguo Liu, Xian Li, Xuan Wang,\nRuochen Wen, Leo Fan, Yiming Yan, Yutong Chen, Zheshen Wang, Benoit Dumoulin\nAmazon\nÐ HuggingFace Space"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.19230.jpg",
+  "w": 640,
+  "h": 405
+ },
+ "2611.24011": {
+  "orgs": [
+   "Australian Centre for Robotics",
+   "La Trobe University"
+  ],
+  "affils": [
+   "Australian Centre for Robotics, USYD",
+   "UNSW Sydney",
+   "Maincode",
+   "La Trobe University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.24011.jpg",
+  "w": 640,
+  "h": 342
+ },
+ "2611.20455": {
+  "orgs": [],
+  "affils": [
+   "Embeddings vs. Grep: Rethinking the Dense Advantage in Code Search\nSiqiao Xue*\nZiyin Zhang\nZihan Liao\nJin Qin\nYixiang Mu*\nHang Yu\ndaenerystargaryen@sjtu.edu.cn\nAnt Group\n§ https://github.com/hq-bench/repo-premium\nhttps://huggingface.co/datasets/hq-bench/repo-premium"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.20455.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.24809": {
+  "orgs": [
+   "Fudan University",
+   "ByteDance Seed",
+   "NTU"
+  ],
+  "affils": [
+   "Fudan University",
+   "ByteDance Seed",
+   "Nanyang Technological University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.24809.jpg",
+  "w": 640,
+  "h": 265
+ },
+ "2611.21053": {
+  "orgs": [
+   "RESEARCH ARTICLE"
+  ],
+  "affils": [
+   "RESEARCH ARTICLE\nSystem 1 agents: a method for local, reliable\nand fast agentic AI\nEleftherios Tzanis1,2,*, Michail E. Klontzas1,2,3"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.21053.jpg",
+  "w": 529,
+  "h": 440
+ },
+ "2611.25935": {
+  "orgs": [
+   "Czech Technical University in Prague",
+   "CISPA Helmholtz Center for Information Security"
+  ],
+  "affils": [
+   "Czech Technical University in Prague",
+   "CISPA Helmholtz Center for Information Security"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.25935.jpg",
+  "w": 640,
+  "h": 232
+ },
+ "2611.26624": {
+  "orgs": [],
+  "affils": [
+   "PLAYCRAFT: DESIGNING ENGAGING GAMES\nFROM AGENT PLAY EXPERIENCE\nWeihao Cheng\nweihao.cheng@proton.me"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.26624.jpg",
+  "w": 587,
+  "h": 440
+ },
+ "2611.25604": {
+  "orgs": [
+   "Tongji University"
+  ],
+  "affils": [
+   "PAD: Policy-Aware Data Valuation for Autonomous Driving\nChengkai Xu1, Yicheng Guo1, Jiaqi Liu2, Yiming Cui1,\nShiyu Fang1, Peng Hang1, Hao Zhang3, Jian Sun1∗\n1College of Transportation, Tongji University\n2Department of Computer Science, UNC Chapel Hill\n3Department of Control Science and Engineering, Tongji University"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.25604.jpg",
+  "w": 640,
+  "h": 231
+ },
+ "2611.26232": {
+  "orgs": [
+   "Arizona State University"
+  ],
+  "affils": [
+   "Time Series Structure Learning with Local Causal Parent Discovery\nJacqueline Maasch\nCornell Tech\njam887@cornell.edu\nShu Wan\nAbel AI\nshu.wan@abel.ai\nHank Zhu\nAbel AI\nhank.zhu@abel.ai\nHuan Liu\nArizona State University\nZhiguang Wang\nAbel AI"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.26232.jpg",
+  "w": 640,
+  "h": 224
+ },
+ "2611.26298": {
+  "orgs": [
+   "Wuhan University",
+   "Tsinghua University",
+   "State Key Laboratory of Complex & Critical Software Environment",
+   "Renmin University of China",
+   "NTU"
+  ],
+  "affils": [
+   "Wuhan University",
+   "Ant Group",
+   "Tsinghua University",
+   "State Key Laboratory of Complex & Critical Software Environment",
+   "Renmin University of China",
+   "Nanyang Technological University",
+   "Universidad de Los Andes"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.26298.jpg",
+  "w": 484,
+  "h": 440
+ },
+ "2611.24738": {
+  "orgs": [
+   "NUS"
+  ],
+  "affils": [
+   "National University of Singapore",
+   "yuhe_liu@u.nus.edu liqi@u.nus.edu suhzhang001@gmail.com xinchao@nus.edu.sg"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.24738.jpg",
+  "w": 640,
+  "h": 417
+ },
+ "2611.23068": {
+  "orgs": [
+   "ShanghaiTech University",
+   "ByteDance"
+  ],
+  "affils": [
+   "The Resolution Hypothesis:\nAgent Evolution’s Key Is Identifying Improvements\nYuanhao Zeng1,2,3,∗, Shaocheng Lan1,2,∗, Ao Lu1,2,∗, Kuang Yan2, Heng Lin2,\nXinang Xu2, Yuan Luo4, Yueting Wang1, Yexin Li3, Ruo Shan2, Kan Ren1,†\n1ShanghaiTech University\n2ByteDance, China\n3BIGAI\n4SUSTech\n∗Equal contribution, †Corresponding author"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.23068.jpg",
+  "w": 507,
+  "h": 440
+ },
+ "2611.22925": {
+  "orgs": [
+   "Ant Group 2Westlake University 3Zhejiang University"
+  ],
+  "affils": [
+   "1Inclusion AI, Ant Group 2Westlake University 3Zhejiang University ; ∗Equal contribution †Project leader ‡Corresponding author"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.22925.jpg",
+  "w": 580,
+  "h": 440
+ },
+ "2611.22287": {
+  "orgs": [
+   "California Institute of Technology"
+  ],
+  "affils": [
+   "Luma AI",
+   "California Institute of Technology https://hanshengchen.com/dwd"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.22287.jpg",
+  "w": 640,
+  "h": 323
+ },
+ "2611.21366": {
+  "orgs": [
+   "Tsinghua University",
+   "Beihang University"
+  ],
+  "affils": [
+   "ALIVE: Making Streaming Video Models Interactive\nJinzhao Li1,3,∗, Yuan Xu2,3,∗, Jinxuan Wu4, Yukun Wang1,\nYijia Lei1, Hanyu Ji2, Yinuo Chen1, Zining Huang1,\nChi Zhang1, Hang Ye2, Yiwu Zhong2,\nHonglei Yan3, Panwang Pan3, Yizhou Wang2, Yin Li5, Miao Liu1,†\n1Tsinghua University, 2Peking University, 3ByteDance\n4Beihang University, 5University of Wisconsin–Madison\n∗Equal contribution, †Corresponding author\nlijinzha22@mails.tsinghua.edu.cn\nmiaoliu@mail.tsinghua.edu.cn"
+  ],
+  "kind": "text",
+  "source": "pdf",
+  "thumb": "data/thumbs/2611.21366.jpg",
+  "w": 608,
+  "h": 440
+ },
+ "2611.23388": {
+  "orgs": [
+   "MIT",
+   "NVIDIA"
+  ],
+  "affils": [
+   "QDA: CLOSED-LOOP LLM QUANTIZATION DESIGN WITH AGENTS\nXingyang Li∗\nTianlang Zhao∗\nSong Han\nLigeng Zhu\nMIT\nNVIDIA"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.23388.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.24154": {
+  "orgs": [
+   "UC Santa Barbara"
+  ],
+  "affils": [
+   "1UIUC, 2UC Santa Barbara, 3Georgia Tech, 4Northwestern University, 5IBM ; Website Code Models"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.24154.jpg",
+  "w": 494,
+  "h": 440
+ },
+ "2611.24651": {
+  "orgs": [
+   "Piccolo Team"
+  ],
+  "affils": [
+   "\n\nPiccolo Team†\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.24651.jpg",
+  "w": 640,
+  "h": 275
+ },
+ "2611.11318": {
+  "orgs": [
+   "KAIST"
+  ],
+  "affils": [
+   "Korea Advanced Institute of Science and Technology (KAIST)",
+   "{yms020615, bms2002, sojin.lee, hyunwoojkim}@kaist.ac.kr"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.11318.jpg",
+  "w": 640,
+  "h": 220
+ },
+ "2611.24654": {
+  "orgs": [
+   "Shanghai University of Finance and Economics",
+   "Alibaba Group",
+   "Southern University of Science and Technology"
+  ],
+  "affils": [
+   "Shanghai University of Finance and Economics",
+   "Alibaba Group",
+   "Southern University of Science and Technology"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.24654.jpg",
+  "w": 550,
+  "h": 440
+ },
+ "2611.24869": {
+  "orgs": [
+   "Alaya Lab",
+   "Beijing Institute of Technology",
+   "University of Tokyo",
+   "Shenzhen MSU-BIT University",
+   "Shanghai Innovation Institute"
+  ],
+  "affils": [
+   "Alaya Lab",
+   "Beijing Institute of Technology",
+   "The University of Tokyo",
+   "Shenzhen MSU-BIT University",
+   "Shanghai Innovation Institute"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.24869.jpg",
+  "w": 640,
+  "h": 246
+ },
+ "2611.23751": {
+  "orgs": [
+   "University of Science and Technology of China",
+   "NTU"
+  ],
+  "affils": [
+   "University of Science and Technology of China",
+   "Nanyang Technological University"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.23751.jpg",
+  "w": 566,
+  "h": 440
+ },
+ "2611.17600": {
+  "orgs": [
+   "Technion – Israel Institute of Technology"
+  ],
+  "affils": [
+   "Technion – Israel Institute of Technology"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.17600.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.24161": {
+  "orgs": [
+   "Meta AI",
+   "King Abdullah University of Science and Technology (KAUST)",
+   "Princeton University"
+  ],
+  "affils": [
+   "Meta AI",
+   "King Abdullah University of Science and Technology (KAUST)",
+   "Princeton University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.24161.jpg",
+  "w": 640,
+  "h": 236
+ },
+ "2611.24789": {
+  "orgs": [
+   "NUS"
+  ],
+  "affils": [
+   "National University of Singapore{phuongtuandat, liqi}@u.nus.edu, xinchao@nus.edu.sg†Corresponding author"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.24789.jpg",
+  "w": 616,
+  "h": 440
+ },
+ "2611.08136": {
+  "orgs": [
+   "Department of Artificial Intelligence and Robotics",
+   "Sejong University",
+   "Korea Atomic Energy Research Institute"
+  ],
+  "affils": [
+   "\n\nHyojun Yi\n\n  \nGeunyoung Kim\n\n  \nHogeon Seo\n\n  \nSeunghyoung Ryu\n††thanks: Hyojun Yi and Geunyoung Kim contributed equally to this work.††thanks: H. Yi, G. Kim, and S. Ryu are with the Department of Artificial Intelligence and Robotics,\nSejong University, Seoul, Republic of Korea\n(e-mail: black99y@sju.ac.kr; kky5572558@sju.ac.kr; shryu@sejong.ac.kr).††thanks: H. Seo is with the Applied AI Section, Korea Atomic Energy Research Institute,\nDaejeon, Republic of Korea\n(e-mail: hogeony@kaeri.re.kr).††thanks: Corresponding author: Seunghyoung Ryu (e-mail: shryu@sejong.ac.kr).††thanks: The source code for PRISM-T and PRISM-V is publicly\navailable at https://github.com/ideal-lab-sejong/PRISM_T\nand\nhttps://github.com/ideal-lab-sejong/PRISM_V,\nrespectively.††thanks: This work has been submitted to the IEEE for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.08136.jpg",
+  "w": 308,
+  "h": 440
+ },
+ "2611.17460": {
+  "orgs": [
+   "[2mm] NAVER AI Lab"
+  ],
+  "affils": [
+   "[2mm] NAVER AI Lab"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.17460.jpg",
+  "w": 640,
+  "h": 313
+ },
+ "2611.24362": {
+  "orgs": [
+   "University of Waterloo"
+  ],
+  "affils": [
+   "1University of Waterloo, 2Zhejiang University, 3KTH Royal Institute of Technology",
+   "lipeng.he@uwaterloo.ca, yihan.wang@uwaterloo.ca, kevinzh@zju.edu.cn, asokan@acm.org"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.24362.jpg",
+  "w": 640,
+  "h": 392
+ },
+ "2611.21553": {
+  "orgs": [
+   "Salesforce AI Research"
+  ],
+  "affils": [
+   "Salesforce AI Research"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.21553.jpg",
+  "w": 640,
+  "h": 235
+ },
+ "2611.24408": {
+  "orgs": [
+   "Shanghai Jiao Tong University",
+   "Shanghai AI Lab",
+   "Beihang University",
+   "Tianjin University",
+   "Tsinghua University"
+  ],
+  "affils": [
+   "Shanghai Jiao Tong University",
+   "Shanghai Artificial Intelligence Laboratory",
+   "Beihang University",
+   "Tianjin University",
+   "Shenzhen International Graduate School, Tsinghua University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.24408.jpg",
+  "w": 390,
+  "h": 439
+ },
+ "2611.24830": {
+  "orgs": [
+   "Peking University"
+  ],
+  "affils": [
+   "A Foundation Model\nto Measure and Predict Human Behaviour\nHaoran Ye1,*\nTianrui Huo2,*\nHangzhen Li2\nXin Zhang3\nGuojie Song1, B\n*Equal contribution\n1State Key Laboratory of General Artificial Intelligence, School of Intelligence Science and Technology, Peking University\n2Yuanpei College, Peking University\n3School of Psychological and Cognitive Sciences, Peking University"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.24830.jpg",
+  "w": 640,
+  "h": 368
+ },
+ "2611.24941": {
+  "orgs": [],
+  "affils": [
+   "UltraTex: Aligning Physical Knowledge for High-Fidelity PBR Texture Generation\nJINGZHI BAO, SSE, CUHKSZ, China\nXIAOHE MA, Meshy AI, China\nHONG LI, Meshy AI, China\nYUANMING HU, Meshy AI, China\nXIAOGUANG HAN∗, SSE, CUHKSZ and SLAI, China\nAlbedo\nAlbedo\nMetallic\nMetallic\nRoughness\nRoughness\nClose-up\nClose-up\nFig. 1. PBR texture gallery generated by UltraTex. Our method produces detailed and physically plausible PBR materials across diverse assets under\nenvironmental lighting. In the first row, the right column shows the generated albedo, metallic, and roughness maps from top to bottom. In the second row, a\nclose-up render (right) of the boxed region (left) reveals fine-grained material details. Project page: https://ultratex.vercel.app/."
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.24941.jpg",
+  "w": 625,
+  "h": 440
+ },
+ "2611.23779": {
+  "orgs": [
+   "Universitat Politècnica de Catalunya",
+   "Universitat de Barcelona"
+  ],
+  "affils": [
+   "David Bonet2,3,4",
+   "Marçal Comajoan Cara2,6",
+   "Daniel Mas Montserrat2,3",
+   "1Universitat Politècnica de Catalunya",
+   "4Universitat de Barcelona"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.23779.jpg",
+  "w": 504,
+  "h": 440
+ },
+ "2611.19200": {
+  "orgs": [
+   "Meta Superintelligence Labs (MSL)",
+   "University of Maryland"
+  ],
+  "affils": [
+   "Meta Superintelligence Labs (MSL)",
+   "University of Maryland"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.19200.jpg",
+  "w": 640,
+  "h": 362
+ },
+ "2611.24576": {
+  "orgs": [],
+  "affils": [
+   "Late Entry in Looped Language Models\nZiqi Jin1, Jiaxi Li2, Weiwen Xu3,†, Aixin Sun1,†\nProject: xalp.net/late-entry\n·\nCode: github.com/Xalp/LateComer\n·\nModels: hf.co/Xalphinions"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.24576.jpg",
+  "w": 640,
+  "h": 296
+ },
+ "2611.14848": {
+  "orgs": [],
+  "affils": [
+   "TIDEWAY: PHASE-AWARE TIERED MEMORY MANAGEMENT FOR\nMOE INFERENCE ON CONSUMER DEVICES\nYifei Wang 1\nTsun-yu Yang 1\nYechen Xu 1\nHancheng Ye 1\nQinsi Wang 1\nBaijun Zhou 1\nTingjun Chen 1\nHai “Helen” Li 1\nDanyang Zhuo 1\nYiran Chen 1"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.14848.jpg",
+  "w": 400,
+  "h": 180
+ },
+ "2611.23499": {
+  "orgs": [
+   "NUS",
+   "Webpage: magiclab-nus.github.io/BiCAT"
+  ],
+  "affils": [
+   "BiCAT: Bimanual Coordination Action\nTokenization\nXuanwei Liu1\nGuipu Cao1\nZhongyi Luo1\nJiafei Duan*1\n1National University of Singapore\n*Corresponding Author\nWebpage: magiclab-nus.github.io/BiCAT\nCode: github.com/MAGICLAB-NUS/BiCAT\nContact: duanj1@nus.edu.sg"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.23499.jpg",
+  "w": 640,
+  "h": 230
+ },
+ "2611.23808": {
+  "orgs": [
+   "Seoul National University"
+  ],
+  "affils": [
+   "Department of Electrical and Computer Engineering, Seoul National University",
+   "Interdisciplinary Program in AI, Seoul National University"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.23808.jpg",
+  "w": 485,
+  "h": 440
+ },
+ "2611.23824": {
+  "orgs": [
+   "Chinese Academy of Sciences",
+   "Tencent",
+   "Harbin Institute of Technology",
+   "Renmin University of China",
+   "Peking University",
+   "Beijing Institute of Technology"
+  ],
+  "affils": [
+   "University of the Chinese Academy of Sciences",
+   "Tencent",
+   "Harbin Institute of Technology",
+   "Renmin University of China",
+   "Peking University",
+   "Beijing Institute of Technology"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.23824.jpg",
+  "w": 550,
+  "h": 440
+ },
+ "2611.21114": {
+  "orgs": [
+   "NUS"
+  ],
+  "affils": [
+   "\n\nKe SunShuwei LiHaiyang Mei\n\n  \nMike Zheng ShouShow Lab, National University of SingaporeProject page: showlab.github.io/vae-rhythm\n"
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.21114.jpg",
+  "w": 402,
+  "h": 320
+ },
+ "2611.23994": {
+  "orgs": [
+   "Karlsruhe Institute of Technology",
+   "FZI Research Center for Information Technology"
+  ],
+  "affils": [
+   "Karlsruhe Institute of Technology, Germany",
+   "Parallel Domain, Germany",
+   "FZI Research Center for Information Technology, Germany"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.23994.jpg",
+  "w": 640,
+  "h": 238
+ },
+ "2611.24098": {
+  "orgs": [
+   "Zhejiang University",
+   "ByteDance",
+   "Peking University"
+  ],
+  "affils": [
+   "ReLER, CCAI, Zhejiang University, ByteDance, Hangzhou, Zhejiang, China",
+   "ByteDance, Beijing, China",
+   "Peking University, ByteDance, Beijing, China",
+   "School of Artificial Intelligence, Zhejiang University, Hangzhou, Zhejiang, China",
+   "ReLER, CCAI, Zhejiang University, Hangzhou, Zhejiang, China"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.24098.jpg",
+  "w": 640,
+  "h": 240
+ },
+ "2611.24733": {
+  "orgs": [
+   "University of Illinois Urbana-Champaign"
+  ],
+  "affils": [
+   "University of Illinois Urbana-Champaign"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.24733.jpg",
+  "w": 640,
+  "h": 264
+ },
+ "2611.23257": {
+  "orgs": [
+   "Shanghai Jiao Tong University"
+  ],
+  "affils": [
+   "StatePortal: Agentic Checkpoint Synthesis for\nTesting Deep States in Interactive Software\nZhiyuan Peng1,∗, Wei Tao2,∗, Chenhao Ying1,†, Yuan Luo1,†, Yiwen Guo3,†\n1Shanghai Jiao Tong University 2LIGHTSPEED 3Independent Researcher\npzy2000@sjtu.edu.cn, wtao@ieee.org, yingchenhao@sjtu.edu.cn,\nyuanluo@sjtu.edu.cn, guoyiwen89@gmail.com\nLarge language models have reduced the effort to generate code for interactive software with graphical\nuser interfaces (GUIs). For such software, a key testing bottleneck is reaching a deep state, one that\nrequires a long interaction history.\nThe cost of reaching it recurs across commits, and the GUI\nautomation that could amortize it assumes a DOM or accessibility tree that self-rendered engines\ndo not expose. We introduce StatePortal, an agent that synthesizes a checkpoint, an artifact that\nrestores that state and can be versioned and replayed, from a natural-language functional test case\nand read-only access to the target’s source code. The checkpoint is restored through a per-application\nhook that an onboarding agent binds or synthesizes once without hand-written hook code. Because\na checkpoint can satisfy state checks while rendering incorrectly, checkpoints are scored by hybrid\nprogrammatic-state and visual evaluation: acceptance requires both a programmatic-state oracle and\na visual oracle to pass. We calibrate the visual oracle against a blinded cross-VLM reference. We\nrelease DeepStateBench, 61 deep-state tasks across 10 interactive applications that span five language\nfamilies and six rendering stacks, with source sizes from 874 to 7.2M lines. Across three registered\nmodels, a GUI agent seeded with synthesized checkpoints completes 10.4% of trials, compared with\n0% without seeding under the same pixel action space, while StatePortal, which also delivers the\ntarget action through the hook, completes 27.5%. Over 1,361 replays of 112 checkpoints, 98.90%\nreproduce the original verdict with zero model calls, and the hybrid oracle detects 96.25% (77/80) of\ncontrolled visual faults invisible to programmatic-state checks alone.\nhttps://github.com/pzy2000/State_Portal\nDate: September 2026\nTo understand a world, first make its depths reachable.\n— Lucius\n1\nIntroduction\nLarge language models have reduced the effort required to generate code for software [22], increasing the\nimportance of effective verification [37]. In interactive software, testing a target behavior may require a long\nsequence of prerequisite interactions [46], repeated across commits. Automated tests for such software often\nstart from hand-built fixtures, leaving states beyond them hard to verify [19, 26, 49]. The shortfall is sharpest\nin games, where developers report substantially less test automation than in other domains [33] and only\n7.33% of 491 open-source projects contain automated tests [7]. The cost of covering these states depends on\nhow much of the running application a test harness can read and write, and the self-rendered engines widely\nused in game development expose little of it (Appendix A.1).\nUnit tests alone are insuﬀicient: GUI-specific failures (e.g., a softlock, where the software keeps running but\nthe player cannot progress [8]) may emerge only during a full interaction sequence [37], and industrial reports\nrank progress-blocking failures among the most common defects [42]. GUI automation based on reusable\n∗Equal contribution.\n†Corresponding authors.\narXiv:2611.23257v1  [cs.SE]  29 Sep 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.23257.jpg",
+  "w": 640,
+  "h": 294
+ },
+ "2611.23386": {
+  "orgs": [
+   "Research Program"
+  ],
+  "affils": [
+   "Chorus: Shared N-gram Embeddings\nwith Layer-wise Adaptation\nStephen Chung\nWenyu Du\nDualverseAI\nLanguage models can gain capacity at little computational cost from n-gram embedding tables: large\ntables of learned vectors for short sequences of consecutive tokens, which are looked up and added\nto the model’s input or to its intermediate layers. Recent designs commonly use a separate n-gram\nembedding table for each layer, which makes the tables costly in memory and prevents layers from\nsharing what they learn.\nHowever, a single shared table gives every layer the same embedding,\nleaves no room for layer-wise preferences, and performs poorly in practice. We propose Chorus, in\nwhich one set of n-gram embedding tables serves the whole network and every layer reads it in its\nown way. Each layer maps the refined embedding through its own projection layer, after rescaling\nits components by factors computed from its current hidden state.\nChorus matches the quality\nof existing n-gram methods with 87% smaller tables: with 1.2B table parameters it predicts text\nbetter than FactorEngram and DeepSeek’s Engram do with 9.6B. It outperforms Engram, TN-gram\nand FactorEngram in every setting where we compared them, across table sizes from 20M to 9.6B\nparameters. We also show that the recently proposed memory-efficient optimizer Ember works well\nwith Chorus, saving 99.2% of table-optimizer memory compared with AdamW without degrading\ntraining performance.\nThese results enable further scaling of n-gram embedding tables along the\ntable-size axis by reducing memory use and allowing shared knowledge to be reused across layers.\nCode: https://github.com/dualverse-ai/chorus\nDate: 18-Nov-2026\nCorrespondence: info@dualverse.ai\n1\nIntroduction\nIn a standard language model, model size and computation grow together because almost every weight takes\npart in processing every token [1–3]. N-gram embedding tables separate the two by adding large tables of\nlearned vectors for short sequences of consecutive tokens. At each position, the model looks up vectors for the\nshort sequences ending at the current token, such as the two-token bigram and three-token trigram. Because\nfar too many such sequences exist to give each its own row, a fixed hash function maps each sequence to\na row of the table [4, 5]. Each position reads only a few rows however large the tables are, so their size is\ndecoupled from the computation each token costs, and the tables can hold billions of parameters at little\ncomputational cost.\nEarlier models placed n-gram embedding tables only at the input [6, 7], whereas recent designs place them\ninside the network so that looked-up vectors interact with intermediate representations. DeepSeek’s Engram\ninserts hashed n-gram tables into selected layers and gates the retrieved vectors with the layer’s hidden\nstate [8]. Follow-up designs change how each table is structured: TN-gram shares tensor factors across n-\ngram orders [9], FactorEngram stores sparse coefficients over a learned dictionary [10], and X-gram allocates\nrows by token frequency [11]. Despite these differences, these methods commonly use a separate n-gram\nembedding table for each layer (Figure 2a). Separate tables are costly in memory: reading n-grams at more\nlayers either multiplies table size or leaves fewer rows per table and more hash collisions. They also prevent\nlayers from sharing what they learn about the same token sequences.\nThis work extends a human-verified finding made by an rStation agent (https://rstation.ai/) as part of our Autonomous\nResearch Program (https://dualverse.ai/auto_research).\narXiv:2611.23386v2  [cs.CL]  19 Nov 2026\n"
+  ],
+  "kind": "text",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.23386.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.24681": {
+  "orgs": [
+   "University of Electronic Science and Technology of China",
+   "De Artificial Intelligence Technology",
+   "HKU"
+  ],
+  "affils": [
+   "\n\nHaorui Chen1  Shiteng Lu111footnotemark: \n          1\n          \n          \n          \n          \n          \n          \n          \n          Zhanyu Guo1  Zaixi Li1  Yunhe Ni1 \n\nYaosong Du1  Yichen Xiang1  Xiande Huang2  Rui Huang3 \n\n\n1University of Electronic Science and Technology of China \n\n2De Artificial Intelligence Technology Co., Ltd \n\n3University of Hong Kong \n\n\n{hrchen,lushiteng,huang_rui}@std.uestc.edu.cn\n††thanks: Equal contribution.††thanks: Corresponding author."
+  ],
+  "kind": "text",
+  "source": "html",
+  "thumb": "data/thumbs/2611.24681.jpg",
+  "w": 640,
+  "h": 427
+ },
+ "2611.22033": {
+  "orgs": [
+   "University of Chicago"
+  ],
+  "affils": [
+   "University of Chicago"
+  ],
+  "kind": "tagged",
+  "source": "html+pdf",
+  "thumb": "data/thumbs/2611.22033.jpg",
+  "w": 618,
+  "h": 440
+ },
+ "2611.22673": {
+  "orgs": [
+   "Google Cloud AI Research",
+   "NUS"
+  ],
+  "affils": [
+   "Google Cloud AI Research",
+   "National University of Singapore"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.22673.jpg",
+  "w": 474,
+  "h": 440
+ },
+ "2611.22382": {
+  "orgs": [
+   "Indian Institute of Technology Bombay"
+  ],
+  "affils": [
+   "Hyperbots",
+   "Indian Institute of Technology Bombay"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.22382.jpg",
+  "w": 640,
+  "h": 417
+ },
+ "2611.24102": {
+  "orgs": [
+   "HKUST"
+  ],
+  "affils": [
+   "HKUST Peking University Huawei Noah’s Ark Lab"
+  ],
+  "kind": "tagged",
+  "source": "html",
+  "thumb": "data/thumbs/2611.24102.jpg",
+  "w": 640,
+  "h": 419
  }
 }

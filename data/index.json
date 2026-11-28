@@ -1,6 +1,6 @@
 {
  "title": "Daily Paper",
- "updated_at": "2026-11-27T19:06:22+00:00",
+ "updated_at": "2026-11-28T01:52:45+00:00",
  "default_category": "all",
  "categories": [
   {
@@ -25,6 +25,10 @@
   "cs.GR": {
    "en": "Graphics",
    "zh": "图形学"
+  },
+  "cs.HC": {
+   "en": "Human-Computer Interaction",
+   "zh": "人机交互"
   },
   "cs.LG": {
    "en": "Machine Learning",
@@ -53,28 +57,28 @@
  },
  "days": [
   {
+   "date": "2026-11-27",
+   "count": 22
+  },
+  {
+   "date": "2026-11-26",
+   "count": 262
+  },
+  {
    "date": "2026-11-25",
-   "count": 214
+   "count": 207
   },
   {
    "date": "2026-11-24",
-   "count": 172
+   "count": 168
   },
   {
    "date": "2026-11-23",
-   "count": 135
-  },
-  {
-   "date": "2026-11-22",
-   "count": 33
-  },
-  {
-   "date": "2026-11-21",
-   "count": 30
+   "count": 42
   },
   {
    "date": "2026-11-20",
-   "count": 41
+   "count": 50
   },
   {
    "date": "2026-11-19",

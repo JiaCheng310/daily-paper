@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-27T19:08:33+00:00",
- "newest": "2026-11-25",
+ "updated_at": "2026-11-28T01:55:18+00:00",
+ "newest": "2026-11-27",
  "periods": {
   "7": {
-   "from": "2026-11-19",
-   "days": 7,
+   "from": "2026-11-21",
+   "days": 5,
    "papers": [
     {
      "id": "2611.30325",
@@ -36,20 +36,24 @@
       "zh": "VOPD 将稀疏的验证器奖励投影到教师的隐式奖励方向上，并在整个词表上做 Rao-Blackwell 化，得到稠密的、基于验证器的监督信号，在八项数学推理基准上相比 vanilla OPD 与其他 on-policy distillation 基线同时提升最终性能与学习效率。"
      },
      "summary_source": "deepseek-flash",
-     "ax_votes": 232,
-     "ax_visits": 2309,
-     "heat": 462.9,
+     "ax_votes": 234,
+     "ax_visits": 2409,
+     "heat": 474.9,
      "orgs": [
       {
-       "name": "Stanford University"
+       "logo": "data/logos/stanford.edu.png",
+       "name": "Stanford University",
+       "ror": "00f54p054"
       },
       {
+       "logo": "data/logos/deepmind.google.png",
        "name": "Google DeepMind"
       }
      ],
      "thumb": "data/thumbs/2611.30325.jpg",
      "thumb_w": 618,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "listed": "2026-11-24"
     },
     {
      "id": "2611.32606",
@@ -87,32 +91,34 @@
       "zh": "等算力阶梯（equal-budget ladder），在单智能体、算力对齐多数投票与算力对齐 pass@n 三级上衡量多智能体团队，并定义 Recursive Collective Intelligence（RCI）：无教师、无外部标签，团队用自身输出让下一代同等成本更聪明；转发拆分事实可在 27B 上超 pass@n 约三分之一，同质 27B 智能体自发形成枢纽使准确率提升 18 个百分点，两代无标签训练在 PlanBench、HiddenBench、Hanabi 上连续 4–6 代优于前代。"
      },
      "summary_source": "deepseek-flash",
-     "ax_votes": 156,
-     "ax_visits": 1781,
-     "heat": 334.1,
+     "ax_votes": 159,
+     "ax_visits": 1869,
+     "heat": 345.9,
      "orgs": [
       {
-       "name": "Stanford University"
+       "logo": "data/logos/stanford.edu.png",
+       "name": "Stanford University",
+       "ror": "00f54p054"
       },
       {
-       "name": "UC Berkeley"
+       "logo": "data/logos/berkeley.edu.png",
+       "name": "University of California, Berkeley",
+       "ror": "01an7q238"
       },
       {
+       "logo": "data/logos/nvidia.com.png",
        "name": "NVIDIA"
       },
       {
-       "name": "Northwestern University"
-      },
-      {
-       "name": "a team is expected to solve problems beyond the"
-      },
-      {
-       "name": "without accounting for the additional computation: a team may consume many times the tokens of one agent"
+       "logo": "data/logos/northwestern.edu.png",
+       "name": "Northwestern University",
+       "ror": "000e0be47"
       }
      ],
      "thumb": "data/thumbs/2611.32606.jpg",
      "thumb_w": 640,
-     "thumb_h": 281
+     "thumb_h": 281,
+     "listed": "2026-11-25"
     },
     {
      "id": "2611.28298",
@@ -142,55 +148,19 @@
       "zh": "研究以神经符号式 harness 管理上下文的组合泛化能力：仅用短任务强化学习训练 RLM，即可泛化到长 2-64 倍的任务；用合成数据训练 RLM-27B，在 CTC-Bench 和 ExpertLongBench 上平均提升 Qwen3.8-27B 26.9%，推理 token 约减半。"
      },
      "summary_source": "deepseek-flash",
-     "ax_votes": 99,
-     "ax_visits": 1954,
-     "heat": 294.4,
+     "ax_votes": 101,
+     "ax_visits": 2025,
+     "heat": 303.5,
      "orgs": [
       {
-       "name": "MIT CSAIL"
+       "name": "MIT CSAIL",
+       "ror": "01e85r662"
       }
      ],
      "thumb": "data/thumbs/2611.28298.jpg",
      "thumb_w": 640,
-     "thumb_h": 346
-    },
-    {
-     "id": "2611.26450",
-     "title": "A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights",
-     "authors": [
-      "Tanmay Sah"
-     ],
-     "abstract": "Pretrained language models (LMs) remain unreliable on exact multi-digit arithmetic without gradient fine-tuning or external tool interpreters. We introduce closed-form, zero-gradient circuit-grafting primitives that compile deterministic computation directly into pretrained LM weights using zero training examples and zero runtime hooks, while bounding per-layer normalization drift and preserving natural-language (NL) competence. Our construction combines three analytical mechanisms: (1) two-layer Mellin-GLU quadrature over bias-free SwiGLU/GeGLU layers, turning unknown per-token RMSNorm scaling into translation along a log-spaced gate grid ($>250\\times$ dynamic range) with IEEE 754 error bounds; (2) cross-token scale cancellation via signed Chebyshev Indefinite-RoPE self-sink attention and memoryless SiLU-antisymmetric GatedDeltaNet shifts; and (3) axis-aligned width extension ($d \\to d+K$) with $\\sqrt{d/(d+K)}$ norm compensation, Base-1000 canonical BPE emission, and differential $(+254,-256)$ tied unembeddings. An automated 5-stage compiler synthesizes 4-8 digit signed $\\{+,-,\\times\\}$ circuits in constant $\\mathsf{TC}^0$ depth alongside 3-literal Boolean (100%, $N=1{,}728$; plus 42-layer Gemma 4 E4B audits) and 5-bit Majority/Parity (100%) circuits. On 6-digit arithmetic ($N=1{,}200$, BF16), IBM Granite 4.2 3B (1.07M-1.33M active non-zeros, $\\le 0.036\\%$) and Alibaba Qwen 3.5 4B (2.25M-2.39M non-zeros, $\\le 0.057\\%$) reach 99.17% and 100.00% ALU-prefix accuracy (100% with an FP32 sidecar) and 98%-100% mid-sentence resumption, outperforming 12.8K-sample LoRA (42.2% / 61.7%, 0% inline continuation). A factorized block-sparse sidecar holds A100 memory at 7.89 / 10.65 GiB (4.60 / 8.14 GiB under INT8/INT4 + FP32 sidecar) while passing all 14/14 pre-registered $>2$K-token Tango splits ($N=4{,}392$; 0/11,134 OOD triggers).",
-     "primary": "cs.AI",
-     "categories": [
-      "cs.AI"
-     ],
-     "published": "2026-11-19T17:18:38Z",
-     "updated": "2026-11-19T17:18:38Z",
-     "comment": "27 pages, 3 figures, 24 tables",
-     "tags": [
-      "LLM",
-      "reasoning",
-      "math",
-      "efficiency"
-     ],
-     "summary": {
-      "en": "Closed-form zero-gradient circuit-grafting compiles exact multi-digit arithmetic and Boolean/majority circuits into pretrained LM weights without training data or runtime hooks; Granite 4.2 3B and Qwen 3.5 4B reach 99.17%/100.00% ALU-prefix accuracy versus 42.2%/61.7% for 12.8K-sample LoRA.",
-      "zh": "闭式零梯度电路嫁接原语将精确多位数算术与布尔/多数/奇偶电路直接编译进预训练权重，无需训练样本或运行时钩子；IBM Granite 4.2 3B 与 Qwen 3.5 4B 在 6 位数算术上达 99.17%/100.00% ALU 前缀准确率，远超 12.8K 样本 LoRA 的 42.2%/61.7%。"
-     },
-     "summary_source": "deepseek-flash",
-     "hf_upvotes": 7,
-     "ax_votes": 74,
-     "ax_visits": 1881,
-     "heat": 269.1,
-     "orgs": [
-      {
-       "name": "Independent Researcher"
-      }
-     ],
-     "thumb": "data/thumbs/2611.26450.jpg",
-     "thumb_w": 618,
-     "thumb_h": 440
+     "thumb_h": 346,
+     "listed": "2026-11-24"
     },
     {
      "id": "2611.34923",
@@ -225,17 +195,28 @@
      },
      "summary_source": "deepseek-flash",
      "hf_upvotes": 74,
-     "ax_votes": 88,
-     "ax_visits": 825,
-     "heat": 244.5,
+     "ax_votes": 92,
+     "ax_visits": 963,
+     "heat": 262.3,
      "orgs": [
       {
-       "name": "Huazhong University of Science & Technology"
+       "name": "Huazhong University of Science & Technology",
+       "ror": "00p991c53"
+      },
+      {
+       "logo": "data/logos/bytedance.com.png",
+       "name": "ByteDance"
+      },
+      {
+       "logo": "data/logos/utoronto.ca.png",
+       "name": "University of Toronto",
+       "ror": "03dbr7087"
       }
      ],
      "thumb": "data/thumbs/2611.34923.jpg",
      "thumb_w": 618,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "listed": "2026-11-26"
     },
     {
      "id": "2611.29897",
@@ -271,150 +252,87 @@
       "zh": "Motion Mamba 2.0 用 Mamba 循环状态加持久内容记忆 PCM 做根-身体扩散式自回归动作生成，支持最长 39.52 s 的长程末端控制；配合 CUDA Graph 等优化，RTX 4090 上完整窗口延迟从 1685.35 ms 降到 276.14 ms，中位加速 6.138 倍，并在 Unitree G1 上验证了文本引导动作组合与交互式行走。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 227,
+     "hf_upvotes": 228,
      "ax_votes": 1,
-     "ax_visits": 71,
-     "heat": 235.1,
+     "ax_visits": 73,
+     "heat": 236.3,
      "orgs": [
       {
-       "name": "Peking University"
+       "logo": "data/logos/pku.edu.cn.png",
+       "name": "Peking University",
+       "ror": "02v51f717"
       },
       {
        "name": "Korea University"
+      },
+      {
+       "logo": "data/logos/monash.edu.png",
+       "name": "Monash University",
+       "ror": "02bfwt286"
+      },
+      {
+       "name": "NTU",
+       "ror": "02e7b5302"
       }
      ],
      "thumb": "data/thumbs/2611.29897.jpg",
      "thumb_w": 640,
-     "thumb_h": 272
+     "thumb_h": 272,
+     "listed": "2026-11-24"
     },
     {
-     "id": "2611.26603",
-     "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+     "id": "2611.33102",
+     "title": "Reinforcement Learning Can Be Recovered From Its Own Rollouts",
      "authors": [
-      "Peiyun Hu",
-      "Marko Mihajlovic",
-      "Lyndon Duong",
-      "Lahav Lipson",
-      "Wei Dong",
-      "Amaël Delaunoy",
-      "Stephan R. Richter",
-      "Vladlen Koltun"
+      "Jiayi Sheng",
+      "Jingwen Gu",
+      "Guanning Zeng",
+      "Zhaoyi Zhou",
+      "Stefano Viel",
+      "Qianqian Wang",
+      "Fahim Tajwar",
+      "Andrea Zanette"
      ],
-     "abstract": "We present Depth Pro 2, an approach to estimating dense metric depth for images and video at full resolution. By analyzing prior methods for monocular depth estimation, we find that they commonly trade off temporal consistency and boundary sharpness: multi-frame methods favor consistency, single-frame methods favor sharpness. To overcome this trade-off, we train a single, scalable network that processes both images and video and predicts depth maps at native resolution. Depth Pro 2 produces depth maps that are metrically accurate, sharp, and temporally consistent all at once, outperforming prior work in all of these dimensions. We release a family of models that define a new Pareto frontier in terms of metric accuracy, sharpness, temporal consistency, and runtime. We release code and weights at https://apple-aiml-research.github.io/ml-depth-pro-2/",
-     "primary": "cs.CV",
+     "abstract": "Broadly speaking, reinforcement learning (RL) post-training converts compute into model capabilities by training on model-generated data. Typically, the rollouts are discarded after each update, and the knowledge acquired during RL resides in the model weights. In this work, we investigate how much of this knowledge is retained in the rollouts themselves. A natural first attempt is to replay the original RL algorithm on archived (rather than freshly generated) rollouts, but this generally leads to catastrophic collapse. We provide a simple explanation for this phenomenon, which in turn suggests a remedy we call maximum likelihood replay: fitting the model to its archived rollouts. Surprisingly, starting from the same base model and replaying the rollouts in the order in which they were generated, without any distinction between correct and incorrect responses, is sufficient to recover the performance of online RL. In fact, a single maximum likelihood update per rollout batch closely tracks the entire learning curve of online RL. Furthermore, maximum likelihood replay on the rollouts of the last few RL steps often suffices to recover the final model's performance. This suggests that much of the compute invested in RL goes into discovering an improved sampling distribution rather than learning it from samples.",
+     "primary": "cs.LG",
      "categories": [
-      "cs.CV",
       "cs.LG"
      ],
-     "published": "2026-11-19T18:55:41Z",
-     "updated": "2026-11-19T18:55:41Z",
-     "comment": "Code and weights available at https://apple-aiml-research.github.io/ml-depth-pro-2/",
+     "published": "2026-11-24T18:38:06Z",
+     "updated": "2026-11-25T18:46:02Z",
+     "comment": "Preprint. 23 pages, 20 figures, 7 tables",
      "tags": [
-      "3D",
+      "RL",
+      "LLM",
       "efficiency"
      ],
      "summary": {
-      "en": "Depth Pro 2 trains one scalable network on images and video to predict native-resolution depth that is metrically accurate, sharp, and temporally consistent, outperforming prior work and redefining the Pareto frontier.",
-      "zh": "Depth Pro 2 用单一可扩展网络统一处理图像与视频，以原生分辨率预测稠密深度，同时兼顾度量精度、边界锐利度与时序一致性，在四项指标上超越先前方法并重划 Pareto 前沿。"
+      "en": "Investigating how much RL-acquired knowledge persists in rollouts, maximum likelihood replay that fits archived rollouts in generation order without distinguishing correct responses matches online RL performance.",
+      "zh": "研究RL后训练产生的rollout中保留多少知识，发现直接用最大似然拟合归档rollout（maximum likelihood replay），不区分对错、按生成顺序回放，即可复现在线RL的性能，单次更新即可追踪完整学习曲线。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 41,
-     "ax_votes": 66,
-     "ax_visits": 653,
-     "heat": 172.3,
+     "ax_votes": 73,
+     "ax_visits": 970,
+     "heat": 170.0,
      "orgs": [
       {
-       "name": "Apple"
-      }
-     ],
-     "thumb": "data/thumbs/2611.26603.jpg",
-     "thumb_w": 247,
-     "thumb_h": 440
-    },
-    {
-     "id": "2611.26444",
-     "title": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
-     "authors": [
-      "Yuzhi Huang",
-      "Jie Wu",
-      "Fanding Huang",
-      "Junchao Lin",
-      "Weichen Zhang",
-      "Ziyi Xiong",
-      "Yang Li",
-      "Zhengwei Xie",
-      "Zhimin Wang",
-      "Zhen Liu",
-      "Jiazhen Huang",
-      "Yuzheng Zhang",
-      "Yuche Liu",
-      "Hongyi Yang",
-      "Chen Tang",
-      "Shixiang Tang",
-      "Hakan Aktas",
-      "Adam Wu",
-      "Duo Wu",
-      "Kangye Ji",
-      "Shuzhao Xie",
-      "Huanan Liu",
-      "Weijue Bu",
-      "Chenxin Li",
-      "Xinyuan Wang",
-      "Tianyi Bai",
-      "Yinan Mao",
-      "Jiawei Wang",
-      "Minglei Li",
-      "Heng Yu",
-      "Ehsan Adeli",
-      "Minchen Li",
-      "Yong-Lu Li",
-      "Cengiz Öztireli",
-      "Huazhe Xu",
-      "Chao Yu",
-      "Jing Zhang",
-      "Shanghang Zhang",
-      "Weitao Zhou",
-      "Wenwu Zhu",
-      "Cheng Chi",
-      "Jingyan Jiang",
-      "Zhi Wang"
-     ],
-     "abstract": "Embodied intelligence aims to let robots perform complex physical tasks with human-like adaptability and reliability, which requires three complementary capabilities: history-based cognitive reasoning, precise and timely physical execution, and the composition of reasoning and execution through environmental feedback. Yet existing benchmarks either evaluate reasoning and execution within the same tasks or assess them separately without their composition, so they reveal little about whether a failure comes from reasoning, execution, or their composition. We introduce Mind2Act World, a diagnostic benchmark of 30 simulated manipulation tasks from five real-world application domains. Each task has three difficulty levels and two scene settings (Clean and Random), yielding 180 configurations. The tasks form three views: Mind tests decisions based on past observations, Act tests precise and timely execution, and Mind2Act combines both in closed-loop tasks where action outcomes guide later decisions. Comparing the three views shows whether a system lacks a capability or fails to compose capabilities it already has. A diagnosis harness further attributes the failed episodes of three representative systems to Mind, Act, or their composition and summarizes each system in a profile card. Our evaluation of multimodal agents, vision-language-action models (VLAs), and world-action models (WAMs) shows that competence in a single view does not carry over to Mind2Act tasks. Even the strongest agent succeeds in 52.7% of Mind and 39.0% of Act episodes but in only 12.0% of Mind2Act episodes. The strongest agent retains task state but struggles with sustained contact, whereas end-to-end policies execute practiced motions but retain little task state. These findings point to composing reasoning and execution through environmental feedback as the main open problem.",
-     "primary": "cs.RO",
-     "categories": [
-      "cs.RO",
-      "cs.AI",
-      "cs.CV"
-     ],
-     "published": "2026-11-19T17:15:38Z",
-     "updated": "2026-11-19T17:15:38Z",
-     "comment": "",
-     "tags": [
-      "benchmark",
-      "robotics",
-      "VLA",
-      "reasoning"
-     ],
-     "summary": {
-      "en": "Mind2Act World is a 30-task, 180-configuration diagnostic manipulation benchmark with Mind, Act, and Mind2Act views; the best agent scores 52.7% and 39.0% but only 12.0% on Mind2Act.",
-      "zh": "Mind2Act World 构建 30 个仿真操作任务、180 种配置的诊断基准，分 Mind、Act、Mind2Act 三视角评测多模态智能体、VLA 与 WAM；最强智能体在 Mind 与 Act 上分别成功 52.7% 和 39.0%，Mind2Act 仅 12.0%。"
-     },
-     "summary_source": "deepseek-flash",
-     "hf_upvotes": 57,
-     "ax_votes": 56,
-     "ax_visits": 563,
-     "heat": 169.3,
-     "orgs": [
-      {
-       "name": "THU 2UCam 3Oxford 4Stanford 5CMU 6HKU 7HKUST 8CUHK"
+       "name": "Tufa Labs"
       },
       {
-       "name": "PKU 10SJTU 11FDU 12RUC 13SZU 14Velabot AI 15Simple AI 16Baidu AI Cloud"
+       "logo": "data/logos/harvard.edu.png",
+       "name": "Harvard University",
+       "ror": "03vek6s52"
+      },
+      {
+       "logo": "data/logos/illinois.edu.png",
+       "name": "University of Illinois Urbana-Champaign",
+       "ror": "047426m28"
       }
      ],
-     "thumb": "data/thumbs/2611.26444.jpg",
-     "thumb_w": 635,
-     "thumb_h": 440
+     "thumb": "data/thumbs/2611.33102.jpg",
+     "thumb_w": 566,
+     "thumb_h": 440,
+     "listed": "2026-11-25"
     },
     {
      "id": "2611.30111",
@@ -449,65 +367,41 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 79,
-     "ax_visits": 829,
-     "heat": 161.9,
+     "ax_visits": 839,
+     "heat": 162.9,
      "orgs": [
       {
-       "name": "Tulane University NYU Northeastern University Stanford University MIT Harvard University"
+       "logo": "data/logos/tulane.edu.png",
+       "name": "Tulane University",
+       "ror": "04vmvtb21"
+      },
+      {
+       "name": "New York University",
+       "ror": "0190ak572"
+      },
+      {
+       "name": "Northeastern University"
+      },
+      {
+       "logo": "data/logos/stanford.edu.png",
+       "name": "Stanford University",
+       "ror": "00f54p054"
+      },
+      {
+       "logo": "data/logos/mit.edu.png",
+       "name": "MIT",
+       "ror": "042nb2s44"
+      },
+      {
+       "logo": "data/logos/harvard.edu.png",
+       "name": "Harvard University",
+       "ror": "03vek6s52"
       }
      ],
      "thumb": "data/thumbs/2611.30111.jpg",
      "thumb_w": 640,
-     "thumb_h": 320
-    },
-    {
-     "id": "2611.33102",
-     "title": "Reinforcement Learning Can Be Recovered From Its Own Rollouts",
-     "authors": [
-      "Jiayi Sheng",
-      "Jingwen Gu",
-      "Guanning Zeng",
-      "Zhaoyi Zhou",
-      "Stefano Viel",
-      "Qianqian Wang",
-      "Fahim Tajwar",
-      "Andrea Zanette"
-     ],
-     "abstract": "Broadly speaking, reinforcement learning (RL) post-training converts compute into model capabilities by training on model-generated data. Typically, the rollouts are discarded after each update, and the knowledge acquired during RL resides in the model weights. In this work, we investigate how much of this knowledge is retained in the rollouts themselves. A natural first attempt is to replay the original RL algorithm on archived (rather than freshly generated) rollouts, but this generally leads to catastrophic collapse. We provide a simple explanation for this phenomenon, which in turn suggests a remedy we call maximum likelihood replay: fitting the model to its archived rollouts. Surprisingly, starting from the same base model and replaying the rollouts in the order in which they were generated, without any distinction between correct and incorrect responses, is sufficient to recover the performance of online RL. In fact, a single maximum likelihood update per rollout batch closely tracks the entire learning curve of online RL. Furthermore, maximum likelihood replay on the rollouts of the last few RL steps often suffices to recover the final model's performance. This suggests that much of the compute invested in RL goes into discovering an improved sampling distribution rather than learning it from samples.",
-     "primary": "cs.LG",
-     "categories": [
-      "cs.LG"
-     ],
-     "published": "2026-11-24T18:38:06Z",
-     "updated": "2026-11-25T18:46:02Z",
-     "comment": "Preprint. 23 pages, 20 figures, 7 tables",
-     "tags": [
-      "RL",
-      "LLM",
-      "efficiency"
-     ],
-     "summary": {
-      "en": "Investigating how much RL-acquired knowledge persists in rollouts, maximum likelihood replay that fits archived rollouts in generation order without distinguishing correct responses matches online RL performance.",
-      "zh": "研究RL后训练产生的rollout中保留多少知识，发现直接用最大似然拟合归档rollout（maximum likelihood replay），不区分对错、按生成顺序回放，即可复现在线RL的性能，单次更新即可追踪完整学习曲线。"
-     },
-     "summary_source": "deepseek-flash",
-     "ax_votes": 72,
-     "ax_visits": 875,
-     "heat": 159.5,
-     "orgs": [
-      {
-       "name": "Tufa Labs"
-      },
-      {
-       "name": "Harvard University"
-      },
-      {
-       "name": "University of Illinois Urbana-Champaign"
-      }
-     ],
-     "thumb": "data/thumbs/2611.33102.jpg",
-     "thumb_w": 566,
-     "thumb_h": 440
+     "thumb_h": 320,
+     "listed": "2026-11-24"
     },
     {
      "id": "2611.34051",
@@ -547,18 +441,36 @@
       "zh": "针对 Gated DeltaNet-2 长上下文训练中擦除方向不对称导致循环状态指数增长的问题，提出 Stable Gated DeltaNet-2，用对称擦除保证非扩张状态传播，并配合衰减调节的残差写入，理论上给出 O(√T) 状态增长上界且保留分块并行。1.6B 参数模型上训练稳定，128K 平均 RULER 分数提升 6.80 分，九个下游任务平均准确率提升 0.62 分。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 126,
+     "hf_upvotes": 128,
      "ax_votes": 8,
-     "ax_visits": 110,
-     "heat": 145.0,
+     "ax_visits": 133,
+     "heat": 149.3,
      "orgs": [
       {
-       "name": "HKUST"
+       "name": "MemTensor"
+      },
+      {
+       "name": "University of Science and Technology of China",
+       "ror": "04c4dkn09"
+      },
+      {
+       "logo": "data/logos/hkust.edu.hk.png",
+       "name": "HKUST",
+       "ror": "00q4vv597"
+      },
+      {
+       "name": "Southern University of Science and Technology",
+       "ror": "049tv2d57"
+      },
+      {
+       "name": "Shanghai Jiao Tong University",
+       "ror": "0220qvk04"
       }
      ],
      "thumb": "data/thumbs/2611.34051.jpg",
      "thumb_w": 640,
-     "thumb_h": 348
+     "thumb_h": 348,
+     "listed": "2026-11-27"
     },
     {
      "id": "2611.31201",
@@ -601,19 +513,36 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 106,
      "ax_votes": 16,
-     "ax_visits": 167,
-     "heat": 138.7,
+     "ax_visits": 169,
+     "heat": 138.9,
      "orgs": [
       {
-       "name": "NTU"
+       "name": "NTU",
+       "ror": "02e7b5302"
       },
       {
-       "name": "Xiamen University Lenovo Robotics Lab University of Connecticut"
+       "name": "ACE Robotics"
+      },
+      {
+       "name": "SenseTime Research"
+      },
+      {
+       "name": "Xiamen University",
+       "ror": "00mcjh785"
+      },
+      {
+       "name": "Lenovo Robotics Lab"
+      },
+      {
+       "logo": "data/logos/uconn.edu.png",
+       "name": "University of Connecticut",
+       "ror": "02der9h97"
       }
      ],
      "thumb": "data/thumbs/2611.31201.jpg",
      "thumb_w": 547,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "listed": "2026-11-24"
     },
     {
      "id": "2611.31002",
@@ -666,68 +595,46 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 1,
      "ax_votes": 56,
-     "ax_visits": 692,
-     "heat": 126.2,
+     "ax_visits": 701,
+     "heat": 127.1,
      "orgs": [
       {
-       "name": "Robotics via Real-to-Sim Environments"
+       "name": "Tsinghua University",
+       "ror": "03cve4549"
       },
       {
-       "name": "Agentic Robotics"
+       "name": "Einsia.AI"
       },
       {
-       "name": "robotics remains constrained"
+       "logo": "data/logos/pku.edu.cn.png",
+       "name": "Peking University",
+       "ror": "02v51f717"
       },
       {
-       "name": "Agentic Robotics—a paradigm in which frontier foundation models act as Coding Agents to control"
+       "logo": "data/logos/illinois.edu.png",
+       "name": "University of Illinois Urbana-Champaign",
+       "ror": "047426m28"
       },
       {
-       "name": "Yet Agentic Robotics has not truly entered its scaling era"
+       "logo": "data/logos/hku.hk.png",
+       "name": "HKU",
+       "ror": "02zhqgq86"
+      },
+      {
+       "logo": "data/logos/ucl.ac.uk.png",
+       "name": "University College London",
+       "ror": "02jx3x895"
+      },
+      {
+       "logo": "data/logos/unc.edu.png",
+       "name": "University of North Carolina at Chapel Hill",
+       "ror": "0130frc33"
       }
      ],
      "thumb": "data/thumbs/2611.31002.jpg",
      "thumb_w": 640,
-     "thumb_h": 372
-    },
-    {
-     "id": "2611.26629",
-     "title": "Posterior Matching Distillation",
-     "authors": [
-      "Hidir Yesiltepe",
-      "Julius Berner",
-      "Arash Vahdat",
-      "Pinar Yanardag"
-     ],
-     "abstract": "Diffusion distillation accelerates image and video generation by compressing a pretrained teacher's iterative sampling process into a few network evaluations. Distribution-based methods achieve this by matching the student's output distribution to the teacher's. This matching is often driven by reverse-KL objectives, whose mode-seeking bias favors dominant teacher modes at the expense of diversity across samples. We introduce Posterior Matching Distillation (PMD), a new member of the distribution-based distillation family that combines mode-covering posterior sampling with any-step generation. At zero population loss, PMD recovers the teacher's full posterior of clean images at each trained noise level. Its stochastic student supports any-step sampling budgets within the trained timestep grid without further training. To learn these posteriors, PMD matches exponentially reweighted averages of student samples conditioned on a fixed noisy state to corresponding teacher posterior means. Under Gaussian corruption, exponentially tilted posterior mean is a single teacher evaluation at a shifted input. We prove that, matching tilted means over an open neighborhood uniquely identifies the full posterior. PMD thus supervises the entire conditional distribution through a family of mean constraints, without any auxiliary student-score network. Experiments on SDXL and FLUX.2 [klein] 4B demonstrate that PMD achieves the best FID among 4-step methods on both models, while maintaining competitive or leading performance across prompt-alignment and perceptual-quality metrics.",
-     "primary": "cs.CV",
-     "categories": [
-      "cs.CV"
-     ],
-     "published": "2026-11-19T18:59:57Z",
-     "updated": "2026-11-19T18:59:57Z",
-     "comment": "Project Page: https://pmd-distillation.github.io/",
-     "tags": [
-      "diffusion",
-      "image generation",
-      "efficiency"
-     ],
-     "summary": {
-      "en": "Posterior Matching Distillation combines mode-covering posterior sampling with any-step generation by matching exponentially tilted student sample means, achieving the best 4-step FID on SDXL and FLUX.2 [klein] 4B.",
-      "zh": "PMD 将模式覆盖的后验采样与任意步数生成结合，通过匹配指数重加权学生样本均值来学习教师后验，在 SDXL 和 FLUX.2 [klein] 4B 上取得 4 步方法中最佳 FID。"
-     },
-     "summary_source": "deepseek-flash",
-     "hf_upvotes": 47,
-     "ax_votes": 35,
-     "ax_visits": 359,
-     "heat": 117.9,
-     "orgs": [
-      {
-       "name": "NVIDIA"
-      }
-     ],
-     "thumb": "data/thumbs/2611.26629.jpg",
-     "thumb_w": 640,
-     "thumb_h": 203
+     "thumb_h": 372,
+     "listed": "2026-11-24"
     },
     {
      "id": "2611.27193",
@@ -768,70 +675,30 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 94,
      "ax_votes": 6,
-     "ax_visits": 83,
-     "heat": 108.3,
+     "ax_visits": 84,
+     "heat": 108.4,
      "orgs": [
       {
-       "name": "Xingchen AGI Lab"
+       "name": "China Telecom"
       },
       {
-       "name": "HKUST"
+       "logo": "data/logos/hkust.edu.hk.png",
+       "name": "HKUST",
+       "ror": "00q4vv597"
       },
       {
-       "name": "Harbin Institute of Technology (Shenzhen)"
+       "name": "Harbin Institute of Technology",
+       "ror": "01yqg2h08"
       },
       {
-       "name": "Huawei Technologies"
+       "logo": "data/logos/huawei.com.png",
+       "name": "Huawei"
       }
      ],
      "thumb": "data/thumbs/2611.27193.jpg",
      "thumb_w": 640,
-     "thumb_h": 310
-    },
-    {
-     "id": "2611.30634",
-     "title": "Rewirable Circuits in Transformers with Loom Attention",
-     "authors": [
-      "Da Xiao",
-      "Qingye Meng",
-      "Shengping Li",
-      "Xingyuan Yuan"
-     ],
-     "abstract": "We propose loom attention, which allows a Transformer to dynamically rewire its circuits at every token by interweaving a head's vertical attention over the outputs of earlier heads (to obtain its query, key and value) with its horizontal attention over tokens. We instantiate vertical attention efficiently with normalized and gated linear attention over a per-token matrix memory, which stores the compressed head outputs and serves as a second residual stream. This yields LoomFormer, a dual-stream architecture that splits control and content between the vector and matrix streams. Across model sizes and training token budgets in language modeling and downstream tasks, LoomFormer matches Transformers trained with over 3x compute and recent residual-stream baselines (HC/mHC, MUDDFormer, AttnRes) trained with ~1.7-2.8x. For example, trained on the same 300B tokens with only 2% extra FLOPs, LoomPythia-2.8B achieves ~1.6x the average downstream gain of mHC-Pythia-2.8B over Pythia-2.8B, and matches (0-shot) or surpasses (5-shot) Pythia-12B. Code is available at https://github.com/Caiyun-AI/LoomFormer",
-     "primary": "cs.LG",
-     "categories": [
-      "cs.LG"
-     ],
-     "published": "2026-11-23T13:00:54Z",
-     "updated": "2026-11-24T08:46:11Z",
-     "comment": "",
-     "code_url": "https://github.com/Caiyun-AI/LoomFormer",
-     "tags": [
-      "LLM",
-      "pretraining",
-      "efficiency",
-      "interpretability"
-     ],
-     "summary": {
-      "en": "Loom attention interweaves vertical attention over prior head outputs via normalized gated linear attention with horizontal token attention, yielding LoomFormer; with only ~2% extra FLOPs, LoomPythia-2.8B reaches ~1.6x mHC-Pythia-2.8B's downstream gain and matches Pythia-12B zero-shot.",
-      "zh": "Loom attention 通过垂直注意力对前序 head 输出做归一化门控线性注意力，并与水平 token 注意力交织，实现逐 token 动态重连电路，构成 LoomFormer 双流架构；在 300B token、仅增约 2% FLOPs 下，LoomPythia-2.8B 下游增益约为 mHC-Pythia-2.8B 的 1.6 倍，0-shot 追平 Pythia-12B。"
-     },
-     "summary_source": "deepseek-flash",
-     "hf_upvotes": 95,
-     "ax_votes": 2,
-     "ax_visits": 73,
-     "heat": 104.3,
-     "orgs": [
-      {
-       "name": "Beijing University of Posts and Telecommunications"
-      },
-      {
-       "name": "ColorfulClouds Technology"
-      }
-     ],
-     "thumb": "data/thumbs/2611.30634.jpg",
-     "thumb_w": 640,
-     "thumb_h": 392
+     "thumb_h": 310,
+     "listed": "2026-11-23"
     },
     {
      "id": "2611.34575",
@@ -968,20 +835,18 @@
      },
      "summary_source": "deepseek-flash",
      "hf_upvotes": 81,
-     "ax_votes": 10,
-     "ax_visits": 128,
-     "heat": 103.8,
+     "ax_votes": 12,
+     "ax_visits": 147,
+     "heat": 107.7,
      "orgs": [
-      {
-       "name": "Sage-Med Team"
-      },
       {
        "name": "Shanghai AI Lab"
       }
      ],
      "thumb": "data/thumbs/2611.34575.jpg",
      "thumb_w": 640,
-     "thumb_h": 302
+     "thumb_h": 302,
+     "listed": "2026-11-26"
     },
     {
      "id": "2611.31154",
@@ -1014,20 +879,25 @@
      },
      "summary_source": "deepseek-flash",
      "hf_upvotes": 10,
-     "ax_votes": 41,
-     "ax_visits": 526,
-     "heat": 103.6,
+     "ax_votes": 42,
+     "ax_visits": 552,
+     "heat": 107.2,
      "orgs": [
       {
-       "name": "HKU"
+       "logo": "data/logos/hku.hk.png",
+       "name": "HKU",
+       "ror": "02zhqgq86"
       },
       {
-       "name": "Yale University"
+       "logo": "data/logos/yale.edu.png",
+       "name": "Yale University",
+       "ror": "03v76x132"
       }
      ],
      "thumb": "data/thumbs/2611.31154.jpg",
      "thumb_w": 640,
-     "thumb_h": 246
+     "thumb_h": 246,
+     "listed": "2026-11-24"
     },
     {
      "id": "2611.34232",
@@ -1128,18 +998,62 @@
       "zh": "OS-Omni 是覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的跨平台计算机代理实时基准，v1 每平台 48 个任务、另含 12 个跨平台工作流，任务平均需 67.54 步；最强代理 Claude Opus 5.5 平均成功率 68.5%，低于人类 77.3%，在 iOS 和 macOS 上差距超过 25 点。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 100,
+     "hf_upvotes": 103,
      "ax_votes": 1,
-     "ax_visits": 20,
-     "heat": 103.0,
-     "orgs": [
-      {
-       "name": "OS-Omni Team"
-      }
-     ],
+     "ax_visits": 23,
+     "heat": 106.3,
+     "orgs": [],
      "thumb": "data/thumbs/2611.34232.jpg",
      "thumb_w": 640,
-     "thumb_h": 368
+     "thumb_h": 368,
+     "listed": "2026-11-27"
+    },
+    {
+     "id": "2611.30634",
+     "title": "Rewirable Circuits in Transformers with Loom Attention",
+     "authors": [
+      "Da Xiao",
+      "Qingye Meng",
+      "Shengping Li",
+      "Xingyuan Yuan"
+     ],
+     "abstract": "We propose loom attention, which allows a Transformer to dynamically rewire its circuits at every token by interweaving a head's vertical attention over the outputs of earlier heads (to obtain its query, key and value) with its horizontal attention over tokens. We instantiate vertical attention efficiently with normalized and gated linear attention over a per-token matrix memory, which stores the compressed head outputs and serves as a second residual stream. This yields LoomFormer, a dual-stream architecture that splits control and content between the vector and matrix streams. Across model sizes and training token budgets in language modeling and downstream tasks, LoomFormer matches Transformers trained with over 3x compute and recent residual-stream baselines (HC/mHC, MUDDFormer, AttnRes) trained with ~1.7-2.8x. For example, trained on the same 300B tokens with only 2% extra FLOPs, LoomPythia-2.8B achieves ~1.6x the average downstream gain of mHC-Pythia-2.8B over Pythia-2.8B, and matches (0-shot) or surpasses (5-shot) Pythia-12B. Code is available at https://github.com/Caiyun-AI/LoomFormer",
+     "primary": "cs.LG",
+     "categories": [
+      "cs.LG"
+     ],
+     "published": "2026-11-23T13:00:54Z",
+     "updated": "2026-11-24T08:46:11Z",
+     "comment": "",
+     "code_url": "https://github.com/Caiyun-AI/LoomFormer",
+     "tags": [
+      "LLM",
+      "pretraining",
+      "efficiency",
+      "interpretability"
+     ],
+     "summary": {
+      "en": "Loom attention interweaves vertical attention over prior head outputs via normalized gated linear attention with horizontal token attention, yielding LoomFormer; with only ~2% extra FLOPs, LoomPythia-2.8B reaches ~1.6x mHC-Pythia-2.8B's downstream gain and matches Pythia-12B zero-shot.",
+      "zh": "Loom attention 通过垂直注意力对前序 head 输出做归一化门控线性注意力，并与水平 token 注意力交织，实现逐 token 动态重连电路，构成 LoomFormer 双流架构；在 300B token、仅增约 2% FLOPs 下，LoomPythia-2.8B 下游增益约为 mHC-Pythia-2.8B 的 1.6 倍，0-shot 追平 Pythia-12B。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 95,
+     "ax_votes": 2,
+     "ax_visits": 79,
+     "heat": 104.9,
+     "orgs": [
+      {
+       "name": "Beijing University of Posts and Telecommunications",
+       "ror": "04w9fbh59"
+      },
+      {
+       "name": "ColorfulClouds Technology"
+      }
+     ],
+     "thumb": "data/thumbs/2611.30634.jpg",
+     "thumb_w": 640,
+     "thumb_h": 392,
+     "listed": "2026-11-25"
     },
     {
      "id": "2611.31094",
@@ -1178,11 +1092,12 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 25,
      "ax_votes": 34,
-     "ax_visits": 351,
-     "heat": 94.1,
+     "ax_visits": 365,
+     "heat": 95.5,
      "orgs": [
       {
-       "name": "NUS"
+       "name": "NUS",
+       "ror": "01tgyzw49"
       },
       {
        "name": "Independent Researcher"
@@ -1190,12 +1105,213 @@
      ],
      "thumb": "data/thumbs/2611.31094.jpg",
      "thumb_w": 618,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "listed": "2026-11-24"
+    },
+    {
+     "id": "2611.30989",
+     "title": "WorldLeague: Benchmarking Physical Agency",
+     "authors": [
+      "Xinyang Zhou",
+      "Qi Li",
+      "Xinchao Wang"
+     ],
+     "abstract": "AI systems can now operate Blender, follow instructions in complex video games, and manipulate objects with robot arms. What range of physical goals can today's AI systems achieve autonomously? Answering this question requires testing systems on tasks that demand different combinations of perception, memory, planning, and action. We introduce \\textbf{WorldLeague}, a benchmark that compares AI systems on a common set of \\textbf{60 simulated robot tasks} by measuring progress toward each task's physical goal from the robot's trajectory. Robots explore scenes to gather evidence in \\textbf{WorldSeek}, rearrange objects in \\textbf{WorldShape}, and adapt to changes in \\textbf{WorldShift}. Tying these goals to a single control interface limits which AI systems can be compared. In WorldLeague, vision-language models (VLMs) choose targets and motions, while vision-language-action models (VLAs) and world-action models (WAMs) use their native controls. For each of six capability dimensions, we measure how much progress a system makes toward its goals (Interactive Score) and how often it achieves them (physical success rate). Together, these measures form the system's \\emph{Physical Agency Profile}. Among 13 representative AI systems, Claude Fable 5.2 achieves 13 of the 60 goals and earns the highest mean Interactive Score (28.58/100). Fable leads in four dimensions, while GPT-6.1-Sol and GPT-6-Astra tie for first on rule-following tasks. Even when VLMs answer every final question correctly, they receive an Interactive Score of zero in 71.8\\% of those episodes. WorldLeague gives Embodied AI, Physical AI, and Agentic AI a shared basis for comparing what AI systems achieve autonomously, from partial progress toward a physical goal to full goal completion. Project Webpage: https://xyangzhou.github.io/WorldLeague",
+     "primary": "cs.RO",
+     "categories": [
+      "cs.RO"
+     ],
+     "published": "2026-11-23T16:44:19Z",
+     "updated": "2026-11-23T16:44:19Z",
+     "comment": "",
+     "tags": [
+      "benchmark",
+      "robotics",
+      "agents",
+      "VLM"
+     ],
+     "summary": {
+      "en": "WorldLeague benchmarks AI systems on 60 simulated robot tasks via trajectory-based progress and success; Claude Fable 5.2 completes 13 goals and leads with a mean Interactive Score of 28.58/100.",
+      "zh": "WorldLeague 基准用 60 个模拟机器人任务，通过机器人轨迹衡量系统向物理目标推进的程度与成功率，比较 13 个系统；Claude Fable 5.2 完成 13 个目标，平均 Interactive Score 最高，为 28.58/100。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 87,
+     "ax_votes": 2,
+     "ax_visits": 47,
+     "heat": 93.7,
+     "orgs": [
+      {
+       "name": "NUS",
+       "ror": "01tgyzw49"
+      }
+     ],
+     "thumb": "data/thumbs/2611.30989.jpg",
+     "thumb_w": 640,
+     "thumb_h": 246,
+     "listed": "2026-11-24"
+    },
+    {
+     "id": "2611.27963",
+     "title": "Non-penetrating World Models",
+     "authors": [
+      "Yuhang Dai",
+      "Yinwei Wu",
+      "Ziyue Lin",
+      "Han Ji",
+      "Xingyi Yang"
+     ],
+     "abstract": "We study a new problem of preventing object penetration in interactive video world models. To understand how existing models handle this, we introduce NoPeBench, a benchmark that evaluates how world models respond to physical obstacles. Our evaluation reveals that none of the open-source models can reliably prevent such failures. Surprisingly, however, these models already encode the information needed to predict such violations. We find that the hidden states of diffusion transformers (DiTs) can predict whether a candidate action will penetrate an obstacle. Building on this, we introduce NoPeWorld, a lightweight framework that detects and prevents penetration. Specifically, we train a small prediction head on top of a frozen DiT's hidden states to read out if a candidate action is safe or not. Unsafe actions are then replaced with safe ones that best preserve the original intent. Despite its simplicity, NoPeWorld substantially reduces the physical violation rate, averaged over six video world models, from 74% to 16%. Remarkably, our method shows zero-shot generalization to open-domain imagery, third-person viewpoints, and moving obstacles. We publicly release our code, the NoPeBench benchmark, and model weights. Project Page: https://nopeworld.github.io .",
+     "primary": "cs.CV",
+     "categories": [
+      "cs.CV",
+      "cs.AI"
+     ],
+     "published": "2026-11-20T18:44:57Z",
+     "updated": "2026-11-20T18:44:57Z",
+     "comment": "20 pages, 13 figures. Code: https://github.com/yuhangdai427/NoPeWorld",
+     "code_url": "https://github.com/yuhangdai427/NoPeWorld",
+     "tags": [
+      "world model",
+      "video generation",
+      "diffusion",
+      "safety"
+     ],
+     "summary": {
+      "en": "NoPeBench benchmark reveals object penetration in interactive video world models; NoPeWorld trains a small head on frozen DiT hidden states to filter unsafe actions, cutting violation rates from 74% to 16% across six models.",
+      "zh": "针对交互式视频世界模型中的物体穿透问题，构建 NoPeBench 基准并发现冻结 DiT 的隐状态已能预测碰撞，据此训练轻量预测头筛除不安全动作并替换为安全动作，在六个世界模型上将物理违规率从 74% 降至 16%。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 63,
+     "ax_votes": 10,
+     "ax_visits": 205,
+     "heat": 93.5,
+     "orgs": [
+      {
+       "logo": "data/logos/polyu.edu.hk.png",
+       "name": "Hong Kong Polytechnic University",
+       "ror": "0030zas98"
+      }
+     ],
+     "thumb": "data/thumbs/2611.27963.jpg",
+     "thumb_w": 640,
+     "thumb_h": 355,
+     "listed": "2026-11-23"
+    },
+    {
+     "id": "2611.29338",
+     "title": "A Glimpse of Training VLMs as Foundation Models for Robotic Manipulation",
+     "authors": [
+      "Meng-Hao Guo",
+      "Yi Zhang",
+      "Zhe-Han Mo",
+      "Han-Zheng Wang",
+      "Jia-Jun Wang",
+      "Xin-Sheng Chen",
+      "Jiaxi Song",
+      "Yi-Xuan Deng",
+      "Jia-Ning Li",
+      "Xuanyu Chu",
+      "Hengrui Zhang",
+      "Huan-ang Gao",
+      "Yongming Rao",
+      "Shi-Min Hu"
+     ],
+     "abstract": "Recently, GPT-6 Astra demonstrates strong generalization in robot control, yet limited disclosure of its training leaves open how such capabilities can be reproduced. We introduce nanoAstra, an approach to training vision-language models (VLMs) for generalizable manipulation that combines semantic action modeling with capability-preserving supervised fine-tuning (CP-SFT). nanoAstra represents robot behavior as semantic steps composed of reusable, parameterized action primitives, guided by explicit progress descriptions. Meanwhile, CP-SFT uses an explicit robot-specific system prompt to constrain manipulation outputs to a structured action space, aiming to focus adaptation on robot-specific contexts and promote specialization while minimizing interference with broader pretrained capabilities. With this formulation, we train nanoAstra on more than 5,000 hours of robot data together with general VQA data. On RoboTwin 2.0's randomized benchmark, nanoAstra-9B achieves a 17.8% zero-shot success rate, substantially outperforming advanced VLA and WAM baselines as well as similarly sized VLMs. With inference faster than the corresponding motion execution on a single H20 GPU, our model supports action-chunk-like streaming execution that overlaps inference with motion, reducing the robot's idle time from 35.0% to 6.9%.",
+     "primary": "cs.RO",
+     "categories": [
+      "cs.RO"
+     ],
+     "published": "2026-11-22T09:15:32Z",
+     "updated": "2026-11-22T09:15:32Z",
+     "comment": "",
+     "tags": [
+      "VLM",
+      "robotics",
+      "manipulation",
+      "VLA"
+     ],
+     "summary": {
+      "en": "NanoAstra trains VLMs for generalizable manipulation via semantic action modeling and capability-preserving SFT, reaching 17.8% zero-shot success on RoboTwin 2.0 and cutting robot idle time from 35.0% to 6.9%.",
+      "zh": "nanoAstra 以语义动作建模和 CP-SFT 训练 VLM 用于通用机器人操作，在 RoboTwin 2.0 随机化基准上 zero-shot 成功率达 17.8%，优于先进 VLA 与 WAM 基线，并在单张 H20 GPU 上实现流式执行，将机器人空闲时间从 35.0% 降至 6.9%。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 46,
+     "ax_votes": 10,
+     "ax_visits": 242,
+     "heat": 80.2,
+     "orgs": [
+      {
+       "name": "Tsinghua University",
+       "ror": "03cve4549"
+      },
+      {
+       "logo": "data/logos/tencent.com.png",
+       "name": "Tencent"
+      }
+     ],
+     "thumb": "data/thumbs/2611.29338.jpg",
+     "thumb_w": 441,
+     "thumb_h": 440,
+     "listed": "2026-11-24"
+    },
+    {
+     "id": "2611.31205",
+     "title": "ACAP: Asynchronous Coding Agents for Efficient Robot Control",
+     "authors": [
+      "Zexin He",
+      "Rui Li",
+      "Yushi Lan",
+      "Chengkai Jin",
+      "Zhi Hou",
+      "Xingang Pan"
+     ],
+     "abstract": "Coding agents can construct and revise robot behavior during execution, but using one agent for the whole robot can delay otherwise independent work. We introduce Asynchronous Coding Agents as Policy (ACAP), an asynchronous framework that organizes one robot as a team of persistent agents. Each member reasons and acts for a configurable control group, such as an arm with its gripper or the torso and chassis, enabling asynchronous reasoning and execution. However, different robot components often have physical dependencies that require coordination. To address this challenge, ACAP introduces a hyper-agent that assigns tasks, coordinates dependencies, and dynamically allocates control between the lead and member agents. This allows independent work to progress concurrently while supporting tightly coupled manipulation when necessary. Across 72 real-world rollouts covering 25 task/platform settings, ACAP reduces task-balanced time cost by 28.2% compared with a single-agent Direct Policy, with improvements across Fully Parallel, Parallel-Sequential, and Collaborative tasks. Across all eight Collaborative settings, ACAP also achieves lower mean time cost than Fixed Delegation, where only member agents can control their assigned groups. An additional 90-rollout study shows lower mean 30-minute-capped time cost than Direct on all six tasks. We further demonstrate mobile manipulation using the same member interface for chassis and torso control. We present the framework and a real-world rollout dataset containing observations, generated programs, actions, and feedback to support research on how coding agents reason and act in the physical world.",
+     "primary": "cs.RO",
+     "categories": [
+      "cs.RO",
+      "cs.MA"
+     ],
+     "published": "2026-11-23T18:52:19Z",
+     "updated": "2026-11-23T18:52:19Z",
+     "comment": "Project page: https://projects.zxhezexin.com/acap",
+     "tags": [
+      "robotics",
+      "agents",
+      "code",
+      "manipulation"
+     ],
+     "summary": {
+      "en": "ACAP organizes one robot as a team of persistent coding agents with a hyper-agent coordinating tasks and dependencies, cutting task-balanced time cost by 28.2% versus a single-agent Direct Policy across 72 real-world rollouts.",
+      "zh": "ACAP 将单台机器人组织为多个持久编码智能体组成的小队，用 hyper-agent 分配任务并协调依赖，实现异步推理与执行；在 25 种任务/平台设置的 72 次真实 rollout 中，任务均衡时间成本比单智能体 Direct Policy 降低 28.2%。"
+     },
+     "summary_source": "deepseek-flash",
+     "hf_upvotes": 67,
+     "ax_votes": 6,
+     "ax_visits": 69,
+     "heat": 79.9,
+     "orgs": [
+      {
+       "name": "NTU",
+       "ror": "02e7b5302"
+      },
+      {
+       "logo": "data/logos/ox.ac.uk.png",
+       "name": "University of Oxford",
+       "ror": "052gg0110"
+      },
+      {
+       "name": "ACE Robotics"
+      }
+     ],
+     "thumb": "data/thumbs/2611.31205.jpg",
+     "thumb_w": 640,
+     "thumb_h": 300,
+     "listed": "2026-11-25"
     }
    ]
   },
   "30": {
-   "from": "2026-10-27",
+   "from": "2026-10-29",
    "days": 7,
    "papers": [
     {
@@ -1228,20 +1344,24 @@
       "zh": "VOPD 将稀疏的验证器奖励投影到教师的隐式奖励方向上，并在整个词表上做 Rao-Blackwell 化，得到稠密的、基于验证器的监督信号，在八项数学推理基准上相比 vanilla OPD 与其他 on-policy distillation 基线同时提升最终性能与学习效率。"
      },
      "summary_source": "deepseek-flash",
-     "ax_votes": 232,
-     "ax_visits": 2309,
-     "heat": 462.9,
+     "ax_votes": 234,
+     "ax_visits": 2409,
+     "heat": 474.9,
      "orgs": [
       {
-       "name": "Stanford University"
+       "logo": "data/logos/stanford.edu.png",
+       "name": "Stanford University",
+       "ror": "00f54p054"
       },
       {
+       "logo": "data/logos/deepmind.google.png",
        "name": "Google DeepMind"
       }
      ],
      "thumb": "data/thumbs/2611.30325.jpg",
      "thumb_w": 618,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "listed": "2026-11-24"
     },
     {
      "id": "2611.32606",
@@ -1279,32 +1399,34 @@
       "zh": "等算力阶梯（equal-budget ladder），在单智能体、算力对齐多数投票与算力对齐 pass@n 三级上衡量多智能体团队，并定义 Recursive Collective Intelligence（RCI）：无教师、无外部标签，团队用自身输出让下一代同等成本更聪明；转发拆分事实可在 27B 上超 pass@n 约三分之一，同质 27B 智能体自发形成枢纽使准确率提升 18 个百分点，两代无标签训练在 PlanBench、HiddenBench、Hanabi 上连续 4–6 代优于前代。"
      },
      "summary_source": "deepseek-flash",
-     "ax_votes": 156,
-     "ax_visits": 1781,
-     "heat": 334.1,
+     "ax_votes": 159,
+     "ax_visits": 1869,
+     "heat": 345.9,
      "orgs": [
       {
-       "name": "Stanford University"
+       "logo": "data/logos/stanford.edu.png",
+       "name": "Stanford University",
+       "ror": "00f54p054"
       },
       {
-       "name": "UC Berkeley"
+       "logo": "data/logos/berkeley.edu.png",
+       "name": "University of California, Berkeley",
+       "ror": "01an7q238"
       },
       {
+       "logo": "data/logos/nvidia.com.png",
        "name": "NVIDIA"
       },
       {
-       "name": "Northwestern University"
-      },
-      {
-       "name": "a team is expected to solve problems beyond the"
-      },
-      {
-       "name": "without accounting for the additional computation: a team may consume many times the tokens of one agent"
+       "logo": "data/logos/northwestern.edu.png",
+       "name": "Northwestern University",
+       "ror": "000e0be47"
       }
      ],
      "thumb": "data/thumbs/2611.32606.jpg",
      "thumb_w": 640,
-     "thumb_h": 281
+     "thumb_h": 281,
+     "listed": "2026-11-25"
     },
     {
      "id": "2611.28298",
@@ -1334,17 +1456,19 @@
       "zh": "研究以神经符号式 harness 管理上下文的组合泛化能力：仅用短任务强化学习训练 RLM，即可泛化到长 2-64 倍的任务；用合成数据训练 RLM-27B，在 CTC-Bench 和 ExpertLongBench 上平均提升 Qwen3.8-27B 26.9%，推理 token 约减半。"
      },
      "summary_source": "deepseek-flash",
-     "ax_votes": 99,
-     "ax_visits": 1954,
-     "heat": 294.4,
+     "ax_votes": 101,
+     "ax_visits": 2025,
+     "heat": 303.5,
      "orgs": [
       {
-       "name": "MIT CSAIL"
+       "name": "MIT CSAIL",
+       "ror": "01e85r662"
       }
      ],
      "thumb": "data/thumbs/2611.28298.jpg",
      "thumb_w": 640,
-     "thumb_h": 346
+     "thumb_h": 346,
+     "listed": "2026-11-24"
     },
     {
      "id": "2611.26450",
@@ -1373,8 +1497,8 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 7,
      "ax_votes": 74,
-     "ax_visits": 1881,
-     "heat": 269.1,
+     "ax_visits": 1894,
+     "heat": 270.4,
      "orgs": [
       {
        "name": "Independent Researcher"
@@ -1382,7 +1506,8 @@
      ],
      "thumb": "data/thumbs/2611.26450.jpg",
      "thumb_w": 618,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "listed": "2026-11-20"
     },
     {
      "id": "2611.34923",
@@ -1417,17 +1542,28 @@
      },
      "summary_source": "deepseek-flash",
      "hf_upvotes": 74,
-     "ax_votes": 88,
-     "ax_visits": 825,
-     "heat": 244.5,
+     "ax_votes": 92,
+     "ax_visits": 963,
+     "heat": 262.3,
      "orgs": [
       {
-       "name": "Huazhong University of Science & Technology"
+       "name": "Huazhong University of Science & Technology",
+       "ror": "00p991c53"
+      },
+      {
+       "logo": "data/logos/bytedance.com.png",
+       "name": "ByteDance"
+      },
+      {
+       "logo": "data/logos/utoronto.ca.png",
+       "name": "University of Toronto",
+       "ror": "03dbr7087"
       }
      ],
      "thumb": "data/thumbs/2611.34923.jpg",
      "thumb_w": 618,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "listed": "2026-11-26"
     },
     {
      "id": "2611.29897",
@@ -1463,21 +1599,136 @@
       "zh": "Motion Mamba 2.0 用 Mamba 循环状态加持久内容记忆 PCM 做根-身体扩散式自回归动作生成，支持最长 39.52 s 的长程末端控制；配合 CUDA Graph 等优化，RTX 4090 上完整窗口延迟从 1685.35 ms 降到 276.14 ms，中位加速 6.138 倍，并在 Unitree G1 上验证了文本引导动作组合与交互式行走。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 227,
+     "hf_upvotes": 228,
      "ax_votes": 1,
-     "ax_visits": 71,
-     "heat": 235.1,
+     "ax_visits": 73,
+     "heat": 236.3,
      "orgs": [
       {
-       "name": "Peking University"
+       "logo": "data/logos/pku.edu.cn.png",
+       "name": "Peking University",
+       "ror": "02v51f717"
       },
       {
        "name": "Korea University"
+      },
+      {
+       "logo": "data/logos/monash.edu.png",
+       "name": "Monash University",
+       "ror": "02bfwt286"
+      },
+      {
+       "name": "NTU",
+       "ror": "02e7b5302"
       }
      ],
      "thumb": "data/thumbs/2611.29897.jpg",
      "thumb_w": 640,
-     "thumb_h": 272
+     "thumb_h": 272,
+     "listed": "2026-11-24"
+    },
+    {
+     "id": "2611.24738",
+     "title": "Jeveration: System One Models Now Generate",
+     "authors": [
+      "Yuhe Liu",
+      "Qi Li",
+      "Shihua Zhang",
+      "Xinchao Wang"
+     ],
+     "abstract": "System One models such as Jev return decisions through fast, parallel prediction. In this paper, we introduce Jeveration, showing that the same decision paradigm can also generate high-quality images in a single forward pass. Jeveration builds on a frozen vision-language model, repurposing its visual-semantic knowledge for holistic image generation. The key challenge is to maintain global consistency. A single prompt admits many valid images, yet parallel predictions must converge on a coherent whole. We therefore condition all positions on a shared random state to coordinate parallel predictions, so that each draw yields a different but coherent image. Since the model tends to ignore this state under direct image supervision, we first learn a distribution over discrete image codes to guide single-pass generation. Beyond text-to-image generation, we further unify image-to-image generation and dense prediction within the same architecture, so that one checkpoint supports all three tasks, each in one forward pass. Experiments show that Jeveration generates a 512x512 image in 78 ms, up to 122x faster than existing unified models, while maintaining competitive image quality and dense prediction performance.",
+     "primary": "cs.CV",
+     "categories": [
+      "cs.CV"
+     ],
+     "published": "2026-11-18T16:56:59Z",
+     "updated": "2026-11-20T18:25:30Z",
+     "comment": "Project page: https://carol-lyh.github.io/Jeveration/ Code: https://github.com/Carol-lyh/Jeveration",
+     "code_url": "https://github.com/Carol-lyh/Jeveration",
+     "listed": "2026-11-19",
+     "tags": [
+      "image generation",
+      "efficiency",
+      "VLM"
+     ],
+     "hf_upvotes": 127,
+     "ax_votes": 44,
+     "ax_visits": 518,
+     "heat": 222.8,
+     "orgs": [
+      {
+       "name": "NUS",
+       "ror": "01tgyzw49"
+      }
+     ],
+     "thumb": "data/thumbs/2611.24738.jpg",
+     "thumb_w": 640,
+     "thumb_h": 417,
+     "summary": {
+      "zh": "Jeveration 在冻结的视觉语言模型上做单次前向的图像生成，用共享随机状态协调并行预测保持全局一致，先学离散图像码分布引导生成，512x512 图像仅需 78 ms，比现有统一模型快至多 122 倍。",
+      "en": "Jeveration repurposes a frozen VLM for single-pass image generation, coordinating parallel predictions via a shared random state and learning discrete image-code distributions; it generates 512x512 images in 78 ms, up to 122x faster than unified models."
+     },
+     "summary_source": "deepseek-flash"
+    },
+    {
+     "id": "2611.23068",
+     "title": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
+     "authors": [
+      "Yuanhao Zeng",
+      "Shaocheng Lan",
+      "Ao Lu",
+      "Kuang Yan",
+      "Heng Lin",
+      "Xinang Xu",
+      "Yuan Luo",
+      "Yueting Wang",
+      "Yexin Li",
+      "Ruo Shan",
+      "Kan Ren"
+     ],
+     "abstract": "Agent evolution follows a simple loop: a proposer writes candidate artifacts (prompts, skills, memories) and selection accepts those that score higher. This loop has shown promise, yet practitioners face a puzzle: methods trade wins across papers, and evolution often fails to bootstrap on certain tasks. We trace this puzzle to the Resolution Hypothesis: agent evolution stalls not because methods fail to propose better artifacts, but because noisy evaluations cannot reliably identify them. Across seven evolution methods and six models (over 10M LLM calls), we find support for the hypothesis at both levels where evaluation scores are used. At the candidate level (choosing artifacts), helpful candidate artifacts exist, but selection is no better than random at telling them from harmful ones, so errors accumulate across rounds. At the method level (ranking methods), typical margins of a few percentage points are smaller than the difference between two independent runs of the same method, so published rankings often rest on luck. Together, these findings indicate that agent evolution is often bottlenecked by reliably identifying improvements. This calls for a shift in how we develop and evaluate self-improving agents, from designing ever more candidate improvement systems to making true improvements detectable and accumulable.",
+     "primary": "cs.AI",
+     "categories": [
+      "cs.AI",
+      "cs.CL"
+     ],
+     "published": "2026-11-17T16:57:03Z",
+     "updated": "2026-11-17T16:57:03Z",
+     "comment": "38 pages, 12 figures, 13 tables. Project page: https://lineshogan.github.io/resolution-hypothesis/",
+     "listed": "2026-11-19",
+     "tags": [
+      "agents",
+      "benchmark",
+      "LLM"
+     ],
+     "hf_upvotes": 40,
+     "ax_votes": 84,
+     "ax_visits": 912,
+     "heat": 215.2,
+     "orgs": [
+      {
+       "name": "ShanghaiTech University",
+       "ror": "030bhh786"
+      },
+      {
+       "logo": "data/logos/bytedance.com.png",
+       "name": "ByteDance"
+      },
+      {
+       "name": "BIGAI"
+      },
+      {
+       "name": "SUSTech"
+      }
+     ],
+     "thumb": "data/thumbs/2611.23068.jpg",
+     "thumb_w": 507,
+     "thumb_h": 440,
+     "summary": {
+      "zh": "在7种进化方法和6个模型、超1000万次LLM调用上验证Resolution Hypothesis：候选层面噪声评估无法区分优劣artifact导致误差累积，方法层面几个百分点的差距小于同一方法两次独立运行的差异，说明agent进化的瓶颈在于可靠识别改进。",
+      "en": "Testing 7 evolution methods and 6 models over 10M LLM calls, the Resolution Hypothesis shows noisy evaluation cannot distinguish helpful from harmful artifacts, and method-level margins fall below run-to-run variance."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.26603",
@@ -1512,16 +1763,72 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 41,
      "ax_votes": 66,
-     "ax_visits": 653,
-     "heat": 172.3,
+     "ax_visits": 655,
+     "heat": 172.5,
      "orgs": [
       {
+       "logo": "data/logos/apple.com.png",
        "name": "Apple"
       }
      ],
      "thumb": "data/thumbs/2611.26603.jpg",
      "thumb_w": 247,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "listed": "2026-11-20"
+    },
+    {
+     "id": "2611.33102",
+     "title": "Reinforcement Learning Can Be Recovered From Its Own Rollouts",
+     "authors": [
+      "Jiayi Sheng",
+      "Jingwen Gu",
+      "Guanning Zeng",
+      "Zhaoyi Zhou",
+      "Stefano Viel",
+      "Qianqian Wang",
+      "Fahim Tajwar",
+      "Andrea Zanette"
+     ],
+     "abstract": "Broadly speaking, reinforcement learning (RL) post-training converts compute into model capabilities by training on model-generated data. Typically, the rollouts are discarded after each update, and the knowledge acquired during RL resides in the model weights. In this work, we investigate how much of this knowledge is retained in the rollouts themselves. A natural first attempt is to replay the original RL algorithm on archived (rather than freshly generated) rollouts, but this generally leads to catastrophic collapse. We provide a simple explanation for this phenomenon, which in turn suggests a remedy we call maximum likelihood replay: fitting the model to its archived rollouts. Surprisingly, starting from the same base model and replaying the rollouts in the order in which they were generated, without any distinction between correct and incorrect responses, is sufficient to recover the performance of online RL. In fact, a single maximum likelihood update per rollout batch closely tracks the entire learning curve of online RL. Furthermore, maximum likelihood replay on the rollouts of the last few RL steps often suffices to recover the final model's performance. This suggests that much of the compute invested in RL goes into discovering an improved sampling distribution rather than learning it from samples.",
+     "primary": "cs.LG",
+     "categories": [
+      "cs.LG"
+     ],
+     "published": "2026-11-24T18:38:06Z",
+     "updated": "2026-11-25T18:46:02Z",
+     "comment": "Preprint. 23 pages, 20 figures, 7 tables",
+     "tags": [
+      "RL",
+      "LLM",
+      "efficiency"
+     ],
+     "summary": {
+      "en": "Investigating how much RL-acquired knowledge persists in rollouts, maximum likelihood replay that fits archived rollouts in generation order without distinguishing correct responses matches online RL performance.",
+      "zh": "研究RL后训练产生的rollout中保留多少知识，发现直接用最大似然拟合归档rollout（maximum likelihood replay），不区分对错、按生成顺序回放，即可复现在线RL的性能，单次更新即可追踪完整学习曲线。"
+     },
+     "summary_source": "deepseek-flash",
+     "ax_votes": 73,
+     "ax_visits": 970,
+     "heat": 170.0,
+     "orgs": [
+      {
+       "name": "Tufa Labs"
+      },
+      {
+       "logo": "data/logos/harvard.edu.png",
+       "name": "Harvard University",
+       "ror": "03vek6s52"
+      },
+      {
+       "logo": "data/logos/illinois.edu.png",
+       "name": "University of Illinois Urbana-Champaign",
+       "ror": "047426m28"
+      }
+     ],
+     "thumb": "data/thumbs/2611.33102.jpg",
+     "thumb_w": 566,
+     "thumb_h": 440,
+     "listed": "2026-11-25"
     },
     {
      "id": "2611.26444",
@@ -1594,19 +1901,52 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 57,
      "ax_votes": 56,
-     "ax_visits": 563,
-     "heat": 169.3,
+     "ax_visits": 570,
+     "heat": 170.0,
      "orgs": [
       {
-       "name": "THU 2UCam 3Oxford 4Stanford 5CMU 6HKU 7HKUST 8CUHK"
+       "name": "Tsinghua University",
+       "ror": "03cve4549"
       },
       {
-       "name": "PKU 10SJTU 11FDU 12RUC 13SZU 14Velabot AI 15Simple AI 16Baidu AI Cloud"
+       "name": "University of Cambridge",
+       "ror": "013meh722"
+      },
+      {
+       "logo": "data/logos/ox.ac.uk.png",
+       "name": "University of Oxford",
+       "ror": "052gg0110"
+      },
+      {
+       "logo": "data/logos/stanford.edu.png",
+       "name": "Stanford University",
+       "ror": "00f54p054"
+      },
+      {
+       "logo": "data/logos/cmu.edu.png",
+       "name": "Carnegie Mellon University",
+       "ror": "05x2bcf33"
+      },
+      {
+       "logo": "data/logos/hku.hk.png",
+       "name": "HKU",
+       "ror": "02zhqgq86"
+      },
+      {
+       "logo": "data/logos/hkust.edu.hk.png",
+       "name": "HKUST",
+       "ror": "00q4vv597"
+      },
+      {
+       "logo": "data/logos/cuhk.edu.hk.png",
+       "name": "CUHK",
+       "ror": "00t33hh48"
       }
      ],
      "thumb": "data/thumbs/2611.26444.jpg",
      "thumb_w": 635,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "listed": "2026-11-20"
     },
     {
      "id": "2611.30111",
@@ -1641,65 +1981,41 @@
      },
      "summary_source": "deepseek-flash",
      "ax_votes": 79,
-     "ax_visits": 829,
-     "heat": 161.9,
+     "ax_visits": 839,
+     "heat": 162.9,
      "orgs": [
       {
-       "name": "Tulane University NYU Northeastern University Stanford University MIT Harvard University"
+       "logo": "data/logos/tulane.edu.png",
+       "name": "Tulane University",
+       "ror": "04vmvtb21"
+      },
+      {
+       "name": "New York University",
+       "ror": "0190ak572"
+      },
+      {
+       "name": "Northeastern University"
+      },
+      {
+       "logo": "data/logos/stanford.edu.png",
+       "name": "Stanford University",
+       "ror": "00f54p054"
+      },
+      {
+       "logo": "data/logos/mit.edu.png",
+       "name": "MIT",
+       "ror": "042nb2s44"
+      },
+      {
+       "logo": "data/logos/harvard.edu.png",
+       "name": "Harvard University",
+       "ror": "03vek6s52"
       }
      ],
      "thumb": "data/thumbs/2611.30111.jpg",
      "thumb_w": 640,
-     "thumb_h": 320
-    },
-    {
-     "id": "2611.33102",
-     "title": "Reinforcement Learning Can Be Recovered From Its Own Rollouts",
-     "authors": [
-      "Jiayi Sheng",
-      "Jingwen Gu",
-      "Guanning Zeng",
-      "Zhaoyi Zhou",
-      "Stefano Viel",
-      "Qianqian Wang",
-      "Fahim Tajwar",
-      "Andrea Zanette"
-     ],
-     "abstract": "Broadly speaking, reinforcement learning (RL) post-training converts compute into model capabilities by training on model-generated data. Typically, the rollouts are discarded after each update, and the knowledge acquired during RL resides in the model weights. In this work, we investigate how much of this knowledge is retained in the rollouts themselves. A natural first attempt is to replay the original RL algorithm on archived (rather than freshly generated) rollouts, but this generally leads to catastrophic collapse. We provide a simple explanation for this phenomenon, which in turn suggests a remedy we call maximum likelihood replay: fitting the model to its archived rollouts. Surprisingly, starting from the same base model and replaying the rollouts in the order in which they were generated, without any distinction between correct and incorrect responses, is sufficient to recover the performance of online RL. In fact, a single maximum likelihood update per rollout batch closely tracks the entire learning curve of online RL. Furthermore, maximum likelihood replay on the rollouts of the last few RL steps often suffices to recover the final model's performance. This suggests that much of the compute invested in RL goes into discovering an improved sampling distribution rather than learning it from samples.",
-     "primary": "cs.LG",
-     "categories": [
-      "cs.LG"
-     ],
-     "published": "2026-11-24T18:38:06Z",
-     "updated": "2026-11-25T18:46:02Z",
-     "comment": "Preprint. 23 pages, 20 figures, 7 tables",
-     "tags": [
-      "RL",
-      "LLM",
-      "efficiency"
-     ],
-     "summary": {
-      "en": "Investigating how much RL-acquired knowledge persists in rollouts, maximum likelihood replay that fits archived rollouts in generation order without distinguishing correct responses matches online RL performance.",
-      "zh": "研究RL后训练产生的rollout中保留多少知识，发现直接用最大似然拟合归档rollout（maximum likelihood replay），不区分对错、按生成顺序回放，即可复现在线RL的性能，单次更新即可追踪完整学习曲线。"
-     },
-     "summary_source": "deepseek-flash",
-     "ax_votes": 72,
-     "ax_visits": 875,
-     "heat": 159.5,
-     "orgs": [
-      {
-       "name": "Tufa Labs"
-      },
-      {
-       "name": "Harvard University"
-      },
-      {
-       "name": "University of Illinois Urbana-Champaign"
-      }
-     ],
-     "thumb": "data/thumbs/2611.33102.jpg",
-     "thumb_w": 566,
-     "thumb_h": 440
+     "thumb_h": 320,
+     "listed": "2026-11-24"
     },
     {
      "id": "2611.34051",
@@ -1739,18 +2055,36 @@
       "zh": "针对 Gated DeltaNet-2 长上下文训练中擦除方向不对称导致循环状态指数增长的问题，提出 Stable Gated DeltaNet-2，用对称擦除保证非扩张状态传播，并配合衰减调节的残差写入，理论上给出 O(√T) 状态增长上界且保留分块并行。1.6B 参数模型上训练稳定，128K 平均 RULER 分数提升 6.80 分，九个下游任务平均准确率提升 0.62 分。"
      },
      "summary_source": "deepseek-flash",
-     "hf_upvotes": 126,
+     "hf_upvotes": 128,
      "ax_votes": 8,
-     "ax_visits": 110,
-     "heat": 145.0,
+     "ax_visits": 133,
+     "heat": 149.3,
      "orgs": [
       {
-       "name": "HKUST"
+       "name": "MemTensor"
+      },
+      {
+       "name": "University of Science and Technology of China",
+       "ror": "04c4dkn09"
+      },
+      {
+       "logo": "data/logos/hkust.edu.hk.png",
+       "name": "HKUST",
+       "ror": "00q4vv597"
+      },
+      {
+       "name": "Southern University of Science and Technology",
+       "ror": "049tv2d57"
+      },
+      {
+       "name": "Shanghai Jiao Tong University",
+       "ror": "0220qvk04"
       }
      ],
      "thumb": "data/thumbs/2611.34051.jpg",
      "thumb_w": 640,
-     "thumb_h": 348
+     "thumb_h": 348,
+     "listed": "2026-11-27"
     },
     {
      "id": "2611.31201",
@@ -1793,19 +2127,102 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 106,
      "ax_votes": 16,
-     "ax_visits": 167,
-     "heat": 138.7,
+     "ax_visits": 169,
+     "heat": 138.9,
      "orgs": [
       {
-       "name": "NTU"
+       "name": "NTU",
+       "ror": "02e7b5302"
       },
       {
-       "name": "Xiamen University Lenovo Robotics Lab University of Connecticut"
+       "name": "ACE Robotics"
+      },
+      {
+       "name": "SenseTime Research"
+      },
+      {
+       "name": "Xiamen University",
+       "ror": "00mcjh785"
+      },
+      {
+       "name": "Lenovo Robotics Lab"
+      },
+      {
+       "logo": "data/logos/uconn.edu.png",
+       "name": "University of Connecticut",
+       "ror": "02der9h97"
       }
      ],
      "thumb": "data/thumbs/2611.31201.jpg",
      "thumb_w": 547,
-     "thumb_h": 440
+     "thumb_h": 440,
+     "listed": "2026-11-24"
+    },
+    {
+     "id": "2611.21885",
+     "title": "Language Models Can Rewrite Their Own Weights",
+     "authors": [
+      "Jiajun Fan",
+      "Neil He",
+      "Changyi Yang",
+      "Andy Mao",
+      "Xi Zhu",
+      "Chaoran Cheng",
+      "Kaiqu Liang",
+      "Shuaike Shen",
+      "Zetian Li",
+      "Ruihan Guo",
+      "Ge Liu"
+     ],
+     "abstract": "A language model is trained once and frozen. Making it better takes another training run, or a prompt, a harness or extra computation at inference that is gone once the task ends. We show a third way: to our knowledge for the first time, a language model rewrites its own weights by its own reasoning and becomes better, with no gradients and no training. We call this self-rewriting: the model is its own optimizer. In earlier work, a frontier model edited a much smaller one; here an open 27B model, given its weights, its graded answers and the ability to run itself, diagnoses its own failure and rewrites the weights behind it. It surpasses itself: its own edit makes it 6.6 points more accurate on problems it never saw. It keeps getting better: it tests its edits on practice problems and submits only what works, each edit improving on the last, and over eight consecutive sessions its accuracy only rises. It repairs a damaged copy of itself, like a broken robot that fixes itself without being rebuilt: the copy solves almost nothing, yet with no retraining and without ever reading the original weights, the model brings it back to over 80% of the original accuracy on image tasks it never saw. And the ability emerges with scale: in one model family, the smaller models make no edit or break themselves, and only the largest improves and repairs itself. Unlike test-time scaling, self-rewriting writes its gain into the weights, at no cost per answer; unlike training, it runs only forward passes, as serving does. The wall between training and inference is a limit of our tools, not a property of intelligence. We believe self-rewriting is a necessary step toward recursive self-improvement: a model that, like a human, does not separate training from inference could keep upgrading itself for life, with no larger model, no harness or prompt engineering, and no pre- or post-training.",
+     "primary": "cs.AI",
+     "categories": [
+      "cs.AI"
+     ],
+     "published": "2026-11-16T20:55:08Z",
+     "updated": "2026-11-18T08:57:59Z",
+     "comment": "",
+     "listed": "2026-11-20",
+     "tags": [
+      "LLM",
+      "reasoning",
+      "efficiency",
+      "interpretability"
+     ],
+     "hf_upvotes": 24,
+     "ax_votes": 38,
+     "ax_visits": 664,
+     "heat": 128.4,
+     "orgs": [
+      {
+       "name": "UIUC"
+      },
+      {
+       "name": "CMU"
+      },
+      {
+       "name": "Rutgers"
+      },
+      {
+       "name": "Princeton"
+      },
+      {
+       "name": "Stanford University",
+       "ror": "00f54p054",
+       "logo": "data/logos/stanford.edu.png"
+      },
+      {
+       "name": "Yale"
+      }
+     ],
+     "thumb": "data/thumbs/2611.21885.jpg",
+     "thumb_w": 640,
+     "thumb_h": 308,
+     "summary": {
+      "zh": "自改写方法让开放 27B 模型仅凭前向推理、无梯度无训练地诊断自身失败并重写自身权重，在未见问题上准确率提升 6.6 个百分点，连续八轮编辑精度持续上升，还能把近乎失效的受损副本恢复到原精度 80% 以上，且该能力仅在最大模型中涌现。",
+      "en": "Self-rewriting lets an open 27B model diagnose its failures and rewrite its own weights via forward-only reasoning, no gradients or training, gaining 6.6 points on unseen problems and restoring a damaged copy to over 80% of original accuracy."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.31002",
@@ -1858,28 +2275,154 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 1,
      "ax_votes": 56,
-     "ax_visits": 692,
-     "heat": 126.2,
+     "ax_visits": 701,
+     "heat": 127.1,
      "orgs": [
       {
-       "name": "Robotics via Real-to-Sim Environments"
+       "name": "Tsinghua University",
+       "ror": "03cve4549"
       },
       {
-       "name": "Agentic Robotics"
+       "name": "Einsia.AI"
       },
       {
-       "name": "robotics remains constrained"
+       "logo": "data/logos/pku.edu.cn.png",
+       "name": "Peking University",
+       "ror": "02v51f717"
       },
       {
-       "name": "Agentic Robotics—a paradigm in which frontier foundation models act as Coding Agents to control"
+       "logo": "data/logos/illinois.edu.png",
+       "name": "University of Illinois Urbana-Champaign",
+       "ror": "047426m28"
       },
       {
-       "name": "Yet Agentic Robotics has not truly entered its scaling era"
+       "logo": "data/logos/hku.hk.png",
+       "name": "HKU",
+       "ror": "02zhqgq86"
+      },
+      {
+       "logo": "data/logos/ucl.ac.uk.png",
+       "name": "University College London",
+       "ror": "02jx3x895"
+      },
+      {
+       "logo": "data/logos/unc.edu.png",
+       "name": "University of North Carolina at Chapel Hill",
+       "ror": "0130frc33"
       }
      ],
      "thumb": "data/thumbs/2611.31002.jpg",
      "thumb_w": 640,
-     "thumb_h": 372
+     "thumb_h": 372,
+     "listed": "2026-11-24"
+    },
+    {
+     "id": "2611.22925",
+     "title": "Code World Model 2.0: Towards Infinite Controllable Video Generation",
+     "authors": [
+      "Ruoyu Wang",
+      "Hao Zhong",
+      "Yanming Yang",
+      "Jiahao Tian",
+      "Lin Liu",
+      "Biao Gong",
+      "Guoshan Lu",
+      "Yiding Tian",
+      "Chunhua Shen",
+      "Zhenzhong Lan",
+      "Chi Zhang"
+     ],
+     "abstract": "Visual proxies decouple explicit world-state simulation from photorealistic video synthesis, offering a controllable interface for both offline clip creation and real-time interactive streaming. Yet a practical renderer must address two challenges. Upstream proxies vary from coarse layouts to fine articulated geometry depending on the interaction, and streaming inference must operate in a few causal steps without accumulating drift across self-generated history. We present Invoker-Render, pairing a bidirectional creation model with a causal four-step streaming model under a shared conditioning interface over structural proxies, an appearance reference, and language. Trained on an aligned approximately 200-hour multi-granularity corpus, Invoker-Render honors fine geometric constraints when supplied while synthesizing plausible local motion under coarse proxies, enabling runtime selection of input detail. To bridge bidirectional creation and real-time streaming without compounding step compression and rollout drift, we introduce Progressive Forcing (ProForcing). ProForcing first trains a causal predictor and distills it into a four-step renderer using histories derived from training videos. Training then shifts to continuous self-generated rollouts. A pipelined serving stack supports efficient streaming inference. Experiments show versatile control across proxy families, granularities, and camera paths, consistent gains over recent streaming baselines, and stable 30-minute racing rollouts that preserve scene and subject appearance.",
+     "primary": "cs.CV",
+     "categories": [
+      "cs.CV"
+     ],
+     "published": "2026-11-17T15:23:57Z",
+     "updated": "2026-11-18T05:27:57Z",
+     "comment": "Project Page: https://www.inclusion-ai.org/CodeWorldModel/",
+     "listed": "2026-11-19",
+     "tags": [
+      "video generation",
+      "world model",
+      "diffusion",
+      "efficiency"
+     ],
+     "hf_upvotes": 21,
+     "ax_votes": 37,
+     "ax_visits": 657,
+     "heat": 123.7,
+     "orgs": [
+      {
+       "name": "Ant Group",
+       "ror": "00g5w7n47"
+      },
+      {
+       "name": "Westlake University",
+       "ror": "05hfa4n20"
+      },
+      {
+       "name": "Zhejiang University",
+       "ror": "00a2xv884"
+      }
+     ],
+     "thumb": "data/thumbs/2611.22925.jpg",
+     "thumb_w": 580,
+     "thumb_h": 440,
+     "summary": {
+      "zh": "Invoker-Render 结合双向创作模型与因果四步流式模型，统一以结构代理、外观参考和语言为条件，并用 Progressive Forcing 从视频历史蒸馏到自生成 rollout；实验在代理类型、粒度、相机路径上控制灵活，较流式基线稳定提升，支持 30 分钟赛车生成不漂移。",
+      "en": "Invoker-Render couples a bidirectional creation model with a causal four-step streaming model sharing a structural-proxy, appearance-reference and language interface; Progressive Forcing distills video-history training into self-generated rollouts, yielding stable 30-minute racing streams over streaming baselines."
+     },
+     "summary_source": "deepseek-flash"
+    },
+    {
+     "id": "2611.22287",
+     "title": "Decoding Without a Decoder: Direct Pixel Prediction from Diffusion Transformers",
+     "authors": [
+      "Hansheng Chen",
+      "Shengqu Cai",
+      "Jan Ackermann",
+      "Rayhan Zirvi",
+      "Gordon Wetzstein",
+      "Xinchen Yan",
+      "Leonidas Guibas"
+     ],
+     "abstract": "Latent diffusion models rely on a decoder to map denoised latents to pixels, adding complexity and inference cost. We introduce Decoding Without a Decoder (DWD), which lets a finetuned diffusion transformer produce final pixels directly through a linear head. Unlike previous methods, where the denoising output leads to final pixels, DWD separates the two roles: the original denoising head continues to drive sampling, then the new DWD head predicts the pixels at the final step. We extend pretrained latent models with DWD efficiently by finetuning only the last few transformer blocks, training the DWD head with pixel quality losses while anchoring the denoising head to the pretrained model to preserve the sample trajectory. Across latent image and video generators, DWD removes the decoder while maintaining or even improving pixel quality. On Wan video generation, it visibly reduces detail distortion and flickering, lowering warping error by 23%. Remarkably, the same separation also improves pixel diffusion models that do not even use a decoder: a final-step DWD head produces substantially better texture detail in text-to-image generation, and improves ImageNet FID from 1.55 to 1.43, a new state of the art among pixel flow models.",
+     "primary": "cs.CV",
+     "categories": [
+      "cs.CV"
+     ],
+     "published": "2026-11-17T06:40:08Z",
+     "updated": "2026-11-18T12:13:48Z",
+     "comment": "Project page: https://hanshengchen.com/dwd",
+     "listed": "2026-11-19",
+     "tags": [
+      "diffusion",
+      "image generation",
+      "video generation",
+      "efficiency"
+     ],
+     "hf_upvotes": 15,
+     "ax_votes": 54,
+     "ax_visits": 530,
+     "heat": 122.0,
+     "orgs": [
+      {
+       "name": "Luma AI"
+      },
+      {
+       "name": "California Institute of Technology",
+       "ror": "05dxps055",
+       "logo": "data/logos/caltech.edu.png"
+      }
+     ],
+     "thumb": "data/thumbs/2611.22287.jpg",
+     "thumb_w": 640,
+     "thumb_h": 323,
+     "summary": {
+      "zh": "DWD 让微调后的扩散 transformer 通过线性头在最后一步直接预测像素，替代解码器；仅微调末几个 block 并锚定去噪头，在 Wan 视频生成上降低 23% warping error，并将像素流模型的 ImageNet FID 从 1.55 降至 1.43。",
+      "en": "DWD lets a finetuned diffusion transformer predict final pixels via a linear head at the last sampling step, removing the decoder; it cuts Wan video warping error by 23% and improves pixel-flow ImageNet FID from 1.55 to 1.43."
+     },
+     "summary_source": "deepseek-flash"
     },
     {
      "id": "2611.26629",
@@ -1910,16 +2453,23 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 47,
      "ax_votes": 35,
-     "ax_visits": 359,
-     "heat": 117.9,
+     "ax_visits": 361,
+     "heat": 118.1,
      "orgs": [
       {
+       "logo": "data/logos/vt.edu.png",
+       "name": "Virginia Tech",
+       "ror": "02smfhw86"
+      },
+      {
+       "logo": "data/logos/nvidia.com.png",
        "name": "NVIDIA"
       }
      ],
      "thumb": "data/thumbs/2611.26629.jpg",
      "thumb_w": 640,
-     "thumb_h": 203
+     "thumb_h": 203,
+     "listed": "2026-11-20"
     },
     {
      "id": "2611.27193",
@@ -1960,429 +2510,30 @@
      "summary_source": "deepseek-flash",
      "hf_upvotes": 94,
      "ax_votes": 6,
-     "ax_visits": 83,
-     "heat": 108.3,
+     "ax_visits": 84,
+     "heat": 108.4,
      "orgs": [
       {
-       "name": "Xingchen AGI Lab"
+       "name": "China Telecom"
       },
       {
-       "name": "HKUST"
+       "logo": "data/logos/hkust.edu.hk.png",
+       "name": "HKUST",
+       "ror": "00q4vv597"
       },
       {
-       "name": "Harbin Institute of Technology (Shenzhen)"
+       "name": "Harbin Institute of Technology",
+       "ror": "01yqg2h08"
       },
       {
-       "name": "Huawei Technologies"
+       "logo": "data/logos/huawei.com.png",
+       "name": "Huawei"
       }
      ],
      "thumb": "data/thumbs/2611.27193.jpg",
      "thumb_w": 640,
-     "thumb_h": 310
-    },
-    {
-     "id": "2611.30634",
-     "title": "Rewirable Circuits in Transformers with Loom Attention",
-     "authors": [
-      "Da Xiao",
-      "Qingye Meng",
-      "Shengping Li",
-      "Xingyuan Yuan"
-     ],
-     "abstract": "We propose loom attention, which allows a Transformer to dynamically rewire its circuits at every token by interweaving a head's vertical attention over the outputs of earlier heads (to obtain its query, key and value) with its horizontal attention over tokens. We instantiate vertical attention efficiently with normalized and gated linear attention over a per-token matrix memory, which stores the compressed head outputs and serves as a second residual stream. This yields LoomFormer, a dual-stream architecture that splits control and content between the vector and matrix streams. Across model sizes and training token budgets in language modeling and downstream tasks, LoomFormer matches Transformers trained with over 3x compute and recent residual-stream baselines (HC/mHC, MUDDFormer, AttnRes) trained with ~1.7-2.8x. For example, trained on the same 300B tokens with only 2% extra FLOPs, LoomPythia-2.8B achieves ~1.6x the average downstream gain of mHC-Pythia-2.8B over Pythia-2.8B, and matches (0-shot) or surpasses (5-shot) Pythia-12B. Code is available at https://github.com/Caiyun-AI/LoomFormer",
-     "primary": "cs.LG",
-     "categories": [
-      "cs.LG"
-     ],
-     "published": "2026-11-23T13:00:54Z",
-     "updated": "2026-11-24T08:46:11Z",
-     "comment": "",
-     "code_url": "https://github.com/Caiyun-AI/LoomFormer",
-     "tags": [
-      "LLM",
-      "pretraining",
-      "efficiency",
-      "interpretability"
-     ],
-     "summary": {
-      "en": "Loom attention interweaves vertical attention over prior head outputs via normalized gated linear attention with horizontal token attention, yielding LoomFormer; with only ~2% extra FLOPs, LoomPythia-2.8B reaches ~1.6x mHC-Pythia-2.8B's downstream gain and matches Pythia-12B zero-shot.",
-      "zh": "Loom attention 通过垂直注意力对前序 head 输出做归一化门控线性注意力，并与水平 token 注意力交织，实现逐 token 动态重连电路，构成 LoomFormer 双流架构；在 300B token、仅增约 2% FLOPs 下，LoomPythia-2.8B 下游增益约为 mHC-Pythia-2.8B 的 1.6 倍，0-shot 追平 Pythia-12B。"
-     },
-     "summary_source": "deepseek-flash",
-     "hf_upvotes": 95,
-     "ax_votes": 2,
-     "ax_visits": 73,
-     "heat": 104.3,
-     "orgs": [
-      {
-       "name": "Beijing University of Posts and Telecommunications"
-      },
-      {
-       "name": "ColorfulClouds Technology"
-      }
-     ],
-     "thumb": "data/thumbs/2611.30634.jpg",
-     "thumb_w": 640,
-     "thumb_h": 392
-    },
-    {
-     "id": "2611.34575",
-     "title": "Sage-Med: Scaling Medical Multimodal Intelligence",
-     "authors": [
-      "Sage-Med Team",
-      ":",
-      "Ming Hu",
-      "Cheng Tang",
-      "Wei Li",
-      "Rongbin Li",
-      "Feilong Tang",
-      "Junru Hu",
-      "Hongze Zhu",
-      "Qiujuan Yan",
-      "Huanze Tang",
-      "Shaocong Wei",
-      "Siyuan Yan",
-      "Min Cen",
-      "Zhongxing Xu",
-      "Zhonghua Wang",
-      "Lie Ju",
-      "Zhen Yu",
-      "Wenjie Li",
-      "Shiyan Su",
-      "Jing Hao",
-      "Jingyong Liang",
-      "Diping Song",
-      "Fang Yan",
-      "Chenglong Ma",
-      "Junzhi Ning",
-      "Haochen Xue",
-      "Zanting Ye",
-      "Chenrun Wang",
-      "Jinjie Wei",
-      "Yi Xin",
-      "Jianghan Shen",
-      "Siqi Luo",
-      "Jiyao Liu",
-      "Huidong Xie",
-      "Jun Zhao",
-      "Rulin Zhou",
-      "Longquan Jiang",
-      "Ziyan Huang",
-      "Ying Chen",
-      "Hanxiao Zhang",
-      "Junyang Wu",
-      "Mouxiao Bian",
-      "Jiashi Lin",
-      "Chenyu Wang",
-      "Qi Qin",
-      "Jie Huang",
-      "Yiling Zhou",
-      "Jiawei Chen",
-      "Kefan Wang",
-      "Jingjing Hua",
-      "Yaoyu Liu",
-      "Huihui Xu",
-      "Tianbin Li",
-      "Jin Ye",
-      "Ziyang Chen",
-      "Shujian Gao",
-      "Zilin Lu",
-      "Jiangtao Yan",
-      "Changkai Ji",
-      "Wenhao Tang",
-      "Xinyi Zeng",
-      "Yuxing Chen",
-      "Hongwei Yang",
-      "Rongzhao Zhang",
-      "Jinru Ding",
-      "Yingcheng Wu",
-      "Zhenfei Yin",
-      "Jinzhe Li",
-      "Lu Lu",
-      "Yun Zhong",
-      "Zhishan Lin",
-      "Bingli Wang",
-      "Xiaohan Ren",
-      "Jianmin Qian",
-      "Penghao Zhao",
-      "Zhongbo Tian",
-      "Zhenbang Zhou",
-      "Peiling Dai",
-      "Mengjing Zhao",
-      "Jingyu Zheng",
-      "Pinan Liu",
-      "Shiwei Li",
-      "Victoria Mar",
-      "Cristina Vico-Alonso",
-      "Qiang Wu",
-      "Xianming Liu",
-      "Lingtong Huang",
-      "Dili Song",
-      "Minghui Zhang",
-      "Wenlong Zhang",
-      "Qipeng Guo",
-      "Yuqiang Li",
-      "Nanqing Dong",
-      "Yun Gu",
-      "Qi Duan",
-      "Hongliang Ren",
-      "Hongming Shan",
-      "Yin Xie",
-      "Xiang An",
-      "Benyou Wang",
-      "Yueming Su",
-      "Yefeng Zheng",
-      "Zongyuan Ge",
-      "Chun-Mei Feng",
-      "Jie Xu",
-      "Yu Qiao",
-      "Junjun He",
-      "Yirong Chen"
-     ],
-     "abstract": "Establishing effective scaling laws for medical multimodal large language models (MLLMs) remains a persistent and fundamental challenge. Our systematic evaluation shows that existing medical MLLMs tend to underperform frontier general-purpose MLLMs across a range of medical tasks, while scaling model size primarily improves text capabilities rather than multimodal perception, and enabling reasoning modes fails to close this visual gap. To investigate how medical multimodal intelligence scales in practice, we introduce Sage-Med-Preview, a 35B-parameter medical multimodal model with 3B activated parameters, built by combining stage-specific curation over 322.7 million candidate records with a progressive training curriculum spanning medical pretraining, staged supervised fine-tuning, and adaptive reinforcement learning. Across this curriculum, progressive supervised refinement and adaptive reinforcement learning yield consistent stage-wise gains, substantially advancing both specialized visual understanding and medical language capabilities. Evaluated against 77 competing models across 238 clinical tasks spanning 61 public and 13 private multi-center benchmarks in more than 40 modalities, Sage-Med-Preview achieves an average score of 58.26% on the 31 public multimodal benchmarks. It outperforms the state-of-the-art open-source medical model Hulu-Med-235B-A22B at 50.99% and the general scientific model Intern-S2-Preview at 52.24%, and approaches the advanced proprietary model GPT-6.2-Sol across multiple tasks such as comprehensive multimodal understanding, report generation, and visual grounding. Although substantial challenges remain in complex medical reasoning and multi-step clinical workflows, this report provides empirical evidence, actionable data and training recipes, and a rigorous benchmark toward scalable clinical multimodal intelligence.",
-     "primary": "cs.CV",
-     "categories": [
-      "cs.CV",
-      "cs.AI"
-     ],
-     "published": "2026-11-25T15:39:45Z",
-     "updated": "2026-11-25T15:39:45Z",
-     "comment": "101 pages",
-     "tags": [
-      "multimodal",
-      "LLM",
-      "pretraining",
-      "RL"
-     ],
-     "summary": {
-      "en": "Sage-Med-Preview, a 35B-parameter (3B activated) medical MLLM trained via curated 322.7M-record data and a progressive pretraining-to-SFT-to-RL curriculum, scores 58.26% on 31 public multimodal benchmarks, beating Hulu-Med-235B-A22B (50.99%) and Intern-S2-Preview (52.24%).",
-      "zh": "Sage-Med-Preview 是 35B 参数（激活 3B）的医学多模态模型，用 3.227 亿条候选数据分阶段筛选结合医学预训练、分阶段监督微调与自适应强化学习的渐进课程训练，在 31 个公开多模态基准上均分 58.26%，超过 Hulu-Med-235B-A22B 的 50.99% 和 Intern-S2-Preview 的 52.24%。"
-     },
-     "summary_source": "deepseek-flash",
-     "hf_upvotes": 81,
-     "ax_votes": 10,
-     "ax_visits": 128,
-     "heat": 103.8,
-     "orgs": [
-      {
-       "name": "Sage-Med Team"
-      },
-      {
-       "name": "Shanghai AI Lab"
-      }
-     ],
-     "thumb": "data/thumbs/2611.34575.jpg",
-     "thumb_w": 640,
-     "thumb_h": 302
-    },
-    {
-     "id": "2611.31154",
-     "title": "Attention Latent Feedback",
-     "authors": [
-      "Xuyuan Xiong",
-      "Siyu Chen",
-      "Mengzhao Chen",
-      "Yue Su",
-      "Zhuoran Yang",
-      "Ping Luo",
-      "Xihui Liu"
-     ],
-     "abstract": "During autoregressive decoding, the deeper representations of the previous token have already been computed, yet shallow layers at the current token cannot read them directly because standard self-attention connects positions only at the same depth. We introduce Attention Latent Feedback (ALF), an architecture that allows every sublayer to attend to the outputs of the deeper layers at the previous position. Training unrolls this cross-position recurrence into two parallel passes, whereas decoding remains single-pass using cached previous-token states. Across mixture-of-experts models with up to 4.0B parameters, ALF lowers held-out loss by 0.022-0.024 nats over the standard residual with about 1.1% decoding FLOP overhead, and consistently outperforms prior final-state feedback across all three scales on both standard and attention residual backbones. On MoE-1.6B, ALF matches a $1.38\\times$ larger baseline token budget, and on MoE-4.0B it lifts average accuracy across seventeen downstream benchmarks from 45.1% to 47.0%. Analysis further reveals that intermediate and nearby deeper layers drive most of this benefit, allowing a fixed nearest-window variant to retain 89%-94% of the gain at linear read cost while learned attention widens its margin with scale.",
-     "primary": "cs.LG",
-     "categories": [
-      "cs.LG"
-     ],
-     "published": "2026-11-23T18:21:05Z",
-     "updated": "2026-11-23T18:21:05Z",
-     "comment": "",
-     "tags": [
-      "LLM",
-      "efficiency",
-      "pretraining"
-     ],
-     "summary": {
-      "en": "Attention Latent Feedback lets each sublayer attend to deeper layers' outputs at the previous position, lowering held-out loss by 0.022-0.024 nats at ~1.1% decoding FLOP overhead and lifting MoE-4.0B average accuracy from 45.1% to 47.0%.",
-      "zh": "Attention Latent Feedback (ALF) 让每个子层关注前一个位置更深层的输出，训练时展开为两遍并行计算、解码仍为单遍；在最多 4.0B 参数的 MoE 模型上使 held-out loss 比标准残差降低 0.022–0.024 nats，解码 FLOP 开销约 1.1%，MoE-4.0B 在十七个下游基准上平均准确率从 45.1% 提升到 47.0%。"
-     },
-     "summary_source": "deepseek-flash",
-     "hf_upvotes": 10,
-     "ax_votes": 41,
-     "ax_visits": 526,
-     "heat": 103.6,
-     "orgs": [
-      {
-       "name": "HKU"
-      },
-      {
-       "name": "Yale University"
-      }
-     ],
-     "thumb": "data/thumbs/2611.31154.jpg",
-     "thumb_w": 640,
-     "thumb_h": 246
-    },
-    {
-     "id": "2611.34232",
-     "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
-     "authors": [
-      "Hui Shen",
-      "Yunta Hsieh",
-      "Jianing Ma",
-      "Zhuoran Yin",
-      "Zhuhan Bao",
-      "Ziyuan Liu",
-      "Qi Han",
-      "Xiuqi Xu",
-      "Xianbang Wang",
-      "Wenhao Chai",
-      "Sihan Xu",
-      "Chenyang Zhao",
-      "Yanheng Shang",
-      "Dongfu Jiang",
-      "Rui Sun",
-      "Xingzhi Li",
-      "Chenqi Yin",
-      "Zesen Zhao",
-      "Boyuan Zheng",
-      "Jisen Li",
-      "Xiaoxia Wu",
-      "Ruoyan Zhang",
-      "Ruiyao Liu",
-      "Jing Xiong",
-      "He Xiao",
-      "Nan Zheng",
-      "Hangxiang Chen",
-      "Shengyang Tao",
-      "Deyang Luorong",
-      "Yifeng Liu",
-      "Jingxuan Zhang",
-      "Chaofan Tao",
-      "Yuren Wang",
-      "Jiaqi Mo",
-      "Rui Hu",
-      "Xing Wei",
-      "Xiaofeng Liu",
-      "Xin Xu",
-      "Han Wu",
-      "Mengyao Wen",
-      "Guobin Zhang",
-      "Shatong Zhu",
-      "Hei Ting Una Chan",
-      "Sicheng Chen",
-      "Kai Zhang",
-      "Mengkang Hu",
-      "Zhongwei Wan",
-      "Xin Wang",
-      "Chuanyang Zheng",
-      "Ziheng Zhang",
-      "Hengyuan Zhang",
-      "Zunhai Su",
-      "Kanzhi Cheng",
-      "Dehan Kong",
-      "Yian Wang",
-      "Hanrong Zhang",
-      "Jiawei Lu",
-      "Yifan Zhang",
-      "Junnan Li",
-      "Changyi Yang",
-      "Jintao Qu",
-      "Wenyao Gao",
-      "Jiaxuan Luo",
-      "Jiaxin Deng",
-      "Yuhao Chen",
-      "Xuesong Ye",
-      "Jingwen Gu",
-      "Yichi Zhang",
-      "Qun Lou",
-      "Shen Yan",
-      "Ben Athiwaratkun",
-      "Qiushi Sun",
-      "Mi Zhang",
-      "Ping Luo",
-      "Wenhu Chen",
-      "Ngai Wong"
-     ],
-     "abstract": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes.",
-     "primary": "cs.CV",
-     "categories": [
-      "cs.CV"
-     ],
-     "published": "2026-11-25T11:55:12Z",
-     "updated": "2026-11-25T11:55:12Z",
-     "comment": "NeurIPS 2026",
-     "tags": [
-      "agents",
-      "benchmark",
-      "multimodal"
-     ],
-     "summary": {
-      "en": "OS-Omni is a live cross-platform benchmark for computer-using agents spanning Windows, Ubuntu, macOS, iOS, Android, and Web; its v1 has 48 tasks per platform plus 12 cross-platform workflows averaging 67.54 steps. Claude Opus 5.5 scores 68.5% versus 77.3% human, trailing by over 25 points on iOS and macOS.",
-      "zh": "OS-Omni 是覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的跨平台计算机代理实时基准，v1 每平台 48 个任务、另含 12 个跨平台工作流，任务平均需 67.54 步；最强代理 Claude Opus 5.5 平均成功率 68.5%，低于人类 77.3%，在 iOS 和 macOS 上差距超过 25 点。"
-     },
-     "summary_source": "deepseek-flash",
-     "hf_upvotes": 100,
-     "ax_votes": 1,
-     "ax_visits": 20,
-     "heat": 103.0,
-     "orgs": [
-      {
-       "name": "OS-Omni Team"
-      }
-     ],
-     "thumb": "data/thumbs/2611.34232.jpg",
-     "thumb_w": 640,
-     "thumb_h": 368
-    },
-    {
-     "id": "2611.31094",
-     "title": "Unlocking the Power of Loops in Pretrained LLMs with Loop Residuals",
-     "authors": [
-      "Xuanlei Zhao",
-      "Hailun Xu",
-      "Kai Wang",
-      "Yang Luo",
-      "Yingxuan Ren",
-      "Zirui Zhu",
-      "Yuxuan Lou",
-      "Kun Xu",
-      "Yan Wang",
-      "Kanchan Sarkar",
-      "Yang You"
-     ],
-     "abstract": "Looped Transformers iterate a shared block of layers to increase computation without adding parameters, offering stronger performance and test-time scaling. However, this power has so far required training from scratch and yielded only modest gains for LLMs. Finetuning existing models into loops is far cheaper, yet also brings only marginal gains over SFT. We propose LoopRes, an effective, scalable, and simple approach that turns loops into significant and consistent gains for pretrained LLMs. Building on Attention Residuals, LoopRes lets each looped layer attend directly to the outputs of earlier loops. Since these outputs are iterates of the same layers and become harder to tell apart, we give each a trainable loop-aware key that encodes its structural identity. Attending to all earlier loops also lets layers skip intermediate ones, so we restrict each layer to a residual window of the latest W loops, forcing every loop to build incrementally on recent ones. Across 6 pretrained LLMs from 3 model families and 9 benchmarks, LoopRes delivers significant and consistent gains: at 2x compute, it improves Qwen3-1.7B-Base by 29.1% over SFT, more than doubling the gain of the state-of-the-art baseline. The gains hold on larger models up to 30B and across all three families. More importantly, from 1.7B to 8B, LoopRes scales more steeply than SFT as compute grows, reaching a higher ceiling while needing less compute on long outputs. These results establish LoopRes as an effective looping approach, delivering both better performance and better test-time scaling.",
-     "primary": "cs.CL",
-     "categories": [
-      "cs.CL",
-      "cs.LG"
-     ],
-     "published": "2026-11-23T17:38:43Z",
-     "updated": "2026-11-24T17:16:14Z",
-     "comment": "",
-     "tags": [
-      "LLM",
-      "efficiency",
-      "pretraining"
-     ],
-     "summary": {
-      "en": "LoopRes lets looped layers attend to earlier loops with trainable loop-aware keys and a residual window W; on 6 pretrained LLMs and 9 benchmarks it beats SFT by 29.1% on Qwen3-1.7B-Base at 2x compute and scales better.",
-      "zh": "LoopRes 通过让循环层关注此前各循环输出并引入可训练循环感知 key、限制残差窗口 W，将循环式微调用于预训练 LLM；在 6 个模型、9 个基准上，2 倍计算下 Qwen3-1.7B-Base 较 SFT 提升 29.1%，超过最强基线增益两倍，且在 30B 以内及三个模型家族上稳定，测试时扩展更优。"
-     },
-     "summary_source": "deepseek-flash",
-     "hf_upvotes": 25,
-     "ax_votes": 34,
-     "ax_visits": 351,
-     "heat": 94.1,
-     "orgs": [
-      {
-       "name": "NUS"
-      },
-      {
-       "name": "Independent Researcher"
-      }
-     ],
-     "thumb": "data/thumbs/2611.31094.jpg",
-     "thumb_w": 618,
-     "thumb_h": 440
+     "thumb_h": 310,
+     "listed": "2026-11-23"
     }
    ]
   }

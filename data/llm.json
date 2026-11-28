@@ -1,4 +1,1244 @@
 {
+ "2510.22622": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "The Chinese University of Hong Kong, Shenzhen"
+   },
+   {
+    "country": "China",
+    "name": "Shenzhen Loop Area Institute"
+   },
+   {
+    "country": "United Kingdom",
+    "name": "University of Oxford"
+   },
+   {
+    "country": "United States",
+    "name": "University at Buffalo"
+   },
+   {
+    "country": "China",
+    "name": "Nanjing University of Posts and Telecommunications"
+   }
+  ],
+  "summary": {
+   "en": "Mega-MMDF provides 1.2M forged audio-visual clips across 22 forgery pipelines, and DeepfakeBench-MM standardizes evaluation of 10 detectors on 8 datasets; training on it raises mean AUC by up to 0.0784.",
+   "zh": "构建 Mega-MMDF 音视频深度伪造数据集，含 10 万真实与 120 万伪造片段、覆盖 22 条伪造流水线，并推出 DeepfakeBench-MM 统一评测 8 个数据集与 10 个检测器；在其上训练的检测器平均 AUC 最高提升 0.0784。"
+  },
+  "tags": [
+   "dataset",
+   "benchmark",
+   "multimodal",
+   "safety"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.08136": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "South Korea",
+    "name": "Sejong University"
+   },
+   {
+    "country": "South Korea",
+    "name": "Korea Atomic Energy Research Institute"
+   }
+  ],
+  "summary": {
+   "en": "PRISM combines fixed random nonlinear features with normal-reference Mahalanobis scoring, requiring no weight training or pretrained representations; it reaches 86.4% mean AUROC on 47 ADBench tabular datasets and 90.4%/96.4% image-/pixel-level AUROC on 27 MVTec AD and VisA categories.",
+   "zh": "PRISM 用固定随机非线性特征加正常参考的 Mahalanobis 打分做异常检测，无需训练权重或预训练表示；在 ADBench 47 个表格数据集上，PRISM-T 平均 AUROC 达 86.4%，为对比方法中最高；在 MVTec AD 与 VisA 共 27 个视觉类别上，PRISM-V 图像级与像素级平均 AUROC 分别为 90.4% 和 96.4%。"
+  },
+  "tags": [
+   "detection",
+   "interpretability",
+   "efficiency",
+   "benchmark"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.11318": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "South Korea",
+    "name": "Korea Advanced Institute of Science and Technology"
+   }
+  ],
+  "summary": {
+   "en": "PROLA splits a fixed low-rank budget between pretrained weights' principal directions and their orthogonal complement, rescaling rank-1 optimizer updates with gradient signals to beat low-rank adaptation baselines on predictive spatiotemporal weather downscaling.",
+   "zh": "PROLA 将低秩适配预算分配到预训练权重的主方向与正交补之间，并按梯度信号重缩放 rank-1 优化器更新，在 Predictive Spatiotemporal Weather Downscaling 上优于代表性低秩适配基线。"
+  },
+  "tags": [
+   "efficiency",
+   "pretraining",
+   "theory"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.12164": {
+  "model": "deepseek-flash",
+  "orgs": [],
+  "summary": {
+   "en": "Fixer-Guided Localization trains a code localizer via weighted SFT using a frozen fixer's patch likelihood scores, matching teacher localization with 27.5% less code and solving 8 vs. 6 dev tasks on Gemma 4 E4B.",
+   "zh": "FGL 让冻结的 fixer 对 localizer 给出的多个定位按生成验证补丁的似然打分，并用加权监督微调训练 localizer，无需测试与强化学习；基于 Gemma 4 E4B 的 agent 用少 27.5% 代码达到教师定位的定位效果，开发集解出 8 题对 6 题。"
+  },
+  "tags": [
+   "code",
+   "agents",
+   "LLM",
+   "alignment"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.14848": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Duke University"
+   }
+  ],
+  "summary": {
+   "en": "TIDEWAY manages host RAM and GPU VRAM as a unified pool, coupling phase-aware layouts for prefill and decode with a CUDA Graph engine under expert paging, delivering 1.97x lower latency, 2.40x faster TTFT, and 1.61x higher decode throughput than the fastest baseline.",
+   "zh": "TIDEWAY 将 host RAM 与 GPU VRAM 作为统一内存池，结合适配 prefill 与 decode 访问模式的阶段感知布局，以及支持 expert paging 的 CUDA Graph 执行引擎，在消费级设备上运行大型 MoE 模型；端到端延迟平均加速 1.97x，TTFT 加速 2.40x，decode 吞吐比最快基线高 1.61x。"
+  },
+  "tags": [
+   "efficiency",
+   "LLM"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.15449": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "South Korea",
+    "name": "Yonsei University"
+   }
+  ],
+  "summary": {
+   "en": "ReasonText benchmark and GTTCA metric reveal all 12 SR models drop on reasoning-required text; training-free RTC lets an MLLM caption degraded text for text-conditioned SR, consistently improving six models.",
+   "zh": "构建 ReasonText 基准和 GTTCA 指标，发现十二个超分模型在需推理的退化文本上性能明显下降；提出免训练插件 RTC，用外部 MLLM 推断文本并作为 caption 输入文本条件超分模型，在六个模型上均稳定提升，真实场景超分模型加 RTC 甚至超过 TAISR 模型加 RTC。"
+  },
+  "tags": [
+   "image generation",
+   "reasoning",
+   "multimodal",
+   "benchmark"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.17460": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "South Korea",
+    "name": "NAVER AI Lab"
+   }
+  ],
+  "summary": {
+   "en": "Unfinished-Bench tests persistent unsupervised agents across 97 scenarios in 7 organizations; persistence raised rule violations from 32.2% to 43.6%, five times the 8.5% when rules were user-stated.",
+   "zh": "Unfinished-Bench 在 7 个组织、7 类风险的 97 个场景中让模型无用户持续自主运行，发现持续性使内部文档规则违规率从 32.2% 升至 43.6%，是用户明示规则时 8.5% 的五倍。"
+  },
+  "tags": [
+   "agents",
+   "benchmark",
+   "safety",
+   "reasoning"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.17600": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Israel",
+    "name": "Technion – Israel Institute of Technology"
+   }
+  ],
+  "summary": {
+   "en": "LightTAR augments PCA embeddings with target-aware features via regularized PLS from final and intermediate encoder layers, improving prediction across 21 tabular models on nearly all MulTaBench datasets at small extra runtime.",
+   "zh": "LightTAR用正则化偏最小二乘从编码器末层与中间层联合提取少量目标感知特征，增强PCA表示，在21种表格模型和MulTaBench全部数据集上平均提升预测性能，运行时仅小幅增加。"
+  },
+  "tags": [
+   "multimodal",
+   "efficiency",
+   "dataset"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.19200": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Meta Superintelligence Labs"
+   },
+   {
+    "country": "United States",
+    "name": "University of Maryland"
+   }
+  ],
+  "summary": {
+   "en": "LogT is an automated SFT data engine that generates logic-chain-guided visual search traces; Qwen2.5-VL-7B fine-tuned on it beats SFT+RL SOTA with 3.1x less data and >120x fewer GPU hours, and simple RL adds a 9.59-point margin.",
+   "zh": "LogT 是一个全自动 SFT 数据引擎，通过逻辑链引导生成视觉搜索训练数据；用 3.1 倍更少数据和 120 倍以上更少 GPU 小时微调 Qwen2.5-VL-7B，性能超过同时使用 SFT 和 RL 的 SOTA，再叠加简单 RL 后领先复杂 RL 方法 9.59 分。"
+  },
+  "tags": [
+   "VLM",
+   "reasoning",
+   "multimodal",
+   "efficiency"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.19230": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Amazon"
+   }
+  ],
+  "summary": {
+   "en": "CompoundingKernel uses an LLM controller that reads a per-problem kernel archive to direct parallel child agents in searching GPU kernels; it ranks #1 on SOL-ExecBench L1, L2 and Quantization boards and is 4.40x faster than the reference baseline on 209 public problems.",
+   "zh": "CompoundingKernel 让 LLM 控制器读取模型外的逐问题存档，选择父代或新设计并指挥并行子智能体搜索 GPU kernel；在 SOL-ExecBench（NVIDIA B200）的 L1、L2 与量化榜上位列第一，209 道公开题上比参考基线快 4.40x。"
+  },
+  "tags": [
+   "agents",
+   "code",
+   "efficiency"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.19247": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Lightspeed Studios, Tencent"
+   }
+  ],
+  "summary": {
+   "en": "GameWM splits games into an engine that keeps rules, state, camera, and layout exact, plus a video model generating look and interaction detail, with an interaction-centric data engine, art/skill interface, and 5B-33B models including a real-time causal variant.",
+   "zh": "GameWM 将游戏拆成两部分：GameWM-engine 精确维护规则、状态、相机与世界布局，GameWM-VM 生成世界的视觉外观与交互细节；配套以交互为中心的数据引擎、素材接口，以及 5B 到 33B 的模型族（含实时因果变体），使同一机制能呈现为视觉与物理各异、结果由引擎确定的体验。"
+  },
+  "tags": [
+   "video generation",
+   "world model",
+   "image generation"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.20455": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Ant Group"
+   }
+  ],
+  "summary": {
+   "en": "Repo-Premium, a repository-level code-search benchmark across six languages and 91 repos, shows dense retrieval's edge stems from evaluation artifacts and identifier-poor queries; LLM-written identifier expansion lets BM25 match dense retrieval on all Python pools.",
+   "zh": "构建 Repo-Premium 仓库级代码搜索基准，覆盖 6 种语言、2022–2026 年 PR 与 91 个仓库，发现稠密检索的优势主要来自分块 BM25、把改动的测试算作相关等评测偏向以及查询缺少稀有标识符；用 LLM 生成标识符扩展查询的 generate-then-grep 使 BM25 在所有 Python 测试池上追平稠密检索。"
+  },
+  "tags": [
+   "code",
+   "retrieval",
+   "benchmark",
+   "LLM"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.21114": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Singapore",
+    "name": "National University of Singapore"
+   }
+  ],
+  "summary": {
+   "en": "Generated videos show a periodic VAE Rhythm from 3D causal VAE decoding; a training-free phase scan detects it, beating 15 baselines on DF26 and improving 19 detectors by 6.7%-23.7% AUROC, with CaDet achieving best AUROC on AIGVDBench and DF26.",
+   "zh": "发现3D因果VAE解码使生成帧的保真度随其组内位置周期性波动，称为VAE Rhythm；无需训练的phase scan通过重建误差周期性检测该痕迹，在39个生成器变体（包括Sora、Kling 3.0）中发现该痕迹，在DF26上优于全部15个重训练基线，作为插件将19个检测器AUROC提升6.7%–23.7%，CaDet在AIGVDBench、DF26及三个2026闭源模型上取得最佳AUROC。"
+  },
+  "tags": [
+   "video generation",
+   "detection",
+   "dataset"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.21366": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Tsinghua University"
+   },
+   {
+    "country": "China",
+    "name": "Peking University"
+   },
+   {
+    "country": "China",
+    "name": "ByteDance"
+   },
+   {
+    "country": "China",
+    "name": "Beihang University"
+   },
+   {
+    "country": "United States",
+    "name": "University of Wisconsin–Madison"
+   }
+  ],
+  "summary": {
+   "en": "ALIVE is an interactive streaming video model for proactive monitoring, streaming task coordination, and feedback seeking, trained via contrastive SFT on ALIVE-SFT-288K and RL with Behavior-Aligned Credit Assignment; it scores highest overall on four public benchmarks and the new FSI-Bench.",
+   "zh": "ALIVE 是支持主动监控、流式任务协调与追问反馈的交互式流式视频模型，先用 ALIVE-SFT-288K 对比监督微调教会何时及如何响应，再用带上行为对齐信用分配（BACA）的强化学习优化多轮交互中的决策与沉默，并在四个公开基准和新建 FSI-Bench 上取得最高总分。"
+  },
+  "tags": [
+   "video generation",
+   "multimodal",
+   "LLM",
+   "RL"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.21373": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Nanjing University"
+   },
+   {
+    "country": "China",
+    "name": "Tencent Inc"
+   }
+  ],
+  "summary": {
+   "en": "WeVisForensics coordinates a self-evolving library of visual and audio forensic inspector agents via a main investigator and dual-timescale policy optimization DTPO, reaching 95.2% average detection accuracy across benchmarks, 9.0% above the strongest prior detector.",
+   "zh": "WeVisForensics 用一个主调查 agent 调度可自我进化的视觉与音频取证子 agent，配合双时间尺度策略优化 DTPO 和 ForenCue-30K 数据，在域内、域外与 agentic 基准上平均检测准确率达 95.2%，比最强基线高 9.0%。"
+  },
+  "tags": [
+   "agents",
+   "video generation",
+   "detection",
+   "multimodal"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.21383": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "South Korea",
+    "name": "Yonsei University"
+   }
+  ],
+  "summary": {
+   "en": "VODA is a plug-and-play supervision objective that groups per-pixel contributors via local depth structure and directly supervises all Gaussians in selected depth clusters, improving volumetric segmentation on Removal-3D across four rendering baselines while maintaining or improving LERF and ScanNet performance.",
+   "zh": "VODA 是一种即插即用的监督目标，利用局部深度结构将逐像素贡献者分组并直接监督所选深度簇内的所有高斯，从而绕过贡献加权梯度传递；在 Removal-3D 上对四个渲染基线均提升体积分割，并在 LERF 和 ScanNet 上保持或提升性能。"
+  },
+  "tags": [
+   "segmentation",
+   "3D",
+   "efficiency"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.21485": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Tsinghua University"
+   },
+   {
+    "country": "China",
+    "name": "PICO"
+   },
+   {
+    "country": "China",
+    "name": "ByteDance"
+   }
+  ],
+  "summary": {
+   "en": "ReSpaceBench benchmarks persistent spatial memory across revisits with 3,244 questions over 590 scenes: the best zero-shot model scores 50.5% versus 90.1% for humans, while fine-tuning Qwen3-VL-8B on RS-30K lifts accuracy from 35.5% to 60.4%.",
+   "zh": "ReSpaceBench 用 590 个合成与真实家居场景的 3,244 道题评测跨访问持久空间记忆，最强零样本模型仅 50.5% 总体准确率，远低于人类的 90.1%；用无重叠的 RS-30K 微调 Qwen3-VL-8B 后从 35.5% 升至 60.4%。"
+  },
+  "tags": [
+   "benchmark",
+   "multimodal",
+   "world model",
+   "VLM"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.21553": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Salesforce AI Research"
+   }
+  ],
+  "summary": {
+   "en": "BLIP-Live builds the BLIP-Live-780K dataset and PAUC-F metric to balance proactive responding against silence, combining sliding visual windows, online memory, and structured outputs; BLIP-Live-Qwen improves proactive streaming benchmarks by up to 44%.",
+   "zh": "BLIP-Live 围绕主动响应与静默的权衡构建 BLIP-Live-780K 标注数据集与 PAUC-F 指标，结合滑动视觉窗口、在线交互记忆和结构化输出改进离线 VLM 的流式主动响应，BLIP-Live-Qwen 在四个基准上平均超越基线最多 44%。"
+  },
+  "tags": [
+   "multimodal",
+   "VLM",
+   "agents",
+   "benchmark"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.21885": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "UIUC"
+   },
+   {
+    "country": "United States",
+    "name": "CMU"
+   },
+   {
+    "country": "United States",
+    "name": "Rutgers"
+   },
+   {
+    "country": "United States",
+    "name": "Princeton"
+   },
+   {
+    "country": "United States",
+    "name": "Stanford"
+   },
+   {
+    "country": "United States",
+    "name": "Yale"
+   }
+  ],
+  "summary": {
+   "en": "Self-rewriting lets an open 27B model diagnose its failures and rewrite its own weights via forward-only reasoning, no gradients or training, gaining 6.6 points on unseen problems and restoring a damaged copy to over 80% of original accuracy.",
+   "zh": "自改写方法让开放 27B 模型仅凭前向推理、无梯度无训练地诊断自身失败并重写自身权重，在未见问题上准确率提升 6.6 个百分点，连续八轮编辑精度持续上升，还能把近乎失效的受损副本恢复到原精度 80% 以上，且该能力仅在最大模型中涌现。"
+  },
+  "tags": [
+   "LLM",
+   "reasoning",
+   "efficiency",
+   "interpretability"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.22287": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Luma AI"
+   },
+   {
+    "country": "United States",
+    "name": "California Institute of Technology"
+   }
+  ],
+  "summary": {
+   "en": "DWD lets a finetuned diffusion transformer predict final pixels via a linear head at the last sampling step, removing the decoder; it cuts Wan video warping error by 23% and improves pixel-flow ImageNet FID from 1.55 to 1.43.",
+   "zh": "DWD 让微调后的扩散 transformer 通过线性头在最后一步直接预测像素，替代解码器；仅微调末几个 block 并锚定去噪头，在 Wan 视频生成上降低 23% warping error，并将像素流模型的 ImageNet FID 从 1.55 降至 1.43。"
+  },
+  "tags": [
+   "diffusion",
+   "image generation",
+   "video generation",
+   "efficiency"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.22343": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Alibaba Group"
+   }
+  ],
+  "summary": {
+   "en": "PURE is a diagnostic benchmark for multi-granularity multimodal identity matching: 1,457 multiple-choice questions over 14 tasks across Perception, Understanding, Reasoning and Judgment. Ten MLLMs score 47.1%–86.0%, with Judgment weakest and variant-level reasoning exposed.",
+   "zh": "PURE 是面向多粒度多模态身份匹配的诊断基准，从电商真实匹配对构建 1457 道多选题、覆盖 14 个任务和 Perception/Understanding/Reasoning/Judgment 四个维度；十款 MLLM 总分 47.1%–86.0%，Understanding 均分最高、Judgment 最低，暴露出视觉差异定位与变体级规则判断的短板。"
+  },
+  "tags": [
+   "multimodal",
+   "benchmark",
+   "VLM",
+   "reasoning"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.22666": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "South Korea",
+    "name": "KAIST"
+   },
+   {
+    "country": "United Kingdom",
+    "name": "University of Oxford"
+   }
+  ],
+  "summary": {
+   "en": "VSpark accelerates autoregressive VLA models via speculative decoding with calibrated-noise rollouts, hidden-feature alignment, and reuse of continuations from rejected drafts, achieving 1.28x-2.10x lossless speedup across four VLAs and four manipulation benchmarks.",
+   "zh": "VSpark 针对自回归 VLA 模型逐 token 生成机器人动作的特点，用带标定动作噪声的 rollout 训练草稿模型、对齐 VLA 隐特征并复用被拒草稿的后续预测，在 4 个 VLA 与 4 个操作基准上实现 1.28x–2.10x 无损加速。"
+  },
+  "tags": [
+   "VLA",
+   "efficiency",
+   "robotics",
+   "multimodal"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.22925": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Inclusion AI, Ant Group"
+   },
+   {
+    "country": "China",
+    "name": "Westlake University"
+   },
+   {
+    "country": "China",
+    "name": "Zhejiang University"
+   }
+  ],
+  "summary": {
+   "en": "Invoker-Render couples a bidirectional creation model with a causal four-step streaming model sharing a structural-proxy, appearance-reference and language interface; Progressive Forcing distills video-history training into self-generated rollouts, yielding stable 30-minute racing streams over streaming baselines.",
+   "zh": "Invoker-Render 结合双向创作模型与因果四步流式模型，统一以结构代理、外观参考和语言为条件，并用 Progressive Forcing 从视频历史蒸馏到自生成 rollout；实验在代理类型、粒度、相机路径上控制灵活，较流式基线稳定提升，支持 30 分钟赛车生成不漂移。"
+  },
+  "tags": [
+   "video generation",
+   "world model",
+   "diffusion",
+   "efficiency"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.23068": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "ShanghaiTech University"
+   },
+   {
+    "country": "China",
+    "name": "ByteDance"
+   },
+   {
+    "country": "China",
+    "name": "BIGAI"
+   },
+   {
+    "country": "China",
+    "name": "SUSTech"
+   }
+  ],
+  "summary": {
+   "en": "Testing 7 evolution methods and 6 models over 10M LLM calls, the Resolution Hypothesis shows noisy evaluation cannot distinguish helpful from harmful artifacts, and method-level margins fall below run-to-run variance.",
+   "zh": "在7种进化方法和6个模型、超1000万次LLM调用上验证Resolution Hypothesis：候选层面噪声评估无法区分优劣artifact导致误差累积，方法层面几个百分点的差距小于同一方法两次独立运行的差异，说明agent进化的瓶颈在于可靠识别改进。"
+  },
+  "tags": [
+   "agents",
+   "benchmark",
+   "LLM"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.23388": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "MIT"
+   },
+   {
+    "country": "United States",
+    "name": "NVIDIA"
+   }
+  ],
+  "summary": {
+   "en": "QDA uses an LLM agent to search post-training quantization recipes per model and precision, scoring candidates in minutes via output KL divergence on unseen reasoning traces and verifying with long generations; it beats the best public recipe by 0.9, 1.4 and 2.2 points on W4A16, W4A8 and W3A16.",
+   "zh": "QDA 用 LLM 智能体为每个模型和精度自动搜索后训练量化配方，以未见的推理轨迹上的输出 KL 散度在数分钟内打分，并用长文本生成复查隐患；在四个推理模型上，W4A16、W4A8、W3A16 平均准确率比最强公开配方分别高 0.9、1.4、2.2 个百分点。"
+  },
+  "tags": [
+   "LLM",
+   "efficiency",
+   "agents"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.23417": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Meta"
+   },
+   {
+    "country": "United Kingdom",
+    "name": "University of Oxford"
+   }
+  ],
+  "summary": {
+   "en": "Autoregressive View Model (AVM) generates a stream of views along a requested camera path without explicit 3D reconstruction, using a unified in-context interface and a fine-tuned video diffusion transformer trained on about 8M scenes and clips.",
+   "zh": "Autoregressive View Model (AVM) 以自回归方式沿指定相机路径逐段生成视图流，不显式重建3D场景，通过上下文接口统一处理图像或视频输入，并用约800万场景与视频片段微调视频扩散Transformer；在相机控制、稀疏与4D重建及长时程一致性等基准上展现出广泛适应性。"
+  },
+  "tags": [
+   "video generation",
+   "diffusion",
+   "3D",
+   "world model"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.23499": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Singapore",
+    "name": "National University of Singapore"
+   }
+  ],
+  "summary": {
+   "en": "BiCAT shares one motion representation across arms and conditions each arm's tokens on its partner via symmetric cross-arm attention and a joint decoder; it beats the strongest of eight baselines by 17.6 points mean success on RoboTwin 2.0 at 40.5 ms per action chunk.",
+   "zh": "BiCAT 让双臂共享同一套运动表示，并通过对称跨臂注意力和联合解码器让每条手臂的 token 以另一条手臂为条件，策略并行预测左右臂 token 并先生成左臂；在 RoboTwin 2.0 十个任务和三种真实本体六个任务上成功率最高，仿真平均成功率比八个基线中最强者高 17.6 个百分点，每段动作块耗时 40.5 ms。"
+  },
+  "tags": [
+   "VLA",
+   "robotics",
+   "manipulation",
+   "multimodal"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.23751": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "University of Science and Technology of China"
+   },
+   {
+    "country": "Singapore",
+    "name": "Nanyang Technological University"
+   }
+  ],
+  "summary": {
+   "en": "AnyS1 mines enumerable decision points from over 1,000 procedural skills and trains a 4B pointer System-1 that resolves routine choices in one pass, falling back to System-2 when confidence is low. It matches System-2 reliability while cutting episode cost by 75-91% and model-call time by 63-92% on three unseen benchmarks.",
+   "zh": "AnyS1 将人类编写的流程技能转为通用决策点：离线挖掘超 1000 个技能中可枚举的选择，在隔离容器内采集轨迹状态构建 Any-DP，训练单个 4B 指针式 System-1，并在运行时低置信度回退 System-2。在三个未见基准上，相比未编译的 System-2 agent，任务可靠性保持不变，episode 成本降低 75–91%，模型调用时间减少 63–92%。"
+  },
+  "tags": [
+   "LLM",
+   "agents",
+   "efficiency",
+   "reasoning"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.23779": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Spain",
+    "name": "Universitat Politècnica de Catalunya"
+   },
+   {
+    "country": "Spain",
+    "name": "Universitat de Barcelona"
+   }
+  ],
+  "summary": {
+   "en": "TabBioMed benchmarks 94 biomedical tabular datasets with unified preprocessing; across 23 models, tabular foundation models lead overall, but tree models and tuned MLPs often win under cost constraints.",
+   "zh": "TabBioMed 汇集 94 个生物医学表格数据集，统一预处理与评测流程，覆盖分类、回归和多目标任务；在 23 个模型对比中，表格基础模型整体预测最强，但树模型和调优 MLP 在成本受限时常胜出。"
+  },
+  "tags": [
+   "benchmark",
+   "dataset",
+   "LLM"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.23808": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "South Korea",
+    "name": "Seoul National University"
+   }
+  ],
+  "summary": {
+   "en": "PReMind-Bench separately evaluates memory access, grounding, abstention, and hazard response; PReMind, a two-phase RL framework mixing on-demand and forced-call interactions, raises 4B joint success from 12.9% to 28.6%.",
+   "zh": "PReMind-Bench 诊断基准分别评估记忆访问、定位、弃答与危险响应及联合成功率，配套两阶段强化学习框架 PReMind 结合按需与强制调用交互训练，4B 模型在 interdependency 集合上联合成功率从 12.9% 升至 28.6%。"
+  },
+  "tags": [
+   "multimodal",
+   "safety",
+   "benchmark",
+   "agents"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.23824": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "University of the Chinese Academy of Sciences"
+   },
+   {
+    "country": "China",
+    "name": "Tencent"
+   },
+   {
+    "country": "China",
+    "name": "Harbin Institute of Technology"
+   },
+   {
+    "country": "China",
+    "name": "Renmin University of China"
+   },
+   {
+    "country": "China",
+    "name": "Peking University"
+   },
+   {
+    "country": "China",
+    "name": "Beijing Institute of Technology"
+   }
+  ],
+  "summary": {
+   "en": "ECA adds a training-only credit signal by querying a frozen policy snapshot on evidence-only prompts to score how retrieved documents raise reference-answer likelihood; on seven Search QA benchmarks, ECA-Horizon beats outcome-only GRPO by 1.03 and 4.80 strict macro exact-match points on Qwen2.5-3B and 7B-Instruct, also outperforming RLOO and GiGPO.",
+   "zh": "ECA 在终端答案奖励之外，基于冻结策略在仅含问题和去重文档的证据提示下评估检索文档对参考答案似然的提升，构造训练专用的辅助信用信号；七个 Search QA 基准上，ECA-Horizon 相比 outcome-only GRPO 在 Qwen2.5-3B/7B-Instruct 上严格宏平均精确匹配分别提升 1.03 和 4.80 个百分点，并优于 RLOO 与 GiGPO。"
+  },
+  "tags": [
+   "LLM",
+   "RL",
+   "retrieval",
+   "reasoning"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24011": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Australia",
+    "name": "University of Sydney"
+   },
+   {
+    "country": "Australia",
+    "name": "UNSW Sydney"
+   },
+   {
+    "country": "Australia",
+    "name": "Maincode"
+   },
+   {
+    "country": "Australia",
+    "name": "La Trobe University"
+   }
+  ],
+  "summary": {
+   "en": "WAM-Policy adapts an arm-centric world action model into a language-conditioned quadrupedal loco-manipulation policy via cross-morphology adaptation, on-policy self-distillation, task-specific RL and multi-teacher distillation, reaching 85.0% on QLM-Bench and deploying on a Unitree Go2 Air.",
+   "zh": "WAM-Policy 将面向机械臂的世界动作模型经跨形态适配和在策略自蒸馏转为四足无臂移动操作策略，在 QLM-Bench 上迁移策略达 77.0%，学生模型保持 76.7% 且采样快 14 倍，再经任务 RL 与多教师蒸馏提升至 85.0%，并部署于 Unitree Go2 Air。"
+  },
+  "tags": [
+   "robotics",
+   "VLA",
+   "RL",
+   "efficiency"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24025": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "",
+    "name": "Independent Researcher"
+   },
+   {
+    "country": "United States",
+    "name": "Georgia Institute of Technology"
+   },
+   {
+    "country": "United States",
+    "name": "University of Massachusetts Amherst"
+   },
+   {
+    "country": "United States",
+    "name": "University of Illinois Urbana-Champaign"
+   }
+  ],
+  "summary": {
+   "en": "Intent contracts keep tools away from planner LLM agents: each step submits a logged goal, user quotation, and scope, validated by code and a trusted model that writes the call; on three AmPermBench families contracts complete 27/30 runs versus 16/30 for intent-visible review, without reducing unauthorized actions.",
+   "zh": "Intent contracts 让规划模型不直接持有工具，每步提交含目标、用户原话引用和作用域字段的契约，由验证代码与可信小模型校验并代写工具调用；在三个 AmPermBench 任务族上，任务被规划器额外加需求时契约 30 次中完成 27 次，可见意图的审查器仅 16 次，但未授权操作并未减少。"
+  },
+  "tags": [
+   "agents",
+   "safety",
+   "alignment",
+   "LLM"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24077": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Tsinghua University"
+   },
+   {
+    "country": "China",
+    "name": "Foshan University"
+   },
+   {
+    "country": "China",
+    "name": "South China University of Technology"
+   }
+  ],
+  "summary": {
+   "en": "AeroRSI recursively improves aerial navigation policies by learning from their own failures: each round anchors current failures, verifies repairs via continued flight, and distills them. On TravelUAV, three rounds lift a 2B policy from 46.4% to 67.5% success, halve collisions, and beat prior SOTA by 10.6 points.",
+   "zh": "AeroRSI 让空中视觉语言导航策略递归地从自身失败中学习：每一轮定位当前策略的失败状态，并通过继续飞行来验证修复动作，再将其蒸馏为监督信号。在 TravelUAV 上，三轮迭代将 2B 参数策略的成功率从 46.4% 提升到 67.5%，碰撞减少一半，比同初始化的先前最优方法高 10.6 个点。"
+  },
+  "tags": [
+   "VLA",
+   "agents",
+   "robotics",
+   "multimodal"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24154": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "University of Illinois Urbana-Champaign"
+   },
+   {
+    "country": "United States",
+    "name": "University of California, Santa Barbara"
+   },
+   {
+    "country": "United States",
+    "name": "Georgia Institute of Technology"
+   },
+   {
+    "country": "United States",
+    "name": "Northwestern University"
+   },
+   {
+    "country": "United States",
+    "name": "IBM"
+   }
+  ],
+  "summary": {
+   "en": "Game2Player co-develops web games and players: a Builder agent adapts games and defines verifiable tasks, Coding and VLM Players collect 15.7K trajectories; progress-weighted SFT lifts a 9B VLM's PlayerBench progress from 14.3% to 31.2%.",
+   "zh": "Game2Player 框架让 Builder agent 改造网页游戏并定义可验证任务，Coding Player 与 VLM Player 试玩并反馈修复，构建 568 款游戏、3,436 个任务和 15.7K 条轨迹，用进度加权 SFT 训练的 9B 模型在 PlayerBench 上进度从 14.3% 提升到 31.2%。"
+  },
+  "tags": [
+   "agents",
+   "VLM",
+   "benchmark",
+   "dataset"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24161": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Meta AI"
+   },
+   {
+    "country": "Saudi Arabia",
+    "name": "King Abdullah University of Science and Technology"
+   },
+   {
+    "country": "United States",
+    "name": "Princeton University"
+   }
+  ],
+  "summary": {
+   "en": "AVTR adds generative visual imagination as a complementary reasoning modality and learns to route between visual reflection and textual reasoning, beating Qwen3.5 by 4.5 points on 16 benchmarks with 33% lower latency.",
+   "zh": "AVTR 将视觉想象作为文本推理的补充模态，让模型通过生成式视觉反思重新审视视觉观察、提炼关键证据，并把推理模态选择建模为可学习路由问题，在 16 个基准上平均比 Qwen3.5 基线高 4.5 分，推理延迟降低 33%。"
+  },
+  "tags": [
+   "VLM",
+   "multimodal",
+   "reasoning",
+   "efficiency"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24193": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Princeton University"
+   },
+   {
+    "country": "United States",
+    "name": "NVIDIA"
+   },
+   {
+    "country": "",
+    "name": "OpenEnvision"
+   }
+  ],
+  "summary": {
+   "en": "WM^MLLM uses MLLMs to maintain world state as a panorama with revision history and perform edits, with generators only rendering views; it achieves Epipolar 91.5 on MBench-A (baselines 0.1–74.0) and 85.3% camera round trips.",
+   "zh": "WM^MLLM 用 MLLM 把世界状态存为带修订历史的全景图并执行编辑操作，图像与视频生成器只负责渲染视图，在 MBench-A 上 Epipolar 达 91.5（基线 0.1–74.0），相机往返完成率 85.3%（基线最高 50.9%），15 项 CompBench 指标全部最优。"
+  },
+  "tags": [
+   "multimodal",
+   "world model",
+   "image generation",
+   "LLM"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24249": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Singapore",
+    "name": "Nanyang Technological University"
+   },
+   {
+    "country": "China",
+    "name": "Zhejiang University"
+   }
+  ],
+  "summary": {
+   "en": "Shows temporally pooled multimodal representations converge to stationary recording conditions and cannot separate twin physical events; CounterPoint removes each modality's temporal mean to score frame-level cross-modal agreement, consistently outperforming existing temporal alignment methods on four SOTA aligners.",
+   "zh": "证明时间池化表示随序列增长收敛到静止录制条件，无法区分孪生物理事件；提出 CounterPoint 去掉各模态时间均值以在帧级评分跨模态一致性，在四个 SOTA 对齐器上持续优于现有时序对齐方法。"
+  },
+  "tags": [
+   "multimodal",
+   "alignment",
+   "theory",
+   "interpretability"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24362": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Canada",
+    "name": "University of Waterloo"
+   },
+   {
+    "country": "China",
+    "name": "Zhejiang University"
+   },
+   {
+    "country": "Sweden",
+    "name": "KTH Royal Institute of Technology"
+   }
+  ],
+  "summary": {
+   "en": "PIPETTE is a unified prompt-injection purple-teaming framework combining a dictionary-learning reward for broader attack-strategy coverage with on-policy adversarial training; on AgentDojo and ASB it yields near-zero static attack success and strong adaptive-attack robustness while preserving benign utility.",
+   "zh": "PIPETTE 是一个统一的提示注入红蓝对抗框架，用基于字典学习的奖励鼓励红队覆盖更多攻击策略，并结合面向 IPI 防御的 on-policy 对抗训练；在 AgentDojo 和 ASB 上，防御器面对静态攻击成功率接近零，能抵御强自适应攻击，正常任务效用接近未防御基线。"
+  },
+  "tags": [
+   "safety",
+   "agents",
+   "RL",
+   "alignment"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24408": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Shanghai Jiao Tong University"
+   },
+   {
+    "country": "China",
+    "name": "Shanghai Artificial Intelligence Laboratory"
+   },
+   {
+    "country": "China",
+    "name": "Beihang University"
+   },
+   {
+    "country": "China",
+    "name": "Tianjin University"
+   },
+   {
+    "country": "China",
+    "name": "Tsinghua University"
+   }
+  ],
+  "summary": {
+   "en": "StrideWorld benchmarks interactive video world models, fixing references before motion: scene rigidity against start-view ground-truth geometry and action consistency against each action's own initial stride. Across 140 start views, most models deform scenes up to 7.3x rigid rendering.",
+   "zh": "StrideWorld 是一个交互式视频世界模型基准，以起始视图的真实几何检验场景刚性、以每条动作前几步测得的 stride 检验后续动作一致性；在 140 个起始视图生成的视频上，多数模型相机移动时场景形变偏移最高达刚性渲染的 7.3 倍，且仅两个按估计深度缩放指令的模型能让多数路线接近预测位置。"
+  },
+  "tags": [
+   "video generation",
+   "world model",
+   "benchmark",
+   "3D"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24576": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Singapore",
+    "name": "Nanyang Technological University"
+   }
+  ],
+  "summary": {
+   "en": "Late entry decoding lets new tokens skip early loop passes and enter the final K passes on a deep KV cache; Wake verification in the output GEMM yields 5.2x greedy-exact speedup on Ouro-2.6B.",
+   "zh": " late entry 解码策略：新 token 跳过前几轮迭代，直接进入深层 KV cache 的最后 K 轮，并借 Wake verification 复用已完成的 T 轮状态；在 Ouro-2.6B 上 tau=0 时比贪心精确解码快 5.2 倍，tau=inf 时比早退基线高 16.9 分。"
+  },
+  "tags": [
+   "LLM",
+   "efficiency",
+   "reasoning"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24636": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "",
+    "name": "DiffuSpace"
+   }
+  ],
+  "summary": {
+   "en": "Clover-35B-A3B-Preview is a 35B-total, 3B-active MoE diffusion language model combining Gated Delta Network memory with in-block bidirectional attention, scoring 73.6 on SWE-bench Verified and 51.7 on Terminal-Bench 2.1 at 680 tokens/s on one GB300 GPU.",
+   "zh": "Clover-35B-A3B-Preview 是 35B 总参数、3B 激活参数的 MoE 扩散语言模型，把 Gated Delta Networks 的循环记忆与块内双向注意力结合，在 SWE-bench Verified 得 73.6、Terminal-Bench 2.1 得 51.7，单张 GB300 上 BF16 解码达 680 tokens/s。"
+  },
+  "tags": [
+   "LLM",
+   "diffusion",
+   "efficiency",
+   "agents"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24651": {
+  "model": "deepseek-flash",
+  "orgs": [],
+  "summary": {
+   "en": "Piccolo co-evolves 0.8B–27B multimodal decision models with training data via agentic data engineering and recursive self-improvement, with Piccolo-27B scoring 75.59 to top the Decision Index Vision Full leaderboard.",
+   "zh": "Piccolo 通过 Agentic Data Engineering 与递归自我改进（RSI）让 0.8B–27B 多模态决策模型与训练数据共同进化，其中 Piccolo-27B 以 75.59 分登顶 Decision Index Vision Full 榜首，9B 和 4B 版本分别得 68.35 和 67.46。"
+  },
+  "tags": [
+   "multimodal",
+   "agents",
+   "dataset",
+   "RL"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24654": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Shanghai University of Finance and Economics"
+   },
+   {
+    "country": "China",
+    "name": "Alibaba Group"
+   },
+   {
+    "country": "China",
+    "name": "Southern University of Science and Technology"
+   }
+  ],
+  "summary": {
+   "en": "CurvDelta embeds a capability-preservation constraint into parameter updates via a K-FAC-built low-curvature subspace, with a low-rank CurvLoRA variant; it yields a better acquisition-retention trade-off on math, code, and TOFU/MUSE unlearning than baselines.",
+   "zh": "CurvDelta 将能力保持约束直接嵌入参数更新，用 K-FAC 构建低曲率子空间使保持损失近似不变，并推出低秩版本 CurvLoRA；在数学推理、代码生成与 TOFU/MUSE 知识遗忘上比基线取得更好的获得—保持权衡。"
+  },
+  "tags": [
+   "LLM",
+   "efficiency",
+   "alignment",
+   "safety"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24738": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Singapore",
+    "name": "National University of Singapore"
+   }
+  ],
+  "summary": {
+   "en": "Jeveration repurposes a frozen VLM for single-pass image generation, coordinating parallel predictions via a shared random state and learning discrete image-code distributions; it generates 512x512 images in 78 ms, up to 122x faster than unified models.",
+   "zh": "Jeveration 在冻结的视觉语言模型上做单次前向的图像生成，用共享随机状态协调并行预测保持全局一致，先学离散图像码分布引导生成，512x512 图像仅需 78 ms，比现有统一模型快至多 122 倍。"
+  },
+  "tags": [
+   "image generation",
+   "efficiency",
+   "VLM"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24789": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Singapore",
+    "name": "National University of Singapore"
+   }
+  ],
+  "summary": {
+   "en": "HINT-WAM is an on-policy self-distillation framework that uses future demonstration video as privileged hindsight to supervise a flow-matching action expert via energy-score distillation, improving task execution without rewards or simulator interaction.",
+   "zh": "HINT-WAM 是首个在策略自蒸馏框架，以演示的未来视频作为后见特权信息，让教师模型在学生自身去噪轨迹的状态上给出条件动作分布，并用 energy score 做分布级蒸馏，使流匹配动作专家无需环境奖励或仿真交互即可提升任务执行。"
+  },
+  "tags": [
+   "robotics",
+   "VLA",
+   "RL",
+   "world model"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24809": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Fudan University"
+   },
+   {
+    "country": "China",
+    "name": "ByteDance Seed"
+   },
+   {
+    "country": "Singapore",
+    "name": "Nanyang Technological University"
+   }
+  ],
+  "summary": {
+   "en": "FlashMorph2 converts pretrained Transformers into hybrid attention models via on-policy layer selection, evaluating sampled discrete architectures end to end and jointly optimizing selection scores with weights, outperforming FlashMorph by +2.42 RULER and +1.08 LongBench points.",
+   "zh": "FlashMorph2 将预训练 Transformer 转为混合注意力模型，采用 on-policy 层选择：以采样出的离散混合结构自身的隐藏状态做端到端评估，并联合优化层选择分数与模型权重，在 Qwen3 各规模上 RULER 平均得分比 FlashMorph 提升2.42分、LongBench 提升1.08分、recall-intensive 任务提升0.76分，层选择仅需0.72–3.57 GPU小时。"
+  },
+  "tags": [
+   "LLM",
+   "efficiency",
+   "pretraining"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24830": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Peking University"
+   }
+  ],
+  "summary": {
+   "en": "Chiron jointly fine-tunes an LLM to represent psychological constructs, predict individual behaviour, and align population distributions, improving individual prediction by up to 28.4% over frontier LLMs and cutting effect-size estimation error by 82.2–94.3%.",
+   "zh": "Chiron 通过联合微调 LLM 来表征心理构念、预测个体行为并对齐群体响应分布，训练与评估覆盖 36 个行为域、78 个社会科学实验和 288,307 条个体记录；其心理测量与人类自报更一致，个体行为预测相对前沿 LLM 最高提升 28.4%，实验效应量估计误差降低 82.2–94.3%。"
+  },
+  "tags": [
+   "LLM",
+   "alignment",
+   "benchmark",
+   "dataset"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24869": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "",
+    "name": "Alaya Lab"
+   },
+   {
+    "country": "China",
+    "name": "Beijing Institute of Technology"
+   },
+   {
+    "country": "Japan",
+    "name": "The University of Tokyo"
+   },
+   {
+    "country": "China",
+    "name": "Shenzhen MSU-BIT University"
+   },
+   {
+    "country": "China",
+    "name": "Shanghai Innovation Institute"
+   }
+  ],
+  "summary": {
+   "en": "WorldRuler organizes rule definitions and object states into an executable 3D rule graph, closing the loop between rule execution, video generation, and perceptual feedback; it also builds the RuleVerse dataset from GTA-V and Habitat, achieving consistent rule-state persistence and accurate rule effects on designated objects.",
+   "zh": "WorldRuler 将规则定义、依赖与物体状态组织为可执行 3D 规则图，并闭环连接规则执行、视频生成与感知反馈，支持规则与世界状态的联合保存恢复；结合 GTA-V 与 Habitat 构建 RuleVerse 数据集，实验显示其能保持规则-状态一致性并准确实现指定物体与属性的规则效果。"
+  },
+  "tags": [
+   "world model",
+   "video generation",
+   "dataset",
+   "agents"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.24941": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "The Chinese University of Hong Kong, Shenzhen"
+   },
+   {
+    "country": "China",
+    "name": "Meshy AI"
+   }
+  ],
+  "summary": {
+   "en": "UltraTex is a cascaded multi-view diffusion framework that jointly predicts albedo and shading normals, then estimates metallic-roughness maps using VLM-derived material semantic tokens and photometric representation alignment, outperforming open-source and commercial PBR texture methods.",
+   "zh": "UltraTex 用级联多视角扩散框架从单张参考图生成 PBR 纹理：先联合预测 albedo 与世界空间着色法线，再结合 VLM 特征适配器提供的材质语义先验估计 metallic-roughness 图，并通过光度表征对齐注入材质-光照交互知识，在视觉保真度、材质准确性与物理合理性上优于现有开源与商业方法。"
+  },
+  "tags": [
+   "image generation",
+   "3D",
+   "diffusion",
+   "multimodal"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.25387": {
   "model": "deepseek-flash",
   "orgs": [
@@ -161,6 +1401,33 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.25534": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "The Hong Kong University of Science and Technology (Guangzhou)"
+   },
+   {
+    "country": "Hong Kong",
+    "name": "The Hong Kong University of Science and Technology"
+   },
+   {
+    "country": "",
+    "name": "Knowin"
+   }
+  ],
+  "summary": {
+   "en": "Models rewriting expert agent skills without any feedback degrade performance by 15 points on SkillsBench after 30 rounds, as rewriting pulls skills toward the model's prior. SkillDiff marks the missing knowledge in place, raising pass rates by 4.8 points on average without feedback or text changes.",
+   "zh": "让同一批模型在没有任务、运行或判断反馈的情况下反复重写专家 skill 文档，随后用重写后的 skill 驱动 agent；三十轮后 SkillsBench 平均下降 15 分，说明重写会让 skill 向模型自身的先验漂移，并先丢掉先验之外的知识。SkillDiff 在原位标记这部分知识，无需反馈、不改动 skill 文本，使 SkillsBench 通过率平均提升 4.8 分。"
+  },
+  "tags": [
+   "agents",
+   "LLM",
+   "benchmark"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.25773": {
   "model": "deepseek-flash",
   "orgs": [
@@ -190,6 +1457,29 @@
    "agents",
    "speech",
    "reasoning"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.25848": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Singapore",
+    "name": "Nanyang Technological University"
+   },
+   {
+    "country": "China",
+    "name": "Nanjing University of Information Science and Technology"
+   }
+  ],
+  "summary": {
+   "en": "ProtoCast uses group-specific prototype banks with cross-variable attention and temporal change for evolution-aware prototype matching, plus sparse mixtures of prototype low-rank operators for local correction, improving accuracy on GlobalForecast and TyphoonTracking and linking prototype deletion to error changes.",
+   "zh": "ProtoCast 用组别专属原型库结合跨变量注意力与历史时序变化做进化感知的原型匹配，并通过稀疏混合的原型低秩算子做局部校正，在 GlobalForecast 与 TyphoonTracking 上提升预测精度，且原型删除可将局部特征贡献与误差变化关联。"
+  },
+  "tags": [
+   "world model",
+   "interpretability",
+   "efficiency"
   ],
   "v": "0c11df7a6ae8"
  },
@@ -332,6 +1622,66 @@
    "image generation",
    "VLM",
    "diffusion"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.26211": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Huazhong University of Science and Technology"
+   },
+   {
+    "country": "China",
+    "name": "Tencent"
+   },
+   {
+    "country": "China",
+    "name": "Peking University"
+   },
+   {
+    "country": "Hong Kong",
+    "name": "Hong Kong University of Science and Technology"
+   }
+  ],
+  "summary": {
+   "en": "SpecWM is a training-free streaming world-model inference framework that verifies drafts via the target's latent velocity field, yielding reusable corrections with accept/refine/reject thresholds; it achieves 1.63x speedup and lifts NavScore from 75.99 to 85.63 on WBench Navigation.",
+   "zh": "SpecWM 是无需训练的流式世界模型推理框架，利用目标模型的潜空间速度场验证草稿并直接得到可用于修正的信息，以双阈值分为接受、精修、拒绝三档，精修复用该信息提升画质与相机跟随；在 WBench Navigation 上取得 1.63 倍加速，NavScore 从 75.99 升至 85.63。"
+  },
+  "tags": [
+   "world model",
+   "video generation",
+   "efficiency",
+   "diffusion"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.26239": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "University of Notre Dame"
+   },
+   {
+    "country": "United States",
+    "name": "Georgia Tech"
+   },
+   {
+    "country": "United States",
+    "name": "MIT"
+   }
+  ],
+  "summary": {
+   "en": "SAFI teaches VLA policies an explicit fallback response at intermediate execution states via fallback target construction and joint policy adaptation; with OpenVLA-OFT on LIBERO and BadLIBERO, post-takeover target success drops to 1.3% with no physical incidents while retained-task performance stays high.",
+   "zh": "SAFI 通过两阶段训练让 VLA 策略在执行途中停止被禁止的任务：先构造回退目标并在禁止任务演示中统一冻结机械臂指令和夹爪目标，再与保留任务动作联合学习；在 LIBERO 与 BadLIBERO 上，OpenVLA-OFT 接管后的目标成功率降至 1.3%，且无物理事故，保留任务性能较高。"
+  },
+  "tags": [
+   "VLA",
+   "robotics",
+   "safety",
+   "manipulation"
   ],
   "v": "0c11df7a6ae8"
  },
@@ -851,6 +2201,30 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.26809": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Switzerland",
+    "name": "EPFL"
+   },
+   {
+    "country": "Canada",
+    "name": "University of Toronto"
+   }
+  ],
+  "summary": {
+   "en": "Search-Native Pretraining augments pretraining corpora with web-search queries and locally indexed retrieved responses, teaching QueryLM to emit search calls and use evidence; on 360M-3.3B scales it improves knowledge-intensive tasks, with a 1.4B model matching a FLOP-matched 3.3B baseline and gains persisting after SFT.",
+   "zh": " Search-Native Pretraining：在预训练语料中大规模加入网络搜索查询，并用本地索引检索回应，训练 QueryLM 学会生成搜索调用并整合检索证据；在 360M–3.3B 参数上，知识密集任务性能提升，1.4B 模型可匹敌 FLOP 匹配的 3.3B 基线，优势在 SFT 后仍保持。"
+  },
+  "tags": [
+   "LLM",
+   "pretraining",
+   "retrieval",
+   "reasoning"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.26954": {
   "model": "deepseek-flash",
   "orgs": [
@@ -884,6 +2258,26 @@
    "reasoning",
    "video generation",
    "efficiency"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.27112": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Independent Researcher"
+   }
+  ],
+  "summary": {
+   "en": "Testing Claude Code, Codex CLI, Gemini CLI and OpenCode+DeepSeek on hidden-test repos under a 278-word rules file: the file acted as advice, dropping Codex CLI from 99.0% to 67.7% and pooled passes from 98.2% to 90.9%.",
+   "zh": "在278词规则文件下测试Claude Code、Codex CLI、Gemini CLI和OpenCode+DeepSeek于隐藏测试仓库上的表现：规则文件仅作建议，Codex CLI得分从99.0降至67.7%，汇总通过率由98.2%降至90.9%，且无门禁时违规请求仍在7/45次运行中到达mock服务。"
+  },
+  "tags": [
+   "agents",
+   "safety",
+   "benchmark",
+   "code"
   ],
   "v": "0c11df7a6ae8"
  },
@@ -1269,6 +2663,30 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.27797": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Institute of Automation, Chinese Academy of Sciences"
+   },
+   {
+    "country": "China",
+    "name": "University of Chinese Academy of Sciences"
+   }
+  ],
+  "summary": {
+   "en": "EvoTER evolves embodied agents' tool-use skills without parameter updates via an Explorer-Diagnoser-Validator loop, lifting simulated task success from 53.60% to 80.40% and real-world long-horizon success from 20% to 80%-100%.",
+   "zh": "EvoTER 通过 Explorer、Diagnoser、Validator 三角色演化循环，让具身智能体在不更新模型参数的情况下自演化工具使用技能并沉淀经验，仿真任务成功率从 53.60% 提升到 80.40%，真实世界长程任务成功率从 20% 提升到 80%-100%。"
+  },
+  "tags": [
+   "agents",
+   "robotics",
+   "reasoning",
+   "efficiency"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.27889": {
   "model": "deepseek-flash",
   "orgs": [
@@ -1446,6 +2864,30 @@
    "LLM",
    "efficiency",
    "pretraining"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.28123": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Singapore",
+    "name": "Nanyang Technological University"
+   },
+   {
+    "country": "China",
+    "name": "Beijing Jiaotong University"
+   }
+  ],
+  "summary": {
+   "en": "A label-free engine turns any Earth coordinate into a ray-traceable city with single-factor counterfactuals, yielding RadioVISTA; frontier VLMs judge field strength but fail path tracing, and fine-tuning a 9B model nears proprietary models on fields only.",
+   "zh": "构建无需标注的引擎，将地球任意坐标转为可光线追踪的城市并模拟单因素反事实，生成RadioVISTA基准；前沿VLM能判断场强却无法识别单路径，9B模型微调后在未见城市接近闭源模型，但路径追踪仍无提升。"
+  },
+  "tags": [
+   "VLM",
+   "benchmark",
+   "reasoning",
+   "dataset"
   ],
   "v": "0c11df7a6ae8"
  },
@@ -3374,6 +4816,25 @@
   ],
   "v": "f0e3093ef551"
  },
+ "2611.30025": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "University of the District of Columbia"
+   }
+  ],
+  "summary": {
+   "en": "DAWIN couples spatial projection with elapsed-time wave excitation into a closed-form damped complex state, avoiding ODE solvers; it plugs into MLPs, Transformers, and GNNs, beating Neural CDE on 9 of 11 tasks and ReLU-MLP on 8.",
+   "zh": "DAWIN 将空间投影与时变波激励耦合为闭式阻尼复状态，无需微分方程求解器即可嵌入 MLP、Transformer 和 GNN；在 11 项参数匹配任务中，其 9 项超过 Neural CDE、8 项超过 ReLU-MLP，临床死亡率预测 AUROC 达 0.9993，并给出闭式梯度与 BIBO 稳定性证明。"
+  },
+  "tags": [
+   "theory",
+   "efficiency",
+   "pretraining"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.30041": {
   "model": "gemini-3.5-flash-lite",
   "summary": {
@@ -3565,6 +5026,33 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.30472": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Australia",
+    "name": "UNSW Sydney"
+   },
+   {
+    "country": "Australia",
+    "name": "CSIRO"
+   },
+   {
+    "country": "Singapore",
+    "name": "Nanyang Technological University"
+   }
+  ],
+  "summary": {
+   "en": "Target-Part Preference Optimization fine-tunes a pretrained part-aware 3D generator with a FlowDPO-style target-block preference loss, selecting seed pairs by GT geometric metric gaps and updating only the DiT; it beats the pretrained generator and supervised fine-tuning baselines on Objaverse multi-part aggregates, with weaker gains under distribution shift.",
+   "zh": "Target-Part Preference Optimization 用 FlowDPO 式偏好微调改造预训练的部件感知 3D 生成器，按随机种子与 GT 几何指标筛选部件质量差距最大的样本对，仅更新 DiT；在 Objaverse 上多部件聚合指标整体超过预训练模型与监督微调基线，跨数据集收益不稳定。"
+  },
+  "tags": [
+   "3D",
+   "alignment",
+   "image generation"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.30477": {
   "model": "gemini-3.5-flash-lite",
   "summary": {
@@ -3579,6 +5067,25 @@
   ],
   "v": "f0e3093ef551"
  },
+ "2611.30483": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "",
+    "name": "LibreDB Studio"
+   }
+  ],
+  "summary": {
+   "en": "A two-layer preregistered study tests whether the model, a guard layer, or the database engine determines damage from AI agent mistakes, spanning 9+ engines and six 4B–12B open-weight models over 9,468 trials; engines differ more in undoability than in what a mistake destroys.",
+   "zh": "通过两层预注册实验比较模型、防护层与数据库引擎本身对AI agent误操作损害的决定作用，覆盖9种以上引擎、6个4B–12B开源模型共9,468次试验，发现引擎间主要差别在于可撤销性而非破坏程度。"
+  },
+  "tags": [
+   "agents",
+   "safety",
+   "benchmark"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.30490": {
   "model": "gemini-3.5-flash-lite",
   "summary": {
@@ -3592,6 +5099,34 @@
    "dataset"
   ],
   "v": "f0e3093ef551"
+ },
+ "2611.30494": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Singapore",
+    "name": "National University of Singapore"
+   },
+   {
+    "country": "China",
+    "name": "University of Science and Technology of China"
+   },
+   {
+    "country": "United States",
+    "name": "University of Chicago"
+   }
+  ],
+  "summary": {
+   "en": "A benchmark across reasoning patterns shows no single LLM context engineering method wins on all tasks at 8B scale; gains correlate negatively with failure-mode diversity (r=-0.5, p≤0.05), with experience extraction the key bottleneck.",
+   "zh": "构建覆盖多种推理模式的数据集基准，在8B规模下比较不同LLM族上的多种LLM context engineering方法，发现没有单一方法全面胜出，甚至不及chain-of-thought等简单基线；LCE的性能增益与失败模式多样性负相关（r=-0.5, p≤0.05），指令遵循度提升可解释部分成功，而能否从多样失败中提取有效经验是主要瓶颈。"
+  },
+  "tags": [
+   "LLM",
+   "reasoning",
+   "benchmark",
+   "interpretability"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.30495": {
   "model": "gemini-3.5-flash-lite",
@@ -3894,6 +5429,25 @@
    "efficiency",
    "video generation",
    "diffusion"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.30723": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Japan",
+    "name": "Japan Advanced Institute of Science and Technology"
+   }
+  ],
+  "summary": {
+   "en": "BiSAT couples separate acoustic and semantic branches via a shared-index mechanism into one discrete token stream, jointly optimizing both encoders without fixed semantic teachers; BiSAT-TTS matches or beats speech-LM TTS baselines with less training data.",
+   "zh": "BiSAT 通过共享索引机制将独立的声学与语义分支耦合为单一离散码流，联合优化双编码器且不依赖固定语义教师；基于此的 BiSAT-TTS 用更少训练数据即达到或超越现有语音语言模型 TTS 基线。"
+  },
+  "tags": [
+   "speech",
+   "LLM",
+   "efficiency"
   ],
   "v": "0c11df7a6ae8"
  },
@@ -4265,6 +5819,26 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.30986": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Hong Kong",
+    "name": "Hong Kong University of Science and Technology"
+   }
+  ],
+  "summary": {
+   "en": "ITDM takes the infinitesimal-time limit of trajectory distribution matching, yielding sample-level gradients anchored at the behavior velocity and tracked by an online auxiliary denoiser, giving exact baseline invariance; it converges nearly 3x faster on GenEval2 and scales to FLUX.3 (5.6B).",
+   "zh": "iTDM 将轨迹分布匹配取时间无穷小极限，把回报引导目标化为锚定行为速度的样本级梯度，并用在线辅助去噪器跟踪，从而精确保持基线不变性、抑制梯度漂移；在 GenEval2 上收敛快近 3 倍且扩展到 0.87 不崩溃，并有效适配 5.6B 的 FLUX.3 模型。"
+  },
+  "tags": [
+   "diffusion",
+   "RL",
+   "alignment",
+   "image generation"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.30989": {
   "model": "deepseek-flash",
   "orgs": [
@@ -4383,6 +5957,41 @@
    "control"
   ],
   "v": "3ace8e6b90c6"
+ },
+ "2611.31076": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "France",
+    "name": "AgroParisTech"
+   },
+   {
+    "country": "France",
+    "name": "Université Paris-Saclay"
+   },
+   {
+    "country": "Australia",
+    "name": "The University of New South Wales"
+   },
+   {
+    "country": "United Arab Emirates",
+    "name": "Mohamed bin Zayed University of Artificial Intelligence"
+   },
+   {
+    "country": "Hong Kong",
+    "name": "The Chinese University of Hong Kong"
+   }
+  ],
+  "summary": {
+   "en": "AlphaDefect trains one PPO network per Slay the Spire 2 character to make all in- and out-of-combat decisions, winning 62-77% of Ascension 10 runs greedily and 68-80% with search, versus 11-20% for human runs.",
+   "zh": "AlphaDefect 为《杀戮尖塔2》每个角色训练一个 PPO 网络，统一处理战斗内外所有决策；在 Ascension 10 难度下，贪心策略胜率 62-77%，测试时搜索 68-80%，都显著高于人类玩家上传对局的 11-20%。"
+  },
+  "tags": [
+   "RL",
+   "agents",
+   "benchmark"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.31079": {
   "model": "gemini-3.5-flash-lite",
@@ -4564,6 +6173,29 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.31155": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Russia",
+    "name": "Research Center for TAI"
+   },
+   {
+    "country": "Russia",
+    "name": "Institute for System Programming"
+   }
+  ],
+  "summary": {
+   "en": "A public dataset of 62029 rank-23 3×3 matrix multiplication schemes from gradient descent with alternating least squares and flip graph search, pairwise inequivalent by rank pattern and far exceeding prior collections.",
+   "zh": "构建了包含62029个秩23的3×3矩阵乘法方案公开数据集，方案由梯度下降结合交替最小二乘与flip graph搜索得到，按秩模式两两不等价，秩模式数量远超Heule等（17376方案/387模式）和Mårtensson等（15316方案/568模式）的已有集合。"
+  },
+  "tags": [
+   "math",
+   "dataset",
+   "theory"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.31173": {
   "model": "gemini-3.5-flash-lite",
   "orgs": [
@@ -4611,6 +6243,30 @@
    "benchmark"
   ],
   "v": "3ace8e6b90c6"
+ },
+ "2611.31184": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "Adobe Research"
+   },
+   {
+    "country": "United States",
+    "name": "University of Virginia"
+   }
+  ],
+  "summary": {
+   "en": "CodecOPSD prunes redundant condition tokens via video-codec cues and trains a DiT adapter with on-policy self-distillation, cutting 66% of condition tokens on 16 modalities for 2x faster denoising and up to 73% smaller KV cache.",
+   "zh": "CodecOPSD 用视频编解码思路剪除条件 token 中的冗余时空信息，并以 on-policy 自蒸馏训练 DiT adapter 保持质量，在 16 种条件模态下平均剪掉 66% 条件 token，去噪提速 2 倍，KV cache 内存最多缩小 73%。"
+  },
+  "tags": [
+   "video generation",
+   "efficiency",
+   "multimodal",
+   "diffusion"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.31195": {
   "model": "gemini-3.5-flash-lite",
@@ -4759,6 +6415,54 @@
    "agents",
    "multimodal",
    "code"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.31491": {
+  "model": "deepseek-flash",
+  "orgs": [],
+  "summary": {
+   "en": "Frozen representations from four tabular foundation models measure financial dissimilarity for US equities 2011–2025, yielding consistently positive estimated gains over direct disclosure distance once SEC filing data are included.",
+   "zh": "用四个表格基础模型的冻结表示度量美国股票2011–2025年的财务差异性，发现纳入SEC申报数据后其相对直接距离的估计增益持续为正。"
+  },
+  "tags": [
+   "LLM",
+   "interpretability"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.31516": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United Kingdom",
+    "name": "University of Oxford"
+   },
+   {
+    "country": "Germany",
+    "name": "Technical University of Munich"
+   },
+   {
+    "country": "Germany",
+    "name": "Munich Center for Machine Learning"
+   },
+   {
+    "country": "South Korea",
+    "name": "Hanyang University"
+   },
+   {
+    "country": "Sweden",
+    "name": "Lund University"
+   }
+  ],
+  "summary": {
+   "en": "InitFree-SfM combines learned correspondences, metric depth, and depth-consistent tracks with a depth-augmented OSE (dOSE), achieving reconstruction accuracy competitive with established SfM pipelines and beating prior InitFree BA methods.",
+   "zh": "InitFree-SfM 将学习到的对应关系、metric depth 与深度一致性 track 构建结合，提出深度增强的 dOSE 约束，在低重叠图像集上重建精度接近成熟 SfM 流程并超过现有 InitFree BA 方法。"
+  },
+  "tags": [
+   "3D",
+   "efficiency",
+   "dataset"
   ],
   "v": "0c11df7a6ae8"
  },
@@ -5860,6 +7564,42 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.32993": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Zhejiang University"
+   },
+   {
+    "country": "China",
+    "name": "Alibaba Group"
+   },
+   {
+    "country": "China",
+    "name": "Hupan Lab"
+   },
+   {
+    "country": "China",
+    "name": "East China Normal University"
+   },
+   {
+    "country": "China",
+    "name": "Shanghai Jiao Tong University"
+   }
+  ],
+  "summary": {
+   "en": "Radev combines anatomy-guided visual compression, direct candidate prediction, and counterfactual confidence calibration to estimate probabilities in a single forward pass, significantly outperforming state-of-the-art methods on decision accuracy and calibration on the new CT-Verdict benchmark.",
+   "zh": "Radev 通过解剖引导的视觉压缩、直接候选预测和反事实置信度校准，实现无需自回归解码的单次前向概率估计；在新建的 CT-Verdict 基准上，其决策准确率与置信度校准均显著优于现有方法，并在分布偏移下保持稳健。"
+  },
+  "tags": [
+   "multimodal",
+   "LLM",
+   "alignment",
+   "dataset"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.33010": {
   "model": "deepseek-flash",
   "orgs": [
@@ -6343,6 +8083,60 @@
    "simulation"
   ],
   "v": "f0e3093ef551"
+ },
+ "2611.33885": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "United States",
+    "name": "University of California San Diego"
+   },
+   {
+    "country": "United States",
+    "name": "University of California Irvine"
+   },
+   {
+    "country": "Singapore",
+    "name": "Nanyang Technological University"
+   }
+  ],
+  "summary": {
+   "en": "LayoutRecall stores appearance as image latents on 3D box surfaces, retrieves them along target-view rays, and feeds them into a FLUX.2 editor for multi-round 3D layout-controlled editing, plus the LayoutLoop benchmark for revisits.",
+   "zh": "LayoutRecall 将物体外观以图像潜变量形式存储于 3D 框的局部坐标系表面，并按目标视角沿射线检索，再通过几何对齐的记忆条件注入 FLUX.2 编辑器，在多轮 3D 布局编辑中恢复被遮挡或出画物体的外观；同时构建带校准布局与设计重访的 LayoutLoop 基准，实验验证了外观保持能力。"
+  },
+  "tags": [
+   "image generation",
+   "3D",
+   "diffusion"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.33896": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Switzerland",
+    "name": "EPFL"
+   },
+   {
+    "country": "United States",
+    "name": "University of Maryland"
+   },
+   {
+    "country": "South Korea",
+    "name": "KAIST"
+   }
+  ],
+  "summary": {
+   "en": "Floodgates is a self-speculative decoding method for looped language models that appends a mask-token block and uses low-rank adaptation to draft multiple future tokens in parallel with shallow loops, reaching up to 7.5x lossless speedup.",
+   "zh": "Floodgates 是面向循环语言模型的自投机解码方法：在序列尾部附加掩码 token 块，用低秩适配让浅层循环并行草拟多个未来 token、深层循环验证，在七个模型、五个基准上多数情况取得无损解码最快速度，最高加速 7.5 倍。"
+  },
+  "tags": [
+   "LLM",
+   "efficiency",
+   "pretraining"
+  ],
+  "v": "0c11df7a6ae8"
  },
  "2611.33911": {
   "model": "gemini-3.5-flash-lite",
@@ -7089,6 +8883,25 @@
   ],
   "v": "0c11df7a6ae8"
  },
+ "2611.34719": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "China",
+    "name": "Fudan University"
+   }
+  ],
+  "summary": {
+   "en": "ReMoT reads complementary evidence from aligned RGB and wavelet views in a fully frozen vision foundation via staged joint attention, reaching 91.2% average accuracy across eight benchmark groups with only 3,074 trainable parameters.",
+   "zh": "ReMoT 在完全冻结的视觉基础模型上，用受 Mixture-of-Transformers 启发的分阶段联合注意力从空间对齐的 RGB 与小波视图读取互补证据，仅 3074 个可训练参数即在八个基准组上平均准确率达 91.2%，为评估方法中最高。"
+  },
+  "tags": [
+   "image generation",
+   "detection",
+   "interpretability"
+  ],
+  "v": "0c11df7a6ae8"
+ },
  "2611.34739": {
   "model": "gemini-3.5-flash-lite",
   "summary": {
@@ -7169,6 +8982,38 @@
    "VLA",
    "agents",
    "multimodal"
+  ],
+  "v": "0c11df7a6ae8"
+ },
+ "2611.34782": {
+  "model": "deepseek-flash",
+  "orgs": [
+   {
+    "country": "Hong Kong",
+    "name": "University of Hong Kong"
+   },
+   {
+    "country": "China",
+    "name": "Sun Yat-sen University"
+   },
+   {
+    "country": "United Kingdom",
+    "name": "Cardiff University"
+   },
+   {
+    "country": "United Kingdom",
+    "name": "University of Cambridge"
+   }
+  ],
+  "summary": {
+   "en": "RevFlow treats generation as reverse encoding, generating frozen-encoder features from deep semantics to shallow detail with a shared DiT backbone; it reaches 1.96 FID at 690M and 1.74 FID at 1.55B on ImageNet 256×256 after 5 epochs.",
+   "zh": "RevFlow 把生成视为逆编码，以冻结编码器的中间表征为逐级生成目标，并用共享 DiT 骨干的 HyC-DiT 统一各阶段；在 ImageNet 256×256 上仅训练 5 轮即达 1.96 FID（690M）与 1.74 FID（1.55B），89M 解码器重建 PSNR 30.25 dB。"
+  },
+  "tags": [
+   "image generation",
+   "diffusion",
+   "efficiency",
+   "pretraining"
   ],
   "v": "0c11df7a6ae8"
  },

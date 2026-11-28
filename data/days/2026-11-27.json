@@ -1,0 +1,1223 @@
+{
+ "date": "2026-11-27",
+ "category": "all",
+ "source": "hot",
+ "papers": [
+  {
+   "id": "2611.34051",
+   "title": "Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability",
+   "authors": [
+    "Xichong Zhang",
+    "Xixuan Hao",
+    "Zhichen Liu",
+    "Le Zhou",
+    "Zeyu Zhang",
+    "Boyu Chen",
+    "Mingfei Lu",
+    "Zehao Lin",
+    "Bo Tang",
+    "Yonggang Zhang",
+    "Linyun Liu",
+    "Feiyu Xiong",
+    "Jianlin Su",
+    "Zhiyu Li"
+   ],
+   "abstract": "Linear attention offers an efficient solution for long-sequence modeling via linear complexity and fixed-size recurrent states. Gated DeltaNet-2 (GDN-2) introduces independent channel-wise control over erasure and writing, enhancing state-update expressiveness and in-context retrieval, yet it suffers from training failures during long-context training. We trace these failures to the asymmetry between reading and modification directions during erasure, which yields non-normal erase operators whose directional gains accumulate across tokens, triggering exponential state growth even without new writes. To resolve this, we propose \\model{}, employing symmetric erasure to ensure non-expansive state propagation and decay-regulated residual writing to preserve writing flexibility. Theoretically, we establish an $O(\\sqrt{T})$ upper bound on recurrent state growth while retaining chunkwise parallel computation. Experiments on ~1.6B parameter models show that \\model{} achieves stable training alongside improved long-context retrieval. Compared to GDN-2, it boosts the 128K average RULER score by 6.80 points in the recurrent setting and average accuracy across nine downstream tasks by 0.62 points in the hybrid setting.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.LG"
+   ],
+   "published": "2026-11-25T09:30:49Z",
+   "updated": "2026-11-25T09:30:49Z",
+   "comment": "",
+   "tags": [
+    "LLM",
+    "efficiency",
+    "pretraining"
+   ],
+   "summary": {
+    "en": "Stable Gated DeltaNet-2 fixes GDN-2's exponential recurrent state growth via symmetric erasure and decay-regulated residual writing, with an O(√T) bound. On 1.6B models it raises 128K RULER by 6.80 and nine-task accuracy by 0.62.",
+    "zh": "针对 Gated DeltaNet-2 长上下文训练中擦除方向不对称导致循环状态指数增长的问题，提出 Stable Gated DeltaNet-2，用对称擦除保证非扩张状态传播，并配合衰减调节的残差写入，理论上给出 O(√T) 状态增长上界且保留分块并行。1.6B 参数模型上训练稳定，128K 平均 RULER 分数提升 6.80 分，九个下游任务平均准确率提升 0.62 分。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 128,
+   "ax_votes": 8,
+   "ax_visits": 133,
+   "heat": 149.3,
+   "orgs": [
+    {
+     "name": "MemTensor"
+    },
+    {
+     "name": "University of Science and Technology of China",
+     "ror": "04c4dkn09"
+    },
+    {
+     "logo": "data/logos/hkust.edu.hk.png",
+     "name": "HKUST",
+     "ror": "00q4vv597"
+    },
+    {
+     "name": "Southern University of Science and Technology",
+     "ror": "049tv2d57"
+    },
+    {
+     "name": "Shanghai Jiao Tong University",
+     "ror": "0220qvk04"
+    }
+   ],
+   "thumb": "data/thumbs/2611.34051.jpg",
+   "thumb_w": 640,
+   "thumb_h": 348,
+   "listed": "2026-11-27"
+  },
+  {
+   "id": "2611.34232",
+   "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+   "authors": [
+    "Hui Shen",
+    "Yunta Hsieh",
+    "Jianing Ma",
+    "Zhuoran Yin",
+    "Zhuhan Bao",
+    "Ziyuan Liu",
+    "Qi Han",
+    "Xiuqi Xu",
+    "Xianbang Wang",
+    "Wenhao Chai",
+    "Sihan Xu",
+    "Chenyang Zhao",
+    "Yanheng Shang",
+    "Dongfu Jiang",
+    "Rui Sun",
+    "Xingzhi Li",
+    "Chenqi Yin",
+    "Zesen Zhao",
+    "Boyuan Zheng",
+    "Jisen Li",
+    "Xiaoxia Wu",
+    "Ruoyan Zhang",
+    "Ruiyao Liu",
+    "Jing Xiong",
+    "He Xiao",
+    "Nan Zheng",
+    "Hangxiang Chen",
+    "Shengyang Tao",
+    "Deyang Luorong",
+    "Yifeng Liu",
+    "Jingxuan Zhang",
+    "Chaofan Tao",
+    "Yuren Wang",
+    "Jiaqi Mo",
+    "Rui Hu",
+    "Xing Wei",
+    "Xiaofeng Liu",
+    "Xin Xu",
+    "Han Wu",
+    "Mengyao Wen",
+    "Guobin Zhang",
+    "Shatong Zhu",
+    "Hei Ting Una Chan",
+    "Sicheng Chen",
+    "Kai Zhang",
+    "Mengkang Hu",
+    "Zhongwei Wan",
+    "Xin Wang",
+    "Chuanyang Zheng",
+    "Ziheng Zhang",
+    "Hengyuan Zhang",
+    "Zunhai Su",
+    "Kanzhi Cheng",
+    "Dehan Kong",
+    "Yian Wang",
+    "Hanrong Zhang",
+    "Jiawei Lu",
+    "Yifan Zhang",
+    "Junnan Li",
+    "Changyi Yang",
+    "Jintao Qu",
+    "Wenyao Gao",
+    "Jiaxuan Luo",
+    "Jiaxin Deng",
+    "Yuhao Chen",
+    "Xuesong Ye",
+    "Jingwen Gu",
+    "Yichi Zhang",
+    "Qun Lou",
+    "Shen Yan",
+    "Ben Athiwaratkun",
+    "Qiushi Sun",
+    "Mi Zhang",
+    "Ping Luo",
+    "Wenhu Chen",
+    "Ngai Wong"
+   ],
+   "abstract": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-25T11:55:12Z",
+   "updated": "2026-11-25T11:55:12Z",
+   "comment": "NeurIPS 2026",
+   "tags": [
+    "agents",
+    "benchmark",
+    "multimodal"
+   ],
+   "summary": {
+    "en": "OS-Omni is a live cross-platform benchmark for computer-using agents spanning Windows, Ubuntu, macOS, iOS, Android, and Web; its v1 has 48 tasks per platform plus 12 cross-platform workflows averaging 67.54 steps. Claude Opus 5.5 scores 68.5% versus 77.3% human, trailing by over 25 points on iOS and macOS.",
+    "zh": "OS-Omni 是覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的跨平台计算机代理实时基准，v1 每平台 48 个任务、另含 12 个跨平台工作流，任务平均需 67.54 步；最强代理 Claude Opus 5.5 平均成功率 68.5%，低于人类 77.3%，在 iOS 和 macOS 上差距超过 25 点。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 103,
+   "ax_votes": 1,
+   "ax_visits": 23,
+   "heat": 106.3,
+   "orgs": [],
+   "thumb": "data/thumbs/2611.34232.jpg",
+   "thumb_w": 640,
+   "thumb_h": 368,
+   "listed": "2026-11-27"
+  },
+  {
+   "id": "2611.34813",
+   "title": "Solve Vision with Code: Coding Agents Are Stronger Visual Reasoners Than Video Models",
+   "authors": [
+    "Dezhi Luo",
+    "Fengyuan Yu",
+    "Haotian Zhang",
+    "Zehong Zhao",
+    "Ran Ji",
+    "Siyuan An",
+    "Huayi Qin",
+    "Qingying Gao",
+    "Zhongang Cai",
+    "Lei Yang",
+    "Ziqi Huang",
+    "Ruisi Wang",
+    "Maijunxian Wang",
+    "Hokin Deng"
+   ],
+   "abstract": "Video generation models are increasingly evaluated as visual reasoners: given a first frame and a natural-language prompt, can the model produce the video in which the specified task is carried out? The paradigm is considered advantageous because the reasoning is native to the visual medium, unfolding directly in the frames rather than through language or code. Whether this native route is in fact the more reliable path to visual reasoning has not been tested against a symbolic alternative under the same conditions. We therefore pose the same tasks, with identical inputs, output specification and evaluator, to both media: rather than denoising pixels, a coding agent writes a program that renders the answer video, which an unmodified rule-based evaluator scores. On VBVR-Pro-Bench (Xu et al., 2026), a 500-instance suite spanning five cognitive categories with symbolic ground truth, the agent receives the same first frame and prompt as the video model, with no access to ground truth, metadata or generation models, and one attempt per instance. Three closed-model agents (Codex with gpt-6-astra, Claude Code with Fable 5.1 and Gemini CLI with Gemini 3.1 Pro) score 0.923, 0.894 and 0.893, each more than 0.22 above the strongest video model. Among 23 runnable open-weight models, the best, GLM-5, reaches 0.572, above all video models except the RL-trained one. Together, we show that for tasks whose solutions can be computed from a first frame and a prompt, program synthesis is currently a substantially more reliable route to visual reasoning than video generation. We further distinguish depictive programs, which navigate the image to recover a transferable scheme, from propositional programs, which operate on hard-coded values, revealing how visual reasoning unfolds in agent-written programs and what it implies for its nature of reasoning in general.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG",
+    "cs.MM"
+   ],
+   "published": "2026-11-25T18:01:22Z",
+   "updated": "2026-11-25T18:01:22Z",
+   "comment": "",
+   "tags": [
+    "code",
+    "reasoning",
+    "VLM",
+    "benchmark"
+   ],
+   "summary": {
+    "en": "On VBVR-Pro-Bench, coding agents (Codex/gpt-6-astra, Claude Code/Fable 5.1, Gemini CLI/Gemini 3.1 Pro) render answer videos via programs, scoring 0.923/0.894/0.893, each >0.22 above the best video model; best open-weight GLM-5 reaches 0.572.",
+    "zh": "在VBVR-Pro-Bench上，Codex(gpt-6-astra)、Claude Code(Fable 5.1)与Gemini CLI(Gemini 3.1 Pro)等编程agent通过编写程序渲染答案视频，得分0.923/0.894/0.893，分别比最强视频生成模型高0.22以上；开源模型最优GLM-5仅0.572。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 59,
+   "ax_votes": 1,
+   "ax_visits": 61,
+   "heat": 66.1,
+   "orgs": [
+    {
+     "logo": "data/logos/ucl.ac.uk.png",
+     "name": "University College London",
+     "ror": "02jx3x895"
+    },
+    {
+     "name": "NTU",
+     "ror": "02e7b5302"
+    },
+    {
+     "logo": "data/logos/usc.edu.png",
+     "name": "University of Southern California",
+     "ror": "03taz7m60"
+    },
+    {
+     "logo": "data/logos/ucsd.edu.png",
+     "name": "University of California San Diego",
+     "ror": "0168r3w48"
+    },
+    {
+     "logo": "data/logos/cmu.edu.png",
+     "name": "Carnegie Mellon University",
+     "ror": "05x2bcf33"
+    },
+    {
+     "logo": "data/logos/jhu.edu.png",
+     "name": "Johns Hopkins University",
+     "ror": "00za53h95"
+    },
+    {
+     "logo": "data/logos/cuhk.edu.hk.png",
+     "name": "CUHK",
+     "ror": "00t33hh48"
+    },
+    {
+     "logo": "data/logos/berkeley.edu.png",
+     "name": "University of California, Berkeley",
+     "ror": "01an7q238"
+    }
+   ],
+   "thumb": "data/thumbs/2611.34813.jpg",
+   "thumb_w": 640,
+   "thumb_h": 353,
+   "listed": "2026-11-27"
+  },
+  {
+   "id": "2611.31619",
+   "title": "What a Forecasting Leaderboard Can Establish: Resolution Reporting for Zero-Shot Time-Series Models",
+   "authors": [
+    "Arya Sikder",
+    "Sriram Pillutla"
+   ],
+   "abstract": "A foundation model for time series is pretrained once and then asked to forecast series it has never seen, so the evidence for it is its score on held-out datasets. Such datasets are scarce, and a few public leaderboards carry most comparisons, yet none of them states how small a difference its datasets can detect. We call that quantity the resolution of a board and introduce Vernier, a tool that computes it from the files a board already publishes. Vernier also reports which entries a board cannot separate from its leader and whether its order changes when unrelated parties submit. GIFT-Eval resolves 6.8 rank places, and its displayed neighbours sit 0.91 apart. The ten places of its top ten hold fewer than two resolvable steps. fev-bench, Chronos Benchmark II and TIME show the same pattern: their resolution is 3.6 to 19 times the gap between neighbours. With each of its 2,554 series as an independent source, BOOM is the one board that resolves its top ten. Below the resolution the order depends on who else submitted: across four boards, rules that rank against the pool reversed 43 top-ten pairs with neither entry rerun, in one update in seven. Boards also do not record how much history a model receives. On 70 configurations, shortening it raised the error of three of four open models, two of them by 15%. We release Vernier, which runs this report with one command on any leaderboard that publishes per-dataset scores: https://github.com/therealram18/vernier",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG",
+    "stat.ME"
+   ],
+   "published": "2026-11-23T22:05:17Z",
+   "updated": "2026-11-23T22:05:17Z",
+   "comment": "Oral presentation at the NeurIPS 2026 Workshop on Foundation Models for Temporal Systems (FMTS). 15 pages, 3 figures, 10 tables. Code: https://github.com/therealram18/vernier",
+   "code_url": "https://github.com/therealram18/vernier",
+   "tags": [
+    "benchmark",
+    "LLM"
+   ],
+   "summary": {
+    "en": "Vernier computes a leaderboard's resolution from its published per-dataset scores: GIFT-Eval resolves 6.8 rank places with neighbors 0.91 apart, and shortening history raised error for three of four open models, two by 15%.",
+    "zh": "Vernier 从排行榜已公开的逐数据集分数计算其分辨率：GIFT-Eval 仅能分辨 6.8 个名次、相邻条目仅差 0.91，前十里可分辨步数不足两步；BOOM 因 2,554 条序列而能分辨前十；缩短历史长度使四个开源模型中三个误差上升，两个升 15%。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 57,
+   "ax_votes": 0,
+   "ax_visits": 5,
+   "heat": 57.5,
+   "orgs": [],
+   "thumb": "data/thumbs/2611.31619.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440,
+   "listed": "2026-11-27"
+  },
+  {
+   "id": "2611.34457",
+   "title": "ProxyGenBench: Benchmarking Proxy-Guided Video Generation",
+   "authors": [
+    "Zhenchen Tang",
+    "Haolin Lu",
+    "Songlin Yang",
+    "Xiaotong Zhao",
+    "Ran Zhang",
+    "Bo Peng",
+    "Shuai Li",
+    "Haotian Fan",
+    "Haobin Zhong",
+    "Yanni Zhang",
+    "Songlian Li",
+    "Ning Zhang",
+    "Xun Gao",
+    "Alan Zhao",
+    "Jing Dong"
+   ],
+   "abstract": "Recent video generators produce realistic videos, yet controlling how scenes unfold remains challenging. Structural proxies, such as animated 3D blockouts, guide generation by specifying scene layout, motion, camera behavior, and event order. However, these coarse inputs leave details unspecified and may contain artifacts that should not be reproduced. Successful proxy-guided generation must therefore Preserve intended structure, Complete missing content and correct proxy artifacts, and Bind text, image, and audio conditions to the right entities and events. We introduce ProxyGenBench to study these interacting requirements, with 312 evaluation cases from 60 scenes across three scene tasks and controlled variations in proxy fidelity, text detail, and multimodal inputs. We evaluate five video generators using verified, case-specific checklists. Experiments show that proxies improve spatiotemporal control, but greater proxy detail can coincide with poorer completion, while strong structural adherence does not ensure correct binding.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-25T14:31:23Z",
+   "updated": "2026-11-25T14:31:23Z",
+   "comment": "",
+   "tags": [
+    "video generation",
+    "benchmark",
+    "multimodal"
+   ],
+   "summary": {
+    "en": "ProxyGenBench benchmarks five video generators on 312 cases with verified checklists, testing structure preservation, content completion, and multimodal condition binding; strong structural adherence does not ensure correct binding.",
+    "zh": "ProxyGenBench 用 312 个评测案例、60 个场景和验证过的案例检查表，评估五种视频生成器在保持结构、补全缺失内容并绑定文本、图像、音频条件方面的表现，发现结构遵循强不代表条件绑定正确。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 36,
+   "ax_votes": 1,
+   "ax_visits": 24,
+   "heat": 39.4,
+   "orgs": [
+    {
+     "logo": "data/logos/cas.cn.png",
+     "name": "Chinese Academy of Sciences",
+     "ror": "034t30j35"
+    },
+    {
+     "logo": "data/logos/ucsd.edu.png",
+     "name": "University of California San Diego",
+     "ror": "0168r3w48"
+    },
+    {
+     "logo": "data/logos/hkust.edu.hk.png",
+     "name": "HKUST",
+     "ror": "00q4vv597"
+    },
+    {
+     "logo": "data/logos/tencent.com.png",
+     "name": "Tencent"
+    }
+   ],
+   "thumb": "data/thumbs/2611.34457.jpg",
+   "thumb_w": 640,
+   "thumb_h": 351,
+   "listed": "2026-11-27"
+  },
+  {
+   "id": "2611.34852",
+   "title": "DRBench Pro: A Knowledge-Centric Benchmark for Professional Deep Research Agents",
+   "authors": [
+    "Han Huang",
+    "Yuchen Yan",
+    "Xingyu Wu",
+    "Yijun Li",
+    "Chao Deng",
+    "Jie Liu",
+    "Jin Ma",
+    "Yongliang Shen"
+   ],
+   "abstract": "Deep research agents gather information from multiple sources and synthesize it into reports on complex, open-ended questions. Existing benchmarks assess report quality along several dimensions, but lack a dedicated knowledge-centric evaluation of which research directions a report covers and how deeply it explores them. We introduce DRBench Pro, a benchmark that makes structured knowledge coverage the primary evaluation target. Our automated pipeline builds local knowledge trees from Wikipedia and uses sampled subgraphs to generate research queries and evidence-grounded rubrics. Each rubric corresponds to a relation in the tree, preserving the structure of the knowledge being evaluated. Agents receive only the research query. This structure allows us to measure breadth across major research directions and depth along related knowledge chains, with their geometric mean giving overall coverage. The benchmark includes 144 cases across 24 domains and 44,102 rubrics. Evaluating 16 deep research agents reveals different strengths in breadth and depth, with the best-performing agent reaching 57.04% overall coverage. Rubric judgments agree closely with human annotations, and agent rankings remain stable across the tested metric configurations.",
+   "primary": "cs.CL",
+   "categories": [
+    "cs.CL",
+    "cs.AI"
+   ],
+   "published": "2026-11-25T18:25:30Z",
+   "updated": "2026-11-25T18:25:30Z",
+   "comment": "Project Page: https://zjureal.com/DRBenchPro/ Code: https://github.com/ZJU-REAL/DRBenchPro",
+   "code_url": "https://github.com/ZJU-REAL/DRBenchPro",
+   "tags": [
+    "agents",
+    "benchmark",
+    "retrieval",
+    "LLM"
+   ],
+   "summary": {
+    "en": "DRBench Pro evaluates deep research agents by structured knowledge coverage, building knowledge trees from Wikipedia to generate queries and evidence-grounded rubrics across 144 cases and 44,102 rubrics; the best of 16 agents reaches only 57.04% coverage.",
+    "zh": "DRBench Pro 以结构化知识覆盖为核心评测目标，从 Wikipedia 构建本地知识树并采样子图生成研究查询与有证据支撑的评分细则，覆盖 24 个领域共 144 个案例、44,102 条细则，16 个深度研究 agent 中最佳整体覆盖率仅 57.04%。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 24,
+   "ax_votes": 1,
+   "ax_visits": 52,
+   "heat": 30.2,
+   "orgs": [
+    {
+     "name": "Zhejiang University",
+     "ror": "00a2xv884"
+    },
+    {
+     "logo": "data/logos/tencent.com.png",
+     "name": "Tencent"
+    }
+   ],
+   "thumb": "data/thumbs/2611.34852.jpg",
+   "thumb_w": 640,
+   "thumb_h": 300,
+   "listed": "2026-11-27"
+  },
+  {
+   "id": "2611.34290",
+   "title": "StateWeaver: Multi-Agent Coordination of Story-State Transitions for Long-Horizon Video Generation",
+   "authors": [
+    "Modi Jin",
+    "Xuying Zhang",
+    "Yijing Guo",
+    "Haoran Li",
+    "Yanwen Ma",
+    "Jing Wang",
+    "Chenyu Ge",
+    "Ming-Ming Cheng",
+    "Haoyang Huang"
+   ],
+   "abstract": "Modern video foundation models generate high-quality short clips, but preserving long-video consistency and correctly depicting event-driven state changes remain challenging. Existing agentic workflows face these challenges because continual planning and repair accumulate context, while reference updates remain limited. We introduce StateWeaver, which combines Active States and Hierarchical Collaboration to connect review-driven visual reference updates with cross-shot state inheritance. Active States translate state discrepancies identified during review into concrete visual asset requirements that guide reference construction, validation, and regeneration, preserving identity and already-correct content while repairing target attributes. Confirmed generation results are linked to the corresponding asset states, story time, and reference versions for verification and reuse by subsequent shots. Hierarchical Collaboration isolates execution contexts by task, clip, and repair round, and uses hierarchical memory to organize this process across multiple sets. Across multiple benchmarks, StateWeaver outperforms existing methods and produces long videos with sustained cross-shot consistency under predefined and autonomously planned storyboards.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "published": "2026-11-25T12:43:37Z",
+   "updated": "2026-11-25T12:43:37Z",
+   "comment": "",
+   "tags": [
+    "video generation",
+    "agents",
+    "multimodal",
+    "reasoning"
+   ],
+   "summary": {
+    "en": "StateWeaver converts review-detected state discrepancies into concrete visual asset requirements and isolates task contexts via hierarchical collaboration and memory, outperforming existing methods on multiple benchmarks for cross-shot consistent long video generation.",
+    "zh": "StateWeaver 用 Active States 把审阅发现的状态偏差转成具体视觉资产需求，配合分层协作与分层记忆隔离任务上下文，在多基准上超越现有方法，实现长视频跨镜头一致性。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 27,
+   "ax_votes": 0,
+   "ax_visits": 11,
+   "heat": 28.1,
+   "orgs": [
+    {
+     "logo": "data/logos/nankai.edu.cn.png",
+     "name": "Nankai University",
+     "ror": "01y1kjr75"
+    },
+    {
+     "name": "JD"
+    },
+    {
+     "name": "ShanghaiTech University",
+     "ror": "030bhh786"
+    },
+    {
+     "name": "Beihang University",
+     "ror": "00wk2mp56"
+    }
+   ],
+   "thumb": "data/thumbs/2611.34290.jpg",
+   "thumb_w": 518,
+   "thumb_h": 440,
+   "listed": "2026-11-27"
+  },
+  {
+   "id": "2611.34693",
+   "title": "ShowNow: Fine-Grained Speculative Streaming for Responsive World Models",
+   "authors": [
+    "Yiren Song",
+    "Guian Fang",
+    "Mike Zheng Shou"
+   ],
+   "abstract": "Interactive world models must generate video continuously while responding promptly to user actions. Real-time throughput alone leaves input latency unresolved: coarse generation blocks delay action updates, and generation after input adds work to the response path. We introduce ShowNow, a fine-grained speculative streaming framework that uses computation available during playback to prepare action-conditioned futures before input arrives. Single-latent commitment enables frequent decisions, while configurable preparation covers one to eight actions. We construct a matched multi-future dataset to train alternative continuations from a common state; shared-history tree execution and fused commitment make their preparation efficient. On a single H100, our 5B model sustains 480p generation at 16 fps with eight prepared futures. In ViZDoom, the complete ShowNow deployment reduces median input-to-display latency from 620 to 208 ms relative to the native-block SolarWM-FT deployment. Matched-policy experiments reduce restart empty ticks from 1.56% to 0.09% (94%) and improve on-time responses to action changes. These results establish complementary roles for fine-grained commitment and advance preparation, with measured trade-offs in visual fidelity and long-horizon consistency. ShowNow turns playback-time computation into responsive visual interaction. Project: https://github.com/showlab/ShowNow.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-25T16:52:46Z",
+   "updated": "2026-11-25T16:52:46Z",
+   "comment": "23 pages, including appendix. Video examples provided as ancillary files",
+   "code_url": "https://github.com/showlab/ShowNow",
+   "tags": [
+    "world model",
+    "video generation",
+    "efficiency",
+    "diffusion"
+   ],
+   "summary": {
+    "en": "ShowNow, a fine-grained speculative streaming framework, precomputes 1–8 action-conditioned futures during playback. With single-latent commitment and shared-history tree execution, a 5B model reaches 480p at 16 fps on H100 and cuts ViZDoom median input-to-display latency from 620 to 208 ms.",
+    "zh": "ShowNow 细粒度投机流式框架利用播放期间算力预生成 1–8 个动作条件未来帧，配合单潜变量提交与共享历史树执行；5B 模型在 H100 上达 480p/16fps，ViZDoom 中将输入到显示中位延迟从 620ms 降至 208ms。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 19,
+   "ax_votes": 1,
+   "ax_visits": 21,
+   "heat": 22.1,
+   "orgs": [
+    {
+     "name": "NUS",
+     "ror": "01tgyzw49"
+    }
+   ],
+   "thumb": "data/thumbs/2611.34693.jpg",
+   "thumb_w": 604,
+   "thumb_h": 440,
+   "listed": "2026-11-27"
+  },
+  {
+   "id": "2611.32238",
+   "title": "Boundary-Aware Policy Learning for Agent-Orchestrated Robot Manipulation",
+   "authors": [
+    "Kaipeng Fang",
+    "Yuhao Wang",
+    "Ji Zhang",
+    "Yunsong Zhou",
+    "Jingkuan Song",
+    "Lianli Gao"
+   ],
+   "abstract": "Agent-orchestrated robot systems combine the general reasoning capability of multimodal agents with the precise physical control of learned visuomotor policies. Yet such systems often fail at the moment of handoff: a policy is reliable only from a limited set of start states, while the agent may invoke it outside this region. We call this region the policy's handoff boundary. Existing whole-task policies typically have handoff boundaries that are narrow and difficult for an agent to characterize, making reliable coordination challenging. We propose Boundary-Aware Policy Learning, which explicitly shapes and then expands the handoff boundary of a visuomotor policy. First, Boundary-Explicit Training fine-tunes the policy on contact segments with diverse start poses, yielding a wide and well-defined boundary that can be communicated to the agent through a simple handoff protocol. Second, Boundary-Expanding Self-Improvement retrains the policy on curated successful system rollouts, extending the boundary toward earlier stages of each task and allowing the agent to hand over sooner with fewer language-model calls. Across RoboTwin 2.0 and RoboDojo, our system outperforms the strongest baseline by over 26 percentage points, reaching 98.4% success in randomized RoboTwin 2.0 scenes, while further reducing its API cost and execution time by 41.3% and 37.5%, respectively. These results suggest that the key to robust agent-policy orchestration lies not only in improving either component individually, but also in explicitly shaping the boundary between them.",
+   "primary": "cs.RO",
+   "categories": [
+    "cs.RO",
+    "cs.AI"
+   ],
+   "published": "2026-11-24T09:15:56Z",
+   "updated": "2026-11-24T09:15:56Z",
+   "comment": "",
+   "tags": [
+    "robotics",
+    "VLA",
+    "agents",
+    "manipulation"
+   ],
+   "summary": {
+    "en": "Boundary-Aware Policy Learning shapes and expands visuomotor policies' handoff boundaries via boundary-explicit training and self-improvement, hitting 98.4% success on RoboTwin 2.0, over 26 points above the strongest baseline, with 41.3% lower API cost and 37.5% less execution time.",
+    "zh": "Boundary-Aware Policy Learning 通过 Boundary-Explicit Training 在多样起始位姿的接触段上微调视觉运动策略，再用 Boundary-Expanding Self-Improvement 将 handoff boundary 向任务早期扩展；在 RoboTwin 2.0 随机场景达到 98.4% 成功率，比最强基线高 26 个百分点以上，API 成本和执行时间分别降低 41.3% 和 37.5%。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 7,
+   "ax_votes": 2,
+   "ax_visits": 44,
+   "heat": 13.4,
+   "orgs": [
+    {
+     "name": "University of Electronic Science and Technology of China",
+     "ror": "04qr3zq92"
+    },
+    {
+     "name": "Shanghai AI Lab"
+    },
+    {
+     "name": "Tongji University",
+     "ror": "03rc6as71"
+    },
+    {
+     "logo": "data/logos/sii.edu.cn.png",
+     "name": "Shanghai Innovation Institute",
+     "ror": "01fatbw66"
+    }
+   ],
+   "thumb": "data/thumbs/2611.32238.jpg",
+   "thumb_w": 497,
+   "thumb_h": 277,
+   "listed": "2026-11-27"
+  },
+  {
+   "id": "2611.34782",
+   "title": "Generation as Reverse Encoding",
+   "authors": [
+    "Cheng Shi",
+    "Sibei Yang",
+    "Hanzhong Guo",
+    "Yipeng Qin",
+    "Pietro Lio",
+    "Yizhou Yu"
+   ],
+   "abstract": "Pretrained visual representations accelerate generative learning by abstracting away appearance and spatial detail. Yet the same abstraction makes the return to pixels far harder, shifting much of the burden onto a larger decoder. We ask why the representation-to-pixel path should be learned independently when the encoder already provides a learned pixel-to-semantics path (the semantic encoding path). We introduce RevFlow, based on the principle of generation as reverse encoding. RevFlow uses intermediate representations of a frozen encoder as successive generative targets, first generating deep semantic representations, then shallow representations that retain appearance and spatial detail, before decoding to pixels. To learn these transitions without training a separate generator for each stage, we develop HyC-DiT, a unified generative model with a standard DiT backbone shared across stages and stage-specific condition injection. We further show that native matching in semantic representation space enables few-step generation. RevFlow accelerates both learning and sampling. On ImageNet $256 \\times 256$, RevFlow reaches 1.96 FID at 690M and 1.74 FID at 1.55B after only 5 training epochs. It also achieves 30.25 dB reconstruction PSNR with an 89M decoder. After a short native-matching adaptation phase, RevFlow-XL achieves 2.85 FID using a single sampling step in each stage. Our code repository is at https://github.com/ChengShiest/RevFlow",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-25T17:40:56Z",
+   "updated": "2026-11-25T17:40:56Z",
+   "comment": "14 pages, 7 figures, 5 tables",
+   "code_url": "https://github.com/ChengShiest/RevFlow",
+   "tags": [
+    "image generation",
+    "diffusion",
+    "efficiency",
+    "pretraining"
+   ],
+   "hf_upvotes": 2,
+   "ax_votes": 4,
+   "ax_visits": 51,
+   "heat": 11.1,
+   "orgs": [
+    {
+     "logo": "data/logos/hku.hk.png",
+     "name": "HKU",
+     "ror": "02zhqgq86"
+    },
+    {
+     "name": "Sun Yat-sen University",
+     "ror": "0064kty71"
+    },
+    {
+     "name": "Cardiff University",
+     "ror": "03kk7td41",
+     "logo": "data/logos/cardiff.ac.uk.png"
+    },
+    {
+     "name": "University of Cambridge",
+     "ror": "013meh722"
+    }
+   ],
+   "thumb": "data/thumbs/2611.34782.jpg",
+   "thumb_w": 640,
+   "thumb_h": 232,
+   "listed": "2026-11-27",
+   "summary": {
+    "zh": "RevFlow 把生成视为逆编码，以冻结编码器的中间表征为逐级生成目标，并用共享 DiT 骨干的 HyC-DiT 统一各阶段；在 ImageNet 256×256 上仅训练 5 轮即达 1.96 FID（690M）与 1.74 FID（1.55B），89M 解码器重建 PSNR 30.25 dB。",
+    "en": "RevFlow treats generation as reverse encoding, generating frozen-encoder features from deep semantics to shallow detail with a shared DiT backbone; it reaches 1.96 FID at 690M and 1.74 FID at 1.55B on ImageNet 256×256 after 5 epochs."
+   },
+   "summary_source": "deepseek-flash"
+  },
+  {
+   "id": "2611.30494",
+   "title": "Revisiting LLMs as Context Engineers",
+   "authors": [
+    "Junrui Zhang",
+    "Zeyu Xu",
+    "Runchuan Zhu",
+    "Jie Peng",
+    "Long Zhang",
+    "Zixin Ding",
+    "Jiaxin Lin",
+    "Kai Wang",
+    "Jianmin Ji",
+    "Junyuan Hong"
+   ],
+   "abstract": "As large language models (LLMs) are used in more and more new tasks, context engineering becomes a fundamental method to efficiently steer LLMs by constructing instruction prompts or metadata without intensive training. A growing number of LLM context engineering (LCE) approaches automate the task by casting the LLM itself as the engineer that draws generalizable instructions or experiences from offline trials as context. Although these methods resemble how humans learn from experiences, it remains unclear \\textbf{when and how} LLMs can engineer effective context from data. To answer the question, we first establish a benchmark composed of datasets with different reasoning patterns. We compared different LCE methods with different LLM families in 8B size, showing that there is no single winner for all tasks, even compared with simple baselines like chain-of-thought. Even when scaling model capabilities via more parameters or generation iterations, LCEs do not consistently boost existing performance. Across all datasets and models, the performance gains of LCEs are negatively correlated ($r=-0.5, p\\le 0.05$) with the diversity of the failure modes of reasoning trajectories. Investigating how LCEs work, we find that (1) the improvement in instruction adherence can explain some success of LCEs; (2) one major bottleneck is whether LLMs can extract effective experiences out of natively diverse failures. Through this study, we uncover the limited capabilities of LCEs in abstracting principled contexts from diverse failure modes and understand how LCEs work, providing guidelines for future work.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-23T11:13:05Z",
+   "updated": "2026-11-23T11:13:05Z",
+   "comment": "",
+   "tags": [
+    "LLM",
+    "reasoning",
+    "benchmark",
+    "interpretability"
+   ],
+   "hf_upvotes": 4,
+   "ax_votes": 0,
+   "ax_visits": 36,
+   "heat": 7.6,
+   "listed": "2026-11-27",
+   "orgs": [
+    {
+     "name": "NUS",
+     "ror": "01tgyzw49"
+    },
+    {
+     "name": "University of Science and Technology of China",
+     "ror": "04c4dkn09"
+    },
+    {
+     "logo": "data/logos/uchicago.edu.png",
+     "name": "University of Chicago",
+     "ror": "024mw5h28"
+    }
+   ],
+   "thumb": "data/thumbs/2611.30494.jpg",
+   "thumb_w": 640,
+   "thumb_h": 238,
+   "summary": {
+    "zh": "构建覆盖多种推理模式的数据集基准，在8B规模下比较不同LLM族上的多种LLM context engineering方法，发现没有单一方法全面胜出，甚至不及chain-of-thought等简单基线；LCE的性能增益与失败模式多样性负相关（r=-0.5, p≤0.05），指令遵循度提升可解释部分成功，而能否从多样失败中提取有效经验是主要瓶颈。",
+    "en": "A benchmark across reasoning patterns shows no single LLM context engineering method wins on all tasks at 8B scale; gains correlate negatively with failure-mode diversity (r=-0.5, p≤0.05), with experience extraction the key bottleneck."
+   },
+   "summary_source": "deepseek-flash"
+  },
+  {
+   "id": "2611.28849",
+   "title": "Guarding with Judgment: Learning to Intervene for Multimodal Safety",
+   "authors": [
+    "Jipei He",
+    "Cheng Cheng",
+    "Liuguo Wang",
+    "Zihan Wen",
+    "Changlin Yu",
+    "Wentao Song",
+    "Suyun Zhao"
+   ],
+   "abstract": "When visual context makes an ordinary request unsafe to answer as asked, a blanket refusal may leave the user's need unresolved. Choosing how to help requires distinguishing an established hazard from a condition that still needs verification, a distinction that binary safety labels leave unspecified. We formulate this decision through four actions: allow, warn, review, and refuse. To ground these decisions in verifiable evidence, we build a corpus of 20,126 training audits and the JudiBench benchmark, connecting each action to diagnostic judgments, source evidence, and controlled context changes. Our guard, JudiAct, separately states what the source establishes, what condition governs the help, and how the rules apply. It then checks these three brief review items against the original inputs to predict diagnostic labels and a handling action. Supervised training learns individual judgments while comparing label assignments across related cases. A second stage swaps one review item at a time, using the resulting audit feedback to refine review generation. On JudiBench, JudiAct improves request and answer Macro-F1 by more than 28 percentage points over its 4B backbone. Across nine public benchmarks, it outperforms state-of-the-art guards on the mean delivered-answer score in both pre-generation and post-generation settings, cutting MM-SafetyBench attack success from 40.78% to 25.30%.",
+   "primary": "cs.AI",
+   "categories": [
+    "cs.AI"
+   ],
+   "published": "2026-11-21T15:02:04Z",
+   "updated": "2026-11-21T15:02:04Z",
+   "comment": "29 pages and 9 figures",
+   "tags": [
+    "safety",
+    "multimodal",
+    "alignment",
+    "benchmark"
+   ],
+   "summary": {
+    "en": "JudiAct frames multimodal safety intervention as four actions (allow, warn, review, refuse), building 20,126 training audits and JudiBench; it improves request and answer Macro-F1 by over 28 points over its 4B backbone and cuts MM-SafetyBench attack success from 40.78% to 25.30%.",
+    "zh": "JudiAct 将多模态安全干预分为 allow、warn、review、refuse 四类动作，构建 20,126 条审计训练语料与 JudiBench，先分别陈述来源证据、适用条件与规则适用再核对原始输入，在 JudiBench 上 request 与 answer 的 Macro-F1 较 4B 骨干提升超 28 个百分点，并将 MM-SafetyBench 攻击成功率从 40.78% 降至 25.30%。"
+   },
+   "summary_source": "deepseek-flash",
+   "hf_upvotes": 2,
+   "ax_votes": 1,
+   "ax_visits": 27,
+   "heat": 5.7,
+   "orgs": [
+    {
+     "name": "Renmin University of China",
+     "ror": "041pakw92"
+    }
+   ],
+   "thumb": "data/thumbs/2611.28849.jpg",
+   "thumb_w": 394,
+   "thumb_h": 362,
+   "listed": "2026-11-27"
+  },
+  {
+   "id": "2611.32993",
+   "title": "Decision-Native Multimodal Clinical Modeling via Anatomical Grounding and Confidence Calibration",
+   "authors": [
+    "Juntao Jiang",
+    "Wenqi Zhong",
+    "Guangyu Guo",
+    "Dexia Chen",
+    "Yilong Hu",
+    "Yunhao Bai",
+    "Zhenyu Yi",
+    "Jianwei Xu",
+    "Tony C. W. Mok",
+    "Muxuan Gao",
+    "Ling Zhang",
+    "Yong Liu",
+    "Jiangning Zhang",
+    "Zhongwei Qiu"
+   ],
+   "abstract": "Structured clinical decisions from volumetric computed tomography (CT) require anatomically grounded predictions and calibrated confidence estimates. However, existing 3D medical multimodal models often suffer from uncalibrated autoregressive decoding and shortcut reliance on irrelevant anatomical regions. We introduce Radev, a decision-native multimodal model that integrates anatomy-guided visual compression, direct candidate prediction, and counterfactual confidence supervision. To bridge global context with fine-grained slice details, a frozen 3D encoder extracts reusable organ-level features, which are dynamically selected by the query to attend to 2D slice features within predicted anatomical bounds. The resulting compact visual tokens enable the language backbone to estimate candidate probabilities in a single forward pass without autoregressive decoding. We further propose Counterfactual-Calibrated Training (CCT) to compare predictions under intact and intervened organ representations. CCT encourages confidence to decrease when removing target-organ evidence degrades decision quality, while penalizing excessive confidence drops under unrelated-organ removal. To facilitate rigorous evaluation, we construct CT-Verdict, a comprehensive benchmark spanning binary finding presence, multiple-choice questions, and ordinal severity assessment across both in-distribution and external cohorts. Extensive experiments demonstrate that Radev significantly outperforms state-of-the-art methods in both decision accuracy and confidence calibration, while generalizing robustly under distribution shifts. Project page at https://juntaojianggavin.github.io/projects/Radev/ .",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-24T17:23:36Z",
+   "updated": "2026-11-25T07:57:08Z",
+   "comment": "21 pages, 6 figures",
+   "tags": [
+    "multimodal",
+    "LLM",
+    "alignment",
+    "dataset"
+   ],
+   "hf_upvotes": 3,
+   "ax_votes": 0,
+   "ax_visits": 25,
+   "heat": 5.5,
+   "listed": "2026-11-27",
+   "orgs": [
+    {
+     "name": "Zhejiang University",
+     "ror": "00a2xv884"
+    },
+    {
+     "logo": "data/logos/alibaba.com.png",
+     "name": "Alibaba"
+    },
+    {
+     "name": "Hupan Lab"
+    },
+    {
+     "name": "East China Normal University",
+     "ror": "02n96ep67"
+    },
+    {
+     "name": "Shanghai Jiao Tong University",
+     "ror": "0220qvk04"
+    }
+   ],
+   "thumb": "data/thumbs/2611.32993.jpg",
+   "thumb_w": 640,
+   "thumb_h": 414,
+   "summary": {
+    "zh": "Radev 通过解剖引导的视觉压缩、直接候选预测和反事实置信度校准，实现无需自回归解码的单次前向概率估计；在新建的 CT-Verdict 基准上，其决策准确率与置信度校准均显著优于现有方法，并在分布偏移下保持稳健。",
+    "en": "Radev combines anatomy-guided visual compression, direct candidate prediction, and counterfactual confidence calibration to estimate probabilities in a single forward pass, significantly outperforming state-of-the-art methods on decision accuracy and calibration on the new CT-Verdict benchmark."
+   },
+   "summary_source": "deepseek-flash"
+  },
+  {
+   "id": "2611.31516",
+   "title": "InitFree-SfM: When Initialization-Free Bundle Adjustment meets Learned Structure-from-Motion",
+   "authors": [
+    "Simon Weber",
+    "Mateo de Mayo",
+    "Je Hyeong Hong",
+    "Carl Olsson",
+    "Daniel Cremers",
+    "Ronald Clark"
+   ],
+   "abstract": "Initialization-free bundle adjustment (InitFree BA) aims to jointly recover camera poses and scene structure without requiring an initial global estimate. It is a very challenging problem, especially compared to traditional BA where a good estimation is assumed. While recent methods optimize surrogate Object Space Error (OSE) objectives from random initialization, a low objective value does not necessarily yield an accurate reconstruction, revealing a gap between optimization and reconstruction. We show that existing InitFree BA pipelines struggle to produce accurate 3D reconstructions on modern SfM benchmarks, and demonstrate that incorporating learned metric depth substantially improves their practical feasibility. We introduce InitFree-SfM, a complete initialization-free SfM pipeline combining learned correspondences, metric depth, depth-consistent track construction, and joint metric refinement. Within this framework, we propose a simple depth-augmented OSE (dOSE), which complements the directional constraints of OSE by constraining landmark positions along their viewing rays. Our approach substantially outperforms existing InitFree BA methods and achieves competitive accuracy with established SfM pipelines, including on challenging low-overlap image collections. Importantly, our analysis challenges the prevailing emphasis on surrogate objectives in previous InitFree BA research, revealing that geometric constraints play a central role in accurate reconstruction, while OSE-based optimization provides further improvements.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-23T20:22:10Z",
+   "updated": "2026-11-23T20:22:10Z",
+   "comment": "",
+   "tags": [
+    "3D",
+    "efficiency",
+    "dataset"
+   ],
+   "hf_upvotes": 1,
+   "ax_votes": 2,
+   "ax_visits": 15,
+   "heat": 4.5,
+   "listed": "2026-11-27",
+   "orgs": [
+    {
+     "logo": "data/logos/ox.ac.uk.png",
+     "name": "University of Oxford",
+     "ror": "052gg0110"
+    },
+    {
+     "logo": "data/logos/tum.de.png",
+     "name": "TU Munich",
+     "ror": "02kkvpp62"
+    },
+    {
+     "name": "Munich Center for Machine Learning",
+     "ror": "02nfy3535",
+     "logo": "data/logos/mcml.ai.png"
+    },
+    {
+     "name": "Hanyang University",
+     "ror": "046865y68"
+    },
+    {
+     "name": "Lund University",
+     "ror": "012a77v79"
+    }
+   ],
+   "thumb": "data/thumbs/2611.31516.jpg",
+   "thumb_w": 640,
+   "thumb_h": 206,
+   "summary": {
+    "zh": "InitFree-SfM 将学习到的对应关系、metric depth 与深度一致性 track 构建结合，提出深度增强的 dOSE 约束，在低重叠图像集上重建精度接近成熟 SfM 流程并超过现有 InitFree BA 方法。",
+    "en": "InitFree-SfM combines learned correspondences, metric depth, and depth-consistent tracks with a depth-augmented OSE (dOSE), achieving reconstruction accuracy competitive with established SfM pipelines and beating prior InitFree BA methods."
+   },
+   "summary_source": "deepseek-flash"
+  },
+  {
+   "id": "2611.30483",
+   "title": "When an AI agent makes a mistake in a database, what decides the damage?",
+   "authors": [
+    "Abdullah Kaya",
+    "Cevheri Bozoglan",
+    "Yusuf Gundogdu"
+   ],
+   "abstract": "AI agents now run statements against production databases, and several of the incidents that followed deleted production data, which came back only through backups or the provider's help. We ask what decides the damage when such an agent makes a mistake: the model, a guard layer in front of the database, or the database engine itself. The study has two preregistered layers. In Layer A, a frozen library of 22 canonical mistakes is applied by script, with no model involved, to four relational engines under five permission arms and two recovery arms, followed by an engine-native recovery drill (792 cells; 874 drill runs including 10-minute repeats). In Layer B, a minimal tool-calling agent driven by six small open-weight models (4B to 12B parameters, plus one 35B mixture-of-experts model with about 3B active, served locally) works on tasks that contain hazards across nine engines: PostgreSQL, MySQL, SQLite, ClickHouse, Apache Cassandra, MongoDB, Valkey, Apache Kafka and OpenSearch (9,468 trials). A secondary run added MariaDB, Redis and Elasticsearch (2,916 trials); each behaved like its closest core engine. Out of the box, the engines differ less in what a mistake destroys than in what they let you undo. Three of the seven preregistered hypotheses met their decision rule: H2 (for one of nine damage classes) and H3 largely by construction of the arms, and H4 only under its original measure. Four did not; one of them (H5) was uninformative, because in its task the agents never found the credential. The post-hoc analyses (S1-S13) are exploratory and uncorrected for multiple comparisons; on PostgreSQL, MySQL, OpenSearch and ClickHouse the preregistered outcome and original-row loss disagree about G1. We report all of them, with every deviation from the preregistration and its timing.",
+   "primary": "cs.SE",
+   "categories": [
+    "cs.SE",
+    "cs.CR",
+    "cs.DB"
+   ],
+   "published": "2026-11-23T11:06:44Z",
+   "updated": "2026-11-23T11:06:44Z",
+   "comment": "47 pages. Preregistered at https://osf.io/ms7ef. Harness, trial records and analysis scripts: https://doi.org/10.5281/zenodo.24445015 and https://github.com/libredb/agent-blast-radius",
+   "code_url": "https://github.com/libredb/agent-blast-radius",
+   "tags": [
+    "agents",
+    "safety",
+    "benchmark"
+   ],
+   "hf_upvotes": 4,
+   "ax_votes": 0,
+   "ax_visits": 7,
+   "heat": 4.7,
+   "listed": "2026-11-27",
+   "orgs": [
+    {
+     "name": "LibreDB Studio"
+    }
+   ],
+   "thumb": "data/thumbs/2611.30483.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440,
+   "summary": {
+    "zh": "通过两层预注册实验比较模型、防护层与数据库引擎本身对AI agent误操作损害的决定作用，覆盖9种以上引擎、6个4B–12B开源模型共9,468次试验，发现引擎间主要差别在于可撤销性而非破坏程度。",
+    "en": "A two-layer preregistered study tests whether the model, a guard layer, or the database engine determines damage from AI agent mistakes, spanning 9+ engines and six 4B–12B open-weight models over 9,468 trials; engines differ more in undoability than in what a mistake destroys."
+   },
+   "summary_source": "deepseek-flash"
+  },
+  {
+   "id": "2611.34719",
+   "title": "Reading, Not Adapting: Unlocking Frozen Visual Knowledge for AI-Generated Image Detection",
+   "authors": [
+    "Yuncheng Guo",
+    "Ying Dong",
+    "Xiaodong Gu"
+   ],
+   "abstract": "Generalization to unseen image generators has driven efforts to adapt pretrained visual representations for detection. Yet recent findings show that vision foundation models already encode transferable detection knowledge, while further adaptation can impair generalization. This motivates a shift from backbone adaptation to knowledge readout. Conventional linear probing offers a direct way to read this knowledge but is limited to final-layer RGB features. Multi-cue detectors broaden the evidence base, but their designs introduce other tradeoffs: adaptation may compromise pretrained transferability, heterogeneous encoders complicate feature integration, and late fusion precludes intermediate cross-view interaction. To overcome these limitations, we propose ReMoT, a Mixture-of-Transformers-inspired framework that reads complementary knowledge from spatially aligned RGB and wavelet views within a fully frozen visual foundation. ReMoT employs staged joint attention to enable controlled local and global cross-view interaction, while learnable fusion queries progressively read complementary evidence across Transformer depth without writeback. ReMoT achieves 91.2% average accuracy across eight benchmark groups with 3,074 trainable parameters, attaining the highest overall average among the evaluated methods. These results support structured knowledge readout as a promising alternative to backbone adaptation. Code is available at https://github.com/yunncheng/ReMoT.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-25T17:09:32Z",
+   "updated": "2026-11-25T17:09:32Z",
+   "comment": "15 pages, 6 figures, and 9 tables",
+   "code_url": "https://github.com/yunncheng/ReMoT",
+   "tags": [
+    "image generation",
+    "detection",
+    "interpretability"
+   ],
+   "hf_upvotes": 2,
+   "ax_votes": 0,
+   "ax_visits": 7,
+   "heat": 2.7,
+   "listed": "2026-11-27",
+   "orgs": [
+    {
+     "name": "Fudan University",
+     "ror": "013q1eq08"
+    }
+   ],
+   "thumb": "data/thumbs/2611.34719.jpg",
+   "thumb_w": 640,
+   "thumb_h": 257,
+   "summary": {
+    "zh": "ReMoT 在完全冻结的视觉基础模型上，用受 Mixture-of-Transformers 启发的分阶段联合注意力从空间对齐的 RGB 与小波视图读取互补证据，仅 3074 个可训练参数即在八个基准组上平均准确率达 91.2%，为评估方法中最高。",
+    "en": "ReMoT reads complementary evidence from aligned RGB and wavelet views in a fully frozen vision foundation via staged joint attention, reaching 91.2% average accuracy across eight benchmark groups with only 3,074 trainable parameters."
+   },
+   "summary_source": "deepseek-flash"
+  },
+  {
+   "id": "2611.31491",
+   "title": "Pretrained Tabular Features and the Measurement of Financial Proximity",
+   "authors": [
+    "Marcus Gawronsky"
+   ],
+   "abstract": "Spatial arbitrage pricing theory (S-APT) extends factor models to allow returns to spill over between connected firms, beyond what common risk factors explain. In recent years, tabular foundation models (TFMs) have matched or outperformed tuned gradient-boosted and bagged ensembles on small and medium-sized tabular benchmarks. Although their predictive performance is strong, these models reveal little about what they have learned, which limits their use in regulated financial applications that require explanation. Internal representations are widely used to probe what neural networks learn and to measure similarity. In this paper, we use the frozen representations of four TFMs as a measure of financial dissimilarity in a spatial asset-pricing model of US equities from 2011 to 2025, and find that their estimated gains over a direct distance between the same disclosures become consistently positive once broad SEC filing data are included. This reframes tabular foundation models from black-box predictors into instruments for measuring economic structure, with immediate applications to peer selection, risk attribution and network-based asset pricing. More broadly, our findings suggest that the internal representations of foundation models, not only their predictions, deserve study as economic objects, opening a new line of research on what pretrained models know about firms.",
+   "primary": "q-fin.PR",
+   "categories": [
+    "q-fin.PR"
+   ],
+   "published": "2026-11-23T20:03:55Z",
+   "updated": "2026-11-23T20:03:55Z",
+   "comment": "",
+   "tags": [
+    "LLM",
+    "interpretability"
+   ],
+   "hf_upvotes": 1,
+   "ax_votes": 0,
+   "ax_visits": 5,
+   "heat": 1.5,
+   "listed": "2026-11-27",
+   "orgs": [],
+   "thumb": "data/thumbs/2611.31491.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440,
+   "summary": {
+    "zh": "用四个表格基础模型的冻结表示度量美国股票2011–2025年的财务差异性，发现纳入SEC申报数据后其相对直接距离的估计增益持续为正。",
+    "en": "Frozen representations from four tabular foundation models measure financial dissimilarity for US equities 2011–2025, yielding consistently positive estimated gains over direct disclosure distance once SEC filing data are included."
+   },
+   "summary_source": "deepseek-flash"
+  },
+  {
+   "id": "2611.30723",
+   "title": "BiSAT: Bidirectionally Aligned Semantic-Acoustic Tokenization for Speech Language Models",
+   "authors": [
+    "Y. Lu",
+    "L. Wang",
+    "S. Okada"
+   ],
+   "abstract": "Speech language models (LMs) generate speech as sequences of discrete tokens, requiring tokenizers that preserve both acoustic detail and linguistic content at a low bitrate. Semanticenhanced tokenizers may discard acoustic detail, whereas acousticoriented tokenizers retain acoustic variation that hinders language modeling. Unified tokenizers combine both, but encoding them within a single feature space can cause interference, and existing methods typically align acoustic features to fixed targets from a frozen semantic teacher. We propose Bidirectionally Aligned Semantic-Acoustic Tokenization (BiSAT), a unified framework with separate acoustic and semantic branches coupled by a shared-index mechanism. During training, each branch has its own encoder, codebook, and decoder, and at every frame a shared index minimizes the combined quantization error across both branches. BiSAT thus learns acoustic and semantic representations in separate continuous spaces while producing a single discrete code stream, jointly optimizing both encoders without fixed semantic teachers. Built on BiSAT, BiSAT-TTS pairs an autoregressive text-speech LM with a conditional flow-matching acoustic decoder for zero-shot text-to-speech. Reconstruction, frozen-code understanding, and diagnostic analyses show that BiSAT preserves accessible linguistic and acoustic structure in a low-bitrate single stream, generalizes strongly to in-thewild and out-of-domain speech, and learns complementary paired codebooks. BiSAT-TTS matches or surpasses state-of-the-art speech LM-based TTS baselines with less training data, demonstrating that accessible code structure, not reconstruction quality alone, benefits autoregressive speech modeling. The audio demos are available at https://seekmind-lab.github.io/bisat-demo.",
+   "primary": "eess.AS",
+   "categories": [
+    "eess.AS"
+   ],
+   "published": "2026-11-23T14:03:02Z",
+   "updated": "2026-11-24T07:35:25Z",
+   "comment": "13 pages, 4 figures, Y. Lu and L. Wang are co-first authors",
+   "tags": [
+    "speech",
+    "LLM",
+    "efficiency"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 4,
+   "heat": 2.4,
+   "hf_upvotes": 2,
+   "listed": "2026-11-27",
+   "orgs": [
+    {
+     "name": "Japan Advanced Institute of Science and Technology",
+     "ror": "03frj4r98",
+     "logo": "data/logos/jaist.ac.jp.png"
+    }
+   ],
+   "thumb": "data/thumbs/2611.30723.jpg",
+   "thumb_w": 640,
+   "thumb_h": 407,
+   "summary": {
+    "zh": "BiSAT 通过共享索引机制将独立的声学与语义分支耦合为单一离散码流，联合优化双编码器且不依赖固定语义教师；基于此的 BiSAT-TTS 用更少训练数据即达到或超越现有语音语言模型 TTS 基线。",
+    "en": "BiSAT couples separate acoustic and semantic branches via a shared-index mechanism into one discrete token stream, jointly optimizing both encoders without fixed semantic teachers; BiSAT-TTS matches or beats speech-LM TTS baselines with less training data."
+   },
+   "summary_source": "deepseek-flash"
+  },
+  {
+   "id": "2611.30025",
+   "title": "Damped Atomic Wave Integration Neurons (DAWIN): A Universal Primitive for Continuous-Time Spatiotemporal Learning",
+   "authors": [
+    "Byunggu Yu",
+    "Justin Kim"
+   ],
+   "abstract": "Conventional artificial neurons separate spatial feature aggregation from continuous physical time, limiting their ability to model irregular observations. We introduce the Damped Atomic Wave Integration Neuron (DAWIN), a continuous-time primitive for replacing standard neural layers in MLPs, Transformers, and graph neural networks. DAWIN couples spatial projection with elapsed-time-dependent wave excitation and integrates it into a local complex state through closed-form damped evolution, avoiding numerical differential equation solvers. We show that DAWIN generalizes static sinusoidal and memoryless wave neurons on interval-augmented inputs, derive closed-form gradients, and establish bounded-input bounded-output stability for positive damping and sampling intervals bounded away from zero. An associative Triton prefix-scan implementation, DAWINLinear, uses FP32 accumulation and achieves O(log L) parallel depth for sequence length L. Across 11 parameter-matched tasks covering irregular oscillators, MuJoCo dynamics, pedestrian trajectories, and PhysioNet 2012 clinical sequences, DAWIN outperforms Neural CDE on 9 tasks and ReLU-MLP on 8. It achieves the lowest error on dense clinical dynamics (0.9531 NRMSE, winning across all 10 seeds) and ties for the best mortality prediction (0.9993 AUROC). Shuffling elapsed intervals increases error by 58.2%-77.4% on selected dynamics tasks, versus 0.06% on a time-irrelevant control, supporting reliance on physical timing. On NVIDIA B200 GPUs, parallel wave integration accelerates inference by up to 2,630 times over its serial implementation and reduces peak GPU memory by up to 97.6% relative to Mamba in the tested configurations.",
+   "primary": "cs.LG",
+   "categories": [
+    "cs.LG"
+   ],
+   "published": "2026-11-23T04:26:39Z",
+   "updated": "2026-11-23T04:26:39Z",
+   "comment": "17 Pages, 3 Figures, and 4 Tables",
+   "listed": "2026-11-27",
+   "tags": [
+    "theory",
+    "efficiency",
+    "pretraining"
+   ],
+   "hf_upvotes": 2,
+   "ax_votes": 0,
+   "ax_visits": 3,
+   "heat": 2.3,
+   "orgs": [
+    {
+     "name": "University of the District of Columbia",
+     "ror": "037wegn60",
+     "logo": "data/logos/udc.edu.png"
+    }
+   ],
+   "thumb": "data/thumbs/2611.30025.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440,
+   "summary": {
+    "zh": "DAWIN 将空间投影与时变波激励耦合为闭式阻尼复状态，无需微分方程求解器即可嵌入 MLP、Transformer 和 GNN；在 11 项参数匹配任务中，其 9 项超过 Neural CDE、8 项超过 ReLU-MLP，临床死亡率预测 AUROC 达 0.9993，并给出闭式梯度与 BIBO 稳定性证明。",
+    "en": "DAWIN couples spatial projection with elapsed-time wave excitation into a closed-form damped complex state, avoiding ODE solvers; it plugs into MLPs, Transformers, and GNNs, beating Neural CDE on 9 of 11 tasks and ReLU-MLP on 8."
+   },
+   "summary_source": "deepseek-flash"
+  },
+  {
+   "id": "2611.31155",
+   "title": "So Many Ways to Multiply $3\\times3$ Matrices: A Large Dataset of Rank-23 Schemes",
+   "authors": [
+    "Andrew Igorevich Perminov"
+   ],
+   "abstract": "A publicly available dataset of 62029 rank-23 schemes for $3\\times3$ matrix multiplication is presented. Every scheme in it has its own rank pattern, an invariant formed by the ranks of the factor matrices of a scheme, so all schemes are pairwise inequivalent. The schemes were obtained by a numerical method combining gradient descent with alternating least squares and by flip graph search, and have ternary, integer or rational coefficients. Rank 23 is the best known for this format and is optimal for schemes with integer coefficients, but the number of essentially different schemes of this rank was poorly understood: the existing collections of Heule et al. and Mårtensson et al. contain many schemes that share only a small number of rank patterns (17376 schemes with 387 patterns and 15316 schemes with 568 patterns respectively). The dataset shows that the number of different rank patterns is much larger than previously known.",
+   "primary": "cs.SC",
+   "categories": [
+    "cs.SC"
+   ],
+   "published": "2026-11-23T18:21:37Z",
+   "updated": "2026-11-23T18:21:37Z",
+   "comment": "",
+   "tags": [
+    "math",
+    "dataset",
+    "theory"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 5,
+   "heat": 0.5,
+   "listed": "2026-11-27",
+   "orgs": [
+    {
+     "name": "Research Center for TAI"
+    },
+    {
+     "name": "Institute for System Programming",
+     "ror": "017ef8252"
+    }
+   ],
+   "thumb": "data/thumbs/2611.31155.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440,
+   "summary": {
+    "zh": "构建了包含62029个秩23的3×3矩阵乘法方案公开数据集，方案由梯度下降结合交替最小二乘与flip graph搜索得到，按秩模式两两不等价，秩模式数量远超Heule等（17376方案/387模式）和Mårtensson等（15316方案/568模式）的已有集合。",
+    "en": "A public dataset of 62029 rank-23 3×3 matrix multiplication schemes from gradient descent with alternating least squares and flip graph search, pairwise inequivalent by rank pattern and far exceeding prior collections."
+   },
+   "summary_source": "deepseek-flash"
+  },
+  {
+   "id": "2611.27112",
+   "title": "Markdown Is Not a Firewall: four coding agents, one rules file, four boundaries",
+   "authors": [
+    "Sandeep Dhuri"
+   ],
+   "abstract": "Teams put a one-page rules file in a repository and call it a control on coding agents. A registered study found agents rarely look up a repository's contribution rules. I asked the security question: what does a rules file do at a boundary, against a gate? I tested one 278-word rules file, with hypotheses and analysis code deposited first. Claude Code, Codex CLI, Gemini CLI and OpenCode with DeepSeek worked through 20 small repositories with hidden tests, 12 for three of them. Three agents met four boundaries I built: a refused endpoint, a destructive shortcut, a planted instruction and a planted package. Permission prompts, each vendor's own control layer, were off by design. A gate in front of the mock service blocked and logged forbidden requests. Every verdict was read from records the agent could not change. Only my first scoring pass was blind to arm. My checkers found no real bugs, with the file or without it. The file cost one agent a third of its score: Codex CLI fell from 99.0 to 67.7 percent on hidden tests, and in 11 of its 36 steps reported the task complete with all tests passing while under half of the hidden tests passed. Its own tests passed. Faced with two of its rules that clash on these tasks, three agents followed the task and one followed the rule. Pooled, passes fell from 98.2 to 90.9 percent. Matched pairs fell 7.7 points, 1.3 without Codex CLI. Attempts to cross were rare: 5 in 90 gated steps, 3 without the file, 2 with it, all by OpenCode with DeepSeek, all blocked. With no gate, under the neutral file, the same requests reached the mock in 7 of 45 runs. By an error in my run script, the no-file and rules-file arms always ran behind the gate at the three HTTP boundaries, so I could not test whether the file changes what an agent does there. On what I could measure, the file acted as advice. A file tells an agent what you want. A gate decides what it gets.",
+   "primary": "cs.SE",
+   "categories": [
+    "cs.SE",
+    "cs.CR"
+   ],
+   "published": "2026-11-20T04:35:33Z",
+   "updated": "2026-11-20T04:35:33Z",
+   "comment": "22 pages, 7 figures. Pre-registration: doi.org/10.5281/zenodo.23608308. Results dataset: doi.org/10.5281/zenodo.24238904",
+   "tags": [
+    "agents",
+    "safety",
+    "benchmark",
+    "code"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 2,
+   "heat": 0.2,
+   "listed": "2026-11-27",
+   "orgs": [
+    {
+     "name": "Independent Researcher"
+    }
+   ],
+   "thumb": "data/thumbs/2611.27112.jpg",
+   "thumb_w": 618,
+   "thumb_h": 440,
+   "summary": {
+    "zh": "在278词规则文件下测试Claude Code、Codex CLI、Gemini CLI和OpenCode+DeepSeek于隐藏测试仓库上的表现：规则文件仅作建议，Codex CLI得分从99.0降至67.7%，汇总通过率由98.2%降至90.9%，且无门禁时违规请求仍在7/45次运行中到达mock服务。",
+    "en": "Testing Claude Code, Codex CLI, Gemini CLI and OpenCode+DeepSeek on hidden-test repos under a 278-word rules file: the file acted as advice, dropping Codex CLI from 99.0% to 67.7% and pooled passes from 98.2% to 90.9%."
+   },
+   "summary_source": "deepseek-flash"
+  },
+  {
+   "id": "2611.33885",
+   "title": "LayoutRecall: Preserving Appearance in Multi-Round 3D Layout-Controlled Image Editing",
+   "authors": [
+    "Yankuan Chi",
+    "Xin Lin",
+    "Baihan Yang",
+    "Yuheng Liu",
+    "Jason Li",
+    "Truong Nguyen"
+   ],
+   "abstract": "3D layout-controlled image editing gives users explicit control over object placement and camera viewpoint. In a sequence of edits, however, the latest image can lose the appearance of an object when it is occluded or leaves view. The target layout specifies where the object should reappear, while its appearance must be recovered from earlier observations. We introduce LayoutRecall, a multi-round editor that stores and reuses appearance in the local coordinate systems of 3D boxes. Box-Surface Latent Memory retains image latents on box faces and retrieves them along rays in the target view. Geometry-Aligned Memory Conditioning supplies the retrieved tokens to a FLUX.2 editor using target-view positions, shared box-local embeddings, and object-wise attention. A correspondence loss encourages the editor to attend to matching observations during denoising. We also introduce LayoutLoop, a multi-round 3D layout-controlled image editing benchmark with calibrated layouts and designed revisits. We conduct extensive experiments on LayoutLoop and real-scene data to verify the ability of our method. The project page is at https://ykchizs.github.io/layoutrecall.github.io/.",
+   "primary": "cs.CV",
+   "categories": [
+    "cs.CV"
+   ],
+   "published": "2026-11-25T07:00:51Z",
+   "updated": "2026-11-25T07:00:51Z",
+   "comment": "",
+   "listed": "2026-11-27",
+   "tags": [
+    "image generation",
+    "3D",
+    "diffusion"
+   ],
+   "ax_votes": 0,
+   "ax_visits": 7,
+   "heat": 0.7,
+   "orgs": [
+    {
+     "name": "University of California San Diego",
+     "ror": "0168r3w48",
+     "logo": "data/logos/ucsd.edu.png"
+    },
+    {
+     "name": "University of California Irvine"
+    },
+    {
+     "name": "NTU",
+     "ror": "02e7b5302"
+    }
+   ],
+   "thumb": "data/thumbs/2611.33885.jpg",
+   "thumb_w": 640,
+   "thumb_h": 360,
+   "summary": {
+    "zh": "LayoutRecall 将物体外观以图像潜变量形式存储于 3D 框的局部坐标系表面，并按目标视角沿射线检索，再通过几何对齐的记忆条件注入 FLUX.2 编辑器，在多轮 3D 布局编辑中恢复被遮挡或出画物体的外观；同时构建带校准布局与设计重访的 LayoutLoop 基准，实验验证了外观保持能力。",
+    "en": "LayoutRecall stores appearance as image latents on 3D box surfaces, retrieves them along target-view rays, and feeds them into a FLUX.2 editor for multi-round 3D layout-controlled editing, plus the LayoutLoop benchmark for revisits."
+   },
+   "summary_source": "deepseek-flash"
+  }
+ ]
+}
