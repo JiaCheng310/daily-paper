@@ -259,7 +259,7 @@
     nav.innerHTML = state.index.categories.map((c) => {
       const name = state.lang === 'zh' ? (c.name_zh || c.name) : c.name;
       const cur = c.id === state.cat ? ' aria-current="page"' : '';
-      return `<a href="?date=${encodeURIComponent(state.date)}&cat=${encodeURIComponent(c.id)}" data-cat="${escapeHtml(c.id)}"${cur}>${c.id === 'all' ? '' : `${escapeHtml(c.id)} · `}${escapeHtml(name)}</a>`;
+      return `<a href="?date=${encodeURIComponent(state.date)}&cat=${encodeURIComponent(c.id)}" data-cat="${escapeHtml(c.id)}"${cur}>${c.id === 'all' || c.id === 'rl' ? '' : `${escapeHtml(c.id)} · `}${escapeHtml(name)}</a>`;
     }).join('');
 
     const cat = state.index.categories.find((c) => c.id === state.cat);
@@ -286,7 +286,7 @@
 
   // ---------- paper list ----------
   function visiblePapers() {
-    const all = (state.day?.papers || []).filter((p) => state.cat === 'all' || (p.categories || [p.primary]).includes(state.cat));
+    const all = (state.day?.papers || []).filter((p) => state.cat === 'all' || (p.sections || []).includes(state.cat) || (p.categories || [p.primary]).includes(state.cat));
     const terms = searchTerms();
     let list = all.map((p, i) => ({ p, order: i }));
     if (state.search.filter) list = list.filter(({ p }) => matches(p, terms));

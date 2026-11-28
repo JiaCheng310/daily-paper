@@ -668,7 +668,10 @@ def main():
     for path in sorted((data_dir / "days").glob("*.json"), reverse=True):
         papers = json.loads(path.read_text())["papers"]
         if args.top:  # only each day's most popular papers (the ones the site shows first)
-            papers = sorted(papers, key=lambda p: -(p.get("heat") or 0))[: args.top]
+            ranked = sorted(papers, key=lambda p: -(p.get("heat") or 0))
+            papers = ranked[: args.top]
+            for section in {s for p in ranked for s in p.get("sections") or []}:  # e.g. the RL list
+                papers += [p for p in ranked if section in p.get("sections", [])][: args.top]
         ids += [p["id"] for p in papers]
     todo = [pid for pid in dict.fromkeys(ids) if pid not in cache]
     if args.limit:

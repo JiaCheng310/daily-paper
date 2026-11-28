@@ -3,7 +3,8 @@
 
 Candidates:
   - Hugging Face Daily Papers, every listing date in the window (upvotes)
-  - alphaXiv's "Hot" feed (visits, upvotes); only Computer Science papers
+  - alphaXiv's Hot / Views / Likes feeds (visits, upvotes); only Computer Science papers
+  - the same alphaXiv feeds for the reinforcement-learning topics, for the RL section
 Metadata (title, authors, abstract, categories, date) comes from the arXiv API.
 Papers are grouped by the Beijing date on which they were first listed: the Hugging Face
 Daily Papers date when HF lists the paper, otherwise the morning after arXiv announces it
@@ -36,6 +37,12 @@ VISIT_WEIGHT = 0.1  # same as popularity.py
 SOURCE = "hot"  # day files written by this script (older ones held one arXiv category)
 EASTERN = ZoneInfo("America/New_York")
 CUTOFF = dt.time(14, 0)  # arXiv's daily submission deadline, US Eastern
+# Sections besides the main list: id -> (alphaXiv topics, title/abstract pattern).
+SECTIONS = {
+    "rl": (("reinforcement-learning", "deep-reinforcement-learning"),
+           re.compile(r"reinforcement[- ]learning|\bRL(?:HF|AIF|VR)?\b|\bGRPO\b|\bPPO\b|policy optimi[sz]ation|"
+                      r"policy gradient|reward model|\bQ-learning\b|actor-critic", re.I)),
+}
 
 
 def get(url, retries=3, timeout=60):
@@ -85,19 +92,23 @@ def hf_candidates(dates):
     return votes, listed
 
 
-def alphaxiv_candidates(interval, pages, page_size=100, sorts=("Hot", "Views", "Likes")):
+def alphaxiv_candidates(interval, pages, page_size=100, sorts=("Hot", "Views", "Likes"), topics=None):
     """{id: (votes, visits)} from alphaXiv's feeds (hot, most viewed, most liked), Computer
-    Science only. Three orderings, so a paper popular by any measure is a candidate."""
+    Science only. Three orderings, so a paper popular by any measure is a candidate.
+    `topics` limits the feeds to alphaXiv topics such as "reinforcement-learning"."""
     found = {}
     for sort in sorts:
-        found.update(alphaxiv_feed(sort, interval, pages, page_size))
+        found.update(alphaxiv_feed(sort, interval, pages, page_size, topics))
     return found
 
 
-def alphaxiv_feed(sort, interval, pages, page_size):
+def alphaxiv_feed(sort, interval, pages, page_size, topics=None):
     found = {}
     for page in range(pages):
-        query = urllib.parse.urlencode({"pageNum": page, "sort": sort, "interval": interval, "pageSize": page_size})
+        params = {"pageNum": page, "sort": sort, "interval": interval, "pageSize": page_size}
+        if topics:
+            params["topics"] = json.dumps(list(topics))
+        query = urllib.parse.urlencode(params)
         try:
             data = json.loads(get(f"https://api.alphaxiv.org/papers/v3/feed?{query}"))
         except Exception as exc:
@@ -142,6 +153,13 @@ def main():
     beijing = dt.datetime.now(ZoneInfo("Asia/Shanghai")).date()
     hf, hf_listed = hf_candidates([(beijing - dt.timedelta(days=d)).isoformat() for d in range(args.days + 4)])
     ax = alphaxiv_candidates(args.interval, args.pages)
+    section_ids = {}
+    for name, (topics, _) in SECTIONS.items():
+        found = alphaxiv_candidates(args.interval, args.pages, topics=topics)
+        section_ids[name] = set(found)
+        for pid, row in found.items():
+            ax.setdefault(pid, row)
+        print(f"{name}: {len(found)} from alphaXiv topics {', '.join(topics)}")
     print(f"candidates: {len(hf)} from Hugging Face, {len(ax)} from alphaXiv, {len(set(hf) | set(ax))} together")
     meta = arxiv_metadata(set(hf) | set(ax))
     if not meta:
@@ -198,6 +216,11 @@ def main():
             paper["ax_votes"] = row.get("ax_votes") or 0
             paper["ax_visits"] = row.get("ax_visits") or 0
             paper["heat"] = round((row.get("hf") or 0) + paper["ax_votes"] + VISIT_WEIGHT * paper["ax_visits"], 1)
+            paper["sections"] = sorted(
+                name for name, (_, pattern) in SECTIONS.items()
+                if paper["id"] in section_ids[name] or name in (paper.get("sections") or [])
+                or pattern.search(f"{paper['title']}\n{paper.get('abstract', '')}")
+                or (name == "rl" and "RL" in (paper.get("tags") or [])))
             extra = enrich.get(paper["id"])
             if extra and "orgs" not in paper:
                 paper["orgs"] = [{"name": o} if isinstance(o, str) else o for o in extra.get("orgs", [])]
@@ -224,7 +247,8 @@ def main():
         "title": "Daily Paper",
         "updated_at": now,
         "default_category": "all",
-        "categories": [{"id": "all", "name": "Popular papers", "name_zh": "热门论文"}],
+        "categories": [{"id": "all", "name": "Popular papers", "name_zh": "热门论文"},
+                       {"id": "rl", "name": "Reinforcement learning", "name_zh": "强化学习"}],
         "category_names": {c: {"en": CATEGORY_NAMES[c][0], "zh": CATEGORY_NAMES[c][1]} for c in cats if c in CATEGORY_NAMES},
         "days": index_days,
     }

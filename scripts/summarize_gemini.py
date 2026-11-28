@@ -343,8 +343,10 @@ def main():
         if args.top:  # only each day's most popular papers (heat from popularity.py)
             wanted = set()
             for day in days.values():
-                ranked = sorted(enumerate(day["papers"]), key=lambda x: (-(x[1].get("heat") or 0), x[0]))
-                wanted.update(p["id"] for _, p in ranked[: args.top])
+                ranked = [p for _, p in sorted(enumerate(day["papers"]), key=lambda x: (-(x[1].get("heat") or 0), x[0]))]
+                wanted.update(p["id"] for p in ranked[: args.top])
+                for section in {s for p in ranked for s in p.get("sections") or []}:  # e.g. the RL list
+                    wanted.update([p["id"] for p in ranked if section in p.get("sections", [])][: args.top])
             papers = [p for p in papers if p["id"] in wanted]
         todo = [p for p in papers if cache.get(p["id"], {}).get("v") not in
                 {prompt_version(args.model), prompt_version(args.fallback)}]

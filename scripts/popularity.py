@@ -130,7 +130,9 @@ def main():
     def refreshed(f, day):
         if (newest - dt.date.fromisoformat(f.stem)).days < args.full_days:
             return day["papers"]
-        return sorted(day["papers"], key=lambda p: -(p.get("heat") or 0))[: args.top]
+        ranked = sorted(day["papers"], key=lambda p: -(p.get("heat") or 0))
+        rl = [p for p in ranked if "rl" in (p.get("sections") or [])]
+        return ranked[: args.top] + rl[: args.top]
     ids = list(dict.fromkeys(p["id"] for f, d in days.items() for p in refreshed(f, d)))
     print(f"{len(ids)} papers in {len(in_window)} days ({in_window[-1].stem} .. {in_window[0].stem})")
 
